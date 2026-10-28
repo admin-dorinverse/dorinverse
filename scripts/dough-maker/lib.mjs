@@ -26,6 +26,8 @@ export const EXACT_LESSONS = { Idioms: 2, 'Jesus Prophecies': 2 };
 
 // 2.10: characters in a lesson title, and in a flavor title after its "Book: " prefix
 export const TITLE_MAX = 32;
+// 2.10: recipes whose block fixes the lesson title form (the four terms), exempt from TITLE_MAX
+export const FIXED_LESSON_TITLES = ['Words', 'Idioms'];
 
 // --- reference layer --------------------------------------------------------
 

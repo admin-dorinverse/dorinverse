@@ -1,4 +1,4 @@
-> Copy exported 2026-10-27 from the Claude Doc, which stays the master: https://claude.ai/artifact/4dBmZtXHkAPH3ioA9BRfVY. Edit the doc, then re-export here.
+> Copy exported 2026-10-28 from the Claude Doc, which stays the master: https://claude.ai/artifact/4dBmZtXHkAPH3ioA9BRfVY. Edit the doc, then re-export here.
 
 # Dorinverse - Lesson Question Rules
 
@@ -125,7 +125,7 @@ Every agent that plans, writes, checks, or fixes a lesson reads this first. It s
 
 **2.15** A poem inside a story (Exodus 15, Hannah's prayer) is taught with the story and may also be taught in Poems.
 
-**2.16** Which recipe teaches a passage in detail: narrative (events, travel, miracles, trials, dialogue that moves the action) goes to Stories; a teaching block (a parable, a sermon, a discourse: Matthew 5–7, Luke 15, John 13–17, Moses' speeches in Deuteronomy) goes to Parables, with the frame verse that introduces it; prophets with narrative chapters split (Jeremiah's story chapters, Daniel 1–6, and the book of Jonah go to Stories; the messages and Daniel 7–12 go to Prophets); Revelation goes to Revelation; Psalms, Song of Solomon, and Lamentations go to Poems; Proverbs, Ecclesiastes, and Job go to Wisdom (Job 1–2 and 42 also in Stories); Romans to Jude go to Letters. Words, Idioms, Verses, and Jesus Prophecies draw from anywhere.
+**2.16** Which recipe teaches a passage in detail: narrative (events, travel, miracles, trials, dialogue that moves the action) goes to Stories; Jesus' parables and teaching blocks (a parable, a sermon, a discourse: Matthew 5–7, Luke 15, John 13–17) go to Parables, with the frame verse that introduces them; Moses' speeches in Deuteronomy go to Stories, told as part of Moses' last days; prophets with narrative chapters split (Jeremiah's story chapters, Daniel 1–6, and the book of Jonah go to Stories; the messages and Daniel 7–12 go to Prophets); Revelation goes to Revelation; Psalms, Song of Solomon, and Lamentations go to Poems; Proverbs, Ecclesiastes, and Job go to Wisdom (Job 1–2 and 42 also in Stories); Romans to Jude go to Letters. Words, Idioms, Verses, and Jesus Prophecies draw from anywhere.
 
 **2.17** Parallel accounts (Samuel, Kings, Chronicles; the four Gospels): combine them into one story, using the account with the most detail as the base. Questions and distractors come from the base account only. Parallel passages are Lesson Passage rows with `parallel` = true: revealed at the end so the player sees every account, never a source for a question or a distractor.
 
@@ -421,7 +421,7 @@ The player is not expected to know the material. Questions work by prediction: t
 
 **Parables (7.Pa)**
 
-**7.Pa1** Jesus' parables and teaching blocks (Matthew 5–7, 10, 13, 18, 23–25; Luke 15; John 13–17) and other teaching blocks, such as Moses' speeches in Deuteronomy.
+**7.Pa1** Jesus' parables and teaching blocks (Matthew 5–7, 10, 13, 18, 23–25; Luke 15; John 13–17). Parables holds only Jesus' parables and teachings; Moses' speeches in Deuteronomy are taught in Stories (2.16).
 
 **7.Pa2** A flavor is one part of a teaching block, cut at its own turns (the Beatitudes, Matthew 5:3–12; the Lord's Prayer, Matthew 6:9–13), or a group of parables the text sets together (Luke 15).
 

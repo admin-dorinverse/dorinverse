@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
-  INGREDIENTS_DIR, COUNTS_START, COUNTS_END, RECIPES, HOME_BOOKS, ONE_LESSON_BOOKS, EXACT_LESSONS, TITLE_MAX,
+  INGREDIENTS_DIR, COUNTS_START, COUNTS_END, RECIPES, HOME_BOOKS, ONE_LESSON_BOOKS, EXACT_LESSONS, TITLE_MAX, FIXED_LESSON_TITLES,
   loadReference, expand, formatRefs, parseIngredients,
 } from './lib.mjs';
 
@@ -50,7 +50,9 @@ for (const name of files) {
     const flavorTitle = f.title.replace(/^.+?: /, '');
     const titles = [[f.at, 'flavor', flavorTitle], ...f.lessons.map((l) => [l.at, 'lesson', l.note])];
     for (const [at, kind, title] of titles) {
-      if (title.length > TITLE_MAX) errors.push(`${at}: ${kind} title is ${title.length} characters (max ${TITLE_MAX}, 2.10)`);
+      // a block's fixed title form (Words and Idioms list their four terms) is kept as is
+      const fixedForm = kind === 'lesson' && FIXED_LESSON_TITLES.includes(recipe);
+      if (title.length > TITLE_MAX && !fixedForm) errors.push(`${at}: ${kind} title is ${title.length} characters (max ${TITLE_MAX}, 2.10)`);
       if (/\b(I|me|my)\b/i.test(title)) errors.push(`${at}: ${kind} title says "I", "me", or "my"; name the person (2.10)`);
     }
 
