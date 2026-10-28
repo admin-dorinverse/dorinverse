@@ -8,94 +8,94 @@ Generated 2026-10-28 from 11 of 11 recipe files. A verse is revealed when it sit
 
 | Flavors | Lessons | Verses revealed | Characters | Places |
 |---|---|---|---|---|
-| 631 | 1928 | 31,102 of 31,102 (100.0%) | 1866 | 1162 |
+| 579 | 1774 | 31,102 of 31,102 (100.0%) | 1866 | 1161 |
 
 ## By recipe
 
 | Recipe | Flavors | Lessons | Verses revealed | Only this recipe | Shared | Characters | Places |
 |---|---|---|---|---|---|---|---|
-| Stories | 158 | 542 | 17,472 | 16,149 | 1,323 | 1764 | 1023 |
-| Words | 77 | 173 | 661 | 0 | 661 | 146 | 68 |
-| Idioms | 12 | 24 | 145 | 0 | 145 | 25 | 9 |
-| Verses | 62 | 250 | 855 | 0 | 855 | 50 | 14 |
-| Poems | 38 | 148 | 2,732 | 2,545 | 187 | 44 | 59 |
-| Wisdom | 37 | 110 | 2,207 | 2,037 | 170 | 23 | 7 |
-| Prophets | 93 | 277 | 4,957 | 4,479 | 478 | 206 | 301 |
-| Jesus Prophecies | 51 | 102 | 506 | 0 | 506 | 101 | 22 |
-| Revelation | 15 | 40 | 404 | 377 | 27 | 26 | 18 |
-| Parables | 24 | 60 | 964 | 751 | 213 | 31 | 6 |
-| Letters | 64 | 202 | 2,767 | 2,300 | 467 | 129 | 46 |
+| Stories | 154 | 505 | 17,472 | 16,168 | 1,304 | 1764 | 1022 |
+| Words | 74 | 174 | 658 | 0 | 658 | 154 | 69 |
+| Idioms | 13 | 26 | 153 | 0 | 153 | 27 | 11 |
+| Verses | 61 | 250 | 1,067 | 0 | 1,067 | 58 | 19 |
+| Poems | 37 | 143 | 2,732 | 2,533 | 199 | 44 | 59 |
+| Wisdom | 36 | 83 | 2,207 | 2,037 | 170 | 23 | 7 |
+| Prophets | 93 | 274 | 4,957 | 4,504 | 453 | 205 | 301 |
+| Jesus Prophecies | 7 | 14 | 89 | 0 | 89 | 10 | 8 |
+| Revelation | 15 | 40 | 404 | 376 | 28 | 26 | 18 |
+| Parables | 28 | 66 | 1,168 | 741 | 427 | 35 | 8 |
+| Letters | 61 | 199 | 2,767 | 2,267 | 500 | 129 | 46 |
 
 ## By book
 
 | Book | Verses | Revealed | Recipes |
 |---|---|---|---|
-| Genesis | 1,533 | 1,533 (100.0%) | Stories, Verses, Words, Jesus Prophecies, Idioms |
+| Genesis | 1,533 | 1,533 (100.0%) | Stories, Verses, Words, Idioms |
 | Exodus | 1,213 | 1,213 (100.0%) | Stories, Idioms, Words, Verses |
-| Leviticus | 859 | 859 (100.0%) | Stories, Words, Verses |
-| Numbers | 1,288 | 1,288 (100.0%) | Stories, Words, Jesus Prophecies, Idioms |
+| Leviticus | 859 | 859 (100.0%) | Stories, Words |
+| Numbers | 1,288 | 1,288 (100.0%) | Stories, Words, Idioms |
 | Deuteronomy | 959 | 959 (100.0%) | Stories, Verses, Idioms, Jesus Prophecies, Words |
 | Joshua | 658 | 658 (100.0%) | Stories, Verses, Words, Idioms |
 | Judges | 618 | 618 (100.0%) | Stories, Words, Idioms |
-| Ruth | 85 | 85 (100.0%) | Stories, Words, Idioms |
+| Ruth | 85 | 85 (100.0%) | Stories, Words |
 | 1 Samuel | 810 | 810 (100.0%) | Stories, Words, Idioms, Verses |
 | 2 Samuel | 695 | 695 (100.0%) | Stories, Words, Idioms |
 | 1 Kings | 816 | 816 (100.0%) | Stories, Idioms, Words |
 | 2 Kings | 719 | 719 (100.0%) | Stories, Words, Idioms |
 | 1 Chronicles | 942 | 942 (100.0%) | Stories, Words |
-| 2 Chronicles | 822 | 822 (100.0%) | Stories, Words, Idioms |
+| 2 Chronicles | 822 | 822 (100.0%) | Stories, Verses, Words, Idioms |
 | Ezra | 280 | 280 (100.0%) | Stories, Words |
 | Nehemiah | 406 | 406 (100.0%) | Stories, Words, Verses |
 | Esther | 167 | 167 (100.0%) | Stories, Words |
 | Job | 1,070 | 1,070 (100.0%) | Stories, Wisdom, Words, Idioms |
 | Psalms | 2,461 | 2,461 (100.0%) | Poems, Words, Idioms, Verses, Jesus Prophecies |
-| Proverbs | 915 | 915 (100.0%) | Wisdom, Verses, Words, Idioms |
-| Ecclesiastes | 222 | 222 (100.0%) | Wisdom, Words, Verses, Idioms |
+| Proverbs | 915 | 915 (100.0%) | Verses, Wisdom, Words, Idioms |
+| Ecclesiastes | 222 | 222 (100.0%) | Verses, Wisdom, Words, Idioms |
 | Song of Solomon | 117 | 117 (100.0%) | Poems, Words |
-| Isaiah | 1,292 | 1,292 (100.0%) | Jesus Prophecies, Prophets, Words, Verses, Idioms, Stories |
+| Isaiah | 1,292 | 1,292 (100.0%) | Jesus Prophecies, Prophets, Verses, Words, Idioms, Stories |
 | Jeremiah | 1,364 | 1,364 (100.0%) | Jesus Prophecies, Prophets, Verses, Idioms, Words, Stories |
-| Lamentations | 154 | 154 (100.0%) | Poems, Words, Verses |
-| Ezekiel | 1,273 | 1,273 (100.0%) | Prophets, Jesus Prophecies, Words, Idioms, Verses |
-| Daniel | 357 | 357 (100.0%) | Stories, Words, Prophets, Jesus Prophecies |
-| Hosea | 197 | 197 (100.0%) | Prophets, Words, Idioms |
-| Joel | 73 | 73 (100.0%) | Jesus Prophecies, Prophets, Words |
+| Lamentations | 154 | 154 (100.0%) | Poems, Words, Idioms, Verses |
+| Ezekiel | 1,273 | 1,273 (100.0%) | Prophets, Words, Verses |
+| Daniel | 357 | 357 (100.0%) | Stories, Words, Prophets |
+| Hosea | 197 | 197 (100.0%) | Prophets, Idioms, Words |
+| Joel | 73 | 73 (100.0%) | Prophets, Words |
 | Amos | 146 | 146 (100.0%) | Prophets, Words |
 | Obadiah | 21 | 21 (100.0%) | Prophets |
 | Jonah | 48 | 48 (100.0%) | Stories, Words |
-| Micah | 105 | 105 (100.0%) | Jesus Prophecies, Prophets, Idioms, Verses |
-| Nahum | 47 | 47 (100.0%) | Prophets, Words |
-| Habakkuk | 56 | 56 (100.0%) | Prophets |
-| Zephaniah | 53 | 53 (100.0%) | Prophets, Words |
-| Haggai | 38 | 38 (100.0%) | Prophets, Jesus Prophecies |
-| Zechariah | 211 | 211 (100.0%) | Jesus Prophecies, Prophets, Idioms |
-| Malachi | 55 | 55 (100.0%) | Jesus Prophecies, Prophets, Idioms |
-| Matthew | 1,071 | 1,071 (100.0%) | Jesus Prophecies, Stories, Words, Idioms, Parables, Verses |
-| Mark | 678 | 678 (100.0%) | Stories, Jesus Prophecies, Idioms, Parables, Words, Verses |
-| Luke | 1,151 | 1,151 (100.0%) | Stories, Jesus Prophecies, Verses, Words, Idioms, Parables |
-| John | 879 | 879 (100.0%) | Jesus Prophecies, Stories, Verses, Words, Parables, Idioms |
-| Acts | 1,007 | 1,007 (100.0%) | Stories, Jesus Prophecies, Verses, Idioms, Words |
-| Romans | 433 | 433 (100.0%) | Letters, Jesus Prophecies, Verses, Idioms, Words |
-| 1 Corinthians | 437 | 437 (100.0%) | Letters, Words, Verses, Jesus Prophecies, Idioms |
-| 2 Corinthians | 257 | 257 (100.0%) | Letters, Words, Verses, Jesus Prophecies, Idioms |
-| Galatians | 149 | 149 (100.0%) | Letters, Words, Verses, Jesus Prophecies, Idioms |
-| Ephesians | 155 | 155 (100.0%) | Letters, Jesus Prophecies, Words, Idioms, Verses |
-| Philippians | 104 | 104 (100.0%) | Letters, Words, Verses, Jesus Prophecies |
-| Colossians | 95 | 95 (100.0%) | Letters, Verses, Jesus Prophecies, Words, Idioms |
-| 1 Thessalonians | 89 | 89 (100.0%) | Letters, Idioms, Verses, Words |
+| Micah | 105 | 105 (100.0%) | Jesus Prophecies, Prophets, Verses, Idioms |
+| Nahum | 47 | 47 (100.0%) | Prophets, Verses, Words |
+| Habakkuk | 56 | 56 (100.0%) | Prophets, Words |
+| Zephaniah | 53 | 53 (100.0%) | Prophets, Verses, Words |
+| Haggai | 38 | 38 (100.0%) | Prophets, Words |
+| Zechariah | 211 | 211 (100.0%) | Jesus Prophecies, Prophets, Idioms, Words |
+| Malachi | 55 | 55 (100.0%) | Prophets, Verses |
+| Matthew | 1,071 | 1,071 (100.0%) | Stories, Words, Jesus Prophecies, Idioms, Parables, Verses |
+| Mark | 678 | 678 (100.0%) | Stories, Words, Parables, Idioms, Verses, Jesus Prophecies |
+| Luke | 1,151 | 1,151 (100.0%) | Stories, Words, Verses, Idioms, Jesus Prophecies, Parables |
+| John | 879 | 879 (100.0%) | Stories, Verses, Words, Jesus Prophecies, Parables, Idioms |
+| Acts | 1,007 | 1,007 (100.0%) | Stories, Verses, Words, Jesus Prophecies, Idioms |
+| Romans | 433 | 433 (100.0%) | Letters, Verses, Words, Jesus Prophecies, Idioms |
+| 1 Corinthians | 437 | 437 (100.0%) | Letters, Verses, Words, Idioms |
+| 2 Corinthians | 257 | 257 (100.0%) | Letters, Verses, Words, Idioms |
+| Galatians | 149 | 149 (100.0%) | Letters, Verses, Words, Idioms |
+| Ephesians | 155 | 155 (100.0%) | Letters, Verses, Idioms, Jesus Prophecies |
+| Philippians | 104 | 104 (100.0%) | Letters, Verses, Words |
+| Colossians | 95 | 95 (100.0%) | Letters, Verses, Words, Idioms |
+| 1 Thessalonians | 89 | 89 (100.0%) | Letters, Verses, Idioms |
 | 2 Thessalonians | 47 | 47 (100.0%) | Letters, Verses |
 | 1 Timothy | 113 | 113 (100.0%) | Letters, Verses, Idioms, Words |
-| 2 Timothy | 83 | 83 (100.0%) | Letters, Verses, Jesus Prophecies, Words, Idioms |
-| Titus | 46 | 46 (100.0%) | Letters, Idioms, Verses |
+| 2 Timothy | 83 | 83 (100.0%) | Letters, Verses, Words, Idioms |
+| Titus | 46 | 46 (100.0%) | Letters, Verses, Idioms, Words |
 | Philemon | 25 | 25 (100.0%) | Letters |
-| Hebrews | 303 | 303 (100.0%) | Letters, Jesus Prophecies, Verses, Words |
+| Hebrews | 303 | 303 (100.0%) | Letters, Jesus Prophecies, Words, Verses |
 | James | 108 | 108 (100.0%) | Letters, Verses |
 | 1 Peter | 105 | 105 (100.0%) | Letters, Verses, Words, Jesus Prophecies |
-| 2 Peter | 61 | 61 (100.0%) | Letters, Jesus Prophecies, Words |
-| 1 John | 105 | 105 (100.0%) | Letters, Verses, Jesus Prophecies, Words |
-| 2 John | 13 | 13 (100.0%) | Letters |
+| 2 Peter | 61 | 61 (100.0%) | Letters, Words |
+| 1 John | 105 | 105 (100.0%) | Letters, Verses, Words |
+| 2 John | 13 | 13 (100.0%) | Letters, Words |
 | 3 John | 14 | 14 (100.0%) | Letters |
 | Jude | 25 | 25 (100.0%) | Letters |
-| Revelation | 404 | 404 (100.0%) | Revelation, Words, Jesus Prophecies, Verses |
+| Revelation | 404 | 404 (100.0%) | Revelation, Words, Verses |
 
 ## Gaps
 

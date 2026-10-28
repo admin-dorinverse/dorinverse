@@ -8,7 +8,7 @@
 <!-- counts:start -->
 | Flavors | Lessons | Characters | Places | Verses revealed |
 |---|---|---|---|---|
-| 93 | 277 | 206 | 301 | 4,957 (15.9% of the Bible) |
+| 93 | 274 | 205 | 301 | 4,957 (15.9% of the Bible) |
 <!-- counts:end -->
 
 _The counts above are rewritten by `node scripts/dough-maker/coverage.mjs`. Edit the entries, not the counts._
@@ -39,13 +39,13 @@ How to read an entry:
 - **Places (4):** Gomorrah, Sodom, Zion, Jerusalem
 - **Turn:** "The vision of Isaiah the son of Amoz, which he saw concerning Judah and Jerusalem" (1:1).
 
-### 2. Isaiah: The LORD Alone Will Be Exalted
+### 2. Isaiah: Only the LORD Will Be Lifted Up
 - **Range:** Isaiah 2–4
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
   1. Isaiah 2 — The Day the Proud Are Humbled
      - A new word for Judah and Jerusalem: all nations will come to learn God’s ways, but Judah is full of idols, and on that day “the LORD alone shall be exalted” (2:1–3, 2:8, 2:11).
-  2. Isaiah 3:1–15 — Grinding the Faces of the Poor
+  2. Isaiah 3:1–15 — Crushing the Poor
      - Why Jerusalem will fall: its words and deeds are against the LORD, and its leaders “grind the faces of the poor”, so God takes away its supplies and rulers (3:1–2, 3:8, 3:14–15).
   3. Isaiah 3:16–4:6 — Zion Washed Clean
      - The proud daughters of Zion lose their finery, but God will wash away Zion’s filth, and all left there “shall be called holy”, sheltered by a cloud by day and fire by night (3:16, 3:24, 4:3–5).
@@ -90,24 +90,24 @@ How to read an entry:
   2. Isaiah 7:10–25 — The Sign of Immanuel
      - Ahaz will not ask for a sign, so the Lord gives one, a son called Immanuel; before the child is grown, both kings will be gone, and the king of Assyria will come on Judah (7:12, 7:14, 7:16–17).
   3. Isaiah 8:1–10 — A Flood from Assyria
-     - Isaiah’s son is named as a sign that Assyria will take Damascus and Samaria; because Judah refused God’s gentle waters, Assyria will flood it, yet the nations’ plans fail, “for God is with us” (8:3–4, 8:6–8, 8:10).
+     - Isaiah’s son is named, and before the child can cry “My father, and my mother”, Assyria will take the riches of Damascus and the spoil of Samaria; because this people refused “the waters of Shiloah that go softly”, Assyria will flood Judah, yet the nations’ plans fail, “for God is with us” (8:3–4, 8:6–8, 8:10).
   4. Isaiah 8:11–9:7 — A Child Is Born to Us
      - God tells Isaiah to fear the LORD, not what the people fear, and to hold to the law; after darkness, a great light, and a child whose name is “The Prince of Peace” (8:12–13, 8:20, 9:2, 9:6).
 - **Split option:** At 8:1 (2 + 2 lessons).
-- **People (21):** God, Ephraim, Remaliah, Ahaz, Rezin, David, Jesus Christ, Maher-shalal-hash-baz, Isaiah, Jacob (Israel), Jeberechiah, Jotham, Midian, Naphtali, Pekah, Shear-jashub, Tabeal, Urijah, Uzziah, Zebulun, Zechariah
+- **People (20):** God, Ephraim, Remaliah, Ahaz, Rezin, David, Maher-shalal-hash-baz, Isaiah, Jacob (Israel), Jeberechiah, Jotham, Midian, Naphtali, Pekah, Shear-jashub, Tabeal, Urijah, Uzziah, Zebulun, Zechariah
 - **Places (16):** Assyria, Syria, Damascus, Jerusalem, River, Samaria, Egypt, Field, Galilee, Jordan, Kingdom of Judah, Midian, Mount Zion, Naphtali, Shiloah, Zebulun
 - **Turn:** "And it came to pass in the days of Ahaz the son of Jotham… king of Judah" (7:1).
-- **Notes:** One thread runs through all four lessons: the name Immanuel, God with us (7:14, 8:8, 8:10).
+- **Notes:** One thread runs through the flavor: the child Immanuel (7:14, 8:8) and the words “God is with us” (8:10). Isaiah never says what the name means, so the lessons do not teach a meaning for it.
 
-### 6. Isaiah: The Rod of God’s Anger
+### 6. Isaiah: Assyria, the Rod of God’s Anger
 - **Range:** Isaiah 9:8–10:34
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
-  1. Isaiah 9:8–10:4 — His Hand Is Stretched Out Still
+  1. Isaiah 9:8–10:4 — Too Proud to Turn to God
      - A word against proud Israel: though struck again and again, “the people turneth not unto him that smiteth them”, and four times comes “his hand is stretched out still” (9:9–10, 9:12–13, 10:4).
   2. Isaiah 10:5–19 — Assyria Boasts Against God
      - God sends Assyria as “the rod of mine anger” against His people, but Assyria boasts it did all by its own strength, so God will punish it: “Shall the axe boast itself against him that heweth therewith?” (10:5–6, 10:13, 10:15).
-  3. Isaiah 10:20–34 — A Remnant Shall Return
+  3. Isaiah 10:20–34 — The Few Left Will Return
      - In that day a remnant will lean on the LORD, and Zion is told “be not afraid of the Assyrian”, for the LORD will cut the proud army down as it marches on Jerusalem (10:20–21, 10:24, 10:32–33).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (7):** God, Jacob (Israel), Ephraim, Manasseh (son of Joseph), Midian, Oreb, Rezin
@@ -123,7 +123,7 @@ How to read an entry:
   2. Isaiah 11:10–12:6 — A Song for That Day
      - In that day the Lord will gather His scattered people from the four corners of the earth, and they will sing, “Behold, God is my salvation; I will trust, and not be afraid” (11:11–12, 12:1–2).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (6):** God, Jesse, Ephraim, Esau (Edom), Jesus Christ, Moab
+- **People (5):** God, Jesse, Ephraim, Esau (Edom), Moab
 - **Places (12):** Assyria, Egypt, Cush, Edom, Egyptian Sea, Elam, Hamath, Moab, Pathros, River, Shinar, Zion
 - **Turn:** "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots" (11:1).
 
@@ -133,7 +133,7 @@ How to read an entry:
 - **Lessons:** 2
   1. Isaiah 13 — The Day of the LORD on Babylon
      - Isaiah’s message against Babylon: the LORD musters an army, will stir up the Medes against it, and proud Babylon will be “as when God overthrew Sodom and Gomorrah” (13:1, 13:4, 13:11, 13:17, 13:19).
-  2. Isaiah 14:1–27 — A Proverb Against Babylon’s King
+  2. Isaiah 14:1–27 — Mocking the King of Babylon
      - When God has mercy on Israel, they will mock the king of Babylon, who said “I will be like the most High” yet is brought down; and the LORD swears to break the Assyrian too (14:1, 14:4, 14:14–15, 14:24–25).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (5):** God, Amoz, Isaiah, Jacob (Israel), Lucifer
@@ -155,14 +155,14 @@ How to read an entry:
 - **Turn:** "In the year that king Ahaz died was this burden" (14:28).
 - **Notes:** Lesson 1 holds two whole messages, to Philistia and to Moab (14:28, 15:1); Philistia’s is too short to be a lesson alone.
 
-### 10. Isaiah: Messages to Egypt and Ethiopia
+### 10. Isaiah: What Will Happen to Egypt
 - **Range:** Isaiah 18–20
 - **Frame:** Isaiah 1:1
 - **Lessons:** 4
   1. Isaiah 18 — A Gift from a Far Nation
      - A word to the land beyond the rivers of Ethiopia: the LORD waits and watches, cuts off the branches before harvest, and then that people brings a present to mount Zion (18:1, 18:4–5, 18:7).
   2. Isaiah 19:1–15 — The LORD Comes into Egypt
-     - The LORD rides on a cloud into Egypt: its idols tremble, Egyptian fights Egyptian, the Nile dries up, and Pharaoh’s wise counsellors become fools (19:1–2, 19:5, 19:11).
+     - The LORD rides on a cloud into Egypt: its idols tremble, Egyptian fights Egyptian, the river is dried up, and Pharaoh’s wise counsellors become fools (19:1–2, 19:5, 19:11).
   3. Isaiah 19:16–25 — Egypt Will Know the LORD
      - In that day Egypt will fear, then cry to the LORD, and He will heal them; there will be an altar to the LORD in Egypt, and Israel will be a blessing with Egypt and Assyria (19:16, 19:19–22, 19:24–25).
   4. Isaiah 20 — Isaiah Walks Barefoot
@@ -217,7 +217,7 @@ How to read an entry:
      - Jerusalem’s scornful rulers think they have a covenant with death, but God lays in Zion “a tried stone, a precious corner stone”, and “he that believeth shall not make haste” (28:14–16, 28:18).
   3. Isaiah 29:1–14 — Near with Lips, Far in Heart
      - Woe to Ariel, the city where David lived: God will bring it low, because “this people draw near me with their mouth… but have removed their heart far from me” (29:1–4, 29:13).
-  4. Isaiah 29:15–24 — The Deaf Shall Hear the Book
+  4. Isaiah 29:15–24 — The Deaf Will Hear the Book
      - Woe to those who hide their plans from God, as if clay could say to the potter “He made me not”; yet in that day the deaf will hear and the meek rejoice in the Holy One (29:15–16, 29:18–19).
 - **Split option:** At 29:1 (2 + 2 lessons).
 - **People (5):** God, Ephraim, Jacob (Israel), Abraham, David
@@ -239,7 +239,7 @@ How to read an entry:
 - **Places (7):** Egypt, Jerusalem, Zion, Hanes, Mount Zion, Negeb, Zoan
 - **Turn:** "Woe to the rebellious children, saith the LORD, that take counsel, but not of me" (30:1).
 
-### 15. Isaiah: A King Reigns in Righteousness
+### 15. Isaiah: A King Who Rules with Justice
 - **Range:** Isaiah 32–33
 - **Frame:** Isaiah 1:1
 - **Lessons:** 4
@@ -247,7 +247,7 @@ How to read an entry:
      - “Behold, a king shall reign in righteousness”: under him people find shelter, eyes see and ears hear, and the wicked are no longer called noble (32:1–3, 32:5).
   2. Isaiah 32:9–20 — Careless Women Told to Tremble
      - The women at ease are told to tremble, for the land will grow thorns until the spirit is poured from on high; then “the work of righteousness shall be peace” (32:9, 32:11, 32:13, 32:15, 32:17).
-  3. Isaiah 33:1–12 — Woe to the Spoiler
+  3. Isaiah 33:1–12 — Woe to the Destroyer
      - Woe to the destroyer; God’s people pray “O LORD, be gracious unto us; we have waited for thee”, and the LORD says “Now will I rise” (33:1–2, 33:10).
   4. Isaiah 33:13–24 — Who Can Dwell with God?
      - Sinners in Zion ask who can dwell with God; the one who walks righteously, and they will “see the king in his beauty”, for “the LORD is our king; he will save us” (33:14–15, 33:17, 33:22).
@@ -262,14 +262,14 @@ How to read an entry:
 - **Lessons:** 2
   1. Isaiah 34 — The LORD’s Anger on All Nations
      - All nations are called to hear: the LORD’s anger is on them, and on Edom, for it is “the day of the LORD’S vengeance, and the year of recompences for the controversy of Zion” (34:1–2, 34:5, 34:8).
-  2. Isaiah 35 — The Desert Shall Blossom
+  2. Isaiah 35 — The Desert Will Bloom
      - Then the desert will blossom, the fearful are told “your God will come… he will come and save you”, the blind will see, and the ransomed will return to Zion with songs (35:1, 35:4–5, 35:10).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (1):** God
 - **Places (6):** Zion, Bozrah, Carmel, Lebanon, Saron, Way of Holiness
 - **Turn:** "Come near, ye nations, to hear; and hearken, ye people" (34:1).
 
-### 17. Isaiah: King Hezekiah Hears from God
+### 17. Isaiah: Hezekiah’s Day of Trouble
 - **Range:** Isaiah 36–39
 - **Frame:** Isaiah 1:1
 - **Lessons:** 5
@@ -277,7 +277,7 @@ How to read an entry:
      - In Hezekiah’s fourteenth year, Assyria’s officer Rabshakeh stands at Jerusalem and mocks the people: “Neither let Hezekiah make you trust in the LORD” (36:1–2, 36:4, 36:15).
   2. Isaiah 37:1–20 — Hezekiah Prays to the LORD
      - Hezekiah sends to Isaiah, who answers “Be not afraid”; when a threatening letter comes, Hezekiah spreads it before the LORD and prays “save us… that all the kingdoms of the earth may know” (37:1–2, 37:6, 37:14, 37:20).
-  3. Isaiah 37:21–38 — The LORD Answers Hezekiah
+  3. Isaiah 37:21–38 — The Angel Strikes Assyria’s Camp
      - Because Hezekiah prayed, God sends word through Isaiah that the king of Assyria “shall not come into this city”, and the angel of the LORD strikes the Assyrian camp (37:21, 37:33–36).
   4. Isaiah 38 — Fifteen More Years
      - Hezekiah is sick unto death and prays; God tells Isaiah “I have heard thy prayer… I will add unto thy days fifteen years”, with the sign of the shadow going back (38:1–2, 38:5, 38:8).
@@ -289,22 +289,22 @@ How to read an entry:
 - **Turn:** "Now it came to pass in the fourteenth year of king Hezekiah, that Sennacherib king of Assyria came up" (36:1).
 - **Notes:** these chapters are mostly events, with God’s messages inside them (37:6–7, 37:21–35, 38:5–8, 39:5–7). They are kept here because Isaiah delivers each message; they are also a Stories passage.
 
-### 18. Isaiah: Behold Your God
+### 18. Isaiah: Here Is Your God
 - **Range:** Isaiah 40–41
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
-  1. Isaiah 40:1–11 — Comfort for Jerusalem
+  1. Isaiah 40:1–11 — Make a Highway for Our God
      - A new word of comfort for Jerusalem: her iniquity is pardoned, a voice cries “Prepare ye the way of the LORD”, and “the word of our God shall stand for ever”; Judah’s cities are told “Behold your God!” (40:1–3, 40:8–9).
-  2. Isaiah 40:12–31 — The Everlasting God Never Faints
+  2. Isaiah 40:12–31 — The Everlasting God Never Tires
      - No one can be compared to God, who measured the waters and calls the stars by name; Israel thinks God has forgotten them, but “they that wait upon the LORD shall renew their strength” (40:12, 40:18, 40:26–28, 40:31).
   3. Isaiah 41 — God Will Hold Israel’s Hand
      - God calls the nations to judgment and tells Israel, His chosen servant, “Fear thou not; for I am with thee”, while the idols are challenged to tell the future and cannot (41:1, 41:8–10, 41:13, 41:22–24).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (5):** God, Jacob (Israel), Abraham, Holy Spirit, Jesus Christ
+- **People (4):** God, Jacob (Israel), Abraham, Holy Spirit
 - **Places (3):** Jerusalem, Zion, Lebanon
 - **Turn:** "Comfort ye, comfort ye my people, saith your God" (40:1).
 
-### 19. Isaiah: Behold God’s Chosen Servant
+### 19. Isaiah: God’s Chosen Servant
 - **Range:** Isaiah 42
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
@@ -319,7 +319,7 @@ How to read an entry:
 - **Places (2):** Kedar, Sela
 - **Turn:** "Behold my servant, whom I uphold; mine elect, in whom my soul delighteth" (42:1).
 
-### 20. Isaiah: The LORD Redeems Israel
+### 20. Isaiah: The LORD Buys Israel Back
 - **Range:** Isaiah 43:1–44:23
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
@@ -334,7 +334,7 @@ How to read an entry:
 - **Places (4):** Babylon, Cush, Egypt, Seba
 - **Turn:** "But now thus saith the LORD that created thee, O Jacob… Fear not: for I have redeemed thee" (43:1).
 
-### 21. Isaiah: There Is No God Beside the LORD
+### 21. Isaiah: There Is No God but the LORD
 - **Range:** Isaiah 44:24–46:13
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
@@ -349,13 +349,13 @@ How to read an entry:
 - **Places (4):** Jerusalem, Cush, Egypt, Zion
 - **Turn:** "Thus saith the LORD, thy redeemer, and he that formed thee from the womb, I am the LORD that maketh all things" (44:24).
 
-### 22. Isaiah: Go Forth from Babylon
+### 22. Isaiah: Go Out from Babylon
 - **Range:** Isaiah 47–48
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
   1. Isaiah 47 — Stargazers Cannot Save Babylon
      - Babylon, who said “I shall be a lady for ever” and showed God’s people no mercy, must sit in the dust; her stargazers cannot save her (47:1, 47:6–7, 47:13–14).
-  2. Isaiah 48:1–11 — Refined in the Furnace
+  2. Isaiah 48:1–11 — God Told Them Before It Happened
      - God tells stubborn Israel He announced things before they happened so they could not credit their idols, and He has “chosen thee in the furnace of affliction” for His own name’s sake (48:4–5, 48:9–11).
   3. Isaiah 48:12–22 — If Only Israel Had Listened
      - The first and the last says “O that thou hadst hearkened to my commandments! then had thy peace been as a river”, and calls them, “Go ye forth of Babylon” (48:12, 48:18, 48:20).
@@ -373,7 +373,7 @@ How to read an entry:
   2. Isaiah 49:14–26 — Carved on God’s Palms
      - Zion says the LORD has forgotten her; God answers that a mother may forget her child, “yet will I not forget thee… I have graven thee upon the palms of my hands” (49:14–16).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (3):** God, Jacob (Israel), Jesus Christ
+- **People (2):** God, Jacob (Israel)
 - **Places (2):** Syene, Zion
 - **Turn:** "Listen, O isles, unto me; and hearken, ye people, from far" (49:1).
 
@@ -381,18 +381,18 @@ How to read an entry:
 - **Range:** Isaiah 50:1–52:12
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
-  1. Isaiah 50 — The Lord GOD Will Help Him
+  1. Isaiah 50 — Struck, Yet Not Ashamed
      - God’s hand is not too short to redeem; His servant was not rebellious, gave his back to the smiters, and trusts that “the Lord GOD will help me”, and all who fear the LORD are told to trust Him too (50:2, 50:5–7, 50:10).
-  2. Isaiah 51:1–16 — Look to the Rock You Came From
+  2. Isaiah 51:1–16 — Look to Abraham and Sarah
      - Those who seek the LORD are told to look to Abraham and Sarah, for “the LORD shall comfort Zion”, and “I, even I, am he that comforteth you” (51:1–3, 51:12).
-  3. Isaiah 51:17–52:12 — Awake, Awake, O Jerusalem
+  3. Isaiah 51:17–52:12 — Wake Up, Jerusalem
      - Jerusalem, who drank the cup of God’s anger, is told to wake and put on strength, for God takes the cup away; “How beautiful upon the mountains are the feet of him that bringeth good tidings” (51:17, 51:22, 52:1, 52:7).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (3):** God, Abraham, Sarah
 - **Places (5):** Zion, Jerusalem, Eden, Egypt, Rahab
 - **Turn:** "Thus saith the LORD, Where is the bill of your mother’s divorcement" (50:1).
 
-### 25. Isaiah: God’s Servant Brings Peace
+### 25. Isaiah: A Covenant of Peace
 - **Range:** Isaiah 52:13–55:13
 - **Frame:** Isaiah 1:1
 - **Lessons:** 3
@@ -414,9 +414,9 @@ How to read an entry:
 - **Lessons:** 3
   1. Isaiah 56:1–8 — A House of Prayer for All People
      - Keep justice, says the LORD: strangers and eunuchs who hold to His covenant will be welcome, “for mine house shall be called an house of prayer for all people” (56:1, 56:4–7).
-  2. Isaiah 56:9–57:13 — Blind Watchmen and Idols
+  2. Isaiah 56:9–57:14 — Blind Watchmen and Idols
      - Israel’s watchmen are blind and greedy, the righteous die and no one cares, and the people worship idols “under every green tree”; their idols will not save them (56:10–11, 57:1, 57:5, 57:13).
-  3. Isaiah 57:14–21 — God Dwells with the Humble
+  3. Isaiah 57:15–21 — God Lives with the Humble
      - The high and lofty One says He dwells “with him also that is of a contrite and humble spirit”; He will heal, “Peace, peace to him that is far off”, but “There is no peace… to the wicked” (57:15, 57:18–19, 57:21).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (1):** God
@@ -427,7 +427,7 @@ How to read an entry:
 - **Range:** Isaiah 58–59
 - **Frame:** Isaiah 1:1
 - **Lessons:** 2
-  1. Isaiah 58 — The Fast God Has Chosen
+  1. Isaiah 58 — The Kind of Fasting God Wants
      - The people ask why God ignores their fasting; He answers that they fast and still oppress, and the fast He chooses is to loose bands and “deal thy bread to the hungry”; “Then shalt thou call, and the LORD shall answer” (58:3–4, 58:6–7, 58:9).
   2. Isaiah 59 — Sins Separate People from God
      - God’s hand is not too short to save, “But your iniquities have separated between you and your God”; the people confess, and God, seeing no one to help, brings salvation: “the Redeemer shall come to Zion” (59:1–2, 59:12, 59:16, 59:20).
@@ -444,8 +444,8 @@ How to read an entry:
      - Zion is told “Arise, shine; for thy light is come”: nations and kings come to her light, her gates stay open, and “the LORD shall be unto thee an everlasting light” (60:1, 60:3, 60:11, 60:19).
   2. Isaiah 61 — Good News for the Meek
      - One anointed by the Spirit of the Lord GOD is sent to preach good tidings to the meek, bind up the brokenhearted, and give “beauty for ashes” to those who mourn in Zion (61:1–3).
-  3. Isaiah 62:1–63:6 — Zion Gets a New Name
-     - For Zion’s sake God will not rest until she is called by a new name, no more “Forsaken”, for “thy salvation cometh”; then one comes from Edom who has trodden the winepress alone (62:1–2, 62:4, 62:11, 63:1–3).
+  3. Isaiah 62:1–63:6 — Your Salvation Is Coming
+     - For Zion’s sake God will not rest until she is called by a new name, no more “Forsaken”, for “thy salvation cometh”; then one comes from Edom, “mighty to save”, who has trodden the winepress alone, and “mine own arm brought salvation” (62:1–2, 62:4, 62:11, 63:1–3, 63:5).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (9):** God, Ephah, Esau (Edom), Hephzi-bah, Holy Spirit, Jacob (Israel), Kedar, Midian, Nebajoth
 - **Places (12):** Zion, Jerusalem, City of the Lord, Bozrah, Edom, Ephah, Kedar, Lebanon, Midian, Nebaioth, Sheba, Tarshish
@@ -457,7 +457,7 @@ How to read an entry:
 - **Lessons:** 2
   1. Isaiah 63:7–14 — Remembering What God Did
      - The prayer begins by remembering the LORD’s kindness: “In all their affliction he was afflicted”, yet they rebelled, and then they remembered how He led them through the sea by Moses (63:7, 63:9–12).
-  2. Isaiah 63:15–64:12 — Oh That God Would Come Down
+  2. Isaiah 63:15–64:12 — If Only God Would Come Down
      - Then the plea: “Look down from heaven… Doubtless thou art our father”; “Oh that thou wouldest rend the heavens”; “we are the clay, and thou our potter” (63:15–16, 64:1, 64:6, 64:8).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (4):** God, Holy Spirit, Moses, Abraham
@@ -474,7 +474,7 @@ How to read an entry:
      - “Behold, I create new heavens and a new earth”: no more weeping in Jerusalem, people will live in the houses they build, and “before they call, I will answer” (65:17, 65:19, 65:21, 65:24).
   3. Isaiah 66:1–14 — Heaven Is God’s Throne
      - “The heaven is my throne”: God looks to the one “of a contrite spirit, and trembleth at my word”, and will comfort Jerusalem “As one whom his mother comforteth” (66:1–2, 66:5, 66:13).
-  4. Isaiah 66:15–24 — All Flesh Will Worship God
+  4. Isaiah 66:15–24 — All People Will Worship God
      - The LORD comes with fire to judge, gathers all nations to see His glory, and “shall all flesh come to worship before me”; the book ends on the fate of those who rebelled (66:15–16, 66:18, 66:23–24).
 - **Split option:** At 66:1 (2 + 2 lessons).
 - **People (4):** God, Jacob (Israel), Javan, Tubal
@@ -513,7 +513,7 @@ How to read an entry:
 - **Range:** Jeremiah 4:5–6:30
 - **Frame:** Jeremiah 1:1–3
 - **Lessons:** 3
-  1. Jeremiah 4:5–31 — The Land Without Form and Void
+  1. Jeremiah 4:5–31 — The Land Left Empty and Dark
      - Judah is told to blow the trumpet, for God brings evil from the north because “my people is foolish, they have not known me”; Jeremiah cries in pain and sees the land “without form, and void” (4:5–6, 4:19, 4:22–23).
   2. Jeremiah 5 — Not One Man Who Does Right
      - God would pardon Jerusalem if one man could be found who does justly and seeks the truth, but they refuse correction, so “a nation upon you from far” will come (5:1, 5:3, 5:15).
@@ -530,7 +530,7 @@ How to read an entry:
 - **Lessons:** 2
   1. Jeremiah 7:1–15 — A Message at the Temple Gate
      - God sends Jeremiah to stand in the gate of the temple and tell Judah: “Trust ye not in lying words, saying, The temple of the LORD”; they steal and murder, then stand in God’s house, which has become “a den of robbers” (7:2–4, 7:9–11).
-  2. Jeremiah 7:16–8:3 — They Would Not Obey God’s Voice
+  2. Jeremiah 7:16–8:3 — Do Not Pray for This People
      - God tells Jeremiah not to pray for this people, who make cakes for the queen of heaven; He had commanded “Obey my voice, and I will be your God”, but they would not listen (7:16, 7:18, 7:23–24, 7:28).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (4):** God, Baal, Ephraim, Jeremiah
@@ -543,9 +543,9 @@ How to read an entry:
 - **Lessons:** 3
   1. Jeremiah 8:4–17 — The Stork Knows Its Season
      - No one repents: “the stork in the heaven knoweth her appointed times… but my people know not the judgment of the LORD”; the wise have rejected God’s word (8:6–7, 8:9).
-  2. Jeremiah 8:18–9:26 — Glory in Knowing the LORD
+  2. Jeremiah 8:18–9:26 — Boast in Knowing the LORD
      - Jeremiah weeps day and night for his people, who “refuse to know me, saith the LORD”; God says let no one glory in wisdom or riches, but “that he understandeth and knoweth me” (8:21, 9:1, 9:6, 9:23–24).
-  3. Jeremiah 10 — The LORD Is the True God
+  3. Jeremiah 10 — The Living God, Not Idols
      - Israel is told not to learn the nations’ ways: their idols are cut from a tree and cannot speak, “But the LORD is the true God, he is the living God”; Jeremiah prays “O LORD, correct me, but with judgment” (10:2–5, 10:10, 10:24).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (5):** God, Jacob (Israel), Dan, Esau (Edom), Moab
@@ -561,7 +561,7 @@ How to read an entry:
      - Jeremiah is told to proclaim God’s covenant in Judah’s cities: “Cursed be the man that obeyeth not”; Judah has gone back to other gods, so God will bring evil on them (11:2–3, 11:10–11, 11:13).
   2. Jeremiah 11:18–12:6 — Why Do the Wicked Prosper?
      - The men of Jeremiah’s own town plot to kill him; he asks God, “Wherefore doth the way of the wicked prosper?” and God answers that worse is ahead: “how wilt thou do in the swelling of Jordan?” (11:19, 11:21, 12:1, 12:5).
-  3. Jeremiah 12:7–17 — God Leaves His Heritage
+  3. Jeremiah 12:7–17 — God Leaves His Own House
      - God says “I have forsaken mine house, I have left mine heritage”, for shepherds have ruined His vineyard; yet He will have compassion and bring them back (12:7, 12:10, 12:15).
   4. Jeremiah 13 — A Ruined Linen Belt
      - Jeremiah hides a linen girdle by the Euphrates and finds it ruined: so God will mar the pride of Judah, who refuse to hear; “Can the Ethiopian change his skin, or the leopard his spots?” (13:1, 13:7, 13:9–10, 13:23).
@@ -570,7 +570,7 @@ How to read an entry:
 - **Places (6):** Jerusalem, Euphrates, Anathoth, Egypt, Jordan, Negeb
 - **Turn:** "The word that came to Jeremiah from the LORD, saying, Hear ye the words of this covenant" (11:1–2).
 
-### 37. Jeremiah: God’s Answer to Their Prayers
+### 37. Jeremiah: Tears for a Broken People
 - **Range:** Jeremiah 14–15
 - **Frame:** Jeremiah 1:1–3
 - **Lessons:** 3
@@ -578,7 +578,7 @@ How to read an entry:
      - A word about the drought: Judah mourns and prays “do thou it for thy name’s sake”, but God tells Jeremiah not to pray for them, and that the prophets promising peace “prophesy lies in my name” (14:1, 14:7, 14:11, 14:14).
   2. Jeremiah 14:17–15:9 — Not Even Moses and Samuel
      - Jeremiah weeps and confesses for the people, but God answers, “Though Moses and Samuel stood before me, yet my mind could not be toward this people”, because “Thou hast forsaken me” (14:17, 14:20, 15:1, 15:6).
-  3. Jeremiah 15:10–21 — God Answers Jeremiah’s Cry
+  3. Jeremiah 15:10–21 — Jeremiah Made a Wall of Brass
      - Jeremiah cries out at his pain, though God’s words were “the joy and rejoicing of mine heart”; God answers, “If thou return, then will I bring thee again… for I am with thee” (15:10, 15:16, 15:19–20).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (6):** God, Hezekiah, Jeremiah, Manasseh (son of Hezekiah), Moses, Samuel
@@ -605,11 +605,11 @@ How to read an entry:
 - **Range:** Jeremiah 18–20
 - **Frame:** Jeremiah 1:1–3
 - **Lessons:** 3
-  1. Jeremiah 18 — A Marred Vessel Made Again
+  1. Jeremiah 18 — A Ruined Pot Made Again
      - At the potter’s house Jeremiah sees a marred vessel made again, and God says “as the clay is in the potter’s hand, so are ye in mine hand”; Judah answers “we will walk after our own devices” and plots against Jeremiah (18:4, 18:6, 18:12, 18:18).
   2. Jeremiah 19:1–20:6 — A Bottle Broken at Tophet
      - Jeremiah breaks a clay bottle before the elders: “Even so will I break this people and this city”; the priest Pashur puts him in the stocks and is told he will be carried to Babylon (19:1, 19:10–11, 20:2, 20:6).
-  3. Jeremiah 20:7–18 — God’s Word Like a Burning Fire
+  3. Jeremiah 20:7–18 — Jeremiah Mocked Every Day
      - Mocked daily, Jeremiah wants to stop speaking, but God’s word is “in mine heart as a burning fire”; he trusts “the LORD is with me as a mighty terrible one”, yet curses the day he was born (20:7–9, 20:11, 20:14).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (6):** God, Jeremiah, Pashur, Baal, Benjamin (patriarch), Immer
@@ -623,13 +623,13 @@ How to read an entry:
 - **Lessons:** 5
   1. Jeremiah 21:1–10 — The Way of Life and of Death
      - King Zedekiah sends to ask Jeremiah for help against Babylon; God answers that He Himself will fight against the city, and sets before the people “the way of life, and the way of death” (21:1–2, 21:5, 21:8–9).
-  2. Jeremiah 21:11–22:9 — Deliver the Oppressed
+  2. Jeremiah 21:11–22:9 — Protect the Stranger and Widow
      - Jeremiah goes to the king’s house with God’s word for the house of David: “Execute ye judgment and righteousness, and deliver the spoiled out of the hand of the oppressor”, or this house will become a desolation (21:12, 22:1–5).
   3. Jeremiah 22:10–30 — Woe to the Unjust Builder
      - God’s word on three kings: Shallum will never return, Jehoiakim who “buildeth his house by unrighteousness” will be buried like an ass, and Coniah will be cast out; “I spake unto thee… but thou saidst, I will not hear” (22:11, 22:13, 22:19, 22:21, 22:28).
   4. Jeremiah 23:1–8 — The LORD Our Righteousness
      - Woe to the shepherds who scatter God’s flock; God will gather the remnant and raise up “unto David a righteous Branch”, called “THE LORD OUR RIGHTEOUSNESS” (23:1, 23:3, 23:5–6).
-  5. Jeremiah 23:9–40 — Is Not God’s Word Like a Fire?
+  5. Jeremiah 23:9–40 — God’s Word Is Like a Fire
      - Jeremiah’s heart breaks over the prophets who tell the wicked “Ye shall have peace”: “I have not sent these prophets, yet they ran”, and “Is not my word like as a fire?” (23:9, 23:17, 23:21, 23:29).
 - **Split option:** At 23:1 (3 + 2 lessons).
 - **People (15):** God, David, Nebuchadnezzar, Zedekiah, Baal, Jehoiachin, Jehoiakim, Jeremiah, Josiah, Jacob (Israel), Jehoahaz, Maaseiah, Melchiah, Pashur, Zephaniah
@@ -692,64 +692,62 @@ How to read an entry:
 - **Lessons:** 3
   1. Jeremiah 32:1–25 — Jeremiah Buys a Field
      - In Zedekiah’s tenth year, with Babylon besieging Jerusalem and Jeremiah in prison, God tells him to buy his cousin’s field, for “Houses and fields and vineyards shall be possessed again”; Jeremiah prays, “there is nothing too hard for thee” (32:1–2, 32:7–9, 32:15, 32:17).
-  2. Jeremiah 32:26–44 — Fields Will Be Bought Again
+  2. Jeremiah 32:26–44 — Judged, Then Gathered Again
      - God answers, “is there any thing too hard for me?” The city will fall for its evil, but He will gather His people, give them one heart, and “Men shall buy fields for money” again (32:27–28, 32:37–39, 32:44).
-  3. Jeremiah 33 — Call unto God and He Will Answer
+  3. Jeremiah 33 — Call to God and He Will Answer
      - A second word in prison: “Call unto me, and I will answer thee”; God will heal the city and cleanse its sin, and cause “the Branch of righteousness to grow up unto David” (33:1, 33:3, 33:6, 33:8, 33:15).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (18):** God, Jeremiah, David, Hanameel, Zedekiah, Baruch, Benjamin (patriarch), Jacob (Israel), Baal, Nebuchadnezzar, Neriah, Abraham, Isaac, Jesus Christ, Judah (patriarch), Maaseiah, Molech, Shallum
+- **People (17):** God, Jeremiah, David, Hanameel, Zedekiah, Baruch, Benjamin (patriarch), Jacob (Israel), Baal, Nebuchadnezzar, Neriah, Abraham, Isaac, Judah (patriarch), Maaseiah, Molech, Shallum
 - **Places (6):** Babylon, Jerusalem, Anathoth, Egypt, Negeb, Valley of the Son of Hinnom
 - **Turn:** "The word that came to Jeremiah from the LORD in the tenth year of Zedekiah king of Judah" (32:1).
 
 ### 45. Jeremiah: Judah Refused to Listen
-- **Range:** Jeremiah 34–36; Jeremiah 45
+- **Range:** Jeremiah 34–36
 - **Frame:** Jeremiah 1:1–3
 - **Lessons:** 3
   1. Jeremiah 34 — Freed Servants Taken Back
      - While Babylon fights Jerusalem, Zedekiah is told he will see the king of Babylon; the people free their Hebrew servants and then take them back, so God says “Ye have not hearkened unto me” and gives Zedekiah into Babylon’s hand (34:1–3, 34:10–11, 34:17, 34:21).
   2. Jeremiah 35 — The Rechabites Obey Their Father
      - Jeremiah sets wine before the Rechabites, who refuse because their father Jonadab commanded it; God tells Judah that these sons obeyed their father, “but this people hath not hearkened unto me” (35:5–6, 35:14, 35:16–17).
-  3. Jeremiah 36; Jeremiah 45 — A King Burns God’s Word
-     - In Jehoiakim’s fourth year Jeremiah has Baruch write God’s words in a roll so Judah might turn; the king cuts it and burns it, and God has the words written again with judgment on Jehoiakim; Baruch, grieving, is told “seekest thou great things for thyself? seek them not” (36:1–3, 36:23, 36:28–31, 45:1, 45:5).
+  3. Jeremiah 36 — A King Burns God’s Word
+     - In Jehoiakim’s fourth year Jeremiah has Baruch write God’s words in a roll so Judah might turn; the king cuts it and burns it, and God has the words written again with judgment on Jehoiakim (36:1–3, 36:23, 36:28–31).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (38):** God, Jeremiah, Baruch, Jehoiakim, Jonadab, Josiah, Neriah, Rechab, Zedekiah, Gemariah, Elishama, Jehudi, Shaphan, Delaiah, Elnathan, Michaiah, Nebuchadnezzar, Abdeel, Achbor, Azriel, Cushi, David, Habaziniah, Hammelech, Hanan, Hananiah, Igdaliah, Jaazaniah, Jerahmeel, Jeremiah, Maaseiah, Nethaniah, Seraiah, Shallum, Shelemiah, Shelemiah, Shemaiah, Zedekiah
+- **People (38):** God, Jeremiah, Baruch, Jehoiakim, Jonadab, Rechab, Zedekiah, Gemariah, Josiah, Neriah, Elishama, Jehudi, Shaphan, Delaiah, Elnathan, Michaiah, Nebuchadnezzar, Abdeel, Achbor, Azriel, Cushi, David, Habaziniah, Hammelech, Hanan, Hananiah, Igdaliah, Jaazaniah, Jerahmeel, Jeremiah, Maaseiah, Nethaniah, Seraiah, Shallum, Shelemiah, Shelemiah, Shemaiah, Zedekiah
 - **Places (6):** Jerusalem, Babylon, Azekah, Egypt, Lachish, New Gate
 - **Turn:** "The word which came unto Jeremiah from the LORD, when Nebuchadnezzar king of Babylon… fought against Jerusalem" (34:1).
-- **Notes:** Each lesson ends on Judah not listening (34:17, 35:17, 36:31). Chapter 36 is mostly events and is also a Stories passage. Left out for Stories: Jeremiah 37:1–41:18 (the siege, Jeremiah in prison and the dungeon, the fall of Jerusalem, Gedaliah’s murder). Chapter 45, God’s word to Baruch, is dated to the same year and the same writing (45:1), so it is taught with chapter 36.
+- **Notes:** Each lesson ends on Judah not listening (34:17, 35:17, 36:31). Chapter 36 is mostly events and is also a Stories passage. Left out for Stories: Jeremiah 37:1–41:18 (the siege, Jeremiah in prison and the dungeon, the fall of Jerusalem, Gedaliah’s murder). Chapter 45, God’s word to Baruch, looks back to the writing in chapter 36 (45:1) but is taught where the book places it, after chapter 44 (next flavor).
 
 ### 46. Jeremiah: Do Not Go Down to Egypt
-- **Range:** Jeremiah 42–44
+- **Range:** Jeremiah 42–45
 - **Frame:** Jeremiah 1:1–3
 - **Lessons:** 3
-  1. Jeremiah 42 — The Remnant Asks What to Do
+  1. Jeremiah 42 — Johanan Asks What to Do
      - After Jerusalem falls, the people left ask Jeremiah to pray and promise to obey; after ten days God answers: stay in the land and He will build them, but “Go ye not into Egypt” (42:2–3, 42:6–7, 42:10, 42:19).
   2. Jeremiah 43 — Jeremiah Called a Liar
      - The leaders call Jeremiah a liar and take everyone to Egypt, “for they obeyed not the voice of the LORD”; at Tahpanhes God says Nebuchadrezzar will come and strike Egypt too (43:2, 43:7, 43:9–11).
-  3. Jeremiah 44 — Incense to the Queen of Heaven
-     - God reminds the Jews in Egypt why Jerusalem fell, but they refuse: “we will certainly… burn incense unto the queen of heaven”; God says only a small number will return to Judah (44:2–5, 44:16–17, 44:28).
+  3. Jeremiah 44–45 — Incense to the Queen of Heaven
+     - God reminds the Jews in Egypt why Jerusalem fell, but they refuse: “we will certainly… burn incense unto the queen of heaven”; God says only a small number will return to Judah; then a short word to Baruch, who grieves: “seekest thou great things for thyself? seek them not”, but his life will be spared (44:2–5, 44:16–17, 44:28, 45:1, 45:5).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (16):** God, Jeremiah, Johanan, Kareah, Baruch, Hoshaiah, Jezaniah, Nebuchadnezzar, Neriah, Ahikam, Gedaliah, Nebuzar-adan, Pharaoh, Pharaoh (of the Exodus), Shaphan, Zedekiah
+- **People (18):** God, Jeremiah, Johanan, Kareah, Baruch, Neriah, Hoshaiah, Jezaniah, Nebuchadnezzar, Ahikam, Gedaliah, Jehoiakim, Josiah, Nebuzar-adan, Pharaoh, Pharaoh (of the Exodus), Shaphan, Zedekiah
 - **Places (8):** Egypt, Jerusalem, Babylon, Tahpanhes, Pathros, Heliopolis, Memphis, Migdol
 - **Turn:** "Then all the captains of the forces… came near, and said unto Jeremiah the prophet" (42:1–2).
-- **Notes:** these chapters are partly events (the flight to Egypt, 43:1–7); they are kept because the LORD’s answer to the remnant is the heart of them (42:9–22, 43:8–13, 44).
+- **Notes:** these chapters are partly events (the flight to Egypt, 43:1–7); they are kept because the LORD’s answer to the remnant is the heart of them (42:9–22, 43:8–13, 44). Chapter 45, God’s short word to Baruch (5 verses), is too short to be a lesson and closes lesson 3 where the book places it.
 
-### 47. Jeremiah: The Sword of the LORD
+### 47. Jeremiah: No Nation Goes Unpunished
 - **Range:** Jeremiah 46–49
 - **Frame:** Jeremiah 1:1–3
-- **Lessons:** 4
-  1. Jeremiah 46 — Egypt’s Army Turned Back
-     - Jeremiah’s messages to the nations begin with Egypt: its army is beaten at the Euphrates in Jehoiakim’s fourth year, “the sword shall devour”, and Nebuchadrezzar will strike Egypt; but Jacob is told “fear not… I am with thee” (46:1–2, 46:5, 46:10, 46:13, 46:28).
-  2. Jeremiah 47 — Waters Rise Out of the North
-     - Against the Philistines: waters rise out of the north and overflow the land, Gaza and Ashkelon are cut off, and the sword of the LORD cannot rest, “seeing the LORD hath given it a charge” (47:1–2, 47:5–7).
-  3. Jeremiah 48 — Moab Will Be Destroyed
+- **Lessons:** 3
+  1. Jeremiah 46–47 — Egypt Beaten, Philistia Cut Off
+     - Jeremiah’s messages to the nations begin with Egypt: its army is beaten at the Euphrates in Jehoiakim’s fourth year, “the sword shall devour”, and Nebuchadrezzar will strike Egypt, but Jacob is told “fear not… I am with thee”; then against the Philistines, waters rise out of the north, and the sword of the LORD cannot rest, “seeing the LORD hath given it a charge” (46:1–2, 46:5, 46:10, 46:13, 46:28, 47:1–2, 47:6–7).
+  2. Jeremiah 48 — Moab Will Be Destroyed
      - Moab trusted in its works and treasures and in its god Chemosh, and “magnified himself against the LORD”, so Moab will be destroyed as a people; yet God will bring it back in the latter days (48:7, 48:13, 48:29, 48:42, 48:47).
-  4. Jeremiah 49 — Five Nations Made Desolate
+  3. Jeremiah 49 — Judgment on Five Nations
      - Short messages to Ammon, Edom, Damascus, Kedar, and Elam: each will be laid waste, Edom deceived by “the pride of thine heart”, yet God promises to bring back Ammon and Elam (49:1–2, 49:6, 49:16–17, 49:27, 49:39).
-- **Split option:** At 48:1 (2 + 2 lessons).
+- **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (14):** God, Moab, Esau (Edom), Nebuchadnezzar, Jeremiah, Chemosh, Jacob (Israel), Ben-hadad, Gad, Jehoiakim, Josiah, Kedar, Sihon, Zedekiah
 - **Places (65):** Moab, Egypt, Elam, Babylon, Edom, Heshbon, Damascus, Euphrates, Hazor, Horonaim, Ashkelon, Bozrah, Dibon, Gaza, Kiriathaim, Memphis, Nebo, Nile, Rabbah, Teman, Ai, Arnon, Aroer, Arpad, Beth-diblathaim, Beth-gamul, Beth-meon, Bethel (of Palestine), Bozrah, Caphtor, Carchemish, Carmel, Dedan, Eglath-shelishiyah, Elealeh, Esau, Gad, Gilead, Gomorrah, Hamath, Holon, Jahaz, Jahzah, Jazer, Jordan, Kedar, Kerioth, Lud, Luhith, Madmen, Mephaath, Migdol, Misgab, Nimrim, Put, Red Sea, Sea of Jazer, Sibmah, Sidon, Sodom, Tabor (Mountain), Tahpanhes, Thebes, Tyre, Zoar
 - **Turn:** "The word of the LORD which came to Jeremiah the prophet against the Gentiles" (46:1).
-- **Notes:** Re-cut: Moab (48) was split mid-message at 48:26 and is now one lesson. Chapter 49 holds five short messages (5 to 16 verses each) that cannot stand alone, so they share one lesson, taught in the text’s order.
+- **Notes:** Re-cut: Moab (48) was split mid-message at 48:26 and is now one lesson. Chapter 49 holds five short messages (5 to 16 verses each) that cannot stand alone, so they share one lesson, taught in the text’s order; for the same reason the short message to the Philistines (47, 7 verses) closes the Egypt lesson.
 
 ### 48. Jeremiah: Babylon’s Day Has Come
 - **Range:** Jeremiah 50–51
@@ -771,12 +769,12 @@ How to read an entry:
 
 ## Ezekiel
 
-### 49. Ezekiel: Speak, Whether They Hear
+### 49. Ezekiel: Speak Even If They Won’t Listen
 - **Range:** Ezekiel 1–3
 - **Lessons:** 3
   1. Ezekiel 1 — Four Living Creatures and Wheels
      - In the fifth year of king Jehoiachin’s captivity, by the river Chebar, the priest Ezekiel sees four living creatures, wheels, and a throne: “the appearance of the likeness of the glory of the LORD” (1:1–3, 1:5, 1:15, 1:26–28).
-  2. Ezekiel 2:1–3:15 — Sent to a Rebellious House
+  2. Ezekiel 2:1–3:15 — Sent to a People Who Rebel
      - God sends Ezekiel to the rebellious children of Israel: “speak my words unto them, whether they will hear, or whether they will forbear”; he eats a scroll of God’s words and sits among the captives (2:3, 2:7, 3:1–3, 3:15).
   3. Ezekiel 3:16–27 — A Watchman for Israel
      - After seven days God makes Ezekiel “a watchman unto the house of Israel”: if he does not warn the wicked, their blood is on him; and he may speak only when God opens his mouth (3:16–18, 3:26–27).
@@ -812,7 +810,7 @@ How to read an entry:
      - A man in linen marks the foreheads of those who sigh over the city’s sins, and the rest are slain; Ezekiel cries out, and God says the iniquity “is exceeding great” (9:4–6, 9:8–9).
   3. Ezekiel 10 — Coals Scattered over the City
      - Coals of fire from between the cherubims are scattered over the city, and the glory of the LORD leaves the threshold of the house and stands over the cherubims (10:2, 10:4, 10:18–19).
-  4. Ezekiel 11 — A Heart of Flesh Promised
+  4. Ezekiel 11 — A Heart of Flesh, Not Stone
      - Princes give wicked counsel and Pelatiah dies; God promises the scattered “I will put a new spirit within you… an heart of flesh”, and His glory goes up to the mountain east of the city (11:2, 11:13, 11:19, 11:23).
 - **Split option:** At 10:1 (2 + 2 lessons).
 - **People (8):** God, Benaiah, Holy Spirit, Pelatiah, Azur, Jaazaniah, Jaazaniah, Shaphan
@@ -835,7 +833,7 @@ How to read an entry:
 - **Turn:** "The word of the LORD also came unto me, saying, Son of man, thou dwellest in the midst of a rebellious house" (12:1–2).
 - **Notes:** Lesson 3 joins two short messages (14:12–23 and chapter 15) that both say Jerusalem will not escape (14:21, 15:6).
 
-### 53. Ezekiel: Jerusalem Breaks the Covenant
+### 53. Ezekiel: Jerusalem Was Unfaithful
 - **Range:** Ezekiel 16–17
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 3
@@ -851,13 +849,13 @@ How to read an entry:
 - **Turn:** "Again the word of the LORD came unto me, saying, Son of man, cause Jerusalem to know her abominations" (16:1–2).
 - **Notes:** Re-cut: chapter 16 is now split where the charge ends and the sentence begins (16:35), not at 16:23 and 16:44.
 
-### 54. Ezekiel: Why Will You Die, Israel?
+### 54. Ezekiel: Why Choose to Die, Israel?
 - **Range:** Ezekiel 18–19
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 2
   1. Ezekiel 18 — Each Soul Answers for Its Sin
      - God rejects the proverb about sour grapes: “the soul that sinneth, it shall die”, each for his own ways; He has no pleasure in anyone’s death, “wherefore turn yourselves, and live ye” (18:2–4, 18:20, 18:30–32).
-  2. Ezekiel 19 — A Lament for Israel’s Princes
+  2. Ezekiel 19 — A Sad Song for Israel’s Princes
      - Ezekiel laments the princes of Israel: young lions taken in a pit to Egypt and to Babylon, and a vine plucked up with no strong rod left to rule (19:1, 19:4, 19:9, 19:12–14).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (1):** God
@@ -884,7 +882,7 @@ How to read an entry:
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 4
   1. Ezekiel 20:45–21:17 — Sharpened for the Slaughter
-     - After a fire in the forest of the south, God says He will draw His sword against the land of Israel: “A sword, a sword is sharpened… to make a sore slaughter” (20:47, 21:3, 21:9–10).
+     - God tells Ezekiel to prophesy a fire against the forest of the south, then says plainly He will draw His sword against the land of Israel: “A sword, a sword is sharpened… to make a sore slaughter” (20:47, 21:3, 21:9–10).
   2. Ezekiel 21:18–32 — The King Stands Where Roads Part
      - The king of Babylon stands where the road divides and his divination points to Jerusalem; its prince’s crown will be removed “until he come whose right it is” (21:19, 21:21–22, 21:26–27).
   3. Ezekiel 22:1–16 — The City That Sheds Blood
@@ -900,9 +898,9 @@ How to read an entry:
 - **Range:** Ezekiel 23
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 2
-  1. Ezekiel 23:1–21 — Samaria and Jerusalem
+  1. Ezekiel 23:1–21 — Samaria and Jerusalem as Sisters
      - A picture of two sisters, Aholah and Aholibah, whom God names as Samaria and Jerusalem; both turned to Egypt and Assyria, and Jerusalem was worse than her sister (23:2, 23:4–5, 23:11).
-  2. Ezekiel 23:22–49 — Jerusalem Cast God Behind Her
+  2. Ezekiel 23:22–49 — Her Lovers Will Turn on Her
      - Because Jerusalem walked in her sister’s way, “thou hast forgotten me, and cast me behind thy back”, the nations she turned to will come against her (23:22, 23:31, 23:35).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (4):** God, Aholibah, Aholah, Mother of Aholah and Aholibah
@@ -914,7 +912,7 @@ How to read an entry:
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 2
   1. Ezekiel 24:1–14 — The Pot on the Fire
-     - On the very day the king of Babylon besieges Jerusalem, Ezekiel is told to write the date and tell a parable of a boiling pot whose rust will not come off (24:1–3, 24:6, 24:11–13).
+     - On the very day the king of Babylon besieges Jerusalem, Ezekiel is told to write the date and tell a parable of a boiling pot whose scum will not come out (24:1–3, 24:6, 24:11–13).
   2. Ezekiel 24:15–27 — Ezekiel’s Wife Dies
      - God takes Ezekiel’s wife, “the desire of thine eyes”, and tells him not to mourn, a sign that the people will lose their temple and not mourn either (24:16–18, 24:21–24).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
@@ -922,11 +920,11 @@ How to read an entry:
 - **Places (2):** Babylon, Jerusalem
 - **Turn:** "Again in the ninth year, in the tenth month… the word of the LORD came unto me" (24:1).
 
-### 59. Ezekiel: Judgment on Judah’s Neighbors
+### 59. Ezekiel: Glad at Jerusalem’s Fall
 - **Range:** Ezekiel 25–26
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 2
-  1. Ezekiel 25 — Neighbors Who Mocked Judah
+  1. Ezekiel 25 — Ammon, Moab, Edom, Philistines
      - Short messages to Ammon, Moab, Edom, and the Philistines, who said “Aha” at the temple’s fall or took revenge on Judah; each will “know that I am the LORD” (25:3, 25:5, 25:8, 25:12, 25:15–17).
   2. Ezekiel 26 — Tyre Will Be a Bare Rock
      - In the eleventh year: because Tyre said “Aha” against Jerusalem, God will bring Nebuchadrezzar against it and make it “like the top of a rock” where nets are spread (26:1–3, 26:7, 26:14).
@@ -936,7 +934,7 @@ How to read an entry:
 - **Turn:** "The word of the LORD came again unto me, saying, Son of man, set thy face against the Ammonites" (25:1–2).
 - **Notes:** Both lessons turn on the same charge: these neighbors rejoiced over Jerusalem’s fall (25:3, 26:2).
 
-### 60. Ezekiel: Tyre Will Be No More
+### 60. Ezekiel: Tyre’s Beauty Made It Proud
 - **Range:** Ezekiel 27–28
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 3
@@ -973,9 +971,9 @@ How to read an entry:
 - **Range:** Ezekiel 33
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 2
-  1. Ezekiel 33:1–20 — The Watchman Who Warns
+  1. Ezekiel 33:1–20 — No Pleasure in Their Death
      - God sets Ezekiel again as watchman to warn the wicked: “I have no pleasure in the death of the wicked; but that the wicked turn from his way and live” (33:2–3, 33:7–9, 33:11).
-  2. Ezekiel 33:21–33 — The City Is Smitten
+  2. Ezekiel 33:21–33 — The City Has Fallen
      - In the twelfth year a man escaped from Jerusalem says “The city is smitten”; Ezekiel’s mouth is opened, and God says the people hear his words like a lovely song “but they do them not” (33:21–22, 33:31–32).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (2):** God, Abraham
@@ -1000,8 +998,8 @@ How to read an entry:
 - **Range:** Ezekiel 35–37
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 4
-  1. Ezekiel 35:1–36:15 — Mountains of Israel, Hear
-     - Mount Seir (Edom) will be desolate for its hatred of Israel, but the mountains of Israel are told “ye shall shoot forth your branches… for they are at hand to come” (35:2–5, 36:1, 36:8).
+  1. Ezekiel 35:1–36:15 — God Speaks to Israel’s Mountains
+     - Mount Seir and “all Idumea” will be desolate for its hatred of Israel, but the mountains of Israel are told “ye shall shoot forth your branches… for they are at hand to come” (35:2–5, 36:1, 36:8).
   2. Ezekiel 36:16–38 — Clean Water and God’s Spirit
      - For His holy name’s sake God will gather Israel, sprinkle clean water on them, and give them a new heart: “I will put my spirit within you” (36:22–27).
   3. Ezekiel 37:1–14 — The Valley of Dry Bones
@@ -1014,7 +1012,7 @@ How to read an entry:
 - **Turn:** "Moreover the word of the LORD came unto me, saying, Son of man, set thy face against mount Seir" (35:1–2).
 - **Notes:** The dry bones are one picture the text explains (37:11), so the lesson may say what they stand for (7.P5).
 
-### 65. Ezekiel: God Defeats Gog and His Army
+### 65. Ezekiel: God Defeats Gog’s Army
 - **Range:** Ezekiel 38–39
 - **Frame:** Ezekiel 1:1–3
 - **Lessons:** 3
@@ -1022,7 +1020,7 @@ How to read an entry:
      - Gog of the land of Magog leads many nations against Israel while it dwells safely, “in the latter days”, and God answers with a great shaking: “every man’s sword shall be against his brother” (38:2, 38:8, 38:16, 38:19–21).
   2. Ezekiel 39:1–16 — Gog Falls on the Mountains
      - God tells Gog “I am against thee”: he falls on the mountains of Israel, Israel burns his weapons seven years, and they bury his army in a valley (39:1, 39:4, 39:9, 39:11–12).
-  3. Ezekiel 39:17–29 — Israel Will Know the LORD
+  3. Ezekiel 39:17–29 — God Will Not Hide His Face
      - The birds are called to the feast, and the nations will see God’s judgment; then God will bring Jacob back, “Neither will I hide my face any more from them” (39:17, 39:21, 39:25, 39:29).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (8):** God, Gog, Meshech, Tubal, Magog, Gomer (son of Japheth), Jacob (Israel), Togarmah
@@ -1030,39 +1028,35 @@ How to read an entry:
 - **Turn:** "And the word of the LORD came unto me, saying, Son of man, set thy face against Gog, the land of Magog" (38:1–2).
 - **Notes:** Re-cut: the lessons now follow the text’s own turns (39:1 “Therefore… prophesy against Gog”; 39:17 “Speak unto every feathered fowl”). For the lesson writer: Gog gets no place on a map and no timeline beyond “the latter days” (38:16).
 
-### 66. Ezekiel: The House Shown to Ezekiel
+### 66. Ezekiel: A Temple Shown in Visions
 - **Range:** Ezekiel 40–44
 - **Frame:** Ezekiel 1:1–3
-- **Lessons:** 3
-  1. Ezekiel 40–42 — A Man with a Measuring Reed
-     - In the twenty-fifth year of the captivity God brings Ezekiel in visions to a high mountain, where a man with a measuring reed tells him “declare all that thou seest to the house of Israel”, and measures the house and its walls (40:1–4, 42:20).
-  2. Ezekiel 43 — The Glory Fills the House
-     - The glory of the God of Israel comes from the east and fills the house, “the place of my throne”, and Ezekiel is told to show the house to Israel “that they may be ashamed of their iniquities” (43:2, 43:5, 43:7, 43:10).
-  3. Ezekiel 44 — The Shut Gate and the Priests
+- **Lessons:** 2
+  1. Ezekiel 40–43 — God’s Glory Comes from the East
+     - In the twenty-fifth year of the captivity God brings Ezekiel in visions to a high mountain, where a man with a measuring reed tells him “declare all that thou seest to the house of Israel”; then the glory of the God of Israel comes from the east and fills the house, “the place of my throne”, and Ezekiel is told to show the house to Israel “that they may be ashamed of their iniquities” (40:1–4, 43:2, 43:5, 43:7, 43:10). The measurements of the house (40:5–42:20) are folded in with no questions.
+  2. Ezekiel 44 — The Shut Gate and the Priests
      - The east gate stays shut because the LORD entered by it; the sons of Zadok who kept God’s charge will minister and teach the difference between holy and profane (44:2, 44:15, 44:23).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (4):** God, Jacob (Israel), Zadok, Levi (patriarch)
 - **Places (3):** Holy Place, Most Holy Place, Chebar
 - **Turn:** "In the five and twentieth year of our captivity… In the visions of God brought he me into the land of Israel" (40:1–2).
-- **Notes:** Re-cut: chapters 40–42 are mostly measurements, and are now one lesson whose questions come only from what Ezekiel is shown and told (40:2–4, 42:13–14, 42:20); the measurements are accounted for inside it (2.14).
+- **Notes:** Re-cut: chapters 40–42 are mostly measurements, so they are folded into the lesson on the glory filling the house (chapter 43) with no questions; that lesson’s questions come only from what Ezekiel is shown and told (40:1–4, 43). No lesson is built on the measurements.
 
 ### 67. Ezekiel: The LORD Is There
 - **Range:** Ezekiel 45–48
 - **Frame:** Ezekiel 1:1–3
-- **Lessons:** 4
-  1. Ezekiel 45 — Princes Must Do Justice
-     - A holy portion of the land is set apart, and Israel’s princes are told “remove violence and spoil, and execute judgment and justice”, with just weights and offerings for the feasts (45:1, 45:9–10, 45:17).
-  2. Ezekiel 46 — Worship at the East Gate
-     - The prince and the people worship at the east gate on sabbaths and new moons; those who come in by one gate go out by the other, and the prince may not take the people’s land (46:1–3, 46:9, 46:18).
-  3. Ezekiel 47:1–12 — A River from the Temple
+- **Lessons:** 3
+  1. Ezekiel 45–46 — Princes Must Do Justice
+     - Israel’s princes are told “remove violence and spoil, and execute judgment and justice”, with just weights, and the prince may not take the people’s land; the prince and the people worship at the east gate on sabbaths and new moons (45:9–10, 46:1–3, 46:18). The land portions and the offering, feast, and gate rules are folded in with no questions.
+  2. Ezekiel 47:1–12 — A River from the Temple
      - Waters flow from under the threshold of the house and deepen into a river that heals the sea; “every thing shall live whither the river cometh”, with trees whose leaves are for medicine (47:1, 47:5, 47:9, 47:12).
-  4. Ezekiel 47:13–48:35 — A City with Twelve Gates
+  3. Ezekiel 47:13–48:35 — A City with Twelve Gates
      - The land is shared among the twelve tribes, strangers included, and the city has twelve gates named for the tribes; “the name of the city from that day shall be, The LORD is there” (47:13, 47:22, 48:31, 48:35).
-- **Split option:** At 47:1 (2 + 2 lessons).
+- **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (16):** God, Benjamin (patriarch), Asher, Dan, Gad, Issachar, Naphtali, Reuben, Simeon, Zebulun, Ephraim, Jacob (Israel), Joseph (son of Jacob), Manasseh (son of Joseph), Levi (patriarch), Zadok
 - **Places (27):** Great Sea, Damascus, Asher, Gad, Hamath, Issachar, Zebulun, Hauran, Hazar-enan, Hethlon, Meribah-kadesh, Tamar, Berothah, Brook of Egypt, East Manasseh (Half-Tribe), Eneglaim, Engedi, Gilead, Hazer-hatticon, Holy Place, Jordan, Lebo-hamath, Most Holy Place, Sibraim, There, West Manasseh, Zedad
 - **Turn:** "Moreover, when ye shall divide by lot the land for inheritance, ye shall offer an oblation unto the LORD" (45:1).
-- **Notes:** Re-cut: the river lesson ends where the text turns to the borders (47:13). The land shares and offerings are accounted for inside the lessons around them (2.14).
+- **Notes:** Re-cut: the river lesson ends where the text turns to the borders (47:13). The land portions, offerings, and gate rules of chapters 45–46 are folded into one lesson with no questions; the border and portion lists in 47:13–48:35 are accounted for inside the city lesson.
 
 ## Daniel
 
@@ -1074,7 +1068,7 @@ How to read an entry:
   2. Daniel 7:15–28 — Four Kings and the Saints
      - One standing by explains the dream: the four beasts are four kings, but “the saints of the most High shall take the kingdom” for ever (7:17–18, 7:27).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (4):** Daniel, Belshazzar, God, Jesus Christ
+- **People (3):** Daniel, Belshazzar, God
 - **Places (1):** Babylon
 - **Turn:** "In the first year of Belshazzar king of Babylon Daniel had a dream and visions of his head upon his bed" (7:1).
 - **Notes:** For the lesson writer: “one like the Son of man” (7:13) is taught exactly as Daniel saw him.
@@ -1090,19 +1084,19 @@ How to read an entry:
   3. Daniel 9 — Gabriel Answers Daniel’s Prayer
      - Daniel reads Jeremiah’s seventy years and prays, “we have sinned”, asking mercy for Jerusalem; while he is still praying, Gabriel comes: “Seventy weeks are determined upon thy people and upon thy holy city” (9:2, 9:5, 9:18, 9:21, 9:24).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (9):** God, Daniel, Gabriel, Moses, Ahasuerus, Belshazzar, Darius, Jeremiah, Jesus Christ
+- **People (8):** God, Daniel, Gabriel, Moses, Ahasuerus, Belshazzar, Darius, Jeremiah
 - **Places (8):** Jerusalem, Ulai, Egypt, Elam, Greece, Media, Persia, Susa
 - **Turn:** "In the third year of the reign of king Belshazzar a vision appeared unto me, even unto me Daniel" (8:1).
 - **Notes:** Both visions are explained by Gabriel, who comes to make Daniel understand (8:16, 9:22–23). The text names the ram and goat (8:20–21), so lesson 2 may teach them as named, and nothing further (7.P5). The weeks and “Messiah the Prince” (9:25–26) are taught only as the words say, with no timeline and no name added.
 
-### 70. Daniel: What Comes in the Latter Days
+### 70. Daniel: What Comes in the Last Days
 - **Range:** Daniel 10–12
 - **Frame:** Daniel 7:1
 - **Lessons:** 3
   1. Daniel 10:1–11:1 — A Man Clothed in Linen
      - After three weeks of mourning, Daniel sees a man clothed in linen who has come to show “what shall befall thy people in the latter days” (10:2, 10:5, 10:14).
   2. Daniel 11:2–45 — Kings of the North and South
-     - The man shows Daniel the truth: kings of Persia, a mighty king of Grecia, then long wars between the king of the north and the king of the south, and a king who “shall exalt himself, and magnify himself above every god”; but “the people that do know their God shall be strong” (11:2–3, 11:6, 11:32, 11:36).
+     - The man shows Daniel the truth: kings of Persia who stir up all against the realm of Grecia, a mighty king who rules with great dominion, then long wars between the king of the north and the king of the south, and a king who “shall exalt himself, and magnify himself above every god”; but “the people that do know their God shall be strong” (11:2–3, 11:6, 11:32, 11:36).
   3. Daniel 12 — The Time of the End
      - Michael stands up, many that sleep in the dust awake, and Daniel is told to seal the book “even to the time of the end” (12:1–2, 12:4, 12:9).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
@@ -1121,7 +1115,7 @@ How to read an entry:
   2. Hosea 2:2–13 — Israel Went After Other Gods
      - The unfaithful wife pictures Israel: she ran after her lovers and did not know that God gave her the corn and wine (2:5, 2:8, 2:13).
   3. Hosea 2:14–3:5 — Hosea Is Told to Love Again
-     - God will win His people back, “I will betroth thee unto me for ever”, and Hosea buys back his wife “according to the love of the LORD” (2:14, 2:19, 3:1–2).
+     - God will win His people back, “I will betroth thee unto me for ever”, and Hosea is told to love a woman, an adulteress, “according to the love of the LORD toward the children of Israel”, and buys her (2:14, 2:19, 3:1–2).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (18):** God, Jacob (Israel), Jezreel, Hosea, Lo-ruhamah, Ahaz, Baal, Beeri, David, Diblaim, Gomer (wife of Hosea), Hezekiah, Jehu, Jeroboam, Joash, Jotham, Lo-ammi, Uzziah
 - **Places (4):** Jezreel, Egypt, Valley of Achor, Valley of Jezreel
@@ -1145,9 +1139,9 @@ How to read an entry:
 - **Range:** Hosea 6:4–8:14
 - **Frame:** Hosea 1:1
 - **Lessons:** 2
-  1. Hosea 6:4–7:16 — Goodness Like the Morning Dew
+  1. Hosea 6:4–7:16 — Goodness That Vanishes Like Dew
      - Israel’s goodness vanishes like the morning dew, yet God says, “I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings”; they turn to Egypt and Assyria “like a silly dove” (6:4, 6:6, 7:11).
-  2. Hosea 8 — They Sow the Wind
+  2. Hosea 8 — Sow the Wind, Reap the Whirlwind
      - “Set the trumpet to thy mouth”: Israel broke God’s covenant, set up kings and idols He did not choose, and “they have sown the wind, and they shall reap the whirlwind” (8:1, 8:4, 8:7).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (2):** Ephraim, God
@@ -1176,7 +1170,7 @@ How to read an entry:
      - God called Israel His son out of Egypt and drew them “with bands of love”, and will not give them up: “How shall I give thee up, Ephraim?” (11:1, 11:4, 11:8).
   2. Hosea 12 — Turn and Wait on God
      - From Jacob’s story the LORD calls Israel back: “turn thou to thy God: keep mercy and judgment, and wait on thy God continually” (12:3–4, 12:6).
-  3. Hosea 13 — No Saviour but the LORD
+  3. Hosea 13 — Too Full to Remember God
      - Israel forgot the God who knew them in the wilderness, though “there is no saviour beside me” and “in me is thine help” (13:4–6, 13:9).
   4. Hosea 14 — Israel Will Grow Like the Lily
      - The book ends with the call to return and God’s promise: “I will heal their backsliding, I will love them freely” (14:1–2, 14:4).
@@ -1192,7 +1186,7 @@ How to read an entry:
 - **Lessons:** 4
   1. Joel 1 — Locusts Strip the Land
      - Joel tells the people to mourn: locusts have eaten the land and the offerings are cut off, “for the day of the LORD is at hand” (1:4, 1:9, 1:15).
-  2. Joel 2:1–17 — Rend Your Heart, Not Clothes
+  2. Joel 2:1–17 — Tear Your Heart, Not Clothes
      - The day of the LORD comes like a great army, so God calls, “rend your heart, and not your garments, and turn unto the LORD” (2:1–2, 2:12–13).
   3. Joel 2:18–32 — God Will Pour Out His Spirit
      - God pities His people, restores “the years that the locust hath eaten”, and will pour out His spirit upon all flesh (2:18, 2:25, 2:28, 2:32).
@@ -1221,9 +1215,9 @@ How to read an entry:
 - **Range:** Amos 3–4
 - **Frame:** Amos 1:1
 - **Lessons:** 2
-  1. Amos 3 — The Lion Has Roared
+  1. Amos 3 — God Warns Through His Prophets
      - God chose Israel, so He will punish their sins, and He reveals it to His prophets: “the Lord GOD hath spoken, who can but prophesy?” (3:2, 3:7–8).
-  2. Amos 4 — Yet You Have Not Returned
+  2. Amos 4 — Still They Did Not Return
      - God sent hunger, drought, and plague, “yet have ye not returned unto me”, so Israel must “prepare to meet thy God” (4:6–11, 4:12).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (2):** God, Jacob (Israel)
@@ -1238,7 +1232,7 @@ How to read an entry:
      - A lament for Israel, then the call: “Seek ye me, and ye shall live… Hate the evil, and love the good” (5:1–2, 5:4, 5:14–15).
   2. Amos 5:18–27 — God Hates Their Feasts
      - God will not accept their feasts and offerings: “let judgment run down as waters, and righteousness as a mighty stream” (5:21–22, 5:24).
-  3. Amos 6 — Feasting on Beds of Ivory
+  3. Amos 6 — Rich and Careless in Zion
      - Those who lie on beds of ivory “are not grieved for the affliction of Joseph”, and they will go captive first (6:1, 6:4, 6:6–7).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (4):** God, Joseph (son of Jacob), David, Jacob (Israel)
@@ -1249,7 +1243,7 @@ How to read an entry:
 - **Range:** Amos 7–9
 - **Frame:** Amos 1:1
 - **Lessons:** 4
-  1. Amos 7:1–9 — Locusts, Fire, and a Plumbline
+  1. Amos 7:1–9 — Grasshoppers, Fire, a Plumbline
      - The Lord shows Amos three visions; twice Amos prays and the LORD relents, then He sets a plumbline among His people (7:2–3, 7:5–6, 7:8).
   2. Amos 7:10–17 — Amaziah Tells Amos to Leave
      - The priest of Bethel tells Amos to go home, and Amos answers that the LORD took him from the flock to prophesy (7:10, 7:12, 7:14–15).
@@ -1268,9 +1262,9 @@ How to read an entry:
 ### 81. Obadiah: Edom’s Pride Brought Down
 - **Range:** Obadiah 1
 - **Lessons:** 2
-  1. Obadiah 1:1–9 — A Nest Among the Stars
+  1. Obadiah 1:1–9 — Edom Thinks No One Can Reach It
      - The vision of Obadiah concerning Edom: “The pride of thine heart hath deceived thee… thence will I bring thee down” (1:1, 1:3–4).
-  2. Obadiah 1:10–21 — As You Have Done, So to You
+  2. Obadiah 1:10–21 — Done to Edom as Edom Did
      - Edom stood by when strangers took Jerusalem, so “as thou hast done, it shall be done unto thee”, and “the kingdom shall be the LORD’S” (1:10–11, 1:15, 1:21).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (7):** Esau (Edom), God, Jacob (Israel), Benjamin (patriarch), Ephraim, Joseph (son of Jacob), Obadiah
@@ -1279,7 +1273,7 @@ How to read an entry:
 
 ## Micah
 
-### 82. Micah: Sins of Samaria and Jerusalem
+### 82. Micah: Samaria and Jerusalem Judged
 - **Range:** Micah 1–3
 - **Lessons:** 3
   1. Micah 1 — The LORD Comes Down
@@ -1293,7 +1287,7 @@ How to read an entry:
 - **Places (15):** Jerusalem, Samaria, Zion, Achzib, Adullam, Beth-ezel, Beth-le-aphrah, Gath, Lachish, Mareshah, Maroth, Moresheth, Moresheth-gath, Shaphir, Zaanan
 - **Turn:** "The word of the LORD that came to Micah the Morasthite… concerning Samaria and Jerusalem. Hear, all ye people" (1:1–2).
 
-### 83. Micah: Swords into Plowshares
+### 83. Micah: Swords Made into Plows
 - **Range:** Micah 4–5
 - **Frame:** Micah 1:1
 - **Lessons:** 2
@@ -1337,13 +1331,13 @@ How to read an entry:
 
 ## Habakkuk
 
-### 86. Habakkuk: The Just Shall Live by Faith
+### 86. Habakkuk: The Just Will Live by Faith
 - **Range:** Habakkuk 1–3
 - **Lessons:** 3
   1. Habakkuk 1:1–11 — Habakkuk Asks How Long
      - Habakkuk cries “O LORD, how long shall I cry, and thou wilt not hear!” at the violence around him, and God answers that He is raising up the Chaldeans (1:2–3, 1:5–6).
   2. Habakkuk 1:12–2:20 — Write the Vision and Wait
-     - Habakkuk asks why God uses a nation worse than Judah and waits on his watchtower; God tells him to write the vision and wait, for “the just shall live by his faith”, and woes fall on the proud (1:13, 2:1–4, 2:6).
+     - Habakkuk asks why God holds His tongue while the wicked devour those more righteous than they, and waits upon his tower; God tells him to write the vision and wait, for “the just shall live by his faith”, and woes fall on the proud (1:13, 2:1–4, 2:6).
   3. Habakkuk 3 — Rejoicing When the Fields Fail
      - Habakkuk’s prayer remembers God’s power and ends, though the fig tree fail, “Yet I will rejoice in the LORD” (3:1–2, 3:17–19).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
@@ -1361,7 +1355,7 @@ How to read an entry:
      - In Josiah’s days Zephaniah warns Judah that “the great day of the LORD is near”, a day of wrath for those who turned back from the LORD (1:1, 1:4–6, 1:14–15).
   2. Zephaniah 2 — The Meek May Be Hidden
      - “Gather yourselves together… before the day of the LORD’S anger come upon you”: “Seek ye the LORD, all ye meek of the earth… it may be ye shall be hid”, while the nations around are judged (2:1–4, 2:13).
-  3. Zephaniah 3 — The LORD in the Midst of Zion
+  3. Zephaniah 3 — The LORD Is with Zion
      - Jerusalem would not receive correction, but the LORD in her midst will save a humble remnant and “rejoice over thee with joy” (3:2, 3:12, 3:17).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (12):** God, Moab, Amariah, Amon, Baal, Canaan, Cushi, Gedaliah, Hizkiah, Josiah, Malcham, Zephaniah
@@ -1373,7 +1367,7 @@ How to read an entry:
 ### 88. Haggai: Rebuild the LORD’s House
 - **Range:** Haggai 1–2
 - **Lessons:** 3
-  1. Haggai 1 — Consider Your Ways
+  1. Haggai 1 — Think About Your Ways
      - The people say it is not time to build the LORD’s house; Haggai tells them “Consider your ways”, and Zerubbabel, Joshua, and the people obey (1:2, 1:5, 1:8, 1:12).
   2. Haggai 2:1–9 — Be Strong and Work
      - The new house looks like nothing, but God says “be strong… and work: for I am with you”, and its glory will be greater than the former (2:3–4, 2:9).
@@ -1387,7 +1381,7 @@ How to read an entry:
 
 ## Zechariah
 
-### 89. Zechariah: The LORD’s House Will Be Built
+### 89. Zechariah: Visions in the Night
 - **Range:** Zechariah 1–6
 - **Lessons:** 5
   1. Zechariah 1:1–17 — God Returns with Mercy
@@ -1398,10 +1392,10 @@ How to read an entry:
      - Joshua the high priest is given clean garments, and Zerubbabel will finish the house “Not by might, nor by power, but by my spirit” (3:4, 4:6, 4:9).
   4. Zechariah 5 — Wickedness Carried Away
      - A flying roll curses the thief and the liar, and a woman named Wickedness is carried away in an ephah to Shinar (5:3, 5:8–11).
-  5. Zechariah 6 — The Man Called the BRANCH
+  5. Zechariah 6 — Joshua the High Priest Crowned
      - Four chariots go through the earth, and Joshua is crowned with the word, “Behold the man whose name is The BRANCH… he shall build the temple of the LORD” (6:1, 6:5, 6:11–12).
 - **Split option:** At 3:1 (2 + 3 lessons).
-- **People (15):** God, Joshua, Zerubbabel, Berechiah, Darius, Helem, Iddo, Jedaiah, Josiah, Satan, Tobijah, Zechariah, Zephaniah, Jesus Christ, Josedech
+- **People (14):** God, Joshua, Zerubbabel, Berechiah, Darius, Helem, Iddo, Jedaiah, Josiah, Satan, Tobijah, Zechariah, Zephaniah, Josedech
 - **Places (4):** Jerusalem, Zion, Babylon, Shinar
 - **Turn:** "In the eighth month, in the second year of Darius, came the word of the LORD unto Zechariah" (1:1); the visions begin "I saw by night" (1:8).
 - **Notes:** The short first message (1:1–6, dated the eighth month) is folded into lesson 1, before the night visions (dated 1:7). For the lesson writer: the angel explains some visions (1:19, 4:6, 5:3, 5:8, 6:5); the rest are taught as Zechariah saw them (7.P5).
@@ -1410,7 +1404,7 @@ How to read an entry:
 - **Range:** Zechariah 7–8
 - **Frame:** Zechariah 1:1
 - **Lessons:** 2
-  1. Zechariah 7 — Did You Fast for God?
+  1. Zechariah 7 — Weeping in the Fifth Month
      - Asked whether to keep weeping in the fifth month, God asks, “did ye at all fast unto me?”, and repeats His old command to show mercy and not oppress (7:3, 7:5, 7:9–10).
   2. Zechariah 8 — Fasts Turned to Joy
      - God returns to Zion, tells them to speak truth to each other, and turns their fasts into “joy and gladness, and cheerful feasts” (8:3, 8:16, 8:19).
@@ -1419,7 +1413,7 @@ How to read an entry:
 - **Places (4):** Jerusalem, Zion, Bethel (of Palestine), South
 - **Turn:** "And it came to pass in the fourth year of king Darius, that the word of the LORD came unto Zechariah" (7:1).
 
-### 91. Zechariah: The Flock and Its Shepherds
+### 91. Zechariah: Shepherds Over God’s Flock
 - **Range:** Zechariah 9–11
 - **Frame:** Zechariah 1:1
 - **Lessons:** 3
@@ -1430,7 +1424,7 @@ How to read an entry:
   3. Zechariah 11 — Thirty Pieces of Silver
      - Zechariah feeds the flock for slaughter, is paid thirty pieces of silver, and is told to cast it to the potter (11:4, 11:7, 11:12–13).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
-- **People (4):** God, Ephraim, Jesus Christ, Joseph (son of Jacob)
+- **People (3):** God, Ephraim, Joseph (son of Jacob)
 - **Places (20):** Assyria, Egypt, Ekron, Jerusalem, Lebanon, Tyre, Zion, Ashdod, Ashkelon, Bashan, Damascus, Gaza, Gilead, Greece, Hadrach, Hamath, Jordan, Nile, River, Sidon
 - **Turn:** "The burden of the word of the LORD in the land of Hadrach" (9:1).
 
@@ -1451,19 +1445,19 @@ How to read an entry:
 
 ## Malachi
 
-### 93. Malachi: Return to the LORD of Hosts
+### 93. Malachi: God Answers Israel’s Questions
 - **Range:** Malachi 1–4
 - **Lessons:** 4
-  1. Malachi 1:1–2:9 — Blemished Gifts on God’s Altar
+  1. Malachi 1:1–2:9 — Blind and Sick Animals Offered
      - God tells Israel “I have loved you”, then asks the priests “where is mine honour?”, for they offer the blind, lame, and sick, and have corrupted the covenant of Levi (1:2, 1:6, 1:8, 2:8).
-  2. Malachi 2:10–16 — Faithless to the Covenant
+  2. Malachi 2:10–16 — Dealing Falsely with Each Other
      - “Have we not all one father?” The people deal treacherously with each other and with “the wife of thy youth”, and God says “take heed to your spirit” (2:10, 2:14–16).
   3. Malachi 2:17–3:12 — God Will Send His Messenger
      - To those who ask where God’s justice is, God says “I will send my messenger”, then calls, “Return unto me, and I will return unto you”, and asks “Will a man rob God?” (2:17, 3:1, 3:7–8).
   4. Malachi 3:13–4:6 — Elijah Before the Great Day
      - God writes a book of remembrance for those who fear Him, and will send Elijah “before the coming of the great and dreadful day of the LORD” (3:16, 4:1–2, 4:5).
 - **Split option:** At 2:17 (2 + 2 lessons).
-- **People (8):** God, Esau (Edom), Jacob (Israel), Levi (patriarch), Jesus Christ, Elijah, Malachi, Moses
+- **People (7):** God, Esau (Edom), Jacob (Israel), Levi (patriarch), Elijah, Malachi, Moses
 - **Places (3):** Jerusalem, Edom, Horeb
 - **Turn:** "The burden of the word of the LORD to Israel by Malachi. I have loved you, saith the LORD" (1:1–2).
 - **Notes:** Re-cut: Malachi was two flavors; it is one run of questions God answers (“Wherein…?”, 1:2, 1:6, 2:17, 3:7–8, 3:13), now cut where each one begins.

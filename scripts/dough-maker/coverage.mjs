@@ -50,10 +50,10 @@ for (const name of files) {
     const flavorTitle = f.title.replace(/^.+?: /, '');
     const titles = [[f.at, 'flavor', flavorTitle], ...f.lessons.map((l) => [l.at, 'lesson', l.note])];
     for (const [at, kind, title] of titles) {
-      // a block's fixed title form (Words and Idioms list their four terms) is kept as is
+      // a block's fixed title form (Words and Idioms list their four terms as the KJV prints them) is kept as is
       const fixedForm = kind === 'lesson' && FIXED_LESSON_TITLES.includes(recipe);
       if (title.length > TITLE_MAX && !fixedForm) errors.push(`${at}: ${kind} title is ${title.length} characters (max ${TITLE_MAX}, 2.10)`);
-      if (/\b(I|me|my)\b/i.test(title)) errors.push(`${at}: ${kind} title says "I", "me", or "my"; name the person (2.10)`);
+      if (/\b(I|me|my)\b/i.test(title) && !fixedForm) errors.push(`${at}: ${kind} title says "I", "me", or "my"; name the person (2.10)`);
     }
 
     // 2.4: lesson count per flavor

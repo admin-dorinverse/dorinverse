@@ -43,7 +43,7 @@ How to read an entry:
   1. Revelation 2:1–11 — To Ephesus and Smyrna
      - Jesus’ words to the first two churches: Ephesus has left its first love; Smyrna is told “be thou faithful unto death” (2:4, 2:10).
   2. Revelation 2:12–29 — To Pergamos and Thyatira
-     - Pergamos holds fast His name and Thyatira’s works are known, and both are told to turn from false teaching (2:13–16, 2:19–20).
+     - Pergamos holds fast His name but is told to repent of false teaching; Thyatira’s works are known, but it suffers “that woman Jezebel” to teach (2:13–16, 2:19–20).
   3. Revelation 3:1–13 — To Sardis and Philadelphia
      - Sardis is told to wake up; Philadelphia is given an open door that no man can shut (3:2, 3:8).
   4. Revelation 3:14–22 — To Laodicea
@@ -57,7 +57,7 @@ How to read an entry:
 ### 3. Revelation: The Throne in Heaven
 - **Range:** Revelation 4–5
 - **Lessons:** 2
-  1. Revelation 4 — Worship Around the Throne
+  1. Revelation 4 — Holy, Holy, Holy
      - A door is opened in heaven: one sits on the throne, and the elders and four beasts cry “Holy, holy, holy” (4:1–2, 4:8).
   2. Revelation 5 — The Lamb Takes the Book
      - No one can open the sealed book but the Lamb that was slain, and all of heaven worships Him (5:5–6, 5:12).
@@ -100,7 +100,7 @@ How to read an entry:
      - Hail and fire, a burning mountain, a falling star, and a darkened sun strike a third part of the earth (8:7–12).
   3. Revelation 9:1–12 — Locusts from the Pit
      - At the fifth trumpet the bottomless pit is opened, and locusts hurt those without God’s seal (9:1–4).
-  4. Revelation 9:13–21 — Four Angels Are Loosed
+  4. Revelation 9:13–21 — Four Angels Are Let Loose
      - At the sixth trumpet four angels are loosed with an army of horsemen, yet the rest of men repent not (9:14–16, 9:20).
 - **Split option:** At 9:1 (2 + 2 lessons).
 - **People (2):** God, Apollyon
@@ -124,7 +124,7 @@ How to read an entry:
 ### 8. Revelation: The Kingdom of Our God
 - **Range:** Revelation 11:15–12:17
 - **Lessons:** 2
-  1. Revelation 11:15–12:6 — The Seventh Trumpet Sounds
+  1. Revelation 11:15–12:6 — Born to Rule All Nations
      - Voices say the kingdoms of this world are become the kingdoms of our Lord; then a woman clothed with the sun bears a child caught up to God (11:15, 12:1, 12:5).
   2. Revelation 12:7–17 — War in Heaven
      - Michael fights the dragon, which the text names as the Devil and Satan; he is cast out, and a voice says the kingdom of our God is come (12:7–10).
@@ -132,9 +132,9 @@ How to read an entry:
 - **People (4):** God, Jesus Christ, Michael, Satan
 - **Places (0):** —
 - **Turn:** "And the seventh angel sounded; and there were great voices in heaven" (11:15).
-- **Notes:** Both lessons announce God’s kingdom (11:15, 12:10). Lesson 1 joins the seventh trumpet with the woman and child because 11:15–19 alone is 5 verses.
+- **Notes:** Both lessons announce God’s kingdom (11:15, 12:10). Lesson 1 holds the seventh trumpet and the woman’s man child, “who was to rule all nations” (12:5); the war in heaven (12:7) starts lesson 2.
 
-### 9. Revelation: Fear God and Worship Him
+### 9. Revelation: Worship the One Who Made Heaven
 - **Range:** Revelation 13–14
 - **Lessons:** 4
   1. Revelation 13:1–10 — A Beast Rises from the Sea
@@ -156,16 +156,16 @@ How to read an entry:
 - **Lessons:** 3
   1. Revelation 15 — The Song of Moses and the Lamb
      - Seven angels hold the seven last plagues, and those who overcame sing “Great and marvellous are thy works” (15:1–3).
-  2. Revelation 16:1–11 — The First Five Vials
+  2. Revelation 16:1–11 — Plagues on Land, Sea, and Sun
      - Vials poured on the earth, sea, rivers, sun, and the beast’s throne, and men blaspheme God (16:2–11).
-  3. Revelation 16:12–21 — The Last Two Vials
+  3. Revelation 16:12–21 — A Voice Says It Is Done
      - The sixth vial dries up the great river and kings are gathered to battle; at the seventh a voice says “It is done” (16:12–17).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (3):** God, Jesus Christ, Moses
 - **Places (3):** Armageddon, Babylon, Euphrates
 - **Turn:** "And I saw another sign in heaven, great and marvellous, seven angels having the seven last plagues" (15:1).
 
-### 11. Revelation: Babylon the Great Is Fallen
+### 11. Revelation: Babylon the Great Has Fallen
 - **Range:** Revelation 17–18
 - **Lessons:** 4
   1. Revelation 17:1–6 — A Woman on a Scarlet Beast
@@ -226,7 +226,7 @@ How to read an entry:
 - **Lessons:** 2
   1. Revelation 22:6–15 — These Sayings Are True
      - The angel says these sayings are faithful and true, and Jesus says “Behold, I come quickly” (22:6–7, 22:12).
-  2. Revelation 22:16–21 — Come, Lord Jesus
+  2. Revelation 22:16–21 — The Spirit and Bride Say Come
      - Jesus sends His testimony to the churches; the Spirit and the bride say “Come”, and John answers “Even so, come, Lord Jesus” (22:16–17, 22:20).
 - **Split option:** None. Any cut would leave a flavor with 1 lesson (2.4).
 - **People (5):** God, Jesus Christ, David, Holy Spirit, John the Apostle
