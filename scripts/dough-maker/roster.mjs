@@ -336,5 +336,9 @@ for (const p of chosen) {
 }
 
 fs.writeFileSync(path.join(DIR, 'roster.md'), md.join('\n') + '\n');
+// The list by lookup, for the character-card tools (cards.mjs)
+fs.writeFileSync(path.join(DIR, 'roster.json'), JSON.stringify(chosen.map((p) => ({
+  lookup: p.k, name: nameOf(p.k), shared: shared.get(nameOf(p.k)) > 1, verses: p.vc, box: p.e.box,
+})), null, 1) + '\n');
 console.log(`${chosen.length} characters (from ${list.length} considered; ${excluded.length} left off: ` +
-  `${excluded.map(([k]) => nameOf(k)).join(', ')}); wrote ${path.join(DIR, 'roster.md')}`);
+  `${excluded.map(([k]) => nameOf(k)).join(', ')}); wrote roster.md and roster.json`);
