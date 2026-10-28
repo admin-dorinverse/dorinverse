@@ -223,7 +223,7 @@ select x.bible_character_id, x.verse_id from public.verse_bible_character x
 join public.character_card k on k.bible_character_id = x.bible_character_id;
 
 delete from public.character_card_place;
-insert into public.character_card_place (bible_character_id, place_id, verse_count)
+insert into public.character_card_place (bible_character_id, place_id, verses_naming_both)
 select bible_character_id, place_id, sum(n)::int from (
   select v.bible_character_id, vp.place_id, 1 as n from public.character_card_verse v
   join public.verse_place vp on vp.verse_id = v.verse_id
