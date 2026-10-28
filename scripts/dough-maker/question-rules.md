@@ -379,13 +379,13 @@ The player is not expected to know the material. Questions work by prediction: t
 
 **Prophets (7.P)**
 
-**7.P1** The prophets' messages: Isaiah, Jeremiah, Ezekiel, Daniel 7–12, and Hosea to Malachi except Jonah, whose book is narrative and belongs to Stories. Story chapters in these books are in Stories and may be taught here too where a message sits in them. A message about Jesus is also taught in Jesus Prophecies; here, the lesson names Jesus only where the New Testament states the link.
+**7.P1** The prophets' messages: Isaiah, Jeremiah, Ezekiel, Daniel 7–12, and Hosea to Malachi except Jonah, whose book is narrative and belongs to Stories. Story chapters in these books are in Stories and may be taught here too where a message sits in them. A message about Jesus is taught in Jesus Prophecies; here, the lesson never names Jesus or links a passage to him, and teaches only what the passage itself says.
 
 **7.P2** Book by book, in book order. A flavor is one section, cut at the book's own turns: a new message, audience, or date. The title names the book: "Amos: Justice Like a River" (Amos 5:24).
 
 **7.P3** Each lesson: who the prophet was and when, only as the text says; who he speaks to; what is happening; the sin or need the text names; the warning or promise; what God says will happen; and the response the text calls for.
 
-**7.P4** A lesson says a message came true only where the Bible says so (Ezra 1:1). Otherwise it teaches what was said, not whether or when it happened.
+**7.P4** A lesson never says a message came true or was fulfilled. It teaches what was said, not whether or when it happened.
 
 **7.P5** A symbol's meaning is taught only where the text explains it (Daniel 8:20–21). Otherwise the lesson tests what the vision shows, not what it means.
 
@@ -728,7 +728,7 @@ The checker is a separate agent that did not write the lesson. It answers every 
 
 **10.39 Jesus Prophecies**: the link is on the approved list and runs OT to NT or NT to NT, never OT to OT (7.J1); lesson 1 is The Promise, with who spoke it and to whom as questions, and its rows are the prophecy and the verses naming its speaker and scene; where the New Testament states the link, lesson 1 ends by showing who it points to; lesson 2 is The Fulfillment, with who in the New Testament quotes or applies it, and where, as a question, and both passages revealed; a link the text does not state is taught side by side with no claim (7.J).
 
-**10.40 Prophets and Revelation**: each Prophets lesson covers the items in 7.P3; no message called fulfilled unless the Bible says so; no symbol explained unless the text explains it; Prophets names Jesus only where the New Testament states the link and calls what the prophets delivered messages; Revelation explains a vision only where the text explains it, and teaches no timeline and nothing as fulfilled (7.P, 7.R).
+**10.40 Prophets and Revelation**: each Prophets lesson covers the items in 7.P3; no message called fulfilled or said to have come true; no symbol explained unless the text explains it; Prophets never names Jesus or links a passage to him, and calls what the prophets delivered messages; Revelation explains a vision only where the text explains it, and teaches no timeline and nothing as fulfilled (7.P, 7.R).
 
 **10.41 Letters**: book by book in order; author named only where the letter states one; who wrote it (where the letter states it), to whom, and why are in lesson 1; application only from commands (7.L).
 
