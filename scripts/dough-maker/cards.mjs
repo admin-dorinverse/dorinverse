@@ -235,14 +235,14 @@ select bible_character_id, place_id, sum(n)::int from (
 update public.character_card k set verse_count = (select count(*) from public.character_card_verse v
   where v.bible_character_id = k.bible_character_id);
 
-do $ begin
+do $$ begin
   if (select count(*) from public.character_card) <> ${cards.length} then
     raise exception 'expected ${cards.length} character cards';
   end if;
   if exists (select 1 from public.character_card where verse_count = 0) then
     raise exception 'a character card has no verses';
   end if;
-end $;
+end $$;
 commit;
 `;
   const file = path.join(DIR, '.cache', 'character-cards.sql');
