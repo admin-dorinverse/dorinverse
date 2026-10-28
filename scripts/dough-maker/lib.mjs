@@ -2,6 +2,8 @@
 // (fetch-reference.mjs), Question Rules 2.12 references, and the ingredients file format.
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
+import { spawnSync } from 'node:child_process';
 
 export const DIR = import.meta.dirname;
 export const INGREDIENTS_DIR = path.join(DIR, 'ingredients');
@@ -30,6 +32,26 @@ export const TITLE_MAX = 32;
 export const FIXED_LESSON_TITLES = ['Words', 'Idioms'];
 
 // --- reference layer --------------------------------------------------------
+
+const CLI = 'supabase@2.122.0';   // the version supabase/config.toml is written for
+
+// Read-only query against the linked Supabase project (staging-dorinverse); returns the rows.
+export function query(sql) {
+  // The SQL goes through a file: quoting it on a Windows command line is not reliable.
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dough-'));
+  const file = path.join(dir, 'q.sql');
+  fs.writeFileSync(file, sql);
+  const r = spawnSync('npx', ['-y', CLI, 'db', 'query', '--linked', '--output-format', 'json', '-f', `"${file}"`], {
+    encoding: 'utf8', shell: process.platform === 'win32', maxBuffer: 512 * 1024 * 1024,
+  });
+  fs.rmSync(dir, { recursive: true, force: true });
+  if (r.status !== 0) throw new Error(`query failed: ${r.stderr || r.stdout}`);
+  const start = r.stdout.indexOf('{');
+  return JSON.parse(r.stdout.slice(start)).rows;
+}
+
+// One json_agg cell per query keeps the Management API payload to a single row.
+export const agg = (sql) => query(`select coalesce(json_agg(agg_row), '[]') as j from (${sql}) agg_row`)[0].j;
 
 export function loadReference({ text = false } = {}) {
   const file = path.join(CACHE, 'reference.json');

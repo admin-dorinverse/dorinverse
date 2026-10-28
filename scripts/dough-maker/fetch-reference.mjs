@@ -8,28 +8,9 @@
 // reference layer changes.
 import fs from 'node:fs';
 import path from 'node:path';
-import os from 'node:os';
-import { spawnSync } from 'node:child_process';
+import { agg } from './lib.mjs';
 
-const CLI = 'supabase@2.122.0';   // the version supabase/config.toml is written for
 const cacheDir = path.join(import.meta.dirname, '.cache');
-
-function query(sql) {
-  // The SQL goes through a file: quoting it on a Windows command line is not reliable.
-  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dough-'));
-  const file = path.join(dir, 'q.sql');
-  fs.writeFileSync(file, sql);
-  const r = spawnSync('npx', ['-y', CLI, 'db', 'query', '--linked', '--output-format', 'json', '-f', `"${file}"`], {
-    encoding: 'utf8', shell: process.platform === 'win32', maxBuffer: 512 * 1024 * 1024,
-  });
-  fs.rmSync(dir, { recursive: true, force: true });
-  if (r.status !== 0) throw new Error(`query failed: ${r.stderr || r.stdout}`);
-  const start = r.stdout.indexOf('{');
-  return JSON.parse(r.stdout.slice(start)).rows;
-}
-
-// One json_agg cell per query keeps the Management API payload to a single row.
-const agg = (sql) => query(`select coalesce(json_agg(agg_row), '[]') as j from (${sql}) agg_row`)[0].j;
 
 const books = agg(`select "order", name, testament, chapter_count, verse_count from public.book order by "order"`);
 const chapters = agg(`select b."order" as book, c.chapter_number as chapter, c.verse_count

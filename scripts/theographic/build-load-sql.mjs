@@ -28,6 +28,26 @@ const easton = load('easton');
 // 1.8: psalm titles live in psalm_heading, not verse text. The source prints only this one inline.
 const PSALM_TITLES = { 'Ps.132.1': 'A Song of degrees.' };
 
+// Source errors in verse-to-person links, fixed at load; each keeps the person's verse count in step.
+const PEOPLE_LINK_FIXES = [
+  { verse: 'Gen.36.22', remove: 'lydia_1837', add: 'timna_2860' },   // "Lotan's sister was Timna"
+  { verse: '1Chr.1.39', remove: 'lydia_1837' },                      // same Timna, already linked
+];
+for (const { verse, remove, add } of PEOPLE_LINK_FIXES) {
+  const v = verses.find((x) => x.fields.osisRef === verse);
+  const person = (lookup) => people.find((p) => p.fields.personLookup === lookup);
+  const out = person(remove), into = add && person(add);
+  if (!v || !out || (add && !into)) throw new Error(`link fix ${verse}: verse or person not found`);
+  const linked = v.fields.people ?? [];
+  if (!linked.includes(out.id)) throw new Error(`link fix ${verse}: ${remove} is no longer linked; drop the fix`);
+  v.fields.people = linked.filter((id) => id !== out.id);
+  out.fields.verseCount -= 1;
+  if (into && !v.fields.people.includes(into.id)) {
+    v.fields.people.push(into.id);
+    into.fields.verseCount = (into.fields.verseCount ?? 0) + 1;
+  }
+}
+
 const int = (s) => (s === undefined || s === null || String(s).trim() === '' ? null : Number.parseInt(s, 10));
 const num = (s) => (s === undefined || s === null || String(s).trim() === '' ? null : Number(s));
 const first = (a) => (a && a.length ? a[0] : null);
