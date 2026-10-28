@@ -14,8 +14,10 @@
 //   { "lookup": "elijah_1131", "name": "Elijah", "name_tag": null, "also_known_as": null,
 //     "summary": "...", "key_moments": [{ "title": "...", "description": "...",
 //     "passage": "1 Kings 18:20–40", "place": "mount_carmel_..." }] }
-// name_tag is required when two cards share a name, and only then. also_known_as null keeps
+// name_tag is required when two cards share a name, and only then. also_known_as null copies
 // bible_character.also_called; a list replaces it ([] shows none). place is a place lookup or null.
+// The load copies the rest of the card from the reading layer: its verses (verse_bible_character),
+// their places (verse_place) plus the moments' places, and the verse count.
 import fs from 'node:fs';
 import path from 'node:path';
 import { DIR, loadReference, expand, formatRefs, agg } from './lib.mjs';
@@ -197,13 +199,14 @@ function sql({ errors, cards, missing }) {
     return `(${q(c.lookup)}, ${q(c.name)}, ${q(c.name_tag)}, ${arr(c.also_known_as)}, ${q(c.summary)}, ${q(JSON.stringify(moments))}::jsonb)`;
   });
   // Moments are written with place lookups; the table keeps place_id, resolved here.
-  const out = `-- Written by node scripts/dough-maker/cards.mjs sql. Upserts all ${cards.length} character cards as published.
+  const out = `-- Written by node scripts/dough-maker/cards.mjs sql. Upserts all ${cards.length} character cards as published,
+-- and copies each card's verses, places and verse count from the reading layer.
 begin;
 with src (lookup, name, name_tag, also_known_as, summary, moments) as (values
 ${rows.join(',\n')}
 )
 insert into public.character_card (bible_character_id, name, name_tag, also_known_as, summary, key_moments, status)
-select c.id, s.name, s.name_tag, s.also_known_as, s.summary,
+select c.id, s.name, s.name_tag, coalesce(s.also_known_as, c.also_called, '{}'), s.summary,
   (select jsonb_agg(jsonb_strip_nulls(jsonb_build_object('title', m ->> 'title', 'description', m ->> 'description',
      'passage', m ->> 'passage', 'place_id', pl.id)) order by n)
    from jsonb_array_elements(s.moments) with ordinality as t (m, n)
@@ -213,11 +216,33 @@ from src s join public.bible_character c on c.lookup = s.lookup
 on conflict (bible_character_id) do update set name = excluded.name, name_tag = excluded.name_tag,
   also_known_as = excluded.also_known_as, summary = excluded.summary, key_moments = excluded.key_moments,
   status = excluded.status;
-do $$ begin
+
+delete from public.character_card_verse;
+insert into public.character_card_verse (bible_character_id, verse_id)
+select x.bible_character_id, x.verse_id from public.verse_bible_character x
+join public.character_card k on k.bible_character_id = x.bible_character_id;
+
+delete from public.character_card_place;
+insert into public.character_card_place (bible_character_id, place_id, verse_count)
+select bible_character_id, place_id, sum(n)::int from (
+  select v.bible_character_id, vp.place_id, 1 as n from public.character_card_verse v
+  join public.verse_place vp on vp.verse_id = v.verse_id
+  union all
+  select k.bible_character_id, private.safe_uuid(m ->> 'place_id'), 0 from public.character_card k
+  cross join jsonb_array_elements(k.key_moments) m where m ->> 'place_id' is not null
+) t group by bible_character_id, place_id;
+
+update public.character_card k set verse_count = (select count(*) from public.character_card_verse v
+  where v.bible_character_id = k.bible_character_id);
+
+do $ begin
   if (select count(*) from public.character_card) <> ${cards.length} then
     raise exception 'expected ${cards.length} character cards';
   end if;
-end $$;
+  if exists (select 1 from public.character_card where verse_count = 0) then
+    raise exception 'a character card has no verses';
+  end if;
+end $;
 commit;
 `;
   const file = path.join(DIR, '.cache', 'character-cards.sql');
