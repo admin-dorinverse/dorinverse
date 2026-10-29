@@ -119,14 +119,8 @@ const characterRows = people.map(({ id, fields: f }) => ({
   also_called: f.alsoCalled ? f.alsoCalled.split(',').map((s) => s.trim()).filter(Boolean) : null,
 }));
 
-const parentRows = people
-  .filter((p) => p.fields.father || p.fields.mother)
-  .map(({ id, fields: f }) => ({ source_id: id, father: first(f.father), mother: first(f.mother) }));
-
-// a pair is stored once; the SQL orders it by uuid
-const partnerPairs = [
-  ...new Map(pairs(people, 'partners').map(([a, b]) => [[a, b].sort().join('|'), [a, b]])).values(),
-];
+// Owner ruling (2026-10-29): no family tree. Parents and partners are not loaded; the character
+// web (public.character_connection) links cards instead.
 
 const eventRows = events.map(({ id, fields: f }) => ({
   source_id: id,
@@ -225,21 +219,6 @@ on conflict (source_id) do update set lookup = excluded.lookup, name = excluded.
   gender = excluded.gender, birth_year = excluded.birth_year, death_year = excluded.death_year,
   birth_place_id = excluded.birth_place_id, death_place_id = excluded.death_place_id,
   verse_count = excluded.verse_count, also_called = excluded.also_called;`);
-
-add('bible_character_parents', parentRows, 2000, (j) => `
-update public.bible_character bc set father_id = f.id, mother_id = m.id
-from jsonb_to_recordset(${j}) as x(source_id text, father text, mother text)
-left join public.bible_character f on f.source_id = x.father
-left join public.bible_character m on m.source_id = x.mother
-where bc.source_id = x.source_id;`);
-
-add('bible_character_partner', partnerPairs, 2000, (j) => `
-insert into public.bible_character_partner (bible_character_id, partner_id)
-select least(a.id, b.id), greatest(a.id, b.id)
-from jsonb_array_elements(${j}) e
-join public.bible_character a on a.source_id = e->>0
-join public.bible_character b on b.source_id = e->>1
-on conflict do nothing;`);
 
 const link = (name, rows, table, cols, leftTable, rightTable) =>
   add(name, rows, 8000, (j) => `
