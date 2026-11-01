@@ -63,7 +63,15 @@ const OWNER_ADDS = new Set(['eve_1231', 'mary_1943', 'delilah_1005', 'luke_1836'
   'simon_2752', 'dorcas_2810', 'herod_1506', 'aquila_279',
   'sanballat_2470', 'tobiah_2872', 'shem_2613', 'japheth_726', 'amnon_232', 'tamar_2822', 'ananias_259',
   // Owner decision (2026-10-29): the people who link Ehud, Job, Micah and Jephthah into the character web
-  'eglon_1037', 'eliphaz_1145', 'bildad_499', 'zophar_3105', 'elihu_1130', 'jonathan_1691', 'gilead_1318']);
+  'eglon_1037', 'eliphaz_1145', 'bildad_499', 'zophar_3105', 'elihu_1130', 'jonathan_1691', 'gilead_1318',
+  // Owner decision (2026-10-31): all twelve apostles, the people missing from well-known stories, the rest of
+  // Jacob's sons, the prophets with a book, the first judge and the remaining kings of Judah
+  'bartholomew_405', 'james_718', 'lebbaeus_1815', 'simon_2746',
+  'azariah_545', 'jael_689', 'sapphira_2472', 'joseph_1716', 'simon_2749', 'barabbas_399', 'herodias_1507', 'seth_2504',
+  'zipporah_3095', 'philemon_2342', 'annas_269',
+  'levi_1820', 'issachar_645', 'zebulun_3002', 'naphtali_2149', 'asher_337',
+  'joel_1660', 'obadiah_2226', 'micah_2053', 'nahum_2145', 'habakkuk_1334', 'zephaniah_3040',
+  'othniel_2259', 'ahaziah_121', 'amon_236', 'jehoahaz_2516']);
 
 // Owner decision: Jesus is listed with the Gospels, not with his first prophecy (Genesis 49:10).
 const JESUS = 'jesus_905';

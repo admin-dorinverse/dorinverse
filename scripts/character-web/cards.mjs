@@ -1,4 +1,4 @@
-// Character cards: the written content of public.character_card, for the 240 people in
+// Character cards: the written content of public.character_card, for the 270 people in
 // roster.json (roster.mjs).
 //
 //   node scripts/character-web/cards.mjs pack     # source packs, one per character, in .cache/card-packs/
@@ -11,10 +11,11 @@
 // The cards themselves are written from the KJV text in the pack: cards/<lookup>.json.
 //
 // A card file:
-//   { "lookup": "elijah_1131", "name": "Elijah", "name_tag": null, "also_known_as": null,
-//     "summary": "...", "key_moments": [{ "title": "...", "description": "...",
+//   { "lookup": "elijah_1131", "name": "Elijah", "name_tag": null, "name_tag_reference": null,
+//     "also_known_as": null, "summary": "...", "key_moments": [{ "title": "...", "description": "...",
 //     "passage": "1 Kings 18:20–40", "place": "mount_carmel_..." }] }
-// name_tag is required when two cards share a name, and only then. also_known_as null copies
+// name_tag is required when two cards share a name, and only then. Every name_tag has a
+// name_tag_reference: one KJV passage whose words support it ("Mark 15:43"). also_known_as null copies
 // bible_character.also_called; a list replaces it ([] shows none). place is a place lookup or null.
 // The load copies the rest of the card from the reading layer: its verses (verse_bible_character),
 // their places (verse_place) plus the moments' places, and the verse count.
@@ -32,7 +33,8 @@ const ref = loadReference({ text: true });
 // The name a card shows before any tag: the display name without its "(...)" note, or the
 // name the KJV uses where the display name is a historians' label or misspelt.
 const CARD_NAMES = { israel_682: 'Jacob', esau_1216: 'Esau', herod_1505: 'Herod', herod_1506: 'Herod',
-  philip_2344: 'Philip', philip_2347: 'Philip', portius_2367: 'Festus', john_1676: 'John', john_1677: 'John', simon_2752: 'Simon' };
+  philip_2344: 'Philip', philip_2347: 'Philip', portius_2367: 'Festus', john_1676: 'John', john_1677: 'John', simon_2752: 'Simon',
+  azariah_545: 'Abednego', lebbaeus_1815: 'Thaddaeus', simon_2746: 'Simon' };
 const cardName = (p) => CARD_NAMES[p.lookup] ?? p.name.replace(/\s*\(.*\)$/, '');
 const nameCount = new Map();
 for (const p of roster) nameCount.set(cardName(p), (nameCount.get(cardName(p)) ?? 0) + 1);
@@ -45,8 +47,9 @@ for (const vs of versesOf.values()) vs.sort((a, b) => seqKey(a) - seqKey(b));
 const refText = (r) => formatRefs(ref, [r]);
 
 const SUMMARY_MAX_SENTENCES = 2;
-// Owner ruling (2026-10-29): scripture gives Gilead one moment only (Judges 11:1–3); every other card has 2–5.
-const ONE_MOMENT = ['gilead_1318'];
+// Owner rulings: scripture gives Gilead (Judges 11:1–3, 2026-10-29), Simon of Cyrene (the cross) and
+// Philemon (Paul's letter about Onesimus, both 2026-10-31) one moment only; every other card has 2–5.
+const ONE_MOMENT = ['gilead_1318', 'simon_2749', 'philemon_2342'];
 const sentences = (s) => (s.match(/[.!?](?=\s|$)/g) ?? []).length;
 
 const cmd = process.argv[2];
@@ -157,6 +160,11 @@ function check(only = []) {
     // a name no other card has takes a tag only when other Bible people bear it too (Simon)
     if (!shared && !p.shared && c.name_tag != null) errors.push(`${at}: "${c.name}" is not shared: name_tag must be null`);
     if (c.name_tag && c.name_tag.length > 24) errors.push(`${at}: name_tag over 24 characters`);
+    if (Boolean(c.name_tag) !== Boolean(c.name_tag_reference)) errors.push(`${at}: a name_tag, and only a name_tag, has a name_tag_reference`);
+    else if (c.name_tag_reference) {
+      if (c.name_tag_reference.includes(';')) errors.push(`${at}: name_tag_reference must be one passage`);
+      else try { expand(ref, c.name_tag_reference); } catch (e) { errors.push(`${at}: name_tag_reference: ${e.message}`); }
+    }
     if (c.also_known_as != null && !Array.isArray(c.also_known_as)) errors.push(`${at}: also_known_as must be null or a list`);
     if (!c.summary?.trim()) errors.push(`${at}: summary missing`);
     else if (sentences(c.summary) > SUMMARY_MAX_SENTENCES) errors.push(`${at}: summary over ${SUMMARY_MAX_SENTENCES} sentences`);
@@ -201,17 +209,17 @@ function sql({ errors, cards, missing }) {
   const arr = (a) => (a == null ? 'null' : `array[${a.map(q).join(',')}]::text[]`);
   const rows = cards.map((c) => {
     const moments = c.key_moments.map((m) => ({ title: m.title, description: m.description, passage: m.passage, place: m.place ?? null }));
-    return `(${q(c.lookup)}, ${q(c.name)}, ${q(c.name_tag)}, ${arr(c.also_known_as)}, ${q(c.summary)}, ${q(JSON.stringify(moments))}::jsonb)`;
+    return `(${q(c.lookup)}, ${q(c.name)}, ${q(c.name_tag)}, ${q(c.name_tag_reference)}, ${arr(c.also_known_as)}, ${q(c.summary)}, ${q(JSON.stringify(moments))}::jsonb)`;
   });
   // Moments are written with place lookups; the table keeps place_id, resolved here.
   const out = `-- Written by node scripts/character-web/cards.mjs sql. Upserts all ${cards.length} character cards as published,
 -- and copies each card's verses, places and verse count from the reading layer.
 begin;
-with src (lookup, name, name_tag, also_known_as, summary, moments) as (values
+with src (lookup, name, name_tag, name_tag_reference, also_known_as, summary, moments) as (values
 ${rows.join(',\n')}
 )
-insert into public.character_card (bible_character_id, name, name_tag, also_known_as, summary, key_moments, status)
-select c.id, s.name, s.name_tag, coalesce(s.also_known_as, c.also_called, '{}'), s.summary,
+insert into public.character_card (bible_character_id, name, name_tag, name_tag_reference, also_known_as, summary, key_moments, status)
+select c.id, s.name, s.name_tag, s.name_tag_reference, coalesce(s.also_known_as, c.also_called, '{}'), s.summary,
   (select jsonb_agg(jsonb_strip_nulls(jsonb_build_object('title', m ->> 'title', 'description', m ->> 'description',
      'passage', m ->> 'passage', 'place_id', pl.id)) order by n)
    from jsonb_array_elements(s.moments) with ordinality as t (m, n)
@@ -219,7 +227,7 @@ select c.id, s.name, s.name_tag, coalesce(s.also_known_as, c.also_called, '{}'),
   'published'
 from src s join public.bible_character c on c.lookup = s.lookup
 on conflict (bible_character_id) do update set name = excluded.name, name_tag = excluded.name_tag,
-  also_known_as = excluded.also_known_as, summary = excluded.summary, key_moments = excluded.key_moments,
+  name_tag_reference = excluded.name_tag_reference, also_known_as = excluded.also_known_as, summary = excluded.summary, key_moments = excluded.key_moments,
   status = excluded.status;
 
 delete from public.character_card_verse;
@@ -248,6 +256,8 @@ do $$ begin
     raise exception 'a character card has no verses';
   end if;
 end $$;
+-- every row now has its name tag reference, so the check can cover the old rows too
+alter table public.character_card validate constraint character_card_name_tag_reference_check;
 commit;
 `;
   const file = path.join(DIR, '.cache', 'character-cards.sql');

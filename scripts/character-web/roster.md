@@ -4,7 +4,7 @@ _Written by `node scripts/character-web/roster.mjs`. Edit the script, not this f
 
 These are the characters a cookie box can reveal. Once saved to the database the list stands on its own, so changing a lesson title or reloading the Bible data never changes who is on it.
 
-Drafted from everyone the lessons lean on (406 people): those with at least two of three signs (a title names them; scenes in 2+ chapters, not counting genealogies; a dictionary entry of their own), plus the people you added. God, the Holy Spirit, Satan, angels and false gods are left off. Jesus is listed with the Gospels.
+Drafted from everyone the lessons lean on (416 people): those with at least two of three signs (a title names them; scenes in 2+ chapters, not counting genealogies; a dictionary entry of their own), plus the people you added. God, the Holy Spirit, Satan, angels and false gods are left off. Jesus is listed with the Gospels.
 
 **Flags** in the last column:
 
@@ -14,9 +14,9 @@ Drafted from everyone the lessons lean on (406 people): those with at least two 
 
 When two people share a name, the row says where the Bible first names this one.
 
-**240 characters**, 43 of them added by you (marked _added_).
+**270 characters**, 73 of them added by you (marked _added_).
 
-## Genesis (38)
+## Genesis (44)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
@@ -24,6 +24,7 @@ When two people share a name, the row says where the Bible first names this one.
 | Eve | 4 | dictionary, _added_ | Stories — The Fall: Sin Enters the Garden | no place named with them |
 | Cain | 16 | title, dictionary | Stories — Cain and Abel: The First Murder |  |
 | Abel | 9 | title, dictionary | Stories — Cain and Abel: The First Murder | no place named with them |
+| Seth | 10 | _added_ | Stories — Cain and Abel: The First Murder |  |
 | Enoch (father of Methuselah) | 10 | dictionary, _added_ | Stories — Noah: Filling the Earth Again | no place named with them |
 | Methuselah | 7 | _added_ | Stories — Noah: Filling the Earth Again | no place named with them |
 | Noah | 47 | title, scenes, dictionary | Stories — Noah: Filling the Earth Again | no place named with them |
@@ -47,9 +48,14 @@ When two people share a name, the row says where the Bible first names this one.
 | Leah | 32 | title, scenes | Stories — Jacob: Twenty Years with Laban |  |
 | Reuben | 70 | scenes, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
 | Simeon _(first named Genesis 29:33)_ | 40 | scenes, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
+| Levi (patriarch) | 64 | scenes, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
 | Judah (patriarch) | 245 | title, scenes, dictionary | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
 | Dan | 63 | scenes, dictionary | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
+| Naphtali | 49 | scenes, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
 | Gad _(first named Genesis 30:11)_ | 55 | scenes, dictionary | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
+| Asher | 43 | dictionary, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
+| Issachar _(first named Genesis 30:18)_ | 38 | dictionary, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
+| Zebulun | 46 | scenes, _added_ | Stories — Jacob: Twenty Years with Laban | also a nation or tribe |
 | Dinah | 8 | title, dictionary | Stories — Jacob: Twenty Years with Laban |  |
 | Joseph (son of Jacob) | 199 | title, scenes, dictionary | Stories — Jacob: Twenty Years with Laban |  |
 | Benjamin (patriarch) | 157 | title, scenes, dictionary | Stories — Jacob: Renamed Israel | also a nation or tribe |
@@ -59,7 +65,7 @@ When two people share a name, the row says where the Bible first names this one.
 | Manasseh (son of Joseph) | 109 | scenes, dictionary | Stories — Joseph: Raised Up in Egypt | also a nation or tribe |
 | Ephraim | 160 | scenes, dictionary | Stories — Joseph: Raised Up in Egypt | also a nation or tribe |
 
-## Exodus (10)
+## Exodus (11)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
@@ -67,6 +73,7 @@ When two people share a name, the row says where the Bible first names this one.
 | Daughter of Pharaoh _(first named Exodus 2:5)_ | 7 | dictionary, _added_ | Stories — Moses: Born Under Pharaoh’s Rule | no place named with them |
 | Moses | 774 | title, scenes, dictionary | Stories — Moses: Born Under Pharaoh’s Rule |  |
 | Jethro | 16 | title, scenes | Stories — Moses: Born Under Pharaoh’s Rule |  |
+| Zipporah | 3 | _added_ | Stories — Moses: Born Under Pharaoh’s Rule | no place named with them |
 | Aaron | 331 | title, scenes, dictionary | Stories — Moses: Called at the Burning Bush |  |
 | Korah (Levite) | 26 | title, dictionary | Stories — Moses: Sent to Face Pharaoh | no place named with them |
 | Eleazar _(first named Exodus 6:23)_ | 61 | scenes, dictionary | Stories — Moses: Sent to Face Pharaoh |  |
@@ -83,14 +90,15 @@ When two people share a name, the row says where the Bible first names this one.
 | Balak | 41 | title, scenes | Stories — Balaam: Sent to Curse Israel |  |
 | Balaam | 59 | title, scenes, dictionary | Stories — Balaam: Sent to Curse Israel |  |
 
-## Joshua (2)
+## Joshua (3)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
 | Rahab | 7 | title, scenes, dictionary | Stories — Joshua: Crossing the Jordan into Canaan |  |
 | Achan | 7 | title, dictionary | Stories — Joshua: The First Cities Taken |  |
+| Othniel | 6 | dictionary, _added_ | Stories — Joshua: Dividing the Land by Lot | no place named with them |
 
-## Judges (15)
+## Judges (16)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
@@ -99,6 +107,7 @@ When two people share a name, the row says where the Bible first names this one.
 | Sisera (army captain) | 17 | title, scenes, dictionary | Stories — Deborah: Victory over Sisera |  |
 | Deborah _(first named Judges 4:4)_ | 9 | title, scenes, dictionary | Stories — Deborah: Victory over Sisera |  |
 | Barak | 13 | title, scenes, dictionary | Stories — Deborah: Victory over Sisera |  |
+| Jael | 6 | scenes, dictionary, _added_ | Stories — Deborah: Victory over Sisera |  |
 | Gideon | 49 | title, scenes, dictionary | Stories — Gideon: Three Hundred Against Midian |  |
 | Abimelech _(first named Judges 8:31)_ | 36 | title, dictionary | Stories — Gideon: Three Hundred Against Midian |  |
 | Jotham _(first named Judges 9:5)_ | 4 | title, dictionary | Stories — Abimelech: The Thorn Bush King | one chapter — check for 2 moments |
@@ -188,13 +197,14 @@ When two people share a name, the row says where the Bible first names this one.
 | Ahaziah _(first named 1 Kings 22:40)_ | 7 | title, scenes, dictionary | Stories — Ahab: The Most Wicked King |  |
 | Jehoram _(first named 1 Kings 22:50)_ | 16 | scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
 
-## 2 Kings (28)
+## 2 Kings (31)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
 | Joram _(first named 2 Kings 1:17)_ | 19 | scenes, dictionary | Stories — Elijah: Taken Up by a Whirlwind |  |
 | Gehazi | 12 | scenes, dictionary | Stories — Elisha: The Prophet’s Mighty Works |  |
 | Naaman _(first named 2 Kings 5:1)_ | 11 | title, dictionary | Stories — Elisha: The Prophet’s Mighty Works |  |
+| Ahaziah _(first named 2 Kings 8:24)_ | 26 | scenes, _added_ | Stories — Saul: The Philistines Gather for War |  |
 | Athaliah _(first named 2 Kings 8:26)_ | 15 | scenes, dictionary | Stories — Joash: The Boy King Hidden Away |  |
 | Joash _(first named 2 Kings 11:2)_ | 19 | title, scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
 | Jehoiada _(first named 2 Kings 11:4)_ | 26 | scenes, dictionary | Stories — Joash: The Boy King Hidden Away |  |
@@ -212,8 +222,10 @@ When two people share a name, the row says where the Bible first names this one.
 | Eliakim _(first named 2 Kings 18:18)_ | 9 | title, scenes | Stories — Hezekiah: None Like Him in Judah | no place named with them |
 | Isaiah | 53 | title, scenes, dictionary | Stories — Judah: Four Kings Before Hezekiah |  |
 | Manasseh (son of Hezekiah) | 24 | title, scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
+| Amon _(first named 2 Kings 21:18)_ | 15 | scenes, _added_ | Stories — Saul: The Philistines Gather for War |  |
 | Hilkiah _(first named 2 Kings 22:4)_ | 20 | scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
 | Ahikam | 20 | scenes, dictionary | Stories — Judah: Turning Back to God |  |
+| Jehoahaz _(first named 2 Kings 23:30)_ | 8 | scenes, dictionary, _added_ | Stories — Saul: The Philistines Gather for War |  |
 | Jehoiakim | 37 | scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
 | Nebuchadnezzar | 88 | title, scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
 | Jehoiachin | 21 | scenes, dictionary | Stories — Saul: The Philistines Gather for War |  |
@@ -271,10 +283,11 @@ When two people share a name, the row says where the Bible first names this one.
 | Zophar | 4 | _added_ | Stories — Job: A Faithful Man Tested | no place named with them |
 | Elihu _(first named Job 32:2)_ | 7 | _added_ | Wisdom — Purity: The LORD Tests the Heart | no place named with them |
 
-## Jeremiah (2)
+## Jeremiah (3)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
+| Micah _(first named Jeremiah 26:18)_ | 2 | title, _added_ | Stories — Jeremiah: On Trial for His Message |  |
 | Baruch _(first named Jeremiah 32:12)_ | 21 | title, scenes, dictionary | Stories — Jeremiah: The King Burns the Scroll |  |
 | Pharaoh _(first named Jeremiah 44:30)_ | 12 | title, scenes | Stories — Jeremiah: The Remnant Flees to Egypt |  |
 
@@ -286,10 +299,11 @@ When two people share a name, the row says where the Bible first names this one.
 | Daniel _(first named Ezekiel 14:14)_ | 72 | title, scenes | Stories — Daniel: Faithful in the King’s Court |  |
 | Gog _(first named Ezekiel 38:2)_ | 8 | title, scenes | Prophets — Ezekiel: God Defeats Gog’s Army |  |
 
-## Daniel (4)
+## Daniel (5)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
+| Azariah _(first named Daniel 1:6)_ | 5 | _added_ | Stories — Daniel: Faithful in the King’s Court | no place named with them |
 | Meshach | 18 | title, scenes | Stories — Daniel: Faithful in the King’s Court |  |
 | Shadrach | 18 | title, scenes, dictionary | Stories — Daniel: Faithful in the King’s Court |  |
 | Belshazzar | 8 | title, dictionary | Stories — Belshazzar: The Writing on the Wall |  |
@@ -302,11 +316,41 @@ When two people share a name, the row says where the Bible first names this one.
 | Hosea | 3 | title, dictionary | Prophets — Hosea: A Faithless Wife Loved Again | no place named with them |
 | Gomer (wife of Hosea) | 1 | title, _added_ | Prophets — Hosea: A Faithless Wife Loved Again | one chapter — check for 2 moments; no place named with them |
 
+## Joel (1)
+
+| Name | Verses | Signs | First cookie box | Check |
+|---|---|---|---|---|
+| Joel _(first named Joel 1:1)_ | 2 | title, _added_ | Stories — Pentecost: The Holy Ghost Is Given | no place named with them |
+
 ## Amos (1)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
 | Amos _(first named Amos 1:1)_ | 7 | title, dictionary | Words — Words: Trees of the Land |  |
+
+## Obadiah (1)
+
+| Name | Verses | Signs | First cookie box | Check |
+|---|---|---|---|---|
+| Obadiah _(first named Obadiah 1:1)_ | 1 | title, _added_ | Prophets — Obadiah: Edom’s Pride Brought Down | one chapter — check for 2 moments |
+
+## Nahum (1)
+
+| Name | Verses | Signs | First cookie box | Check |
+|---|---|---|---|---|
+| Nahum | 1 | title, _added_ | Prophets — Nahum: Nineveh Will Be Laid Waste | one chapter — check for 2 moments |
+
+## Habakkuk (1)
+
+| Name | Verses | Signs | First cookie box | Check |
+|---|---|---|---|---|
+| Habakkuk | 2 | title, _added_ | Prophets — Habakkuk: The Just Will Live by Faith | no place named with them |
+
+## Zephaniah (1)
+
+| Name | Verses | Signs | First cookie box | Check |
+|---|---|---|---|---|
+| Zephaniah _(first named Zephaniah 1:1)_ | 1 | title, _added_ | Prophets — Zephaniah: Gather Before the Day Comes | one chapter — check for 2 moments; no place named with them |
 
 ## Malachi (1)
 
@@ -314,7 +358,7 @@ When two people share a name, the row says where the Bible first names this one.
 |---|---|---|---|---|
 | Malachi | 1 | title, dictionary | Prophets — Malachi: God Answers Israel’s Questions | one chapter — check for 2 moments; no place named with them |
 
-## Matthew (18)
+## Matthew (26)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
@@ -328,14 +372,22 @@ When two people share a name, the row says where the Bible first names this one.
 | James (Son of Zebedee) | 18 | scenes, dictionary | Stories — Jesus: Preaching Around Galilee |  |
 | John the Apostle | 35 | title, scenes, dictionary | Stories — Jesus: Preaching Around Galilee |  |
 | Matthew | 8 | title, dictionary | Stories — Jesus: Questioned by the Pharisees | no place named with them |
+| Bartholomew | 4 | dictionary, _added_ | Stories — Jesus: With Him or Against Him | no place named with them |
+| James (Son of Alphaeus) | 5 | _added_ | Stories — Jesus: With Him or Against Him | no place named with them |
+| Lebbaeus Thaddaeus | 5 | _added_ | Stories — Jesus: With Him or Against Him | no place named with them |
 | Phillip the Apostle | 15 | scenes, dictionary | Stories — Jesus: His Work Begins |  |
 | Thomas | 12 | title, dictionary | Stories — Jesus: With Him or Against Him |  |
 | Judas Iscariot | 23 | scenes, dictionary | Stories — Jesus: With Him or Against Him |  |
+| Simon Zelotes | 4 | _added_ | Stories — Jesus: With Him or Against Him | no place named with them |
 | James (Brother of Jesus) | 15 | title, _added_ | Stories — Jesus: Who Is This Man? | no place named with them |
 | Herod Antipas | 23 | scenes, _added_ | Stories — John the Baptist: Preparing the Way |  |
+| Herodias | 4 | _added_ | Stories — Jesus: Feeding the Five Thousand | no place named with them |
 | Caiaphas | 9 | title, scenes, dictionary | Stories — John the Baptist: Preparing the Way | no place named with them |
 | Pontius Pilate | 54 | scenes, dictionary | Stories — John the Baptist: Preparing the Way |  |
+| Barabbas | 10 | scenes, _added_ | Stories — Jesus: Arrested and Put on Trial | no place named with them |
+| Simon _(first named Matthew 27:32)_ | 3 | dictionary, _added_ | Stories — Jesus: Crucified and Buried |  |
 | Mary Magdalene | 14 | scenes, _added_ | Stories — Jesus: A Great Prophet Risen Up | no place named with them |
+| Joseph (of Arimathea) | 6 | scenes, dictionary, _added_ | Stories — Jesus: Crucified and Buried |  |
 
 ## Mark (1)
 
@@ -343,13 +395,14 @@ When two people share a name, the row says where the Bible first names this one.
 |---|---|---|---|---|
 | Bartimaeus | 1 | title, _added_ | Stories — Jesus: Entering the Kingdom of God | one chapter — check for 2 moments |
 
-## Luke (6)
+## Luke (7)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
 | Elisabeth | 8 | title, _added_ | Stories — Gabriel: Two Births Announced | one chapter — check for 2 moments |
 | Zacharias _(first named Luke 1:5)_ | 9 | title, dictionary | Stories — Gabriel: Two Births Announced |  |
 | Simeon _(first named Luke 2:25)_ | 2 | title, _added_ | Stories — Jesus: Born in Bethlehem | one chapter — check for 2 moments |
+| Annas | 4 | dictionary, _added_ | Stories — John the Baptist: Preparing the Way | no place named with them |
 | Martha | 12 | scenes, dictionary | Stories — Jesus: Through Cities and Villages |  |
 | Mary (sister of Lazarus) | 11 | scenes, dictionary | Stories — Jesus: Through Cities and Villages |  |
 | Zacchaeus | 3 | title, dictionary | Stories — Jesus: The King Who Comes | one chapter — check for 2 moments; no place named with them |
@@ -361,12 +414,13 @@ When two people share a name, the row says where the Bible first names this one.
 | Nicodemus | 5 | title, dictionary | Stories — Jesus: Offering Everlasting Life | no place named with them |
 | Lazarus _(first named John 11:1)_ | 11 | title, scenes | Stories — Lazarus: Jesus Raises His Friend |  |
 
-## Acts (22)
+## Acts (23)
 
 | Name | Verses | Signs | First cookie box | Check |
 |---|---|---|---|---|
 | Barnabas | 29 | title, scenes, dictionary | Stories — Peter and John: Bold Before the Council |  |
 | Ananias (Husband of Sapphira) | 3 | title, dictionary | Stories — The Apostles: Obey God Rather Than Men | one chapter — check for 2 moments; no place named with them |
+| Sapphira | 1 | title, _added_ | Stories — The Apostles: Obey God Rather Than Men | one chapter — check for 2 moments; no place named with them |
 | Gamaliel _(first named Acts 5:34)_ | 2 | title, dictionary | Stories — The Apostles: Obey God Rather Than Men |  |
 | Phillip the Evangelist | 16 | dictionary, _added_ | Stories — The Apostles: Obey God Rather Than Men |  |
 | Stephen | 7 | title, dictionary | Stories — The Apostles: Obey God Rather Than Men |  |
@@ -400,3 +454,9 @@ When two people share a name, the row says where the Bible first names this one.
 |---|---|---|---|---|
 | Onesimus | 2 | title, dictionary | Letters — Colossians: Everything You Need Is in Christ | no place named with them |
 | Luke | 3 | dictionary, _added_ | Letters — Colossians: Everything You Need Is in Christ | no place named with them |
+
+## Philemon (1)
+
+| Name | Verses | Signs | First cookie box | Check |
+|---|---|---|---|---|
+| Philemon | 1 | title, _added_ | Letters — Philemon: Paul’s Plea for Onesimus | one chapter — check for 2 moments; no place named with them |
