@@ -6,7 +6,7 @@
 // The data dir (default ~/OneDrive/Desktop/dorinverse-data) holds bsb.json and web.json from its
 // convert_bsb.js / convert_web.js: [{ translation, book, book_num, chapter, verse, text }].
 // Every row is checked against the 31,102 KJV verses in the reference cache before any SQL is written.
-// Empty texts (verses the translation leaves out) get no row. Psalm titles stay in verse 1.
+// A verse the translation leaves out (empty text) gets NOT_INCLUDED with included = false. Psalm titles stay in verse 1.
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -16,6 +16,7 @@ const DIR = import.meta.dirname;
 const OUT_DIR = path.join(DIR, '.cache');
 const DATA_DIR = process.argv[2] ?? path.join(os.homedir(), 'OneDrive', 'Desktop', 'dorinverse-data');
 const CHUNK = 4000;   // rows per file, so each db query stays small
+const NOT_INCLUDED = 'Not included in this translation.';
 
 const TRANSLATIONS = [
   { code: 'BSB', file: 'bsb.json' },
@@ -50,24 +51,25 @@ for (const t of TRANSLATIONS) {
   if (errors.length) { console.error(`${t.code}:\n  ${errors.join('\n  ')}`); process.exit(1); }
   const omitted = kjv.filter((k) => !texts.has(k));
 
-  const ordered = kjv.filter((k) => texts.has(k));
-  const files = Math.ceil(ordered.length / CHUNK);
+  const files = Math.ceil(kjv.length / CHUNK);
   for (let i = 0; i < files; i++) {
-    const values = ordered.slice(i * CHUNK, (i + 1) * CHUNK).map((k) => `('${k}', ${lit(texts.get(k))})`);   // osis needs no escaping
+    const values = kjv.slice(i * CHUNK, (i + 1) * CHUNK).map((k) => texts.has(k)   // osis needs no escaping
+      ? `('${k}', ${lit(texts.get(k))}, true)` : `('${k}', ${lit(NOT_INCLUDED)}, false)`);
     const name = `verse-text-${t.code.toLowerCase()}-${i + 1}.sql`;
     fs.writeFileSync(path.join(OUT_DIR, name), `-- Written by node scripts/translations/load.mjs. ${t.code} part ${i + 1} of ${files}.
-insert into public.verse_text (verse_id, translation_code, text)
-select v.id, '${t.code}', s.text
+insert into public.verse_text (verse_id, translation_code, text, included)
+select v.id, '${t.code}', s.text, s.included
 from (values
 ${values.join(',\n')}
-) s (osis, text)
+) s (osis, text, included)
 join public.verse v on v.osis_ref = s.osis
-on conflict (verse_id, translation_code) do update set text = excluded.text;
+on conflict (verse_id, translation_code) do update set text = excluded.text, included = excluded.included;
 `);
   }
-  console.log(`${t.code}: ${texts.size} verses in ${files} files; ${omitted.length} left out: ${omitted.join(' ')}`);
+  console.log(`${t.code}: ${texts.size} verses in ${files} files; ${omitted.length} not included: ${omitted.join(' ')}`);
 }
 
 fs.writeFileSync(path.join(OUT_DIR, 'verse-text-check.sql'), `-- Written by node scripts/translations/load.mjs. Run after the load: rows per translation.
-select translation_code, count(*) from public.verse_text group by translation_code order by 1;
+select translation_code, count(*) filter (where included) as included, count(*) filter (where not included) as not_included
+from public.verse_text group by translation_code order by 1;
 `);
