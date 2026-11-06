@@ -24,8 +24,8 @@ Every lesson step also gets the passage text in the BSB.
 | Passages | `passages.md` | The BSB text of the whole Bible |
 | Prep walkthrough | `prep-walkthrough.md` | `papa-dorin.md` |
 | Burnt Cookies | `burnt-cookies.md` | `papa-dorin.md`, the Prep cards for the passage |
-| Station picker | `station-picker.md` | The Prep cards for the passage, its `BSB Eligible` words, the running station totals |
-| Words | `station-words.md` | The passage's words flagged `BSB Eligible` in the database (from Easton's Bible Dictionary) |
+| Station picker | `station-picker.md` | The Prep cards for the passage, its `BSB Eligible` words (from `public.dictionary_term_verse`), the running station totals |
+| Words | `station-words.md` | The passage's `BSB Eligible` words, from `public.dictionary_term_verse` (Easton's Bible Dictionary) |
 | Idioms | `station-idioms.md` | `papa-dorin.md`, the passage's idioms from the database (found by the station picker) |
 | Wisdom | `station-wisdom.md` | `papa-dorin.md`, the Prep cards for the passage |
 | Parables | `station-parables.md` | — |

@@ -24,6 +24,7 @@ After the walkthrough, Papa Dorin retells the passage one last time in 8 short l
 - Exactly one detail is changed to something wrong.
 - The wrong detail is a real detail from somewhere in the Bible and the same kind of thing as the true one: a place for a place, a person for a person. For example, "Jonah finds a ship headed for Joppa."
 - It's a detail the walkthrough taught, so the baker had a fair chance to know it.
+- It can reuse a wrong answer from a Prep choice card, but a new wrong detail is better.
 - It's a detail that matters, never a wording trick or a near-synonym, so swapping "ship" for "boat" doesn't count.
 - It's never taken from a summary story card for a long stretch.
 

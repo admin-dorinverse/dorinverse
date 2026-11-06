@@ -14,7 +14,7 @@ A single word from the passage texts the baker. At first it shows up as **Unknow
 ## The word
 
 - **One word per station.**
-- The word must be flagged `BSB Eligible` in the database (from Easton's Bible Dictionary), and it must appear in the BSB text of the passage.
+- The word must be flagged `BSB Eligible` in the database (from Easton's Bible Dictionary), and it must appear in the BSB text of the passage spelled exactly as its Easton's term. A plural or another form of the word doesn't count: "Host" isn't "Hosts."
 - **It carries real weight.** The baker needs it to understand the passage, and it matters across the Bible.
 - If no word in the passage meets that bar, the passage gets no Words station.
 

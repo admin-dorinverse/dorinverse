@@ -13,7 +13,7 @@ Papa Dorin presents a phrase people still say today that comes from the passage.
 
 ## The idioms
 
-- The idioms for the passage are found by the station picker and saved in the database. Use the ones given.
+- The idioms for the passage are found by the station picker, and the pipeline saves them in the database. Use the ones given.
 - If there is more than one, each idiom gets the full flow before the next one starts.
 
 ## Who's talking

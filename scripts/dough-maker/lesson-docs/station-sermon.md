@@ -4,7 +4,7 @@ This file covers the content for the Sermon station.
 
 ## What it is
 
-A skeptic, the Heckler, pushes back on what the passage teaches. The baker answers each objection with what the speaker actually said. It's used for sermons, speeches and letters.
+A skeptic, the Heckler, pushes back on what the passage teaches. The baker answers each objection with what the speaker actually said. It's used for sermons, speeches, letters and prophets' messages. When the passage has more than one voice, like God's and the people's in Isaiah 53, each right answer says who is speaking.
 
 ## The passage text
 

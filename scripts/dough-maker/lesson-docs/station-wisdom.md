@@ -15,7 +15,8 @@ Papa Dorin gives the baker everyday scenarios, one at a time. For each one, the 
 
 - The Prep story cards and choice cards for the passage are provided.
 - **Only sayings Prep taught can be used.** Every scenario comes from a saying Papa Dorin told or asked about in Prep.
-- **Each saying states a result.** It says where the wise way leads, where the foolish way leads, or both. A verse that doesn't state a result can't be used.
+- **Each saying is life application.** It teaches anyone how to live, or what comes from living a certain way. A promise God made to one person, like His oath to Abraham (Genesis 22:16–18), doesn't count.
+- **At least 3 different sayings,** so the scenarios don't all come from one verse.
 
 ## Who's talking
 

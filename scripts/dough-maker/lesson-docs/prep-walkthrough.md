@@ -35,7 +35,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
   - Aim for one beat per story card. Two is the most. If a story card has more than two things happening, split it.
 - **Short, but not stripped down.** A story card still has enough of Papa Dorin's voice and enough context that the moment makes sense.
 - **Keep the baker choosing.** If several story cards go by without a choice, there is probably a moment in them worth asking about. Summary story cards for long stretches don't count here.
-- **About 20 choice cards.** Use as many as the passage needs to be understood, and no more. A long passage gets more story cards, not more choice cards. Prep should never feel like a chore to get through.
+- **About 20 choice cards is the most, not a goal.** Use as many as the passage needs to be understood, and no more. A long passage gets more story cards, not more choice cards. Prep should never feel like a chore to get through.
 
 ## Everything moves the passage along
 
@@ -52,6 +52,9 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
 ## Never give away an answer
 
 No card ever gives away the answer to a choice card that comes later. Once a choice has been answered, the cards after it can build on that answer.
+
+- The passage title doesn't count. It's set before Prep is written.
+- When a line repeats, like a psalm's refrain, ask about it only the first time it appears.
 
 ## Long stretches that don't move the passage
 
@@ -138,7 +141,9 @@ Prep must never become a guessing game.
 
 - Each choice card has **3 answers** and **one try**. A wrong pick shows the right answer with its verse, then play moves on.
 - All three answers are the same kind of thing, about the same length and the same tone. None are silly.
-- Wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish. Each wrong answer must be false for that moment.
+- For who, what and where questions, wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish.
+- For why and meaning questions, wrong answers only need to be believable.
+- Each wrong answer must be false for that moment.
 - Don't let the right answer stand out. All three answers sound alike. If one sounds like Bible wording and the others sound modern, rewrite them so they match.
 - The code shuffles where the right answer sits. The agent doesn't need to.
 

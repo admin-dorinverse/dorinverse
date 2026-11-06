@@ -35,7 +35,7 @@ Only two kinds of rules can become rule cookies. Nothing else.
 
 **2. New Testament commands.** All of these must be true:
 - It's a command stated in the passage.
-- It's given by Jesus or an apostle.
+- It's given by Jesus or by the writer of a New Testament letter.
 - It's for believers. A one-time instruction to one person isn't a rule.
 - It was told in Prep.
 
@@ -49,13 +49,15 @@ Only two kinds of rules can become rule cookies. Nothing else.
 
 ### Character card cookies
 
-- Given for each name in the passage that is in the app's character set.
+- Given for each person who is part of the passage, matched to the character cards in the staging database.
+- A name used only in a title, like "the God of Jacob" or "the sons of Korah," doesn't count.
 - The card reveals the character's name. Everything else about the character comes from the database.
 - A character can show up in more than one passage. That's fine.
 
 ### Song cookies
 
 - Only when the text says it was sung. For example, Exodus 15:1.
+- Not when the whole passage is the song, like most psalms. The song cookie is for a song inside a passage.
 
 ### Prayer cookies
 
@@ -63,7 +65,8 @@ Only two kinds of rules can become rule cookies. Nothing else.
 
 ### Blessing cookies
 
-- Only when the text calls it a blessing. For example, Numbers 6:23–26.
+- Only when someone speaks a blessing over others and the text calls it a blessing. For example, Numbers 6:23–26.
+- The words "blessed" or "bless" alone don't make a blessing. "Blessed is the man…" (James 1:12) and "I will surely bless you" (Genesis 22:17) don't count.
 
 **Card for songs, prayers and blessings**
 - Who: who sang, prayed or blessed
@@ -79,6 +82,7 @@ Only two kinds of rules can become rule cookies. Nothing else.
 **Card**
 - One side: the promise, in exact BSB wording, with its reference
 - Other side: the fulfillment, in exact BSB wording, with its reference
+- Quote only the verses that make the link. For Acts 8:32–35, that's the verses the eunuch reads (8:32–33), not the whole conversation.
 
 ## What is never a sample cookie
 
