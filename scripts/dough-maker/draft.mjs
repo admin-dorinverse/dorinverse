@@ -31,7 +31,7 @@ const lines = [
   '',
   `**Recipe:** ${recipe}`,
   '**Rules version:** v1',
-  '**Source:** staging-dorinverse only (KJV verse text; people and places from the reference layer)',
+  '**Source:** staging-dorinverse only (BSB verse text; people and places from the reference layer)',
   `**Drafted:** ${today}`,
   '',
   COUNTS_START,

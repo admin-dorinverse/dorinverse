@@ -53,7 +53,8 @@ export function query(sql) {
 // One json_agg cell per query keeps the Management API payload to a single row.
 export const agg = (sql) => query(`select coalesce(json_agg(agg_row), '[]') as j from (${sql}) agg_row`)[0].j;
 
-export function loadReference({ text = false } = {}) {
+// text: KJV text by osis ref (ref.verses). bsb: the lesson text, BSB by osis ref (ref.bsb; null where the BSB leaves the verse out).
+export function loadReference({ text = false, bsb = false } = {}) {
   const file = path.join(CACHE, 'reference.json');
   if (!fs.existsSync(file)) throw new Error('no reference cache: run node scripts/dough-maker/fetch-reference.mjs');
   const ref = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -71,7 +72,10 @@ export function loadReference({ text = false } = {}) {
 
   const people = Object.fromEntries(ref.people.map((p) => [p.lookup, p.display_title || p.name]));
   const places = Object.fromEntries(ref.places.map((p) => [p.lookup, p.name]));
+  const bsbFile = path.join(CACHE, 'bsb.json');
+  if (bsb && !fs.existsSync(bsbFile)) throw new Error('no BSB cache: run node scripts/dough-maker/fetch-reference.mjs');
   return { books, chapterVerses, people, places, links: ref.links, verses: text ? verses : null,
+    bsb: bsb ? JSON.parse(fs.readFileSync(bsbFile, 'utf8')) : null,
     totalVerses: Object.keys(verses).length };
 }
 
