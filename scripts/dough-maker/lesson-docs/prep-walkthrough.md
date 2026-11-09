@@ -1,6 +1,6 @@
 # Papa Dorin's Prep: Walkthrough
 
-This file covers the walkthrough part of Papa Dorin's Prep: the story cards and the choice cards. It does not cover Papa Dorin's voice or Burnt Cookies. Those have their own files (see the end).
+This file covers the walkthrough part of Papa Dorin's Prep: its stops, the story cards and the choice cards, the reveal screen after each stop, and correcting mistakes. It does not cover Papa Dorin's voice, Burnt Cookies or the Big Idea. Those have their own files (see the end).
 
 ## What it is
 
@@ -19,27 +19,93 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
 ## The passage text
 
 - The passage text is provided in the **BSB** (Berean Standard Bible).
-- Every fact and every verse number comes from that text.
+- Every fact and every verse number comes from that text. Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference.
+- The passage right before it is also provided, for context only. It is not part of the lesson.
+
+## Scripture rules
+
+- **Cite exactly what the card uses.** Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower. A choice card cites only the verses of its right answer. After a pick, the baker sees the reference, whether they were right or wrong.
+- **Counts and lists come from the data, never from memory.** Any count of verses, and any list of where a name appears, is looked up in the BSB data.
+- **Retelling:** Papa Dorin can retell in his own words and fill in what the text clearly implies. Scene-setting details are fine. He never says anything the text shows is wrong.
+    - **Leave open what the text leaves open:** who is being spoken to, why, or how two things connect.
+        ❌ "God tells the nations, 'Be still.'" ✅ "Then God speaks: 'Be still…'" (Ps 46:10)
+    - **Keep "like," "as," "if" and "though" as they are.**
+        ❌ "People hid their faces from Him." ✅ "He was treated like someone people hide their faces from." (Isa 53:3)
+    - **Don't stretch the text.** Exaggerate only in his own jokes.
+        ❌ "A famine. No food. NONE." ✅ "A famine. Food's running out." (Ruth 1:1)
+    - **Times stay true.** No time in the text means none added.
+        ❌ "For the third time today." ✅ "For the third time." (Gen 22:11)
+    - **Call things what the text calls them.**
+        ❌ "Naomi asks the LORD to bless them." ✅ "Naomi tells them, 'May the LORD…'" (Ruth 1:8)
+- **Noticing:** What he points out must be true. "Same words" means an exact match.
+    ❌ "Same words as before." ✅ "That line again." (Gen 22:6, 8)
+- **Feelings:** He can guess at a feeling, marked as his own ("I think," "I bet"). Never as fact.
+    ❌ "His dad doesn't want to explain." ✅ "I think his dad doesn't want to explain." (Gen 22:7–8)
+- **Reasons:** He never adds why someone did, said or thought something unless the text says why.
+    ❌ "They thought God was punishing Him for something He did." ✅ "They thought God had struck Him down." (Isa 53:4)
+- **Quotes:** Quotation marks around Bible words mean the exact BSB wording, punctuation included. A paraphrase uses no quotation marks. Papa Dorin's own made-up lines in his jokes can use quotation marks.
+- **Wrong answers:** They're made up. No reference, and not checked against a verse.
+- **Before you finish:** reread every card against these rules and fix anything that breaks them.
+
+## Stops
+
+The walkthrough is split into stops, so it never feels like one long thing to get through.
+
+- **About 1 to 3 stops per passage.** No hard cap. Use whatever fits the passage, but never let it run long.
+- **About 18 cards per stop,** story cards and choice cards together. No more than 20.
+- **Choice cards are equal to or more than story cards** in every stop.
+- **A short passage does what it can.** Never force it to fill a stop.
+- Each stop covers the next stretch of the passage, in order, and gives its verse range.
+- **An included parable or sermon** (see passages.md) gets a stop of its own.
+
+## The reveal screen
+
+After each stop, a reveal screen shows the Bible verses the passage has covered so far. Burnt Cookies doesn't get one.
+
+## Correcting mistakes
+
+- A wrong pick is shown as wrong.
+- At the end of the stop, Papa Dorin says something like "Let's correct some mistakes," and the missed questions come back.
+- The stop isn't finished until every question is answered right.
+- Questions that come back don't count toward the stop's cards.
 
 ## Two kinds of cards
 
-- **Story card:** Papa Dorin's turn. He tells the next piece of the passage. The setup for a choice is always on a story card.
-- **Choice card:** the baker's turn. A question and its 3 answers.
+- **Story card:** Papa Dorin's turn. He tells the next piece of the passage. The setup for a choice is on a story card. Not every choice card needs its own story card right before it: a choice card can follow another choice card when the setup is already told.
+- **Choice card:** the baker's turn. A question and its answers, in one of three question types (see below).
+
+## Question types
+
+- **Multiple choice:** a question and 3 answers.
+- **True or false:** a statement the baker marks true or false.
+- **Fill in the blank:** the question has a blank for 1 or 2 words. One blank has 3 answers. Two blanks have 5 single words to choose from.
+- A blank is a word that matters to the meaning, never a word like "or," "and" or "he."
+- **No formula.** Which question type comes next, the order the types come in and where a blank falls are chosen naturally for each card. They never follow a pattern. No stop repeats another stop's pattern, and no type dominates a stop by a wide margin.
+- The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen.
 
 ## What bite-sized means
 
+- **The opening card** can be up to 3 sentences. It says who is speaking, to whom, and what is going on. If the passage starts in the middle of a thought, it gives the context.
+- **Every other story card is 1 to 2 sentences.**
+- **No em dashes or en dashes to make a sentence longer.** They make two sentences look like four or five.
+- **Don't spend card words explaining a hard word.** Hard words get a dictionary pop-up (definitions.md, made after the cards).
 - **One beat per card.**
   - A story card carries one moment of the passage.
   - A choice card is one question and its answers.
   - A summary story card for a long stretch (see below) is one beat: the stretch itself.
   - Aim for one beat per story card. Two is the most. If a story card has more than two things happening, split it.
 - **Short, but not stripped down.** A story card still has enough of Papa Dorin's voice and enough context that the moment makes sense.
-- **Keep the baker choosing.** If several story cards go by without a choice, there is probably a moment in them worth asking about. Summary story cards for long stretches don't count here.
-- **About 20 choice cards is the most, not a goal.** Use as many as the passage needs to be understood, and no more. A long passage gets more story cards, not more choice cards. Prep should never feel like a chore to get through.
+- **Keep the baker choosing.** No more than 3 story cards in a row without a choice card (4 for poetry, letters and prophecy). Summary story cards for long stretches don't count.
+- Prep should never feel like a chore to get through.
 
 ## Everything moves the passage along
 
 - Every story card moves the baker forward through the passage.
+- No recap cards.
+- **When the story continues.** If the passage is in a story group and isn't the last passage in it, the last story card ends with a short line from Papa Dorin saying the story isn't over (or the teaching isn't done). It gives nothing away about what happens next. The examples show the idea. Write your own line each time.
+    - ✅ "And that's where we'll leave it for now. Trust me, friend, this story's not done."
+    - ❌ "Don't worry, Haman gets what's coming to him later."
+- Every story card tells part of the passage. Jokes ride along on those cards.
 - Papa Dorin can add a storyteller's line to carry the moment, like "But the Lord isn't finished with him," as long as it adds no facts.
 - Papa Dorin can retell what people in the passage say in his own words.
 - When Papa Dorin quotes the passage word for word, it is the exact BSB wording.
@@ -55,6 +121,8 @@ No card ever gives away the answer to a choice card that comes later. Once a cho
 
 - The passage title doesn't count. It's set before Prep is written.
 - When a line repeats, like a psalm's refrain, ask about it only the first time it appears.
+- A setup line can't rule out the wrong answers either.
+- **Pop-ups are the exception.** Sample cookies, definitions and idioms sit where their verse or word is, even if they show something a later choice card asks about.
 
 ## Long stretches that don't move the passage
 
@@ -92,6 +160,8 @@ In each good story card, the baker comes away knowing what the stretch was about
 
 Ask from inside the passage, the way a storyteller pauses to let the listener lean in. The question comes out of the moment Papa Dorin just set up.
 
+**Always give context in the question.** The story card before it isn't on screen anymore, so the question says who and what. Never "him," "that" or "it" pointing back to a card the baker can't see.
+
 ### Choice card examples: what Papa Dorin sets up and asks
 
 Each row is a separate example, in the order the moments happen in Jonah 1.
@@ -107,11 +177,10 @@ The bad ones sound like a test question. The good ones sound like Papa Dorin pau
 
 ## Poetry, letters and prophecy
 
-A story has events the baker can reason about. A psalm, a letter or a prophet's message has wording the baker can only guess. So in these passages:
+A story has events the baker can reason about. A psalm, a letter or a prophet's message has wording the baker can only guess. These rules apply to every passage, of any type:
 
 - **Ask about the movement and the meaning:** what changes, what the picture is, why the speaker says what he says.
 - **Never ask the baker to guess the next words of a line.**
-- **Fewer choice cards.** Tell more of the passage on story cards and save choice cards for the turns that matter.
 
 ### Example: Psalm 23
 
@@ -130,21 +199,20 @@ Prep must never become a guessing game.
 - **The check:** could a thoughtful baker who has only seen the earlier cards make a reasoned pick? If the only way to get it right is luck, give the story card more context or ask a different question.
 - **A few discovery questions are fine.** Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses.
 
-## Scripture rules (no inventing)
-
-- Every story card cites the verses it tells.
-- Every choice card and its right answer cite their verses. After a pick, the baker sees the reference, whether they were right or wrong.
-- Papa Dorin never adds an event, detail, motive, feeling or line of dialogue that the passage doesn't state.
-- If a detail isn't in the BSB text, it doesn't appear as fact.
-
 ## Answer rules
 
-- Each choice card has **3 answers** and **one try**. A wrong pick shows the right answer with its verse, then play moves on.
-- All three answers are the same kind of thing, about the same length and the same tone. None are silly.
-- For who, what and where questions, wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish.
+- Each choice card has **one try**. Multiple choice has **3 answers**, true or false has **2**, and fill in the blank has **3** for one blank and **5 single words** for two blanks. A wrong pick is shown as wrong and comes back at the end of the stop (see Correcting mistakes).
+- **No commas or periods in the answers.**
+- All the answers are the same kind of thing, about the same length and the same tone. None are silly.
+- For who, which thing and where questions, wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish. Wrong answers for what someone does or says only need to be believable.
 - For why and meaning questions, wrong answers only need to be believable.
-- Each wrong answer must be false for that moment.
-- Don't let the right answer stand out. All three answers sound alike. If one sounds like Bible wording and the others sound modern, rewrite them so they match.
+- Each wrong answer must be false anywhere in the passage, not just at that moment.
+- **No near-matches.** A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it.
+    ❌ "belongings of ___" with "another" (right) and "strangers" (Luke 16:12)
+- Don't let the right answer stand out. All the answers should sound alike. None should sound more like the Bible, or more modern, than the others.
+    - ❌ A. "God Himself will provide the lamb" · B. "We'll grab one on the way" · C. "Don't stress about it"
+    - ❌ A. "God's got it handled" · B. "The servants shall bring one forth" · C. "It awaiteth upon the mountain"
+    - ✅ A. "God Himself will provide the lamb" · B. "The servants will bring one up" · C. "We'll find one at the top"
 - The code shuffles where the right answer sits. The agent doesn't need to.
 
 ## Cookies
@@ -152,7 +220,54 @@ Prep must never become a guessing game.
 - Every right answer adds **1 sugar cookie** to the box.
 - A wrong answer adds nothing.
 
+## Output
+
+A JSON file for the passage. Card numbers start at 1 in each stop. References use the book names in the BSB text, with a hyphen for a range, like `Mark 2:1-3` or `Mark 2:23-3:6`.
+
+```json
+{
+  "passage": "Book 3:1-20",
+  "stops": [
+    {
+      "stop": 1,
+      "verses": "Book 3:1-20",
+      "cards": [
+        { "card": 1, "kind": "story", "verses": "Book 3:1-2", "text": "..." },
+        { "card": 2, "kind": "choice", "type": "multiple_choice", "verses": "Book 3:3",
+          "question": "...",
+          "answers": [
+            { "text": "...", "correct": true },
+            { "text": "...", "correct": false },
+            { "text": "...", "correct": false }
+          ] },
+        { "card": 3, "kind": "choice", "type": "true_false", "verses": "Book 3:4",
+          "question": "...",
+          "answers": [
+            { "text": "True", "correct": false },
+            { "text": "False", "correct": true }
+          ] },
+        { "card": 4, "kind": "choice", "type": "fill_blank", "verses": "Book 3:5",
+          "question": "... ___ ... ___ ...",
+          "answers": [
+            { "text": "...", "correct": true, "blank": 1 },
+            { "text": "...", "correct": true, "blank": 2 },
+            { "text": "...", "correct": false },
+            { "text": "...", "correct": false },
+            { "text": "...", "correct": false }
+          ] }
+      ]
+    }
+  ]
+}
+```
+
+- **kind:** "story" or "choice"
+- **type** (choice cards only): "multiple_choice", "true_false" or "fill_blank"
+- **verses:** what the card cites. On a choice card, it is only the verses of the right answer.
+- **Fill in the blank:** each blank in the question is `___`. With two blanks, each right answer gives the blank it fills.
+
 ## Other files
 
 - **Papa Dorin's personality:** his voice, and how he tells and asks.
 - **Burnt Cookies:** runs after the walkthrough ends. Its taps don't count toward the choice cards.
+- **The Big Idea:** comes after Burnt Cookies.

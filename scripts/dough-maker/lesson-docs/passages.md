@@ -5,12 +5,12 @@ This file covers how to divide the Bible into passages and give each one a type.
 ## The text
 
 - Work from the **BSB** (Berean Standard Bible).
-- The BSB's section headings can be used as hints for where a passage starts and stops. They are never the final word. Use judgment.
 
 ## The whole Bible
 
 - **About 1,500 passages** across the whole Bible. Anywhere from 1,200 to 2,100 is fine.
 - **Every verse belongs to exactly one passage.** No verse is skipped, and no verse is in two passages.
+- **Verses the BSB leaves out are skipped.** Some verse numbers appear only in a BSB footnote, like Matthew 23:14. They belong to no passage.
 - **Each passage is one unbroken range,** from a start verse to an end verse.
 - **Every passage has exactly one type.**
 
@@ -35,12 +35,18 @@ A passage is one complete unit the baker can understand on its own. For example:
 ## Keep these together
 
 - **A parable and its explanation stay in the same passage,** with everything between them. For example, Matthew 13:1–23 holds the parable of the sower, the disciples asking why Jesus speaks in parables, and His explanation.
+
+## Parables and sermons: included or standalone
+
+- **Included:** a parable or sermon that sits inside a bigger passage stays in that passage, and the passage keeps its own type. In Prep it gets a walkthrough stop of its own, and that's all. Burnt Cookies and the Big Idea run once, for the whole passage. For example, Luke 10:25–37 is a Narrative passage, and the Good Samaritan is a stop inside it.
+- **Standalone:** a parable or sermon that is a passage by itself takes the Parables or Sermons type and gets the full lesson.
 - **A song or prayer that needs the story around it stays with that story,** and the passage takes the story's type. For example, Moses' song (Exodus 15:1–21) makes sense only after the crossing of the Red Sea, so it stays with the story as Narrative. Jonah's prayer from inside the fish (Jonah 2) stays with Jonah's story.
 
 ## Length
 
-- **Long enough for a full lesson.** Prep needs real moments to ask about, and Burnt Cookies needs 8 lines that retell the passage.
-- **Short enough to stay bite-sized.** Prep tops out around 20 choice cards, and its story cards shouldn't pile up between them. If Prep would have to rush past important details to fit, the passage is too long.
+- **Long enough for a full lesson.** Prep needs real moments to ask about, and Burnt Cookies needs 5 lines that retell the passage.
+- **Short enough to stay bite-sized.** Prep runs about 1 to 3 stops of about 18 cards each (see prep-walkthrough.md). If Prep would have to rush past important details to fit, the passage is too long.
+- **A short passage does what it can.** Never force it to fill a full stop.
 - **Long stretches can run longer.** A genealogy, a census or a run of everyday laws is summed up in one story card in Prep, so it doesn't need to be split up just for length. Key laws, like the Ten Commandments, are not long stretches.
 
 ## When to merge
@@ -54,6 +60,14 @@ A passage is one complete unit the baker can understand on its own. For example:
 - **A long unit gets split where its theme changes.** For example, Psalm 119 is 176 verses. Split it into groups of stanzas wherever the theme shifts.
 - **If the theme doesn't change, keep it whole,** as long as it can still fit in one Prep.
 
+## Story groups
+
+- **When one story runs across more than one passage, those passages form a story group.** Each one stays its own passage.
+- **Group passages when the next passage picks up the same story:** the same people, and a problem set up in one passage is resolved in a later one. For example, Esther 1–10 is one story group.
+- A group can be a whole book or part of one. Not every passage is in a group.
+- Group only passages that are next to each other.
+- **A sermon or teaching split into more than one passage is grouped too,** even though it isn't a story. For example, the Sermon on the Mount (Matthew 5–7).
+
 ## Types
 
 **The type comes from what the passage itself is, never from the book it's in.** Read the passage and ask what it mostly is. The book is never the answer.
@@ -64,6 +78,8 @@ A passage is one complete unit the baker can understand on its own. For example:
 | **Poetry & Wisdom** | a song, a poetic prayer, proverbs or wisdom sayings |
 | **Letters** | a writer teaching or arguing in a letter to a church or a person |
 | **Prophetic** | a prophet delivering God's message: warnings, promises or visions |
+| **Parables** | a parable, with its explanation, as a passage of its own |
+| **Sermons** | a sermon or long teaching, as a passage of its own |
 
 ### When books mix types
 
@@ -87,10 +103,31 @@ These rulings override the type test above.
 
 - Short and plain. Say what the passage is about. For example, "Jonah Runs from the LORD."
 - Only use what the text states. Nothing added.
+- Each title is written for its own passage. No set template.
 
-## Output for each passage
+## Output
 
-- Title
-- Start verse
-- End verse
-- Type
+A JSON list, one entry per passage, in Bible order. Every field is filled in. References use the book names in the BSB text, like `Mark 2:1`.
+
+```json
+[
+  {
+    "id": 1,
+    "title": "...",
+    "start": "Book 3:1",
+    "end": "Book 3:20",
+    "type": "Narrative",
+    "story_group": null,
+    "position": null,
+    "included": [
+      { "kind": "parable", "start": "Book 3:8", "end": "Book 3:12" }
+    ]
+  }
+]
+```
+
+- **id:** the passage's number in Bible order, starting at 1
+- **type:** Narrative, Poetry & Wisdom, Letters, Prophetic, Parables or Sermons
+- **story_group:** the group name, or null
+- **position:** like "3 of 10", or null
+- **included:** each included parable or sermon, with kind "parable" or "sermon", or an empty list
