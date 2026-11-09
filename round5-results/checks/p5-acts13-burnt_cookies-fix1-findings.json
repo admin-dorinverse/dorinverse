@@ -1,0 +1,16 @@
+{
+  "step": "burnt_cookies",
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "line": 5
+      },
+      "problem": "Line 5 is a good (unburnt) line, but it says \"the Jews stir up persecution and drive Paul and Barnabas out of their district.\" In Acts 13:50 the Jews incite the religious women of prominence and the leading men of the city, and then \"They stirred up persecution against Paul and Barnabas and drove them out of their district.\" The text leaves open whether \"They\" means the Jews or the people they incited. The line settles that question and leaves out the women and leading men completely. Fix: keep the incitement, for example \"the Jews stir up the prominent women and leading men, persecution breaks out, and Paul and Barnabas get driven out of their district.\"",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "Leave open what the text leaves open. Who is being spoken to, why, or how two things connect."
+      }
+    }
+  ]
+}

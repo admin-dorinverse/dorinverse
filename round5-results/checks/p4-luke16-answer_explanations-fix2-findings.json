@@ -1,0 +1,65 @@
+{
+  "step": "answer_explanations",
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "Both explanations state the olive oil bill fact from Luke 16:6 with only the Luke 16:7 reference attached. True: \"Not as big a cut as the olive oil man got.\" False: \"The oil went to fifty, the wheat went to eighty.\" The oil going to fifty needs its own reference (Luke 16:6).",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "References. Every Bible fact he states carries its reference."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The explanations for \"A hundred measures of olive oil\" and \"A hundred jars of honey\" are nearly the same. Both quote the line and then close with almost the same line: \"That's a BIG number owed to one master, and the manager is about to do something with it.\" vs \"That's a big debt to one master, and the manager is about to start writing.\"",
+      "rule": {
+        "link": "answer-explanations.md#explanations",
+        "text": "There is no formula. Each explanation sounds natural and different from the others."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The explanations for \"strangers,\" \"rulers\" and \"family\" follow one pattern and end on the same point in nearly the same words: \"Theirs and yours, side by side.\" / \"Theirs versus yours, that's the whole contrast.\" / \"It's about whether it's yours or somebody else's.\"",
+      "rule": {
+        "link": "answer-explanations.md#explanations",
+        "text": "There is no formula. Each explanation sounds natural and different from the others."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "Explanation for \"Pay back every coin by tomorrow\" ends with a joke that doesn't click: \"if somebody gave me until TOMORROW to fix my crooked years, I'd still be behind the takeout menus.\" Fixing his crooked years doesn't match the core action (a deadline to repay a debt), and the takeout menus are first set up at card 3, after this card, so a baker has no way to get it.",
+      "rule": {
+        "link": "papa-dorin.md#joke-logic-test",
+        "text": "If a stranger would say \"huh?\", rewrite it."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "Explanation for \"another\" ties Jesus' line about \"the belongings of another\" (Luke 16:12) to the manager: \"That was the manager's whole job, looking after the rich man's possessions (Luke 16:1).\" Luke 16:12 doesn't make that link, and Luke 16:1 only says the manager was accused of wasting his master's possessions, not that looking after them was his \"whole job.\"",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "Connecting passages. When he connects two passages, or explains what a law was for, he says only what the texts state."
+      }
+    }
+  ]
+}

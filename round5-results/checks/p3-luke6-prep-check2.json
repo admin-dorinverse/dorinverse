@@ -1,0 +1,50 @@
+{
+  "step": "prep",
+  "findings": [
+    {
+      "covered": true,
+      "where": { "stop": 2, "card": 8 },
+      "problem": "This true or false card asks about 'love their enemies, do good to them' (Luke 6:35), but that line repeats Luke 6:27 ('Love your enemies, do good to those who hate you'), which was already asked in stop 1 card 17. The only new part of 6:35 is lending and expecting nothing in return, so the card should ask about that and not about the repeated line.",
+      "rule": {
+        "link": "prep-walkthrough.md#never-give-away-an-answer",
+        "text": "When a line repeats, like a psalm's refrain, ask about it only the first time it appears."
+      }
+    },
+    {
+      "covered": true,
+      "where": { "stop": 1, "card": 10 },
+      "problem": "The question retells Luke 6:22 ('blessed when people hate and insult them because of the Son of Man'), but the card cites only Luke 6:23. The reference should start at the first verse the card uses: Luke 6:22-23.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "The reference runs from the first verse a card uses to the last, no wider and no narrower."
+      }
+    },
+    {
+      "covered": true,
+      "where": { "stop": 1, "card": 2 },
+      "problem": "The question uses facts from Luke 6:17 (people from Judea, Jerusalem, Tyre and Sidon, and the level place), but the card cites only Luke 6:18. The reference should be Luke 6:17-18.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "The reference runs from the first verse a card uses to the last, no wider and no narrower."
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "The passage type is Sermons. The poetry, letters and prophecy rules (never guess the next words of a line, fill in the blank tests meaning not wording, fewer choice cards, up to 4 story cards in a row) don't say whether they cover sermons. Many choice cards here test exact wording of Jesus' lines: stop 1 cards 8 (laugh), 15 (false prophets) and 17 (enemies), stop 2 cards 10 (ungrateful), 12 (judged and forgiven) and 15 (measure), and stop 3 cards 11 (fruit) and 13 (mouth).",
+      "question": "Should Sermons passages follow the poetry, letters and prophecy rules, so that fill in the blank and other choice cards don't ask the baker to supply Jesus' exact wording? If they should, these cards need to be reworked."
+    },
+    {
+      "covered": false,
+      "where": { "stop": 1, "card": 1 },
+      "problem": "The opening card gives context from the passage before (Jesus has just chosen His twelve apostles up on the mountain, Luke 6:12-16) but cites only Luke 6:17. The docs say the opening card gives context and that the passage before is context only, not part of the lesson. They don't say whether an opening card can state facts from that passage, or how to cite them.",
+      "question": "Can the opening card state facts from the passage before as context? If it can, should it cite those verses (here Luke 6:12-17), or keep the reference inside the lesson's passage?"
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "The 'verses' field on a choice card is both what the card cites and the verses of the right answer. When a question retells an earlier verse for context (stop 1 cards 2 and 10, and the 'level place' detail from Luke 6:17 in stop 1 card 4), the card's reference and the right answer's reference are different, but there is only one field.",
+      "question": "When a choice card's question retells earlier verses for context, should 'verses' cover everything the card uses or only the right answer's verses? Should the schema get a separate field for the answer?"
+    }
+  ]
+}

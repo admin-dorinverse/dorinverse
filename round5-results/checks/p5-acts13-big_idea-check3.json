@@ -1,0 +1,13 @@
+{
+  "step": "big_idea",
+  "findings": [
+    { "covered": true,
+      "where": null,
+      "problem": "Line 1 states \"Paul stands up in that synagogue\", which is Acts 13:16 (and 13:14 for the synagogue). The only reference on that line is (Acts 13:17-23), so this fact has no reference. Changing it to (Acts 13:16-23) would fix it.",
+      "rule": { "link": "papa-dorin.md#facts-and-scripture", "text": "**References.** Every Bible fact he states carries its reference." } },
+    { "covered": false,
+      "where": null,
+      "problem": "big-idea.md asks for \"about 5 to 7 lines\" and says each line is one entry. This output has 7 entries, but several are long paragraphs. Line 3 has four sentences and about 60 words, and the whole Big Idea is about 330 words. The docs don't say how long one line may be.",
+      "question": "Does a Big Idea \"line\" mean a single short sentence or line of text, or can one entry be a multi-sentence paragraph? Should there be a word or sentence limit for each entry or for the whole Big Idea?" }
+  ]
+}

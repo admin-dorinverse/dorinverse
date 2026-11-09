@@ -1,0 +1,25 @@
+{
+  "step": "prep",
+  "findings": [
+    { "covered": true,
+      "where": { "stop": 2, "card": 14 },
+      "problem": "Choice card 14 (Acts 13:31) comes right after choice card 13. No story card sets it up. The setup (\"Paul says God raised Jesus from the dead, and for many days He was seen\") is told only inside the question. So the resurrection in Acts 13:30, the turn the whole sermon hangs on, is never told on a story card. It shows up only as the False answer to card 13 and inside the question on card 14. A story card should tell that God raised Him and that He was seen for many days, before card 14 asks who saw Him.",
+      "rule": { "link": "prep-walkthrough.md#two-kinds-of-cards", "text": "The setup for a choice is always on a story card." } },
+    { "covered": true,
+      "where": { "stop": 3, "card": 9 },
+      "problem": "The card quotes \"I have made you a light for the Gentiles...\" but says only that Paul and Barnabas \"back it up with Scripture\". It never says who the \"I\" is. Acts 13:47 presents it as what the Lord has commanded. Note when fixing: choice card 10 asks whether this is what the Lord commanded, so naming the speaker on card 9 must not give card 10 away. Card 10 may need a different question.",
+      "rule": { "link": "papa-dorin.md#facts-and-scripture", "text": "Who's speaking. When he quotes someone speaking as \"I,\" he says who it is first." } },
+    { "covered": true,
+      "where": { "stop": 1, "card": 1 },
+      "problem": "The card calls John \"one of the crew\". Acts 13:13 calls the group \"Paul and his companions\", and the passage before it (Acts 13:5) calls John their helper. Coming right after \"They set sail\", \"one of the crew\" can read as one of the ship's crew. It should call him what the text does, for example one of Paul's companions or their helper.",
+      "rule": { "link": "prep-walkthrough.md#scripture-rules", "text": "Call things what the text calls them." } },
+    { "covered": false,
+      "where": { "stop": 2, "card": 10 },
+      "problem": "The card retells Paul's words without quotation marks but keeps his first-person \"us\": \"Paul tells his listeners that it is to us this message of salvation has been sent.\" It is almost word for word (it drops \"that\"), so it is neither an exact quote nor a full paraphrase. In Papa Dorin's mouth, \"us\" can read as Papa Dorin and the baker, not Paul and his listeners. Card 19 does the same with \"doesn't happen to you\". The docs say quotes must be exact and paraphrases use no quotation marks, but they don't say how pronouns work in a paraphrase that stays close to the wording.",
+      "question": "When Papa Dorin retells a speech without quotation marks, should the pronouns shift to fit his telling (\"it is to them this message has been sent\")? Or is it fine to keep the speaker's \"us\" and \"you\" when the line stays close to the BSB wording?" },
+    { "covered": false,
+      "where": null,
+      "problem": "Choice cards cite their context verses unevenly. Some questions state facts from an earlier verse and include it in the reference: stop 2 card 16 cites Acts 13:36-37 and card 20 cites Acts 13:40-41. Others state facts from an earlier verse but cite only the answer's verse: stop 2 card 5 (\"After the time of the judges\", 13:20) cites 13:21. Card 13 (the tomb and the tree, 13:29) cites 13:30. Card 14 (\"God raised Jesus from the dead\", 13:30) cites 13:31. Stop 3 card 11 (turning to the Gentiles and the light-for-the-Gentiles line, 13:46-47) cites 13:48. The rule says the reference runs \"from the first verse a card uses to the last, no wider and no narrower\". It doesn't say whether context the question repeats so the baker knows who and what counts as a verse the card \"uses\".",
+      "question": "On a choice card, does context the question repeats from earlier verses (needed so it doesn't point back to a card the baker can't see) count toward the card's reference? Or should the reference cover only the verses the question asks about and its right answer?" }
+  ]
+}

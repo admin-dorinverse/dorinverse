@@ -1,0 +1,9 @@
+{
+  "step": "definitions",
+  "findings": [
+    { "covered": false,
+      "where": null,
+      "problem": "Several words are listed in one form but show up on cards in other forms. \"debtors\" is listed for Stop 1 cards 8, 10, 11 and 12, but those cards only say \"debtor\". \"commend\" is listed for cards 14 and 15, which say \"commends\" and \"commended\". \"shrewd\" is listed for cards 14 and 15, which say \"shrewdly\". definitions.md says to list \"every card the word appears on\" and that \"each word appears once\", but it doesn't say whether other forms of a word count as the same word, or which form goes in the \"word\" field.",
+      "question": "Should other forms of a word (debtor/debtors, commend/commends/commended, shrewd/shrewdly) count as the same word, so it gets one entry and a pop-up on every card that uses any form? If so, which form goes in \"word\": the base form, or the form as it's written on the cards?" }
+  ]
+}

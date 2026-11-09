@@ -1,0 +1,29 @@
+{
+  "step": "prep",
+  "findings": [
+    { "covered": true,
+      "where": { "stop": 1, "card": null },
+      "problem": "Stop 1 has 8 story cards (1, 3, 5, 7, 9, 11, 13, 15) and only 7 choice cards (2, 4, 6, 8, 10, 12, 14). Choice cards must be equal to or more than story cards.",
+      "rule": { "link": "prep-walkthrough.md#stops", "text": "Choice cards are equal to or more than story cards in every stop." } },
+    { "covered": true,
+      "where": { "stop": 2, "card": null },
+      "problem": "Stop 2 has 9 story cards (1, 3, 5, 7, 9, 10, 12, 14, 16) and only 8 choice cards (2, 4, 6, 8, 11, 13, 15, 17). Choice cards must be equal to or more than story cards.",
+      "rule": { "link": "prep-walkthrough.md#stops", "text": "Choice cards are equal to or more than story cards in every stop." } },
+    { "covered": true,
+      "where": { "stop": 1, "card": 9 },
+      "problem": "The story card has 3 sentences: the quote of Psalm 139:7 is two questions (\"Where can I go to escape Your Spirit?\" and \"Where can I flee from Your presence?\"), then the junk drawer joke. Story cards other than the opening card can have only 1 to 2 sentences.",
+      "rule": { "link": "prep-walkthrough.md#what-bite-sized-means", "text": "Every other story card is 1 to 2 sentences." } },
+    { "covered": true,
+      "where": { "stop": 2, "card": 5 },
+      "problem": "The story card has 3 sentences: \"Before David was even formed, the LORD's eyes saw his unformed body.\" / \"Me?\" / \"I can't tell what a batch is gonna look like till it comes out of the oven, friend.\" Story cards other than the opening card can have only 1 to 2 sentences.",
+      "rule": { "link": "prep-walkthrough.md#what-bite-sized-means", "text": "Every other story card is 1 to 2 sentences." } },
+    { "covered": true,
+      "where": { "stop": 1, "card": 5 },
+      "problem": "\"every step AND every nap\" retells Psalm 139:3 (\"my path and my lying down\") as a fact. The text says \"lying down\", not \"nap\". A nap is a narrower thing than what the text says.",
+      "rule": { "link": "prep-walkthrough.md#scripture-rules", "text": "Call things what the text calls them." } },
+    { "covered": false,
+      "where": null,
+      "problem": "For Poetry & Wisdom passages, the docs say to use fewer choice cards and tell more on story cards. But they also say choice cards must be equal to or more than story cards in every stop. This Prep went with more story cards than choice cards in both stops, which follows the poetry guidance but breaks the stop rule (flagged above as covered).",
+      "question": "In poetry, letters and prophecy, does \"Choice cards are equal to or more than story cards in every stop\" still apply as a hard rule, or does \"Fewer choice cards. Tell more of the passage on story cards\" let story cards outnumber choice cards?" }
+  ]
+}

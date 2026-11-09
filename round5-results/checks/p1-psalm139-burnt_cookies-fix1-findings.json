@@ -1,0 +1,16 @@
+{
+  "step": "burnt_cookies",
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "line": 5
+      },
+      "problem": "Line 5 (a good line) quotes \"Search me, O God, and know my heart.\" In the BSB, Psalm 139:23 continues after \"heart\" with a semicolon: \"Search me, O God, and know my heart; test me and know my concerns.\" The quote cuts the verse short and replaces the semicolon with a period, so the punctuation inside the quotation marks doesn't match the BSB. Fix: quote the full verse, or drop the quotation marks and paraphrase.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "Quotation marks around Bible words mean the exact BSB wording, punctuation included. A paraphrase uses no quotation marks."
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "step": "definitions",
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "The word \"debtor\" is on stop 1, card 11 (\"Then the manager asks another debtor...\"), but the cards list for \"debtors\" leaves this card out. The list already counts the singular \"debtor\" on cards 8, 10 and 12, so card 11 should be there too: stop 1, cards 7, 8, 10, 11, 12.",
+      "rule": {
+        "link": "definitions.md#output",
+        "text": "**cards:** every card the word appears on"
+      }
+    }
+  ]
+}

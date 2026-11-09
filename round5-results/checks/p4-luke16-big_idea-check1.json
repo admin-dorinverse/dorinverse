@@ -1,0 +1,17 @@
+{
+  "step": "big_idea",
+  "findings": [
+    { "covered": true,
+      "where": { "line": 1 },
+      "problem": "Line 1 retells Luke 16:1-6 verse by verse, down to the exact amounts (\"a hundred measures of olive oil to fifty\"), and does not say what the parable means. Line 2 adds more retelling of Luke 16:8. That leaves the opening third of the Big Idea as plot recap instead of summary.",
+      "rule": { "link": "big-idea.md#the-big-idea", "text": "A real summary of what the passage means, not a retelling of the verses." } },
+    { "covered": true,
+      "where": { "line": 5 },
+      "problem": "The comparison has a different action from the fact. Luke 16:10-12 is about being faithful or dishonest with what you are trusted with. Papa Dorin's crooked years were about not yet having the skill. Calling the small stuff \"the practice round for the big stuff\" and citing Luke 16:10-12 for it turns faithfulness into practicing until you improve, which the verses don't say. The line also suggests the crooked years earned him the Marriage Supper task, but in his backstory he was rescued from the drawer and given that task.",
+      "rule": { "link": "papa-dorin.md#joke-logic-test", "text": "The everyday comparison must have the same action." } },
+    { "covered": false,
+      "where": null,
+      "problem": "There are 6 entries, which is within \"about 5 to 7 lines.\" But several entries are long paragraphs. Line 2 is five sentences with a full quote and a joke, and line 1 is two long sentences. The docs don't say how long one line or entry can be, so the 5-to-7 limit doesn't control the total length.",
+      "question": "Does \"about 5 to 7 lines\" mean 5 to 7 short lines, each a sentence or two, or 5 to 7 JSON entries of any length? Should big-idea.md set a limit per line or a word count?" }
+  ]
+}

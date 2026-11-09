@@ -1,0 +1,19 @@
+{
+  "step": "prep",
+  "findings": [
+    { "covered": true,
+      "where": { "stop": 1, "card": 16 },
+      "problem": "The question opens with \"The line says...\", which points back to the line introduced on story card 15. That card is no longer on screen, so the baker doesn't know which line is meant. The question needs to say what it is, for example the statement right after the master commends the dishonest manager (Luke 16:8).",
+      "rule": { "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+                "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see." } },
+    { "covered": true,
+      "where": { "stop": 1, "card": 2 },
+      "problem": "The right answer, \"Turn in your account since you can't stay manager\" (9 words, 49 characters), is much longer and more detailed than the wrong answers, \"Pay back every coin by tomorrow\" and \"Work for free until it's fixed\" (6 words, about 30 characters each). It also follows the Luke 16:2 wording closely, so it stands out as the right answer.",
+      "rule": { "link": "prep-walkthrough.md#answer-rules",
+                "text": "All the answers are the same kind of thing, about the same length and the same tone. None are silly." } },
+    { "covered": false,
+      "where": { "stop": 2, "card": 8 },
+      "problem": "Stop 2 (Luke 16:9-13) is Jesus' teaching after the parable, and its choice cards mostly ask the baker to finish His wording. Card 8 is the clearest case: a two-blank fill-in that is the verse almost word for word (\"belongings of ___ ... belongings of your ___\"). Cards 2, 6 and 10 also ask what His next words are (eternal dwellings, true riches, hate one and love the other). The rule against guessing the next words of a line covers only poetry, letters and prophecy. The docs don't say whether it also covers teaching or sermon sections inside a Gospel or parable passage.",
+      "question": "Should the poetry, letters and prophecy rules (never guess the next words of a line, blanks test reasoned meaning and not unseen wording, fewer choice cards) also cover teaching or sermon stretches like Luke 16:9-13? If they should, card 8 (and possibly cards 2, 6 and 10) need rewriting." }
+  ]
+}

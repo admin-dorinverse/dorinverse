@@ -1,0 +1,21 @@
+{
+  "step": "prep",
+  "findings": [
+    { "covered": true,
+      "where": { "stop": 2, "card": 5 },
+      "problem": "This story card packs in more than two things: God gives Saul son of Kish, who rules forty years (Acts 13:21); God removes Saul and raises up a new king (Acts 13:22); and God's testimony about that king (Acts 13:22). That is three beats on one card, so it should be split.",
+      "rule": { "link": "prep-walkthrough.md#what-bite-sized-means", "text": "Aim for one beat per story card. Two is the most. If a story card has more than two things happening, split it." } },
+    { "covered": true,
+      "where": { "stop": 2, "card": 17 },
+      "problem": "The joke \"When my stamps came out crooked, I slid behind the takeout menus, friend, and nobody PROCLAIMED a thing\" doesn't click. Acts 13:38 is about forgiveness of sins being proclaimed, but his crooked stamps weren't a sin, and it isn't clear what anyone should have proclaimed. It also reads like a complaint about the Millers, which doesn't fit his no-grudge character.",
+      "rule": { "link": "papa-dorin.md#joke-logic-test", "text": "If a stranger would say \"huh?\", rewrite it." } },
+    { "covered": false,
+      "where": { "stop": 2, "card": 11 },
+      "problem": "Pilate first shows up here (Acts 13:28) with no word on who he is. The new-people rule wants a simple description, like \"Cyrus, king of Persia.\" But Acts 13:13-52 never says who Pilate is, and prep-walkthrough.md says every fact comes from the passage text in the BSB.",
+      "question": "When the passage itself never says who a new person is (here Pilate), may Papa Dorin describe him from elsewhere in the Bible (for example \"Pilate, the governor\"), or should he leave the name with no description?" },
+    { "covered": false,
+      "where": null,
+      "problem": "Several choice cards repeat context from an earlier verse in the question, but their \"verses\" field cites only the right answer's verse. Stop 2 card 4 (\"After the time of the judges\", Acts 13:20) cites Acts 13:21. Stop 2 card 10 (\"the people of Jerusalem and their rulers\", Acts 13:27) cites Acts 13:28. Stop 2 card 12 (\"the tomb where they laid Him after taking Him down from the tree\", Acts 13:29) cites Acts 13:30. Stop 2 card 14 (\"after God raised Jesus from the dead\", Acts 13:30) cites Acts 13:31. Stop 3 card 6 (\"crowds gathered to hear Paul\", Acts 13:44) cites Acts 13:45. Stop 3 card 11 (turning to the Gentiles and the light-for-the-Gentiles quote, Acts 13:46-47) cites Acts 13:48. The Scripture rules say a reference runs \"from the first verse a card uses to the last\". The Output section says a choice card's verses field \"is the verses of the right answer too\". Both can't be true when the question uses a verse the answer doesn't.",
+      "question": "For a choice card, does the one verses field cover every verse the question uses (so stop 2 card 12 would be Acts 13:29-30), or only the right answer's verse (Acts 13:30)? Is context the question repeats from an earlier card exempt?" }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "step": "answer_explanations",
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The \"True\" explanation says \"Remember my phone charger? Like that, but on purpose.\" The setup in the Prep story card (stop 2, card 3) was the baker's charger: \"somebody walking off with your phone charger and you NEVER sending the 'hey, you still got my charger?' text.\" It was never Papa Dorin's charger, so the callback points to a setup that didn't happen. It also gives Papa Dorin a phone charger, which is new to his world.",
+      "rule": {
+        "link": "papa-dorin.md#joke-logic-test",
+        "text": "A callback only works if its setup came earlier in this lesson or conversation."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 18
+      },
+      "problem": "The \"True\" explanation says \"Somebody cuts me off in traffic and my mustache is waving.\" Papa Dorin lives on a cookie planet just big enough for his bakery, so him driving in traffic adds something new to his world. Everyday adult life is fine for comparisons with the baker, but not as his own experience.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "His backstory, family, bakery and mission are the Dorinverse story in this file. He can talk about them freely, but never adds anything new to them."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "The \"To hear Him and to be healed\" explanation opens with \"Ears open and hearts hurting, that's the crowd.\" Luke 6:18 says they came to hear Him and to be healed of their diseases. It says nothing about their hearts hurting. That's a feeling stated as fact.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "He can guess at a feeling, marked as his own (\"I think,\" \"I bet\"). Never as fact."
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The \"humble\" explanation says \"That's the Father the listeners are called to look like, right in the same verse where they're called sons of the Most High (Luke 6:35).\" Luke 6:35 says \"you will be sons of the Most High,\" a promised result, not a name they're called now. And Luke 6:35 says \"the Most High,\" not \"the Father\"; \"your Father\" comes in Luke 6:36. Keep the text's own words and verse.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "Call things what the text calls them."
+      }
+    },
+    {
+      "covered": true,
+      "where": null,
+      "problem": "Most explanations follow the same pattern: the answer echoed back with \"baker\" or \"friend\" (\"LEAP, baker!\" 1/10, \"Your tunic, baker!\" 2/2, \"Ungrateful, baker!\" 2/10, \"Into a pit, baker!\" 3/2, \"A BEAM, friend!\" 3/6, \"Fruit, friend!\" 3/11, \"The mouth, baker!\" 3/13, \"True!\" 1/18, 2/8, 3/9, \"True, friend.\" 2/6, 3/4), then \"Jesus says, '...' (Luke 6:N),\" then a short joke. Nearly every one of the 72 explanations uses \"Jesus says\" plus a quote. Taken together this reads as a formula. Vary the openers and how the verse comes in.",
+      "rule": {
+        "link": "answer-explanations.md#explanations",
+        "text": "There is no formula. Each explanation sounds natural and different from the others."
+      }
+    }
+  ]
+}

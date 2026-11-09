@@ -1,0 +1,21 @@
+{
+  "step": "burnt_cookies",
+  "findings": [
+    { "covered": true,
+      "where": { "line": 2 },
+      "problem": "Line 2 is not short. It is 48 words, the same length as the line 1 that check 2 flagged as not short. It runs through Egypt, the wilderness, the judges, Saul, David and John in one long list. It should be trimmed to a short line that still holds the burnt detail (Saul's tribe).",
+      "rule": { "link": "burnt-cookies.md#the-lines", "text": "Each line is short and in Papa Dorin's voice. Use judgment on how much it covers: one moment, or a few that belong together." } },
+    { "covered": true,
+      "where": { "line": 3 },
+      "problem": "Line 3 is not short. It is 54 words in four sentences, longer than the line 1 (48 words) and about as long as the line 5 (55 words) that check 2 flagged. It packs in the condemnation, the request to Pilate, the resurrection, not seeing decay, justification and the warning to scoffers. It should be trimmed to a short line.",
+      "rule": { "link": "burnt-cookies.md#the-lines", "text": "Each line is short and in Papa Dorin's voice. Use judgment on how much it covers: one moment, or a few that belong together." } },
+    { "covered": true,
+      "where": { "line": 5 },
+      "problem": "Line 5 is a good line, but it says \"The Jews stir up persecution, and Paul and Barnabas get driven out.\" In Acts 13:50 the Jews incite the religious women of prominence and the leading men of the city, and then \"They stirred up persecution against Paul and Barnabas.\" The text leaves open whether \"They\" means the Jews or the people they incited. The line settles that and drops the incitement completely. Check 1 already flagged this, and the current line still has it. Fix: keep the incitement, for example \"The Jews stir up the city's leading women and men, persecution breaks out, and Paul and Barnabas get driven out.\"",
+      "rule": { "link": "papa-dorin.md#facts-and-scripture", "text": "Leave open what the text leaves open. Who is being spoken to, why, or how two things connect." } },
+    { "covered": false,
+      "where": { "line": 4 },
+      "problem": "Burnt line 4 swaps Barnabas for Silas. The very next line, line 5 (a good line), says \"Paul and Barnabas get driven out,\" which shows the baker the true detail right after the burnt one. That makes line 4 easy to spot just by reading ahead.",
+      "question": "Can a good line state the true detail that a burnt line got wrong? Or should the docs say good lines must not give away a burnt detail, for example by line 5 saying just \"they\" or \"Paul's crew\"?" }
+  ]
+}

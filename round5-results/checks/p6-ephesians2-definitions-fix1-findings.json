@@ -1,0 +1,29 @@
+{
+  "step": "definitions",
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 18
+      },
+      "problem": "The word \"grace\" is on stop 1, card 18, in the answer \"Good works that earn His grace\". But the grace entry lists only cards 9 and 13, so card 18 gets no pop-up.",
+      "rule": {
+        "link": "definitions.md#output",
+        "text": "**cards:** every card the word appears on"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The entry for \"walked\" gives \"BSB footnote\" as a source. The only BSB footnote for this passage is on Ephesians 2:10 (\"Literally which God prepared beforehand, that we should walk in them.\"). That footnote gives a literal wording of verse 10. It does not explain what \"walked\" means in Ephesians 2:2, so it should not be listed as a source for this meaning.",
+      "rule": {
+        "link": "definitions.md#sources",
+        "text": "Use the BSB footnotes first, when they explain the word."
+      }
+    }
+  ]
+}

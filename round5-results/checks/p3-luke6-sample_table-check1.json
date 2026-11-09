@@ -1,0 +1,13 @@
+{
+  "step": "sample_table",
+  "findings": [
+    { "covered": false,
+      "where": null,
+      "problem": "More than 3 New Testament commands qualify, and Prep asked a choice card about at least seven of them: Luke 6:27 (1/17), Luke 6:28 (1/18), Luke 6:29 (2/2), Luke 6:31 (2/4), Luke 6:35 (2/8), Luke 6:37 (2/12), Luke 6:42 (3/9). The step picked Luke 6:27, 6:29 and 6:42. All three are choice-card commands, so the priority rule was followed. But the docs only rank choice-card commands above story-card ones. They don't say how to choose among more than 3 choice-card commands, so leaving out Luke 6:31 ('Do to others as you would have them do to you') and Luke 6:37 was the agent's own call.",
+      "question": "When more than 3 commands were all asked on Prep choice cards, how should the 3 be picked (for example, passage order, or the most central command such as Luke 6:31)? Should this passage keep Luke 6:27, 6:29 and 6:42, or swap one for Luke 6:31?" },
+    { "covered": false,
+      "where": { "stop": 3, "card": 7 },
+      "problem": "The Luke 6:42 command ('First take the beam out of your own eye') comes after 'Jesus also told them a parable' (Luke 6:39). It is spoken to a hypothetical 'You hypocrite!' inside that illustration. The docs don't say whether an imperative inside a parable or illustration counts as a command 'for believers'.",
+      "question": "Can a command spoken inside a parable or illustration (Luke 6:39-42) be a New Testament rule cookie, or only direct commands to the listeners?" }
+  ]
+}

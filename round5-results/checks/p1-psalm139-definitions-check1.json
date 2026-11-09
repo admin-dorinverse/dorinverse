@@ -1,0 +1,9 @@
+{
+  "step": "definitions",
+  "findings": [
+    { "covered": false,
+      "where": null,
+      "problem": "definitions.md says to define a word \"If not knowing the word would make it harder to understand what is being said\", but it never says who the reader is or what reading level to assume. The output defines fairly common words like \"flee\" (stop 1, card 9), \"vast\" (stop 2, card 7), \"womb\" (stop 2, card 1) and \"everlasting\" (stop 2, card 17). It leaves out words that seem at least as hard, such as \"marvelous\" (stop 2, card 3, Psalm 139:14), \"precious\" (stop 2, card 7, Psalm 139:17), \"presence\" (stop 1, card 9, Psalm 139:7) and \"dawn\" (stop 1, card 11, Psalm 139:9). So the line between defined and left-out words is uneven.",
+      "question": "What reader or reading level should the hard-word test assume? Should words like \"marvelous\", \"precious\", \"presence\" and \"dawn\" get pop-ups for Psalm 139:1-24?" }
+  ]
+}

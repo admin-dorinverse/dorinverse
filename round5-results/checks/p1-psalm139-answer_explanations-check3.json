@@ -1,0 +1,21 @@
+{
+  "step": "answer_explanations",
+  "findings": [
+    { "covered": true,
+      "where": { "stop": 2, "card": 2 },
+      "problem": "The explanation for \"He keeps quiet about it\" uses the heading \"For the choirmaster\" (Psalm 139:1) as proof that David didn't keep quiet about how he was made: \"And the whole psalm is for the choirmaster, no less (Psalm 139:1). That's the opposite of keeping quiet.\" The text never ties the choirmaster note to David's response in Psalm 139:14. The explanation adds that link, so it should drop the choirmaster lines and rely on Psalm 139:14.",
+      "rule": { "link": "papa-dorin.md#facts-and-scripture", "text": "Leave open what the text leaves open. Who is being spoken to, why, or how two things connect." } },
+    { "covered": true,
+      "where": { "stop": 2, "card": 11 },
+      "problem": "The explanation for \"As foreign soldiers\" says \"with all that talk of bloodthirsty men.\" The psalm mentions bloodthirsty men once, in Psalm 139:19, so \"all that talk\" stretches the text. That fact also has no reference.",
+      "rule": { "link": "papa-dorin.md#facts-and-scripture", "text": "Don't stretch the text. Exaggerate only in his own jokes." } },
+    { "covered": false,
+      "where": { "stop": 1, "card": 10 },
+      "problem": "The explanation for \"False\" ends with \"Believe me, I spent years at the back of a junk drawer, and I STILL got found.\" This is the punchline from Prep story card 9, nearly word for word, and the baker read it one card earlier. The docs allow callbacks (papa-dorin.md, Joke logic test 6), and answer-explanations.md says explanations must differ from each other. Neither says whether an explanation can repeat a story card's joke word for word.",
+      "question": "Can an answer explanation reuse a joke from a Prep story card word for word, or must a callback be reworded or point back to the earlier joke?" },
+    { "covered": false,
+      "where": null,
+      "problem": "Many explanations add small new anecdotes about Papa Dorin's bakery life, for example walking into the oven after turning off the lights to sneak a cookie (stop 1 card 14), doing secret taste tests with the lights off (stop 1 card 14), hiding a cookie behind the cookie boxes (stop 2 card 4) and trying to count sprinkles until noon (stop 2 card 8). papa-dorin.md says he can talk freely about his own world \"but never adds anything new to them.\" It also wants self-deprecating jokes. It doesn't say whether one-off comic anecdotes like these count as adding to his world.",
+      "question": "Do small self-deprecating bakery anecdotes count as \"adding anything new\" to Papa Dorin's world, or are they allowed as personality?" }
+  ]
+}
