@@ -4,6 +4,37 @@ This file says which file to load for each step. Load only the files the current
 
 These files are the current lesson rules.
 
+## Quick look
+
+**What a baker plays, in order**
+- Prep walkthrough
+- Burnt Cookies
+- The Big Idea
+- The cookie box
+
+**How lessons get made**
+1. **Passages:** split the whole Bible into passages, each with a type. The text decides where they break, not a target count. Done once, before anything else.
+2. **Prep walkthrough:** made for each passage. Everything after this uses the Prep cards.
+3. **The rest, for each passage:** Burnt Cookies, The Big Idea, Sample Table, Definitions, Answer explanations.
+4. **Idioms:** across the whole passage list.
+
+**Every step, every passage**
+- Make it
+- Check it
+- Fix it (up to 2 times, checking after each)
+- Anything still wrong goes on the tracker
+- Move on. The run never waits.
+
+**What I review**
+- **The tracker,** after the run finishes
+  - **Needs agent fix:** a rule covers it, but the fixes failed. A rerun handles it.
+  - **Needs human decision:** the docs don't cover it. I decide, then a rerun fixes it.
+- Every item has two flags, `needs_agent_fix` and `needs_human_decision`. Both false means clean.
+
+**When the run stops**
+- Only when a step gives no output, or output the database can't take
+- It retries once, then stops and tells me what happened and how to pick up again
+
 ## The lesson
 
 Every lesson is one path, in this order:

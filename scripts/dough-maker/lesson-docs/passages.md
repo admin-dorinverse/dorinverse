@@ -8,7 +8,7 @@ This file covers how to divide the Bible into passages and give each one a type.
 
 ## The whole Bible
 
-- **About 1,500 passages** across the whole Bible. Anywhere from 1,200 to 2,100 is fine.
+- **The count is a rough aim, not a target.** The whole Bible usually lands somewhere between 1,200 and 2,100 passages. Let the text decide where each passage starts and stops. Never shorten, split or merge a passage just to move the count. A good passage matters more than the total.
 - **Every verse belongs to exactly one passage.** No verse is skipped, and no verse is in two passages.
 - **Verses the BSB leaves out are skipped.** Some verse numbers appear only in a BSB footnote, like Matthew 23:14. They belong to no passage.
 - **Each passage is one unbroken range,** from a start verse to an end verse.
