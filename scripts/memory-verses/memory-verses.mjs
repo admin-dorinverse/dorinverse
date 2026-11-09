@@ -1,4 +1,4 @@
-// Memory verses: the 250 rows of public.memory_verse, one per lesson in ingredients/verses.md
+// Memory verses: the 250 rows of public.memory_verse, one per lesson in scripts/dough-maker/data/verses.md
 // (the verse after " — " on each lesson line), in file order.
 //
 //   node scripts/memory-verses/memory-verses.mjs list   # write verses.json
@@ -14,7 +14,7 @@
 // KJV stays in public.verse.text and gets no memory_verse_text rows.
 import fs from 'node:fs';
 import path from 'node:path';
-import { INGREDIENTS_DIR, loadReference, parseIngredients, expand } from '../dough-maker/lib.mjs';
+import { DIR as DOUGH_DIR, loadReference, parseIngredients, expand } from '../dough-maker/lib.mjs';
 
 const DIR = import.meta.dirname;
 
@@ -43,8 +43,8 @@ else { console.error('usage: memory-verses.mjs list | sql | texts'); process.exi
 
 // Every lesson's memory verse, checked: one verse each, all known, no repeats, exactly COUNT.
 function memoryVerses() {
-  const file = 'ingredients/verses.md';
-  const { flavors } = parseIngredients(fs.readFileSync(path.join(INGREDIENTS_DIR, 'verses.md'), 'utf8'), file);
+  const file = 'data/verses.md';
+  const { flavors } = parseIngredients(fs.readFileSync(path.join(DOUGH_DIR, 'data', 'verses.md'), 'utf8'), file);
   const errors = [], out = [], seen = new Map();
   for (const l of flavors.flatMap((f) => f.lessons)) {
     if (!l.note) { errors.push(`${l.at}: lesson has no memory verse after " — "`); continue; }
@@ -75,7 +75,7 @@ function sql() {
   // osis refs are [A-Za-z0-9.] only, so they need no escaping
   const values = rows.map((r) => `(${r.order}, '${r.osis}')`);
   const out = `-- Written by node scripts/memory-verses/memory-verses.mjs sql. Upserts the ${rows.length} memory verses
--- from ingredients/verses.md, ordered as in the file, unapproved and without a flavor.
+-- from data/verses.md, ordered as in the file, unapproved and without a flavor.
 begin;
 create temp table src (ord int, osis text) on commit drop;
 insert into src values

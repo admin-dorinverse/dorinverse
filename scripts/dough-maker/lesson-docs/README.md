@@ -2,7 +2,7 @@
 
 This file says which file to load for each step. Load only the files the current step needs. Never load every file at once.
 
-These files are the current lesson rules. The older files in `../ingredients/`, `../question-rules.md` and `../../lesson-maker/PLAN.md` are outdated. When they disagree with these files, these files win.
+These files are the current lesson rules.
 
 ## The lesson
 
@@ -69,7 +69,3 @@ Every lesson step also gets the passage text in the BSB.
 | Answer explanations | `answer-explanations.md` | `papa-dorin.md`, the Prep cards for the passage |
 | Idioms | `idioms.md` | The idiom list (`../data/idioms.json`), the passage list, the Prep cards |
 | Check (after each step) | `checker.md` | The md files that step used, the step's output, the passage text in the BSB |
-
-## Retired
-
-The station files are retired: `station-picker.md`, `station-words.md`, `station-idioms.md`, `station-wisdom.md`, `station-parables.md`, `station-sermon.md` and `station-big-idea.md`.

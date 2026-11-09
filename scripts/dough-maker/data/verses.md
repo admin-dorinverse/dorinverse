@@ -11,8 +11,6 @@
 | 61 | 250 | 58 | 19 | 1,067 (3.4% of the Bible) |
 <!-- counts:end -->
 
-_The counts above are rewritten by `node scripts/dough-maker/coverage.mjs`. Edit the entries, not the counts._
-
 How to read an entry:
 - **Title** — after the book name, what the player learns from the whole flavor, as this recipe teaches and tests it (2.10).
 - **Range** — the verses the flavor teaches and reveals (Question Rules 2.12 format).
