@@ -18,6 +18,8 @@ These files are the current lesson rules.
 3. **The rest, for each passage:** Burnt Cookies, The Big Idea, Sample Table, Definitions, Answer explanations.
 4. **Idioms:** across the whole passage list.
 
+**Which model does what:** see `models.md`. It also covers caching, which the run script must be built around.
+
 **Every step, every passage**
 - Make it
 - Check it
