@@ -12,6 +12,7 @@ This file says which model does each job in the lesson run, and how the run uses
 
 - Opus always runs at **medium** effort. It worked in round 5.
 - Skip the cheap "Flash" models. They made too many mistakes in an earlier run.
+- Kimi thinks before it answers, and the thinking counts as output. Give every Kimi call a large output limit, or the answer can come back empty.
 
 ## The roles
 
@@ -46,12 +47,27 @@ Every check has two parts, in this order:
 1. **The script.** Instant, free, never misses. It checks only rules with one right answer:
    - Words in quotation marks match the BSB exactly
    - Every Bible reference exists
-   - Passages: every verse is in exactly one passage, with none skipped
    - Only allowed food words are used
    - No banned words
+   - Each step's own rules that have one right answer, like the Passages list below
 2. **Kimi.** Checks the judgment calls against the docs: Papa Dorin's voice, the joke logic test, retelling rules, and each step's own rules.
 
-The fixer gets one list with both sets of findings.
+The fixer gets one list with both sets of findings. The script writes its findings the same way the checker does (checker.md "Output"): covered, with the rule's link and exact words.
+
+### What the script checks for Passages
+
+Every rule in passages.md that has one right answer:
+
+- Every verse belongs to exactly one passage. No verse is skipped, and no verse is in two passages.
+- Verses the BSB leaves out belong to no passage, and no passage starts or ends on one.
+- Every start and end is a real verse, written with the book names in the BSB text.
+- Each passage is one unbroken range, and its start comes before its end.
+- The type is one of the six.
+- Every field is there. Only story_group and position can be null.
+- ids start at 1 and go up by one, in Bible order.
+- Each included parable or sermon sits inside its passage, and its kind is "parable" or "sermon".
+- A story group's passages are next to each other, and their positions count up: "1 of 3", "2 of 3", "3 of 3".
+- A passage with no story group has no position.
 
 ## Fresh calls
 
@@ -110,12 +126,17 @@ Caching is the biggest money saver in the whole run. **The run script must be bu
    1. `papa-dorin.md` (when the step uses it)
    2. The step's doc
    3. `checker.md` (checks only)
-   4. Then the parts that change: the passage's type and group, its BSB text, its Prep cards, the output to check
+   4. Then the parts that change, from the most shared to the least: the passage's type and group, its BSB text, its Prep cards, the output to check, the findings to fix.
+   5. **The job's own instructions go last.** "Write", "check" or "fix only these" is the last thing in the call.
+
+   Every check and every fix of a passage reads the same BSB text, so it goes before the output and the findings. Then the 2nd and 3rd check, and every fix, reuse it.
 2. **Nothing that changes goes before the docs.** No dates, run numbers, passage IDs or counts at the top. One changed character at the top makes the whole call full price.
-3. **Load files exactly as they are.** Never trim, reformat or reorder them. Byte-for-byte the same every time.
-4. **Keep calls flowing.** A cache lasts about 5 minutes after its last use. Every call that reuses it restarts the clock. A run that never pauses keeps it warm.
-5. **Each model has its own cache.** Opus calls share one, Kimi calls share another. The same step should always go to the same model.
-6. **Log cached tokens on every call.** Every response says how many tokens came from the cache. If that number is 0 call after call, something at the top is changing. Fix it before the run goes on.
+3. **Load files exactly as they are.** Never trim, reformat or reorder them. Byte-for-byte the same every time, line endings included. Anything the run writes into a call (BSB text, Prep cards, an output to check) is written out the same way every time.
+4. **Freeze the docs when the run starts.** The run reads each md file once, keeps that copy for the whole run, and records each file's fingerprint. An edit made during the run is used from the next run on, never halfway through.
+5. **Keep calls flowing.** A cache lasts about 5 minutes after its last use. Every call that reuses it restarts the clock. A run that never pauses keeps it warm.
+6. **Each model has its own cache.** Opus calls share one, Kimi calls share another. The same step should always go to the same model, and Kimi always to the same company (see "By provider").
+7. **Log cached tokens on every call.** Every response says how many tokens came from the cache. If that number is 0 call after call, something at the top is changing. Fix it before the run goes on.
+8. **Catch misses automatically.** The run remembers a fingerprint of each call's shared part. When the same shared part went to the same model a few minutes earlier and the new call reused nothing, that's a miss, and it goes in the log. After 3 misses in a row, the run pauses and notifies the person.
 
 ### Running several agents
 
@@ -124,10 +145,19 @@ Caching is the biggest money saver in the whole run. **The run script must be bu
 
 ### By provider
 
-- **Opus on the subscription (Claude Code):** caches by itself.
+- **Opus on the subscription (Claude Code):** caches by itself, as long as nothing Claude Code adds to the call changes. Every Opus call:
+  - runs from an empty folder, so no project files, folder names or git details get added
+  - has no tools and no plugins, so their descriptions don't get added
+
+  **Opus reuses a call only up to the end of its instructions part (the system prompt).** Anything in the message is never reused by a different call. So the instructions part holds what the most calls share:
+  - **Passages:** the docs and the BSB text being split. Every fix of that text reuses all of it. Only the docs are sent again for the next text, and they are small.
+  - **Every lesson step:** the docs only. They are the big part and the same for every passage. The passage's text, its Prep cards and the rest go in the message.
+
+  Opus's cache lasts **1 hour** on the subscription, so a fix that starts long after the first call still reuses it.
+
+  Caching test, November 2026: the same Ruth text again, 91% reused. Jonah after Ruth with only the docs in the instructions part, 45% reused (the docs).
 - **Opus on the API:** needs a cache marker at the end of the shared docs. Saving costs 1.25 times the normal price once. Every reuse after that is cheap.
-- **Kimi:** reused tokens cost $0.20 per million instead of $2.00. Check Moonshot's docs for whether it needs a marker.
-- **Through OpenRouter:** caching passes through to the provider, but some providers need a marker. Check the model's page.
+- **Kimi through OpenRouter:** every call goes to **Moonshot AI only**, with no switching to another company. Otherwise OpenRouter spreads calls across about 20 companies that run Kimi, and each keeps its own cache. Kimi reuses any matching start by itself, with no cache marker. Caching test, November 2026: the same Ruth call again, 99% reused. Jonah after Ruth, 52% reused (the docs). Reused tokens cost $0.20 per million instead of $2.00.
 
 ## Costs
 
@@ -143,10 +173,16 @@ Prices as of November 2026. Check the current pages before the run.
 
 ## Before the full run
 
-1. **Passages first.** Split the whole Bible with Opus. A person reviews the list before anything else.
-2. **Test on passage 1.** Run every step for it with this plan.
-3. **Measure three things:**
+1. **Caching test.** Before any real step, a few tiny calls with the real docs at the top:
+   - Opus: three calls that start the same way. The 2nd and 3rd must reuse almost all of the shared part.
+   - Kimi: the same, with the checker's files.
+   - Two different passages in a row: the docs part must still be reused.
+
+   If anything isn't reused, fix it before going on. Run it again whenever the way calls are built changes: `node scripts/dough-maker/run/cache-test.mjs`.
+2. **Passages first.** Split the whole Bible with Opus. A person reviews the list before anything else.
+3. **Test on passage 1.** Run every step for it with this plan.
+4. **Measure three things:**
    - How much the weekly percentage moved
    - What Kimi cost
    - Whether the cached-token log shows the cache working
-4. **Then run the rest,** 5 to 10 agents at a time.
+5. **Then run the rest,** 5 to 10 agents at a time.

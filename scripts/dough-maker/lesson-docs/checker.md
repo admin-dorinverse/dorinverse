@@ -46,6 +46,6 @@ A JSON file for the passage. References use the book names in the BSB text, with
 ```
 
 - **step:** "passages", "prep", "burnt_cookies", "big_idea", "sample_table", "answer_explanations", "definitions" or "idioms"
-- **where:** the stop and card, the line for Burnt Cookies and the Big Idea (`{ "line": 3 }`), or null when it's about the whole output
+- **where:** the stop and card, the line for Burnt Cookies and the Big Idea (`{ "line": 3 }`), the passage's id for Passages (`{ "passage": 12 }`), or null when it's about the whole output
 - **question** (not covered only): what a person needs to decide
 - Nothing found: an empty list.

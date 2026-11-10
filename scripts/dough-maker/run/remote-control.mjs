@@ -13,7 +13,7 @@ import { CACHE, REMOTE } from './events.mjs';
 
 const root = path.join(import.meta.dirname, '..', '..', '..');
 // The real program, not the npm .cmd shim, so it can be stopped cleanly
-const npmRoot = spawnSync('npm', ['root', '-g'], { encoding: 'utf8', shell: process.platform === 'win32' }).stdout.trim();
+const npmRoot = spawnSync('npm root -g', { encoding: 'utf8', shell: true }).stdout.trim();
 const EXE = process.platform === 'win32' ? path.join(npmRoot, '@anthropic-ai', 'claude-code', 'bin', 'claude.exe') : 'claude';
 
 let state = { url: null, status: 'Starting', t: null };

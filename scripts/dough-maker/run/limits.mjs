@@ -8,7 +8,7 @@ import path from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
 import { LIMITS } from './events.mjs';
 
-const npmRoot = spawnSync('npm', ['root', '-g'], { encoding: 'utf8', shell: process.platform === 'win32' }).stdout.trim();
+const npmRoot = spawnSync('npm root -g', { encoding: 'utf8', shell: true }).stdout.trim();
 const EXE = path.join(npmRoot, '@anthropic-ai', 'claude-code', 'bin', process.platform === 'win32' ? 'claude.exe' : 'claude');
 
 // rate_limit_info: { unifiedWindows: { seven_day: { utilization, resetsAt, status } }, ... }

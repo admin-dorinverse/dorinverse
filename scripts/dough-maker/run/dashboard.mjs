@@ -232,8 +232,12 @@ const PAGE = String.raw`<!DOCTYPE html>
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 -apple-system, system-ui, "Segoe UI", sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 16px; }
-  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+  header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
   h1 { font-size: 22px; margin: 0; }
+  .head-right { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  /* The home-screen app has no browser reload, so the page carries its own */
+  .reload { flex: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--blue); background: var(--bar); border: 0;
+    border-radius: 999px; padding: 5px 12px; cursor: pointer; }
   h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 10px; }
   h3 { font-size: 16px; margin: 0; }
   section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin: 12px 0; }
@@ -300,7 +304,8 @@ const PAGE = String.raw`<!DOCTYPE html>
 </head>
 <body>
 <main>
-  <header><h1>Lesson run</h1><span id="pill" class="pill idle">Loading…</span></header>
+  <header><h1>Lesson run</h1><div class="head-right"><span id="pill" class="pill idle">Loading…</span>
+    <button id="reload" class="reload" type="button" onclick="location.reload()">↻ Refresh</button></div></header>
   <div id="status" class="sub"></div>
   <div id="down" class="down-banner" hidden></div>
   <div class="talk-row"><a id="talk" class="talk" href="https://claude.ai/code" target="_blank" rel="noopener">Talk to Claude</a>
@@ -325,7 +330,7 @@ const PAGE = String.raw`<!DOCTYPE html>
 <script>
 const STEPS = { passages: 'Passages', prep: 'Prep walkthrough', burnt_cookies: 'Burnt Cookies', big_idea: 'The Big Idea',
   answer_explanations: 'Answer explanations', definitions: 'Definitions', sample_table: 'Sample Table', idioms: 'Idioms',
-  check: 'the connection check' };
+  check: 'the connection check', cache_test: 'the caching test' };
 const DOING = { making: 'writing', checking: 'checking', fixing: 'fixing' };
 const ROLES = { writer: 'writing', reviewer: 'checking', fixer: 'fixing', final: 'doing the final check of' };
 const DID = { writer: 'wrote', reviewer: 'checked', fixer: 'fixed', final: 'did the final check of' };
