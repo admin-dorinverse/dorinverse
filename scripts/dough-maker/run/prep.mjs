@@ -378,7 +378,7 @@ function writeJson(file, data) {
 const readJson = (file) => { try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { return null; } };
 
 // README "The tracker": one file for the whole run; Prep's two lists sit next to the Passages ones
-function saveTracker() {
+export function saveTracker() {
   const list = readJson(PASSAGES) ?? [];
   const results = list.map((p) => ({ p, r: readJson(path.join(PREP_DIR, folder(p), 'result.json')) })).filter((x) => x.r);
   const group = (items, key, head) => {

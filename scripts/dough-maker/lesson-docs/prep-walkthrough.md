@@ -117,7 +117,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 ## Never give away an answer
 
-No card ever gives away the answer to a choice card that comes later. Once a choice has been answered, the cards after it can build on that answer.
+No card ever gives away the answer to a choice card that comes later. Once a choice has been answered, the cards after it can build on that answer. An easy follow-up is fine. For example, once the baker knows the greater light rules the day, a card can ask whether the lesser light rules the night.
 
 - The passage title doesn't count. It's set before Prep is written.
 - When a line repeats, like a psalm's refrain, ask about it only the first time it appears.
@@ -206,6 +206,7 @@ Prep must never become a guessing game.
 - All the answers are the same kind of thing, about the same length and the same tone. None are silly.
 - For who, which thing and where questions, wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish. Wrong answers for what someone does or says only need to be believable.
 - For why and meaning questions, wrong answers only need to be believable.
+- **A card about two groups needs an answer true for both.** When a question covers more than one group, like the sea creatures and the birds, the right answer must be true for every group in it. ❌ "Multiply and fill the waters" for the sea creatures and the birds. Genesis 1:22 tells the birds to multiply on the earth.
 - Each wrong answer must be false anywhere in the passage, not just at that moment.
 - **No near-matches.** A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it.
     ❌ "belongings of ___" with "another" (right) and "strangers" (Luke 16:12)

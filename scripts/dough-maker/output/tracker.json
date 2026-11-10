@@ -1,5 +1,5 @@
 {
-  "t": "2026-11-10T19:25:53.808Z",
+  "t": "2026-11-10T19:34:36.460Z",
   "docs": {
     "passages.md": "a0c812a93602",
     "checker.md": "8329f0d73653",
@@ -29,39 +29,26 @@
             "by": "kimi"
           }
         ]
-      }
-    ],
-    "needs_human_decision": [
-      {
-        "question": "Can lesson jokes assume bakers already know Papa Dorin's kids by name, or does a mention of one of the kids need a setup earlier in the lesson, the way a callback does?",
-        "count": 1,
-        "examples": [
-          "The joke 'my little Berry would've wanted a whole chapter' depends on the baker knowing that Berry is Papa Dorin's star-shaped kid who watches the sky. Nothing in this lesson sets that up."
-        ],
-        "places": [
-          {
-            "passage": 1,
-            "where": "Genesis 1:1-2:3, stop 2, card 6",
-            "problem": "The joke 'my little Berry would've wanted a whole chapter' depends on the baker knowing that Berry is Papa Dorin's star-shaped kid who watches the sky. Nothing in this lesson sets that up.",
-            "by": "opus"
-          }
-        ]
       },
       {
-        "question": "The docs allow later cards to build on an answered choice. Is a choice card acceptable when its answer follows directly from an earlier answer, or should it count as a wasted card and be replaced with a question about a different moment?",
+        "rule": {
+          "link": "prep-walkthrough.md#answer-rules",
+          "text": "A card about two groups needs an answer true for both."
+        },
         "count": 1,
         "examples": [
-          "Card 4 already established that the greater light rules the day. Card 7 then asks true or false that the lesser light rules the night, which follows almost automatically from card 4's answer. It also steps back to that detail after card 6 has moved on to the stars."
+          "The right answer \"Multiply and fill the waters\" is only true for the sea creatures. Genesis 1:22 tells the birds to multiply on the earth."
         ],
         "places": [
           {
             "passage": 1,
-            "where": "Genesis 1:1-2:3, stop 2, card 7",
-            "problem": "Card 4 already established that the greater light rules the day. Card 7 then asks true or false that the lesser light rules the night, which follows almost automatically from card 4's answer. It also steps back to that detail after card 6 has moved on to the stars.",
-            "by": "opus"
+            "where": "Genesis 1:1-2:3, stop 2, card 11",
+            "problem": "The right answer \"Multiply and fill the waters\" is only true for the sea creatures. Genesis 1:22 tells the birds to multiply on the earth.",
+            "by": "person"
           }
         ]
       }
-    ]
+    ],
+    "needs_human_decision": []
   }
 }
