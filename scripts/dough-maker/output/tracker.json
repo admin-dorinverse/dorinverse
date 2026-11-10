@@ -1,11 +1,36 @@
 {
-  "t": "2026-11-10T14:42:32.362Z",
+  "t": "2026-11-10T18:12:04.773Z",
   "docs": {
     "passages.md": "a0c812a93602",
-    "checker.md": "8329f0d73653"
+    "checker.md": "8329f0d73653",
+    "papa-dorin.md": "100088e14065",
+    "prep-walkthrough.md": "5122656198cf"
   },
   "passages": {
     "needs_agent_fix": [],
+    "needs_human_decision": []
+  },
+  "prep": {
+    "needs_agent_fix": [
+      {
+        "rule": {
+          "link": "prep-walkthrough.md#never-give-away-an-answer",
+          "text": "No card ever gives away the answer to a choice card that comes later."
+        },
+        "count": 1,
+        "examples": [
+          "The story card introduces the greater and lesser lights and then says, in that same order, that one rules the day and one rules the night. This already establishes that the greater light rules the day, giving away the next card's answer: False to the claim that the greater light rules the night."
+        ],
+        "places": [
+          {
+            "passage": 1,
+            "where": "Genesis 1:1-2:3, stop 2, card 3",
+            "problem": "The story card introduces the greater and lesser lights and then says, in that same order, that one rules the day and one rules the night. This already establishes that the greater light rules the day, giving away the next card's answer: False to the claim that the greater light rules the night.",
+            "by": "kimi"
+          }
+        ]
+      }
+    ],
     "needs_human_decision": []
   }
 }
