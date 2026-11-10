@@ -43,7 +43,7 @@ const STAGGER = 5_000;     // between agents starting, once the first call has s
 // --- what goes in each call --------------------------------------------------------------------------------------
 
 // The passage's details, written the same way every time (rule 3)
-function about(p) {
+export function about(p) {
   const group = p.story_group
     ? `${p.story_group}, passage ${p.position}${/^(\d+) of \1$/.test(p.position) ? ' (the last one in the group)' : ''}`
     : 'none';
@@ -54,7 +54,7 @@ function about(p) {
 const before = (prev) => prev
   ? `The passage right before it, for context only (not part of the lesson): ${span(prev.start, prev.end)}\n${passageText(prev.start, prev.end)}`
   : 'The passage right before it: none. This is the first passage of the Bible.\n';
-const theText = (p) => `The passage's BSB text:\n${passageText(p.start, p.end)}`;
+export const theText = (p) => `The passage's BSB text:\n${passageText(p.start, p.end)}`;
 const show = (out) => JSON.stringify(out, null, 2);   // written the same way every time (rule 3)
 
 const WRITE = (p) => `Write Papa Dorin's Prep walkthrough for ${span(p.start, p.end)}, in the BSB text above, following prep-walkthrough.md and papa-dorin.md.

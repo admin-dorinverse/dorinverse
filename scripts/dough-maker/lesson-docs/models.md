@@ -170,8 +170,10 @@ Caching is the biggest money saver in the whole run. **The run script must be bu
   Opus's cache lasts **1 hour** on the subscription, so a fix that starts long after the first call still reuses it.
 
   Caching test, November 2026: the same Ruth text again, 91% reused. Jonah after Ruth with only the docs in the instructions part, 45% reused (the docs).
+
+  Prep caching test, November 2026: the docs (papa-dorin.md and prep-walkthrough.md) were 14,723 tokens, and the 2nd and 3rd calls reused all of them, on the same passage and on the next one.
 - **Opus on the API:** needs a cache marker at the end of the shared docs. Saving costs 1.25 times the normal price once. Every reuse after that is cheap.
-- **Kimi through OpenRouter:** every call goes to **Moonshot AI only**, with no switching to another company. Otherwise OpenRouter spreads calls across about 20 companies that run Kimi, and each keeps its own cache. Kimi reuses any matching start by itself, with no cache marker. Caching test, November 2026: the same Ruth call again, 99% reused. Jonah after Ruth, 52% reused (the docs). Reused tokens cost $0.20 per million instead of $2.00.
+- **Kimi through OpenRouter:** every call goes to **Moonshot AI only**, with no switching to another company. Otherwise OpenRouter spreads calls across about 20 companies that run Kimi, and each keeps its own cache. Kimi reuses any matching start by itself, with no cache marker. Caching test, November 2026: the same Ruth call again, 99% reused. Jonah after Ruth, 52% reused (the docs). Reused tokens cost $0.20 per million instead of $2.00. Prep caching test, November 2026: a check of the same passage again reused 98% (the docs and the passage), and a check of a different passage reused the docs (10,496 tokens). One call in four reused nothing, then the docs came back, so a single miss is not a problem; 3 in a row pauses the run.
 
 ## Costs
 
