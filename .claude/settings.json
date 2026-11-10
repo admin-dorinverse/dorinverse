@@ -1,5 +1,18 @@
 {
   "enabledPlugins": {
     "expo@claude-plugins-official": true
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/ntfy-if-question.mjs",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
   }
 }
