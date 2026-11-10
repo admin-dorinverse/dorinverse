@@ -169,6 +169,9 @@ export async function runPassages(books, { fresh = false, models = { opus: realO
     const dir = path.join(RUN_DIR, name);
     if (fresh) fs.rmSync(dir, { recursive: true, force: true });
     fs.mkdirSync(dir, { recursive: true });
+    // A finished book is used as it was saved, along with any change made to its list since
+    const result = readJson(path.join(dir, 'result.json')), saved = readJson(path.join(dir, 'list.json'));
+    if (result && saved) return { list: saved, ...result, before: true };
     const text = { name, text: bookText(name), kind: 'bible' };
     const listText = (list) => JSON.stringify(list, null, 2);   // written the same way every time (rule 3)
 
@@ -259,8 +262,18 @@ export async function runPassages(books, { fresh = false, models = { opus: realO
     'Opus writes, Kimi and a script check, Opus fixes (up to 2 times)', 'Follow it on the dashboard']);
 
   const done = [];
+  const todo = books.filter((b) => fresh || !fs.existsSync(path.join(RUN_DIR, b, 'result.json')));
   try {
-    for (const b of books) done.push({ book: b, ...(await splitBook(b)) });
+    for (const b of books) {
+      const d = { book: b, ...(await splitBook(b)) };
+      done.push(d);
+      if (d.before) continue;
+      // Each book's result on the dashboard as it finishes; the phone hears only at the end
+      const f = flagsFor([d]);
+      logEvent({ type: 'note', title: `${b} is split`, lines: [`${d.list.length} passages`,
+        `Flags: ${f.agentFix} need an agent fix, ${f.humanDecision} need your decision`,
+        `${done.filter((x) => !x.before).length} of ${todo.length} books done this run`] });
+    }
   } catch (e) {
     const saved = savedSoFar();
     if (e instanceof Pause || e instanceof LimitError) {
