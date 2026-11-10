@@ -31,7 +31,7 @@ This file says which model does each job in the lesson run, and how the run uses
 | When | Step | Writer | Reviewer (checks 1–2) | Fixer | Final checker |
 |---|---|---|---|---|---|
 | 1. Once, first | Passages (whole Bible) | Opus | Kimi + script | Opus | Kimi + script |
-| 2. Each passage | Prep walkthrough | Opus | Kimi + script | Opus | Kimi + script |
+| 2. Each passage | Prep walkthrough | Opus | Opus + script | Opus | Kimi + script |
 | 3. Each passage, after Prep | Burnt Cookies | Opus | Kimi + script | Opus | Kimi + script |
 | | The Big Idea | Opus | Kimi + script | Opus | Kimi + script |
 | | Answer explanations | Opus | Kimi + script | Opus | Kimi + script |

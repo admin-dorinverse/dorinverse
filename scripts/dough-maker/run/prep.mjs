@@ -1,11 +1,12 @@
 // The Prep walkthrough step (README "Checking each step", models.md "Who does what"): one walkthrough per passage.
 //   1. Opus writes it (prep-walkthrough.md "Output").
-//   2. Check: the script check (check-prep.mjs), then Kimi's review (checker.md), as one list of findings.
+//   2. Check: the script check (check-prep.mjs), then Opus's review (checker.md), as one list of findings.
 //   3. Fix: Opus fixes only the covered findings. Not-covered findings go to the tracker for the person.
-//   4. Check 2 and Fix 2 the same way, then the final check. A check that finds nothing to fix ends it early.
+//   4. Check 2 and Fix 2 the same way, then Kimi's final check. A check that finds nothing to fix ends it early.
 //   5. Whatever the final check still finds goes on the tracker, and every card gets its two flags.
-// If Opus hits the weekly limit, Kimi writes and fixes instead (models.md "Overflow"); then Opus does the final
-// check, since the final checker is never the fixer, and that check waits for the reset.
+// The final checker is never the fixer: Opus fixes, so Kimi does the final check. If Opus hits the weekly limit,
+// Kimi checks, writes and fixes instead (models.md "Overflow"); then Opus does the final check, and that check waits
+// for the reset.
 //
 //   node scripts/dough-maker/run/prep.mjs --passages 1            one passage (models.md "Test on passage 1")
 //   node scripts/dough-maker/run/prep.mjs --passages 2-200 --agents 5
@@ -62,7 +63,7 @@ const WRITE = (p) => `Write Papa Dorin's Prep walkthrough for ${span(p.start, p.
 - The passage right before it is there for context only. It is not part of the lesson.
 - Reply with only the JSON described in prep-walkthrough.md "Output". No other text.`;
 
-const CHECK = (p) => `Check the Prep walkthrough above, following checker.md. It covers ${span(p.start, p.end)}, in the BSB text above.
+export const CHECK = (p) => `Check the Prep walkthrough above, following checker.md. It covers ${span(p.start, p.end)}, in the BSB text above.
 
 - Check it against every rule in prep-walkthrough.md and papa-dorin.md, and against the BSB text.
 - A script already checks the rules with one right answer: the JSON shape and numbering, real verse references, the stops running through the passage in order, a stop of its own for each included parable or sermon, no more than 20 cards in a stop and at least as many choice cards as story cards, how many answers each card has and how many are right, True and False, the blanks, no commas or periods in answers, exact BSB wording inside quotation marks, dashes, what Papa Dorin calls the baker, and foods that aren't cookies. Don't repeat those. Check the judgment calls: Papa Dorin's voice, the Scripture rules, bite-sized cards, what to ask, never giving an answer away, informed guesses, long stretches, the wrong answers, the card citations, and the line that says the story isn't over.
@@ -226,7 +227,7 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
       const found = by === 'kimi'
         ? await twice(p, 'Kimi', label, async () => readFindings(await askKimi(file === 'final' ? 'final' : 'reviewer',
           [papaMd, prepMd, checkerMd], head + '\n\n' + show(out) + '\n\n' + CHECK(p), [papaMd, prepMd, checkerMd, passagePiece])))
-        : await twice(p, 'Opus', label, async () => readFindings(await askOpus('final',
+        : await twice(p, 'Opus', label, async () => readFindings(await askOpus(file === 'final' ? 'final' : 'reviewer',
           checkerMd.text + '\n\n' + head + '\n\n' + show(out) + '\n\n' + CHECK(p))));
       const findings = [...script, ...found.map((f) => ({ ...f, by }))].map((f) => ({ ...f, at: place(f, out) }));
       return { by, out, findings };
@@ -235,10 +236,21 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     const checks = [], fixedBy = [];
     let last = null;
     for (const n of [1, 2]) {
-      const c = await check(`check-${n}`, 'kimi', `Check ${n}`);
+      // Opus reviews, so checks 1 and 2 cost nothing; Kimi steps in while Opus is over the weekly limit
+      if (opusOutUntil && Date.now() >= opusOutUntil) opusOutUntil = null;
+      let c;
+      try { c = await check(`check-${n}`, opusOutUntil ? 'kimi' : 'opus', `Check ${n}`); }
+      catch (e) {
+        if (!(e instanceof LimitError)) throw e;
+        opusOutUntil = e.resetsAt ? Date.parse(e.resetsAt) : Infinity;
+        problems.push('Opus hit the weekly limit, so Kimi took over checking, writing and fixing');
+        logEvent({ type: 'run', status: 'overflow', note: 'Opus hit the weekly limit. Kimi is checking, writing and fixing.' });
+        c = await check(`check-${n}`, 'kimi', `Check ${n}`);
+      }
       checks.push(c);
       const toFix = c.findings.filter((f) => f.covered);
-      if (!toFix.length) { if (!fixedBy.includes('kimi')) last = c; break; }
+      // Nothing to fix: this check is the final one, unless its checker did a fix (the final checker is never the fixer)
+      if (!toFix.length) { if (!fixedBy.includes(c.by)) last = c; break; }
       const fixed = await stage(`fix-${n}`, () => {
         status(p, 'fixing', opusOutUntil ? 'kimi' : 'opus');
         const findings = JSON.stringify({ step: STEP, findings: toFix.map(({ by, at, ...f }) => f) }, null, 2);
@@ -250,7 +262,7 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
       fixedBy.push(fixed.by);
     }
     if (!last) {
-      const by = fixedBy.includes('kimi') ? 'opus' : 'kimi';
+      const by = fixedBy.includes('kimi') && !fixedBy.includes('opus') ? 'opus' : 'kimi';
       running.set(p.id, 'final');
       if (by === 'opus' && opusOutUntil) throw new Pause(`The final check belongs to Opus, which is over your weekly limit${
         opusOutUntil === Infinity ? '' : ` until ${new Date(opusOutUntil).toLocaleString()}`}.`);
@@ -282,7 +294,7 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
   const scope = chosen.length === 1 ? span(chosen[0].start, chosen[0].end) : `${chosen.length} passages`;
   logEvent({ type: 'run', status: 'running', note: `Prep: ${scope}.` });
   await notify('Prep started', [`Writing Prep for ${scope}`, agents > 1 ? `${agents} agents at once` : 'One agent',
-    'Opus writes, Kimi and a script check, Opus fixes (up to 2 times)', 'Follow it on the dashboard']);
+    'Opus writes, checks and fixes (up to 2 times), Kimi does the final check', 'Follow it on the dashboard']);
 
   const done = [];
   let failure = null;
