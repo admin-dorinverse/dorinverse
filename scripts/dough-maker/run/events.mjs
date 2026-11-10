@@ -10,8 +10,11 @@
 //       items are the flagged items in plain words (where: "stop 2, card 5"), for the dashboard's Flags tab.
 //     { t, type: 'call', id, status: 'start', model: 'opus' | 'kimi', passage?, step?, role?: 'writer' | 'reviewer' | 'fixer' | 'final' }
 //     { t, type: 'call', id, status: 'done' | 'error', model, passage?, step?, role?, ms, tokens?: { input, cached, output },
-//       cost?, error?, detail? }
-//       error is one plain sentence for the person; detail is the provider's own words.
+//       cost?, error?, detail?, cache?: { status: 'reused' | 'partial' | 'missed' | 'expired' | 'first',
+//       expected, pieces: [{ name, tokens, reused }], minutes? } }
+//       error is one plain sentence for the person; detail is the provider's own words. cache is the verdict from
+//       cachewatch.mjs: expected is the size of the text at the top, worked out from the text itself, and pieces
+//       says how much of each piece came from the cache.
 //       input counts every input token, cached ones too. cost is dollars (Kimi only; Opus is the subscription).
 //     { t, type: 'note', title, lines: [...], problem? }   plain words, one fact per line; problem: true for a stop,
 //       retry or overflow switch

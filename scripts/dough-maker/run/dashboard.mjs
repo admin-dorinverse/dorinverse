@@ -28,7 +28,11 @@ function reset() {
 }
 reset();
 
-function usage() { return { calls: 0, input: 0, cached: 0, output: 0, cost: 0 }; }
+function usage() {
+  // due: tokens that should have come from the cache (calls whose text was there to reuse); got: how many did
+  return { calls: 0, input: 0, cached: 0, output: 0, cost: 0, due: 0, got: 0,
+    cache: { reused: 0, first: 0, expired: 0, missed: 0, partial: 0 }, missedInARow: 0 };
+}
 
 function refresh() {
   if (!fs.existsSync(EVENTS)) { if (s.offset) reset(); return; }
@@ -81,6 +85,14 @@ function apply(e) {
     u.calls++;
     for (const k of ['input', 'cached', 'output']) u[k] += e.tokens[k] || 0;
     u.cost += e.cost || 0;
+    const v = e.cache?.status;
+    if (v in u.cache) u.cache[v]++;
+    if (['reused', 'partial', 'missed'].includes(v)) {
+      u.due += e.cache.expected;
+      u.got += Math.min(e.tokens.cached, e.cache.expected);
+    }
+    if (v === 'missed') u.missedInARow++;
+    else if (v === 'reused') u.missedInARow = 0;
   }
 }
 
@@ -231,11 +243,11 @@ const PAGE = String.raw`<!DOCTYPE html>
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 -apple-system, system-ui, "Segoe UI", sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; padding-top: 64px; }
   header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
   h1 { font-size: 22px; margin: 0; }
-  .head-right { display: flex; align-items: center; gap: 8px; min-width: 0; }
   /* The home-screen app has no browser reload, so the page carries its own */
+  .head-right { display: flex; align-items: center; gap: 8px; min-width: 0; }
   .reload { flex: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--blue); background: var(--bar); border: 0;
     border-radius: 999px; padding: 5px 12px; cursor: pointer; }
   h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 10px; }
@@ -263,6 +275,8 @@ const PAGE = String.raw`<!DOCTYPE html>
   .entry:first-child { border-top: 0; }
   .meta { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
   .problem { color: var(--red); font-weight: 600; }
+  .good { color: var(--green); font-weight: 600; }
+  .warn { color: var(--amber); font-weight: 600; }
   .empty { color: var(--muted); }
   .tag { font-weight: 600; }
   .tag.done { color: var(--green); } .tag.error, .tag.failed { color: var(--red); } .tag.making, .tag.checking, .tag.fixing { color: var(--blue); }
@@ -305,7 +319,7 @@ const PAGE = String.raw`<!DOCTYPE html>
 <body>
 <main>
   <header><h1>Lesson run</h1><div class="head-right"><span id="pill" class="pill idle">Loading…</span>
-    <button id="reload" class="reload" type="button" onclick="location.reload()">↻ Refresh</button></div></header>
+    <button class="reload" type="button" onclick="location.reload()">↻ Refresh</button></div></header>
   <div id="status" class="sub"></div>
   <div id="down" class="down-banner" hidden></div>
   <div class="talk-row"><a id="talk" class="talk" href="https://claude.ai/code" target="_blank" rel="noopener">Talk to Claude</a>
@@ -359,6 +373,27 @@ function flagText(f) {
   if (!f || !(f.agentFix || f.humanDecision)) return 'None';
   return [f.agentFix && plural(f.agentFix, 'needs an agent fix', 'need an agent fix'),
     f.humanDecision && plural(f.humanDecision, 'needs your decision', 'need your decision')].filter(Boolean).join(', ');
+}
+// One call's cache line (cachewatch.mjs): reused X of the Y tokens at the top of the call, what that text is, and,
+// when it fell short, which pieces came from the cache and which didn't
+const LASTS = { opus: '1 hour', kimi: 'about 5 minutes' };
+function cacheRows(e) {
+  const c = e.cache, t = e.tokens;
+  if (!c?.pieces) return [['From the cache', n(t.cached) + ' tokens']];   // a call from before the cache check
+  const got = Math.min(t.cached, c.expected), share = pct(got, c.expected);
+  const of = 'Reused ' + n(got) + ' of ' + n(c.expected) + ' tokens (' + share + ')';
+  const top = '<div class="sub">The text at the top: ' + c.pieces.map((p) => esc(p.name)).join(' + ') + '</div>';
+  const pieces = '<div class="sub">' + c.pieces.map((p) => (p.reused >= p.tokens ? '✓ ' : p.reused ? '◐ ' : '✗ ') + esc(p.name) + ': ' +
+    n(p.reused) + ' of ' + n(p.tokens) + (p.reused >= p.tokens ? ' from the cache' : p.reused ? ' from the cache' : ', not from the cache')).join('<br>') + '</div>';
+  const line = {
+    reused: '<span class="good">✓ ' + of + '</span>' + top,
+    partial: '<span class="warn">⚠ ' + of + '</span><div class="sub">Only part of the text at the top came from the cache:</div>' + pieces,
+    missed: '<span class="problem">✗ ' + of + '</span><div class="sub">The cache missed this call. The same text was sent recently, so all of it should have come from the cache:</div>' + pieces,
+    expired: '⏱ ' + of + '<div class="sub">The cache had expired. This text was last sent ' + c.minutes + ' min ago, and ' +
+      (e.model === 'opus' ? 'Opus' : 'Kimi') + '’s cache lasts ' + LASTS[e.model] + '.</div>' + top,
+    first: of + '<div class="sub">First time this text was sent, so nothing was in the cache yet. It’s saved now for the next call.</div>' + top,
+  }[c.status];
+  return [['Cache', line]];
 }
 // Labeled lines: [['Ran for', '5 sec'], ...]; empty values are left out. Values are already escaped.
 function facts(rows) {
@@ -437,8 +472,19 @@ function render(st) {
     '<div class="stat"><h3>Kimi K3.1 Pro</h3><div class="big">' + money(k.cost) + ' <span class="sub">spent</span></div>' +
     '<div class="sub">Through OpenRouter, Moonshot AI only</div>' +
     '<div class="sub">' + n(k.calls) + ' calls · ' + n(k.input) + ' tokens in · ' + n(k.output) + ' out</div></div>';
-  document.getElementById('cache').innerHTML = 'From the cache: Opus ' + pct(o.cached, o.input) + ' of input · Kimi ' + pct(k.cached, k.input) +
-    ' of input. If this stays at 0% once the run is going, something at the top of each call is changing.';
+  // Is the cache caching: each model's calls by verdict (cachewatch.mjs), not a share of all input
+  const cacheLine = (name, x) => {
+    const c = x.cache;
+    const unchecked = x.calls - c.reused - c.partial - c.missed - c.first - c.expired;   // made before calls got a verdict
+    const counts = [c.reused && '<span class="good">✓ ' + n(c.reused) + ' reused</span>', c.partial && '<span class="warn">⚠ ' + n(c.partial) + ' partly</span>',
+      c.missed && '<span class="problem">✗ ' + n(c.missed) + ' missed</span>', c.expired && '⏱ ' + n(c.expired) + ' expired',
+      c.first && n(c.first) + ' first-time', unchecked > 0 && n(unchecked) + ' from before the cache check'].filter(Boolean);
+    const total = x.due ? (x.got / x.due >= 0.95 ? '<span class="good">✓ ' : '<span class="warn">⚠ ') + 'Reused ' + n(x.got) + ' of ' + n(x.due) +
+      ' tokens that should have come from the cache (' + pct(x.got, x.due) + ')</span>' : 'Nothing has been due from the cache yet';
+    return '<div class="entry"><b>' + name + '</b><div>' + total + '</div><div class="sub">' + (counts.join(' · ') || 'No calls yet') + '</div>' +
+      (x.missedInARow >= 3 ? '<div class="problem">' + name + ' missed the cache ' + x.missedInARow + ' calls in a row. Something at the top of each call is changing.</div>' : '') + '</div>';
+  };
+  document.getElementById('cache').innerHTML = '<h3 style="margin:4px 0">Cache</h3>' + cacheLine('Opus', o) + cacheLine('Kimi', k);
 
   document.getElementById('notes').innerHTML = pager('notes', st.notes, (e) => '<div class="entry note">' +
     '<div class="note-title' + (e.problem ? ' problem' : '') + '">' + (e.problem ? 'Problem: ' : '') + esc(e.title) + '</div>' +
@@ -458,7 +504,7 @@ function render(st) {
       tag = 'Finished';
       line = model(e) + ' ' + (DID[e.role] || 'ran') + ' ' + what(e);
       rows = [['Passage', esc(e.label)], ['Ran for', ran],
-        ['Tokens in', t && n(t.input) + ' (' + pct(t.cached, t.input) + ' reused from the cache)'], ['Tokens out', t && n(t.output)],
+        ...(t ? cacheRows(e) : []), ['Tokens out', t && n(t.output)],
         ['Cost', e.model === 'opus' ? 'Included in the subscription' : money(e.cost)]];
     } else if (e.status === 'done' || e.status === 'failed') {
       tag = e.status === 'done' ? 'Done' : 'Stopped';
@@ -531,8 +577,25 @@ function showDown(isDown) {
   setTalk('down');
 }
 
-// ?preview=off or ?preview=down shows those states without taking anything down
+// ?preview=off or ?preview=down shows those states without taking anything down. ?preview=cache puts one example
+// call for each cache verdict at the top of the log (numbers from the caching test), without touching any totals.
 const PREVIEW = new URLSearchParams(location.search).get('preview');
+function cacheExamples() {
+  const t = new Date().toISOString(), label = 'Example only, not a real call';
+  const pm = { name: 'passages.md', tokens: 2812 }, ruth = { name: 'Ruth', tokens: 5158 };
+  const call = (model, cached, input, cache) => ({ t, type: 'call', status: 'done', model, step: 'cache_test', ms: 7000, label,
+    tokens: { input, cached, output: 5 }, cache });
+  const opus = (status, cached, extra = {}) => call('opus', cached, 8797, { status, expected: 7970, ...extra,
+    pieces: [{ ...pm, reused: Math.min(cached, 2812) }, { ...ruth, reused: Math.max(0, Math.min(cached - 2812, 5158)) }] });
+  return [
+    opus('reused', 7955),
+    call('kimi', 2304, 4480, { status: 'partial', expected: 4410, pieces: [{ name: 'passages.md', tokens: 2103, reused: 2103 },
+      { name: 'checker.md', tokens: 515, reused: 201 }, { name: 'Jonah', tokens: 1792, reused: 0 }] }),
+    opus('missed', 0),
+    opus('expired', 0, { minutes: 80 }),
+    opus('first', 0),
+  ];
+}
 let version = null;
 async function tick() {
   try {
@@ -540,6 +603,7 @@ async function tick() {
     if (version && st.version !== version) return location.reload();
     version = st.version;
     if (PREVIEW === 'off') st.remote = { url: null, connected: false };
+    if (PREVIEW === 'cache') st.log = cacheExamples().concat(st.log);
     render(last = st);
     showDown(PREVIEW === 'down');
   }

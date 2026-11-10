@@ -2,15 +2,21 @@
 // each provider keeps its own cache, so letting OpenRouter spread calls loses the cache discount (models.md "Caching").
 // Logs each call's start and end for the dashboard.
 //
-//   const { text, tokens, cost } = await kimi({ messages, passage, step, role });
+//   const { text, tokens, cost, cache } = await kimi({ messages, shared, passage, step, role });
+//
+// shared lists the named pieces at the top of the call that should come from the cache, in order: the docs, then the
+// BSB text when every check of it shares it ([{ name: 'passages.md', text, kind: 'doc' }, { name: 'Ruth', text,
+// kind: 'bible' }]), for the cache verdict (cachewatch.mjs). Left out, it is the system message.
 import { randomUUID } from 'node:crypto';
 import { logEvent } from './events.mjs';
+import * as cachewatch from './cachewatch.mjs';
 
 export const KIMI = 'moonshotai/kimi-k3.1-pro';
 
-export async function kimi({ messages, maxTokens = 16000, passage = null, step = null, role = null }) {
+export async function kimi({ messages, shared = null, maxTokens = 16000, passage = null, step = null, role = null }) {
   if (!process.env.OPENROUTER_API_KEY) throw new Error('OPENROUTER_API_KEY is missing from .env.local');
   const call = { type: 'call', id: randomUUID(), model: 'kimi', passage, step, role };
+  const watch = cachewatch.before('kimi', shared ?? [{ name: 'the instructions', text: messages.find((m) => m.role === 'system')?.content ?? '' }]);
   const started = Date.now();
   logEvent({ ...call, status: 'start' });
   try {
@@ -30,8 +36,9 @@ export async function kimi({ messages, maxTokens = 16000, passage = null, step =
     const tokens = { input: u.prompt_tokens ?? 0, cached: u.prompt_tokens_details?.cached_tokens ?? 0,
       output: u.completion_tokens ?? 0 };
     const cost = u.cost ?? 0;
-    logEvent({ ...call, status: 'done', ms: Date.now() - started, tokens, cost });
-    return { text: j.choices?.[0]?.message?.content?.trim() ?? '', tokens, cost, provider: j.provider };
+    const cache = await cachewatch.after(watch, tokens.cached);
+    logEvent({ ...call, status: 'done', ms: Date.now() - started, tokens, cost, cache });
+    return { text: j.choices?.[0]?.message?.content?.trim() ?? '', tokens, cost, cache, provider: j.provider };
   } catch (e) {
     if (!e.detail) { e.detail = e.message; e.message = 'Couldn’t reach OpenRouter. The internet may be down on the PC.'; }
     logEvent({ ...call, status: 'error', ms: Date.now() - started, error: e.message, detail: e.detail });

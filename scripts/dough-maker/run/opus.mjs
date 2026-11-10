@@ -6,7 +6,11 @@
 //   - no ANTHROPIC_API_KEY, so the call can't fall back to API billing
 // Logs each call's start and end for the dashboard, and passes the weekly limit Claude reports to limits.mjs.
 //
-//   const { text, tokens, usage } = await opus({ system, prompt, passage, step, role });
+//   const { text, tokens, cache } = await opus({ system, prompt, passage, step, role });
+//
+// system is a list of named pieces, joined by a blank line: [{ name: 'passages.md', text, kind: 'doc' },
+// { name: 'Ruth', text, kind: 'bible' }]. Opus reuses up to the end of the system prompt, so these are the pieces
+// that should come from the cache (cachewatch.mjs).
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -14,6 +18,7 @@ import { randomUUID } from 'node:crypto';
 import { spawn, spawnSync } from 'node:child_process';
 import { CACHE, logEvent } from './events.mjs';
 import { saveLimits } from './limits.mjs';
+import * as cachewatch from './cachewatch.mjs';
 
 export const OPUS = 'claude-opus-5-5';
 const npmRoot = spawnSync('npm root -g', { encoding: 'utf8', shell: true }).stdout.trim();
@@ -31,13 +36,14 @@ export function opus({ system, prompt, passage = null, step = null, role = null,
   fs.mkdirSync(PROMPTS, { recursive: true });
   const id = randomUUID();
   const systemFile = path.join(PROMPTS, `${id}.txt`);
-  fs.writeFileSync(systemFile, system);
+  fs.writeFileSync(systemFile, system.map((p) => p.text).join('\n\n'));
   const args = ['-p', '--model', OPUS, '--effort', effort, '--system-prompt-file', systemFile,
     '--output-format', 'stream-json', '--verbose', '--tools', '', '--strict-mcp-config', '--disable-slash-commands',
     '--setting-sources', 'project', '--no-session-persistence'];
   const env = { ...process.env };
   delete env.ANTHROPIC_API_KEY;
   const call = { type: 'call', id, model: 'opus', passage, step, role };
+  const watch = cachewatch.before('opus', system);
   const started = Date.now();
   logEvent({ ...call, status: 'start' });
 
@@ -63,7 +69,7 @@ export function opus({ system, prompt, passage = null, step = null, role = null,
       reject(error);
     };
     child.on('error', (e) => fail(new Error('Couldn’t start Claude Code on the PC.'), e.message));
-    child.on('close', (code) => {
+    child.on('close', async (code) => {
       fs.rmSync(systemFile, { force: true });
       const resetsAt = limited?.resetsAt ? new Date(limited.resetsAt * 1000).toISOString() : null;
       if (limited) return fail(new LimitError('Opus hit the weekly limit.', resetsAt), null);
@@ -72,8 +78,9 @@ export function opus({ system, prompt, passage = null, step = null, role = null,
       const u = result.usage ?? {};
       const tokens = { input: (u.input_tokens ?? 0) + (u.cache_creation_input_tokens ?? 0) + (u.cache_read_input_tokens ?? 0),
         cached: u.cache_read_input_tokens ?? 0, output: u.output_tokens ?? 0 };
-      logEvent({ ...call, status: 'done', ms: Date.now() - started, tokens });
-      resolve({ text: String(result.result ?? '').trim(), tokens, usage: u });
+      const cache = await cachewatch.after(watch, tokens.cached);
+      logEvent({ ...call, status: 'done', ms: Date.now() - started, tokens, cache });
+      resolve({ text: String(result.result ?? '').trim(), tokens, cache, usage: u });
     });
   });
 }
