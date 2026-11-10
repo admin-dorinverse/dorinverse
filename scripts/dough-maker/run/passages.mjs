@@ -357,7 +357,7 @@ function saveTracker() {
   writeJson(TRACKER, tracker);
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const i = process.argv.indexOf('--books');
   const books = i > 0 ? process.argv[i + 1].split(',').map((b) => b.trim()) : BOOKS;
   const unknown = books.filter((b) => !BOOKS.includes(b));

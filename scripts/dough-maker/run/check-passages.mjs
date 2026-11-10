@@ -125,8 +125,10 @@ export function checkPassages(list, { books = null } = {}) {
   for (const [g, members] of groups) {
     if (members.length === 1) add('group', at(members[0].p, members[0].i), `The story group "${g}" has only one passage.`);
     for (let k = 1; k < members.length; k++) {
-      if (members[k].i !== members[k - 1].i + 1)
-        add('nextTo', at(members[k].p, members[k].i), `The story group "${g}" skips over other passages: ${name(members[k - 1].p, members[k - 1].i)} and ${name(members[k].p, members[k].i)} are not next to each other.`);
+      // A group may skip over a side story, which has no story group; whether it truly is one is Kimi's call
+      const between = list.slice(members[k - 1].i + 1, members[k].i);
+      if (between.some((p) => p?.story_group != null))
+        add('nextTo', at(members[k].p, members[k].i), `The story group "${g}" skips over passages in another story group: ${name(members[k - 1].p, members[k - 1].i)} and ${name(members[k].p, members[k].i)} are not next to each other.`);
     }
     members.forEach(({ p, i }, k) => {
       const want = `${k + 1} of ${members.length}`;
@@ -137,7 +139,7 @@ export function checkPassages(list, { books = null } = {}) {
   return { step: 'passages', findings };
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const [file] = process.argv.slice(2).filter((a, i, arr) => !a.startsWith('--') && !arr[i - 1]?.startsWith('--'));
   const opt = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
   const result = checkPassages(JSON.parse(fs.readFileSync(file, 'utf8')), { books: opt('--books')?.split(',') ?? null });

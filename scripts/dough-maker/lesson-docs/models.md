@@ -66,7 +66,7 @@ Every rule in passages.md that has one right answer:
 - Every field is there. Only story_group and position can be null.
 - ids start at 1 and go up by one, in Bible order.
 - Each included parable or sermon sits inside its passage, and its kind is "parable" or "sermon".
-- A story group's passages are next to each other, and their positions count up: "1 of 3", "2 of 3", "3 of 3".
+- A story group's passages are next to each other, skipping only side stories that have no story group, and their positions count up: "1 of 3", "2 of 3", "3 of 3".
 - A passage with no story group has no position.
 
 ## Fresh calls

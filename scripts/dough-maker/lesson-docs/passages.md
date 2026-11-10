@@ -66,6 +66,7 @@ A passage is one complete unit the baker can understand on its own. For example:
 - **Group passages when the next passage picks up the same story:** the same people, and a problem set up in one passage is resolved in a later one. For example, Esther 1–10 is one story group.
 - A group can be a whole book or part of one. Not every passage is in a group.
 - Group only passages that are next to each other.
+- **A side story stays out of the group, and the group skips over it.** For example, Judah and Tamar (Genesis 38) breaks into Joseph's story, so it has no story group, and Genesis 37 and Genesis 39 count as next to each other in the Joseph group.
 - **A sermon or teaching split into more than one passage is grouped too,** even though it isn't a story. For example, the Sermon on the Mount (Matthew 5–7).
 
 ## Types
