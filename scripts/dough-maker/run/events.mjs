@@ -9,6 +9,7 @@
 //   passages.json   the Passages step's output so far (passages.md "Output"), in Bible order
 //   tracker.json    the tracker (README "The tracker")
 //   passages-run/<book>/   the Passages step's saved stages for each book; list.json is the book's list as it stands
+//   prep/<id and range>/   the Prep step's saved stages for each passage; prep.json is the finished walkthrough
 //
 // In CACHE:
 //   events.jsonl    one JSON object per line, appended by the run:

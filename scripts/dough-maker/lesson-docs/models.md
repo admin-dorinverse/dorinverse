@@ -69,6 +69,20 @@ Every rule in passages.md that has one right answer:
 - A story group's passages are next to each other, skipping only side stories that have no story group, and their positions count up: "1 of 3", "2 of 3", "3 of 3".
 - A passage with no story group has no position.
 
+### What the script checks for Prep
+
+The rules in prep-walkthrough.md and papa-dorin.md that have one right answer:
+
+- The JSON shape: the passage, stops numbered from 1, cards numbered from 1 in each stop, every field there.
+- Every reference is a real BSB verse. The stops run through the passage in order, with no gap and no overlap.
+- Each included parable or sermon has a stop of its own.
+- No more than 20 cards in a stop, and at least as many choice cards as story cards.
+- The answers: 3 for multiple choice, True and False for true or false, 3 for one blank, 5 single words for two blanks, the right number marked right, no commas or periods, and no small word like "and" as a blank.
+- Words in quotation marks match the BSB exactly, when they are meant as Bible words.
+- No em dashes or en dashes outside a quotation.
+- Never "my baker," "kids" or "sweetie."
+- No food that isn't a cookie, unless it's in the passage.
+
 ## Fresh calls
 
 - **Every check is a fresh call.** The checker sees only the docs, the passage text and the output. It never sees the writer's conversation.
