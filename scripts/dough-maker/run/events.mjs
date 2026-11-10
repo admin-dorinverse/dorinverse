@@ -1,7 +1,16 @@
-// The files the lesson run writes and the dashboard reads, all under scripts/dough-maker/run/.cache/
-// (DOUGH_RUN_CACHE overrides the folder, for tests). What the dashboard shows comes from lesson-docs/models.md.
+// The files the lesson run writes and the dashboard reads. What the dashboard shows comes from lesson-docs/models.md.
 //
+// Every step's output goes under scripts/dough-maker/output/ (OUTPUT), which is kept in git: the passage list, the
+// tracker, each book's or passage's saved stages, and every lesson step to come. Only the run's own bookkeeping
+// (events, limits, logs, prompts) goes under scripts/dough-maker/run/.cache/ (CACHE), which git skips.
+// DOUGH_RUN_OUTPUT and DOUGH_RUN_CACHE override the folders, for tests.
+//
+// In OUTPUT:
 //   passages.json   the Passages step's output so far (passages.md "Output"), in Bible order
+//   tracker.json    the tracker (README "The tracker")
+//   passages-run/<book>/   the Passages step's saved stages for each book; list.json is the book's list as it stands
+//
+// In CACHE:
 //   events.jsonl    one JSON object per line, appended by the run:
 //     { t, type: 'run', status: 'running' | 'paused' | 'overflow' | 'stopped' | 'finished', note? }
 //     { t, type: 'step', passage, step, status: 'making' | 'checking' | 'fixing' | 'done' | 'failed', model,
@@ -25,8 +34,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 export const CACHE = process.env.DOUGH_RUN_CACHE || path.join(import.meta.dirname, '.cache');
+export const OUTPUT = process.env.DOUGH_RUN_OUTPUT || path.join(import.meta.dirname, '..', 'output');
 export const EVENTS = path.join(CACHE, 'events.jsonl');
-export const PASSAGES = path.join(CACHE, 'passages.json');
+export const PASSAGES = path.join(OUTPUT, 'passages.json');
 export const LIMITS = path.join(CACHE, 'limits.json');
 export const REMOTE = path.join(CACHE, 'remote-control.json');
 

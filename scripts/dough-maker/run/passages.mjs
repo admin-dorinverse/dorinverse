@@ -9,7 +9,7 @@
 //
 //   node scripts/dough-maker/run/passages.mjs --books Genesis [--fresh]
 //
-// Every stage is saved under .cache/passages-run/<book>/ as it finishes, so running it again picks up from the last
+// Every stage is saved under scripts/dough-maker/output/passages-run/<book>/ as it finishes, so running it again picks up from the last
 // saved stage; --fresh starts the books over. passages.json (the dashboard's list) and tracker.json are rebuilt from
 // those files after every stage. A call that gives no answer, or one that can't be read, is tried once more; if it
 // fails again the run stops and tells the person (README "When the run stops").
@@ -20,7 +20,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { CACHE, PASSAGES, LIMITS, TYPES, logEvent, notify } from './events.mjs';
+import { OUTPUT, PASSAGES, LIMITS, TYPES, logEvent, notify } from './events.mjs';
 import { doc, fingerprints } from './docs.mjs';
 import { BOOKS, bookText, verses } from './bsb.mjs';
 import { checkPassages } from './check-passages.mjs';
@@ -30,8 +30,8 @@ import { kimi as realKimi } from './kimi.mjs';
 import { checkLimits as realCheckLimits } from './limits.mjs';
 
 const STEP = 'passages';
-export const RUN_DIR = path.join(CACHE, 'passages-run');
-export const TRACKER = path.join(CACHE, 'tracker.json');
+export const RUN_DIR = path.join(OUTPUT, 'passages-run');
+export const TRACKER = path.join(OUTPUT, 'tracker.json');
 const KIMI_MAX = 64_000;   // Kimi's thinking counts as output, so leave plenty of room for the answer
 
 // --- the jobs: the last thing in every call ---------------------------------------------------------------------

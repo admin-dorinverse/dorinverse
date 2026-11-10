@@ -38,6 +38,8 @@ Docs: https://docs.expo.dev/eas/index.md
 
 The rules for building Bible lessons live in `scripts/dough-maker/lesson-docs/`. Start with its `README.md`, which says which file to load for each step. The approved prophecy links are in `scripts/dough-maker/data/prophecy-links.json`.
 
+Every output the lesson run makes (the passage list, the tracker, each step's saved stages, and every lesson step) goes under `scripts/dough-maker/output/`, which is kept in git. Use `OUTPUT` from `scripts/dough-maker/run/events.mjs`. Only the run's bookkeeping (events, limits, logs, prompts) goes in the git-ignored `scripts/dough-maker/run/.cache/`. Commit the outputs after a run or a hand fix.
+
 ## Rules
 
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
