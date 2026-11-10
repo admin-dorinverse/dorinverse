@@ -427,7 +427,7 @@ function render(st) {
   document.getElementById('passages').innerHTML =
     '<div class="big">' + n(P.count) + ' <span class="sub">passages made</span></div>' +
     '<div class="sub">' + (P.status ? STATUS[P.status] + ' · ' : P.count ? '' : 'Not started · ') + n(P.books) + ' of ' + P.of + ' books split</div>' +
-    bar(P.of, P.status === 'done' ? P.of : P.books) +
+    bar(P.of, P.books) +
     '<div class="chips">' + Object.entries(P.byType).map(([t, c]) => '<span class="chip">' + esc(t) + ' <b>' + n(c) + '</b></span>').join('') + '</div>';
 
   const L = st.lessons;

@@ -74,6 +74,7 @@ One file for the whole run, for a person to review after the run finishes. It ha
 
 - **Needs agent fix:** a rule covers it, but two fixes didn't get it right. Each group gives the rule's link and exact words. After the run, a batch rerun fixes only the items listed. A group goes to a person only if one rule keeps failing in many places.
 - **Needs human decision:** the docs don't cover it. Each group asks its question once. After the person decides, a batch rerun fixes only the items listed.
+- **A decision is asked only once.** When the person decides, the answer is written into the step's doc as a rule, so it's covered from then on and never comes back to the person.
 
 ## Flags
 

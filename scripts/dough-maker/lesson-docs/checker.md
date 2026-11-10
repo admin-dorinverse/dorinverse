@@ -13,6 +13,8 @@ Every finding is one of two kinds:
 - **Covered:** a rule in the docs already says what is right. The output just broke it. Give the rule.
 - **Not covered:** the docs don't say what to do. These go to a person.
 
+Before marking a finding not covered, look for a rule in every file the step used. If a rule answers it, mark it covered. A person's time is only for what the docs truly don't answer.
+
 ## Giving the rule
 
 For a covered finding, give the rule itself, never a number:

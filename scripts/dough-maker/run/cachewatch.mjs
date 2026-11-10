@@ -50,7 +50,8 @@ export async function after({ model, pieces, key, at }, cached) {
 
   if (status === 'missed') {
     if (++inARow[model] === 3) await notify('Cache problem', [`${model === 'opus' ? 'Opus' : 'Kimi'} missed the cache 3 calls in a row`,
-      'Something at the top of each call is changing', 'Calls cost full price until it is fixed'], { problem: true });
+      'Something at the top of each call is changing', 'Calls cost full price until it is fixed',
+      'The run pauses here. Its work so far is saved'], { problem: true });
   } else if (status === 'reused') inARow[model] = 0;
   return cache;
 }
