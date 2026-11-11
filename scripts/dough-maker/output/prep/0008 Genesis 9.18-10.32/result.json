@@ -70,36 +70,24 @@
         "card": 9,
         "verses": "Genesis 10:21-29"
       }
-    }
-  ],
-  "human": [
-    {
-      "covered": false,
-      "where": {
-        "stop": 2
-      },
-      "problem": "Genesis 10 is a genealogy with a short narrative about Nimrod (10:8-12) in the middle of it. The stop sums up the genealogy in four story cards (cards 1, 2, 8 and 9) instead of one. It also gives choice cards to the Nimrod verses (cards 3, 5, 6 and 7) and to the genealogy's closing verse, 10:32 (card 10).",
-      "question": "When a long stretch like a genealogy has a short narrative inside it, is the narrative part of the stretch or its own moment that can get choice cards? Can the stretch be summed up in several story cards, such as one per son's line? And can the stretch's closing summary verse (10:32) get a choice card?",
-      "by": "opus",
-      "at": {
-        "stop": 2,
-        "card": null,
-        "verses": "Genesis 10:1-32"
-      }
     },
     {
-      "covered": false,
+      "covered": true,
       "where": {
         "stop": 2
       },
-      "problem": "Stop 2 is the Table of Nations (Genesis 10), a genealogy and so a long stretch. It still has five choice cards: four on the Nimrod aside (10:9-11) and one on the closing summary verse (10:32). The docs say a long stretch never gets a choice card. They also say a stop needs at least as many choice cards as story cards, and they allow naming one standout detail. Here Nimrod gets five cards.",
-      "question": "Inside a genealogy, does a short narrative aside like Nimrod (10:8-12), or the closing summary verse (10:32), count as part of the long stretch, or can it get choice cards? And when a stop is mostly a long stretch, how should the 'choice cards equal to or more than story cards' rule be met? Options include folding the genealogy into the previous stop or letting the stop fall short.",
-      "by": "opus",
+      "by": "person",
       "at": {
         "stop": 2,
         "card": null,
         "verses": "Genesis 10:1-32"
+      },
+      "problem": "Genesis 10 is a long stretch, the list of nations, but it got a stop of its own with 4 story cards and 5 choice cards, most about Nimrod. It should be one story card in stop 1, with Nimrod as its standout detail and no choice cards.",
+      "rule": {
+        "link": "prep-walkthrough.md#long-stretches-that-dont-move-the-passage",
+        "text": "A stretch never gets a stop of its own. Its one card sits in the stop with the moments around it."
       }
     }
-  ]
+  ],
+  "human": []
 }

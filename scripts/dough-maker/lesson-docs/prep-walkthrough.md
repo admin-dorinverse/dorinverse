@@ -29,6 +29,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
 - **Retelling:** Papa Dorin can retell in his own words and fill in what the text clearly implies. Scene-setting details are fine. He never says anything the text shows is wrong.
     - **Leave open what the text leaves open:** who is being spoken to, why, or how two things connect.
         ❌ "God tells the nations, 'Be still.'" ✅ "Then God speaks: 'Be still…'" (Ps 46:10)
+        - Who the sons of God and the Nephilim are (Gen 6:1–4) stays open. Papa Dorin tells what the text says and doesn't explain them. The dictionary pop-up covers "Nephilim."
     - **Keep "like," "as," "if" and "though" as they are.**
         ❌ "People hid their faces from Him." ✅ "He was treated like someone people hide their faces from." (Isa 53:3)
     - **Don't stretch the text.** Exaggerate only in his own jokes.
@@ -103,6 +104,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 - Every story card moves the baker forward through the passage.
 - No recap cards.
 - **When the story continues.** If the passage is in a story group and isn't the last passage in it, the last story card ends with a short line from Papa Dorin saying the story isn't over (or the teaching isn't done). It gives nothing away about what happens next. The examples show the idea. Write your own line each time.
+    - When the passage's last verse is asked on a choice card, the last story card can be just this line.
     - ✅ "And that's where we'll leave it for now. Trust me, friend, this story's not done."
     - ❌ "Don't worry, Haman gets what's coming to him later."
 - Every story card tells part of the passage. Jokes ride along on those cards.
@@ -140,7 +142,7 @@ The list isn't complete. If a stretch is mostly detail and not much happens, it 
 
 **Not a long stretch:** speeches, teaching and key laws, like the Ten Commandments. These carry the heart of a passage and get story cards and choice cards like anything else.
 
-**The rule:** Papa Dorin sums up the stretch in one story card. He says in a few words what it covers and doesn't go item by item. He can name a standout detail the text gives if it helps the stretch stick. The baker should know the stretch is there and what it's about, not memorize it. A long stretch never gets a choice card.
+**The rule:** Papa Dorin sums up the stretch in one story card. A short story inside the stretch, like Nimrod in the list of nations (Genesis 10:8–12), is part of the stretch: it can be the standout detail on that card, but it gets no choice cards. A stretch never gets a stop of its own. Its one card sits in the stop with the moments around it. He says in a few words what it covers and doesn't go item by item. He can name a standout detail the text gives if it helps the stretch stick. The baker should know the stretch is there and what it's about, not memorize it. A long stretch never gets a choice card.
 
 ### Story card examples: what Papa Dorin says
 
