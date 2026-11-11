@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "This non-opening story card has three sentences, exceeding the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Numbers 10:14-28"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "The line \"A cloud in the sky\" tells the baker that the cloud is still with Israel, giving away the answer \"True\" on card 16, which asks whether the cloud of the LORD is over them by day.",
+      "rule": {
+        "link": "prep-walkthrough.md#never-give-away-an-answer",
+        "text": "No card ever gives away the answer to a choice card that comes later."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "Numbers 10:31"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card uses facts from Numbers 9:17-22 (the cloud rule) and puts that reference in parentheses inside the card text. Its 'verses' field cites only Numbers 10:11.",
+      "question": "When a story card uses context from outside the passage, where does that reference go? Should it be inline in the card text, added to the 'verses' field, or both? The docs say outside facts are fine 'with their reference' and that a story card 'cites the verses it tells,' but they don't say how the two fit together.",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Numbers 10:11"
+      }
+    }
+  ]
+}

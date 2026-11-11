@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "The blank requires the baker to supply the unseen date word \"second.\" The earlier cards establish only that there is a later date, not that it is exactly one month later, so the baker cannot reason out the blank from its meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 12,
+        "verses": "Numbers 9:11"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 17
+      },
+      "problem": "The stop gives the penalty of being cut off but never covers the rest of Numbers 9:13: this happens because the man did not present the LORD's offering at its appointed time, and he will bear the consequences of his sin. Those stated reasons and consequences are important to understanding the verse.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 17,
+        "verses": "Numbers 9:13"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Card 7 says Aaron is 'Moses' brother and the priest,' which comes from outside the passage (e.g. Exodus 4:14; 28:1). The card cites only Numbers 9:6. Card 1's 'Moses, Israel's leader' has the same gap. The docs say outside facts come 'with their reference.' They also say every story card cites only the verses it tells, and the JSON has a single verses field. The papa-dorin.md example of introducing a new person shows no reference.",
+      "question": "When a card introduces a person with a fact from outside the passage, where does that fact's reference go? Should it be added to the card's verses field, written in the card text, or left out for these short identity lines?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "Numbers 9:6"
+      }
+    }
+  ]
+}

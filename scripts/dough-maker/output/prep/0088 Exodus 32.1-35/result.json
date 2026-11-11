@@ -1,0 +1,100 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Moses appears for the first time only by name. The card says where he has been, but never simply says who he is, such as Israel's leader.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "New people. The first time someone shows up, he says simply who they are, like \"Cyrus, king of Persia\" or \"Moses, Israel's leader.\""
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Exodus 32:1"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Stop 1 relies on luck repeatedly rather than using only a few discovery questions. Cards 2, 3, 4, 7, 9, 13, 15 and 18 ask for facts that cannot be inferred from the earlier cards. For example, an altar before the calf gives no basis for knowing that Aaron proclaims the feast to the LORD, and nothing before cards 15 and 18 supplies \"nation\" or the patriarchs' names.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "Before each choice card, Papa Dorin's story card gives enough context that the baker can reason their way to the answer. The check: could a thoughtful baker who has only seen the earlier cards make a reasoned pick? If the only way to get it right is luck, give the story card more context or ask a different question. A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Exodus 32:1-14"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "The blanks in cards 9, 15 and 18 test unseen wording: \"LORD,\" \"nation,\" and \"Abraham\" and \"Israel.\" The earlier cards provide no meaningful basis for reasoning out those completions.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Exodus 32:1-14"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "This story card only repeats Aaron's excuse from the preceding choice and adds a joke. It introduces no new moment from Exodus 32, so it is a recap card and does not move the passage forward.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card moves the baker forward through the passage. No recap cards."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 10,
+        "verses": "Exodus 32:24"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Some cards state facts from outside the passage with no reference: Moses up on Mount Sinai with God (stop 1, card 1; Exodus 24:18), Aaron as Moses' brother (stop 1, card 1; Exodus 4:14), and Joshua as Moses' assistant (stop 2, card 2; Exodus 24:13). The docs say outside facts carry their reference. The JSON format only has a 'verses' field, and that field must cite exactly the card's verses, so there is nowhere to put an outside reference.",
+      "question": "Where should a card put the reference for an outside fact, such as who a new person is? Should it go in the card text, in a separate field, or is a 'who they are' introduction exempt from the reference rule?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Some story cards state facts from outside the passage: 'Mount Sinai' and 'Aaron, Moses' brother' (stop 1, card 1), and 'Joshua, Moses' assistant' (stop 2, card 2). Their cited verses are only from Exodus 32, so these facts carry no reference. The docs require a reference for every Bible fact and allow outside facts 'with their reference.' They don't say how to record an outside reference in a card's verses field, which uses a single passage range.",
+      "question": "When a story card introduces a person or place with a fact from outside the passage (like Ex 4:14 for Aaron or Ex 24:13 for Joshua), should that outside reference go in the card's verses field, go somewhere else, or be left off?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}
