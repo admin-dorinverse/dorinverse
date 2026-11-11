@@ -17,6 +17,7 @@
 // passages over. tracker.json is rebuilt after every passage. A call that gives no answer, or one that can't be
 // read, is tried once more; if it fails again the run stops and tells the person (README "When the run stops").
 // With more than one agent, the first call goes alone, so it saves the docs in the cache before the rest start.
+// The outputs are committed and pushed to GitHub every 50 passages, and when the run pauses, stops or finishes.
 //
 // How each call is built (models.md "Caching"): nothing that changes goes near the top, and the job is always last.
 //   Opus: system [papa-dorin.md, prep-walkthrough.md]; the message holds the passage and the rest
@@ -34,12 +35,14 @@ import { cacheTrouble } from './cachewatch.mjs';
 import { opus as realOpus, LimitError } from './opus.mjs';
 import { kimi as realKimi } from './kimi.mjs';
 import { checkLimits as realCheckLimits } from './limits.mjs';
+import { saveToGit } from './save.mjs';
 
 const STEP = 'prep';
 export const PREP_DIR = path.join(OUTPUT, 'prep');
 export const TRACKER = path.join(OUTPUT, 'tracker.json');
 const KIMI_MAX = 64_000;   // Kimi's thinking counts as output, so leave plenty of room for the answer
 const STAGGER = 5_000;     // between agents starting, once the first call has saved the docs in the cache
+const SAVE_EVERY = 50;     // passages between GitHub backups
 
 // --- what goes in each call --------------------------------------------------------------------------------------
 
@@ -277,6 +280,8 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
           `${d.prep.stops.length} stops, ${d.prep.stops.reduce((k, s) => k + s.cards.length, 0)} cards`,
           `Flags: ${f.agentFix} need an agent fix, ${f.humanDecision} need your decision`,
           `${done.filter((x) => !x.before).length} of ${todo.length} passages done this run`] });
+        const fresh = done.filter((x) => !x.before).length;
+        if (fresh % SAVE_EVERY === 0) saveToGit(`Prep: ${fresh} passages done this run (automatic backup)`);
       } catch (e) {
         failure ??= { e, p, stage: running.get(p.id) };
         running.delete(p.id);
@@ -290,6 +295,7 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     const { e, p, stage } = failure;
     const saved = `Saved: Prep for ${done.length} passages, and every finished stage`;
     const at = `Where: ${span(p.start, p.end)}, ${stageName(stage)}`;
+    saveToGit(`Prep: ${done.filter((x) => !x.before).length} passages done before the run ${e instanceof Pause || e instanceof LimitError ? 'paused' : 'stopped'} (automatic backup)`);
     logEvent({ type: 'run', status: e instanceof Pause || e instanceof LimitError ? 'paused' : 'stopped', note: e.message });
     status(p, 'failed', null);
     const again = 'To pick up again, ask Claude to run Prep again. It starts from the last saved stage.';
@@ -304,6 +310,7 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     throw e;
   }
 
+  saveToGit(`Prep: ${scope} finished (automatic backup)`);
   const flags = flagsFor(done);
   const weekAfter = readJson(LIMITS)?.weekly?.pct ?? null;
   const cache = Object.entries(spent.cache).map(([k, c]) => `${c} ${k}`).join(', ');
