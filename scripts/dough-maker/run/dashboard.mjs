@@ -56,7 +56,16 @@ function refresh() {
 
 function apply(e) {
   s.lastAt = e.t;
-  if (e.type === 'run') s.run = e;
+  if (e.type === 'run') {
+    // A run (re)starting means the last one ended, even if it was killed with no word (a PC restart):
+    // whatever it had in flight is gone, so it must not show as working. Coming back from overflow is the same run.
+    if (e.status === 'running' && s.run?.status !== 'overflow') {
+      s.calls.clear();
+      s.stepStart.clear();
+      for (const [key, x] of s.steps) if (['making', 'checking', 'fixing'].includes(x.status)) s.steps.delete(key);
+    }
+    s.run = e;
+  }
   else if (e.type === 'step') {
     // a step runs from its first 'making' (or checking, fixing) until 'done' or 'failed'
     const key = `${e.passage ?? ''}|${e.step}`;
