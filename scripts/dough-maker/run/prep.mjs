@@ -4,9 +4,9 @@
 //   3. Fix: Opus fixes only the covered findings. Not-covered findings go to the tracker for the person.
 //   4. Check 2 and Fix 2 the same way, then Kimi's final check. A check that finds nothing to fix ends it early.
 //   5. Whatever the final check still finds goes on the tracker, and every card gets its two flags.
-// The final checker is never the fixer: Opus fixes, so Kimi does the final check. If Opus hits the weekly limit,
-// Kimi checks, writes and fixes instead (models.md "Overflow"); then Opus does the final check, and that check waits
-// for the reset.
+// The final checker is never the fixer: Opus fixes, so Kimi does the final check. Kimi never writes or fixes. If Opus
+// hits the weekly limit, the run pauses and notifies the person (models.md "When the weekly limit runs out"); running
+// it again after the reset picks up from the last saved stage.
 //
 //   node scripts/dough-maker/run/prep.mjs --passages 1            one passage (models.md "Test on passage 1")
 //   node scripts/dough-maker/run/prep.mjs --passages 2-200 --agents 5
@@ -137,7 +137,6 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
   const byId = new Map(list.map((p) => [p.id, p]));
   const spent = { kimi: 0, calls: 0, cache: {} };
   const problems = [];
-  let opusOutUntil = null;
   const running = new Map();   // passage id -> stage, for a stop message
   let warmed = null, warm = new Promise((res) => { warmed = res; });
   const status = (p, s, model) => logEvent({ type: 'step', passage: p.id, step: STEP, status: s, model });
@@ -167,27 +166,8 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     }
   }
 
-  async function writeOrFix(p, role, what, opusJob, kimiJob) {
-    if (opusOutUntil && Date.now() >= opusOutUntil) {
-      opusOutUntil = null;
-      logEvent({ type: 'run', status: 'running', note: 'Opus is back after its weekly limit reset.' });
-    }
-    if (!opusOutUntil) {
-      try { return { by: 'opus', out: await twice(p, 'Opus', what, async () => readPrep(await opusJob())) }; }
-      catch (e) {
-        if (!(e instanceof LimitError)) throw e;
-        if (!opusOutUntil) {
-          opusOutUntil = e.resetsAt ? Date.parse(e.resetsAt) : Infinity;
-          const until = e.resetsAt ? `until it resets ${new Date(e.resetsAt).toLocaleString()}` : 'for the rest of this run';
-          problems.push(`Opus hit the weekly limit, so Kimi took over writing and fixing ${until}`);
-          logEvent({ type: 'run', status: 'overflow', note: `Opus hit the weekly limit. Kimi is writing and fixing ${until}.` });
-          logEvent({ type: 'note', title: 'Kimi is covering for Opus', lines: ['Opus hit your weekly limit', `Kimi writes and fixes ${until}`,
-            'Opus does the final check after the reset'], problem: true });
-        }
-      }
-    }
-    return { by: 'kimi', out: await twice(p, 'Kimi', what, async () => readPrep(await kimiJob())) };
-  }
+  // Opus writes and fixes. Over the weekly limit, LimitError goes up and the run pauses (models.md).
+  const writeOrFix = async (p, what, opusJob) => ({ by: 'opus', out: await twice(p, 'Opus', what, async () => readPrep(await opusJob())) });
 
   async function makePrep(p) {
     const dir = path.join(PREP_DIR, folder(p));
@@ -213,10 +193,8 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     const passagePiece = { name: span(p.start, p.end), text: head, kind: 'bible' };
 
     const made = await stage('made', () => {
-      status(p, 'making', opusOutUntil ? 'kimi' : 'opus');
-      return writeOrFix(p, 'writer', 'Writing Prep',
-        () => askOpus('writer', writerTop + '\n\n' + WRITE(p)),
-        () => askKimi('writer', [papaMd, prepMd], writerTop + '\n\n' + WRITE(p), [papaMd, prepMd]));
+      status(p, 'making', 'opus');
+      return writeOrFix(p, 'Writing Prep', () => askOpus('writer', writerTop + '\n\n' + WRITE(p)));
     });
     let out = made.out;
 
@@ -236,37 +214,23 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     const checks = [], fixedBy = [];
     let last = null;
     for (const n of [1, 2]) {
-      // Opus reviews, so checks 1 and 2 cost nothing; Kimi steps in while Opus is over the weekly limit
-      if (opusOutUntil && Date.now() >= opusOutUntil) opusOutUntil = null;
-      let c;
-      try { c = await check(`check-${n}`, opusOutUntil ? 'kimi' : 'opus', `Check ${n}`); }
-      catch (e) {
-        if (!(e instanceof LimitError)) throw e;
-        opusOutUntil = e.resetsAt ? Date.parse(e.resetsAt) : Infinity;
-        problems.push('Opus hit the weekly limit, so Kimi took over checking, writing and fixing');
-        logEvent({ type: 'run', status: 'overflow', note: 'Opus hit the weekly limit. Kimi is checking, writing and fixing.' });
-        c = await check(`check-${n}`, 'kimi', `Check ${n}`);
-      }
+      // Opus reviews, so checks 1 and 2 cost nothing
+      const c = await check(`check-${n}`, 'opus', `Check ${n}`);
       checks.push(c);
       const toFix = c.findings.filter((f) => f.covered);
       // Nothing to fix: this check is the final one, unless its checker did a fix (the final checker is never the fixer)
       if (!toFix.length) { if (!fixedBy.includes(c.by)) last = c; break; }
       const fixed = await stage(`fix-${n}`, () => {
-        status(p, 'fixing', opusOutUntil ? 'kimi' : 'opus');
+        status(p, 'fixing', 'opus');
         const findings = JSON.stringify({ step: STEP, findings: toFix.map(({ by, at, ...f }) => f) }, null, 2);
-        return writeOrFix(p, 'fixer', `Fix ${n}`,
-          () => askOpus('fixer', head + '\n\n' + show(out) + '\n\n' + findings + '\n\n' + FIX(p)),
-          () => askKimi('fixer', [papaMd, prepMd], head + '\n\n' + show(out) + '\n\n' + findings + '\n\n' + FIX(p), [papaMd, prepMd]));
+        return writeOrFix(p, `Fix ${n}`, () => askOpus('fixer', head + '\n\n' + show(out) + '\n\n' + findings + '\n\n' + FIX(p)));
       });
       out = fixed.out;
       fixedBy.push(fixed.by);
     }
     if (!last) {
-      const by = fixedBy.includes('kimi') && !fixedBy.includes('opus') ? 'opus' : 'kimi';
       running.set(p.id, 'final');
-      if (by === 'opus' && opusOutUntil) throw new Pause(`The final check belongs to Opus, which is over your weekly limit${
-        opusOutUntil === Infinity ? '' : ` until ${new Date(opusOutUntil).toLocaleString()}`}.`);
-      last = await check('final', by, 'Final check');
+      last = await check('final', 'kimi', 'Final check');
       checks.push(last);
     }
 

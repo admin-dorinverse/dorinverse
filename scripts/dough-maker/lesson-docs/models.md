@@ -7,7 +7,7 @@ This file says which model does each job in the lesson run, and how the run uses
 | Model | What it's for | How it's paid |
 |---|---|---|
 | **Opus 5.5**, medium effort | The writing that needs judgment and Papa Dorin's voice, and its fixes | The Claude subscription (weekly limit) |
-| **Kimi K3.1 Pro** | Reviewing, the structured steps, and overflow writing | Per token |
+| **Kimi K3.1 Pro** | Final checks on Opus's writing, and the structured steps | Per token |
 | **Scripts** | Rules with one clear right answer | Free |
 
 - Opus always runs at **medium** effort. It worked in round 5.
@@ -88,11 +88,10 @@ The rules in prep-walkthrough.md and papa-dorin.md that have one right answer:
 - **Every check is a fresh call.** The checker sees only the docs, the passage text and the output. It never sees the writer's conversation.
 - **Every step is its own call.** No step carries a conversation over from another step or another passage.
 
-## Overflow
+## When the weekly limit runs out
 
-- If Opus hits the weekly limit, **Kimi takes over Opus's writing and fixing** until the limit resets. The run never fully stops.
-- Final checks that belong to Opus wait for the reset.
-- When the limit resets, Opus takes its jobs back.
+- If Opus hits the weekly limit, **the run pauses and notifies the person.** Kimi never takes over Opus's writing, fixing or checking.
+- Everything finished is saved. After the limit resets, running it again picks up from the last saved stage.
 
 ## How many agents at once
 
@@ -114,12 +113,12 @@ The person follows the run on their dashboard. Every update is written for a per
 - **Flags so far:** how many items are `needs_agent_fix` and how many are `needs_human_decision`
 - **Models:** what each model is doing right now, how much of the Opus weekly limit is used, and what Kimi has cost so far
 - **Caching:** the share of input tokens that came from the cache
-- **Problems:** any stop, retry or switch to overflow, in one plain sentence each
+- **Problems:** any stop, pause or retry, in one plain sentence each
 
 **When it updates**
 
 - After every passage finishes
-- Whenever the run stops, retries a step, or switches to overflow
+- Whenever the run stops, pauses or retries a step
 - A short summary at the end of each day, and when the run finishes
 
 **Example update**
