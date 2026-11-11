@@ -1,0 +1,264 @@
+{
+  "by": "opus",
+  "out": {
+    "passage": "Exodus 20:22-23:19",
+    "stops": [
+      {
+        "stop": 1,
+        "verses": "Exodus 20:22-23:19",
+        "cards": [
+          {
+            "card": 1,
+            "kind": "story",
+            "verses": "Exodus 20:22",
+            "text": "God just spoke from the mountain, and the people were so scared they stood at a distance while Moses, Israel's leader, went into the thick darkness where God was (Exodus 20:18-21). Now the LORD gives Moses a message for the Israelites. It opens with something they've seen for themselves."
+          },
+          {
+            "card": 2,
+            "kind": "choice",
+            "type": "multiple_choice",
+            "verses": "Exodus 20:22",
+            "question": "God reminds the Israelites they've seen for themselves that He spoke to them. Where did He speak from?",
+            "answers": [
+              {
+                "text": "from heaven",
+                "correct": true
+              },
+              {
+                "text": "from a burning bush",
+                "correct": false
+              },
+              {
+                "text": "from a pillar of cloud",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 3,
+            "kind": "choice",
+            "type": "multiple_choice",
+            "verses": "Exodus 20:23",
+            "question": "God has spoken to them straight from heaven. Next, what does He say they must not make for themselves?",
+            "answers": [
+              {
+                "text": "gods of silver or gold",
+                "correct": true
+              },
+              {
+                "text": "a king to rule over them",
+                "correct": false
+              },
+              {
+                "text": "a tower that reaches the sky",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 4,
+            "kind": "story",
+            "verses": "Exodus 20:24",
+            "text": "What they ARE to make is an altar of earth for their burnt offerings and peace offerings. DIRT, friend, and as a stamper who came out of a clearance bin for a quarter, that's my kind of building project."
+          },
+          {
+            "card": 5,
+            "kind": "choice",
+            "type": "fill_blank",
+            "verses": "Exodus 20:24",
+            "question": "In every place where God causes His name to be remembered, He promises to come to them and ___ them.",
+            "answers": [
+              {
+                "text": "bless",
+                "correct": true,
+                "blank": 1
+              },
+              {
+                "text": "test",
+                "correct": false
+              },
+              {
+                "text": "judge",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 6,
+            "kind": "choice",
+            "type": "true_false",
+            "verses": "Exodus 20:25",
+            "question": "If they build the altar out of stones instead, God wants those stones carefully cut and shaped with tools.",
+            "answers": [
+              {
+                "text": "True",
+                "correct": false
+              },
+              {
+                "text": "False",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "card": 7,
+            "kind": "story",
+            "verses": "Exodus 20:26",
+            "text": "One more altar rule: no going up to God's altar on steps, so nobody's nakedness is exposed on it. Friend, I wear a full apron just to stamp COOKIES, so you won't hear me argue with that one."
+          },
+          {
+            "card": 8,
+            "kind": "story",
+            "verses": "Exodus 21:1-23:12",
+            "text": "Then the LORD gives Moses ordinances for everyday life: how to treat servants, what's owed when someone gets hurt or an ox gores, and how to care for foreigners, widows, orphans and the poor. There's even a rule to help the donkey of someone who hates you when it falls under its load, plus the famous line “eye for eye, tooth for tooth.” Three chapters of rules, and not ONE about sneaking cookie dough off the counter. I looked."
+          },
+          {
+            "card": 9,
+            "kind": "choice",
+            "type": "multiple_choice",
+            "verses": "Exodus 23:13",
+            "question": "After all those laws, God tells them to pay close attention to everything He's said. Then what must never be heard on their lips?",
+            "answers": [
+              {
+                "text": "the names of other gods",
+                "correct": true
+              },
+              {
+                "text": "complaints about the desert",
+                "correct": false
+              },
+              {
+                "text": "the names of their enemies",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 10,
+            "kind": "story",
+            "verses": "Exodus 23:14-19",
+            "text": "Last come the feasts: three times a year they celebrate a feast to God, the Feast of Unleavened Bread, the Feast of Harvest and the Feast of Ingathering. Keep your apron on, friend, because this conversation isn't finished."
+          }
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "Stop 1, card 8 quotes \"eye for eye, tooth for tooth.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "Exodus 21:1-23:12"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Card 1 says Moses \"went into the thick darkness where God was.\" Exodus 20:21 says Moses \"approached\" the thick darkness. The card stretches drawing near into entering.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Call things what the text calls them."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Exodus 20:22"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Card 1 opens with \"God just spoke from the mountain.\" Card 2 then asks where God spoke from, and the answer is \"from heaven\" (Exodus 20:22). The setup points the baker toward a place that isn't the answer, so a baker reasoning from card 1 is steered away from the right pick.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "Before each choice card, Papa Dorin's story card gives enough context that the baker can reason their way to the answer."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Exodus 20:22"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Card 1 tells events from Exodus 20:18-21, which come before the passage. It marks them with an inline reference, but its verses field cites only Exodus 20:22.",
+      "question": "When an opening card gives context from verses outside the passage, should its verses field include those outside verses, or only the passage verses it tells?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Exodus 20:22"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "Card 8 is the summary card for the long stretch, and it has four sentences. The rules allow 1 to 2 sentences on every story card after the opening. The doc's own good example of a genealogy summary card (Genesis 5) also has four sentences.",
+      "question": "Does the 1 to 2 sentence limit apply to summary story cards for long stretches, or can a summary card run longer, like the Genesis 5 example?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "Exodus 21:1-23:12"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1
+      },
+      "problem": "This passage is typed as Sermons, and all of it is God's speech. The rules say speeches and teaching are not long stretches. The doc's own example, though, treats Exodus 21–23 as a long stretch, and following it puts Exodus 21:1-23:12 on one card. The stop ends up at 10 cards, and teaching with stated reasons gets no choice cards. That teaching includes care for foreigners \"for you yourselves were foreigners in the land of Egypt\" (22:21, 23:9), God hearing the widow's and orphan's cry (22:23), \"You are to be My holy people\" (22:31), and the sabbath year and day (23:10-12).",
+      "question": "In a Sermons passage made of God's laws, should Exodus 21:1-23:12 be summed up as one long stretch, as the doc's example shows? Or should its teaching parts, like the reasons given for care laws and the sabbath, get their own story cards and choice cards?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Exodus 20:22-23:19"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "Card 10 cites Exodus 23:14-19 but tells only the three feasts in 23:14-16. Verses 23:17-19 are not told: the males appearing before the Lord GOD, no leaven with the blood, the fat not remaining until morning, the best of the firstfruits, and the young goat in its mother's milk.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Exodus 23:14-19"
+      }
+    }
+  ]
+}

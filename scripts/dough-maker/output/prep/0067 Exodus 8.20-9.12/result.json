@@ -1,0 +1,71 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Most of this stop's choices are discoveries rather than informed guesses. Cards 2, 4, 5, 7, 12, 13, 14 and 16 ask for the water, flies, houses, Goshen, Pharaoh's exact offer, Moses' reason, the three-day wilderness journey and Moses' warning without earlier cards supplying a basis to reason those out. That is 8 of 13 choices, so the stop becomes a guessing game.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Exodus 8:20-32"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "The blank lets the baker eliminate both wrong answers grammatically: only LORD agrees with hardens, while the magicians hardens and the officials hardens do not. The right answer therefore stands out without the baker needing to understand Exodus 9:12.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "Don't let the right answer stand out. All the answers should sound alike. None should sound more like the Bible, or more modern, than the others."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 14,
+        "verses": "Exodus 9:12"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "The first card of stop 2 has 3 sentences. That is allowed for an opening card but not for other story cards, which are limited to 2. The docs mention only one 'opening card' and don't say whether the first card of each later stop counts as one.",
+      "question": "Does the first card of each stop get the opening card's 3-sentence limit, or only the first card of Prep?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Exodus 9:1-3"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "Some story cards state Bible facts from outside the passage. Card 11 calls Aaron 'Moses' brother' (Exod 4:14). Card 1 introduces Moses as Israel's leader and says Pharaoh keeps saying no (earlier chapters). The docs say outside facts carry their reference, but a story card's 'verses' must cite only the passage verses it tells, 'no wider and no narrower'. The JSON has no field for an outside reference.",
+      "question": "How should a story card cite an outside fact, such as introducing a new person, when its 'verses' field may only hold the passage verses it tells?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "Exodus 8:25"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "Pharaoh's fear in Exodus 1:10 also includes the possibility that the Israelites will leave the country, but no card covers that detail. It is an important part of his stated concern and helps explain why he oppresses them rather than simply wanting them gone.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Exodus 1:10"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "\"All that forced labor\" points back to the preceding card instead of identifying the Israelites' forced labor in Egypt, so the question relies on context the baker can no longer see.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "Exodus 1:11"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "This card is only the 'story isn't over' line and tells nothing from the passage, but it cites Exodus 1:22. Verse 22 was already told on card 9 and asked on card 10. The rule says a story card cites the verses it tells, no wider. This card tells no verses, yet the output format requires a verses field.",
+      "question": "When a last story card is only the 'story isn't over' line, what should its verses field be: the passage's last verse, empty or null, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 11,
+        "verses": "Exodus 1:22"
+      }
+    }
+  ]
+}

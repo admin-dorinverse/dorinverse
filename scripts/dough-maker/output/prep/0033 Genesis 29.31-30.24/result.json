@@ -1,0 +1,54 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "This non-opening story card has three sentences: \"And once more, son number four: Judah.\", \"FOUR, friend.\", and \"At this rate Leah's gonna need a bigger tent.\" Story cards after the opening card are limited to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 9,
+        "verses": "Genesis 29:35"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 20
+      },
+      "problem": "This closing card is only the story-continues line and tells no verse, but it cites Genesis 30:24. The citation rule says a story card cites the verses it tells, and this card tells none.",
+      "question": "When the last story card is only the story-continues line, what should its \"verses\" field cite: the passage's last verse, the stop's range, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 20,
+        "verses": "Genesis 30:24"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "The \"Plan B... B, for Bilhah\" joke sits in a passage about trying to conceive and sleeping with a maidservant. Many adults will connect \"Plan B\" with the emergency contraceptive brand. That brings in an unintended link to sex and contraception, which some see as political, even though the joke means only \"backup plan.\"",
+      "question": "Should a \"Plan B\" joke be avoided in childbearing passages because of the contraceptive brand, even when the line only means \"backup plan\"?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 15,
+        "verses": "Genesis 30:3"
+      }
+    }
+  ]
+}
