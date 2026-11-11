@@ -141,15 +141,22 @@ function snapshot() {
   const byId = new Map(list.map((p) => [p.id, p]));
   const step = (passage, name) => s.steps.get(`${passage ?? ''}|${name}`);
 
-  const types = Object.fromEntries(TYPES.map((t) => [t, { total: 0, done: 0, going: 0, failed: 0, flagged: 0 }]));
-  const steps = Object.fromEntries(PASSAGE_STEPS.map((x) => [x, 0]));
+  const zero = () => Object.fromEntries(PASSAGE_STEPS.map((x) => [x, 0]));
+  const types = Object.fromEntries(TYPES.map((t) => [t, { total: 0, done: 0, going: 0, failed: 0, flagged: 0,
+    steps: zero(), stepGoing: 0, stepFailed: 0 }]));
+  const steps = zero();
   let done = 0;
+  // The step the run is on now: the furthest one any passage has started
+  const current = [...PASSAGE_STEPS].reverse().find((x) => list.some((p) => step(p.id, x))) ?? null;
   for (const p of list) {
     const t = types[p.type];
     if (!t) continue;
     t.total++;
     const st = PASSAGE_STEPS.map((x) => step(p.id, x));
-    st.forEach((e, i) => { if (e?.status === 'done') steps[PASSAGE_STEPS[i]]++; });
+    st.forEach((e, i) => { if (e?.status === 'done') { steps[PASSAGE_STEPS[i]]++; t.steps[PASSAGE_STEPS[i]]++; } });
+    const cur = current && step(p.id, current);
+    if (cur?.status === 'failed') t.stepFailed++;
+    else if (cur && cur.status !== 'done') t.stepGoing++;
     if (st.every((e) => e?.status === 'done')) { t.done++; done++; }
     else if (st.some((e) => e?.status === 'failed')) t.failed++;
     else if (st.some((e) => e)) t.going++;
@@ -178,7 +185,7 @@ function snapshot() {
     passages: { status: step(null, 'passages')?.status ?? null, count: list.length,
       books: new Set(list.flatMap((p) => [book(p.start), book(p.end)])).size, of: BOOKS,
       byType: Object.fromEntries(TYPES.map((t) => [t, types[t].total])) },
-    lessons: { total: list.length, done, steps, types, idioms: step(null, 'idioms')?.status ?? null },
+    lessons: { total: list.length, done, steps, types, current, idioms: step(null, 'idioms')?.status ?? null },
     working: working.sort((a, b) => a.startedAt.localeCompare(b.startedAt)), flags, usage: s.usage, limits,
     flagged: [...s.steps.values()].filter((e) => e.flags?.agentFix || e.flags?.humanDecision)
       .sort((a, b) => b.t.localeCompare(a.t)).map((e) => ({ ...e, label: label(e.passage) ?? 'Whole Bible' })),
@@ -440,16 +447,33 @@ function render(st) {
     '<div class="chips">' + Object.entries(P.byType).map(([t, c]) => '<span class="chip">' + esc(t) + ' <b>' + n(c) + '</b></span>').join('') + '</div>';
 
   const L = st.lessons;
+  // Running total for the step the run is on now (e.g. "412 of 1,180 passages through Prep walkthrough")
+  const curName = L.current && STEPS[L.current];
+  const curDone = L.current ? L.steps[L.current] : 0;
+  const curGoing = L.current ? Object.values(L.types).reduce((a, x) => a + x.stepGoing, 0) : 0;
+  const curFailed = L.current ? Object.values(L.types).reduce((a, x) => a + x.stepFailed, 0) : 0;
   document.getElementById('lessons').innerHTML = L.total
-    ? '<div class="big">' + n(L.done) + ' <span class="sub">of ' + n(L.total) + ' lessons done</span></div>' + bar(L.total, L.done) +
+    ? (L.current
+      ? '<div class="big">' + n(curDone) + ' <span class="sub">of ' + n(L.total) + ' passages through ' + esc(curName) + ' (' + pct(curDone, L.total) + ')</span></div>' +
+        bar(L.total, curDone, curGoing, curFailed) +
+        '<div class="sub">' + n(L.done) + ' of ' + n(L.total) + ' full lessons done (every step finished)</div>'
+      : '<div class="big">' + n(L.done) + ' <span class="sub">of ' + n(L.total) + ' lessons done</span></div>' + bar(L.total, L.done)) +
       Object.entries(L.steps).map(([k, c]) => '<div class="row"><span>' + STEPS[k] + '</span><span class="num">' + n(c) + ' / ' + n(L.total) + '</span></div>').join('') +
       '<div class="row"><span>Idioms (all passages, at the end)</span><span class="num">' + (STATUS[L.idioms] || 'Not started') + '</span></div>'
     : '<div class="empty">Lessons start once the passages are made and you’ve reviewed the list. Each passage becomes one lesson.</div>';
 
-  document.getElementById('types').innerHTML = Object.entries(L.types).map(([t, x]) => '<div class="type"><h3>' + esc(t) + '</h3>' +
-    '<div class="big">' + n(x.done) + ' <span class="sub">of ' + (x.total ? n(x.total) : '—') + '</span></div>' + bar(x.total, x.done, x.going, x.failed) +
-    '<div class="sub">' + [x.going && n(x.going) + ' in progress', x.failed && '<span class="problem">' + n(x.failed) + ' stopped</span>',
-      x.flagged && n(x.flagged) + ' flagged'].filter(Boolean).join(' · ') + (x.going || x.failed || x.flagged ? '' : x.total && x.done === x.total ? 'All done' : 'None in progress') + '</div></div>').join('');
+  // Each type: how many of its passages finished the step the run is on now, then each finished step and full lessons
+  document.getElementById('types').innerHTML = Object.entries(L.types).map(([t, x]) => {
+    const d = L.current ? x.steps[L.current] : x.done, going = L.current ? x.stepGoing : x.going, failed = L.current ? x.stepFailed : x.failed;
+    const rows = Object.entries(x.steps).filter(([, c]) => c).map(([k, c]) =>
+      '<div class="row"><span>' + STEPS[k] + '</span><span class="num">' + n(c) + ' / ' + n(x.total) + '</span></div>').join('');
+    return '<div class="type"><h3>' + esc(t) + '</h3>' +
+      '<div class="big">' + n(d) + ' <span class="sub">of ' + (x.total ? n(x.total) : '—') + (L.current ? ' through ' + esc(curName) : '') + '</span></div>' +
+      bar(x.total, d, going, failed) + rows +
+      '<div class="row"><span>Full lessons done</span><span class="num">' + n(x.done) + ' / ' + n(x.total) + '</span></div>' +
+      '<div class="sub">' + [going && n(going) + ' in progress', failed && '<span class="problem">' + n(failed) + ' stopped</span>',
+        x.flagged && n(x.flagged) + ' flagged'].filter(Boolean).join(' · ') + (going || failed || x.flagged ? '' : x.total && x.done === x.total ? 'All done' : 'None in progress') + '</div></div>';
+  }).join('');
 
   document.getElementById('now').innerHTML = st.working.length ? st.working.map((e) => '<div class="entry"><div><span class="live"></span>' +
     model(e) + ' is ' + (e.kind === 'call' ? ROLES[e.role] || 'working on' : DOING[e.status]) + ' ' + what(e) + '</div>' +
