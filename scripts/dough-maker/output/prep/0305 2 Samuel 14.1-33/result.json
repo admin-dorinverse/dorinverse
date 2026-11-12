@@ -1,0 +1,59 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 11
+      },
+      "problem": "Stop 3, card 11 quotes \"this one still works.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 3,
+        "card": 11,
+        "verses": "2 Samuel 14:17"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The card introduces Absalom as King David's son, but none of its cited verses supports that relationship. The outside fact needs its own supporting reference.",
+      "rule": {
+        "link": "prep-walkthrough.md#the-passage-text",
+        "text": "Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "2 Samuel 8:16; 2 Samuel 13:38-14:1"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 4,
+        "card": 1
+      },
+      "problem": "Cards 1-5 go item by item through the descriptive aside in 2 Samuel 14:25-27: Absalom's appearance, his annual haircut and its weight, and his children. This stretch should be summed up in one story card, without choice cards, rather than expanded into three story cards and two choice cards.",
+      "rule": {
+        "link": "prep-walkthrough.md#long-stretches-that-dont-move-the-passage",
+        "text": "If a stretch is mostly detail and not much happens, it counts. The rule: Papa Dorin sums up the stretch in one story card. He says in a few words what it covers and doesn't go item by item. A long stretch never gets a choice card."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 4,
+        "card": 1,
+        "verses": "2 Samuel 14:25"
+      }
+    }
+  ],
+  "human": []
+}

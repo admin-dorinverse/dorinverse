@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The card uses verse 1 for \"Two questions, two answers\" and for the destination Hebron, as well as verse 2 for David going there, but it cites only 2 Samuel 2:2. Its citation should span 2 Samuel 2:1-2.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 4,
+        "verses": "2 Samuel 2:2"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "This non-opening story card has three sentences: the narration about the messengers, \"No text, no group chat, friend.\", and the final joke. Non-opening story cards are limited to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "2 Samuel 2:5"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "The last story card is only the \"this story is NOT done\" line and tells no verse, but it cites 2 Samuel 2:11. The citation rule says a story card cites the verses it tells, and this card tells none. The JSON shape still requires a verses value.",
+      "question": "What should the \"verses\" field be on a closing story card that is only the story-continues line and tells no verse: the passage's last verse, null, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 20,
+        "verses": "2 Samuel 2:11"
+      }
+    }
+  ]
+}
