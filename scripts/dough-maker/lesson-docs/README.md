@@ -86,7 +86,7 @@ After the final check, the run sets two flags on each item in a step's output: a
 
 ## When the run stops
 
-The run only stops if a step gives no output, or output that can't be loaded into the database. When that happens, the run starts that step over once from the beginning. If it happens again, the run stops and notifies the person right away, in plain words: what happened, why it stopped, which passage and step, what is already saved, and how to pick up again.
+The run only stops if a step gives no output, or output that can't be loaded into the database. If the internet is down, the credits run out, or a server is busy, the run doesn't stop: it waits, tries again every 5 minutes, and carries on by itself, sending one note when it starts waiting and one when it's going again. When that happens, the run starts that step over once from the beginning. If it happens again, the run stops and notifies the person right away, in plain words: what happened, why it stopped, which passage and step, what is already saved, and how to pick up again.
 
 ## Which file to load
 
