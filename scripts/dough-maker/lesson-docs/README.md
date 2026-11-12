@@ -35,7 +35,7 @@ These files are the current lesson rules.
 
 **When the run stops**
 - Only when a step gives no output, or output the database can't take
-- It retries once, then stops and tells me what happened and how to pick up again
+- It retries once, then stops and tells me what happened and how to pick up again. If the internet is down, the credits run out, or a server is busy, it doesn't stop: it waits, tries again every 5 minutes, and carries on by itself.
 
 ## The lesson
 
