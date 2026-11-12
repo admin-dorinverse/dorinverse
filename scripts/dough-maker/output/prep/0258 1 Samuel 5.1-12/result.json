@@ -1,0 +1,74 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Cards 2, 3, 6, 9, 12 and 18 require unseen names, events or details that cannot be reasoned out from the earlier cards. Discovery questions therefore make up half of the stop's twelve choices, rather than just a few, and most choice cards are not informed guesses.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "1 Samuel 5:1-12"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The card retells both Dagon's first fall in verse 3 and his second fall and damage in verse 4, but it cites only verse 4. Its citation should cover 1 Samuel 5:3-4.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "1 Samuel 5:4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The wrong answer \"Move it to the next Philistine city\" is not false anywhere in the passage. Moving the ark to another Philistine city is exactly what happens when it goes to Gath and then Ekron in verses 8-10.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "Each wrong answer must be false anywhere in the passage, not just at that moment."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "1 Samuel 5:11"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 19
+      },
+      "problem": "This last story card is only the story-isn't-over line and tells nothing from 1 Samuel 5:12. It still cites 1 Samuel 5:12.",
+      "question": "When the last story card is only the story-isn't-over line and tells no verse, what should its \"verses\" field cite: the passage's last verse, the whole passage, or nothing?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 19,
+        "verses": "1 Samuel 5:12"
+      }
+    }
+  ]
+}

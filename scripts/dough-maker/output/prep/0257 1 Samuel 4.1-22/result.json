@@ -1,0 +1,72 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "This non-opening story card exceeds the two-sentence limit: \"The GROUND.\" and \"SHAKES.\" are separate sentence units, followed by the sentence about Mags and the Philistines.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "1 Samuel 4:5-6"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "Nothing in the earlier cards gives the baker a way to reason out how many years Eli judged Israel. His age and death provide no clue to whether forty, seventy or twelve belongs in the blank, so this tests unseen wording by luck.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 10,
+        "verses": "1 Samuel 4:18"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "The last story card is only the 'story isn't over' line, as the docs allow when the last verse is asked on a choice card. It still cites 1 Samuel 4:22, but it tells nothing from that verse.",
+      "question": "What should a story card that is only the 'story continues' line cite in its verses field: the last verse of the passage, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 18,
+        "verses": "1 Samuel 4:22"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Eli is first mentioned here, as 'Eli's two sons', and he is never introduced, for example as 'Eli, the priest at Shiloh.' Samuel (stop 1, card 1) and Hophni and Phinehas are also never introduced. Bakers likely met all of them in passages 1 to 3 of this story group.",
+      "question": "Does the 'New people' rule ('The first time someone shows up, he says simply who they are') mean the first time in this passage, or the first time in the story group? If it means this passage, should Eli, Samuel, Hophni and Phinehas be introduced again here?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "1 Samuel 4:4"
+      }
+    }
+  ]
+}
