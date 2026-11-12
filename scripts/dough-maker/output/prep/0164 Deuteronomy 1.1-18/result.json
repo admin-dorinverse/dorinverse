@@ -1,0 +1,39 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "The card explicitly reuses the eleven-day journey from verse 2, along with the date in verse 3 and the victories in verse 4, but its citation starts at verse 3. Its story-card citation should be Deuteronomy 1:2-4.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 3,
+        "verses": "Deuteronomy 1:3-4"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "Card 13 (true or false: Moses picks the leaders by himself, without the tribes choosing) tests the same fact card 12 just asked, that the tribes choose the men (Deuteronomy 1:13). It flips the wording but adds nothing new. The docs allow 'an easy follow-up,' but their example (the lesser light rules the night) tests a new fact. Other details in 1:13-15 go untested, such as the qualities Moses asks for (wise, understanding, respected) or that Moses is the one who appoints them.",
+      "question": "Can a follow-up choice card re-test the exact fact the card before it just asked, or must an easy follow-up test a new fact?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 13,
+        "verses": "Deuteronomy 1:13"
+      }
+    }
+  ]
+}
