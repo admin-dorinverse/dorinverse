@@ -1,0 +1,69 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "This non-opening story card has three sentences: the instruction from Jezebel's letter, the question about the seat of honor, and \"I don't trust it.\"",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 14,
+        "verses": "1 Kings 21:9"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This non-opening story card has three sentences: \"Naboth is gone.\", the report sent to Jezebel, and \"And Jezebel goes to her husband.\"",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "1 Kings 21:14-15"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Some cards state facts from outside the passage with no reference shown:\n- Stop 1, card 1: \"after Ahab's battles with Aram\" (1 Kings 20).\n- Stop 2, card 4: \"Elijah the Tishbite, God's prophet.\"\n- Stop 2, card 11: \"Jeroboam and Baasha, two earlier kings of Israel.\"\n\nThe docs require outside facts to carry their reference. They also require a card's verses field to cite only the verses the card tells, or only the right answer's verses on a choice card.",
+      "question": "How should a card show the reference for an outside fact, such as a new person's introduction or context from the previous passage, when the verses field can only cite the passage verses the card uses? Should these intros carry a reference at all, and should context from the previous passage be used on the opening card?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 19
+      },
+      "problem": "The last story card is only the \"story isn't over\" line and tells no verse, but it cites 1 Kings 21:29.",
+      "question": "When the last story card is only the \"story isn't over\" line, what should its verses field cite: the passage's last verse, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 19,
+        "verses": "1 Kings 21:29"
+      }
+    }
+  ]
+}

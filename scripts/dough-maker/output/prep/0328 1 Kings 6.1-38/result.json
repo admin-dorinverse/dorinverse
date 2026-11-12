@@ -1,0 +1,74 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The card cites only 1 Kings 6:1, but that verse does not say Solomon was David's son. That relationship appears later in 1 Kings 6:12, so the citation does not cover everything the card tells.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "1 Kings 6:1"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The blank asks the baker to supply the unseen wording of 1 Kings 6:13. The earlier cards discuss the temple and Solomon's obedience but do not develop the idea of God dwelling with His people, so this is principally a wording guess rather than a meaning the baker has been equipped to reason out.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "1 Kings 6:13"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Several non-opening story cards exceed the sentence limit: card 4 has four sentences, card 9 has three, card 10 has four, and card 12 has three.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "1 Kings 6:1-38"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "This last card holds only the 'story isn't over' line and tells no verse, but it cites 1 Kings 6:38. That verse is already the right-answer citation on card 11. The docs say a story card cites the verses it tells, and they allow a last card that is only this line, but they don't say what such a card should cite.",
+      "question": "When the last story card is only the 'story isn't over' line and tells no verse, what should its \"verses\" field hold: the passage's last verse, the verse of the choice card before it, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 12,
+        "verses": "1 Kings 6:38"
+      }
+    }
+  ]
+}

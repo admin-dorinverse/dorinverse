@@ -1,0 +1,35 @@
+{
+  "agent": [],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card says Solomon 'has finished building the house of the LORD.' That fact comes from before the passage (1 Kings 6:14, 7:51), but the card cites only 1 Kings 8:22. The rules allow outside facts 'with their reference,' but the JSON gives each card a single verses field, and that field must run 'no wider and no narrower' than the verses the card tells.",
+      "question": "When the opening card uses an outside fact for context, how should that fact's reference be given? Should it widen the card's verses field, go in a separate field, or appear in the card text?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "1 Kings 8:22"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Some story cards state Bible facts from outside the passage but cite only verses inside it. Card 1 says Solomon has finished building the house of the LORD (see 1 Kings 6:14; 7:51) and cites only 1 Kings 8:22. Stop 3 card 14 calls Moses 'the leader God used to bring Israel out of Egypt' (see Exodus 3:10) and cites only 1 Kings 8:53. The docs say outside facts carry their reference, and also that a card cites 'from the first verse it uses to the last, no wider and no narrower' as a single range.",
+      "question": "When a story card uses a helpful fact from outside the passage, such as who a new person is, where does that fact's reference go? Should it be added to the card's verses field (and if so, in what format), shown in the card text, or left off?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "1 Kings 8:22"
+      }
+    }
+  ]
+}

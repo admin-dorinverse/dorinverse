@@ -1,0 +1,74 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "Stop 1, card 5 quotes \"Deal, and take my wallet too.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "1 Kings 20:4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The question is not self-contained: “that demand” points back to card 3, which is no longer visible, without restating that Ben-hadad has demanded Ahab's wealth and family. Put the demand in the question rather than referring back to the earlier card.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 4,
+        "verses": "1 Kings 20:4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Too much of this stop depends on guessing unrevealed facts. Cards 2, 4, 5, 7, 11 and 15 ask for God's promise, the officers He will use, who starts the battle, the exact troop count, Ben-hadad's order and Ben-hadad's fate without enough earlier context to reason out those picks. Consequently, most of the stop's choices feel like discovery questions or luck rather than informed guesses.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "1 Kings 20:13-21"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 17
+      },
+      "problem": "The two-blank card \"attacks the ___ and ___\" marks horses for blank 1 and chariots for blank 2. A baker who picks \"chariots\" then \"horses\" has the same meaning in the opposite order and could be marked wrong.",
+      "question": "When the right answers for a two-blank card could fill either blank with the same meaning, should either order count as right, or should the card be rewritten so each blank has only one possible answer?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 17,
+        "verses": "1 Kings 20:21"
+      }
+    }
+  ]
+}

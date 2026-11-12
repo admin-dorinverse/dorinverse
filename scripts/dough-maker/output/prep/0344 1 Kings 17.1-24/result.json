@@ -1,0 +1,74 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The setup says only that the ravens are making deliveries; it gives no clue that lets the baker reason out the specific pair bread and meat rather than another plausible pairing from the options. These blanks therefore depend on guessing wording the baker has not seen.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "1 Kings 17:6"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The first sentence retells Elijah's water and twice-a-day deliveries from 1 Kings 17:6, but the card cites only 17:7. The citation should begin with the first verse the card uses.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "1 Kings 17:7"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3
+      },
+      "problem": "Four of the stop's five choice cards are multiple choice, and the only other one is true or false. Multiple choice therefore dominates the stop by a wide margin.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "No type dominates a stop by a wide margin."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": null,
+        "verses": "1 Kings 17:17-24"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card states facts from 1 Kings 16:30-31, which is outside the passage. It cites them inline in the text, but its \"verses\" field says only \"1 Kings 17:1\". A range from the first verse used to the last would be 1 Kings 16:30-17:1, which would also cover 16:32-34, verses the card doesn't use.",
+      "question": "When a story card uses a fact from outside the passage, should its \"verses\" field include that outside reference? If so, how should it be written when the outside verses aren't next to the passage verses? Or is the inline reference in the text enough, with \"verses\" listing only the passage verses?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "1 Kings 17:1"
+      }
+    }
+  ]
+}
