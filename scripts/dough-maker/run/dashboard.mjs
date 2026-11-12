@@ -58,8 +58,9 @@ function apply(e) {
   s.lastAt = e.t;
   if (e.type === 'run') {
     // A run (re)starting means the last one ended, even if it was killed with no word (a PC restart):
-    // whatever it had in flight is gone, so it must not show as working. Coming back from overflow is the same run.
-    if (e.status === 'running' && s.run?.status !== 'overflow') {
+    // whatever it had in flight is gone, so it must not show as working. Coming back from overflow or from waiting
+    // out the internet is the same run.
+    if (e.status === 'running' && !['overflow', 'waiting'].includes(s.run?.status)) {
       s.calls.clear();
       s.stepStart.clear();
       for (const [key, x] of s.steps) if (['making', 'checking', 'fixing'].includes(x.status)) s.steps.delete(key);
@@ -270,7 +271,7 @@ const PAGE = String.raw`<!DOCTYPE html>
   h3 { font-size: 16px; margin: 0; }
   section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin: 12px 0; }
   .pill { font-size: 14px; font-weight: 600; padding: 4px 10px; border-radius: 999px; white-space: nowrap; border: 1px solid currentColor; }
-  .running, .finished { color: var(--green); } .paused, .overflow { color: var(--amber); } .stopped { color: var(--red); } .idle { color: var(--muted); }
+  .running, .finished { color: var(--green); } .paused, .overflow, .waiting { color: var(--amber); } .stopped { color: var(--red); } .idle { color: var(--muted); }
   .sub { color: var(--muted); font-size: 14px; }
   .big { font-size: 28px; font-weight: 700; }
   .bar { height: 8px; background: var(--bar); border-radius: 4px; overflow: hidden; display: flex; margin: 8px 0; }
@@ -428,6 +429,7 @@ function bar(total, done, going = 0, failed = 0) {
 function render(st) {
   const run = st.run || { status: 'idle' };
   const pills = { idle: 'Not started', running: 'Running', paused: 'Paused', overflow: 'Running: Kimi covering for Opus',
+    waiting: 'Waiting: tries again every 5 min',
     stopped: 'Stopped', finished: 'Finished' };
   const pill = document.getElementById('pill');
   pill.className = 'pill ' + run.status;

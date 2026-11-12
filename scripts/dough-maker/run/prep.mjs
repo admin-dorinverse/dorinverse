@@ -16,6 +16,8 @@
 // picks up from the last saved stage; a passage with prep.json is done and is skipped. --fresh starts the chosen
 // passages over. tracker.json is rebuilt after every passage. A call that gives no answer, or one that can't be
 // read, is tried once more; if it fails again the run stops and tells the person (README "When the run stops").
+// A problem that passes by itself (no internet, out of credits, a busy server) doesn't stop it: it waits, tries
+// again every 5 minutes, and carries on.
 // With more than one agent, the first call goes alone, so it saves the docs in the cache before the rest start.
 // The outputs are committed and pushed to GitHub every 50 passages, and when the run pauses, stops or finishes.
 //
@@ -82,6 +84,17 @@ const FIX = (p) => `Above are the Prep walkthrough for ${span(p.start, p.end)} a
 
 class Unreadable extends Error {}
 class Pause extends Error {}
+
+// Problems that pass by themselves, so the run waits them out (runPrep's waitOut): no internet (Kimi's fetch fails,
+// or Claude Code can't reach the API), out of OpenRouter credits, too many requests, a server-side error
+const WAIT = 5 * 60_000;
+export function passing(e) {
+  if (e instanceof Unreadable) return false;
+  const d = String(e.detail ?? '');
+  if (/^(402|408|429|5\d\d):/.test(d)) return true;
+  if (/^Couldn’t reach OpenRouter/.test(e.message)) return true;
+  return /can't reach the API|ENOTFOUND|EAI_AGAIN|ECONNRESET|ECONNREFUSED|ETIMEDOUT|ENETUNREACH|fetch failed|socket hang up|connection error|network|overloaded|\b(500|502|503|504|529)\b/i.test(d);
+}
 
 function json(text, open, close, what) {
   const a = text.indexOf(open), b = text.lastIndexOf(close);
@@ -154,17 +167,40 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     return r.text;
   }
 
+  // A problem that passes by itself (the internet is down, OpenRouter is out of credits, a server is busy) never
+  // stops the run: every agent that meets it waits, tries again every 5 minutes, and carries on when it works.
+  // One note when the waiting starts and one when it's over. Anything else is tried once more, then stops the run.
+  let down = null;
+  async function waitOut(e, p, what) {
+    if (!down) {
+      down = { since: Date.now() };
+      logEvent({ type: 'run', status: 'waiting', note: e.message });
+      await notify('Prep is waiting', [e.message, `Where: ${span(p.start, p.end)}, ${what}`,
+        'Nothing is lost. It tries again every 5 minutes and carries on by itself.',
+        e.detail && `Details: ${String(e.detail).slice(0, 200)}`], { problem: true });
+    }
+    await new Promise((res) => setTimeout(res, WAIT));
+  }
+  function backUp() {
+    if (!down) return;
+    const mins = Math.max(1, Math.round((Date.now() - down.since) / 60_000));
+    down = null;
+    logEvent({ type: 'run', status: 'running', note: `Back after waiting ${mins} min.` });
+    notify('Prep is going again', [`It waited ${mins} min and carried on by itself`]);
+  }
+
   async function twice(p, who, what, fn) {
-    try { return await fn(); }
-    catch (e) {
-      if (e instanceof LimitError || e instanceof Pause) throw e;
-      const why = e instanceof Unreadable ? `${who} ${e.message}` : e.message;
-      problems.push(`${what} for ${span(p.start, p.end)}: retried once (${why})`);
-      logEvent({ type: 'note', title: 'Trying again', lines: [`${what} for ${span(p.start, p.end)}`, why, 'Trying once more'], problem: true });
-      try { return await fn(); }
-      catch (e2) {
-        if (e2 instanceof LimitError || e2 instanceof Pause) throw e2;
-        throw Object.assign(new Error(e2 instanceof Unreadable ? `${who} ${e2.message}` : e2.message), { detail: e2.detail, twice: true });
+    let tried = false;
+    for (;;) {
+      try { const r = await fn(); backUp(); return r; }
+      catch (e) {
+        if (e instanceof LimitError || e instanceof Pause) throw e;
+        if (passing(e)) { await waitOut(e, p, what); continue; }
+        const why = e instanceof Unreadable ? `${who} ${e.message}` : e.message;
+        if (tried) throw Object.assign(new Error(why), { detail: e.detail, twice: true });
+        tried = true;
+        problems.push(`${what} for ${span(p.start, p.end)}: retried once (${why})`);
+        logEvent({ type: 'note', title: 'Trying again', lines: [`${what} for ${span(p.start, p.end)}`, why, 'Trying once more'], problem: true });
       }
     }
   }
