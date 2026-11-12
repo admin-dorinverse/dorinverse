@@ -1,0 +1,89 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Story cards 1, 7 and 9 each contain three sentences. None is the walkthrough's opening card, so each is limited to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "Judges 8:10-21"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 2
+      },
+      "problem": "The correct answer is the only four-word option and is noticeably longer than the two two-word distractors, making it stand out from the other answers.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "Don't let the right answer stand out. All the answers should sound alike."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 2,
+        "verses": "Judges 8:10"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The question and answer say Gideon disciplines the elders of the city with thorns and briers. Judges 8:16 instead says he took the elders and disciplined the men of Succoth, so the card changes who receives the discipline.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Call things what the text calls them."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 10,
+        "verses": "Judges 8:16"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "The question reads \"What has the men of Ephraim so upset with Gideon?\" The subject \"the men\" is plural, so it should say \"have.\"",
+      "question": "The docs have no rule about grammar in card text. Should the checker report grammar errors like this, and under which rule?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 2,
+        "verses": "Judges 8:1"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "The question says Abiezer is Gideon's own clan. That fact comes from outside the passage (Judges 6:11, 6:34). The card cites only Judges 8:2, so this Bible fact has no reference. A choice card may cite only the verses of its right answer, so the outside reference can't go on this card. Putting it on story card 4 would stretch that card's range from Judges 6:11 to 8:2.",
+      "question": "When a choice card's question needs a short fact from outside the passage, like who a clan or tribe is, where does its reference go? Should the fact move to a story card with its own reference, be left out, or be allowed without one?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Judges 8:2"
+      }
+    }
+  ]
+}

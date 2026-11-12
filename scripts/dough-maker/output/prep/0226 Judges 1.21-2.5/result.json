@@ -1,0 +1,84 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The blank asks for 'altars,' a detail the baker has not yet seen, and the earlier cards do not provide enough context to reason it out instead of 'walls' or 'towers.' This makes the baker guess the next words of the angel's statement rather than reason about its meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 10,
+        "verses": "Judges 2:2"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "The question is in the present tense (\"the people lift up their voices and ___\"), but all three answers are past tense (wept, sang, cheered). The sentence does not read correctly once the blank is filled.",
+      "question": "Should fill-in-the-blank answers have to fit the question's grammar and tense? If so, should this card read \"lifted up their voices and ___\", or should the answers be weep, sing and cheer?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 14,
+        "verses": "Judges 2:4"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card gives context from the previous passage ('The tribes of Israel are out claiming the land, one tribe at a time,' from Judges 1:1-20) but cites only Judges 1:21. One rule says facts from outside the passage carry their reference. Another says a story card cites exactly the verses it tells, no wider. The JSON has only one verses field.",
+      "question": "When the opening card gives context from outside the passage, how should that context be cited? Should it widen the card's verses field, go somewhere else, or need no citation if it's general?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Judges 1:21"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "In Judges 2:1-3 the angel of the LORD speaks in God's voice, and the BSB capitalizes 'My covenant' and 'My voice.' The walkthrough refers to the angel with lowercase 'he' and says 'his covenant,' which can read as the covenant belonging to the angel himself.",
+      "question": "When the angel of the LORD speaks as God, should Papa Dorin attribute the words and the covenant to the angel ('his covenant'), use capitalized pronouns, or phrase it as the LORD's covenant spoken through the angel?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 9,
+        "verses": "Judges 2:1"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "The question is in present tense ('the people lift up their voices and ___'), but the answers are past tense ('wept,' 'sang,' 'cheered'), so the completed sentence is ungrammatical. The BSB word is 'wept.'",
+      "question": "Should a fill-in-the-blank answer match the grammar of Papa Dorin's present-tense question (for example 'weep'), or keep the BSB's exact form ('wept') with the question reworded to fit?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 14,
+        "verses": "Judges 2:4"
+      }
+    }
+  ]
+}
