@@ -1,7 +1,8 @@
 // Keeps `claude remote-control --name Dorinverse` running in the background, so the owner can start a Claude chat on
 // this PC from the Claude app (the dashboard's "Talk to Claude" button). Its screen output redraws every few seconds,
 // so instead of saving all of it this keeps only the latest link and status in remote-control.json.
-// If it stops, it starts again a minute later.
+// If it stops, it starts again a minute later. If it hasn't said Connected for 10 minutes (it lost the internet and
+// never came back, or the screen stopped saying so), it is started over, so the dashboard never shows a stale status.
 //
 //   node scripts/dough-maker/run/remote-control.mjs
 //
@@ -24,8 +25,21 @@ function save(next) {
   fs.writeFileSync(REMOTE, JSON.stringify(state, null, 2));
 }
 
+const STUCK = 10 * 60_000;
+let child = null, notConnectedSince = null;
+setInterval(() => {
+  if (state.status === 'Connected') { notConnectedSince = null; return; }
+  notConnectedSince ??= Date.now();
+  if (child && Date.now() - notConnectedSince > STUCK) {
+    notConnectedSince = null;
+    save({ url: state.url, status: 'Starting over: it hadn’t said Connected for 10 minutes' });
+    child.kill();
+  }
+}, 30_000);
+
 function start() {
-  const child = spawn(EXE, ['remote-control', '--name', 'Dorinverse'], { cwd: root, windowsHide: true });
+  child = spawn(EXE, ['remote-control', '--name', 'Dorinverse'], { cwd: root, windowsHide: true });
+  notConnectedSince = null;
   let tail = '';
   const read = (d) => {
     tail = (tail + d).slice(-8192);
