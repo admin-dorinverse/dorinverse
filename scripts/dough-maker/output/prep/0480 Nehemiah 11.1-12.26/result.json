@@ -1,0 +1,87 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "This non-opening story card runs to four sentences, exceeding the one-to-two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "Nehemiah 11:3-24"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "This non-opening story card runs to three sentences, exceeding the one-to-two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "Nehemiah 11:25-36"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "This non-opening story card runs well beyond two sentences, including its summary, reaction and closing continuation line.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "Nehemiah 12:1-26"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Card 7 (four sentences) and card 8 (three sentences) are summary cards for long stretches, and both go past the 1 to 2 sentence limit for story cards.",
+      "question": "prep-walkthrough.md#what-bite-sized-means says 'Every other story card is 1 to 2 sentences,' but the good Genesis 5 example in #long-stretches-that-dont-move-the-passage has four sentences. Does the 1 to 2 sentence limit apply to summary story cards for long stretches, or can they run longer?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "Nehemiah 11:3-24"
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Several summary cards for long stretches run past 2 sentences: card 7 has 4, and cards 8 and 9 have 3 each. prep-walkthrough.md says every story card after the opening is 1 to 2 sentences. But its own good genealogy example for a long stretch (Genesis 5) is 4 sentences, so the docs conflict.",
+      "question": "Can a summary story card for a long stretch go past the 1 to 2 sentence limit, as the Genesis 5 example does, or must it still be 1 to 2 sentences?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}

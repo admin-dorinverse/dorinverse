@@ -1,0 +1,146 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "Stop 2, card 12 quotes \"Keep your money.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 2,
+        "card": 12,
+        "verses": "Esther 3:11"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "This non-opening story card has three sentences: the servants' warning, Mordecai's refusal, and \"That man does NOT budge.\" Non-opening story cards are limited to two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "Esther 3:4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Five of the six choice cards (cards 2, 5, 7, 9 and 11) are multiple choice, leaving only one true-or-false card. Multiple choice therefore dominates this stop by a wide margin.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "No stop repeats another stop's pattern, and no type dominates a stop by a wide margin."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "Esther 3:7-11"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "The card spends part of its text explaining the unfamiliar term Pur with \"Pur means the lot.\" That hard-word explanation belongs in a dictionary pop-up rather than in the card.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Don't spend card words explaining a hard word. Hard words get a dictionary pop-up (definitions.md, made after the cards)."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Esther 3:7"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "This non-opening story card has three sentence-length beats: the silver amount, \"Read that again, friend,\" and the explanation of what the silver would fund. That exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 8,
+        "verses": "Esther 3:9"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "This non-opening story card has three sentence-length beats: \"And the silver?\", the king's reply, and Papa Dorin's reaction. That exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 12,
+        "verses": "Esther 3:11"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 2
+      },
+      "problem": "The wrong answer \"Only the language of Susa\" invents a language rather than using a real language detail from somewhere in the Bible. This is a which-language question, so its wrong answers need to be real Bible details.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "For who, which thing and where questions, wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 2,
+        "verses": "Esther 3:12"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "The card uses facts from Esther 2:7 and 2:21 and cites them inline in the card text, but its verses field only says Esther 3:2. A single range covering 2:7 to 3:2 would be far wider than what the card uses.",
+      "question": "When a story card uses a fact from outside the passage, where does its reference go: inline in the card text, in the verses field, or both? And how should the verses field handle references that don't form one range?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 3,
+        "verses": "Esther 3:2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "Stop 1, card 10 quotes \"I have overcome him.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Psalm 13:4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "David appears for the first time, but the card only names him as the psalm's writer and does not briefly say who he is, such as David, Israel's king.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "New people. The first time someone shows up, he says simply who they are, like \"Cyrus, king of Persia\" or \"Moses, Israel's leader.\""
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Psalm 13:1"
+      }
+    }
+  ],
+  "human": []
+}

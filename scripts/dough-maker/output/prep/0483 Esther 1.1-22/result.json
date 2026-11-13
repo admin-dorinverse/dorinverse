@@ -1,0 +1,39 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 4
+      },
+      "problem": "The answer is supplied by stop 2 card 1, which says that Xerxes confers with experts in law and justice. That earlier card gives away 'law' as the word filling 'according to ___' in this question.",
+      "rule": {
+        "link": "prep-walkthrough.md#never-give-an-answer-away",
+        "text": "No card ever gives away the answer to a choice card that comes later."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 4,
+        "verses": "Esther 1:15"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "This final story card is only the 'story isn't over' line and tells nothing from the passage, but it cites Esther 1:22. The docs allow this card to be just that line when the last verse was asked on a choice card. They don't say what such a card should cite, and the output shape requires a verses value.",
+      "question": "What should the 'verses' field be for a closing story card that is only the 'story isn't over' line and tells no verse: the last verse of the passage, the last verse of the stop, or null?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 16,
+        "verses": "Esther 1:22"
+      }
+    }
+  ]
+}
