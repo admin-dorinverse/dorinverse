@@ -1,0 +1,48 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The blank asks for an unseen detail from Isaiah 50:3. The earlier cards do not give enough context to reason out 'heavens' rather than 'mountains' or 'nations,' so the baker is guessing the wording of the line rather than reasoning about its meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "Isaiah 50:3"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "All three true or false cards (stop 1 card 5, stop 2 cards 4 and 6) have False as the right answer, and each one is built the same way: a statement that the opposite of the verse happened. A baker could learn to tap False without reading.",
+      "question": "Should the true or false cards in a walkthrough mix True and False right answers? Does the 'No formula' rule cover the pattern of right answers, or only question types and order?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "All three true-or-false cards in the walkthrough (stop 1 card 5, stop 2 card 3, stop 2 card 5) have False as the right answer. Each one is built the same way: it negates what the speaker says. A baker can learn to pick False without reasoning. The 'No formula' rule covers question types, their order and where blanks fall, but not the balance of true and false answers.",
+      "question": "Should true-or-false cards across a walkthrough (or a stop) be required to mix True and False right answers, and avoid always negating the text?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}

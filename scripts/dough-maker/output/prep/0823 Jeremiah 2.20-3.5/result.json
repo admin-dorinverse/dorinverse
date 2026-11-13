@@ -1,0 +1,129 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening adds the outside fact that Jeremiah is a prophet, but the cited Jeremiah 2:20 neither names Jeremiah nor establishes that role, and no supporting reference is given.",
+      "rule": {
+        "link": "prep-walkthrough.md#the-passage-text",
+        "text": "Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Jeremiah 2:20"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "The question depends on \"that wild donkey\" in the preceding story card and does not identify the donkey as a picture of Israel. It does not supply enough context on its own.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 9,
+        "verses": "Jeremiah 2:24"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The description of Judah as \"the kingdom of His people in the south\" is outside Jeremiah 2:28. That background fact needs its own supporting reference rather than only the citation for Judah's many gods.",
+      "rule": {
+        "link": "prep-walkthrough.md#the-passage-text",
+        "text": "Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "Jeremiah 2:28"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "The question never identifies who \"them\" and \"they\" refer to. Without the preceding story card, it does not make clear that the LORD is judging Israel.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 9,
+        "verses": "Jeremiah 2:35"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "Nothing in the earlier cards lets the baker reason out Assyria rather than Babylon or Moab. The blank tests an unseen name from the verse rather than meaning the baker can infer.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 11,
+        "verses": "Jeremiah 2:36"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 17
+      },
+      "problem": "Story card 16 has just said that Israel \"defiled the land,\" and this card's correct answer repeats that same statement, \"Israel defiled the land.\" The preceding card therefore gives the answer away.",
+      "rule": {
+        "link": "prep-walkthrough.md#never-give-away-an-answer",
+        "text": "No card ever gives away the answer to a choice card that comes later."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 17,
+        "verses": "Jeremiah 3:2-3"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The card introduces Judah as \"the kingdom of His people in the south.\" That fact comes from outside the passage (1 Kings 12), but the card cites only Jeremiah 2:28. Stop 1 card 1 does the same with \"Jeremiah, a prophet.\" The docs say outside facts carry their reference, and also that a card cites exactly the verses it tells, no wider. The single \"verses\" field can't hold both.",
+      "question": "When a story card states an outside fact to introduce a new person or place, should its reference go in the card's \"verses\" field, in the card text, or nowhere?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "Jeremiah 2:28"
+      }
+    }
+  ]
+}

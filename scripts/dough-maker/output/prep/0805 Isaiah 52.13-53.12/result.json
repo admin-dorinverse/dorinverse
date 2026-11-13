@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 2
+      },
+      "problem": "This is a \"which animal\" question, but \"A dove caught in a net\" is not a real detail from somewhere in the Bible. The wrong answers to this kind of question must be real Bible details.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "For who, which thing and where questions, wrong answers are real details from somewhere in the Bible, like Joppa when the right answer is Tarshish."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 2,
+        "verses": "Isaiah 53:7"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "No earlier card gives or implies \"offspring,\" and saying that the passage does not stop there does not let the baker distinguish offspring from enemies or accusers. The blank therefore asks for unseen wording from Isaiah 53:10 rather than a meaning the baker can reason out.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 8,
+        "verses": "Isaiah 53:10"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card states facts from Isaiah 52:1 and 52:9 as context, with inline references, but its verses field cites only Isaiah 52:13. The citation rule says a story card cites from the first verse it uses to the last. Here that would be Isaiah 52:1-13, which reaches outside the passage.",
+      "question": "When an opening card uses context verses from before the passage, should its verses field include them, so it would cite Isaiah 52:1-13? Or should it cite only the passage verses it tells and keep the inline references for the context?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Isaiah 52:13"
+      }
+    }
+  ]
+}

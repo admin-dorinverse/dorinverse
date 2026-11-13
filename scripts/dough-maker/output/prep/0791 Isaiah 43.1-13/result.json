@@ -1,0 +1,75 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "Stop 2, card 6 quotes \"My servant whom I have chosen.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 2,
+        "card": 6,
+        "verses": "Isaiah 43:10"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "The correct answer, 'He formed and made them,' has already been given away by stop 1, card 1, which says the LORD created and formed His people. 'Created' and 'made' convey the same idea here, so the earlier card supplies the substance of the answer.",
+      "rule": {
+        "link": "prep-walkthrough.md#never-give-an-answer-away",
+        "text": "No card ever gives away the answer to a choice card that comes later."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 15,
+        "verses": "Isaiah 43:7"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "Calling the chosen servant 'one more alongside them' presents the servant as an additional party distinct from the LORD's people. Isaiah 43:10 does not establish that distinction rather than describing the same people further, so the card settles a connection the text leaves open.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Leave open what the text leaves open: who is being spoken to, why, or how two things connect."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 6,
+        "verses": "Isaiah 43:10"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card retells Isaiah 42:22-25 from the passage before this one and cites it inline, but its verses field is only Isaiah 43:1.",
+      "question": "When an opening card gives context from the passage before, should that verse range go in the card's verses field (for example Isaiah 42:22-43:1), or is an inline reference in the text enough, with the verses field kept to the lesson's own passage?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Isaiah 43:1"
+      }
+    }
+  ]
+}
