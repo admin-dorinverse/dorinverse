@@ -1,0 +1,53 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Five of the nine choice cards require information that earlier cards give no way to reason out: Stephen's vision in card 2, Saul's name in card 6, whether Stephen seeks judgment in card 10, the group that does not scatter in card 14, and the scattering locations in card 15. Discovery questions therefore make up most of this stop's choices instead of remaining a few exceptions.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "Acts 7:54-8:3"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The answers are not the same kind of thing: \"spirit\" is a singular part of Stephen, while \"accusers\" and \"friends\" are plural groups of people. This also makes the right answer stand out.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "All the answers are the same kind of thing, about the same length and the same tone. None are silly."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 8,
+        "verses": "Acts 7:59"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Several story cards state facts from outside the passage but have no reference for them. Stop 1 card 1 draws on Acts 6:5, 7:1, 7:2 and 7:41: Stephen as a follower, the high priest asking whether the charges are true, the history from Abraham, and the calf. Card 3 calls Joshua 'Israel's leader after Moses,' card 5 calls David 'king of Israel,' and card 7 calls Solomon 'David's son.' Each of these cards cites only verses inside the passage.",
+      "question": "prep-walkthrough.md says facts from outside the passage are fine 'with their reference.' It also says a card's 'verses' field must run 'from the first verse it uses to the last, no wider and no narrower,' and the JSON has no other place for a reference. Where should outside references go? Do short new-person introductions like 'David, king of Israel' need a reference at all, given that papa-dorin.md's example 'Cyrus, king of Persia' has none?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}

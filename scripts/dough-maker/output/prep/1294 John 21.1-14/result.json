@@ -1,0 +1,71 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Stop 1, card 1 mentions jam, a food that isn't a cookie and isn't in the passage.",
+      "rule": {
+        "link": "papa-dorin.md#food-rule",
+        "text": "In jokes and comparisons, cookies are the only food he mentions."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "John 21:1-2"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Too many choices require luck instead of reasoning from the earlier cards. The baker has no contextual basis for determining the all-night catch (card 3), Jesus' instruction about the right side of the boat (card 6), which disciple recognizes Jesus (card 8), Peter's response (card 9), whether Jesus asks for some of their fish (card 13), the exact count of 153 fish (card 14), or the third appearance (card 18). This goes beyond a few discovery questions and leaves too much of the stop feeling like a guessing game.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "Prep must never become a guessing game. Before each choice card, Papa Dorin's story card gives enough context that the baker can reason their way to the answer. The check: could a thoughtful baker who has only seen the earlier cards make a reasoned pick? If the only way to get it right is luck, give the story card more context or ask a different question. A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "John 21:1-14"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 19
+      },
+      "problem": "\"John's not done telling this one\" presents John as the writer of this Gospel. The passage never names its writer, and no reference is given. Card 1 also names John as a son of Zebedee, which ties the two together. The docs allow outside facts like who wrote a letter \"with their reference\", but this Gospel's authorship has no verse that states it.",
+      "question": "Can Papa Dorin name John as the writer of the Gospel of John when no verse names him, or should continuation lines avoid naming the Gospel's writer?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 19,
+        "verses": "John 21:14"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 19
+      },
+      "problem": "This card is only the story-continues line and tells nothing from John 21:14, but it cites John 21:14. The citation rule says a story card cites the verses it tells, no wider and no narrower. The docs allow a card that is just this line but don't say what it cites.",
+      "question": "What should the \"verses\" field be on a final story card that is only the story-continues line and tells no verse?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 19,
+        "verses": "John 21:14"
+      }
+    }
+  ]
+}

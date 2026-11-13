@@ -1,0 +1,72 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Identifying Apollos as “another preacher” and Paul as “the apostle” uses facts outside Acts 19:1 without giving references that support those identifications. The card's Acts 19:1 citation supports their locations and Paul's arrival, but not these roles.",
+      "rule": {
+        "link": "prep-walkthrough.md#the-passage-text",
+        "text": "Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Acts 19:1"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This story card has three sentences. It is not the walkthrough's opening card, so it needs to be reduced to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Acts 19:11"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The card calls Apollos 'another preacher.' That fact comes from outside the passage (Acts 18:24-28). The card cites only Acts 19:1, and the rules say a story card cites 'from the first verse it uses to the last, no wider and no narrower,' so the outside reference has nowhere to go.",
+      "question": "When a card uses an outside fact to introduce a new person, as the docs allow, where does that fact's reference go? Should it be added to the card's verses field, or is the passage verse enough?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Acts 19:1"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 19
+      },
+      "problem": "The final card is only the 'story isn't over' line and tells nothing from Acts 19:20, which was already asked on card 18. Even so, it cites Acts 19:20.",
+      "question": "When the last story card is only the 'story isn't over' line, what should its verses field cite: the passage's last verse, nothing, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 19,
+        "verses": "Acts 19:20"
+      }
+    }
+  ]
+}
