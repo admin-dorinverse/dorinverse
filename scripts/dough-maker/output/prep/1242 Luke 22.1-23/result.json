@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "Stop 1, card 9 mentions jam, a food that isn't a cookie and isn't in the passage.",
+      "rule": {
+        "link": "papa-dorin.md#food-rule",
+        "text": "In jokes and comparisons, cookies are the only food he mentions."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 9,
+        "verses": "Luke 22:8"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 4
+      },
+      "problem": "Luke 22:18 appears only as an invented statement to reject. The walkthrough never clearly tells the baker what Jesus actually says: He will not drink of the fruit of the vine from now on until the kingdom of God comes. Marking the statement false does not convey that positive statement or its kingdom timing.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 4,
+        "verses": "Luke 22:18"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This story card has 3 sentences. The 3-sentence allowance is for 'the opening card', and every other story card is limited to 1 to 2 sentences. It's unclear whether the first card of a later stop counts as an opening card.",
+      "question": "Does the 'opening card can be up to 3 sentences' allowance apply only to the first card of the whole walkthrough, or also to the first card of each stop?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Luke 22:14"
+      }
+    }
+  ]
+}

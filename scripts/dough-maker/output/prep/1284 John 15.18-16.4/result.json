@@ -1,0 +1,125 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "This non-opening story card has three sentences: the statement about Jesus choosing His disciples, the exclamation about being picked out, and the clearance-bin joke.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 3,
+        "verses": "John 15:19"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "This non-opening story card has three sentences: Jesus' reminder, the office comparison, and the separate punchline about how things work.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "John 15:20"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "The correct answer is a person, while both wrong answers are bodies of writing. The options are not the same kind of thing, and the question's wording does not resolve the mismatch.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "All the answers are the same kind of thing, about the same length and the same tone. None are silly."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 9,
+        "verses": "John 15:21"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "This non-opening story card has three sentences: the statement about Jesus' works, Papa Dorin's question about himself, and the thumbprint punchline.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 13,
+        "verses": "John 15:24"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Five of the six choice cards are multiple choice, and the only other choice card is fill in the blank. Multiple choice dominates this stop by a wide margin.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "No stop repeats another stop's pattern, and no type dominates a stop by a wide margin."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "John 15:26-16:4"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "This card is only the line saying the story isn't over. It tells nothing from John 16:4, but it cites John 16:4, which was already cited on cards 9 and 10.",
+      "question": "When the last story card is only the story-continues line and tells no verse, what should its \"verses\" field cite? Should it repeat the last verse, cite the stop's range, or be null?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 11,
+        "verses": "John 16:4"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The card places the moment 'in that room'. John 14:31 has Jesus saying 'Get up, let us go on from here,' and John 18:1 has them going out. The text leaves open whether John 15–16 is spoken in the upper room or on the way.",
+      "question": "Does 'in that room' count as allowed scene-setting, or does it state something the text leaves open or may contradict (John 14:31)? Should Papa Dorin avoid naming a location for John 15–16?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "John 15:22"
+      }
+    }
+  ]
+}
