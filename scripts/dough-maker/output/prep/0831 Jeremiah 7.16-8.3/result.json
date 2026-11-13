@@ -1,0 +1,56 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This story card has three sentences. Since it is not the walkthrough's opening card, it must be shortened to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Jeremiah 7:24"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Four of the six choice cards are multiple choice, while true or false and fill in the blank appear only once each. Multiple choice therefore dominates the stop by a wide margin.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "No stop repeats another stop's pattern, and no type dominates a stop by a wide margin."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "Jeremiah 7:24-29"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "Stop 2 card 1 is three sentences. It works like an opening card ('The LORD is still speaking to Jeremiah about His people.'). The 3-sentence allowance is written for 'the opening card', and the docs don't say whether that means only the passage's first card or the first card of each stop.",
+      "question": "Does the first card of each stop get the opening card's 3-sentence allowance, or only the first card of the whole walkthrough?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Jeremiah 7:24"
+      }
+    }
+  ]
+}
