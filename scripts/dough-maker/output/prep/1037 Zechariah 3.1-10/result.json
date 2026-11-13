@@ -1,0 +1,92 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "Stop 1, card 16 quotes \"Hear now, O high priest Joshua, you and your companions seated before you, who are indeed a ___.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "Zechariah 3:8"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Discovery questions dominate the stop. Cards 2, 3, 6, 11, 13, 14, 16, 18 and 19 provide no earlier-card basis for reasoning out the answer, leaving only cards 7, 8 and 9 clearly grounded in what the baker has already learned.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Zechariah 3:1-10"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "The card substitutes the kings of Judah for the actual promise, but no card ever tells the baker that Joshua is promised a place among these who are standing here (Zechariah 3:7). Choosing False only rejects the substitute and leaves that part of the verse untaught.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 14,
+        "verses": "Zechariah 3:7"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "This fill-in-the-blank reproduces the wording of verse 8 and asks for the unseen word sign. Nothing in the earlier cards lets the baker infer that term, so the blank tests wording rather than meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "Zechariah 3:8"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "This last story card is only the 'story isn't over' line and tells no verse. It still cites Zechariah 3:10, which card 19 already asked about.",
+      "question": "When the last story card is only the 'story isn't over' line, what should its 'verses' field cite: the passage's last verse, the whole passage, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 20,
+        "verses": "Zechariah 3:10"
+      }
+    }
+  ]
+}
