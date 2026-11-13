@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "Stop 1, card 5 quotes \"O unbelieving and perverse generation! How long must I remain with you? How long must I put up with you?\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Matthew 17:17"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The blank asks for a detail the earlier cards give no clue about. A baker cannot reason out whether Jesus specifies the first, biggest or last fish, so this is a lucky guess at unseen wording rather than a test of meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 12,
+        "verses": "Matthew 17:27"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "The card opens a quotation mark at 'The Son of Man is about to be delivered into the hands of men.' and never closes it. The BSB has no closing mark there because the quote runs on into verse 23, but on the card the baker sees an unclosed quote.",
+      "question": "When a story card quotes only part of a BSB quotation that continues into the next verse, should the card add a closing quotation mark (which the BSB doesn't have at that point), or should the card be rewritten so the quote isn't cut mid-speech?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Matthew 17:22"
+      }
+    }
+  ]
+}

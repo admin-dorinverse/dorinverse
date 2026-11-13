@@ -1,0 +1,35 @@
+{
+  "agent": [],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "Card 20 contains only the line saying the teaching isn't done. It retells no verse, but it cites Matthew 25:13, which card 19 already asked about.",
+      "question": "When the last story card is only the 'story isn't over' line and tells no verse, what should its \"verses\" field cite? Should it be the passage's last verse, null, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 20,
+        "verses": "Matthew 25:13"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "Card 20 is only the 'story isn't over' line and retells nothing from Matthew 25:13, but it cites Matthew 25:13. The rule says a story card cites the verses it tells, no wider and no narrower. The JSON still requires a verses value.",
+      "question": "What should the verses field cite on a last story card that is only the 'story isn't over' line and tells no verse? Options: the last verse of the passage, the whole passage, or something else.",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 20,
+        "verses": "Matthew 25:13"
+      }
+    }
+  ]
+}

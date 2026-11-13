@@ -1,0 +1,39 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "The joke compares Jesus' questioning of the leaders to handing them a \"pop quiz,\" which is a school-based scenario.",
+      "rule": {
+        "link": "papa-dorin.md#audience",
+        "text": "No jokes or scenarios about school, parents or anything aimed at kids. Work, bosses and bills are fine."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 7,
+        "verses": "Matthew 21:31"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "This last story card is only the line saying the story isn't over, and it tells no verse. It still cites Matthew 21:32. The rule says a story card cites the verses it tells, but the JSON requires a verses field.",
+      "question": "What should a story card cite when it holds only the line saying the story isn't over and tells no verse? Should it cite the passage's last verse, or should 'verses' be allowed to be empty or null?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 13,
+        "verses": "Matthew 21:32"
+      }
+    }
+  ]
+}
