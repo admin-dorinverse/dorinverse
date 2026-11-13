@@ -1,0 +1,75 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Calling David 'king of Israel' uses a fact from outside Psalm 58, but no reference supporting that fact is provided. Psalm 58:1 identifies David and the tune, not his kingship.",
+      "rule": {
+        "link": "prep-walkthrough.md#the-passage-text",
+        "text": "Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Psalm 58:1"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "The right answer, 'It shuts its ears,' comes from Psalm 58:4. Psalm 58:5 supplies the charmer setup in the question, so citing Psalm 58:4-5 makes the choice card's citation wider than the verses of its right answer.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "A choice card cites only the verses of its right answer."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "Psalm 58:4-5"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "This non-opening story card has three sentences: the statement about vanishing like water, 'GONE.', and the fragment about warm cookies in the Millers' kitchen.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Psalm 58:7"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The joke calls back to \"the Millers' kitchen.\" The Millers are never set up earlier in this lesson. The joke logic test only says bakers know about the junk drawer from onboarding, and says nothing about whether they know the Millers.",
+      "question": "Do bakers meet the Millers in onboarding, so Papa Dorin can name \"the Millers' kitchen\" in a callback without saying who they are? Or does the line need to explain them, the way the drawer's small details need explaining?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Psalm 58:7"
+      }
+    }
+  ]
+}

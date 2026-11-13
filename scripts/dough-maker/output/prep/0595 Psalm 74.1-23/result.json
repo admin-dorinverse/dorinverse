@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The setup only says that God purchased and redeemed His congregation. Nothing in the earlier cards lets the baker reason out Zion rather than Sinai or Carmel, so this blank tests unseen wording instead of an inferable meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 4,
+        "verses": "Psalm 74:2"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "This story card merely repeats card 9's answer about the smashed carvings and adds a joke. It does not move the psalm forward, making it a recap card.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card moves the baker forward through the passage. No recap cards."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Psalm 74:6"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Card 1 calls Asaph 'one of Israel's psalm writers'. That fact comes from outside the passage (for example Ps 50, Ps 73-83, 2 Chr 29:30), but the card only cites Psalm 74:1. The rules say outside facts need their reference, and that a card's 'verses' field cites exactly what the card uses. The schema has only one 'verses' field.",
+      "question": "When a story card uses a fact from outside the passage, how should its reference be given? Should it be added to the card's 'verses' field, written in the text, or left out when it only says who a new person is?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Psalm 74:1"
+      }
+    }
+  ]
+}
