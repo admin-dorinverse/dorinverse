@@ -36,6 +36,7 @@ These files are the current lesson rules.
 **When the run stops**
 - Only when a step gives no output, or output the database can't take
 - It retries once, then stops and tells me what happened and how to pick up again. If the internet is down, the credits run out, or a server is busy, it doesn't stop: it waits, tries again every 5 minutes, and carries on by itself.
+- If Kimi gives an empty answer, the run tries that check again every 5 minutes, up to 4 more times, while the other passages keep going. If all 4 come back empty too, the run stops.
 
 ## The lesson
 
