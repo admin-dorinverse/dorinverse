@@ -37,7 +37,10 @@ export async function kimi({ messages, shared = null, maxTokens = 16000, passage
       output: u.completion_tokens ?? 0 };
     const cost = u.cost ?? 0;
     const cache = await cachewatch.after(watch, tokens.cached);
-    logEvent({ ...call, status: 'done', ms: Date.now() - started, tokens, cost, cache });
+    const choice = j.choices?.[0] ?? {};
+    // why the answer ended (stop, length, error): an empty answer with "error" or no cost was cut off on their end
+    const finish = choice.native_finish_reason ?? choice.finish_reason ?? null;
+    logEvent({ ...call, status: 'done', ms: Date.now() - started, tokens, cost, cache, finish, ...(choice.error && { error: String(choice.error.message ?? choice.error).slice(0, 300) }) });
     return { text: j.choices?.[0]?.message?.content?.trim() ?? '', tokens, cost, cache, provider: j.provider };
   } catch (e) {
     if (!e.detail) { e.detail = e.message; e.message = 'Couldn’t reach OpenRouter. The internet may be down on the PC.'; }
