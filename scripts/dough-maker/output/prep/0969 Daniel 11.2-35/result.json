@@ -1,0 +1,56 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Too many choices in this stop depend on luck rather than the earlier cards. Card 2 gives no basis for choosing wealth over longevity or wisdom, card 3 no basis for Greece, card 9 no basis for a commander rather than a son or brother, card 11 no indication of whether the daughter retains power, card 14 no basis for Egypt, and card 19 no indication of the battle's outcome. These six discovery picks are a majority of the stop's 11 choice cards, rather than a few exceptions among mostly informed guesses.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "The check: could a thoughtful baker who has only seen the earlier cards make a reasoned pick? If the only way to get it right is luck, give the story card more context or ask a different question. A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Daniel 11:2-12"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "The question begins with the unidentified pronoun \"He.\" The person taking the captives is identified only on the preceding choice card, so the question does not supply its own context when that card is no longer visible.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 14,
+        "verses": "Daniel 11:8"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card uses two facts from before the passage, Daniel 10:4 and Daniel 10:14, and cites them inline. Its 'verses' field says only 'Daniel 11:2'. One rule says a story card cites 'from the first verse it uses to the last, no wider and no narrower,' which would make the field 'Daniel 10:4-11:2'. Another rule allows outside facts 'with their reference,' which the inline citations already give.",
+      "question": "When a story card uses facts from outside the passage and cites them inline, should its 'verses' field include those outside verses, or list only the passage verses the card tells?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Daniel 11:2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": null,
+      "problem": "Discovery questions dominate the walkthrough instead of remaining a few. For example, stop 1 cards 2, 4, 6, 7 and 10 and stop 2 cards 2, 6, 8 and 10 ask for destinations, materials, objects, names or other details that the earlier cards do nothing to make inferable. A baker working only from the earlier cards must rely on luck or outside knowledge for most of the choices.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "Before each choice card, Papa Dorin's story card gives enough context that the baker can reason their way to the answer. A few discovery questions are fine. Some moments can't be reasoned out, like where Jonah's ship is headed. A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": true,
+      "where": null,
+      "problem": "Stop 1 cards 4 and 6 and stop 2 card 8 blank out the unseen words 'city', 'bronze' and 'Zadok'. Nothing in the earlier cards lets the baker reason out those words rather than the alternatives, so these blanks test unshown wording instead of meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "This non-opening story card has three sentences: the mountain and structure, 'A VERY high mountain.' and the mixing-bowl joke. Non-opening story cards are limited to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 3,
+        "verses": "Ezekiel 40:2"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The question begins 'In that square inner court', using 'that' to point back to the preceding story card, which is no longer on screen. The question should supply its own context without that backward reference.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 10,
+        "verses": "Ezekiel 40:47"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Nearly the whole passage (40:5-49) is building plans, which the docs list as a long stretch that gets one summary story card and never a choice card. The walkthrough summarizes 40:6-37 in one card but asks choice cards about other building details: the wall (40:5), the washing chamber and tables (40:38-39), the altar's place (40:47) and the step count (40:49). Following the long-stretch rule strictly would leave almost nothing to ask after 40:4.",
+      "question": "When a passage is almost entirely a long stretch, like a temple plan, which parts may get choice cards? Is it only the spoken parts (40:4, 40:45-46), or may standout details like the sacrifice tables, the altar or the step counts be asked? Should the rest be one summary card or several?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}
