@@ -1,0 +1,72 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "This non-opening story card has three sentences: the statement about the Daughter of Jerusalem, 'You know that head shake, friend,' and the midnight-batch punchline. It exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Isaiah 37:22"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "The question depends on 'those cities,' but their only antecedent is on story card 12, which is no longer on screen. The choice card never identifies them as the fortified cities crushed into rubble, so it does not provide its own context.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 13,
+        "verses": "Isaiah 37:27"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "This non-opening story card has three sentence units: 'Take root and bear fruit?', the junk-drawer sentence, and the transition to the LORD speaking about the king of Assyria. It exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 6,
+        "verses": "Isaiah 37:31-33"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Some story cards state facts from outside the passage. Stop 1 card 1 says 'Hezekiah, king of Judah, is in trouble with Sennacherib' (Isaiah 36-37:20). Stop 2 card 10 says 'That's David, Israel's king long before Hezekiah.' Neither card gives a reference for these facts. The docs say outside facts are fine 'with their reference.' They also say a story card's verses field cites only the verses it tells, 'no wider and no narrower,' and the output format has no other place for a reference.",
+      "question": "When a story card states a fact from outside the passage, such as who a new person is, where should its reference go? Should it go in the card text, in an extra field, or nowhere, since the verses field must cite only the passage verses the card tells?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}

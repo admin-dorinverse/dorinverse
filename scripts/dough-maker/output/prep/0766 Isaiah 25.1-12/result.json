@@ -1,0 +1,39 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The speaker is introduced only as \"the prophet.\" When he first appears, identify him simply by name and role, such as \"Isaiah, the prophet.\"",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "New people. The first time someone shows up, he says simply who they are, like \"Cyrus, king of Persia\" or \"Moses, Israel's leader.\""
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Isaiah 25:1"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "Moab is introduced inside a choice card as \"a nation east of the Dead Sea.\" That is a fact from outside the passage and has no reference. A choice card cites only the verses of its right answer, so it has no place to give that reference.",
+      "question": "When a new person or place is first introduced inside a choice card's question, where should the reference for that outside fact go? Or must every new person or place be introduced on a story card first?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 11,
+        "verses": "Isaiah 25:10"
+      }
+    }
+  ]
+}
