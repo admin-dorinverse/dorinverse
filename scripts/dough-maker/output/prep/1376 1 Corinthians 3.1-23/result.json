@@ -1,0 +1,59 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "Stop 1, card 16 quotes \"God's fellow workers.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "1 Corinthians 3:9"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "This non-opening story card has three sentences: the milk-and-solid-food setup, followed by two sentences about training the cutters. It exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 3,
+        "verses": "1 Corinthians 3:2"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 3
+      },
+      "problem": "This story card has four sentences: the foundation statement, the second-foundation comparison, “That’s not a renovation.” and “That’s a whole new mortgage.” It exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 3,
+        "verses": "1 Corinthians 3:11"
+      }
+    }
+  ],
+  "human": []
+}

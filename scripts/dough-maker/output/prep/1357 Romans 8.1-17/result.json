@@ -1,0 +1,108 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "This non-opening story card has three sentences: the retelling, 'Friend, He didn't stay up on the top shelf.' and 'He came all the way down to the counter.'",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "Romans 8:3"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "The blanks ask for the unseen wording of verse 6. Although 'life' can be inferred as the opposite of death, nothing in the earlier cards sets up 'peace,' so the baker must guess among several plausible nouns rather than reason out the meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "Romans 8:6"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 17
+      },
+      "problem": "The question never identifies whose mortal bodies are meant. 'Their' and 'them' depend on the readers being identified as 'you' on earlier cards that are no longer visible.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 17,
+        "verses": "Romans 8:11"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 4
+      },
+      "problem": "'They' and 'them' have no antecedent within the question. The question relies on earlier cards to identify the people Paul is addressing instead of supplying that context itself.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 4,
+        "verses": "Romans 8:15"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card tells facts from Romans 1:1 and 1:7 (who Paul is, who he's writing to) and from Romans 7:24-25, but its verses field cites only Romans 7:24-25. Citing from the first verse used to the last would mean Romans 1:1-7:25, which makes no sense for a context card.",
+      "question": "When an opening card pulls context from verses that aren't next to each other and lie outside the passage (like Romans 1:1, 7 and 7:24-25), what should its verses field cite? Is the in-text reference enough for the extra verses?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Romans 7:24-25"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card uses Romans 1:1, 1:7 and 7:24-25, but its verses field cites only Romans 7:24-25. The card also tells nothing from Romans 8. The citation rule asks for one range from the first verse used to the last, and here that range would run from Romans 1:1 to 7:25.",
+      "question": "When an opening card gives context from outside the passage, what should its verses field cite? Should it cite only the main context verses, the full span of every verse used, or something else? Should the inline references in the text be enough?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Romans 7:24-25"
+      }
+    }
+  ]
+}
