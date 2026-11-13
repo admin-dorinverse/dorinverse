@@ -1,0 +1,209 @@
+{
+  "by": "opus",
+  "out": {
+    "passage": "Luke 8:19-21",
+    "stops": [
+      {
+        "stop": 1,
+        "verses": "Luke 8:19-21",
+        "cards": [
+          {
+            "card": 1,
+            "kind": "story",
+            "verses": "Luke 8:19",
+            "text": "Jesus is surrounded by a crowd. A BIG one. Then some visitors show up wanting to see Him, and these aren't strangers. They've known Him for years."
+          },
+          {
+            "card": 2,
+            "kind": "choice",
+            "type": "multiple_choice",
+            "verses": "Luke 8:19",
+            "question": "Who comes to see Jesus while the crowd is packed around Him?",
+            "answers": [
+              {
+                "text": "His mother and brothers",
+                "correct": true
+              },
+              {
+                "text": "Martha and her sister Mary",
+                "correct": false
+              },
+              {
+                "text": "Peter and his brother Andrew",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 3,
+            "kind": "choice",
+            "type": "true_false",
+            "verses": "Luke 8:19",
+            "question": "Jesus' mother and brothers make their way through the crowd and walk right up to Him.",
+            "answers": [
+              {
+                "text": "True",
+                "correct": false
+              },
+              {
+                "text": "False",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "card": 4,
+            "kind": "story",
+            "verses": "Luke 8:19",
+            "text": "They can't reach Him. The crowd is too thick. You know that kind of crowd, friend. You say \"excuse me\" FORTY times and you've moved about three inches."
+          },
+          {
+            "card": 5,
+            "kind": "choice",
+            "type": "fill_blank",
+            "verses": "Luke 8:20",
+            "question": "Jesus is told that His mother and brothers are standing ___ wanting to see Him.",
+            "answers": [
+              {
+                "text": "outside",
+                "correct": true
+              },
+              {
+                "text": "on the shore",
+                "correct": false
+              },
+              {
+                "text": "by the well",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 6,
+            "kind": "story",
+            "verses": "Luke 8:20",
+            "text": "So the message gets passed to Jesus through all those people, like the world's slowest group chat. Now everybody's waiting to hear what He'll say."
+          },
+          {
+            "card": 7,
+            "kind": "choice",
+            "type": "multiple_choice",
+            "verses": "Luke 8:21",
+            "question": "Jesus answers. Who does He say His mother and brothers are?",
+            "answers": [
+              {
+                "text": "Those who hear God's word and carry it out",
+                "correct": true
+              },
+              {
+                "text": "Those who follow Him from town to town",
+                "correct": false
+              },
+              {
+                "text": "Those who sit closest to Him and listen",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "card": 8,
+            "kind": "choice",
+            "type": "true_false",
+            "verses": "Luke 8:21",
+            "question": "According to Jesus, hearing the word of God is enough to be His family, even without carrying it out.",
+            "answers": [
+              {
+                "text": "True",
+                "correct": false
+              },
+              {
+                "text": "False",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "card": 9,
+            "kind": "story",
+            "verses": "Luke 8:21",
+            "text": "Hear it AND carry it out. Back in that junk drawer, I heard somebody say \"we really need to clean this drawer\" about four hundred times. Friend, NOBODY ever carried it out."
+          }
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card has four sentences: \"Jesus is surrounded by a crowd.\" / \"A BIG one.\" / \"Then some visitors show up wanting to see Him, and these aren't strangers.\" / \"They've known Him for years.\" The opening card can have at most three.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "The opening card can be up to 3 sentences. It says who is speaking, to whom, and what is going on. If the passage starts in the middle of a thought, it gives the context."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Luke 8:19"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "This is a recap card. Card 3 has already shown that the family can't walk up to Jesus. Card 4 repeats that (\"They can't reach Him. The crowd is too thick.\") and adds a joke, but it doesn't move the passage forward. The joke should ride on a card that tells the next piece of the passage, or this card should be cut.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card moves the baker forward through the passage."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 4,
+        "verses": "Luke 8:19"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "This card retells verse 20 after card 5 has already asked about verse 20 and revealed the answer. It tells the baker that the message reached Jesus, which card 5 already showed. It works as a recap, not as the next moment. The setup for card 7 could stand on its own, or this beat could come before card 5.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "No recap cards."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "Luke 8:20"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "This last card repeats Jesus' answer from verse 21, which cards 7 and 8 already covered (\"Hear it AND carry it out.\"), and adds a joke. It tells no new part of the passage, so it is a recap card.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card tells part of the passage. Jokes ride along on those cards."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 9,
+        "verses": "Luke 8:21"
+      }
+    }
+  ]
+}

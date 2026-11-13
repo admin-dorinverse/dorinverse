@@ -1,0 +1,39 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "This card only recaps Bartimaeus sitting beside the road in verse 46 and following Jesus in verse 52, which the walkthrough has already covered. It does not move the passage forward.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card moves the baker forward through the passage.\n- No recap cards."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "Mark 10:46-52"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "Card 12 tells Mark 10:36-37, which is outside the passage. It gives that reference inline in its text, but its 'verses' field cites only Mark 10:51.",
+      "question": "When a story card uses verses from outside the passage and gives their reference inline, should the card's 'verses' field also include them? Or should it cite only the passage verses, given that a range like Mark 10:36-51 would be far too wide?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 12,
+        "verses": "Mark 10:51"
+      }
+    }
+  ]
+}

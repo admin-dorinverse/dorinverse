@@ -1,0 +1,90 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "The first blank cannot be reasoned from the earlier cards. Nothing indicates that Peter sits with officers rather than priests or fishermen; warming himself makes fire inferable, but officers is an unseen detail the baker must guess.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 3,
+        "verses": "Mark 14:54"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "This non-opening story card has three sentences: 'Oh, people come forward.' 'MANY people.' and 'And they bear false witness against Jesus.'",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "Mark 14:56"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "No earlier card identifies Peter's region or gives a clue that makes Galilean more inferable than Samaritan or Moabite. The blank therefore asks the baker to guess an unseen detail rather than reason out its meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 10,
+        "verses": "Mark 14:70"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card states two facts from outside the passage: 'Jesus has just been arrested' (Mark 14:46) and 'Peter, one of Jesus' twelve disciples' (Mark 3:14-16). Neither carries its reference. The card's verses field cites only Mark 14:53-54.",
+      "question": "Prep allows facts from outside the passage 'with their reference', and 'Cite exactly what the card uses.' The card JSON has only one verses field, and the script checks references against the passage. Where should an outside fact's reference go on a story card? Should it go in the verses field (e.g. 'Mark 14:46, 53-54'), in the card text, or should outside facts like these go uncited as context?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Mark 14:53-54"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card states two facts from outside the passage: Jesus has just been arrested (Mark 14:46) and Peter is one of Jesus' twelve disciples (Mark 3:14-16). The card's only citation is Mark 14:53-54. The docs say outside facts come \"with their reference\" and that every Bible fact carries its reference. They also say a story card cites only the verses it tells, \"no wider and no narrower,\" and the JSON has a single \"verses\" field.",
+      "question": "How should a story card give the reference for a context fact from outside the passage (such as a new person's introduction or the event just before the passage) when the card's \"verses\" field must cite exactly the passage verses it tells? Should it go in the field, in the card text, or nowhere?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Mark 14:53-54"
+      }
+    }
+  ]
+}
