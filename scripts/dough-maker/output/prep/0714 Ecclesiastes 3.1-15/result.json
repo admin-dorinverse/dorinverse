@@ -1,0 +1,38 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "\"Right before that\" points back to the previous story card's keep/discard line, which is no longer on screen. The question should provide that context itself rather than rely on an unseen antecedent.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 12,
+        "verses": "Ecclesiastes 3:6"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Most of stop 1's choice cards test the same point: both sides of each pair have their time. Cards 2, 8, 10, 12, 14 and 16 all do this. Cards 2, 8 and 12 also share one template: an absolute 'only/never' statement whose answer is False. The question types vary, but the content and the shape repeat.",
+      "question": "Should the docs limit how often choice cards in one stop can test the same idea or reuse one question template? The 'No formula' rule covers only question type, order and where the blank falls.",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Ecclesiastes 3:1-8"
+      }
+    }
+  ]
+}

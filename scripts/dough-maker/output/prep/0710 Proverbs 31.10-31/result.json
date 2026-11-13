@@ -1,0 +1,90 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card introduces the poem and its first question, but it never identifies who is speaking or to whom. It omits two parts of the required opening context.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "The opening card can be up to 3 sentences. It says who is speaking, to whom, and what is going on."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Proverbs 31:10"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The earlier cards establish that the wife works, buys a field and plants a vineyard, but they provide no basis for distinguishing her earnings from an inheritance or dowry as the funding source. The blank therefore asks for unseen wording that cannot reasonably be inferred.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Proverbs 31:16"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "This card reproduces the poem's closing sentence with its two key terms removed, without setting up the conclusion's meaning. In particular, the husband earlier being known at the city gates does not establish that the wife's works should praise her there, so the baker is left completing unfamiliar wording rather than making an informed inference.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 18,
+        "verses": "Proverbs 31:31"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card doesn't say who is speaking or to whom. The rules say it should. Proverbs 31:1 introduces the sayings of King Lemuel that his mother taught him, but the text doesn't clearly say whether 31:10-31 is still her words. The 'leave open what the text leaves open' rule pulls the other way.",
+      "question": "When a passage doesn't clearly say who is speaking (here, whether Proverbs 31:10-31 continues the words of King Lemuel's mother from 31:1), should the opening card name a likely speaker, say the speaker is unnamed, or skip the speaker entirely?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Proverbs 31:10"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card does not say who is speaking. It only says \"Proverbs closes with a poem.\" Proverbs 31:1 credits the chapter to King Lemuel, from what his mother taught him. The text does not make clear whether verses 10-31 belong to that attribution. One rule says the opening card names who is speaking. Another says to leave open what the text leaves open, and the two pull in different directions here.",
+      "question": "For Proverbs 31:10-31, should the opening card credit the poem to King Lemuel's mother (Proverbs 31:1)? Or should it leave the speaker open and only call it the poem that closes Proverbs?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Proverbs 31:10"
+      }
+    }
+  ]
+}
