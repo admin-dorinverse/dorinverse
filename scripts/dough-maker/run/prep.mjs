@@ -5,8 +5,8 @@
 //   4. Check 2 and Fix 2 the same way, then Kimi's final check. A check that finds nothing to fix ends it early.
 //   5. Whatever the final check still finds goes on the tracker, and every card gets its two flags.
 // The final checker is never the fixer: Opus fixes, so Kimi does the final check. Kimi never writes or fixes. If Opus
-// hits the weekly limit, the run pauses and notifies the person (models.md "When the weekly limit runs out"); running
-// it again after the reset picks up from the last saved stage.
+// hits the weekly limit, the run waits and notifies the person (models.md "When the weekly limit runs out"), checks
+// every 5 minutes, and carries on by itself once Opus is available again.
 //
 //   node scripts/dough-maker/run/prep.mjs --passages 1            one passage (models.md "Test on passage 1")
 //   node scripts/dough-maker/run/prep.mjs --passages 2-200 --agents 5
@@ -15,7 +15,8 @@
 // Every stage is saved under scripts/dough-maker/output/prep/<id and range>/ as it finishes, so running it again
 // picks up from the last saved stage; a passage with prep.json is done and is skipped. --fresh starts the chosen
 // passages over. tracker.json is rebuilt after every passage. A call that gives no answer, or one that can't be
-// read, is tried once more; if it fails again the run stops and tells the person (README "When the run stops").
+// read, is tried once more; if it fails again, that passage is skipped and gets one more try at the end, while the rest
+// keep going (README "When the run stops"). The run itself stops only for a problem with the whole run.
 // A problem that passes by itself (no internet, out of credits, a busy server) doesn't stop it: it waits, tries
 // again every 5 minutes, and carries on.
 // With more than one agent, the first call goes alone, so it saves the docs in the cache before the rest start.
@@ -87,8 +88,12 @@ class Pause extends Error {}
 
 // Problems that pass by themselves, so the run waits them out (runPrep's waitOut): no internet (Kimi's fetch fails,
 // or Claude Code can't reach the API), out of OpenRouter credits, too many requests, a server-side error
-const WAIT = 5 * 60_000;
+const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;   // DOUGH_WAIT_MS shortens it for tests
 const EMPTY_TRIES = 4;   // more tries for an empty Kimi answer, WAIT apart, before the run stops
+const SKIPS_IN_A_ROW = 5;   // passages failing one after another with none done between: something bigger is wrong
+// Problems with the whole run, not one passage: every passage would fail the same way, so the run stops
+const hard = (e) => /^(401|403|404):/.test(String(e.detail ?? '')) ||
+  /OPENROUTER_API_KEY is missing|Couldn’t start Claude Code/.test(e.message);
 export function passing(e) {
   if (e instanceof Unreadable) return false;
   const d = String(e.detail ?? '');
@@ -190,6 +195,30 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     notify('Prep is going again', [`It waited ${mins} min and carried on by itself`]);
   }
 
+  // Over the weekly limit, every agent waits here; one check every 5 minutes (a one-word Haiku call) sees when Opus
+  // is available again, after the weekly reset or when the owner uses a free reset, and they all carry on.
+  let opusWait = null;
+  function opusBack(e) {
+    opusWait ??= (async () => {
+      const since = Date.now();
+      logEvent({ type: 'run', status: 'waiting', note: 'Opus hit the weekly limit. Waiting for it to reset.' });
+      await notify('Prep is waiting for Opus', ['Opus hit your weekly limit',
+        e.resetsAt && `It resets ${new Date(e.resetsAt).toLocaleString()}`,
+        'If you use a free reset, the run sees it within 5 minutes and carries on by itself. Nothing is lost.'].filter(Boolean),
+        { problem: true });
+      for (;;) {
+        await new Promise((res) => setTimeout(res, WAIT));
+        const w = (await checkLimits())?.weekly;
+        if (w?.status && w.status !== 'rejected') break;
+      }
+      const mins = Math.round((Date.now() - since) / 60_000);
+      logEvent({ type: 'run', status: 'running', note: `Opus is back after ${mins} min.` });
+      notify('Prep is going again', [`Opus is available again after ${mins} min`]);
+      opusWait = null;
+    })();
+    return opusWait;
+  }
+
   // Kimi's empty answers come from its end (the answer is cut off, and OpenRouter charges nothing), so an empty
   // Kimi answer is tried again every 5 minutes, up to 4 more times; the 4th one in a row stops the run.
   async function twice(p, who, what, fn) {
@@ -197,11 +226,12 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     for (;;) {
       try { const r = await fn(); backUp(); return r; }
       catch (e) {
-        if (e instanceof LimitError || e instanceof Pause) throw e;
+        if (e instanceof LimitError) { await opusBack(e); continue; }
+        if (e instanceof Pause) throw e;
         if (passing(e)) { await waitOut(e, p, what); continue; }
         const why = e instanceof Unreadable ? `${who} ${e.message}` : e.message;
         if (who === 'Kimi' && e.empty) {
-          if (empties === EMPTY_TRIES) throw new Error(`${why}, ${EMPTY_TRIES + 1} times in a row (${EMPTY_TRIES} more tries, 5 minutes apart), so the run stopped.`);
+          if (empties === EMPTY_TRIES) throw Object.assign(new Error(`${why}, ${EMPTY_TRIES + 1} times in a row (${EMPTY_TRIES} more tries, 5 minutes apart), so the run stopped.`), { stopRun: true });
           empties++;
           problems.push(`${what} for ${span(p.start, p.end)}: ${why}, tried again after 5 minutes (${empties} of ${EMPTY_TRIES})`);
           logEvent({ type: 'note', title: 'Trying again in 5 minutes', lines: [`${what} for ${span(p.start, p.end)}`, why,
@@ -312,7 +342,8 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     'Opus writes, checks and fixes (up to 2 times), Kimi does the final check', 'Follow it on the dashboard']);
 
   const done = [];
-  let failure = null;
+  let failure = null, skippedInARow = 0;
+  const skipped = new Map();   // passage id -> times it failed
   const queue = [...chosen];
   async function worker(n) {
     if (n > 0) { await warm; await new Promise((res) => setTimeout(res, n * STAGGER)); }
@@ -330,10 +361,28 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
           `${done.filter((x) => !x.before).length} of ${todo.length} passages done this run`] });
         const fresh = done.filter((x) => !x.before).length;
         if (fresh % SAVE_EVERY === 0) saveToGit(`Prep: ${fresh} passages done this run (automatic backup)`);
+        skippedInARow = 0;
       } catch (e) {
-        failure ??= { e, p, stage: running.get(p.id) };
+        const stage = running.get(p.id);
         running.delete(p.id);
         warmed();
+        // A problem with the whole run (the cache, a broken key, Kimi's empty answers 5 times running) stops it.
+        // A problem with one passage skips that passage: the rest keep going, and it gets one more try at the end.
+        if (e instanceof Pause || e instanceof LimitError || e.stopRun || hard(e) || ++skippedInARow >= SKIPS_IN_A_ROW) {
+          if (skippedInARow >= SKIPS_IN_A_ROW) e.message = `${SKIPS_IN_A_ROW} passages in a row failed, so something bigger is wrong. The last one: ${e.message}`;
+          failure ??= { e, p, stage };
+          continue;
+        }
+        status(p, 'failed', null);
+        const tries = (skipped.get(p.id) ?? 0) + 1;
+        skipped.set(p.id, tries);
+        if (tries === 1) queue.push(p);
+        await notify(tries === 1 ? 'Skipped a passage for now' : 'Gave up on a passage', [
+          e.twice ? `${e.message} It happened twice.` : e.message, `Where: ${span(p.start, p.end)}, ${stageName(stage)}`,
+          e.detail && `Details: ${String(e.detail).slice(0, 200)}`,
+          tries === 1 ? 'The other passages keep going. This one gets one more try at the end.'
+            : 'It failed on its second try too. The other passages keep going; it is listed when the run finishes.'],
+        { problem: true });
       }
     }
   }
@@ -358,6 +407,7 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     throw e;
   }
 
+  const gaveUp = chosen.filter((p) => skipped.get(p.id) >= 2);
   saveToGit(`Prep: ${scope} finished (automatic backup)`);
   const flags = flagsFor(done);
   const weekAfter = readJson(LIMITS)?.weekly?.pct ?? null;
@@ -370,7 +420,8 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     `Kimi cost: $${spent.kimi.toFixed(2)}`,
     weekBefore != null && weekAfter != null ? `Opus weekly limit: ${Math.round(weekBefore)}% used before, ${Math.round(weekAfter)}% after` : null,
     cache && `Cache: ${cache}`,
-    ...problems]);
+    gaveUp.length && `Still not done after two tries: ${gaveUp.map((p) => span(p.start, p.end)).join('; ')}. Ask Claude to run Prep again for them.`,
+    ...problems].filter(Boolean));
   return done;
 }
 

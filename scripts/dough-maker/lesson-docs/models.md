@@ -90,8 +90,8 @@ The rules in prep-walkthrough.md and papa-dorin.md that have one right answer:
 
 ## When the weekly limit runs out
 
-- If Opus hits the weekly limit, **the run pauses and notifies the person.** Kimi never takes over Opus's writing, fixing or checking.
-- Everything finished is saved. After the limit resets, running it again picks up from the last saved stage.
+- If Opus hits the weekly limit, **the run waits and notifies the person.** Kimi never takes over Opus's writing, fixing or checking.
+- It checks every 5 minutes and carries on by itself as soon as Opus is available again: after the weekly reset, or right after the person uses a free reset. Nothing is lost.
 
 ## How many agents at once
 

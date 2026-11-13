@@ -35,8 +35,9 @@ These files are the current lesson rules.
 
 **When the run stops**
 - Only when a step gives no output, or output the database can't take
-- It retries once, then stops and tells me what happened and how to pick up again. If the internet is down, the credits run out, or a server is busy, it doesn't stop: it waits, tries again every 5 minutes, and carries on by itself.
+- It retries once. If it fails again, that passage is skipped for now and gets one more try at the end, while the other passages keep going. It tells me what happened, and lists any passage still not done when the run finishes. If the internet is down, the credits run out, or a server is busy, it doesn't stop: it waits, tries again every 5 minutes, and carries on by itself.
 - If Kimi gives an empty answer, the run tries that check again every 5 minutes, up to 4 more times, while the other passages keep going. If all 4 come back empty too, the run stops.
+- The whole run only stops for a problem with the whole run: the cache breaking, a broken key, Kimi's empty answers above, or 5 passages failing in a row.
 
 ## The lesson
 
@@ -87,7 +88,7 @@ After the final check, the run sets two flags on each item in a step's output: a
 
 ## When the run stops
 
-The run only stops if a step gives no output, or output that can't be loaded into the database. If the internet is down, the credits run out, or a server is busy, the run doesn't stop: it waits, tries again every 5 minutes, and carries on by itself, sending one note when it starts waiting and one when it's going again. When that happens, the run starts that step over once from the beginning. If it happens again, the run stops and notifies the person right away, in plain words: what happened, why it stopped, which passage and step, what is already saved, and how to pick up again.
+The run only stops if a step gives no output, or output that can't be loaded into the database. If the internet is down, the credits run out, or a server is busy, the run doesn't stop: it waits, tries again every 5 minutes, and carries on by itself, sending one note when it starts waiting and one when it's going again. When a step gives no output or bad output, the run starts that step over once from the beginning. If it happens again, that passage is skipped for now and the other passages keep going; it gets one more try at the end. The run notifies the person right away, in plain words: what happened, which passage and step, and that the run is carrying on. When the run finishes, it lists any passage that still isn't done.
 
 ## Which file to load
 
