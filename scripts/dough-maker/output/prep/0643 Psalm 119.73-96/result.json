@@ -1,0 +1,180 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 5
+      },
+      "problem": "Stop 3, card 5 quotes \"to this day.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 3,
+        "card": 5,
+        "verses": "Psalm 119:91"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "This non-opening story card has three sentences: the request for comfort, the explanation about God's promise, and the cookie joke. Non-opening story cards are limited to one or two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "Psalm 119:76"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "This story card runs through five sentences or sentence-length fragments, including \"Two words, friend,\" \"No speech, no big wind-up,\" and \"Sometimes that's the whole prayer.\" That exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 7,
+        "verses": "Psalm 119:86"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "The question begins \"He ends this stretch\" without identifying \"He\" as the psalmist. It relies on earlier cards for its context instead of saying who is acting within the question itself.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 11,
+        "verses": "Psalm 119:88"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 1
+      },
+      "problem": "The card says the \"whole psalm turns around\" and that the psalmist now \"starts talking about His word.\" He has already discussed God's commandments, word, law, precepts, testimonies and statutes throughout verses 73-88. Verse 89 introduces a new statement about the word's everlasting stability, not the psalm's first turn to the subject of God's word.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "He never says anything the text shows is wrong."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 1,
+        "verses": "Psalm 119:89"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 3
+      },
+      "problem": "This story card exceeds two sentences with \"He says...\", \"ALL of them!\", \"Me?\", and the sentence about his edges wearing down.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 3,
+        "verses": "Psalm 119:90"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 5
+      },
+      "problem": "The sequence beginning \"Then he says...\" and continuing through \"Not...\", \"Not...\", and \"TO. THIS. DAY.\" is well beyond the two-sentence limit for a non-opening story card.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 5,
+        "verses": "Psalm 119:91"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 11
+      },
+      "problem": "This non-opening story card has three sentences: the statement about perfection, \"Tell me about it, friend,\" and the joke about his edges.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 11,
+        "verses": "Psalm 119:96"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 3,
+        "card": 13
+      },
+      "problem": "This closing card is only the 'story isn't over' line and tells no verse. It still cites Psalm 119:96, which card 12 already used.",
+      "question": "What should a story card cite when it carries only the 'story continues' line and tells no verse? Should it repeat the last verse, cite nothing, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 3,
+        "card": 13,
+        "verses": "Psalm 119:96"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 3,
+        "card": 13
+      },
+      "problem": "The last story card is only the 'story isn't over' line and tells no part of the passage, but it cites Psalm 119:96. The citation rule says a story card cites the verses it tells. This card tells none, and the JSON format expects a verses value.",
+      "question": "What should the verses field be on a story card that carries only the continuation line: the passage's last verse, the whole passage, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 3,
+        "card": 13,
+        "verses": "Psalm 119:96"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Stop 1, card 1 quotes \"Blessed be the LORD, my Rock.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Psalm 144:1"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Four of the six choice cards are multiple choice, while true-or-false and fill-in-the-blank appear only once each. The stop also ends with three multiple-choice cards in a row, so multiple choice dominates by a wide margin.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "No type dominates a stop by a wide margin."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "Psalm 144:1-8"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The walkthrough covers the oxen, the unbroken walls and the absence of captivity from verse 14, but no card covers the remaining detail that there will be no cry of lament in the streets. This leaves David's closing picture of blessing incomplete.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 12,
+        "verses": "Psalm 144:14"
+      }
+    }
+  ],
+  "human": []
+}

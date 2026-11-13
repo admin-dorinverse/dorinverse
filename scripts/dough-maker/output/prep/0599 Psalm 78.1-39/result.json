@@ -1,0 +1,54 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "After card 11 asks about Psalm 78:11, this card goes back to Psalm 78:10. These two questions should be reversed so the stop follows the passage's order.",
+      "rule": {
+        "link": "prep-walkthrough.md#stops",
+        "text": "Each stop covers the next stretch of the passage, in order, and gives its verse range."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 12,
+        "verses": "Psalm 78:10"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 3,
+        "card": 9
+      },
+      "problem": "This card opens with 'They forgot what He had done,' a callback to Psalm 78:11, but cites only Psalm 78:39. Stop 3 card 3 calls back to God splitting the rocks (78:15) and cites only Psalm 78:35. The citation rule says 'no wider and no narrower,' but citing the full range for a callback, like Psalm 78:11-39, would be misleading.",
+      "question": "When a story card calls back to a verse from an earlier card, should its citation include that earlier verse? If so, how, given that a range would cover everything in between?",
+      "by": "opus",
+      "at": {
+        "stop": 3,
+        "card": 9,
+        "verses": "Psalm 78:39"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "The choice cards go out of verse order. Card 11 asks about Psalm 78:11 before card 12 asks about 78:10. In stop 3, card 4 asks about 78:37 before card 5 tells 78:36-37. The docs say stops run through the passage in order and story cards move it forward. They don't say whether choice cards inside a stop must also follow verse order.",
+      "question": "Must choice cards inside a stop follow the verse order of the passage, or may they skip ahead and then come back?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "Psalm 78:11"
+      }
+    }
+  ]
+}
