@@ -93,7 +93,7 @@ export function passing(e) {
   const d = String(e.detail ?? '');
   if (/^(402|408|429|5\d\d):/.test(d)) return true;
   if (/^Couldn’t reach OpenRouter/.test(e.message)) return true;
-  return /can't reach the API|ENOTFOUND|EAI_AGAIN|ECONNRESET|ECONNREFUSED|ETIMEDOUT|ENETUNREACH|fetch failed|socket hang up|connection error|network|overloaded|\b(500|502|503|504|529)\b/i.test(d);
+  return /can't reach the API|ENOTFOUND|EAI_AGAIN|ECONNRESET|ECONNREFUSED|ETIMEDOUT|ENETUNREACH|fetch failed|socket hang up|connection error|network|overloaded|rate.?limit|too many requests|\b(429|500|502|503|504|529)\b/i.test(d);
 }
 
 function json(text, open, close, what) {
