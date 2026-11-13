@@ -1,0 +1,47 @@
+{
+  "agent": [],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "The last story card is only the line saying the story isn't over. It tells no part of 2 Chronicles 31:21, but it cites that verse. The docs allow a card that is just this line, but they don't say what a story card that tells no verse should cite.",
+      "question": "When the final story card is only the 'story isn't over' line, what should its verses field be: the passage's last verse, the whole passage, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 9,
+        "verses": "2 Chronicles 31:21"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "This final card is only the 'story isn't over' line and tells nothing from the passage, but it cites 2 Chronicles 31:21.",
+      "question": "When the last story card is only the continuation line, what should its verses field cite: the last verse of the passage, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 9,
+        "verses": "2 Chronicles 31:21"
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "All three true-or-false cards (stop 1 card 3, stop 1 card 13, stop 2 card 7) are worded as a negative trap ('they stop there', 'they're the only ones', 'with half his heart'), and the answer is always False. A baker could learn the pattern and answer without thinking.",
+      "question": "Should true-or-false cards be required to mix True and False answers and avoid a repeated 'trap' wording? The no-formula rule covers question types and their order, not this.",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}

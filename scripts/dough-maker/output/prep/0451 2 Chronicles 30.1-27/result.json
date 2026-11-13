@@ -1,0 +1,108 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": null,
+      "problem": "The fill-in-the-blank cards repeatedly require guesses at unrevealed details rather than inferences from the setup. For example, the earlier cards give no way to reason out Assyria (stop 1 card 10), scorn and mock (stop 1 card 16), Kidron (stop 2 card 3), or Solomon (stop 3 card 8). The second month and the length of the extension likewise depend on guessing (stop 1 card 4 and stop 3 card 4).",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "Verse 3 gives two reasons the Passover could not be kept at the regular time: too few priests had consecrated themselves, and the people had not gathered in Jerusalem. The correct option names only the first reason, and no other card tells the second, leaving the explanation of the delay incomplete.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "2 Chronicles 30:3"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 18
+      },
+      "problem": "\"Mocked up north\" retells the response in verse 10, but the card cites only verse 12. The citation does not cover all the passage content the card uses.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 18,
+        "verses": "2 Chronicles 30:12"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The correct answer, \"Sets his heart on seeking God,\" comes from verse 19. Verse 18 supplies the quotation and setup in the question, but the choice card's citation should be only 2 Chronicles 30:19, not 2 Chronicles 30:18-19.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "A choice card cites only the verses of its right answer."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 12,
+        "verses": "2 Chronicles 30:18-19"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 1
+      },
+      "problem": "The opening clause, \"The people are healed,\" retells verse 20, but the card cites only verse 21. Either that recap needs to be removed or the citation must account for the verse actually used.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 1,
+        "verses": "2 Chronicles 30:21"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The two right answers, scorn and mock, can be swapped ('They mock and scorn them') without changing the meaning, but the JSON ties scorn to blank 1 and mock to blank 2. A baker who puts them in the other order could argue they're right.",
+      "question": "When the two right words in a two-blank card can be swapped without changing the meaning, should either order count as right, or should two-blank cards avoid interchangeable words?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "2 Chronicles 30:10"
+      }
+    }
+  ]
+}
