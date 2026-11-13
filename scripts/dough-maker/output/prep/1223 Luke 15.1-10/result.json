@@ -1,0 +1,72 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "This non-opening story card has three sentences: the sheep setup, 'Now me?' and the chocolate-chip line. Non-opening story cards are limited to two sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Luke 15:4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "The blank asks for 'angels,' but no earlier card mentions angels or provides enough context to reason out that detail. The baker is guessing unseen wording rather than demonstrating the line's meaning.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 15,
+        "verses": "Luke 15:10"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 17
+      },
+      "problem": "Card 17 holds only the line saying the story isn't over. It tells nothing from any verse, yet it cites Luke 15:10, which was already asked on card 16. The rule says story cards cite exactly the verses they tell, but the docs don't say what this kind of card should cite.",
+      "question": "When the last story card is only the story-isn't-over line, what should its 'verses' field cite: the passage's last verse, nothing (null or an empty string), or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 17,
+        "verses": "Luke 15:10"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "This card is only the 'story isn't over' line and tells nothing from the passage, but it cites Luke 15:10. Luke 15:10 is already told and cited on choice card 15. The rule says a story card cites the verses it tells, but the docs don't say what to cite when a closing card tells no verse at all.",
+      "question": "When the last story card is only the 'story isn't over' line, what should its verses field cite: the passage's last verse, the stop's range, or nothing?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 16,
+        "verses": "Luke 15:10"
+      }
+    }
+  ]
+}

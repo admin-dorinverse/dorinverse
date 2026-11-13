@@ -1,0 +1,57 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card has four sentences: the boat setup, “A boat trip with Jesus?”, the junk-drawer joke, and “Jesus tells them exactly where they're headed.” The opening card is limited to three sentences.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "The opening card can be up to 3 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Luke 8:22"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 3
+      },
+      "problem": "The wrong answer “chained” is true of this same man earlier in the passage: Luke 8:29 says he had been bound with chains and shackles. It is false at the moment when he sits at Jesus' feet, but not false anywhere in the passage.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "Each wrong answer must be false anywhere in the passage, not just at that moment."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 3,
+        "verses": "Luke 8:35"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The two blanks in \"The disciples are ___ and ___\" can be filled in either order. \"amazed and frightened\" means exactly the same thing, but it would be marked wrong because \"frightened\" is set as blank 1 and \"amazed\" as blank 2.",
+      "question": "When the two right words in a two-blank card can be swapped without changing the meaning, should the app accept either order, or should the card be rewritten so each blank has only one possible right word?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 10,
+        "verses": "Luke 8:25"
+      }
+    }
+  ]
+}
