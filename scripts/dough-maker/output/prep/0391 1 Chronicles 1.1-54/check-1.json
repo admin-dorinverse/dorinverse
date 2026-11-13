@@ -1,0 +1,219 @@
+{
+  "by": "opus",
+  "out": {
+    "passage": "1 Chronicles 1:1-54",
+    "stops": [
+      {
+        "stop": 1,
+        "verses": "1 Chronicles 1:1-54",
+        "cards": [
+          {
+            "card": 1,
+            "kind": "story",
+            "verses": "1 Chronicles 1:1-4",
+            "text": "Chronicles doesn't open with \"once upon a time.\" The very first word is a name: Adam. Then Seth, Enosh, and on down to Noah. No ages, no stories, just names, like the book walked in and started reading the guest list. It ends with Noah's three sons: Shem, Ham and Japheth."
+          },
+          {
+            "card": 2,
+            "kind": "story",
+            "verses": "1 Chronicles 1:5-23",
+            "text": "Next come the families that grew from Noah's three sons, spreading out across the earth. Two names stand out. Nimrod began to be a mighty one on the earth. And Peleg got his name because in his days the earth was divided. Imagine your name being the headline from the week you were born."
+          },
+          {
+            "card": 3,
+            "kind": "story",
+            "verses": "1 Chronicles 1:24-27",
+            "text": "Then the list zooms in on one line from Shem: Arphaxad, Shelah, Eber, Peleg, and on down through Terah. And finally, after all those names, it lands on one you KNOW: Abram, that is, Abraham. Friend, I spent years counting dust in a junk drawer, and even I was ready for a familiar face."
+          },
+          {
+            "card": 4,
+            "kind": "story",
+            "verses": "1 Chronicles 1:28-33",
+            "text": "Abraham's sons are Isaac and Ishmael. Ishmael has twelve sons, starting with his firstborn, Nebaioth. Then Keturah, Abraham's concubine, has six more sons, and Midian is one of them. That family reunion needs a BIGGER yard."
+          },
+          {
+            "card": 5,
+            "kind": "story",
+            "verses": "1 Chronicles 1:34-42",
+            "text": "Isaac's sons are Esau and Israel, the man also called Jacob (Genesis 32:28). Then the list follows Esau's family, Amalek among them, and after that the family of Seir."
+          },
+          {
+            "card": 6,
+            "kind": "story",
+            "verses": "1 Chronicles 1:43-54",
+            "text": "Last up: eight kings who reigned in Edom before any king reigned over the Israelites. Same beat every time. A king dies, and someone reigns in his place. Then comes a list of Edom's chiefs, and that's the whole chapter, friend. You just walked from Adam to Abraham without breaking a sweat."
+          }
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Stop 1 has 6 story cards and only 0 choice cards.",
+      "rule": {
+        "link": "prep-walkthrough.md#stops",
+        "text": "Choice cards are equal to or more than story cards in every stop."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "1 Chronicles 1:1-54"
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "The whole passage (1 Chronicles 1:1-54) is genealogy, name lists and a king list, so all of it falls under long stretches. The output splits it into six summary story cards with no choice cards. The docs conflict here. A long stretch is summed up in one story card, never gets a choice card and never gets a stop of its own. But every stop needs at least as many choice cards as story cards, and a short passage should not be forced to fill a stop.",
+      "question": "What should Prep do when an entire passage is a long stretch? Options include one summary card, one card per kind of list (nations, Abraham's line, Edom's kings and chiefs), a stop with no choice cards, a handful of choice cards on standout details like Nimrod, Peleg or Abraham, or skipping the walkthrough. Can a stop exist with zero choice cards in this case?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Cards 2, 3, 4 and 6 run 3 to 5 sentences, and the opening card runs 5. The sentence limits say 3 for the opening card and 1 to 2 for every other story card. But the doc's own good long-stretch example (Genesis 5) is 4 sentences, so it's unclear whether the limits apply to summary story cards.",
+      "question": "Do the sentence limits (3 for the opening card, 1 to 2 for other story cards) apply to summary story cards for long stretches, given the Genesis 5 example runs 4 sentences?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card never says what is going on in the passage beyond listing names: what book this is, that it traces families, or why the list starts here. It jumps straight into the joke and the names.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "The opening card can be up to 3 sentences. It says who is speaking, to whom, and what is going on. If the passage starts in the middle of a thought, it gives the context."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "1 Chronicles 1:1-4"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "\"Spreading out across the earth\" is not in 1 Chronicles 1:5-23, which only lists the sons. The idea comes from Genesis 10:32, but no reference is given.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "References. Every Bible fact he states carries its reference."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 2,
+        "verses": "1 Chronicles 1:5-23"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "The joke \"Imagine your name being the headline from the week you were born\" ties the earth's division to the week Peleg was born. The text only says \"in his days\" (1 Chronicles 1:19), so the joke adds a time the text doesn't give.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Times stay true. No time in the text means none added."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 2,
+        "verses": "1 Chronicles 1:5-23"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "Seir shows up with no word on who he is. The passage never says, and Genesis 36:20 calls him Seir the Horite.",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "New people. The first time someone shows up, he says simply who they are, like \"Cyrus, king of Persia\" or \"Moses, Israel's leader.\""
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "1 Chronicles 1:34-42"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "The card is a flat list with none of Papa Dorin's voice. It reads like a summary, not a storyteller.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Short, but not stripped down. A story card still has enough of Papa Dorin's voice and enough context that the moment makes sense."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "1 Chronicles 1:34-42"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "\"Same beat every time. A king dies, and someone reigns in his place\" isn't true every time. Bela, the first king, doesn't follow a death. When the last king, Hadad, dies, no king reigns in his place, and the chiefs follow instead (1 Chronicles 1:43, 51).",
+      "rule": {
+        "link": "papa-dorin.md#facts-and-scripture",
+        "text": "Noticing. What he points out must be true. \"Same words\" means an exact match."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "1 Chronicles 1:43-54"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "\"You just walked from Adam to Abraham\" misstates what the passage covers. The chapter goes past Abraham through Isaac, Esau, Seir and the kings and chiefs of Edom.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Papa Dorin can retell in his own words and fill in what the text clearly implies. Scene-setting details are fine. He never says anything the text shows is wrong."
+      },
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 6,
+        "verses": "1 Chronicles 1:43-54"
+      }
+    }
+  ]
+}

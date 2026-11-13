@@ -1,0 +1,72 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "This non-opening story card is punctuated as four sentences: \"Nope.\", the sentence telling David's confession, \"No excuses.\", and the final sentence beginning \"No\". That exceeds the two-sentence limit.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "1 Chronicles 21:8"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "The card says that Gad is given a message to carry to David, which uses the \"Go and tell David\" instruction in 1 Chronicles 21:10. Its citation covers only 21:9, so it is narrower than the verses the card uses.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 12,
+        "verses": "1 Chronicles 21:9"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The two blanks are fixed in order: Levi is blank 1 and Benjamin is blank 2. The question 'leaves two tribes out: ___ and ___' gives no reason for that order. A baker who puts Benjamin first and Levi second has the right answer but could be marked wrong.",
+      "question": "When a two-blank question has right answers that could go in either order, should both orders count as right? Or must the question be reworded so only one order makes sense?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "1 Chronicles 21:6"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The question is 'Joab's count leaves two tribes out: ___ and ___.' Levi is set as blank 1 and Benjamin as blank 2. Nothing in the question fixes the order, so a baker who puts Benjamin in the first blank and Levi in the second gives a true answer that would be marked wrong.",
+      "question": "When a two-blank question has blanks that can be swapped, like a pair of names joined by 'and', should either order count as right? Or should a question like this always be rewritten so each blank has only one possible answer?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 7,
+        "verses": "1 Chronicles 21:6"
+      }
+    }
+  ]
+}

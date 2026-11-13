@@ -1,0 +1,38 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1
+      },
+      "problem": "Most of this stop's choices are not informed guesses. Cards 2, 4, 7, 11 and 15 ask for Josiah's exact age, whether he follows Amon, what Hilkiah is to count, whether the workers must account for the money, and which report Shaphan gives first without earlier cards supplying a basis for reasoning out the answers. At least five of the nine choices therefore depend on luck, rather than only a few discovery questions among mostly informed picks.",
+      "rule": {
+        "link": "prep-walkthrough.md#an-informed-guess-never-luck",
+        "text": "A few of those are okay, as long as most choice cards are informed guesses."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": null,
+        "verses": "2 Kings 22:1-11"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The card tells facts from 2 Kings 21:2, 21:20 and 21:26, which are outside the passage, and gives their references inside the text. Its \"verses\" field is only 2 Kings 22:1. The citation rule says a story card cites every verse it uses, \"no narrower.\" But the stop's range and the passage stay inside 2 Kings 22, so citing 2 Kings 21:2-22:1 would run outside both.",
+      "question": "When a story card uses facts from outside the passage, should its \"verses\" field include those outside verses, even though that runs past the passage and the stop's range? Or should it cite only the passage verses it tells, with the outside references given in the card's text?",
+      "by": "opus",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "2 Kings 22:1"
+      }
+    }
+  ]
+}
