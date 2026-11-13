@@ -1,0 +1,75 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "This standalone story card tells background from Jeremiah 37:15 rather than part of Jeremiah 38. Although outside facts can help, this card does not itself advance the passage; the background needs to ride along on a card that tells the next piece of Jeremiah 38.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card tells part of the passage."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 16,
+        "verses": "Jeremiah 37:15"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 17
+      },
+      "problem": "The citation is too wide for a choice card. Verse 25 supplies the question's conditional setup, but the correct answer itself, the petition concerning Jonathan's house, comes entirely from verse 26. The card should cite Jeremiah 38:26.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "A choice card cites only the verses of its right answer."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 17,
+        "verses": "Jeremiah 38:25-26"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "The wrong answer \"Ebed-melech stepped in to defend him\" describes something that really happened earlier in this passage, in Jeremiah 38:7-10. It is not why the officials stop questioning Jeremiah in verse 27, but a wrong answer cannot simply be true at a different moment in the passage.",
+      "rule": {
+        "link": "prep-walkthrough.md#answer-rules",
+        "text": "Each wrong answer must be false anywhere in the passage, not just at that moment."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 18,
+        "verses": "Jeremiah 38:27"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 20
+      },
+      "problem": "This closing card is only the 'story isn't over' line, which is allowed because Jeremiah 38:28 is asked on card 19. It still cites Jeremiah 38:28, even though it tells nothing from that verse.",
+      "question": "What should the verses field be on a story card that is only the 'story isn't over' line and tells no verse: the passage's last verse, the stop's range, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 20,
+        "verses": "Jeremiah 38:28"
+      }
+    }
+  ]
+}

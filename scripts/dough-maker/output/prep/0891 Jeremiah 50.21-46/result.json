@@ -1,0 +1,93 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This is not the walkthrough's opening card, but it has three sentences: the statement about Israel and Judah, the question about being stuck, and the junk-drawer punchline.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 1,
+        "verses": "Jeremiah 50:33"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 4
+      },
+      "problem": "The question does not identify whose case the LORD is pleading. “Their” points back to Israel and Judah, who are named only on earlier cards, rather than giving that context in the question itself.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 4,
+        "verses": "Jeremiah 50:34"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 5
+      },
+      "problem": "This non-opening story card has three sentences: “Hands hanging limp?”, the timer-and-dough joke, and the statement about the lion.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 5,
+        "verses": "Jeremiah 50:44"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 7
+      },
+      "problem": "The quotation contains three direct questions, making this non-opening story card three sentences long rather than one or two.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "Every other story card is 1 to 2 sentences."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 7,
+        "verses": "Jeremiah 50:44"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 3,
+        "card": 11
+      },
+      "problem": "The last story card is only the \"story isn't over\" line and tells no verse, but it cites Jeremiah 50:46. The citation rule says a story card cites exactly the verses it tells, and this card tells none.",
+      "question": "What should the verses field be for a final story card that is only the story-continues line (allowed when the last verse is asked on a choice card)? Should it repeat the last verse, use the whole stop range, or be empty or null?",
+      "by": "opus",
+      "at": {
+        "stop": 3,
+        "card": 11,
+        "verses": "Jeremiah 50:46"
+      }
+    }
+  ]
+}

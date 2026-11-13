@@ -1,0 +1,40 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 3
+      },
+      "problem": "Stop 3 has 8 story cards and only 7 choice cards.",
+      "rule": {
+        "link": "prep-walkthrough.md#stops",
+        "text": "Choice cards are equal to or more than story cards in every stop."
+      },
+      "by": "script",
+      "at": {
+        "stop": 3,
+        "card": null,
+        "verses": "Ezekiel 21:8-17"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "This card is only a bakery joke and a reaction to the previous answer. It does not tell another part of Ezekiel 20:49 or carry the passage forward; the joke needs to ride along on a card that tells part of the passage.",
+      "rule": {
+        "link": "prep-walkthrough.md#everything-moves-the-passage-along",
+        "text": "Every story card tells part of the passage. Jokes ride along on those cards."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 11,
+        "verses": "Ezekiel 20:49"
+      }
+    }
+  ],
+  "human": []
+}

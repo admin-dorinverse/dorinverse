@@ -1,0 +1,84 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "Stop 1, card 8 quotes \"the city of praise.\", which isn't the exact BSB wording.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Quotes: Quotation marks around Bible words mean the exact BSB wording, punctuation included."
+      },
+      "by": "script",
+      "at": {
+        "stop": 1,
+        "card": 8,
+        "verses": "Jeremiah 49:25"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening identifies the LORD and says the message concerns Damascus, but it never says to whom that message comes. \"Concerning Damascus\" gives the subject, not the recipient, so the opening does not provide the required speaker-and-audience context.",
+      "rule": {
+        "link": "prep-walkthrough.md#what-bite-sized-means",
+        "text": "The opening card can be up to 3 sentences. It says who is speaking, to whom, and what is going on."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 1,
+        "verses": "Jeremiah 49:23"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The question asks about \"the calamity on this nation\" without identifying the nation. Its subject depends on the preceding story card, which is no longer on screen, so the question does not supply its own context.",
+      "rule": {
+        "link": "prep-walkthrough.md#how-to-word-a-choice-card",
+        "text": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 12,
+        "verses": "Jeremiah 49:32"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Damascus, Hamath, Arpad, Kedar, Hazor and Elam are never introduced. Elam in particular is a nation that shows up with no word about who they are. The 'New people' rule gives examples of individuals (Cyrus, Moses) and doesn't say whether it covers nations, peoples and cities.",
+      "question": "Does the 'New people' rule (papa-dorin.md, Facts and Scripture) apply to nations, peoples and cities like Kedar and Elam? Or are place and people-group names left to the dictionary pop-ups?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    },
+    {
+      "covered": false,
+      "where": null,
+      "problem": "Kedar, the kingdoms of Hazor, Elam, Hamath and Arpad first appear without being identified. Only the people (Nebuchadnezzar, Zedekiah, Ben-hadad, Jeremiah) are. This Hazor isn't the Canaanite city from Joshua, so a baker might mix them up. Kedar and Elam are peoples or nations, not single persons.",
+      "question": "Does the \"New people\" rule (\"The first time someone shows up, he says simply who they are\") also apply to nations, peoples and cities that appear for the first time, like Kedar, Hazor and Elam? Or is the dictionary pop-up enough for them?",
+      "by": "opus",
+      "at": {
+        "stop": null,
+        "card": null,
+        "verses": null
+      }
+    }
+  ]
+}
