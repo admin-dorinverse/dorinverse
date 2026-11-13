@@ -88,6 +88,7 @@ class Pause extends Error {}
 // Problems that pass by themselves, so the run waits them out (runPrep's waitOut): no internet (Kimi's fetch fails,
 // or Claude Code can't reach the API), out of OpenRouter credits, too many requests, a server-side error
 const WAIT = 5 * 60_000;
+const EMPTY_TRIES = 4;   // more tries for an empty Kimi answer, WAIT apart, before the run stops
 export function passing(e) {
   if (e instanceof Unreadable) return false;
   const d = String(e.detail ?? '');
@@ -98,7 +99,7 @@ export function passing(e) {
 
 function json(text, open, close, what) {
   const a = text.indexOf(open), b = text.lastIndexOf(close);
-  if (!text.trim()) throw new Unreadable(`gave an empty answer instead of ${what}`);
+  if (!text.trim()) throw Object.assign(new Unreadable(`gave an empty answer instead of ${what}`), { empty: true });
   try { if (a >= 0 && b > a) return JSON.parse(text.slice(a, b + 1)); } catch { /* below */ }
   throw new Unreadable(`gave an answer that isn't ${what}`);
 }
@@ -189,14 +190,25 @@ export async function runPrep(ids, { fresh = false, agents = 1, models = { opus:
     notify('Prep is going again', [`It waited ${mins} min and carried on by itself`]);
   }
 
+  // Kimi's empty answers come from its end (the answer is cut off, and OpenRouter charges nothing), so an empty
+  // Kimi answer is tried again every 5 minutes, up to 4 more times; the 4th one in a row stops the run.
   async function twice(p, who, what, fn) {
-    let tried = false;
+    let tried = false, empties = 0;
     for (;;) {
       try { const r = await fn(); backUp(); return r; }
       catch (e) {
         if (e instanceof LimitError || e instanceof Pause) throw e;
         if (passing(e)) { await waitOut(e, p, what); continue; }
         const why = e instanceof Unreadable ? `${who} ${e.message}` : e.message;
+        if (who === 'Kimi' && e.empty) {
+          if (empties === EMPTY_TRIES) throw new Error(`${why}, ${EMPTY_TRIES + 1} times in a row (${EMPTY_TRIES} more tries, 5 minutes apart), so the run stopped.`);
+          empties++;
+          problems.push(`${what} for ${span(p.start, p.end)}: ${why}, tried again after 5 minutes (${empties} of ${EMPTY_TRIES})`);
+          logEvent({ type: 'note', title: 'Trying again in 5 minutes', lines: [`${what} for ${span(p.start, p.end)}`, why,
+            `Try ${empties} of ${EMPTY_TRIES}. The other passages keep going.`], problem: true });
+          await new Promise((res) => setTimeout(res, WAIT));
+          continue;
+        }
         if (tried) throw Object.assign(new Error(why), { detail: e.detail, twice: true });
         tried = true;
         problems.push(`${what} for ${span(p.start, p.end)}: retried once (${why})`);
