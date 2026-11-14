@@ -1,0 +1,72 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "The blank asks for locusts, but the earlier cards provide no context from which the baker could reason out which creature emerges from the smoke. This is a guess at wording the baker has not yet seen.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 1,
+        "card": 5,
+        "verses": "Revelation 9:3"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 2,
+        "card": 3
+      },
+      "problem": "The blank asks for Euphrates, which has not appeared in the earlier cards and cannot be inferred from the setup about the sixth angel and the voice. The baker can only guess the unseen river name.",
+      "rule": {
+        "link": "prep-walkthrough.md#question-types",
+        "text": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 2,
+        "card": 3,
+        "verses": "Revelation 9:14"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "This last story card is only the 'story isn't over' line and tells no verse, but it cites Revelation 9:21. Verse 9:21 was already told and asked on card 17. The citation rule assumes every story card tells verses, and the JSON needs a value in 'verses'.",
+      "question": "When a last story card holds only the 'story isn't over' line and tells no verses, what should its 'verses' field cite: the passage's last verse, the stop's whole range, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 18,
+        "verses": "Revelation 9:21"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "The last story card is only the line saying the story isn't over. It tells nothing from any verse, but it cites Revelation 9:21, which was already asked on card 17. The citation rule says a story card cites the verses it tells, and this card tells none.",
+      "question": "When the last story card is just the line saying the story isn't over, what should its \"verses\" field cite: the passage's last verse, the last verse told before it, or nothing?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 18,
+        "verses": "Revelation 9:21"
+      }
+    }
+  ]
+}

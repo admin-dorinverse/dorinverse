@@ -1,0 +1,86 @@
+{
+  "agent": [
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 1
+      },
+      "problem": "The first sentence retells the kings', merchants' and sailors' cries of Woe from Revelation 18:10, 18:16 and 18:19, but the card cites only Revelation 18:20. The citation is narrower than the verses the card uses.",
+      "rule": {
+        "link": "prep-walkthrough.md#scripture-rules",
+        "text": "Cite exactly what the card uses. Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 1,
+        "verses": "Revelation 18:20"
+      }
+    },
+    {
+      "covered": true,
+      "where": {
+        "stop": 3,
+        "card": 13
+      },
+      "problem": "The only card covering Revelation 18:24 gives an incomplete answer to What is it? It names the blood of prophets and saints but omits the blood of all who had been slain on the earth. No other card teaches that final, sweeping part of the indictment against Babylon.",
+      "rule": {
+        "link": "prep-walkthrough.md#goal",
+        "text": "When the baker leaves Prep, they understand the whole passage without missing an important detail."
+      },
+      "by": "kimi",
+      "at": {
+        "stop": 3,
+        "card": 13,
+        "verses": "Revelation 18:24"
+      }
+    }
+  ],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2
+      },
+      "problem": "Revelation 18:9-19 is written in the future tense ('will weep and wail,' 'will stand at a distance,' 'will throw dust'). It describes what will happen, not something John watches happen. The cards retell it in the present tense as events in progress, for example 'The kings of the earth see the smoke' and 'They throw dust on their heads.' Stop 3 card 1 does the same with 'Down on earth, everybody's crying.'",
+      "question": "In prophetic passages, may Papa Dorin retell foretold events (future tense in the BSB) in the present tense, as if they are happening in the vision? Or must he keep them as what 'will' happen?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": null,
+        "verses": "Revelation 18:9-19"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 3,
+        "card": 14
+      },
+      "problem": "This closing card is only the 'story isn't over' line. It tells no verse but cites Revelation 18:24. The citation rule says a story card cites the verses it tells. The docs allow a final card that is just this line, but they don't say what its 'verses' field should hold.",
+      "question": "When the last story card is only the 'story isn't over' line and tells no verse, what should its 'verses' field be? Should it be the passage's last verse, null or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 3,
+        "card": 14,
+        "verses": "Revelation 18:24"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 3,
+        "card": 14
+      },
+      "problem": "The closing story card is only the \"story isn't done\" line and tells no verse, but it cites Revelation 18:24. The rule says story cards cite the verses they tell, and this card tells none.",
+      "question": "When a closing story card is only the \"story isn't done\" line and tells no verse, what should its \"verses\" field cite: the passage's last verse, nothing, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 3,
+        "card": 14,
+        "verses": "Revelation 18:24"
+      }
+    }
+  ]
+}
