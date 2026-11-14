@@ -21,6 +21,7 @@ import { saveLimits } from './limits.mjs';
 import * as cachewatch from './cachewatch.mjs';
 
 export const OPUS = 'claude-opus-5-5';
+export const SONNET = 'claude-sonnet-5-5';   // the fix run's checker: a different model from the fixer, same subscription
 const npmRoot = spawnSync('npm root -g', { encoding: 'utf8', shell: true }).stdout.trim();
 const EXE = path.join(npmRoot, '@anthropic-ai', 'claude-code', 'bin', process.platform === 'win32' ? 'claude.exe' : 'claude');
 // A fixed name, never a random one: if the folder's name ever reaches the call, it must be the same every time
@@ -31,19 +32,20 @@ export class LimitError extends Error {
   constructor(msg, resetsAt) { super(msg); this.resetsAt = resetsAt; }
 }
 
-export function opus({ system, prompt, passage = null, step = null, role = null, effort = 'medium' }) {
+export function opus({ system, prompt, passage = null, step = null, role = null, effort = 'medium', model = OPUS }) {
+  const name = model === SONNET ? 'sonnet' : 'opus';
   fs.mkdirSync(EMPTY, { recursive: true });
   fs.mkdirSync(PROMPTS, { recursive: true });
   const id = randomUUID();
   const systemFile = path.join(PROMPTS, `${id}.txt`);
   fs.writeFileSync(systemFile, system.map((p) => p.text).join('\n\n'));
-  const args = ['-p', '--model', OPUS, '--effort', effort, '--system-prompt-file', systemFile,
+  const args = ['-p', '--model', model, '--effort', effort, '--system-prompt-file', systemFile,
     '--output-format', 'stream-json', '--verbose', '--tools', '', '--strict-mcp-config', '--disable-slash-commands',
     '--setting-sources', 'project', '--no-session-persistence'];
   const env = { ...process.env };
   delete env.ANTHROPIC_API_KEY;
-  const call = { type: 'call', id, model: 'opus', passage, step, role };
-  const watch = cachewatch.before('opus', system);
+  const call = { type: 'call', id, model: name, passage, step, role };
+  const watch = cachewatch.before(name, system);
   const started = Date.now();
   logEvent({ ...call, status: 'start' });
 
