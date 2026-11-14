@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "Story card 6 already tells the baker that God says 'upon Edom I toss My sandal'. Edom is the only wrong-answer-free name the baker has already seen, so the right answer to card 9 is given away by an earlier card.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "The question says 'with God they will perform with valor' and then asks who will trample their enemies. 'God' is the answer, and the question's own wording points straight to it.",
+      "rule": "A choice card's question never holds its own answer, or a form of it, like \"rock badgers\" for \"in the rocks.\" Ask something else."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Verse 4's two lines (loving devotion beyond the heavens, faithfulness to the clouds) make the same point about how far God's love and faithfulness reach. Card 6 already asked about it, and card 7 asks it again.",
+      "rule": "Two lines that make the same point get one question."
+    }
+  ]
+}

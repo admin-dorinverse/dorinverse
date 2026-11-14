@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 93:1",
-          "text": "This psalm doesn't give us a writer's name, and it doesn't warm up either. No small talk, no 'testing, testing, is this thing on.' The writer opens at FULL volume about the LORD: 'The LORD reigns!'",
+          "text": "Psalm 93 doesn't name its writer, but friend, he sure isn't shy. It takes me three tries and a pep talk to say good morning, and he opens by shouting, 'The LORD reigns! He is robed in majesty…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,18 +18,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 93:1",
-          "question": "The writer just shouted 'The LORD reigns!' Then he says the LORD is robed in majesty. What picture is he painting?",
+          "question": "Majesty isn't all the LORD is wearing. What does the writer say the LORD has clothed and armed Himself with?",
           "answers": [
             {
-              "text": "A King dressed for His throne",
+              "text": "Strength",
               "correct": true
             },
             {
-              "text": "A priest dressed for the temple",
+              "text": "Light",
               "correct": false
             },
             {
-              "text": "A shepherd dressed for the hills",
+              "text": "Righteousness",
               "correct": false
             }
           ],
@@ -41,30 +41,38 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 93:1",
-          "question": "The LORD's robe isn't the only thing He has on. He has clothed and armed Himself with ___.",
+          "question": "Then the writer turns to the world itself. He says the world is firmly established, and it cannot be ___.",
           "answers": [
             {
-              "text": "strength",
+              "text": "moved",
               "correct": true
             },
             {
-              "text": "gold",
+              "text": "counted",
               "correct": false
             },
             {
-              "text": "linen",
+              "text": "seen",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "Psalm 93:2",
+          "text": "Then the writer stops talking ABOUT the LORD and starts talking right TO Him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 93:1",
-          "question": "Then the writer turns to the world itself. He says the world is firmly established and cannot be moved.",
+          "verses": "Psalm 93:2",
+          "question": "The writer tells the LORD that His throne was established long ago.",
           "answers": [
             {
               "text": "True",
@@ -75,31 +83,27 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Psalm 93:2",
-          "text": "Then the writer stops talking ABOUT the LORD and turns to talk right TO Him. It's like bragging on your boss in the break room, looking up, and there he is, except I bet this writer is GLAD He heard every word.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 93:2",
-          "question": "The writer tells the LORD that His throne was established only recently.",
+          "question": "The writer is talking to the LORD about His throne. How far back does he say the LORD Himself goes?",
           "answers": [
             {
-              "text": "True",
+              "text": "All of eternity",
+              "correct": true
+            },
+            {
+              "text": "The days of Noah",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The days of Moses",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -107,68 +111,45 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 93:2",
-          "question": "The LORD's throne goes way back, and so does He. The writer tells the LORD that He is from all ___.",
-          "answers": [
-            {
-              "text": "eternity",
-              "correct": true
-            },
-            {
-              "text": "heaven",
-              "correct": false
-            },
-            {
-              "text": "Zion",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 93:3",
+          "text": "Then the psalm gets LOUD. Something starts rising, and friend, I spent years in a junk drawer where the loudest thing was two dead batteries arguing, so my ears are NOT ready.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Psalm 93:3",
-          "text": "Then, friend, the psalm cranks the volume ALL the way up. Something starts rising, and after years in a silent junk drawer, my ears are NOT ready.",
+          "question": "The writer tells the LORD that the ___ have risen.",
+          "answers": [
+            {
+              "text": "floodwaters",
+              "correct": true
+            },
+            {
+              "text": "nations",
+              "correct": false
+            },
+            {
+              "text": "enemies",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Psalm 93:3",
-          "question": "What does the writer tell the LORD has risen?",
-          "answers": [
-            {
-              "text": "The floodwaters",
-              "correct": true
-            },
-            {
-              "text": "The nations",
-              "correct": false
-            },
-            {
-              "text": "The enemies",
-              "correct": false
-            }
-          ],
+          "text": "The rivers raise their voice, and the seas lift up their pounding waves. It's like a 6 a.m. group chat where one buzz turns into ten and the phone rattles right off the counter.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Psalm 93:3",
-          "text": "And it keeps coming. The rivers raise their voice, and the seas lift up their pounding waves, like a group chat at 6 a.m. where one buzz turns into ten and the phone rattles right off the counter.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 93:4",
@@ -183,7 +164,7 @@
               "correct": false
             },
             {
-              "text": "Walking on the waves",
+              "text": "Deep below the sea",
               "correct": false
             }
           ],
@@ -191,53 +172,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 93:4",
-          "question": "The mighty breakers of the sea are pounding away, but the writer says the LORD on high is ___.",
-          "answers": [
-            {
-              "text": "majestic",
-              "correct": true
-            },
-            {
-              "text": "hidden",
-              "correct": false
-            },
-            {
-              "text": "asleep",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 93:3-4",
-          "question": "The floods rise and the breakers pound, but the LORD on high is majestic above all that roar. What is the writer showing with that picture?",
-          "answers": [
-            {
-              "text": "The LORD rules over even the mightiest waters",
-              "correct": true
-            },
-            {
-              "text": "The LORD and the waters are evenly matched",
-              "correct": false
-            },
-            {
-              "text": "The roaring waters will get the last word",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 93:5",
           "text": "Last verse, and the sea's big solo is OVER. Now the writer talks to the LORD about His testimonies.",
@@ -245,7 +180,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 93:5",
@@ -264,7 +199,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 93:5",
@@ -287,41 +222,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 93:5",
-          "question": "The writer says holiness adorns the LORD's house for all the days to come.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 93:5",
-          "question": "In the middle of this psalm, the waters rise, roar and pound. After all that, what does the writer end the psalm on?",
+          "question": "How long does the writer say holiness will adorn the LORD's house?",
           "answers": [
             {
-              "text": "Things of the LORD that stand firm and last",
+              "text": "For all the days to come",
               "correct": true
             },
             {
-              "text": "Waves that finally calm down and go quiet",
+              "text": "Until the floods rise again",
               "correct": false
             },
             {
-              "text": "A prayer asking the LORD to stop the flood",
+              "text": "As long as the world stands",
               "correct": false
             }
           ],

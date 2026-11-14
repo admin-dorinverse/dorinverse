@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 103:1",
-          "text": "This psalm is from David, the shepherd who became king of Israel. And who's the first one he preaches to? HIMSELF: \"Bless the LORD, O my soul; all that is within me, bless His holy name.\"",
-          "needs_agent_fix": true,
+          "text": "This psalm is from David, king of Israel. And who's the first one he gives orders to? HIMSELF: \"Bless the LORD, O my soul; all that is within me, bless His holy name.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -57,28 +57,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 103:3",
-          "question": "David reminds his soul that the LORD ___ all your iniquities and ___ all your diseases.",
+          "question": "David reminds his soul that the LORD ___ all your iniquities and heals all your diseases.",
           "answers": [
             {
               "text": "forgives",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "heals",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "records",
               "correct": false
             },
             {
-              "text": "punishes",
-              "correct": false
-            },
-            {
-              "text": "ignores",
+              "text": "exposes",
               "correct": false
             }
           ],
@@ -143,16 +133,39 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 103:6",
-          "text": "Then David zooms out past his own soul. He says the LORD executes righteousness and justice.",
+          "text": "Then David zooms out past his own soul, to what the LORD does for other people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 103:6",
-          "question": "David says the LORD executes righteousness and justice for all the oppressed.",
+          "question": "David says the LORD executes righteousness and justice. For whom?",
+          "answers": [
+            {
+              "text": "All the oppressed",
+              "correct": true
+            },
+            {
+              "text": "The kings of the nations",
+              "correct": false
+            },
+            {
+              "text": "The priests in the temple",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 103:7",
+          "question": "David says the LORD made His ways known to Moses, Israel's leader.",
           "answers": [
             {
               "text": "True",
@@ -167,45 +180,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 103:7",
-          "question": "David says the LORD made His deeds known to the people of Israel. Who did He make His ways known to?",
-          "answers": [
-            {
-              "text": "Moses",
-              "correct": true
-            },
-            {
-              "text": "Abraham",
-              "correct": false
-            },
-            {
-              "text": "Elijah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 103:8",
-          "question": "David says the LORD is compassionate and gracious, ___ to anger, abounding in loving devotion.",
+          "question": "David says the LORD is compassionate and gracious. How does David describe the LORD when it comes to anger?",
           "answers": [
             {
-              "text": "slow",
+              "text": "Slow to anger",
               "correct": true
             },
             {
-              "text": "quick",
+              "text": "Quick to flare up",
               "correct": false
             },
             {
-              "text": "ready",
+              "text": "Hard to predict",
               "correct": false
             }
           ],
@@ -225,15 +215,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 103:10",
-          "question": "David says the LORD has not repaid us according to our iniquities.",
+          "question": "David says the LORD has dealt with us according to our sins.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -258,18 +248,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 103:11",
-          "question": "David says something about the LORD is as great as the heavens are high above the earth. What is it?",
+          "question": "David says the LORD's loving devotion is as great as the heavens are high above the earth. Who is it for?",
           "answers": [
             {
-              "text": "His loving devotion for those who fear Him",
+              "text": "Those who fear Him",
               "correct": true
             },
             {
-              "text": "His anger toward those who turn from Him",
+              "text": "Those who are wise",
               "correct": false
             },
             {
-              "text": "The distance between Him and His people",
+              "text": "Those who are strong",
               "correct": false
             }
           ],
@@ -327,15 +317,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 103:14",
-          "question": "David says the LORD forgets what we are made of.",
+          "question": "David says the LORD is mindful that we are dust.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -345,7 +335,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Psalm 103:14",
-          "text": "He knows our frame. He is mindful that we are dust, and friend, after years in the back of a drawer, I can tell you dust is NOT a flex.",
+          "text": "He knows our frame. He is mindful that we are dust, and friend, dust is NOT a flex.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -380,8 +370,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 103:16",
-          "text": "It vanishes, and its place remembers it no more. Friend, I KNOW that one: they slid me into the drawer, wiped the counter once, and it was like I was never there.",
-          "needs_agent_fix": true,
+          "text": "The flower vanishes, and its place remembers it no more. I think that line hurts, because I know what it's like to be forgotten in the back of a drawer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -446,11 +436,11 @@
               "correct": true
             },
             {
-              "text": "Israel only",
+              "text": "Zion",
               "correct": false
             },
             {
-              "text": "heaven only",
+              "text": "Judah",
               "correct": false
             }
           ],

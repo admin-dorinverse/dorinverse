@@ -3,7 +3,7 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Proverbs 7:1-13",
+      "verses": "Proverbs 7:1-9",
       "cards": [
         {
           "card": 1,
@@ -35,9 +35,9 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Proverbs 7:2",
+          "verses": "Proverbs 7:2-3",
           "text": "He tells his son to guard his teachings as the apple of his eye. Then he names two places to keep them, and friend, this dad is covering EVERY base.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -129,7 +129,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Proverbs 7:8",
-          "text": "This young man is crossing the street near her corner, strolling down the road to her house. Not lost, not running late, friend, he's STROLLING.",
+          "text": "This young man is crossing the street near the adulteress's corner, strolling down the road to her house. Friend, he's not hurrying. He's STROLLING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,7 +138,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 7:9",
-          "question": "When is the young man strolling down the road to her house?",
+          "question": "When is the young man strolling down the road to the adulteress's house?",
           "answers": [
             {
               "text": "At twilight as day fades to dark",
@@ -153,19 +153,25 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
-        },
+        }
+      ]
+    },
+    {
+      "stop": 2,
+      "verses": "Proverbs 7:10-27",
+      "cards": [
         {
-          "card": 11,
+          "card": 1,
           "kind": "story",
           "verses": "Proverbs 7:10",
-          "text": "Then a woman comes out to meet him. She's wearing the attire of a harlot, and she's cunning of heart.",
+          "text": "Then a woman comes out to meet the young man. She's wearing the attire of a harlot, and she's cunning of heart.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 2,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 7:11",
@@ -184,52 +190,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 3,
           "kind": "story",
-          "verses": "Proverbs 7:11-12",
-          "text": "She's loud and defiant, and she's in the street, in the squares, lurking at every corner. She's everywhere, friend, like crumbs after I bake a batch.",
+          "verses": "Proverbs 7:12",
+          "text": "Now in the street, now in the squares, she lurks at every corner.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Proverbs 7:13",
-          "question": "The woman walks right up to the young man. What does she do?",
-          "answers": [
-            {
-              "text": "She seizes him and kisses him",
-              "correct": true
-            },
-            {
-              "text": "She asks him for directions",
-              "correct": false
-            },
-            {
-              "text": "She sends him back home",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        }
-      ]
-    },
-    {
-      "stop": 2,
-      "verses": "Proverbs 7:14-27",
-      "cards": [
-        {
-          "card": 1,
+          "card": 4,
           "kind": "story",
-          "verses": "Proverbs 7:14",
-          "text": "Then she starts talking. She tells him she's made her peace offerings and paid her vows today, and I bet she's had that opening line ready for a WHILE.",
+          "verses": "Proverbs 7:13-14",
+          "text": "She seizes him and kisses him. Then she brazenly tells him she has made her peace offerings, and today she has paid her vows.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 2,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 7:15",
@@ -248,50 +225,27 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 6,
           "kind": "story",
           "verses": "Proverbs 7:16-17",
-          "text": "Then she tells him she's decked her bed with colored linen from Egypt and perfumed it with myrrh, aloes and cinnamon. She's not hoping he shows up, friend, she's got the place READY.",
+          "text": "Then she tells him she's decked her bed with colored linen from Egypt and perfumed it with myrrh, aloes and cinnamon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Proverbs 7:18",
-          "question": "Fancy linens and perfume all ready to go. What does the woman invite the young man to do?",
-          "answers": [
-            {
-              "text": "Take their fill of love till morning",
-              "correct": true
-            },
-            {
-              "text": "Help her pay her vows at the temple",
-              "correct": false
-            },
-            {
-              "text": "Rest a while and then head home",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
+          "card": 7,
           "kind": "story",
-          "verses": "Proverbs 7:19",
-          "text": "Then she brings up her husband. Friend, when the pitch comes with a husband update, that's your cue to LEAVE.",
+          "verses": "Proverbs 7:18",
+          "text": "Then she says, \"Come, let us take our fill of love till morning…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 7:19",
-          "question": "The woman tells the young man her husband is at home tonight.",
+          "question": "The woman tells the young man her husband is at home.",
           "answers": [
             {
               "text": "True",
@@ -306,15 +260,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
-          "kind": "story",
-          "verses": "Proverbs 7:19-20",
-          "text": "He's gone on a long journey, she says, with a bag of money, and he won't be back till the moon is full. That's not an invitation anymore, friend, that's a TRAVEL itinerary.",
+          "card": 9,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Proverbs 7:20",
+          "question": "The woman says her husband has gone on a long journey with a bag of money. When does she say he'll be back?",
+          "answers": [
+            {
+              "text": "Not till the moon is full",
+              "correct": true
+            },
+            {
+              "text": "Before the sun comes up",
+              "correct": false
+            },
+            {
+              "text": "At the end of the week",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 7:21",
@@ -337,15 +306,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 11,
           "kind": "story",
           "verses": "Proverbs 7:22",
-          "text": "He follows her on impulse, like an ox going to the slaughter, like a deer bounding into a trap. That's the father's picture, and whew, it is NOT a flattering one.",
+          "text": "He follows her on impulse, like an ox going to the slaughter, like a deer bounding into a trap.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 7:22-23",
@@ -368,15 +337,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 13,
           "kind": "story",
           "verses": "Proverbs 7:23",
-          "text": "The father's pictures keep going, all the way until an arrow pierces his liver, like a bird darting into a snare, not knowing it will cost him his life. All that, friend, from a stroll down the wrong street.",
+          "text": "The father's pictures keep going, until an arrow pierces his liver, like a bird darting into a snare, not knowing it will cost him his life. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 14,
           "kind": "story",
           "verses": "Proverbs 7:24",
           "text": "Now the father turns to his sons and tells them to listen to him and attend to the words of his mouth. Friend, this is the part of the meeting where NOBODY checks their email.",
@@ -384,22 +353,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 7:25",
           "question": "What does the father tell his sons about the woman's ways?",
           "answers": [
             {
-              "text": "Do not let your heart turn aside to them",
+              "text": "Don't let your heart turn aside to them",
               "correct": true
             },
             {
-              "text": "Go and see them once for yourself",
+              "text": "Talk with her and turn her back",
               "correct": false
             },
             {
-              "text": "Warn her husband when he returns",
+              "text": "Stay off her paths only at night",
               "correct": false
             }
           ],
@@ -407,7 +376,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 7:26",
@@ -426,34 +395,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "story",
-          "verses": "Proverbs 7:26-27",
-          "text": "Many, friend. Her slain are many in number, and the father has one last line about where her house really leads.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Proverbs 7:27",
-          "question": "The father says her house is the road to ___, descending to the chambers of death.",
+          "question": "The father ends his warning by saying where the woman's house leads. Where does it lead?",
           "answers": [
             {
-              "text": "Sheol",
+              "text": "Down to the chambers of death",
               "correct": true
             },
             {
-              "text": "Zion",
+              "text": "Out to a house of feasting",
               "correct": false
             },
             {
-              "text": "Bethel",
+              "text": "Up to the halls of honor",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

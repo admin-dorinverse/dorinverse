@@ -59,55 +59,35 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 113:3",
-          "text": "Then he zooms out. WAY out. He pictures the sun coming up on one edge of the world and going down on the other.",
+          "text": "Then he zooms out. WAY out. From where the sun rises to where it sets, the name of the LORD is praised.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 113:3",
-          "question": "From where the sun rises to where it sets, the name of the LORD is ___.",
-          "answers": [
-            {
-              "text": "praised",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "hidden",
-              "correct": false
-            },
-            {
-              "text": "forgotten",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 113:4",
-          "question": "The LORD is exalted over all the nations. True or false: the psalm writer says His glory reaches the heavens and goes no higher.",
+          "question": "The psalm writer says the LORD is exalted over all the nations. Where does he say the LORD's glory is?",
           "answers": [
             {
-              "text": "True",
+              "text": "Above the heavens",
+              "correct": true
+            },
+            {
+              "text": "Inside the temple",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "On Mount Zion",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Psalm 113:5",
           "text": "Then comes the question this whole psalm hangs on: \"Who is like the LORD our God, the One enthroned on high?\"",
@@ -115,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 113:5",
@@ -138,11 +118,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 113:6",
-          "question": "The LORD is enthroned so high that His glory is above the heavens. True or false: the psalm writer says He humbles Himself just to behold the heavens and the earth.",
+          "question": "The LORD is enthroned on high, and His glory is above the heavens. True or false: the psalm writer says He humbles Himself to behold the heavens and the earth.",
           "answers": [
             {
               "text": "True",
@@ -157,15 +137,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
-          "verses": "Psalm 113:7",
-          "text": "And He doesn't stop at looking, friend. Wait till you see who He picks up, and from WHERE.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 113:6-7",
+          "text": "And He doesn't stop at looking, friend. He reaches all the way down into the dust and raises people up out of it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 113:7",
@@ -185,19 +165,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Psalm 113:7",
-          "text": "He raises the poor from the dust and lifts the needy from the dump. The DUMP, friend, and I thought the back of a junk drawer was rock bottom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
+          "kind": "story",
+          "verses": "Psalm 113:7",
+          "text": "He raises the poor from the dust and lifts the needy from the dump. The DUMP, friend, and I thought my years stuck in the back of a junk drawer were rock bottom.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 113:8",
@@ -220,30 +200,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
-          "verses": "Psalm 113:8-9",
-          "text": "From the dump to a seat with nobles is like going from the mailroom to the corner office in one afternoon. Then the psalm closes with one more picture, inside a home.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 113:7-9",
+          "text": "From the dump to a seat with nobles is like going from the mailroom straight to the corner office. Then the psalm closes with one more picture, inside a home.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 113:9",
-          "question": "Who does the LORD settle in her home as a joyful mother to her children?",
+          "question": "The LORD settles the ___ woman in her home as a joyful mother to her children.",
           "answers": [
             {
-              "text": "The barren woman",
-              "correct": true
+              "text": "barren",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The grieving widow",
+              "text": "wealthy",
               "correct": false
             },
             {
-              "text": "The young bride",
+              "text": "foreign",
               "correct": false
             }
           ],
@@ -251,11 +232,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
-          "verses": "Psalm 113:9",
-          "text": "And the last word? Same as the first: Hallelujah! This psalm started LOUD, and friend, it goes out just as LOUD.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 113:1, 9",
+          "text": "The last word is the same as the first: Hallelujah! This psalm started LOUD, and friend, it goes out just as LOUD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

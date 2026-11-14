@@ -9,39 +9,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 120:1",
-          "text": "Psalm 120 starts with a label: 'A song of ascents.' The psalmist is looking back on a time of real distress. And in that distress, the psalmist cried out to the LORD.",
+          "text": "Psalm 120 starts with a label: \"A song of ascents.\" The writer looks back on a time of distress. And in that distress, the writer cried out to the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 120:1",
-          "question": "In distress, the psalmist cried out to the LORD. Fill it in: 'In my distress I cried to the LORD, and He ___ me.'",
+          "question": "When the writer cried out to the LORD in distress, the LORD answered.",
           "answers": [
             {
-              "text": "answered",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "ignored",
-              "correct": false
-            },
-            {
-              "text": "rebuked",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Psalm 120:1-2",
-          "text": "He ANSWERED, friend. No hold music, no pressing 9 forty times, no robot voice saying 'Your call is VERY important to us.' In the next line, the psalmist prays, 'Deliver my soul, O LORD.'",
-          "needs_agent_fix": true,
+          "verses": "Psalm 120:2",
+          "text": "Then the psalm prays: \"Deliver my soul, O LORD…\" And it names exactly what the trouble is.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +45,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 120:2",
-          "question": "The psalmist prays, 'Deliver my soul, O LORD,' and names the trouble. Deliver from what?",
+          "question": "The writer prays, \"Deliver my soul, O LORD…\" Deliver from what?",
           "answers": [
             {
               "text": "Lying lips and a deceitful tongue",
@@ -69,37 +65,14 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 120:3",
-          "question": "Next, the psalmist stops praying to the LORD and asks someone, 'What will He do to you, and what will be added to you…' Who is the psalmist talking to now?",
-          "answers": [
-            {
-              "text": "The deceitful tongue",
-              "correct": true
-            },
-            {
-              "text": "The city of Jerusalem",
-              "correct": false
-            },
-            {
-              "text": "The mountains of Israel",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 120:3-4",
+          "text": "Then the song turns and talks right to that deceitful tongue: \"What will He do to you…\" And the next line? A warrior shows up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Psalm 120:3-4",
-          "text": "The psalmist turned around and asked a TONGUE a question, friend. Then the very next line brings in a warrior.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 120:4",
@@ -122,23 +95,27 @@
           "needs_human_decision": false
         },
         {
+          "card": 7,
+          "kind": "story",
+          "verses": "Psalm 120:4-5",
+          "text": "Sharp arrows from the warrior, with burning coals of the broom tree! Then the writer talks about home: Meshech, a nation, and the tents of Kedar, a desert tribe.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 120:3-4",
-          "question": "The psalmist asks the deceitful tongue what will be done to it, and the next line brings sharp arrows and burning coals of the broom tree. What is that picture about?",
+          "type": "true_false",
+          "verses": "Psalm 120:5",
+          "question": "The writer is happy to be living in Meshech and among the tents of Kedar.",
           "answers": [
             {
-              "text": "What is coming to the deceitful tongue",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "How the psalmist will win a battle",
-              "correct": false
-            },
-            {
-              "text": "Why the psalmist had to leave home",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -146,9 +123,24 @@
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Psalm 120:5",
-          "text": "Then the psalmist names the neighborhood: Meshech, and the tents of Kedar. Way back, Meshech was a son of Japheth, and Kedar was a son of Ishmael (Gen 10:2; 25:13).",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 120:6",
+          "question": "It's not just where the writer lives. It's who. The writer says the people there ___ peace.",
+          "answers": [
+            {
+              "text": "hate",
+              "correct": true
+            },
+            {
+              "text": "keep",
+              "correct": false
+            },
+            {
+              "text": "seek",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -156,8 +148,8 @@
           "card": 10,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 120:5",
-          "question": "The psalmist is happy to be living in Meshech and among the tents of Kedar.",
+          "verses": "Psalm 120:6",
+          "question": "The writer says living among people who hate peace has only gone on for a short while.",
           "answers": [
             {
               "text": "True",
@@ -173,81 +165,29 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 120:6",
-          "question": "It's not just where the psalmist lives. It's who. What does the psalmist say about the people there?",
-          "answers": [
-            {
-              "text": "They hate peace",
-              "correct": true
-            },
-            {
-              "text": "They love money",
-              "correct": false
-            },
-            {
-              "text": "They worship idols",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 120:7",
+          "text": "Last line of the song, friend, and the writer says, \"I am in favor of peace…\" Me too, baker, I spent YEARS in a junk drawer refereeing the dead batteries over who had the most charge left.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 120:6",
-          "question": "The psalmist says living among people who hate peace has only gone on for a short while.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Psalm 120:7",
-          "text": "Last line of the song, friend. The psalmist tells you where they stand, and what happens when they speak in that neighborhood. Let's just say nobody's passing around the cookie box.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 120:7",
-          "question": "The psalmist's last line. Fill it in: 'I am in favor of ___; but when I speak, they want ___.'",
+          "question": "The writer is in favor of peace. But when the writer speaks, the people there want ___.",
           "answers": [
             {
-              "text": "peace",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "war",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "wealth",
+              "text": "quiet",
               "correct": false
             },
             {
-              "text": "power",
-              "correct": false
-            },
-            {
-              "text": "silence",
+              "text": "trade",
               "correct": false
             }
           ],

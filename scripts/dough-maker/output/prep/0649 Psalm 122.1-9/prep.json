@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 122:1",
-          "text": "This one's a song of ascents, and it's from David. He's thinking back to the day they said to him, 'Let us go to the house of the LORD.' Now friend, you know that moment when somebody invites you somewhere and your FACE answers before your mouth does.",
-          "needs_agent_fix": true,
+          "text": "This one's a song of ascents, from David, Israel's king. He looks back to when they said to him, 'Let us go to the house of the LORD.' You know that moment when somebody invites you somewhere and your FACE answers before your mouth does?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 122:2",
-          "text": "Then they've made it, and David says, 'Our feet are standing…' Must be NICE having feet, friend. I've got a gold base and a mustache, and I make it WORK.",
-          "needs_agent_fix": true,
+          "text": "Then they've made it, and David says, 'Our feet are standing…' Must be NICE having feet, friend, when all I've got is a gold base and a mustache.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -71,28 +71,24 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 122:3",
-          "text": "David looks around at the city, and I bet he can't stop talking about the way it's built. Two seconds in Jerusalem and the man's already a TOUR GUIDE.",
+          "text": "Then David starts describing the city itself, the way it's built. The man's standing in the gate and he's already a TOUR GUIDE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 122:3",
-          "question": "Standing in Jerusalem, how does David describe the way the city is built?",
+          "question": "Standing in Jerusalem, David says it is built up as a city split apart.",
           "answers": [
             {
-              "text": "As a city united together",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "As a city of gold and cedar",
-              "correct": false
-            },
-            {
-              "text": "As a city hidden in the hills",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -102,9 +98,9 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 122:4",
-          "text": "Jerusalem is where the tribes go up, the tribes of the LORD, as a testimony for Israel. Friend, I've watched a group chat argue for three DAYS over where to meet, and here come whole tribes, all headed for the same city.",
+          "text": "Jerusalem is where the tribes of the LORD go up, as a testimony for Israel. A group chat can argue for three DAYS over where to meet, and here come whole TRIBES headed for the same city.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -123,33 +119,37 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 122:5",
-          "text": "And Jerusalem is also where the thrones of judgment stand. Big decisions get made in this city, friend, and I can't even decide between sprinkles and chocolate chips without a long pause.",
+          "text": "And there's something else standing in Jerusalem: thrones, the thrones of the house of David. Chairs THAT important, friend? I'd be scared to even dust one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Psalm 122:5",
-          "question": "David says the thrones of judgment in Jerusalem are the thrones of the house of Saul.",
+          "question": "The thrones standing in Jerusalem are the thrones of ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "judgment",
+              "correct": true
+            },
+            {
+              "text": "glory",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "wisdom",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -196,37 +196,14 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 122:6",
-          "question": "The prayer David gives asks for those who rule Jerusalem to prosper.",
+          "question": "The prayer David gives asks for those who love Jerusalem to prosper.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 122:7",
-          "question": "The prayer for Jerusalem goes on: may there be ___ within your walls, and prosperity inside your fortresses.",
-          "answers": [
-            {
-              "text": "peace",
-              "correct": true
-            },
-            {
-              "text": "silence",
-              "correct": false
-            },
-            {
-              "text": "guards",
               "correct": false
             }
           ],
@@ -234,10 +211,18 @@
           "needs_human_decision": false
         },
         {
+          "card": 15,
+          "kind": "story",
+          "verses": "Psalm 122:7",
+          "text": "The prayer goes on: 'May there be peace within your walls, and prosperity inside your fortresses.' Friend, that's a prayer I'd frame and hang right over my ovens.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 16,
           "kind": "story",
           "verses": "Psalm 122:8",
-          "text": "Then David says what he will say himself: 'Peace be within you.' Man, I could've used that line in the junk drawer, with the dead batteries I shared it with arguing ALL night over who had the most charge left.",
+          "text": "Then David says what he will say himself: 'Peace be within you.' Man, I could've used that line back in the junk drawer I spent years in, with the dead batteries arguing ALL night over who had the most charge left.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -266,39 +251,21 @@
         },
         {
           "card": 18,
-          "kind": "story",
-          "verses": "Psalm 122:9",
-          "text": "Then comes the last line of the song. David's got one more 'I will' in him, and friend, he MEANS it.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 122:9",
-          "question": "For the sake of the ___ of the LORD our God, David says he will seek Jerusalem's ___.",
+          "question": "In the last line of the song, David says he will seek Jerusalem's prosperity for the sake of the ___ of the LORD our God.",
           "answers": [
             {
               "text": "house",
-              "correct": true,
-              "blank": 1
+              "correct": true
             },
             {
-              "text": "prosperity",
-              "correct": true,
-              "blank": 2
+              "text": "law",
+              "correct": false
             },
             {
               "text": "throne",
-              "correct": false
-            },
-            {
-              "text": "gates",
-              "correct": false
-            },
-            {
-              "text": "glory",
               "correct": false
             }
           ],

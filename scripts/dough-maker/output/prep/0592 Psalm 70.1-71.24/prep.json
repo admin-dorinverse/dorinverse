@@ -98,27 +98,27 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 70:5",
-          "text": "Then David looks at himself and says, “But I am poor and needy” and this is the KING of Israel. Meanwhile I put on a clean apron and strut around like I own the planet.",
+          "text": "Then David says, “But I am poor and needy…” and this is the KING of Israel. Meanwhile I put on one clean apron and strut around like I'm royalty.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 70:5",
-          "question": "David calls himself poor and needy, but he says God is his help and his ___.",
+          "question": "David calls himself poor and needy. Who does he say is his help and his deliverer?",
           "answers": [
             {
-              "text": "deliverer",
+              "text": "God",
               "correct": true
             },
             {
-              "text": "shepherd",
+              "text": "His mighty men",
               "correct": false
             },
             {
-              "text": "judge",
+              "text": "His own sword",
               "correct": false
             }
           ],
@@ -148,7 +148,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 71:1",
-          "text": "Psalm 71 is a new prayer, and it doesn't name who wrote it, so we'll just call him the psalmist. He starts, “In You, O LORD, I have taken refuge; let me never be put to shame.”",
+          "text": "Psalm 71 is a new psalm, and its writer isn't named. He opens with, “In You, O LORD, I have taken refuge; let me never be put to shame.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -157,7 +157,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 71:2",
-          "question": "The psalmist asks God to rescue and deliver him. What does he appeal to?",
+          "question": "The writer asks God to rescue and deliver him. What does he appeal to?",
           "answers": [
             {
               "text": "God's justice",
@@ -179,24 +179,28 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 71:3",
-          "text": "He wants God to be his rock of refuge, a place he can always go, and not a place with business hours, friend. ALWAYS.",
+          "text": "He asks God to be his refuge, a place he can always go. Not a place with business hours, friend. ALWAYS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 71:3",
-          "question": "The psalmist asks God to save him because he's earned it with his good deeds.",
+          "question": "The writer asks God to give the command to save him. What does he call God?",
           "answers": [
             {
-              "text": "True",
+              "text": "His rock and his fortress",
+              "correct": true
+            },
+            {
+              "text": "His sword and his shield",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "His light and his lamp",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -204,83 +208,49 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 71:4",
-          "question": "The psalmist asks God to deliver him from the hand of the ___ and from the grasp of the unjust and ruthless.",
-          "answers": [
-            {
-              "text": "wicked",
-              "correct": true
-            },
-            {
-              "text": "foreigners",
-              "correct": false
-            },
-            {
-              "text": "rich",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 71:4-5",
+          "text": "He asks God to deliver him from the hand of the wicked, the unjust and ruthless. Then he calls God his hope and his confidence, and he starts looking back over his life.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Psalm 71:5",
-          "text": "Then he calls God his hope and his confidence. And he starts looking back over his life.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 71:6",
+          "question": "Looking back over his life, the writer says he has leaned on God since his ___.",
+          "answers": [
+            {
+              "text": "birth",
+              "correct": true
+            },
+            {
+              "text": "wedding",
+              "correct": false
+            },
+            {
+              "text": "crowning",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 71:6",
-          "question": "Looking back over his life, the psalmist says he has leaned on God for a long time. Since when?",
-          "answers": [
-            {
-              "text": "Since birth",
-              "correct": true
-            },
-            {
-              "text": "Since his first battle",
-              "correct": false
-            },
-            {
-              "text": "Since his wedding day",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 71:7",
+          "text": "He says he has become a portent to many, but God is his strong refuge.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 71:7",
-          "question": "The psalmist says he has become a portent to many, and it has pushed him away from God.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 71:8",
-          "question": "All day long, the psalmist's mouth is filled with God's ___.",
+          "question": "All day long, the writer's mouth is filled with God's ___.",
           "answers": [
             {
               "text": "praise",
@@ -308,7 +278,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 71:9",
-          "text": "Now the psalmist prays about getting older: “Do not discard me in my old age; do not forsake me when my strength fails.” Friend, I spent YEARS in the back of a junk drawer, so trust me, I KNOW the word discard.",
+          "text": "Now the writer prays about getting older: “Do not discard me in my old age…” and he asks God to stay with him when his strength fails. Friend, I got shoved to the back of a junk drawer the day a shiny new stamper showed up, so I'm over here nodding SO hard my hat's about to fall off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -317,18 +287,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 71:11",
-          "question": "The psalmist's enemies are plotting against him. What do they say about him?",
+          "question": "The writer's enemies are plotting against him. What do they say about him?",
           "answers": [
             {
               "text": "God has forsaken him",
               "correct": true
             },
             {
-              "text": "He's too strong to touch",
+              "text": "He has wronged us all",
               "correct": false
             },
             {
-              "text": "His army will save him",
+              "text": "His friends have turned on him",
               "correct": false
             }
           ],
@@ -339,7 +309,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 71:11",
-          "text": "And they keep going. They say, “pursue him and seize him, for there is no one to rescue him.”",
+          "text": "And they keep going. They say, “…pursue him and seize him, for there is no one to rescue him.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -348,7 +318,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 71:12",
-          "question": "With his enemies saying no one will rescue him, the psalmist asks God not to be far from him.",
+          "question": "With his enemies saying no one will rescue him, the writer asks God not to be far from him.",
           "answers": [
             {
               "text": "True",
@@ -366,7 +336,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 71:12-13",
-          "text": "He prays, “Hurry, O my God, to help me,” so we're right back to mashing the elevator button. Then he asks that his accusers be covered with scorn and disgrace.",
+          "text": "He prays, “Hurry, O my God, to help me.” Then he says may his accusers be ashamed and consumed, and may those who seek his harm be covered with scorn and disgrace.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -375,7 +345,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 71:14",
-          "question": "With accusers all around, the psalmist says he'll go quiet and wait it out.",
+          "question": "With accusers all around, the writer says he'll go quiet and wait it out.",
           "answers": [
             {
               "text": "True",
@@ -394,7 +364,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 71:15",
-          "question": "The psalmist says he'll tell of God's righteousness and salvation all day long. What does he admit about them?",
+          "question": "The writer says he'll tell of God's righteousness and salvation all day long. What does he admit about them?",
           "answers": [
             {
               "text": "He can't know their full measure",
@@ -417,7 +387,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 71:16",
-          "question": "The psalmist says he'll come in his own strength.",
+          "question": "The writer says he'll come in his own strength.",
           "answers": [
             {
               "text": "True",
@@ -435,7 +405,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 71:16-17",
-          "text": "He'll proclaim God's righteousness, “Yours alone,” he says. God has taught him from his youth, and to this day he's still telling of God's marvelous deeds.",
+          "text": "He'll proclaim God's righteousness, and he adds, “Yours alone.” God has taught him from his youth, and to this day he's still telling of God's marvelous deeds.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -444,7 +414,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 71:18",
-          "question": "The psalmist asks God not to forsake him, even when he's old and gray. Until what?",
+          "question": "The writer asks God not to forsake him, even when he's old and gray. Until what?",
           "answers": [
             {
               "text": "Until he tells the next generation of God's power",
@@ -483,7 +453,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 71:19",
-          "question": "Thinking of the great things God has done, the psalmist asks God a question. What is it?",
+          "question": "Thinking of the great things God has done, the writer asks God a question. What is it?",
           "answers": [
             {
               "text": "Who is like You",
@@ -514,7 +484,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 71:20",
-          "question": "After all those troubles and misfortunes, the psalmist says God will ___ him once again.",
+          "question": "Though God has shown him many troubles and misfortunes, the writer says God will ___ him once again.",
           "answers": [
             {
               "text": "revive",
@@ -536,7 +506,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Psalm 71:20",
-          "text": "Even from the depths of the earth, he says, God will bring him back up. Friend, I know a little something about being brought up out of the dark, even if mine was just a junk drawer.",
+          "text": "Even from the depths of the earth, he says, God will bring him back up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -545,7 +515,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 71:21",
-          "question": "The psalmist says God will increase his honor and comfort him once again.",
+          "question": "The writer says God will increase his honor and comfort him once again.",
           "answers": [
             {
               "text": "True",
@@ -564,7 +534,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 71:22",
-          "question": "The psalmist says he'll praise God with the harp and the lyre. What does he praise God for?",
+          "question": "The writer says he'll praise God with the harp and the lyre. What does he praise God for?",
           "answers": [
             {
               "text": "His faithfulness",
@@ -585,20 +555,20 @@
         {
           "card": 19,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 71:23",
-          "question": "When the psalmist sings, his lips shout for joy along with his soul, which God has ___.",
+          "question": "The writer says his lips will shout for joy when he sings praise to God. What else joins in?",
           "answers": [
             {
-              "text": "redeemed",
+              "text": "His soul which God redeemed",
               "correct": true
             },
             {
-              "text": "weighed",
+              "text": "The singers in the temple",
               "correct": false
             },
             {
-              "text": "sealed",
+              "text": "The people of his city",
               "correct": false
             }
           ],
@@ -609,7 +579,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Psalm 71:24",
-          "text": "He wraps up the way he promised, telling of God's righteousness all day long. And the ones who wanted to harm him are disgraced and confounded.",
+          "text": "He wraps up by saying his tongue will proclaim God's righteousness all day long. That's because those who seek his harm are disgraced and confounded.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

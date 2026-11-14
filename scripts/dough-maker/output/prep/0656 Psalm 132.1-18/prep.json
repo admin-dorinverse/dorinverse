@@ -8,125 +8,75 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Psalm 132:1",
-          "text": "This is a song of ascents, and the songwriter opens by asking the LORD to remember something on behalf of David, Israel's king. A song that opens with remember hits me different, because I spent YEARS forgotten in the back of a junk drawer. Friend, hand me a tissue, I'm already emotional.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Psalm 132:1-2",
+          "text": "This is a song of ascents, and it opens by talking straight to the LORD: remember David, Israel's king, and all the hardships he endured. Then it reminds Him of an oath David swore to the Mighty One of Jacob. Friend, this oath is INTENSE.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 132:1",
-          "question": "The songwriter asks the LORD to remember all the ___ David endured.",
-          "answers": [
-            {
-              "text": "hardships",
-              "correct": true
-            },
-            {
-              "text": "journeys",
-              "correct": false
-            },
-            {
-              "text": "years",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Psalm 132:3",
+          "text": "David swears he won't enter his house or get into his bed. Friend, after years in the back of a junk drawer, I would NEVER turn down a house, and this man is turning down his OWN.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Psalm 132:2",
-          "text": "Then the song brings up an oath David swore to the LORD, a vow to the Mighty One of Jacob. And this oath? Friend, it is INTENSE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 132:4",
+          "question": "David's giving up his house and his bed. What else does he swear off?",
+          "answers": [
+            {
+              "text": "Sleep",
+              "correct": true
+            },
+            {
+              "text": "Food",
+              "correct": false
+            },
+            {
+              "text": "Visitors",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Psalm 132:3",
-          "question": "Until his oath is kept, David swears he won't enter two places. Which two?",
+          "verses": "Psalm 132:5",
+          "question": "David swore all this to the Mighty One of Jacob. What won't he rest until he finds?",
           "answers": [
             {
-              "text": "His house and his bed",
+              "text": "A place for the LORD",
               "correct": true
             },
             {
-              "text": "The city gate and the market",
+              "text": "A way to beat his enemies",
               "correct": false
             },
             {
-              "text": "The army camp and the field",
+              "text": "A son for his throne",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Psalm 132:4",
-          "text": "He won't even give sleep to his eyes or slumber to his eyelids. Friend, I skip ONE nap and every cookie I stamp comes out crooked, and this man is swearing off sleep ON PURPOSE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Psalm 132:6",
+          "text": "Then the song switches to a whole group talking: \"We heard that the ark was in Ephrathah; we found it in the fields of Jaar.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 132:5",
-          "question": "True or false: David swears he won't rest until he defeats all his enemies.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Psalm 132:5-6",
-          "text": "What David wants before he rests is a dwelling for the Mighty One of Jacob. Then the song switches to a whole group talking: we heard about something in Ephrathah, and we found it in the fields of Jaar.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 132:6",
-          "question": "What did they hear was in Ephrathah and then find in the fields of Jaar?",
-          "answers": [
-            {
-              "text": "The ark",
-              "correct": true
-            },
-            {
-              "text": "The golden lampstand",
-              "correct": false
-            },
-            {
-              "text": "The bronze altar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 132:7",
@@ -145,97 +95,97 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Psalm 132:8",
+          "text": "Then the song calls out to the LORD Himself to arise, and to come with the ark of His strength.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 132:8",
+          "question": "The song calls the LORD to arise with the ark of His strength. Where does it ask Him to go?",
+          "answers": [
+            {
+              "text": "To His resting place",
+              "correct": true
+            },
+            {
+              "text": "To the battlefield",
+              "correct": false
+            },
+            {
+              "text": "To the city gates",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Psalm 132:9",
+          "text": "Then the song says, \"May Your priests be clothed with righteousness…\" Friend, I've worn the same white apron every single day, and THAT is the outfit I want next.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Psalm 132:8",
-          "text": "Then the song turns and calls out to the LORD Himself, telling Him to arise, He and the ark of His strength.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 132:8",
-          "question": "True or false: the song calls the LORD to arise to His resting place.",
+          "verses": "Psalm 132:9",
+          "question": "True or false: the song wants the LORD's saints to weep and mourn.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Psalm 132:10",
+          "text": "One more request, for the sake of the LORD's servant David, and this one is about the LORD's anointed one.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Psalm 132:9",
-          "text": "Then the song says, may the LORD's priests be clothed with righteousness. Friend, I've worn the same white apron every single day, and THAT is the outfit I want next.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 132:9",
-          "question": "The song also prays for the LORD's saints to shout for ___.",
-          "answers": [
-            {
-              "text": "joy",
-              "correct": true
-            },
-            {
-              "text": "help",
-              "correct": false
-            },
-            {
-              "text": "mercy",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Psalm 132:10",
-          "text": "One more request, and this one is for the sake of the LORD's servant David.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 132:10",
-          "question": "For the sake of His servant David, what does the song ask the LORD not to do?",
+          "question": "For the sake of His servant David, what does the song ask the LORD not to do to His anointed one?",
           "answers": [
             {
-              "text": "Reject His anointed one",
+              "text": "Reject him",
               "correct": true
             },
             {
-              "text": "Forget His people Israel",
+              "text": "Test him",
               "correct": false
             },
             {
-              "text": "Leave His holy city",
+              "text": "Humble him",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -246,10 +196,10 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Psalm 132:11",
-          "text": "David swore an oath to the LORD, and now the LORD swears an oath to David, a promise He will not revoke. The expired coupon I shared that junk drawer with believed in itself for YEARS, and friend, even IT couldn't promise that.",
+          "verses": "Psalm 132:2, 11",
+          "text": "David swore an oath to the LORD, and now the LORD swears an oath to David, a promise He will not revoke. Friend, the oath just went the OTHER way!",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -272,15 +222,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Psalm 132:12",
-          "text": "Then the LORD adds an if for David's sons. Friend, every recipe in my bakery has an if in it too, and mine is mostly IF Papa remembers to set the timer.",
+          "text": "Then the LORD adds an if for David's sons.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -303,46 +253,46 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Psalm 132:13",
-          "text": "Then the song says the LORD has chosen a place He desired for His home. Friend, I went from a junk drawer to a whole cookie planet, so trust me, I'm VERY invested in this real estate news.",
+          "text": "Then the song says the LORD has chosen Zion, in Jerusalem. Friend, nobody has ever CHOSEN a junk drawer, stuff just ends up there.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 132:13",
-          "question": "The LORD has chosen ___ and desired it for His home.",
+          "question": "The LORD has chosen Zion. What has He desired it for?",
           "answers": [
             {
-              "text": "Zion",
+              "text": "His home",
               "correct": true
             },
             {
-              "text": "Shiloh",
+              "text": "His battle camp",
               "correct": false
             },
             {
-              "text": "Bethel",
+              "text": "His storehouse",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Psalm 132:14",
+          "verses": "Psalm 132:8, 14",
           "text": "Remember the song calling the LORD to arise to His resting place? Now the LORD Himself speaks, and that's exactly what He calls Zion.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -361,7 +311,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -369,7 +319,7 @@
           "verses": "Psalm 132:15",
           "text": "Then the LORD starts listing what He'll do for Zion. First, He'll bless her with abundant provisions.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -392,22 +342,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Psalm 132:16",
-          "text": "The song asked for the priests to be clothed with righteousness, and now the LORD says He'll clothe Zion's priests with salvation. Two outfits in one song, friend, and here I am in the same white apron every single day.",
+          "text": "The LORD keeps going, and He says Zion's saints will sing out in joy.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 132:16",
-          "question": "True or false: the LORD says Zion's saints will sing out in joy.",
+          "question": "Earlier the song asked for the LORD's priests to be clothed with righteousness. True or false: now the LORD says He'll clothe Zion's priests with salvation.",
           "answers": [
             {
               "text": "True",
@@ -419,7 +369,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -427,7 +377,7 @@
           "verses": "Psalm 132:17",
           "text": "Then the LORD turns back to David. There in Zion, He says, He will make a horn grow for David.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -450,7 +400,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -458,7 +408,7 @@
           "verses": "Psalm 132:18",
           "text": "Then comes the last line of the song, and it has two sides: the enemies, and the one wearing the crown.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -491,7 +441,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

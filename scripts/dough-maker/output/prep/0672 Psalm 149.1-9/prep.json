@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 149:1",
-          "text": "Psalm 149 kicks off with \"Hallelujah!\" The psalmist calls God's people to sing to the LORD a new song. A NEW song, friend, not the same three songs you've had on repeat in the car since forever.",
-          "needs_agent_fix": true,
+          "text": "Psalm 149 opens with \"Hallelujah!\" and calls for a new song to the LORD. A NEW song, friend, not the same three songs you've had on repeat in the car since forever.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,108 +18,46 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 149:1",
-          "question": "The psalmist calls God's people to sing the LORD a new song. Where does he want God's praise sung?",
+          "question": "The psalm calls for a new song to the LORD. Where does it want His praise sung?",
           "answers": [
             {
               "text": "In the assembly of the godly",
               "correct": true
             },
             {
-              "text": "In the council of the elders",
+              "text": "In the gates of Jerusalem",
               "correct": false
             },
             {
-              "text": "Among all the nations",
+              "text": "In the wilderness of Judah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Psalm 149:2",
-          "text": "Next, Israel is called to rejoice in their Maker, and in the same breath the psalmist calls Him their King. Me? My maker's a mystery, friend. I came out of a clearance bin with a 25 cent sticker on my FACE.",
-          "needs_agent_fix": true,
+          "text": "Next, the psalm calls Israel to rejoice in their Maker, and the children of Zion to rejoice in their King. Not a store, friend, not a factory. The One who MADE them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 149:2",
-          "question": "The psalmist calls God Israel's Maker and their King. Who does he call to rejoice in their King?",
-          "answers": [
-            {
-              "text": "The children of Zion",
-              "correct": true
-            },
-            {
-              "text": "The nations of the earth",
-              "correct": false
-            },
-            {
-              "text": "The kings of the earth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 149:3",
+          "text": "Then the psalm spells out HOW to praise His name. It's like a boss who actually explains the assignment, friend. RARE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Psalm 149:3",
-          "text": "Then the psalmist gets specific about HOW God's people should praise. No guesswork, friend. It's like a boss who actually explains the assignment. RARE. Beautiful. Somebody frame it.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 149:3",
-          "question": "How does the psalmist want God's people to praise His name?",
-          "answers": [
-            {
-              "text": "With dancing",
-              "correct": true
-            },
-            {
-              "text": "With fasting",
-              "correct": false
-            },
-            {
-              "text": "In silence",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Psalm 149:3",
-          "text": "Dancing, tambourine AND harp. I can't play either one, friend, and my only dance move is hopping on this gold base. HOP. That's the whole routine.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Psalm 149:4",
-          "text": "Why all the dancing and tambourines? The psalmist stops and gives the reason. And friend, this reason? THIS reason? Hold onto your apron.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 149:4",
-          "question": "True or false: the psalmist says the LORD takes pleasure in His people.",
+          "verses": "Psalm 149:3",
+          "question": "True or false: the psalm says to praise the LORD's name with dancing.",
           "answers": [
             {
               "text": "True",
@@ -130,54 +68,81 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Psalm 149:3",
+          "text": "And they make music to Him with tambourine and harp. I can't play either one, friend, and my whole dance routine is one HOP on this gold base.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 149:4",
+          "question": "The psalm calls Israel to praise with dancing, tambourine and harp. What reason does it give?",
+          "answers": [
+            {
+              "text": "The LORD takes pleasure in His people",
+              "correct": true
+            },
+            {
+              "text": "The harvest has finally come in",
+              "correct": false
+            },
+            {
+              "text": "Their enemies have run away",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Psalm 149:4",
+          "text": "And the LORD adorns the afflicted. Friend, I spent years in a junk drawer with blurry edges and a coat of dust, so the word afflicted has my picture right next to it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 149:4",
+          "question": "True or false: the psalm says the LORD adorns the afflicted with riches.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Psalm 149:4",
-          "text": "And the LORD adorns the afflicted, the ones worn down and hurting. Friend, I spent years in a junk drawer with blurry edges, so I wasn't just afflicted, I was the CAPTAIN of afflicted.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 149:5",
+          "text": "Then the psalm calls a group to exult in glory and shout for joy upon their beds. Friend, most of us lie in bed going over the bills and something awkward we said in 2014.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 149:4",
-          "question": "The LORD dresses up the afflicted. He adorns them with ___.",
-          "answers": [
-            {
-              "text": "salvation",
-              "correct": true
-            },
-            {
-              "text": "silver",
-              "correct": false
-            },
-            {
-              "text": "purple",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Psalm 149:5",
-          "text": "Then the psalmist calls for people to exult in glory, and he even picks the spot for the shouting: upon their beds. Not the stage. Not the stadium. The BED.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 149:5",
-          "question": "Who does the psalmist call to exult in glory and shout for joy upon their beds?",
+          "question": "The psalm calls a group to exult in glory and shout for joy upon their beds. Who are they?",
           "answers": [
             {
               "text": "The saints",
@@ -188,50 +153,50 @@
               "correct": false
             },
             {
-              "text": "The kings of the earth",
+              "text": "The elders",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Psalm 149:6-9",
+          "text": "Then the psalm pairs praise with judgment, and these next lines are heavy, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 149:6",
+          "question": "The psalm says may the high praises of God be in the saints' mouths. What does it say may be in their hands?",
+          "answers": [
+            {
+              "text": "A double-edged sword",
+              "correct": true
+            },
+            {
+              "text": "A scroll of the law",
+              "correct": false
+            },
+            {
+              "text": "A cup of blessing",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Psalm 149:5-6",
-          "text": "Most of us lie in bed going over the bills. The psalmist calls the saints to lie there shouting for JOY, and then the psalm turns serious.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 149:6",
-          "question": "The psalmist says may God's high praises be in the saints' mouths, and may a ___ be in their hands.",
-          "answers": [
-            {
-              "text": "sword",
-              "correct": true
-            },
-            {
-              "text": "scroll",
-              "correct": false
-            },
-            {
-              "text": "torch",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 149:7",
-          "question": "True or false: the psalmist pictures the saints' sword being used to inflict vengeance on the nations.",
+          "question": "True or false: the psalm says the sword in the saints' hands is to inflict vengeance on the nations.",
           "answers": [
             {
               "text": "True",
@@ -242,61 +207,61 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 149:8",
+          "question": "The psalm pictures the nations' nobles in shackles of iron and their ___ bound with chains.",
+          "answers": [
+            {
+              "text": "kings",
+              "correct": true
+            },
+            {
+              "text": "priests",
+              "correct": false
+            },
+            {
+              "text": "prophets",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 149:9",
+          "question": "The psalm says the saints' sword is for vengeance and for binding the nations' rulers. What judgment does it say they execute?",
+          "answers": [
+            {
+              "text": "The judgment written against them",
+              "correct": true
+            },
+            {
+              "text": "A judgment of their own choosing",
+              "correct": false
+            },
+            {
+              "text": "A judgment voted on by the elders",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 149:8",
-          "question": "The psalmist pictures the nations' nobles in shackles of iron. Who else does he picture bound with chains?",
-          "answers": [
-            {
-              "text": "Their kings",
-              "correct": true
-            },
-            {
-              "text": "Their priests",
-              "correct": false
-            },
-            {
-              "text": "Their prophets",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "story",
-          "verses": "Psalm 149:9",
-          "text": "All of this is to execute the judgment written against them. Then the psalmist uses a word I did NOT see coming, friend: he calls it an honor.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 149:9",
-          "question": "The psalmist calls carrying out the judgment written against the nations an honor. Who does he say this honor is for?",
-          "answers": [
-            {
-              "text": "All His saints",
-              "correct": true
-            },
-            {
-              "text": "The kings of Judah",
-              "correct": false
-            },
-            {
-              "text": "The priests of Zion",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "verses": "Psalm 149:7-9",
+          "text": "Along with vengeance, the sword brings punishment on the peoples. Then the psalm closes: \"This honor is for all His saints. Hallelujah!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

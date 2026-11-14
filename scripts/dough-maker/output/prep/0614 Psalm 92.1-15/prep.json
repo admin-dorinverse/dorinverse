@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 92:2",
-          "question": "The songwriter proclaims the LORD's loving devotion in the morning and His faithfulness at ___.",
+          "question": "The songwriter says it is good to proclaim the LORD's loving devotion in the morning and His faithfulness at ___.",
           "answers": [
             {
               "text": "night",
@@ -72,7 +72,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 92:5",
-          "question": "True or false: the songwriter says the LORD's works are great and His thoughts are deep.",
+          "question": "The songwriter says how great the LORD's works are. True or false: he also says the LORD's thoughts are deep.",
           "answers": [
             {
               "text": "True",
@@ -89,9 +89,9 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Psalm 92:6",
-          "text": "Then he says there's something a senseless man doesn't know and a fool doesn't understand, and it's about the wicked. Whenever somebody starts a sentence with \"a fool doesn't understand,\" I check my own apron FIRST.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 92:6-7",
+          "text": "Then he says there's something a senseless man doesn't know and a fool doesn't understand, and it's about the wicked. Whenever somebody starts talking about what a fool doesn't understand, I check my own apron FIRST.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,7 +99,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 92:7",
-          "question": "The wicked sprout like grass and all evildoers flourish, and the songwriter says they will be forever ___.",
+          "question": "Though the wicked sprout like grass and all evildoers flourish, the songwriter says they will be forever ___.",
           "answers": [
             {
               "text": "destroyed",
@@ -114,33 +114,33 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Psalm 92:8",
-          "text": "Then, right in the middle of the song, comes the shortest line of all: \"But You, O LORD, are exalted forever!\" Grass versus FOREVER, friend, and I'm not putting a single sprinkle on the grass.",
+          "question": "After that warning about the wicked, the songwriter turns to the LORD in the shortest line of the whole song. True or false: he says the LORD is exalted forever.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Psalm 92:9",
-          "question": "True or false: the songwriter says the LORD's enemies will come out on top in the end.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Then he says it twice in one breath: surely the LORD's enemies, surely the LORD's enemies will perish, and all evildoers will be scattered.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -179,7 +179,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 92:11",
-          "text": "And his ears hear the wailing of his wicked foes. Eyes AND ears, friend, the man is getting this news in SURROUND SOUND.",
+          "text": "And his ears hear the wailing of his wicked foes. Eyes AND ears, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -210,7 +210,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Psalm 92:12-13",
-          "text": "A palm tree, AND they'll grow like a cedar in Lebanon, planted in the house of the LORD and flourishing in the courts of our God. That's not a potted plant on a windowsill, friend, that tree has a permanent ADDRESS.",
+          "text": "The righteous will also grow like a cedar in Lebanon, planted in the house of the LORD and flourishing in the courts of our God. That's not a potted plant on a windowsill, friend, that tree has a permanent ADDRESS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -237,7 +237,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Psalm 92:14",
-          "text": "Nope, in old age they still bear fruit, and they stay healthy and green. My edges went soft and blurry after years of baking on the Millers' counter, friend, so I'm hugging this verse with my WHOLE mustache.",
+          "text": "In old age they still bear fruit, and they stay healthy and green. My edges went soft and blurry after years of stamping cookies on the Millers' counter, friend, so I'm hugging this verse with my WHOLE mustache.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -246,18 +246,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 92:15",
-          "question": "The song ends with the righteous still flourishing in old age, still speaking up about the LORD. What does the songwriter say they'll proclaim?",
+          "question": "The righteous stay healthy and green and keep bearing fruit into old age. What does the songwriter say they remain that way to do?",
           "answers": [
             {
-              "text": "The LORD is upright and is their Rock",
+              "text": "To proclaim what the LORD is like",
               "correct": true
             },
             {
-              "text": "The LORD is gentle and is their Shepherd",
+              "text": "To shade the courts of the temple",
               "correct": false
             },
             {
-              "text": "The LORD is merciful and is their Light",
+              "text": "To feed the poor of the land",
               "correct": false
             }
           ],
@@ -268,7 +268,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Psalm 92:15",
-          "text": "And the very last line: \"The LORD is upright; He is my Rock, and in Him there is no unrighteousness.\" Not one crumb of it, friend, and I have NEVER pulled a batch out of the oven that clean.",
+          "text": "And here's what they proclaim, the very last line: \"The LORD is upright; He is my Rock, and in Him there is no unrighteousness.\" That's a tree I'd park my gold base right next to, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

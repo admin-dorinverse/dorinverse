@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 12:1",
-          "text": "This is Solomon, son of David and king of Israel, handing out wisdom two lines at a time (Proverbs 1:1). Most of his sayings flip halfway, with one kind of person and then the opposite. First up: whoever loves discipline loves knowledge, which is like the smoke alarm going off over your cookies and you saying, \"Thank you, I needed that.\"",
+          "text": "This is Solomon, son of David and king of Israel, handing out wisdom two lines at a time (Proverbs 1:1; 10:1). Most of his sayings flip halfway, with one kind of person and then the opposite. First up: whoever loves discipline loves knowledge, which is like the smoke alarm going off over your cookies and you saying, \"Thank you, I needed that.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -25,11 +25,11 @@
               "correct": true
             },
             {
-              "text": "Humble",
+              "text": "Lazy",
               "correct": false
             },
             {
-              "text": "Honest",
+              "text": "Proud",
               "correct": false
             }
           ],
@@ -47,17 +47,22 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Proverbs 12:3",
-          "question": "Solomon says a man can be established through wickedness, as long as he's careful.",
+          "question": "Solomon says a man cannot be established through wickedness, but the righteous cannot be ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "uprooted",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "forgotten",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "deceived",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -76,18 +81,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 12:4",
-          "question": "Solomon flips it: a wife of noble character is her husband's crown. What is that picture saying she brings him?",
+          "question": "Solomon says a wife who causes shame is like decay in her husband's bones. What does he call a wife of noble character?",
           "answers": [
             {
-              "text": "Honor",
+              "text": "Her husband's crown",
               "correct": true
             },
             {
-              "text": "Comfort",
+              "text": "Her husband's shield",
               "correct": false
             },
             {
-              "text": "Rest",
+              "text": "Her husband's lamp",
               "correct": false
             }
           ],
@@ -131,15 +136,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 12:7",
-          "question": "Solomon says the wicked are overthrown, but the house of the righteous will stand.",
+          "question": "The wicked are overthrown and perish. Solomon says the house of the righteous will fall the same way.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -148,27 +153,31 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Proverbs 12:8",
-          "question": "Solomon says a man is praised according to his wealth.",
+          "question": "Solomon says a twisted mind is despised. What does he say a man is praised according to?",
           "answers": [
             {
-              "text": "True",
+              "text": "His wisdom",
+              "correct": true
+            },
+            {
+              "text": "His wealth",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "His family",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Proverbs 12:9",
-          "text": "Now two men. One is lightly esteemed but has a servant, and friend, somebody once bought me for twenty-five cents, so I KNOW that guy.",
+          "text": "Now two men. One is lightly esteemed but has a servant, and friend, somebody once bought me out of a bakery's closing bin for twenty-five cents, so I know the lightly esteemed part PERSONALLY.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -261,20 +270,16 @@
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Proverbs 12:13",
-          "question": "Solomon says an evil man gets trapped while a righteous man escapes from trouble. What traps the evil man?",
+          "question": "An evil man is trapped by his rebellious speech. Solomon says a righteous man escapes from trouble.",
           "answers": [
             {
-              "text": "His rebellious speech",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "His own riches",
-              "correct": false
-            },
-            {
-              "text": "His neighbor's schemes",
+              "text": "False",
               "correct": false
             }
           ],
@@ -284,17 +289,22 @@
         {
           "card": 18,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Proverbs 12:14",
-          "question": "Solomon says only the work of a man's hands brings him good things, and his words make no difference.",
+          "question": "Solomon says the work of a man's hands returns to him, and by fruitful ___ he is filled with good things.",
           "answers": [
             {
-              "text": "True",
+              "text": "speech",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "giving",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "planning",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -310,7 +320,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 12:15",
-          "text": "Round two. The way of a fool is right in his own eyes, like me swearing I don't need a timer while the smoke alarm screams otherwise.",
+          "text": "Round two. The way of a fool is right in his own eyes, like the guy who tosses the instructions for the new bookshelf and ends up with three spare screws and TOTAL confidence.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -444,7 +454,7 @@
               "correct": false
             },
             {
-              "text": "riches",
+              "text": "fame",
               "correct": false
             }
           ],
@@ -456,7 +466,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 12:21",
-          "question": "Solomon says harm follows the righteous wherever they go, while the wicked live free of trouble.",
+          "question": "Solomon says the wicked are filled with trouble. He says harm befalls the righteous too.",
           "answers": [
             {
               "text": "True",
@@ -474,7 +484,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Proverbs 12:22",
-          "text": "Now something the LORD can't stand: lying lips are detestable to the LORD. Not mildly annoying, friend, not a little side-eye, but DETESTABLE.",
+          "text": "Now Solomon names something that's detestable to the LORD: lying lips. DETESTABLE, friend. That is not a small word.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -522,7 +532,7 @@
               "blank": 1
             },
             {
-              "text": "wealthy",
+              "text": "clever",
               "correct": false
             },
             {
@@ -537,7 +547,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Proverbs 12:25",
-          "text": "Then Solomon gets tender: anxiety weighs down the heart of a man. Anybody who's lain awake at 3 a.m. replaying one email knows EXACTLY what he means.",
+          "text": "Then Solomon gets tender: anxiety weighs down the heart of a man. Anybody who's lain awake at three in the morning replaying one awkward conversation knows EXACTLY what he means.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -603,11 +613,11 @@
               "correct": true
             },
             {
-              "text": "Riches",
+              "text": "Honor",
               "correct": false
             },
             {
-              "text": "Rest",
+              "text": "Strength",
               "correct": false
             }
           ],

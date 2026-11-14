@@ -9,78 +9,43 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 108:1",
-          "text": "This one's a song, a psalm of David, Israel's king, and he's talking straight to God with no warm-up. He opens with this: \"My heart is steadfast, O God\" and friend, he means it.",
-          "needs_agent_fix": true,
+          "text": "This one's a song, a psalm of David, Israel's king, and he's talking straight to God with no warm-up. He opens with this: \"My heart is steadfast, O God…\" And friend, he means it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 108:1",
-          "question": "David's heart is steadfast toward God. What does he say he'll do with all his being?",
+          "question": "True or false: With his heart steadfast, David says he will sing and make music with all his being.",
           "answers": [
             {
-              "text": "Sing and make music",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Fast and pray all night",
-              "correct": false
-            },
-            {
-              "text": "Rest and wait quietly",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Psalm 108:2",
-          "text": "Then David calls out, \"Awake, O harp and lyre! I will awaken the dawn.\" Friend, this man is giving a pep talk to his INSTRUMENTS.",
-          "needs_agent_fix": true,
+          "text": "Then David calls out, \"Awake, O harp and lyre! I will awaken the dawn.\" Friend, most of us are out here negotiating with the snooze button, and this man is waking up the MORNING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Psalm 108:2",
-          "question": "David says he'll awaken the dawn. So when is he planning to start making music?",
-          "answers": [
-            {
-              "text": "Before the sun is up",
-              "correct": true
-            },
-            {
-              "text": "After the sun goes down",
-              "correct": false
-            },
-            {
-              "text": "Once the work is done",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Psalm 108:2-3",
-          "text": "Most of us are out here negotiating with the snooze button, and this man is waking up the MORNING. And he's not keeping this song to himself.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Psalm 108:3",
-          "question": "David's got his harp and lyre awake. Where does he say he'll praise the LORD?",
+          "question": "David's not keeping this song to himself. Where does he say he'll praise the LORD?",
           "answers": [
             {
               "text": "Among the nations",
@@ -95,23 +60,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
-          "kind": "story",
-          "verses": "Psalm 108:4",
-          "text": "Then David says why he's singing like this. It's all about God's loving devotion and His faithfulness, and how far they reach.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 108:4",
-          "question": "How far does David say God's loving devotion reaches?",
+          "question": "David says why he's singing like this: God's loving devotion. How far does David say God's loving devotion reaches?",
           "answers": [
             {
               "text": "Beyond the heavens",
@@ -126,15 +83,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 6,
+          "kind": "story",
+          "verses": "Psalm 108:4-5",
+          "text": "Beyond the heavens, up to the clouds, and I spent YEARS thinking the lid of a junk drawer was the sky. Then David's praise turns into a prayer: \"Be exalted, O God, above the heavens…\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 108:4",
-          "question": "True or false: David says God's faithfulness stops at the borders of Israel.",
+          "verses": "Psalm 108:5",
+          "question": "True or false: David prays that God's glory will cover only the land of Israel.",
           "answers": [
             {
               "text": "True",
@@ -145,50 +110,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "story",
-          "verses": "Psalm 108:4-5",
-          "text": "Beyond the heavens, up to the clouds, and I spent YEARS thinking the lid of a junk drawer was the sky. Then David's praise turns into a prayer: \"Be exalted, O God, above the heavens\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 108:5",
-          "question": "David prays that God's glory will cover all the ___.",
-          "answers": [
-            {
-              "text": "earth",
-              "correct": true
-            },
-            {
-              "text": "temple",
-              "correct": false
-            },
-            {
-              "text": "city",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 108:6",
-          "text": "Then the song turns a corner. David turns from God's glory to his own people.",
-          "needs_agent_fix": true,
+          "text": "Then the song turns a corner, from God's glory to David's own people.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 108:6",
@@ -207,15 +141,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 10,
           "kind": "story",
           "verses": "Psalm 108:6",
-          "text": "David asks God to save with His right hand, so His beloved may be delivered. Hold on to your apron, friend, because next, God Himself speaks.",
-          "needs_agent_fix": true,
+          "text": "David asks this so that God's beloved may be delivered. Hold on to your apron, friend, because this song's about to get a whole new voice.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -228,109 +162,101 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 108:7",
-          "text": "The psalm says God has spoken from His sanctuary, and His first words are \"I will triumph!\" No maybe, no we'll see, just I WILL.",
-          "needs_agent_fix": true,
+          "text": "Now the psalm says God has spoken from His sanctuary. Listen close, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "Psalm 108:7-8",
-          "text": "Then God goes place by place, parceling out Shechem and the Valley of Succoth, then naming Gilead and Manasseh. Meanwhile I lose track of ONE oven timer.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 108:7",
+          "question": "True or false: God's first words from His sanctuary are a warning to David.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 108:8",
-          "question": "God names Gilead and Manasseh next. What does He say about them?",
-          "answers": [
-            {
-              "text": "They belong to Him",
-              "correct": true
-            },
-            {
-              "text": "They turned away from Him",
-              "correct": false
-            },
-            {
-              "text": "They will be left empty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 108:7",
+          "text": "God says, \"I will triumph!\" Then He says He will parcel out Shechem and apportion the Valley of Succoth, places in Israel's own land.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Psalm 108:8",
-          "text": "Then He keeps going: \"Ephraim is My helmet, Judah is My scepter.\" All I've got on my head is a chef's hat, and that thing has never blocked ANYTHING.",
-          "needs_agent_fix": true,
+          "question": "True or false: God says Gilead, a region of Israel, and Manasseh, one of Israel's tribes, are His.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Psalm 108:8",
-          "question": "God calls Ephraim His helmet and Judah His scepter. What kind of picture is that?",
-          "answers": [
-            {
-              "text": "A king ready for battle",
-              "correct": true
-            },
-            {
-              "text": "A farmer at harvest time",
-              "correct": false
-            },
-            {
-              "text": "A shepherd with his flock",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then He names two more of Israel's tribes: \"Ephraim is My helmet, Judah is My scepter.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Psalm 108:9",
-          "text": "Then God gets to Moab and Edom: \"Moab is My washbasin; upon Edom I toss My sandal\". I was in a junk drawer for years, and the only thing anybody ever tossed on me was a takeout menu.",
-          "needs_agent_fix": true,
+          "text": "Then God turns to Israel's neighbors, Moab and Edom: \"Moab is My washbasin; upon Edom I toss My sandal…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 108:9",
-          "question": "God has one more place to name: Philistia. What does He say He'll do over Philistia?",
+          "question": "God names one more neighbor, Philistia. Over Philistia, God says He will shout in ___.",
           "answers": [
             {
-              "text": "Shout in triumph",
+              "text": "triumph",
               "correct": true
             },
             {
-              "text": "Weep in sorrow",
+              "text": "anger",
               "correct": false
             },
             {
-              "text": "Keep silent",
+              "text": "warning",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Psalm 108:10",
-          "text": "Then David's voice comes back in, and now he's got questions. He's me with a dead phone and no GPS, friend: I know where I need to end up, I just need somebody to GET me there.",
-          "needs_agent_fix": true,
+          "text": "Then David's voice comes back in with questions, like when your phone dies halfway to somewhere new. You know where you're headed, but you need somebody to GET you there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -338,57 +264,34 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 108:10",
-          "question": "David asks who will bring him to the fortified city. Who will lead him where?",
+          "question": "David asks who will lead him to Edom. He also asks who will bring him to what?",
           "answers": [
             {
-              "text": "To Edom",
+              "text": "The fortified city",
               "correct": true
             },
             {
-              "text": "To Egypt",
+              "text": "The house of God",
               "correct": false
             },
             {
-              "text": "To Babylon",
+              "text": "The river Jordan",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Psalm 108:11",
-          "text": "Then David turns to God and asks, \"Have You not rejected us, O God?\" Wait. Two verses ago God was shouting in TRIUMPH.",
-          "needs_agent_fix": true,
+          "text": "Then David asks God, \"Have You not rejected us, O God?\" After God said He will triumph, that question lands HEAVY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 108:11",
-          "question": "David asks God, \"Have You not rejected us, O God?\" What does that question show about how things look to David?",
-          "answers": [
-            {
-              "text": "Like God has left them",
-              "correct": true
-            },
-            {
-              "text": "Like the war is already won",
-              "correct": false
-            },
-            {
-              "text": "Like they no longer need God",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 108:11",
@@ -403,19 +306,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Psalm 108:12",
+          "text": "But David doesn't stop at the question. He keeps right on praying.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Psalm 108:11",
-          "text": "Oof, I spent years in a junk drawer wondering if anybody remembered I existed, so that one hits me right in the handle. But David doesn't stop at the question.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 108:12",
@@ -434,40 +337,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 108:13",
-          "question": "David's last line: With God we will perform with ___, and He will ___ our enemies.",
+          "question": "David's last line says that with God they will perform with valor. What does he say God will do to their enemies?",
           "answers": [
             {
-              "text": "valor",
-              "correct": true,
-              "blank": 1
+              "text": "Trample them",
+              "correct": true
             },
             {
-              "text": "trample",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "caution",
+              "text": "Scatter them",
               "correct": false
             },
             {
-              "text": "spare",
-              "correct": false
-            },
-            {
-              "text": "forgive",
+              "text": "Drive them out",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

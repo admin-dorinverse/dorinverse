@@ -16,20 +16,20 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 126:1",
-          "question": "Here comes the song's first picture. When the LORD restored the captives of Zion, what do the singers say they were like?",
+          "question": "Here comes the song's first picture. When the LORD restored the captives of Zion, the singers say they were like ___.",
           "answers": [
             {
-              "text": "Dreamers",
+              "text": "dreamers",
               "correct": true
             },
             {
-              "text": "Mourners",
+              "text": "mourners",
               "correct": false
             },
             {
-              "text": "Orphans",
+              "text": "orphans",
               "correct": false
             }
           ],
@@ -38,29 +38,6 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 126:2",
-          "question": "Then the sound changes. The singers' mouths were filled with ___.",
-          "answers": [
-            {
-              "text": "laughter",
-              "correct": true
-            },
-            {
-              "text": "silence",
-              "correct": false
-            },
-            {
-              "text": "sighing",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "story",
           "verses": "Psalm 126:2",
           "text": "Mouths full of laughter, tongues full of shouts of joy. This isn't polite smiling, friend, this is LOUD happy, can't-even-hear-the-oven-timer happy.",
@@ -68,30 +45,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 126:2",
-          "question": "Then the song tells us who's talking about them. It was said among the ___ that the LORD had done great things for them.",
+          "question": "Then other people start talking about the singers. What was said about them among the nations?",
           "answers": [
             {
-              "text": "nations",
+              "text": "The LORD has done great things for them",
               "correct": true
             },
             {
-              "text": "priests",
+              "text": "Their own strength has saved them",
               "correct": false
             },
             {
-              "text": "elders",
+              "text": "Their enemies have grown weary of them",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 126:3",
@@ -114,7 +91,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 126:3",
@@ -133,22 +110,30 @@
           "needs_human_decision": false
         },
         {
+          "card": 7,
+          "kind": "story",
+          "verses": "Psalm 126:4",
+          "text": "Then the song turns a corner. After all that celebrating, the singers pray: \"Restore our captives, O LORD, like streams in the Negev.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 126:4",
-          "question": "Then the song turns a corner. After all that celebrating over what the LORD has done, what do the singers do next?",
+          "question": "The Negev is dry land in the south. So when the singers pray for streams in the Negev, what picture are they using?",
           "answers": [
             {
-              "text": "Ask the LORD to restore their captives",
+              "text": "Water running through dry land",
               "correct": true
             },
             {
-              "text": "Send a message back to the nations",
+              "text": "A fire burning on a cold night",
               "correct": false
             },
             {
-              "text": "Ask the LORD to judge their enemies",
+              "text": "A wall standing around a city",
               "correct": false
             }
           ],
@@ -158,44 +143,13 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Psalm 126:4",
-          "text": "And they pray it with a picture: \"Restore our captives, O LORD, like streams in the Negev.\" I can just see the water rushing in.",
+          "verses": "Psalm 126:5",
+          "text": "Then the song walks out into a farm field: \"Those who sow in tears will reap with shouts of joy.\" Friend, I've cried into a batch of dough before, and the dough did NOT care.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Psalm 126:5",
-          "text": "Then the song walks out into a farm field, where people are sowing seed in tears. Friend, I've cried into a batch of dough before, and the dough did NOT care.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 126:5",
-          "question": "Crying while they plant, but that's not the end of it. Those who sow in tears will reap with shouts of ___.",
-          "answers": [
-            {
-              "text": "joy",
-              "correct": true
-            },
-            {
-              "text": "grief",
-              "correct": false
-            },
-            {
-              "text": "alarm",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "story",
           "verses": "Psalm 126:6",
           "text": "Then the picture zooms in on one person. He goes out weeping, carrying a trail of seed.",
@@ -203,22 +157,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 126:6",
-          "question": "The one who went out weeping with seed comes back. What is he carrying now?",
+          "question": "True or false: The song says the one who goes out weeping with seed will surely come back.",
           "answers": [
             {
-              "text": "Sheaves of grain",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "An empty basket",
-              "correct": false
-            },
-            {
-              "text": "A jar of oil",
+              "text": "False",
               "correct": false
             }
           ],
@@ -226,19 +176,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 126:6",
-          "question": "True or false: The song says the one who goes out weeping might come back with shouts of joy, if the harvest goes well.",
+          "question": "The one who went out weeping with seed does come back. What is he carrying now?",
           "answers": [
             {
-              "text": "True",
+              "text": "Sheaves of grain",
+              "correct": true
+            },
+            {
+              "text": "A basket of figs",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "A jar of oil",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,

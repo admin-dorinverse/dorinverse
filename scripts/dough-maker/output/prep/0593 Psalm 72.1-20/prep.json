@@ -25,29 +25,6 @@
           "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Psalm 72:1",
-          "question": "The prayer asks God to give the king God's own justice and righteousness. What's that prayer after, at heart?",
-          "answers": [
-            {
-              "text": "A king who rules the way God would",
-              "correct": true
-            },
-            {
-              "text": "A king who rules by his own wisdom",
-              "correct": false
-            },
-            {
-              "text": "A king who makes up his own laws",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Psalm 72:2",
           "question": "With God's justice and righteousness on the list, what does the prayer ask for the king to do next?",
           "answers": [
@@ -60,15 +37,15 @@
               "correct": false
             },
             {
-              "text": "Write God new laws",
+              "text": "Lead God's armies",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Psalm 72:3",
           "text": "Then the land joins in: \"May the mountains bring peace to the people, and the hills bring righteousness.\" Mountains bringing PEACE, friend, and the only thing my oven ever brings me is the smoke alarm.",
@@ -76,15 +53,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Psalm 72:4",
-          "text": "Next the prayer asks for the king to vindicate the afflicted among the people, then turns to the needy and the oppressor. Friend, I spent years at the bottom of the pile in a junk drawer, so I am ALL the way on board with this part.",
+          "text": "Next the prayer asks for the king to vindicate the afflicted among the people. Then it turns to the children of the needy, and to the oppressor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 72:4",
@@ -117,7 +94,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 72:5",
@@ -136,30 +113,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 72:6",
-          "text": "Then the prayer stops sounding like a courtroom and starts sounding like a weather report.",
+          "text": "Then the prayer asks for the king to be like rain that falls on freshly cut grass, like spring showers that water the earth. It stops sounding like a courtroom and starts sounding like a weather report.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 72:6",
-          "question": "The prayer asks for the king to be like rain that falls on freshly cut grass, like spring showers that water the earth. What's that picture about?",
+          "type": "fill_blank",
+          "verses": "Psalm 72:7",
+          "question": "The prayer asks for the king to be like spring showers that water the earth, and for the righteous to ___ in his days.",
           "answers": [
             {
-              "text": "He brings new life to the land",
-              "correct": true
+              "text": "flourish",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He brings floods that ruin the land",
+              "text": "struggle",
               "correct": false
             },
             {
-              "text": "He stays far above the land",
+              "text": "scatter",
               "correct": false
             }
           ],
@@ -167,15 +145,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Psalm 72:7",
-          "text": "The prayer asks for the righteous to flourish in his days and prosperity to abound until the moon is no more. Friend, that's a warranty that outlasts the MOON!",
+          "text": "The prayer also asks for prosperity to abound until the moon is no more. Friend, that's a warranty that outlasts the MOON!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 72:8",
@@ -198,7 +176,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Psalm 72:9",
           "text": "The prayer asks for the nomads to bow before him and his enemies to lick the dust. Friend, I spent YEARS covered in dust in the back of a junk drawer, and I never once licked it.",
@@ -206,7 +184,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 72:10",
@@ -229,11 +207,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 72:11",
-          "question": "After those kings from distant shores, the prayer asks for ALL kings to bow down to this king and all nations to serve him.",
+          "question": "After those kings from distant shores, the prayer asks for ALL kings to bow down to this king.",
           "answers": [
             {
               "text": "True",
@@ -307,7 +285,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 72:13",
-          "text": "He will take pity on the poor and needy and save the lives of the oppressed. Kings and gifts are nice, friend, but I think THIS is the part that gets me.",
+          "text": "The king will take pity on the poor and needy and save the lives of the oppressed. Kings and gifts are nice, friend, but I think THIS is the part that gets me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -347,29 +325,29 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 72:15",
-          "question": "The prayer asks for people to pray for the king and bless him all day long. What kind of king does that picture?",
+          "question": "The prayer asks for people to ever pray for the king. How often does it ask for them to bless him?",
           "answers": [
             {
-              "text": "A king his people love",
+              "text": "All day long",
               "correct": true
             },
             {
-              "text": "A king his people avoid",
+              "text": "Once a year",
               "correct": false
             },
             {
-              "text": "A king his people barely know",
+              "text": "On feast days only",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Psalm 72:16",
-          "text": "Then it asks for an abundance of grain swaying atop the hills, and fruit trees flourishing like the forests of Lebanon. Grain growing on HILLTOPS, friend, and I can't get one batch to bake even on a flat pan.",
+          "text": "Then the prayer turns to the land: grain swaying atop the hills, fruit trees flourishing like the forests of Lebanon, and the people of its cities like the grass of the field. Grain on the HILLTOPS, friend, the whole hillside's DANCING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -378,18 +356,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 72:16",
-          "question": "The prayer pictures the people of the land's cities too. What does it ask for them to be like?",
+          "question": "The prayer pictures grain swaying atop the hills. How much grain does it ask for in the land?",
           "answers": [
             {
-              "text": "The grass of the field",
+              "text": "An abundance of grain",
               "correct": true
             },
             {
-              "text": "The stars of the sky",
+              "text": "Just enough grain",
               "correct": false
             },
             {
-              "text": "The sand of the sea",
+              "text": "Grain for the king alone",
               "correct": false
             }
           ],
@@ -400,7 +378,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 72:17",
-          "text": "The prayer asks for the king's name to endure forever, as long as the sun shines. My name's carved into my handle, and THAT'S as forever as I get.",
+          "text": "The prayer asks for the king's name to endure forever, as long as the sun shines. The Millers carved my name, Dorin, into my handle, and THAT'S as forever as I get.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -455,55 +433,40 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 72:19",
-          "question": "After blessing the LORD's name forever, the prayer asks for all the earth to be filled with the LORD's ___.",
+          "question": "After blessing the LORD's glorious name forever, the prayer asks for all the ___ to be filled with His glory.",
           "answers": [
             {
-              "text": "glory",
+              "text": "earth",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "temples",
+              "text": "heavens",
               "correct": false
             },
             {
-              "text": "armies",
+              "text": "temple",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Psalm 72:19",
-          "text": "The praise closes with \"Amen and amen.\" One amen means you agree, friend, but two means you're signing it in front of witnesses.",
+          "text": "The praise closes with \"Amen and amen.\" Friend, I'm saying amen right along with it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Psalm 72:20",
-          "question": "One more line sits at the very end of the psalm, after the amens. What does it say concludes here?",
-          "answers": [
-            {
-              "text": "The prayers of David son of Jesse",
-              "correct": true
-            },
-            {
-              "text": "The songs of Solomon son of David",
-              "correct": false
-            },
-            {
-              "text": "The words of Moses son of Amram",
-              "correct": false
-            }
-          ],
+          "text": "One more line sits at the very end of the psalm, after the amens: \"Thus conclude the prayers of David son of Jesse.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

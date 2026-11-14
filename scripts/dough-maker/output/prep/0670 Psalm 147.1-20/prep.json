@@ -9,39 +9,38 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 147:1",
-          "text": "Friend, nobody signs this psalm, but it opens LOUD: \"Hallelujah!\" The psalmist says it's good to sing praises to our God, and pleasant and lovely to praise Him. Then the song really gets going, like the first tray out of a hot oven.",
+          "text": "Friend, nobody signs this psalm, but it opens LOUD: \"Hallelujah!\" The writer says it's good to sing praises to our God, and pleasant and lovely to praise Him. Then the song really gets going, like the first tray out of a hot oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Psalm 147:2",
-          "question": "Next, the psalm turns to what the LORD does. The LORD builds up ___.",
-          "answers": [
-            {
-              "text": "Jerusalem",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Babylon",
-              "correct": false
-            },
-            {
-              "text": "Nineveh",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then the psalm turns to what the LORD does, and it starts with His city: He builds up Jerusalem.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Psalm 147:2",
-          "text": "He gathers the exiles of Israel too, people far from home. Friend, I spent YEARS in the back of a junk drawer, so getting gathered back up is my FAVORITE kind of news.",
+          "question": "The LORD builds up Jerusalem. What does He do with the exiles of Israel, people far from home?",
+          "answers": [
+            {
+              "text": "He gathers them",
+              "correct": true
+            },
+            {
+              "text": "He judges them",
+              "correct": false
+            },
+            {
+              "text": "He scatters them farther",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -50,7 +49,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 147:3",
-          "question": "The LORD gathers the people who were scattered. Then the psalm gets close and personal. What does He do for the brokenhearted?",
+          "question": "Then the psalm gets close and personal. What does the LORD do for the brokenhearted?",
           "answers": [
             {
               "text": "He heals them",
@@ -61,7 +60,7 @@
               "correct": false
             },
             {
-              "text": "He leaves them be",
+              "text": "He teaches them",
               "correct": false
             }
           ],
@@ -103,8 +102,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 147:4-5",
-          "text": "Then the psalmist says our Lord is great and mighty in power. Friend, I've only got six toppings and I STILL grab the sprinkles when I meant the chocolate chips, so every star by name? That's WAY out of my league.",
-          "needs_agent_fix": true,
+          "text": "Then the writer says our Lord is great and mighty in power. Friend, I've got six toppings and I STILL grab sprinkles when I meant chocolate chips, so knowing every star by name is WAY out of my league.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -112,15 +111,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 147:5",
-          "question": "Great and mighty in power, and the psalmist keeps going about God. True or false: the psalm says His understanding has a limit somewhere.",
+          "question": "Great and mighty in power, and the writer keeps going about God. True or false: His understanding has no limit.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -131,7 +130,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 147:6",
-          "question": "Then the psalm sets two kinds of people side by side. The LORD sustains the ___, but casts the ___ to the ground.",
+          "question": "Then the psalm sets two kinds of people side by side. The LORD sustains the ___, but casts the wicked to the ground.",
           "answers": [
             {
               "text": "humble",
@@ -139,20 +138,11 @@
               "blank": 1
             },
             {
-              "text": "wicked",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "rich",
+              "text": "mighty",
               "correct": false
             },
             {
-              "text": "swift",
-              "correct": false
-            },
-            {
-              "text": "tall",
+              "text": "clever",
               "correct": false
             }
           ],
@@ -163,7 +153,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 147:7",
-          "text": "Then the song circles back with a fresh call to praise. This psalmist is like my oven timer, friend: you think it's done, and it goes off AGAIN.",
+          "text": "Then the song circles back with a fresh call to praise. Friend, if it's worth singing once, it's worth singing TWICE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -172,7 +162,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 147:7",
-          "question": "This second call to praise comes with something extra. How does the psalmist say to sing to the LORD?",
+          "question": "This second call to praise comes with something extra. How does the psalm say to sing to the LORD?",
           "answers": [
             {
               "text": "With thanksgiving",
@@ -313,7 +303,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 147:12",
-          "text": "Here comes the third call to praise, and this time the psalmist talks straight to the city: \"Exalt the LORD, O Jerusalem; praise your God, O Zion!\" Then come the reasons why.",
+          "text": "Here comes the third call to praise, and this time the psalm talks straight to the city: \"Exalt the LORD, O Jerusalem; praise your God, O Zion!\" Then come the reasons why.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -391,7 +381,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 147:14",
-          "text": "And He fills Jerusalem with the finest wheat. I'm a baker, friend, so that's DOUGH talk, and my eyebrows just hit my hat.",
+          "text": "And He fills Jerusalem with the finest wheat. Friend, wheat means flour and flour means DOUGH, so my eyebrows just hit my hat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -408,15 +398,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 147:15",
-          "question": "True or false: the psalm says God's word moves slowly across the earth.",
+          "question": "God's command goes out to the whole earth. True or false: the psalm says His word runs swiftly.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -458,7 +448,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 147:17",
-          "text": "Then the psalmist asks, \"Who can withstand His icy blast?\" Not me, friend, because my mustache would freeze straight out like a coat rack.",
+          "text": "Then the psalm asks, \"Who can withstand His icy blast?\" Not me, friend, because my mustache would freeze straight out like a coat rack.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

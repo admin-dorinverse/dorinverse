@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 78:1-2",
-          "text": "This is a Maskil of Asaph, the chief of the Levites David appointed to praise the LORD before the ark (1 Chronicles 16:4-5). He opens like a man tapping the mic: “Give ear, O my people, to my instruction; listen to the words of my mouth.” Then he says he'll open his mouth in parables and speak of things hidden from the beginning.",
+          "text": "This is a Maskil of Asaph, a worship leader in David's day (1 Chronicles 16:5), and he opens like a man tapping the mic: “Give ear, O my people, to my instruction; listen to the words of my mouth.” Then he says he'll open his mouth in parables and speak of things hidden from the beginning.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 78:4",
-          "text": "Not a chance. They'll tell the next generation the praises of the LORD, His might and the wonders He has performed, and nobody's locking this in a drawer, friend, because trust me, I KNOW what happens in drawers.",
+          "text": "Instead, they'll declare to the next generation the praises of the LORD, His might and the wonders He has performed. Nobody's shoving THIS in the back of a junk drawer, friend, and trust me, I spent years back there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -96,29 +96,21 @@
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Psalm 78:8",
-          "text": "Then Asaph names who he hopes the next generation WON'T turn out like. Lean in, friend.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 78:8",
-          "question": "Asaph hopes the coming generation won't turn out like whom?",
+          "question": "Asaph says the next generation won't be like their fathers. How does he describe those fathers?",
           "answers": [
             {
-              "text": "Their own fathers",
+              "text": "Stubborn and rebellious",
               "correct": true
             },
             {
-              "text": "The Egyptians",
+              "text": "Proud and boastful",
               "correct": false
             },
             {
-              "text": "The Philistines",
+              "text": "Fearful and weak",
               "correct": false
             }
           ],
@@ -126,18 +118,37 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 78:8",
-          "text": "Their fathers were “a stubborn and rebellious generation, whose heart was not loyal, whose spirit was not faithful to God.” Picture a family cookie recipe with a note at the bottom: “Bake these. Don't be like Grandpa.”",
+          "text": "Their hearts weren't loyal to God, and their spirits weren't faithful to Him. Picture a recipe card with a note at the bottom: “Whatever you do, don't make it the way THEY did.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Psalm 78:9",
+          "text": "Then Asaph brings up the archers of Ephraim, one of Israel's tribes (Numbers 1:32-33). Bows in hand, day of battle, here we go… and they turn back.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Psalm 78:9",
-          "text": "Then Asaph brings up the archers of Ephraim, one of Israel's tribes (Numbers 1:32-33). Bows in hand, day of battle, here we go… and they turn back.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 78:10",
+          "question": "Right after the archers of Ephraim turn back, Asaph says they refused to live by God's law.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -162,14 +173,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "story",
+          "verses": "Psalm 78:12",
+          "text": "Then Asaph goes back to the land of Egypt. There, in the region of Zoan, God worked wonders right in front of their fathers.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 78:10",
-          "question": "Asaph says the archers of Ephraim kept God's covenant and lived by His law.",
+          "verses": "Psalm 78:13",
+          "question": "Asaph says God dried up the sea with the sun so His people could cross.",
           "answers": [
             {
               "text": "True",
@@ -180,65 +199,34 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Psalm 78:12",
-          "text": "So Asaph walks them back through everything they forgot. It starts in the land of Egypt, in the region of Zoan, where God worked wonders right in front of their fathers.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Psalm 78:13",
-          "question": "Then God brings His people to the sea. What does He do with it?",
-          "answers": [
-            {
-              "text": "Splits it and brings them through",
-              "correct": true
-            },
-            {
-              "text": "Dries it up with the sun",
-              "correct": false
-            },
-            {
-              "text": "Calms it with one word",
-              "correct": false
-            }
-          ],
+          "text": "“He split the sea and brought them through; He set the waters upright like a wall.” WATER, standing UP, like a WALL, friend, and I can't get a ball of dough to stand up for ten seconds.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Psalm 78:13",
-          "text": "“He set the waters upright like a wall.” WATER, standing UP, like a WALL, friend, and I can't get a ball of dough to stand up for ten seconds.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 78:14",
-          "question": "Asaph says God led His people with a cloud by day and with a light of fire all night. What does that show about His leading?",
+          "question": "Asaph also tells how God led His people. What did God lead them with?",
           "answers": [
             {
-              "text": "He guided them day and night",
+              "text": "A cloud by day and fire by night",
               "correct": true
             },
             {
-              "text": "He guided them only in danger",
+              "text": "An angel walking ahead of them",
               "correct": false
             },
             {
-              "text": "He guided them only at the start",
+              "text": "A star shining in the east",
               "correct": false
             }
           ],
@@ -246,7 +234,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 78:15-16",
@@ -257,22 +245,14 @@
               "correct": true
             },
             {
-              "text": "honey",
+              "text": "wine",
               "correct": false
             },
             {
-              "text": "oil",
+              "text": "milk",
               "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "story",
-          "verses": "Psalm 78:15-16",
-          "text": "Streams from the stone, water flowing down like rivers, drink as abundant as the seas. From a ROCK, friend, and the only thing I ever got out of a rock was a chipped edge.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -316,8 +296,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Psalm 78:19",
-          "text": "They spoke against God, saying, “Can God really prepare a table in the wilderness?” Friend, they JUST watched what He did with that rock.",
+          "verses": "Psalm 78:13, 19",
+          "text": "They spoke against God, saying, “Can God really prepare a table in the wilderness?” Friend, they're asking that about the God who split the SEA.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -410,7 +390,7 @@
               "correct": false
             },
             {
-              "text": "Fire",
+              "text": "Snow",
               "correct": false
             }
           ],
@@ -421,24 +401,16 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 78:25",
-          "text": "Asaph says, “Man ate the bread of angels; He sent them food in abundance.” They asked whether God could do bread, and He went straight to the ANGEL bread.",
+          "text": "Asaph says, “Man ate the bread of angels; He sent them food in abundance.” I've stamped a LOT of cookies, friend, and not one batch ever got called the cookies of angels.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Psalm 78:26",
-          "text": "Then He stirred the east wind from the heavens and drove the south wind by His might.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 78:27",
-          "question": "The people also asked about meat. What does God rain down on them next?",
+          "question": "God stirs up the east wind and drives the south wind by His might. What does He rain down on the people like the sand of the sea?",
           "answers": [
             {
               "text": "Birds",
@@ -457,11 +429,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 78:28",
-          "question": "God brought the birds down far from the camp, so the people had to go out and hunt for them.",
+          "question": "Asaph says God brought the birds down far outside the camp.",
           "answers": [
             {
               "text": "True",
@@ -476,49 +448,26 @@
           "needs_human_decision": false
         },
         {
+          "card": 12,
+          "kind": "story",
+          "verses": "Psalm 78:29",
+          "text": "So they ate and were well filled, for He gave them what they craved. Ask for one cookie, get buried under the WHOLE batch.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 13,
           "kind": "story",
-          "verses": "Psalm 78:27-29",
-          "text": "He rained meat on them like dust, birds like the sand of the sea, and they ate until they were well filled. Ask for one cookie, get buried under the WHOLE batch.",
+          "verses": "Psalm 78:30-31",
+          "text": "Before they had filled their desire, with the food still in their mouths, God's anger flared against them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
-          "verses": "Psalm 78:30",
-          "text": "But Asaph says before they had filled their desire, with the food still in their mouths, the moment turns.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Psalm 78:31",
-          "question": "The people are eating with the food still in their mouths. What happens next?",
-          "answers": [
-            {
-              "text": "God's anger flares against them",
-              "correct": true
-            },
-            {
-              "text": "God sends even more birds",
-              "correct": false
-            },
-            {
-              "text": "The people sing God's praises",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Psalm 78:31",
-          "text": "He put to death their strongest and subdued the young men of Israel. A heavy moment, friend.",
+          "text": "He put to death their strongest and subdued the young men of Israel. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -552,7 +501,7 @@
               "correct": false
             },
             {
-              "text": "forget",
+              "text": "curse",
               "correct": false
             }
           ],
@@ -562,8 +511,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Psalm 78:35",
-          "text": "They remembered that God was their Rock, that God Most High was their Redeemer. Their ROCK, friend, the same God who split the rocks for them in the wilderness.",
+          "verses": "Psalm 78:34-35",
+          "text": "They repented, and they remembered that God was their Rock, that God Most High was their Redeemer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -571,7 +520,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 78:36",
-          "text": "But they deceived Him with their mouths and lied to Him with their tongues. That's texting the group chat that you're on your way while you're still under the covers.",
+          "text": "But they deceived Him with their mouths and lied to Him with their tongues.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -657,15 +606,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 78:39",
-          "text": "And that's where we'll pause, friend. Stick around, because Asaph is NOT done telling this one.",
+          "text": "And that's where we'll pause, friend. Asaph is NOT done telling this one.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

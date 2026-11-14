@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "Psalm 139:1",
           "text": "This is a psalm of David, king of Israel, written for the choirmaster, and he's talking straight to the LORD. He opens with, \"O LORD, You have searched me and known me.\" Friend, I got searched every single time somebody dug through my junk drawer looking for tape, but NOBODY ever knew me.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -74,24 +74,24 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 139:6",
-          "question": "The LORD knows David inside and out. David says knowledge like that is too ___ for him to reach.",
+          "question": "The LORD knows David inside and out, and David says knowledge like that is too lofty for him to attain. What does he mean?",
           "answers": [
             {
-              "text": "wonderful",
+              "text": "He can't fully take it in",
               "correct": true
             },
             {
-              "text": "heavy",
+              "text": "He'd rather not be known",
               "correct": false
             },
             {
-              "text": "painful",
+              "text": "He already understands it all",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 139:8",
-          "question": "David says that if he went up to the heavens or made his bed in Sheol, the LORD would be there too.",
+          "question": "David says that if he went up to the heavens or made his bed in Sheol, the realm of the dead, the LORD would be there too.",
           "answers": [
             {
               "text": "True",
@@ -125,38 +125,34 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 139:9",
-          "text": "Next he pictures rising on the wings of the dawn, or settling by the farthest sea. That's the \"new phone number, no forwarding address\" plan, friend. Every adult has thought about it at least once.",
+          "text": "Next he pictures rising on the wings of the dawn, or settling by the farthest sea. Friend, that's the \"new phone number, no forwarding address\" plan, and every adult has thought about it at least once.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 139:10",
-          "question": "Even by the farthest sea, David says the LORD's hand will ___ him.",
+          "question": "Even by the farthest sea, David says the LORD's right hand will hold him fast.",
           "answers": [
             {
-              "text": "guide",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "leave",
-              "correct": false
-            },
-            {
-              "text": "warn",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Psalm 139:11",
-          "text": "Last idea: what if David says the darkness will surely hide him, and the light around him will become night? Friend, I spent YEARS in the dark at the back of a junk drawer, so trust me, I know a good hiding spot when I see one.",
+          "text": "Last idea: what if David says the darkness will surely hide him, and the light around him will become night? Friend, that's porch light off, curtains shut, pretending NOBODY'S home.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -177,29 +173,6 @@
             },
             {
               "text": "David's voice always gives him away",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 139:7-12",
-          "question": "The heavens, Sheol, the farthest sea, the dark. What's David's point in naming all these places?",
-          "answers": [
-            {
-              "text": "There's nowhere God isn't with him",
-              "correct": true
-            },
-            {
-              "text": "Some places are too far for God",
-              "correct": false
-            },
-            {
-              "text": "God only follows when he calls",
               "correct": false
             }
           ],
@@ -274,7 +247,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 139:16",
-          "text": "And God's eyes saw David's body while it was still unformed. That's seeing the cookie before the dough's even mixed.",
+          "text": "And God's eyes saw David's body while it was still unformed. Not finished, not even close, and God was already looking.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -308,20 +281,20 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 139:17-18",
-          "question": "David says that if he tried to count God's thoughts, they would outnumber the grains of sand. What's he saying about God's thoughts?",
+          "question": "David compares God's thoughts to the grains of sand. He's saying God's thoughts are too ___ to count.",
           "answers": [
             {
-              "text": "There are too many to count",
+              "text": "many",
               "correct": true
             },
             {
-              "text": "They change from day to day",
+              "text": "hidden",
               "correct": false
             },
             {
-              "text": "They're meant for him alone",
+              "text": "holy",
               "correct": false
             }
           ],
@@ -332,7 +305,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 139:18",
-          "text": "Then David says, \"when I awake, I am still with You.\" Most mornings I wake up to the snooze button, but David wakes up still with God.",
+          "text": "Then David says, \"…when I awake, I am still with You.\" Most folks wake up and slap the snooze button, but David wakes up and he's STILL with God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -349,7 +322,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 139:19",
-          "question": "As the psalm takes a hard turn, what does David ask God to do to the wicked?",
+          "question": "What does David ask God to do to the wicked?",
           "answers": [
             {
               "text": "Slay them",
@@ -398,31 +371,27 @@
           "card": 14,
           "kind": "story",
           "verses": "Psalm 139:23",
-          "text": "Then David circles back to how this psalm opened, and now he's ASKING for it: \"Search me, O God, and know my heart; test me and know my concerns.\" Friend, most of us dodge the checkup. David is BOOKING one.",
+          "text": "Then David circles back to how this psalm opened, and now he's ASKING for it: \"Search me, O God, and know my heart; test me and know my concerns.\" Most folks dodge the checkup, but David is BOOKING one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 139:24",
-          "question": "As God searches him, David asks God to see if there's any ___ way in him.",
+          "question": "David asks God to see if there's any offensive way in him.",
           "answers": [
             {
-              "text": "offensive",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "forgotten",
-              "correct": false
-            },
-            {
-              "text": "weary",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

@@ -1,0 +1,45 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 2
+      },
+      "problem": "The card ends with 'And Joseph doesn't get there the easy way.' That gives away the answer to the next choice card (card 3), which asks whether Joseph goes ahead as an honored guest. The answer is False.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "Story card 8 already says 'The king of Egypt (Genesis 41:46)'. The fill-in-the-blank answer 'Egypt' is therefore handed over before the question is asked.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "This story card only repeats verses 12 and 24, which the baker has already seen and been asked about in cards 12 and 13. It adds a joke and nothing new from the passage, so it is a recap card.",
+      "rule": "Every story card moves the baker forward through the passage. No recap cards."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 2
+      },
+      "problem": "The question says God sends Moses and Aaron 'to His people in Egypt'. Verse 26 says only that He sent them, and verse 27 says the signs were done 'among them'. The text does not say who they were sent to, so the question adds a recipient.",
+      "rule": "Leave open what the text leaves open. Who is being spoken to, why, or how two things connect."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 16
+      },
+      "problem": "The question says God brings water 'from the last place anyone would expect'. That setup line rules out the wrong answers 'well' and 'cistern', which are exactly where water is expected.",
+      "rule": "A setup line can't rule out the wrong answers either."
+    }
+  ]
+}

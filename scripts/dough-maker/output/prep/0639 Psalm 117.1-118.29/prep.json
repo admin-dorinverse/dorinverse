@@ -9,31 +9,12 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 117:1",
-          "text": "Welcome in, friend! Psalm 117 is the shortest psalm in the whole Bible, two verses, and I've had oven TIMERS go off longer than that. But it opens BIG, with a call to praise the LORD and extol Him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 2,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 117:1",
-          "question": "Psalm 117 calls only the people of Israel to praise the LORD.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Welcome in, friend! Psalm 117 is just two verses long, and I've had oven TIMERS run longer than that. But the psalm writer packs in a BIG call to all the nations and all the peoples: praise the LORD and extol Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 117:2",
@@ -56,7 +37,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 117:2",
@@ -75,42 +56,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Psalm 117:2-118:1",
-          "text": "He signs off with \"Hallelujah!\" and that's the WHOLE psalm. Then Psalm 118 opens by telling us to give thanks to the LORD, because He is good, and right behind that comes a line you're about to hear A LOT.",
+          "text": "He signs off with \"Hallelujah!\" and that's the WHOLE psalm. Then Psalm 118 opens with a call to give thanks to the LORD, and it gives a reason.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 118:1",
-          "question": "Psalm 118 opens by saying the LORD's loving devotion will run out someday.",
+          "question": "Psalm 118 opens with a call to give thanks to the LORD. What reason does it give?",
           "answers": [
             {
-              "text": "True",
+              "text": "Because He is good",
+              "correct": true
+            },
+            {
+              "text": "Because He gave us a king",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Because He filled our barns",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
-          "verses": "Psalm 118:2-3",
-          "text": "Now he goes group by group: let Israel say, \"His loving devotion endures forever.\" Let the house of Aaron, the family of the priests, say it too (Exodus 28:1), like a group chat where EVERYBODY has to reply with the same message before anybody can leave.",
+          "verses": "Psalm 118:1-3",
+          "text": "Then comes a line you're about to hear A LOT: \"His loving devotion endures forever.\" Let Israel say it, and let the house of Aaron, the family of the priests, say it too (Exodus 28:1), like a group chat where EVERYBODY has to reply with the same message before anybody can leave.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 118:4",
@@ -133,7 +118,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 118:5",
           "text": "Then the psalm gets personal. The psalm writer looks back on a time he was in distress, and he called to the LORD.",
@@ -141,39 +126,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 118:5",
-          "question": "The psalm writer called to the LORD in his distress, and the LORD answered and set him ___.",
+          "question": "When the psalm writer called to the LORD in his distress, he says the LORD set him free.",
           "answers": [
             {
-              "text": "free",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "apart",
-              "correct": false
-            },
-            {
-              "text": "aside",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Psalm 118:6",
-          "text": "Now the psalm writer says, \"The LORD is on my side; I will not be afraid.\" Friend, I JUMP every time my own oven timer goes off, and this man is standing there calm as you please.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
+          "kind": "story",
+          "verses": "Psalm 118:6",
+          "text": "Now the psalm writer says, \"The LORD is on my side; I will not be afraid.\" Friend, a dropped mixing bowl sends me diving under the counter, and this man is standing there calm as you please.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 118:6",
@@ -196,11 +176,75 @@
           "needs_human_decision": false
         },
         {
+          "card": 12,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 118:7",
+          "question": "Because the LORD is his helper, the psalm writer says he will look in ___ on those who hate him.",
+          "answers": [
+            {
+              "text": "triumph",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "fear",
+              "correct": false
+            },
+            {
+              "text": "sorrow",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 13,
+          "kind": "story",
+          "verses": "Psalm 118:8-9",
+          "text": "Then he puts trusting in man, even in princes, up against something better. I spent years in a junk drawer trusting the next person who opened it to put me back to work, and friend, they were looking for TAPE.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 118:8-9",
+          "question": "The psalm writer says it is better to take refuge in the ___ than to trust in man or even in princes.",
+          "answers": [
+            {
+              "text": "LORD",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "hills",
+              "correct": false
+            },
+            {
+              "text": "city",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Psalm 118:10-11",
+          "text": "Now it gets tense. He says all the nations surrounded him, and then he says it again: they surrounded him on every side.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 118:7",
-          "question": "The psalm writer calls the LORD his helper and says he will look in triumph on those who hate him.",
+          "verses": "Psalm 118:10",
+          "question": "When all the nations surrounded him, the psalm writer says he cut them off in the name of the LORD.",
           "answers": [
             {
               "text": "True",
@@ -215,64 +259,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
-          "kind": "story",
-          "verses": "Psalm 118:8-9",
-          "text": "Then he compares trusting in man, even in princes, with something better. I spent years in a junk drawer trusting that the next person to open it would put me back to work, and friend... they were looking for TAPE.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 118:8-9",
-          "question": "The psalm writer says one thing is better than trusting in man or even in princes. What is it?",
-          "answers": [
-            {
-              "text": "Taking refuge in the LORD",
-              "correct": true
-            },
-            {
-              "text": "Trusting in a strong army",
-              "correct": false
-            },
-            {
-              "text": "Hiding behind city walls",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Psalm 118:10-11",
-          "text": "Now it gets tense. He says all the nations surrounded him, and then he says it again: they surrounded him on every side.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 118:10",
-          "question": "All the nations surrounded the psalm writer. What does he say he did to them in the name of the LORD?",
-          "answers": [
-            {
-              "text": "He cut them off",
-              "correct": true
-            },
-            {
-              "text": "He made peace with them",
-              "correct": false
-            },
-            {
-              "text": "He ran far from them",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 118:12",
+          "text": "Then he says they swarmed around him like BEES. Friend, I'd be swinging this mustache around like a mixer on HIGH!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -281,18 +271,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 118:12",
-          "question": "The psalm writer says the nations swarmed around him like bees. What does that picture show about them?",
+          "question": "The nations swarmed around the psalm writer like bees. What does he say happened to them?",
           "answers": [
             {
-              "text": "They came at him from all around",
+              "text": "They were extinguished like burning thorns",
               "correct": true
             },
             {
-              "text": "They were too few to worry about",
+              "text": "They were scattered like sheep",
               "correct": false
             },
             {
-              "text": "They kept far away from him",
+              "text": "They were blown away like chaff",
               "correct": false
             }
           ],
@@ -302,9 +292,9 @@
         {
           "card": 19,
           "kind": "story",
-          "verses": "Psalm 118:12-13",
-          "text": "BEES, friend! I'd be swinging this mustache around like a ceiling fan! But he says they were extinguished like burning thorns, and then he was pushed so hard he was falling.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 118:13",
+          "text": "Then it gets worse. He says he was pushed so hard he was falling.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -403,15 +393,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 118:18",
-          "question": "The psalm writer says the LORD disciplined him severely but has not given him over to death.",
+          "question": "The psalm writer says the LORD never disciplined him.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -420,8 +410,8 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Psalm 118:19",
-          "text": "Now he calls out, \"Open to me the gates of righteousness,\" and he tells us why he wants in.",
+          "verses": "Psalm 118:18-19",
+          "text": "The LORD disciplined him severely, but He did not give him over to death. Now he calls out, \"Open to me the gates of righteousness…\" and he tells us why he wants in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -451,22 +441,17 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 118:20",
-          "question": "The psalm writer says this is the gate of the LORD, and the ___ shall enter through it.",
+          "question": "The psalm writer says only the priests shall enter through the gate of the LORD.",
           "answers": [
             {
-              "text": "righteous",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "nations",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "priests",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -505,14 +490,6 @@
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Psalm 118:22",
-          "text": "The stone the builders rejected becomes the CORNERSTONE, friend, and after all my years in the back of a junk drawer, that's MY kind of comeback! Jesus Himself quotes this line (Matthew 21:42), and Peter, His disciple, tells the leaders that Jesus is that stone (Acts 4:10-11).",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 118:23",
@@ -531,15 +508,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
-          "verses": "Psalm 118:23-24",
-          "text": "He says it is marvelous in our eyes. Then he says this is the day that the LORD has made.",
+          "verses": "Psalm 118:22-24",
+          "text": "Jesus Himself quotes that cornerstone line (Matthew 21:42), and Peter, His disciple, says Jesus is that stone (Acts 4:10-11). Back in the psalm, the writer calls it marvelous in our eyes and says this is the day that the LORD has made.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 118:24",
@@ -562,7 +539,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 118:25",
@@ -585,15 +562,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Psalm 118:26",
-          "text": "Then this: \"Blessed is he who comes in the name of the LORD. From the house of the LORD we bless you.\" When Jesus rides into Jerusalem, the crowds shout that first line about Him (Matthew 21:9).",
-          "needs_agent_fix": true,
+          "text": "Then the psalm says, \"Blessed is he who comes in the name of the LORD.\" When Jesus rides into Jerusalem, the crowds shout that line about Him (Matthew 21:9).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 118:27",
@@ -617,15 +594,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Psalm 118:27-28",
-          "text": "Then comes the call to bind the festal sacrifice with cords to the horns of the altar. And the psalm writer says \"You are my God\" TWICE, once to give Him thanks and once to exalt Him.",
+          "text": "Then comes the call to bind the festal sacrifice with cords to the horns of the altar. And the psalm writer says \"You are my God…\" TWICE, once to give Him thanks and once to exalt Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Psalm 118:29",
           "text": "And the psalm ends right where it started: \"Give thanks to the LORD, for He is good; His loving devotion endures forever.\"",

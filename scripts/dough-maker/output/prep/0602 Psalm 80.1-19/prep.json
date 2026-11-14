@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 80:1",
-          "text": "This one's a song, baker: a Psalm of Asaph, the man whose name is on it, set to a tune called The Lilies of the Covenant. Don't ask me to hum it, because my mustache starts flapping like it's trying to take off. Asaph opens with “Hear us,” and pictures God leading Joseph, meaning Joseph's descendants, like a flock.",
-          "needs_agent_fix": true,
+          "text": "This one's a song, baker: a Psalm of Asaph, the man whose name is on it, set to a tune called The Lilies of the Covenant. Don't ask me to hum it, because my mustache starts flapping like it's trying to take off. Asaph opens with “Hear us,” and pictures God leading Joseph like a flock.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -34,42 +34,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 80:1",
-          "question": "This Shepherd of Israel is also a King on a throne. Where does Asaph say God sits enthroned?",
-          "answers": [
-            {
-              "text": "Between the cherubim",
-              "correct": true
-            },
-            {
-              "text": "On top of Mount Sinai",
-              "correct": false
-            },
-            {
-              "text": "Above the Jordan River",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 80:1-2",
+          "text": "Asaph calls Him the One who sits enthroned between the cherubim, and asks Him to shine forth before Ephraim, Benjamin and Manasseh, three of the tribes of Israel. That's not a quiet little prayer from the back of the room, baker; that's a man standing on the counter yelling “OVER HERE!”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Psalm 80:1-2",
-          "text": "Asaph asks God to shine forth before Ephraim, Benjamin and Manasseh, three of the tribes of Israel. That's not a quiet little prayer from the back, baker. That's a man standing on the counter going “OVER HERE!”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 80:2",
@@ -88,50 +65,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Psalm 80:3",
+          "text": "Then comes a line Asaph sings more than once, so lean in: “Restore us, O God, and cause Your face to shine upon us…” Friend, I spent YEARS in the back of a dark junk drawer, so “shine upon us” hits me RIGHT here.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Psalm 80:3",
-          "text": "Then comes a line Asaph sings more than once, so lean in: “Restore us, O God, and cause Your face to shine upon us, that we may be saved.” Friend, I spent YEARS in the back of a dark junk drawer, so “shine upon us” hits me RIGHT here.",
-          "needs_agent_fix": true,
+          "question": "Asaph asks God to restore His people and cause His face to shine upon them. True or false: Asaph asks for this so that they may be saved.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 80:3",
-          "question": "When Asaph asks God to cause His face to shine upon His people, what is he really asking for?",
-          "answers": [
-            {
-              "text": "For God to look on them with favor",
-              "correct": true
-            },
-            {
-              "text": "For a brighter morning to come soon",
-              "correct": false
-            },
-            {
-              "text": "For a sign to appear in the sky",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 80:4",
+          "text": "Now Asaph calls Him the LORD God of Hosts and asks the question every person staring at an oven timer that WILL NOT MOVE has ever asked: how long?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Psalm 80:4",
-          "text": "Now Asaph calls Him the LORD God of Hosts. And he asks the question every waiting person asks, and baker, I waited in a junk drawer for years, so trust me, I KNOW this one: how long?",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 80:4",
@@ -150,23 +123,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "story",
-          "verses": "Psalm 80:5",
-          "text": "Then Asaph describes what life has been like for God's people. Let's just say nobody's asking for seconds.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 80:5",
-          "question": "What does Asaph say God has given His people to eat and drink?",
+          "question": "Asaph describes what life has been like for God's people. What does he say God has given them to eat and drink?",
           "answers": [
             {
               "text": "Bread of tears and tears to drink",
@@ -181,42 +146,47 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Psalm 80:6",
+          "text": "And it's not just trouble at home. Asaph says God makes them contend with their neighbors, like a group chat where every single reply starts a new fight.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 80:6",
+          "question": "God makes His people contend with their neighbors, and Asaph says their enemies ___ them",
+          "answers": [
+            {
+              "text": "mock",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "fear",
+              "correct": false
+            },
+            {
+              "text": "avoid",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Psalm 80:6",
-          "text": "And it's not just trouble at home. Asaph says God makes them contend with their neighbors, like a group chat where every single reply starts a new fight.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 80:6",
-          "question": "True or false: Asaph says their enemies are leaving them alone.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
           "verses": "Psalm 80:7",
-          "text": "And here's that line again, with one addition: “Restore us, O God of Hosts, and cause Your face to shine upon us, that we may be saved.” Asaph's not done asking. Not even close.",
-          "needs_agent_fix": true,
+          "text": "And here's that line again, now calling Him the God of Hosts: “Restore us, O God of Hosts, and cause Your face to shine upon us, that we may be saved.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -229,8 +199,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 80:8",
-          "text": "Now Asaph changes pictures. No more sheep, baker, and I know, I was getting attached too. God's people are a vine, and Asaph tells its story from the day God uprooted it.",
-          "needs_agent_fix": true,
+          "text": "Now Asaph changes pictures. No more sheep, baker, and I know, I was getting attached too; this time it's a vine God uprooted and moved.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -318,20 +288,21 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 80:11",
-          "question": "Asaph's vine keeps on growing. How far does it send out its branches?",
+          "question": "Asaph's vine keeps on growing. It sends out its branches all the way to the ___",
           "answers": [
             {
-              "text": "Out to the Sea",
-              "correct": true
+              "text": "Sea",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Up to Nineveh",
+              "text": "Jordan",
               "correct": false
             },
             {
-              "text": "Back into Egypt",
+              "text": "Negev",
               "correct": false
             }
           ],
@@ -351,7 +322,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 80:12",
-          "question": "True or false: Asaph says the people's enemies are the ones who broke down the vine's walls.",
+          "question": "True or false: Asaph says enemies broke down the vine's walls.",
           "answers": [
             {
               "text": "True",
@@ -392,27 +363,28 @@
           "card": 11,
           "kind": "story",
           "verses": "Psalm 80:14",
-          "text": "But Asaph doesn't stop at why. He turns it into a request and tacks on a “we pray!” Baker, when a man says please with an exclamation point, he MEANS it.",
-          "needs_agent_fix": true,
+          "text": "But Asaph doesn't stop at why; he turns it into a request and tacks on a “we pray!” When a man says please with an exclamation point, baker, he MEANS it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 80:14",
-          "question": "What does Asaph ask the God of Hosts to do for the vine?",
+          "question": "Asaph begs the God of Hosts to return, to look down from ___ and see, and to attend to the vine",
           "answers": [
             {
-              "text": "Return and look down from heaven",
-              "correct": true
+              "text": "heaven",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Tear the old vine out for good",
+              "text": "Zion",
               "correct": false
             },
             {
-              "text": "Plant a brand new vine instead",
+              "text": "Sinai",
               "correct": false
             }
           ],
@@ -423,15 +395,15 @@
           "card": 13,
           "kind": "story",
           "verses": "Psalm 80:15",
-          "text": "Asaph reminds God this vine is the root His own right hand planted. Then he calls it something new: “the son You have raised up for Yourself.” Baker, that vine just went from the garden to the FAMILY.",
-          "needs_agent_fix": true,
+          "text": "Asaph keeps going: “the root Your right hand has planted, the son You have raised up for Yourself.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Psalm 80:16",
-          "text": "Then comes the hardest line in the song, about that same vine: “Your vine has been cut down and burned; they perish at the rebuke of Your countenance.” Friend, I've pulled burnt batches out of the oven before, and not one of them sat as heavy as that line.",
+          "text": "Then comes a heavy line about that same vine: “Your vine has been cut down and burned; they perish at the rebuke of Your countenance.” I think this one hurts to sing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -439,7 +411,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Psalm 80:17",
-          "text": "Then Asaph turns from the vine to one person, the son of man, and says God raised him up for Himself, the same way he talked about the vine. Keep your eye on this one, baker.",
+          "text": "Then Asaph prays for the son of man God has raised up for Himself. Keep your eye on this line, baker.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -512,7 +484,7 @@
           "card": 19,
           "kind": "story",
           "verses": "Psalm 80:19",
-          "text": "Asaph closes with that line one last time, and this time he calls on the LORD God of Hosts: “Restore us, O LORD God of Hosts; cause Your face to shine upon us, that we may be saved.”",
+          "text": "Asaph ends the song with that line again, and this time he calls on the LORD God of Hosts: “Restore us, O LORD God of Hosts; cause Your face to shine upon us, that we may be saved.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

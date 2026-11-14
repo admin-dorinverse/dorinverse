@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 89:1",
-          "text": "This psalm comes from Ethan the Ezrahite, a wise man of Solomon's day (1 Kings 4:31), and he's talking to the LORD. He promises to sing of the LORD's loving devotion forever and proclaim His faithfulness to all generations. FOREVER, friend, and I can't commit to one song for a whole car ride!",
+          "text": "This psalm comes from Ethan the Ezrahite, and he's talking to the LORD. He promises to sing of the LORD's loving devotion forever and proclaim His faithfulness to all generations. FOREVER, friend, and I can't commit to one song for a whole car ride!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,9 +161,9 @@
           "card": 11,
           "kind": "story",
           "verses": "Psalm 89:10",
-          "text": "Ethan keeps going. The LORD crushed Rahab like a carcass and scattered His enemies with His mighty arm.",
+          "text": "Ethan keeps going. The LORD crushed Rahab (not the Rahab of Jericho) like a carcass and scattered His enemies with His mighty arm.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -189,18 +189,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 89:12",
-          "question": "Ethan says the LORD created north and south, and the mountains Tabor and Hermon shout for joy at His name. What picture is Ethan painting?",
+          "question": "Ethan says the LORD created north and south. He names two mountains, Tabor and Hermon. What do they do at the LORD's name?",
           "answers": [
             {
-              "text": "The earth joins the heavens in praise",
+              "text": "They shout for joy",
               "correct": true
             },
             {
-              "text": "The mountains mark David's borders",
+              "text": "They tremble in fear",
               "correct": false
             },
             {
-              "text": "The land waits for a coming king",
+              "text": "They bow down low",
               "correct": false
             }
           ],
@@ -211,7 +211,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Psalm 89:13",
-          "text": "Mighty is the LORD's arm, strong is His hand, and His right hand is exalted. Ethan is out here like a ring announcer hyping up the champ, and honestly, friend, that's the RIGHT job.",
+          "text": "Mighty is the LORD's arm, strong is His hand, and His right hand is exalted. Ethan's hyping like a ring announcer, friend, and for once NOBODY can say the hype is too much.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -252,15 +252,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 89:16",
-          "question": "Ethan says these blessed people rejoice in the LORD's name only on special days.",
+          "question": "Ethan says these blessed people rejoice in the LORD's name all day long.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -269,9 +269,9 @@
         {
           "card": 18,
           "kind": "story",
-          "verses": "Psalm 89:17",
+          "verses": "Psalm 89:17-18",
           "text": "The LORD is the glory of their strength, and Ethan says that by His favor \"our horn is exalted.\" Then he turns to Israel's king.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -316,7 +316,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 89:19",
-          "question": "In that vision, God says He bestowed help on one chosen from the people. What kind of man does God call him?",
+          "question": "In that vision, God says He has bestowed help on someone. What does He call him?",
           "answers": [
             {
               "text": "A warrior",
@@ -339,30 +339,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 89:20",
-          "question": "God says He has found His servant David and anointed him with His sacred ___.",
+          "question": "God says He has found His servant David and ___ him with His sacred oil.",
           "answers": [
             {
-              "text": "oil",
+              "text": "anointed",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "water",
+              "text": "healed",
               "correct": false
             },
             {
-              "text": "blood",
+              "text": "cleansed",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Psalm 89:21",
-          "text": "God promises His hand will sustain David and His arm will strengthen him. That's a spotter at the gym who NEVER walks off to check his phone.",
+          "text": "God promises His hand will sustain David and His arm will strengthen him. Friend, I need a nap after rolling out ONE tray of dough, and David's got the LORD's own arm holding him up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -389,7 +389,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Psalm 89:23-24",
-          "text": "God will crush David's foes and strike down those who hate him, and His faithfulness and loving devotion will be with David. Through God's name, David's horn will be exalted.",
+          "text": "God will crush David's foes and strike down those who hate him. Through God's name, David's horn will be exalted.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -445,68 +445,33 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 89:28",
-          "question": "God says He'll forever preserve His loving devotion for David, and His ___ with David will stand fast.",
-          "answers": [
-            {
-              "text": "covenant",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "kingdom",
-              "correct": false
-            },
-            {
-              "text": "temple",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 89:28-29",
+          "text": "God says His covenant with David will stand fast. He'll establish David's line forever, his throne as long as the heavens endure.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 89:29",
-          "question": "God says David's line and throne will last only as long as David lives.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 89:30-31",
+          "text": "Then God brings up a hard what-if. What if David's sons forsake His law and fail to keep His commandments?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Psalm 89:30-31",
-          "text": "Then God brings up a hard what-if: what if David's sons forsake His law and fail to keep His commandments? It's like a phone contract with a whole page on what happens if you miss a payment.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 89:32",
           "question": "If David's sons break God's law, what will God do about their sin?",
           "answers": [
             {
-              "text": "Punish it with the rod",
+              "text": "Deal with it using the rod",
               "correct": true
             },
             {
-              "text": "Pardon it every time",
+              "text": "Overlook it every time",
               "correct": false
             },
             {
@@ -518,7 +483,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 89:33",
@@ -537,30 +502,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Psalm 89:34",
-          "text": "God says He will not violate His covenant or alter the utterance of His lips. Friend, I changed my mind THREE times picking a sprinkle color this morning, and He doesn't change His once.",
+          "text": "God says He will not violate His covenant or alter the utterance of His lips. Friend, my \"last batch of the night\" has NEVER once been the last batch, and His word doesn't change ONCE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 89:35",
-          "question": "God swears once and for all that He will not lie to David. What does He swear by?",
+          "question": "God swears once and for all by His ___ that He will not lie to David.",
           "answers": [
             {
-              "text": "His holiness",
-              "correct": true
+              "text": "holiness",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The heavens above",
+              "text": "kingdom",
               "correct": false
             },
             {
-              "text": "David's crown",
+              "text": "people",
               "correct": false
             }
           ],
@@ -568,7 +534,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Psalm 89:36",
           "text": "God swears that David's offspring shall endure forever, and his throne will be before Him like the sun. And friend, the sun has not called in sick ONE morning, EVER.",
@@ -576,22 +542,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 89:37",
-          "question": "God compares David's throne to the moon, a faithful witness in the sky. What does that picture say about the throne?",
+          "question": "God says David's throne will stand before Him like the sun. What other light in the sky does He name?",
           "answers": [
             {
-              "text": "It will be established forever",
+              "text": "The moon",
               "correct": true
             },
             {
-              "text": "It will grow and shrink in turn",
+              "text": "The stars",
               "correct": false
             },
             {
-              "text": "It will rule only in the dark",
+              "text": "The dawn",
               "correct": false
             }
           ],
@@ -608,7 +574,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 89:38",
-          "text": "And then, friend, the whole song flips faster than a light switch. Ethan says to the LORD, \"Now, however, You have spurned and rejected him; You are enraged by Your anointed one.\"",
+          "text": "And then, friend, the whole song turns. Ethan says to the LORD, \"Now, however, You have spurned and rejected him; You are enraged by Your anointed one.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -617,7 +583,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 89:39",
-          "question": "Ethan says the LORD has renounced the covenant with His servant and sullied his crown in the dust.",
+          "question": "Ethan says the LORD has renounced the covenant with His servant.",
           "answers": [
             {
               "text": "True",
@@ -644,18 +610,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 89:42",
-          "question": "Ethan says the LORD has exalted the right hand of the king's foes. Who has He made rejoice?",
+          "question": "Ethan says the LORD has lifted someone's right hand high. Whose is it?",
           "answers": [
             {
-              "text": "All the king's enemies",
+              "text": "The king's foes",
               "correct": true
             },
             {
-              "text": "All the king's people",
+              "text": "The king's sons",
               "correct": false
             },
             {
-              "text": "All the king's sons",
+              "text": "The king's people",
               "correct": false
             }
           ],
@@ -691,7 +657,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 89:44",
-          "question": "God said David's throne would last as long as the heavens endure. Now Ethan says the LORD has cast the king's throne to the ground.",
+          "question": "Ethan says the LORD has cast the king's throne to the ground.",
           "answers": [
             {
               "text": "True",
@@ -708,9 +674,9 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Psalm 89:45",
+          "verses": "Psalm 89:45-46",
           "text": "Ethan says the LORD has cut short the days of the king's youth and covered him with shame. Then Ethan stops describing and starts asking.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -718,7 +684,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 89:46",
-          "question": "What does Ethan ask the LORD?",
+          "question": "Ethan has said the king's throne is on the ground and he is covered with shame. What does Ethan ask the LORD?",
           "answers": [
             {
               "text": "How long will You hide Yourself",
@@ -733,14 +699,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 89:47",
-          "text": "Ethan asks the LORD to remember the briefness of his lifespan: \"For what futility You have created all men!\" Life moves fast, friend, like I blink once and the oven timer's already beeping.",
+          "text": "Ethan asks the LORD to remember the briefness of his lifespan: \"For what futility You have created all men!\" That one's heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -775,7 +741,7 @@
               "correct": true
             },
             {
-              "text": "The sacred oil that anointed David",
+              "text": "The crown He placed on David's head",
               "correct": false
             },
             {

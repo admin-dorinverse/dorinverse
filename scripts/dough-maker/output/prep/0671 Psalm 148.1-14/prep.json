@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 148:1",
-          "text": "Psalm 148 opens with one word: \"Hallelujah!\" Then the psalm writer starts calling out, one after another, who should praise the LORD. Friend, this man has a LIST, and he reads it like the front desk at the busiest office in the world. NEXT!",
-          "needs_agent_fix": true,
+          "text": "Psalm 148 opens with one word: \"Hallelujah!\" Then the psalm writer starts calling out, one after another, who should praise the LORD. Friend, this man has a LIST, and he calls it out like the front desk at the busiest office in the world.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,7 +64,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 148:2-3",
-          "text": "After the angels and all His heavenly hosts, he calls out to the lights in the sky: \"Praise Him, O sun and moon; praise Him, all you shining stars.\" He's talking to the SUN, friend, and I talk to my oven every single morning, so who am I to judge?",
+          "text": "After the angels and all His heavenly hosts, he calls out to the lights in the sky: \"Praise Him, O sun and moon; praise Him, all you shining stars.\" Friend, that's the whole lighting crew of the sky getting called up, and here I am with an oven light that only comes on if you SMACK the door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -121,32 +121,27 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 148:6",
-          "question": "God doesn't just make the heavens and walk away. He sets them in place to last ___.",
+          "question": "After creating everything up in the heavens, God issued a decree. The psalm writer says that decree will never pass away.",
           "answers": [
             {
-              "text": "forever",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "a lifetime",
-              "correct": false
-            },
-            {
-              "text": "an age",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 148:6",
-          "text": "\"He issued a decree that will never pass away.\" Friend, I shared a junk drawer with an expired coupon for YEARS, so a decree that NEVER runs out sounds like a miracle to me.",
+          "text": "He established everything up there forever and ever. Friend, I spent YEARS in a junk drawer next to an expired coupon that still believed in itself, so NEVER running out sounds pretty amazing to me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -159,20 +154,21 @@
         {
           "card": 1,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 148:7",
-          "question": "The heavens are covered, from the angels all the way up to the highest heavens. Where does the psalm writer call for praise to come from next?",
+          "question": "The heavens are covered, from the angels all the way up to the highest heavens. Now the psalm writer calls for praise to come from ___.",
           "answers": [
             {
-              "text": "From the earth",
-              "correct": true
+              "text": "the earth",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "From the temple",
+              "text": "the sanctuary",
               "correct": false
             },
             {
-              "text": "From Zion",
+              "text": "Zion",
               "correct": false
             }
           ],
@@ -183,7 +179,7 @@
           "card": 2,
           "kind": "story",
           "verses": "Psalm 148:7",
-          "text": "He starts at the bottom: all great sea creatures and the ocean depths. Way down in the dark, friend, and they still get called up, and believe me, I KNOW how good that feels.",
+          "text": "Down on the earth, he starts with all great sea creatures and ocean depths. Friend, people's emails land in spam from across the hall, and the bottom of the OCEAN makes this list first.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -214,7 +210,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 148:8",
-          "text": "Lightning and hail, snow and clouds, the whole forecast gets called on. My weather app sees that lineup and sends me ELEVEN alerts, friend, but the psalm writer sees it and hands them a HYMNAL.",
+          "text": "Lightning and hail, snow and clouds, the whole forecast gets called on, friend. A phone sees that lineup and sends ELEVEN alerts, but the psalm writer sees it and hands it a HYMNAL.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -223,15 +219,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 148:9",
-          "question": "On the earth, the psalm writer calls on the mountains and hills to praise the LORD, but the trees don't make the list.",
+          "question": "Still on the earth, the psalm writer calls on trees to praise the LORD too.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -241,7 +237,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Psalm 148:9-10",
-          "text": "Mountains and all hills, fruit trees and all cedars, wild animals and all cattle, crawling creatures and flying birds. Friend, the CEDARS got called up before me, and I'm the one wearing the tall hat.",
+          "text": "Mountains and all hills, fruit trees and all cedars, wild animals and all cattle, crawling creatures and flying birds. Friend, that's every hill, tree and critter in one line, and back in the Millers' kitchen I couldn't get six little cookie cutters to line up for ONE batch.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -272,8 +268,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Psalm 148:11",
-          "text": "Kings of the earth and all peoples, princes and all rulers of the earth. The folks who run the world get called right after the cattle, friend, and NO crown gets you a better seat in THIS choir.",
-          "needs_agent_fix": true,
+          "text": "Kings of the earth and all peoples, princes and all rulers of the earth. The folks who run the world get called right after the crawling creatures and the birds, friend, so NO crown gets you a better seat in THIS choir.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -299,39 +295,38 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 148:12",
-          "text": "Young men and maidens, old and young together. Grandpa and the grandkid singing the same song, friend, that's a duet I'd buy a ticket to, and I don't even have POCKETS.",
+          "text": "Young men and maidens, old and young together. Grandpa and the grandkid singing the same song, friend, that's a duet I'd buy a ticket to, and I don't even have a WALLET.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 148:13",
-          "question": "The earth gets the same line the heavens got: \"Let them praise the name of the LORD\". This time the reason is that His name is the ___ name that is exalted.",
+          "question": "Now everything on the earth gets the call: \"Let them praise the name of the LORD…\" What reason does the psalm writer give?",
           "answers": [
             {
-              "text": "only",
-              "correct": true,
-              "blank": 1
+              "text": "His name alone is exalted",
+              "correct": true
             },
             {
-              "text": "oldest",
+              "text": "His throne rests on the earth",
               "correct": false
             },
             {
-              "text": "royal",
+              "text": "His mercy fills the whole earth",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Psalm 148:13-14",
-          "text": "His splendor is above the earth and the heavens, and then the psalm turns to His people: He has raised up a horn for them, the praise of all His saints. Friend, after a list THAT long I was sure somebody got forgotten, but take it from a stamper who spent years in the back of a drawer, His people did NOT.",
+          "text": "His splendor is above the earth and the heavens, and then the psalm turns to His people: He has raised up a horn for them, the praise of all His saints. Friend, it's like the camera at a packed stadium panning the WHOLE crowd and then zooming right in on one row.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -361,7 +356,7 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Psalm 148:14",
+          "verses": "Psalm 148:1, 14",
           "text": "And the psalm ends right where it started: \"Hallelujah!\" He opened with it and closed with it, friend, with all of heaven and earth packed in between like a cookie box filled RIGHT up to the lid.",
           "needs_agent_fix": false,
           "needs_human_decision": false

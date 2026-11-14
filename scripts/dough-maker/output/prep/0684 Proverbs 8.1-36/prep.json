@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 8:1",
-          "text": "Proverbs is the wise sayings of Solomon, son of David, king of Israel. Here, wisdom is pictured as a woman calling out to people, and she is NOT using her inside voice. The book asks, 'Does not wisdom call out, and understanding raise her voice?'",
-          "needs_agent_fix": true,
+          "text": "The book of Proverbs opens with the proverbs of Solomon, son of David, king of Israel (Proverbs 1:1). Here, wisdom is pictured as a woman calling out to people, and she is NOT whispering. The book asks, 'Does not wisdom call out, and understanding raise her voice?'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Proverbs 8:4",
-          "text": "Then wisdom starts talking: 'To you, O men, I call out, and my cry is to the sons of men.' No guest list, no velvet rope, friend. She's calling out to EVERYBODY walking by.",
-          "needs_agent_fix": true,
+          "text": "Then wisdom speaks: 'To you, O men, I call out, and my cry is to the sons of men.' No guest list and no velvet rope: she's calling out to EVERYBODY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Proverbs 8:6-7",
-          "text": "Wisdom says, 'Listen, for I speak of noble things, and the opening of my lips will reveal right.' Her mouth speaks the truth, and mine has said 'two more minutes' about the same batch for a WHOLE hour.",
+          "text": "Wisdom says, 'Listen, for I speak of noble things, and the opening of my lips will reveal right.' She says her mouth will speak the truth, and mine has said 'two more minutes' about the same batch for a WHOLE hour.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -97,21 +97,17 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Proverbs 8:9",
-          "question": "Wisdom says all her words are plain to the ___.",
+          "question": "True or false: wisdom says her words are hard to follow, even for the discerning.",
           "answers": [
             {
-              "text": "discerning",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "powerful",
-              "correct": false
-            },
-            {
-              "text": "wealthy",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -260,27 +256,35 @@
           "card": 17,
           "kind": "story",
           "verses": "Proverbs 8:18-19",
-          "text": "Wisdom says, 'With me are riches and honor, enduring wealth and righteousness.' And her fruit? Better than gold, pure gold, and her harvest beats choice silver.",
-          "needs_agent_fix": true,
+          "text": "Wisdom says, 'With me are riches and honor, enduring wealth and righteousness.' Her fruit is better than gold, pure gold, and her harvest beats choice silver.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
+          "kind": "story",
+          "verses": "Proverbs 8:20",
+          "text": "Wisdom says she walks in the way of righteousness, along the paths of justice.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 19,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Proverbs 8:21",
-          "question": "Wisdom walks in the way of righteousness and makes the ___ of those who love her full.",
+          "question": "Wisdom gives wealth to those who love her. What does she say she does with their treasuries?",
           "answers": [
             {
-              "text": "treasuries",
+              "text": "Makes them full",
               "correct": true
             },
             {
-              "text": "gardens",
+              "text": "Guards them closely",
               "correct": false
             },
             {
-              "text": "cities",
+              "text": "Opens them to strangers",
               "correct": false
             }
           ],
@@ -297,7 +301,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 8:22",
-          "text": "Now wisdom takes us WAY back: 'The LORD created me as His first course, before His works of old.' Forget early for work, friend, she showed up before anybody built the OFFICE.",
+          "text": "Now wisdom takes us WAY back, further back than any 'back in my day' story I've got. She says, 'The LORD created me as His first course, before His works of old.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -386,7 +390,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Proverbs 8:29-30",
-          "text": "The waters can't go past His command, and He marks out the foundations of the earth. Through all of it, wisdom says she was 'a skilled craftsman at His side'.",
+          "text": "The waters can't go past His command, and He marks out the foundations of the earth. Through all of it, wisdom says she was 'a skilled craftsman at His side…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -521,7 +525,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Proverbs 8:36",
-          "text": "Then her last line: 'all who hate me love death.' Wisdom's been standing at the crossroads this whole time, friend, and she made the choice LOUD and clear.",
+          "text": "Then her last line: 'all who hate me love death.' Wisdom's been standing at the crossroads this whole time, friend, and she laid out the choice LOUD and clear.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

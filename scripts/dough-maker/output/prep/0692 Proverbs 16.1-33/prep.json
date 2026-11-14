@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 16:1",
-          "text": "These are proverbs of Solomon, king of Israel (Proverbs 10:1). Most of them come in two halves, like a cookie snapped right down the middle. First half of the first one: the plans of the heart belong to man.",
-          "needs_agent_fix": true,
+          "text": "These are proverbs of Solomon (Proverbs 10:1), king of Israel (Proverbs 1:1). Most of them come in two halves, like a cookie snapped right down the middle. First half of the first one: the plans of the heart belong to man.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -25,7 +25,7 @@
               "correct": true
             },
             {
-              "text": "From his own heart",
+              "text": "From his father",
               "correct": false
             },
             {
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Proverbs 16:3",
-          "text": "Then Solomon gives an instruction with a promise stapled to it: do this one thing, and your plans will be achieved. My plan used to be \"never end up in a junk drawer,\" so you KNOW I'm listening close on this one.",
+          "text": "Then Solomon gives an instruction with a promise stapled to it: do this one thing, and your plans will be achieved. ONE thing, friend. Not a forty-page manual. Not a three-hour seminar. ONE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -153,18 +153,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 16:7",
-          "question": "True or false: when a man's ways please the LORD, He makes the man's enemies run away from him.",
+          "question": "True or false: when a man's ways please the LORD, He makes even the man's enemies live at peace with him.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -172,7 +172,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 16:8",
-          "question": "Solomon compares two ways of ending up with something in your hands. Which one does he call better?",
+          "question": "Solomon weighs what people end up with against how they got it. Which one does he call better?",
           "answers": [
             {
               "text": "A little with righteousness",
@@ -183,7 +183,7 @@
               "correct": false
             },
             {
-              "text": "A lot with good luck",
+              "text": "Plenty with hard work",
               "correct": false
             }
           ],
@@ -234,15 +234,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 16:11",
-          "question": "Then Solomon brings up honest scales and balances. True or false: the LORD cares about them, right down to every weight in the bag.",
+          "question": "Solomon says honest scales and balances are from the LORD. True or false: he says the weights in the bag are none of the LORD's concern.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -275,7 +275,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Proverbs 16:13-14",
-          "text": "Righteous lips are a king's delight. But the wrath of a king is a messenger of death, and if your boss's \"Got a minute?\" text makes your stomach drop, imagine the boss has a THRONE.",
+          "text": "Righteous lips are a king's delight, and he who speaks honestly is beloved. But Solomon warns that the wrath of a king is a messenger of death.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -375,24 +375,14 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 16:18",
-          "question": "Pride goes before ___, and a haughty spirit before a ___.",
+          "question": "Pride goes before destruction, and a haughty spirit before a ___.",
           "answers": [
             {
-              "text": "destruction",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "fall",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "reward",
-              "correct": false
-            },
-            {
-              "text": "victory",
               "correct": false
             },
             {
@@ -481,15 +471,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 16:23",
-          "question": "Solomon keeps going on the wise man. True or false: the wise man's mouth instructs his heart.",
+          "question": "Solomon keeps going on the wise man. True or false: the wise man's heart instructs his mouth and adds persuasiveness to his lips.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -554,18 +544,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 16:26",
-          "question": "True or false: Solomon says a worker's hunger makes him give up.",
+          "question": "Solomon says a worker's appetite works for him. True or false: he says the worker's hunger drives him onward.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -581,7 +571,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 16:28",
-          "question": "Next in line is the gossip. What does a gossip do?",
+          "question": "Next in line, a perverse man spreads dissension. And what does a gossip do?",
           "answers": [
             {
               "text": "Divides close friends",
@@ -626,7 +616,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Proverbs 16:30",
-          "text": "Solomon even calls out the faces: whoever winks his eye devises perversity, and whoever purses his lips is bent on evil. If somebody does both at once, friend, that's not a face, that's a warning label.",
+          "text": "Solomon even points to the signals: he who winks his eye devises perversity, and he who purses his lips is bent on evil.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -654,7 +644,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 16:32",
-          "question": "Then Solomon talks about anger: he who controls his temper is greater than one who captures a city, and he who is slow to anger is better than a ___.",
+          "question": "Then Solomon talks about anger: he who is slow to anger is better than a ___.",
           "answers": [
             {
               "text": "warrior",
@@ -688,7 +678,7 @@
               "correct": false
             },
             {
-              "text": "Pure chance",
+              "text": "The king",
               "correct": false
             }
           ],

@@ -38,33 +38,14 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Psalm 121:2",
-          "question": "The LORD who helps the psalmist is the One who made the hills the psalmist is looking at.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "And the psalm says who the LORD is: \"the Maker of heaven and earth.\" Friend, when I need help in this bakery, the best I've got is a rolling pin!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Psalm 121:2",
-          "text": "The Maker of heaven and earth. Friend, that's skipping the help desk and going straight to the One who built the WHOLE building!",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
           "verses": "Psalm 121:3",
           "text": "Now the psalm switches from my to your. And it starts right down at the ground, with your feet.",
@@ -72,7 +53,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 121:3",
@@ -95,7 +76,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Psalm 121:3-4",
           "text": "Then the psalm tells you something about your Protector. It says it once, then turns right around and says it again with more.",
@@ -103,7 +84,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 121:3-4",
@@ -122,7 +103,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 121:4",
           "text": "The Protector of Israel will neither slumber nor sleep. Me, I closed my eyes for ONE minute next to the oven and woke up to a tray of cookie-shaped charcoal.",
@@ -130,7 +111,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Psalm 121:5",
           "text": "Then the psalm says it plain: the LORD is your keeper. And it paints a picture too: the LORD is the shade on your right hand.",
@@ -138,11 +119,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 121:6",
-          "question": "With the LORD as your shade, the ___ will not strike you by day.",
+          "question": "The LORD is the shade on your right hand. Then the psalm says the ___ will not strike you by day.",
           "answers": [
             {
               "text": "sun",
@@ -162,7 +143,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 121:6",
@@ -181,93 +162,81 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
-          "verses": "Psalm 121:6",
-          "text": "The sun won't strike you by day, nor the moon by night. Day shift AND night shift, friend, and it's the same Keeper on both.",
+          "verses": "Psalm 121:7",
+          "text": "First your feet, then the sun. Now the psalm brings up the thing nobody wants to run into: evil.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 121:7",
+          "question": "The psalm says the LORD will guard you from all evil.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Psalm 121:7",
-          "text": "Feet, sun, moon. Then the psalm brings up the thing nobody wants to run into: evil.",
+          "question": "Besides guarding you from evil, the LORD will preserve your ___.",
+          "answers": [
+            {
+              "text": "soul",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "house",
+              "correct": false
+            },
+            {
+              "text": "land",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 121:7",
-          "question": "The psalm turns to evil: the LORD will guard you from ___ evil.",
-          "answers": [
-            {
-              "text": "all",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "most",
-              "correct": false
-            },
-            {
-              "text": "some",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 121:8",
+          "text": "Last line: the LORD will watch over your coming and going. Friend, I spent YEARS in a junk drawer with no comings and NO goings, and He's watching over yours!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Psalm 121:7",
-          "question": "Besides guarding you from evil, what does the psalm say the LORD will preserve?",
-          "answers": [
-            {
-              "text": "Your soul",
-              "correct": true
-            },
-            {
-              "text": "Your house",
-              "correct": false
-            },
-            {
-              "text": "Your land",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Psalm 121:8",
-          "text": "Last line: the LORD will watch over your coming and going. Friend, I spent YEARS in a junk drawer with no comings and NO goings, and He's watching over every single one of yours!",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Psalm 121:8",
           "question": "The LORD watches over your coming and going. For how long?",
           "answers": [
             {
-              "text": "Now and forevermore",
+              "text": "For all time",
               "correct": true
             },
             {
-              "text": "From morning until evening",
+              "text": "For the journey",
               "correct": false
             },
             {
-              "text": "Through the days of the feast",
+              "text": "For your lifetime",
               "correct": false
             }
           ],

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 125:1",
-          "text": "Psalm 125 is a song of ascents, and it's about people who trust in the LORD. The psalm says they're like Mount Zion. A whole MOUNTAIN, friend, and the closest I got to a mountain in that junk drawer was a stack of old takeout menus.",
+          "text": "Psalm 125 is a song of ascents about people who trust in the LORD, and it says they're like Mount Zion. A MOUNTAIN, friend! The biggest thing anybody ever compared me to was a cookie.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,27 +59,28 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 125:2",
-          "text": "Jerusalem has mountains all the way around it, like a city with bodyguards made of solid ROCK. Try sneaking past THAT security with a fake badge.",
+          "text": "Next picture: the mountains surround Jerusalem. Look left, mountain. Look right, MOUNTAIN. Turn ALL the way around, friend, still mountain.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 125:2",
-          "question": "The mountains surround Jerusalem. In the same way, who surrounds the LORD's people?",
+          "question": "Just as the mountains surround Jerusalem, the LORD surrounds His ___.",
           "answers": [
             {
-              "text": "The LORD Himself",
-              "correct": true
+              "text": "people",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The angels of heaven",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "The kings of Israel",
+              "text": "king",
               "correct": false
             }
           ],
@@ -113,31 +114,12 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 125:3",
-          "text": "Next the psalm brings up two things: the scepter of the wicked and the land allotted to the righteous. Me holding a scepter? I'd wrap my mustache around it and knock my OWN hat off.",
+          "text": "Next the psalm says the scepter of the wicked will not rest upon the land allotted to the righteous. If I ever held a scepter, I'd grab it with my mustache and knock my OWN hat clean off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 125:3",
-          "question": "The psalm says the scepter of the wicked will rest on the land allotted to the righteous.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 125:3",
@@ -160,19 +142,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Psalm 125:4",
-          "text": "Then the song turns into a prayer to the LORD about people who are good and upright in heart. Upright, friend? My first years in that junk drawer I wasn't upright in ANYTHING; I was face-down in the dust.",
+          "text": "Then the song turns and speaks straight to the LORD about the upright in heart. Upright, friend? I'm only upright because my gold base does all the work.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 125:4",
-          "question": "The psalm prays for the upright in heart. What does it ask the LORD to do for them?",
+          "question": "The psalm speaks to the LORD about the upright in heart. What does it ask Him to do for them?",
           "answers": [
             {
               "text": "Do good to them",
@@ -191,38 +173,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 125:5",
-          "text": "Then the flip side: some people take a turn. And it's the kind of turn where even the GPS stops talking and just sighs.",
+          "text": "Then the flip side: some people turn to crooked ways. You know when you miss your exit and the GPS says \"recalculating\" like it's tired of you?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 125:5",
+          "question": "The psalm says the LORD will banish those who turn to crooked ways along with the evildoers.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 125:5",
-          "question": "Those who turn to ___ ways, the LORD will banish with the evildoers.",
-          "answers": [
-            {
-              "text": "crooked",
-              "correct": true
-            },
-            {
-              "text": "ancient",
-              "correct": false
-            },
-            {
-              "text": "humble",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "story",
           "verses": "Psalm 125:5",
           "text": "And the very last line is a blessing: \"Peace be upon Israel.\" PEACE, friend! Back in the junk drawer, peace was the five minutes the dead batteries I shared it with stopped arguing over who had the most charge left.",

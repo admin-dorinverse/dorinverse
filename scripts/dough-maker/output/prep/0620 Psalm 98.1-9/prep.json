@@ -67,62 +67,39 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 98:1",
-          "text": "His own right hand and holy arm gained Him the victory. My mustache has packed a LOT of cookie boxes, friend, but it has never won anything bigger than a staring contest with the oven.",
+          "text": "His own right hand and holy arm gained Him the victory. No backup called in. None needed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 98:2",
-          "question": "The psalm goes on: the LORD has ___ His salvation and revealed His righteousness to the nations.",
+          "question": "The LORD has proclaimed His salvation. True or false: The psalm says He has revealed His righteousness to the nations.",
           "answers": [
             {
-              "text": "proclaimed",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "withheld",
-              "correct": false
-            },
-            {
-              "text": "delayed",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Psalm 98:3",
-          "text": "Then the psalm says He has remembered His love and faithfulness to the house of Israel. Friend, I set an oven timer, walk FIVE steps away, and forget I even OWN an oven.",
+          "text": "Then the psalm says He has remembered His love and faithfulness to the house of Israel, and all the ends of the earth have seen the salvation of our God. Remembered, friend. I set an oven timer, walk FIVE steps away, and forget I even OWN an oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 98:3",
-          "question": "True or false: The psalm says only the house of Israel has seen the salvation of our God.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Psalm 98:4",
           "text": "Now the psalm turns a corner. It's done telling what the LORD did, and it starts handing out invitations.",
@@ -130,7 +107,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 98:4",
@@ -153,26 +130,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Psalm 98:4",
-          "question": "True or false: The psalm wants this praise to the LORD kept soft and quiet.",
+          "question": "The psalm calls for praise to the LORD. It wants that praise to be ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "loud",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "quiet",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "brief",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 98:4-5",
           "text": "A joyful NOISE, friend, not a perfect one, which is GREAT news for my singing voice. Then the psalm brings in the band, starting with the lyre and the harp.",
@@ -180,7 +162,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 98:6",
@@ -191,11 +173,11 @@
               "correct": true
             },
             {
-              "text": "Tambourines and flutes",
+              "text": "Flutes and pipes",
               "correct": false
             },
             {
-              "text": "Cymbals and pipes",
+              "text": "Cymbals and tambourines",
               "correct": false
             }
           ],
@@ -203,7 +185,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 98:7",
@@ -222,42 +204,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Psalm 98:8",
-          "text": "Then the psalm says, 'Let the rivers clap their hands,' and I need you to picture that. RIVERS. Clapping. Friend, whoever's sitting in the front row for THAT applause is going home SOAKED.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 98:8",
-          "question": "The rivers aren't the only part of creation the psalm calls on. What else does it call to sing together for joy?",
-          "answers": [
-            {
-              "text": "The mountains",
-              "correct": true
-            },
-            {
-              "text": "The morning stars",
-              "correct": false
-            },
-            {
-              "text": "The trees of the field",
-              "correct": false
-            }
-          ],
+          "text": "Then the psalm says, \"Let the rivers clap their hands, let the mountains sing together for joy…\" Friend, whoever's sitting in the front row when RIVERS start clapping is going home SOAKED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 98:9",
-          "question": "The psalm calls the rivers and the mountains to rejoice before the LORD, the King. What reason does it give?",
+          "question": "The psalm calls the rivers and the mountains to rejoice before the LORD. What reason does it give?",
           "answers": [
             {
               "text": "He comes to judge the earth",
@@ -276,41 +235,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Psalm 98:9",
-          "text": "Judgment might sound like the scary part. But this psalm calls all of creation to rejoice about it, and I think it's because of HOW He judges.",
+          "text": "Judgment might sound like the scary part. But this psalm calls all of creation to rejoice about it, so let's look at HOW He judges.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 98:9",
-          "question": "The LORD is coming to judge, and the psalm calls creation to celebrate instead of tremble. What does it say about how He judges?",
+          "question": "The LORD is coming to judge, and the psalm calls creation to sing for joy. It says He will judge the world in a way that's ___.",
           "answers": [
             {
-              "text": "He judges rightly and fairly",
-              "correct": true
+              "text": "fair",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He judges only Israel",
+              "text": "harsh",
               "correct": false
             },
             {
-              "text": "He judges without warning",
+              "text": "hidden",
               "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
-          "verses": "Psalm 98:9",
-          "text": "Righteousness for the world, equity for the peoples. A Judge who's fair to EVERYBODY? Friend, that's not polite clapping from those rivers anymore, that's a STANDING OVATION.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

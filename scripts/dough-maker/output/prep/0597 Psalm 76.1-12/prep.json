@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 76:1",
-          "text": "This one's a song by Asaph, the chief of the Levites King David appointed to praise the LORD (1 Chronicles 16:4-5). It's set for stringed instruments, and friend, the only instrument I ever played was the oven timer. Asaph opens by telling us where God is known.",
+          "text": "This song is a psalm of Asaph, a song leader in David's day (1 Chronicles 16:5), and it's set for stringed instruments. Friend, the only instrument I ever played was the oven timer. Asaph opens by telling us where God is known.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -35,7 +35,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -72,32 +72,31 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 76:3",
-          "text": "Right THERE, Asaph says, God did something to the flaming arrows, the shield and sword and weapons of war. Me? My whole arsenal is a mustache, and mostly it packs cookie boxes.",
-          "needs_agent_fix": true,
+          "text": "There, Asaph says, God dealt with the flaming arrows, the shield, the sword and the weapons of war. Flaming arrows! Friend, the only thing on fire in MY bakery is the oven, and that's on PURPOSE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 76:3",
-          "question": "There in His city, God ___ the flaming arrows, the shield and sword and weapons of war.",
+          "question": "What did God do to the flaming arrows, the shield, the sword and the weapons of war?",
           "answers": [
             {
-              "text": "shattered",
-              "correct": true,
-              "blank": 1
+              "text": "He shattered them",
+              "correct": true
             },
             {
-              "text": "collected",
+              "text": "He gathered them",
               "correct": false
             },
             {
-              "text": "blessed",
+              "text": "He hid them",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -135,23 +134,27 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 76:4",
-          "text": "Asaph tells God He is resplendent with light. Then he brings up mountains filled with game, and friend, the biggest mountain on my whole planet is a stack of cookie boxes.",
+          "text": "Asaph tells God He is resplendent with light. Then he compares God's majesty to something enormous out in the wild, and friend, the most enormous thing on my whole planet is a stack of cookie boxes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 76:4",
-          "question": "True or false: Asaph says God is more majestic than mountains filled with game.",
+          "question": "Asaph tells God He is more majestic than what?",
           "answers": [
             {
-              "text": "True",
+              "text": "Mountains filled with game",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "The stars of heaven",
+              "correct": false
+            },
+            {
+              "text": "The waves of the sea",
               "correct": false
             }
           ],
@@ -162,27 +165,28 @@
           "card": 11,
           "kind": "story",
           "verses": "Psalm 76:5",
-          "text": "Then Asaph looks out over the battlefield. The valiant lie plundered, and they sleep their last sleep.",
+          "text": "Then Asaph tells what happened to the valiant: they sleep their last sleep.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 76:5",
-          "question": "When Asaph says the valiant sleep their last sleep, what does he mean?",
+          "question": "Asaph says the valiant who sleep their last sleep lie ___.",
           "answers": [
             {
-              "text": "They have died",
-              "correct": true
+              "text": "plundered",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They are resting before battle",
+              "text": "hidden",
               "correct": false
             },
             {
-              "text": "They fell asleep on watch",
+              "text": "honored",
               "correct": false
             }
           ],
@@ -212,8 +216,8 @@
           "card": 14,
           "kind": "story",
           "verses": "Psalm 76:6",
-          "text": "Asaph says one thing from the God of Jacob left both horse AND rider lying stunned. The HORSE, friend! The horse was just there for the ride!",
-          "needs_agent_fix": true,
+          "text": "Asaph says one thing from the God of Jacob leaves both horse and rider lying stunned. Not just the rider, friend. The horse too.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -276,7 +280,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 76:8",
-          "text": "Then Asaph looks back. From heaven, God pronounced judgment, and the whole earth heard it.",
+          "text": "Then Asaph looks back to when God pronounced judgment from heaven. Down on the earth, something happened.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -307,7 +311,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 76:8-9",
-          "text": "The WHOLE earth went still, like a group chat right after somebody asks who's paying. And Asaph tells us why God rose up to judge.",
+          "text": "The earth went STILL, like a group chat right after somebody asks who's paying. And Asaph tells us why God rose up to judge.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -365,8 +369,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 76:10-11",
-          "text": "And the ones who make it through? Asaph tells God, \"with the survivors of wrath You will clothe Yourself.\" Then he turns to everyone listening with something they make and then keep.",
-          "needs_agent_fix": true,
+          "text": "Asaph tells God, \"…with the survivors of wrath You will clothe Yourself.\" Then the psalm gives a command about something you make and then keep.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -374,18 +378,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 76:11",
-          "question": "Asaph tells his listeners to make and fulfill something to the LORD their God. What is it?",
+          "question": "The psalm says to make something and fulfill it to the LORD. What is it?",
           "answers": [
             {
-              "text": "Their vows",
+              "text": "Vows",
               "correct": true
             },
             {
-              "text": "Their battle plans",
+              "text": "Battle plans",
               "correct": false
             },
             {
-              "text": "Their new altars",
+              "text": "New altars",
               "correct": false
             }
           ],
@@ -405,7 +409,7 @@
               "blank": 1
             },
             {
-              "text": "weapons",
+              "text": "complaints",
               "correct": false
             },
             {
@@ -420,7 +424,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 76:12",
-          "text": "Asaph's song is almost done. He's got one last line about who fears God, and unlike my stories, he actually keeps it to ONE.",
+          "text": "Asaph's song is almost done, and unlike my stories, he actually wraps it up in ONE line. He starts it with this: God breaks the spirits of princes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,7 +433,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 76:12",
-          "question": "In Asaph's last line, God is feared by the ___ of the earth.",
+          "question": "God breaks the spirits of princes, and He is feared by the ___ of the earth.",
           "answers": [
             {
               "text": "kings",
@@ -445,14 +449,6 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Psalm 76:12",
-          "text": "In that same last line, Asaph says God breaks the spirits of princes. And that's where the song ends, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
