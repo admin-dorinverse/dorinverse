@@ -37,7 +37,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Leviticus 10:2",
-          "question": "Right after Nadab and Abihu offer their fire, ___ comes out from the presence of the LORD.",
+          "question": "Nadab and Abihu have made their offering before the LORD. So ___ comes out from the presence of the LORD.",
           "answers": [
             {
               "text": "fire",
@@ -99,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Leviticus 10:4",
-          "text": "Moses calls over Mishael and Elzaphan, sons of Aaron's uncle Uzziel. And friend, they get the hardest job in the camp today: carry their own cousins' bodies away from the front of the sanctuary.",
+          "text": "Moses calls over Mishael and Elzaphan, sons of Aaron's uncle Uzziel. I think this one hurts, friend: he tells them to carry their own cousins' bodies away from the front of the sanctuary.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -140,15 +140,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 10:6",
-          "question": "Moses tells Aaron, Eleazar and Ithamar to tear their garments and mourn.",
+          "question": "Moses tells Aaron, Eleazar and Ithamar not to tear their garments.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -156,6 +156,14 @@
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Leviticus 10:6",
+          "text": "And Moses' warning is serious. If they let their hair become disheveled or tear their garments, they will die, and the LORD will be angry with the whole congregation.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 10:6",
@@ -170,18 +178,10 @@
               "correct": false
             },
             {
-              "text": "Only the Levites in the camp",
+              "text": "No one in the camp",
               "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Leviticus 10:6",
-          "text": "And Moses' warning is serious. If Aaron and his sons mourn like that, they will die, and the LORD will be angry with the whole congregation.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -213,7 +213,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Leviticus 10:7-8",
-          "text": "Aaron and his sons do exactly as Moses instructed. Then the LORD speaks to Aaron himself, and friend, there's no go-between this time.",
+          "text": "Aaron and his sons do as Moses instructed. Then the LORD speaks to Aaron.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -281,7 +281,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 10:12-15",
-          "text": "Then Moses tells Aaron and his remaining sons, Eleazar and Ithamar, about their share of the offerings: the grain offering eaten without leaven beside the altar, and the breast and thigh their families may eat in a clean place. Those breast and thigh portions belong to them and their children permanently, as the LORD has commanded.",
+          "text": "Then Moses tells Aaron and his remaining sons, Eleazar and Ithamar, which parts of the offerings are their share to eat. Some of it is most holy, so it's eaten right beside the altar.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -322,7 +322,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 10:17",
-          "question": "Moses asks why they didn't eat the sin offering in the holy place. What does he say it was given to them to do?",
+          "question": "Moses asks Eleazar and Ithamar why they didn't eat the sin offering in the holy place. What does he say it was given to them to do?",
           "answers": [
             {
               "text": "Take away the congregation's guilt",
@@ -333,11 +333,11 @@
               "correct": false
             },
             {
-              "text": "Mark the end of the eighth day",
+              "text": "Mark the start of a new feast",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -420,14 +420,6 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Leviticus 10:20",
-          "text": "Moses hears Aaron out, and that's enough for him. Me? Somebody explains themselves to me, and I still ask three more questions and check the oven twice.",
-          "needs_agent_fix": true,
           "needs_human_decision": false
         }
       ]

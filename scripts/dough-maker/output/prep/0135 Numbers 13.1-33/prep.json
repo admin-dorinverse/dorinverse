@@ -8,7 +8,7 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Numbers 13:1-3",
+          "verses": "Numbers 13:1-2",
           "text": "The Israelites are camped in the Wilderness of Paran. Then the LORD speaks to Moses, Israel's leader. He's talking about Canaan, the land He says He is giving to the Israelites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -39,59 +39,32 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Numbers 13:2",
-          "question": "From each tribe, the LORD wants Moses to send one man who is a ___ among them.",
+          "question": "The LORD tells Moses to send one man from each of Israel's tribes.",
           "answers": [
             {
-              "text": "leader",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "soldier",
-              "correct": false
-            },
-            {
-              "text": "priest",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Numbers 13:3-15",
-          "text": "So at the LORD's command, Moses sends them out from the Wilderness of Paran, all of them leaders of Israel. Then comes the roster, twelve names, one for each tribe, like Shammua from Reuben, Caleb from Judah and Sethur from Asher.",
+          "verses": "Numbers 13:3-16",
+          "text": "So at the LORD's command, Moses sends them out from the Wilderness of Paran, all of them leaders of Israel. Then comes the roster of twelve names, one for each tribe, like Shammua from Reuben, Caleb from Judah and Sethur from Asher. And Moses gives one of them, Hoshea son of Nun, a new name: Joshua.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 13:16",
-          "question": "One of the spies is Hoshea son of Nun, from the tribe of Ephraim. Moses gives him a new name. What is it?",
-          "answers": [
-            {
-              "text": "Joshua",
-              "correct": true
-            },
-            {
-              "text": "Gideon",
-              "correct": false
-            },
-            {
-              "text": "Samuel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 6,
           "kind": "story",
           "verses": "Numbers 13:17-18",
           "text": "Before they leave, Moses gives them the mission. Go up through the Negev and into the hill country, and see what the land is like.",
@@ -99,7 +72,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 13:18",
@@ -122,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Numbers 13:19-20",
           "text": "Moses also asks if the land is good or bad, if the soil is fertile and if there are trees. Friend, he didn't send spies, he sent a SURVEY.",
@@ -130,7 +103,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 13:19",
@@ -149,11 +122,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 13:20",
-          "question": "Moses tells the spies, \"Be courageous\" and asks them to bring back some ___ from the land.",
+          "question": "Moses tells the spies to be courageous and to bring back some ___ from the land.",
           "answers": [
             {
               "text": "fruit",
@@ -172,7 +145,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Numbers 13:20-21",
           "text": "Good timing, too. It's the season for the first ripe grapes, and the spies go up and spy out the land from the Wilderness of Zin as far as Rehob, toward Lebo-hamath.",
@@ -180,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Numbers 13:22",
           "text": "Through the Negev they come to Hebron, a city built seven years before Zoan in Egypt. Ahiman, Sheshai and Talmai live there.",
@@ -188,7 +161,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 13:22",
@@ -211,19 +184,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Numbers 13:23",
-          "text": "Then, in a valley, they cut down a branch with a single cluster of grapes. ONE cluster, friend, so hold that thought.",
+          "text": "Then, in a valley, the spies cut down a branch with a single cluster of grapes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 13:23",
-          "question": "That single cluster of grapes takes some real effort to move. How do the spies carry it?",
+          "question": "How do the spies carry the branch with that single cluster of grapes?",
           "answers": [
             {
               "text": "On a pole between two men",
@@ -242,7 +215,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Numbers 13:23-24",
           "text": "TWO grown men and a pole for ONE cluster, and here I am needing a nap after carrying one chocolate chip with my mustache! Because of that cluster, the place is called the Valley of Eshcol.",
@@ -250,7 +223,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 13:23",
@@ -309,7 +282,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Numbers 13:28",
-          "text": "Then comes the word nobody wants to hear right after good news: \"Nevertheless.\" It's the doctor who says your scan looks GREAT, and then slowly flips the page.",
+          "text": "Then comes the word nobody wants to hear right after good news: \"Nevertheless…\" It's your boss saying you did GREAT work this year, and then closing the office door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -318,28 +291,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 13:28",
-          "question": "The spies say the people living in the land are ___ and the cities are large and ___.",
+          "question": "The spies say the people living in the land are ___, and the cities are large and fortified.",
           "answers": [
             {
               "text": "strong",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "fortified",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "weak",
               "correct": false
             },
             {
-              "text": "open",
-              "correct": false
-            },
-            {
-              "text": "empty",
+              "text": "peaceful",
               "correct": false
             }
           ],
@@ -348,33 +311,14 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 13:28",
-          "question": "The spies say they even saw the descendants of Anak in the land.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Numbers 13:28-29",
+          "text": "They even saw the descendants of Anak there. Then they run down who lives where: Amalekites in the Negev, Hittites, Jebusites and Amorites in the hill country, and Canaanites by the sea and along the Jordan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Numbers 13:29",
-          "text": "Then they run down who lives where: Amalekites in the Negev, Hittites, Jebusites and Amorites in the hill country, and Canaanites by the sea and along the Jordan. Forty days, and these guys know every neighborhood.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "story",
           "verses": "Numbers 13:30",
           "text": "Now the people need quieting down. One spy steps up and does it, right in front of Moses.",
@@ -382,7 +326,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 13:30",
@@ -405,7 +349,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 13:30",
@@ -428,7 +372,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Numbers 13:31",
           "text": "Caleb is ready to GO. But the men who went up with him push right back, like that work meeting where one person says we can totally hit the deadline and the whole room says, \"Have you SEEN this deadline?\"",
@@ -436,34 +380,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 13:31",
-          "question": "The other spies say Israel cannot go up, because the people in the land are ___ than Israel.",
-          "answers": [
-            {
-              "text": "stronger",
-              "correct": true
-            },
-            {
-              "text": "wilder",
-              "correct": false
-            },
-            {
-              "text": "prouder",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 13:31-32",
-          "question": "The men who went up with Caleb give the Israelites a bad report, and in it they say the land devours its inhabitants.",
+          "verses": "Numbers 13:32",
+          "question": "The men who went up with Caleb give the Israelites a bad report about the land.",
           "answers": [
             {
               "text": "True",
@@ -478,15 +399,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Numbers 13:32-33",
-          "text": "They say all the people they saw there are great in stature, and they even saw the Nephilim. They say the descendants of Anak come from the Nephilim.",
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Numbers 13:32",
+          "question": "In their bad report, the men who went up with Caleb say the land is too dry to grow anything.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
+          "kind": "story",
+          "verses": "Numbers 13:32-33",
+          "text": "They say the land devours its inhabitants, and all the people they saw there are great in stature. They even saw the Nephilim, and they say the descendants of Anak come from the Nephilim.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 13:33",
@@ -509,7 +449,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Numbers 13:33",
           "text": "And they figure they must have seemed the same to them, a feeling I know from my years in the back of a drawer. We'll stop here for now, friend, but this story is NOT done.",

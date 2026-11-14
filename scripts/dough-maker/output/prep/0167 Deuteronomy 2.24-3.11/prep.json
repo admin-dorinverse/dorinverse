@@ -128,25 +128,24 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 2:28",
-          "question": "Moses offers to buy food and water from Sihon in exchange for ___.",
+          "question": "Moses wants to cross Sihon's land in peace. What does he offer for the food and water they'll need on the way?",
           "answers": [
             {
-              "text": "silver",
-              "correct": true,
-              "blank": 1
+              "text": "To pay for it in silver",
+              "correct": true
             },
             {
-              "text": "gold",
+              "text": "To bring their own from Moab",
               "correct": false
             },
             {
-              "text": "cattle",
+              "text": "To ask for it as a gift",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -172,8 +171,8 @@
           "card": 11,
           "kind": "story",
           "verses": "Deuteronomy 2:29",
-          "text": "Moses even says where they're headed: across the Jordan, into the land the LORD is giving them. Paying guests who stay on the road? Sihon, this is the easiest yes of your LIFE.",
-          "needs_agent_fix": true,
+          "text": "Moses even says where they're headed: across the Jordan, into the land the LORD is giving them. Sihon, paying guests who stay on the road are the easiest yes of your LIFE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -202,20 +201,21 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Deuteronomy 2:30",
-          "question": "Moses tells Israel why Sihon wouldn't let them through. What does he say?",
+          "question": "Moses tells Israel why Sihon refused them. He says the LORD had made Sihon's spirit ___, that He might deliver Sihon into Israel's hand.",
           "answers": [
             {
-              "text": "The LORD made his heart obstinate",
-              "correct": true
+              "text": "stubborn",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His people were begging for war",
+              "text": "gentle",
               "correct": false
             },
             {
-              "text": "He had made a deal with Ammon",
+              "text": "weary",
               "correct": false
             }
           ],
@@ -225,8 +225,8 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Deuteronomy 2:30-31",
-          "text": "And Moses says the LORD did that so He might deliver Sihon into Israel's hand. Then the LORD tells Moses, \"See, I have begun to deliver Sihon and his land over to you.\"",
+          "verses": "Deuteronomy 2:31-32",
+          "text": "Then the LORD tells Moses, \"See, I have begun to deliver Sihon and his land over to you.\" So Sihon and his whole army come out for battle against Israel at Jahaz.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -235,15 +235,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 2:33",
-          "question": "Sihon brings his whole army out for battle at Jahaz. Israel defeats the army, but Sihon and his sons get away.",
+          "question": "At Jahaz, Israel defeats Sihon, his sons and his whole army.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -308,8 +308,8 @@
           "card": 19,
           "kind": "story",
           "verses": "Deuteronomy 2:36",
-          "text": "Moses says the LORD our God gave them every one of those cities. Not one wall too high for them. Me? I once spent a whole WEEK stuck behind a takeout menu in that junk drawer.",
-          "needs_agent_fix": true,
+          "text": "Moses says the LORD our God gave them every one of those cities. But there were places the LORD had told them not to go near.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -317,7 +317,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 2:37",
-          "question": "While they're at it, Israel takes some of the land of the Ammonites.",
+          "question": "Israel takes the land along the banks of the Jabbok River too.",
           "answers": [
             {
               "text": "True",
@@ -342,7 +342,7 @@
           "kind": "story",
           "verses": "Deuteronomy 3:1",
           "text": "Israel turns up the road to Bashan, and here comes Og, king of Bashan, with his whole army to fight them at Edrei. One king down and another at the door, like clocking out and getting a \"quick thing\" text from the boss.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -357,15 +357,15 @@
               "correct": true
             },
             {
-              "text": "Turn back to the road",
+              "text": "Turn back the way you came",
               "correct": false
             },
             {
-              "text": "Send him an offer of peace",
+              "text": "Go around his land",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -373,70 +373,71 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 3:2",
-          "question": "The LORD tells Moses to do to Og what he did to ___ king of the Amorites.",
+          "question": "The LORD tells Moses He has delivered Og into his hand, along with all Og's people and his ___.",
           "answers": [
             {
-              "text": "Sihon",
+              "text": "land",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Balak",
+              "text": "gold",
               "correct": false
             },
             {
-              "text": "Eglon",
+              "text": "chariots",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Deuteronomy 3:3",
-          "text": "So the LORD our God also delivers Og king of Bashan and his whole army into Israel's hands. They strike them down until no survivor is left.",
-          "needs_agent_fix": true,
+          "verses": "Deuteronomy 3:2-3",
+          "text": "Then the LORD tells Moses about Og, \"Do to him as you did to Sihon king of the Amorites, who lived in Heshbon.\" And the LORD our God delivers Og and his whole army into Israel's hands, with no survivor left.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Deuteronomy 3:4",
-          "question": "How many of Og's cities does Israel capture?",
+          "question": "In the region of Argob, the kingdom of Og in Bashan, Israel captures all ___ of Og's cities.",
           "answers": [
             {
-              "text": "Sixty cities",
-              "correct": true
+              "text": "sixty",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Forty cities",
+              "text": "forty",
               "correct": false
             },
             {
-              "text": "Twelve cities",
+              "text": "twelve",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Deuteronomy 3:4",
-          "text": "That's the entire region of Argob, the kingdom of Og in Bashan. There isn't a single city they fail to take.",
-          "needs_agent_fix": true,
+          "verses": "Deuteronomy 3:5",
+          "text": "Every one of Og's cities is fortified with high walls and gates and bars. And there are many more unwalled villages.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Deuteronomy 3:5",
-          "question": "Og's sixty cities in Bashan were easy targets, with no walls or gates.",
+          "verses": "Deuteronomy 3:4",
+          "question": "Og's walled cities are so strong that Israel fails to take a few of them.",
           "answers": [
             {
               "text": "True",
@@ -447,78 +448,54 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Deuteronomy 3:6",
-          "question": "What does Israel do with the people of Og's cities?",
-          "answers": [
-            {
-              "text": "The same as with Sihon's cities",
-              "correct": true
-            },
-            {
-              "text": "Makes them pay a yearly tribute",
-              "correct": false
-            },
-            {
-              "text": "Lets them move to another land",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Israel devotes Og's cities to destruction, as they did to Sihon king of Heshbon, utterly destroying the men, women and children of every city.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Deuteronomy 3:6-7",
-          "text": "The men, women and children of every city are destroyed. And just like before, Israel carries off the livestock and the plunder.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 3:8",
+          "question": "Moses sums up the land Israel took from the two kings of the Amorites across the Jordan. It starts at the Arnon Valley. How far does it reach?",
+          "answers": [
+            {
+              "text": "As far as Mount Hermon",
+              "correct": true
+            },
+            {
+              "text": "As far as Mount Carmel",
+              "correct": false
+            },
+            {
+              "text": "As far as Mount Sinai",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Deuteronomy 3:8-10",
-          "text": "Moses sums up the land they took from the two kings of the Amorites across the Jordan: all of it, from the Arnon Valley up to Mount Hermon.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Deuteronomy 3:9-10",
+          "text": "The Sidonians call Mount Hermon Sirion, and the Amorites call it Senir. The land takes in all the cities of the plateau, all of Gilead and all of Bashan.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 3:11",
-          "question": "Then comes a side note: Og king of Bashan was the only one left of the remnant of the ___.",
-          "answers": [
-            {
-              "text": "Rephaim",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Amalekites",
-              "correct": false
-            },
-            {
-              "text": "Philistines",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 12,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 3:11",
-          "question": "Og's bed is still in Rabbah of the Ammonites. What is it made of?",
+          "question": "Then comes a note: Og king of Bashan was the only one left of the remnant of the Rephaim. His bed, nine cubits long and four cubits wide, was still in Rabbah of the Ammonites when this was written. What was it made of?",
           "answers": [
             {
               "text": "Iron",
@@ -533,24 +510,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Deuteronomy 3:11",
-          "text": "Nine cubits long and four cubits wide. I spent YEARS in the back of a junk drawer, and nobody ever pointed at it and said, \"That's where Papa used to sleep.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Deuteronomy 3:11",
-          "text": "And that's where Moses leaves the two kings for now. Stick around, friend, because he is NOT done preaching yet.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Og had a bed of IRON, and I spent YEARS in a junk drawer sleeping on old receipts. Stick around, friend, because Moses is NOT done preaching yet.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

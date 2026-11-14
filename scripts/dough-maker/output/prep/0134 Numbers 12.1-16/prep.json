@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 12:1",
-          "text": "Out in the wilderness, Miriam and Aaron start criticizing Moses, Israel's leader and their own brother (Numbers 26:59). Family, friend. NOBODY knows where to aim like family.",
-          "needs_agent_fix": true,
+          "text": "Out in the wilderness, Miriam and Aaron start criticizing Moses, Israel's leader, who is also their brother (Numbers 26:59). Oh, friend. I can feel trouble rising like dough next to a warm oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Numbers 12:2",
-          "text": "Then the two of them say out loud what's really on their minds, and it comes out as questions about the LORD.",
-          "needs_agent_fix": true,
+          "text": "Then Miriam and Aaron turn to questions about the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 12:2",
-          "question": "What are Miriam and Aaron saying about the LORD?",
+          "question": "Miriam and Aaron ask questions about the LORD. What's their point?",
           "answers": [
             {
               "text": "He speaks through them too",
@@ -64,7 +64,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,7 +72,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 12:2",
-          "question": "True or false: Miriam and Aaron's complaint about Moses stays just between the two of them.",
+          "question": "True or false: What Miriam and Aaron say about Moses stays just between the two of them.",
           "answers": [
             {
               "text": "True",
@@ -83,30 +83,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Numbers 12:3",
-          "question": "Right here the passage stops to tell us something about Moses himself. What does it say?",
-          "answers": [
-            {
-              "text": "He was the most humble man on earth",
-              "correct": true
-            },
-            {
-              "text": "He was the bravest man on earth",
-              "correct": false
-            },
-            {
-              "text": "He was the wisest man on earth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Now a word about Moses himself: he was a very humble man, more so than any man on the face of the earth.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -114,7 +99,7 @@
           "kind": "story",
           "verses": "Numbers 12:3-4",
           "text": "The most humble man on earth, and here I am bragging to the oven every time a stamp comes out clean. Then suddenly the LORD tells all three of them to come out.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -137,7 +122,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -145,7 +130,7 @@
           "kind": "story",
           "verses": "Numbers 12:4-5",
           "text": "So the three go out, and the LORD comes down in a pillar of cloud and stands at the entrance to the Tent. Then He calls two of them forward.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -168,15 +153,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Numbers 12:5-6",
-          "text": "Aaron and Miriam step forward, right up front by the pillar of cloud. Then the LORD says if there's a prophet among them, He'll reveal Himself in a vision and speak in a dream.",
-          "needs_agent_fix": true,
+          "text": "Aaron and Miriam step forward. Then the LORD says if there's a prophet among them, He'll reveal Himself in a vision and speak in a dream.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -195,61 +180,66 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Numbers 12:8",
-          "question": "A prophet gets visions and dreams. How does the LORD say He speaks with Moses?",
+          "question": "A prophet gets visions and dreams. But the LORD says He speaks with Moses face to face, ___ and not in riddles.",
           "answers": [
             {
-              "text": "Face to face and clearly",
-              "correct": true
+              "text": "clearly",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Through the seventy elders",
+              "text": "rarely",
               "correct": false
             },
             {
-              "text": "In riddles from the cloud",
+              "text": "briefly",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Numbers 12:8",
-          "text": "Then the LORD asks them, \"Why then were you unafraid to speak against My servant Moses?\" Friend, I bet you could hear a single sprinkle hit the floor in that Tent.",
-          "needs_agent_fix": true,
+          "text": "And the LORD's not done describing Moses. He says Moses sees the form of the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
+          "kind": "story",
+          "verses": "Numbers 12:8",
+          "text": "Then the LORD asks them, \"Why then were you unafraid to speak against My servant Moses?\" Friend, I bet you could hear a single sprinkle hit the ground out there.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Numbers 12:9",
-          "question": "Before the LORD departs from the Tent, what happens toward Miriam and Aaron?",
+          "question": "True or false: Before He departs, the LORD's anger burns against Miriam and Aaron.",
           "answers": [
             {
-              "text": "His anger burns against them",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He calls Moses to judge them",
-              "correct": false
-            },
-            {
-              "text": "He lets the whole thing go",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -274,15 +264,15 @@
           "question": "Aaron sees that Miriam is leprous. Who does he plead with?",
           "answers": [
             {
-              "text": "His brother Moses",
+              "text": "Moses",
               "correct": true
             },
             {
-              "text": "The seventy elders",
+              "text": "Joshua",
               "correct": false
             },
             {
-              "text": "Joshua son of Nun",
+              "text": "Caleb",
               "correct": false
             }
           ],
@@ -292,21 +282,20 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 12:11",
-          "question": "Aaron begs Moses not to hold against them the sin they so ___ committed.",
+          "question": "Aaron is pleading with Moses, the brother he and Miriam criticized. What does Aaron ask him?",
           "answers": [
             {
-              "text": "foolishly",
-              "correct": true,
-              "blank": 1
+              "text": "Not to hold their sin against them",
+              "correct": true
             },
             {
-              "text": "innocently",
+              "text": "To send Miriam far from the camp",
               "correct": false
             },
             {
-              "text": "secretly",
+              "text": "To let the elders judge the matter",
               "correct": false
             }
           ],
@@ -317,7 +306,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Numbers 12:12",
-          "text": "Then Aaron pleads for Miriam: please don't let her be like a stillborn infant whose flesh is half consumed. That's not a man picking his words, friend, that's a brother BEGGING.",
+          "text": "Then Aaron pleads: please don't let her be like a stillborn infant whose flesh is half consumed. I think this one hurts, a brother begging for his sister.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -326,7 +315,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 12:13",
-          "question": "Aaron is pleading with Moses, the same brother Miriam just criticized. What does Moses do?",
+          "question": "Aaron is pleading with Moses, the same brother he and Miriam criticized. What does Moses do?",
           "answers": [
             {
               "text": "Cries out to God to heal her",
@@ -347,21 +336,13 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Numbers 12:13",
-          "text": "Five words from Moses: \"O God, please heal her!\" No speech, no told-you-so.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
           "verses": "Numbers 12:14",
           "text": "Then the LORD answers Moses with a question: if her father had only spit in her face, wouldn't she be in disgrace?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 12:14",
@@ -384,7 +365,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 12:14",
@@ -403,7 +384,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 12:15",
@@ -427,10 +408,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Numbers 12:15-16",
-          "text": "After that, the people set out from Hazeroth and camp in the Wilderness of Paran, with Miriam back among them. A whole camp waiting seven days on one person, friend, that's a group that does NOT leave anybody behind.",
+          "text": "After that, the people set out from Hazeroth and camp in the Wilderness of Paran. Miriam's back in, the whole camp's rolling again, and I'm still thinking about Moses' five-word prayer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

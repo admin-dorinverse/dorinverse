@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 16:1-2",
-          "text": "This one starts after a heavy loss, friend. Two sons of Aaron, Israel's high priest, have died when they approached the presence of the LORD. After that, the LORD speaks to Moses, Aaron's brother and Israel's leader, with a message for Aaron.",
-          "needs_agent_fix": true,
+          "text": "This one starts after a heavy loss, friend. Two sons of Aaron, Israel's high priest, died when they approached the presence of the LORD. After that, the LORD speaks to Moses, Aaron's brother and Israel's leader, with a message for Aaron.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,140 +33,58 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 16:2",
-          "text": "The LORD tells Moses why: \"I appear in the cloud above the mercy seat.\" Friend, if that were me, my eyebrows would be SWEATING just walking past that veil.",
-          "needs_agent_fix": true,
+          "text": "The LORD tells Moses why: \"…because I appear in the cloud…\" Friend, if that were me, my eyebrows would be SWEATING just walking past that veil.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Leviticus 16:3",
-          "text": "So the LORD lays out exactly how Aaron enters, and this is NOT a recipe you wing. First, Aaron brings a young bull and a ram.",
-          "needs_agent_fix": true,
+          "verses": "Leviticus 16:3-4",
+          "text": "So the LORD lays out exactly how Aaron enters, and this is NOT a recipe you wing. Aaron brings a young bull for a sin offering and a ram for a burnt offering, and he wears holy linen garments: a tunic, undergarments, a sash and a turban.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Leviticus 16:3",
-          "question": "Aaron's young bull is for a sin offering, and his ram is for a burnt offering.",
+          "verses": "Leviticus 16:4",
+          "question": "Aaron can put on the holy linen garments without bathing first.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Leviticus 16:4",
-          "text": "Next, the outfit: a sacred tunic, undergarments, a sash and a turban. These are holy garments, and every piece is made of the same thing.",
-          "needs_agent_fix": true,
+          "verses": "Leviticus 16:5",
+          "text": "Then Aaron takes animals from the congregation of Israel: two male goats for a sin offering and one ram for a burnt offering.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Leviticus 16:4",
-          "question": "What are Aaron's tunic, undergarments, sash and turban all made of?",
-          "answers": [
-            {
-              "text": "Linen",
-              "correct": true
-            },
-            {
-              "text": "Wool",
-              "correct": false
-            },
-            {
-              "text": "Goat hair",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 16:4",
-          "question": "Aaron must bathe himself with water before he puts on the holy garments.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Leviticus 16:5",
-          "text": "Aaron's own animals are set. Now he takes animals from the congregation of Israel: a ram for a burnt offering, plus some male goats for a sin offering.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Leviticus 16:5",
-          "question": "From the congregation of Israel, Aaron takes ___ male goats for a sin offering.",
-          "answers": [
-            {
-              "text": "two",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "seven",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
           "verses": "Leviticus 16:6",
-          "text": "First up, Aaron presents the bull as a sin offering. The goats are watching from the side like it's the opening act.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Leviticus 16:6",
-          "question": "Who does Aaron make atonement for with the bull for his sin offering?",
+          "question": "Aaron presents the bull for his sin offering. Who does that bull make atonement for?",
           "answers": [
             {
               "text": "Himself and his household",
@@ -181,53 +99,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 8,
           "kind": "story",
           "verses": "Leviticus 16:7-8",
-          "text": "Then Aaron presents the two goats before the LORD at the entrance to the Tent of Meeting. One for the LORD, one for the scapegoat, and both goats looking at each other like, \"Wait. Which one of us is which?\"",
-          "needs_agent_fix": true,
+          "text": "Then Aaron presents the two goats before the LORD at the entrance to the Tent of Meeting and casts lots for them. One for the LORD, one for the scapegoat, and both goats looking at each other like, \"Wait. Which one of us is which?\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Leviticus 16:8",
-          "question": "How does Aaron decide which goat is for the LORD and which is the scapegoat?",
-          "answers": [
-            {
-              "text": "He casts lots for them",
-              "correct": true
-            },
-            {
-              "text": "Moses picks for him",
-              "correct": false
-            },
-            {
-              "text": "He takes the older one",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 16:10",
-          "question": "The goat chosen by lot for the LORD is sacrificed as a sin offering. What about the scapegoat?",
+          "question": "The goat chosen by lot for the LORD is sacrificed as a sin offering. The scapegoat is presented alive before the LORD. What happens to the scapegoat next?",
           "answers": [
             {
-              "text": "It is sent into the wilderness alive",
+              "text": "It is sent into the wilderness",
               "correct": true
             },
             {
-              "text": "It is sacrificed on the altar too",
+              "text": "It is sacrificed on the altar",
               "correct": false
             },
             {
@@ -235,19 +130,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 10,
           "kind": "story",
           "verses": "Leviticus 16:11-12",
           "text": "Now Aaron slaughters the bull for his own sin offering. Then he takes a censer full of burning coals from the altar, plus two handfuls of finely ground fragrant incense, and goes inside the veil.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Leviticus 16:13",
@@ -267,11 +162,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 16:13",
@@ -286,7 +181,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -298,45 +193,13 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Leviticus 16:14",
-          "text": "Still behind the veil, Aaron takes some of the bull's blood. He sprinkles it with his finger on the east side of the mercy seat.",
-          "needs_agent_fix": true,
+          "verses": "Leviticus 16:14-15",
+          "text": "Still behind the veil, Aaron sprinkles the bull's blood with his finger on the east side of the mercy seat, then seven times in front of it. Next, he slaughters the goat for the people's sin offering and brings its blood behind the veil too.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Leviticus 16:14",
-          "question": "Then Aaron sprinkles the bull's blood with his finger in front of the mercy seat ___ times.",
-          "answers": [
-            {
-              "text": "seven",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "twelve",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Leviticus 16:15",
-          "text": "Next, Aaron slaughters the goat for the sin offering for the people. He brings its blood behind the veil too.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 16:15",
@@ -355,11 +218,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 16:16",
@@ -374,27 +237,35 @@
               "correct": false
             },
             {
-              "text": "The sins of Egypt left behind",
+              "text": "The sins of the people of Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "story",
+          "verses": "Leviticus 16:16",
+          "text": "Then he does the same for the Tent of Meeting, which abides among them in the midst of their impurities. Not across town from the mess, friend, RIGHT in the middle of it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Leviticus 16:12-16",
+          "text": "Coals, incense, bull's blood, goat's blood, in and out behind that veil. Aaron's step counter is going THROUGH the roof, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Leviticus 16:16",
-          "text": "Then he does the same for the Tent of Meeting, which abides among them in the midst of their impurities. Not across town from the mess, friend, RIGHT in the middle of it.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 16:17",
-          "question": "While Aaron makes atonement in the Most Holy Place, other people can wait inside the Tent of Meeting.",
+          "question": "Other people may be in the Tent of Meeting while Aaron goes in to make atonement in the Most Holy Place.",
           "answers": [
             {
               "text": "True",
@@ -405,73 +276,46 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Leviticus 16:18-19",
+          "text": "Then Aaron goes out to the altar before the LORD. He puts some of the bull's blood and the goat's blood on all the horns of the altar and sprinkles it seven times.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Leviticus 16:17",
-          "text": "Once Aaron has made atonement for himself, his household and the whole assembly, he's still not done. Aaron's step counter is going THROUGH the roof, friend.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Leviticus 16:19",
+          "question": "Aaron puts blood on the altar's horns and sprinkles it seven times. What is that for?",
+          "answers": [
+            {
+              "text": "To cleanse it from Israel's uncleanness",
+              "correct": true
+            },
+            {
+              "text": "To mark it for the next high priest",
+              "correct": false
+            },
+            {
+              "text": "To warn the people to stay back",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Leviticus 16:18",
-          "question": "Aaron takes some of the bull's blood and some of the goat's blood. Where does he put it?",
-          "answers": [
-            {
-              "text": "On all the horns of the altar",
-              "correct": true
-            },
-            {
-              "text": "On the posts of the tent door",
-              "correct": false
-            },
-            {
-              "text": "On the corners of the veil",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 16:19",
-          "question": "Aaron sprinkles blood on the altar seven times to cleanse it from the uncleanness of the Israelites.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Leviticus 16:20",
-          "text": "The Most Holy Place, the Tent of Meeting and the altar are all purified. Now Aaron brings forward the live goat.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Leviticus 16:21",
-          "question": "Aaron lays both hands on the live goat's head. Then what does he do?",
+          "question": "Aaron has purified the Most Holy Place, the Tent of Meeting and the altar. Now he lays both hands on the live goat's head. What does he do next?",
           "answers": [
             {
               "text": "He confesses all Israel's sins over it",
@@ -486,42 +330,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 16:21",
-          "question": "Aaron leads the live goat out into the wilderness himself.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 10,
           "kind": "story",
-          "verses": "Leviticus 16:21",
-          "text": "Instead, Aaron sends the goat away into the wilderness by the hand of a man appointed for the task.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Leviticus 16:22",
-          "text": "The goat carries all their iniquities on itself into a solitary place, and the man releases it into the wilderness. ALL of it on one goat, and I used to complain when somebody set a cookie box on top of me.",
-          "needs_agent_fix": true,
+          "verses": "Leviticus 16:21-22",
+          "text": "Then the goat is sent away by the hand of a man appointed for the task, carrying all their iniquities into a solitary place in the wilderness. ALL of it on one goat, and I used to complain when somebody set a cookie box on top of me.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -535,7 +352,7 @@
           "kind": "story",
           "verses": "Leviticus 16:23-24",
           "text": "Then Aaron goes back into the Tent of Meeting, takes off the linen garments and leaves them there. He bathes in a holy place and puts his own clothes back on.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -558,7 +375,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -566,7 +383,7 @@
           "kind": "story",
           "verses": "Leviticus 16:25-26",
           "text": "He also burns the fat of the sin offering on the altar. Now, remember the man who walked the scapegoat out into the wilderness?",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -589,7 +406,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -597,7 +414,7 @@
           "kind": "story",
           "verses": "Leviticus 16:27",
           "text": "The bull and the goat whose blood went into the Most Holy Place are taken outside the camp.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -620,26 +437,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Leviticus 16:28",
-          "question": "The one who burns the bull and the goat can walk right back into the camp without washing.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The one who burns them washes his clothes and bathes too, and then he can come back into the camp.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -647,7 +453,7 @@
           "kind": "story",
           "verses": "Leviticus 16:29",
           "text": "Then the LORD makes this a permanent statute, on the tenth day of the seventh month. Put it on the calendar, friend, and NO snooze button.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -655,7 +461,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Leviticus 16:29",
-          "question": "This day comes with everything we just saw about Israel's sins. On it, the people shall ___ themselves and not do any work.",
+          "question": "On the tenth day of the seventh month, the people shall ___ themselves and not do any work.",
           "answers": [
             {
               "text": "humble",
@@ -671,7 +477,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -679,7 +485,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 16:29",
-          "question": "This day is only for native Israelites, not for the foreigners who reside among them.",
+          "question": "The rules for the tenth day of the seventh month are only for native Israelites, not for the foreigners who reside among them.",
           "answers": [
             {
               "text": "True",
@@ -690,7 +496,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -698,7 +504,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 16:30",
-          "question": "Why is this day such a big deal for Israel?",
+          "question": "Why is the tenth day of the seventh month such a big deal for Israel?",
           "answers": [
             {
               "text": "Atonement will be made to cleanse them",
@@ -713,15 +519,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Leviticus 16:31",
-          "text": "The LORD calls it \"a Sabbath of complete rest for you\" so that they may humble themselves. Complete rest. No oven, no timer, NOTHING. My mustache wouldn't know what to do with itself.",
-          "needs_agent_fix": true,
+          "text": "The LORD calls it \"a Sabbath of complete rest for you…\" No oven, no timer, NOTHING, and my mustache wouldn't know what to do with itself.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -729,7 +535,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 16:32",
-          "question": "After Aaron, who will make atonement on this day?",
+          "question": "After Aaron, who will make atonement on the tenth day of the seventh month?",
           "answers": [
             {
               "text": "The priest ordained to succeed his father",
@@ -744,7 +550,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -752,7 +558,7 @@
           "kind": "story",
           "verses": "Leviticus 16:32-33",
           "text": "He puts on the sacred linen garments and makes atonement for the Most Holy Place, the Tent of Meeting and the altar. And for the priests and all the people of the assembly.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -776,15 +582,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Leviticus 16:34",
-          "text": "The passage closes with this: \"And all this was done as the LORD had commanded Moses.\"",
-          "needs_agent_fix": true,
+          "text": "And then this: \"And all this was done as the LORD had commanded Moses.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

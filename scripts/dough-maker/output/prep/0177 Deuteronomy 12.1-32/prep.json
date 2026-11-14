@@ -29,7 +29,7 @@
               "correct": false
             },
             {
-              "text": "Use them for the LORD",
+              "text": "Wall them off",
               "correct": false
             }
           ],
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Deuteronomy 12:2",
-          "text": "And these spots are EVERYWHERE: high mountains, hills, under every green tree. Every green tree, friend! I counted dust in a drawer for years and even I'd lose track.",
-          "needs_agent_fix": true,
+          "text": "And these spots are EVERYWHERE: on the high mountains, on the hills, under every green tree. I spent years counting dust in a junk drawer, friend, and even I'd lose count of every green tree.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 12:3",
-          "question": "Moses tells Israel to tear down the nations' altars and even wipe out the names of their gods from every place.",
+          "question": "Moses tells Israel to tear down the nations' altars.",
           "answers": [
             {
               "text": "True",
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 12:4",
-          "question": "Moses says Israel may worship the LORD their God at those same spots, the same way the nations did.",
+          "question": "Moses says Israel may worship the LORD their God in the same way the nations served their gods.",
           "answers": [
             {
               "text": "True",
@@ -146,25 +146,10 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Deuteronomy 12:7",
-          "question": "There, in the presence of the LORD, Israel and their households will eat and ___",
-          "answers": [
-            {
-              "text": "rejoice",
-              "correct": true
-            },
-            {
-              "text": "mourn",
-              "correct": false
-            },
-            {
-              "text": "tremble",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And this is no gloomy trip. There, in the presence of the LORD their God, they and their households will eat and rejoice in all they do.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -194,7 +179,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Deuteronomy 12:8",
-          "text": "Then Moses gets real about how things work right now, out here before the Jordan. And he doesn't leave himself out either: \"as we are doing here today\".",
+          "text": "Then Moses gets real about how things work right now, out here before the Jordan. And he doesn't leave himself out either: \"…as we are doing here today…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -248,7 +233,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Deuteronomy 12:8-10",
-          "text": "But rest is on the way: when they cross the Jordan, the LORD will give them rest from all their enemies. Good, because doing what seems right in my own eyes was my first week in this bakery with no recipe, and the smoke alarm did what seemed right in ITS own eyes.",
+          "text": "But rest is on the way: when they cross the Jordan, the LORD will give them rest from all their enemies. Good, because doing what seems right in my own eyes was my first week in this bakery with no recipe, and the smoke alarm went off EVERY night.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -265,18 +250,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 12:12",
-          "question": "When Israel brings it all to the chosen place, who does Moses say will rejoice before the LORD?",
+          "question": "Along with their sons and daughters and their menservants and maidservants, who else does Moses say will rejoice before the LORD at the chosen place?",
           "answers": [
             {
-              "text": "The whole household and the Levite",
+              "text": "The Levite within their gates",
               "correct": true
             },
             {
-              "text": "Only the priests and the elders",
+              "text": "The foreigner within their gates",
               "correct": false
             },
             {
-              "text": "Only the heads of each tribe",
+              "text": "The elders of their tribe",
               "correct": false
             }
           ],
@@ -306,7 +291,7 @@
           "card": 19,
           "kind": "story",
           "verses": "Deuteronomy 12:13",
-          "text": "Then Moses circles back to burnt offerings and says, \"Be careful\". That's me checking the oven's off three times before bed.",
+          "text": "Then Moses circles back to burnt offerings and says, \"Be careful…\" That's me checking the oven's off three times before bed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -355,7 +340,7 @@
               "correct": true
             },
             {
-              "text": "Only at the chosen place",
+              "text": "Only beside a priest's tent",
               "correct": false
             },
             {
@@ -371,15 +356,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 12:15",
-          "question": "Moses says only the ceremonially clean may eat that everyday meat.",
+          "question": "Moses says both the ceremonially clean and the ceremonially unclean may eat that everyday meat.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -542,20 +527,20 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 12:25",
-          "question": "Moses says to pour the blood on the ground like water and not eat it. Do that, he says, and they'll be doing what is right in the eyes of the ___",
+          "question": "Moses says to pour the blood on the ground like water and not eat it. If Israel does that, who does Moses say it will go well with?",
           "answers": [
             {
-              "text": "LORD",
+              "text": "Them and their children after them",
               "correct": true
             },
             {
-              "text": "elders",
+              "text": "Them and the Levites among them",
               "correct": false
             },
             {
-              "text": "nations",
+              "text": "Them and the foreigners among them",
               "correct": false
             }
           ],
@@ -566,23 +551,27 @@
           "card": 14,
           "kind": "story",
           "verses": "Deuteronomy 12:26",
-          "text": "But holy things and vow offerings still go to the place the LORD will choose. Moses keeps coming back to that place, friend, and I could stamp it on a cookie by now.",
+          "text": "But holy things and vow offerings still go to the place the LORD will choose. That place is sticking with me, friend, and I could stamp it on a cookie by now.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 12:27",
-          "question": "Burnt offerings go on the altar, meat and blood. For their other sacrifices, the blood is poured out beside the altar and the people may eat the meat.",
+          "question": "Burnt offerings go on the LORD's altar, meat and blood. For their other sacrifices, the blood is poured out beside the altar. What happens to the meat?",
           "answers": [
             {
-              "text": "True",
+              "text": "The people may eat it",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "It is burned on the altar",
+              "correct": false
+            },
+            {
+              "text": "It goes to the Levites",
               "correct": false
             }
           ],
@@ -593,7 +582,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Deuteronomy 12:28-29",
-          "text": "Moses says be careful to obey all of it, so it may always go well with them and their children after them. Then he looks ahead to the day the LORD cuts off the nations and Israel lives in their land.",
+          "text": "Moses says be careful to obey all of it, because then they'll be doing what is good and right in the eyes of the LORD their God. Then he looks ahead to the day the LORD cuts off the nations and Israel lives in their land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -622,20 +611,9 @@
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Deuteronomy 12:31",
-          "question": "Moses says Israel must not worship the LORD the way those nations serve their gods. He says those nations even burn their sons and daughters in the fire as sacrifices to their gods.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Moses says Israel must not worship the LORD their God that way, because those nations practice every abomination the LORD hates. They even burn their sons and daughters in the fire as sacrifices to their gods.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -666,7 +644,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Deuteronomy 12:32",
-          "text": "No adding, no subtracting: the one rule every recipe has, and I learned it the SMOKY way. Stay close, friend, because Moses is nowhere near done with this sermon.",
+          "text": "No adding, no subtracting. Stay close, friend, because Moses is nowhere near done with this sermon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

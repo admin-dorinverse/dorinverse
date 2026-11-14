@@ -3,13 +3,13 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Numbers 18:1-7",
+      "verses": "Numbers 18:1-19",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Numbers 18:1",
-          "text": "Last time, Aaron's staff sprouted almonds overnight (Numbers 17:8). Now the LORD speaks to Aaron, Israel's priest, whose brother is Moses, Israel's leader (Exodus 28:1). He starts heavy: Aaron, his sons and his father's house must bear the iniquity involving the sanctuary.",
+          "text": "After Aaron's staff sprouted almonds, the Israelites said, “Anyone who comes near the tabernacle of the LORD will die.” (Numbers 17:8, 13) So the LORD speaks to Aaron, Israel's priest and the brother of Moses, Israel's leader (Exodus 28:1). He starts heavy: Aaron, his sons and his father's house must bear the iniquity involving the sanctuary.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 18:1",
-          "question": "Then God narrows it down. Who must bear the iniquity involving the priesthood?",
+          "question": "God also says who must bear the iniquity involving the priesthood. Who is it?",
           "answers": [
             {
               "text": "Aaron and his sons alone",
@@ -42,7 +42,7 @@
           "verses": "Numbers 18:2",
           "text": "But Aaron isn't running this solo, friend. God tells him to bring his brothers from the tribe of Levi, his father's tribe.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -65,7 +65,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -103,7 +103,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 18:3",
-          "question": "If the Levites cross that line, only the Levites will die.",
+          "question": "If the Levites come near the furnishings of the sanctuary or the altar, only the Levites will die.",
           "answers": [
             {
               "text": "True",
@@ -114,7 +114,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -183,7 +183,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Numbers 18:7",
-          "text": "But everything concerning the altar and what's inside the veil belongs to Aaron and his sons only. That's a door with one family's name on it, friend, and NOBODY else is getting a copy of the key.",
+          "text": "But only Aaron and his sons serve as priests for everything concerning the altar and what's inside the veil. That's a door with one family's name on it, friend, and NOBODY else is getting a copy of the key.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -228,244 +228,26 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Numbers 18:8-19",
+          "text": "Then God puts Aaron in charge of His offerings and lists what goes to his family: parts of the most holy offerings, the wave offerings, the firstfruits, every devoted thing and the firstborn. Firstborn sons and firstborn males of unclean animals must be redeemed, at five shekels of silver for a month-old male, but the firstborn of an ox, a sheep or a goat are holy and must not be redeemed. Somebody once paid a quarter to take me home from a closing bakery's bin, friend, so I'm in NO position to comment on prices. God calls it all a permanent covenant of salt before the LORD for Aaron and his offspring.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
     {
       "stop": 2,
-      "verses": "Numbers 18:8-19",
-      "cards": [
-        {
-          "card": 1,
-          "kind": "story",
-          "verses": "Numbers 18:8",
-          "text": "Then the LORD tells Aaron, “Behold, I have put you in charge of My offerings.” The sacred offerings of the Israelites go to Aaron and his sons as their portion.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 2,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 18:8",
-          "question": "God gives Aaron and his sons this portion only for Aaron's lifetime.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Numbers 18:9",
-          "text": "From the most holy offerings, the part reserved from the fire belongs to them: grain offerings, sin offerings and guilt offerings. In the drawer, my portion was dust, friend, and I didn't even get the GOOD dust.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 18:10",
-          "question": "Who may eat the most holy offerings?",
-          "answers": [
-            {
-              "text": "Every male in the family",
-              "correct": true
-            },
-            {
-              "text": "Only Aaron the priest",
-              "correct": false
-            },
-            {
-              "text": "Anyone who brings one",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Numbers 18:11",
-          "text": "Then the offering of their gifts and all the wave offerings of the Israelites go to Aaron, his sons and his daughters, as a permanent statute. That's the whole family in on it, friend, like my six crowding the counter when the timer dinged, and Mags dinged LOUDER.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 18:11",
-          "question": "Every ceremonially clean person in Aaron's household may eat the gifts and wave offerings.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Numbers 18:12-14",
-          "text": "The list rolls on: the freshest olive oil, the finest new wine and grain the Israelites bring as firstfruits, and every devoted thing in Israel all go to Aaron. That's like opening your mailbox and finding nothing but birthday cards, friend, and not ONE bill.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Numbers 18:15",
-          "text": "The firstborn of every womb offered to the LORD, man or beast, belongs to Aaron too. But some of those firstborn have to be bought back, and friend, somebody once paid a whole quarter for me, so I RESPECT a price tag.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 18:15",
-          "question": "Every firstborn son, and every firstborn male of ___ animals, must be redeemed.",
-          "answers": [
-            {
-              "text": "unclean",
-              "correct": true
-            },
-            {
-              "text": "clean",
-              "correct": false
-            },
-            {
-              "text": "wild",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 18:16",
-          "question": "What is the redemption price for a month-old boy?",
-          "answers": [
-            {
-              "text": "Five shekels of silver",
-              "correct": true
-            },
-            {
-              "text": "Thirty shekels of silver",
-              "correct": false
-            },
-            {
-              "text": "Fifty shekels of silver",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 18:17",
-          "question": "Aaron may also redeem the firstborn of an ox, a sheep or a goat.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Numbers 18:17",
-          "text": "God calls those three holy, and their blood goes on the altar and their fat is burned as a pleasing aroma to the LORD. A pleasing aroma, friend, I KNOW that one, because I've opened an oven door and had three bakers fall in love at once.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 18:18",
-          "question": "Who does the meat of those firstborn oxen, sheep and goats belong to?",
-          "answers": [
-            {
-              "text": "Aaron the priest",
-              "correct": true
-            },
-            {
-              "text": "The family who brought it",
-              "correct": false
-            },
-            {
-              "text": "The Levites at the Tent",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 18:19",
-          "question": "God seals all these holy offerings with a permanent covenant of salt before the LORD. Who is it for?",
-          "answers": [
-            {
-              "text": "Aaron and his offspring",
-              "correct": true
-            },
-            {
-              "text": "Moses and the elders",
-              "correct": false
-            },
-            {
-              "text": "All twelve tribes of Israel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        }
-      ]
-    },
-    {
-      "stop": 3,
       "verses": "Numbers 18:20-32",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Numbers 18:20",
-          "text": "Then the LORD tells Aaron, “You will have no inheritance in their land, nor will you have any portion among them.” No land, friend, and even in the junk drawer I had a little spot behind the takeout menus.",
+          "text": "Then the LORD tells Aaron, “You will have no inheritance in their land, nor will you have any portion among them.” No land, friend, and even in the junk drawer I spent years stuck in, I had a little spot behind the takeout menus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -496,7 +278,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Numbers 18:21",
-          "text": "Next, God tells Aaron about the Levites, the ones doing the service of the Tent of Meeting, and they get something in return for all that work. Friend, I worked years on the Millers' counter and got paid in flour to the face.",
+          "text": "Next, God tells Aaron what the Levites get in return for their work, the service of the Tent of Meeting. Friend, I worked years on the kitchen counter of the Millers, the family who took me home, and got paid in flour to the face.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -505,45 +287,49 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 18:21",
-          "question": "God gives the Levites all the ___ in Israel as an inheritance.",
+          "question": "In return for their work at the Tent of Meeting, God gives the Levites all the ___ in Israel as an inheritance.",
           "answers": [
             {
               "text": "tithes",
               "correct": true
             },
             {
-              "text": "vineyards",
+              "text": "firstborn",
               "correct": false
             },
             {
-              "text": "pastures",
+              "text": "firstfruits",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Numbers 18:22-23",
-          "text": "No longer may the Israelites come near the Tent of Meeting, or they will incur guilt and die. The Levites do the work and bear their iniquity, and they get NO inheritance among the Israelites, friend, not even a spot behind the takeout menus.",
+          "verses": "Numbers 18:22",
+          "text": "Then God says no longer may the Israelites come near the Tent of Meeting.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 18:24",
-          "question": "God says the Levites get no inheritance among the Israelites because He gave them the tithe as their inheritance.",
+          "type": "multiple_choice",
+          "verses": "Numbers 18:22",
+          "question": "What does God say will happen if the Israelites come near the Tent of Meeting?",
           "answers": [
             {
-              "text": "True",
+              "text": "They will incur guilt and die",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "They will lose their share of the land",
+              "correct": false
+            },
+            {
+              "text": "They will be sent out of the camp",
               "correct": false
             }
           ],
@@ -553,13 +339,21 @@
         {
           "card": 7,
           "kind": "story",
+          "verses": "Numbers 18:23-24",
+          "text": "The Levites do the work of the Tent of Meeting and bear their iniquity, a permanent statute for the generations to come. They get NO inheritance among the Israelites, because God gave them the tithe as their inheritance.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
           "verses": "Numbers 18:25-26",
           "text": "Then the LORD tells Moses to speak to the Levites, and here's the twist: the folks who RECEIVE the tithe have to give from it too. That's like your paycheck clearing and your first move is writing a check.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 18:26",
@@ -582,15 +376,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "Numbers 18:27",
-          "text": "God says their offering will be reckoned to them as grain from the threshing floor or juice from the winepress. Grain and juice, friend, and not one cookie in sight, so I'm just going to nod politely.",
+          "text": "God says their offering will be reckoned to them as grain from the threshing floor or juice from the winepress. Hold onto that line, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 18:28",
@@ -613,7 +407,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 18:29",
@@ -636,7 +430,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "Numbers 18:30",
           "text": "God says it again: once they've presented the best part, it's reckoned to them as the produce of the threshing floor or winepress. That line again, friend, and when God says something twice, I write it on my apron.",
@@ -644,26 +438,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 18:31",
-          "question": "The Levites and their households may eat the rest of the tithe anywhere, as payment for their work at the Tent of Meeting.",
+          "question": "The Levites and their households may eat the rest of the tithe only at the Tent of Meeting.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Numbers 18:32",
           "text": "Once they've presented the best part, they won't incur guilt because of it. But God ends with a warning about the sacred offerings of the Israelites, and friend, when the last line of the recipe is a warning, you read it TWICE.",
@@ -671,7 +465,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 18:32",

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Deuteronomy 20:1",
-          "text": "Moses, Israel's leader, is still preaching to Israel, and now he turns to war. Picture it: you look across the field and see horses, chariots and an army bigger than yours. Friend, I'd already be hiding behind my own mustache.",
+          "text": "Moses, Israel's leader, is still preaching to Israel, and now he turns to war. Picture it: you go out to war against your enemies and see horses, chariots and an army larger than yours. Friend, that's not a fair fight, that's a MATH problem.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 20:1",
-          "question": "Moses tells Israel they don't need to be afraid of an army bigger than theirs.",
+          "question": "Moses tells Israel not to be afraid of an army larger than theirs.",
           "answers": [
             {
               "text": "True",
@@ -162,17 +162,21 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 20:5",
-          "question": "The officers send the man with the new house home because it might fall apart without him.",
+          "question": "Why do the officers send home the man with the new house he hasn't dedicated?",
           "answers": [
             {
-              "text": "True",
+              "text": "He may die and another man dedicate it",
+              "correct": true
+            },
+            {
+              "text": "The army already has too many soldiers",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "His house needs guarding during the battle",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -181,21 +185,13 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Deuteronomy 20:5",
-          "text": "Here's the officers' real reason: he may die in battle, and another man would dedicate that house. You do all the building, and somebody else cuts the ribbon.",
+          "verses": "Deuteronomy 20:6",
+          "text": "Same goes for a man who planted a vineyard and hasn't begun to enjoy its fruit: home he goes, or another man may enjoy it. Imagine baking the perfect batch, and then somebody else eats EVERY cookie.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Deuteronomy 20:6",
-          "text": "Same goes for a man who planted a vineyard and hasn't begun to enjoy its fruit, or another man enjoys it. Imagine baking the perfect batch all night, and then somebody else eats EVERY cookie.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 20:7",
@@ -218,7 +214,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Deuteronomy 20:8",
           "text": "Then the officers speak further: \"Is any man afraid or fainthearted?\" Friend, put me in that army and my mustache would raise its hand before I did.",
@@ -226,7 +222,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 20:8",
@@ -245,7 +241,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 20:8",
@@ -268,15 +264,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Deuteronomy 20:9",
-          "text": "The officers are done talking. I bet the army's looking a little smaller now, but there's one more step before anybody marches.",
+          "text": "The officers have finished addressing the army. But they've still got one more job to do.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 20:9",
@@ -308,7 +304,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Deuteronomy 20:10",
-          "text": "Now Moses moves from the army to the cities. Israel marches up to fight a city, swords ready, and Moses says hold on, something comes first.",
+          "text": "Now Moses moves from the army to the cities. When Israel approaches a city to fight against it, Moses says something has to happen first.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -362,7 +358,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Deuteronomy 20:12",
-          "text": "But not every city says yes. Some turn the offer down flat and wage war against Israel instead.",
+          "text": "But what if a city refuses to make peace and wages war against Israel instead? Moses covers that too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -398,7 +394,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 20:15",
-          "question": "Moses says this is how Israel treats the cities that are far away from them.",
+          "question": "Moses says the cities far away from Israel are the ones that get an offer of peace first.",
           "answers": [
             {
               "text": "True",
@@ -409,7 +405,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -422,20 +418,9 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 20:16-17",
-          "question": "Moses names the Hittites, Amorites, Canaanites, Perizzites, Hivites and Jebusites. These are the far-away cities he talked about before.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Deuteronomy 20:17",
+          "text": "Moses names them: the Hittites, Amorites, Canaanites, Perizzites, Hivites and Jebusites. Israel is to devote them to complete destruction, as the LORD commanded.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -447,7 +432,7 @@
           "question": "Why must Israel devote the nations the LORD is giving them as an inheritance to complete destruction?",
           "answers": [
             {
-              "text": "So they can't teach Israel their detestable ways",
+              "text": "So they can't teach Israel what they do for their gods",
               "correct": true
             },
             {
@@ -466,7 +451,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Deuteronomy 20:19",
-          "text": "Now picture a long siege, Israel camped outside a city for an extended time. Friend, I spent years in a junk drawer, so I know long waits, and out there the only scenery is the trees.",
+          "text": "Now Moses talks about a long siege, when Israel is fighting to capture a city for an extended time. Friend, I spent years waiting in the back of a junk drawer, so long waits? I could write the book.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -525,29 +510,29 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 20:20",
-          "question": "During the siege, which trees does Moses say Israel may destroy?",
+          "question": "Moses says Israel may cut down the trees they know don't produce fruit. What can they use those trees for?",
           "answers": [
             {
-              "text": "Trees they know don't bear fruit",
+              "text": "Building siege works against the city",
               "correct": true
             },
             {
-              "text": "The tallest trees near the walls",
+              "text": "Making shields for the soldiers",
               "correct": false
             },
             {
-              "text": "Any tree the city planted itself",
+              "text": "Building camps for the army",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Deuteronomy 20:20",
-          "text": "Israel may destroy those trees and use them to build siege works against the city until it falls. And friend, Moses isn't done preaching yet.",
+          "text": "Israel can keep at it against that city until it falls. And friend, Moses isn't done preaching yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -59,9 +59,9 @@
           "card": 4,
           "kind": "story",
           "verses": "Numbers 21:5",
-          "text": "You know when the GPS adds forty minutes and somebody in the back seat starts asking why you even left the house? Now picture a whole nation in that back seat, asking why they were led out of Egypt just to die in the wilderness.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the people speak up: \"Why have you led us up out of Egypt to die in the wilderness?\" Ever had a back-seat passenger ask why you even left the house, the SECOND the GPS adds forty minutes?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -85,48 +85,38 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 21:5",
-          "question": "The people ask why they were led out of Egypt to die in the wilderness. They say there is no ___ or ___.",
+          "question": "Out in the wilderness, what do the complaining people say they have none of?",
           "answers": [
             {
-              "text": "bread",
-              "correct": true,
-              "blank": 1
+              "text": "Bread or water",
+              "correct": true
             },
             {
-              "text": "water",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "shade",
+              "text": "Shade or shelter",
               "correct": false
             },
             {
-              "text": "shelter",
-              "correct": false
-            },
-            {
-              "text": "rest",
+              "text": "Tents or blankets",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Numbers 21:5",
-          "text": "Then they say, \"we detest this wretched food!\" Friend, I bake cookies all day long, and even I have given a sugar cookie the side-eye on a long week.",
+          "text": "Then they say, \"…we detest this wretched food!\" Friend, I stamp cookies all day long, and even I have given a sugar cookie the side-eye on a long week.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -153,21 +143,10 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Numbers 21:6",
-          "question": "Only a few of the Israelites are bitten by the venomous snakes.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Many of the Israelites are bitten and die. This part is heavy, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -229,19 +208,27 @@
           "card": 13,
           "kind": "story",
           "verses": "Numbers 21:7",
-          "text": "So Moses interceded for the people, the very ones who just spoke against him. That's a big heart, friend. Somebody talks about me in the group chat, and I need three business days before I can even type \"all good.\"",
-          "needs_agent_fix": true,
+          "text": "So Moses intercedes for the people, the very ones who just spoke against him. Somebody talks about me in the group chat, and I need three business days before I can even type \"all good.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
+          "kind": "story",
+          "verses": "Numbers 21:8",
+          "text": "Then the LORD speaks to Moses. He tells him to make something and put it up high on a pole, where everyone in camp can see it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 21:8",
-          "question": "After Moses intercedes, what does the LORD tell him to make?",
+          "question": "What does the LORD tell Moses to make and mount on the pole?",
           "answers": [
             {
-              "text": "A fiery serpent on a pole",
+              "text": "A fiery serpent",
               "correct": true
             },
             {
@@ -249,7 +236,7 @@
               "correct": false
             },
             {
-              "text": "An altar of uncut stones",
+              "text": "A silver trumpet",
               "correct": false
             }
           ],
@@ -257,7 +244,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 21:8",
@@ -281,31 +268,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 17,
+          "kind": "story",
           "verses": "Numbers 21:9",
-          "question": "Moses makes the snake for the pole out of ___.",
-          "answers": [
-            {
-              "text": "bronze",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "gold",
-              "correct": false
-            },
-            {
-              "text": "silver",
-              "correct": false
-            }
-          ],
+          "text": "So Moses makes a bronze snake and mounts it on a pole, just like the LORD said.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 21:9",

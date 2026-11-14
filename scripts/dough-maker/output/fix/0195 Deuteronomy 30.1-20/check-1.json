@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "The story card asks 'is this some impossible thing they'll never manage?' This signals that the answer is no, which gives away the true/false question on card 2.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "The question says 'all this', which points back to the command on card 8. That card is no longer on screen, so the baker can't tell what 'this' means.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "The statement says 'these blessings', which points back to earlier cards the baker can't see. It never says which blessings it means.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 15
+      },
+      "problem": "Card 15 asks whether Moses leaves the choice open without saying which to pick. Card 16 then tells the answer in full by quoting 'Therefore choose life'. That makes card 16 a second, repeated telling of the same point as card 15.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card. Two lines that make the same point get one question."
+    }
+  ]
+}

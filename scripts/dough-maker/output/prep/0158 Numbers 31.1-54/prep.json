@@ -9,70 +9,47 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 31:1-2",
-          "text": "The LORD speaks to Moses, Israel's leader, about the Midianites, the people the LORD said had deceived Israel in the matter of Peor (Numbers 25:16-18). He gives Moses an assignment: \"Take vengeance on the Midianites for the Israelites.\" And then, friend, He tells Moses something about Moses himself.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "The LORD speaks to Moses, Israel's leader, about the Midianites, the people the LORD said had deceived Israel in the matter of Peor (Numbers 25:16-18). He tells Moses, \"Take vengeance on the Midianites for the Israelites.\" And He adds that after that, Moses will be gathered to his people.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Numbers 31:2",
-          "question": "After Moses takes vengeance on the Midianites, what does the LORD say will happen to him?",
+          "verses": "Numbers 31:3",
+          "question": "Moses tells the people to arm some of their men to go against the Midianites. Whose vengeance does he say they'll carry out?",
           "answers": [
             {
-              "text": "He will be gathered to his people",
+              "text": "The LORD's",
               "correct": true
             },
             {
-              "text": "He will cross over the Jordan",
+              "text": "Moses' own",
               "correct": false
             },
             {
-              "text": "He will be made king of Israel",
+              "text": "The army's own",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Numbers 31:3",
-          "text": "So Moses tells the people to arm some of their men to go execute the LORD's vengeance on Midian. Not the whole camp, though. He's got a number in mind.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Numbers 31:4-6",
+          "text": "Moses calls for a thousand men from each tribe of Israel, twelve thousand armed for war. With them goes Phinehas, son of Eleazar the priest, carrying the vessels of the sanctuary and the trumpets for signaling.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 31:4",
-          "question": "Moses says to send ___ men from each tribe of Israel into battle.",
-          "answers": [
-            {
-              "text": "a thousand",
-              "correct": true
-            },
-            {
-              "text": "five hundred",
-              "correct": false
-            },
-            {
-              "text": "ten thousand",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 31:5",
-          "question": "A thousand men from each tribe of Israel makes an army of twelve thousand armed for war.",
+          "verses": "Numbers 31:7",
+          "question": "The army wages war against Midian just as the LORD had commanded Moses.",
           "answers": [
             {
               "text": "True",
@@ -83,81 +60,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Numbers 31:7-8",
+          "text": "They kill every male of Midian, including Evi, Rekem, Zur, Hur and Reba, the five kings of Midian. They also kill Balaam son of Beor with the sword, the man Balak king of Moab once called to curse Israel (Numbers 22:4-6).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Numbers 31:6",
-          "text": "Moses sends them into battle, and with them goes Phinehas, son of Eleazar the priest. Phinehas doesn't show up empty-handed.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 31:9",
+          "question": "The Israelites capture the Midianite women and their children. What else do they take from Midian?",
+          "answers": [
+            {
+              "text": "Their herds and flocks and goods",
+              "correct": true
+            },
+            {
+              "text": "Their idols and their altars",
+              "correct": false
+            },
+            {
+              "text": "Their wells and their fields",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 31:6",
-          "question": "What does Phinehas take with him into battle?",
-          "answers": [
-            {
-              "text": "The sanctuary vessels and signal trumpets",
-              "correct": true
-            },
-            {
-              "text": "The ark of the covenant and Aaron's staff",
-              "correct": false
-            },
-            {
-              "text": "The priestly robes and the anointing oil",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Numbers 31:7-8",
-          "text": "They wage war against Midian, as the LORD had commanded Moses, and they kill every male, including Evi, Rekem, Zur, Hur and Reba, the five kings of Midian. And hold on, friend, because there's one more name on that list.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 31:8",
-          "question": "Besides the five kings of Midian, who else is killed with the sword?",
-          "answers": [
-            {
-              "text": "Balaam son of Beor",
-              "correct": true
-            },
-            {
-              "text": "Balak son of Zippor",
-              "correct": false
-            },
-            {
-              "text": "Og king of Bashan",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Numbers 31:9",
-          "text": "That's Balaam, the man Balak king of Moab once called to curse Israel (Numbers 22:4-6). And the Israelites capture the Midianite women and their children and plunder all their herds, flocks and goods.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 31:10",
@@ -176,38 +114,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 31:11-12",
-          "question": "The army carries away all the plunder, both people and animals, and brings it to Moses, Eleazar the priest and the congregation of Israel.",
+          "question": "The army leaves the plunder behind and brings only the captives back to Moses.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 9,
           "kind": "story",
           "verses": "Numbers 31:12-14",
-          "text": "Moses, Eleazar the priest and all the leaders head outside the camp on the plains of Moab to meet the army. But friend, this is no welcome-home party, because Moses is angry with the officers, the commanders of thousands and of hundreds.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Moses, Eleazar the priest and all the leaders go outside the camp on the plains of Moab to meet the army. But Moses is angry with the officers, the commanders of thousands and of hundreds.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 31:15",
@@ -226,47 +164,47 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "story",
-          "verses": "Numbers 31:16",
-          "text": "Moses points back to Peor, in Numbers 25. He says these women, through the counsel of Balaam, caused the sons of Israel to turn unfaithfully against the LORD.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
+          "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 31:16",
-          "question": "Moses says that because of what happened at Peor, a ___ struck the congregation of the LORD.",
+          "question": "Moses says the women caused the sons of Israel to turn unfaithfully against the LORD at Peor. Through whose counsel does he say it happened?",
           "answers": [
             {
-              "text": "plague",
+              "text": "Balaam son of Beor",
               "correct": true
             },
             {
-              "text": "famine",
+              "text": "Balak son of Zippor",
               "correct": false
             },
             {
-              "text": "fire",
+              "text": "Og king of Bashan",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 12,
+          "kind": "story",
+          "verses": "Numbers 31:16",
+          "text": "And Moses says that because of it, the plague struck the congregation of the LORD.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "story",
           "verses": "Numbers 31:17-18",
-          "text": "Then Moses gives an order that's hard to read, friend, and I'm not going to soften it: kill all the boys, and every woman who has had relations with a man. Every girl who never has is to be spared.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "This next part is heavy, friend. Moses orders them to kill all the boys and every woman who has had relations with a man, but to spare for themselves every girl who has never had relations with a man.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -277,197 +215,79 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Numbers 31:19",
-          "text": "The soldiers are back from Midian, but they can't just stroll into camp. Moses says anyone who has killed a person or touched the dead has to stay outside the camp first.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Numbers 31:19-24",
+          "text": "Then come the rules for getting clean after the battle. Anyone who killed a person or touched the dead stays outside the camp for seven days, and the soldiers, their captives and their things all get purified, some by fire and water and some by water alone. On the seventh day they wash their clothes, and then they may enter the camp.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 31:19",
-          "question": "Moses says anyone who has killed a person or touched the dead must stay outside the camp for ___ days.",
-          "answers": [
-            {
-              "text": "seven",
-              "correct": true
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "forty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Numbers 31:25-26",
+          "text": "Then the LORD tells Moses, Eleazar the priest and the family heads to count everything captured, both people and animals.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 31:19",
-          "question": "On the third day and the seventh day, the soldiers purify themselves and their captives too.",
+          "type": "fill_blank",
+          "verses": "Numbers 31:27",
+          "question": "The LORD says to divide the captives between the troops who went out to battle and the rest of the ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "congregation",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "elders",
+              "correct": false
+            },
+            {
+              "text": "commanders",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Numbers 31:20-22",
-          "text": "Moses puts every garment, leather good, goat's hair item and wooden article on the cleanup list, so this isn't laundry day, friend, this is laundry WEEK. Then Eleazar the priest shares the LORD's statute for the gold, silver, bronze, iron, tin and lead.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Numbers 31:28-47",
+          "text": "Then the LORD has a share set aside from each half: some for Eleazar the priest as an offering to the LORD, and some for the Levites who keep charge of the tabernacle. Moses and Eleazar do as the LORD commanded, counting out huge numbers of sheep, cattle, donkeys and people and splitting it all into two halves.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 31:23",
-          "question": "Eleazar says the metal that can withstand the fire is made clean how?",
-          "answers": [
-            {
-              "text": "It goes through the fire",
-              "correct": true
-            },
-            {
-              "text": "It is buried for seven days",
-              "correct": false
-            },
-            {
-              "text": "It is offered on the altar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Numbers 31:48-49",
+          "text": "Then the commanders of thousands and of hundreds come to Moses. They've counted every soldier under their command, and friend, I can't count the chocolate chips in ONE cookie without starting over THREE times.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 31:23",
-          "question": "Eleazar says everything that can't withstand the fire must pass through the water.",
+          "verses": "Numbers 31:49",
+          "question": "After counting the soldiers under their command, the commanders report that some of their men are missing.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Numbers 31:23-24",
-          "text": "Even the fireproof metal still gets the water of purification, and on the seventh day the soldiers wash their clothes and come back into camp clean. Friend, I spent years in a junk drawer under the dust, and NOBODY ever offered me a deal like that.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Numbers 31:25-27",
-          "text": "Then the LORD tells Moses, Eleazar the priest and the family heads to count everything captured, both people and animals. After that, they're to divide it into two halves.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 31:27",
-          "question": "The LORD says to divide the captives between the ___ who went out to battle and the rest of the ___.",
-          "answers": [
-            {
-              "text": "troops",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "congregation",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Levites",
-              "correct": false
-            },
-            {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Numbers 31:28-30",
-          "text": "Then the LORD tells Moses to set aside one out of every five hundred from the soldiers' half for Eleazar the priest as the LORD's tribute, and one out of every fifty from the congregation's half for the Levites who keep charge of the tabernacle. Friend, I lose count of the sprinkles on ONE cookie, and Moses has to keep all these numbers straight.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Numbers 31:31-47",
-          "text": "Moses and Eleazar do as the LORD commanded and count it all: 675,000 sheep, 72,000 cattle, 61,000 donkeys and 32,000 women. They split it in half, with the LORD's tribute and the Levites' share set aside, just as the LORD said.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Numbers 31:48-49",
-          "text": "Then the commanders of thousands and of hundreds come to Moses, and friend, the last time he met these officers, he was angry with them. This time they've counted every soldier under their command, and I bet they counted TWICE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 31:49",
-          "question": "After counting the soldiers under their command, the commanders report that not one of them is missing.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 31:50",
@@ -486,19 +306,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 8,
           "kind": "story",
-          "verses": "Numbers 31:51-53",
-          "text": "Moses and Eleazar receive all the gold articles, and they weigh 16,750 shekels, which is a LOT of gold for a stamper who came with a price sticker that said 25 cents. And the text adds that each of the soldiers had taken plunder for himself.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Numbers 31:51-52",
+          "text": "Moses and Eleazar receive all the gold articles, and they weigh 16,750 shekels. That's a LOT of gold for a stamper like me, who once sat in a closing bakery's bin with a price sticker that said 25 cents.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Numbers 31:53",
+          "question": "Each of the soldiers had taken plunder for himself.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 31:54",
@@ -517,8 +356,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

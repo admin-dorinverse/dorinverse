@@ -79,39 +79,38 @@
           "card": 6,
           "kind": "story",
           "verses": "Numbers 6:25",
-          "text": "In line two, the priests tell the people: may the LORD shine on you and be gracious to you. Friend, I spent YEARS in the back of a dark junk drawer, so trust me, light shining on you hits different.",
+          "text": "Line two starts: \"may the LORD cause His face to shine upon you…\" Friend, I spent YEARS in the back of a dark junk drawer, so trust me, a face shining on you hits different.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Numbers 6:26",
-          "text": "And line three: \"may the LORD lift up His countenance toward you and give you peace.\" Peace! The dead batteries I shared that drawer with argued ALL NIGHT over who had the most charge left, so I would have LOVED some of that.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 6:25",
+          "question": "In line two of the priests' blessing, the LORD's face shines on His people. What else does that line say the LORD may be to them?",
+          "answers": [
+            {
+              "text": "Gracious to them",
+              "correct": true
+            },
+            {
+              "text": "Stern with them",
+              "correct": false
+            },
+            {
+              "text": "Hidden from them",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 6:25-26",
-          "question": "In the priests' blessing, lines two and three both picture the LORD's ___ turned toward His people.",
-          "answers": [
-            {
-              "text": "face",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "hand",
-              "correct": false
-            },
-            {
-              "text": "voice",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Numbers 6:26",
+          "text": "And line three: \"may the LORD lift up His countenance toward you and give you peace.\" PEACE, friend, the kind my oven timer has NEVER let me have for five whole minutes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -136,25 +135,17 @@
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Numbers 6:27",
-          "text": "Now God tells Moses what happens when the priests say these words. Lean in, friend, this is the good part.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 6:27",
-          "question": "When Aaron and his sons speak this blessing, what does God say they're putting on the Israelites?",
+          "question": "After the three lines, God tells Moses what Aaron and his sons are doing when they speak this blessing. What does God say they're putting on the Israelites?",
           "answers": [
             {
               "text": "His name",
               "correct": true
             },
             {
-              "text": "His seal",
+              "text": "His crown",
               "correct": false
             },
             {
@@ -166,7 +157,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 6:27",

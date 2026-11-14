@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 21:1",
-          "text": "Then the LORD gives Moses, Israel's leader, a message for the sons of Aaron, Moses's brother. Aaron's sons are the priests, and this message is all about how they live. Tighten your apron strings, friend.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the LORD gives Moses, Israel's leader, a message for the sons of Aaron, Moses's brother (Exodus 4:14). Aaron's sons are the priests, and this message is all about how they live. Tighten your apron strings, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -30,13 +30,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 21:2",
-          "text": "But there's an exception for his immediate family: his mother, father, son, daughter or brother. Your second cousin? Sorry, cuz.",
+          "text": "But there's an exception for his immediate family: his mother, father, son, daughter or brother.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -106,7 +106,7 @@
               "correct": false
             },
             {
-              "text": "Pierce their ears",
+              "text": "Dye their beards",
               "correct": false
             }
           ],
@@ -149,7 +149,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 21:8",
-          "question": "True or false: God says the priest is to be regarded as holy, because the LORD is holy.",
+          "question": "True or false: God says the priest shall be holy to the people because the LORD is holy.",
           "answers": [
             {
               "text": "True",
@@ -167,7 +167,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Leviticus 21:9",
-          "text": "If a priest's daughter defiles herself by prostituting herself, she profanes her father, and she must be burned in the fire. The text doesn't soften that one, friend, and I won't either.",
+          "text": "If a priest's daughter defiles herself by prostituting herself, she profanes her father, and she must be burned in the fire. This one is heavy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -232,22 +232,17 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Leviticus 21:14",
-          "question": "The highest priest is not to marry a ___, a divorced woman, or one defiled by prostitution.",
+          "question": "True or false: The highest priest may marry a widow.",
           "answers": [
             {
-              "text": "widow",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "servant",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "shepherdess",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -286,39 +281,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 21:16-17",
-          "text": "Then the LORD gives Moses another message for Aaron himself, and this one is for the generations to come. Friend, the warranty cards in my old junk drawer couldn't last ONE year, and this rule is already booked for the GREAT-GREAT-GRANDKIDS.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD gives Moses another message, this time for Aaron himself. It's for the generations to come, and it's about Aaron's descendants who have a physical defect.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Leviticus 21:17",
-          "question": "For the generations to come, which of Aaron's descendants may not approach to offer the food of his God?",
+          "question": "True or false: For the generations to come, a descendant of Aaron who has a physical defect may approach to offer the food of his God.",
           "answers": [
             {
-              "text": "Any who has a physical defect",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Any who was born outside Israel",
-              "correct": false
-            },
-            {
-              "text": "Any who has never married",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 21:18-21",
-          "text": "Then God lists the defects one by one, like being blind or lame, or having a broken foot or hand. A descendant of Aaron who has a defect is not to come near to offer the food of his God.",
-          "needs_agent_fix": true,
+          "text": "Then God names the defects, like being blind or lame, or having a broken foot or hand. A descendant of Aaron who has a defect is not to come near to offer the food of his God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -326,7 +317,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 21:22",
-          "question": "A descendant of Aaron with a defect can't offer the food of his God. True or false: He may still eat the holy food of his God.",
+          "question": "A descendant of Aaron with a defect can't offer the food of his God, but he's still one of Aaron's family. True or false: He may still eat the holy food of his God.",
           "answers": [
             {
               "text": "True",
@@ -337,40 +328,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Leviticus 21:23",
-          "question": "Because he has a defect, a descendant of Aaron must not go near the ___ or approach the ___.",
-          "answers": [
-            {
-              "text": "veil",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "altar",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "lampstand",
-              "correct": false
-            },
-            {
-              "text": "basin",
-              "correct": false
-            },
-            {
-              "text": "table",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "But because of his defect, he must not go near the veil or approach the altar.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -381,19 +347,19 @@
           "question": "Why must a descendant of Aaron who has a defect not go near the veil or approach the altar?",
           "answers": [
             {
-              "text": "To not desecrate God's sanctuaries",
+              "text": "So he won't desecrate God's sanctuaries",
               "correct": true
             },
             {
-              "text": "To keep the altar fire burning",
+              "text": "So the altar fire keeps burning",
               "correct": false
             },
             {
-              "text": "To give him rest from his work",
+              "text": "So he can rest from his work",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -401,30 +367,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 21:24",
-          "question": "Moses passes along everything the LORD said about the priests. Who does he tell?",
+          "question": "When Moses passes along these rules for the priests, who does he tell?",
           "answers": [
             {
-              "text": "Aaron and his sons and all Israel",
+              "text": "Aaron and his sons and all the Israelites",
               "correct": true
             },
             {
-              "text": "Only Aaron and his sons",
+              "text": "Aaron and his sons and the elders",
               "correct": false
             },
             {
-              "text": "Only the elders of Israel",
+              "text": "Aaron and his sons and the Levites",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Leviticus 21:24",
-          "text": "Keep that apron ON, friend, because this teaching on holiness isn't done. The last time I untied mine mid-batch, I leaned on the counter and walked around with a flour print across my belly. ALL. DAY.",
-          "needs_agent_fix": true,
+          "text": "Keep that apron ON, friend, because this teaching on holiness isn't done. I untied mine mid-batch once, leaned on the counter, and wore a flour print across my belly. ALL. DAY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

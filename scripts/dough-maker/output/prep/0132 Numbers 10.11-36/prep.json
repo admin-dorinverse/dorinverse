@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 10:11",
-          "text": "Israel's been camped in the Wilderness of Sinai, with God's cloud resting over the tabernacle, and the rule is simple: when the cloud stays, they stay, and when it lifts, they move (Numbers 9:17-22). Then, on the twentieth day of the second month of the second year, the cloud lifts. Friend, this is the moment.",
+          "text": "Israel's been camped in the Wilderness of Sinai, with God's cloud resting over the tabernacle. The rule is simple: when the cloud stays, they stay, and when it lifts, they move (Numbers 9:17-22). Then, on the twentieth day of the second month of the second year, the cloud lifts.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -67,8 +67,8 @@
           "card": 5,
           "kind": "story",
           "verses": "Numbers 10:14-28",
-          "text": "Then they march out in order, camp by camp, each under its own standard. Judah goes first, then Reuben, then Ephraim, and Dan brings up the rear as the rear guard for everybody. Tucked in between, the Gershonites and Merarites carry the tabernacle, and the Kohathites carry the holy objects, with the tabernacle to be set up before they arrive.",
-          "needs_agent_fix": true,
+          "text": "Then they march out in order, camp by camp, each under its own standard: Judah first, then Reuben, then Ephraim, and Dan last as the rear guard for everybody. The Gershonites and Merarites carry the tabernacle after Judah, and the Kohathites carry the holy objects after Reuben, with the tabernacle to be set up before they arrive.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,11 +91,11 @@
               "correct": true
             },
             {
-              "text": "The wilderness is too dangerous to cross alone",
+              "text": "The LORD has given Israel a strong army",
               "correct": false
             },
             {
-              "text": "Hobab's own people have moved far away",
+              "text": "The LORD has asked for Hobab by name",
               "correct": false
             }
           ],
@@ -105,17 +105,21 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Numbers 10:30",
-          "question": "Hobab takes Moses up on the invitation.",
+          "question": "Hobab gives Moses his answer. What does Hobab say he's going to do?",
           "answers": [
             {
-              "text": "True",
+              "text": "Go back to his own land and people",
+              "correct": true
+            },
+            {
+              "text": "Go on ahead to scout the way",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Stay behind at the mountain",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -123,14 +127,6 @@
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Numbers 10:30",
-          "text": "Hobab says he will not go. He's heading back to his own land and his own people, and Moses just sent out the invite of a lifetime and got back an RSVP of NO.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 10:31",
@@ -153,15 +149,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Numbers 10:31",
-          "text": "Moses says, \"Please do not leave us,\" and tells Hobab he can serve as their eyes. A cloud in the sky AND a guy who knows the campsites, friend, and here I am needing a guide to find the sprinkles in my own pantry.",
-          "needs_agent_fix": true,
+          "text": "Moses says, \"Please do not leave us,\" and tells Hobab he can serve as their eyes. Friend, Moses just heard a no and came right back with a PLEASE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 10:32",
@@ -177,7 +173,7 @@
               "correct": false
             },
             {
-              "text": "leave",
+              "text": "store",
               "correct": false
             }
           ],
@@ -185,7 +181,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Numbers 10:33",
           "text": "Then they set out from the mountain of the LORD on a three-day journey. And something goes out in front of them the whole way.",
@@ -193,7 +189,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 10:33",
@@ -216,7 +212,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 10:33",
@@ -240,7 +236,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 10:34",
@@ -259,7 +255,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 10:35",
@@ -282,18 +278,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "story",
-          "verses": "Numbers 10:35",
-          "text": "His words: \"Rise up, O LORD! May Your enemies be scattered; may those who hate You flee before You.\" Not once, friend, EVERY time that ark sets out, and I can't even remember to set my timer every time.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "Numbers 10:36",
-          "text": "And whenever the ark comes to rest, Moses says, \"Return, O LORD, to the countless thousands of Israel.\" Rise up when they march, return when they rest, and that's how Israel leaves Sinai.",
+          "text": "And whenever the ark comes to rest, Moses says, \"Return, O LORD, to the countless thousands of Israel.\" EVERY time, friend, and I can't even remember to set my timer every time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

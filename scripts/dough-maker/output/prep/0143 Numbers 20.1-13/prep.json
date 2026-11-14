@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 20:1",
-          "text": "In the first month, the whole congregation of Israel moves into the Wilderness of Zin and stays in Kadesh. A WHOLE nation moving camp, and I can't carry one cookie tray across my bakery without losing a sprinkle. But at Kadesh, the camp has to say goodbye to someone.",
+          "text": "In the first month, the whole congregation of Israel moves into the Wilderness of Zin and stays in Kadesh. But at Kadesh, the camp has to say goodbye to someone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -39,9 +39,9 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Numbers 20:1-2; Numbers 26:59",
-          "text": "Miriam, the sister of Moses and Aaron (Numbers 26:59), is buried there at Kadesh. Then the camp runs into the one problem a wilderness just LOVES to hand you.",
-          "needs_agent_fix": true,
+          "verses": "Numbers 20:1",
+          "text": "Miriam is buried there at Kadesh, and I think this one hurts. She's the sister of Moses, Israel's leader, and of his brother Aaron (Numbers 26:59).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,28 +91,27 @@
           "card": 6,
           "kind": "story",
           "verses": "Numbers 20:3",
-          "text": "The people quarrel with Moses and say, \"If only we had perished with our brothers before the LORD!\" Friend, I know that voice. One flat batch and I'm draped across the counter going, \"Just leave me here. Tell the oven I loved it.\"",
-          "needs_agent_fix": true,
+          "text": "The people quarrel with Moses and say, \"If only we had perished with our brothers before the LORD!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 20:4",
-          "question": "The people ask Moses why he brought the LORD's assembly into this wilderness for them and their livestock to ___ there.",
+          "question": "The people ask why the LORD's assembly has been brought into this wilderness to die. Who do they say will die there along with them?",
           "answers": [
             {
-              "text": "die",
-              "correct": true,
-              "blank": 1
+              "text": "Their livestock",
+              "correct": true
             },
             {
-              "text": "wander",
+              "text": "Their children",
               "correct": false
             },
             {
-              "text": "settle",
+              "text": "Their elders",
               "correct": false
             }
           ],
@@ -124,7 +123,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 20:5",
-          "question": "Next the people ask Moses why he led them up out of ___ to this wretched place.",
+          "question": "Next the people ask why they were led up out of ___ to this wretched place.",
           "answers": [
             {
               "text": "Egypt",
@@ -147,7 +146,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Numbers 20:5-6",
-          "text": "Then they read off everything this place is NOT: not grain, not figs, not vines, not pomegranates, \"and there is no water to drink!\" So Moses and Aaron leave the assembly, go to the entrance to the Tent of Meeting and fall facedown.",
+          "text": "Then they read off everything this place is NOT: not grain, not figs, not vines, not pomegranates, \"…and there is no water to drink!\" Next, Moses and Aaron leave the assembly, go to the entrance to the Tent of Meeting and fall facedown.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -178,7 +177,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Numbers 20:7-8",
-          "text": "Then the LORD tells Moses to take the staff and assemble the congregation, because water's coming out of a ROCK, with every eye and every ear in the camp on Moses and Aaron. Friend, I can't even get stuck dough out of my own grooves without a toothpick.",
+          "text": "Then the LORD tells Moses to take the staff and assemble the congregation, and says the rock will pour out its water while they watch. A ROCK, friend, and I can't even get stuck dough out of my own grooves without a toothpick.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -218,7 +217,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 20:10",
-          "question": "In front of the rock, Moses asks the assembly, \"must we bring you water out of this rock?\" But first, what does Moses call them?",
+          "question": "In front of the rock, Moses asks the assembly, \"…must we bring you water out of this rock?\" But first, what does Moses call them?",
           "answers": [
             {
               "text": "You rebels",
@@ -244,21 +243,21 @@
           "question": "Then Moses raises his hand and ___ the rock twice with his staff.",
           "answers": [
             {
-              "text": "struck",
+              "text": "strikes",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "touched",
+              "text": "touches",
               "correct": false
             },
             {
-              "text": "blessed",
+              "text": "points at",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -277,14 +276,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "Numbers 20:12",
-          "text": "Water's gushing, everybody's drinking. Then the LORD speaks to Moses and Aaron, and it is NOT a thank-you note.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD speaks to Moses and Aaron. Friend, this is the moment the whole day turns.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -315,7 +314,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 20:12",
-          "question": "Even after the rock, the LORD says Moses and Aaron will still be the ones who bring the assembly into the land He has given them.",
+          "question": "Even after what happened at the rock, the LORD says Moses and Aaron will still be the ones who bring the assembly into the land He has given them.",
           "answers": [
             {
               "text": "True",
@@ -333,7 +332,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Numbers 20:13",
-          "text": "\"These were the waters of Meribah, where the Israelites quarreled with the LORD, and He showed His holiness among them.\" Meribah, friend: write it on the box, right under my old address, Back of the Junk Drawer.",
+          "text": "\"These were the waters of Meribah, where the Israelites quarreled with the LORD, and He showed His holiness among them.\" Meribah, friend. Remember that name.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

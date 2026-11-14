@@ -184,7 +184,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Deuteronomy 19:6",
-          "text": "If the city's too far, the avenger could chase him in a rage and catch him, though he didn't deserve to die. A refuge city that far away is like a fire exit at the end of a forty-minute hallway!",
+          "text": "And the distance matters. If the way is long, the avenger could chase him in a rage, overtake him and strike him dead, though he didn't deserve to die.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -199,21 +199,16 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Deuteronomy 19:9",
-          "question": "If the LORD gives Israel all the land He promised, Moses says to add ___ more cities to the first three.",
+          "question": "True or false: if the LORD gives Israel all the land He promised, Moses says to add more cities to the first three.",
           "answers": [
             {
-              "text": "three",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "two",
-              "correct": false
-            },
-            {
-              "text": "four",
+              "text": "False",
               "correct": false
             }
           ],
@@ -244,7 +239,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 19:10",
-          "question": "Moses says the cities of refuge are there so that ___ blood will not be shed in the land.",
+          "question": "Moses says the cities are there so that ___ blood will not be shed in the land.",
           "answers": [
             {
               "text": "innocent",
@@ -282,14 +277,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 19:12",
-          "question": "When a man who killed his neighbor on purpose runs to a city of refuge, what must the elders of his own city do?",
+          "question": "When a man who killed his neighbor on purpose runs to one of these cities, what must the elders of his own city do?",
           "answers": [
             {
               "text": "Bring him back to the avenger of blood",
               "correct": true
             },
             {
-              "text": "Let him live in the refuge city",
+              "text": "Let him stay in that city",
               "correct": false
             },
             {
@@ -323,7 +318,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Deuteronomy 19:13",
-          "text": "No pity: Israel must purge the guilt of shedding innocent blood, so it may go well with them. Those cities are for accidents, friend, not for rear-ending somebody on purpose and then locking your car doors like you're officially off the hook!",
+          "text": "No pity, Moses says. Israel must purge from Israel the guilt of shedding innocent blood, so that it may go well with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -464,7 +459,7 @@
               "correct": false
             },
             {
-              "text": "Send him away to a city of refuge",
+              "text": "Send him away to live in another town",
               "correct": false
             }
           ],
@@ -497,18 +492,10 @@
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Deuteronomy 19:21",
-          "text": "Then Moses sums it up: \"You must show no pity: life for life, eye for eye, tooth for tooth, hand for hand, and foot for foot.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Deuteronomy 19:19, 21",
-          "question": "True or false: with \"eye for eye, tooth for tooth,\" Moses means the lying witness gets what he intended for his brother.",
+          "verses": "Deuteronomy 19:20",
+          "question": "True or false: Moses says that after hearing about the lying witness, the people will never again do anything so evil among them.",
           "answers": [
             {
               "text": "True",
@@ -520,15 +507,23 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "Deuteronomy 19:21",
+          "text": "Then Moses says: \"You must show no pity: life for life, eye for eye, tooth for tooth, hand for hand, and foot for foot.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "Deuteronomy 19:21",
-          "text": "And that's where we'll pause, friend. Moses is nowhere near done with this sermon, so keep that apron on.",
+          "text": "That's where we'll stop for now, friend. The teaching isn't done yet, so keep that apron on.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

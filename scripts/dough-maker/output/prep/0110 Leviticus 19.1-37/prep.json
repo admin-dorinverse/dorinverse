@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 19:1-2",
-          "text": "The LORD is still speaking to Moses, Israel's leader, right after warning Israel not to follow the practices of Egypt or Canaan (Leviticus 18:3). Now He tells Moses to speak to the whole congregation of Israel. And He opens with a BIG one, no warm-up, no small talk: be holy.",
+          "text": "The LORD has just warned Israel not to follow the practices of Egypt or Canaan (Leviticus 18:3). Now He tells Moses, Israel's leader, to speak to the whole congregation of Israel. And He opens with a BIG one: be holy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 19:3",
-          "text": "Then God brings it close to home with a command about respect, and right next to it He says keep My Sabbaths. He signs off with a line you'll hear so often in this sermon, you'll be saying it in your sleep: \"I am the LORD your God.\"",
+          "text": "Then God brings it close to home with a command about respect, and right next to it He says to keep His Sabbaths. Then He adds a line He'll come back to again and again: \"I am the LORD your God.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,15 +72,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 19:4",
-          "question": "God says Israel may make molten gods for themselves as long as they don't turn to them.",
+          "question": "God tells Israel not to make molten gods for themselves.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -110,7 +110,7 @@
               "correct": false
             },
             {
-              "text": "It is left for the poor",
+              "text": "It is salted and stored",
               "correct": false
             }
           ],
@@ -140,7 +140,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Leviticus 19:7-8",
-          "text": "Nope. By day three it's tainted, and whoever eats it has profaned what is holy to the LORD and must be cut off from his people.",
+          "text": "By day three it's tainted, and whoever eats it has profaned what is holy to the LORD and must be cut off from his people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -157,7 +157,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:10",
-          "question": "Who does God say the edges of the field and the fallen grapes are left for?",
+          "question": "God says not to strip the vineyard bare or gather its fallen grapes. Who does He say to leave them for?",
           "answers": [
             {
               "text": "The poor and the foreigner",
@@ -217,18 +217,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:13",
-          "question": "No defrauding or robbing a neighbor. And a hired hand's wages? How long can they be held back?",
+          "question": "God says no defrauding or robbing a neighbor. And a hired hand's wages? When must he be paid?",
           "answers": [
             {
-              "text": "Not even until morning",
+              "text": "Before the next morning",
               "correct": true
             },
             {
-              "text": "Until the end of the week",
+              "text": "By the end of the week",
               "correct": false
             },
             {
-              "text": "Until the harvest is in",
+              "text": "Once the harvest is in",
               "correct": false
             }
           ],
@@ -239,7 +239,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Leviticus 19:13-14",
-          "text": "Not even overnight, friend, so no \"the check's in the mail.\" Then God speaks up for the deaf and the blind.",
+          "text": "No holding a worker's pay overnight, friend, so no \"the check's in the mail.\" Then God speaks up for the deaf and the blind.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -266,7 +266,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Leviticus 19:14",
-          "text": "Nope. No cursing the deaf and no stumbling blocks for the blind, but fear your God.",
+          "text": "No stumbling blocks, and no cursing the deaf either. Instead, God says to fear Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -275,7 +275,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 19:15",
-          "question": "In court, God says not to pervert justice, and to show the poor a little extra favor.",
+          "question": "In court, God says the poor should get a little extra favor.",
           "answers": [
             {
               "text": "True",
@@ -293,24 +293,43 @@
           "card": 8,
           "kind": "story",
           "verses": "Leviticus 19:15",
-          "text": "No partiality to the poor and no favoritism to the rich, just judge your neighbor fairly.",
+          "text": "God says no partiality to the poor and no favoritism to the rich. Every neighbor gets judged fairly.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Leviticus 19:16",
-          "text": "Then no spreading slander, and yes, friend, that covers the group chat with one person conveniently left out. And no endangering your neighbor's life.",
+          "question": "God tells Israel not to go around spreading slander among their people.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Leviticus 19:16",
+          "text": "That covers the group chat with one person conveniently left out, friend. God also says don't endanger your neighbor's life.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:17",
-          "question": "God says not to harbor hatred against your brother in your heart. What does He tell them to do with a neighbor right after that?",
+          "question": "God says not to harbor hatred against your brother in your heart. What does He tell Israel to do with a neighbor right after that?",
           "answers": [
             {
               "text": "Rebuke your neighbor directly",
@@ -329,7 +348,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:17",
@@ -352,15 +371,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "Leviticus 19:18",
-          "text": "Then God says no revenge and no grudges against any of your people. A shiny new stamper took my spot on the counter and I got slid into the junk drawer for years, and you know what I'd say to that stamper today? \"Teach me your ways.\"",
-          "needs_agent_fix": true,
+          "text": "Then God says no revenge and no grudges against any of their people. A shiny new stamper took my spot on the counter and I spent YEARS in a junk drawer, and if I saw it today, I'd just say, \"Teach me your ways.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:18",
@@ -383,10 +402,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Leviticus 19:18",
-          "text": "Love your neighbor as yourself. Centuries later, Jesus quotes this very line and calls it the second commandment, right after loving God (Matthew 22:37-39).",
+          "text": "God seals that one with \"I am the LORD.\" And loving your neighbor as yourself is the command Jesus later calls the second, right behind loving God (Matthew 22:37-39).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -400,7 +419,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 19:19",
-          "text": "Now God says keep My statutes, and He gets VERY specific: no crossbreeding two kinds of livestock, and no sowing a field with two kinds of seed.",
+          "text": "Now God says to keep His statutes, and He gets VERY specific: no crossbreeding two kinds of livestock, and no sowing a field with two kinds of seed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -426,8 +445,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Leviticus 19:19-22",
-          "text": "My apron is quietly checking its own tag right now. Then comes a hard case about a man and a slave girl promised to another man, and it ends with a ram as a guilt offering and forgiveness.",
+          "verses": "Leviticus 19:20-22",
+          "text": "Then a hard case. If a man lies carnally with a slave girl promised to another man, God says there must be due punishment, but they are not to be put to death, because she had not been freed. The man must bring a ram to the Tent of Meeting as a guilt offering, and when the priest makes atonement for him, he will be forgiven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -435,7 +454,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Leviticus 19:23",
-          "text": "When they enter the land and plant fruit trees, the fruit is forbidden for three years. THREE YEARS, friend, and I can't wait five minutes for a batch to cool.",
+          "text": "When Israel enters the land and plants fruit trees, the fruit is forbidden for three years. THREE YEARS, friend, and I can't wait five minutes for a batch to cool.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -444,14 +463,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:24",
-          "question": "In the fourth year, what happens to all the fruit from those trees?",
+          "question": "When Israel plants fruit trees in the land, the fruit is forbidden for three years. What happens to all the fruit in the fourth year?",
           "answers": [
             {
               "text": "It is offered to the LORD in praise",
               "correct": true
             },
             {
-              "text": "It is left for the poor and foreigner",
+              "text": "It is stored up for a hard year",
               "correct": false
             },
             {
@@ -459,23 +478,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Leviticus 19:25",
-          "text": "Then in the fifth year, they can finally EAT it. If that were my bakery, I'd be the stamper sitting under that tree with a timer, checking it every hour.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 19:25",
-          "question": "God says following this plan for the fruit trees will increase their harvest.",
+          "question": "God says waiting until the fifth year to eat from their new fruit trees will increase Israel's harvest.",
           "answers": [
             {
               "text": "True",
@@ -486,14 +497,22 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Leviticus 19:26-28",
+          "text": "Then comes a quick run of don'ts: no eating anything with blood still in it, no divination or sorcery, no cutting their bodies for the dead, no tattoo marks, and no cutting the hair at the sides of the head or clipping the edges of the beard.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Leviticus 19:26-29",
-          "text": "Then comes a quick run of don'ts about eating, dark practices, the dead, and their own bodies and families, right down to the edges of the beard. This mustache isn't a beard, but it still sat up straight.",
+          "verses": "Leviticus 19:29",
+          "text": "Then God says not to defile your daughter by making her a prostitute, or the land will be prostituted and filled with depravity.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -501,7 +520,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Leviticus 19:30-31",
-          "text": "Then that line again: keep My Sabbaths, and now reverence for His sanctuary too. And God warns them not to turn to mediums or spiritists.",
+          "text": "Then God comes back to His Sabbaths and adds reverence for His sanctuary. He also warns Israel not to turn to mediums or spiritists.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -556,10 +575,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:34",
-          "question": "When a foreigner lives in their land, God says don't oppress him. So how should Israel treat him?",
+          "question": "When a foreigner lives in Israel's land, God says not to oppress him. So how should Israel treat him?",
           "answers": [
             {
-              "text": "As native-born and loved as themselves",
+              "text": "As one of their native-born",
               "correct": true
             },
             {
@@ -579,7 +598,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 19:34",
-          "question": "What reason does God give for loving the foreigner like that?",
+          "question": "God says Israel must love the foreigner living among them as themselves. What reason does He give?",
           "answers": [
             {
               "text": "They were foreigners in Egypt",
@@ -594,14 +613,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Leviticus 19:35",
-          "text": "Then God heads to the market: no dishonest measures of length, weight or volume. So no \"one cup\" that's secretly three-quarters, not in Israel and not in my bakery.",
+          "text": "Then God turns to measuring: no dishonest measures of length, weight or volume. So no \"one cup\" that's secretly three-quarters, not in Israel and not in my bakery.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -631,8 +650,8 @@
         {
           "card": 16,
           "kind": "story",
-          "verses": "Leviticus 19:36-37",
-          "text": "He signs that one: \"I am the LORD your God, who brought you out of the land of Egypt.\" Then He closes it all with keep all My statutes and all My ordinances and follow them, and that's where we'll leave it for now, friend, so keep that apron on, because God isn't done teaching His people to be holy.",
+          "verses": "Leviticus 19:37",
+          "text": "God wraps it all up: keep all His statutes and all His ordinances, and follow them. And that's where we'll leave it for now, friend, because God isn't done teaching His people to be holy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "The blank asks the baker to supply the next word of a line they haven't seen. 'No bread or ___' can only be answered by recalling or guessing the wording. Nothing on the earlier cards lets a baker reason it out.",
+      "rule": "Never ask the baker to guess the next words of a line."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "No story card sets up the LORD's reply in verse 8. The previous card only covers Moses interceding, so what the LORD tells Moses to make can't be reasoned from anything shown. Verses 8-9 are never told by Papa Dorin, only asked about across cards 14-16.",
+      "rule": "Before each choice card, Papa Dorin's story card gives enough context that the baker can reason their way to the answer."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The material (bronze vs gold vs silver) can't be reasoned from anything on earlier cards, so the answer is luck. Together with the other discovery-style cards, most choice cards in the stop are not informed guesses.",
+      "rule": "The check: could a thoughtful baker who has only seen the earlier cards make a reasoned pick? If the only way to get it right is luck, give the story card more context or ask a different question."
+    }
+  ]
+}

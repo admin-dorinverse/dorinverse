@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 14:1-2",
-          "text": "Then the LORD speaks to Moses, Israel's leader. Back in Leviticus 13, God gave the laws for spotting skin disease and mildew, and anyone with that skin disease had to live alone outside the camp. Now God gives the law for the best day of all: the day that person gets cleansed.",
+          "text": "Then the LORD speaks to Moses, Israel's leader. Anyone with an infectious skin disease had to live alone outside the camp (Leviticus 13:46). Now God gives the law for the day that person is cleansed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,51 +40,24 @@
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 14:3",
-          "text": "He's out there to check one thing: has the skin disease healed? A HOUSE CALL, friend! I sat in a junk drawer for years and never got one of those.",
+          "text": "He's out there to check whether the skin disease has healed. A HOUSE CALL, friend, and I spent years in a junk drawer without anybody coming by to check on me!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Leviticus 14:3-5",
-          "text": "If it has, the priest orders two live clean birds, cedar wood, scarlet yarn and hyssop. One bird is slaughtered over fresh water in a clay pot, and that's very specific, just the way I like my recipes.",
+          "verses": "Leviticus 14:4-5",
+          "text": "If it has healed, the priest orders two live clean birds, cedar wood, scarlet yarn and hyssop. One bird is slaughtered over fresh water in a clay pot.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 14:6",
-          "question": "The priest has the second bird slaughtered too.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Leviticus 14:6",
-          "text": "That second bird stays alive. The priest takes it, along with the cedar wood, scarlet yarn and hyssop, and dips them all into the blood of the bird that was slaughtered.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:7",
-          "question": "Next the priest sprinkles the one being cleansed of the skin disease. How many times?",
+          "question": "The priest dips the live bird, the cedar wood, the yarn and the hyssop into the blood of the slaughtered bird. How many times does he sprinkle the one being cleansed?",
           "answers": [
             {
               "text": "Seven times",
@@ -95,7 +68,7 @@
               "correct": false
             },
             {
-              "text": "Ten times",
+              "text": "Twelve times",
               "correct": false
             }
           ],
@@ -103,7 +76,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 14:7",
@@ -122,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:7",
@@ -145,7 +118,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "story",
           "verses": "Leviticus 14:8",
           "text": "Next, the person washes his clothes, shaves off all his hair and bathes with water, and he's ceremonially clean. He can come back into the camp, but he's not all the way home yet.",
@@ -153,7 +126,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:8",
@@ -176,37 +149,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Leviticus 14:8-9",
-          "text": "That's standing on the porch for a WEEK with your keys sitting on the kitchen counter. Then on the seventh day, it's time to shave all over again.",
+          "text": "That's getting locked out on the porch for a WEEK with your keys on the counter inside. On the seventh day, he shaves off all his hair again, eyebrows included, and with eyebrows like mine that's a full day's work.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Leviticus 14:9",
-          "question": "On the seventh day, the person shaves off his hair again, but he gets to keep his eyebrows.",
+          "question": "After that second shave, he washes his clothes and bathes himself with ___, and he will be clean.",
           "answers": [
             {
-              "text": "True",
+              "text": "water",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "oil",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "wine",
+              "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Leviticus 14:9",
-          "text": "Head, beard, EYEBROWS, all of it, and with these eyebrows I'd need a second week. Then he washes his clothes and bathes, and he will be clean.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -221,7 +191,7 @@
           "kind": "story",
           "verses": "Leviticus 14:10",
           "text": "On the eighth day, he brings two unblemished male lambs, an unblemished ewe lamb a year old, fine flour mixed with olive oil for a grain offering, and a log of olive oil. That's a lot to carry, friend.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -244,178 +214,137 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 14:12-13",
-          "text": "The priest takes one male lamb as a guilt offering and waves it with the log of olive oil before the LORD. Then he slaughters it in the sanctuary area, where the sin offering and burnt offering are slaughtered.",
-          "needs_agent_fix": true,
+          "text": "The priest waves one male lamb as a guilt offering, with the log of olive oil, before the LORD. Then he slaughters it in the sanctuary area.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 14:13",
-          "question": "Like the sin offering, the guilt offering belongs to the priest.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Leviticus 14:14",
-          "text": "Now the priest takes some of the blood from the guilt offering and puts it on the one being cleansed, in three spots.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:14",
-          "question": "Where does the priest put the blood of the guilt offering on the one being cleansed?",
+          "question": "Where does the priest put some of the guilt offering's blood on the one being cleansed?",
           "answers": [
             {
               "text": "His right earlobe and thumb and big toe",
               "correct": true
             },
             {
-              "text": "His forehead and both of his palms",
+              "text": "His forehead and both of his hands",
               "correct": false
             },
             {
-              "text": "His chest and both of his shoulders",
+              "text": "His left ear and his left foot",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Leviticus 14:15-17",
+          "text": "Then he sprinkles some of the oil seven times before the LORD and puts oil on those same spots, right on top of the blood. Me, I measure chocolate chips by squinting at the bowl and going, eh, close enough.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Leviticus 14:18",
+          "question": "Whatever oil is left in his palm, the priest puts on the head of the one being cleansed. What does the text say it's for?",
+          "answers": [
+            {
+              "text": "To make atonement for him before the LORD",
+              "correct": true
+            },
+            {
+              "text": "To show he can serve as a priest",
+              "correct": false
+            },
+            {
+              "text": "To heal what's left of his skin disease",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Leviticus 14:15-16",
-          "text": "Then the oil: the priest pours some into his left palm, dips his right forefinger in it and sprinkles it seven times before the LORD. Me? I measure chocolate chips by squinting and going, eh, that looks right.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Leviticus 14:19",
+          "text": "Then the priest sacrifices the sin offering to make atonement for him from his uncleanness, and after that he slaughters the burnt offering.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 14:17",
-          "question": "The priest puts some of the oil on the right earlobe, thumb and big toe of the one being cleansed, right on top of the blood of the guilt offering.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "fill_blank",
-          "verses": "Leviticus 14:18",
-          "question": "There's still oil left in the priest's palm. He puts the rest of it on the ___ of the one being cleansed.",
+          "verses": "Leviticus 14:20",
+          "question": "The priest offers the burnt offering with the grain offering on the ___ to make atonement for him, and he will be clean.",
           "answers": [
             {
-              "text": "head",
+              "text": "altar",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "chest",
+              "text": "table",
               "correct": false
             },
             {
-              "text": "back",
+              "text": "lampstand",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Leviticus 14:21",
+          "text": "But what if the person is poor and can't afford all those offerings? Friend, I was bought for a quarter at a bakery's closing sale, so I LIKE where this is going.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Leviticus 14:18-19",
-          "text": "The priest puts it there to make atonement for him before the LORD. Then he sacrifices the sin offering and slaughters the burnt offering.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Leviticus 14:21",
+          "question": "Along with a smaller grain offering and a log of olive oil, the poor person still brings one male ___ as a guilt offering.",
+          "answers": [
+            {
+              "text": "lamb",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "goat",
+              "correct": false
+            },
+            {
+              "text": "bull",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Leviticus 14:20",
-          "question": "The priest offers the burnt offering together with the grain offering to make atonement for him. Where does he offer them?",
-          "answers": [
-            {
-              "text": "On the altar",
-              "correct": true
-            },
-            {
-              "text": "In the open field",
-              "correct": false
-            },
-            {
-              "text": "Outside the camp",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Leviticus 14:21",
-          "text": "But what if the person is poor and can't afford all those offerings? Friend, I was bought for a quarter at a bakery's closing sale, so I LIKE where this is going.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 14:21",
-          "question": "A poor person can skip the lamb and bring only birds for his cleansing.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:22",
@@ -434,15 +363,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 12,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Leviticus 14:25, 28",
+          "question": "For the poor person, the priest skips putting the blood and oil on his right earlobe, thumb and big toe.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "story",
           "verses": "Leviticus 14:23-32",
           "text": "On the eighth day the priest walks through the same steps: the wave offering, the blood and oil on the right earlobe, thumb and big toe, and the rest of the oil on his head. Then come the two birds, one as a sin offering and one as a burnt offering, and the priest makes atonement for him before the LORD.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -455,28 +403,27 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 14:33-34",
-          "text": "Then the LORD speaks to Moses and Aaron the priest, and now it's about houses. It's for when they enter the land He's giving them, and He puts mildew into a house there.",
+          "text": "Then the LORD speaks to Moses and Aaron the priest, and now it's about houses. It's for when they enter the land of Canaan, which He is giving them, and He puts mildew into a house there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Leviticus 14:34",
-          "question": "God is looking ahead to the land He's giving Israel as their possession: the land of ___.",
+          "type": "multiple_choice",
+          "verses": "Leviticus 14:35",
+          "question": "When mildew shows up in a house in that land, what is the owner of the house to do?",
           "answers": [
             {
-              "text": "Canaan",
-              "correct": true,
-              "blank": 1
+              "text": "Come and tell the priest",
+              "correct": true
             },
             {
-              "text": "Egypt",
+              "text": "Tear out the wall himself",
               "correct": false
             },
             {
-              "text": "Moab",
+              "text": "Move his family out for good",
               "correct": false
             }
           ],
@@ -487,27 +434,28 @@
           "card": 3,
           "kind": "story",
           "verses": "Leviticus 14:35",
-          "text": "The owner comes and tells the priest, \"Something like mildew has appeared in my house.\" Something LIKE mildew, friend, and I bet that man knows EXACTLY what it is.",
+          "text": "He tells the priest, \"Something like mildew has appeared in my house.\" That's the opposite of painting over a stain and hoping nobody notices.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Leviticus 14:36",
-          "question": "Before the priest goes in to examine the mildew, what has to happen to the house?",
+          "question": "Before going in to examine the mildew, the priest orders the house to be ___.",
           "answers": [
             {
-              "text": "It has to be cleared out",
-              "correct": true
+              "text": "cleared",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "It has to be blessed by the elders",
+              "text": "washed",
               "correct": false
             },
             {
-              "text": "It has to be lit with lamps",
+              "text": "sealed",
               "correct": false
             }
           ],
@@ -541,31 +489,12 @@
           "card": 6,
           "kind": "story",
           "verses": "Leviticus 14:37-38",
-          "text": "Smart. Get the couch out BEFORE the verdict. Inside, the priest looks for green or red depressions that appear to be beneath the surface of the wall, and if that's what he finds, he steps outside the doorway and closes the house up.",
+          "text": "Inside, the priest looks for green or red depressions that appear to be beneath the surface of the wall. If that's what he finds, he steps outside the doorway and closes the house up for seven days.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Leviticus 14:38",
-          "question": "After finding the mildew, the priest closes up the house for seven days.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:40",
@@ -580,15 +509,15 @@
               "correct": false
             },
             {
-              "text": "Carried in and burned on the altar",
+              "text": "Piled up beside the house for a week",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Leviticus 14:41-42",
           "text": "The inside gets scraped completely, and the plaster goes to an unclean place outside the city. New stones and fresh mortar go in, and that's not cleaning, friend, that's a RENOVATION.",
@@ -596,42 +525,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Leviticus 14:45",
-          "question": "If the mildew comes back and spreads after the new stones and plaster, what happens to the house?",
-          "answers": [
-            {
-              "text": "It's torn down and hauled outside the city",
-              "correct": true
-            },
-            {
-              "text": "It's closed up for another seven days",
-              "correct": false
-            },
-            {
-              "text": "It's scraped and replastered all over again",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Leviticus 14:45",
-          "text": "Stones, timbers, plaster, all of it, out to an unclean place outside the city. I spent years in a junk drawer full of paper and dust, and if a priest had inspected it, I'd have been hauled out with the timbers.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Leviticus 14:46",
-          "question": "Anyone who walks into the house while it's closed up stays unclean for seven days.",
+          "verses": "Leviticus 14:44-45",
+          "question": "If the mildew comes back and spreads after the new stones and plaster, the priest has the house scraped and replastered one more time.",
           "answers": [
             {
               "text": "True",
@@ -642,15 +540,42 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 10,
+          "kind": "story",
+          "verses": "Leviticus 14:44-45",
+          "text": "It's a destructive mildew, so the house is torn down: stones, timbers, plaster, all of it, out to an unclean place outside the city. Forget the RENOVATION, friend, this house is GONE.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Leviticus 14:46",
+          "question": "Anyone who goes into the house during the days it's closed up is unclean until evening.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Leviticus 14:47",
-          "question": "Anyone who sleeps or eats in a house closed up because of mildew must wash his ___.",
+          "question": "God adds that anyone who sleeps in the house or eats in it must wash his ___.",
           "answers": [
             {
               "text": "clothes",
@@ -670,7 +595,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Leviticus 14:48",
           "text": "But if the priest inspects after the replastering and the mildew hasn't spread, he pronounces the house clean, because the mildew is gone. Best inspection report EVER.",
@@ -678,15 +603,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Leviticus 14:49-52",
-          "text": "To purify the house, the priest follows the same recipe as the person's cleansing: two birds, cedar wood, scarlet yarn and hyssop, with one bird slaughtered over fresh water in a clay pot. He dips the rest in the blood and the fresh water and sprinkles the house seven times.",
+          "text": "To purify the house, the priest takes two birds, cedar wood, scarlet yarn and hyssop, and slaughters one bird over fresh water in a clay pot. He dips the live bird, the cedar wood, the hyssop and the yarn in the blood and the fresh water, and he sprinkles the house seven times.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Leviticus 14:53",
           "text": "The live bird is released into the open fields outside the city. In this way he makes atonement for the house, and it will be clean.",
@@ -694,7 +619,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 14:55",
@@ -713,7 +638,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 14:57",
@@ -733,15 +658,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Leviticus 14:57",
           "text": "And that's where we'll set it down for now, friend. Keep that oven warm, because this teaching on clean and unclean isn't finished yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

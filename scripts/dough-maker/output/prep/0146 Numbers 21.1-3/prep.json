@@ -9,35 +9,12 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 21:1",
-          "text": "Israel is on the move again, traveling along the road to Atharim. Down in the Negev, a king hears they're coming. A whole nation walking down your road is not exactly a quiet visit, friend. Even I would've heard that from the back of my old junk drawer.",
-          "needs_agent_fix": true,
+          "text": "Israel is on the move again, traveling along the road to Atharim. Down in the Negev, the Canaanite king of Arad hears they're coming. A whole nation walking down your road is not exactly a quiet visit, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 21:1",
-          "question": "The king who hears that Israel is coming is the Canaanite king of ___.",
-          "answers": [
-            {
-              "text": "Arad",
-              "correct": true
-            },
-            {
-              "text": "Hebron",
-              "correct": false
-            },
-            {
-              "text": "Jericho",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 21:1",
@@ -56,15 +33,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "story",
           "verses": "Numbers 21:1",
-          "text": "Nope, no welcome cookies, no wave from the porch. He ATTACKS Israel, and he doesn't leave empty-handed.",
+          "text": "The king of Arad attacks Israel, and he doesn't leave empty-handed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 21:1",
@@ -87,15 +64,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Numbers 21:2",
-          "text": "So what does Israel do after a hit like that? Me, I'd crawl back into my old junk drawer and hide under the takeout menus, but Israel does something a WHOLE lot better.",
+          "text": "So what does Israel do after an attack like that? Me, I'd hide under the takeout menus in the junk drawer I spent years stuck in, but Israel does something a WHOLE lot better.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 21:2",
@@ -115,10 +92,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 21:2",
@@ -138,22 +115,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Numbers 21:2",
+          "text": "And if the LORD does that, Israel vows, \"…we will devote their cities to destruction.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Numbers 21:2",
-          "text": "And if He does, here's Israel's side of the deal: \"we will devote their cities to destruction.\" Friend, the biggest promise I ever make is to stop eating the chocolate chips before they hit the dough, and I can't even keep THAT one.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 21:3",
-          "question": "The LORD hears Israel's plea and delivers up the Canaanites.",
+          "question": "The LORD delivers up the Canaanites to Israel.",
           "answers": [
             {
               "text": "True",
@@ -168,15 +145,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Numbers 21:3",
-          "text": "The LORD came through. Now Israel's promise is sitting on the counter, and that timer is going DING, DING, DING.",
+          "text": "The LORD hears Israel's plea and delivers up the Canaanites. Now the vow is in Israel's hands.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 21:3",
@@ -199,23 +176,24 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Numbers 21:3",
-          "text": "Israel devotes the Canaanites and their cities to destruction, just like they said. Then they name the place, and it's a whole lot more serious than the name I gave my first burnt batch.",
+          "text": "Israel devotes the Canaanites and their cities to destruction, just like they vowed. Then they give the place a name.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Numbers 21:3",
-          "question": "What does Israel name the place where the Canaanites of Arad were defeated?",
+          "question": "After the LORD delivers up the Canaanites of Arad, Israel names the place ___.",
           "answers": [
             {
               "text": "Hormah",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Meribah",

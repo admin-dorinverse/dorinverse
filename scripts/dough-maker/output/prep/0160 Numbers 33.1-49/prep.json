@@ -3,41 +3,18 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Numbers 33:1-49",
+      "verses": "Numbers 33:1-14",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Numbers 33:1",
-          "text": "Israel's been on the move a LONG time, and now the book of Numbers stops to look back at the journeys of the Israelites since they came out of the land of Egypt, by their divisions. Every single stop. Friend, I spent years in one spot in a junk drawer, so a list of places somebody actually WENT gets me excited.",
-          "needs_agent_fix": true,
+          "text": "Here's the record of the journeys the Israelites made after they came out of the land of Egypt, by their divisions, under the leadership of Moses and Aaron. Friend, my whole travel history is a kitchen counter and then the back of a junk drawer. These people have a LIST.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 33:1",
-          "question": "The Israelites come out of Egypt by their divisions. Whose leadership are they under?",
-          "answers": [
-            {
-              "text": "Moses and Aaron",
-              "correct": true
-            },
-            {
-              "text": "Moses and Joshua",
-              "correct": false
-            },
-            {
-              "text": "Aaron and Eleazar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 33:2",
@@ -56,19 +33,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "story",
+          "verses": "Numbers 33:3",
+          "text": "Day one is the fifteenth day of the first month, the day after the Passover, and the Israelites set out from Rameses. After everything Egypt put them through, I want to see HOW they walk out that door.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Numbers 33:3",
-          "text": "Day one is the fifteenth day of the first month, the day after the Passover, and the Israelites set out from Rameses. After everything Egypt put them through, I want to see HOW they walk out that door.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 33:3",
@@ -87,15 +64,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 33:4",
-          "question": "As Israel marches out the day after the Passover, the Egyptians are busy burying all their ___.",
+          "question": "As Israel marches out the day after the Passover, the Egyptians are busy burying all their ___, whom the LORD had struck down among them.",
           "answers": [
             {
               "text": "firstborn",
@@ -106,19 +83,85 @@
               "correct": false
             },
             {
-              "text": "kings",
+              "text": "elders",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Numbers 33:4",
+          "question": "True or false: besides striking down Egypt's firstborn, the LORD had executed judgment against Egypt's gods.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "Numbers 33:5-7",
+          "text": "From Rameses they camp at Succoth, then at Etham, on the edge of the wilderness. Then they turn back to Pi-hahiroth and camp near Migdol, by the sea (Exodus 14:2).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 33:8",
+          "question": "Israel is camped by the sea at Pi-hahiroth. How do they get from there into the wilderness?",
+          "answers": [
+            {
+              "text": "They cross through the sea",
+              "correct": true
+            },
+            {
+              "text": "They march around the sea",
+              "correct": false
+            },
+            {
+              "text": "They go back through Succoth",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Numbers 33:8-9",
+          "text": "Three days into the Wilderness of Etham they camp at Marah, and then they reach Elim, where there were twelve springs and seventy palm trees. TWELVE springs, friend, and I would've unpacked EVERYTHING.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Numbers 33:10-14",
+          "text": "They camp by the Red Sea, then in the Desert of Sin, then at Dophkah and Alush. Next stop, Rephidim.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 33:4",
-          "question": "True or false: the LORD's judgment in Egypt touched only the people, not Egypt's gods.",
+          "verses": "Numbers 33:14",
+          "question": "True or false: at Rephidim the people had plenty of water to drink.",
           "answers": [
             {
               "text": "True",
@@ -129,16 +172,165 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        }
+      ]
+    },
+    {
+      "stop": 2,
+      "verses": "Numbers 33:15-49",
+      "cards": [
+        {
+          "card": 1,
+          "kind": "story",
+          "verses": "Numbers 33:15-36",
+          "text": "From Rephidim they camp in the Wilderness of Sinai. Then the list rolls on, set out and camp, set out and camp, from Kibroth-hattaavah and Hazeroth all the way to Ezion-geber. From there they camp at Kadesh in the Wilderness of Zin. I get winded hopping my gold base from the oven to the cooling rack, and these folks pack up and move AGAIN. And AGAIN. And AGAIN.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 2,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 33:37",
+          "question": "Israel sets out from Kadesh and camps at a mountain on the outskirts of the land of Edom. Which mountain?",
+          "answers": [
+            {
+              "text": "Mount Hor",
+              "correct": true
+            },
+            {
+              "text": "Mount Carmel",
+              "correct": false
+            },
+            {
+              "text": "Mount Gerizim",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Numbers 33:38",
+          "question": "True or false: Aaron the priest climbs Mount Hor at the LORD's command.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 33:38",
+          "question": "Up on Mount Hor, on the first day of the fifth month, what happens to Aaron the priest?",
+          "answers": [
+            {
+              "text": "He dies there",
+              "correct": true
+            },
+            {
+              "text": "He builds an altar there",
+              "correct": false
+            },
+            {
+              "text": "He blesses the tribes there",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Numbers 33:38-39",
+          "text": "It's the fortieth year since Israel came out of Egypt, and Aaron was 123 years old when he died on Mount Hor. I think this one hurts, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Numbers 33:40",
+          "text": "Meanwhile, the Canaanite king of Arad, who lived in the Negev in the land of Canaan, hears some news.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 33:40",
+          "question": "What news reaches the Canaanite king of Arad?",
+          "answers": [
+            {
+              "text": "That the Israelites were coming",
+              "correct": true
+            },
+            {
+              "text": "That Aaron had died on Mount Hor",
+              "correct": false
+            },
+            {
+              "text": "That Egypt's army was coming",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Numbers 33:5-49",
-          "text": "Then the list REALLY gets going: set out, camped, set out, camped, through the sea and the wilderness to Mount Hor, where Aaron the priest climbs up at the LORD's command and dies there at 123 years old. From there it's on to the plains of Moab by the Jordan, across from Jericho, and friend, I sat in ONE junk drawer for YEARS while these folks pack up in practically every verse.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Numbers 33:41-47",
+          "text": "The Israelites set out from Mount Hor and keep going: Zalmonah, Punon, Oboth, and Iye-abarim on the border of Moab. Then Dibon-gad and Almon-diblathaim, and they camp in the mountains of Abarim facing Nebo.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 33:48",
+          "question": "Israel sets out from the mountains of Abarim. Where do they camp next?",
+          "answers": [
+            {
+              "text": "On the plains of Moab by the Jordan",
+              "correct": true
+            },
+            {
+              "text": "In the Wilderness of Paran",
+              "correct": false
+            },
+            {
+              "text": "In the valley of Hinnom",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Numbers 33:48-49",
+          "text": "There they camp by the Jordan, across from Jericho, stretching from Beth-jeshimoth to Abel-shittim. Every stage written down, right up to the river.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

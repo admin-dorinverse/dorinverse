@@ -3,13 +3,13 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Numbers 22:36-23:12",
+      "verses": "Numbers 22:36-23:11",
       "cards": [
         {
           "card": 1,
           "kind": "story",
-          "verses": "Numbers 22:4-6, 36",
-          "text": "Balak, king of Moab, wants Israel cursed, so he sent for Balaam son of Beor to do it. Now Balaam is finally on his way. Balak hears he's coming and goes out to meet him at the Moabite city on the Arnon border, the very edge of his territory.",
+          "verses": "Numbers 22:36",
+          "text": "Balak, king of Moab, sent for Balaam son of Beor to come put a curse on Israel (Numbers 22:5-6). When Balak hears Balaam is coming, he goes out to meet him at the Moabite city on the Arnon border, at the edge of his territory.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -102,7 +102,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Numbers 23:1",
-          "text": "Then Balaam tells Balak, “Build for me seven altars here, and prepare for me seven bulls and seven rams.” Seven, seven and SEVEN, friend, that's not a favor, that's a work order.",
+          "text": "Then Balaam tells Balak, “Build for me seven altars here, and prepare for me seven bulls and seven rams.” Seven altars. Seven bulls. SEVEN rams. Balaam isn't asking for a favor here. He's handing the king a work order.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -241,7 +241,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 23:10",
-          "question": "In his oracle, Balaam says no one can count even a fourth of Israel.",
+          "question": "In his oracle, Balaam asks who can number even a fourth of Israel.",
           "answers": [
             {
               "text": "True",
@@ -282,24 +282,28 @@
           "card": 19,
           "kind": "story",
           "verses": "Numbers 23:11",
-          "text": "Then Balak turns to Balaam: he brought him here to curse his enemies, and Balaam has only blessed them! Friend, that's hiring a man to roast your rival at the office party, and he gives the sweetest speech in the building.",
+          "text": "Balak has heard the whole oracle. He turns to Balaam and says, “What have you done to me?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 23:12",
-          "question": "When Balak complains, Balaam apologizes and promises him a curse next time.",
+          "type": "multiple_choice",
+          "verses": "Numbers 23:11",
+          "question": "Balak says he brought Balaam here to curse his enemies. What does Balak say Balaam has done instead?",
           "answers": [
             {
-              "text": "True",
+              "text": "Only blessed them",
+              "correct": true
+            },
+            {
+              "text": "Only warned them",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Only counted them",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -309,13 +313,13 @@
     },
     {
       "stop": 2,
-      "verses": "Numbers 23:13-24",
+      "verses": "Numbers 23:12-24",
       "cards": [
         {
           "card": 1,
           "kind": "story",
-          "verses": "Numbers 23:13",
-          "text": "One blessing in, and Balak, king of Moab, is not giving up. He asks Balaam to come to another place where he'll only see the outskirts of Israel's camp, not all of them, and curse them from there.",
+          "verses": "Numbers 23:12-13",
+          "text": "Balaam answers, “Should I not speak exactly what the LORD puts in my mouth?” But Balak isn't giving up: he asks Balaam to come to another place where he'll see only the outskirts of Israel's camp, and curse them from there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -352,28 +356,32 @@
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 23:15",
-          "question": "This time, Balak goes along with Balaam to meet the LORD.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Numbers 23:15-16",
+          "text": "Balaam goes off again to meet the LORD. The LORD puts a message in his mouth and tells him to return to Balak and speak what He tells him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Numbers 23:16-17",
-          "text": "The LORD meets with Balaam and puts a message in his mouth again. Balaam comes back to Balak and the princes, and Balak asks, “What did the LORD say?”",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 23:17",
+          "question": "Balaam comes back to Balak and the princes of Moab. What does Balak ask him?",
+          "answers": [
+            {
+              "text": "What the LORD said",
+              "correct": true
+            },
+            {
+              "text": "Where he has been",
+              "correct": false
+            },
+            {
+              "text": "Why he took so long",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -411,28 +419,9 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 23:19",
-          "question": "Balaam says that when God makes a promise, He fulfills it.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 23:20",
-          "question": "God doesn't change His mind. So what does Balaam say about the blessing God gave Israel?",
+          "question": "God doesn't lie or change His mind, and what He promises, He does. So what does Balaam say about the blessing God gave Israel?",
           "answers": [
             {
               "text": "Balaam cannot change it",
@@ -451,15 +440,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Numbers 23:21",
-          "text": "Balaam says God sees no disaster and no trouble for Israel. “The LORD their God is with them, and the shout of the King is among them.”",
+          "text": "Balaam says God considers no disaster for Jacob and sees no trouble for Israel. He says, “The LORD their God is with them, and the shout of the King is among them.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 23:22",
@@ -483,15 +472,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
-          "verses": "Numbers 23:22",
-          "text": "And not just any strength. Strength like a wild ox. Then Balaam turns to the subject of spells and divination.",
-          "needs_agent_fix": true,
+          "verses": "Numbers 23:22-23",
+          "text": "That strength is “like a wild ox.” Then Balaam turns to the subject of spells and divination.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 23:23",
@@ -510,7 +499,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Numbers 23:23",
           "text": "No spell against Jacob, no divination against Israel. Balaam says it will now be said of Jacob and Israel, “What great things God has done!”",
@@ -518,26 +507,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 23:24",
-          "question": "Balaam closes his second oracle with a picture of Israel's people rising up. What does he compare them to?",
+          "question": "Balaam closes his second oracle with a picture: the people rise like a lioness and rouse themselves like a lion. When does he say they rest?",
           "answers": [
             {
-              "text": "A lioness and a lion",
+              "text": "Only after they devour their prey and drink the blood of the slain",
               "correct": true
             },
             {
-              "text": "An eagle and its young",
+              "text": "Only after the sun goes down and the night grows still",
               "correct": false
             },
             {
-              "text": "A herd of wild horses",
+              "text": "Only after they find a den high up in the hills",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -575,33 +564,32 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Numbers 23:26",
-          "question": "Balak wants Balaam to say nothing. Balaam answers that whatever the ___ says, he must do.",
-          "answers": [
-            {
-              "text": "LORD",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "king",
-              "correct": false
-            },
-            {
-              "text": "princes",
-              "correct": false
-            }
-          ],
+          "text": "Balaam reminds him, “Did I not tell you that whatever the LORD says, I must do?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Numbers 23:27",
-          "text": "Balak still won't quit, and now he's walking Balaam to a THIRD spot, like me carrying my phone all over the bakery hunting for one more bar of signal. He tells Balaam, “Perhaps it will please God that you curse them for me from there.”",
+          "question": "Balak still isn't done. He offers to take Balaam to another place. What does Balak hope will happen there?",
+          "answers": [
+            {
+              "text": "That God will allow a curse from there",
+              "correct": true
+            },
+            {
+              "text": "That Israel will move out of sight",
+              "correct": false
+            },
+            {
+              "text": "That Balaam will change his own mind",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -630,28 +618,32 @@
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Numbers 23:28-29",
-          "text": "Up on Peor, looking out over the wasteland, Balaam says that line again: “Build for me seven altars here, and prepare for me seven bulls and seven rams.”",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Numbers 23:28",
+          "question": "Balak brings Balaam up to the top of Peor. What does it overlook?",
+          "answers": [
+            {
+              "text": "The wasteland",
+              "correct": true
+            },
+            {
+              "text": "The Jordan River",
+              "correct": false
+            },
+            {
+              "text": "The Salt Sea",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 23:30",
-          "question": "At Peor, Balak refuses to build any more altars.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Numbers 23:29",
+          "text": "Up on Peor, Balaam says that line again: “Build for me seven altars here, and prepare for me seven bulls and seven rams.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -659,7 +651,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Numbers 23:30",
-          "text": "Seven more altars on Peor, and Balak has now built more altars than I own mixing bowls. We're pausing right here, friend, but this mountaintop isn't finished with us yet.",
+          "text": "So Balak does it and offers a bull and a ram on each altar, and by now he's built more altars than I own mixing bowls. We're pausing right here, friend, but this mountaintop isn't finished with us yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

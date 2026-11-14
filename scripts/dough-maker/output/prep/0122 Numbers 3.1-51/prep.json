@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 3:1-2",
-          "text": "Friend, we're at Mount Sinai, back when the LORD spoke with Moses, Israel's leader. This is the account of Aaron and Moses, and it starts with the family of Aaron, Moses' brother. Four sons: Nadab the firstborn, then Abihu, Eleazar and Ithamar.",
-          "needs_agent_fix": true,
+          "text": "Friend, this is the account of Aaron and Moses, from the time the LORD spoke with Moses, Israel's leader, on Mount Sinai. It starts with the family of Aaron, Moses' brother (Exodus 4:14). Four sons: Nadab the firstborn, then Abihu, Eleazar and Ithamar.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -98,8 +98,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Numbers 3:5-6",
-          "text": "Then the LORD tells Moses to bring the tribe of Levi and present them to Aaron the priest. A whole TRIBE, friend. Presented to ONE man.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD tells Moses to bring the tribe of Levi and present them to Aaron the priest.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -125,8 +125,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Numbers 3:7",
-          "text": "The Levites will serve Aaron and the whole congregation in front of the Tent of Meeting. Aaron gets an entire tribe at once, and I'm over here inviting bakers one at a time. I'm not jealous. I'm a LITTLE jealous.",
-          "needs_agent_fix": true,
+          "text": "The Levites will serve Aaron and the whole congregation in front of the Tent of Meeting. Aaron gets a WHOLE TRIBE of helpers at once, and I'm not jealous, friend, I'm just a LITTLE jealous.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -156,7 +156,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Numbers 3:9-10",
-          "text": "The Levites are assigned to Aaron and his sons, given to him from among the Israelites. And Aaron and his sons carry out the duties of the priesthood.",
+          "text": "The Levites are assigned to Aaron and his sons, given to him from among the Israelites. And Moses is to appoint Aaron and his sons to carry out the duties of the priesthood.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -223,7 +223,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 3:13",
-          "question": "What did the LORD do on that day in Egypt?",
+          "question": "The LORD speaks of one day in Egypt when He set apart Israel's firstborn for Himself. What else did He do in Egypt that day?",
           "answers": [
             {
               "text": "Struck down every firstborn there",
@@ -238,7 +238,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -246,18 +246,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 3:13",
-          "question": "On that day, the LORD set apart Israel's firstborn people but not their animals.",
+          "question": "On the day the LORD struck down Egypt's firstborn, He set apart Israel's firstborn animals as well as its firstborn people.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -295,8 +295,8 @@
           "card": 20,
           "kind": "story",
           "verses": "Numbers 3:15-16",
-          "text": "And Moses counts them, just as the LORD commanded. A MONTH old, friend. That little guy can't hold his own head up, and he's already on the roster.",
-          "needs_agent_fix": true,
+          "text": "So Moses counts them, just as the LORD commanded. A MONTH old, friend, and that little guy is on the roster before he can even hold his own head up.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -309,27 +309,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 3:17-37",
-          "text": "Levi's three sons are Gershon, Kohath and Merari, and each son's clans get counted, get a leader and get a side of the tabernacle to camp on. The Gershonites camp on the west and look after the tent, its covering and the curtains. The Kohathites camp on the south with the ark, the table, the lampstand and the altars, and the Merarites camp on the north with the frames, posts, tent pegs and ropes. Hey. Somebody's gotta bring the pegs.",
-          "needs_agent_fix": true,
+          "text": "Levi's three sons are Gershon, Kohath and Merari, and each son's clans get counted, get a leader and get a side of the tabernacle to camp on. The Gershonites camp on the west and look after the tent, its covering and the curtains, and the Kohathites camp on the south and care for the ark, the table, the lampstand and the altars. The Merarites camp on the north and handle the frames, posts, tent pegs and ropes. Hey. Somebody's gotta bring the pegs.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "story",
+          "verses": "Numbers 3:38",
+          "text": "Moses, Aaron and Aaron's sons camp on the east, toward the sunrise, right in front of the Tent of Meeting. Any outsider who approaches the sanctuary is to be put to death.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 3:38",
-          "question": "With the Levite clans on the west, south and north, where do Moses, Aaron and Aaron's sons camp?",
+          "question": "Camped east of the tabernacle, what do Moses, Aaron and Aaron's sons do on behalf of the Israelites?",
           "answers": [
             {
-              "text": "On the east toward the sunrise",
+              "text": "Perform the duties of the sanctuary",
               "correct": true
             },
             {
-              "text": "On the west with the Gershonites",
+              "text": "Settle the people's disputes",
               "correct": false
             },
             {
-              "text": "Outside the whole camp",
+              "text": "Guard the gates of the camp",
               "correct": false
             }
           ],
@@ -337,18 +345,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
-          "kind": "story",
-          "verses": "Numbers 3:38-39",
-          "text": "Right in front of the Tent of Meeting, doing the duties of the sanctuary for the Israelites, and any outsider who approaches the sanctuary is to be put to death. Then the Levite total comes in: 22,000.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 4,
           "kind": "story",
-          "verses": "Numbers 3:40-41",
-          "text": "Now the LORD tells Moses to count every firstborn male of the Israelites, a month old or more, and list their names. The Levites will be the LORD's in place of all Israel's firstborn.",
+          "verses": "Numbers 3:39-41",
+          "text": "The Levite total comes to 22,000. Then the LORD tells Moses to count every firstborn male of the Israelites, a month old or more, and to take the Levites for Him in place of all Israel's firstborn.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -397,9 +397,9 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Numbers 3:43-46",
-          "text": "22,273 firstborn. That's 273 more than the Levites. Friend, when I've got ONE extra cookie box and no baker to hand it to, I'm running laps around the bakery. Moses has 273.",
-          "needs_agent_fix": true,
+          "verses": "Numbers 3:43, 46",
+          "text": "22,273 firstborn, which is 273 more than the Levites. Friend, when ONE cookie in a batch doesn't fit on the tray, I'm running laps around the bakery, and Moses has 273 left over.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -426,7 +426,7 @@
               "correct": false
             },
             {
-              "text": "One young lamb",
+              "text": "Thirty shekels",
               "correct": false
             }
           ],
@@ -468,28 +468,28 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Numbers 3:49-50",
-          "text": "So Moses collects 1,365 shekels from the firstborn, by the sanctuary shekel. Five times 273, right on the nose, and me, I lose count of chocolate chips at SEVEN.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Numbers 3:49",
+          "question": "Moses collects the redemption money from all 22,273 of Israel's firstborn.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 3:51",
-          "question": "Moses gives the redemption money to Aaron and his sons, just as the LORD commanded him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Numbers 3:50-51",
+          "text": "So Moses collects 1,365 shekels by the sanctuary shekel, five times 273 right on the nose, and gives it to Aaron and his sons, just as the LORD commanded. Me, I lose count of chocolate chips at SEVEN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

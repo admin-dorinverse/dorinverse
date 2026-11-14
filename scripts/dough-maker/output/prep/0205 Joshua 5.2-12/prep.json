@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Joshua 5:2",
-          "text": "Israel has just crossed the Jordan River into Canaan, and the LORD speaks to Joshua, Israel's leader. His next instruction isn't a parade or a party. He tells Joshua to make knives and circumcise the sons of Israel once again.",
+          "text": "Israel has just crossed the Jordan River into Canaan. Then the LORD speaks to Joshua, Israel's leader. He tells Joshua to circumcise the sons of Israel once again.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 5:2",
-          "question": "The LORD tells Joshua what the knives should be made of. He says: make ___ knives.",
+          "question": "For the job, the LORD tells Joshua to make knives out of ___.",
           "answers": [
             {
               "text": "flint",
@@ -34,38 +34,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Joshua 5:3",
-          "question": "Joshua does what the LORD says. He makes the knives and circumcises the sons of Israel.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Joshua 5:3-4",
+          "text": "So Joshua makes the knives and circumcises the sons of Israel. Here's why: all the men of war who came out of Egypt had died on the journey through the wilderness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Joshua 5:4",
-          "text": "Now the passage hits the brakes to explain, and friend, I LOVE a good backstory. All the men of war who came out of Egypt had died on the journey through the wilderness.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 5:5",
@@ -88,15 +69,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Joshua 5:6",
-          "text": "Israel wandered in the wilderness forty years, until all those men of war were gone. Forty YEARS. I spent a few years in a junk drawer and thought I was the world champion of waiting.",
-          "needs_agent_fix": true,
+          "text": "Israel wandered in the wilderness forty years, until all the men of war who came out of Egypt had died.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 5:6",
@@ -119,7 +100,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 5:6",
@@ -138,7 +119,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Joshua 5:7",
           "text": "So the LORD raised up their sons in their place. A whole new generation, and they're the ones Joshua circumcises, since they weren't circumcised along the way.",
@@ -146,22 +127,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Joshua 5:8",
-          "question": "After the whole nation has been circumcised, what does Israel do next?",
+          "question": "After the whole nation has been circumcised, Israel stays in the camp until they are ___.",
           "answers": [
             {
-              "text": "Stay in camp until they are healed",
-              "correct": true
+              "text": "healed",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "March straight on toward Jericho",
+              "text": "counted",
               "correct": false
             },
             {
-              "text": "Cross back over the Jordan River",
+              "text": "anointed",
               "correct": false
             }
           ],
@@ -169,19 +151,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Joshua 5:9",
-          "text": "Then the LORD says to Joshua, \"Today I have rolled away the reproach of Egypt from you.\" You know that feeling when the big red PAST DUE stamp finally disappears off your account? Like THAT, times a thousand.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD says to Joshua, \"Today I have rolled away the reproach of Egypt from you.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 5:9",
-          "question": "Because the LORD rolled away the reproach of Egypt, that place has been called ___ to this day.",
+          "question": "After the LORD rolls away the reproach of Egypt, the place where it happened gets a name. When Joshua was written, it was still called ___.",
           "answers": [
             {
               "text": "Gilgal",
@@ -201,7 +183,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Joshua 5:10",
           "text": "Mark your calendar, friend: the evening of the fourteenth day of the month. The Israelites are camped at Gilgal on the plains of Jericho, and this is no ordinary evening.",
@@ -209,11 +191,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 5:10",
-          "question": "On that evening at Gilgal, the Israelites keep the ___.",
+          "question": "On the evening of the fourteenth day of the month, camped at Gilgal, the Israelites keep the ___.",
           "answers": [
             {
               "text": "Passover",
@@ -225,15 +207,15 @@
               "correct": false
             },
             {
-              "text": "Jubilee",
+              "text": "Purim",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 5:11",
@@ -244,7 +226,7 @@
               "correct": true
             },
             {
-              "text": "Bread they had carried all the way from Egypt",
+              "text": "Fish they caught in the Jordan River",
               "correct": false
             },
             {
@@ -252,11 +234,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Joshua 5:12",
           "text": "Then, one day later, something changes. Something Israel has counted on for a LONG time.",
@@ -264,7 +246,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 5:12",
@@ -287,26 +269,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Joshua 5:12",
-          "question": "With no more manna, the Israelites have nothing to eat that year.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "Joshua 5:12",
           "text": "That year, Israel eats the crops of the land of Canaan. Stick around, friend, because this story is FAR from done.",

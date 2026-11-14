@@ -8,9 +8,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Deuteronomy 4:22-39",
-          "text": "Moses, Israel's leader, has been teaching Israel that the LORD is God and there is no other, and that he won't be crossing the Jordan with them. Now he stops talking for a minute and gets to WORK. Friend, I know that move. When my oven timer goes off, I stop mid-sentence and I am GONE.",
-          "needs_agent_fix": true,
+          "verses": "Deuteronomy 4:41",
+          "text": "Moses, Israel's leader, has been telling Israel that the LORD is God and there is no other (Deuteronomy 4:39). He's also told them, \"For I will not be crossing the Jordan, because I must die in this land\" (Deuteronomy 4:22). Then Moses sets aside three cities.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -29,84 +29,42 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 4:41",
-          "question": "So the cities sit across the Jordan, to the east. How many cities does Moses set aside out there?",
-          "answers": [
-            {
-              "text": "Three",
-              "correct": true
-            },
-            {
-              "text": "Seven",
-              "correct": false
-            },
-            {
-              "text": "Twelve",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Deuteronomy 4:42",
+          "text": "These cities are a place a manslayer, someone who has killed his neighbor, can flee to. I think this part is heavy.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 4:42",
-          "text": "These three cities are for a manslayer, a man who has killed his neighbor, but there's fine print. Friend, I spent YEARS in a junk drawer under instruction manuals nobody ever read, so trust me: READ THIS ONE.",
-          "needs_agent_fix": true,
+          "question": "A man has killed his neighbor. Which man could flee to one of these cities?",
+          "answers": [
+            {
+              "text": "One who did it by accident with no grudge",
+              "correct": true
+            },
+            {
+              "text": "One who planned it for weeks ahead",
+              "correct": false
+            },
+            {
+              "text": "One who did it to take the man's land",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 4:42",
-          "question": "For a man who killed his neighbor to flee to one of these cities, how did it have to happen?",
-          "answers": [
-            {
-              "text": "By accident with no grudge beforehand",
-              "correct": true
-            },
-            {
-              "text": "While protecting his own family",
-              "correct": false
-            },
-            {
-              "text": "In a fight his neighbor started",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 4:42",
-          "question": "True or false: a man who planned it ahead of time, with malice in his heart, could also flee to one of these cities.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 4:42",
@@ -118,7 +76,7 @@
               "blank": 1
             },
             {
-              "text": "land",
+              "text": "home",
               "correct": false
             },
             {
@@ -126,91 +84,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "Deuteronomy 4:43",
-          "text": "Then Moses names all three cities, each with its own spot on the map, which is more labeling than I can manage. I once marked all six topping jars in my bakery TOPPINGS, and it took me a WEEK to find the sprinkles.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then Moses names all three: Bezer in the wilderness on the plateau, Ramoth in Gilead and Golan in Bashan. Real names, real places, so nobody running for his life has to stop and ask for directions.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 4:43",
-          "question": "The first city Moses names is Bezer. Where is Bezer?",
+          "question": "Moses names Bezer, Ramoth and Golan as the three cities. Who does each of these cities belong to?",
           "answers": [
             {
-              "text": "In the wilderness on the plateau",
+              "text": "A tribe of Israel",
               "correct": true
             },
             {
-              "text": "On the plains of Moab",
+              "text": "The king of Moab",
               "correct": false
             },
             {
-              "text": "In the valley of the Arnon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 4:43",
-          "question": "Each city belongs to one of Israel's tribes. True or false: Bezer belongs to the Reubenites.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
+              "text": "Moses and his family",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 4:43",
-          "question": "The other two cities each belong to a different tribe. Ramoth in Gilead belongs to the ___, and Golan in Bashan belongs to the ___.",
-          "answers": [
-            {
-              "text": "Gadites",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Manassites",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Benjamites",
-              "correct": false
-            },
-            {
-              "text": "Danites",
-              "correct": false
-            },
-            {
-              "text": "Ephraimites",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

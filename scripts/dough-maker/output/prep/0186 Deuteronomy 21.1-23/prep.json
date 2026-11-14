@@ -9,136 +9,55 @@
           "card": 1,
           "kind": "story",
           "verses": "Deuteronomy 21:1",
-          "text": "Moses, Israel's leader, is still preaching to Israel about life in the land the LORD is giving them. And he opens with a hard one. Someone is found killed, lying in a field, and nobody knows who did it.",
+          "text": "Moses, Israel's leader, is still preaching to Israel about life in the land the LORD is giving them. The first case: someone is found killed, lying in a field, and nobody knows who did it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Deuteronomy 21:2",
-          "question": "Nobody knows who killed the man in the field. So who has to come out first?",
-          "answers": [
-            {
-              "text": "The elders and judges",
-              "correct": true
-            },
-            {
-              "text": "The king and his officers",
-              "correct": false
-            },
-            {
-              "text": "The victim's whole family",
-              "correct": false
-            }
-          ],
+          "text": "The elders and judges come out and measure the distance from the body to the towns around it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Deuteronomy 21:2",
-          "text": "So they measure the distance from the body to the towns around it. Friend, I have never measured a thing in my life. I eyeball the chocolate chips, shrug, and call it a recipe.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 21:3",
+          "question": "Once the elders and judges measure from the body of the man nobody knows who killed, which town's elders take the next step?",
+          "answers": [
+            {
+              "text": "The town nearest the body",
+              "correct": true
+            },
+            {
+              "text": "The largest town in the land",
+              "correct": false
+            },
+            {
+              "text": "The town where the man lived",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 21:2-3",
-          "question": "Why do the elders and judges measure from the body to the towns around it?",
-          "answers": [
-            {
-              "text": "To find the nearest city",
-              "correct": true
-            },
-            {
-              "text": "To mark out a grave site",
-              "correct": false
-            },
-            {
-              "text": "To set the field's boundary",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Deuteronomy 21:3-4",
+          "text": "Those elders take a heifer that's never been yoked or worked. They bring it to a valley with running water, on ground never plowed or sown, and break its neck there by the stream.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Deuteronomy 21:3",
-          "text": "Whichever city comes out closest, the job lands on its elders. And they have to bring an animal.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 21:3",
-          "question": "The elders of the nearest city take a ___ that has never been yoked or used for work.",
-          "answers": [
-            {
-              "text": "heifer",
-              "correct": true
-            },
-            {
-              "text": "ram",
-              "correct": false
-            },
-            {
-              "text": "goat",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Deuteronomy 21:4",
-          "text": "They lead the heifer down to a valley with running water. It's ground that hasn't been plowed or sown.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 21:4",
-          "question": "In that valley, the elders offer the heifer on an altar as a burnt offering.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Deuteronomy 21:4-5",
-          "text": "Instead, they break its neck right there by the stream. Then the priests, the sons of Levi, step forward.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 21:5",
-          "question": "Why are the priests, the sons of Levi, part of this?",
+          "question": "At the stream where the elders break the heifer's neck over a killing nobody can solve, the priests, the sons of Levi, come forward. Why does Moses say they are there?",
           "answers": [
             {
               "text": "God chose them to serve and rule on cases",
@@ -153,23 +72,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 6,
           "kind": "story",
           "verses": "Deuteronomy 21:6",
-          "text": "Then every elder of the nearest city washes his hands in the stream, right over the heifer.",
+          "text": "Then all the elders of the nearest town wash their hands by the stream over the heifer.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 21:7",
-          "question": "As they wash their hands by the stream, the elders declare that they saw who killed the man.",
+          "question": "As they wash their hands over the heifer by the stream, the elders of the nearest city declare that they saw who killed the man.",
           "answers": [
             {
               "text": "True",
@@ -181,22 +100,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 8,
           "kind": "story",
           "verses": "Deuteronomy 21:7-8",
           "text": "They declare that their hands didn't shed this blood and their eyes didn't see it. And they go on, \"Accept this atonement, O LORD, for Your people Israel whom You have redeemed, and do not hold the shedding of innocent blood against them.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 21:8",
-          "question": "Moses says that after the elders make that declaration, the bloodshed will be atoned for.",
+          "question": "After the elders of the nearest city say, \"Accept this atonement, O LORD…\" Moses says the bloodshed will be atoned for.",
           "answers": [
             {
               "text": "True",
@@ -207,15 +126,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 21:9",
-          "question": "With the heifer, the washing and the declaration, Israel purges the ___ of shedding innocent blood from among them.",
+          "question": "With the heifer, the washing and the declaration over a killing nobody can solve, Israel purges the ___ of shedding innocent blood from among them.",
           "answers": [
             {
               "text": "guilt",
@@ -231,15 +150,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Deuteronomy 21:9",
-          "text": "And Moses says that when they do this, they've done what is right in the eyes of the LORD.",
+          "question": "Moses says that when Israel follows these steps for a killing nobody can solve, they have done what is right in the eyes of the LORD.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -250,87 +180,25 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Deuteronomy 21:10-11",
-          "text": "Moses moves on to war. When the LORD gives Israel's enemies into their hand and they take captives, a man might see a beautiful woman among them and want her as his wife.",
+          "verses": "Deuteronomy 21:10-12",
+          "text": "Next, Moses covers captives taken in war. If a man sees a beautiful woman among the captives and wants her as his wife, he brings her into his house.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
-          "verses": "Deuteronomy 21:12",
-          "text": "He brings her into his house. But Moses lays out steps that come before any marriage.",
+          "verses": "Deuteronomy 21:12-13",
+          "text": "She shaves her head, trims her nails and puts aside the clothing of her captivity. After she mourns her father and mother for a full month, she becomes his wife.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 21:12",
-          "question": "Once the captive woman is in the man's house, what does Moses say she must do?",
-          "answers": [
-            {
-              "text": "Shave her head and trim her nails",
-              "correct": true
-            },
-            {
-              "text": "Learn all the laws of Israel",
-              "correct": false
-            },
-            {
-              "text": "Serve his family as a maid",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Deuteronomy 21:13",
-          "text": "She also puts aside the clothes she was captured in. Then she gets time in his house to mourn her father and mother.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 21:13",
-          "question": "The captive woman lives in his house and mourns her father and mother for a full ___ before he can marry her.",
-          "answers": [
-            {
-              "text": "month",
-              "correct": true
-            },
-            {
-              "text": "week",
-              "correct": false
-            },
-            {
-              "text": "year",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Deuteronomy 21:14",
-          "text": "Then Moses covers what happens if the man isn't pleased with her.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 21:14",
-          "question": "If the man isn't pleased with the woman he married, he's allowed to sell her for money.",
+          "question": "If a man marries a woman captured in war and then isn't pleased with her, Moses says he's allowed to sell her for money.",
           "answers": [
             {
               "text": "True",
@@ -342,14 +210,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 21:14",
-          "question": "The man must let her go wherever she wishes and never treat her as a slave. What reason does Moses give?",
+          "question": "A man who married a captive woman and isn't pleased with her must let her go wherever she wishes and never treat her as a slave. What reason does Moses give?",
           "answers": [
             {
               "text": "He has dishonored her",
@@ -364,69 +232,69 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 5,
           "kind": "story",
           "verses": "Deuteronomy 21:15",
-          "text": "Next, a man has two wives, one loved and one unloved, and both give him sons. The firstborn son is from the unloved wife.",
+          "text": "Then Moses turns to inheritance. If a man has two wives, one loved and one unloved, both may give him sons, and the firstborn may be the unloved wife's son.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 21:16",
-          "question": "When he divides his inheritance, the man can name the loved wife's son as the firstborn instead.",
+          "question": "If a man's firstborn son comes from his unloved wife, Moses says that son keeps the firstborn's place over the loved wife's son.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 7,
           "kind": "story",
           "verses": "Deuteronomy 21:16",
-          "text": "Which wife he loves more doesn't change which son came first. It's like the line at my counter, friend: I might LOVE the baker in the back, but whoever got there first still gets served first.",
+          "text": "Which wife he loves more doesn't change which son came first. Friend, I've got favorite batches, but the FIRST batch out of my oven is still the first batch. That's just math.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 21:17",
-          "question": "What must the father give the unloved wife's son, his true firstborn?",
+          "question": "What must the father give the firstborn son of his unloved wife?",
           "answers": [
             {
               "text": "A double portion of all he has",
               "correct": true
             },
             {
-              "text": "The family house and the land",
+              "text": "The family house and all its land",
               "correct": false
             },
             {
-              "text": "A blessing but no inheritance",
+              "text": "Half of all his flocks and herds",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 21:17",
@@ -437,7 +305,7 @@
               "correct": true
             },
             {
-              "text": "His mother was the first wife the man married",
+              "text": "His mother asked the elders to give it to him",
               "correct": false
             },
             {
@@ -446,7 +314,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -457,64 +325,64 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Deuteronomy 21:18",
-          "text": "Now Moses turns to a heavy one. A son is stubborn and rebellious, and he won't listen to his father and mother, even when they discipline him.",
+          "verses": "Deuteronomy 21:18-19",
+          "text": "Now a heavy one. If a son is stubborn and rebellious and won't listen to his father and mother even when they discipline him, they take hold of him and bring him to the elders at the gate of his hometown.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 21:19",
-          "question": "The stubborn son's father and mother take hold of him and bring him to the ___ of his city, at the gate of his hometown.",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 21:20",
+          "question": "At the city gate, the parents of a stubborn son tell the elders he won't obey them. What else do they say about him?",
           "answers": [
             {
-              "text": "elders",
+              "text": "He is a glutton and a drunkard",
               "correct": true
             },
             {
-              "text": "priests",
+              "text": "He has stolen from his neighbors",
               "correct": false
             },
             {
-              "text": "prophets",
+              "text": "He has lied to the whole city",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Deuteronomy 21:20",
-          "text": "At the gate, they tell the elders their son is stubborn and rebellious and won't obey them. Then they add, \"He is a glutton and a drunkard.\"",
+          "verses": "Deuteronomy 21:21",
+          "text": "Moses says all the men of his city will then stone him to death.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Deuteronomy 21:21",
-          "question": "After the parents speak to the elders, what does Moses say happens to the rebellious son?",
+          "question": "After the stubborn and rebellious son is put to death, Moses says, so you must purge the ___ from among you.",
           "answers": [
             {
-              "text": "The men of his city stone him",
+              "text": "evil",
               "correct": true
             },
             {
-              "text": "He is sent out of the land",
+              "text": "shame",
               "correct": false
             },
             {
-              "text": "He serves the elders for a year",
+              "text": "sorrow",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -533,22 +401,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Deuteronomy 21:21-22",
-          "text": "Moses says this is how they purge the evil from among them, and all Israel will hear and be afraid. Then the last law in this stretch: a man commits a sin worthy of death, he is executed, and his body is hung on a tree.",
+          "verses": "Deuteronomy 21:22",
+          "text": "Then the last case. If a man commits a sin worthy of death, is executed, and his body is hung on a tree, Moses gives a rule about the body.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 21:23",
-          "question": "What must Israel do with the executed man's body hung on the tree?",
+          "question": "If an executed man's body is hung on a tree, what does Moses say Israel must do with it?",
           "answers": [
             {
               "text": "Bury it that same day",
@@ -564,14 +432,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 21:23",
-          "question": "The body can't stay up overnight, because anyone who is hung on a tree is under God's ___.",
+          "question": "The executed man's body can't stay on the tree overnight, because anyone who is hung on a tree is under God's ___.",
           "answers": [
             {
               "text": "curse",
@@ -587,23 +455,23 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Deuteronomy 21:23",
-          "text": "Paul, an apostle of Jesus, points back to this line later. He writes that Christ redeemed us from the curse of the law by becoming a curse for us (Galatians 3:13).",
+          "text": "Moses adds that they must not defile the land the LORD their God is giving them as an inheritance. Later, Paul, an apostle of Jesus, points back to this line and writes that Christ became a curse for us (Galatians 3:13).",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Deuteronomy 21:23",
-          "text": "Moses wraps it up: they must not defile the land the LORD their God is giving them as an inheritance. And friend, this sermon isn't over yet.",
+          "text": "That's where we'll pause, friend. Moses has plenty more to say.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

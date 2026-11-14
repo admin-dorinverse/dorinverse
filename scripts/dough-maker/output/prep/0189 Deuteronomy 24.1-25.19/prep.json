@@ -8,48 +8,44 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Deuteronomy 24:1",
-          "text": "Moses, Israel's leader, is still preaching to Israel before they go into the land God is giving them. Law after law, he's laying out how they're going to live there, and friend, this man has NOT run out of laws. Now he gets to marriage: if a man finds some indecency in his wife, he may write her a certificate of divorce, hand it to her and send her away.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Deuteronomy 24:1-3",
+          "text": "Moses, Israel's leader, is still speaking to all Israel (Deuteronomy 5:1), laying out laws for the land the LORD is giving them. First up, marriage: if a man finds some indecency in his wife, he may write her a certificate of divorce, hand it to her and send her away. Now say she marries another man, and that marriage ends too, by divorce or by his death.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "Deuteronomy 24:2-3",
-          "text": "Now say she leaves and becomes another man's wife. Then that second husband divorces her too, or he dies.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 24:4",
-          "question": "True or false: if a divorced woman remarries and that second marriage ends, her first husband may marry her again.",
+          "question": "A divorced woman marries again, and that second marriage ends. Why does Moses say her first husband may not marry her again?",
           "answers": [
             {
-              "text": "True",
+              "text": "It is an abomination to the LORD",
+              "correct": true
+            },
+            {
+              "text": "Her second husband's family has a claim",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The elders must approve it first",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "story",
           "verses": "Deuteronomy 24:5",
           "text": "Next up, newlyweds. For one year, a newly married man must not be sent to war or pressed into any duty.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 24:5",
@@ -68,19 +64,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Deuteronomy 24:6",
+          "text": "The closest I ever got to time off was years in the back of a junk drawer, and NOBODY was bringing anybody joy in there. Next, loans: a lender must not take a pair of millstones, or even just the upper one, as security for a debt.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Deuteronomy 24:6",
-          "text": "The closest I ever got to a year off was the junk drawer, and NOBODY was bringing anybody joy in there. Next, loans: a lender must not take a pair of millstones, or even just the upper one, as security for a debt.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 24:6",
@@ -99,135 +95,81 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Deuteronomy 24:7",
+          "text": "Then a hard one: if a man is caught kidnapping a fellow Israelite, whether he treats him as a slave or sells him, the kidnapper must die.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 24:7",
-          "question": "Then Moses gets serious. If a man kidnaps a fellow Israelite and treats him as a slave or sells him, the kidnapper must ___.",
-          "answers": [
-            {
-              "text": "die",
-              "correct": true
-            },
-            {
-              "text": "repay",
-              "correct": false
-            },
-            {
-              "text": "serve",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Deuteronomy 24:8",
+          "text": "Then infectious skin diseases: Israel must carefully follow everything the Levitical priests instruct.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Deuteronomy 24:8",
-          "text": "Then Moses turns to infectious skin diseases. He tells Israel to be careful to follow everything the people in charge of those cases instruct them.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 24:9",
+          "question": "On skin diseases, Moses tells Israel to remember what the LORD did to someone on the journey out of Egypt. Who?",
+          "answers": [
+            {
+              "text": "Miriam",
+              "correct": true
+            },
+            {
+              "text": "Aaron",
+              "correct": false
+            },
+            {
+              "text": "Korah",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 24:8",
-          "question": "In cases of infectious skin disease, whose instructions does Moses tell Israel to follow?",
-          "answers": [
-            {
-              "text": "The Levitical priests",
-              "correct": true
-            },
-            {
-              "text": "The elders at the city gate",
-              "correct": false
-            },
-            {
-              "text": "The judges in each town",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Deuteronomy 24:10-12",
+          "text": "Back to loans. When you lend your neighbor something, you don't go into his house to collect security. You stand outside while he brings it out to you, and if he's poor, you don't go to sleep with it in your possession.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Deuteronomy 24:9",
-          "text": "And Moses adds a reminder: remember what the LORD did to Miriam on the journey out of Egypt. Miriam, Moses' sister, was struck with a skin disease on that road (Numbers 12:10; 26:59).",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 24:13",
+          "question": "Moses says a lender must return a poor man's security by sunset. Why?",
+          "answers": [
+            {
+              "text": "So he can sleep in his own cloak",
+              "correct": true
+            },
+            {
+              "text": "So he can work the next morning",
+              "correct": false
+            },
+            {
+              "text": "So he can repay the loan sooner",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Deuteronomy 24:10",
-          "text": "Back to loans. Say you lend your neighbor something, and now it's time to collect the security.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 24:11",
-          "question": "When a lender comes to collect security from his neighbor, what does Moses say he must do?",
-          "answers": [
-            {
-              "text": "Stand outside while it's brought out",
-              "correct": true
-            },
-            {
-              "text": "Go inside and pick what he wants",
-              "correct": false
-            },
-            {
-              "text": "Bring two witnesses in with him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Deuteronomy 24:12",
-          "text": "And if the borrower is a poor man, the lender must not go to sleep with his security still in hand.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 24:13",
-          "question": "The lender is to return the poor man's security by ___, so he may sleep in his own cloak and bless him.",
-          "answers": [
-            {
-              "text": "sunset",
-              "correct": true
-            },
-            {
-              "text": "sunrise",
-              "correct": false
-            },
-            {
-              "text": "Sabbath",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 24:13",
@@ -242,8 +184,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -255,35 +197,54 @@
           "card": 1,
           "kind": "story",
           "verses": "Deuteronomy 24:14",
-          "text": "Moses keeps going, and now it's payday. Do not oppress a hired hand who is poor and needy, whether he's an Israelite or a foreigner living in your towns.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Moses keeps going, and now it's payday. Do not oppress a hired hand who is poor and needy.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 24:15",
-          "question": "Moses says to pay a poor hired hand his wages each day before ___.",
+          "type": "true_false",
+          "verses": "Deuteronomy 24:14",
+          "question": "True or false: Moses says this protection is only for poor hired hands who are Israelites.",
           "answers": [
             {
-              "text": "sunset",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "noon",
-              "correct": false
-            },
-            {
-              "text": "midnight",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 24:15",
+          "question": "When does Moses say a poor hired hand must be paid?",
+          "answers": [
+            {
+              "text": "Each day before sunset",
+              "correct": true
+            },
+            {
+              "text": "At the end of each week",
+              "correct": false
+            },
+            {
+              "text": "When the harvest is in",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 24:15",
@@ -302,46 +263,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Deuteronomy 24:15",
-          "text": "Hold it back, and he may cry out to the LORD against you, and you'll be guilty of sin. So not \"the check's in the mail,\" not \"next Friday,\" friend, it's TODAY, TODAY, TODAY!",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 24:16",
-          "question": "Then Moses talks about who is put to death for whose sin. True or false: children can be put to death for their fathers' sins.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Deuteronomy 24:15",
+          "text": "Hold it back, and he may cry out to the LORD against you, and you'll be guilty of sin. So not \"the check's in the mail,\" not \"next Friday,\" friend, it's TODAY, TODAY, TODAY!",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Deuteronomy 24:17",
-          "text": "Moses says do not deny justice to the foreigner or the fatherless. And do not take a widow's cloak as security.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 24:16",
+          "question": "Moses turns to justice. When someone is put to death for sin, whose sin does he say it must be?",
+          "answers": [
+            {
+              "text": "His own sin",
+              "correct": true
+            },
+            {
+              "text": "His father's sin",
+              "correct": false
+            },
+            {
+              "text": "His children's sin",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "Deuteronomy 24:17",
+          "text": "Moses goes on: do not deny justice to the foreigner or the fatherless, and do not take a widow's cloak as security.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 24:18",
@@ -360,39 +325,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Deuteronomy 24:19",
-          "text": "Harvest time, and you forget a sheaf out in the field. Friend, I once hunted an hour for my spatula, and it was in my MUSTACHE, I was HOLDING it.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 24:19",
-          "question": "At harvest, a farmer forgets a sheaf out in his field. What does Moses say he should do about it?",
-          "answers": [
-            {
-              "text": "Leave it behind for those in need",
-              "correct": true
-            },
-            {
-              "text": "Go back for it before nightfall",
-              "correct": false
-            },
-            {
-              "text": "Bring it to the priests as an offering",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Deuteronomy 24:19-21",
+          "text": "Harvest time: if you forget a sheaf in the field, don't go back for it, and don't go over the olive branches or the grapevines a second time. What's left is for the foreigner, the fatherless and the widow.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -414,35 +356,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 24:20-21",
-          "question": "True or false: when Israel harvests olives and grapes, they must not go over the branches or the vines a second time, so what remains is left for the foreigner, the fatherless and the widow.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 12,
           "kind": "story",
           "verses": "Deuteronomy 24:22",
           "text": "And Moses brings back that reminder: remember you were slaves in the land of Egypt. That's why he's commanding all this.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -455,8 +378,8 @@
           "kind": "story",
           "verses": "Deuteronomy 25:1-3",
           "text": "Next, the courtroom. Disputes go before a judge, and if the guilty man deserves a beating, he gets the number of lashes his crime warrants, but no more than forty.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -466,7 +389,7 @@
           "question": "Why does Moses cap a guilty man's beating at forty lashes?",
           "answers": [
             {
-              "text": "So the guilty man isn't humiliated",
+              "text": "So their brother isn't degraded",
               "correct": true
             },
             {
@@ -478,162 +401,143 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 25:4",
-          "question": "Then Moses talks about an ox treading out the grain. What does he say not to do to it?",
+          "question": "Moses gives a law about an ox while it's treading out the grain. What must Israel not do to it?",
           "answers": [
             {
-              "text": "Muzzle it while it works",
+              "text": "Muzzle it",
               "correct": true
             },
             {
-              "text": "Let it eat the grain it treads",
+              "text": "Yoke it with a donkey",
               "correct": false
             },
             {
-              "text": "Work it after the sun goes down",
+              "text": "Sell it to a foreigner",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Deuteronomy 25:5",
-          "text": "That ox is me next to a fresh tray of cookies, working away and not allowed to sneak ONE. Now a family law: when brothers live together and one dies without a son, his brother is to marry the widow.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Now a family law: when brothers live together and one dies without a son, his brother is to marry the widow.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 25:6",
-          "question": "The first son the widow bears will carry on the name of the ___ brother.",
+          "question": "A man dies without a son, and his brother marries the widow. Why does their first son carry on the dead brother's name?",
           "answers": [
             {
-              "text": "dead",
+              "text": "So his name isn't blotted out from Israel",
               "correct": true
             },
             {
-              "text": "living",
+              "text": "So the widow can keep her husband's house",
               "correct": false
             },
             {
-              "text": "oldest",
+              "text": "So the elders can count him in the tribe",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Deuteronomy 25:7",
-          "text": "But what if the brother doesn't want to marry his brother's widow? Moses has that covered too.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 25:7",
-          "question": "True or false: if the brother refuses, the widow takes it to the elders at the city gate.",
+          "question": "A man won't marry his brother's widow, so she goes to the elders at the city gate. What does she tell them?",
           "answers": [
             {
-              "text": "True",
+              "text": "He refuses to preserve his brother's name",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "He has taken her husband's field",
+              "correct": false
+            },
+            {
+              "text": "He won't let her glean his harvest",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Deuteronomy 25:8-9",
+          "text": "The elders summon him and speak with him. If he still says, “I do not want to marry her,” she removes his sandal in front of them and spits in his face.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 25:9",
-          "question": "The elders summon the brother, and he still says he doesn't want to marry her. In front of the elders, the widow takes something off him. What is it?",
+          "question": "In front of the elders, the widow removes the brother's sandal. What does she declare?",
           "answers": [
             {
-              "text": "His sandal",
+              "text": "This is for the man who won't keep his brother's line",
               "correct": true
             },
             {
-              "text": "His cloak",
+              "text": "This is for the man who took his brother's land",
               "correct": false
             },
             {
-              "text": "His belt",
+              "text": "This is for the man who broke his word to the elders",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "Deuteronomy 25:9",
-          "text": "A sandal, friend, and I don't even have feet, I have a gold base, and NOBODY is taking my base. Then she spits in his face and declares, “This is what is done to the man who will not maintain his brother’s line.”",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Deuteronomy 25:10",
+          "text": "From then on, his family name in Israel will be called “The House of the Unsandaled.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 25:10",
-          "question": "From then on, his family name in Israel will be known as the House of the ___.",
-          "answers": [
-            {
-              "text": "Unsandaled",
-              "correct": true
-            },
-            {
-              "text": "Unwilling",
-              "correct": false
-            },
-            {
-              "text": "Forgotten",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Deuteronomy 25:11-12",
+          "text": "Then a law about a fight. If a wife tries to rescue her husband by grabbing the attacker's genitals, her hand is to be cut off, with no pity shown.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Deuteronomy 25:11-12",
-          "text": "Then a law about a fight. If a wife tries to rescue her husband by grabbing the attacker's genitals, her hand is to be cut off, with no pity shown.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Deuteronomy 25:13-14",
+          "text": "Then business: no two differing weights in your bag, one heavy and one light, and no two differing measures in your house. That's like me keeping a BIG scoop for buying chocolate chips and a tiny scoop for selling them, and friend, that's not a recipe, that's a SCHEME.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Deuteronomy 25:13-14",
-          "text": "Then business: no two differing weights in your bag, one heavy and one light, and no two differing measures in your house. That's like me keeping a BIG scoop for buying chocolate chips and a tiny scoop for selling them, and friend, that's not a recipe, that's a SCHEME.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 25:15",
@@ -652,11 +556,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 25:16",
@@ -671,19 +575,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Deuteronomy 25:17-18",
           "text": "Then Moses brings up the Amalekites, who attacked Israel at Rephidim (Exodus 17:8). They met Israel on the journey from Egypt, when everyone was tired and weary.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 25:18",
@@ -702,35 +606,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 25:19",
-          "question": "True or false: Moses says once the LORD gives Israel rest from their enemies, they can forget what Amalek did.",
+          "type": "fill_blank",
+          "verses": "Deuteronomy 25:18",
+          "question": "Moses says the Amalekites who attacked Israel on the road had no ___ of God.",
           "answers": [
             {
-              "text": "True",
+              "text": "fear",
+              "correct": true
+            },
+            {
+              "text": "love",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "word",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Deuteronomy 25:19",
-          "text": "Instead, Moses says to blot out the memory of Amalek from under heaven. And friend, Moses is NOT done preaching yet, so keep that oven warm.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Moses says that when the LORD gives Israel rest from their enemies in the land, they are to blot out the memory of Amalek from under heaven. “Do not forget!” And friend, Moses has more to say, so stick around.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

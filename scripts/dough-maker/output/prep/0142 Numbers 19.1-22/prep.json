@@ -9,97 +9,70 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 19:1-2",
-          "text": "The LORD speaks to Moses and Aaron. Moses is Israel's leader, and Aaron is his brother and Israel's priest (Exodus 4:14; 28:1). This new statute starts with the Israelites bringing them an animal.",
+          "text": "The LORD speaks to Moses, Israel's leader, and Aaron, his brother and Israel's priest (Exodus 4:14; 28:1). The Israelites are to bring them an unblemished red heifer that has no defect. I've taken picky orders before, friend, but RED, spotless AND no defect?",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Numbers 19:2",
-          "question": "What animal are the Israelites told to bring to Moses and Aaron?",
+          "question": "The red heifer has to be unblemished with no defect. True or false: it can be a heifer that has already been put to work under a yoke.",
           "answers": [
             {
-              "text": "A red heifer with no defect",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "A year-old male lamb",
-              "correct": false
-            },
-            {
-              "text": "A male goat from the flock",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Numbers 19:2",
-          "text": "This heifer has also never been placed under a yoke, so she's never worked a single day. Meanwhile I stamped cookies for the Millers until my edges wore SMOOTH, and I'm a LITTLE jealous.",
+          "verses": "Numbers 19:3",
+          "text": "The heifer goes to Eleazar the priest, Aaron's son (Exodus 6:23). He has it slaughtered in his presence.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 19:3",
-          "question": "Moses and Aaron are told to hand the red heifer over to a priest. Which priest?",
+          "question": "Where does Eleazar have the red heifer brought to be slaughtered?",
           "answers": [
             {
-              "text": "Eleazar",
+              "text": "Outside the camp",
               "correct": true
             },
             {
-              "text": "Ithamar",
+              "text": "Inside the Tent of Meeting",
               "correct": false
             },
             {
-              "text": "Phinehas",
+              "text": "Beside the bronze altar",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Numbers 19:3",
-          "text": "Eleazar is Aaron's son (Exodus 6:23). He has the heifer brought outside the camp and slaughtered while he watches.",
+          "verses": "Numbers 19:4",
+          "text": "Eleazar takes some of its blood on his finger and sprinkles it toward the front of the Tent of Meeting. Not once, either.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 19:4",
-          "question": "Out there beyond the camp, Eleazar takes some of the heifer's blood on his finger. Which way does he sprinkle it?",
-          "answers": [
-            {
-              "text": "Toward the front of the Tent of Meeting",
-              "correct": true
-            },
-            {
-              "text": "Toward the gate of the camp",
-              "correct": false
-            },
-            {
-              "text": "Toward the river beside the camp",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 19:4",
@@ -114,43 +87,81 @@
               "correct": false
             },
             {
-              "text": "ten",
+              "text": "twelve",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Numbers 19:5",
+          "text": "Then the heifer is burned in Eleazar's sight.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Numbers 19:5",
-          "text": "Then the heifer is burned while Eleazar watches: hide, flesh, blood, even the dung. Friend, I've burned plenty of batches, but NEVER on purpose.",
+          "question": "When the red heifer is burned in Eleazar's sight, what parts of it go into the fire?",
+          "answers": [
+            {
+              "text": "Every part including its hide and dung",
+              "correct": true
+            },
+            {
+              "text": "Only its fat and its kidneys",
+              "correct": false
+            },
+            {
+              "text": "Only its flesh and its bones",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Numbers 19:6",
-          "text": "Then the priest takes cedar wood, hyssop and scarlet wool and throws them onto the burning heifer.",
+          "question": "While the red heifer burns, the priest throws something else onto the fire. What is it?",
+          "answers": [
+            {
+              "text": "Cedar wood with hyssop and scarlet wool",
+              "correct": true
+            },
+            {
+              "text": "Olive oil with frankincense and salt",
+              "correct": false
+            },
+            {
+              "text": "Acacia wood with incense and linen",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Numbers 19:7",
-          "text": "Next the priest washes his clothes, bathes his body in water and goes back into the camp. But he's still ceremonially unclean until evening.",
+          "verses": "Numbers 19:7-8",
+          "text": "Now everybody who worked this job cleans up. The priest washes his clothes and bathes before he comes back into the camp, and the man who burned the heifer washes and bathes too.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 19:8",
-          "question": "The man who burned the heifer washes his clothes and bathes too. True or false: he's also ceremonially unclean until evening.",
+          "verses": "Numbers 19:7-8",
+          "question": "The priest and the man who burned the heifer have both washed their clothes and bathed. True or false: they're still ceremonially unclean until evening.",
           "answers": [
             {
               "text": "True",
@@ -162,18 +173,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Numbers 19:9",
-          "text": "Then a man who is ceremonially clean gathers up the ashes and stores them in a clean place outside the camp. Israel holds on to those ashes the way I hold on to my last bag of chocolate chips.",
+          "verses": "Numbers 19:7-8",
+          "text": "No amount of scrubbing changes it. It's like my oven timer. I can stare. I can pace. I can BEG. That batch is done when the timer says it's done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Numbers 19:9",
+          "text": "Then a man who is ceremonially clean gathers up the ashes and stores them in a clean place outside the camp. Israel holds on to those ashes the way I hold on to my last bag of chocolate chips.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 19:9",
@@ -193,10 +212,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 19:9",
@@ -216,14 +235,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 19:10",
-          "question": "The man who gathered up the ashes was ceremonially clean. True or false: he stays clean and doesn't have to wash anything.",
+          "question": "The man who gathered up the heifer's ashes was ceremonially clean when he started. True or false: he's still clean once he's gathered them.",
           "answers": [
             {
               "text": "True",
@@ -235,38 +254,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Numbers 19:10",
-          "text": "So he washes his clothes and stays unclean until evening, just like the other two. That's three men doing laundry over one heifer, and friend, I'm a stamper, I've never washed a THING.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Numbers 19:10",
-          "question": "The LORD calls this a permanent statute for the Israelites. Who else is it for?",
-          "answers": [
-            {
-              "text": "The foreigner living among them",
-              "correct": true
-            },
-            {
-              "text": "The nations around Israel",
-              "correct": false
-            },
-            {
-              "text": "The kings of Canaan",
-              "correct": false
-            }
-          ],
+          "text": "So he washes his clothes and stays unclean until evening, just like the other two. Three men. Three loads of laundry. ONE heifer. The LORD calls this a permanent statute for the Israelites and for the foreigner residing among them.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -278,66 +274,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 19:11",
-          "text": "Now the statute turns to the people who will need those ashes. Whoever touches any dead body becomes unclean.",
+          "text": "Now the statute turns to the people who will need those ashes. Whoever touches any dead body is unclean for seven days.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 19:11",
-          "question": "Whoever touches any dead body is unclean for ___ days.",
+          "type": "multiple_choice",
+          "verses": "Numbers 19:12",
+          "question": "Someone touched a dead body and is unclean for seven days. How does he become clean?",
           "answers": [
             {
-              "text": "seven",
+              "text": "He purifies himself with the water on the third and seventh days",
               "correct": true
             },
             {
-              "text": "three",
+              "text": "He offers a lamb at the Tent of Meeting on the seventh day",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "He stays outside the camp for the full month after",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Numbers 19:12",
-          "text": "To be clean again, that person has to purify himself with the water. Not once, friend. TWICE.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 19:12",
-          "question": "On which days does the unclean person purify himself with the water?",
-          "answers": [
-            {
-              "text": "The third and seventh days",
-              "correct": true
-            },
-            {
-              "text": "The first and seventh days",
-              "correct": false
-            },
-            {
-              "text": "The second and sixth days",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 19:13",
@@ -353,184 +318,157 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 6,
-          "kind": "story",
-          "verses": "Numbers 19:13-14",
-          "text": "That person must be cut off from Israel, and his uncleanness is still on him. Next, when someone dies in a tent, everyone who enters and everyone already inside is unclean for seven days.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
+          "card": 4,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 19:15",
-          "question": "When someone dies in a tent, true or false: an open container in there without a lid fastened on it is unclean too.",
+          "type": "multiple_choice",
+          "verses": "Numbers 19:13",
+          "question": "Someone who touched a human corpse refuses to purify himself. What must happen to him?",
           "answers": [
             {
-              "text": "True",
+              "text": "He must be cut off from Israel",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "He must pay a fine in silver",
+              "correct": false
+            },
+            {
+              "text": "He must burn his own tent",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Numbers 19:14",
+          "text": "When someone dies in a tent, everyone who enters and everyone already inside is unclean for seven days.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Numbers 19:15",
+          "question": "Someone has died in a tent. True or false: an open container in that tent with no lid fastened on it stays clean.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Numbers 19:16",
+          "text": "Out in the open field, it works the same way. Touch someone killed by the sword or who died of natural causes, and that's seven days unclean.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Numbers 19:15-16",
-          "text": "Note to self: lid on the sprinkles, EVERY night. Out in the open field, touching someone who was killed by the sword or died of natural causes also means seven days unclean.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 19:16",
-          "question": "Out in the open field, what else besides a body makes someone unclean for seven days?",
+          "question": "Out in the open field, what else makes someone unclean for seven days?",
           "answers": [
             {
               "text": "Touching a human bone or a grave",
               "correct": true
             },
             {
-              "text": "Touching a soldier's sword or shield",
+              "text": "Touching a priest's robe or sash",
               "correct": false
             },
             {
-              "text": "Hearing news of a death in battle",
+              "text": "Touching a foreigner's cart or tent",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Numbers 19:17",
+          "question": "Here's where the stored-up ashes come in. Some go into a jar, and ___ water is poured over them.",
+          "answers": [
+            {
+              "text": "fresh",
+              "correct": true
+            },
+            {
+              "text": "salted",
+              "correct": false
+            },
+            {
+              "text": "warm",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Numbers 19:17",
-          "text": "So here's where those stored-up ashes come in. Some of the ashes of the burnt sin offering go into a jar.",
+          "verses": "Numbers 19:18",
+          "text": "Then a man who is ceremonially clean dips hyssop in the water and sprinkles the tent, its furnishings and the people who were there. He sprinkles anyone who touched a bone, a grave or a person who died or was slain too.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 19:17",
-          "question": "The ashes are in the jar, ready to make the water of purification. True or false: fresh water is poured over them.",
+          "verses": "Numbers 19:19",
+          "question": "The clean man sprinkles the unclean person on the third day and on the seventh day. True or false: right after the seventh day's sprinkling, that person is clean.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Numbers 19:18",
-          "text": "Then a man who is ceremonially clean takes some hyssop and dips it in the water.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 19:18",
-          "question": "When someone has died in a tent, what does the clean man sprinkle with the hyssop?",
-          "answers": [
-            {
-              "text": "The tent and its furnishings and the people",
-              "correct": true
-            },
-            {
-              "text": "Only the body and the bed it lay on",
-              "correct": false
-            },
-            {
-              "text": "Only the doorway and the tent pegs",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 19:19",
-          "question": "The clean man also sprinkles anyone who touched a bone or a grave or a dead body, on the third day and the seventh day. True or false: right after the seventh day's sprinkling, that person is clean.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
-          "kind": "story",
           "verses": "Numbers 19:19-20",
           "text": "First the one being cleansed washes his clothes and bathes in water, and that evening he's clean. But if an unclean person does not purify himself, he's cut off from the assembly, because he has defiled the sanctuary of the LORD.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Numbers 19:21",
-          "question": "What does the clean man who sprinkles the water of purification have to do?",
-          "answers": [
-            {
-              "text": "Wash his clothes",
-              "correct": true
-            },
-            {
-              "text": "Offer a lamb at the Tent",
-              "correct": false
-            },
-            {
-              "text": "Stay outside the camp a week",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 17,
+          "card": 13,
           "kind": "story",
           "verses": "Numbers 19:21",
-          "text": "And whoever touches the water of purification is unclean until evening. So the man getting everybody clean has some cleaning up of his own to do, like scrubbing the whole kitchen and ending up the messiest thing in it.",
+          "text": "The one who sprinkles the water of purification must wash his clothes, and whoever touches that water is unclean until evening. So the man getting everybody clean has some cleaning up of his own to do, like scrubbing the whole kitchen and ending up the messiest thing in it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Numbers 19:22",
@@ -550,15 +488,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 15,
           "kind": "story",
           "verses": "Numbers 19:22",
-          "text": "And anyone who touches that thing is unclean until evening. From one red heifer to one jar of water, friend, God has given His people a way to be made clean again.",
+          "text": "And anyone who touches that thing is unclean until evening. That's the whole statute, friend, start to finish.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

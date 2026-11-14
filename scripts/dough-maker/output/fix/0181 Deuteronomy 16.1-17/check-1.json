@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This is the first card of a later stop, but it has three sentences. The first sentence, the junk drawer joke and the lost-place line are all separate sentences.",
+      "rule": "Every other story card, including the first card of a later stop, is 1 to 2 sentences."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 3
+      },
+      "problem": "This choice card asks about verse 11, but no earlier card has told verse 11. The story card that tells it (card 4) comes after, so the choice jumps ahead of its setup.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "This choice card asks about verse 12, but verse 12 is only told on card 7, which comes after it. The question also states the content of verse 12 before the story card tells it.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "This card walks through verses 4-8 almost verse by verse: no leaven, no leftovers, the place, the time, roasting, the tents and the seventh-day assembly. It is four sentences long, and it covers several beats instead of summing up the stretch in a few words.",
+      "rule": "He says in a few words what it covers and doesn't go item by item."
+    }
+  ]
+}

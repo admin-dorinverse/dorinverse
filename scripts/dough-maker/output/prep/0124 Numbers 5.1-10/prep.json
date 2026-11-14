@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 5:1-2",
-          "text": "The LORD has a word for Moses, and it's about who stays inside Israel's camp and who gets sent outside. Friend, I spent YEARS in the back of a junk drawer. Nobody has to explain 'outside' to ME.",
-          "needs_agent_fix": true,
+          "text": "The Levites have just been counted and given their jobs carrying the Tent of Meeting (Numbers 4:46-49). Then the LORD speaks to Moses, Israel's leader, with a command about who has to be sent outside Israel's camp.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Numbers 5:2",
-          "text": "Skin disease is group one, and God names two more: anyone with a bodily discharge and anyone defiled by a dead body. Three groups, spelled out plain, which is more than any instruction manual in my old junk drawer ever did for ANYBODY.",
+          "text": "Skin disease is one group, and God names two more: anyone with a bodily discharge and anyone defiled by a dead body.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -71,19 +71,19 @@
           "question": "The LORD wants all three groups sent outside the camp. What reason does He give?",
           "answers": [
             {
-              "text": "So they won't defile the camp where He dwells",
+              "text": "So they won't defile the camp where He lives",
               "correct": true
             },
             {
-              "text": "So they can rest and heal away from the crowd",
+              "text": "So they won't disturb the camp while it rests",
               "correct": false
             },
             {
-              "text": "So the rest of the camp won't catch it",
+              "text": "So they won't delay the camp when it moves",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +91,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 5:4",
-          "question": "When the LORD gives this command, the Israelites do just as He instructed Moses.",
+          "question": "When the LORD commands that these three groups be sent outside the camp, the Israelites do just as He instructed Moses.",
           "answers": [
             {
               "text": "True",
@@ -102,7 +102,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -142,7 +142,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 5:7",
-          "question": "That person is guilty. What's the first thing the guilty person must do?",
+          "question": "Someone who sins against another person is guilty. What's the first thing that guilty person must do?",
           "answers": [
             {
               "text": "Confess the sin he committed",
@@ -157,7 +157,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -165,7 +165,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 5:7",
-          "question": "After confessing, he must make full restitution. What does he add on top of it?",
+          "question": "After confessing, the guilty person must make full restitution. What gets added on top of it?",
           "answers": [
             {
               "text": "A fifth of its value",
@@ -185,49 +185,48 @@
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Numbers 5:7",
+          "text": "All of it goes to the person who was wronged. So knock five cookies off my counter, and you owe me SIX.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Numbers 5:7",
-          "question": "When a guilty person confesses, the full restitution plus a fifth goes to the person he wronged.",
+          "verses": "Numbers 5:8",
+          "question": "If there's no relative to receive the restitution, the guilty person gets to keep it.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Numbers 5:7-8",
-          "text": "So knock five cookies off my counter, and you owe me SIX. But here's a curveball, friend: what if there's no relative who can receive the restitution?",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 5:8",
-          "question": "With no relative to pay back, the restitution belongs to the ___.",
+          "question": "With no relative to receive it, the restitution belongs to the LORD. Who is it given to?",
           "answers": [
             {
-              "text": "LORD",
-              "correct": true,
-              "blank": 1
+              "text": "The priest",
+              "correct": true
             },
             {
-              "text": "elders",
+              "text": "The elders",
               "correct": false
             },
             {
-              "text": "judges",
+              "text": "The judges",
               "correct": false
             }
           ],
@@ -236,57 +235,14 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 5:8",
-          "question": "When there's no relative to receive it, the restitution is given to the priest along with a ram of atonement.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Numbers 5:8-9",
+          "text": "Along with it comes the ram of atonement, which makes atonement for the guilty person. And every sacred contribution the Israelites bring to the priest belongs to him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Numbers 5:9",
-          "text": "Then the LORD wraps up with one last word on the sacred gifts the Israelites bring in. Because there's ALWAYS somebody holding a gift going, 'Wait... whose is this now?'",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Numbers 5:9",
-          "question": "Every sacred contribution the Israelites bring in ends up belonging to ___.",
-          "answers": [
-            {
-              "text": "the priest",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "the Levites",
-              "correct": false
-            },
-            {
-              "text": "the elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 5:10",

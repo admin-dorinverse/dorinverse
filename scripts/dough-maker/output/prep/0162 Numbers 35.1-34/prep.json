@@ -8,16 +8,16 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Numbers 35:1-2",
-          "text": "Israel is camped on the plains of Moab by the Jordan, across from Jericho, about to cross into the promised land. The LORD speaks to Moses again, and this time it's about the Levites, the ones who do the work of the Tent of Meeting. Every other tribe gets a territory, but the Levites won't receive an inheritance among the Israelites (Numbers 18:23).",
-          "needs_agent_fix": true,
+          "verses": "Numbers 35:1",
+          "text": "Israel is camped on the plains of Moab by the Jordan, across from Jericho, ready to cross into Canaan. The LORD speaks again to Moses, Israel's leader, and this time it's about the Levites. They do the work of the Tent of Meeting, and they won't receive an inheritance among the Israelites (Numbers 18:23).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Numbers 35:2-3",
+          "verses": "Numbers 35:2",
           "question": "The Levites won't get a territory of their own. So what does the LORD tell the other tribes to give them?",
           "answers": [
             {
@@ -39,8 +39,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Numbers 35:4-5",
-          "text": "Then come the measurements, in cubits, from the city wall out on every side, with the city right in the center. EXACT numbers in every direction, and I'm over here measuring chocolate chips by \"until it feels right.\"",
+          "verses": "Numbers 35:3-5",
+          "text": "The pasturelands are for the Levites' herds, flocks and other livestock, and they're measured out in cubits from the city wall on every side. EXACT numbers in every direction, and I'm over here measuring chocolate chips by \"until it feels right.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,8 +80,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Numbers 35:6-7",
-          "text": "Add forty-two more on top of those six, and that's forty-eight cities for the Levites, and they have to come from somewhere. Some of these tribes are a LOT bigger than others.",
-          "needs_agent_fix": true,
+          "text": "Add forty-two more cities to those six, and that's forty-eight cities for the Levites, each with its pasturelands.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -123,11 +123,11 @@
               "correct": true
             },
             {
-              "text": "Someone who steals from a neighbor",
+              "text": "Someone who kills a person on purpose",
               "correct": false
             },
             {
-              "text": "Someone who can't pay back a debt",
+              "text": "Someone who kills an enemy in battle",
               "correct": false
             }
           ],
@@ -138,39 +138,38 @@
           "card": 10,
           "kind": "story",
           "verses": "Numbers 35:12",
-          "text": "These cities are a refuge from the avenger. This man is running for his life to a city gate, and I get winded running to the oven when the timer goes off.",
+          "text": "The cities are a refuge from the avenger, so the manslayer won't be killed before he has a trial.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 35:12",
-          "question": "The city of refuge is there so the manslayer won't die before he stands trial before the ___.",
+          "question": "The city of refuge keeps the manslayer alive until he stands trial. Who does he stand trial before?",
           "answers": [
             {
-              "text": "assembly",
-              "correct": true,
-              "blank": 1
+              "text": "The assembly",
+              "correct": true
             },
             {
-              "text": "high priest",
+              "text": "The king",
               "correct": false
             },
             {
-              "text": "king",
+              "text": "The prophets",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Numbers 35:13",
-          "text": "Six cities of refuge in all. And remember, two and a half tribes already have their land across the Jordan, toward the sunrise (Numbers 34:14-15).",
+          "text": "Six cities of refuge in all. Now, where do they go?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -198,15 +197,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Numbers 35:15",
-          "question": "True or false: The six cities of refuge are for Israelites only, not for any foreigner living among them.",
+          "question": "True or false: The six cities of refuge are also open to a foreigner living among the Israelites.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -222,7 +221,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Numbers 35:16-18",
-          "text": "Then the LORD switches to a whole different kind of killing: someone strikes a person dead with an iron object, a stone of deadly size, or a deadly object of wood. Friend, the most dangerous thing I've ever held is a rolling pin, and I hold it with my MUSTACHE.",
+          "text": "Then the LORD turns to a different case. If anyone strikes and kills a person with an iron object, a stone of deadly size, or a deadly object of wood, he is a murderer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -231,41 +230,37 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Numbers 35:16-18",
-          "question": "When someone kills a person with a deadly weapon like that, what does the LORD say must happen to him?",
+          "question": "If someone kills a person with an iron object, a deadly stone or a deadly piece of wood, what does the LORD say must happen to him?",
           "answers": [
             {
               "text": "He must be put to death",
               "correct": true
             },
             {
-              "text": "He may flee to a city of refuge",
+              "text": "He must pay the family back",
               "correct": false
             },
             {
-              "text": "He must pay the family back",
+              "text": "He must be sent out of the land",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Numbers 35:19",
-          "question": "That murderer must be put to death. Who does the LORD say is to do it?",
+          "question": "True or false: The avenger of blood is to put the murderer to death when he finds him.",
           "answers": [
             {
-              "text": "The avenger of blood",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The high priest",
-              "correct": false
-            },
-            {
-              "text": "The Levites in his town",
+              "text": "False",
               "correct": false
             }
           ],
@@ -276,7 +271,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Numbers 35:20-21",
-          "text": "And it's not only about weapons, friend: maliciously pushing someone, or intentionally throwing something at him so that he dies, makes a person a murderer too. Those two words, maliciously and intentionally, are doing ALL the heavy lifting here.",
+          "text": "It's not only about weapons, friend. If anyone maliciously pushes a person or intentionally throws something at him and the person dies, the one who did it is a murderer too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -303,52 +298,35 @@
           "card": 6,
           "kind": "story",
           "verses": "Numbers 35:22-23",
-          "text": "Now flip it around: a sudden push without hostility, something thrown unintentionally, or a heavy stone dropped without looking, by someone who wasn't an enemy and didn't intend to harm him. I've dropped a whole tray of cookies without looking, friend, so I know that sinking feeling right down to my gold base.",
+          "text": "Now flip it around. Say someone pushes a person suddenly without hostility, throws something without meaning to, or drops a heavy stone without looking, and the person dies, though he was no enemy and never meant any harm.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Numbers 35:24",
-          "question": "When someone kills a person without hostility and without meaning to harm him, the ___ must judge between the slayer and the avenger of blood.",
-          "answers": [
-            {
-              "text": "congregation",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "high priest",
-              "correct": false
-            },
-            {
-              "text": "Levites",
-              "correct": false
-            }
-          ],
+          "text": "Then the congregation must judge between the slayer and the avenger of blood, by these ordinances.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 35:25",
-          "question": "The assembly is to ___ the manslayer, keeping him from the hand of the avenger of blood.",
+          "question": "When a killing was an accident, what is the assembly to do with the manslayer?",
           "answers": [
             {
-              "text": "protect",
-              "correct": true,
-              "blank": 1
+              "text": "Protect him from the avenger of blood",
+              "correct": true
             },
             {
-              "text": "punish",
+              "text": "Hand him over to the avenger of blood",
               "correct": false
             },
             {
-              "text": "blame",
+              "text": "Make him pay the family a fine",
               "correct": false
             }
           ],
@@ -359,27 +337,28 @@
           "card": 9,
           "kind": "story",
           "verses": "Numbers 35:25",
-          "text": "Then the assembly sends him back to the city of refuge he fled to, and there he has to STAY. This is not a weekend getaway, friend.",
+          "text": "Then the assembly sends the manslayer back to the city of refuge he fled to, and there he has to STAY. This is not a weekend getaway, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Numbers 35:25",
-          "question": "How long must the manslayer live in his city of refuge?",
+          "question": "The manslayer must live in his city of refuge until the ___ of the high priest.",
           "answers": [
             {
-              "text": "Until the high priest dies",
-              "correct": true
+              "text": "death",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Until the avenger forgives him",
+              "text": "word",
               "correct": false
             },
             {
-              "text": "Until seven years have passed",
+              "text": "blessing",
               "correct": false
             }
           ],
@@ -390,7 +369,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Numbers 35:26-27",
-          "text": "But what if the manslayer goes outside the limits of his city, and the avenger of blood finds him out there? Friend, I stayed put for YEARS in a junk drawer, and nobody even had to ask me.",
+          "text": "But what if the manslayer goes outside the limits of his city of refuge, and the avenger of blood finds him out there?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -408,25 +387,6 @@
             {
               "text": "False",
               "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Numbers 35:28",
-          "question": "True or false: Once the high priest dies, the manslayer may return to the land he owns.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -530,20 +490,21 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Numbers 35:33",
-          "question": "For land where blood has been shed, how can atonement be made?",
+          "question": "No atonement can be made for the land where someone was killed, except by the ___ of the killer.",
           "answers": [
             {
-              "text": "By the blood of the one who shed it",
-              "correct": true
+              "text": "blood",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "By an offering of a spotless lamb",
+              "text": "offering",
               "correct": false
             },
             {
-              "text": "By leaving the land empty for a year",
+              "text": "prayer",
               "correct": false
             }
           ],
@@ -553,25 +514,24 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Numbers 35:34",
-          "question": "Don't defile the land, the LORD says, because He ___ among the Israelites.",
+          "question": "Why does the LORD tell Israel not to defile the land where they live?",
           "answers": [
             {
-              "text": "dwells",
-              "correct": true,
-              "blank": 1
+              "text": "He dwells among the Israelites",
+              "correct": true
             },
             {
-              "text": "visits",
+              "text": "Their crops will not grow there",
               "correct": false
             },
             {
-              "text": "rests",
+              "text": "Other nations will hear of it",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "The statement repeats the right answer from card 12 (\"Giving his poor brother nothing\") as \"the man who gave him nothing.\" An answer already shown on an earlier card is reused.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The card asks about the end of verse 17 (servant for life). Card 9, the story card that first tells verse 17, comes after it. The choice card jumps ahead of the story card, and the baker has no setup for it.",
+      "rule": "A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    }
+  ]
+}
