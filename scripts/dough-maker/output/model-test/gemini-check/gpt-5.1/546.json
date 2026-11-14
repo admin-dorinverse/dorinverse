@@ -1,0 +1,31 @@
+{
+  "writer": "gpt-5.1",
+  "passage": "Psalm 23:1-6",
+  "script": [],
+  "findings": [
+    {
+      "stop": 1,
+      "card": 4,
+      "answer": 3,
+      "kind": "rule",
+      "problem": "Quotation marks around 'the valley of the shadow of death' break quotes rule since BSB verse 4 begins with 'Even though I walk through the valley of the shadow of death', meaning it cuts off from a verse without an ellipsis, or changes capitalization. In BSB Psalm 23:4, 'the valley...' is lowercase."
+    },
+    {
+      "stop": 1,
+      "card": 16,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "Quotation marks around 'My cup overflows' break exact quotes rule: BSB Psalm 23:5 has lowercase 'my cup overflows.'"
+    },
+    {
+      "stop": 1,
+      "card": 19,
+      "answer": 2,
+      "kind": "bible",
+      "problem": "References David living in Hebron, bringing in outside Bible facts not found in the passage text or introduced in Prep."
+    }
+  ],
+  "tokens": {
+    "cost": 0.011946
+  }
+}

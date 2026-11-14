@@ -1,0 +1,47 @@
+{
+  "writer": "gpt-5.1",
+  "passage": "Galatians 5:1-15",
+  "script": [
+    "stop 1 card 2, answer 1: copies a Prep line word for word"
+  ],
+  "findings": [
+    {
+      "stop": 1,
+      "card": 6,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "Contains an em dash ('—') in 'all-or-nothing, and that’s Paul’s point', which violates the rule in answer-explanations.md: 'No em dashes or en dashes to make a sentence longer.'"
+    },
+    {
+      "stop": 1,
+      "card": 11,
+      "answer": 1,
+      "kind": "tone",
+      "problem": "The explanation sounds preachy and generic rather than embodying Papa Dorin's distinct voice, humor, and lively delivery."
+    },
+    {
+      "stop": 2,
+      "card": 2,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "Has only 3 sentences, but the first sentence ('Right.') is a one-word fragment, leaving only 2 full sentences. answer-explanations.md requires 'About 3 to 5 sentences' and specifies that 'Short fragments like \"Never.\" don't count as sentences.'"
+    },
+    {
+      "stop": 2,
+      "card": 6,
+      "answer": 1,
+      "kind": "bible",
+      "problem": "The BSB text in Galatians 5:11 reads 'Now, brothers, if I am still preaching circumcision...', but the explanation quotes it as 'If I am still preaching circumcision...' with a capital 'If' inside exact quotation marks without ellipses."
+    },
+    {
+      "stop": 2,
+      "card": 6,
+      "answer": 2,
+      "kind": "bible",
+      "problem": "The explanation quotes 'If I am still preaching circumcision, why am I still being persecuted?' with quotation marks, but the exact BSB text in Galatians 5:11 starts with 'Now, brothers, if...'. Changing the text without an ellipsis violates the quote rule in papa-dorin.md."
+    }
+  ],
+  "tokens": {
+    "cost": 0.01359
+  }
+}
