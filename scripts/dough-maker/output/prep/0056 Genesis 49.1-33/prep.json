@@ -9,12 +9,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 49:1-2",
-          "text": "Jacob, also called Israel, calls all his sons together and tells them to gather around and listen to their father. He's about to tell them what will happen to them in the days to come. Friend, this is the kind of meeting where NOBODY is checking their phone.",
+          "text": "Jacob, also called Israel (Genesis 35:10), has just blessed the two sons of his son Joseph (Genesis 48:20). Now he calls all his sons together and tells them to gather around and listen to their father. Friend, this is the kind of meeting where NOBODY is checking their phone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Genesis 49:1",
+          "question": "Jacob has all his sons gathered around him. What does he say he's going to tell them?",
+          "answers": [
+            {
+              "text": "What will happen to them in days to come",
+              "correct": true
+            },
+            {
+              "text": "How his flocks will be divided among them",
+              "correct": false
+            },
+            {
+              "text": "Why the whole family must leave Egypt",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 49:3",
@@ -38,7 +61,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "story",
           "verses": "Genesis 49:3",
           "text": "Jacob calls Reuben his might and the beginning of his strength, excelling in honor, excelling in power. That's a review I'd FRAME and hang over my oven.",
@@ -46,7 +69,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 49:4",
@@ -65,72 +88,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 49:4",
-          "question": "Jacob tells Reuben he will no longer excel. What reason does Jacob give?",
-          "answers": [
-            {
-              "text": "He defiled his father's bed",
-              "correct": true
-            },
-            {
-              "text": "He mocked his brother's dreams",
-              "correct": false
-            },
-            {
-              "text": "He left Benjamin in Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 6,
           "kind": "story",
-          "verses": "Genesis 49:5",
-          "text": "Next, Jacob takes two sons at once, Simeon and Levi, and says their swords are weapons of violence. Friend, the only weapon I've got is this mustache, and the worst it ever did was knock over a cooling rack.",
+          "verses": "Genesis 49:4",
+          "text": "Jacob says Reuben is uncontrolled as the waters. And he says why Reuben will no longer excel: “because you went up to your father’s bed, onto my couch, and defiled it.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 49:6",
-          "question": "Jacob says he hopes to join Simeon and Levi's council.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 49:5",
+          "text": "Next, Jacob takes two sons at once, Simeon and Levi, and says their swords are weapons of violence.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 49:6",
-          "question": "Jacob wants to stay out of Simeon and Levi's assembly. What reason does he give?",
+          "question": "Jacob says he never wants to join Simeon and Levi's assembly.",
           "answers": [
             {
-              "text": "They kill men in their anger",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "They took their father's flocks",
-              "correct": false
-            },
-            {
-              "text": "They refused to come to Egypt",
+              "text": "False",
               "correct": false
             }
           ],
@@ -140,8 +125,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Genesis 49:7",
-          "text": "Then Jacob says, “Cursed be their anger, for it is strong, and their wrath, for it is cruel!” Look close, friend: it's the anger and the wrath he curses.",
+          "verses": "Genesis 49:6-7",
+          "text": "Jacob says why: “For they kill men in their anger, and hamstring oxen on a whim.” Then he says, “Cursed be their anger, for it is strong, and their wrath, for it is cruel!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -150,7 +135,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 49:7",
-          "question": "Simeon and Levi have stood side by side, swords and all. Jacob says he will keep the two of them together in Israel.",
+          "question": "Jacob says he will keep Simeon and Levi together in Israel.",
           "answers": [
             {
               "text": "True",
@@ -166,14 +151,6 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Genesis 49:8",
-          "text": "Three sons in and Jacob is NOT holding back, so if I'm next, I'm sliding behind my mustache real slow. Then Jacob turns to Judah.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 49:8",
@@ -196,19 +173,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Genesis 49:9",
-          "text": "Jacob says Judah is a young lion, coming back from the prey. Then he says, “Like a lion he crouches and lies down; like a lioness, who dares to rouse him?”",
+          "text": "Jacob says Judah is a young lion, coming back from the prey. Like a lion, he crouches and lies down.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 49:9",
-          "question": "Jacob's lion picture makes Judah sound weak and easy to push around.",
+          "question": "Jacob pictures Judah lying down like a lion that anyone could safely wake.",
           "answers": [
             {
               "text": "True",
@@ -223,65 +200,73 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Genesis 49:10",
-          "text": "Then Jacob says something will not depart from Judah, nor the staff from between his feet. It stays until Shiloh comes and the allegiance of the nations is his.",
+          "text": "Then Jacob says, “The scepter will not depart from Judah, nor the staff from between his feet, until Shiloh comes…”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Genesis 49:10",
+          "question": "Jacob says the scepter stays with Judah until Shiloh comes. What does he say about the nations?",
+          "answers": [
+            {
+              "text": "Their allegiance is his",
+              "correct": true
+            },
+            {
+              "text": "They rise up against him",
+              "correct": false
+            },
+            {
+              "text": "They take his scepter away",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 49:10",
-          "question": "Jacob says the ___ will not depart from Judah.",
-          "answers": [
-            {
-              "text": "scepter",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "sword",
-              "correct": false
-            },
-            {
-              "text": "banner",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Genesis 49:11",
+          "text": "Jacob keeps going with Judah's blessing: “He ties his donkey to the vine, his colt to the choicest branch.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Genesis 49:11",
-          "text": "Then Jacob says Judah ties his donkey to the vine and washes his garments in wine. Friend, my apron gets washed in plain old water, and this man is doing laundry in WINE.",
+          "question": "Jacob says the one who ties his donkey to the vine washes his garments in ___.",
+          "answers": [
+            {
+              "text": "wine",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "oil",
+              "correct": false
+            },
+            {
+              "text": "rainwater",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 49:11-12",
-          "question": "Jacob's picture of Judah keeps going: eyes darker than wine and teeth whiter than milk. What kind of life does it all show?",
-          "answers": [
-            {
-              "text": "A life of plenty",
-              "correct": true
-            },
-            {
-              "text": "A life of hunger",
-              "correct": false
-            },
-            {
-              "text": "A life on the run",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 49:12",
+          "text": "Then Jacob says, “His eyes are darker than wine, and his teeth are whiter than milk.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -295,7 +280,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 49:13-14",
-          "text": "Zebulun gets an OCEAN view: he'll live by the seashore and become a harbor for ships, with his border reaching to Sidon. Then Issachar, a strong donkey, lying down between the sheepfolds.",
+          "text": "Zebulun gets an OCEAN view: he'll live by the seashore and become a harbor for ships, with his border reaching to Sidon. Then Issachar is a strong donkey, lying down between the sheepfolds.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -311,7 +296,7 @@
               "correct": true
             },
             {
-              "text": "He lies down and refuses the work",
+              "text": "He leaves the land to look for more",
               "correct": false
             },
             {
@@ -376,24 +361,28 @@
           "card": 6,
           "kind": "story",
           "verses": "Genesis 49:18",
-          "text": "And here's the line: “I await Your salvation, O LORD.” Then, just like that, he's back to his sons.",
+          "text": "And here's what Jacob says: “I await Your salvation, O LORD.” Then, just like that, he's back to his sons.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Genesis 49:19",
-          "question": "Jacob says Gad will be attacked by raiders and will never fight back.",
+          "question": "Jacob says raiders will attack Gad. What does Gad do?",
           "answers": [
             {
-              "text": "True",
+              "text": "He attacks their heels",
+              "correct": true
+            },
+            {
+              "text": "He runs from the fight",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He hands over his land",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -403,7 +392,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Genesis 49:20-21",
-          "text": "Asher's food will be rich, and he'll provide royal delicacies, and friend, I bake cookies for a LIVING and I'm still a little jealous. Then Naphtali is a doe set free that bears beautiful fawns.",
+          "text": "Asher's food will be rich, and he'll provide royal delicacies, and friend, I stamp cookies for a LIVING and I'm still a little jealous. Then Naphtali is a doe set free that bears beautiful fawns.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -418,21 +407,17 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 49:24",
-          "question": "The archers aim at Joseph in hostility. What does Joseph do?",
+          "question": "When the archers aim at Joseph, Jacob says Joseph drops his bow and runs.",
           "answers": [
             {
-              "text": "He steadies his bow",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "He drops his bow and runs",
-              "correct": false
-            },
-            {
-              "text": "He hides behind the wall",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -450,7 +435,7 @@
               "correct": true
             },
             {
-              "text": "Pharaoh king of Egypt",
+              "text": "Abimelech king of Gerar",
               "correct": false
             },
             {
@@ -465,7 +450,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Genesis 49:25",
-          "text": "The Almighty blesses Joseph with blessings of the heavens above and blessings of the depths below, and friend, that's not a sprinkle of blessing, that's the WHOLE JAR.",
+          "text": "Jacob says the God of Joseph's father helps him, and the Almighty blesses him with blessings of the heavens above and blessings of the depths below.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -474,7 +459,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 49:26",
-          "question": "Jacob wants his blessings to rest on Joseph's head. He calls Joseph the prince of his brothers.",
+          "question": "In blessing Joseph, Jacob calls him the prince of his brothers.",
           "answers": [
             {
               "text": "True",
@@ -493,19 +478,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 49:27",
-          "question": "Last comes Benjamin. Jacob calls him a ravenous wolf, so in the morning that wolf is ___ the prey.",
+          "question": "Last comes Benjamin. Jacob says in the morning he devours the prey, and in the evening he divides the plunder. He calls Benjamin a ravenous ___.",
           "answers": [
             {
-              "text": "devouring",
+              "text": "wolf",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "fleeing",
+              "text": "eagle",
               "correct": false
             },
             {
-              "text": "sparing",
+              "text": "bear",
               "correct": false
             }
           ],
@@ -576,7 +561,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Genesis 49:30-31",
-          "text": "It's the cave in the field Abraham bought as a burial site, where Abraham and Sarah are buried, and Isaac and Rebekah. And Jacob buried one of his own wives there too.",
+          "text": "It's the cave in the field that Jacob's grandfather Abraham bought as a burial site. Abraham and his wife Sarah are buried there, and so are Jacob's father Isaac and his wife Rebekah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -585,7 +570,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 49:31",
-          "question": "Which of his wives did Jacob bury in the cave with Abraham and Isaac?",
+          "question": "Jacob also buried one of his own wives in that cave. Which one?",
           "answers": [
             {
               "text": "Leah",

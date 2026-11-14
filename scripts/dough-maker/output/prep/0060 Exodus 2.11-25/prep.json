@@ -8,24 +8,28 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Exodus 2:10-11",
-          "text": "Moses is a Hebrew, raised as the son of Pharaoh's daughter. Now he's all grown up, and one day he goes out to his own people and watches their hard labor. Then he sees something that stops him in his tracks.",
+          "verses": "Exodus 2:11",
+          "text": "Moses is a Hebrew, raised as the son of the daughter of Pharaoh, Egypt's king (Exodus 2:6, 10). Now he's grown up, and one day he goes out to his own people and watches their hard labor. He sees an Egyptian beating a Hebrew, one of his own people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 2:11",
-          "question": "While watching the Hebrews at their hard labor, Moses sees an Egyptian beating a Hebrew, one of his own people.",
+          "type": "multiple_choice",
+          "verses": "Exodus 2:12",
+          "question": "Moses sees an Egyptian beating a Hebrew. Before he does anything about it, what does Moses do first?",
           "answers": [
             {
-              "text": "True",
+              "text": "He looks this way and that",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "He calls out to the guards",
+              "correct": false
+            },
+            {
+              "text": "He waits for it to stop",
               "correct": false
             }
           ],
@@ -36,35 +40,12 @@
           "card": 3,
           "kind": "story",
           "verses": "Exodus 2:12",
-          "text": "Moses looks this way. Then he looks that way, and he sees no one.",
+          "text": "He sees no one. Then he strikes down the Egyptian.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 2:12",
-          "question": "With nobody around, what does Moses do to the Egyptian who was beating the Hebrew?",
-          "answers": [
-            {
-              "text": "He strikes the Egyptian down",
-              "correct": true
-            },
-            {
-              "text": "He reports him to Pharaoh",
-              "correct": false
-            },
-            {
-              "text": "He pays him to stop",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 2:12",
@@ -88,7 +69,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Exodus 2:13",
           "text": "The next day Moses goes out again. This time it's two Hebrews fighting each other.",
@@ -96,7 +77,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 2:13",
@@ -119,7 +100,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Exodus 2:13-14",
           "text": "Moses asks him, \"Why are you attacking your companion?\" And the man fires right back, \"Who made you ruler and judge over us?\"",
@@ -127,7 +108,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 2:14",
@@ -150,10 +131,29 @@
           "needs_human_decision": false
         },
         {
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Exodus 2:14",
+          "question": "When the Hebrew man brings up the Egyptian, Moses is afraid.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 10,
           "kind": "story",
           "verses": "Exodus 2:14",
-          "text": "Moses is afraid and thinks, \"This thing I have done has surely become known.\" That's the face you make one second after you hit REPLY ALL.",
+          "text": "Moses thinks, \"This thing I have done has surely become known.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -180,8 +180,8 @@
           "card": 12,
           "kind": "story",
           "verses": "Exodus 2:15",
-          "text": "Pharaoh wants Moses dead. So Moses does what anybody would do, friend. He RUNS.",
-          "needs_agent_fix": true,
+          "text": "Pharaoh wants Moses dead. But Moses gets OUT of there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -235,7 +235,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 2:17",
-          "question": "Some shepherds come along and drive the daughters away. This time Moses stays seated and stays out of it.",
+          "question": "Some shepherds come along and drive the daughters away. This time Moses stays out of it.",
           "answers": [
             {
               "text": "True",
@@ -395,22 +395,29 @@
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Exodus 2:22",
-          "question": "Zipporah gives birth to a son, and Moses names him Gershom. Moses says he has become a ___ in a foreign land.",
+          "text": "Zipporah gives birth to a son, and Moses names him Gershom.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Exodus 2:22",
+          "question": "When Moses names his son Gershom, what does Moses say about himself?",
           "answers": [
             {
-              "text": "foreigner",
-              "correct": true,
-              "blank": 1
+              "text": "He's become a foreigner in a foreign land",
+              "correct": true
             },
             {
-              "text": "servant",
+              "text": "He's finally found a home in a new land",
               "correct": false
             },
             {
-              "text": "shepherd",
+              "text": "He'll never go back to Egypt again",
               "correct": false
             }
           ],
@@ -418,7 +425,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "story",
           "verses": "Exodus 2:23",
           "text": "After a long time, the king of Egypt dies. The Israelites groan and cry out under their burden of slavery.",
@@ -426,7 +433,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 2:23",
@@ -449,32 +456,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 16,
+          "kind": "story",
           "verses": "Exodus 2:24",
-          "question": "God heard their groaning, and He remembered His ___ with Abraham, Isaac, and ___.",
+          "text": "God hears their groaning. And He remembers His covenant with Abraham, Isaac and Jacob, the forefathers of Israel.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Exodus 2:25",
+          "question": "God sees the Israelites and takes notice.",
           "answers": [
             {
-              "text": "covenant",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "Jacob",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Joseph",
-              "correct": false
-            },
-            {
-              "text": "Noah",
-              "correct": false
-            },
-            {
-              "text": "altar",
+              "text": "False",
               "correct": false
             }
           ],
@@ -482,31 +483,12 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 2:25",
-          "question": "God sees the Israelites, but He doesn't take notice of them.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 17,
+          "card": 18,
           "kind": "story",
           "verses": "Exodus 2:25",
           "text": "That's where we pull this batch out for today, friend. But keep your apron ON, because this story is just warming up.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

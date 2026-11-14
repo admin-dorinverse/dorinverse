@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 30:25",
-          "text": "Jacob, Isaac's son, has been working for Laban, his father-in-law. Rachel, one of Jacob's wives, has given birth to a son named Joseph. After that, Jacob walks up to Laban with something on his mind.",
+          "text": "Jacob, Isaac's son, has been working for Laban, his father-in-law, for years (Genesis 29:20, 30). Rachel, one of Jacob's wives, has given birth to a son named Joseph. After that, Jacob walks up to Laban with something on his mind.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -108,7 +108,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:30",
-          "question": "Jacob tells Laban that he had very little before Jacob arrived, but now his wealth has increased many times over.",
+          "question": "Jacob tells Laban that Laban had very little before Jacob arrived, but now his wealth has increased many times over.",
           "answers": [
             {
               "text": "True",
@@ -138,19 +138,19 @@
           "question": "Jacob says Laban doesn't need to give him anything. He'll keep shepherding Laban's flocks if Laban does one thing. What does Jacob want as his wages?",
           "answers": [
             {
-              "text": "Every spotted and dark-colored animal",
+              "text": "The spotted and dark-colored animals",
               "correct": true
             },
             {
-              "text": "The strongest rams in the flock",
+              "text": "The pure white animals",
               "correct": false
             },
             {
-              "text": "A tenth of every new lamb",
+              "text": "A tenth of the newborns",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -174,15 +174,15 @@
               "blank": 1
             },
             {
-              "text": "sons",
+              "text": "patience",
               "correct": false
             },
             {
-              "text": "servants",
+              "text": "kindness",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -190,7 +190,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:34",
-          "question": "After hearing all that, Laban turns down Jacob's offer.",
+          "question": "Laban turns down Jacob's offer to take the speckled, spotted and dark-colored animals as his wages.",
           "answers": [
             {
               "text": "True",
@@ -214,8 +214,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 30:35",
-          "text": "That very day, Laban himself removes every streaked, speckled or spotted goat, every one with any white on it, and every dark-colored lamb. No \"let me sleep on it,\" no \"I'll circle back,\" THAT VERY DAY.",
-          "needs_agent_fix": true,
+          "text": "That very day, Laban himself removes every streaked, speckled or spotted goat, every one with any white on it, and every dark-colored lamb. No sleeping on it, no circling back, THAT VERY DAY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -245,15 +245,15 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 30:36",
-          "text": "Then Laban puts a three-day journey between himself and Jacob. Friend, I keep a little distance from a tray of burnt cookies too, but THREE DAYS? That's not distance, that's a whole new zip code.",
-          "needs_agent_fix": true,
+          "text": "Then Laban puts a three-day journey between himself and Jacob. Some folks park at the far end of the lot, friend, but Laban parks THREE DAYS away.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Genesis 30:36-37",
-          "text": "Meanwhile, Jacob is out shepherding the rest of Laban's flocks. Then he grabs fresh branches of poplar, almond and plane trees and starts peeling off the bark, one branch at a time, like a man with a PLAN.",
+          "text": "Meanwhile, Jacob is out shepherding the rest of Laban's flocks. Then he grabs fresh branches of poplar, almond and plane trees and starts peeling off the bark, like a man with a PLAN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -283,20 +283,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 30:38",
-          "question": "Where does Jacob set the peeled branches, right in front of the flocks?",
+          "question": "Jacob sets the peeled branches in the ___, right in front of the flocks.",
           "answers": [
             {
-              "text": "In the watering troughs",
-              "correct": true
+              "text": "watering troughs",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Around the sheep pens",
+              "text": "sheep pens",
               "correct": false
             },
             {
-              "text": "Along the path to the field",
+              "text": "open fields",
               "correct": false
             }
           ],
@@ -334,12 +335,20 @@
           "card": 9,
           "kind": "story",
           "verses": "Genesis 30:40",
-          "text": "Jacob sets those young apart and turns the rest of the flock to face the streaked dark-colored sheep in Laban's flocks. This man is arranging sheep the way I arrange chocolate chips on a tray, EVERY ONE facing the right way.",
+          "text": "Jacob sets those streaked and spotted young apart. This man sorts sheep the way I line up chocolate chips on a cookie, EVERY ONE right where I want it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Genesis 30:40",
+          "text": "Then Jacob makes the rest face the streaked dark-colored sheep in Laban's flocks.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:40",
@@ -358,7 +367,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Genesis 30:41",
           "text": "And now Jacob gets PICKY. Whenever the stronger females are in heat, he puts the branches in the troughs, in full view, so they'll breed in front of them.",
@@ -366,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 30:42",
@@ -390,30 +399,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:42",
-          "question": "So the stronger animals go to Jacob, and the weaker ones go to Laban.",
+          "question": "With the branches set out only for the stronger females, the weaker animals end up going to Jacob.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 30:43",
-          "question": "So how does all of this turn out for Jacob?",
+          "question": "After all of Jacob's work with the peeled branches at the watering troughs, how do things turn out for him?",
           "answers": [
             {
               "text": "He grows very rich",
@@ -432,10 +441,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "Genesis 30:43",
-          "text": "Large flocks, maidservants and menservants, camels AND donkeys. The man who asked when he could provide for his own household got his answer, but set this batch on the cooling rack, friend, because Jacob's story is still in the oven.",
+          "text": "Large flocks, maidservants and menservants, camels AND donkeys. And friend, don't box this batch up yet, because Jacob's story is still in the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

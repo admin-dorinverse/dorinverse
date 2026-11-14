@@ -9,70 +9,47 @@
           "card": 1,
           "kind": "story",
           "verses": "Leviticus 5:14-15",
-          "text": "Then the LORD tells Moses, Israel's leader, about the guilt offering, starting with someone who acts unfaithfully and sins unintentionally against any of the LORD's holy things. Unintentionally, huh? Friend, I once sealed a whole cookie box with the cookies still sitting on the counter.",
+          "text": "The LORD has been telling Moses, Israel's leader, about sin offerings (Leviticus 4:1-5:13). Now He tells him about the guilt offering, starting with someone who acts unfaithfully and sins unintentionally against any of the LORD's holy things. Friend, I once sealed a whole cookie box with the cookies still sitting on the counter.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "story",
+          "verses": "Leviticus 5:15-16",
+          "text": "He brings the LORD an unblemished ram from the flock as his guilt offering, of proper value by the sanctuary shekel. And for the holy thing he harmed, he makes restitution and adds a fifth of its value.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Leviticus 5:15",
-          "question": "For sinning unintentionally against the LORD's holy things, what does this person bring as his guilt offering?",
+          "verses": "Leviticus 5:16",
+          "question": "For the holy thing he harmed, the man pays back its value plus a fifth. Who does he give it to?",
           "answers": [
             {
-              "text": "An unblemished ram from the flock",
+              "text": "The priest",
               "correct": true
             },
             {
-              "text": "A young bull from the herd",
+              "text": "The elders",
               "correct": false
             },
             {
-              "text": "Two turtledoves or young pigeons",
+              "text": "The Levites",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Leviticus 5:15",
-          "text": "And that offering has to be of proper value in silver shekels, by the sanctuary shekel. No bargain bin specials here, and trust me, I was a 25-cent bargain once.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Leviticus 5:16",
-          "question": "For the holy thing he harmed, he makes restitution by adding a ___ of its value and giving it to the priest.",
-          "answers": [
-            {
-              "text": "fifth",
-              "correct": true
-            },
-            {
-              "text": "tenth",
-              "correct": false
-            },
-            {
-              "text": "half",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 5:16",
-          "question": "Once the priest makes atonement for him with the ram, the man is forgiven.",
+          "question": "Once the priest makes atonement with the ram for the man who harmed a holy thing, the man is forgiven.",
           "answers": [
             {
               "text": "True",
@@ -84,18 +61,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Leviticus 5:17",
+          "text": "Next case: someone breaks one of the LORD's commandments, and he had NO idea he did it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Leviticus 5:17",
-          "text": "Next case: someone breaks one of the LORD's commandments, and he had NO idea he did it. Friend, that's me walking around the bakery all morning with flour in my eyebrows.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 5:17",
@@ -111,41 +88,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Leviticus 5:18-19",
+          "text": "He brings the priest an unblemished ram of proper value, and the priest makes atonement for the wrong he committed in ignorance. It's a guilt offering, and he was certainly guilty before the LORD.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Leviticus 5:18",
-          "question": "The man who sinned without knowing brings an unblemished ram to the priest. What happens next?",
-          "answers": [
-            {
-              "text": "The priest makes atonement and he is forgiven",
-              "correct": true
-            },
-            {
-              "text": "The priest sends him outside the camp to wait",
-              "correct": false
-            },
-            {
-              "text": "The priest gives the ram back to his family",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Leviticus 6:1-2",
+          "text": "Then the LORD speaks to Moses again. This time, the case is someone who deceives his neighbor.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Leviticus 5:19-6:2",
-          "text": "God doesn't soften it: he was certainly guilty before the LORD. Then the LORD speaks to Moses again, and this time somebody has deceived his neighbor.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 6:2",
@@ -165,26 +127,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Leviticus 6:2-3",
           "text": "It could be lying about something left in his care, stealing, extortion, or finding lost property and swearing falsely about it. And swearing falsely, friend, that's not a fib anymore, that's a fib in a SUIT AND TIE.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Leviticus 6:4",
-          "text": "Once he has sinned and become guilty, God lays out how he makes it right.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 6:4",
@@ -204,10 +158,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Leviticus 6:5",
@@ -223,28 +177,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Leviticus 6:5",
-          "question": "He makes restitution in ___, adds a fifth of the value, and pays it to the ___.",
+          "question": "The man who cheated his neighbor makes restitution in full, adds a fifth of the value, and pays it to the ___ on the day he acknowledges his guilt.",
           "answers": [
             {
-              "text": "full",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "owner",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "secret",
-              "correct": false
+              "correct": true
             },
             {
               "text": "judges",
@@ -256,18 +200,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "Leviticus 6:6",
-          "text": "Then he brings the priest his guilt offering, an unblemished ram of proper value from the flock. That ram again, friend, the same every time, which is more than my blurry old stamps could ever say.",
+          "text": "Then he brings the priest his guilt offering to the LORD, an unblemished ram of proper value from the flock.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Leviticus 6:7",
@@ -282,20 +226,20 @@
               "correct": false
             },
             {
-              "text": "None of it until the next year",
+              "text": "Only what he paid back",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Leviticus 6:7",
           "text": "That's the guilt offering, friend. But the LORD isn't done teaching Moses about the offerings, so keep that apron on.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

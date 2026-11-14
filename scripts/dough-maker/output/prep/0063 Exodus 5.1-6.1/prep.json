@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 5:1",
-          "text": "Moses, Israel's leader, and his brother Aaron (Exodus 4:14) have a message from the LORD, and the people of Israel already believed it (Exodus 4:31). Now the two of them take it straight to the top: Pharaoh, king of Egypt. No appointment, no small talk, just walking into the king's court like it's my bakery's front door.",
+          "text": "Moses, Israel's leader, and his brother Aaron (Exodus 4:14) have a message from the LORD, and the people of Israel believed it (Exodus 4:31). Now they take it straight to Pharaoh, king of Egypt. Friend, I used to hold my breath every time somebody opened the junk drawer I lived in, and these two walk right up to a KING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -69,48 +69,25 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 5:2",
-          "question": "Pharaoh says he knows the LORD, but he still won't let Israel go.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Exodus 5:2-3",
+          "text": "Pharaoh says he doesn't know the LORD, and he will not let Israel go. Moses and Aaron answer that the God of the Hebrews has met with them, and this time they add a please: “Please let us go on a three-day journey into the wilderness to sacrifice to the LORD our God…”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Exodus 5:3",
-          "text": "Moses and Aaron try again: the God of the Hebrews has met with us, so please let us go on a three-day journey into the wilderness to sacrifice to the LORD our God. REAL polite, like asking your boss for Friday off when you already know how that's gonna go.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Exodus 5:3",
-          "question": "Moses and Aaron tell Pharaoh what the LORD may do if they don't go and sacrifice to Him. What is it?",
+          "question": "Moses and Aaron warn Pharaoh that if they don't go, the LORD may strike them with plagues or with the sword.",
           "answers": [
             {
-              "text": "Strike them with plagues or the sword",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Send a flood over the whole land",
-              "correct": false
-            },
-            {
-              "text": "Turn His face away from them",
+              "text": "False",
               "correct": false
             }
           ],
@@ -118,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Exodus 5:4",
           "text": "Pharaoh wants to know why Moses and Aaron are drawing the people away from their work. Then he snaps, “Get back to your labor!”",
@@ -126,7 +103,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 5:5",
@@ -149,15 +126,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Exodus 5:6",
-          "text": "That same day, Pharaoh calls in the taskmasters and the foremen over the people. I bet he's not just mad, he's SAME-DAY mad.",
+          "text": "That same day, Pharaoh gives orders to the taskmasters of the people and their foremen. I bet he's not just mad, he's SAME-DAY mad.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 5:7",
@@ -181,15 +158,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Exodus 5:7",
-          "text": "From now on, they have to go gather their own straw. That's like telling me I have to GROW my own chocolate chips before every single batch.",
+          "text": "From now on, they have to go gather their own straw. That's like telling me to go out and hunt down my own chocolate chips before every single batch.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 5:8",
@@ -208,22 +185,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Exodus 5:8",
-          "question": "Pharaoh gives the taskmasters a reason the people keep crying out to go and sacrifice to their God. What does he say?",
+          "question": "Pharaoh tells the taskmasters the people keep crying out to go and sacrifice to their God because they are ___.",
           "answers": [
             {
-              "text": "They are lazy",
-              "correct": true
+              "text": "lazy",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They fear the Egyptians",
+              "text": "afraid",
               "correct": false
             },
             {
-              "text": "Their God is angry with them",
+              "text": "hungry",
               "correct": false
             }
           ],
@@ -231,7 +209,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 5:9",
@@ -250,7 +228,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Exodus 5:10-11",
           "text": "The taskmasters and foremen go out with Pharaoh's message: no more straw, get your own wherever you can find it, and your workload won't be reduced at all.",
@@ -258,23 +236,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Exodus 5:12",
-          "question": "With no straw handed out anymore, the people ___ all over the land of Egypt to gather stubble for straw.",
+          "question": "The people have to find their own straw now. Where do they go to gather stubble for straw?",
           "answers": [
             {
-              "text": "scatter",
-              "correct": true,
-              "blank": 1
+              "text": "All over the land of Egypt",
+              "correct": true
             },
             {
-              "text": "rest",
+              "text": "Only to the fields of Goshen",
               "correct": false
             },
             {
-              "text": "hide",
+              "text": "Out into the wilderness",
               "correct": false
             }
           ],
@@ -282,30 +259,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Exodus 5:13",
-          "text": "And the taskmasters keep pressing them: “Fulfill your quota each day, just as you did when straw was provided.” Friend, that's a boss taking away your laptop and then asking where the report is.",
+          "text": "And the taskmasters keep pressing them: “Fulfill your quota each day, just as you did when straw was provided.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "story",
+          "verses": "Exodus 5:14",
+          "text": "Then the Israelite foremen, the ones Pharaoh's taskmasters set over the people, are beaten.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Exodus 5:14",
-          "question": "The bricks keep coming up short. Who gets beaten for it?",
+          "question": "The Israelite foremen are asked why they haven't fulfilled their brick quota yesterday or today, as they did before.",
           "answers": [
             {
-              "text": "The Israelite foremen",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Moses and Aaron",
-              "correct": false
-            },
-            {
-              "text": "The Egyptian taskmasters",
+              "text": "False",
               "correct": false
             }
           ],
@@ -322,7 +303,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 5:15-16",
-          "text": "The Israelite foremen go straight to Pharaoh: “Why are you treating your servants this way?” No straw, they say, and yet we're still told to make bricks.",
+          "text": "The Israelite foremen go straight to Pharaoh: “Why are you treating your servants this way?” No straw, they say, and yet they're still told to make bricks.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -354,43 +335,12 @@
           "card": 3,
           "kind": "story",
           "verses": "Exodus 5:17",
-          "text": "Pharaoh's answer comes out LOUD. He picks one word, and then he says it again.",
+          "text": "“You are slackers!” Pharaoh replies, and then again, “Slackers!” That's why, he says, they keep saying, “Let us go and sacrifice to the LORD.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 5:17",
-          "question": "What does Pharaoh call the foremen?",
-          "answers": [
-            {
-              "text": "Slackers",
-              "correct": true
-            },
-            {
-              "text": "Fools",
-              "correct": false
-            },
-            {
-              "text": "Traitors",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Exodus 5:17",
-          "text": "SLACKERS! Slackers! And that's why, Pharaoh says, they keep saying, ‘Let us go and sacrifice to the LORD.’",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 5:18",
@@ -409,7 +359,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 5,
           "kind": "story",
           "verses": "Exodus 5:19-20",
           "text": "The foremen realize they're in trouble when they hear the daily quota isn't going down. When they leave Pharaoh, Moses and Aaron are standing there waiting to meet them.",
@@ -417,7 +367,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 5:21",
@@ -440,7 +390,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "story",
           "verses": "Exodus 5:21",
           "text": "They say Moses and Aaron have made them a stench before Pharaoh and his officials. Friend, I spent years in a junk drawer under dust and old takeout menus, and NOBODY ever called me a stench.",
@@ -448,11 +398,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 5:21",
-          "question": "The foremen tell Moses and Aaron they have placed a sword in Pharaoh's hand to kill them.",
+          "question": "The foremen tell Moses and Aaron they've put a sword in the hand of Pharaoh and his officials to kill the foremen.",
           "answers": [
             {
               "text": "True",
@@ -467,7 +417,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "Exodus 5:22",
           "text": "So Moses goes back to the LORD. And he doesn't hold one thing back.",
@@ -475,7 +425,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 5:22",
@@ -498,7 +448,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 5:22",
@@ -517,7 +467,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 5:23",
@@ -533,7 +483,7 @@
               "correct": false
             },
             {
-              "text": "forgotten",
+              "text": "punished",
               "correct": false
             }
           ],
@@ -541,15 +491,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "Exodus 6:1",
           "text": "Moses brought the hard question. Now the LORD answers him.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 6:1",
@@ -569,57 +519,38 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 6:1",
-          "question": "The LORD tells Moses that because of His mighty hand, Pharaoh will let the people go.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 18,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 6:1",
-          "question": "The LORD says that because of His strong hand, Pharaoh will do something with the people. What is it?",
+          "question": "The LORD says that because of His mighty hand, Pharaoh will let the people go. And because of His strong hand, what will Pharaoh do with them?",
           "answers": [
             {
               "text": "Drive them out of his land",
               "correct": true
             },
             {
-              "text": "Beg them to stay in Egypt",
+              "text": "Lead them out himself",
               "correct": false
             },
             {
-              "text": "Keep them in Egypt for good",
+              "text": "Send them away in secret",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 16,
           "kind": "story",
           "verses": "Exodus 6:1",
           "text": "We'll let the dough rest right there, friend. This story still has plenty left in the oven.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

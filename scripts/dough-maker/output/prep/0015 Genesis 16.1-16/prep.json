@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 16:1",
-          "text": "Meet Sarai, Abram's wife. She has borne him no children. But Sarai does have an Egyptian maidservant named Hagar.",
+          "text": "Abram, the man God promised offspring as many as the stars (Genesis 15:5), still has no children with his wife Sarai. But Sarai has an Egyptian maidservant named Hagar.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,7 +72,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 16:4",
-          "text": "Abram sleeps with Hagar, and she conceives. Sarai's plan worked, friend, so it's smooth sailing from here, and NOTHING could possibly go sideways.",
+          "text": "Abram sleeps with Hagar, and she conceives. Now watch what happens when Hagar realizes she's pregnant.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -103,7 +103,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 16:5",
-          "text": "Sarai goes straight to Abram. \"May the wrong done to me be upon you!\" she says, and she reminds him she's the one who delivered her servant into his arms.",
+          "text": "Then Sarai tells Abram, \"May the wrong done to me be upon you!\" She reminds him she's the one who delivered her servant into his arms.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -112,15 +112,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 16:5",
-          "question": "Sarai tells Abram that ever since Hagar saw she was pregnant, Hagar has treated her with respect.",
+          "question": "Sarai also tells Abram, \"May the LORD judge between you and me.\"",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -128,18 +128,10 @@
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Genesis 16:5",
-          "text": "Then Sarai tells Abram, \"May the LORD judge between you and me.\" Whew. I bet Abram wishes he could slide into the back of a junk drawer right about now, and trust me, friend, I know a GOOD one.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 16:6",
-          "question": "Sarai wants Abram to answer for this. What does Abram say about Hagar?",
+          "question": "Sarai blames Abram for the wrong done to her. What does Abram say about Hagar?",
           "answers": [
             {
               "text": "She's in Sarai's hands",
@@ -154,23 +146,27 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Genesis 16:6",
-          "question": "Sarai treats Hagar harshly, and Hagar stays put and takes it.",
+          "question": "Then Sarai treats Hagar harshly. What does Hagar do?",
           "answers": [
             {
-              "text": "True",
+              "text": "She flees from Sarai",
+              "correct": true
+            },
+            {
+              "text": "She begs Abram for help",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "She hides in Abram's tent",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -186,30 +182,15 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 16:7",
-          "text": "Out in the desert, by a spring along the road to Shur, the angel of the LORD finds Hagar. Friend, in all my years in that junk drawer, nobody came looking for me unless they needed the TAPE.",
+          "text": "Hagar is out in the desert now, by a spring along the road to Shur. And that's right where the angel of the LORD finds her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Genesis 16:8",
-          "question": "The angel calls her \"Hagar, servant of Sarai\" and asks where she's come from and where she's going. What does Hagar tell him?",
-          "answers": [
-            {
-              "text": "She's running away from Sarai",
-              "correct": true
-            },
-            {
-              "text": "She's headed home to Egypt",
-              "correct": false
-            },
-            {
-              "text": "She's looking for a new master",
-              "correct": false
-            }
-          ],
+          "text": "The angel calls Hagar by name and asks where she's come from and where she's going. She tells him straight: she's running away from her mistress Sarai.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -290,7 +271,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 16:12",
-          "text": "Then the angel describes the man this boy will grow up to be: \"a wild donkey of a man\". Not a tame donkey, not a sweet little petting zoo donkey, friend, a WILD one.",
+          "text": "Then the angel tells her what kind of man her son will be: \"He will be a wild donkey of a man…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -340,7 +321,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Genesis 16:13",
-          "text": "She says, \"Here I have seen the One who sees me!\" Friend, I spent years in the dark under old takeout menus, so that line? That one gets me right in the apron.",
+          "text": "She says, \"Here I have seen the One who sees me!\" Friend, I spent years forgotten in the back of a junk drawer, so that line gets me right in the apron.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -348,23 +329,27 @@
           "card": 11,
           "kind": "story",
           "verses": "Genesis 16:14",
-          "text": "That's why the well is called Beer-lahai-roi, and it sits between Kadesh and Bered. You meet the God who sees you at a spring, friend, of COURSE that spring gets a name.",
+          "text": "That's why the well is called Beer-lahai-roi. It sits between Kadesh and Bered.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Genesis 16:15",
-          "question": "Hagar bears Abram a son, and Abram gives him the name Ishmael.",
+          "question": "Hagar bears Abram a son. Who gives the boy the name Ishmael?",
           "answers": [
             {
-              "text": "True",
+              "text": "Abram",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Hagar",
+              "correct": false
+            },
+            {
+              "text": "Sarai",
               "correct": false
             }
           ],
@@ -399,7 +384,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Genesis 16:16",
-          "text": "And that's where we'll leave it for now, friend. Keep that oven warm, because Abram's story is far from done.",
+          "text": "Keep that oven warm, friend, because Abram's story is far from done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

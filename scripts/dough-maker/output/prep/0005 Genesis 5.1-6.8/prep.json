@@ -8,21 +8,29 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Genesis 5:1-32",
-          "text": "Genesis 5 is a family album from Adam, the first man, down to Noah, and man after man lives hundreds of years and then he died, except Enoch. \"Enoch walked with God, and then he was no more, because God had taken him away.\" Methuselah tops the list at 969 years, which is a LOT of birthday candles, and the line comes down to Noah, father of Shem, Ham and Japheth.",
+          "verses": "Genesis 5:1-2",
+          "text": "This is the book of the generations of Adam, the first man. It starts back at the beginning: God made man in His own likeness, male and female, and He blessed them. Get comfy, friend, because this family line goes WAY back.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
-          "verses": "Genesis 6:1",
-          "text": "Turn the page, friend: men began to multiply on the face of the earth, and daughters were born to them. That family album is gonna need a SECOND album.",
+          "verses": "Genesis 5:3-32",
+          "text": "From Adam down to Noah's father, the family album fills up fast, and each man lives hundreds of years and then dies. But not Enoch: \"Enoch walked with God, and then he was no more, because God had taken him away.\" When Lamech, Methuselah's son, names his son Noah, he says, \"May this one comfort us in the labor and toil of our hands caused by the ground that the LORD has cursed.\" After Noah is 500 years old, he has three sons: Shem, Ham and Japheth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
+          "kind": "story",
+          "verses": "Genesis 6:1",
+          "text": "Then men begin to multiply on the face of the earth, and daughters are born to them. That family album is gonna need a SECOND album.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 6:2",
@@ -45,118 +53,90 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "story",
           "verses": "Genesis 6:3",
-          "text": "Then the LORD speaks, and friend, this is NOT a \"hey, how was your week\" kind of talk. He says His Spirit will not contend with man forever.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 6:3",
-          "question": "The LORD says His Spirit will not contend with man forever. What reason does He give?",
-          "answers": [
-            {
-              "text": "Man is mortal",
-              "correct": true
-            },
-            {
-              "text": "Man is proud",
-              "correct": false
-            },
-            {
-              "text": "Man has forgotten Him",
-              "correct": false
-            }
-          ],
+          "text": "Then the LORD speaks: \"My Spirit will not contend with man forever, for he is mortal…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 6:3",
-          "question": "Then the LORD says that man's days shall be ___ years.",
+          "question": "The LORD says His Spirit will not contend with man forever. How long does He say man's days shall be?",
           "answers": [
             {
-              "text": "120",
-              "correct": true,
-              "blank": 1
+              "text": "120 years",
+              "correct": true
             },
             {
-              "text": "365",
+              "text": "70 years",
               "correct": false
             },
             {
-              "text": "969",
+              "text": "40 years",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Genesis 6:4",
-          "text": "The Nephilim were on the earth in those days, and afterward as well, and the text just drops that name and keeps WALKING. Then the sons of God and the daughters of men have children.",
+          "text": "The Nephilim were on the earth in those days, and afterward as well, when the sons of God had relations with the daughters of men. Their children became \"the mighty men of old, men of renown.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 6:4",
-          "question": "The sons of God and the daughters of men have children. Those children become the ___ men of old.",
-          "answers": [
-            {
-              "text": "mighty",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "faithful",
-              "correct": false
-            },
-            {
-              "text": "humble",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Genesis 6:5",
+          "text": "Then the LORD looks at man on the earth.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Genesis 6:5",
-          "text": "And here, friend, the story turns. The LORD looks at man on the earth, and I'm peeking through my mustache like it's the scary part of a movie.",
+          "question": "The LORD sees that the ___ of man is great upon the earth.",
+          "answers": [
+            {
+              "text": "wickedness",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "wisdom",
+              "correct": false
+            },
+            {
+              "text": "kindness",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 6:5",
-          "question": "What does the LORD see in man that is great upon the earth?",
+          "question": "The LORD looks at the thoughts of man's heart. True or false: those thoughts are evil only some of the time.",
           "answers": [
             {
-              "text": "Wickedness",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Wisdom",
-              "correct": false
-            },
-            {
-              "text": "Faith",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -164,25 +144,9 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 6:5",
-          "question": "The LORD sees that every inclination of the thoughts of man's heart is altogether ___ all the time.",
-          "answers": [
-            {
-              "text": "evil",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "good",
-              "correct": false
-            },
-            {
-              "text": "restless",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 6:6",
+          "text": "The LORD regretted that He had made man on the earth. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -191,7 +155,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 6:6",
-          "question": "The LORD sees great wickedness in man. True or false: the LORD is grieved in His heart.",
+          "question": "The LORD regretted that He had made man on the earth. True or false: He was also grieved in His heart.",
           "answers": [
             {
               "text": "True",
@@ -207,14 +171,6 @@
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Genesis 6:6-7",
-          "text": "The LORD regretted that He had made man on the earth. Friend, I'm setting my spatula down for this one, because then the LORD speaks.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 6:7",
@@ -237,19 +193,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 6:7",
-          "question": "The LORD says He will blot out man from the face of the earth. True or false: His words are only about man and leave out the animals and birds.",
+          "question": "The LORD says He will blot out man from the face of the earth. True or false: He includes the beasts and the birds of the air too.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Genesis 6:8",
+          "question": "The LORD says He will blot out man from the face of the earth. But one man stands apart. Who finds favor in the eyes of the LORD?",
+          "answers": [
+            {
+              "text": "Noah",
               "correct": true
+            },
+            {
+              "text": "Methuselah",
+              "correct": false
+            },
+            {
+              "text": "Jared",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -259,34 +238,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Genesis 6:8",
-          "text": "The LORD has spoken, and it sounds like the end of the story. Then one little word turns the whole page: however.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 6:8",
-          "question": "The LORD is grieved over man and says He will blot him out. Then comes the word however. True or false: Noah finds favor in the eyes of the LORD.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "story",
-          "verses": "Genesis 6:8",
-          "text": "Keep that name close, friend. The oven timer on this story hasn't even dinged yet.",
+          "text": "Keep your eye on Noah, friend. The oven timer on this story hasn't even dinged yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

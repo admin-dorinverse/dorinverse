@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "The story card says God is about to say \"the part NOBODY wanted to hear.\" That tells the baker the answer to the next choice card (card 4), which asks whether God says He will go with them. The baker can tell it is False before reading the question.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The story card ends with \"But He adds one limit.\" This signals that Moses cannot see God's face, so the baker can answer the next card (14, which asks whether Moses can see His face) without reading the question. It also calls the statement a \"limit,\" which the text does not.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 20
+      },
+      "problem": "The last story card repeats the verse 23 content that card 19 just asked about (\"His back, but His face must not be seen\"). That makes it a recap. Since the last verse was already asked on a choice card, this card should be only the short \"story isn't over\" line. It cites 33:22-23 instead of the passage's last verse alone.",
+      "rule": "No recap cards. ... When the passage's last verse is asked on a choice card, the last story card can be just this line."
+    }
+  ]
+}

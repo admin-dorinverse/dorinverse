@@ -11,7 +11,7 @@
           "verses": "Genesis 36:1",
           "text": "Genesis has been following Jacob for chapters. Now it turns the spotlight on Esau, Jacob's twin brother (Genesis 25:24-26), and his WHOLE family tree. And the very first line tells us Esau goes by another name.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,22 +34,45 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Genesis 36:2-3",
-          "text": "First up, Esau's wives, from the daughters of Canaan: Adah, Oholibamah, and Basemath, daughter of Ishmael, Abraham's son (Genesis 16:15). Grab a pencil, friend, because this family tree is about to get BUSY.",
+          "text": "First up, Esau's wives: Adah, Oholibamah and Basemath. Grab a pencil, friend, because this family tree is about to get BUSY.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Genesis 36:3",
+          "question": "Esau's wife Basemath is the daughter of ___.",
+          "answers": [
+            {
+              "text": "Ishmael",
+              "correct": true
+            },
+            {
+              "text": "Laban",
+              "correct": false
+            },
+            {
+              "text": "Lot",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 36:5",
-          "question": "Esau's sons with these wives are Eliphaz, Reuel, Jeush, Jalam and Korah. Where were they born?",
+          "question": "Esau's wives give him five sons: Eliphaz, Reuel, Jeush, Jalam and Korah. Where are they born?",
           "answers": [
             {
               "text": "In the land of Canaan",
@@ -65,22 +88,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "story",
           "verses": "Genesis 36:6",
           "text": "Later, Esau rounds up his wives, his sons and daughters, and every person in his household to MOVE. Friend, folks beg three buddies and a borrowed truck just to move one apartment, and this man is moving a WHOLE household.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 36:6",
-          "question": "True or false: Esau leaves his livestock and everything he gained in Canaan behind.",
+          "question": "True or false: Esau leaves his livestock behind in Canaan.",
           "answers": [
             {
               "text": "True",
@@ -92,33 +115,29 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Genesis 36:6",
-          "question": "Esau moves to a land far away from his ___.",
+          "question": "True or false: Esau moves to a land far away from his brother Jacob.",
           "answers": [
             {
-              "text": "brother",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "father",
-              "correct": false
-            },
-            {
-              "text": "uncle",
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 36:7",
@@ -138,10 +157,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 36:8",
@@ -161,54 +180,31 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 36:9",
-          "question": "Genesis starts Esau's account again. This time Esau is called the father of the ___.",
-          "answers": [
-            {
-              "text": "Edomites",
-              "correct": true
-            },
-            {
-              "text": "Horites",
-              "correct": false
-            },
-            {
-              "text": "Moabites",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Genesis 36:10-19",
-          "text": "Then comes the family list: Esau's sons, his grandsons, and the chiefs they become in the land of Edom. One standout: Timna, a concubine of Esau's son Eliphaz, gives birth to Amalek. That's a LOT of chiefs. My bakery has one chief, and he's the guy on the gold base talking to you.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Genesis 36:9-19",
+          "text": "Then Genesis starts Esau's account again, and out comes the family list: Esau's sons, his grandsons, and the chiefs they become in the land of Edom. One standout: Timna, a concubine of Esau's son Eliphaz, gives birth to Amalek. That's a LOT of chiefs. My bakery has one chief, and he's the guy on the gold base talking to you.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Genesis 36:20-30",
-          "text": "Next, the Horites, the sons of Seir who were already living in the land, along with their chiefs. Tucked in there is Anah, who found the hot springs in the wilderness while pasturing his father Zibeon's donkeys. Out minding donkeys, and he finds HOT SPRINGS. Best day at work anybody ever had.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Next, the Horites, the sons of Seir who were living in the land, along with their chiefs. Tucked in there is Anah, who found the hot springs in the wilderness while pasturing his father Zibeon's donkeys. Out minding donkeys, and he finds HOT SPRINGS. Best day at work anybody ever had.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "Genesis 36:31-39",
-          "text": "Then a list of the kings who reigned in Edom before any king reigned over the Israelites. Eight kings, each one taking over when the last one dies. One of them, Hadad son of Bedad, defeated Midian in the country of Moab.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then a list of the kings who reigned in Edom before any king reigned over the Israelites. Eight kings in all, and after Bela, each new king takes over when the one before him dies. One of them, Hadad son of Bedad, defeated Midian in the country of Moab.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -216,7 +212,7 @@
           "verses": "Genesis 36:40-43",
           "text": "The chapter wraps up with one more list of Esau's chiefs by their families and regions, eleven names in all. And the last line sums up the whole thing: Esau was the father of the Edomites.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

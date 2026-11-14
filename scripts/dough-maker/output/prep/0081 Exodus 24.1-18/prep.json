@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 24:1",
-          "text": "The LORD just gave Moses, Israel's leader, a long run of laws for everyday life (Exodus 21-23). Now the LORD tells him to “Come up to the LORD” and He's got a guest list. Moses is NOT climbing this mountain alone.",
+          "text": "The LORD has just given Moses, Israel's leader, laws for everyday life and promises about the land ahead (Exodus 21-23). Now the LORD says to Moses, “Come up to the LORD…” And Moses isn't the only one invited.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -25,11 +25,11 @@
               "correct": true
             },
             {
-              "text": "Miriam with Eleazar and Jethro plus twelve priests",
+              "text": "Miriam with Jethro and Zipporah plus twelve leaders",
               "correct": false
             },
             {
-              "text": "Joshua with Caleb and Phinehas plus twelve spies",
+              "text": "Bezalel with Oholiab and Korah plus twelve spies",
               "correct": false
             }
           ],
@@ -40,35 +40,39 @@
           "card": 3,
           "kind": "story",
           "verses": "Exodus 24:1",
-          "text": "Aaron is Moses' brother (Exodus 4:14), and Nadab and Abihu are Aaron's sons (Exodus 6:23). Big invite, but there's a velvet rope, and not everybody on that list gets past it.",
+          "text": "Aaron is Moses' brother (Exodus 4:14), and Nadab and Abihu are Aaron's sons (Exodus 6:23). They're all invited, but the LORD has more to say about how close each one gets.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 24:2",
-          "question": "Who gets past that velvet rope and approaches the LORD?",
+          "type": "true_false",
+          "verses": "Exodus 24:1",
+          "question": "The LORD says the group coming up the mountain is to worship at a distance.",
           "answers": [
             {
-              "text": "Moses alone",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Moses and Aaron",
-              "correct": false
-            },
-            {
-              "text": "Aaron alone",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Exodus 24:2",
+          "text": "Then the LORD says, “Moses alone shall approach the LORD, but the others must not come near.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 24:2",
@@ -87,18 +91,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
-          "kind": "story",
-          "verses": "Exodus 24:1",
-          "text": "Aaron, his sons and the elders are still invited. They're just to worship at a distance. Great seats, friend. Just not THAT seat.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 7,
           "kind": "story",
           "verses": "Exodus 24:3",
-          "text": "So Moses comes and tells the people ALL the words and ordinances of the LORD. That's like reading the whole terms and conditions out loud to a crowd, and nobody gets to scroll to the bottom and click “I agree.”",
+          "text": "So Moses comes and tells the people ALL the words and ordinances of the LORD. ALL of them. I can't get through one cookie recipe without skipping straight to the oven temperature.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -139,7 +135,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 24:4",
-          "question": "Moses builds this altar way up at the top of the mountain.",
+          "question": "Early in the morning, Moses builds an altar way up at the top of the mountain.",
           "answers": [
             {
               "text": "True",
@@ -158,18 +154,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 24:4",
-          "question": "Next to the altar at the base of the mountain, Moses sets up pillars, one for each tribe of Israel. How many pillars?",
+          "question": "Moses sets up pillars next to the altar at the base of the mountain. What do the pillars stand for?",
           "answers": [
             {
-              "text": "Twelve",
+              "text": "The twelve tribes of Israel",
               "correct": true
             },
             {
-              "text": "Seven",
+              "text": "The ten plagues on Egypt",
               "correct": false
             },
             {
-              "text": "Seventy",
+              "text": "The seven days of creation",
               "correct": false
             }
           ],
@@ -180,8 +176,8 @@
           "card": 12,
           "kind": "story",
           "verses": "Exodus 24:5",
-          "text": "Altar's up. Pillars are up. Now it's time for offerings to the LORD, and Moses sends some people out to handle them.",
-          "needs_agent_fix": true,
+          "text": "Altar's up, pillars are up, and now it's time for offerings to the LORD. Moses sends some people out to make them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -200,7 +196,7 @@
               "correct": false
             },
             {
-              "text": "The seventy elders of Israel",
+              "text": "The leaders of the tribes",
               "correct": false
             }
           ],
@@ -209,14 +205,33 @@
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Exodus 24:5-6",
-          "text": "They offer burnt offerings and sacrifice young bulls as peace offerings to the LORD. Then Moses takes half of the blood and puts it in bowls.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Exodus 24:5",
+          "question": "The young men sacrifice young bulls as peace offerings to the LORD.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
+          "kind": "story",
+          "verses": "Exodus 24:5-6",
+          "text": "The young men offer burnt offerings too. Then Moses takes half of the blood and puts it in bowls.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 24:6",
@@ -240,29 +255,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "story",
           "verses": "Exodus 24:7",
-          "text": "Then Moses takes the Book of the Covenant and reads it to the people. Round two, friend, and this time he's reading it right off the page.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 24:7",
-          "question": "After hearing the Book of the Covenant, the people say they will do all the LORD has spoken and be obedient.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Then Moses takes the Book of the Covenant and reads it to the people. They answer, “All that the LORD has spoken we will do, and we will be obedient.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -271,18 +267,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 24:8",
-          "question": "The people have made their promise, and Moses still has blood in those bowls. What does he do with the blood now?",
+          "question": "The people have made their promise, and half the blood is still in the bowls. What does Moses do with that blood now?",
           "answers": [
             {
               "text": "He splatters it on the people",
               "correct": true
             },
             {
-              "text": "He pours it on the pillars",
+              "text": "He carries it up the mountain",
               "correct": false
             },
             {
-              "text": "He burns it on the altar",
+              "text": "He sets it before the elders",
               "correct": false
             }
           ],
@@ -293,7 +289,7 @@
           "card": 19,
           "kind": "story",
           "verses": "Exodus 24:8",
-          "text": "And Moses says, “This is the blood of the covenant that the LORD has made with you in accordance with all these words.” I seal cookie boxes all day, friend, and NOTHING I seal comes close to this.",
+          "text": "And Moses says, “This is the blood of the covenant that the LORD has made with you in accordance with all these words.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -307,7 +303,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 24:9",
-          "text": "Now Moses goes up with Aaron, Nadab and Abihu, and seventy of the elders of Israel. Seventy-four people climbing a mountain, and I bet at least one of them asked, “Are we there yet?”",
+          "text": "Now Moses goes up with Aaron, Nadab and Abihu, and seventy of the elders of Israel. Seventy-four people heading up a mountain together, and I've watched a group chat of FOUR fall apart trying to pick one meeting time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -338,7 +334,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Exodus 24:10",
-          "text": "Under His feet is a work like a pavement made of sapphire, as clear as the sky itself. Meanwhile my bakery floor is flour and one chocolate chip I keep stepping on.",
+          "text": "Under His feet is a work like a pavement made of sapphire, as clear as the sky itself. And here I thought the night sky over my bakery was something special.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -347,7 +343,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 24:11",
-          "question": "These leaders were told to keep their distance. Now that they've seen God, He strikes them down.",
+          "question": "God strikes down the leaders who see Him on the mountain.",
           "answers": [
             {
               "text": "True",
@@ -373,11 +369,11 @@
               "correct": true
             },
             {
-              "text": "They build another altar",
+              "text": "They sing and dance",
               "correct": false
             },
             {
-              "text": "They run back down",
+              "text": "They hide their faces",
               "correct": false
             }
           ],
@@ -388,7 +384,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Exodus 24:12",
-          "text": "Then the LORD tells Moses, “Come up to Me on the mountain and stay here,” because He has something to give him.",
+          "text": "Then the LORD tells Moses, “Come up to Me on the mountain and stay here…” He's going to give Moses tablets of stone with the law and commandments He has written.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -397,23 +393,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 24:12",
-          "question": "Up on the mountain, the LORD is going to give Moses tablets of ___ with the law and commandments He has written.",
+          "question": "The LORD says the law and commandments on the stone tablets He'll give Moses are written for the people's ___.",
           "answers": [
             {
-              "text": "stone",
+              "text": "instruction",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "gold",
+              "text": "judgment",
               "correct": false
             },
             {
-              "text": "bronze",
+              "text": "protection",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -428,7 +424,7 @@
               "correct": true
             },
             {
-              "text": "Aaron his brother",
+              "text": "Eleazar his nephew",
               "correct": false
             },
             {
@@ -436,14 +432,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Exodus 24:13-14",
-          "text": "Joshua led Israel's fight against the Amalekites (Exodus 17:10), and now he's going up the mountain with Moses. Before they go, Moses tells the elders, “Wait here for us until we return to you.”",
+          "text": "Joshua fought the Amalekites for Israel (Exodus 17:10), and now he's going up the mountain with Moses. And Moses tells the elders, “Wait here for us until we return to you.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -459,11 +455,11 @@
               "correct": true
             },
             {
-              "text": "Nadab and Abihu",
+              "text": "Dathan and Abiram",
               "correct": false
             },
             {
-              "text": "Eleazar and Ithamar",
+              "text": "Eldad and Medad",
               "correct": false
             }
           ],
@@ -510,7 +506,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 24:17",
-          "question": "Down below, the Israelites are watching. To them, the glory of the LORD looks like a consuming ___ on the mountaintop.",
+          "question": "In the eyes of the Israelites, the sight of the glory of the LORD on the mountaintop is like a consuming ___.",
           "answers": [
             {
               "text": "fire",
@@ -526,14 +522,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Exodus 24:18",
-          "text": "And Moses walks right INTO the cloud as he goes up the mountain. Friend, I take two steps back every time I open my own oven door.",
+          "text": "And Moses walks right INTO the cloud as he goes up the mountain. Straight. In.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

@@ -3,7 +3,7 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Genesis 9:18-29",
+      "verses": "Genesis 9:18-10:32",
       "cards": [
         {
           "card": 1,
@@ -40,27 +40,27 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 9:20",
-          "text": "Now Noah, a man of the soil, gets to planting. This man is over 600 years old (Genesis 8:13), friend, and I still groan every time I step off my gold base.",
-          "needs_agent_fix": true,
+          "text": "Now Noah, a man of the soil, gets to planting. I bet you hand that man a patch of dirt and he lights UP, the way I do when somebody slides me a fresh bowl of dough.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 9:20",
-          "question": "Noah the man of the soil gets to planting. What does he plant?",
+          "question": "Noah, the man of the soil, plants a ___.",
           "answers": [
             {
-              "text": "A vineyard",
+              "text": "vineyard",
               "correct": true
             },
             {
-              "text": "An olive grove",
+              "text": "olive grove",
               "correct": false
             },
             {
-              "text": "A fig orchard",
+              "text": "wheat field",
               "correct": false
             }
           ],
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 9:21",
-          "text": "Noah drinks some of its wine, becomes drunk and uncovers himself inside his tent. Oh, friend, this family just made it through a flood, and here comes trouble.",
+          "text": "Noah drinks some of the wine from his vineyard, becomes drunk and uncovers himself inside his tent. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,18 +80,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 9:22",
-          "question": "Ham, the father of Canaan, sees his father's nakedness inside the tent. What does Ham do?",
+          "question": "Ham, the father of Canaan, sees his father's nakedness. What does Ham do next?",
           "answers": [
             {
               "text": "He tells his two brothers outside",
               "correct": true
             },
             {
-              "text": "He covers his father with a cloak",
+              "text": "He wakes his father up",
               "correct": false
             },
             {
-              "text": "He goes in and wakes his father",
+              "text": "He keeps it to himself",
               "correct": false
             }
           ],
@@ -114,7 +114,7 @@
           "question": "Shem and Japheth have the garment across their shoulders. How do they get to their father?",
           "answers": [
             {
-              "text": "They walk in backward",
+              "text": "They walk backward",
               "correct": true
             },
             {
@@ -132,36 +132,9 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 9:23",
-          "question": "Shem and Japheth see their father's nakedness while they cover him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Genesis 9:24",
-          "text": "When Noah wakes up from his drunkenness, he learns what his youngest son had done to him. Oh no, friend, this is the boss walking up to your desk and saying, \"Got a minute?\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 9:25",
-          "question": "Noah has learned what his youngest son did to him, and he speaks a curse. Who does Noah curse?",
+          "question": "When Noah wakes up from his drunkenness, he learns what his youngest son had done to him. Then Noah speaks a curse. Who does Noah curse?",
           "answers": [
             {
               "text": "Canaan",
@@ -180,42 +153,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 9:25",
-          "question": "In his curse, Noah says Canaan will be a ___ to his brothers.",
-          "answers": [
-            {
-              "text": "servant",
-              "correct": true
-            },
-            {
-              "text": "stranger",
-              "correct": false
-            },
-            {
-              "text": "wanderer",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 10,
           "kind": "story",
-          "verses": "Genesis 9:26",
-          "text": "Then Noah declares, \"Blessed be the LORD, the God of Shem!\" Look close, friend: the one being blessed in that line is the LORD Himself.",
+          "verses": "Genesis 9:25-26",
+          "text": "Noah goes on: \"A servant of servants shall he be to his brothers.\" Then he declares, \"Blessed be the LORD, the God of Shem!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 9:26",
-          "question": "Right after blessing the LORD, the God of Shem, Noah says may Canaan be Shem's servant.",
+          "question": "Right after blessing the LORD, the God of Shem, Noah's words name Canaan as Shem's servant.",
           "answers": [
             {
               "text": "True",
@@ -223,6 +173,60 @@
             },
             {
               "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Genesis 9:27",
+          "question": "Noah's words turn to Japheth next. What does Noah say God may do for Japheth?",
+          "answers": [
+            {
+              "text": "Expand his territory",
+              "correct": true
+            },
+            {
+              "text": "Lengthen his days",
+              "correct": false
+            },
+            {
+              "text": "Make his name great",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Genesis 9:27",
+          "text": "Then Noah adds, \"…may he dwell in the tents of Shem, and may Canaan be his servant.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Genesis 9:28",
+          "question": "After the flood, Noah lives ___ more years.",
+          "answers": [
+            {
+              "text": "350",
+              "correct": true
+            },
+            {
+              "text": "120",
+              "correct": false
+            },
+            {
+              "text": "40",
               "correct": false
             }
           ],
@@ -232,236 +236,17 @@
         {
           "card": 15,
           "kind": "story",
-          "verses": "Genesis 9:27",
-          "text": "Noah has words for Japheth too: may God expand Japheth's territory. After years squeezed in the back of a junk drawer, friend, I can tell you MORE ROOM is a beautiful thing.",
+          "verses": "Genesis 9:29",
+          "text": "So Noah lives a total of 950 years, and then he dies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 9:27",
-          "question": "Noah has blessed the LORD, the God of Shem, and asked God to expand Japheth's territory. Where does Noah say Japheth may dwell?",
-          "answers": [
-            {
-              "text": "In the tents of Shem",
-              "correct": true
-            },
-            {
-              "text": "In the tents of Canaan",
-              "correct": false
-            },
-            {
-              "text": "In the tents of Ham",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 10:1-32",
+          "text": "Then comes the account of Noah's sons Shem, Ham and Japheth and the sons born to them after the flood, clan by clan and nation by nation. One name stands out: Nimrod, son of Ham's son Cush, a mighty hunter before the LORD, who built Nineveh. From these clans, the nations of the earth spread out after the flood. Friend, that's not a family tree anymore, that's a family reunion that needs a MAP.",
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Genesis 9:25-27",
-          "text": "Then Noah adds, \"may Canaan be his servant.\" Count 'em, friend: Canaan as a servant comes up THREE times in Noah's words, once in the curse and twice as a wish.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "story",
-          "verses": "Genesis 9:28",
-          "text": "Noah isn't done yet, friend. This man's got more years left than I've got sprinkles, and I've got a LOT of sprinkles.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 9:28",
-          "question": "After the flood, how many more years does Noah live?",
-          "answers": [
-            {
-              "text": "350 years",
-              "correct": true
-            },
-            {
-              "text": "120 years",
-              "correct": false
-            },
-            {
-              "text": "40 years",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
-          "verses": "Genesis 9:29",
-          "text": "So Noah lives a total of 950 years, and then he dies. Nine hundred fifty years, friend, and I get impatient waiting on a TWELVE-minute timer.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        }
-      ]
-    },
-    {
-      "stop": 2,
-      "verses": "Genesis 10:1-32",
-      "cards": [
-        {
-          "card": 1,
-          "kind": "story",
-          "verses": "Genesis 10:1-5",
-          "text": "Now comes the account of Noah's sons Shem, Ham and Japheth, who also had sons after the flood. Japheth's line goes first: Gomer, Magog, Javan and more. From these, the maritime peoples separated into their territories, by language and clan.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 2,
-          "kind": "story",
-          "verses": "Genesis 10:6-8",
-          "text": "Next up is Ham's line: Cush, Mizraim, Put and Canaan. And Cush was the father of Nimrod, who began to be a mighty one on the earth.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 10:9",
-          "question": "Nimrod, son of Cush, began to be a mighty one on the earth. What is Nimrod known as?",
-          "answers": [
-            {
-              "text": "A mighty hunter",
-              "correct": true
-            },
-            {
-              "text": "A mighty shepherd",
-              "correct": false
-            },
-            {
-              "text": "A mighty farmer",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Genesis 10:9",
-          "text": "He's so known for it that it becomes a saying: \"Like Nimrod, a mighty hunter before the LORD.\" Friend, nobody has EVER said \"Like Dorin, a mighty stamper.\" Not out loud, anyway.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 10:10",
-          "question": "Nimrod the mighty hunter has a kingdom. Where does his kingdom begin?",
-          "answers": [
-            {
-              "text": "In the land of Shinar",
-              "correct": true
-            },
-            {
-              "text": "In the land of Goshen",
-              "correct": false
-            },
-            {
-              "text": "In the land of Midian",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 10:11",
-          "question": "Once his kingdom begins in the land of Shinar, Nimrod stays there for good.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 10:11",
-          "question": "Nimrod goes from Shinar into Assyria, and there he builds the city of ___.",
-          "answers": [
-            {
-              "text": "Nineveh",
-              "correct": true
-            },
-            {
-              "text": "Jericho",
-              "correct": false
-            },
-            {
-              "text": "Damascus",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Genesis 10:13-20",
-          "text": "The rest of Ham's line fills in fast: the Philistines, the Hittites, the Jebusites, the Amorites and more, with Canaan's borders reaching from Sidon as far as Gaza and toward Sodom and Gomorrah. Friend, that's not a family tree anymore, that's a family reunion that needs a MAP.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Genesis 10:21-29",
-          "text": "Last comes Shem, the older brother of Japheth. In his line, Eber has a son named Peleg, because in his days the earth was divided, and Peleg's brother Joktan has THIRTEEN sons. I had six little cutters on one counter and thought THAT was a crowd.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 10:32",
-          "question": "From the clans of Noah's sons, the ___ of the earth spread out after the flood.",
-          "answers": [
-            {
-              "text": "nations",
-              "correct": true
-            },
-            {
-              "text": "kings",
-              "correct": false
-            },
-            {
-              "text": "armies",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         }
       ]

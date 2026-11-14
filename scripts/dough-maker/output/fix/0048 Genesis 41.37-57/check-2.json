@@ -1,0 +1,45 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "\"what God showed in his dreams\" is ambiguous. \"his\" could mean Joseph or Pharaoh, and the dreams were Pharaoh's.",
+      "rule": "\"He,\" \"she\" and \"they\" always point to someone the baker can tell."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The joke \"I'd frame a meeting where a whole room of officials agrees on ONE plan\" doesn't make sense. A meeting can't be framed, and a stranger would say \"huh?\".",
+      "rule": "If a stranger would say \"huh?\", rewrite it."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The true/false statement reuses \"the linen\", which was the right answer shown on the previous choice card (card 6).",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 3
+      },
+      "problem": "Story card 1 says \"those fields just keep showing out\". That gives away the answer \"fields\" to this later fill-in-the-blank.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The question says \"famine in every country\", and the wrong answers Canaan and Moab are countries. The setup line rules out the wrong answers.",
+      "rule": "A setup line can't rule out the wrong answers either."
+    }
+  ]
+}

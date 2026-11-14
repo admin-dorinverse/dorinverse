@@ -8,8 +8,10 @@
 //      current rules and fixes anything else. It changes only what needs changing.
 //   2. The script check (check-prep.mjs), then Sonnet checks the result. Sonnet is a different model from the
 //      fixer, so the checker is never the fixer. Whatever they find goes back to Opus.
-//   3. Up to 3 fixes. After the 3rd, Opus's walkthrough is used as it is (unless the script finds it broken, then
-//      the last one that wasn't). Nothing goes on the tracker.
+//   3. Up to 2 fixes. The 2nd fixes only what the check found (lower effort, a small job) and gets the script check
+//      only; then Opus's walkthrough is used as it is (unless the script finds it broken, then the last one that
+//      wasn't). Nothing goes on the tracker. (3 rounds used about 0.08% of the weekly limit per passage, too much
+//      for all 1,558 in one week; 2 rounds keeps the run inside it.)
 // prep.json is replaced with the fixed walkthrough and result.json is emptied. Every round is saved under
 // output/fix/<id and range>/, so running it again picks up where it left off. At the end, Kimi checks 50 random
 // passages as a report only (fix-report.json); it changes nothing.
@@ -36,7 +38,7 @@ import { PREP_DIR, about, theText, CHECK, passing, folder, saveTracker } from '.
 const STEP = 'fix';
 const FIX_DIR = path.join(OUTPUT, 'fix');
 const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;
-const ROUNDS = 3;
+const ROUNDS = 2;
 const SAVE_EVERY = 100;
 const SPOTCHECK = 50;
 const STAGGER = 3_000;
@@ -192,7 +194,7 @@ export async function runFix(ids, { agents = 1, spotcheck = true } = {}) {
         const o = json(t);
         if (!Array.isArray(o?.stops) || !o.stops.length) throw Object.assign(new Error('gave a walkthrough with no stops'), { unreadable: true });
         return o;
-      }, () => opus({ role: 'fixer', passage: p.id, step: STEP, system: [papaMd, prepMd],
+      }, () => opus({ role: 'fixer', passage: p.id, step: STEP, system: [papaMd, prepMd], effort: n === 1 ? 'medium' : 'low',
         prompt: top + '\n\n' + show(out) + '\n\n' + JSON.stringify({ known }, null, 2) + '\n\n' + FIX(p) })));
       rounds = n;
       out = fixed;
@@ -200,7 +202,7 @@ export async function runFix(ids, { agents = 1, spotcheck = true } = {}) {
       if (!script.length) lastGood = out;
       status(p, 'checking', 'sonnet');
       const review = await stage(`check-${n}`, async () => {
-        const found = script.length ? [] : await ask((t) => {
+        const found = script.length || n === ROUNDS ? [] : await ask((t) => {
           const o = json(t);
           if (!Array.isArray(o?.findings)) throw Object.assign(new Error('gave an answer with no list of findings'), { unreadable: true });
           return o.findings;
@@ -289,7 +291,7 @@ export async function runFix(ids, { agents = 1, spotcheck = true } = {}) {
   logEvent({ type: 'run', status: 'finished', note: `Fix run: ${chosen.length} passages.` });
   await notify('Fix run finished', [
     `${fresh} walkthroughs fixed this run, ${chosen.length - todo.length} were already done`,
-    leftOver ? `${leftOver} needed all 3 rounds; Opus made the final call on those` : 'Every passage came out clean',
+    leftOver ? `${leftOver} needed a second fix; Opus made the final call on those` : 'Every passage came out clean',
     gaveUp.length && `Kept the old walkthrough for: ${gaveUp.map((p) => span(p.start, p.end)).join('; ')}`,
     report && `Kimi spot check: ${report.clean} of ${report.checked} with nothing found ($${report.cost})`].filter(Boolean));
   return { fresh, leftOver, gaveUp, report };

@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 5
+      },
+      "problem": "The answer 'bread' was already shown in card 3's right answer ('Pots of meat and plenty of bread'). Card 3 comes earlier, so card 5 reuses an answer the baker has already seen and is given away by it.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The answer 'meat' was already shown in card 3's right answer ('Pots of meat and plenty of bread'). Card 10 reuses an answer the baker has already seen, so it tests recall of that card and not the passage.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 15
+      },
+      "problem": "The blank asks for the wording of a description ('wafers made with ___'). Nothing on the earlier cards lets the baker reason out honey over milk or figs, so the pick is luck. This is also a guess at the next words of a line.",
+      "rule": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+    }
+  ]
+}

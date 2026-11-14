@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 8:1",
-          "text": "The whole earth is under water, and one ark is floating with Noah, his family and the animals inside. Just waves in every direction. But God remembered Noah and all the animals and livestock that were with him in the ark.",
+          "text": "The whole earth is under water, and the ark is floating on top (Genesis 7:18-19). Inside are Noah, the man God told to build it (Genesis 6:14), plus his family and the animals. But God remembered Noah and all the animals and livestock that were with him in the ark.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 8:1",
-          "question": "God remembers Noah out on the water. What does God send over the earth so the waters start going down?",
+          "question": "God remembers Noah out on the water. What does He send over the earth?",
           "answers": [
             {
               "text": "A wind",
@@ -67,28 +67,27 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 8:4",
-          "text": "On the seventeenth day of the seventh month, the ark comes to rest. Friend, I circle a parking lot for TEN minutes and I want to throw a party when I finally get a spot.",
+          "text": "On the seventeenth day of the seventh month, the ark comes to rest. You know that feeling when you've circled a parking lot for TEN minutes and a spot opens up?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 8:4",
-          "question": "The ark comes to rest on the mountains of ___.",
+          "question": "Where does the ark come to rest?",
           "answers": [
             {
-              "text": "Ararat",
-              "correct": true,
-              "blank": 1
+              "text": "The mountains of Ararat",
+              "correct": true
             },
             {
-              "text": "Sinai",
+              "text": "The mountains of Gilboa",
               "correct": false
             },
             {
-              "text": "Carmel",
+              "text": "The hills of Samaria",
               "correct": false
             }
           ],
@@ -106,20 +105,21 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 8:5",
-          "question": "The waters keep going down. What becomes visible on the first day of the tenth month?",
+          "question": "On the first day of the tenth month, the tops of the ___ become visible.",
           "answers": [
             {
-              "text": "The tops of the mountains",
-              "correct": true
+              "text": "mountains",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The walls of a city",
+              "text": "trees",
               "correct": false
             },
             {
-              "text": "A field full of wheat",
+              "text": "towers",
               "correct": false
             }
           ],
@@ -137,20 +137,16 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 8:7",
-          "question": "Noah sends a raven out the window of the ark. What does the raven do?",
+          "question": "The raven Noah sends out keeps flying back and forth until the waters dry up.",
           "answers": [
             {
-              "text": "It keeps flying back and forth",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "It returns with a twig",
-              "correct": false
-            },
-            {
-              "text": "It stays perched on the roof",
+              "text": "False",
               "correct": false
             }
           ],
@@ -161,7 +157,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Genesis 8:8",
-          "text": "Then Noah sends out a dove to see if the waters have gone down from the ground. A dove sent out to check on everybody is Minty all day long.",
+          "text": "Then Noah sends out a dove to see if the waters have gone down from the ground. My cookie cutter kid Minty is shaped like a dove and always checked on everybody, so this bird is basically family.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -170,7 +166,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 8:9",
-          "question": "On the dove's first trip, the waters are still covering the surface of all the earth. What happens to her?",
+          "question": "The dove goes out on her first trip from the ark. What happens to her?",
           "answers": [
             {
               "text": "She finds nowhere to land and returns",
@@ -192,7 +188,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Genesis 8:9",
-          "text": "So Noah reaches out his hand and brings her back inside the ark. A whole boat full of animals, and the man still makes time for one little bird.",
+          "text": "The waters still cover the surface of all the earth, so Noah reaches out his hand and brings her back inside the ark. A whole boat full of animals, and this man makes time for one little bird.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -207,21 +203,20 @@
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 8:11",
-          "question": "The dove returns to Noah in the evening with a freshly plucked ___ leaf in her beak.",
+          "question": "The dove comes back to Noah in the evening. What is she carrying in her beak?",
           "answers": [
             {
-              "text": "olive",
-              "correct": true,
-              "blank": 1
+              "text": "An olive leaf",
+              "correct": true
             },
             {
-              "text": "fig",
+              "text": "A fig leaf",
               "correct": false
             },
             {
-              "text": "oak",
+              "text": "A palm branch",
               "correct": false
             }
           ],
@@ -231,16 +226,21 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Genesis 8:11",
-          "question": "Because of that olive leaf, Noah knew the waters had receded from the earth.",
+          "question": "The dove's olive leaf is freshly plucked. So Noah knows the waters have ___.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "receded",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "risen",
+              "correct": false
+            },
+            {
+              "text": "stilled",
               "correct": false
             }
           ],
@@ -284,23 +284,28 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 8:13",
-          "text": "In Noah's six hundred and first year, on the first day of the first month, Noah removes the covering from the ark and takes a look outside. Six hundred and one years old and STILL pulling the covering off himself, friend, and I pulled a muscle reaching for the sprinkles.",
-          "needs_agent_fix": true,
+          "text": "In Noah's six hundred and first year, on the first day of the first month, Noah removes the covering from the ark. Then he takes a look, like opening the oven door to check on a batch.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Genesis 8:13",
-          "question": "When Noah removes the covering from the ark, he sees that the surface of the ground is dry.",
+          "question": "Noah removes the covering from the ark and sees that the surface of the ground is ___.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "dry",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "flooded",
+              "correct": false
+            },
+            {
+              "text": "frozen",
               "correct": false
             }
           ],
@@ -318,24 +323,25 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 8:16",
-          "question": "The earth is fully dry when God speaks to Noah. What does He tell Noah and his family to do?",
+          "question": "Once the earth is fully dry, God tells Noah and his family to ___ the ark.",
           "answers": [
             {
-              "text": "Come out of the ark",
-              "correct": true
+              "text": "leave",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Wait seven more days",
+              "text": "repair",
               "correct": false
             },
             {
-              "text": "Send out the dove again",
+              "text": "seal",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -372,21 +378,20 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 8:20",
-          "question": "For his burnt offerings, Noah takes from every kind of ___ animal and bird.",
+          "question": "Noah offers burnt offerings on the altar. Which animals and birds does he take them from?",
           "answers": [
             {
-              "text": "clean",
-              "correct": true,
-              "blank": 1
+              "text": "The clean ones",
+              "correct": true
             },
             {
-              "text": "wild",
+              "text": "The wild ones",
               "correct": false
             },
             {
-              "text": "young",
+              "text": "The young ones",
               "correct": false
             }
           ],
@@ -425,18 +430,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 8:21",
-          "question": "The LORD says He will never again curse the ground because of man, even though every inclination of man's heart is what?",
+          "question": "The LORD says in His heart He will never again curse the ground because of man. What does He say about every inclination of man's heart?",
           "answers": [
             {
-              "text": "Evil from his youth",
+              "text": "It is evil from his youth",
               "correct": true
             },
             {
-              "text": "Pure from his youth",
+              "text": "It is pure from his youth",
               "correct": false
             },
             {
-              "text": "Humble from his youth",
+              "text": "It is humble from his youth",
               "correct": false
             }
           ],
@@ -448,7 +453,50 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 8:21",
-          "question": "The LORD also says in His heart that never again will He destroy all living creatures as He has done.",
+          "question": "The LORD also says in His heart that someday He will again destroy all living creatures as He has done.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Genesis 8:22",
+          "text": "The LORD goes on: as long as the earth endures, seedtime and harvest, cold and heat, summer and winter, day and night shall never cease. So every snooze button out there is fighting a losing battle, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Genesis 9:1",
+          "text": "Then God blesses Noah and his sons, and He says to them, \"Be fruitful and multiply and fill the earth.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Genesis 9:2-3",
+          "text": "God says every creature will fear and dread them, and everything that lives and moves will be food for them, just as He gave the green plants. But there's one catch.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Genesis 9:4",
+          "question": "The catch is that Noah's family must not eat meat with its lifeblood still in it.",
           "answers": [
             {
               "text": "True",
@@ -463,87 +511,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Genesis 8:22",
-          "text": "Then the LORD says that as long as the earth endures, seedtime and harvest, cold and heat, summer and winter, day and night shall never cease. So morning is GUARANTEED, friend, and my snooze button has been arguing with that promise for years.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Genesis 9:1",
-          "text": "Then God blesses Noah and his sons. And He tells them what to do next.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 9:1",
-          "question": "God tells Noah and his sons to be fruitful and multiply and ___ the earth.",
-          "answers": [
-            {
-              "text": "fill",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "guard",
-              "correct": false
-            },
-            {
-              "text": "farm",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Genesis 9:2-3",
-          "text": "God says every creature will fear and dread them, and everything that lives and moves will be food for them, just as He gave the green plants. But there's one catch.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 9:4",
-          "question": "Here's the catch for Noah's family: they must not eat meat with its ___ still in it.",
-          "answers": [
-            {
-              "text": "lifeblood",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "fat",
-              "correct": false
-            },
-            {
-              "text": "skin",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 9:5",
+          "text": "Then God says He will require the life of any man or beast by whose hand human blood is shed. He will demand an accounting from anyone who takes the life of his fellow man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Genesis 9:5",
-          "text": "Then God gets serious. He will demand an accounting from anyone who takes the life of his fellow man.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 9:6",
@@ -554,11 +530,11 @@
               "correct": true
             },
             {
-              "text": "People were the last thing God made",
+              "text": "Few people are left after the flood",
               "correct": false
             },
             {
-              "text": "Noah obeyed everything God commanded",
+              "text": "Men must answer to their rulers",
               "correct": false
             }
           ],
@@ -566,9 +542,9 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
-          "verses": "Genesis 9:1-7",
+          "verses": "Genesis 9:1, 7",
           "text": "And God comes right back around: be fruitful and multiply, spread out across the earth and multiply upon it. He opened this speech with be fruitful and multiply, and He's closing with it too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -633,7 +609,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Genesis 9:12",
-          "text": "Then God says this covenant comes with a sign. Like signing a contract, except this signature is going to be HUGE.",
+          "text": "Then God says this covenant comes with a sign, between Him and Noah's family and every living creature with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -662,25 +638,6 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 9:12",
-          "question": "God says this covenant is only meant to last for Noah's lifetime.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "story",
           "verses": "Genesis 9:14",
           "text": "Here's how it works. Whenever God forms clouds over the earth, and the rainbow appears in the clouds...",
@@ -688,7 +645,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 9:15",
@@ -699,7 +656,7 @@
               "correct": true
             },
             {
-              "text": "Hold back the rain",
+              "text": "Gather every living creature",
               "correct": false
             },
             {
@@ -707,19 +664,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Genesis 9:16",
-          "text": "Notice who's doing the remembering: God says whenever the rainbow appears, He will see it and remember. Meanwhile I set three timers and STILL forget a tray in the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
+          "kind": "story",
+          "verses": "Genesis 9:16",
+          "text": "God says whenever the rainbow appears in the clouds, He will see it and remember. Next time you see somebody pull over just to snap a picture of a rainbow, friend, they're onto something.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 9:16",
@@ -731,11 +688,11 @@
               "blank": 1
             },
             {
-              "text": "seasonal",
+              "text": "conditional",
               "correct": false
             },
             {
-              "text": "temporary",
+              "text": "seasonal",
               "correct": false
             }
           ],
@@ -743,7 +700,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Genesis 9:17",
           "text": "So God tells Noah one more time: this is the sign of the covenant He has established between Him and every creature on the earth. Hold that rainbow in your mind, friend, because Noah's story isn't finished yet.",

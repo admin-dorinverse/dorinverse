@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 31:1",
-          "text": "Jacob has been working for his father-in-law Laban, and Jacob has gotten rich. Now word gets back to Jacob about what Laban's sons are saying about him. And friend, it is NOT a thank-you card.",
+          "text": "Jacob, Isaac's son, has been living with his father-in-law Laban and shepherding Laban's flocks (Genesis 30:31). Now word gets back to Jacob about what Laban's sons are saying about him. And friend, it is NOT a thank-you card.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -109,8 +109,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 31:4",
-          "text": "So Jacob sends for Rachel and Leah, Laban's daughters and his own wives, and calls them out to the field where his flocks are. A family meeting in a field full of sheep. Friend, that is a LOT of listeners.",
-          "needs_agent_fix": true,
+          "text": "So Jacob calls his wives Rachel and Leah, Laban's daughters, out to the field where his flocks are. A family meeting with the whole flock listening in.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -118,18 +118,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 31:5",
-          "question": "Jacob tells his wives their father's attitude toward him has changed. But what does Jacob say has been with him?",
+          "question": "Out in the field, Jacob tells his wives someone has been with him through all of this. Who?",
           "answers": [
             {
               "text": "The God of his father",
               "correct": true
             },
             {
-              "text": "His brother Esau's help",
+              "text": "His mother Rebekah",
               "correct": false
             },
             {
-              "text": "The favor of Laban's sons",
+              "text": "His brother Esau",
               "correct": false
             }
           ],
@@ -140,7 +140,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Genesis 31:6-7",
-          "text": "Jacob says he served their father with all his strength. Meanwhile Laban kept cheating him by changing his wages, which is like your boss rewriting your paycheck every time you turn around.",
+          "text": "Jacob says he served their father with all his strength, but Laban cheated him and kept changing his wages. That's like your boss rewriting your paycheck every time you turn around.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -190,7 +190,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Genesis 31:8",
-          "text": "Jacob tells them that if Laban said the speckled ones would be his pay, the whole flock had speckled babies. And if Laban said streaked, the whole flock went streaked, like the animals were READING THE CONTRACT.",
+          "text": "Jacob tells them that if Laban said the speckled ones would be his pay, the whole flock had speckled babies. And if Laban said streaked, the whole flock had streaked babies, like the animals were READING THE CONTRACT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -199,18 +199,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 31:9",
-          "question": "So Jacob tells his wives that ___ has taken away their father's livestock and given them to him.",
+          "question": "Jacob tells his wives that God has taken away their father's ___ and given them to him.",
           "answers": [
             {
-              "text": "God",
+              "text": "livestock",
               "correct": true
             },
             {
-              "text": "Isaac",
+              "text": "servants",
               "correct": false
             },
             {
-              "text": "Esau",
+              "text": "fields",
               "correct": false
             }
           ],
@@ -233,19 +233,19 @@
           "question": "In Jacob's dream, the angel tells him to look up at the males mating with the flock. What are they like?",
           "answers": [
             {
-              "text": "Every one streaked or spotted",
+              "text": "All streaked or spotted or speckled",
               "correct": true
             },
             {
-              "text": "Every one pure white",
+              "text": "All pure white without a mark",
               "correct": false
             },
             {
-              "text": "Every one solid black",
+              "text": "All solid black from head to tail",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -253,18 +253,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 31:12",
-          "question": "Why does the angel in Jacob's dream say this is happening?",
+          "question": "The angel in Jacob's dream says this is happening because something has been seen. What has been seen?",
           "answers": [
             {
-              "text": "He has seen what Laban did to Jacob",
+              "text": "All that Laban has done to Jacob",
               "correct": true
             },
             {
-              "text": "Jacob asked Him for a bigger flock",
+              "text": "All the gifts Jacob has offered",
               "correct": false
             },
             {
-              "text": "Laban's sons needed to be humbled",
+              "text": "All the sheep Jacob has lost",
               "correct": false
             }
           ],
@@ -275,8 +275,8 @@
           "card": 17,
           "kind": "story",
           "verses": "Genesis 31:13",
-          "text": "Then the angel says, \"I am the God of Bethel, where you anointed the pillar and made a solemn vow to Me.\" In other words: Jacob, you KNOW Me. We've met.",
-          "needs_agent_fix": true,
+          "text": "Then the angel says, \"I am the God of Bethel, where you anointed the pillar and made a solemn vow to Me.\" Bethel is where Jacob once poured oil on a stone pillar and made a vow to God (Genesis 28:18-20).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -315,16 +315,20 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Genesis 31:15",
-          "question": "Rachel and Leah say their father treats them like outsiders.",
+          "question": "Rachel and Leah ask, aren't they regarded by their father as ___?",
           "answers": [
             {
-              "text": "True",
+              "text": "outsiders",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "servants",
+              "correct": false
+            },
+            {
+              "text": "rivals",
               "correct": false
             }
           ],
@@ -376,20 +380,20 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 31:16",
-          "question": "Rachel and Leah's answer to Jacob: do whatever ___ has told you.",
+          "question": "After all that, what do Rachel and Leah tell Jacob to do?",
           "answers": [
             {
-              "text": "God",
+              "text": "Do whatever God has told him",
               "correct": true
             },
             {
-              "text": "Laban",
+              "text": "Ask their father for their share",
               "correct": false
             },
             {
-              "text": "Isaac",
+              "text": "Wait until their brothers calm down",
               "correct": false
             }
           ],
@@ -400,7 +404,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Genesis 31:17-18",
-          "text": "Then Jacob gets up, puts his children and wives on camels, and drives all his livestock and everything he gained in Paddan-aram out ahead of him. Friend, that's not packing up, that's a PARADE.",
+          "text": "Then Jacob gets up, puts his children and wives on camels, and drives all his livestock and everything he gained in Paddan-aram, where he's been living, out ahead of him. Friend, that's not packing up, that's a PARADE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -431,7 +435,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Genesis 31:19",
-          "text": "Now, while Laban is out shearing his sheep, somebody in Jacob's family takes something of his.",
+          "text": "Now, while Laban is out shearing his sheep, somebody takes something that belongs to Laban.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -451,7 +455,7 @@
               "correct": false
             },
             {
-              "text": "Jacob",
+              "text": "Bilhah",
               "correct": false
             }
           ],
@@ -461,17 +465,21 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Genesis 31:20",
-          "question": "Before he goes, Jacob tells Laban he's leaving.",
+          "question": "Jacob deceives Laban the Aramean. How does Jacob do it?",
           "answers": [
             {
-              "text": "True",
+              "text": "He runs off without telling him",
+              "correct": true
+            },
+            {
+              "text": "He says he's going to visit Isaac",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He says he's only moving the flocks",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -480,20 +488,20 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 31:21",
-          "question": "Jacob flees with everything he has. What river does he cross?",
+          "question": "Jacob flees with everything he has and crosses the ___ River.",
           "answers": [
             {
-              "text": "The Euphrates",
+              "text": "Euphrates",
               "correct": true
             },
             {
-              "text": "The Jordan",
+              "text": "Jordan",
               "correct": false
             },
             {
-              "text": "The Nile",
+              "text": "Nile",
               "correct": false
             }
           ],
@@ -504,7 +512,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Genesis 31:21",
-          "text": "Across the Euphrates he goes, headed for the hill country of Gilead. Keep your apron on, friend, because this story is FAR from finished.",
+          "text": "He's headed for the hill country of Gilead. Keep your apron on, friend, because this story is FAR from finished.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

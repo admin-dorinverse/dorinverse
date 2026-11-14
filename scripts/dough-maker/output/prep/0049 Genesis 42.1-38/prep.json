@@ -3,13 +3,13 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Genesis 42:1-17",
+      "verses": "Genesis 42:1-16",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Genesis 42:1",
-          "text": "Back in Canaan, Joseph's father Jacob learns there's grain in Egypt, and his sons just stand there. Jacob says, \"Why are you staring at one another?\" Friend, that's every group chat right after somebody asks, \"So who's paying?\"",
+          "text": "Famine has spread over all the earth, and Joseph, the son Jacob believes is dead, is now ruler over Egypt (Genesis 37:33; 41:41, 57). Back in Canaan, Jacob hears there's grain in Egypt and asks his sons, \"Why are you staring at one another?\" Friend, that's every group chat right after somebody asks, \"So who's paying?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -79,11 +79,11 @@
               "correct": true
             },
             {
-              "text": "Reuben",
+              "text": "Dan",
               "correct": false
             },
             {
-              "text": "Judah",
+              "text": "Asher",
               "correct": false
             }
           ],
@@ -121,8 +121,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Genesis 42:5-6",
-          "text": "Jacob's sons join the crowd heading to Egypt, because the famine has hit Canaan too. And the man selling grain to everybody? That's Joseph, the ruler of the land.",
-          "needs_agent_fix": true,
+          "text": "Jacob's sons join the crowd heading to Egypt, because the famine has hit Canaan too. The ruler selling grain to all the people is Joseph, the brother they sold (Genesis 37:28).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -152,7 +152,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Genesis 42:7-8",
-          "text": "Joseph sees his brothers and recognizes them. They look RIGHT at him and don't recognize him at all, and friend, if I walked in, you'd know me by the mustache from across the room.",
+          "text": "Joseph sees his brothers and recognizes them, but they don't recognize him at all. Friend, if I walked in, you'd know me by the mustache from across the room.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -193,7 +193,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Genesis 42:9",
-          "text": "Joseph remembers his dreams about them. Then he opens his mouth, and friend, it is NOT a welcome speech.",
+          "text": "Joseph remembers his dreams about them, like the one where their sheaves bowed down to his sheaf (Genesis 37:7). Then he opens his mouth, and friend, it is NOT a welcome speech.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -233,18 +233,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 42:13",
-          "question": "Trying to clear their names, the brothers tell Joseph they're ___ brothers, the sons of one man in Canaan.",
+          "question": "Then the brothers tell Joseph they're ___ brothers, the sons of one man in Canaan.",
           "answers": [
             {
               "text": "twelve",
               "correct": true
             },
             {
-              "text": "ten",
+              "text": "nine",
               "correct": false
             },
             {
-              "text": "eleven",
+              "text": "fourteen",
               "correct": false
             }
           ],
@@ -274,8 +274,8 @@
           "card": 17,
           "kind": "story",
           "verses": "Genesis 42:13",
-          "text": "And the other missing brother? They say \"one is no more.\" Friend, that's texting the group chat \"Anybody heard from Mike?\" while Mike is IN the group chat.",
-          "needs_agent_fix": true,
+          "text": "As for the other brother, they say \"one is no more.\" Friend, that brother is standing RIGHT THERE, selling them grain!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -311,24 +311,9 @@
         },
         {
           "card": 20,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 42:17",
-          "question": "Joseph says one brother can go get the youngest while the rest stay locked up. Then he puts all of them in prison for ___ days.",
-          "answers": [
-            {
-              "text": "three",
-              "correct": true
-            },
-            {
-              "text": "seven",
-              "correct": false
-            },
-            {
-              "text": "forty",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 42:16",
+          "text": "Joseph says one of them can go get the youngest while the rest stay locked up, so the truth of their words can be tested. If their words turn out untrue, they're spies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -336,13 +321,13 @@
     },
     {
       "stop": 2,
-      "verses": "Genesis 42:18-28",
+      "verses": "Genesis 42:17-28",
       "cards": [
         {
           "card": 1,
           "kind": "story",
-          "verses": "Genesis 42:18",
-          "text": "On the third day, Joseph tells them, \"I fear God.\" Then he pitches a new deal, and I bet by now those brothers are ready to sign ANYTHING.",
+          "verses": "Genesis 42:17-18",
+          "text": "Joseph locks them all up for three days, and on the third day he tells them, \"I fear God.\" Then he pitches a new deal, and I bet by now those brothers are ready to sign ANYTHING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -373,16 +358,16 @@
           "card": 3,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Genesis 42:20",
-          "question": "Under Joseph's new deal, the brothers who go home with grain must bring their youngest brother back to him.",
+          "verses": "Genesis 42:19",
+          "question": "Under Joseph's new deal, the brothers going home have to leave their grain behind.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -392,7 +377,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Genesis 42:20-21",
-          "text": "The brothers agree to it. Then they start talking among themselves, and friend, it goes from business meeting to therapy session REAL fast.",
+          "text": "Joseph still wants their youngest brother brought to him, and they agree to it. Then they start talking among themselves, and friend, it goes from business meeting to therapy session REAL fast.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -446,7 +431,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 42:22",
-          "text": "Reuben adds, \"Now we must account for his blood!\" Friend, I bet you could hear a sprinkle drop in that room.",
+          "text": "Reuben adds, \"Now we must account for his blood!\" I think that one hits every brother in the room.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -455,15 +440,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 42:23",
-          "question": "The brothers know Joseph understands every word they're saying to one another.",
+          "question": "The brothers have no idea Joseph understands what they're saying to one another.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -473,7 +458,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Genesis 42:23-24",
-          "text": "There's an interpreter between them, so they have no idea he's following along. And Joseph turns away from them and weeps.",
+          "text": "That's because there's an interpreter between them. And Joseph turns away from them and weeps.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -489,11 +474,11 @@
               "correct": true
             },
             {
-              "text": "Reuben",
+              "text": "Issachar",
               "correct": false
             },
             {
-              "text": "Judah",
+              "text": "Zebulun",
               "correct": false
             }
           ],
@@ -551,7 +536,7 @@
               "correct": true
             },
             {
-              "text": "They laugh and thank the ruler",
+              "text": "They blame the brother who found it",
               "correct": false
             },
             {
@@ -611,27 +596,23 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 42:35",
-          "text": "Then they start emptying their sacks, one by one.",
+          "text": "Then they start emptying their sacks, and there in each man's sack is his bag of silver!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 42:35",
-          "question": "What turns up as the brothers empty their sacks?",
+          "question": "Jacob and his sons are dismayed when they see the bags of silver.",
           "answers": [
             {
-              "text": "Each man's bag of silver",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Nothing but the grain",
-              "correct": false
-            },
-            {
-              "text": "A message from the ruler",
+              "text": "False",
               "correct": false
             }
           ],
@@ -640,48 +621,29 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 42:35",
-          "question": "When Jacob and his sons see all the bags of silver, they're relieved.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 42:36",
+          "text": "Then Jacob speaks up: \"You have deprived me of my sons.\" I think this one hurts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Genesis 42:36",
-          "text": "Then Jacob speaks up: \"You have deprived me of my sons.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 42:36",
-          "question": "Jacob goes on. He says Joseph is gone and ___ is no more.",
+          "question": "Jacob says Joseph is gone, Simeon is no more, and now they want to take Benjamin. How does he sum it all up?",
           "answers": [
             {
-              "text": "Simeon",
+              "text": "Everything is going against me",
               "correct": true
             },
             {
-              "text": "Benjamin",
+              "text": "This famine will be the end of us",
               "correct": false
             },
             {
-              "text": "Reuben",
+              "text": "I should never have sent you",
               "correct": false
             }
           ],
@@ -689,15 +651,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
-          "kind": "story",
-          "verses": "Genesis 42:36",
-          "text": "Then he says, \"Now you want to take Benjamin. Everything is going against me!\" Friend, I know that feeling. I spent YEARS in the back of a junk drawer under a pile of takeout menus.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 42:37",
@@ -720,7 +674,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 42:38",
@@ -736,23 +690,23 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "Genesis 42:38",
           "text": "Jacob says Benjamin's brother is dead and he alone is left. If harm comes to him on the journey, \"you will bring my gray hair down to Sheol in sorrow.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Genesis 42:38",
           "text": "And that's where we leave this family for now. Hang onto your apron, friend, because this story is NOT done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

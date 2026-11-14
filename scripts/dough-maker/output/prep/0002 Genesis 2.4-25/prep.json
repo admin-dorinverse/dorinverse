@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 2:4-5",
-          "text": "Friend, this is the account of the heavens and the earth when they were created, in the day that the LORD God made them. No shrub has appeared yet, no plant has sprouted, and the ground is just sitting there like an empty cookie sheet.",
+          "text": "Friend, God has made the heavens and the earth and rested on the seventh day (Genesis 1:1-2:3). Now comes the account of the heavens and the earth, in the day the LORD God made them. No shrub has appeared yet, no plant has sprouted, and the ground is just sitting there like an empty cookie sheet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -63,8 +63,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Genesis 2:7",
-          "text": "The ground is watered and waiting. Then the LORD God forms the man, and He doesn't use gold or marble. He uses something WAY more humble.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD God forms the man, and what He starts with comes straight from the ground.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -94,20 +94,16 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 2:7",
-          "question": "The LORD God has formed the man, but the man isn't a living being yet. What does the LORD God do next?",
+          "question": "The LORD God breathes the breath of life into the man's nostrils, and the man becomes a living being.",
           "answers": [
             {
-              "text": "Breathes the breath of life into his nostrils",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Speaks a blessing over the top of his head",
-              "correct": false
-            },
-            {
-              "text": "Washes him clean in the waters of the spring",
+              "text": "False",
               "correct": false
             }
           ],
@@ -118,7 +114,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 2:7-8",
-          "text": "Dust to a living being in ONE breath, and I sat under dust in a junk drawer for YEARS and all it did was make me look older. Now the LORD God plants a garden in Eden, in the east, and places the man right there.",
+          "text": "Dust to a living being in ONE breath, and I sat under dust in the back of a junk drawer for YEARS and all it ever gave me was a sneeze. Now the LORD God plants a garden in Eden, in the east, and places the man right there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -153,8 +149,8 @@
           "card": 10,
           "kind": "story",
           "verses": "Genesis 2:10-14",
-          "text": "A river flows out of Eden to water the garden, and from there it branches into four: the Pishon, the Gihon, the Tigris and the Euphrates. The Pishon winds through the land of Havilah, where the gold is pure. I came out of a 25 cent bin, so that verse hits DIFFERENT.",
-          "needs_agent_fix": true,
+          "text": "A river flows out of Eden to water the garden and branches into four: the Pishon, the Gihon, the Tigris and the Euphrates. The Pishon winds through the land of Havilah, where the gold is pure, and I came out of a 25 cent bin, so that verse hits DIFFERENT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -177,7 +173,7 @@
               "correct": true
             },
             {
-              "text": "To rest from all his work",
+              "text": "To build a city in the east",
               "correct": false
             },
             {
@@ -200,16 +196,16 @@
           "card": 14,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Genesis 2:16-17",
-          "question": "The LORD God tells the man he may eat freely from every tree of the garden except one.",
+          "verses": "Genesis 2:16",
+          "question": "The LORD God tells the man he may eat from only one tree in the garden.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -241,25 +237,20 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Genesis 2:17",
-          "question": "The LORD God warns the man that in the day he eats of that tree, he will surely ___.",
+          "question": "The LORD God warns that in the day the man eats from the forbidden tree, he will surely die.",
           "answers": [
             {
-              "text": "die",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "wander",
-              "correct": false
-            },
-            {
-              "text": "hunger",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -272,8 +263,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 2:18",
-          "text": "The garden is planted, the river is flowing, and the man has his job. Then the LORD God says something is NOT good.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD God speaks, and He says something is not good.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -288,7 +279,7 @@
               "correct": true
             },
             {
-              "text": "For the garden to go without rain",
+              "text": "For the rivers to run dry",
               "correct": false
             },
             {
@@ -327,7 +318,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Genesis 2:19",
-          "text": "Then out of the ground the LORD God forms every beast of the field and every bird of the air. And He brings them to the man.",
+          "text": "And out of the ground the LORD God forms every beast of the field and every bird of the air. And He brings them to the man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -367,7 +358,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 2:20",
-          "question": "After naming all the livestock, birds and beasts, the man finds a suitable helper among them.",
+          "question": "After naming all the livestock, birds and beasts, the man finds a match for himself among them.",
           "answers": [
             {
               "text": "True",
@@ -416,7 +407,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Genesis 2:21",
-          "text": "Then He closes up the spot with flesh. Greatest surgery ever: no waiting room, no paperwork, and the patient sleeps through the WHOLE thing.",
+          "text": "Then He closes up the spot with flesh. The man sleeps through the WHOLE thing, and I wake up if one sprinkle hits the floor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -448,7 +439,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Genesis 2:23",
-          "text": "Then the man speaks up. He says she's bone of his bones and flesh of his flesh, and I bet you could hear the relief clear across the garden.",
+          "text": "Then the man speaks up. He says she's bone of his bones, and I bet you could hear the relief clear across the garden.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -464,7 +455,7 @@
               "correct": true
             },
             {
-              "text": "Because she was formed from dust",
+              "text": "Because she would rule over the animals",
               "correct": false
             },
             {
@@ -479,28 +470,23 @@
           "card": 14,
           "kind": "story",
           "verses": "Genesis 2:24",
-          "text": "Then the passage explains: for this reason a man will leave his father and mother and be united to his wife.",
+          "text": "Then the passage says a man will be united to his wife, \"and they will become one flesh.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Genesis 2:24",
-          "question": "When a man leaves his father and mother and is united to his wife, the two of them will become one ___.",
+          "question": "The passage says that for this reason a man will leave his father and mother to be united to his wife.",
           "answers": [
             {
-              "text": "flesh",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "voice",
-              "correct": false
-            },
-            {
-              "text": "tribe",
+              "text": "False",
               "correct": false
             }
           ],
@@ -511,7 +497,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Genesis 2:25",
-          "text": "The man and his wife are both naked, and they are not ashamed. And that's where we'll stop for now, friend, because this story is NOT done.",
+          "text": "The man and his wife are both naked, and they are not ashamed. That's the garden for now, friend, but trust me, this story keeps going.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

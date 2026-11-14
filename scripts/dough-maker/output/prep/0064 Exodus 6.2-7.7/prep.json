@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Exodus 5:23-6:2",
-          "text": "Moses just told the LORD that speaking to Pharaoh only brought trouble on the people, and the LORD answered that now Moses will see what He does to Pharaoh. God isn't done talking, and He opens with this: “I am the LORD.” Friend, when God starts with His name, you put the cookie DOWN and you listen.",
+          "verses": "Exodus 6:2",
+          "text": "Moses, Israel's leader, just told the LORD that ever since he went to Pharaoh, king of Egypt, Pharaoh has brought trouble on the people (Exodus 5:23). The LORD answered that now Moses will see what He will do to Pharaoh (Exodus 6:1), and God also tells Moses, “I am the LORD.” Friend, I bet Moses feels like the guy who offered to fix a leaky faucet and flooded the WHOLE kitchen.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,10 +18,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 6:3",
-          "question": "God says He appeared to Abraham, Isaac and Jacob, Israel's forefathers, as God Almighty. Which name of His did He NOT make known to them?",
+          "question": "God tells Moses He did not make Himself known by His name the LORD to Abraham, Isaac and Jacob, the forefathers of the Israelites. What name did He appear to them as?",
           "answers": [
             {
-              "text": "The LORD",
+              "text": "God Almighty",
               "correct": true
             },
             {
@@ -29,7 +29,7 @@
               "correct": false
             },
             {
-              "text": "The Holy One",
+              "text": "The Everlasting God",
               "correct": false
             }
           ],
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Exodus 6:4",
-          "text": "Then God brings up the covenant He set up with those three. The deal: He would give them the land of Canaan.",
+          "text": "Then God says He established His covenant with Abraham, Isaac and Jacob to give them the land of Canaan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -69,29 +69,21 @@
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Exodus 6:5",
-          "text": "God says He has heard the groaning of the Israelites, the ones the Egyptians are enslaving. Not left on read, friend, HEARD.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 6:5",
-          "question": "God has heard the Israelites groaning, and He says He has remembered His ___.",
+          "question": "God says He has heard the ___ of the Israelites, whom the Egyptians are enslaving.",
           "answers": [
             {
-              "text": "covenant",
+              "text": "groaning",
               "correct": true
             },
             {
-              "text": "servants",
+              "text": "singing",
               "correct": false
             },
             {
-              "text": "altar",
+              "text": "feasting",
               "correct": false
             }
           ],
@@ -99,10 +91,18 @@
           "needs_human_decision": false
         },
         {
+          "card": 6,
+          "kind": "story",
+          "verses": "Exodus 6:5",
+          "text": "And God says He has remembered His covenant. I'll be honest, friend, that line gets me.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 7,
           "kind": "story",
           "verses": "Exodus 6:6",
-          "text": "So God hands Moses a message for the Israelites, and it is LOADED with “I will.” He will bring them out from under the yoke of the Egyptians and deliver them from their bondage.",
+          "text": "So God hands Moses a message for the Israelites, and it is LOADED with “I will”. He will bring them out from under the yoke of the Egyptians and deliver them from their bondage.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -111,7 +111,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 6:6",
-          "question": "God tells the Israelites He will redeem them. How does He say He'll do it?",
+          "question": "In His message for the Israelites, God says He will redeem them. How does He say He'll do it?",
           "answers": [
             {
               "text": "With an outstretched arm and mighty acts of judgment",
@@ -131,32 +131,32 @@
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Exodus 6:7",
-          "text": "And God isn't just getting them out of Egypt. He says, “I will take you as My own people…”",
+          "question": "Bringing the Israelites out of Egypt isn't the end of it. What else does God say He'll do with them?",
+          "answers": [
+            {
+              "text": "Take them as His own people",
+              "correct": true
+            },
+            {
+              "text": "Make them rulers over Egypt",
+              "correct": false
+            },
+            {
+              "text": "Lead them back to Haran",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Exodus 6:7",
-          "question": "God says He'll take the Israelites as His own people. What does He say He will be to them?",
-          "answers": [
-            {
-              "text": "Their God",
-              "correct": true
-            },
-            {
-              "text": "Their King",
-              "correct": false
-            },
-            {
-              "text": "Their Guide",
-              "correct": false
-            }
-          ],
+          "text": "He also says He'll be their God, and they will know He is the LORD their God, the One who brought them out from under the yoke of the Egyptians.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -165,7 +165,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 6:8",
-          "question": "True or false: God says He'll bring the Israelites into the land He swore to give Abraham, Isaac and Jacob, and give it to them as a possession.",
+          "question": "True or false: God says He will give the Israelites the land He swore to give Abraham, Isaac and Jacob.",
           "answers": [
             {
               "text": "True",
@@ -183,7 +183,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Exodus 6:9",
-          "text": "Moses carries every one of those “I will” promises straight to the Israelites. Friend, if somebody had brought me news like that back in the junk drawer, I'd have hopped so high I DENTED the drawer above me.",
+          "text": "Moses relays this message to the Israelites. Friend, if somebody had brought me news like that back when I was stuck in a junk drawer, I'd have hopped so high I DENTED the drawer above me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -218,11 +218,11 @@
               "correct": true
             },
             {
-              "text": "Their fear of Pharaoh's taskmasters",
+              "text": "Their love for the land of Egypt",
               "correct": false
             },
             {
-              "text": "Their doubt about Moses and Aaron",
+              "text": "Their trust in the gods of Egypt",
               "correct": false
             }
           ],
@@ -233,8 +233,8 @@
           "card": 15,
           "kind": "story",
           "verses": "Exodus 6:10-11",
-          "text": "So the LORD sends Moses to Pharaoh king of Egypt with one message: let the Israelites go out of his land. And Moses has a question about that, friend, because of COURSE he does.",
-          "needs_agent_fix": true,
+          "text": "So the LORD sends Moses to Pharaoh king of Egypt with one message: let the Israelites go out of his land.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -287,7 +287,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Exodus 6:13",
-          "text": "Then the LORD speaks to Moses and his brother Aaron with a charge about the Israelites and Pharaoh king of Egypt: bring the Israelites out of the land of Egypt. Moses asked a question, and the LORD answered with a JOB description.",
+          "text": "Then the LORD speaks to Moses and his brother Aaron. He gives them a charge about the Israelites and Pharaoh king of Egypt: bring the Israelites out of the land of Egypt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -301,7 +301,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 6:14-25",
-          "text": "Now the story pauses for a family tree: the heads of the houses of Reuben, Simeon and Levi. Down Levi's line, Amram married his father's sister Jochebed, and she bore him Aaron and Moses.",
+          "text": "Next comes a family record: the heads of the houses of Reuben, the firstborn of Israel, then Simeon, then Levi. Down Levi's line, Amram married his father's sister Jochebed, and she bore him Aaron and Moses. Aaron married Elisheba, and their sons include Eleazar, whose son is Phinehas.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -309,31 +309,27 @@
           "card": 2,
           "kind": "story",
           "verses": "Exodus 6:26-27",
-          "text": "After all those names, the text points right back at them: it was this Aaron and Moses the LORD told to bring the Israelites out of Egypt, and they're the ones who spoke to Pharaoh king of Egypt.",
+          "text": "This is the Aaron and Moses the LORD told to bring the Israelites out of Egypt by their divisions. They're the ones who spoke to Pharaoh king of Egypt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Exodus 6:28-29",
-          "text": "Back to the day the LORD spoke to Moses in Egypt. He said, “I am the LORD; tell Pharaoh king of Egypt everything I say to you.”",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 6:30",
-          "question": "True or false: Moses tells the LORD he is unskilled in speech and asks why Pharaoh would listen to him.",
+          "type": "multiple_choice",
+          "verses": "Exodus 6:29",
+          "question": "On the day the LORD spoke to Moses in Egypt, He said, “I am the LORD…” What did He tell Moses to pass on to Pharaoh king of Egypt?",
           "answers": [
             {
-              "text": "True",
+              "text": "Everything the LORD says to him",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Only the words Aaron chooses",
+              "correct": false
+            },
+            {
+              "text": "Just a warning about plagues",
               "correct": false
             }
           ],
@@ -341,30 +337,38 @@
           "needs_human_decision": false
         },
         {
+          "card": 4,
+          "kind": "story",
+          "verses": "Exodus 6:30",
+          "text": "But in the LORD's presence, Moses comes back with the same worry: since he's unskilled in speech, why would Pharaoh listen to him? Friend, I get it: hand me a microphone at a work party and I forget my own NAME.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 5,
           "kind": "story",
-          "verses": "Exodus 6:30-7:1",
-          "text": "Friend, I get it: hand me a microphone for a wedding toast and I forget my own NAME. The LORD answers, “See, I have made you like God to Pharaoh…”",
-          "needs_agent_fix": true,
+          "verses": "Exodus 7:1",
+          "text": "The LORD answers Moses, “See, I have made you like God to Pharaoh…”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Exodus 7:1",
-          "question": "The LORD has made Moses like God to Pharaoh. What role does He give Moses' brother Aaron?",
+          "question": "The LORD has made Moses like God to Pharaoh, and Moses' brother Aaron will be Moses' ___.",
           "answers": [
             {
-              "text": "Moses' prophet",
+              "text": "prophet",
               "correct": true
             },
             {
-              "text": "Moses' bodyguard",
+              "text": "bodyguard",
               "correct": false
             },
             {
-              "text": "Pharaoh's advisor",
+              "text": "scribe",
               "correct": false
             }
           ],
@@ -373,37 +377,14 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 7:2",
-          "question": "Moses is to speak all that God commands, and ___ is to tell Pharaoh to let the Israelites go out of his land.",
-          "answers": [
-            {
-              "text": "Aaron",
-              "correct": true
-            },
-            {
-              "text": "Joshua",
-              "correct": false
-            },
-            {
-              "text": "Miriam",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Exodus 7:2-3",
+          "text": "Moses is to speak all the LORD commands, and Aaron is to tell Pharaoh to let the Israelites go out of his land. Then the LORD says He will multiply His signs and wonders in the land of Egypt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Exodus 7:3",
-          "text": "Then God tells Moses and Aaron how this is going to go. He says He will multiply His signs and wonders in the land of Egypt.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 7:3",
@@ -426,11 +407,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 7:3-4",
-          "question": "True or false: God says that once He multiplies His signs and wonders, Pharaoh will listen to Moses and Aaron.",
+          "question": "True or false: God says that once He multiplies His signs and wonders, Pharaoh will listen to Moses.",
           "answers": [
             {
               "text": "True",
@@ -445,30 +426,49 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Exodus 7:4",
-          "text": "Then God says He will lay His hand on Egypt and, by mighty acts of judgment, bring the divisions of His people out of the land of Egypt. That's not a nudge, friend, that's the WHOLE hand.",
+          "text": "Then God says He will lay His hand on Egypt and, by mighty acts of judgment, bring the divisions of His people the Israelites out of the land of Egypt.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Exodus 7:5",
+          "question": "God already said the Israelites will know He is the LORD. When He stretches out His hand and brings them out, who else does He say will know it?",
+          "answers": [
+            {
+              "text": "The Egyptians",
+              "correct": true
+            },
+            {
+              "text": "The Canaanites",
+              "correct": false
+            },
+            {
+              "text": "The Philistines",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 7:5",
-          "question": "When God stretches out His hand against Egypt and brings the Israelites out, what will the Egyptians know?",
+          "type": "true_false",
+          "verses": "Exodus 7:6",
+          "question": "True or false: After all that back and forth, Moses and Aaron did just as the LORD had commanded them.",
           "answers": [
             {
-              "text": "That He is the LORD",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "That Moses is their king",
-              "correct": false
-            },
-            {
-              "text": "That Israel's army is strong",
+              "text": "False",
               "correct": false
             }
           ],
@@ -477,14 +477,6 @@
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Exodus 7:6",
-          "text": "After all that back and forth, here's the part I love. Moses and Aaron did just what the LORD had commanded them.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 7:7",
@@ -507,7 +499,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 7:7",
@@ -530,10 +522,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Exodus 7:7",
-          "text": "And that's where we'll leave it for now. Trust me, friend, Pharaoh hasn't heard the last of these two.",
+          "text": "That's where we stop for now, friend. Keep that oven warm, because this story is NOT done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

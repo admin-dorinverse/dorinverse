@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Genesis 24:2-28",
-          "text": "Abraham's chief servant came looking for a wife for Isaac, Abraham's son, and he's just met Rebekah at the spring. Now Rebekah RUNS home and tells her mother's household everything. That's no casual stroll, friend, that's the whole family group chat blowing up at once.",
+          "verses": "Genesis 24:28",
+          "text": "Abraham's chief servant came looking for a wife for Isaac, Abraham's son (Genesis 24:2-4). At the spring, a young woman named Rebekah watered his camels, and he gave her a gold ring and two gold bracelets (Genesis 24:15-22). Now Rebekah RUNS and tells her mother's household all about it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -24,21 +24,16 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Genesis 24:30",
-          "question": "Before Laban heads out to the spring, he sees something new on his sister Rebekah: a ring and ___.",
+          "question": "Laban goes out to Abraham's servant after he sees the ring and bracelets on his sister Rebekah.",
           "answers": [
             {
-              "text": "bracelets",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "sandals",
-              "correct": false
-            },
-            {
-              "text": "cord",
+              "text": "False",
               "correct": false
             }
           ],
@@ -49,7 +44,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Genesis 24:30",
-          "text": "As soon as Laban sees that jewelry and hears what Rebekah says, he's out the door, and he finds the man standing by the camels near the spring. Nobody moves that fast for me unless the oven timer goes off.",
+          "text": "Laban finds the man standing by the camels near the spring. The only thing that gets ME moving that fast is an oven timer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -126,7 +121,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Genesis 24:33-35",
-          "text": "Laban says, “Please speak,” and the man starts with who he is: Abraham's servant. Then he tells them the LORD has greatly blessed Abraham with sheep and cattle, silver and gold, servants, camels and donkeys.",
+          "text": "Laban says, “Please speak.” So the man tells them he's Abraham's servant, and that the LORD has greatly blessed Abraham with sheep and cattle, silver and gold, servants, camels and donkeys.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -135,7 +130,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:36",
-          "question": "Abraham's servant says Sarah gave Abraham a son in her old age. What has Abraham given that son?",
+          "question": "Abraham's servant says Abraham's wife had a son in her old age. What has Abraham given that son?",
           "answers": [
             {
               "text": "Everything he owns",
@@ -157,43 +152,19 @@
           "card": 11,
           "kind": "story",
           "verses": "Genesis 24:37",
-          "text": "Then he tells them about an oath Abraham made him swear. It's all about where Isaac's wife can come from.",
+          "text": "Then the servant tells them about an oath Abraham made him swear. Isaac's wife can't come from the daughters of the Canaanites, the people whose land Abraham lives in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 24:37",
-          "question": "Abraham made his servant swear not to take a wife for Isaac from the daughters of the ___.",
-          "answers": [
-            {
-              "text": "Canaanites",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Egyptians",
-              "correct": false
-            },
-            {
-              "text": "Philistines",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:38",
-          "question": "So where did Abraham send his servant to find a wife for Isaac instead?",
+          "question": "Abraham's oath ruled out the daughters of the Canaanites. So where did Abraham send his servant to find a wife for Isaac instead?",
           "answers": [
             {
-              "text": "To his own family and relatives",
+              "text": "To his father's house and family",
               "correct": true
             },
             {
@@ -209,19 +180,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Genesis 24:39-40",
-          "text": "The servant says he asked Abraham, ‘What if the woman will not come back with me?’ And Abraham told him the LORD would send His angel with him and make his journey a success.",
+          "text": "The servant says he asked Abraham, “What if the woman will not come back with me?” And Abraham told him the LORD would send His angel with him and make his journey a success.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 24:41",
-          "question": "Abraham told his servant that if the family refused to give her, he would be released from his oath.",
+          "question": "Abraham told his servant that if the family refused to give her, the servant would be released from the oath.",
           "answers": [
             {
               "text": "True",
@@ -236,19 +207,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Genesis 24:42-46",
-          "text": "Then he walks them through his day at the spring: his prayer, and Rebekah showing up before he'd even finished praying, offering to water his camels too. Ask me how MY day went and you get the whole batch, crumbs and all, so I respect this man.",
+          "text": "Then the servant walks them through his day at the spring: his prayer, and Rebekah showing up before he'd even finished praying, offering to water his camels too. Ask me how MY day went and you get the whole batch, crumbs and all, so I respect this man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:47",
-          "question": "Abraham's servant says he asked Rebekah one question before he put the ring and bracelets on her. What was it?",
+          "question": "Abraham's servant says that before he put the ring and bracelets on Rebekah, he asked her something. What did he ask?",
           "answers": [
             {
               "text": "Whose daughter are you",
@@ -267,15 +238,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Genesis 24:48",
-          "text": "Then, he says, he bowed down and worshiped the LORD. The LORD led him on the right road, straight to the granddaughter of Abraham's brother.",
+          "text": "Then, he says, he bowed down and worshiped the LORD, who led him on the right road to the granddaughter of Abraham's brother.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:49",
@@ -306,9 +277,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Genesis 24:50",
+          "verses": "Genesis 24:47, 49-50",
           "text": "Abraham's servant has told the whole story and asked for an answer. Now Laban and Bethuel, Rebekah's father, speak up, and I'm sitting here holding my breath like it's the last batch in the oven.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -316,18 +287,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:50",
-          "question": "Laban and Bethuel answer Abraham's servant. Where do they say all this came from?",
+          "question": "Laban and Bethuel answer Abraham's servant. Who do they say all this is from?",
           "answers": [
             {
-              "text": "From the LORD",
+              "text": "The LORD",
               "correct": true
             },
             {
-              "text": "From Abraham's riches",
+              "text": "Abraham",
               "correct": false
             },
             {
-              "text": "From Rebekah's choice",
+              "text": "Nahor",
               "correct": false
             }
           ],
@@ -338,27 +309,23 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 24:51-52",
-          "text": "They tell him, “Rebekah is here before you. Take her and go,” and Abraham's servant bows down to the ground before the LORD. This man hears good news and hits the FLOOR, and I love him for it.",
+          "text": "They tell him, “Rebekah is here before you. Take her and go…” Abraham's servant hears that and bows down to the ground before the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 24:53",
-          "question": "Abraham's servant brings out jewels of silver and gold and clothing. Who gets gifts?",
+          "question": "Abraham's servant brings out jewels of silver and gold and clothing, and he gives them to Rebekah.",
           "answers": [
             {
-              "text": "Rebekah and her brother and mother",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Rebekah and her father and nurse",
-              "correct": false
-            },
-            {
-              "text": "Rebekah and no one else",
+              "text": "False",
               "correct": false
             }
           ],
@@ -368,33 +335,32 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Genesis 24:54",
-          "text": "They eat, drink and spend the night. Next morning the servant is up and ready: “Send me on my way to my master.”",
+          "verses": "Genesis 24:53-54",
+          "text": "Abraham's servant gives precious gifts to her brother and her mother too. Then he and the men with him eat, drink and spend the night.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 24:55",
-          "question": "Rebekah's brother and mother have a different idea. They want her to stay with them ___ days or so.",
+          "question": "The next morning, Abraham's servant says, “Send me on my way to my master.” What do Rebekah's brother and mother ask for?",
           "answers": [
             {
-              "text": "ten",
-              "correct": true,
-              "blank": 1
+              "text": "A little more time with her",
+              "correct": true
             },
             {
-              "text": "three",
+              "text": "Some gifts for her father",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "A visit from Abraham first",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -402,7 +368,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 24:56",
-          "question": "Abraham's servant agrees to stay the extra days before heading home.",
+          "question": "Abraham's servant agrees to wait before he leaves.",
           "answers": [
             {
               "text": "True",
@@ -419,8 +385,8 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Genesis 24:57",
-          "text": "So the family settles it another way. They'll call the girl and ask her opinion.",
+          "verses": "Genesis 24:56-57",
+          "text": "The servant says, “Do not delay me, since the LORD has made my journey a success.” So her family says they'll call the girl and ask her opinion.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,18 +395,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:58",
-          "question": "They call Rebekah and ask her, “Will you go with this man?” What does she say?",
+          "question": "Abraham's servant wants to leave now, and Rebekah's family wants ten days or so. They call Rebekah and ask her opinion. What does she say?",
           "answers": [
             {
-              "text": "I will go",
+              "text": "She will go with the man",
               "correct": true
             },
             {
-              "text": "Give me ten days",
+              "text": "She wants ten more days",
               "correct": false
             },
             {
-              "text": "Let my brother decide",
+              "text": "Her brother should decide",
               "correct": false
             }
           ],
@@ -451,7 +417,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Genesis 24:58-59",
-          "text": "Three words, and I take longer than that to pick a topping. So they send their sister Rebekah on her way with her nurse, Abraham's servant and his men.",
+          "text": "Rebekah says, “I will go,” and friend, I've spent longer than that choosing between sprinkles and raisins. So they send their sister Rebekah on her way with her nurse, Abraham's servant and his men.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -460,7 +426,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 24:60",
-          "question": "Before Rebekah leaves, her family blesses her. What do they wish for her?",
+          "question": "As they send Rebekah off, her family blesses her. What do they wish for her?",
           "answers": [
             {
               "text": "To be the mother of thousands",
@@ -482,7 +448,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Genesis 24:60",
-          "text": "And the blessing keeps going: “May your offspring possess the gates of their enemies.” Friend, that's not a send-off, that's a whole PARADE.",
+          "text": "And the blessing keeps going: “May your offspring possess the gates of their enemies.” When I got called out of that junk drawer, my whole send-off was a note I wrote MYSELF on the back of a takeout menu.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -491,15 +457,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 24:61",
-          "question": "Rebekah sets out on the camels with no servant girls of her own.",
+          "question": "Rebekah sets out on the camels along with her servant girls.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -509,68 +475,59 @@
           "card": 14,
           "kind": "story",
           "verses": "Genesis 24:62-63",
-          "text": "Meanwhile, Isaac has just returned from Beer-lahai-roi, for he's living in the Negev. Early in the evening, he heads out.",
+          "text": "Now Isaac has just returned from Beer-lahai-roi, for he's living in the Negev. Early in the evening, he goes out to the field to meditate.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 24:63",
-          "question": "Early in the evening, Isaac goes out to the ___ to ___.",
+          "question": "Isaac is out in the field early in the evening. When he looks up, what does he see coming?",
           "answers": [
             {
-              "text": "field",
-              "correct": true,
-              "blank": 1
+              "text": "Camels",
+              "correct": true
             },
             {
-              "text": "meditate",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "city",
+              "text": "Sheep",
               "correct": false
             },
             {
-              "text": "hunt",
-              "correct": false
-            },
-            {
-              "text": "trade",
+              "text": "Soldiers",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
-          "verses": "Genesis 24:63-64",
-          "text": "Isaac looks up and sees camels coming, and Rebekah looks up and sees Isaac. She gets down off her camel, and friend, THIS is the slow-motion part of the movie.",
+          "verses": "Genesis 24:64",
+          "text": "Rebekah looks up and sees Isaac, and she gets down off her camel. Friend, THIS is the slow-motion part of the movie.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 24:65",
-          "question": "Rebekah asks the servant who the man in the field is. He answers, “It is my master,” and Rebekah reacts. What does she do?",
+          "question": "Rebekah asks Abraham's servant who the man in the field is. When he answers, “It is my master,” she takes her ___ and covers herself.",
           "answers": [
             {
-              "text": "She covers herself with her veil",
-              "correct": true
+              "text": "veil",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "She runs out to meet him",
+              "text": "jar",
               "correct": false
             },
             {
-              "text": "She climbs back on her camel",
+              "text": "staff",
               "correct": false
             }
           ],
@@ -580,25 +537,30 @@
         {
           "card": 18,
           "kind": "story",
-          "verses": "Genesis 24:66",
-          "text": "Then the servant tells Isaac all that he had done. If it's anything like the version he gave at Laban's house, Isaac better pull up a chair.",
+          "verses": "Genesis 24:66-67",
+          "text": "Then the servant tells Isaac all that he had done. And Isaac brings Rebekah into the tent of his mother Sarah and takes her as his wife.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Genesis 24:67",
-          "question": "Isaac brings Rebekah into the tent of his father Abraham.",
+          "question": "Isaac loves Rebekah, and he is ___ after his mother's death.",
           "answers": [
             {
-              "text": "True",
+              "text": "comforted",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "honored",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "rewarded",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -608,8 +570,8 @@
           "card": 20,
           "kind": "story",
           "verses": "Genesis 24:67",
-          "text": "Isaac takes Rebekah as his wife, and Isaac loved her and was comforted after his mother's death. We'll leave it right there for now, friend, because Abraham's story isn't finished yet.",
-          "needs_agent_fix": true,
+          "text": "And that's where we'll leave it for now, friend. Abraham's story isn't finished yet.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

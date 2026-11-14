@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 47:27",
-          "text": "Pull up a stool, friend: Jacob and his whole family are living in Egypt now, in the region of Goshen. Jacob's son Joseph is second only to Pharaoh here (Genesis 41:40-41). God renamed Jacob Israel back in Genesis 32:28, so the text calls him both, and it calls his family the Israelites.",
+          "text": "Pull up a stool, friend: Jacob and his whole family are living in Egypt now, in the region of Goshen. Jacob's son Joseph is second only to Pharaoh here (Genesis 41:40-41). God renamed Jacob Israel (Genesis 32:28), so you'll hear both names, and his family is called the Israelites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -38,30 +38,19 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Genesis 47:28",
-          "question": "True or false: Jacob lives in Egypt seventeen years, and he lives to be 147 years old.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Jacob lives in Egypt seventeen years, and the length of his life is 147 years.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Genesis 47:28-29",
-          "text": "ONE HUNDRED FORTY-SEVEN, friend! I spent years in a junk drawer and thought THAT was a long time. Now the time draws near for Israel to die, and he calls Joseph in with a request about where he'll be buried.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Genesis 47:29",
+          "text": "Then the time draws near for Israel to die, and he calls in his son Joseph with a request about where he'll be buried.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -71,20 +60,20 @@
           "question": "Jacob asks Joseph to put his hand under his thigh and promise to show him kindness and faithfulness. What does Jacob want him to promise?",
           "answers": [
             {
-              "text": "Carry him out of Egypt to be buried with his fathers",
+              "text": "Bury him with his fathers outside Egypt",
               "correct": true
             },
             {
-              "text": "Bury him right there in the land of Goshen",
+              "text": "Bury him in Goshen among his people",
               "correct": false
             },
             {
-              "text": "Bury him in Egypt wherever Joseph lives",
+              "text": "Bury him wherever Joseph thinks is best",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -116,21 +105,16 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Genesis 47:31",
-          "question": "Once Joseph swears, Israel bows in ___ at the head of his bed.",
+          "question": "True or false: Once Joseph swears, Israel bows in worship at the head of his bed.",
           "answers": [
             {
-              "text": "worship",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "sorrow",
-              "correct": false
-            },
-            {
-              "text": "fear",
+              "text": "False",
               "correct": false
             }
           ],
@@ -167,8 +151,8 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Genesis 48:2-3",
-          "text": "Israel rallies his strength and sits UP in bed, like me when the oven timer dings. Then he tells Joseph that God Almighty appeared to him at Luz, in the land of Canaan, and blessed him there.",
+          "verses": "Genesis 48:2-4",
+          "text": "Israel rallies his strength and sits UP in bed, like me hopping to attention when the oven timer dings. Then he tells Joseph that God Almighty appeared to him at Luz, in the land of Canaan, blessed him, and told him He would make him fruitful and multiply him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -177,19 +161,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 48:4",
-          "question": "At Luz, God promised to make Jacob ___ and to give the land to his descendants after him.",
+          "question": "At Luz, God also said He would give the land to Jacob's ___ after him as an everlasting possession.",
           "answers": [
             {
-              "text": "fruitful",
+              "text": "descendants",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "famous",
+              "text": "servants",
               "correct": false
             },
             {
-              "text": "wealthy",
+              "text": "neighbors",
               "correct": false
             }
           ],
@@ -212,7 +196,7 @@
           "question": "What does Jacob say about Ephraim and Manasseh, Joseph's two boys born in Egypt?",
           "answers": [
             {
-              "text": "They will be counted as his own sons",
+              "text": "They will be counted as Jacob's own sons",
               "correct": true
             },
             {
@@ -240,15 +224,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 48:6",
-          "question": "True or false: Jacob says any children Joseph has after these two will be counted as Jacob's too.",
+          "question": "True or false: Jacob says any children Joseph has after these two will be Joseph's own.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -258,7 +242,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Genesis 48:7",
-          "text": "Then Jacob remembers Rachel, his wife and Joseph's mother (Genesis 29:28; 30:22-24). On the way back from Paddan, to his sorrow, she died along the way in the land of Canaan.",
+          "text": "Then Jacob talks about Rachel, his wife and Joseph's mother (Genesis 29:28; 30:22-24). On the way back from Paddan, to his sorrow, she died along the way in the land of Canaan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -267,18 +251,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 48:7",
-          "question": "Rachel died along the way in Canaan. Where does Jacob bury her?",
+          "question": "Rachel died along the way in Canaan. Where did Jacob bury her?",
           "answers": [
             {
               "text": "Beside the road to Ephrath",
               "correct": true
             },
             {
-              "text": "In the cave with his fathers",
+              "text": "In the cave of Machpelah",
               "correct": false
             },
             {
-              "text": "Back in Paddan where they started",
+              "text": "Under the oak below Bethel",
               "correct": false
             }
           ],
@@ -304,15 +288,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 48:10",
-          "question": "Jacob asks Joseph to bring the boys to him so he can bless them. True or false: Jacob can see Joseph's boys clearly when they come to him.",
+          "question": "Jacob asks Joseph to bring the boys to him so he can bless them. True or false: Jacob can hardly see anymore.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -322,27 +306,28 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 48:10",
-          "text": "Israel's eyesight is poor from old age, so poor he can hardly see. Joseph brings the boys close, and his father kisses and embraces them.",
+          "text": "Israel's eyesight is poor because of old age. Joseph brings the boys close, and his father kisses and embraces them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 48:11",
-          "question": "Holding Joseph's boys, Israel tells Joseph he never expected to see his face again. What else does Israel say?",
+          "question": "Israel tells Joseph he never expected to see his face again, but now God has let him see Joseph's ___ as well.",
           "answers": [
             {
-              "text": "God has let him see Joseph's children too",
-              "correct": true
+              "text": "children",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Rachel would be proud of these two boys",
+              "text": "wife",
               "correct": false
             },
             {
-              "text": "The boys look just like their father",
+              "text": "officials",
               "correct": false
             }
           ],
@@ -369,11 +354,11 @@
               "correct": true
             },
             {
-              "text": "He puts his right hand on Manasseh as lined up",
+              "text": "He puts his right hand on Manasseh's head",
               "correct": false
             },
             {
-              "text": "He blesses Joseph and sends the boys outside",
+              "text": "He has Joseph swap the two boys around",
               "correct": false
             }
           ],
@@ -384,40 +369,16 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 48:15-16",
-          "text": "Then he blesses Joseph: \"May the God before whom my fathers Abraham and Isaac walked,\" that's his grandfather and his father (Genesis 25:19-26). The God who has been his shepherd all his life, the angel who has redeemed him from all harm.",
+          "text": "Then Israel blesses Joseph. He calls on the God his grandfather Abraham and his father Isaac walked before (Genesis 25:19-26), \"the God who has been my shepherd all my life to this day, the angel who has redeemed me from all harm…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 48:16",
-          "question": "Israel's blessing goes on: may He bless these boys, and may they grow into a ___ upon the earth.",
-          "answers": [
-            {
-              "text": "multitude",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "kingdom",
-              "correct": false
-            },
-            {
-              "text": "army",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 48:16",
-          "question": "True or false: In his blessing, Israel says may the boys be called by his name and the names of Abraham and Isaac.",
+          "question": "Israel also says may the boys grow into a multitude upon the earth. True or false: he says may they be called by his name and the names of Abraham and Isaac.",
           "answers": [
             {
               "text": "True",
@@ -432,7 +393,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Genesis 48:17",
           "text": "But Joseph sees his father's right hand on Ephraim's head, and he is displeased. He takes his father's hand to move it over to Manasseh's head, like a man straightening a crooked picture frame in somebody else's house.",
@@ -440,7 +401,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 48:18",
@@ -463,7 +424,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 48:19",
@@ -482,22 +443,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Genesis 48:19",
-          "text": "His father refuses: \"I know, my son, I know!\" Not one \"I know,\" friend, TWO, and that's a man who knows EXACTLY where his hands are.",
+          "text": "His father refuses: \"I know, my son, I know!\" That's the double \"I know,\" friend, and when you hear the double, the conversation is OVER.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 48:19",
           "question": "Israel says Manasseh will become a people and be great too. So what does he say about Ephraim, the younger brother?",
           "answers": [
             {
-              "text": "He'll be greater and become a multitude of nations",
+              "text": "He'll be greater and his offspring will become many nations",
               "correct": true
             },
             {
@@ -509,52 +470,27 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Genesis 48:20",
+          "text": "So that day Jacob blesses them and says: \"By you shall Israel pronounce this blessing: 'May God make you like Ephraim and Manasseh.'\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Genesis 48:20",
-          "text": "So that day Jacob blesses them, and he says that by them Israel will pronounce a blessing: may God make you like these two. Talk about getting your name written into the family cookie recipe.",
+          "text": "So he puts Ephraim before Manasseh. Second cookie off the tray, FIRST one in the box!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 48:20",
-          "question": "In the way Jacob blesses them, he puts ___ before ___.",
-          "answers": [
-            {
-              "text": "Ephraim",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Manasseh",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Joseph",
-              "correct": false
-            },
-            {
-              "text": "Reuben",
-              "correct": false
-            },
-            {
-              "text": "Simeon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 48:21",
@@ -573,7 +509,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 48:22",
@@ -593,15 +529,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Genesis 48:22",
           "text": "We'll let this batch cool right here, friend. This family's story keeps on going.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

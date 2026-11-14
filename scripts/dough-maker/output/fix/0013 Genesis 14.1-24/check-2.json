@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "Story card 1 already says Lot is Abram's nephew, so the answer 'Abram's nephew Lot' is given away. It also rules out the wrong answers 'Abram's brother Nahor' and 'Abram's servant Eliezer' before the question is asked.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "The wrong answer 'He sends them to rebuild Sodom' is not believable. Nothing in the passage says Sodom was destroyed, and Abram has just heard that Lot was captured. It reads as a throwaway answer.",
+      "rule": "Wrong answers for what someone does or says only need to be believable."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 5
+      },
+      "problem": "The card says 'A king AND a priest', which comes from verse 18, but it cites only Genesis 14:19. The citation is narrower than the verses the card uses.",
+      "rule": "Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The joke 'even IT would've grabbed this deal' is unclear. The nearest 'deal' is Abram's refusal to take anything, so the coupon grabbing it doesn't make sense. The king of Sodom's offer is never named as the deal. The comparison needs explaining.",
+      "rule": "If a stranger would say \"huh?\", rewrite it."
+    }
+  ]
+}

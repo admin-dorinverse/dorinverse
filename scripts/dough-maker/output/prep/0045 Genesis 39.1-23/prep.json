@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 39:1",
-          "text": "Friend, last time we saw Joseph, he'd just been sold in Egypt. Here's how it went: an Egyptian named Potiphar bought him from the Ishmaelites who took him down there. Potiphar is an officer of Pharaoh, Egypt's king.",
+          "text": "Meanwhile, Joseph, Jacob's son, has been taken down to Egypt. His own brothers sold him to traders (Genesis 37:28). An Egyptian named Potiphar, an officer of Pharaoh, Egypt's king, buys him from the Ishmaelites who brought him there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 39:2",
-          "text": "So Joseph is serving in the household of his Egyptian master, a long way from home. But he is NOT alone in that house.",
+          "text": "So Joseph is serving his Egyptian master, a long way from home. But he is NOT alone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 39:2",
-          "question": "Joseph is far from home, but he's not alone in Potiphar's household. So who's with him, making him a successful man?",
+          "question": "Joseph is far from home, serving Potiphar in Egypt, and he becomes a successful man. Who is with him?",
           "answers": [
             {
               "text": "The LORD",
@@ -72,15 +72,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 39:3",
-          "question": "True or false: Potiphar can see that the LORD is with Joseph and makes him prosper in all he does.",
+          "question": "True or false: Potiphar never notices how Joseph prospers in all he does.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -128,20 +128,20 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 39:5",
-          "question": "What does the LORD do for Potiphar's household on account of Joseph?",
+          "question": "On account of Joseph, the LORD ___ Potiphar's household.",
           "answers": [
             {
-              "text": "He blesses everything Potiphar owns",
+              "text": "blesses",
               "correct": true
             },
             {
-              "text": "He has Pharaoh promote Potiphar",
+              "text": "warns",
               "correct": false
             },
             {
-              "text": "He makes Potiphar's enemies fear him",
+              "text": "judges",
               "correct": false
             }
           ],
@@ -171,8 +171,8 @@
           "card": 11,
           "kind": "story",
           "verses": "Genesis 39:6",
-          "text": "Potiphar leaves all he owns in Joseph's care and stops concerning himself with any of it. Well. Almost any of it.",
-          "needs_agent_fix": true,
+          "text": "Potiphar leaves everything he owns in Joseph's care. He doesn't concern himself with any of it, except one thing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -211,7 +211,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 39:9",
-          "question": "Joseph refuses and reminds her how much his master trusts him. What has Potiphar withheld from Joseph?",
+          "question": "Joseph refuses Potiphar's wife and reminds her how much his master trusts him. What has Potiphar withheld from Joseph?",
           "answers": [
             {
               "text": "Nothing except his wife",
@@ -226,7 +226,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -275,28 +275,24 @@
           "card": 17,
           "kind": "story",
           "verses": "Genesis 39:10",
-          "text": "Day after day she keeps speaking to him, and day after day Joseph refuses. Friend, I can't say no to ONE warm cookie, and this man is saying no EVERY DAY.",
+          "text": "Day after day, Potiphar's wife keeps speaking to Joseph, and day after day he refuses to go to bed with her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 39:10",
-          "question": "Joseph won't go to bed with Potiphar's wife. How far does he go to keep his distance?",
+          "question": "True or false: Joseph won't go to bed with Potiphar's wife, but he's fine being near her.",
           "answers": [
             {
-              "text": "He won't even be near her",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "He only works when Potiphar is home",
-              "correct": false
-            },
-            {
-              "text": "He asks to be sent to the fields",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -321,7 +317,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 39:12",
-          "question": "Potiphar's wife grabs Joseph by his cloak and says it again. What does Joseph do?",
+          "question": "Alone in the house, Potiphar's wife grabs Joseph by his cloak and says, “Sleep with me!” What does Joseph do?",
           "answers": [
             {
               "text": "Leaves the cloak and runs outside",
@@ -336,27 +332,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Genesis 39:13",
-          "text": "She's left standing there holding a cloak, and Joseph is GONE. No speech this time, just out the door so fast his cloak didn't make the trip, and friend, I live on a gold base, I couldn't move like that if the oven caught fire.",
+          "verses": "Genesis 39:13-14",
+          "text": "When Potiphar's wife sees Joseph's cloak left in her hand, she calls in her household servants.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Genesis 39:14",
-          "text": "So she calls in her household servants.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 39:14",
@@ -379,11 +367,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 39:15",
-          "question": "True or false: In her story, Joseph heard her scream and left his cloak beside her.",
+          "question": "True or false: Potiphar's wife tells the servants that Joseph left his cloak beside her.",
           "answers": [
             {
               "text": "True",
@@ -394,11 +382,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Genesis 39:16",
           "text": "That's not what happened, and we both know it. She keeps Joseph's cloak beside her until his master comes home.",
@@ -406,7 +394,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 39:17",
@@ -425,30 +413,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
-          "verses": "Genesis 39:19",
+          "verses": "Genesis 39:17-19",
           "text": "Potiphar hears it all. His wife tells him this is what his slave did to her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 39:19",
-          "question": "How does Potiphar react to his wife's story?",
+          "question": "When Potiphar hears his wife's story, he burns with ___.",
           "answers": [
             {
-              "text": "He burns with anger",
+              "text": "anger",
               "correct": true
             },
             {
-              "text": "He asks the servants what they saw",
+              "text": "shame",
               "correct": false
             },
             {
-              "text": "He sends for Joseph to explain",
+              "text": "grief",
               "correct": false
             }
           ],
@@ -456,7 +444,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 39:20",
@@ -479,15 +467,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Genesis 39:20-21",
-          "text": "Friend, I know that move: one day you're on the counter, and the next you're in the back of a junk drawer next to a dead battery. But while Joseph is there in the prison, that line again: the LORD was with him.",
+          "text": "Friend, I spent years shut away in the back of a junk drawer, so this one hits home. But while Joseph is there in the prison, the LORD is with him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 39:21",
@@ -510,22 +498,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 39:22",
-          "question": "The prison warden puts all the ___ under Joseph's care.",
+          "question": "What does the warden end up doing with Joseph?",
           "answers": [
             {
-              "text": "prisoners",
+              "text": "Puts all the prisoners in his care",
               "correct": true
             },
             {
-              "text": "guards",
+              "text": "Lets him walk out a free man",
               "correct": false
             },
             {
-              "text": "servants",
+              "text": "Sends him back to Potiphar's house",
               "correct": false
             }
           ],
@@ -533,15 +521,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Genesis 39:22",
-          "text": "So now Joseph is responsible for all that's done in the prison. In the house, IN CHARGE, in the prison, IN CHARGE, and I bet if you dropped him in my old junk drawer he'd have the rubber bands lined up by the end of the day.",
+          "text": "So now Joseph is responsible for all that's done in the prison. In the house? IN CHARGE. In the prison? IN CHARGE. Friend, you could drop this man in rush-hour traffic and he'd be directing it in five minutes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 39:23",
@@ -560,7 +548,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Genesis 39:23",
           "text": "The LORD gives Joseph success in whatever he does, even in a prison. But friend, he's still sitting behind those walls, and this story has a LOT more to go.",

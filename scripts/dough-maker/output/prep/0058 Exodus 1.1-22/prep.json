@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 1:1-5",
-          "text": "Pull up a stool, friend. These are the sons of Jacob, also called Israel, who went down to Egypt with their father: Reuben, Judah, Benjamin and the rest, each one bringing his whole family. Count everybody up, plus Jacob's son Joseph, who was already in Egypt, and Jacob's descendants come to seventy.",
+          "text": "Pull up a stool, friend. These are the sons of Jacob, the man God renamed Israel (Genesis 32:28), who went to Egypt with him: Reuben, Judah, Benjamin and the rest, each with his family. Count them all up, including Jacob's son Joseph, who was already in Egypt, and Jacob's descendants come to seventy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -55,12 +55,31 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Exodus 1:10",
-          "question": "The new king tells his people the Israelites have become too numerous and too powerful for them. If a war breaks out, what is he afraid the Israelites will do?",
+          "question": "The new king of Egypt says the Israelites have become too numerous and too powerful for his people. His plan is to deal shrewdly with them before they increase even more.",
           "answers": [
             {
-              "text": "Join Egypt's enemies and fight against Egypt",
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Exodus 1:10",
+          "question": "If a war breaks out, what is the king of Egypt afraid the Israelites will do?",
+          "answers": [
+            {
+              "text": "Fight for Egypt's enemies and leave the country",
               "correct": true
             },
             {
@@ -69,25 +88,6 @@
             },
             {
               "text": "Refuse to send Egypt a single soldier",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 1:10",
-          "question": "The king's plan is to deal shrewdly with the Israelites before they increase even more.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
               "correct": false
             }
           ],
@@ -122,7 +122,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 1:11",
-          "question": "All that forced labor builds two store cities for Pharaoh. Which ones?",
+          "question": "The Israelites' forced labor builds two store cities for Pharaoh, Egypt's king. Which ones?",
           "answers": [
             {
               "text": "Pithom and Rameses",
@@ -137,7 +137,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -186,7 +186,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Exodus 1:13",
-          "text": "You'd think somebody in Pharaoh's court would raise a hand and go, \"Uh, maybe the plan isn't working?\" Nope. They work the Israelites ruthlessly.",
+          "text": "And Egypt doesn't ease up one bit. They work the Israelites ruthlessly.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -195,28 +195,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 1:14",
-          "question": "The Egyptians made the Israelites' lives bitter with hard labor in ___ and ___, and with all kinds of work in the fields.",
+          "question": "The Egyptians made the Israelites' lives ___ with hard labor in brick and mortar, and with all kinds of work in the fields.",
           "answers": [
             {
-              "text": "brick",
-              "correct": true,
-              "blank": 1
+              "text": "bitter",
+              "correct": true
             },
             {
-              "text": "mortar",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "gold",
+              "text": "short",
               "correct": false
             },
             {
-              "text": "cedar",
-              "correct": false
-            },
-            {
-              "text": "linen",
+              "text": "lonely",
               "correct": false
             }
           ],
@@ -232,36 +222,13 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Exodus 1:15",
-          "text": "Then the king of Egypt calls in two Hebrew midwives. Their names are Shiphrah and Puah.",
+          "verses": "Exodus 1:15-16",
+          "text": "Then the king of Egypt speaks to two Hebrew midwives, Shiphrah and Puah. He tells them to kill every son the Hebrew women give birth to, but to let the daughters live.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 1:16",
-          "question": "The king tells Shiphrah and Puah to watch the Hebrew women on the birthstools. What is his order?",
-          "answers": [
-            {
-              "text": "Kill the sons but let the daughters live",
-              "correct": true
-            },
-            {
-              "text": "Bring every son straight to the palace",
-              "correct": false
-            },
-            {
-              "text": "Send every son off to the taskmasters",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 1:17",
@@ -280,7 +247,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 1:17",
@@ -303,7 +270,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Exodus 1:18",
           "text": "So the king of Egypt summons the midwives, and friend, you know that stomach drop when your boss says \"Got a minute?\" Now make the boss PHARAOH.",
@@ -311,7 +278,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 1:19",
@@ -330,32 +297,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 1:20",
-          "question": "So God was ___ to the midwives, and the people ___ and became even more numerous.",
+          "question": "So God was good to the ___, and the people multiplied and became even more numerous.",
           "answers": [
             {
-              "text": "good",
-              "correct": true,
-              "blank": 1
+              "text": "midwives",
+              "correct": true
             },
             {
-              "text": "multiplied",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "harsh",
+              "text": "Egyptians",
               "correct": false
             },
             {
-              "text": "scattered",
-              "correct": false
-            },
-            {
-              "text": "weakened",
+              "text": "Levites",
               "correct": false
             }
           ],
@@ -363,7 +320,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 1:21",
@@ -386,43 +343,20 @@
           "needs_human_decision": false
         },
         {
+          "card": 8,
+          "kind": "story",
+          "verses": "Exodus 1:22",
+          "text": "But Pharaoh isn't done. Then Pharaoh commanded all his people: “Every son born to the Hebrews you must throw into the Nile, but every daughter you may allow to live.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 9,
           "kind": "story",
           "verses": "Exodus 1:22",
-          "text": "But Pharaoh isn't done. This time he skips the midwives and gives the order to all his people.",
+          "text": "I think this one hurts, friend. And trust me, this story is far from over.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 1:22",
-          "question": "Pharaoh gives all his people an order about every son born to the Hebrews. What must they do?",
-          "answers": [
-            {
-              "text": "Throw him into the Nile",
-              "correct": true
-            },
-            {
-              "text": "Send him to the taskmasters",
-              "correct": false
-            },
-            {
-              "text": "Hand him over to the army",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Exodus 1:22",
-          "text": "Oof. I'm gonna let the oven cool on that one for a minute. Hang onto your apron, friend, because this story is just getting started.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

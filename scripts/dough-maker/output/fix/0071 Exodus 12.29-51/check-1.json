@@ -1,0 +1,20 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1
+      },
+      "problem": "The stop has three true/false cards (4, 9 and 16), and all three have False as the right answer. No True answer appears in the stop.",
+      "rule": "In a stop with 2 or more, at least one answer is True and at least one is False, in no set pattern."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The card asks whether the loaves are made with leaven. Stop 1 already told the baker the dough was taken 'before it's leavened' (card 13), and the question on card 14 calls it 'unleavened dough'. Those cards give away the answer to this later card, and the card re-asks a fact the baker has already been shown.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    }
+  ]
+}

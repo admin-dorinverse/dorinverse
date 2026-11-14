@@ -10,38 +10,23 @@
           "kind": "story",
           "verses": "Exodus 33:1",
           "text": "Friend, things are tense. While Moses, Israel's leader, was up on the mountain, the people made a golden calf and bowed down to it (Exodus 32:8). Now the LORD tells Moses to leave this place with the people and go to the land He promised to Israel's forefathers Abraham, Isaac and Jacob.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Exodus 33:2",
-          "question": "God says He will drive out the Canaanites, the Amorites and the other nations in the land. He'll also send someone ahead of the people. Who?",
-          "answers": [
-            {
-              "text": "An angel",
-              "correct": true
-            },
-            {
-              "text": "A prophet",
-              "correct": false
-            },
-            {
-              "text": "A captain",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "God says He will send an angel ahead of them and drive out the Canaanites, Amorites, Hittites, Perizzites, Hivites and Jebusites.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Exodus 33:3",
-          "text": "It's a land flowing with milk and honey. Sounds perfect, right? Then God says the next part, and it is NOT the part anybody wanted.",
-          "needs_agent_fix": true,
+          "text": "It's a land flowing with milk and honey. Then God tells them who will be making the trip.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +34,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 33:3",
-          "question": "God says He Himself will go with the people to the land.",
+          "question": "As God sends Moses and the people off toward the land, He says He Himself will go with them.",
           "answers": [
             {
               "text": "True",
@@ -60,7 +45,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -76,7 +61,7 @@
               "blank": 1
             },
             {
-              "text": "forget",
+              "text": "test",
               "correct": false
             },
             {
@@ -84,15 +69,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Exodus 33:4",
-          "text": "The people hear this bad news, and they go into mourning. A whole camp making the face you make when your boss says, \"Hey, got a minute?\"",
-          "needs_agent_fix": true,
+          "text": "The people hear this bad news and go into mourning. A whole camp with the face you make when the email says your flight got canceled.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -100,7 +85,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 33:4",
-          "question": "As the people mourn, no one puts on any of his ___.",
+          "question": "As the people mourn over the bad news, no one puts on any of his ___.",
           "answers": [
             {
               "text": "jewelry",
@@ -116,151 +101,112 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Exodus 33:5",
-          "text": "The LORD had already given Moses a message for them. You are stiff-necked, and if I went with you for a single moment, I would destroy you.",
-          "needs_agent_fix": true,
+          "question": "The LORD had sent word through Moses for the Israelites to take off their jewelry. What did He say He would do then?",
+          "answers": [
+            {
+              "text": "Decide what to do with them",
+              "correct": true
+            },
+            {
+              "text": "Send them back to Egypt",
+              "correct": false
+            },
+            {
+              "text": "Choose a new leader for them",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 33:5",
-          "question": "In that message, the LORD tells the Israelites to take off their jewelry, and He will decide what to do with them.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Exodus 33:6",
+          "text": "So from Mount Horeb onward, the Israelites strip off their jewelry. The only jewelry I've ever owned is the flour stuck in my mustache.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Exodus 33:6",
-          "text": "So from Mount Horeb onward, the Israelites strip off their jewelry. Me? The only jewelry I've ever owned is the flour stuck in my mustache.",
-          "needs_agent_fix": true,
+          "verses": "Exodus 33:7",
+          "text": "Now here's something Moses used to do. He'd pitch a tent at a distance outside the camp, and he called it the Tent of Meeting.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Exodus 33:7",
-          "text": "Now the story shows us something Moses used to do. He'd take a tent and pitch it, and he called it the Tent of Meeting.",
-          "needs_agent_fix": true,
+          "question": "Moses pitched the Tent of Meeting at a distance outside the camp. Who would go out to it?",
+          "answers": [
+            {
+              "text": "Anyone inquiring of the LORD",
+              "correct": true
+            },
+            {
+              "text": "Only Moses and Aaron",
+              "correct": false
+            },
+            {
+              "text": "Only the priests and Levites",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 33:7",
-          "question": "Where does Moses pitch the Tent of Meeting?",
-          "answers": [
-            {
-              "text": "At a distance outside the camp",
-              "correct": true
-            },
-            {
-              "text": "Right in the middle of the camp",
-              "correct": false
-            },
-            {
-              "text": "Up on top of the mountain",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Exodus 33:8",
+          "text": "Whenever Moses goes out to the tent, all the people stand at the entrances to their own tents. They watch him until he goes inside.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 33:7",
-          "question": "The Tent of Meeting wasn't just for Moses. Anyone inquiring of the LORD would go out to it.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Exodus 33:9",
+          "text": "As Moses enters, the pillar of cloud that guided Israel by day (Exodus 13:21) comes down and stays at the entrance.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Exodus 33:8",
-          "question": "Whenever Moses walks out to the Tent of Meeting, what does the rest of the camp do?",
+          "verses": "Exodus 33:9",
+          "question": "The pillar of cloud stands at the entrance to the Tent of Meeting with Moses inside. What happens next?",
           "answers": [
             {
-              "text": "Stand at their tent doors and watch him",
+              "text": "The LORD speaks with Moses",
               "correct": true
             },
             {
-              "text": "Follow him all the way out there",
+              "text": "Moses offers a sacrifice",
               "correct": false
             },
             {
-              "text": "Stay inside with the flaps closed",
+              "text": "Moses writes down the laws",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Exodus 33:8-9",
-          "text": "Every eye in the camp follows him until he's inside. Then, as Moses enters, something comes down and stays right at the entrance.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 33:9",
-          "question": "As Moses enters the Tent of Meeting, the pillar of ___ comes down and stays at the entrance.",
-          "answers": [
-            {
-              "text": "cloud",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "fire",
-              "correct": false
-            },
-            {
-              "text": "smoke",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 33:10",
@@ -275,15 +221,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 33:11",
-          "question": "Inside the Tent of Meeting, the LORD speaks with Moses. How?",
+          "question": "When the LORD speaks with Moses in the Tent of Meeting, how does He speak?",
           "answers": [
             {
               "text": "Face to face like a friend",
@@ -298,38 +244,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "Exodus 33:11",
-          "text": "Then Moses heads back to camp. But one person is NOT leaving that tent, and honestly, that's me at the oven door when the batch has two minutes left.",
-          "needs_agent_fix": true,
+          "text": "Then Moses heads back to camp. But his young assistant is NOT leaving that tent, and honestly, that's me at the oven door when the batch has two minutes left.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Exodus 33:11",
-          "question": "When Moses goes back to the camp, who stays in the Tent of Meeting?",
+          "question": "When Moses goes back to the camp, his young assistant ___ stays in the Tent of Meeting.",
           "answers": [
             {
-              "text": "His young assistant Joshua",
-              "correct": true
+              "text": "Joshua",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His brother Aaron",
+              "text": "Caleb",
               "correct": false
             },
             {
-              "text": "His sister Miriam",
+              "text": "Eleazar",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -351,7 +298,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 33:12",
-          "question": "Moses reminds the LORD that He said He knows Moses by name.",
+          "question": "Moses also says the LORD has told him that He knows Moses by name.",
           "answers": [
             {
               "text": "True",
@@ -469,8 +416,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Exodus 33:17-18",
-          "text": "The LORD says He will do this very thing Moses asked. If God told me yes, I'd back out of the room slowly before anybody changed their mind, but Moses asks for something even BIGGER.",
-          "needs_agent_fix": true,
+          "text": "The LORD says He will do this very thing Moses asked, because Moses has found favor in His sight and He knows Moses by name. Most folks would take that yes and tiptoe out of the room, but Moses asks for something even BIGGER.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -532,7 +479,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Exodus 33:19-20",
-          "text": "Then He says, “I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion.” But He adds one limit.",
+          "text": "Then He says, “I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion.” Then He tells Moses something about seeing His face.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -582,7 +529,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Exodus 33:21",
-          "text": "The LORD has it all arranged: there's a place near Him where Moses is to stand upon a rock. Meanwhile, I can't remember where I set down my rolling pin five minutes ago.",
+          "text": "The LORD goes on. There's a place near Him where Moses is to stand upon a rock.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -591,7 +538,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 33:22",
-          "question": "No one can see the LORD's face and live. So when His glory passes by, what will He do for Moses standing on that rock?",
+          "question": "Moses will stand on a rock near the LORD. When the LORD's glory passes by, what will He do for Moses?",
           "answers": [
             {
               "text": "Put him in the rock and cover him with His hand",
@@ -606,14 +553,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "Exodus 33:22-23",
-          "text": "His hand stays over Moses until He has passed by. Then He will take His hand away.",
+          "text": "His hand will stay over Moses until He has passed by. Then He will take His hand away.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -645,8 +592,8 @@
           "card": 20,
           "kind": "story",
           "verses": "Exodus 33:23",
-          "text": "His back, but His face must not be seen. Hang on to that picture of Moses tucked in the rock, friend, because this story keeps going and I'm not about to spoil it.",
-          "needs_agent_fix": true,
+          "text": "Let's leave Moses right there by that rock for now. Believe me, friend, this story is NOT over.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 44:1",
-          "text": "Last time, Joseph's brothers came back to Egypt with Benjamin, their youngest brother, and feasted with Joseph. They STILL have no idea the man in charge is Joseph, the brother they sold (Gen 37:28; 42:8; 43:34). Now Joseph, ruler over the land (Gen 42:6), tells his steward to fill the men's sacks with as much food as they can carry.",
+          "text": "Joseph's brothers have come back to Egypt with Benjamin, their youngest brother, and feasted with Joseph, ruler over the land (Genesis 42:6; 43:15, 34). They STILL have no idea he's Joseph, the brother they once threw into a pit (Genesis 37:24; 42:8). Now Joseph tells his steward to fill the men's sacks with as much food as they can carry.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 44:2",
-          "text": "Then Joseph adds one more thing, just for the youngest one's sack. That's Benjamin, Joseph's own mother's son (Gen 43:29).",
+          "text": "Then Joseph adds one more thing, just for the youngest one's sack. That's Benjamin, Joseph's own mother's son (Genesis 43:29).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -102,7 +102,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 44:5-6",
-          "text": "He's also told to say this is the cup his master drinks from and uses for divination, and then, \"What you have done is wicked!\" The steward catches up and says it all, just like Joseph told him.",
+          "text": "The steward is also told to say this is the cup his master drinks from and uses for divination, and then, \"What you have done is wicked!\" He catches up and says it all, just like Joseph told him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -111,7 +111,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 44:7",
-          "question": "True or false: When the steward accuses them, the brothers admit they took the cup and ask for mercy.",
+          "question": "True or false: When the steward accuses them, the brothers admit they took the cup.",
           "answers": [
             {
               "text": "True",
@@ -152,7 +152,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Genesis 44:9",
-          "text": "Then the brothers go ALL in: if any of them is found with it, he dies, and the rest become slaves. Friend, never bet your life on a bag somebody else packed.",
+          "text": "Then the brothers make the steward an offer: whoever is found with the cup must die, and the rest of them will become slaves.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -178,8 +178,8 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Genesis 44:11-12",
-          "text": "Every brother drops his sack to the ground and opens it FAST. The steward starts with the oldest and works his way down… one sack… the next… the next…",
+          "verses": "Genesis 44:11",
+          "text": "Every brother lowers his sack to the ground and opens it FAST. I bet nobody's breathing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,18 +188,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 44:12",
-          "question": "The steward finds the cup in ___ sack.",
+          "question": "The steward searches the sacks one at a time, starting with the ___ brother.",
           "answers": [
             {
-              "text": "Benjamin's",
+              "text": "oldest",
               "correct": true
             },
             {
-              "text": "Judah's",
+              "text": "youngest",
               "correct": false
             },
             {
-              "text": "Reuben's",
+              "text": "strongest",
               "correct": false
             }
           ],
@@ -208,28 +208,28 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 44:13",
-          "question": "True or false: Once the cup turns up, the brothers leave Benjamin with the steward and keep heading home.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 44:12-13",
+          "text": "One sack… the next… the next… and there's the cup, in Benjamin's sack. The brothers tear their clothes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Genesis 44:13",
-          "text": "Nope. They tear their clothes, load up the donkeys, and the WHOLE crew turns around and walks back to the city, and not one of them says, \"Well, it was nice knowing you, Benjamin.\"",
+          "question": "True or false: After the cup turns up, the brothers all go back to the city.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -237,7 +237,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Genesis 44:14-15",
-          "text": "Judah, one of the brothers, and the rest of them fall to the ground before Joseph, who's still at his house. Joseph asks, \"What is this deed you have done?\"",
+          "text": "Not one of them says, \"Well, it was nice knowing you, Benjamin.\" They ALL fall to the ground before Joseph, who declares, \"What is this deed you have done?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -246,14 +246,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 44:16",
-          "question": "Judah doesn't argue or make excuses to Joseph. What does Judah say God has done?",
+          "question": "Judah, one of the brothers, doesn't argue or make excuses. What does he say God has done?",
           "answers": [
             {
               "text": "Exposed the brothers' guilt",
               "correct": true
             },
             {
-              "text": "Planted the cup on Benjamin",
+              "text": "Sent the famine as a warning",
               "correct": false
             },
             {
@@ -291,30 +291,7 @@
           "card": 19,
           "kind": "story",
           "verses": "Genesis 44:17",
-          "text": "Joseph answers, \"Far be it from me to do this.\" Then he lays out his own terms.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 44:17",
-          "question": "Joseph rules that the man found with the cup will be his slave, and the rest of the brothers may return to their father in ___.",
-          "answers": [
-            {
-              "text": "peace",
-              "correct": true
-            },
-            {
-              "text": "shame",
-              "correct": false
-            },
-            {
-              "text": "chains",
-              "correct": false
-            }
-          ],
+          "text": "Joseph answers, \"Far be it from me to do this.\" Only the man found with the cup will be his slave, and the rest of them may go back to their father in peace.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -328,7 +305,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 44:18",
-          "text": "Then Judah steps right up to Joseph and says, \"Do not be angry with your servant, for you are equal to Pharaoh himself.\" Friend, THAT is how you open when you're about to ask the boss for something HUGE.",
+          "text": "Then Judah steps right up to Joseph and says, \"Do not be angry with your servant, for you are equal to Pharaoh himself.\" Friend, that's like walking straight into the CEO's office without an appointment.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -345,18 +322,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 44:20",
-          "question": "The brothers also told Joseph that the boy's brother is ___.",
+          "question": "They also told Joseph that the younger brother's full brother, from the same mother, is ___.",
           "answers": [
             {
               "text": "dead",
               "correct": true
             },
             {
-              "text": "married",
+              "text": "blind",
               "correct": false
             },
             {
-              "text": "wealthy",
+              "text": "sick",
               "correct": false
             }
           ],
@@ -368,7 +345,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 44:21-22",
-          "question": "True or false: When Joseph told them to bring the boy down, the brothers warned that if the boy left his father, his father would die.",
+          "question": "True or false: When Joseph told them to bring their younger brother down, the brothers warned that if the boy left his father, his father would die.",
           "answers": [
             {
               "text": "True",
@@ -386,8 +363,8 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 44:23-25",
-          "text": "But Joseph said unless the younger brother came down, they would not see his face again. So when food ran low back home, their father said, \"Go back and buy us some food.\"",
-          "needs_agent_fix": true,
+          "text": "But Joseph said unless the younger brother came down, they would not see his face again. Back home they passed that on, and then their father said, \"Go back and buy us some food.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -413,7 +390,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 44:27",
-          "text": "Then Judah repeats what their father, Jacob, told them (Gen 42:29). It starts, \"You know that my wife bore me two sons.\"",
+          "text": "Then Judah repeats what their father, Jacob, said to them. It starts, \"You know that my wife bore me two sons.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -483,11 +460,11 @@
               "correct": true
             },
             {
-              "text": "He paid the man's silver himself",
+              "text": "He paid for the grain himself",
               "correct": false
             },
             {
-              "text": "He promised to bring double food",
+              "text": "He promised to bring more grain",
               "correct": false
             }
           ],
@@ -518,7 +495,7 @@
               "correct": false
             },
             {
-              "text": "Take their donkeys in place of the boy",
+              "text": "Take double the silver in place of the boy",
               "correct": false
             }
           ],
@@ -527,25 +504,6 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 44:33",
-          "question": "True or false: Judah asks Joseph to let the boy go back home with his brothers.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 44:34",
@@ -568,10 +526,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Genesis 44:34",
-          "text": "And Judah, the same brother who once said to sell Joseph (Gen 37:26-27), stops right there, with Joseph's answer still hanging in the air. Stick with me, friend, because this story is NOT done.",
+          "text": "And Judah, the same brother who once said to sell Joseph (Genesis 37:26-27), stops right there, with Joseph's answer still hanging in the air. Stick with me, friend, because this story is NOT done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

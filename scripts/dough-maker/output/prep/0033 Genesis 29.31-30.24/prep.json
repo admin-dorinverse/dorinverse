@@ -66,20 +66,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 29:32",
-          "question": "Baby Reuben is here. What does Leah hope will happen now?",
+          "question": "Baby Reuben is here. Leah hopes that now her husband will ___ her.",
           "answers": [
             {
-              "text": "Her husband will love her",
-              "correct": true
+              "text": "love",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Her sister will move away",
+              "text": "thank",
               "correct": false
             },
             {
-              "text": "Her father will bless her",
+              "text": "trust",
               "correct": false
             }
           ],
@@ -89,41 +90,9 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 29:33",
-          "question": "Leah has a second son and names him Simeon. She says the LORD has heard that she is ___, so He gave her this son as well.",
-          "answers": [
-            {
-              "text": "unloved",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "faithful",
-              "correct": false
-            },
-            {
-              "text": "thankful",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Genesis 29:34",
-          "text": "Then son number three: Levi. THREE boys in a row, and I can't get three cookies off a tray without dropping one.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Genesis 29:34",
-          "question": "With her third son, Leah says that now at last Jacob will become attached to her.",
+          "verses": "Genesis 29:33",
+          "question": "With her second son, Simeon, Leah says the LORD has heard that she is unloved.",
           "answers": [
             {
               "text": "True",
@@ -138,15 +107,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "story",
-          "verses": "Genesis 29:35",
-          "text": "And once more, son number four: Judah. FOUR, friend. At this rate Leah's gonna need a bigger tent.",
-          "needs_agent_fix": true,
+          "verses": "Genesis 29:34",
+          "text": "Then son number three: Levi. Leah says, “Now at last my husband will become attached to me, because I have borne him three sons.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
+          "kind": "story",
+          "verses": "Genesis 29:35",
+          "text": "And once more, son number four: Judah. FOUR boys. That's a full game of two-on-two, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 29:35",
@@ -169,11 +146,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 29:35",
-          "question": "After Judah, Leah keeps right on having children, one after another.",
+          "question": "Right after Judah, Leah has another baby.",
           "answers": [
             {
               "text": "True",
@@ -188,7 +165,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Genesis 30:1",
           "text": "Now look over at Rachel. Four sons on Leah's side, ZERO on hers, and she envies her sister.",
@@ -196,7 +173,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 30:1",
@@ -219,7 +196,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 30:2",
@@ -243,15 +220,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Genesis 30:3",
-          "text": "So Rachel comes up with Plan B. And I mean B, for Bilhah, her maidservant.",
+          "text": "Then Rachel has a plan. She tells Jacob, “Here is my maidservant Bilhah…”",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 30:3",
@@ -271,52 +248,53 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Genesis 30:4-5",
-          "question": "Bilhah becomes Jacob's wife and has a son.",
+          "verses": "Genesis 30:4",
+          "question": "Jacob refuses Rachel's plan for Bilhah.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
-          "verses": "Genesis 30:6",
-          "text": "Rachel names the boy Dan. She says, “God has vindicated me; He has heard my plea and given me a son.”",
+          "verses": "Genesis 30:5-6",
+          "text": "Bilhah has a son, and Rachel names him Dan. She says, “God has vindicated me; He has heard my plea and given me a son.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 30:8",
-          "question": "Bilhah has a second son, and Rachel names him Naphtali. What does Rachel say about it?",
+          "question": "Bilhah has a second son, and Rachel names him Naphtali. She says that in her great struggles she has wrestled with her ___ and won.",
           "answers": [
             {
-              "text": "She has wrestled with her sister and won",
-              "correct": true
+              "text": "sister",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "She has finally won her father's blessing",
+              "text": "father",
               "correct": false
             },
             {
-              "text": "She will never envy her sister again",
+              "text": "husband",
               "correct": false
             }
           ],
@@ -395,35 +373,12 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 30:14",
-          "text": "Now it's the wheat harvest. Leah's oldest boy, Reuben, goes out into the field and finds something.",
+          "text": "Now it's the wheat harvest. Leah's oldest boy, Reuben, goes out into the field and finds some mandrakes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 30:14",
-          "question": "What does Reuben find in the field during the wheat harvest?",
-          "answers": [
-            {
-              "text": "Some mandrakes",
-              "correct": true
-            },
-            {
-              "text": "A silver cup",
-              "correct": false
-            },
-            {
-              "text": "A lost lamb",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:14",
@@ -442,15 +397,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Genesis 30:14-15",
-          "text": "Rachel begs Leah for some of her son's mandrakes. And Leah is NOT in a sharing mood.",
+          "text": "Rachel begs Leah for some of her son's mandrakes. I don't think Leah is in a sharing mood.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 30:15",
@@ -474,7 +429,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 30:15",
@@ -497,38 +452,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Genesis 30:16",
-          "text": "That evening Leah meets Jacob coming in from the field: “You must come with me, for I have hired you with my son’s mandrakes.” The man walks in from a long day at work and finds out he got traded for PLANTS.",
+          "text": "That evening Leah meets Jacob coming in from the field and says, “You must come with me, for I have hired you with my son’s mandrakes.” So he slept with her that night.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:17",
-          "question": "God listens to Leah, and she has a fifth son.",
+          "question": "After that night, Leah has no more sons.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 30:18",
-          "question": "Leah names her fifth son Issachar. What does she say God has rewarded her for?",
+          "question": "God listens to Leah, and she names her fifth son Issachar. What does she say God has rewarded her for?",
           "answers": [
             {
               "text": "Giving her maidservant to her husband",
@@ -547,51 +502,27 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Genesis 30:19-20",
-          "text": "Then a sixth son, Zebulun. “God has given me a good gift,” Leah says.",
+          "text": "Then a sixth son, Zebulun. Leah says God has given her a good gift, and this time her husband will honor her, because she has borne him six sons.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Genesis 30:21-22",
+          "text": "After that, Leah has a daughter and names her Dinah. Then God remembers Rachel and listens to her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 30:20",
-          "question": "Then Leah says this time her husband will ___ her, because she has borne him six sons.",
-          "answers": [
-            {
-              "text": "honor",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "fear",
-              "correct": false
-            },
-            {
-              "text": "obey",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Genesis 30:21",
-          "text": "After that, Leah has a daughter and names her Dinah. And Rachel? Still no child of her own.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 30:22",
-          "question": "Then God remembers Rachel. He listens to her and opens her womb, just like He did for Leah.",
+          "question": "God opens Rachel's womb.",
           "answers": [
             {
               "text": "True",
@@ -606,7 +537,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 30:23",
@@ -630,7 +561,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 30:24",
@@ -641,24 +572,24 @@
               "correct": true
             },
             {
-              "text": "Now my sister will envy me",
+              "text": "May the LORD give me a daughter",
               "correct": false
             },
             {
-              "text": "Now my husband will honor me",
+              "text": "May the LORD bless my sister too",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "Genesis 30:24",
           "text": "Rachel's still hoping, and the oven's still warm. Jacob's story keeps rolling, friend, so don't hang up that apron yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

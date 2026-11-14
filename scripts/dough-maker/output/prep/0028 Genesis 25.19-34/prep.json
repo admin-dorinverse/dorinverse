@@ -9,70 +9,66 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 25:19-20",
-          "text": "Pull up a stool, friend, because this is the account of Isaac, Abraham's son. At forty years old, Isaac marries Rebekah, the daughter of Bethuel the Aramean from Paddan-aram and the sister of Laban the Aramean. I tried saying Paddan-aram three times fast, and my mustache tied itself in a KNOT.",
-          "needs_agent_fix": true,
+          "text": "Pull up a stool, friend, because this is the account of Isaac, son of Abraham, the man God called to leave his country (Genesis 12:1). At forty years old, Isaac marries Rebekah, the daughter of Bethuel the Aramean from Paddan-aram and the sister of Laban the Aramean.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Genesis 25:21",
-          "text": "Later, Isaac takes it straight to the LORD in prayer for his wife, because Rebekah is barren. I bet those were some heavy prayers.",
-          "needs_agent_fix": true,
+          "question": "Later, Isaac's wife Rebekah is barren. What does Isaac do about it?",
+          "answers": [
+            {
+              "text": "He prays to the LORD for her",
+              "correct": true
+            },
+            {
+              "text": "He asks Laban for advice",
+              "correct": false
+            },
+            {
+              "text": "He waits and says nothing",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 25:21",
-          "question": "Isaac prays to the LORD for Rebekah because she can't have children. How does the LORD answer?",
-          "answers": [
-            {
-              "text": "He hears and Rebekah conceives",
-              "correct": true
-            },
-            {
-              "text": "He tells Isaac to keep waiting",
-              "correct": false
-            },
-            {
-              "text": "He sends an angel with a sign",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Genesis 25:21-22",
+          "text": "And the LORD hears his prayer, and Rebekah conceives! But the children inside her struggle with each other.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Genesis 25:22",
-          "text": "But the children inside her struggle with each other, and Rebekah says, “Why is this happening to me?” Friend, they haven't even been BORN yet and they're already fighting over the armrest.",
-          "needs_agent_fix": true,
+          "text": "Rebekah says, “Why is this happening to me?” Friend, they haven't even been BORN yet and they're already fighting over the armrest.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 25:22",
-          "question": "Rebekah's children are struggling inside her, and she wants answers. What does she do?",
+          "question": "Rebekah wants answers about the struggle inside her, so she goes to inquire of the LORD.",
           "answers": [
             {
-              "text": "She goes to inquire of the LORD",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "She asks Isaac to pray again",
-              "correct": false
-            },
-            {
-              "text": "She goes back to her family",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -80,7 +76,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 25:23",
-          "question": "Rebekah goes to the LORD, and He answers her. What does He say is in her womb?",
+          "question": "Rebekah takes her question to the LORD, and He answers her. What does He say is in her womb?",
           "answers": [
             {
               "text": "Two nations",
@@ -95,26 +91,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Genesis 25:23",
-          "question": "The LORD also tells Rebekah that one people will be stronger than the other, and the younger will serve the older.",
+          "question": "The LORD says the two peoples will be separated, and one will be stronger than the other. Then He says the older will serve the ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "younger",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "father",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "stranger",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -122,38 +123,39 @@
           "kind": "story",
           "verses": "Genesis 25:24-25",
           "text": "When her time comes, sure enough, it's TWINS! The first one comes out red, covered with hair like a fur coat, so they name him Esau.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 25:26",
-          "question": "Right after Esau comes his twin brother. How does the second twin come out?",
+          "question": "Right after Esau, his brother comes out grasping Esau's heel, so he is named ___.",
           "answers": [
             {
-              "text": "Grasping Esau's heel",
-              "correct": true
+              "text": "Jacob",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Holding Esau's hand",
+              "text": "Joseph",
               "correct": false
             },
             {
-              "text": "Kicking Esau's foot",
+              "text": "Reuben",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Genesis 25:20-26",
-          "text": "So the heel-grabber gets named Jacob, and Isaac is sixty years old when the twins are born. Married at forty, twins at sixty: that's TWENTY years, friend, and I used to complain about a twelve-minute oven timer.",
-          "needs_agent_fix": true,
+          "verses": "Genesis 25:20, 26",
+          "text": "Isaac is sixty years old when the twins are born. Married at forty, twins at sixty: that's TWENTY years, friend, and I used to complain about a twelve-minute oven timer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -225,7 +227,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 25:28",
-          "question": "Isaac has a taste for wild game, so Isaac loved ___, but Rebekah loved ___.",
+          "question": "Isaac has a taste for wild game, so he loves ___. But Rebekah loves Jacob.",
           "answers": [
             {
               "text": "Esau",
@@ -233,16 +235,7 @@
               "blank": 1
             },
             {
-              "text": "Jacob",
-              "correct": true,
-              "blank": 2
-            },
-            {
               "text": "Ishmael",
-              "correct": false
-            },
-            {
-              "text": "Joseph",
               "correct": false
             },
             {
@@ -265,20 +258,21 @@
           "card": 7,
           "kind": "story",
           "verses": "Genesis 25:30",
-          "text": "Esau says to Jacob, “Let me eat some of that red stew, for I am famished.” I bet he never even asked what was in it, like me snatching a cookie off a HOT tray without checking the topping.",
+          "text": "Esau says to Jacob, “Let me eat some of that red stew, for I am famished.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 25:30",
-          "question": "Because of that red stew, Esau ends up with another name. What is it?",
+          "question": "Because of that red stew, Esau is also called ___.",
           "answers": [
             {
               "text": "Edom",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Moab",
@@ -341,21 +335,17 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 25:33",
-          "question": "Esau's ready to give up his birthright for the stew. What does Jacob make him do first?",
+          "question": "After Esau's answer, Jacob takes him at his word and asks for no promise.",
           "answers": [
             {
-              "text": "Swear to him",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Ask their father",
-              "correct": false
-            },
-            {
-              "text": "Pay him in silver",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -364,37 +354,52 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Genesis 25:34",
-          "text": "So Jacob gives Esau some bread and lentil stew, and Esau eats and drinks, then gets up and goes away. Friend, I've seen people think harder about a parking spot.",
+          "verses": "Genesis 25:33",
+          "text": "Jacob says, “Swear to me first,” so Esau swears to Jacob and sells him the birthright.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Genesis 25:34",
-          "question": "Esau eats, drinks, gets up and goes away. How does the passage sum it up? Thus Esau ___ his birthright.",
-          "answers": [
-            {
-              "text": "despised",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "regretted",
-              "correct": false
-            },
-            {
-              "text": "mourned",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Jacob gives Esau some bread and lentil stew. Esau eats and drinks, then gets up and goes away.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Genesis 25:34",
+          "question": "Esau sells his birthright for one meal, then eats, drinks, gets up and goes away. What does that show about how Esau sees his birthright?",
+          "answers": [
+            {
+              "text": "He thinks little of it",
+              "correct": true
+            },
+            {
+              "text": "He grieves giving it up",
+              "correct": false
+            },
+            {
+              "text": "He plans to win it back",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Genesis 25:34",
+          "text": "“Thus Esau despised his birthright.” Friend, that's trading the WHOLE bakery for one warm cookie.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "story",
           "verses": "Genesis 25:34",
           "text": "Keep your apron on, friend, because this family? Oh, they're just getting WARMED UP.",

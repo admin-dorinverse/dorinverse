@@ -9,27 +9,28 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 38:1",
-          "text": "Joseph's been sold and taken to Egypt (Genesis 37:28, 36), and now the story follows one of his brothers: Judah, the one who said sell him instead of killing him (Genesis 37:26-27). About that time, Judah leaves his brothers. He settles near a man named Hirah, an Adullamite.",
+          "text": "Judah is one of Jacob's sons, and he's the one who told his brothers to sell their brother Joseph instead of killing him (Genesis 37:26-27). So they sold him, and Joseph was taken to Egypt (Genesis 37:28, 36). About that time, Judah leaves his brothers and settles near a man named Hirah, an Adullamite.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 38:2",
-          "question": "There Judah sees the daughter of a man named Shua and takes her as his wife. Where is Shua from?",
+          "question": "There Judah sees the daughter of a ___ man named Shua and takes her as his wife.",
           "answers": [
             {
-              "text": "He's a Canaanite",
-              "correct": true
+              "text": "Canaanite",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He's an Egyptian",
+              "text": "Egyptian",
               "correct": false
             },
             {
-              "text": "He's a Midianite",
+              "text": "Midianite",
               "correct": false
             }
           ],
@@ -40,7 +41,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 38:3-5",
-          "text": "Then come the boys: Er, then Onan, then Shelah, born at Chezib. Three sons, friend, which means three more hands reaching for the cookie dough before it ever sees an oven.",
+          "text": "Then come three boys: Er, then Onan, then Shelah, who's born at Chezib.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -78,73 +79,49 @@
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Genesis 38:8",
-          "text": "Now Tamar is a widow with no children. So Judah turns to his second son, Onan.",
+          "question": "Tamar is a widow now. Judah tells his second son, Onan, to do his duty and raise up offspring with her. Who is that offspring for?",
+          "answers": [
+            {
+              "text": "His brother Er",
+              "correct": true
+            },
+            {
+              "text": "Onan himself",
+              "correct": false
+            },
+            {
+              "text": "Tamar's father",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 38:8",
-          "question": "Judah tells Onan to do his duty as Tamar's brother-in-law and raise up offspring for his ___.",
-          "answers": [
-            {
-              "text": "brother",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "father",
-              "correct": false
-            },
-            {
-              "text": "tribe",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 38:9",
+          "text": "But Onan knows the offspring won't belong to him. So whenever he sleeps with his brother's wife, he spills his seed on the ground so he won't produce offspring for his brother.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Genesis 38:9",
-          "text": "But Onan knows something. Any child that comes wouldn't belong to him.",
+          "verses": "Genesis 38:10",
+          "text": "What Onan does is wicked in the sight of the LORD. That line again, just like his brother Er.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 38:9",
-          "question": "So whenever Onan is with Tamar, what does he make sure of?",
-          "answers": [
-            {
-              "text": "That no child comes for his brother",
-              "correct": true
-            },
-            {
-              "text": "That the child gets raised as his",
-              "correct": false
-            },
-            {
-              "text": "That Tamar goes back to her family",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 38:10",
-          "question": "The LORD sees what Onan did as wicked.",
+          "question": "After this, the LORD puts Onan to death as well.",
           "answers": [
             {
               "text": "True",
@@ -159,15 +136,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "story",
-          "verses": "Genesis 38:10",
-          "text": "So the LORD puts Onan to death as well. That leaves Judah one son: Shelah, the youngest.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 38:11",
@@ -190,29 +159,29 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 38:11",
-          "question": "Judah tells Tamar to wait. But he's thinking Shelah may die too, like his brothers.",
+          "question": "When Judah sends Tamar off to wait, he thinks Shelah is safe from what happened to his brothers.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Genesis 38:11",
-          "text": "So Tamar goes to live in her father's house, and she waits. Friend, I know waiting: I sat in a junk drawer so long the dust had DUST.",
+          "text": "So Tamar goes to live in her father's house, and she waits. Friend, I know waiting: I spent years in the back of a junk drawer, till the dust had DUST.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -233,20 +202,21 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 38:13",
-          "question": "Somebody tells Tamar her father-in-law is going up to Timnah. What is he going up there to do?",
+          "question": "Somebody tells Tamar her father-in-law is going up to Timnah to ___ his sheep.",
           "answers": [
             {
-              "text": "Shear his sheep",
-              "correct": true
+              "text": "shear",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Buy a field",
+              "text": "sell",
               "correct": false
             },
             {
-              "text": "Meet his brothers",
+              "text": "water",
               "correct": false
             }
           ],
@@ -258,7 +228,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 38:14",
-          "question": "Tamar hears Judah is headed to Timnah. By now Shelah has grown up, and she has been given to him as a wife.",
+          "question": "Now that Shelah is grown, Judah has given Tamar to him as a wife.",
           "answers": [
             {
               "text": "True",
@@ -275,20 +245,21 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 38:14",
-          "question": "So Tamar takes off her widow's garments. What does she do to disguise herself?",
+          "question": "So Tamar takes off her widow's garments and covers her face with a ___ to disguise herself.",
           "answers": [
             {
-              "text": "Covers her face with a veil",
-              "correct": true
+              "text": "veil",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Cuts her hair short",
+              "text": "hood",
               "correct": false
             },
             {
-              "text": "Puts on a borrowed cloak",
+              "text": "mask",
               "correct": false
             }
           ],
@@ -299,24 +270,28 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 38:14",
-          "text": "Then she sits down at the entrance to Enaim, right on the road to Timnah. And she waits for Judah to come by.",
+          "text": "Then she sits down at the entrance to Enaim, which is on the way to Timnah. Right on the road Judah's taking.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 38:16",
-          "question": "Judah comes down the road and sees the veiled woman. He knows right away it's his daughter-in-law Tamar.",
+          "type": "multiple_choice",
+          "verses": "Genesis 38:15",
+          "question": "Judah comes down the road and sees a woman with her face covered. What does he take her for?",
           "answers": [
             {
-              "text": "True",
+              "text": "A prostitute",
+              "correct": true
+            },
+            {
+              "text": "A shepherd's daughter",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "A servant from Timnah",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -325,36 +300,29 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Genesis 38:15-16",
-          "text": "He has NO idea. He thinks she's a prostitute because her face is covered.",
+          "verses": "Genesis 38:16",
+          "text": "He doesn't realize she's his daughter-in-law. He goes over and asks to sleep with her, and she asks what he'll give her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Genesis 38:16",
-          "text": "He goes over and asks to sleep with her. And she asks what he'll give her.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 38:17",
-          "question": "Judah doesn't pay on the spot. What does he promise to send her?",
+          "question": "Judah doesn't pay on the spot. He promises to send her a young ___ from his flock.",
           "answers": [
             {
-              "text": "A young goat from his flock",
-              "correct": true
+              "text": "goat",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Some silver from his purse",
+              "text": "lamb",
               "correct": false
             },
             {
-              "text": "A cloak from his own pack",
+              "text": "ram",
               "correct": false
             }
           ],
@@ -362,15 +330,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Genesis 38:17",
-          "text": "But Tamar isn't taking a goat on credit. She says only if he leaves her a pledge until he sends it.",
+          "text": "But Tamar wants more than a promise. She says only if he leaves her a pledge until he sends it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 38:18",
@@ -381,78 +349,62 @@
               "correct": true
             },
             {
-              "text": "His ring and his cloak",
+              "text": "His ring and robe and sandals",
               "correct": false
             },
             {
-              "text": "His sandals and his belt",
+              "text": "His cloak and belt and purse",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Genesis 38:18",
+          "text": "So Judah gives them to her and sleeps with her, and she becomes pregnant by him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Genesis 38:18",
-          "text": "Judah hands over all three, and Tamar becomes pregnant by him. Friend, that's like handing a stranger your wallet, your ID AND your car keys as a promise to pay later.",
+          "verses": "Genesis 38:19",
+          "text": "Then Tamar gets up and leaves. She takes off her veil and puts her widow's garments back on.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 38:19",
-          "question": "Then Tamar gets up, leaves and takes off her veil. She puts her ___ garments back on.",
-          "answers": [
-            {
-              "text": "widow's",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wedding",
-              "correct": false
-            },
-            {
-              "text": "servant's",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 38:20",
+          "text": "Judah sends his friend Hirah with the young goat to collect his things from the woman.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Genesis 38:20",
-          "text": "Judah sends his friend Hirah with the young goat to collect his things from the woman. I bet Hirah never thought being Judah's friend meant goat delivery.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 38:20",
-          "question": "Hirah finds the woman by the road and gets Judah's things back.",
+          "question": "When Hirah goes looking, he can't find the woman.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 38:21",
@@ -475,7 +427,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Genesis 38:22",
           "text": "So Hirah goes back and tells Judah everything. No woman, no seal, no cord and no staff.",
@@ -483,7 +435,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 38:23",
@@ -494,11 +446,11 @@
               "correct": true
             },
             {
-              "text": "So Hirah won't search any longer",
+              "text": "So she won't come asking for more",
               "correct": false
             },
             {
-              "text": "Because he has another seal at home",
+              "text": "So Tamar won't hear about it",
               "correct": false
             }
           ],
@@ -506,10 +458,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Genesis 38:23",
-          "text": "So Judah just walks away from his seal, his cord and his staff. Friend, this man would rather lose his wallet, his ID AND his car keys than look silly asking for them back.",
+          "text": "Judah adds, \"After all, I did send her this young goat, but you could not find her.\" Friend, some folks would rather lose a whole jacket than make one awkward call asking for it back.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -554,7 +506,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 38:25",
-          "text": "As they're bringing her out, Tamar sends a message to her father-in-law. Three months she's been holding onto something, and now she plays it.",
+          "text": "As they're bringing her out, Tamar sends a message to her father-in-law. Friend, I'm holding my breath.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -563,18 +515,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 38:25",
-          "question": "Tamar's message tells Judah to examine something. What?",
+          "question": "What does Tamar's message to her father-in-law Judah say?",
           "answers": [
             {
-              "text": "His seal and cord and staff",
+              "text": "She's pregnant by the owner of these items",
               "correct": true
             },
             {
-              "text": "The young goat from his flock",
+              "text": "She's pregnant by Judah's son Shelah",
               "correct": false
             },
             {
-              "text": "Her widow's garments",
+              "text": "She's pregnant by a man from Enaim",
               "correct": false
             }
           ],
@@ -585,7 +537,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Genesis 38:25",
-          "text": "Her message: \"I am pregnant by the man to whom these items belong.\" And then: \"Please examine them. Whose seal and cord and staff are these?\"",
+          "text": "And she adds, \"Please examine them. Whose seal and cord and staff are these?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -594,7 +546,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 38:26",
-          "question": "Judah recognizes the items. He says Tamar is more ___ than he is.",
+          "question": "Judah recognizes the items. Since he did not give her to his son Shelah, he says Tamar is more ___ than he is.",
           "answers": [
             {
               "text": "righteous",
@@ -602,7 +554,7 @@
               "blank": 1
             },
             {
-              "text": "foolish",
+              "text": "reckless",
               "correct": false
             },
             {
@@ -615,56 +567,14 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 38:26",
-          "question": "Why does Judah say Tamar is more righteous than he is?",
-          "answers": [
-            {
-              "text": "He didn't give her to Shelah",
-              "correct": true
-            },
-            {
-              "text": "She paid back the young goat",
-              "correct": false
-            },
-            {
-              "text": "She never asked him for help",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 38:26-27",
+          "text": "Judah does not have relations with her again. Then the time comes for Tamar to give birth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 38:26",
-          "question": "After this, Judah has relations with Tamar again.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Genesis 38:27",
-          "text": "Months go by, and the time comes for Tamar to give birth. And friend, there's a surprise waiting.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 38:27",
@@ -683,30 +593,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "Genesis 38:28",
-          "text": "As she's giving birth, one of the twins puts out his hand. The midwife grabs a scarlet thread, QUICK.",
+          "text": "As she's giving birth, one of the twins puts out his hand. The midwife takes a scarlet thread.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 38:28",
-          "question": "What does the midwife do with the scarlet thread?",
+          "question": "The midwife ties the scarlet thread around the baby's ___.",
           "answers": [
             {
-              "text": "Ties it around the baby's wrist",
-              "correct": true
+              "text": "wrist",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Wraps it around Tamar's hand",
+              "text": "ankle",
               "correct": false
             },
             {
-              "text": "Hangs it from the doorway",
+              "text": "finger",
               "correct": false
             }
           ],
@@ -714,19 +625,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Genesis 38:28-29",
-          "text": "\"This one came out first,\" she announces. Then that little hand pulls right back in.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 38:29",
-          "question": "The twin with the scarlet thread ends up being born first.",
+          "question": "After the midwife announces, \"This one came out first,\" the twin with the scarlet thread goes on to be born first.",
           "answers": [
             {
               "text": "True",
@@ -741,15 +644,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 12,
           "kind": "story",
           "verses": "Genesis 38:29",
-          "text": "His brother comes out instead, and the midwife says, \"You have broken out first!\" Brand new to the world and already cutting in line.",
+          "text": "His hand pulls back and his brother comes out instead, and the midwife says, \"You have broken out first!\" Friend, that baby is brand new and ALREADY cutting in line.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 38:29",
@@ -772,10 +675,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 14,
           "kind": "story",
           "verses": "Genesis 38:30",
-          "text": "Then his brother comes out, scarlet thread still on his wrist, and he's named Zerah. Hold onto Perez and Zerah, friend, because Matthew lists them both, born to Judah by Tamar, in the family line of Jesus (Matthew 1:1, 3).",
+          "text": "Then his brother comes out, scarlet thread still on his wrist, and he's named Zerah. Hold onto Perez and Zerah, friend, because the Gospel of Matthew names them both, born to Judah by Tamar, in its genealogy of Jesus Christ (Matthew 1:1, 3).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

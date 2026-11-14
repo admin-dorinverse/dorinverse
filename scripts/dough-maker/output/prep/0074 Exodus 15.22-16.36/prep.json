@@ -9,75 +9,51 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 15:22",
-          "text": "Moses, Israel’s leader, leads the people away from the Red Sea and into the Desert of Shur. They walk and walk, and nobody finds any water. It’s circling the parking garage looking for a spot, friend, level after level after level, and NOTHING.",
-          "needs_agent_fix": true,
+          "text": "Moses, Israel’s leader, leads the people away from the Red Sea, where the LORD brought them through on dry ground (Exodus 14:29). They head into the Desert of Shur, and for three days they walk without finding water. That’s circling a parking garage, friend: level after level after level, and NOTHING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 15:22",
-          "question": "How long do the Israelites walk through the Desert of Shur without finding water?",
-          "answers": [
-            {
-              "text": "Three days",
-              "correct": true
-            },
-            {
-              "text": "Seven days",
-              "correct": false
-            },
-            {
-              "text": "Ten days",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Exodus 15:23",
+          "text": "At last they reach Marah, and there’s WATER, but it’s bitter, so they can’t drink it. You know when you finally find a free outlet at the airport and it’s DEAD?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Exodus 15:23",
-          "text": "Then they reach a place called Marah and find WATER, but it’s like the one outlet at the airport that doesn’t work. They can’t drink it.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Exodus 15:24",
+          "question": "At Marah, the water is too bitter to drink. What do the people do?",
+          "answers": [
+            {
+              "text": "They grumble against Moses",
+              "correct": true
+            },
+            {
+              "text": "They dig for water nearby",
+              "correct": false
+            },
+            {
+              "text": "They pray together for rain",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 15:23",
-          "question": "The Israelites can’t drink the water at Marah because it is ___.",
-          "answers": [
-            {
-              "text": "bitter",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "muddy",
-              "correct": false
-            },
-            {
-              "text": "warm",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Exodus 15:22, 24",
+          "text": "“What are we to drink?” they ask. Friend, people fall apart when the Wi-Fi drops for three MINUTES, and these folks have gone three DAYS without water.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Exodus 15:24",
-          "text": "So the people grumble against Moses, saying, “What are we to drink?” Three DAYS, friend, and I’ve watched grown adults lose their whole mind when the Wi-Fi drops for three MINUTES.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 15:25",
@@ -88,7 +64,7 @@
               "correct": true
             },
             {
-              "text": "He strikes a rock with his staff",
+              "text": "He sends men to dig a well",
               "correct": false
             },
             {
@@ -96,50 +72,51 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Exodus 15:25",
+          "text": "The LORD shows Moses a log, and Moses casts it into the bitter water. Friend, I’d have bet my apron that a log just makes it WORSE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Exodus 15:25",
-          "text": "And the LORD shows Moses a log. Moses casts it into the bitter water, and I’d be standing there going, friend, you’re about to make it WORSE.",
-          "needs_agent_fix": true,
+          "question": "Moses throws the log into the bitter water at Marah, and the water turns ___.",
+          "answers": [
+            {
+              "text": "sweet",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "clear",
+              "correct": false
+            },
+            {
+              "text": "cold",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Exodus 15:25",
-          "question": "Moses has thrown the log into the bitter water at Marah. What happens to the water?",
-          "answers": [
-            {
-              "text": "It turns sweet",
-              "correct": true
-            },
-            {
-              "text": "It turns clear",
-              "correct": false
-            },
-            {
-              "text": "It turns cold",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Exodus 15:25-26",
+          "text": "There the LORD makes a statute and an ordinance for them, and there He tests them. He says, “If you will listen carefully to the voice of the LORD your God…”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Exodus 15:25-26",
-          "text": "Right there, the LORD makes a statute and an ordinance for them, and He tests them. Then He speaks, and His words start with an “if.”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 15:26",
@@ -151,19 +128,19 @@
               "blank": 1
             },
             {
-              "text": "famines",
+              "text": "droughts",
               "correct": false
             },
             {
-              "text": "floods",
+              "text": "earthquakes",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 15:26",
@@ -178,23 +155,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Exodus 15:27",
+          "text": "Then they move on to a place called Elim. Friend, after Marah, I’d send somebody ahead to TASTE the water first.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Exodus 15:27",
-          "text": "Then they move on to a place called Elim. Friend, after that last stop, I’d send somebody ahead to TASTE the water first.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 15:27",
-          "question": "What do the Israelites find at Elim, where they camp by the waters?",
+          "question": "The Israelites come to Elim and camp there. What do they find?",
           "answers": [
             {
               "text": "Twelve springs and seventy palm trees",
@@ -209,7 +186,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -246,7 +223,7 @@
               "correct": true
             },
             {
-              "text": "Fish they ate for free",
+              "text": "Warm homes and fine clothes",
               "correct": false
             },
             {
@@ -261,36 +238,12 @@
           "card": 4,
           "kind": "story",
           "verses": "Exodus 16:3-4",
-          "text": "They say Moses and Aaron brought them out here to starve. Then the LORD tells Moses what He’s about to do, and He starts with the word “Behold.”",
+          "text": "They say Moses and Aaron brought them out here to starve. Then the LORD tells Moses, “Behold, I will rain down bread from heaven for you.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 16:4",
-          "question": "The LORD tells Moses He will rain down ___ from heaven for them.",
-          "answers": [
-            {
-              "text": "bread",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "fire",
-              "correct": false
-            },
-            {
-              "text": "water",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 16:4",
@@ -309,7 +262,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 16:4",
@@ -332,94 +285,81 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Exodus 16:5",
-          "question": "The LORD says the sixth day will be different. On the sixth day, how much will the people bring in?",
+          "question": "The LORD says that on the sixth day, the people will bring in twice as much as on the other days.",
           "answers": [
             {
-              "text": "Twice as much",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Half as much",
-              "correct": false
-            },
-            {
-              "text": "None at all",
+              "text": "False",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Exodus 16:6-8",
+          "text": "Moses and Aaron tell everyone that this evening they’ll know it was the LORD who brought them out of Egypt, and in the morning they’ll see the LORD’s glory. Moses adds that the LORD will give them meat to eat this evening and bread to fill them in the morning.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Exodus 16:6-7",
-          "text": "Moses and Aaron tell everyone that this evening they’ll know it was the LORD who brought them out of Egypt, and in the morning they’ll see the LORD’s glory. Then they ask, “For who are we, that you should grumble against us?”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 16:8",
-          "question": "Moses says the LORD will give them ___ to eat this evening and bread to fill them in the ___.",
+          "question": "Moses asks, “Who are we?” He says the people’s grumblings are not against him and Aaron but against the ___.",
           "answers": [
             {
-              "text": "meat",
+              "text": "LORD",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "morning",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "fish",
+              "text": "elders",
               "correct": false
             },
             {
-              "text": "noon",
-              "correct": false
-            },
-            {
-              "text": "water",
+              "text": "Egyptians",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Exodus 16:9",
+          "text": "Then Moses tells Aaron to call the whole congregation to come before the LORD, because He has heard their grumbling.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Exodus 16:9-10",
-          "text": "Moses tells Aaron to call the whole congregation to come before the LORD, because He has heard their grumbling. While Aaron is still talking, everybody turns and looks toward the desert.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 16:10",
-          "question": "As Aaron speaks to the congregation, they look out toward the desert. What appears?",
+          "question": "As Aaron speaks, the congregation looks toward the desert and the glory of the LORD appears. What does it appear in?",
           "answers": [
             {
-              "text": "The glory of the LORD in a cloud",
+              "text": "A cloud",
               "correct": true
             },
             {
-              "text": "A pillar of fire over the camp",
+              "text": "A burning bush",
               "correct": false
             },
             {
-              "text": "An angel standing on a hill",
+              "text": "A flash of lightning",
               "correct": false
             }
           ],
@@ -427,7 +367,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Exodus 16:11-12",
           "text": "The LORD tells Moses He has heard the grumbling. At twilight they’ll eat meat, in the morning they’ll be filled with bread, and then they’ll know He is the LORD their God.",
@@ -435,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 16:13",
@@ -459,7 +399,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Exodus 16:13-14",
           "text": "In the morning there’s a layer of dew around the camp. When it dries up, there are thin flakes on the desert floor, as fine as frost on the ground.",
@@ -467,11 +407,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 16:15",
-          "question": "The Israelites see thin flakes on the desert floor, and they don’t know what they are. What do they ask one another?",
+          "question": "The Israelites find thin flakes on the desert floor. What do they ask one another?",
           "answers": [
             {
               "text": "What is it",
@@ -490,15 +430,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Exodus 16:15",
-          "text": "Moses tells them, “It is the bread that the LORD has given you to eat.” Bread from HEAVEN, friend, and in all my years in that junk drawer, the only thing that ever fell on me was a takeout menu.",
+          "text": "Picture the whole camp standing around those flakes like a package nobody remembers ordering. Then Moses tells them, “It is the bread that the LORD has given you to eat.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Exodus 16:16-17",
           "text": "The LORD’s command is for each one to gather as much as he needs, an omer for each person in the tent. So they go out, and some gather more, and some gather less.",
@@ -506,19 +446,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 16:18",
-          "question": "When the Israelites measure the bread by the omer, the ones who gathered more have some left over.",
+          "question": "When the Israelites measure the bread by the omer, the ones who gathered less don’t come up short.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -534,7 +474,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 16:19",
-          "text": "Moses has one more rule about the bread from heaven: “No one may keep any of it until morning.” No leftovers, friend. Not even a crumb.",
+          "text": "Then Moses gives them a rule about the bread: “No one may keep any of it until morning.” No leftovers, friend. Not even a crumb.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -584,20 +524,39 @@
           "card": 4,
           "kind": "story",
           "verses": "Exodus 16:20",
-          "text": "Maggots AND a smell, so Moses is angry with them. I lived in a junk drawer for years, friend, and even I would’ve filed a complaint.",
+          "text": "One rule, ONE night, and somebody’s leftovers are already CRAWLING. So Moses is angry with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Exodus 16:21-22",
-          "text": "Every morning they gather what’s needed, and when the sun grows hot, it melts away. Then on the sixth day they gather twice as much, two omers per person, and the leaders come and report it to Moses.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Exodus 16:21",
+          "question": "Every morning each one gathers as much as is needed. When the sun grows hot, the bread melts away.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Exodus 16:22",
+          "text": "Then on the sixth day they gather twice as much, two omers per person, and the leaders come and report it to Moses.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 16:23",
@@ -620,37 +579,29 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "Exodus 16:23-24",
-          "text": "Moses passes along what the LORD said: “So bake what you want to bake, and boil what you want to boil.” Then they set the rest aside until morning, and somebody PLEASE write that first part on my oven.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 16:24",
-          "question": "Just like before, the bread set aside until the Sabbath morning gets maggots and smells.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Moses passes along what the LORD said: “So bake what you want to bake, and boil what you want to boil.” Then they set the rest aside until morning, and after those maggots, friend, I’d be lifting that cover REAL slow.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Exodus 16:25",
-          "text": "“Eat it today,” Moses says, “because today is a Sabbath to the LORD.”",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Exodus 16:24",
+          "question": "This time, the bread they set aside until morning doesn’t smell or get maggots.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -659,7 +610,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 16:26",
-          "question": "Moses says the people may gather the bread for six days. What does he say about the seventh day?",
+          "question": "Moses tells them to eat it today, because today is a Sabbath to the LORD. He says they may gather for six days. What does he say about the seventh day?",
           "answers": [
             {
               "text": "The bread won’t be there",
@@ -679,37 +630,18 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 16:27",
-          "question": "Some people go out to gather on the seventh day anyway, and they find a little bread.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Exodus 16:27-28",
+          "text": "Yet on the seventh day some people go out to gather anyway and find NOTHING, like pulling on the bank door on a holiday and reading the sign through the glass. Then the LORD says to Moses, “How long will you refuse to keep My commandments and instructions?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Exodus 16:27-28",
-          "text": "They find NOTHING, like pulling on the bank door on a holiday and reading the sign through the glass. Then the LORD says to Moses, “How long will you refuse to keep My commandments and instructions?”",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 16:29",
-          "question": "The LORD says that on the seventh day, everyone must ___ where he is.",
+          "question": "The LORD says He has given them the Sabbath, and on the seventh day everyone must ___ where he is.",
           "answers": [
             {
               "text": "stay",
@@ -729,51 +661,27 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Exodus 16:30-31",
           "text": "So the people rest on the seventh day. The house of Israel calls the bread manna, and it’s white like coriander seed.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Exodus 16:31",
+          "text": "It tastes like wafers made with honey. Friend, I’ve stamped cookies my whole life, and I could NEVER top that.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 16:31",
-          "question": "The manna tastes like wafers made with ___.",
-          "answers": [
-            {
-              "text": "honey",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "milk",
-              "correct": false
-            },
-            {
-              "text": "figs",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Exodus 16:31-32",
-          "text": "Honey wafers from heaven, friend, and I’ve been baking a LONG time, but I could NEVER. Then Moses says the LORD has commanded them to keep an omer of manna.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 17,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 16:32",
-          "question": "Moses says the LORD wants an omer of manna kept. What is it for?",
+          "question": "Moses says the LORD has commanded them to keep an omer of manna. What is it for?",
           "answers": [
             {
               "text": "So future generations can see it",
@@ -792,7 +700,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Exodus 16:33-34",
           "text": "So Aaron fills a jar with an omer of manna and places it in front of the Testimony, to be preserved just as the LORD commanded Moses.",
@@ -800,7 +708,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Exodus 16:35",
@@ -824,7 +732,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "Exodus 16:36",
           "text": "And in case you were wondering, an omer is a tenth of an ephah. I’m putting that on a sticky note on my oven, friend, because I am NOT doing that math in my head.",

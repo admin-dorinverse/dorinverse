@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "The right answer 'altar' already appeared as a wrong answer on card 4 ('He gathers stones for the altar'). That earlier card gives away this blank, and reuses an answer already shown.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "Stop 1 card 10 already showed the right answer 'God Himself will provide the lamb'. A baker can pick 'The LORD Will Provide' just by matching the word 'provide', so an earlier card gives away this answer.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "The blank asks the baker to complete a line of the promise ('all ___ of the earth will be blessed'). Nothing on a card lets the baker reason out 'nations' over 'kings' or 'cities', so it is a wording guess.",
+      "rule": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 17
+      },
+      "problem": "This summary card for the list of Nahor's sons goes item by item. It names Tebah, Gaham, Tahash and Maacah, which are not standout details.",
+      "rule": "He says in a few words what it covers and doesn't go item by item. He can name a standout detail the text gives if it helps the stretch stick."
+    }
+  ]
+}

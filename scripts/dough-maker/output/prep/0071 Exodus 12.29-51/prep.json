@@ -9,54 +9,20 @@
           "card": 1,
           "kind": "story",
           "verses": "Exodus 12:29",
-          "text": "Pharaoh, king of Egypt, still won’t let Israel go. The LORD said one more plague was coming, and the Israelites did just what He commanded for the Passover (Exodus 11:1, 10; 12:28). Now it’s midnight.",
+          "text": "Pharaoh, king of Egypt, still won’t let Israel go (Exodus 11:10). The LORD has said one more plague is coming, and He’s told Israel how to keep the Passover (Exodus 11:1; 12:1-28). Now it’s midnight.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Exodus 12:29",
-          "question": "At midnight the LORD strikes the land of Egypt. Who does He strike down?",
-          "answers": [
-            {
-              "text": "Every firstborn male",
-              "correct": true
-            },
-            {
-              "text": "Every soldier in Egypt",
-              "correct": false
-            },
-            {
-              "text": "Every official of Pharaoh",
-              "correct": false
-            }
-          ],
+          "text": "The LORD strikes down every firstborn male in the land of Egypt. It reaches from the firstborn of Pharaoh on his throne to the firstborn of the prisoner in the dungeon, and all the firstborn among the livestock.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Exodus 12:29",
-          "question": "The plague reaches from Pharaoh’s own firstborn down to the firstborn of the prisoner in the dungeon, but the livestock are spared.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
           "kind": "story",
           "verses": "Exodus 12:30",
           "text": "In the night, Pharaoh gets up. So do all his officials and all the Egyptians.",
@@ -64,22 +30,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Exodus 12:30",
-          "question": "Loud wailing goes up across Egypt that night. Why is it everywhere?",
+          "question": "Across Egypt there is loud ___, because there is no house without someone dead.",
           "answers": [
             {
-              "text": "No house is without someone dead",
-              "correct": true
+              "text": "wailing",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Every field is burned to the ground",
+              "text": "thunder",
               "correct": false
             },
             {
-              "text": "Every well in the land is dry",
+              "text": "fighting",
               "correct": false
             }
           ],
@@ -87,15 +54,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Exodus 12:31",
-          "text": "Then Pharaoh summons Moses, Israel’s leader, and his brother Aaron (Exodus 4:14). In the middle of the night.",
+          "text": "Then Pharaoh summons Moses, Israel’s leader, and his brother Aaron (Exodus 4:14). While it’s still night.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 12:31",
@@ -118,11 +85,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 12:32",
-          "question": "Pharaoh tells Moses and Aaron to take their flocks and herds too. Then he asks them to bless him as well.",
+          "question": "Pharaoh tells Moses and Aaron to take their flocks and herds with them.",
           "answers": [
             {
               "text": "True",
@@ -137,10 +104,33 @@
           "needs_human_decision": false
         },
         {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Exodus 12:32",
+          "question": "Pharaoh tells Moses and Aaron to go, flocks and herds too. Then he asks them for one more thing. What is it?",
+          "answers": [
+            {
+              "text": "To bless him too",
+              "correct": true
+            },
+            {
+              "text": "To leave the children",
+              "correct": false
+            },
+            {
+              "text": "To return in three days",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 9,
           "kind": "story",
           "verses": "Exodus 12:33",
-          "text": "And the Egyptians? They’re not just opening the door for Israel. They’re pushing them through it.",
+          "text": "And the Egyptians aren’t just opening the door for Israel. They’re hurrying them right through it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -203,36 +193,12 @@
           "card": 13,
           "kind": "story",
           "verses": "Exodus 12:35",
-          "text": "The Israelites do one more thing, just like Moses told them. They go to the Egyptians and ask.",
+          "text": "The Israelites do one more thing, just like Moses told them. They ask the Egyptians for articles of silver and gold, and for clothing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 12:35",
-          "question": "The Israelites ask the Egyptians for articles of silver and gold, and for ___.",
-          "answers": [
-            {
-              "text": "clothing",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "weapons",
-              "correct": false
-            },
-            {
-              "text": "chariots",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 12:36",
@@ -251,10 +217,33 @@
           "needs_human_decision": false
         },
         {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Exodus 12:36",
+          "question": "The Egyptians grant what the Israelites ask for. Why are they so willing?",
+          "answers": [
+            {
+              "text": "The LORD gave the people favor with them",
+              "correct": true
+            },
+            {
+              "text": "Pharaoh ordered them to hand it over",
+              "correct": false
+            },
+            {
+              "text": "Moses promised to pay them back later",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 16,
           "kind": "story",
           "verses": "Exodus 12:36",
-          "text": "The LORD gives the people such favor with the Egyptians that they grant the request, and in this way “they plundered the Egyptians.” That’s like asking the one coworker who NEVER shares for a chocolate chip, and they just hand it right over.",
+          "text": "In this way, “they plundered the Egyptians.” Friend, I shared that junk drawer with an expired coupon that believed in itself every single day, and even IT never promised a deal like that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -299,7 +288,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Exodus 12:37",
-          "text": "And this is not a small group, friend. I shared a drawer with a twist tie and a pile of rubber bands, and I thought THAT was crowded.",
+          "text": "And this is not a small group, friend. This is every parking lot after the big game, ALL emptying out at once.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -357,7 +346,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Exodus 12:39",
-          "text": "Out on the road, the people bake the dough they carried out of Egypt, with no kitchen and no counter. Baker to baker, I RESPECT that.",
+          "text": "Then the people take the dough they carried out of Egypt and bake it into unleavened loaves.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -366,7 +355,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 12:39",
-          "question": "The people bake the dough they carried out of Egypt into loaves made with leaven.",
+          "question": "The Israelites had their supplies all prepared before they left Egypt.",
           "answers": [
             {
               "text": "True",
@@ -407,40 +396,16 @@
           "card": 10,
           "kind": "story",
           "verses": "Exodus 12:40",
-          "text": "Now the Bible pauses the road trip to tell us how long Israel stayed in Egypt. And friend… I thought my years in the back of a junk drawer felt long.",
+          "text": "Israel’s stay in Egypt lasted 430 years. Friend, I spent years in the back of a junk drawer, and I thought THAT was long.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Exodus 12:40",
-          "question": "The Israelites’ stay in Egypt lasted ___ years.",
-          "answers": [
-            {
-              "text": "430",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "40",
-              "correct": false
-            },
-            {
-              "text": "70",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 12:41",
-          "question": "All the LORD’s divisions go out of Egypt at the end of the 430 years, to the very day.",
+          "question": "All the LORD’s divisions go out of Egypt on the very day the 430 years end.",
           "answers": [
             {
               "text": "True",
@@ -455,7 +420,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Exodus 12:42",
           "text": "That night, the LORD kept a vigil to bring them out of the land of Egypt.",
@@ -463,7 +428,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Exodus 12:42",
@@ -486,7 +451,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Exodus 12:43-49",
           "text": "Then the LORD gives Moses and Aaron the statute of the Passover: who may eat it and how. A foreigner living among them can join once all the males in his household are circumcised, the meat stays inside one house, and none of the bones may be broken.",
@@ -494,7 +459,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Exodus 12:50",
@@ -513,11 +478,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Exodus 12:51",
-          "text": "And on that very day, the LORD brings the Israelites out of the land of Egypt by their divisions. Friend, I know a little something about being brought out. But Israel’s road out of Egypt? It’s only getting started.",
-          "needs_agent_fix": true,
+          "text": "And on that very day, the LORD brings the Israelites out of the land of Egypt by their divisions. But friend, this road is only getting started.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

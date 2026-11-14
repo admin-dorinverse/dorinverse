@@ -9,43 +9,47 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 11:10",
-          "text": "Genesis follows one family line now, the account of Shem, Noah’s son (Genesis 5:32). Two years after the flood, when Shem is 100, he becomes the father of Arphaxad.",
+          "text": "At Babel, the LORD just scattered the people over the face of all the earth (Genesis 11:9). Now Genesis follows one family line, the account of Shem, Noah’s son (Genesis 5:32).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
-          "verses": "Genesis 11:11-25",
-          "text": "Then it’s son after son: Shelah, Eber, Peleg, Reu, Serug, and Nahor, who becomes the father of Terah. Each man has his son, lives on for years, and has other sons and daughters. Shem lives 500 more years after Arphaxad is born, and by the time we get to Nahor it’s 119, which, friend, is the SHORT one!",
-          "needs_agent_fix": true,
+          "verses": "Genesis 11:10-25",
+          "text": "Two years after the flood, Shem becomes the father of Arphaxad, and then it’s son after son: Shelah, Eber, Peleg, Reu, Serug, and Nahor, who becomes the father of Terah. Each man has his son, lives on for years, and has other sons and daughters. Shem lives 500 more years after Arphaxad is born, and by the time we get to Nahor it’s 119, which, friend, is the SHORT one!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Genesis 11:26-27",
+          "verses": "Genesis 11:26",
           "text": "When Terah is 70, he becomes the father of Abram, Nahor and Haran. Yes, ANOTHER Nahor, so somebody yells “NAHOR!” at the family reunion and two heads turn.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "Genesis 11:27-28",
+          "text": "Terah’s son Haran becomes the father of Lot. Then heavy news: while Terah is still alive, Haran dies in his native land, Ur of the Chaldeans.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 11:27",
-          "question": "Terah’s son Haran has a son of his own. What’s his name?",
+          "type": "true_false",
+          "verses": "Genesis 11:29",
+          "question": "Abram marries Sarai, and Nahor marries Milcah. True or false: Milcah is the daughter of Haran, the brother who died in Ur.",
           "answers": [
             {
-              "text": "Lot",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Laban",
-              "correct": false
-            },
-            {
-              "text": "Isaac",
+              "text": "False",
               "correct": false
             }
           ],
@@ -53,30 +57,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
-          "kind": "story",
-          "verses": "Genesis 11:28",
-          "text": "Then hard news. Haran dies in his native land, Ur of the Chaldeans.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Genesis 11:27-28",
-          "question": "Haran dies in Ur while his father Terah is still alive. Who in Terah’s family is left without a father?",
+          "verses": "Genesis 11:30",
+          "question": "Genesis has listed sons and daughters for man after man. Then it stops to say one thing about Abram’s wife Sarai. What is it?",
           "answers": [
             {
-              "text": "Lot",
+              "text": "She has no children",
               "correct": true
             },
             {
-              "text": "Abram",
+              "text": "She has many sons",
               "correct": false
             },
             {
-              "text": "Nahor",
+              "text": "She has one daughter",
               "correct": false
             }
           ],
@@ -86,29 +82,25 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Genesis 11:28-29",
-          "text": "I bet that one hurts Terah, saying goodbye to his own son. Then Abram marries Sarai, and Nahor marries Milcah.",
+          "verses": "Genesis 11:31",
+          "text": "Then Terah packs up his son Abram and his daughter-in-law Sarai, and they set out from Ur of the Chaldeans for the land of Canaan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 11:29",
-          "question": "Nahor marries Milcah, his own niece. She’s the daughter of ___.",
+          "type": "true_false",
+          "verses": "Genesis 11:31",
+          "question": "Lot’s father Haran has died. True or false: Terah leaves his grandson Lot behind in Ur.",
           "answers": [
             {
-              "text": "Haran",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Terah",
-              "correct": false
-            },
-            {
-              "text": "Eber",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -117,17 +109,21 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 11:30",
-          "question": "Genesis has listed sons and daughters for man after man. True or false: Abram and Sarai have children too.",
+          "type": "fill_blank",
+          "verses": "Genesis 11:31",
+          "question": "Terah’s family is headed for Canaan. But when they arrive in a place called ___, they settle there.",
           "answers": [
             {
-              "text": "True",
+              "text": "Haran",
+              "correct": true
+            },
+            {
+              "text": "Babel",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Nineveh",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -135,71 +131,21 @@
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Genesis 11:30-31",
-          "text": "After that long list of babies, this one lands heavy: Sarai is barren. Then Terah takes Abram and Sarai and sets out from Ur of the Chaldeans for the land of Canaan.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 11:31",
-          "question": "Lot’s father Haran has died. True or false: Terah brings his grandson Lot along on the trip.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Genesis 11:31",
-          "question": "Terah’s family is headed for Canaan. But where do they stop and settle?",
-          "answers": [
-            {
-              "text": "Haran",
-              "correct": true
-            },
-            {
-              "text": "Shinar",
-              "correct": false
-            },
-            {
-              "text": "Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
           "verses": "Genesis 11:32",
-          "question": "Terah lives 205 years, and he dies in ___.",
+          "question": "Terah’s family has settled down before reaching Canaan. Terah lives 205 years. What happens to him there?",
           "answers": [
             {
-              "text": "Haran",
+              "text": "He dies there",
               "correct": true
             },
             {
-              "text": "Canaan",
+              "text": "He goes back to Ur",
               "correct": false
             },
             {
-              "text": "Ur",
+              "text": "He builds a city",
               "correct": false
             }
           ],
@@ -216,7 +162,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 12:1",
-          "text": "Then the LORD speaks to Abram, and it’s a BIG ask. Leave your country, your kindred, and your father’s household.",
+          "text": "Then the LORD speaks to Abram, and it’s a BIG ask: “Leave your country, your kindred, and your father’s household…”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -247,7 +193,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 12:1-2",
-          "text": "That’s like your boss saying, “Pack up your whole life. I’ll text you the address later.” Then God starts making Abram promises, and they are HUGE.",
+          "text": "That’s like packing your whole life into the car and typing “I’ll know it when I see it” into the GPS. Then God starts making Abram promises, and they are HUGE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -279,15 +225,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 12:2",
-          "question": "God promises to bless Abram and make his name great. True or false: God says that blessing is meant for Abram alone.",
+          "question": "True or false: God promises to make Abram’s name great.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -296,8 +242,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Genesis 12:3",
-          "text": "God keeps going: He will bless those who bless Abram and curse those who curse him. Then comes the last line, so lean in, friend.",
+          "verses": "Genesis 12:2-3",
+          "text": "God says Abram will be a blessing. He’ll bless those who bless Abram and curse those who curse him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -306,18 +252,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 12:3",
-          "question": "Who does God say will be blessed through Abram?",
+          "question": "God has one more promise for Abram. How far does He say the blessing through Abram will reach?",
           "answers": [
             {
-              "text": "All the families of the earth",
+              "text": "To all the families of the earth",
               "correct": true
             },
             {
-              "text": "Only the descendants of Shem",
+              "text": "To every town in Canaan",
               "correct": false
             },
             {
-              "text": "Only the people of Canaan",
+              "text": "To his father’s whole household",
               "correct": false
             }
           ],
@@ -345,37 +291,14 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Genesis 12:4",
-          "question": "Abram is ___ years old when he leaves Haran.",
-          "answers": [
-            {
-              "text": "seventy-five",
-              "correct": true
-            },
-            {
-              "text": "forty",
-              "correct": false
-            },
-            {
-              "text": "one hundred",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "story",
           "verses": "Genesis 12:4-5",
-          "text": "So Abram packs up Sarai, his nephew Lot, and all the possessions and people they’d acquired in Haran, and sets out for Canaan. When I left my drawer I packed ZERO bags, and this man is moving a WHOLE household!",
+          "text": "So Abram leaves Haran at seventy-five years old with Sarai, his nephew Lot, and all the possessions and people they’d acquired there, headed for Canaan. When the angel called me out of that junk drawer I packed ZERO bags, and this man is moving a WHOLE household!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 12:5",
@@ -394,7 +317,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Genesis 12:5-6",
           "text": "He MAKES it, friend! Abram travels through the land as far as the Oak of Moreh at Shechem.",
@@ -402,7 +325,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 12:6",
@@ -421,15 +344,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Genesis 12:6-7",
-          "text": "The Canaanites are already in the land, so it’s like that boss finally texts the address and you walk in to find every desk taken. Then the LORD appears to Abram with a promise about this land.",
+          "text": "The Canaanites are already living in the land. Then the LORD appears to Abram with a promise about this land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 12:7",
@@ -444,7 +367,7 @@
               "correct": false
             },
             {
-              "text": "The Canaanites already there",
+              "text": "Abram’s brother Nahor",
               "correct": false
             }
           ],
@@ -452,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 12:7",
@@ -475,7 +398,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 12:8",
@@ -494,7 +417,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Genesis 12:8-9",
           "text": "There he calls on the name of the LORD, and then he journeys on toward the Negev. Abram’s on the move, friend, and this road has a whole lot more miles in it.",

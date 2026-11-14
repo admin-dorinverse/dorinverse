@@ -3,14 +3,14 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Genesis 29:1-14",
+      "verses": "Genesis 29:1-13",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Genesis 29:1-2",
-          "text": "Jacob is still on the road to find his uncle Laban, his mother's brother (Genesis 28:2). He reaches the land of the people of the east and spots a well in a field, with three flocks of sheep lying near it. A large stone covers the mouth of that well.",
-          "needs_agent_fix": true,
+          "text": "Jacob, Isaac's son, is still on the road to find his uncle Laban, his mother's brother (Genesis 28:2). He reaches the land of the people of the east and spots a well in a field, with three flocks of sheep lying near it. A large stone covers the mouth of that well.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,15 +41,15 @@
           "kind": "story",
           "verses": "Genesis 29:4",
           "text": "Jacob walks up to the shepherds by the well. \"My brothers,\" Jacob asks the shepherds, \"where are you from?\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 29:4",
-          "question": "Jacob is out looking for his uncle Laban. Where do these shepherds at the well say they're from?",
+          "question": "Jacob is out looking for his uncle Laban. The shepherds at the well tell him they're from ___.",
           "answers": [
             {
               "text": "Haran",
@@ -64,7 +64,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,7 +72,7 @@
           "kind": "story",
           "verses": "Genesis 29:4-5",
           "text": "HARAN is the very town Jacob set out for (Genesis 28:10), so that's like grabbing the one cookie cutter you wanted from a dark cupboard on the FIRST try. Jacob asks them, \"Do you know Laban the grandson of Nahor?\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +91,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,30 +99,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 29:6",
-          "question": "Jacob asks if Laban is well. The shepherds say yes, and then they point out someone coming with Laban's sheep. Who is it?",
+          "question": "Jacob asks if Laban is well. The shepherds say yes, and then they point out Laban's daughter coming with his sheep. What's her name?",
           "answers": [
             {
-              "text": "Laban's daughter Rachel",
+              "text": "Rachel",
               "correct": true
             },
             {
-              "text": "Laban's father Bethuel",
+              "text": "Milcah",
               "correct": false
             },
             {
-              "text": "Laban's sister Rebekah",
+              "text": "Deborah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Genesis 29:7",
-          "text": "Jacob looks around. It's still broad daylight, and it's not yet time to gather the livestock.",
-          "needs_agent_fix": true,
+          "text": "Jacob points out to the shepherds that it's still broad daylight and not yet time to gather the livestock.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,22 +130,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 29:7",
-          "question": "It's still broad daylight at the well. What does Jacob tell the shepherds to do?",
+          "question": "Jacob tells the shepherds it's still broad daylight and not yet time to gather the livestock. So what does he tell them to do?",
           "answers": [
             {
               "text": "Water the sheep and take them back to pasture",
               "correct": true
             },
             {
-              "text": "Pen the sheep up early for the night",
+              "text": "Bring the sheep home and shut them in",
               "correct": false
             },
             {
-              "text": "Let the sheep rest here until evening",
+              "text": "Let the sheep rest by the well till dark",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -153,7 +153,7 @@
           "kind": "story",
           "verses": "Genesis 29:8",
           "text": "He JUST met these guys, and he's already running the well. The shepherds tell him they can't, not until all the flocks are gathered and the stone is rolled away.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,38 +161,34 @@
           "kind": "story",
           "verses": "Genesis 29:9",
           "text": "While Jacob is still talking, Rachel arrives with her father's sheep, because she's a shepherdess.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 29:10",
-          "question": "The shepherds won't move the stone off the well until every flock shows up. As soon as Jacob sees Rachel with Laban's sheep, what does Jacob do?",
+          "question": "The shepherds won't move the stone off the well until every flock shows up. True or false: as soon as Jacob sees Rachel with Laban's sheep, he rolls the stone away himself.",
           "answers": [
             {
-              "text": "Rolls the stone away and waters the sheep",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Waits with the shepherds for the other flocks",
-              "correct": false
-            },
-            {
-              "text": "Asks the shepherds to move it for her",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "Genesis 29:10-11",
-          "text": "The shepherds' big rule about the stone? Jacob just ROLLS right past it. Then Jacob kisses Rachel and weeps aloud.",
-          "needs_agent_fix": true,
+          "text": "Jacob waters his uncle's sheep. Then Jacob kisses Rachel and weeps aloud.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -200,22 +196,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 29:12",
-          "question": "Rachel just met this man at the well. What does Jacob tell her about himself?",
+          "question": "Jacob tells Rachel he is Rebekah's son, a relative of her father. What does Rachel do?",
           "answers": [
             {
-              "text": "He's Rebekah's son and her father's relative",
+              "text": "Runs and tells her father",
               "correct": true
             },
             {
-              "text": "He's a shepherd from the east looking for work",
+              "text": "Asks him to wait by the well",
               "correct": false
             },
             {
-              "text": "He's a servant sent here by Abraham",
+              "text": "Sends a shepherd to fetch Laban",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -234,7 +230,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -242,91 +238,29 @@
           "kind": "story",
           "verses": "Genesis 29:13",
           "text": "Laban runs out to meet Jacob, embraces him, kisses him and brings him home. Jacob tells him all that had happened.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 29:14",
-          "question": "After Jacob tells Laban all that had happened, what does Laban call Jacob?",
-          "answers": [
-            {
-              "text": "His own flesh and blood",
-              "correct": true
-            },
-            {
-              "text": "A stranger in his house",
-              "correct": false
-            },
-            {
-              "text": "A hired hand for his flocks",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "story",
-          "verses": "Genesis 29:14",
-          "text": "And Jacob stays with Laban for a month. A whole month with family, friend? After my years in a junk drawer, that sounds like a VACATION.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
     },
     {
       "stop": 2,
-      "verses": "Genesis 29:15-30",
+      "verses": "Genesis 29:14-20",
       "cards": [
         {
           "card": 1,
           "kind": "story",
-          "verses": "Genesis 29:15",
-          "text": "Jacob is settled in at his uncle Laban's place. Then Laban says to him, \"Just because you are my relative, should you work for nothing?\"",
+          "verses": "Genesis 29:13-14",
+          "text": "Jacob is in his uncle Laban's home now, and Laban has something to say about him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 29:15",
-          "question": "Laban doesn't want Jacob working for nothing. So what does Laban ask Jacob to tell him?",
-          "answers": [
-            {
-              "text": "What his wages should be",
-              "correct": true
-            },
-            {
-              "text": "When he plans to go home",
-              "correct": false
-            },
-            {
-              "text": "Why he left his father's house",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Genesis 29:16",
-          "text": "Now, Laban has two daughters, Leah and Rachel. Remember those names, friend. You're gonna NEED them.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Genesis 29:16",
-          "question": "Laban has two daughters, Leah and Rachel. True or false: Leah is the older one.",
+          "verses": "Genesis 29:14",
+          "question": "After Jacob tells Laban all that had happened, Laban speaks up. True or false: Laban says Jacob is indeed his own flesh and blood.",
           "answers": [
             {
               "text": "True",
@@ -341,30 +275,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 3,
           "kind": "story",
-          "verses": "Genesis 29:17-18",
-          "text": "The text says Leah had weak eyes, but Rachel was shapely and beautiful. And Jacob loves Rachel.",
+          "verses": "Genesis 29:14",
+          "text": "Jacob stays with Laban a whole month. After my years in the back of a junk drawer, friend, a month with family sounds like a VACATION.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 4,
+          "kind": "story",
+          "verses": "Genesis 29:15",
+          "text": "Then Laban says to him, \"Just because you are my relative, should you work for nothing?\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 29:18",
-          "question": "Jacob loves Laban's daughter Rachel, and Laban just asked him to name his wages. What does Jacob offer Laban?",
+          "type": "fill_blank",
+          "verses": "Genesis 29:15",
+          "question": "Laban doesn't want his relative working for nothing. So Laban asks Jacob to tell him what his ___ should be.",
           "answers": [
             {
-              "text": "Seven years of work for Rachel",
+              "text": "wages",
               "correct": true
             },
             {
-              "text": "Three years of work for Rachel",
+              "text": "duties",
               "correct": false
             },
             {
-              "text": "A bride price in silver for Rachel",
+              "text": "title",
               "correct": false
             }
           ],
@@ -372,7 +314,88 @@
           "needs_human_decision": false
         },
         {
+          "card": 6,
+          "kind": "story",
+          "verses": "Genesis 29:16",
+          "text": "Now, Laban has two daughters, Leah and Rachel. Remember those names, friend, because you're gonna NEED them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 7,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Genesis 29:16",
+          "question": "Laban has two daughters, Leah and Rachel. True or false: Rachel is the older one.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Genesis 29:17-18",
+          "text": "Leah has weak eyes, but Rachel is shapely and beautiful. And Jacob loves Rachel.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Genesis 29:18",
+          "question": "Laban wants Jacob to name his price, and Jacob loves Rachel. So Jacob offers ___ years of work for Laban's younger daughter Rachel.",
+          "answers": [
+            {
+              "text": "seven",
+              "correct": true
+            },
+            {
+              "text": "two",
+              "correct": false
+            },
+            {
+              "text": "five",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Genesis 29:19",
+          "question": "Jacob offers seven years of work for Rachel. What does Laban say about giving her to Jacob?",
+          "answers": [
+            {
+              "text": "It's better than giving her to another",
+              "correct": true
+            },
+            {
+              "text": "Jacob must ask his father Isaac first",
+              "correct": false
+            },
+            {
+              "text": "Rachel has to agree to it first",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 29:20",
@@ -393,25 +416,23 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
+        }
+      ]
+    },
+    {
+      "stop": 3,
+      "verses": "Genesis 29:21-30",
+      "cards": [
         {
-          "card": 8,
-          "kind": "story",
-          "verses": "Genesis 29:20",
-          "text": "SEVEN YEARS, and to Jacob it feels like a few days, because of his love for her. Friend, I can't wait seven MINUTES for a batch to cool without sneaking one.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
+          "card": 1,
           "kind": "story",
           "verses": "Genesis 29:21-22",
-          "text": "Then Jacob tells Laban, \"Grant me my wife, for my time is complete…\" So Laban invites all the men of that place and prepares a feast.",
+          "text": "The seven years are up, and Jacob tells Laban, \"Grant me my wife, for my time is complete…\" So Laban invites all the men of that place and prepares a feast.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 2,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 29:23",
@@ -430,15 +451,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 3,
           "kind": "story",
           "verses": "Genesis 29:23-24",
-          "text": "Laban gives Jacob his daughter Leah. He also gives his servant girl Zilpah to Leah as her maidservant.",
+          "text": "Laban gives Jacob his daughter Leah, and Jacob sleeps with her. Laban also gives his servant girl Zilpah to Leah as her maidservant.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 4,
           "kind": "story",
           "verses": "Genesis 29:25",
           "text": "Then morning comes, and… \"there was Leah!\"",
@@ -446,22 +467,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 29:25",
-          "question": "Jacob goes straight to Laban: \"Wasn't it for Rachel that I served you?\" According to Jacob, what has Laban done to him?",
+          "question": "Jacob goes straight to Laban: \"Wasn't it for Rachel that I served you?\" Jacob says Laban has ___ him.",
           "answers": [
             {
-              "text": "Deceived him",
+              "text": "deceived",
               "correct": true
             },
             {
-              "text": "Rushed him",
+              "text": "rushed",
               "correct": false
             },
             {
-              "text": "Forgotten him",
+              "text": "forgotten",
               "correct": false
             }
           ],
@@ -469,32 +490,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Genesis 29:26",
-          "question": "Laban answers that it's not their custom here to give the ___ daughter in marriage before the ___ one.",
+          "question": "Laban answers Jacob with a custom. What does Laban say isn't done in their land?",
           "answers": [
             {
-              "text": "younger",
-              "correct": true,
-              "blank": 1
+              "text": "Marrying off the younger daughter before the older",
+              "correct": true
             },
             {
-              "text": "older",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "favorite",
+              "text": "Holding a wedding feast for a relative from far away",
               "correct": false
             },
             {
-              "text": "chosen",
-              "correct": false
-            },
-            {
-              "text": "promised",
+              "text": "Letting a groom work off the price of his bride",
               "correct": false
             }
           ],
@@ -502,30 +513,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 7,
           "kind": "story",
           "verses": "Genesis 29:26-27",
-          "text": "NOW we hear about the custom, seven years and a wedding feast later? Talk about fine print showing up AFTER you sign, and Laban's not done, because he tells Jacob to finish this week's celebration.",
+          "text": "Seven years and one wedding feast later, NOW the fine print shows up? Then Laban makes Jacob an offer about his younger daughter.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 29:27",
-          "question": "Laban tells Jacob to finish this week's celebration, and then Rachel can be his wife too. What will Rachel cost Jacob this time?",
+          "question": "Laban tells Jacob to finish this week's celebration, and then Rachel can be his wife too. What does Laban want in return?",
           "answers": [
             {
               "text": "Another seven years of work",
               "correct": true
             },
             {
-              "text": "Another three years of work",
+              "text": "A bride price in silver",
               "correct": false
             },
             {
-              "text": "Another month of work",
+              "text": "A share of Isaac's flocks",
               "correct": false
             }
           ],
@@ -533,7 +544,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 29:28",
@@ -552,7 +563,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 10,
           "kind": "story",
           "verses": "Genesis 29:28-29",
           "text": "Jacob finishes the week's celebration, and Laban gives him Rachel as his wife. Laban also gives his servant girl Bilhah to Rachel as her maidservant.",
@@ -560,22 +571,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Genesis 29:30",
-          "question": "Jacob is married to both of Laban's daughters now. How does Jacob feel about Leah and Rachel?",
+          "question": "Jacob is married to both of Laban's daughters now. True or false: Jacob loves Rachel more than Leah.",
           "answers": [
             {
-              "text": "He loves Rachel more",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He loves Leah more",
-              "correct": false
-            },
-            {
-              "text": "He loves them both the same",
+              "text": "False",
               "correct": false
             }
           ],
@@ -583,10 +590,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 12,
           "kind": "story",
           "verses": "Genesis 29:30",
-          "text": "So Jacob works for Laban another seven years, and I thought MY wait in that junk drawer was long! Hang on, friend, because this family's story is just getting started.",
+          "text": "So Jacob works for Laban another seven years. Hang on, friend, because this family's story is FAR from over.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

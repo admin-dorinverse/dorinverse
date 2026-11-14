@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The wrong answers 'altar' and 'offering' were already shown as wrong answers on card 3 ('Build Him an altar on the mountain', 'Bring Him an offering each morning') and are used again here.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "The card asks how God finishes the list of things not to covet, which means guessing the closing words of a line. The baker can only guess the wording.",
+      "rule": "Never ask the baker to guess the next words of a line."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 15
+      },
+      "problem": "Card 14 already asked about verse 21 (the people at a distance, Moses approaching). The last story card retells that same content and adds nothing new, so it works as a recap. It should be just the 'story isn't over' line.",
+      "rule": "When the passage's last verse is asked on a choice card, the last story card can be just this line."
+    }
+  ]
+}

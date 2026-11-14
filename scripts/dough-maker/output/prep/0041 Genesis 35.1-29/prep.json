@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 35:1",
-          "text": "Last time, things in Shechem went very badly, and Jacob was afraid the people of the land would unite against his family (Genesis 34:30). Then God speaks to Jacob. Get up, go to Bethel, and settle there.",
-          "needs_agent_fix": true,
+          "text": "Jacob, Isaac's son, is camped near the city of Shechem (Genesis 33:18), where his sons Simeon and Levi slaughtered every male in the city (Genesis 34:25). Jacob says if the people of the land unite against him and attack, he and his household will be destroyed (Genesis 34:30). Then God speaks to him: get up, go to Bethel, and settle there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Genesis 35:1",
-          "question": "At Bethel, God wants Jacob to build something there for Him. What is it?",
+          "question": "God wants Jacob to build something for Him at Bethel. What is it?",
           "answers": [
             {
               "text": "An altar",
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Genesis 35:2",
-          "text": "So Jacob gathers his whole household and everyone traveling with him. This is the ALL HANDS meeting, friend, and NOBODY is calling in sick.",
-          "needs_agent_fix": true,
+          "text": "So Jacob has something to say to his household and everyone with him. This is the ALL HANDS meeting, friend, and NOBODY is calling in sick.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,15 +64,70 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Genesis 35:2",
-          "question": "Jacob also tells his household to purify themselves and change their garments.",
+          "question": "Jacob tells his household to purify themselves before they go to Bethel. What else does he tell them to do?",
+          "answers": [
+            {
+              "text": "Change their garments",
+              "correct": true
+            },
+            {
+              "text": "Shave their heads",
+              "correct": false
+            },
+            {
+              "text": "Fast for three days",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Genesis 35:3",
+          "text": "Jacob tells them God \"has been with me wherever I have gone.\" Friend, God found ME under a pile of takeout menus in the back of a junk drawer, so trust me, WHEREVER means WHEREVER.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Genesis 35:4",
+          "question": "Jacob's household hands him all their foreign gods and all their ___.",
+          "answers": [
+            {
+              "text": "earrings",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "sandals",
+              "correct": false
+            },
+            {
+              "text": "staffs",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Genesis 35:4",
+          "question": "Jacob buries the foreign gods and the earrings under the oak near Shechem.",
           "answers": [
             {
               "text": "True",
@@ -83,92 +138,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Genesis 35:3",
-          "text": "Jacob tells them God \"has been with me wherever I have gone.\" Friend, God found ME under a pile of takeout menus in the back of a junk drawer, so trust me, WHEREVER means WHEREVER.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 35:4",
-          "question": "Jacob's household hands over all their foreign gods. What else do they give him?",
-          "answers": [
-            {
-              "text": "All their earrings",
-              "correct": true
-            },
-            {
-              "text": "All their sandals",
-              "correct": false
-            },
-            {
-              "text": "All their staffs",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 35:4",
-          "question": "Jacob takes the foreign gods and everything else his household handed over. What does he do with it all?",
-          "answers": [
-            {
-              "text": "Buries it under the oak near Shechem",
-              "correct": true
-            },
-            {
-              "text": "Burns it in a fire outside the camp",
-              "correct": false
-            },
-            {
-              "text": "Throws it into the Jordan River",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Genesis 35:5",
-          "text": "They set out, and remember, Jacob was afraid the cities around them might attack. I bet he's checking over his shoulder like a man who just took the LAST cookie in the break room.",
-          "needs_agent_fix": true,
+          "text": "They set out, and remember, Jacob said the people of the land could unite and attack. I bet his nerves are buzzing like a phone on vibrate.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 35:5",
-          "question": "As Jacob's family sets out, what falls over the surrounding cities?",
+          "question": "As Jacob's family sets out, a ___ from God falls over the surrounding cities.",
           "answers": [
             {
-              "text": "A terror from God",
-              "correct": true
+              "text": "terror",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A heavy storm",
+              "text": "storm",
               "correct": false
             },
             {
-              "text": "A great famine",
+              "text": "famine",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -187,7 +189,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -195,19 +197,20 @@
           "kind": "story",
           "verses": "Genesis 35:6-7",
           "text": "Jacob and everyone with him arrive in Luz, that is, Bethel, in the land of Canaan. And there he builds that altar, just like God said.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 35:7",
-          "question": "Jacob builds the altar and gives the place a name. What does he call it?",
+          "question": "Jacob builds the altar and calls the place ___.",
           "answers": [
             {
               "text": "El-bethel",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Beersheba",
@@ -218,7 +221,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -233,23 +236,23 @@
               "correct": true
             },
             {
-              "text": "He dug a deep well there many years before",
+              "text": "He dug a deep well there years before",
               "correct": false
             },
             {
-              "text": "His brother Esau came to meet him there once",
+              "text": "He bought a piece of land there before",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Genesis 35:8",
-          "text": "Then a sad moment. Deborah, the nurse of Rebekah, Jacob's mother (Genesis 25:21-26), dies and is buried under the oak below Bethel, and Jacob names it Allon-bacuth.",
-          "needs_agent_fix": true,
+          "text": "Now a sad moment. Deborah (not the Deborah who judged Israel), the nurse of Rebekah, Jacob's mother (Genesis 25:21-26), dies and is buried under the oak below Bethel. Jacob names it Allon-bacuth.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -262,7 +265,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Genesis 35:9",
-          "text": "Then God appears to Jacob again and blesses him. ONE visit from heaven got me out of a junk drawer, friend, so I can't even imagine an AGAIN.",
+          "text": "Then God appears to Jacob again and blesses him. AGAIN, friend. Not once. AGAIN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -293,27 +296,28 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 35:11",
-          "text": "Then God says, \"I am God Almighty. Be fruitful and multiply.\" When THAT'S the introduction, friend, you put the phone DOWN.",
+          "text": "Then God says, \"I am God Almighty. Be fruitful and multiply.\" And He's not finished speaking.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Genesis 35:11",
-          "question": "God promises that a nation, even a company of nations, will come from Israel. Who else does God say will descend from him?",
+          "question": "God promises that a nation, even a company of nations, will come from Israel, and that ___ will descend from him.",
           "answers": [
             {
-              "text": "Kings",
-              "correct": true
+              "text": "kings",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Prophets",
+              "text": "prophets",
               "correct": false
             },
             {
-              "text": "Priests",
+              "text": "priests",
               "correct": false
             }
           ],
@@ -325,7 +329,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Genesis 35:12",
-          "question": "God says He will give Israel the land He gave to ___ and to Jacob's father Isaac.",
+          "question": "God says the land He gave to ___ and Isaac, He will give to Jacob and to his descendants after him.",
           "answers": [
             {
               "text": "Abraham",
@@ -348,7 +352,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Genesis 35:13",
-          "text": "\"Then God went up from the place where He had spoken with him.\" And I bet Jacob isn't about to just walk away from that spot.",
+          "text": "\"Then God went up from the place where He had spoken with him.\" I bet Jacob's heart is still pounding.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -380,7 +384,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 35:14",
-          "question": "Jacob pours out a drink offering on the stone pillar and anoints it with oil.",
+          "question": "Jacob pours out a drink offering on the stone pillar.",
           "answers": [
             {
               "text": "True",
@@ -397,8 +401,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Genesis 35:10-15",
-          "text": "Jacob calls the place where God spoke with him Bethel. He walks away from that spot with a new name and a promise.",
+          "verses": "Genesis 35:14-15",
+          "text": "Jacob anoints the pillar with oil and calls the place where God spoke with him Bethel. That's the same name he gave it the first time he was here (Genesis 28:19).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -443,7 +447,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Genesis 35:18",
-          "text": "But Rachel is dying. With her last breath, she names the boy Ben-oni.",
+          "text": "But Rachel is dying, and with her last breath, she names the boy Ben-oni. I think this one hurts, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -474,8 +478,8 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Genesis 35:19",
-          "text": "So Rachel dies and is buried on the way to Ephrath. This one's hard, friend, so hold it gently.",
+          "verses": "Genesis 35:19-20",
+          "text": "So Rachel dies and is buried on the way to Ephrath. Jacob sets up a pillar on her grave, and it still marked her tomb when this was written.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -484,7 +488,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Genesis 35:19",
-          "question": "Rachel is buried on the way to Ephrath. Ephrath is also called Bethlehem.",
+          "question": "Ephrath is also called Bethlehem.",
           "answers": [
             {
               "text": "True",
@@ -500,32 +504,28 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Genesis 35:20",
-          "question": "Jacob marks Rachel's grave, and it still marks her tomb to this day. What does he set up on it?",
-          "answers": [
-            {
-              "text": "A pillar",
-              "correct": true
-            },
-            {
-              "text": "An altar",
-              "correct": false
-            },
-            {
-              "text": "A tower",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 35:21-22",
+          "text": "Israel sets out again and pitches his tent beyond the Tower of Eder. While he's living there, his son Reuben sleeps with his father's concubine Bilhah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Genesis 35:21-22",
-          "text": "Israel sets out again and pitches his tent beyond the Tower of Eder. While he's living there, his son Reuben sleeps with his father's concubine Bilhah, and Israel hears about it.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Genesis 35:22",
+          "question": "Israel never hears about what Reuben did.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -539,28 +539,32 @@
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Genesis 35:27",
-          "text": "Jacob comes back to his father Isaac at Mamre, near Kiriath-arba, that is, Hebron.",
+          "question": "Jacob comes back to someone at Mamre, near Kiriath-arba, that is, Hebron. Who is it?",
+          "answers": [
+            {
+              "text": "His father Isaac",
+              "correct": true
+            },
+            {
+              "text": "His uncle Laban",
+              "correct": false
+            },
+            {
+              "text": "His uncle Ishmael",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Genesis 35:27",
-          "question": "Mamre, where Jacob finds his father Isaac, is a place where Abraham and Isaac had stayed.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Genesis 35:28-29",
+          "text": "Isaac lives 180 years. Then he breathes his last and dies, old and full of years, and is gathered to his people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -568,42 +572,11 @@
           "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Genesis 35:28",
-          "question": "Jacob's father Isaac has lived a long life. How many years does Isaac live?",
-          "answers": [
-            {
-              "text": "180 years",
-              "correct": true
-            },
-            {
-              "text": "175 years",
-              "correct": false
-            },
-            {
-              "text": "147 years",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Genesis 35:29",
-          "text": "Then Isaac breathes his last and dies, old and full of years, and is gathered to his people.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Genesis 35:29",
           "question": "Isaac has died, old and full of years. Who buries him?",
           "answers": [
             {
-              "text": "His sons Esau and Jacob",
+              "text": "Jacob and his brother Esau",
               "correct": true
             },
             {
