@@ -107,15 +107,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 21:40",
-          "question": "When Paul motions to the crowd from the steps, a great hush comes over them.",
+          "question": "When Paul motions to the crowd from the steps, the shouting only gets louder.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -126,7 +126,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 21:40",
-          "question": "Paul spoke Greek with the Roman commander, but he addresses the crowd in ___.",
+          "question": "Paul was talking with the Roman commander, but he addresses the crowd in ___.",
           "answers": [
             {
               "text": "Hebrew",
@@ -193,7 +193,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Acts 22:3-4",
-          "text": "Gamaliel was a Pharisee and a teacher of the law (Acts 5:34). Paul says he was as zealous for God as any of them, and he persecuted this Way, the followers of Jesus, even to the death.",
+          "text": "Gamaliel was a Pharisee and a teacher of the law (Acts 5:34). Paul says he was as zealous for God as any of them, and he persecuted this Way even to the death.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -264,7 +264,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 22:9",
-          "question": "Paul's companions on the road saw the light too, and they understood every word the voice said to him.",
+          "question": "Paul's companions on the Damascus road could understand the voice speaking to him.",
           "answers": [
             {
               "text": "True",
@@ -291,15 +291,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 22:11",
-          "question": "After that brilliant light, Paul walks into Damascus on his own, seeing just fine.",
+          "question": "Paul's companions have to lead him by the hand into Damascus.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -309,7 +309,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Acts 22:12-13",
-          "text": "In Damascus there's a man named Ananias, a devout observer of the law, highly regarded by all the Jews living there. Ananias comes and stands right beside Paul.",
+          "text": "In Damascus there's a man named Ananias (not the Ananias of Acts 5:1), a devout observer of the law, highly regarded by all the Jews living there. Ananias comes and stands right beside Paul.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -325,15 +325,15 @@
               "correct": true
             },
             {
-              "text": "letters",
+              "text": "hearing",
               "correct": false
             },
             {
-              "text": "strength",
+              "text": "voice",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -370,27 +370,46 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Acts 22:16",
-          "question": "Ananias tells Paul to take his time and think it over before he gets baptized.",
+          "question": "Ananias asks Paul, 'And now what are you waiting for?' What does he tell Paul to do?",
           "answers": [
             {
-              "text": "True",
+              "text": "Be baptized and wash his sins away",
+              "correct": true
+            },
+            {
+              "text": "Go and report to the high priest",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Stay hidden until the danger passes",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Acts 22:17-18",
-          "text": "Later, back in Jerusalem, Paul is praying at the temple and falls into a trance. He sees the Lord saying to him, 'Hurry! Leave Jerusalem quickly, because the people here will not accept your testimony about Me.'",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Acts 22:18",
+          "question": "Later, back in Jerusalem, Paul is praying at the temple and falls into a trance. The Lord tells him to hurry and leave Jerusalem quickly. Why?",
+          "answers": [
+            {
+              "text": "The people won't accept his testimony",
+              "correct": true
+            },
+            {
+              "text": "Ananias needs him back in Damascus",
+              "correct": false
+            },
+            {
+              "text": "His work in Jerusalem is all done",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -398,7 +417,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Acts 22:19",
-          "text": "Paul answers, 'Lord, they know very well that in one synagogue after another I imprisoned and beat those who believed in You.' He's not hiding his record, friend, that's like me taping a list of every batch I ever BURNED right to the oven door.",
+          "text": "'Lord,' Paul answers, 'they know very well that in one synagogue after another I imprisoned and beat those who believed in You.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -437,11 +456,11 @@
               "correct": true
             },
             {
-              "text": "prophets",
+              "text": "Samaritans",
               "correct": false
             },
             {
-              "text": "priests",
+              "text": "Egyptians",
               "correct": false
             }
           ],
@@ -474,11 +493,11 @@
               "correct": true
             },
             {
-              "text": "That he should go back to Tarsus",
+              "text": "That he should be set free",
               "correct": false
             },
             {
-              "text": "That he should be set free",
+              "text": "That he should keep on speaking",
               "correct": false
             }
           ],
@@ -489,7 +508,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Acts 22:23",
-          "text": "They're shouting, throwing off their cloaks and tossing dust into the air. Friend, I've seen some upset bakers, but I have NEVER seen anybody throw their apron AND the flour.",
+          "text": "They keep shouting, throwing off their cloaks and tossing dust into the air. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -505,11 +524,11 @@
               "correct": true
             },
             {
-              "text": "That Paul be released at once",
+              "text": "That Paul be handed back to the crowd",
               "correct": false
             },
             {
-              "text": "That Paul be sent to the high priest",
+              "text": "That Paul be locked up without food",
               "correct": false
             }
           ],
@@ -539,7 +558,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Acts 22:25",
-          "text": "The soldiers stretch Paul out to strap him down, and right then he has a question for the centurion standing there, a Roman officer. Oh, this is about to get GOOD.",
+          "text": "The soldiers stretch Paul out to strap him down. Right then, Paul has a question for the centurion standing there, a Roman officer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -570,7 +589,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Acts 22:26",
-          "text": "The centurion goes straight to the commander: 'What are you going to do? This man is a Roman citizen.' That's the face you make when you honk at the car in front of you, and it pulls into the parking spot marked BOSS.",
+          "text": "The centurion goes straight to the commander and asks him what he's going to do, because this man is a Roman citizen.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -579,15 +598,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 22:27",
-          "question": "The commander goes to Paul and asks if he's a Roman citizen, and Paul says yes.",
+          "question": "When the commander asks if he is a Roman citizen, Paul refuses to answer.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -597,7 +616,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Acts 22:28",
-          "text": "Then the commander says, 'I paid a high price for my citizenship.' I bet he's ready to compare receipts.",
+          "text": "Then the commander tells Paul he paid a high price for his citizenship. I bet he's ready to compare receipts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -645,7 +664,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -653,7 +672,7 @@
           "verses": "Acts 22:29",
           "text": "Hang on to your apron, friend. This story is still warming up in the oven.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

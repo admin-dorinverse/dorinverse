@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Romans 12:21-13:1",
-          "text": "Paul is writing a letter to God's people in Rome (Romans 1:1, 1:7). He just finished telling them to overcome evil with good (Romans 12:21). Now he turns to the governing authorities, the people in charge.",
+          "verses": "Romans 13:1",
+          "text": "Paul, an apostle, is writing a letter to God's people in Rome (Romans 1:1, 7). He just finished telling them to overcome evil with good (Romans 12:21). Now he turns to the governing authorities, the people in charge.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -134,37 +134,45 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Romans 13:4",
-          "question": "Paul says the one in authority is God's ___ for your good.",
-          "answers": [
-            {
-              "text": "servant",
-              "correct": true
-            },
-            {
-              "text": "prophet",
-              "correct": false
-            },
-            {
-              "text": "priest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Romans 13:3",
+          "text": "Do what is right, Paul says, and you'll have the ruler's approval. Then he says what the ruler is there for.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Romans 13:4",
-          "text": "But then Paul flips it: if you do wrong, he says, be afraid. That's me after I hide a burnt batch behind the oven and hear somebody yell, \"What's that SMELL?\"",
+          "question": "Paul says the one in authority is God's servant. Whose good does Paul say he serves?",
+          "answers": [
+            {
+              "text": "Your good",
+              "correct": true
+            },
+            {
+              "text": "His own good",
+              "correct": false
+            },
+            {
+              "text": "The emperor's good",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Romans 13:4",
+          "text": "But then Paul flips it: if you do wrong, he says, be afraid. That's me back in the Millers' kitchen, hiding a burnt batch behind the oven when somebody yells, \"What's that SMELL?\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 13:4",
@@ -175,27 +183,27 @@
               "correct": true
             },
             {
-              "text": "staff",
+              "text": "scroll",
               "correct": false
             },
             {
-              "text": "crown",
+              "text": "key",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Romans 13:4-5",
-          "text": "Paul says, \"He is God’s servant, an agent of retribution to the wrongdoer.\" Then Paul gets to his \"therefore.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Romans 13:4",
+          "text": "Paul says, \"He is God’s servant, an agent of retribution to the wrongdoer.\" Then Paul pulls it all together.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 13:5",
@@ -206,11 +214,11 @@
               "correct": true
             },
             {
-              "text": "To please the people",
+              "text": "As a matter of pride",
               "correct": false
             },
             {
-              "text": "To keep the peace",
+              "text": "As a matter of custom",
               "correct": false
             }
           ],
@@ -218,11 +226,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 13:6",
-          "question": "Paul says the same reasons for submitting to authority are also why you pay something. What is it?",
+          "question": "Right after that, Paul says this is also why you pay something. What does Paul say you pay?",
           "answers": [
             {
               "text": "Taxes",
@@ -241,7 +249,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "Romans 13:6",
           "text": "Paul says the authorities are God's servants, who devote themselves to their work. Friend, I KNOW that life: I've worked these ovens so long my mustache answers the timer before I do.",
@@ -249,45 +257,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Romans 13:7",
-          "question": "Paul says to pay everyone what you owe him. Besides taxes and revenue, he lists two more things you owe: ___ and ___.",
+          "question": "Paul says to pay everyone what you owe him. The only things he lists are taxes and revenue.",
           "answers": [
             {
-              "text": "respect",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "honor",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "gifts",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "tithes",
-              "correct": false
-            },
-            {
-              "text": "offerings",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "story",
           "verses": "Romans 13:7",
           "text": "Paul's whole list: \"taxes to whom taxes are due, revenue to whom revenue is due, respect to whom respect is due, honor to whom honor is due.\" That's a long bill, friend, and half of it you can't pay with money.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

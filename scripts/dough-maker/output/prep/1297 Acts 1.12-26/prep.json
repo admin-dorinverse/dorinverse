@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 1:12",
-          "text": "Jesus has just been taken up into heaven while His apostles watched (Acts 1:9). Now they head back to Jerusalem from the Mount of Olives, a Sabbath day's journey away. That's close, friend, 'forget the car, we're WALKING' close.",
+          "text": "Jesus has just been taken up into heaven while His apostles watched (Acts 1:9). Now they head back to Jerusalem from the Mount of Olives, which is near the city, a Sabbath day's journey away.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Acts 1:13",
-          "text": "Here's who's in that room: Peter and John, James and Andrew, Philip and Thomas, Bartholomew and Matthew, James son of Alphaeus, Simon the Zealot, and Judas son of James. Two Jameses in one room, so somebody get these men some NAME TAGS.",
+          "text": "Here's who's in that room: Peter and John, James and Andrew, Philip and Thomas, Bartholomew and Matthew, James son of Alphaeus, Simon the Zealot, and Judas son of James.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -126,24 +126,28 @@
           "card": 8,
           "kind": "story",
           "verses": "Acts 1:15",
-          "text": "In those days, Peter stands up among the brothers, a gathering of about a hundred and twenty. And I don't know about you, but when the guy who talks the most stands up, I'm pulling up a CHAIR.",
+          "text": "In those days, Peter stands up among the brothers to speak.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 1:13",
-          "question": "Peter is about to speak about the apostle who's missing from the upper room. That missing apostle is Thomas.",
+          "type": "multiple_choice",
+          "verses": "Acts 1:15",
+          "question": "About how many people are gathered when Peter stands up?",
           "answers": [
             {
-              "text": "True",
+              "text": "About a hundred and twenty",
+              "correct": true
+            },
+            {
+              "text": "About five hundred",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "About seventy",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -153,7 +157,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Acts 1:16",
-          "text": "Peter says the Scripture had to be fulfilled. It's about Judas, who became a guide for those who arrested Jesus.",
+          "text": "Peter says the Scripture had to be fulfilled, the one the Holy Spirit foretold through the mouth of David, Israel's king. It's about Judas, and not Judas son of James.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -162,23 +166,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 1:16",
-          "question": "Peter says the Holy Spirit foretold this about Judas through the mouth of ___.",
+          "question": "Peter says Judas became a guide for those who ___ Jesus.",
           "answers": [
             {
-              "text": "David",
+              "text": "arrested",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Isaiah",
+              "text": "crucified",
               "correct": false
             },
             {
-              "text": "Jeremiah",
+              "text": "followed",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -186,15 +190,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 1:17",
-          "question": "Peter says Judas was one of their number and shared in their ministry.",
+          "question": "Peter says Judas was never one of their number.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -204,27 +208,28 @@
           "card": 13,
           "kind": "story",
           "verses": "Acts 1:18",
-          "text": "Then the story pauses Peter's speech for a moment. With the reward for his wickedness, Judas bought a field, and there he fell headlong and burst open.",
+          "text": "This part is heavy, friend. With the reward for his wickedness, Judas bought a field, and there he fell headlong and burst open.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 1:19",
-          "question": "Everyone in Jerusalem hears about what happened to Judas, and in their own language they call his field Akeldama. What does that name mean?",
+          "question": "Word of what happened to Judas spreads through Jerusalem, and in their own language people call his field Akeldama, which means Field of ___.",
           "answers": [
             {
-              "text": "Field of Blood",
-              "correct": true
+              "text": "Blood",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Field of Mercy",
+              "text": "Mercy",
               "correct": false
             },
             {
-              "text": "Field of Silver",
+              "text": "Silver",
               "correct": false
             }
           ],
@@ -268,7 +273,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 1:21",
-          "text": "So Peter says they need to choose one of the men who were with them while the Lord Jesus went in and out among them. Not somebody who wandered in last week for the free COOKIES.",
+          "text": "So Peter says they need to choose one of the men who were with them the whole time the Lord Jesus went in and out among them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -277,10 +282,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 1:22",
-          "question": "How far back does Peter say the new man has to have been with them?",
+          "question": "Peter says the new man must have been with them the whole time. From when until when?",
           "answers": [
             {
-              "text": "From John's baptism until Jesus was taken up",
+              "text": "From John the Baptist's baptism until Jesus was taken up",
               "correct": true
             },
             {
@@ -298,32 +303,27 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Acts 1:22",
-          "question": "Peter says the new man must become a witness with them of Jesus's ___.",
+          "question": "Peter says the new man must become a witness with them of Jesus's resurrection.",
           "answers": [
             {
-              "text": "resurrection",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "miracles",
-              "correct": false
-            },
-            {
-              "text": "parables",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Acts 1:23",
-          "text": "So they put forward two men: Joseph called Barsabbas, also known as Justus, and Matthias. Three names on one man, so forget a name tag, Joseph needs a BANNER.",
+          "text": "So they put forward two men: Joseph called Barsabbas, also known as Justus, and Matthias.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -339,7 +339,7 @@
               "correct": true
             },
             {
-              "text": "They take a vote",
+              "text": "They send for the elders",
               "correct": false
             },
             {
@@ -399,7 +399,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -417,12 +417,12 @@
               "correct": false
             },
             {
-              "text": "Barnabas",
+              "text": "Silas",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -430,7 +430,7 @@
           "verses": "Acts 1:26",
           "text": "So Matthias is added to the eleven apostles. Friend, I spent years counting dust in the back of a junk drawer, and even I can tell you that makes TWELVE.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

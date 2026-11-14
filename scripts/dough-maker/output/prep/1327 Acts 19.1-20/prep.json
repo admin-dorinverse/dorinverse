@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 19:1",
-          "text": "While Apollos, another preacher, is over in Corinth, Paul the apostle travels through the interior and comes to Ephesus. That's a long walk, friend, and I get winded hopping from one oven to the next. When Paul gets there, he finds some disciples.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "While Apollos, a Jewish teacher from Alexandria (Acts 18:24-25), is over in Corinth, Paul, called to be an apostle (Romans 1:1), travels through the interior and comes to Ephesus. That's a long trip, friend, and I get winded hopping from one oven to the next. When Paul gets there, he finds some disciples.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -44,7 +44,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Acts 19:3",
-          "text": "I bet Paul's thinking what I think when a batch comes out flat: something's missing from this recipe. So he asks, “Into what, then, were you baptized?”",
+          "text": "So Paul asks, “Into what, then, were you baptized?” That's me with a flat batch, friend, going back to step one of the recipe.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -75,7 +75,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Acts 19:4",
-          "text": "Paul explains that John's baptism was a baptism of repentance, and John told people to believe in the One coming after him. John was pointing the whole time, friend, and not at himself.",
+          "text": "Paul explains that John, the one who baptized in the wilderness (Mark 1:4), gave a baptism of repentance and told people to believe in the One coming after him. John was pointing the whole time, friend, and not at himself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -125,7 +125,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Acts 19:6",
-          "text": "Then Paul lays his hands on them. Friend, the last time somebody laid hands on ME, I ended up in the back of a junk drawer.",
+          "text": "Then Paul lays his hands on them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -156,7 +156,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Acts 19:7",
-          "text": "There were about twelve men in all. That's a dozen, friend, and a dozen is the one number a cookie stamper NEVER gets wrong.",
+          "text": "There were about twelve men in all. About a dozen, friend, and a dozen is the one number a cookie stamper NEVER gets wrong.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -251,8 +251,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 19:11",
-          "text": "Now God does extraordinary miracles through the hands of Paul. Friend, I don't even HAVE hands. I've been packing cookie boxes with my mustache this whole time.",
-          "needs_agent_fix": true,
+          "text": "Now God does extraordinary miracles through the hands of Paul. Friend, I don't even HAVE hands, and my mustache is doing its best.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -267,11 +267,11 @@
               "correct": true
             },
             {
-              "text": "Water from a well that Paul had drunk from",
+              "text": "Water from the pool of Siloam",
               "correct": false
             },
             {
-              "text": "Dust from the road Paul had walked on",
+              "text": "Oil that Paul had prayed over",
               "correct": false
             }
           ],
@@ -283,7 +283,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 19:12",
-          "question": "When the things that had touched Paul are taken to the sick, the diseases leave them, but the evil spirits stay.",
+          "question": "When the things that had touched Paul are taken to the sick, only the diseases leave them.",
           "answers": [
             {
               "text": "True",
@@ -301,7 +301,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Acts 19:12-13",
-          "text": "APRONS, friend, and the most mine has ever done is catch flour. Meanwhile, some traveling Jewish exorcists try to invoke the name of the Lord Jesus over people with evil spirits.",
+          "text": "APRONS, friend, and the most mine has ever done is catch flour. Now some traveling Jewish exorcists try to invoke the name of the Lord Jesus over people with evil spirits.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -310,18 +310,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 19:13",
-          "question": "Over people with evil spirits, these traveling exorcists command them by Jesus, whom ___ proclaims.",
+          "question": "These traveling exorcists command the evil spirits by Jesus, whom ___ proclaims.",
           "answers": [
             {
               "text": "Paul",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Peter",
               "correct": false
             },
             {
-              "text": "Apollos",
+              "text": "Barnabas",
               "correct": false
             }
           ],
@@ -331,8 +332,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Acts 19:13-14",
-          "text": "Notice that, friend: it's Jesus, whom PAUL proclaims. Seven sons of Sceva, a Jewish chief priest, are doing this.",
+          "verses": "Acts 19:14",
+          "text": "Seven sons of Sceva, a Jewish chief priest, are doing this. SEVEN brothers, friend, all in the same line of work.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -352,15 +353,15 @@
           "question": "What does the evil spirit tell the sons of Sceva?",
           "answers": [
             {
-              "text": "It knows Jesus and Paul but asks who they are",
+              "text": "It knows Jesus and knows about Paul but asks who they are",
               "correct": true
             },
             {
-              "text": "It will only leave if Paul comes himself",
+              "text": "It will only leave if Paul comes and tells it himself",
               "correct": false
             },
             {
-              "text": "It has never heard the name of Jesus",
+              "text": "It has never once heard anyone use the name of Jesus",
               "correct": false
             }
           ],
@@ -370,32 +371,13 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Acts 19:15-16",
-          "text": "Friend, I spent years in the back of a junk drawer, and even THERE nobody hit me with “who are you?” Then the man with the evil spirit jumps on them.",
+          "verses": "Acts 19:16",
+          "text": "Then the man with the evil spirit jumps on them and overpowers them all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 19:16",
-          "question": "When the man with the evil spirit jumps on the sons of Sceva, he overpowers all of them.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 19:16",
@@ -418,30 +400,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Acts 19:17",
-          "text": "Word gets to all the Jews and Greeks living in Ephesus, and fear comes over all of them. Friend, seven men running out of a house like that does not need a group chat.",
+          "text": "This becomes known to all the Jews and Greeks living in Ephesus, and fear comes over all of them. News like that travels faster than the smell of a fresh batch, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Acts 19:17",
-          "question": "With fear over everyone in Ephesus, whose name is held in high honor?",
+          "question": "Once everyone in Ephesus hears about this, the name of the Lord Jesus is held in high honor.",
           "answers": [
             {
-              "text": "The Lord Jesus",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Paul the apostle",
-              "correct": false
-            },
-            {
-              "text": "Sceva the chief priest",
+              "text": "False",
               "correct": false
             }
           ],
@@ -449,10 +427,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Acts 19:18",
-          "text": "Then many who had believed come forward, confessing and disclosing their deeds. Friend, if I came forward, it'd be one LONG list of cookie dough I sneaked off the counter.",
+          "text": "Then many who had believed come forward.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Acts 19:18",
+          "question": "When many who had believed in Ephesus come forward, what do they do?",
+          "answers": [
+            {
+              "text": "Confess and disclose their deeds",
+              "correct": true
+            },
+            {
+              "text": "Ask to be baptized a second time",
+              "correct": false
+            },
+            {
+              "text": "Collect gifts for the poor",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -483,7 +484,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Acts 19:19",
-          "text": "When the value of the books is calculated, the total comes to fifty thousand drachmas. Friend, that's not a little fire. That's a FORTUNE going up in smoke.",
+          "text": "When the value of the books is calculated, the total comes to fifty thousand drachmas. Friend, that's not a little fire, that's a FORTUNE going up in smoke.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -504,7 +505,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
@@ -512,7 +513,7 @@
           "verses": "Acts 19:20",
           "text": "Ephesus is buzzing, friend, and Paul's journey is just getting warmed up. Keep that oven on, because this story is NOT done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

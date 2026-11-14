@@ -16,20 +16,20 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 20:1",
-          "question": "Paul sends for the disciples one more time before he leaves. What does he do with them?",
+          "question": "Before Paul leaves Ephesus, he sends for the disciples and ___ them.",
           "answers": [
             {
-              "text": "He encourages them",
+              "text": "encourages",
               "correct": true
             },
             {
-              "text": "He scolds them for the riot",
+              "text": "scolds",
               "correct": false
             },
             {
-              "text": "He baptizes each of them",
+              "text": "baptizes",
               "correct": false
             }
           ],
@@ -39,83 +39,52 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Acts 20:1-2",
-          "text": "He says goodbye and leaves for Macedonia, speaking many words of encouragement all through that area. Then he arrives in Greece.",
+          "verses": "Acts 20:1-3",
+          "text": "He says goodbye and leaves for Macedonia, speaking many words of encouragement all through that area. Then he arrives in Greece, where he stays three months.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Acts 20:3",
-          "question": "Paul stays in Greece for three ___.",
-          "answers": [
-            {
-              "text": "months",
-              "correct": true
-            },
-            {
-              "text": "weeks",
-              "correct": false
-            },
-            {
-              "text": "years",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul's about to sail for Syria. Then something changes his plans.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Acts 20:3",
-          "text": "Paul's about to sail for Syria when some Jews form a plot against him. That's like hearing somebody's waiting for you at the airport, and they did NOT bring a welcome sign.",
+          "question": "Paul is about to sail from Greece for Syria. What makes him change his plans?",
+          "answers": [
+            {
+              "text": "The Jews form a plot against him",
+              "correct": true
+            },
+            {
+              "text": "A storm keeps the ships in port",
+              "correct": false
+            },
+            {
+              "text": "The Spirit tells him to wait",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 20:3",
-          "question": "With a plot against him right as he's about to sail for Syria, what does Paul decide to do?",
-          "answers": [
-            {
-              "text": "Go back through Macedonia",
-              "correct": true
-            },
-            {
-              "text": "Sail for Syria anyway",
-              "correct": false
-            },
-            {
-              "text": "Hide out in Athens",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Acts 20:3-5",
+          "text": "So Paul heads back through Macedonia, with seven men traveling along, including Timothy, a disciple Paul took along on his travels (Acts 16:1-3). They go on ahead and wait in Troas, and catch this: the writer says they waited for \"us,\" so whoever's writing this story is on the trip too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Acts 20:4",
-          "text": "Paul's not traveling alone, either. Seven men go with him, and one of them is Timothy, a disciple Paul first took along on his travels back in Acts 16:1-3.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Acts 20:5",
-          "text": "Those men go on ahead and wait in Troas. And catch this: the writer says they waited for \"us,\" so whoever's writing this story is on the trip too.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 20:6",
@@ -138,57 +107,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 20:6",
-          "question": "The trip from Philippi to Troas takes Paul and the writer just one day.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
+          "card": 8,
           "kind": "story",
           "verses": "Acts 20:6-7",
-          "text": "Five days later they rejoin the others in Troas, and they stay there seven days. On the first day of the week, everyone comes together to break bread, and Paul starts talking.",
+          "text": "Five days later they rejoin the others in Troas, and they stay there seven days. On the first day of the week, they all come together to break bread, and Paul talks to them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 20:7",
-          "question": "Paul is ready to leave the next day, so he talks to them and keeps on speaking until ___.",
+          "question": "In Troas, Paul keeps on talking to the gathering until midnight. Why does he keep going so long?",
           "answers": [
             {
-              "text": "midnight",
+              "text": "He's ready to leave the next day",
               "correct": true
             },
             {
-              "text": "sunset",
+              "text": "The crowd keeps asking him questions",
               "correct": false
             },
             {
-              "text": "noon",
+              "text": "He's waiting for the others to arrive",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 10,
           "kind": "story",
           "verses": "Acts 20:8-9",
           "text": "There are many lamps in the upper room, and a young man named Eutychus is sitting in the window. Paul talks on and on, and friend, I have seen ovens preheat FASTER than this talk wraps up.",
@@ -196,7 +146,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 20:9",
@@ -215,15 +165,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 12,
           "kind": "story",
           "verses": "Acts 20:9",
-          "text": "Friend, I can't judge, because I once fell asleep waiting on a TWELVE-minute batch of cookies. But Eutychus is sound asleep, and then he falls from the third story.",
+          "text": "Eutychus is sound asleep. Then he falls from the third story.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 20:9",
@@ -242,30 +192,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 14,
           "kind": "story",
           "verses": "Acts 20:9-10",
-          "text": "Eutychus is picked up dead. But Paul goes down, throws himself on the young man and wraps him up in a hug.",
+          "text": "Eutychus is picked up dead. But Paul goes down, throws himself on the young man and embraces him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 20:10",
-          "question": "Paul tells everyone not to be alarmed. He says the young man is still ___.",
+          "question": "Holding Eutychus, Paul says, \"Do not be alarmed!\" What else does he say?",
           "answers": [
             {
-              "text": "alive",
+              "text": "The young man is still alive",
               "correct": true
             },
             {
-              "text": "gone",
+              "text": "The fall was nobody's fault",
               "correct": false
             },
             {
-              "text": "dying",
+              "text": "God will comfort his family",
               "correct": false
             }
           ],
@@ -273,11 +223,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 20:11",
-          "question": "A young man just fell out of a WINDOW. I'd need a week off. Paul goes back upstairs, breaks bread and eats. Then what does he do?",
+          "question": "After a night like THAT, I'd need a week off. Paul goes back upstairs, breaks bread and eats. Then what does he do?",
           "answers": [
             {
               "text": "Keeps speaking until daybreak",
@@ -288,7 +238,7 @@
               "correct": false
             },
             {
-              "text": "Leaves for the ship right away",
+              "text": "Leaves Troas right away",
               "correct": false
             }
           ],
@@ -296,10 +246,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 17,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Acts 20:12",
+          "question": "Paul departs, and the people are greatly ___ to take the boy home alive.",
+          "answers": [
+            {
+              "text": "relieved",
+              "correct": true
+            },
+            {
+              "text": "puzzled",
+              "correct": false
+            },
+            {
+              "text": "saddened",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
           "kind": "story",
-          "verses": "Acts 20:11-12",
-          "text": "At daybreak Paul heads out, and the people are greatly relieved to take the boy home alive. Paul's still on the road, friend, and this journey isn't done yet.",
+          "verses": "Acts 20:12",
+          "text": "Paul's heading back out on the road, friend, and trust me, this journey isn't done yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

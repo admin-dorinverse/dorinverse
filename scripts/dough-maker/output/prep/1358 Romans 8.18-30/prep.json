@@ -8,10 +8,10 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Romans 8:16-17",
-          "text": "Paul, an apostle of Christ Jesus, is writing to the believers in Rome (Romans 1:1, 7). He's just told them they're God's children and co-heirs with Christ, if they suffer with Him so they'll be glorified with Him (Romans 8:16-17). Now he sets the suffering and the glory side by side.",
+          "verses": "Romans 8:18",
+          "text": "Paul, an apostle of Christ Jesus, is writing to the believers in Rome (Romans 1:1, 7). He's just told them they're God's children and co-heirs with Christ, if indeed they suffer with Him (Romans 8:16-17). Now he sets the suffering and the glory side by side.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -47,33 +47,32 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Romans 8:19",
-          "question": "Paul says the creation waits in eager expectation for the revelation of the ___ of God.",
+          "question": "Paul says the creation waits in eager expectation for a revelation. Whose revelation is it?",
           "answers": [
             {
-              "text": "sons",
-              "correct": true,
-              "blank": 1
+              "text": "The sons of God",
+              "correct": true
             },
             {
-              "text": "angels",
+              "text": "The angels of heaven",
               "correct": false
             },
             {
-              "text": "prophets",
+              "text": "The prophets of Israel",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Romans 8:20",
-          "text": "Paul says the creation was subjected to futility, and friend, I KNOW futility. Years in the back of a junk drawer, and not ONE cookie came out of it.",
-          "needs_agent_fix": true,
+          "text": "Paul says the creation was subjected to futility, not by its own will. Friend, I KNOW futility, because I spent years in the back of a junk drawer and not ONE cookie came out of it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -81,15 +80,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 8:20",
-          "question": "Paul says the creation was subjected to futility by its own will.",
+          "question": "Paul says the creation was subjected to futility because of the One who subjected it.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -120,70 +119,33 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Romans 8:21",
-          "question": "Paul says the creation will be brought into the glorious ___ of the ___ of God.",
-          "answers": [
-            {
-              "text": "freedom",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "children",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "kingdom",
-              "correct": false
-            },
-            {
-              "text": "servants",
-              "correct": false
-            },
-            {
-              "text": "temple",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Romans 8:22",
+          "text": "Then Paul says the whole creation has been groaning together in the pains of childbirth. And no, friend, that's not the groan you make when your alarm goes off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Romans 8:22",
-          "text": "Then Paul says the whole creation has been groaning together until now, and he's not talking about the groan you make when your alarm goes off. He's got a very specific kind of pain in mind.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Romans 8:22",
-          "question": "Paul says the whole creation has been groaning together until the present time. What pains does he compare it to?",
+          "question": "Paul says the creation's groaning had already stopped by the time he wrote.",
           "answers": [
             {
-              "text": "The pains of childbirth",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The pains of a long illness",
-              "correct": false
-            },
-            {
-              "text": "The pains of a hard famine",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Romans 8:23",
           "text": "Not only that. Paul says we who have the firstfruits of the Spirit groan inwardly too, like I do when a whole tray sticks to the pan and I smile like it's FINE.",
@@ -191,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 8:23",
@@ -214,7 +176,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Romans 8:24",
           "text": "Paul says in this hope we were saved. Then he asks what it means to hope for something you can already see.",
@@ -222,7 +184,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 8:24",
@@ -241,7 +203,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 8:25",
@@ -301,28 +263,27 @@
           "card": 3,
           "kind": "story",
           "verses": "Romans 8:26",
-          "text": "Ever start a prayer and get stuck right after \"Lord…\"? Me too, friend, and Paul says the Spirit Himself intercedes for us.",
+          "text": "Ever start a prayer and get stuck right after \"Lord…\"? Me too, friend. Paul says the Spirit Himself intercedes for us.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Romans 8:26",
-          "question": "Paul says the Spirit intercedes for us with groans too deep for ___.",
+          "question": "When we don't know how we ought to pray, how does Paul say the Spirit intercedes for us?",
           "answers": [
             {
-              "text": "words",
-              "correct": true,
-              "blank": 1
+              "text": "With groans too deep for words",
+              "correct": true
             },
             {
-              "text": "tears",
+              "text": "With songs of praise in heaven",
               "correct": false
             },
             {
-              "text": "songs",
+              "text": "With the words of the prophets",
               "correct": false
             }
           ],
@@ -333,7 +294,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Romans 8:27",
-          "text": "Then Paul says He who searches our hearts knows the mind of the Spirit, and he tells us why. Me, I search the whole kitchen for my timer, and it's in my MUSTACHE.",
+          "text": "Then Paul says He who searches our hearts knows the mind of the Spirit, and he tells us why.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -360,31 +321,27 @@
           "card": 7,
           "kind": "story",
           "verses": "Romans 8:28",
-          "text": "Then comes a line a lot of believers know by heart: we know that God works all things together for good. ALL things, friend, not just the batches that come out pretty.",
+          "text": "Then comes a line a lot of believers know by heart. It's about ALL things, friend, not just the batches that come out pretty.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Romans 8:28",
-          "question": "Paul says God works all things together for the good of certain people. Who are they?",
+          "question": "Paul says God works all things together for the good of those who love Him.",
           "answers": [
             {
-              "text": "Those who love Him",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Those who never struggle",
-              "correct": false
-            },
-            {
-              "text": "Those who work the hardest",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -423,19 +380,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 8:29",
-          "question": "Paul says God's Son would be the ___ among many brothers.",
+          "question": "Paul says God's Son would be the firstborn among many ___.",
           "answers": [
             {
-              "text": "firstborn",
+              "text": "brothers",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "teacher",
+              "text": "kings",
               "correct": false
             },
             {
-              "text": "servant",
+              "text": "angels",
               "correct": false
             }
           ],
@@ -446,7 +403,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Romans 8:30",
-          "text": "Then Paul links it all together like a chain: those He predestined, He also called, and those He called, He also justified. Link, link, LINK, friend, I'm getting dizzy and Paul's not even out of breath.",
+          "text": "Then Paul links it all together like a chain: those He predestined, He also called, and those He called, He also justified.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

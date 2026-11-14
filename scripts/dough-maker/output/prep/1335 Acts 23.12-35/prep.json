@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 23:10-12",
-          "text": "Last time, the Sanhedrin got so heated that the Roman commander had to pull Paul out by force. The following night the Lord stood near Paul, told him to take courage, and said he must also testify in Rome. When daylight comes, though, the Jews form a conspiracy against him.",
+          "verses": "Acts 23:12",
+          "text": "Paul, an apostle of Jesus, is being held in the barracks by the Roman commander in Jerusalem (Acts 23:10). The night before, the Lord stood near him and said, \"Take courage!\" and told him he must testify about Him in Rome too (Acts 23:11). But when daylight comes, the Jews form a conspiracy against Paul.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -63,7 +63,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Acts 23:13-14",
-          "text": "More than forty grown men, no food, no drink, until the job's done, and they take that oath straight to the chief priests and elders. Friend, I skip ONE cookie break and the whole bakery hears about it.",
+          "text": "More than forty men take their oath straight to the chief priests and elders, sworn not to eat anything until they've killed Paul.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -136,8 +136,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Acts 23:16",
-          "text": "More than forty men, a solemn oath, a whole secret plan. And the one who hears about it? The son of Paul's sister. Of ALL the people in Jerusalem!",
-          "needs_agent_fix": true,
+          "text": "More than forty men and a secret plan, and guess who hears about it? The son of Paul's sister, of ALL people!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -166,29 +166,25 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Acts 23:17",
-          "text": "Paul gets the news, and he doesn't sit on it. He calls over one of the centurions.",
+          "verses": "Acts 23:16",
+          "text": "Paul gets the news, and he doesn't sit on it. Not for one second.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Acts 23:17",
-          "question": "Paul tells the centurion to take the young man to the ___, because he has something to tell him.",
+          "question": "Paul goes to the commander himself to report the plot.",
           "answers": [
             {
-              "text": "commander",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "governor",
-              "correct": false
-            },
-            {
-              "text": "high priest",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -197,28 +193,28 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Acts 23:18-19",
-          "text": "The centurion brings him in, and the commander takes the young man by the hand and draws him aside to ask what he needs to say. That's a boss who actually LISTENS.",
+          "verses": "Acts 23:17-19",
+          "text": "A centurion brings the young man in, and the commander takes him by the hand and draws him aside to ask what he needs to say. That's a boss who actually LISTENS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 23:20",
-          "question": "Paul's nephew says the Jews will ask the commander to bring Paul to the Sanhedrin. When?",
+          "question": "Paul's nephew says the Jews will ask the commander to bring Paul to the Sanhedrin ___.",
           "answers": [
             {
-              "text": "Tomorrow",
+              "text": "tomorrow",
               "correct": true
             },
             {
-              "text": "In three days",
+              "text": "next week",
               "correct": false
             },
             {
-              "text": "After the Sabbath",
+              "text": "tonight",
               "correct": false
             }
           ],
@@ -248,7 +244,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Acts 23:21-22",
-          "text": "He lays it all out: more than forty men ready to ambush Paul, just waiting on the commander's yes. So the commander sends the young man off with one instruction.",
+          "text": "The young man lays it all out: more than forty men ready to ambush Paul, just waiting on the commander's yes. So the commander sends the young man off with one instruction.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -362,8 +358,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Acts 23:23-24",
-          "text": "They head out in the third hour of the night, and the commander even provides mounts to get Paul there safely. A prisoner with an armed escort AND a ride? Friend, that's a VIP car service.",
-          "needs_agent_fix": true,
+          "text": "They head out in the third hour of the night, with mounts for Paul so he gets there safely. Friend, an armed escort AND a ride for a prisoner is VIP car service.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -422,14 +418,6 @@
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Acts 23:27",
-          "text": "Funny thing: back in Acts 22:29, Lysias only realized Paul was a citizen after he'd put him in chains, so this letter tells it a LITTLE nicer. Hey, I do the same thing every time I tell the story of my first batch.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 23:29",
@@ -452,7 +440,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 23:29",
@@ -471,11 +459,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 23:30",
-          "question": "Lysias ends the letter by telling Felix about the plot, and says he's told Paul's accusers to make their case in front of Felix.",
+          "question": "Lysias writes that he has told Paul's accusers to present their case before Felix.",
           "answers": [
             {
               "text": "True",
@@ -490,7 +478,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Acts 23:31",
           "text": "The soldiers follow their orders and bring Paul by night to Antipatris. So far, so good.",
@@ -498,7 +486,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 23:32",
@@ -521,7 +509,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Acts 23:33-34",
           "text": "The horsemen ride into Caesarea, hand Felix the letter and present Paul to him. Felix reads it and asks one question: what province is Paul from?",
@@ -529,7 +517,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 23:34",
@@ -552,7 +540,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 23:35",
@@ -575,7 +563,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Acts 23:35",
           "text": "Until then, Paul is kept under guard in Herod's Praetorium. Hang on to your apron, friend, because there's a whole lot more of Paul's story coming.",

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 27:27",
-          "text": "Paul, the apostle, is a prisoner on a ship headed for Italy (Acts 27:1), and a storm has been shoving that ship around for two weeks. It's the fourteenth night, they're still being driven across the Adriatic Sea, and the man writing this book is on board with them. Then, about midnight, the sailors start to sense something.",
+          "text": "Paul, the apostle, is a prisoner on a ship headed for Italy (Acts 27:1), and a storm has been shoving that ship around for two weeks (Acts 27:14). It's the fourteenth night, they're still being driven across the Adriatic Sea, and the man writing this book is on board with them. Then, about midnight, the sailors start to sense something.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -71,9 +71,9 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Acts 27:29",
+          "verses": "Acts 27:28-29",
           "text": "Shallower water in the middle of the night, and they're scared of running aground on the rocks, so down go four anchors from the stern. It's that midnight walk across a dark kitchen when you KNOW you left a cookie sheet on the floor somewhere.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -108,14 +108,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 27:30",
-          "question": "Instead of anchors, what are the sailors at the bow really letting down into the sea?",
+          "question": "Up at the bow, what are the sailors really letting down into the sea?",
           "answers": [
             {
               "text": "The lifeboat",
               "correct": true
             },
             {
-              "text": "A sea anchor",
+              "text": "A fishing net",
               "correct": false
             },
             {
@@ -128,33 +128,14 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 27:30",
-          "question": "The sailors lowering the lifeboat are trying to escape from the ship.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Acts 27:30-31",
+          "text": "Paul catches on that those sailors are trying to escape, and friend, two weeks in a storm as a PRISONER (Acts 27:1) and this man is STILL on top of it. He goes straight to the centurion, the Roman officer in charge of the prisoners (Acts 27:1), and the soldiers.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Acts 27:31",
-          "text": "Paul catches on, and friend, two weeks in a storm as a PRISONER (Acts 27:1) and this man is STILL on top of it. He goes straight to the centurion, the Roman officer in charge of the prisoners (Acts 27:1), and the soldiers.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 27:31",
@@ -177,15 +158,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Acts 27:32",
-          "text": "So the soldiers cut the ropes and let the lifeboat drift away. No lifeboat, no backup plan, NO EXIT, and me? I'd have been hanging onto that rope yelling, \"Hold on, can we TALK about this?\"",
+          "question": "After Paul's warning, what do the soldiers do with the lifeboat?",
+          "answers": [
+            {
+              "text": "Cut the ropes and let it drift",
+              "correct": true
+            },
+            {
+              "text": "Haul it back up on board",
+              "correct": false
+            },
+            {
+              "text": "Tie it tight to the stern",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Acts 27:33-34",
           "text": "Right up to daybreak, Paul keeps working on everybody about one thing. After fourteen days of constant suspense, he tells them it's for their own preservation.",
@@ -193,7 +189,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 27:33",
@@ -217,7 +213,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 27:34",
@@ -236,15 +232,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Acts 27:33-35",
-          "text": "Fourteen days, and nobody's taken any food. So Paul takes bread, gives thanks to God in front of them all, breaks it and starts eating.",
+          "text": "Fourteen days, and nobody's taken any food. Then Paul takes bread, gives thanks to God in front of them all, breaks it and starts eating.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 27:36",
@@ -263,7 +259,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Acts 27:36",
           "text": "They're all encouraged, and they take some food themselves. It's like when one person at work finally grabs a cookie from the break room box, and suddenly EVERYBODY'S lined up.",
@@ -280,8 +276,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 27:37-38",
-          "text": "In all, there are 276 people on board, and friend, I get flustered when THREE people crowd around my oven. Now that they've all eaten their fill, they need to make the ship lighter. And this ship is carrying grain.",
-          "needs_agent_fix": true,
+          "text": "In all, there are 276 people on board, and friend, I get flustered when THREE people crowd around my oven. Once they've all eaten their fill, it's time to make the ship lighter.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -320,7 +316,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 27:39",
-          "question": "What do they decide to do at that bay with the sandy beach?",
+          "question": "When daylight comes, what do the people on the ship decide to do at the bay with the sandy beach?",
           "answers": [
             {
               "text": "Run the ship aground there",
@@ -335,7 +331,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -451,7 +447,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Acts 27:44",
-          "text": "Everybody else follows on planks and pieces of the ship. And I don't care who you are, NOBODY looks cool paddling a piece of a ship.",
+          "text": "That leaves everybody who can't swim, and friend, put me in THAT group. They're told to follow on something else.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -460,18 +456,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 27:44",
-          "question": "When it's all over, how many of the 276 people on board are brought safely to land?",
+          "question": "How are the people on the ship who can't swim told to get to land?",
           "answers": [
             {
-              "text": "Every single one",
+              "text": "On planks and parts of the ship",
               "correct": true
             },
             {
-              "text": "All except the soldiers",
+              "text": "In the ship's lifeboat",
               "correct": false
             },
             {
-              "text": "About half of them",
+              "text": "Across the sandbar on foot",
               "correct": false
             }
           ],
@@ -480,9 +476,28 @@
         },
         {
           "card": 14,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Acts 27:37, 44",
+          "question": "Every one of the 276 people on board is brought safely to land.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "story",
           "verses": "Acts 27:44",
-          "text": "Everybody's on dry land, dripping wet and catching their breath. But hold on, friend, Paul's road to Rome has more miles in it yet.",
+          "text": "NOBODY looks cool floating to shore on a piece of a ship, but they ALL make it, friend. And trust me, this voyage isn't over yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

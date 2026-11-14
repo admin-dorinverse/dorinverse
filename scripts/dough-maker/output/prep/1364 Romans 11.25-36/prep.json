@@ -3,18 +3,41 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Romans 11:25-28",
+      "verses": "Romans 11:25-29",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Romans 11:25",
-          "text": "Paul, the apostle to the Gentiles (Romans 11:13), is writing to the believers in Rome (Romans 1:7), and he's been warning the Gentiles there not to brag over Israel (Romans 11:18). Now he wants them to know a mystery so they won't be conceited. Friend, I spent years in a junk drawer next to a key that never figured out which door it opened, so when Paul says MYSTERY, I am ALL the way in.",
-          "needs_agent_fix": true,
+          "text": "Paul, the apostle to the Gentiles (Romans 11:13), is writing to the believers in Rome (Romans 1:7). He's been warning the Gentiles there not to boast over the branches of Israel that were broken off because of unbelief (Romans 11:18-20). Now Paul has a mystery for them, and friend, I spent years in a junk drawer next to a key that never figured out which door it opened, so when Paul says MYSTERY, I am ALL the way in.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Romans 11:25",
+          "question": "Paul tells the Gentiles in Rome this mystery so that they will not be ___.",
+          "answers": [
+            {
+              "text": "conceited",
+              "correct": true
+            },
+            {
+              "text": "discouraged",
+              "correct": false
+            },
+            {
+              "text": "divided",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:25",
@@ -33,34 +56,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Romans 11:25",
-          "question": "Paul says the hardening on Israel lasts until the full number of the ___ has come in.",
-          "answers": [
-            {
-              "text": "Gentiles",
-              "correct": true
-            },
-            {
-              "text": "Levites",
-              "correct": false
-            },
-            {
-              "text": "elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Romans 11:25",
+          "question": "Paul says the hardening that has come to Israel in part will last forever.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:26",
@@ -79,38 +98,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Romans 11:26",
-          "text": "Paul backs it up, 'as it is written': 'The Deliverer will come from Zion.' He brings receipts, friend, and not the faded kind I slept on for years in that junk drawer.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Romans 11:26",
-          "question": "In the Scripture Paul quotes, Jacob, Israel's forefather (Genesis 32:28), stands for his people. What will the Deliverer remove from Jacob?",
-          "answers": [
-            {
-              "text": "Godlessness",
-              "correct": true
-            },
-            {
-              "text": "His enemies",
-              "correct": false
-            },
-            {
-              "text": "His rulers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul backs it up with the prophet Isaiah (Isaiah 59:20-21; 27:9): 'The Deliverer will come from Zion; He will remove godlessness from Jacob.' That's Jacob, also called Israel (Genesis 32:28).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -118,7 +114,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 11:27",
-          "question": "In that same Scripture, God says His covenant with them is when He takes away their sins.",
+          "question": "The Scripture Paul quotes goes on to say the covenant with them comes when their sins are taken away.",
           "answers": [
             {
               "text": "True",
@@ -129,7 +125,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -137,7 +133,7 @@
           "kind": "story",
           "verses": "Romans 11:28",
           "text": "Now Paul shows Israel from two sides. When it comes to the gospel, he tells the Gentiles, they're enemies on your account.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -152,7 +148,7 @@
               "correct": true
             },
             {
-              "text": "The judges",
+              "text": "The priests",
               "correct": false
             },
             {
@@ -160,7 +156,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -179,7 +175,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -191,9 +187,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Romans 11:29-30",
-          "text": "God's gifts never expire, friend, and the expired coupon I shared that drawer with is STILL jealous about it. Now Paul reminds the Gentiles in Rome that they used to disobey God, but now they've received mercy.",
-          "needs_agent_fix": true,
+          "verses": "Romans 11:30",
+          "text": "Now Paul turns back to the Gentiles in Rome. They used to disobey God, but now they've received mercy.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -216,7 +212,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -224,63 +220,49 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:31",
-          "question": "Now Israel has disobeyed too. Why, according to Paul?",
+          "question": "Now Israel has disobeyed too, Paul says, in order that they too may receive mercy. Through what?",
           "answers": [
             {
-              "text": "So they too may receive mercy",
+              "text": "The mercy shown to the Gentiles",
               "correct": true
             },
             {
-              "text": "So God can choose someone else",
+              "text": "The law given through Moses",
               "correct": false
             },
             {
-              "text": "So the Gentiles can replace them",
+              "text": "The prayers of their prophets",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Romans 11:32",
-          "question": "Paul sums it up: God has consigned everyone to ___ so that He may have ___ on everyone.",
+          "question": "Paul sums it up: God has consigned everyone to disobedience so that He may have mercy on everyone.",
           "answers": [
             {
-              "text": "disobedience",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "mercy",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "darkness",
-              "correct": false
-            },
-            {
-              "text": "patience",
-              "correct": false
-            },
-            {
-              "text": "judgment",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Romans 11:33",
-          "text": "Eleven chapters of explaining, and now Paul just bursts out: 'O, the depth of the riches of the wisdom and knowledge of God!' ELEVEN chapters, friend, and the man lands on 'O!'",
-          "needs_agent_fix": true,
+          "text": "After all that explaining, Paul just bursts out: 'O, the depth of the riches of the wisdom and knowledge of God!' Friend, when I'm amazed, I don't burst into praise like that. I just stand on my gold base with my mouth open and my mustache frozen in midair.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -299,15 +281,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Romans 11:34",
-          "text": "Then Paul pulls in Scripture with two questions: 'Who has known the mind of the Lord? Or who has been His counselor?'",
-          "needs_agent_fix": true,
+          "text": "Then Paul quotes the prophet Isaiah (Isaiah 40:13) with two questions: 'Who has known the mind of the Lord? Or who has been His counselor?'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -330,7 +312,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -338,7 +320,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 11:35",
-          "question": "Next Paul asks, 'Who has first given to God, that God should repay him?' His point is that God repays whoever gives to Him first.",
+          "question": "Next Paul quotes the book of Job (Job 41:11): 'Who has first given to God, that God should repay him?' His point is that God repays whoever gives to Him first.",
           "answers": [
             {
               "text": "True",
@@ -349,7 +331,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -357,7 +339,7 @@
           "kind": "story",
           "verses": "Romans 11:36",
           "text": "Then Paul ties it all together: 'For from Him and through Him and to Him are all things.'",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -365,7 +347,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:36",
-          "question": "So who does Paul say gets the glory forever?",
+          "question": "Paul says all things are from Him and through Him and to Him. So who does Paul say gets the glory forever?",
           "answers": [
             {
               "text": "God",
@@ -376,19 +358,19 @@
               "correct": false
             },
             {
-              "text": "The Gentiles",
+              "text": "The church",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Romans 11:36",
-          "text": "Paul seals eleven chapters with one word: 'Amen!' Me, I finish ONE batch of cookies and I'm flat on my back on this gold base, yelling for somebody to bring me a fan.",
-          "needs_agent_fix": true,
+          "text": "Paul ends it with one word: 'Amen.' Me, I finish ONE batch of cookies and I'm flat on my back on this gold base, yelling for somebody to bring me a fan.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

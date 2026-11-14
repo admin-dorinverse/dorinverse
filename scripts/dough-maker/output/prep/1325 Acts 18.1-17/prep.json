@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 18:1-2",
-          "text": "Paul, an apostle of Jesus, is carrying the good news from city to city. Now he leaves Athens and goes to Corinth, where he finds a Jew named Aquila, a native of Pontus, and his wife Priscilla. They've just come from Italy, and trust me, friend, they did NOT leave Rome for a vacation.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Paul, an apostle of Jesus, has just spoken in Athens, where some mocked him and some believed (Acts 17:32-34). Now he leaves Athens for Corinth, where he finds a Jew named Aquila, a native of Pontus, and his wife Priscilla. They've just come from Italy, and trust me, friend, they did NOT leave Rome for a vacation.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,46 +34,45 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Acts 18:2-3",
-          "text": "Paul goes to visit them, and he ends up staying and working with them. Friend, if I found another stamper out here, I would NOT be visiting. My mustache would be on the good side of the counter before he finished saying hello.",
+          "text": "Paul goes to visit them, and he ends up staying and working with them. That's a visit where you show up to say hi and leave with a roommate AND a coworker.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 18:3",
-          "question": "Paul stays and works with Aquila and Priscilla because they're ___ by trade, just as he is.",
+          "question": "Why does Paul stay and work with Aquila and Priscilla?",
           "answers": [
             {
-              "text": "tentmakers",
-              "correct": true,
-              "blank": 1
+              "text": "They're tentmakers by trade like him",
+              "correct": true
             },
             {
-              "text": "fishermen",
+              "text": "They're old friends from his hometown",
               "correct": false
             },
             {
-              "text": "potters",
+              "text": "They're relatives on his mother's side",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Acts 18:4",
-          "text": "So Paul's got a day job now. But every Sabbath, he's in the synagogue, reasoning and trying to persuade.",
-          "needs_agent_fix": true,
+          "verses": "Acts 18:3-4",
+          "text": "So Paul has work in Corinth now. But every Sabbath, he's in the synagogue, reasoning and trying to persuade.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,8 +98,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Acts 18:5",
-          "text": "Then Silas and Timothy, Paul's traveling partners, come down from Macedonia. The whole crew's back together, and now Paul devotes himself fully to the word.",
-          "needs_agent_fix": true,
+          "text": "Then Silas and Timothy, the two Paul had sent for (Acts 17:15), come down from Macedonia. Now Paul devotes himself FULLY to the word.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -131,7 +130,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Acts 18:6",
-          "text": "But they oppose him and insult him. So Paul shakes out his garments and tells them, \"Your blood be on your own heads! I am innocent of it.\"",
+          "text": "But the Jews there oppose him and insult him. So Paul shakes out his garments and tells them, \"Your blood be on your own heads! I am innocent of it.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -166,15 +165,15 @@
           "question": "So Paul walks out of the synagogue. Where does he go?",
           "answers": [
             {
-              "text": "Next door to Titus Justus",
+              "text": "The house of Titus Justus next door",
               "correct": true
             },
             {
-              "text": "Back to Athens",
+              "text": "The house of Jason in Thessalonica",
               "correct": false
             },
             {
-              "text": "To the house of Jason",
+              "text": "The marketplace back in Athens",
               "correct": false
             }
           ],
@@ -249,9 +248,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 18:9",
+          "verses": "Acts 18:6, 9",
           "text": "Paul's been opposed and insulted in this city. Then one night, the Lord speaks to him in a vision.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -281,21 +280,20 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 18:10",
-          "question": "The Lord says He is with Paul, and no one will lay a hand on him, because He has many ___ in this city.",
+          "question": "The Lord promises Paul that no one in Corinth will lay a hand on him. What reason does He give?",
           "answers": [
             {
-              "text": "people",
-              "correct": true,
-              "blank": 1
+              "text": "He has many people in this city",
+              "correct": true
             },
             {
-              "text": "soldiers",
+              "text": "The city guards respect Paul",
               "correct": false
             },
             {
-              "text": "angels",
+              "text": "Paul's opponents have left town",
               "correct": false
             }
           ],
@@ -396,7 +394,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 18:15",
-          "question": "Gallio says this isn't a crime. What does he call it instead?",
+          "question": "Gallio says the Jews' complaint against Paul isn't about a crime. What does he call it instead?",
           "answers": [
             {
               "text": "A dispute about words and their own law",
@@ -411,7 +409,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -419,15 +417,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 18:15",
-          "question": "Gallio agrees to judge the case himself.",
+          "question": "Gallio tells the Jews to settle the matter themselves.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -436,31 +434,16 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Acts 18:16",
-          "text": "And Gallio drives them away from the judgment seat. Paul never got a single word in, and the case STILL went his way.",
-          "needs_agent_fix": true,
+          "verses": "Acts 18:14-16",
+          "text": "Gallio drives them away from the judgment seat. I lose arguments to my own oven timer, and Paul just won one without saying a single word.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Acts 18:17",
-          "question": "Then the crowd seizes a man and beats him right in front of the judgment seat. Who is it?",
-          "answers": [
-            {
-              "text": "Sosthenes the synagogue leader",
-              "correct": true
-            },
-            {
-              "text": "Aquila the tentmaker",
-              "correct": false
-            },
-            {
-              "text": "Titus Justus from next door",
-              "correct": false
-            }
-          ],
+          "text": "At this, the crowd seizes Sosthenes, the synagogue leader, and beats him in front of the judgment seat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

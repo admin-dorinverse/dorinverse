@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 5
+      },
+      "problem": "Apollos is a wrong answer here and was already a wrong answer on Stop 1 card 7. The same answer is shown on two cards.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The answers reuse earlier ones. \"The Lord Jesus\" is the right answer again after \"Jesus\" on Stop 1 card 7. \"Paul the apostle\" is a wrong answer after \"Paul\" was the right answer on Stop 2 card 5.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    }
+  ]
+}

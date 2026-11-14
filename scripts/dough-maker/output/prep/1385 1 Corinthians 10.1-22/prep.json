@@ -9,27 +9,28 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 10:1",
-          "text": "Paul is writing to the church in Corinth, and he's about to open up the old family photo album. He doesn't want them unaware about their forefathers, the people of Israel. Every last one of them was under the cloud.",
+          "text": "Paul, the apostle, is writing to the church in Corinth, and he's just said he disciplines himself so he won't be disqualified (1 Corinthians 9:27). Now he opens up the old family photo album: he doesn't want them unaware about “our forefathers.” Every last one of them was under the cloud.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 10:1",
-          "question": "Paul says all their forefathers were under the cloud. And then they all passed through what?",
+          "question": "Paul says all their forefathers were under the cloud, and that they all passed through the ___.",
           "answers": [
             {
-              "text": "The sea",
-              "correct": true
+              "text": "sea",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The Nile River",
+              "text": "Nile",
               "correct": false
             },
             {
-              "text": "The Euphrates River",
+              "text": "Euphrates",
               "correct": false
             }
           ],
@@ -38,26 +39,10 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Corinthians 10:2",
-          "question": "In the cloud and in the sea, Paul says the forefathers were all baptized into ___.",
-          "answers": [
-            {
-              "text": "Moses",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Joshua",
-              "correct": false
-            },
-            {
-              "text": "Aaron",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul says they were all baptized into Moses, Israel's leader, in the cloud and in the sea. Same cloud. Same sea. The WHOLE crowd.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -71,20 +56,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 10:4",
-          "question": "Paul says who that spiritual rock traveling with Israel was. Who?",
+          "question": "Paul says the spiritual rock that went along with those forefathers was ___.",
           "answers": [
             {
               "text": "Christ",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Moses",
               "correct": false
             },
             {
-              "text": "An angel",
+              "text": "Aaron",
               "correct": false
             }
           ],
@@ -96,7 +82,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 10:5",
-          "question": "The cloud, the sea, the food and the drink went to ALL of Israel's forefathers. True or false: Paul says God was pleased with most of them.",
+          "question": "The cloud, the sea, the food and the drink went to ALL of those forefathers. True or false: Paul says God was pleased with most of them.",
           "answers": [
             {
               "text": "True",
@@ -114,7 +100,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Corinthians 10:5",
-          "text": "Most of them were struck down in the wilderness. Same cloud, same sea, and most of them STILL fell, which is like being handed the best recipe in the whole kitchen and burning the batch anyway.",
+          "text": "Paul says most of them were struck down in the wilderness. Every one of them got the cloud, the sea, the food and the drink, and still most of them fell right there in the wilderness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -123,7 +109,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 10:6",
-          "question": "Why does Paul say all of this happened to Israel's forefathers?",
+          "question": "Why does Paul say all of this happened to those forefathers?",
           "answers": [
             {
               "text": "As examples to keep us from craving evil",
@@ -145,58 +131,46 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Corinthians 10:7",
-          "text": "Then Paul gets specific. Don't be idolaters, as some of them were, and he quotes Scripture: “The people sat down to eat and drink and got up to indulge in revelry.”",
+          "text": "Then Paul gets specific and quotes Exodus 32:6, from the time Israel made a golden calf (Exodus 32:4): “The people sat down to eat and drink and got up to indulge in revelry.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Corinthians 10:8",
-          "question": "Paul's next warning: we should not commit sexual immorality, as some of them did. True or false: Paul says twenty-three thousand of them died in one day.",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 10:7",
+          "question": "Paul uses that golden calf line to back up his first warning to the Corinthians. What is the warning?",
           "answers": [
             {
-              "text": "True",
+              "text": "Do not be idolaters",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Do not be greedy",
+              "correct": false
+            },
+            {
+              "text": "Do not be lazy",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Corinthians 10:9",
-          "question": "Paul's third warning: we should not test Christ, as some of them did. Paul says those who did were killed by ___.",
-          "answers": [
-            {
-              "text": "snakes",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "lions",
-              "correct": false
-            },
-            {
-              "text": "fire",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Corinthians 10:8-9",
+          "text": "Next, Paul says we should not commit sexual immorality, as some of them did, and in one day twenty-three thousand of them died. And we should not test Christ, as some of them did, and they were killed by snakes.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "1 Corinthians 10:10",
-          "text": "Paul's got one more warning from that same wilderness, and this one's about what comes out of people's mouths. Picture a whole camp of tired travelers with a LOT of feelings about the trip and no volume knob.",
+          "text": "Paul's got one more warning from that same wilderness. Four warnings out of one camp. That's a LOT of lessons from one trip.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -205,7 +179,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 10:10",
-          "question": "What is Paul's fourth warning from Israel's history?",
+          "question": "What is Paul's fourth warning from the wilderness?",
           "answers": [
             {
               "text": "Do not complain",
@@ -234,20 +208,21 @@
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 10:12",
-          "question": "After all those warnings, Paul says the one who thinks he's standing firm should be careful. Careful of what?",
+          "question": "After all those warnings, Paul says the one who thinks he is standing firm should be careful not to ___.",
           "answers": [
             {
-              "text": "That he doesn't fall",
-              "correct": true
+              "text": "fall",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "That he doesn't boast",
+              "text": "wander",
               "correct": false
             },
             {
-              "text": "That he doesn't stop",
+              "text": "stop",
               "correct": false
             }
           ],
@@ -267,15 +242,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 10:13",
-          "question": "Paul says God is faithful. True or false: Paul says God will let you be tempted beyond what you can bear.",
+          "question": "Paul says God is faithful. True or false: Paul says God will not let you be tempted beyond what you can bear.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -297,7 +272,7 @@
               "correct": false
             },
             {
-              "text": "A warning",
+              "text": "A teacher",
               "correct": false
             }
           ],
@@ -314,7 +289,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 10:14",
-          "text": "The history lesson's over, and Paul brings it home with one big word: therefore. He calls the Corinthians his beloved, and here comes the point.",
+          "text": "The history lesson's over, and Paul brings it home with one big word: therefore. He calls the Corinthians his beloved, and he tells them what to do about idolatry.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -323,18 +298,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 10:14",
-          "question": "After all those warnings from Israel's history, what does Paul tell his beloved to flee from?",
+          "question": "After all those warnings from Israel's history, what does Paul tell his beloved to do about idolatry?",
           "answers": [
             {
-              "text": "Idolatry",
+              "text": "Flee from it",
               "correct": true
             },
             {
-              "text": "Riches",
+              "text": "Stand against it",
               "correct": false
             },
             {
-              "text": "Arguments",
+              "text": "Pray about it",
               "correct": false
             }
           ],
@@ -345,7 +320,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Corinthians 10:15",
-          "text": "Paul says he's speaking to reasonable people, so judge for yourselves. He's not yelling, friend, he's setting the cookies on the counter and letting you taste for yourself.",
+          "text": "Paul says he's speaking to reasonable people, so judge for yourselves. Friend, that's like setting the cookies on the counter and letting you taste for yourself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -360,20 +335,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 10:16",
-          "question": "Paul asks the same kind of question about the bread they break. He asks if it's a participation in what?",
+          "question": "Paul asks the same kind of question about the bread they break. He asks if it's a participation in the ___ of Christ.",
           "answers": [
             {
-              "text": "The body of Christ",
-              "correct": true
+              "text": "body",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The Passover meal",
+              "text": "glory",
               "correct": false
             },
             {
-              "text": "The temple offerings",
+              "text": "name",
               "correct": false
             }
           ],
@@ -383,21 +359,20 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Corinthians 10:17",
-          "question": "Because there is one loaf, Paul says, we who are many are one ___.",
+          "question": "Paul says we who are many are one body. Why does he say that is?",
           "answers": [
             {
-              "text": "body",
-              "correct": true,
-              "blank": 1
+              "text": "Because we all partake of the one loaf",
+              "correct": true
             },
             {
-              "text": "nation",
+              "text": "Because we all follow the same apostle",
               "correct": false
             },
             {
-              "text": "house",
+              "text": "Because we all live in the same city",
               "correct": false
             }
           ],
@@ -461,20 +436,21 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 10:20",
-          "question": "Paul says the sacrifices of pagans are offered to someone, and it's not God. Who is it?",
+          "question": "Paul says the sacrifices of pagans are offered to ___, not to God.",
           "answers": [
             {
-              "text": "Demons",
-              "correct": true
+              "text": "demons",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Their kings",
+              "text": "kings",
               "correct": false
             },
             {
-              "text": "The dead",
+              "text": "angels",
               "correct": false
             }
           ],
@@ -492,34 +468,24 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Corinthians 10:21",
-          "question": "Paul says you cannot drink the cup of the ___ and the cup of ___ too.",
+          "question": "Paul says you cannot drink the cup of the Lord and the cup of demons too. What else does he say you cannot partake in from both the Lord and demons?",
           "answers": [
             {
-              "text": "Lord",
-              "correct": true,
-              "blank": 1
+              "text": "The table",
+              "correct": true
             },
             {
-              "text": "demons",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Moses",
+              "text": "The throne",
               "correct": false
             },
             {
-              "text": "kings",
-              "correct": false
-            },
-            {
-              "text": "Israel",
+              "text": "The temple",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -534,11 +500,11 @@
               "correct": true
             },
             {
-              "text": "Laughter",
+              "text": "Sorrow",
               "correct": false
             },
             {
-              "text": "Sorrow",
+              "text": "Mercy",
               "correct": false
             }
           ],

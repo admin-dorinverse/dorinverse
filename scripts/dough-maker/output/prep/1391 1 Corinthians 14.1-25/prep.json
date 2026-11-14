@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Corinthians 14:2",
-          "text": "First up is speaking in a tongue. Paul says that person speaks to God, not to men, and no one understands him, so I bet the rest of the room is just nodding politely.",
+          "text": "First up, speaking in a tongue: Paul says that person speaks to God, not to men, and no one understands him. He utters mysteries in the Spirit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 14:3",
-          "question": "Someone speaking in a tongue speaks to God, and no one understands him. Paul says the one who prophesies speaks to people.",
+          "question": "Paul says that, unlike the one who speaks in a tongue, the one who prophesies speaks to people.",
           "answers": [
             {
               "text": "True",
@@ -61,30 +61,34 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "1 Corinthians 14:3",
-          "text": "YES. Prophecy speaks to people for their edification, encouragement and comfort, so friend, that gift shows up like a whole care package.",
+          "text": "Paul says prophecy is for edification, encouragement and comfort. Friend, that gift shows up like a whole care package.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "1 Corinthians 14:4",
-          "question": "Paul says the one who speaks in a tongue builds up the whole church.",
+          "question": "Paul says the one who speaks in a tongue edifies ___, but the one who prophesies edifies the church.",
           "answers": [
             {
-              "text": "True",
+              "text": "himself",
+              "correct": true
+            },
+            {
+              "text": "the angels",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "the elders",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -92,29 +96,6 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Corinthians 14:4",
-          "question": "The one who speaks in a tongue edifies himself, but the one who prophesies edifies the ___.",
-          "answers": [
-            {
-              "text": "church",
-              "correct": true
-            },
-            {
-              "text": "angels",
-              "correct": false
-            },
-            {
-              "text": "elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "story",
           "verses": "1 Corinthians 14:5",
           "text": "Now hold on, Paul's not tossing tongues out of the kitchen. He says he wishes ALL of them could speak in tongues, but he'd rather have them prophesy.",
@@ -122,7 +103,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 14:5",
@@ -145,7 +126,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "1 Corinthians 14:6",
           "text": "Then Paul makes it personal: if he came to them speaking in tongues, how would that help them, unless he brought some revelation, knowledge, prophecy or teaching? Friend, if I showed up in your kitchen speaking only Stamper, you'd smile, nod, and QUIETLY go look up a recipe.",
@@ -153,7 +134,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "1 Corinthians 14:7",
           "text": "So Paul pulls out some everyday examples, starting with lifeless instruments like the flute and the harp. I spent YEARS as a lifeless tool in a junk drawer, friend, so I'm taking that word personally.",
@@ -161,19 +142,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "1 Corinthians 14:7",
-          "question": "Paul says a flute or a harp needs distinct notes so anyone can recognize the tune.",
+          "question": "Paul says a flute or a harp needs ___ notes, or no one will recognize the tune.",
           "answers": [
             {
-              "text": "True",
+              "text": "distinct",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "loud",
               "correct": false
+            },
+            {
+              "text": "high",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Corinthians 14:8",
+          "question": "Paul's next example is a trumpet. He says even a muffled trumpet call gets everyone ready for battle.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -181,29 +185,6 @@
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 14:8",
-          "question": "Paul's next example is a trumpet. If it sounds a muffled call, what happens?",
-          "answers": [
-            {
-              "text": "No one gets ready for battle",
-              "correct": true
-            },
-            {
-              "text": "The army charges too early",
-              "correct": false
-            },
-            {
-              "text": "The enemy hears it first",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 14:9",
@@ -226,7 +207,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "1 Corinthians 14:10",
           "text": "Paul says there are many different languages in the world, and none of them is without meaning. Even the noises my oven makes mean SOMETHING, friend, I just haven't cracked the code yet.",
@@ -234,7 +215,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 14:11",
@@ -257,7 +238,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 14:12",
@@ -287,68 +268,37 @@
       "cards": [
         {
           "card": 1,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 14:13",
-          "question": "Paul says the one who speaks in a tongue should pray for something. What is it?",
-          "answers": [
-            {
-              "text": "That he may interpret",
-              "correct": true
-            },
-            {
-              "text": "That he may speak louder",
-              "correct": false
-            },
-            {
-              "text": "That he may speak more often",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "1 Corinthians 14:13-14",
+          "text": "Next, Paul says the one who speaks in a tongue should pray that he may interpret. Here's why: when Paul prays in a tongue, his spirit prays, but his mind is unfruitful.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "1 Corinthians 14:14",
-          "text": "Here's why. Paul says when he prays in a tongue, his spirit is praying.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 14:15",
+          "question": "When Paul prays in a tongue, his spirit prays, but his mind is unfruitful. So what does Paul say he will do?",
+          "answers": [
+            {
+              "text": "Pray with his spirit and his mind",
+              "correct": true
+            },
+            {
+              "text": "Pray only with his mind from now on",
+              "correct": false
+            },
+            {
+              "text": "Stop praying in tongues altogether",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Corinthians 14:14",
-          "question": "When Paul prays in a tongue, his spirit prays, but his mind is ___.",
-          "answers": [
-            {
-              "text": "unfruitful",
-              "correct": true
-            },
-            {
-              "text": "renewed",
-              "correct": false
-            },
-            {
-              "text": "troubled",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "1 Corinthians 14:15",
-          "text": "So what's Paul's plan? He'll pray with his spirit AND pray with his mind, the full team, nobody sitting on the bench.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 14:15",
@@ -367,7 +317,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 4,
           "kind": "story",
           "verses": "1 Corinthians 14:16",
           "text": "Now picture someone uninstructed sitting in the room while you speak a blessing in spirit and give thanks.",
@@ -375,7 +325,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 14:16",
@@ -398,7 +348,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "1 Corinthians 14:17",
           "text": "Paul says you may be giving thanks well enough, but the other person isn't built up. It's like getting added to a group text where everybody's saying THANK YOU SO MUCH, and you heart it anyway with NO idea what for.",
@@ -406,7 +356,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 14:18",
@@ -425,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 14:19",
@@ -448,7 +398,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "1 Corinthians 14:19-20",
           "text": "FIVE words beat TEN THOUSAND, friend, and that's every work meeting that should've been an email. Then Paul says it straight: “Brothers, stop thinking like children.”",
@@ -456,22 +406,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 14:20",
-          "question": "Paul tells the Corinthians to stop thinking like children. But in what area does he say to be like infants?",
+          "question": "Paul tells the Corinthians to stop thinking like children. He says that in regard to ___ they should be infants, but in their thinking they should be mature.",
           "answers": [
             {
-              "text": "In regard to evil",
+              "text": "evil",
               "correct": true
             },
             {
-              "text": "In regard to prayer",
+              "text": "prayer",
               "correct": false
             },
             {
-              "text": "In regard to giving",
+              "text": "giving",
               "correct": false
             }
           ],
@@ -479,19 +429,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
-          "verses": "1 Corinthians 14:20-21",
-          "text": "In your thinking, though, be mature. Then Paul quotes the Law: “By strange tongues and foreign lips I will speak to this people, but even then they will not listen to Me, says the Lord.”",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 14:21",
+          "text": "Then Paul quotes the Law (Isaiah 28:11-12), where the Lord speaks: “By strange tongues and foreign lips I will speak to this people, but even then they will not listen to Me, says the Lord.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 14:22",
-          "question": "After that quote, Paul says tongues are a sign for believers, not for unbelievers.",
+          "question": "Paul quotes the Lord speaking by strange tongues to people who still won't listen. Then Paul says tongues are a sign for believers, not for unbelievers.",
           "answers": [
             {
               "text": "True",
@@ -502,19 +452,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "1 Corinthians 14:22-23",
-          "text": "Right: tongues are a sign for unbelievers, and prophecy is for believers. Now Paul paints a picture where the whole church comes together, everyone speaks in tongues, and in walk some uninstructed people or unbelievers.",
+          "text": "Prophecy, Paul says, is for believers. Now he paints a picture where the whole church comes together, everyone speaks in tongues, and in walk some uninstructed people or unbelievers.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 14:23",
@@ -534,33 +484,33 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "1 Corinthians 14:24-25",
-          "text": "But flip it: everyone's prophesying, and an unbeliever or uninstructed person walks in. He's convicted and called to account by all, and the secrets of his heart are made known.",
+          "text": "But flip it: everyone's prophesying, and an unbeliever or uninstructed person walks in. Paul says he'll be convicted and called to account by all, and the secrets of his heart will be made known.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 14:25",
-          "question": "The visitor is convicted and the secrets of his heart are made known. What does he do?",
+          "question": "The visitor is convicted and the secrets of his heart are made known. What does Paul say the visitor will do?",
           "answers": [
             {
-              "text": "He falls facedown and worships God",
+              "text": "He will fall facedown and worship God",
               "correct": true
             },
             {
-              "text": "He walks out without saying a word",
+              "text": "He will walk out without a word",
               "correct": false
             },
             {
-              "text": "He asks someone to interpret for him",
+              "text": "He will ask someone to interpret",
               "correct": false
             }
           ],
@@ -568,10 +518,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "1 Corinthians 14:25",
-          "text": "And he proclaims it: “God is truly among you!” That's where we'll set the dough down for now, friend, because Paul is NOT done teaching this church yet.",
+          "text": "And Paul says he'll proclaim, “God is truly among you!” That's where we'll set the dough down for now, friend, because Paul is NOT done teaching this church yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

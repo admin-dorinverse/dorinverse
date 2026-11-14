@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "The answer to this fill-in-the-blank, 'law', is already on screen in card 6's quote ('zealous for the law'). A baker can pick it from that card without reasoning about the elders' plan.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "Card 5 says the men had seen Trophimus with Paul 'in the city'. That settles the false statement 'The Jews from Asia saw Paul bring Trophimus into the temple' before the baker has to think.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "This card retells verse 29 again (they saw Trophimus with Paul in the city and assumed). Card 5 already told the same verse, so the card is a recap and does not move the passage forward.",
+      "rule": "No recap cards."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "The statement bundles two claims: the commander can't get at the truth because of the uproar, and he orders Paul brought into the barracks.",
+      "rule": "A true or false statement tests one claim."
+    }
+  ]
+}

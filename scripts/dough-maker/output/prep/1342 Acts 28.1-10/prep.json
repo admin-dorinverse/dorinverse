@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 27:1-44",
-          "text": "Paul, the apostle, is a prisoner headed for Rome to stand before Caesar, and the ship he's on just broke apart on a sandbar. Every person on board made it safely to land, some swimming, some floating on planks. The writer traveling with Paul tells this part as \"we,\" and now the whole soggy crew needs to know one thing: WHERE are we?",
+          "verses": "Acts 28:1",
+          "text": "Paul, the apostle, is a prisoner on his way to stand before Caesar, and his ship just ran aground on a sandbar and started breaking up (Acts 27:1, 24, 41). All 276 people on board made it to land, some swimming and some floating on planks (Acts 27:37, 43-44). Now they're safely ashore, and everybody has one question: where ARE we?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,28 +40,27 @@
           "card": 3,
           "kind": "story",
           "verses": "Acts 28:2",
-          "text": "It's raining, it's cold, and a whole shipload of soaking-wet strangers just came up out of the surf. The islanders don't panic. They show \"extraordinary kindness.\"",
-          "needs_agent_fix": true,
+          "text": "It's raining, it's cold, and a whole shipload of strangers just came out of the sea. The islanders show them \"extraordinary kindness.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 28:2",
-          "question": "Because it's raining and cold, the islanders kindle a ___ and welcome all of the shipwrecked travelers.",
+          "question": "Because it's raining and cold, how do the islanders show kindness to the shipwrecked travelers?",
           "answers": [
             {
-              "text": "fire",
-              "correct": true,
-              "blank": 1
+              "text": "They kindle a fire and welcome them all",
+              "correct": true
             },
             {
-              "text": "lamp",
+              "text": "They lead them all to shelter in a cave",
               "correct": false
             },
             {
-              "text": "torch",
+              "text": "They hand out dry cloaks to everyone",
               "correct": false
             }
           ],
@@ -72,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Acts 28:3",
-          "text": "The man just survived a shipwreck, and Paul's out gathering a bundle of sticks for the fire. If that were me, I'd be lying flat as a cookie on a cooling rack for a WEEK.",
+          "text": "Paul just survived a shipwreck, and he's out gathering a bundle of sticks for the fire. If that were me, I'd be lying flat as a cookie on a cooling rack for a WEEK.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -104,7 +103,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Acts 28:4",
-          "text": "The islanders see the creature hanging from Paul's hand, and they start talking to one another. I bet they're thinking: this man escaped the sea, and NOW this?",
+          "text": "The islanders see the creature hanging from Paul's hand, and they start talking to one another. I think every one of them is holding their breath.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -113,7 +112,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 28:4",
-          "question": "Seeing the creature hanging from Paul's hand, what do the islanders say Paul surely is?",
+          "question": "The islanders say that although Paul was saved from the sea, Justice has not allowed him to live. What do they say he surely is?",
           "answers": [
             {
               "text": "A murderer",
@@ -136,7 +135,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 28:5",
-          "question": "The islanders say Justice has not allowed Paul to live. Paul shakes the creature off into the fire, and his hand swells up badly.",
+          "question": "After Paul shakes the viper off into the fire, he suffers ill effects.",
           "answers": [
             {
               "text": "True",
@@ -154,7 +153,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Acts 28:6",
-          "text": "The islanders are expecting Paul to swell up or suddenly drop dead. So they watch him the way I watch a batch through the oven window: nobody blinks, nobody talks, EVERYBODY leaning in.",
+          "text": "The islanders are expecting Paul to swell up or suddenly drop dead. So they wait, and they wait a long time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -180,40 +179,39 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Acts 28:7",
-          "text": "From murderer to god. That's the BIGGEST promotion I have EVER seen. Nearby stands an estate belonging to Publius, the chief official of the island.",
-          "needs_agent_fix": true,
+          "verses": "Acts 28:4, 6-7",
+          "text": "From murderer to god: the BIGGEST promotion I have EVER seen. Nearby stands an estate belonging to Publius, the chief official of the island.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 28:7",
-          "question": "On his estate, Publius welcomes the travelers and entertains them hospitably for ___ days.",
+          "question": "How does Publius, the island's chief official, treat the writer and those with him?",
           "answers": [
             {
-              "text": "three",
-              "correct": true,
-              "blank": 1
+              "text": "He welcomes and hosts them for three days",
+              "correct": true
             },
             {
-              "text": "seven",
+              "text": "He has them held under guard",
               "correct": false
             },
             {
-              "text": "ten",
+              "text": "He orders them off his estate",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Acts 28:8",
-          "text": "But there's trouble on the estate: the father of Publius is sick in bed with fever and dysentery. Paul goes in to see him.",
+          "text": "The father of Publius is sick in bed, suffering from fever and dysentery. Paul goes in to see him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -244,8 +242,8 @@
           "card": 16,
           "kind": "story",
           "verses": "Acts 28:8",
-          "text": "And the man is HEALED! Fever and dysentery, GONE. Now THAT is a house guest.",
-          "needs_agent_fix": true,
+          "text": "And Paul heals the man! Now THAT is a house guest.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -253,18 +251,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 28:9",
-          "question": "After the father of Publius is healed, what happens with the rest of the sick on the island?",
+          "question": "After the father of Publius is healed, who else comes and is cured?",
           "answers": [
             {
-              "text": "They come and are cured as well",
+              "text": "The rest of the sick on the island",
               "correct": true
             },
             {
-              "text": "They stay away until Paul has gone",
+              "text": "Only the servants of Publius",
               "correct": false
             },
             {
-              "text": "They wait for Paul to visit them",
+              "text": "Only the soldiers guarding Paul",
               "correct": false
             }
           ],
@@ -273,18 +271,10 @@
         },
         {
           "card": 18,
-          "kind": "story",
-          "verses": "Acts 28:10",
-          "text": "Then the writer says the islanders honored them in many ways. Not bad for a crew that washed up on that beach like soggy crumbs.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 28:10",
-          "question": "When the travelers are ready to sail, the islanders supply their needs.",
+          "question": "The islanders honor the travelers in many ways, and when the travelers are ready to sail, the islanders supply their needs.",
           "answers": [
             {
               "text": "True",
@@ -296,15 +286,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Acts 28:10",
           "text": "Keep your apron on, friend. Paul's got more road ahead of him before this trip is done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

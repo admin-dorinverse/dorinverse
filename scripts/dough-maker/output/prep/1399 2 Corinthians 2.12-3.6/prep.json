@@ -16,9 +16,9 @@
         {
           "card": 2,
           "kind": "story",
-          "verses": "2 Corinthians 2:13",
-          "text": "A door standing open to preach, friend! Paul should be doing a happy dance. Instead, he says he had no peace in his spirit.",
-          "needs_agent_fix": true,
+          "verses": "2 Corinthians 2:12-13",
+          "text": "A door standing open to preach, and Paul should be doing a happy dance. Instead, he says he had no peace in his spirit.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -70,9 +70,9 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "2 Corinthians 2:14",
-          "text": "Talk about a turn. One line Paul's leaving Troas with no peace, and the next it's \"But thanks be to God,\" who always leads them triumphantly as captives in Christ.",
-          "needs_agent_fix": true,
+          "verses": "2 Corinthians 2:13-14",
+          "text": "Talk about a turn. One line Paul's leaving Troas with no peace, and the next it's \"But thanks be to God,\" who always leads Paul and his team triumphantly as captives in Christ.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,28 +130,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Corinthians 2:16",
-          "question": "Same aroma of Christ, two very different results. To those who are perishing, Paul says they're an odor that brings ___, and to those who are being saved, a fragrance that brings ___.",
+          "question": "Same aroma of Christ, two very different results. To one, Paul says he and his team are an odor that brings death. To the other, they're a fragrance that brings ___.",
           "answers": [
             {
-              "text": "death",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "life",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "shame",
+              "text": "rest",
               "correct": false
             },
             {
-              "text": "peace",
-              "correct": false
-            },
-            {
-              "text": "fear",
+              "text": "honor",
               "correct": false
             }
           ],
@@ -189,15 +179,15 @@
           "card": 12,
           "kind": "story",
           "verses": "2 Corinthians 2:17",
-          "text": "No infomercial here. No \"but WAIT, there's more.\" In Christ, Paul says, they speak before God with sincerity, as men sent from God.",
-          "needs_agent_fix": true,
+          "text": "No infomercial, no \"but WAIT, there's more.\" Paul says that in Christ, he and his team speak before God with sincerity, as men sent from God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "2 Corinthians 3:1",
-          "text": "Then Paul asks if they're commending themselves again, or if they need letters of recommendation, like some people do. That's like handing your boss a résumé after ten years on the job.",
+          "text": "Then Paul asks if he and his team are commending themselves again, or if they need letters of recommendation, like some people do. That's like handing your boss a résumé after ten years on the job.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -206,7 +196,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Corinthians 3:2",
-          "question": "Forget letters of recommendation. Who does Paul tell the church in Corinth is his letter?",
+          "question": "Forget letters of recommendation. Who does Paul say is his letter?",
           "answers": [
             {
               "text": "The Corinthians themselves",
@@ -274,7 +264,7 @@
           "card": 17,
           "kind": "story",
           "verses": "2 Corinthians 3:4",
-          "text": "Paul says confidence like that before God is theirs through Christ. Not through anybody's résumé.",
+          "text": "Paul says he and his team have confidence like that before God through Christ. Not through anybody's résumé.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -283,7 +273,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Corinthians 3:5",
-          "question": "Paul says their competence comes from God, not from themselves.",
+          "question": "Paul says the competence he and his team have comes from God, not from themselves.",
           "answers": [
             {
               "text": "True",
@@ -302,18 +292,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Corinthians 3:6",
-          "question": "Remember Paul asking who is qualified? That word again. Paul says God has qualified them as ministers of a new covenant, not of the letter but of the ___.",
+          "question": "Remember Paul asking who is qualified? That word again. Paul says God has qualified him and his team as ministers of a ___ covenant, not of the letter but of the Spirit.",
           "answers": [
             {
-              "text": "Spirit",
+              "text": "new",
               "correct": true
             },
             {
-              "text": "temple",
+              "text": "old",
               "correct": false
             },
             {
-              "text": "prophets",
+              "text": "royal",
               "correct": false
             }
           ],
@@ -322,24 +312,9 @@
         },
         {
           "card": 20,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Corinthians 3:6",
-          "question": "Paul says the letter kills. What does he say the Spirit does?",
-          "answers": [
-            {
-              "text": "Gives life",
-              "correct": true
-            },
-            {
-              "text": "Gives rest",
-              "correct": false
-            },
-            {
-              "text": "Gives wisdom",
-              "correct": false
-            }
-          ],
+          "text": "Then Paul says, \"…for the letter kills, but the Spirit gives life.\" Friend, I'm going to be chewing on that one all day.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

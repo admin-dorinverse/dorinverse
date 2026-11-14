@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 16:9-11",
-          "text": "The apostle Paul has just seen a vision of a man of Macedonia pleading, 'Come over to Macedonia and help us.' So the team sails from Troas straight to Samothrace, and the next day on to Neapolis. And notice the writer starts saying 'we' here, friend, so he's on that boat too.",
+          "verses": "Acts 16:11",
+          "text": "Paul, an apostle, has just seen a vision of a man of Macedonia pleading, 'Come over to Macedonia and help us.' (Acts 16:9) So the team sails from Troas straight to Samothrace, and the next day on to Neapolis. The writer says 'we,' friend, so he's on that boat too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -41,7 +41,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Acts 16:12-13",
-          "text": "They stay in Philippi several days. Then on the Sabbath, they head outside the city gate and down to the river, where they expect to find a place of prayer.",
+          "text": "They stay in Philippi several days. Then on the Sabbath, they head outside the city gate to the river, where there's usually a place of prayer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -68,7 +68,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Acts 16:14",
-          "text": "One of the women listening is Lydia from Thyatira, a dealer in purple cloth and a worshiper of God. A real businesswoman, friend, while MY business plan is giving cookies away and wondering where all the dough went.",
+          "text": "One of the women listening is Lydia from Thyatira, a dealer in purple cloth and a worshiper of God. A real businesswoman, friend. Me? I'd hand out every cookie in the bakery and FORGET to charge for the box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -99,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Acts 16:15",
-          "text": "Lydia and her household are baptized. Then she tells the team, 'If you consider me a believer in the Lord, come and stay at my house.'",
+          "text": "Lydia and her household are baptized. Then she urges the team, 'If you consider me a believer in the Lord, come and stay at my house.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -157,7 +157,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Acts 16:18",
-          "text": "She keeps this up for many days, until Paul gets so aggravated he turns around and speaks to the spirit. I love my oven timer, friend, but if it beeped for MANY DAYS, I'd turn around too.",
+          "text": "She keeps this up for many days. Eventually Paul gets so aggravated that he turns and speaks to the spirit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -166,28 +166,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 16:18",
-          "question": "Paul commands the spirit to come out of her in the name of ___ ___.",
+          "question": "Paul commands the spirit to come out of her in the name of ___.",
           "answers": [
             {
-              "text": "Jesus",
+              "text": "Jesus Christ",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Christ",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Moses",
+              "text": "King David",
               "correct": false
             },
             {
-              "text": "Elijah",
-              "correct": false
-            },
-            {
-              "text": "Abraham",
+              "text": "Father Abraham",
               "correct": false
             }
           ],
@@ -294,16 +285,20 @@
         {
           "card": 20,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 16:23-24",
-          "question": "The jailer is ordered to guard Paul and Silas securely, so he puts them in the inner cell and fastens their feet in the stocks.",
+          "type": "multiple_choice",
+          "verses": "Acts 16:24",
+          "question": "The jailer is ordered to guard Paul and Silas securely. What does he do with them?",
           "answers": [
             {
-              "text": "True",
+              "text": "Fastens their feet in stocks in the inner cell",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Chains them up in the prison courtyard",
+              "correct": false
+            },
+            {
+              "text": "Moves them to a prison outside the city",
               "correct": false
             }
           ],
@@ -370,38 +365,24 @@
           "card": 4,
           "kind": "story",
           "verses": "Acts 16:26",
-          "text": "Suddenly a strong earthquake shakes the foundations of the prison. I've been in a drawer when somebody slammed it, friend, and this is NOT that.",
+          "text": "Suddenly a strong earthquake shakes the foundations of the prison. My mixer on high can rattle a whole counter, friend, but this is rattling FOUNDATIONS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Acts 16:26",
-          "question": "At once all the prison doors fly ___ and everyone's chains come ___.",
+          "question": "When the earthquake hits, everyone's chains stay fastened.",
           "answers": [
             {
-              "text": "open",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "loose",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "shut",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "tighter",
-              "correct": false
-            },
-            {
-              "text": "locked",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -420,18 +401,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 16:28",
-          "question": "Paul calls out to the jailer in a loud voice. What does Paul tell him?",
+          "question": "Paul calls out to the jailer in a loud voice, \"Do not harm yourself!\" What else does Paul tell him?",
           "answers": [
             {
-              "text": "Don't harm yourself because we're all here",
+              "text": "We are all here",
               "correct": true
             },
             {
-              "text": "Run now before the magistrates find out",
+              "text": "The magistrates are coming",
               "correct": false
             },
             {
-              "text": "Unlock our stocks and let us go free",
+              "text": "The doors were never locked",
               "correct": false
             }
           ],
@@ -466,19 +447,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 16:31",
-          "question": "Paul and Silas tell the jailer to believe in the Lord Jesus, and he will be ___, along with his household.",
+          "question": "Paul and Silas tell the jailer to ___ in the Lord Jesus, and he and his household will be saved.",
           "answers": [
             {
-              "text": "saved",
+              "text": "believe",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "rewarded",
+              "text": "rejoice",
               "correct": false
             },
             {
-              "text": "released",
+              "text": "rest",
               "correct": false
             }
           ],
@@ -602,7 +583,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Acts 16:38-39",
-          "text": "Alarmed to hear Paul and Silas are Roman citizens, the same magistrates who ordered the rods now come in PERSON to appease them, lead them out and ask them to leave the city. That's the guy who honks at you in traffic and then finds out you're his NEW BOSS.",
+          "text": "Alarmed to hear Paul and Silas are Roman citizens, the magistrates come in PERSON to appease them, lead them out and ask them to leave the city. That's the guy who honks at you in traffic and then finds out you're his NEW BOSS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

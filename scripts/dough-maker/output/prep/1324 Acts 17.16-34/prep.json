@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 17:15-16",
-          "text": "Paul, the apostle, is in Athens, waiting for his partners Silas and Timothy to catch up. Friend, I spent YEARS waiting in the back of a junk drawer, so I respect a man who can wait. While Paul waits, he looks around and sees that the city is full of idols.",
+          "verses": "Acts 17:16",
+          "text": "Paul, the apostle, is in Athens, waiting for his partners Silas and Timothy to catch up (Acts 17:15). Friend, I spent YEARS waiting in the back of a junk drawer, so I respect a man who can wait. While Paul waits, he looks around and sees that the city is full of idols.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -82,8 +82,8 @@
           "card": 5,
           "kind": "story",
           "verses": "Acts 17:18",
-          "text": "Then some Epicurean and Stoic philosophers start debating Paul, and some of them ask, “What is this babbler trying to say?” BABBLER, friend? That's what folks call me when I start explaining oven temperatures.",
-          "needs_agent_fix": true,
+          "text": "Then some Epicurean and Stoic philosophers start debating Paul, and some of them ask, “What is this babbler trying to say?” BABBLER? Friend, that's what folks call me when I start explaining oven temperatures.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -113,7 +113,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Acts 17:19",
-          "text": "So the philosophers take Paul and bring him to the Areopagus. Paul came to Athens to sit and WAIT, friend, and somehow he ended up on the schedule.",
+          "text": "So the philosophers take Paul and bring him to the Areopagus. Friend, Paul went from chatting in the marketplace to being the MAIN EVENT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -122,15 +122,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 17:19-20",
-          "question": "At the Areopagus, the philosophers order Paul to stop teaching about Jesus.",
+          "question": "At the Areopagus, the philosophers ask Paul to tell them what his new teaching means.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -141,7 +141,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 17:21",
-          "question": "The philosophers want to know what Paul's strange new teaching means. How do the Athenians and the foreigners living in Athens spend their time?",
+          "question": "The writer adds a note about the people of Athens. How do the Athenians and the foreigners living there spend their time?",
           "answers": [
             {
               "text": "Hearing and talking about new ideas",
@@ -186,7 +186,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 17:23",
-          "question": "What does Paul tell the Athenians about the God they worship as unknown at that altar?",
+          "question": "Paul found an altar in Athens inscribed TO AN UNKNOWN GOD. What does he tell the Athenians about the One they worship as unknown?",
           "answers": [
             {
               "text": "He's the God Paul now proclaims to them",
@@ -201,7 +201,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -286,7 +286,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 17:27",
-          "question": "Paul says God intended that the nations would ___ Him and perhaps reach out for Him and find Him.",
+          "question": "Paul says God intended that the nations He made would ___ Him and perhaps reach out for Him and find Him.",
           "answers": [
             {
               "text": "seek",
@@ -327,8 +327,8 @@
           "card": 11,
           "kind": "story",
           "verses": "Acts 17:28",
-          "text": "Paul goes even further: “For in Him we live and move and have our being.” Not near Him, friend. IN Him.",
-          "needs_agent_fix": true,
+          "text": "Paul goes even further: “For in Him we live and move and have our being.” Not just near Him, friend, IN Him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -351,11 +351,11 @@
               "correct": true
             },
             {
-              "text": "A great king seated on a throne",
+              "text": "The sun and the moon above",
               "correct": false
             },
             {
-              "text": "A light too bright for eyes to see",
+              "text": "The great sea and its waves",
               "correct": false
             }
           ],
@@ -366,7 +366,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Acts 17:30",
-          "text": "Paul says God overlooked the ignorance of earlier times. But now, friend, the timer just went off.",
+          "text": "Paul says God overlooked the ignorance of earlier times. But that was then, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -419,30 +419,20 @@
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 17:31",
-          "question": "Paul says God has given everyone proof that He will judge the world by the Man He appointed. He did it by ___ that Man from the ___.",
+          "question": "Paul says God has given everyone proof that He will judge the world by the Man He appointed. How did God give that proof?",
           "answers": [
             {
-              "text": "raising",
-              "correct": true,
-              "blank": 1
+              "text": "By raising Him from the dead",
+              "correct": true
             },
             {
-              "text": "dead",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "sending",
+              "text": "By sending signs in the sky",
               "correct": false
             },
             {
-              "text": "heavens",
-              "correct": false
-            },
-            {
-              "text": "crowning",
+              "text": "By writing it on stone tablets",
               "correct": false
             }
           ],
@@ -459,7 +449,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 17:32",
-          "text": "When they hear Paul talk about the resurrection of the dead, the reactions start rolling in. It's like scrolling the comments under a post, friend.",
+          "text": "When Paul's listeners at the Areopagus hear about the resurrection of the dead, the reactions start rolling in. It's like scrolling the comments under a post, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -468,7 +458,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 17:32",
-          "question": "When they hear Paul talk about the resurrection of the dead, what do some of them do?",
+          "question": "When Paul's listeners at the Areopagus hear about the resurrection of the dead, what do some of them do?",
           "answers": [
             {
               "text": "Begin to mock him",
@@ -483,7 +473,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -491,7 +481,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 17:32",
-          "question": "Others at the Areopagus tell Paul they want to hear him again on the topic of the resurrection.",
+          "question": "Others at the Areopagus say they want to hear Paul again on the topic of the resurrection.",
           "answers": [
             {
               "text": "True",
@@ -518,18 +508,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 17:34",
-          "question": "Some people join Paul and believe. Who is one of them?",
+          "question": "Some people in Athens join Paul and believe, including Dionysius the Areopagite. A woman believes too. What is her name?",
           "answers": [
             {
-              "text": "Dionysius the Areopagite",
+              "text": "Damaris",
               "correct": true
             },
             {
-              "text": "Apollos of Alexandria",
+              "text": "Lydia",
               "correct": false
             },
             {
-              "text": "Crispus the synagogue leader",
+              "text": "Phoebe",
               "correct": false
             }
           ],
@@ -540,7 +530,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Acts 17:34",
-          "text": "A woman named Damaris believes too, along with others who were with them. Hang on to your apron, friend, because Paul's journey isn't over.",
+          "text": "Others who were with them believe too. Hang on to your apron, friend, because Paul's journey isn't over.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

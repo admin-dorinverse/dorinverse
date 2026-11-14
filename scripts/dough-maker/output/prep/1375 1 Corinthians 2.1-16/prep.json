@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Corinthians 2:3",
-          "text": "Now Paul gets real about how he was feeling when he walked into Corinth. Brace yourself, friend.",
+          "text": "Now Paul gets real about how he was feeling when he first walked into Corinth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,15 +80,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 2:3",
-          "question": "Paul says he came to the church in Corinth feeling calm and confident. True or false?",
+          "question": "Paul says he came to the church in Corinth in weakness and fear. True or false?",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -98,7 +98,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Corinthians 2:3",
-          "text": "Nope, Paul came in weakness and fear, with much trembling. PAUL had the shakes, friend, and here I thought I was the only one who trembled before a big batch!",
+          "text": "Weakness, fear and much trembling. PAUL had the shakes, friend, and here I thought I was the only one who trembled before a big batch!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -128,33 +128,28 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "1 Corinthians 2:5",
-          "question": "Paul preached that way so the faith of the church in Corinth would rest on God's ___ and not on men's wisdom.",
+          "question": "Paul wanted the faith of the church in Corinth to rest on men's wisdom. True or false?",
           "answers": [
             {
-              "text": "power",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "law",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "temple",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "1 Corinthians 2:6",
-          "text": "Then Paul turns a corner: among the mature, they DO speak a message of wisdom. Hold up, Paul, you JUST told us you didn't come with wisdom, and now my mustache is scratching my head!",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 2:1, 6",
+          "text": "Then Paul turns a corner: among the mature, he says, “…we speak a message of wisdom…” Hold up, Paul, you JUST told us you didn't come with wisdom, and now my mustache is scratching my head!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -180,27 +175,28 @@
           "card": 12,
           "kind": "story",
           "verses": "1 Corinthians 2:6-7",
-          "text": "Right, not the wisdom of this age or of its rulers, who are coming to nothing. Paul speaks of the mysterious and hidden wisdom of God.",
+          "text": "Paul says it's not the wisdom of this age or of its rulers, who are coming to nothing. He speaks of the mysterious and hidden wisdom of God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 2:7",
-          "question": "When did God destine His mysterious and hidden wisdom for our glory?",
+          "question": "Paul says God destined His mysterious and hidden wisdom for our glory ___ time began.",
           "answers": [
             {
-              "text": "Before time began",
-              "correct": true
+              "text": "before",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "When Paul came to Corinth",
+              "text": "after",
               "correct": false
             },
             {
-              "text": "After the rulers came to nothing",
+              "text": "as",
               "correct": false
             }
           ],
@@ -211,7 +207,7 @@
           "card": 14,
           "kind": "story",
           "verses": "1 Corinthians 2:8",
-          "text": "Now Paul looks at the rulers of this age, the people in charge. None of them understood God's hidden wisdom.",
+          "text": "Now Paul looks at the rulers of this age. None of them understood God's hidden wisdom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -248,7 +244,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 2:9",
-          "text": "Paul goes on, as it is written: “No eye has seen, no ear has heard, no heart has imagined, what God has prepared for those who love Him.”",
+          "text": "Then Paul quotes Scripture, words close to Isaiah 64:4: “No eye has seen, no ear has heard, no heart has imagined, what God has prepared for those who love Him.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -287,36 +283,43 @@
           "card": 4,
           "kind": "story",
           "verses": "1 Corinthians 2:11",
-          "text": "Then Paul compares it to people: who knows a man's thoughts except his own spirit within him? Which is great news, because nobody needs to know how many times a day I count my chocolate chips.",
+          "text": "Then Paul makes a comparison with people. He asks who among men knows the thoughts of a man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Corinthians 2:11",
-          "question": "In the same way, Paul says, no one knows the thoughts of God except the ___ of God.",
+          "question": "Paul asks who among men knows the thoughts of a man. Who does he say knows them?",
           "answers": [
             {
-              "text": "Spirit",
-              "correct": true,
-              "blank": 1
+              "text": "His own spirit within him",
+              "correct": true
             },
             {
-              "text": "Prophets",
+              "text": "His closest friends",
               "correct": false
             },
             {
-              "text": "Angels",
+              "text": "The elders of his town",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "1 Corinthians 2:11",
+          "text": "Nobody else, friend, which is great news, because nobody needs to know how many times a day I count my chocolate chips. So too, Paul says, no one knows the thoughts of God except the Spirit of God.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 2:12",
@@ -339,7 +342,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 2:13",
@@ -358,15 +361,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "1 Corinthians 2:13-14",
-          "text": "Right, words taught by the Spirit, expressing spiritual truths in spiritual words. Then Paul turns to the natural man, who does not accept the things that come from the Spirit of God.",
+          "text": "Spiritual truths, in spiritual words. Then Paul turns to the natural man, who does not accept the things that come from the Spirit of God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 2:14",
@@ -389,51 +392,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "1 Corinthians 2:14",
-          "text": "Foolishness, the same word for how the message of the cross looks to those who are perishing (1 Corinthians 1:18). It's like handing somebody a recipe card in a language they can't read, and they squint at YOU like you're the one who's confused.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Corinthians 2:14",
-          "question": "The natural man cannot understand the things of the Spirit of God, because they are ___ discerned.",
-          "answers": [
-            {
-              "text": "spiritually",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "carefully",
-              "correct": false
-            },
-            {
-              "text": "slowly",
-              "correct": false
-            }
-          ],
+          "text": "Foolishness, the same word for how the message of the cross looks to those who are perishing (1 Corinthians 1:18). And he can't understand them, Paul says, because they are spiritually discerned.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Corinthians 2:15",
-          "question": "Paul says the spiritual man judges all things, but he himself is subject to everyone's judgment. True or false?",
+          "question": "Paul sets the natural man beside the spiritual man. What does he say the spiritual man does?",
           "answers": [
             {
-              "text": "True",
+              "text": "Judges all things",
+              "correct": true
+            },
+            {
+              "text": "Endures all things",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Fears all things",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -441,29 +424,17 @@
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "1 Corinthians 2:16",
-          "text": "Then Paul quotes: “For who has known the mind of the Lord, so as to instruct Him?” Picture somebody walking up to the Lord Himself with a few suggestions, friend, YEAH, NO.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 2:16",
-          "question": "No one has known the mind of the Lord so as to instruct Him. But what does Paul say \"we\" have?",
+          "type": "true_false",
+          "verses": "1 Corinthians 2:15",
+          "question": "Paul says the spiritual man himself is not subject to anyone's judgment. True or false?",
           "answers": [
             {
-              "text": "The mind of Christ",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The wisdom of this age",
-              "correct": false
-            },
-            {
-              "text": "The favor of the rulers",
+              "text": "False",
               "correct": false
             }
           ],
@@ -471,7 +442,38 @@
           "needs_human_decision": false
         },
         {
+          "card": 14,
+          "kind": "story",
+          "verses": "1 Corinthians 2:16",
+          "text": "Then Paul quotes Isaiah 40:13: “For who has known the mind of the Lord, so as to instruct Him?” Picture somebody walking up to the Lord Himself with a few suggestions, friend, YEAH, NO.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 2:16",
+          "question": "No one can instruct the Lord. But Paul says \"we\" have something. What is it?",
+          "answers": [
+            {
+              "text": "The mind of Christ",
+              "correct": true
+            },
+            {
+              "text": "The mind of Moses",
+              "correct": false
+            },
+            {
+              "text": "The mind of the wise",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "story",
           "verses": "1 Corinthians 2:16",
           "text": "The mind of Christ, friend, and I'm over here proud when I remember where I hung my apron. Stay close, because Paul's got plenty more to say to this church, and this letter's NOT done.",

@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 11:17",
-          "text": "Paul, an apostle, is writing a letter to the church of God in Corinth (1 Corinthians 1:1-2). Now he turns to what happens when they gather. And friend, he does NOT open with a compliment.",
-          "needs_agent_fix": true,
+          "text": "Paul, an apostle, is writing a letter to the church of God in Corinth (1 Corinthians 1:1-2). Just before this, he commended them for keeping the traditions he passed on to them (1 Corinthians 11:2). Now he turns to what happens when they gather, and friend, the compliments STOP.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "1 Corinthians 11:18-19",
-          "text": "First on his list: Paul's heard that when they come together as a church, there are divisions among them. He even says there must be differences among them.",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 11:18",
+          "text": "First on his list: Paul's heard that when they come together as a church, there are divisions among them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -60,11 +60,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "1 Corinthians 11:19",
+          "text": "Then Paul says something surprising: there must be differences among them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 11:19",
@@ -83,50 +91,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "1 Corinthians 11:20",
-          "text": "Now here's the big one. They come together and eat, but Paul says it's not the Lord's Supper they're eating.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Corinthians 11:21",
-          "question": "At their gatherings, the church in Corinth shares the meal together.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Corinthians 11:20",
+          "text": "Now here's the big one. They come together and eat, but Paul says it's not the Lord's Supper they're eating.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "1 Corinthians 11:21",
-          "text": "Each one goes ahead without sharing, so one stays hungry while another gets drunk. It's the office party where one guy walks off with three whole cookie boxes and the new hire gets crumbs.",
-          "needs_agent_fix": true,
+          "question": "When the church in Corinth eats together, each one goes ahead without sharing his meal.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "1 Corinthians 11:21",
+          "text": "So while one stays hungry, another gets drunk. It's the office party where one guy eats three whole cookie boxes and the new hire gets crumbs.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 11:22",
-          "question": "Paul asks the church, if they just want to eat and drink, don't they have their own ___ for that?",
+          "question": "Paul asks the church in Corinth: don't they have their own ___ to eat and drink in?",
           "answers": [
             {
               "text": "homes",
@@ -141,15 +149,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 11:22",
-          "question": "Paul asks the church in Corinth if they despise the church of God and humiliate some people. Who does he say they humiliate?",
+          "question": "Paul asks the church in Corinth whether they despise the church of God and humiliate someone. Who does he ask about?",
           "answers": [
             {
               "text": "Those who have nothing",
@@ -160,62 +168,62 @@
               "correct": false
             },
             {
-              "text": "The church elders",
+              "text": "The leaders of the church",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "1 Corinthians 11:22",
-          "text": "Then Paul asks, \"Shall I praise you for this?\" And he answers himself: \"No, I will not!\" When a man asks AND answers his own question, friend, you just sit real still and look at your shoes.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "1 Corinthians 11:23",
-          "text": "So Paul takes them back to the beginning and passes on what he received from the Lord. On the night He was betrayed, the Lord Jesus took bread.",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 11:22",
+          "text": "Then Paul asks, \"Shall I praise you for this?\" and answers himself, \"No, I will not!\" When a man asks AND answers his own question, friend, you just sit real still and look at your shoes.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Corinthians 11:24",
-          "question": "Before He breaks the bread, Jesus gives thanks.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Corinthians 11:23",
+          "text": "So Paul reminds them of something he passed on to them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "1 Corinthians 11:24",
-          "text": "Then He breaks the bread and says it's His body, and that it's for them.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Corinthians 11:23",
+          "question": "Paul says he received from Peter what he passed on to the church in Corinth.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
+          "kind": "story",
+          "verses": "1 Corinthians 11:23-24",
+          "text": "On the night He was betrayed, the Lord Jesus took bread, gave thanks and broke it. Then He said, \"This is My body, which is for you…\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 11:24",
-          "question": "Jesus tells them to keep doing this with the bread. Why?",
+          "question": "Jesus says to keep doing this with the bread. Why?",
           "answers": [
             {
               "text": "To remember Him",
@@ -230,23 +238,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "1 Corinthians 11:25",
-          "text": "Bread first. Then, after supper, in the same way, the cup. Friend, this is the part where I'd scoot my chair in real close.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
+          "kind": "story",
+          "verses": "1 Corinthians 11:25",
+          "text": "After supper, in the same way, He took the cup. Friend, this is the part where I'd scoot my chair in real close.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 11:25",
-          "question": "What does Jesus say this cup is?",
+          "question": "After supper, Jesus took the cup. What does He say this cup is?",
           "answers": [
             {
               "text": "The new covenant in His blood",
@@ -261,26 +269,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Corinthians 11:25",
-          "question": "Jesus says to drink the cup in remembrance of Him only once a year.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -288,7 +277,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 11:26",
-          "question": "Paul says every time they eat this bread and drink this cup, they proclaim the Lord's ___.",
+          "question": "Paul says that as often as they eat this bread and drink this cup, they proclaim the Lord's ___ until He comes.",
           "answers": [
             {
               "text": "death",
@@ -303,15 +292,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
-          "verses": "1 Corinthians 11:26",
-          "text": "And Paul says they keep proclaiming it until He comes. That's not a meal you rush through, friend.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -354,20 +335,20 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 11:28",
-          "question": "Before anyone eats the bread and drinks the cup, what does Paul say each one must do?",
+          "question": "Paul says that before he eats of the bread and drinks of the cup, each one must ___ himself.",
           "answers": [
             {
-              "text": "Examine himself",
+              "text": "examine",
               "correct": true
             },
             {
-              "text": "Fast for a day",
+              "text": "wash",
               "correct": false
             },
             {
-              "text": "Bring an offering",
+              "text": "humble",
               "correct": false
             }
           ],
@@ -481,17 +462,21 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Corinthians 11:34",
-          "question": "Paul tells anyone who's hungry to go ahead and eat first at the gathering.",
+          "question": "Paul says anyone who's hungry should eat at home. Why?",
           "answers": [
             {
-              "text": "True",
+              "text": "So coming together won't result in judgment",
+              "correct": true
+            },
+            {
+              "text": "So the elders can always eat first",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "So the gatherings can end much sooner",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -501,7 +486,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Corinthians 11:34",
-          "text": "Paul says the hungry should eat at home, so coming together won't result in judgment. And when he comes, he'll give instructions about the remaining matters.",
+          "text": "And Paul says that when he comes, he'll give instructions about the remaining matters.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

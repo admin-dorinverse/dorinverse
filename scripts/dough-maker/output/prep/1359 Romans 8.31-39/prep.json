@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 8:31",
-          "question": "Paul's next line starts with \"If God is for us…\" What does Paul say follows from that?",
+          "question": "Paul's next line starts with \"If God is for us…\" and ends with a question. What's his point?",
           "answers": [
             {
               "text": "No one can stand against us",
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Romans 8:32",
-          "text": "Then Paul points to the biggest gift there is: God did not spare His own Son but gave Him up for us all. Friend, I once guarded my last bag of chocolate chips like it was the crown jewels, and God gave up His SON.",
+          "text": "Then Paul looks at what God has already done. God did not spare His own Son but gave Him up for us all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -78,20 +78,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Romans 8:33",
-          "question": "Who will bring any charge against God's elect? What answer does Paul give?",
+          "question": "Who will bring any charge against God's elect? Paul answers that it is God who ___.",
           "answers": [
             {
-              "text": "It is God who justifies",
-              "correct": true
+              "text": "justifies",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The angels will defend them",
+              "text": "warns",
               "correct": false
             },
             {
-              "text": "Their good works speak for them",
+              "text": "waits",
               "correct": false
             }
           ],
@@ -102,44 +103,47 @@
           "card": 7,
           "kind": "story",
           "verses": "Romans 8:34",
-          "text": "Next Paul asks, \"Who is there to condemn us?\" He points to Christ Jesus, who died, and more than that was raised to life, and is at the right hand of God, and friend, the best line on MY résumé is \"sold for a quarter.\"",
+          "text": "Next Paul asks, \"Who is there to condemn us?\" He points to Christ Jesus, who died, and more than that was raised to life, and is at the right hand of God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Romans 8:34",
-          "question": "At the right hand of God, Paul says Christ Jesus is ___ for us.",
+          "question": "True or false: Paul points to Christ Jesus as the one who will condemn us.",
           "answers": [
             {
-              "text": "interceding",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "waiting",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "watching",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "Romans 8:35",
-          "text": "Now Paul asks the big one: \"Who shall separate us from the love of Christ?\" Then he rattles off a list that keeps going like a receipt that won't STOP printing: trouble, distress, persecution, famine, nakedness, danger and sword.",
+          "verses": "Romans 8:34",
+          "text": "Paul says that same Christ Jesus, right there at God's right hand, is interceding for us. For US, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Romans 8:35",
+          "text": "Now Paul asks the big one: \"Who shall separate us from the love of Christ?\" Then he names trouble, distress, persecution, famine, nakedness, danger and sword.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 8:35",
@@ -162,15 +166,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Romans 8:36",
-          "text": "Then Paul quotes the Scriptures (Psalm 44:22): \"For Your sake we face death all day long; we are considered as sheep to be slaughtered.\" Heavy line, friend, the kind that makes even my oven go quiet.",
+          "text": "Then Paul quotes the Scriptures (Psalm 44:22): \"For Your sake we face death all day long; we are considered as sheep to be slaughtered.\" That's a heavy one, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 8:37",
@@ -189,7 +193,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 8:37",
@@ -212,29 +216,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Romans 8:38",
-          "text": "Then Paul says, \"For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers,\" and he's STILL not done. I lose count naming my own six toppings, and this man is covering angels, powers and the FUTURE.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Romans 8:38-39",
-          "question": "True or false: Paul says the future might someday be able to separate us from God's love.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Then Paul says, \"For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers…\" and he's STILL not done. I lose count naming my own six toppings, and this man is covering angels, powers and the FUTURE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -251,11 +236,11 @@
               "blank": 1
             },
             {
-              "text": "history",
+              "text": "Rome",
               "correct": false
             },
             {
-              "text": "Scripture",
+              "text": "Israel",
               "correct": false
             }
           ],

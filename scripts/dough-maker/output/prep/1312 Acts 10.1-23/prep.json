@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 10:1",
-          "text": "Let's head to Caesarea, friend, where a man named Cornelius is a centurion in what was called the Italian Regiment. That's a man with soldiers taking his orders. Back in the junk drawer, the only thing taking MY orders was a twist tie, and it ignored me.",
-          "needs_agent_fix": true,
+          "text": "Let's head to Caesarea, friend, where a man named Cornelius is a centurion in what was called the Italian Regiment. That's a man with soldiers taking his orders. Back when I was stuck in a junk drawer, the only thing taking MY orders was a twist tie, and it ignored me.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,7 +18,7 @@
           "kind": "story",
           "verses": "Acts 10:2",
           "text": "And this soldier is devout and God-fearing, friend, and so is all his household. His faith doesn't stay inside his own house.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,38 +41,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Acts 10:3",
-          "text": "One day at about the ninth hour, an angel of God comes to Cornelius in a clear vision and says, “Cornelius!” Friend, if I heard my name like that, I'd drop every cookie in the room.",
-          "needs_agent_fix": true,
+          "text": "One day at about the ninth hour, an angel of God comes to Cornelius in a clear vision and says, “Cornelius!” Not a note. Not a knock. An ANGEL, calling him by NAME.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Acts 10:4",
-          "question": "When the angel calls his name, how does Cornelius react?",
+          "question": "When the angel calls his name, Cornelius stares at him in fear.",
           "answers": [
             {
-              "text": "He stares at him in fear",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He runs out of the room",
-              "correct": false
-            },
-            {
-              "text": "He keeps on praying quietly",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -80,7 +76,7 @@
           "kind": "story",
           "verses": "Acts 10:4",
           "text": "Cornelius asks, “What is it, Lord?” And the angel answers with news about his prayers and his gifts to the poor.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -103,7 +99,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -111,38 +107,39 @@
           "kind": "story",
           "verses": "Acts 10:5",
           "text": "Then the angel gives Cornelius a job: send men to Joppa to call for someone.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 10:5",
-          "question": "Who does the angel tell Cornelius to send for in Joppa?",
+          "question": "The angel tells Cornelius to send men to Joppa for a man named Simon who is called ___.",
           "answers": [
             {
-              "text": "Simon who is called Peter",
-              "correct": true
+              "text": "Peter",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Philip the evangelist",
+              "text": "Barnabas",
               "correct": false
             },
             {
-              "text": "John the son of Zebedee",
+              "text": "Justus",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Acts 10:6",
-          "text": "Peter is one of Jesus's apostles, and he's staying with ANOTHER Simon. Somebody yells “Simon!” in that house and two grown men turn around.",
-          "needs_agent_fix": true,
+          "text": "Peter, one of Jesus's apostles (Luke 6:13-14), is staying with ANOTHER Simon, whose house is by the sea. Somebody yells “Simon!” in that house and two grown men turn around.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -150,53 +147,63 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 10:6",
-          "question": "Two Simons in one house. How does the angel help Cornelius's men find the right one?",
+          "question": "Peter is staying with another Simon in Joppa. What is this other Simon's trade?",
           "answers": [
             {
-              "text": "He names Peter's host and where the house is",
+              "text": "A tanner",
               "correct": true
             },
             {
-              "text": "He tells them to look for a sign on the door",
+              "text": "A fisherman",
               "correct": false
             },
             {
-              "text": "He says Peter will meet them on the road",
+              "text": "A tentmaker",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Acts 10:7",
-          "text": "The angel leaves, and Cornelius has a job to hand out. He's a centurion, friend, so handing out jobs is basically his whole day.",
-          "needs_agent_fix": true,
+          "text": "The angel leaves, and Cornelius calls some people in for the trip to Joppa.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 10:7",
-          "question": "Who does Cornelius call in for the trip to Joppa?",
+          "question": "For the trip to Joppa, Cornelius calls two of his ___ and a devout ___ from among his attendants.",
           "answers": [
             {
-              "text": "Two servants and a devout soldier",
-              "correct": true
+              "text": "servants",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Three soldiers from his regiment",
+              "text": "soldier",
+              "correct": true,
+              "blank": 2
+            },
+            {
+              "text": "sons",
               "correct": false
             },
             {
-              "text": "His wife and his two sons",
+              "text": "priest",
+              "correct": false
+            },
+            {
+              "text": "brothers",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -204,7 +211,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 10:8",
-          "question": "Cornelius sends the men to Joppa without telling them what happened.",
+          "question": "Cornelius sends his two servants and the devout soldier to Joppa without explaining the angel's visit to them.",
           "answers": [
             {
               "text": "True",
@@ -215,7 +222,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -229,30 +236,31 @@
           "kind": "story",
           "verses": "Acts 10:9",
           "text": "The next day at about the sixth hour, Cornelius's men are getting close to Joppa. Meanwhile, Peter goes up on the roof.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 10:9",
-          "question": "Why does Peter go up on the roof?",
+          "question": "As Cornelius's men get close to Joppa, Peter goes up on the roof to ___.",
           "answers": [
             {
-              "text": "To pray to God",
-              "correct": true
+              "text": "pray",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "To watch for visitors",
+              "text": "rest",
               "correct": false
             },
             {
-              "text": "To rest in the sun",
+              "text": "hide",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -260,38 +268,34 @@
           "kind": "story",
           "verses": "Acts 10:10",
           "text": "Up there, Peter gets hungry and wants something to eat while the meal is being prepared. I've stared down an oven timer like it owed me money, so I feel this one.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Acts 10:10",
-          "question": "While the meal is being prepared, what happens to Peter?",
+          "question": "While the meal is being prepared, Peter falls into a trance.",
           "answers": [
             {
-              "text": "He falls into a trance",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He walks out to the seashore",
-              "correct": false
-            },
-            {
-              "text": "He goes down to help Simon",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Acts 10:11",
-          "text": "Peter sees heaven open, and something like a large sheet is being let down to earth by its four corners. In the drawer, the only thing that ever came down from above was a takeout menu landing on my FACE.",
-          "needs_agent_fix": true,
+          "text": "Peter sees heaven open, and something like a large sheet is being let down to earth by its four corners. When I was stuck in a junk drawer, the only thing that ever came down from above was a takeout menu landing on my FACE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -314,15 +318,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Acts 10:13",
-          "text": "Then a voice said to him: “Get up, Peter, kill and eat!” When I'm hungry, I'll grab a cookie off the rack so hot it singes my mustache.",
-          "needs_agent_fix": true,
+          "text": "Then a voice says to him: “Get up, Peter, kill and eat!” Under the law God gave Israel, some animals were unclean and not to be eaten (Leviticus 11).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -345,7 +349,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -353,32 +357,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 10:15",
-          "question": "Speaking a second time, the voice tells Peter not to call anything ___ that God has made ___.",
+          "question": "Speaking a second time, the voice tells Peter not to call anything impure that God has made ___.",
           "answers": [
             {
-              "text": "impure",
+              "text": "clean",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "clean",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "foolish",
+              "text": "wise",
               "correct": false
             },
             {
-              "text": "precious",
-              "correct": false
-            },
-            {
-              "text": "perfect",
+              "text": "strong",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -386,7 +381,7 @@
           "kind": "story",
           "verses": "Acts 10:16",
           "text": "This happens three times, and then all at once the sheet is taken back up into heaven. THREE times, friend, and I bet Peter's stomach was voting yes every single round.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -405,7 +400,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -413,30 +408,31 @@
           "kind": "story",
           "verses": "Acts 10:17-18",
           "text": "While Peter is puzzling over it, Cornelius's men find Simon's house and come to the gate. They call out to ask if Simon called Peter is staying there, and good thing they said WHICH Simon.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 10:19",
-          "question": "Peter is still thinking about the vision. Who tells him that three men are looking for him?",
+          "question": "While Peter is still thinking about the vision, the ___ tells him that three men are looking for him.",
           "answers": [
             {
-              "text": "The Spirit",
-              "correct": true
+              "text": "Spirit",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Simon the tanner",
+              "text": "angel",
               "correct": false
             },
             {
-              "text": "An angel",
+              "text": "tanner",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -444,30 +440,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 10:20",
-          "question": "The Spirit tells Peter to go downstairs and go with the three men without hesitation. Why?",
+          "question": "The Spirit tells Peter to go downstairs and go with the three men without hesitation. What reason does the Spirit give?",
           "answers": [
             {
-              "text": "Because the Spirit sent them",
+              "text": "He has sent the men Himself",
               "correct": true
             },
             {
-              "text": "Because they are old friends of Peter",
+              "text": "They are old friends of Peter",
               "correct": false
             },
             {
-              "text": "Because Cornelius is very sick",
+              "text": "Cornelius is very sick",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Acts 10:21",
-          "text": "So Peter goes down and says, “Here am I, the one you are looking for. Why have you come?” The Spirit gave him a heads-up, so he's READY, and me, I've been ambushed by my OWN oven timer.",
-          "needs_agent_fix": true,
+          "text": "So Peter goes down to the men and says, “Here am I, the one you are looking for. Why have you come?” Three strangers at the gate, and he walks up like he's been expecting them, because he HAS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -486,7 +482,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -509,7 +505,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -532,16 +528,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "story",
           "verses": "Acts 10:23",
           "text": "Hold onto your apron, friend, because this story is only getting started.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

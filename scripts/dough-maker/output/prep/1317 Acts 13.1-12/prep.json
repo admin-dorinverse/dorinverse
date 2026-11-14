@@ -9,39 +9,39 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 13:1",
-          "text": "Welcome to the church at Antioch, friend! It's got a whole team of prophets and teachers: Barnabas, Simeon called Niger, Lucius of Cyrene, Manaen and Saul. Five names on the roster, and one of them grew up with somebody you would NOT expect.",
-          "needs_agent_fix": true,
+          "text": "Barnabas and Saul are back from their mission to Jerusalem (Acts 12:25), and now we're in the church at Antioch, friend. Its prophets and teachers are Barnabas, Simeon called Niger, Lucius of Cyrene, Manaen and Saul. Five names on the team, and one of them grew up with somebody you would NOT expect.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 13:1",
-          "question": "Manaen, one of the teachers at Antioch, was brought up with somebody famous. Who?",
+          "question": "Manaen, one of the prophets and teachers at Antioch, had been brought up with ___ the tetrarch.",
           "answers": [
             {
-              "text": "Herod the tetrarch",
+              "text": "Herod",
               "correct": true
             },
             {
-              "text": "Pontius Pilate",
+              "text": "Philip",
               "correct": false
             },
             {
-              "text": "Caesar Augustus",
+              "text": "Lysanias",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Acts 13:2",
-          "text": "While they're worshiping the Lord and fasting, the Holy Spirit speaks, and He says to set apart two of these five for the work He's called them to. I bet those two felt like you do when the boss says your name in a meeting, friend, times a THOUSAND.",
-          "needs_agent_fix": true,
+          "text": "While they're worshiping the Lord and fasting, the Holy Spirit says to set apart two of those five names for the work He has called them to. Two. Out of five.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,38 +64,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 13:3",
-          "question": "After they fast and pray, they lay their ___ on Barnabas and Saul and send them off.",
+          "question": "After fasting and prayer in the church at Antioch, what happens to Barnabas and Saul before they're sent off?",
           "answers": [
             {
-              "text": "hands",
+              "text": "Hands are laid on them",
               "correct": true
             },
             {
-              "text": "cloaks",
+              "text": "They are anointed with oil",
               "correct": false
             },
             {
-              "text": "staffs",
+              "text": "They are given letters to carry",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Acts 13:4",
-          "text": "Sent out by the Holy Spirit, Barnabas and Saul go down to Seleucia and set sail. It takes ME three alarms and a pep talk just to leave for work.",
-          "needs_agent_fix": true,
+          "text": "Sent out by the Holy Spirit, Barnabas and Saul go down to Seleucia and set sail from there. Me? Before I came here, the farthest I'd ever traveled was across the Millers' kitchen and into the back of a junk drawer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -118,15 +118,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Acts 13:5",
-          "text": "They land at Salamis and start proclaiming the word of God. Me? I can't even find my apron for the first ten minutes of a shift.",
-          "needs_agent_fix": true,
+          "text": "They arrive at Salamis, and John, also called Mark (Acts 12:25), is with them as their helper. Every job goes better with an extra set of hands, and I'd know, because I've been using a MUSTACHE for mine.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -149,42 +149,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 13:5",
-          "question": "A man named John is with Barnabas and Saul in Salamis. What is his role on the trip?",
-          "answers": [
-            {
-              "text": "He is their helper",
-              "correct": true
-            },
-            {
-              "text": "He is their scribe",
-              "correct": false
-            },
-            {
-              "text": "He is their bodyguard",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 13:6",
+          "text": "They travel through the whole island as far as Paphos, and there they find a Jewish sorcerer and false prophet named Bar-Jesus. Sorcerer AND false prophet, friend. That's two titles on one business card, and I wouldn't let either one near my ovens.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Acts 13:6",
-          "text": "They travel the whole island as far as Paphos, and there they find a Jewish sorcerer and false prophet named Bar-Jesus. Sorcerer AND false prophet, friend, that's two titles on one business card, and neither one is good news.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 13:7",
@@ -203,15 +180,62 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Acts 13:8",
+          "text": "Now the text calls the sorcerer Elymas, because that's what his name means. And he's about to get in the way.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Acts 13:8",
-          "question": "Bar-Jesus, also called Elymas the sorcerer, backs up Barnabas and Saul in front of the proconsul.",
+          "question": "Elymas the sorcerer opposes Barnabas and Saul. What does he try to do?",
+          "answers": [
+            {
+              "text": "Turn the proconsul from the faith",
+              "correct": true
+            },
+            {
+              "text": "Get Barnabas and Saul thrown in prison",
+              "correct": false
+            },
+            {
+              "text": "Drive Barnabas and Saul off the island",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Acts 13:9",
+          "text": "Then Saul, who was also called Paul, filled with the Holy Spirit, looks right at Elymas. It's the kind of look that makes a grown man put his phone DOWN.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Acts 13:10",
+          "text": "Paul doesn't hold back, calling Elymas a child of the devil and an enemy of all righteousness, full of all kinds of deceit and trickery. I've had an oven timer yell at me for ten straight minutes, and it NEVER got that specific.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Acts 13:11",
+          "question": "Paul tells Elymas the sorcerer that the blindness coming on him will last forever.",
           "answers": [
             {
               "text": "True",
@@ -222,77 +246,38 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Acts 13:8-9",
-          "text": "Nope, Elymas opposes them and tries to turn the proconsul from the faith. Then Saul, filled with the Holy Spirit, looks right at him, and it's the kind of look that makes a grown man put his phone DOWN.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 13:9",
-          "question": "Saul goes by another name too. He's also called ___.",
-          "answers": [
-            {
-              "text": "Paul",
-              "correct": true
-            },
-            {
-              "text": "Silas",
-              "correct": false
-            },
-            {
-              "text": "Stephen",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Acts 13:10",
-          "text": "Paul doesn't hold back, calling Elymas a “child of the devil and enemy of all righteousness” who's full of deceit and trickery. I've had an oven timer yell at me for ten straight minutes, and it NEVER got that specific.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Acts 13:11",
-          "question": "Paul tells Elymas the hand of the Lord is against him. What does Paul say will happen to Elymas?",
-          "answers": [
-            {
-              "text": "He will be blind for a time",
-              "correct": true
-            },
-            {
-              "text": "He will lose his voice for a time",
-              "correct": false
-            },
-            {
-              "text": "He will be driven out of Paphos",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul tells Elymas the hand of the Lord is against him, and for a time he will be blind and unable to see the light of the sun. Immediately, mist and darkness come over him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Acts 13:11",
-          "text": "Immediately, mist and darkness come over Elymas. He gropes around, looking for someone to lead him by the hand.",
-          "needs_agent_fix": true,
+          "question": "Mist and darkness come over Elymas the sorcerer. What does he do?",
+          "answers": [
+            {
+              "text": "He gropes around for someone to lead him",
+              "correct": true
+            },
+            {
+              "text": "He begs Paul to take back his words",
+              "correct": false
+            },
+            {
+              "text": "He tries to run away from Paul",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -311,15 +296,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
           "kind": "story",
           "verses": "Acts 13:12",
-          "text": "Sergius Paulus is astonished at the teaching about the Lord. Hold that thought, friend, because Barnabas and Paul have a LOT more road in front of them.",
-          "needs_agent_fix": true,
+          "text": "Sergius Paulus is astonished at the teaching about the Lord. But don't get comfortable, friend, because this story is far from over.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 1:1-2",
-          "text": "The writer of Acts opens with a note to a man named Theophilus, reminding him about his first book. That book was about all that Jesus began to do and to teach. Began, friend, and it ran right up to one VERY big day.",
-          "needs_agent_fix": true,
+          "text": "The writer of Acts opens by telling Theophilus about his first book. That book was about all that Jesus began to do and to teach. BEGAN, friend, and that book runs right up to one VERY big day.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,148 +41,97 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 1:2",
-          "question": "Before that day, Jesus gave instructions to the apostles He had chosen. He gave them through the ___.",
+          "question": "Before Jesus was taken up to heaven, He gave instructions through the Holy Spirit to the ___ He had chosen.",
           "answers": [
             {
-              "text": "Holy Spirit",
+              "text": "apostles",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "angel Gabriel",
+              "text": "elders",
               "correct": false
             },
             {
-              "text": "prophet Elijah",
+              "text": "scribes",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Acts 1:3",
-          "text": "After His suffering, Jesus presented Himself to the apostles with many convincing proofs that He was alive. That's not a rumor, friend, that's a RECEIPT, and after years under useless receipts in my old junk drawer, trust me, I know which kind you keep.",
-          "needs_agent_fix": true,
+          "text": "After His suffering, Jesus appears to the apostles over a span of forty days, and He speaks about the kingdom of God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Acts 1:3",
-          "question": "After His suffering, Jesus kept appearing to the apostles. Over how long?",
+          "question": "True or false: After His suffering, Jesus gives the apostles many convincing proofs that He is alive.",
           "answers": [
             {
-              "text": "Forty days",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Seven days",
-              "correct": false
-            },
-            {
-              "text": "Three years",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 1:3",
-          "question": "Over those forty days, Jesus spoke to the apostles about the ___ of God.",
-          "answers": [
-            {
-              "text": "kingdom",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "temple",
-              "correct": false
-            },
-            {
-              "text": "law",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 1:4",
+          "text": "While they're all gathered together, Jesus gives them a command: don't leave Jerusalem. Stay right there and WAIT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Acts 1:4",
-          "text": "While they're all gathered together, Jesus gives them a command. And it starts with: don't leave.",
-          "needs_agent_fix": true,
+          "question": "Jesus tells the apostles to stay in Jerusalem and wait for something they've heard Him talk about. What is it?",
+          "answers": [
+            {
+              "text": "The gift the Father promised",
+              "correct": true
+            },
+            {
+              "text": "Orders from the Roman governor",
+              "correct": false
+            },
+            {
+              "text": "A message from the high priest",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 1:4",
-          "question": "Jesus commands the apostles not to leave which city?",
-          "answers": [
-            {
-              "text": "Jerusalem",
-              "correct": true
-            },
-            {
-              "text": "Capernaum",
-              "correct": false
-            },
-            {
-              "text": "Nazareth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 1:5",
+          "text": "Then Jesus brings up John the Baptist, who baptized with water. But the apostles, He says, will be baptized with the Holy Spirit.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 1:4",
-          "question": "Along with staying in Jerusalem, what does Jesus command the apostles to do?",
-          "answers": [
-            {
-              "text": "Wait for the gift the Father promised",
-              "correct": true
-            },
-            {
-              "text": "Fast and pray at the temple each day",
-              "correct": false
-            },
-            {
-              "text": "Pick a new leader to guide them all",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Acts 1:5",
-          "text": "Then Jesus brings up John, who baptized with water, and then He says \"but.\" Friend, when a boss says \"great year, BUT,\" I start sweating, so I'm glad THIS \"but\" is coming from Jesus.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Acts 1:5",
-          "question": "Jesus mentions John, who baptized with water, and then a baptism coming for the apostles. True or false: Jesus says their baptism is still many years away.",
+          "question": "True or false: Jesus says the apostles' baptism with the Holy Spirit is still many years away.",
           "answers": [
             {
               "text": "True",
@@ -193,31 +142,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 1:5",
-          "question": "Jesus says John baptized with water, but in a few days the apostles will be baptized with the ___.",
-          "answers": [
-            {
-              "text": "Holy Spirit",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "pure incense",
-              "correct": false
-            },
-            {
-              "text": "sacred oil",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -231,7 +156,7 @@
           "kind": "story",
           "verses": "Acts 1:6",
           "text": "So when the apostles come together, they've got a question for Jesus. A BIG one.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -254,15 +179,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Acts 1:7",
-          "text": "Is it time YET? That's me opening the oven door every thirty seconds, friend, and now Jesus gives them His answer.",
-          "needs_agent_fix": true,
+          "verses": "Acts 1:6-7",
+          "text": "The apostles want to know if it's time, and that's me at the oven door every thirty seconds, friend. Jesus answers that the times and seasons are fixed by the Father's own authority.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -270,108 +195,65 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 1:7",
-          "question": "True or false: When the apostles ask about the timing, Jesus tells them it is not for them to know.",
+          "question": "True or false: Jesus says the apostles get to know those times and seasons.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 1:7",
-          "question": "Jesus says the times and seasons are fixed by the authority of the ___.",
-          "answers": [
-            {
-              "text": "Father",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "angels",
-              "correct": false
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 1:8",
+          "text": "But Jesus isn't finished, friend. He says the apostles will receive power when the Holy Spirit comes upon them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Acts 1:8",
-          "text": "But Jesus isn't finished, friend. He tells them what's coming when the Holy Spirit comes upon them.",
-          "needs_agent_fix": true,
+          "question": "Jesus also tells the apostles they will be His ___.",
+          "answers": [
+            {
+              "text": "witnesses",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "rulers",
+              "correct": false
+            },
+            {
+              "text": "guards",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 1:8",
-          "question": "Jesus says that when the Holy Spirit comes upon them, the apostles will receive ___.",
-          "answers": [
-            {
-              "text": "power",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wealth",
-              "correct": false
-            },
-            {
-              "text": "land",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 1:8",
-          "question": "True or false: Jesus tells the apostles they will be His witnesses in Jerusalem only.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 1:8",
-          "question": "Starting in Jerusalem and going through all Judea and Samaria, how far does Jesus say the apostles' witness will reach?",
+          "question": "Jesus says the apostles will be His witnesses in Jerusalem and in all Judea and Samaria. How far does He say it goes after that?",
           "answers": [
             {
               "text": "To the ends of the earth",
               "correct": true
             },
             {
-              "text": "To the hills of Galilee",
+              "text": "To the cities of Syria",
               "correct": false
             },
             {
@@ -379,19 +261,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "story",
           "verses": "Acts 1:9",
           "text": "Jesus finishes speaking. And right there, as the apostles watch, He is taken up.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 1:9",
@@ -411,19 +293,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Acts 1:10",
-          "text": "They're looking intently into the sky as He goes, friend. It's like watching a plane shrink to a dot and then staring at the empty spot like it owes you an explanation.",
-          "needs_agent_fix": true,
+          "text": "They're looking intently into the sky as He goes, friend. Nobody's moving.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 1:10",
@@ -438,19 +320,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Acts 1:11",
-          "text": "Then the two men speak up: \"Men of Galilee,\" they say, \"why do you stand here looking into the sky?\" Caught staring, friend, and that's me still gazing at the oven door after the batch is already OUT.",
-          "needs_agent_fix": true,
+          "text": "Then the two men speak up: \"Men of Galilee,\" they say, \"why do you stand here looking into the sky?\" You know when you're still waving at a car that already turned the corner, and a neighbor asks who you're waving at? THAT, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 1:11",
@@ -469,7 +351,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

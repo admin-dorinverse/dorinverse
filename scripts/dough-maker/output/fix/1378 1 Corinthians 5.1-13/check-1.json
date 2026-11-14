@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "Card 2 showed 'They're grieving' as a wrong answer. Card 3 then tells that same point ('should have been stricken with grief instead') as a story card. It doesn't add anything new and makes the card 2 answer-choice redundant.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 3
+      },
+      "problem": "The card tells serious sin (the sexually immoral, the greedy, swindlers, idolaters) and the idea of leaving this world, and it carries a joke about being freed from a drawer. Heavy moments get no joke.",
+      "rule": "A card that tells death, violence, abuse, serious sin or the body's private matters has no joke."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 5
+      },
+      "problem": "The story card repeats the list of people ('claims to be a brother but is sexually immoral or greedy...') that card 4's right answer just gave. It adds no new part of the passage and works as a recap.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "The blank asks the baker to guess the next word of Paul's line ('do not even ___ with him'). Nothing earlier lets the baker reason their way to 'eat' over 'argue' or 'pray', so this is a luck guess about wording they haven't seen.",
+      "rule": "The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 11:2",
-          "text": "Paul, an apostle of Christ Jesus (1 Corinthians 1:1), is writing to the church in Corinth. He opens this part of his letter with a compliment. In WRITING, friend, and all I ever got in the drawer was old takeout menus.",
+          "text": "Paul, an apostle of Christ Jesus (1 Corinthians 1:1), is writing to the church in Corinth. He opens this part of his letter with a compliment. Friend, give me a compliment and I'll stand on this gold base soaking it up ALL. DAY. LONG.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,39 +40,16 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Corinthians 11:3",
-          "text": "Then Paul says he wants them to understand something, and he lays out a chain of heads, three links long. I've got one head, friend, and it's mostly hat.",
+          "text": "Then Paul says he wants them to understand something, and he names three heads. I've got one head, friend, and it's mostly hat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 11:3",
-          "question": "In Paul's chain of heads, who is the head of Christ?",
-          "answers": [
-            {
-              "text": "God",
-              "correct": true
-            },
-            {
-              "text": "The church",
-              "correct": false
-            },
-            {
-              "text": "The apostles",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 11:3",
-          "question": "In that same chain, Paul says the head of the woman is man, and the head of every man is ___.",
+          "question": "Paul says the head of the woman is man, and the head of every man is ___.",
           "answers": [
             {
               "text": "Christ",
@@ -84,6 +61,29 @@
             },
             {
               "text": "Abraham",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 11:3",
+          "question": "Paul names three heads. Who does he say is the head of Christ?",
+          "answers": [
+            {
+              "text": "God",
+              "correct": true
+            },
+            {
+              "text": "The church",
+              "correct": false
+            },
+            {
+              "text": "The apostles",
               "correct": false
             }
           ],
@@ -197,8 +197,8 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "1 Corinthians 11:7-8",
-          "text": "And the woman, Paul says, is the glory of man. Then he reaches all the way back to creation, to the very first man and woman.",
+          "verses": "1 Corinthians 11:7",
+          "text": "And the woman, Paul says, is the glory of man. Then he gives a reason, and it's about where woman came from.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -207,15 +207,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 11:8",
-          "question": "Looking back to creation, Paul says man came from woman.",
+          "question": "Paul says woman came from man.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -225,7 +225,7 @@
           "card": 14,
           "kind": "story",
           "verses": "1 Corinthians 11:9",
-          "text": "Paul stays at creation for one more line. Man wasn't created for woman, he says, but woman for man.",
+          "text": "Paul adds one more line. Man wasn't created for woman, he says, but woman for man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -241,7 +241,7 @@
           "verses": "1 Corinthians 11:10",
           "text": "We're back with Paul, still talking about covering the head in prayer and prophecy. For this reason, he says, a woman ought to have a sign of authority on her head.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -264,15 +264,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "1 Corinthians 11:10-11",
-          "text": "That's all Paul says about the angels here. Then he turns with a big HOWEVER, to how things are in the Lord.",
+          "verses": "1 Corinthians 11:11",
+          "text": "Then Paul says HOWEVER, and turns to how things are in the Lord.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -291,7 +291,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -318,24 +318,9 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Corinthians 11:12",
-          "question": "After all that, Paul says everything comes from ___.",
-          "answers": [
-            {
-              "text": "God",
-              "correct": true
-            },
-            {
-              "text": "the earth",
-              "correct": false
-            },
-            {
-              "text": "the law",
-              "correct": false
-            }
-          ],
+          "text": "Then Paul zooms all the way out: \"But everything comes from God.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -375,15 +360,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 11:14",
-          "question": "Paul asks if nature itself teaches that long hair is a disgrace to a man.",
+          "question": "Paul asks if nature itself teaches that long hair is a glory to a man.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -416,7 +401,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Corinthians 11:16",
-          "text": "Last, Paul has a word for anyone inclined to dispute all this. Friend, I spent years next to dead batteries that argued all day about who had the most charge left, so I know an argument when I see one coming.",
+          "text": "Last, Paul has a word for anyone inclined to dispute all this. Friend, I spent years in a junk drawer next to dead batteries that argued all day about who had the most charge left, so I know an argument when I see one coming.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

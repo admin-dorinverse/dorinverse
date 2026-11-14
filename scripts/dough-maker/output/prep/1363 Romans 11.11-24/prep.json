@@ -65,9 +65,25 @@
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Romans 11:11",
-          "text": "And Paul says why: salvation has come to the Gentiles to make Israel jealous.",
+          "question": "Paul says salvation has come to the Gentiles to make Israel ___.",
+          "answers": [
+            {
+              "text": "jealous",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "ashamed",
+              "correct": false
+            },
+            {
+              "text": "afraid",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -169,7 +185,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Romans 11:16",
-          "text": "Then Paul pulls out a picture, and baker, it's DOUGH. Years I sat on a kitchen counter, and FINALLY a letter in the Bible talks my language.",
+          "text": "Then Paul pulls out a picture, and baker, it's DOUGH. Say that word around a cookie stamper and watch my mustache stand straight up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -178,7 +194,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:16",
-          "question": "Paul says the first part of the dough is holy. What does he say about the whole batch?",
+          "question": "Paul says if the first part of the dough is holy, then something follows. What does he say about the whole batch?",
           "answers": [
             {
               "text": "The whole batch is holy too",
@@ -198,20 +214,9 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Romans 11:16",
-          "question": "Right after the dough, Paul gives a tree picture: if the root is holy, the branches are not.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Right behind the dough, Paul adds a tree: if the root is holy, so are the branches.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -225,7 +230,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Romans 11:17",
-          "text": "Paul stays with that tree and talks to the Gentiles. If some branches have been broken off, and you, a wild olive shoot, have been grafted in among the others to share the olive root's nourishment, Paul has something to tell you.",
+          "text": "Paul stays with that tree, still talking to the Gentiles. If some branches have been broken off, he says, and you, a wild olive shoot, have been grafted in among the others to share in the nourishment of the olive root, then listen up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -257,15 +262,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 11:18",
-          "question": "Paul reminds the grafted-in wild shoot that it supports the root.",
+          "question": "Paul reminds the grafted-in wild shoot that the root supports it.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -275,45 +280,44 @@
           "card": 4,
           "kind": "story",
           "verses": "Romans 11:19-20",
-          "text": "Paul even hears the comeback before it's said: “Branches were broken off so that I could be grafted in.” Paul agrees that's correct, and then he keeps talking, and friend, when somebody agrees with you and KEEPS talking, brace yourself.",
-          "needs_agent_fix": true,
+          "text": "Paul sees the comeback coming from the wild shoot: “Branches were broken off so that I could be grafted in.” Paul agrees that's correct, and friend, when somebody agrees with you and KEEPS talking, brace yourself.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Romans 11:20",
+          "text": "Here's where Paul keeps talking: those natural branches were broken off because of unbelief.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 11:20",
-          "question": "Paul says the natural branches were broken off because of ___, but you stand by ___.",
+          "question": "The natural branches were broken off because of unbelief, but Paul says the grafted-in shoot stands by ___.",
           "answers": [
-            {
-              "text": "unbelief",
-              "correct": true,
-              "blank": 1
-            },
             {
               "text": "faith",
               "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "pride",
-              "correct": false
+              "blank": 1
             },
             {
               "text": "works",
               "correct": false
             },
             {
-              "text": "fear",
+              "text": "the law",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "Romans 11:20",
           "text": "Then Paul says, “Do not be arrogant, but be afraid.” And he gives a reason.",
@@ -321,7 +325,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 11:21",
@@ -340,15 +344,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "Romans 11:22",
-          "text": "So Paul says take notice. There are two sides of God to see here, like flipping a cookie over, friend: you've got to check BOTH.",
+          "text": "So Paul says take notice. He wants the Gentiles looking at two things about God, not just one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:22",
@@ -371,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:22",
@@ -394,7 +398,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Romans 11:22",
           "text": "Then Paul adds a warning, and he doesn't soften it one bit: “Otherwise you also will be cut off.”",
@@ -402,7 +406,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "Romans 11:23",
           "text": "Now Paul turns back to the branches that got broken off. Lean in for this part, baker.",
@@ -410,26 +414,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 11:23",
-          "question": "Paul says the broken-off branches can never be grafted back in, even if they do not persist in unbelief.",
+          "question": "Paul says that if the broken-off branches do not persist in unbelief, they will be grafted in.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Romans 11:23-24",
           "text": "Paul gives the reason: God is able to graft them in again. Then his last move: if the Gentiles were cut from a wild olive tree and grafted into a cultivated one, contrary to nature, think about the branches that grew there first.",
@@ -437,7 +441,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 11:24",

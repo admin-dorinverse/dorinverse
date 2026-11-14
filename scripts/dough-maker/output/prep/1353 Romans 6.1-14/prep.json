@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Romans 5:20-6:1",
-          "text": "Paul, the apostle, is writing to the believers in Rome (Romans 1:1, 7), and he's just told them that where sin increased, grace increased all the more. So he asks the question I bet somebody's already thinking: \"Shall we continue in sin so that grace may increase?\" That's like hearing my oven never burns a batch and asking, so I can just leave the cookies in there FOREVER?",
+          "verses": "Romans 6:1",
+          "text": "Paul, the apostle, is writing to the believers in Rome (Romans 1:1, 7), and he's just said that where sin increased, grace increased all the more (Romans 5:20). So he asks it straight out, no tiptoeing: \"Shall we continue in sin so that grace may increase?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -57,37 +57,14 @@
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Romans 6:3",
-          "question": "Then Paul brings up baptism. He says everyone who was baptized into Christ Jesus was baptized into His ___.",
-          "answers": [
-            {
-              "text": "death",
-              "correct": true
-            },
-            {
-              "text": "kingdom",
-              "correct": false
-            },
-            {
-              "text": "family",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
-          "verses": "Romans 6:4",
-          "text": "So Paul says we were buried with Him through baptism into death. Buried sounds like the end, but friend, I thought the back of a drawer was the end too.",
+          "verses": "Romans 6:3-4",
+          "text": "Then Paul brings up baptism: everyone baptized into Christ Jesus was baptized into His death. So, he says, we were buried with Him through baptism into death.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 6:4",
@@ -110,7 +87,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 6:5",
@@ -129,10 +106,18 @@
           "needs_human_decision": false
         },
         {
+          "card": 7,
+          "kind": "story",
+          "verses": "Romans 6:6",
+          "text": "Then Paul says our old self was crucified with Him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 8,
           "kind": "story",
           "verses": "Romans 6:6",
-          "text": "Paul says our old self was crucified with Him, so that the body of sin might be rendered powerless. Powerless, like the dead batteries I shared that drawer with, still swearing they had a little charge left.",
+          "text": "That happened so the body of sin might be rendered powerless. Powerless, like the dead batteries I shared a junk drawer with, still swearing they had a little charge left.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,60 +173,37 @@
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Romans 6:9-10",
-          "text": "Death no longer has dominion over Him, and the death He died, He died to sin once for all. Once. For. ALL. No reruns, no repeat, that death is DONE.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Romans 6:10",
+          "question": "Paul says death no longer has dominion over Christ. When Christ died to sin, how many times did He die?",
+          "answers": [
+            {
+              "text": "Once for all",
+              "correct": true
+            },
+            {
+              "text": "Again and again",
+              "correct": false
+            },
+            {
+              "text": "Once each year",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Romans 6:10",
-          "question": "Christ died to sin once for all, but Paul says the life He lives, He lives to ___.",
-          "answers": [
-            {
-              "text": "God",
-              "correct": true
-            },
-            {
-              "text": "others",
-              "correct": false
-            },
-            {
-              "text": "Himself",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Romans 6:11",
-          "question": "After all that about Christ, Paul tells the believers how they must count themselves. What does he say they are?",
-          "answers": [
-            {
-              "text": "Dead to sin but alive to God",
-              "correct": true
-            },
-            {
-              "text": "Stronger than sin and pleasing to God",
-              "correct": false
-            },
-            {
-              "text": "Hiding from sin and waiting on God",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Romans 6:10-11",
+          "text": "But the life He lives, He lives to God. So Paul says you too must count yourselves dead to sin, but alive to God in Christ Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Romans 6:12",
           "text": "Paul says, \"Therefore do not let sin reign in your mortal body so that you obey its desires.\" Sin doesn't get the throne, friend, and it doesn't even get a parking spot.",
@@ -249,63 +211,53 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 6:13",
-          "question": "Paul tells believers not to present the parts of their body to sin as instruments of ___ but to present them to God as instruments of ___.",
+          "question": "Paul says not to present the parts of the body to sin as instruments of wickedness. Instead, present yourselves to God as those brought from death to life, and present the parts of the body to Him as instruments of ___.",
           "answers": [
             {
-              "text": "wickedness",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "righteousness",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "weakness",
-              "correct": false
+              "correct": true
             },
             {
               "text": "strength",
               "correct": false
             },
             {
-              "text": "peace",
+              "text": "comfort",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Romans 6:13-14",
-          "text": "Paul says to present yourselves to God as those who have been brought from death to life, which is a LOT like going from a junk drawer to a bakery. Then he makes a promise: sin shall not be your master.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "card": 16,
+          "kind": "story",
           "verses": "Romans 6:14",
-          "question": "Paul promises believers that sin shall not be their master. What reason does he give?",
+          "text": "Then Paul makes a promise: sin shall not be your master. And friend, he tells them exactly why.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Romans 6:14",
+          "question": "Paul says sin shall not be their master, because they are not under law, but under ___.",
           "answers": [
             {
-              "text": "They are under grace not law",
+              "text": "grace",
               "correct": true
             },
             {
-              "text": "They have kept the whole law",
+              "text": "judgment",
               "correct": false
             },
             {
-              "text": "They are stronger than before",
+              "text": "fear",
               "correct": false
             }
           ],

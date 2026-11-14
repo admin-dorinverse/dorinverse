@@ -9,32 +9,31 @@
           "card": 1,
           "kind": "story",
           "verses": "Romans 13:8",
-          "text": "Paul, the apostle, is writing to the believers in Rome. He's just told them to pay everyone what they owe: taxes, respect, honor (Romans 13:7). Now he names the one debt they're supposed to keep on owing.",
+          "text": "Paul, the apostle, is writing to the believers in Rome. He's just told them to pay everyone what they owe, like taxes and honor (Romans 13:7). Now he names the one debt they should keep owing each other, and it's not the kind you pay with coins.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Romans 13:8",
-          "question": "Paul tells the believers in Rome to be indebted to no one, except to one another in ___.",
+          "question": "Paul tells the believers in Rome to be indebted to no one, except to one another in what?",
           "answers": [
             {
-              "text": "love",
-              "correct": true,
-              "blank": 1
+              "text": "Love",
+              "correct": true
             },
             {
-              "text": "gratitude",
+              "text": "Gifts",
               "correct": false
             },
             {
-              "text": "labor",
+              "text": "Favors",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -48,32 +47,27 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Romans 13:8",
-          "question": "Paul says the one who loves his neighbor has ___ the law.",
+          "question": "True or false: Paul says the one who loves his neighbor has fulfilled the law.",
           "answers": [
             {
-              "text": "fulfilled",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "replaced",
-              "correct": false
-            },
-            {
-              "text": "outgrown",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Romans 13:9",
-          "text": "Then Paul lists commandments: “Do not commit adultery,” “Do not murder,” “Do not steal,” “Do not covet,” and any other commandments, ALL of them, summed up in one decree. Friend, I can't even sum up my Tuesday in one sentence.",
+          "text": "Then Paul lists commandments: “Do not commit adultery,” “Do not murder,” “Do not steal,” “Do not covet,” and any other commandments. He says they're ALL summed up in one decree.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,20 +132,21 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Romans 13:11",
-          "question": "Paul tells the believers in Rome the hour has come for them to do what?",
+          "question": "Paul tells the believers in Rome the hour has come for them to wake up from their ___.",
           "answers": [
             {
-              "text": "Wake up from their slumber",
-              "correct": true
+              "text": "slumber",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Rest from all their work",
+              "text": "sorrow",
               "correct": false
             },
             {
-              "text": "Gather for worship together",
+              "text": "labor",
               "correct": false
             }
           ],
@@ -161,25 +156,24 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Romans 13:11",
-          "question": "Paul says it's time to wake up, because their ___ is nearer now than when they first believed.",
+          "question": "Paul says it's time to wake up, because something is nearer now than when they first believed. What is it?",
           "answers": [
             {
-              "text": "salvation",
-              "correct": true,
-              "blank": 1
+              "text": "Their salvation",
+              "correct": true
             },
             {
-              "text": "harvest",
+              "text": "The harvest",
               "correct": false
             },
             {
-              "text": "rest",
+              "text": "The Passover",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -193,20 +187,21 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Romans 13:12",
-          "question": "With the night nearly over, Paul says to lay aside the deeds of darkness and put on what?",
+          "question": "With the night nearly over, Paul says to lay aside the deeds of darkness and put on the armor of ___.",
           "answers": [
             {
-              "text": "The armor of light",
-              "correct": true
+              "text": "light",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The garment of praise",
+              "text": "faith",
               "correct": false
             },
             {
-              "text": "The crown of glory",
+              "text": "truth",
               "correct": false
             }
           ],
@@ -244,8 +239,8 @@
           "card": 16,
           "kind": "story",
           "verses": "Romans 13:14",
-          "text": "Instead of all that, Paul tells them what to put on. And no, friend, it's not an apron. I checked. TWICE.",
-          "needs_agent_fix": true,
+          "text": "Instead of all that, Paul tells them what to clothe themselves with. And friend, it's NOT an apron, or I'd have been ready YEARS ago.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -253,7 +248,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 13:14",
-          "question": "Instead of the deeds of darkness, Paul says to clothe yourselves with whom?",
+          "question": "Instead of carousing, drunkenness and the rest of that list, Paul tells the believers in Rome to clothe themselves with whom?",
           "answers": [
             {
               "text": "The Lord Jesus Christ",

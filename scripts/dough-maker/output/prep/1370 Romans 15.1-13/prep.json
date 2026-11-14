@@ -66,28 +66,32 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Romans 15:2",
-          "question": "True or false: Paul says to please your neighbor just to keep him off your back.",
+          "question": "Paul says to please your neighbor for his good. To do what for him?",
           "answers": [
             {
-              "text": "True",
+              "text": "Build him up",
+              "correct": true
+            },
+            {
+              "text": "Win him over",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Keep him quiet",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Romans 15:3",
-          "text": "Then Paul brings out the biggest example there is: even Christ did not please Himself, and Paul quotes Scripture to show it (Psalm 69:9). Meanwhile, friend, I can't let ONE batch cool without sneaking the biggest cookie off the rack for myself.",
-          "needs_agent_fix": true,
+          "text": "Then Paul brings out the biggest example there is: even Christ, that's Jesus, did not please Himself, and Paul quotes Psalm 69:9 to show it. Meanwhile, friend, I can't let ONE batch cool without sneaking the biggest cookie off the rack for myself.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -195,8 +199,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Romans 15:7",
-          "text": "Now Paul lands the line this whole section has been building to: accept one another. Not smile, nod and suddenly remember you left something in the oven, friend. ACCEPT.",
-          "needs_agent_fix": true,
+          "text": "Then Paul puts it plainly: accept one another. And friend, that doesn't mean smile, nod and suddenly remember you left cookies in the oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -246,7 +250,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Romans 15:8",
-          "text": "Then Paul explains: Christ has become a servant of the circumcised, the Jewish people (Romans 3:29-30), on behalf of God's truth, to confirm the promises made to the patriarchs. And hold on, friend, because Paul says there's a reason for all of it.",
+          "text": "Then Paul explains: Christ has become a servant of the circumcised on behalf of God's truth, to confirm the promises made to the patriarchs. And hold on, friend, because Paul says there's a reason for all of it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -271,15 +275,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Romans 15:9",
-          "text": "Then Paul backs it up with Scripture, where David says, \"Therefore I will praise You among the Gentiles; I will sing hymns to Your name.\" (Psalm 18:49) And he's not done, friend, he's got verses lined up like cookies on a cooling rack.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then Paul backs it up by quoting Psalm 18:49: \"Therefore I will praise You among the Gentiles; I will sing hymns to Your name.\" And he's not done, friend, he's got verses lined up like cookies on a cooling rack.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -297,7 +301,7 @@
               "correct": false
             },
             {
-              "text": "The angels",
+              "text": "The prophets",
               "correct": false
             }
           ],
@@ -327,7 +331,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Romans 15:12",
-          "text": "Paul's FOURTH Scripture in a row, friend, and this one's from Isaiah the prophet. He's stacking verses like I stack cookie boxes when a baker's watching.",
+          "text": "Paul's FOURTH Scripture in a row, friend, and this one quotes Isaiah, a prophet (Isaiah 11:10). Four for four, and Paul is NOT leaving room for a \"yeah, but.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -335,7 +339,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Romans 15:12",
-          "text": "Isaiah says the Root of Jesse will appear, One who will arise to rule over the Gentiles (Isaiah 11:10). Jesse was King David's father (Ruth 4:22).",
+          "text": "Isaiah says the Root of Jesse will appear, One who will arise to rule over the Gentiles. Jesse was the father of David, Israel's king (Ruth 4:22).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -375,41 +379,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 15:13",
-          "question": "Paul says, may the God of hope fill the believers in Rome with all joy and peace as they do what?",
+          "question": "Paul says the believers in Rome may overflow with hope by the power of whom?",
           "answers": [
             {
-              "text": "Believe in Him",
+              "text": "The Holy Spirit",
               "correct": true
             },
             {
-              "text": "Keep the feasts",
+              "text": "The apostles",
               "correct": false
             },
             {
-              "text": "Give to the poor",
+              "text": "The elders",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Romans 15:13",
-          "question": "True or false: Paul says the believers in Rome may overflow with hope by their own strength.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         }
       ]

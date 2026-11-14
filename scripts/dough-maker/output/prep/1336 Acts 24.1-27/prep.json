@@ -8,9 +8,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 23:33-24:1",
-          "text": "Paul's a prisoner in Caesarea, kept under guard in Herod's Praetorium. Felix, the governor, told him, “I will hear your case when your accusers arrive.” Well, friend, five days later they ARRIVE.",
-          "needs_agent_fix": true,
+          "verses": "Acts 24:1",
+          "text": "Paul's a prisoner in Caesarea, kept under guard in Herod's Praetorium until Felix, the governor, hears his case (Acts 23:33-35). Five days later, the high priest Ananias comes down with some elders. Friend, these men did NOT come to say hi.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,30 +18,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 24:1",
-          "question": "Who leads the group that comes down to Caesarea to accuse Paul?",
+          "question": "Ananias and the elders are here to present their case against Paul to the governor. Who do they bring along to do the presenting?",
           "answers": [
             {
-              "text": "The high priest Ananias",
+              "text": "A lawyer named Tertullus",
               "correct": true
             },
             {
-              "text": "King Herod Agrippa",
+              "text": "A Pharisee named Gamaliel",
               "correct": false
             },
             {
-              "text": "The high priest Caiaphas",
+              "text": "A centurion named Julius",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Acts 24:1",
-          "text": "He brings some elders and a lawyer named Tertullus to present the case against Paul. Friend, that's not a complaint, that's a whole legal TEAM.",
-          "needs_agent_fix": true,
+          "text": "Elders AND a lawyer. Friend, that's a whole legal TEAM for one prisoner.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,22 +49,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 24:2",
-          "question": "Paul is called in, and Tertullus opens the prosecution. Before he says one word against Paul, what does Tertullus do?",
+          "question": "Paul is called in, and Tertullus opens the prosecution. But his first words aren't about Paul. They're about Felix, the man deciding the case. What does Tertullus say?",
           "answers": [
             {
-              "text": "Praises Felix for bringing lasting peace",
+              "text": "Felix brought this nation lasting peace",
               "correct": true
             },
             {
-              "text": "Reads a letter from the high priest",
+              "text": "Felix has kept them waiting too long",
               "correct": false
             },
             {
-              "text": "Asks Felix to have Paul flogged",
+              "text": "Felix should send Paul to Rome",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,7 +72,7 @@
           "kind": "story",
           "verses": "Acts 24:3",
           "text": "And he lays it on THICK: “In every way and everywhere, most excellent Felix, we acknowledge this with all gratitude.” That's the coworker who LOVES the boss's tie right before asking for Friday off.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -80,30 +80,30 @@
           "kind": "story",
           "verses": "Acts 24:4-5",
           "text": "Then Tertullus promises to keep it brief, and here come the charges. He calls Paul a pestilence, stirring up dissension among the Jews all over the world.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 24:5",
-          "question": "Tertullus also calls Paul a ringleader of the sect of the ___.",
+          "question": "Tertullus brings up the sect of the Nazarenes. What does he say Paul is in that sect?",
           "answers": [
             {
-              "text": "Nazarenes",
+              "text": "A ringleader",
               "correct": true
             },
             {
-              "text": "Sadducees",
+              "text": "A deserter",
               "correct": false
             },
             {
-              "text": "Pharisees",
+              "text": "A spy",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -111,22 +111,22 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 24:6",
-          "question": "Tertullus says Paul even tried to ___ the temple, so they seized him.",
+          "question": "Tertullus says Paul even tried to desecrate the temple, so they ___ him.",
           "answers": [
             {
-              "text": "desecrate",
+              "text": "seized",
               "correct": true
             },
             {
-              "text": "rob",
+              "text": "released",
               "correct": false
             },
             {
-              "text": "destroy",
+              "text": "warned",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -134,7 +134,7 @@
           "kind": "story",
           "verses": "Acts 24:8",
           "text": "Tertullus wraps it up. Examine him yourself, Felix, and you'll learn the truth about all our charges.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -142,18 +142,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 24:9",
-          "question": "When Tertullus finishes, the Jews with him stay quiet and let their lawyer do all the talking.",
+          "question": "When Tertullus finishes, the Jews with him back him up and say his charges are true.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,26 +161,30 @@
           "kind": "story",
           "verses": "Acts 24:10",
           "text": "Now the governor motions for Paul to speak. Ananias brought a lawyer, and Paul brought… PAUL.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Acts 24:10",
-          "question": "Paul begins his defense by pointing out that Felix has been a judge over this nation for many years.",
+          "question": "Paul says that since Felix has been a judge over this nation for many years, Paul makes his defense ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "gladly",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "nervously",
+              "correct": false
+            },
+            {
+              "text": "angrily",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -195,7 +199,7 @@
               "correct": true
             },
             {
-              "text": "debate",
+              "text": "trade",
               "correct": false
             },
             {
@@ -203,7 +207,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -222,7 +226,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -230,7 +234,7 @@
           "kind": "story",
           "verses": "Acts 24:13-14",
           "text": "Paul says they can't prove any of their charges against him. But then he does confess one thing.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -253,7 +257,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -261,7 +265,7 @@
           "kind": "story",
           "verses": "Acts 24:14",
           "text": "The Way, which his accusers call a sect. And Paul says he believes everything laid down by the Law and written in the Prophets.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -269,30 +273,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 24:15",
-          "question": "Paul says he has the same hope in God that his accusers cherish. What is that hope?",
+          "question": "Paul says he shares the same hope in God that his accusers cherish. It's a hope about what happens after death. What is it?",
           "answers": [
             {
-              "text": "A resurrection of the righteous and wicked",
+              "text": "The righteous and the wicked will rise again",
               "correct": true
             },
             {
-              "text": "A new temple built in Jerusalem",
+              "text": "Only the righteous will rise again",
               "correct": false
             },
             {
-              "text": "A king from the line of David",
+              "text": "Their names will live on forever",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "story",
           "verses": "Acts 24:16",
-          "text": "In this hope, Paul says, he always strives to keep a clear conscience before God and man. No legal team, friend, just a clear conscience.",
-          "needs_agent_fix": true,
+          "text": "In this hope, Paul says, he always strives to keep a clear conscience before God and man.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -306,7 +310,7 @@
           "kind": "story",
           "verses": "Acts 24:17",
           "text": "Paul's still making his defense before Felix. He says that after several years away, he came back to Jerusalem.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -317,7 +321,7 @@
           "question": "Why does Paul say he came back to Jerusalem after several years away?",
           "answers": [
             {
-              "text": "To bring alms to his people and offerings",
+              "text": "To bring alms and present offerings",
               "correct": true
             },
             {
@@ -325,11 +329,11 @@
               "correct": false
             },
             {
-              "text": "To find the men who opposed him",
+              "text": "To confront the men who opposed him",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -348,7 +352,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -356,69 +360,15 @@
           "kind": "story",
           "verses": "Acts 24:18-19",
           "text": "Then Paul says some Jews from the province of Asia ought to be here bringing charges, if they have anything against him. Friend, he's basically looking around the courtroom like, “Anybody? No? Okay.”",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 24:21",
-          "question": "Paul dares the men in the room to name any crime they found in him when he stood before the Sanhedrin. Unless it's the one thing he called out there. What was it about?",
-          "answers": [
-            {
-              "text": "The resurrection of the dead",
-              "correct": true
-            },
-            {
-              "text": "The coming of the Messiah",
-              "correct": false
-            },
-            {
-              "text": "The Law of Moses",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Acts 24:22",
-          "text": "Felix, who was well informed about the Way, adjourns the hearing. A legal team, a list of charges, a full defense, and the verdict is… LATER.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 24:22",
-          "question": "Felix says he'll decide Paul's case when ___ the commander comes.",
-          "answers": [
-            {
-              "text": "Lysias",
-              "correct": true
-            },
-            {
-              "text": "Festus",
-              "correct": false
-            },
-            {
-              "text": "Agrippa",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Acts 24:23",
-          "question": "Felix orders the centurion to keep Paul under guard, with no visitors allowed.",
+          "verses": "Acts 24:20-21",
+          "question": "Paul dares the men in the room to name any crime they found in him before the Sanhedrin. He says the only thing they could bring up is a line he called out there about the Law of Moses.",
           "answers": [
             {
               "text": "True",
@@ -429,19 +379,50 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Acts 24:21-22",
+          "text": "Paul called out that he was on trial over the resurrection of the dead. Then Felix, who was well informed about the Way, adjourns the hearing: “When Lysias the commander comes, I will decide your case.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Acts 24:23",
+          "question": "Felix keeps Paul under guard, but allows him some freedom and lets his ___ minister to his needs.",
+          "answers": [
+            {
+              "text": "friends",
+              "correct": true
+            },
+            {
+              "text": "soldiers",
+              "correct": false
+            },
+            {
+              "text": "servants",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Acts 24:24",
+          "text": "After several days, Felix comes back with his wife Drusilla, who was a Jewess. He sends for Paul and listens to him speak about faith in Christ Jesus.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Acts 24:24",
-          "text": "After several days, Felix comes back with his wife Drusilla, who was a Jewess. He sends for Paul and listens to him speak about faith in Christ Jesus.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 24:25",
@@ -460,23 +441,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Acts 24:25",
+          "text": "Felix tells him, “You may go for now. When I find the time, I will call for you.” Friend, that's a man reaching for the SNOOZE button.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Acts 24:25",
-          "text": "Felix tells him, “You may go for now. When I find the time, I will call for you.” Friend, that's a man reaching for the SNOOZE button.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 24:26",
-          "question": "Felix sends Paul away for now. But at the same time, Felix is hoping Paul will offer him something. What is it?",
+          "question": "Felix keeps sending for Paul and talking with him. What is Felix hoping Paul will offer him?",
           "answers": [
             {
               "text": "A bribe",
@@ -491,65 +472,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Acts 24:27",
+          "text": "After two years, Porcius Festus takes Felix's place as governor. Two YEARS, friend. I've watched dough rise faster than that.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Acts 24:27",
-          "question": "So Felix sends for Paul often and talks with him. After ___ years, someone new takes Felix's place.",
+          "question": "Felix is on his way out, and he wishes to do the Jews a favor. What does he do with Paul?",
           "answers": [
             {
-              "text": "two",
+              "text": "Leaves him in prison",
               "correct": true
             },
             {
-              "text": "five",
+              "text": "Sets him free",
               "correct": false
             },
             {
-              "text": "ten",
+              "text": "Sends him to Rome",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Acts 24:27",
-          "text": "Felix is succeeded by Porcius Festus. But Felix has one last call to make about his prisoner.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 24:27",
-          "question": "Before he's replaced, Felix sets Paul free.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Acts 24:27",
-          "text": "Wishing to do the Jews a favor, Felix leaves Paul in prison. Hang on, friend, because Paul's story is far from over.",
-          "needs_agent_fix": true,
+          "text": "And that's where Paul sits for now. Stick with me, friend, because this story isn't done.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

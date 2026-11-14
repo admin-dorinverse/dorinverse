@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "1 Corinthians 7:1",
           "text": "Paul, an apostle, is writing to the church of God in Corinth (1 Corinthians 1:1-2). They wrote to him about some matters, and now he's taking up the matters they wrote about. His opening line: \"It is good to abstain from sexual relations.\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,38 +33,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Corinthians 7:3",
-          "text": "Paul doesn't tiptoe around anything, friend. Next he brings up something he calls marital duty.",
-          "needs_agent_fix": true,
+          "text": "Next Paul brings up something in marriage he calls marital duty.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Corinthians 7:3",
-          "question": "Paul talks about marital duty in a marriage. Who does he say should fulfill it?",
+          "question": "Paul says only the husband should fulfill his marital duty, not the wife.",
           "answers": [
             {
-              "text": "The husband and the wife both",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The husband and not the wife",
-              "correct": false
-            },
-            {
-              "text": "The wife and not the husband",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -83,7 +79,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -106,53 +102,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 7:5",
-          "question": "After that time of prayer, Paul says the couple should come together again. Why?",
+          "question": "Paul says a married couple who stop for a time of prayer should come together again, so that ___ will not tempt them.",
           "answers": [
             {
-              "text": "So Satan won't tempt them",
-              "correct": true
+              "text": "Satan",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "So the church won't worry",
+              "text": "the world",
               "correct": false
             },
             {
-              "text": "So the house won't feel empty",
+              "text": "their neighbors",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Corinthians 7:6",
-          "question": "Paul adds a note about how he means what he's just said. How does he say it?",
+          "question": "Paul adds a note about what he's just said: he says it as a command.",
           "answers": [
             {
-              "text": "As a concession not a command",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "As a rule from the elders",
-              "correct": false
-            },
-            {
-              "text": "As a warning from the prophets",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -160,38 +153,39 @@
           "kind": "story",
           "verses": "1 Corinthians 7:7",
           "text": "Then Paul gets personal: \"I wish that all men were as I am.\" Friend, if I ever wished that about myself, this whole bakery would be full of MUSTACHES.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 7:7",
-          "question": "Right after Paul says he wishes all men were as he is, he adds a \"but.\" What does he say?",
+          "question": "Paul wishes all men were as he is. But he says each man has his own ___ from God.",
           "answers": [
             {
-              "text": "Each one has his own gift from God",
-              "correct": true
+              "text": "gift",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Most people won't follow his example",
+              "text": "reward",
               "correct": false
             },
             {
-              "text": "Only apostles are called to be that way",
+              "text": "burden",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "1 Corinthians 7:8",
-          "text": "Paul's working down his list like me calling out stations in the morning. Next up: the unmarried and widows.",
-          "needs_agent_fix": true,
+          "text": "Paul's working through it one group at a time, like me checking off a recipe card line by line. Next up: the unmarried and widows.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -214,7 +208,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -233,7 +227,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -241,7 +235,7 @@
           "kind": "story",
           "verses": "1 Corinthians 7:9-10",
           "text": "Paul's line on it: \"For it is better to marry than to burn with passion.\" Next, he turns to the married, and he says this command is not from him but from the Lord.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -264,7 +258,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -287,7 +281,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -306,7 +300,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -318,44 +312,13 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "1 Corinthians 7:12",
-          "text": "Then Paul speaks to the rest. And I LOVE what he does here: he labels it right up front, like a sticker on a cookie box that tells you who baked it.",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 7:12-13",
+          "text": "Then Paul turns to the rest, and he labels this part right up front, like a sticker on a cookie box: \"I, not the Lord\". It's for a brother or a sister who's married to someone who doesn't believe.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 7:12",
-          "question": "Paul said his command to the married came from the Lord, not him. How does he label this next part, to the rest?",
-          "answers": [
-            {
-              "text": "From Paul himself not the Lord",
-              "correct": true
-            },
-            {
-              "text": "From the Lord just like before",
-              "correct": false
-            },
-            {
-              "text": "From the apostles in Jerusalem",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "1 Corinthians 7:12-13",
-          "text": "I bet this one hit close to home for somebody in Corinth, friend. A believer married to someone who doesn't believe, and Paul covers it for a brother and for a sister.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 7:12-13",
@@ -374,38 +337,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "card": 3,
+          "kind": "story",
           "verses": "1 Corinthians 7:14",
-          "question": "Paul gives a reason the believer should stay in a marriage with an unbeliever. What is it?",
-          "answers": [
-            {
-              "text": "The unbeliever is sanctified through them",
-              "correct": true
-            },
-            {
-              "text": "The church needs every family it has",
-              "correct": false
-            },
-            {
-              "text": "The Law of Moses requires it of them",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul gives a reason for staying: the unbelieving husband is sanctified through his believing wife, and the unbelieving wife through her believing husband.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 7:14",
-          "question": "Paul says that because of this, the children in that home are holy, not unclean.",
+          "question": "When one spouse believes and the other doesn't, Paul says their children are holy, not unclean.",
           "answers": [
             {
               "text": "True",
@@ -416,69 +364,89 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "1 Corinthians 7:15",
+          "text": "Now the other side of it, friend. Paul's word to stay was for a spouse willing to live with the believer, so what if the unbelieving spouse leaves?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Corinthians 7:15",
+          "question": "If the unbelieving spouse leaves, Paul says the believer must follow them until they come back.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 7:15",
-          "text": "Paul doesn't dodge the hard side of it, friend. What if the unbelieving spouse doesn't stay, and leaves?",
-          "needs_agent_fix": true,
+          "question": "If the unbelieving spouse leaves, Paul says to let them go. In such cases, he says, the believing brother or sister is not ___.",
+          "answers": [
+            {
+              "text": "bound",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "welcome",
+              "correct": false
+            },
+            {
+              "text": "trusted",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Corinthians 7:15",
-          "question": "If the unbelieving spouse leaves, what does Paul say?",
-          "answers": [
-            {
-              "text": "Let them go and the believer isn't bound",
-              "correct": true
-            },
-            {
-              "text": "Follow them until they come back",
-              "correct": false
-            },
-            {
-              "text": "Ask the church to bring them back",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Paul says, \"God has called you to live in peace.\" I think that line is a gift to anyone who's been through this one.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "1 Corinthians 7:15",
-          "text": "Then Paul says, \"God has called you to live in peace.\" Friend, after years of listening to the dead batteries in my old drawer argue over who had the most charge left, I could FRAME that line.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 7:16",
-          "question": "Paul asks a believing wife and a believing husband the same kind of question. What is it?",
+          "question": "Paul asks a believing wife and a believing husband married to unbelievers the same kind of question. What is it?",
           "answers": [
             {
               "text": "How do you know whether you'll save your spouse",
               "correct": true
             },
             {
-              "text": "Why did you marry someone who doesn't believe",
+              "text": "Have you prayed for your spouse today",
               "correct": false
             },
             {
-              "text": "Have you prayed for your spouse today",
+              "text": "Will your spouse join you at church",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -517,9 +485,9 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "1 Corinthians 7:17-18",
-          "text": "ALL the churches. Same recipe, every kitchen, no special batch just for Corinth. Then Paul gives an example: circumcision.",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 7:17",
+          "text": "ALL the churches, friend. Same recipe in every kitchen, no special batch just for Corinth.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -566,29 +534,22 @@
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "1 Corinthians 7:19",
-          "text": "Then Paul says, \"Circumcision is nothing and uncircumcision is nothing.\" Both of them. NOTHING. Knocked flat in one sentence.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 7:19",
-          "question": "If circumcision and uncircumcision are both nothing, what does Paul say counts?",
+          "question": "Paul says, \"Circumcision is nothing and uncircumcision is nothing.\" Then he says keeping God's ___ is what counts.",
           "answers": [
             {
-              "text": "Keeping God's commandments",
-              "correct": true
+              "text": "commandments",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Where a man was born",
+              "text": "feasts",
               "correct": false
             },
             {
-              "text": "Knowing the most Scripture",
+              "text": "traditions",
               "correct": false
             }
           ],
@@ -596,7 +557,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "1 Corinthians 7:20-21",
           "text": "Paul sums it up: each one should remain in the situation he was in when he was called. Then he gets to a harder case, someone who was a slave when God called him.",
@@ -604,7 +565,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 7:21",
@@ -627,11 +588,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 7:22",
-          "question": "Paul flips it around. The one who was a slave when called by the Lord is the Lord's ___. The one who was free when called is Christ's ___.",
+          "question": "Paul flips things around. He says the one who was a slave when called by the Lord is the Lord's ___.",
           "answers": [
             {
               "text": "freedman",
@@ -639,20 +600,30 @@
               "blank": 1
             },
             {
-              "text": "slave",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "son",
-              "correct": false
-            },
-            {
               "text": "guest",
               "correct": false
             },
             {
-              "text": "steward",
+              "text": "heir",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Corinthians 7:22",
+          "question": "Paul says the one who was a free man when he was called is Christ's slave.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
               "correct": false
             }
           ],
@@ -663,7 +634,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Corinthians 7:23",
-          "text": "Then Paul says, \"You were bought at a price; do not become slaves of men.\" Friend, I came home with a 25-cent sticker on me, so I know a LITTLE something about being bought.",
+          "text": "Then Paul says, \"You were bought at a price; do not become slaves of men.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -671,7 +642,7 @@
           "card": 12,
           "kind": "story",
           "verses": "1 Corinthians 7:24",
-          "text": "And Paul lands it one more time: \"Brothers, each one should remain in the situation he was in when God called him.\" But friend, Paul's still got their letter in his hand, and this conversation is NOT over.",
+          "text": "And Paul lands it one more time: \"Brothers, each one should remain in the situation he was in when God called him.\" But friend, Paul's still got plenty to say about marriage, and this conversation is NOT over.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

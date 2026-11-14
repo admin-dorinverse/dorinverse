@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Acts 6:3",
-          "text": "So the Twelve tell the disciples to pick some men from among themselves, and the Twelve will hand this job to them. Smart, because the one time I stamped dough with one end of my mustache and pulled a tray with the other, the cookies came out fine and my mustache came out SMOKED.",
+          "text": "So the Twelve tell the disciples to pick men from among themselves, confirmed to be full of the Spirit and wisdom, and the Twelve will hand this job to them. Smart, because the one time I stamped dough with one end of my mustache and pulled a tray with the other, the cookies came out fine and my mustache came out SMOKED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -101,30 +101,20 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 6:3",
-          "question": "Not just anybody, either. The men handing out the food must be confirmed to be full of the ___ and ___.",
+          "type": "multiple_choice",
+          "verses": "Acts 6:4",
+          "question": "Once the seven take over the food, the Twelve will devote themselves to the ministry of the word. What else will they devote themselves to?",
           "answers": [
             {
-              "text": "Spirit",
-              "correct": true,
-              "blank": 1
+              "text": "Prayer",
+              "correct": true
             },
             {
-              "text": "wisdom",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "courage",
+              "text": "Fasting",
               "correct": false
             },
             {
-              "text": "strength",
-              "correct": false
-            },
-            {
-              "text": "patience",
+              "text": "Healing",
               "correct": false
             }
           ],
@@ -133,37 +123,14 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 6:4",
-          "question": "Once the seven take over the food, what will the Twelve devote themselves to?",
-          "answers": [
-            {
-              "text": "Prayer and the ministry of the word",
-              "correct": true
-            },
-            {
-              "text": "Healing and casting out spirits",
-              "correct": false
-            },
-            {
-              "text": "Traveling and starting new churches",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Acts 6:5",
+          "text": "This proposal pleases the whole group. The WHOLE group. Nobody in the back with their hand up going, \"Well, actually…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Acts 6:5",
-          "text": "This proposal pleased the whole group. A whole crowd agreeing on one plan? I can't get two cookies on the same tray to agree on which end is warmer.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 6:5",
@@ -186,15 +153,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Acts 6:5",
-          "text": "Then come Philip, Prochorus, Nicanor, Timon, Parmenas, and Nicolas from Antioch, a convert to Judaism. I tried saying those six names fast, made it as far as Prochorus, and had to go sit down by the oven.",
+          "text": "Then come Philip (not the apostle Philip), Prochorus, Nicanor, Timon, Parmenas, and Nicolas from Antioch, a convert to Judaism. Seven men for one job, and I had to send out INVITATIONS just to get some help in my bakery!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 6:6",
@@ -213,7 +180,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Acts 6:6-7",
           "text": "The apostles pray and lay their hands on the seven. So the word of God continued to spread, and the number of disciples in Jerusalem grew rapidly.",
@@ -221,7 +188,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 6:7",
@@ -257,8 +224,8 @@
           "card": 2,
           "kind": "story",
           "verses": "Acts 6:9",
-          "text": "But resistance comes from what was called the Synagogue of the Freedmen, with Cyrenians, Alexandrians, and men from the provinces of Cilicia and Asia, and they dispute with Stephen. One man against all THAT? That's one guy versus the whole group chat, and EVERYBODY is typing at once.",
-          "needs_agent_fix": true,
+          "text": "But resistance comes from what was called the Synagogue of the Freedmen, with Cyrenians, Alexandrians, and men from the provinces of Cilicia and Asia, and they dispute with Stephen. That's one guy versus the whole group chat, with EVERYBODY typing at once.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -288,27 +255,23 @@
           "card": 4,
           "kind": "story",
           "verses": "Acts 6:10",
-          "text": "They can't stand up to his wisdom or the Spirit by whom he spoke. That's me playing chess against my phone: every move I make, it's got a better answer, until I've got NO moves left.",
+          "text": "It's not only Stephen's wisdom they can't stand up to, but the Spirit by whom he spoke. I once lost an argument to an oven timer, so who am I to talk?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Acts 6:11",
-          "question": "The men from the synagogue can't win the debate against Stephen. What do they do next?",
+          "question": "After the debate, the men from the synagogue get some men to say Stephen spoke blasphemy.",
           "answers": [
             {
-              "text": "Get some men to accuse him",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Ask the apostles to quiet him",
-              "correct": false
-            },
-            {
-              "text": "Challenge him to another debate",
+              "text": "False",
               "correct": false
             }
           ],
@@ -317,37 +280,14 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 6:11",
-          "question": "The men claim they heard Stephen speak words of blasphemy against ___ and against God.",
-          "answers": [
-            {
-              "text": "Moses",
-              "correct": true
-            },
-            {
-              "text": "Abraham",
-              "correct": false
-            },
-            {
-              "text": "David",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Acts 6:11-12",
+          "text": "Their claim is that they heard Stephen speak blasphemy against Moses and against God. So they stir up the people, the elders and the scribes, and confront Stephen.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Acts 6:12",
-          "text": "So they stirred up the people, elders, and scribes and confronted Stephen. The people, the elders AND the scribes, all for one man? That's a lot of backup for a guy who just won a debate.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 6:12",
@@ -370,19 +310,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
-          "kind": "story",
-          "verses": "Acts 6:12-13",
-          "text": "Now Stephen stands before the Sanhedrin, Israel's ruling council. And there they present false witnesses.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 6:13",
-          "question": "In front of the Sanhedrin, what do the false witnesses say Stephen never stops speaking against?",
+          "question": "Stephen stands before the Sanhedrin, Israel's ruling council, and false witnesses speak up. What do they say he never stops speaking against?",
           "answers": [
             {
               "text": "This holy place and the law",
@@ -401,7 +333,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 6:14",
@@ -420,7 +352,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Acts 6:14-15",
           "text": "Their claim is that he said Jesus of Nazareth will destroy this place and change the customs Moses handed down. Then everyone sitting in the Sanhedrin looks intently at Stephen.",
@@ -428,7 +360,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 6:15",
@@ -451,10 +383,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Acts 6:15",
-          "text": "A face like an angel's, with every eye in the Sanhedrin on him. That's where we'll leave Stephen for now, friend, because his story is NOT done.",
+          "text": "Every eye in that council is on him. That's where we'll leave Stephen for now, friend, because his story is NOT done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

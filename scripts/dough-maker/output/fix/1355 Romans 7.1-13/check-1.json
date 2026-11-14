@@ -1,0 +1,45 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "The story card says the woman is bound to her husband 'as long as he lives.' That gives away the answer to the true/false card right after it, which asks whether she is still bound once he dies.",
+      "rule": "A setup line can't rule out the wrong answers either."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The choice card asks about verse 10, but no earlier card has told that verse. The story card that tells verse 10 (card 9) comes after it. Card 9 then repeats the answer the baker just gave ('the commandment meant to bring life brought death').",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "The choice card asks what the law is, citing verse 12, before any card has told verse 12. Card 12 then tells 'holy' again. The wrong answers 'silent' and 'hidden' are not believable alternatives.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 15
+      },
+      "problem": "The true/false card repeats the point of card 14. Card 14 asks that sin was exposed as sin. Card 15 says sin might become utterly sinful, which is the same purpose in verse 13 in different words.",
+      "rule": "Two lines that make the same point get one question."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The punchline shape 'and I say that AS a ...' is the same one used in Stop 1 card 14 ('and I say that as a guy who...').",
+      "rule": "Each joke idea, comparison and punchline shape is used once per lesson."
+    }
+  ]
+}

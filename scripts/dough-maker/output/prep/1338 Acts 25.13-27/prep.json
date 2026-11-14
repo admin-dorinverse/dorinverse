@@ -8,10 +8,10 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 24:27-25:13",
-          "text": "Quick catch-up, friend: Paul, the apostle, has been on trial in Caesarea before Festus, the Roman governor who took over from Felix, and Paul just said, 'I appeal to Caesar!' Several days later, King Agrippa comes down to Caesarea, and Bernice comes right along with him. Royalty, in the BUILDING.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Acts 25:13",
+          "text": "Quick catch-up, friend: Paul, the apostle, is a prisoner in Caesarea, and Festus, the Roman governor who took over from Felix, has already heard his case (Acts 24:27; 25:6-12). Several days later, two visitors come down to Caesarea: King Agrippa, and Bernice, who comes with him. A KING, in the building.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,14 +34,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Acts 25:14",
-          "text": "They're staying several days. Several! That's not a visit, that's a HOUSEGUEST situation. So Festus brings up work: a man that Felix left in prison.",
-          "needs_agent_fix": true,
+          "text": "They're staying several days, so Festus lays out Paul's case for the king: a man Felix left in prison. Several days? That's not a visit, that's a HOUSEGUEST situation.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -57,7 +57,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 25:16",
-          "question": "Festus told them it's not the Roman custom to hand a man over before he can face his ___ and ___ himself against their charges.",
+          "question": "Festus told the chief priests and elders it's not the Roman custom to hand a man over before he can face his ___ and ___ himself against their charges.",
           "answers": [
             {
               "text": "accusers",
@@ -127,7 +127,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Acts 25:18-19",
-          "text": "I bet Festus was braced for theft, riots, maybe a little tax fraud. Instead he gets arguments about their own religion and 'a certain Jesus who had died.'",
+          "text": "Festus walked in ready for a CRIME. Instead, he gets arguments about their own religion and \"a certain Jesus who had died…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -199,7 +199,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -207,7 +207,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 25:22",
-          "question": "After hearing all that, King Agrippa tells Festus he would like to hear Paul himself.",
+          "question": "After Festus lays out Paul's case, King Agrippa tells Festus he would like to hear Paul himself.",
           "answers": [
             {
               "text": "True",
@@ -218,7 +218,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -248,7 +248,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Acts 25:23",
-          "text": "In they come with great pomp, along with the commanders and the city's leading men, and Festus orders Paul brought in. Last grand entrance anybody made for ME was the junk drawer sliding open so somebody could grab a RUBBER BAND.",
+          "text": "In they come, along with the commanders and the city's leading men, and Festus orders Paul brought in. Back when I was stuck in the back of a junk drawer, the only grand entrance I ever saw was somebody yanking it open to grab a RUBBER BAND.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -323,33 +323,9 @@
         },
         {
           "card": 19,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 25:27",
-          "question": "Festus says it seems unreasonable to send on a prisoner without specifying the ___ against him.",
-          "answers": [
-            {
-              "text": "charges",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "guards",
-              "correct": false
-            },
-            {
-              "text": "witnesses",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
           "kind": "story",
           "verses": "Acts 25:27",
-          "text": "And that's where we'll pause, friend, because King Agrippa hasn't heard one word from Paul yet.",
+          "text": "Festus says it seems unreasonable to him to send on a prisoner without specifying the charges against him. And that's where we'll pause, friend, because this story's not done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

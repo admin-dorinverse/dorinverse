@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 12:1-2",
-          "text": "A famine is coming, so the disciples in Antioch send relief to the brothers living in Judea (Acts 11:27-30). About that time, King Herod reaches out to harm some who belong to the church. He has James, the brother of John, put to death with the sword, and friend, this one starts heavy.",
+          "text": "A famine is coming, so the disciples in Antioch send relief to the brothers living in Judea (Acts 11:27-30). About that time, King Herod, not the Herod who died when Jesus was a little child (Matthew 2:19), reaches out to harm some who belong to the church. He has James, the brother of John, put to death with the sword, and friend, this one starts heavy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -333,7 +333,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 12:16",
-          "question": "Peter keeps on knocking. When they finally open the door and see him, they are ___.",
+          "question": "Peter keeps on knocking. When the people at Mary's house finally open the door and see him, they are ___.",
           "answers": [
             {
               "text": "astounded",
@@ -344,31 +344,23 @@
               "correct": false
             },
             {
-              "text": "silent",
+              "text": "disappointed",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Acts 12:17",
-          "text": "Peter motions with his hand for silence and describes how the Lord brought him out of the prison.",
+          "text": "Peter motions with his hand for silence and describes how the Lord brought him out of the prison. “Send word to James and to the brothers,” he tells them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Acts 12:17",
-          "text": "Then he tells them, “Send word to James and to the brothers.” That's not John's brother, friend. Herod already put that James to death (Acts 12:2).",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 12:17",
@@ -391,15 +383,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Acts 12:18",
-          "text": "At daybreak there's no small commotion among the soldiers about what became of Peter. Sixteen soldiers, one empty cell, and I bet NOT ONE of them wants to be the guy who tells Herod.",
+          "text": "At daybreak there's no small commotion among the soldiers about what became of Peter. All those guards, and NOBODY can say where their one prisoner went.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 12:19",
@@ -422,7 +414,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Acts 12:19",
           "text": "Then Herod goes down from Judea to Caesarea and spends some time there.",
@@ -430,7 +422,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Acts 12:20",
           "text": "Now Herod is in a furious dispute with the people of Tyre and Sidon. They win the support of Blastus, the king's chamberlain, and ask for peace.",
@@ -438,7 +430,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 12:20",
@@ -461,22 +453,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 12:22",
-          "question": "On the appointed day, Herod puts on his royal robes, sits on his throne and speaks to the people. What do they shout his voice is?",
+          "question": "On the appointed day, Herod puts on his royal robes, sits on his throne and speaks to the people. What do the people shout about Herod's voice?",
           "answers": [
             {
-              "text": "The voice of a god",
+              "text": "It's the voice of a god",
               "correct": true
             },
             {
-              "text": "The voice of a prophet",
+              "text": "It's the voice of a prophet",
               "correct": false
             },
             {
-              "text": "The voice of a true king",
+              "text": "It's the voice of a true king",
               "correct": false
             }
           ],
@@ -484,7 +476,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 12:23",
@@ -507,7 +499,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Acts 12:23-24",
           "text": "Herod is eaten by worms and dies. Herod is gone, but the word of God keeps spreading and multiplying.",
@@ -515,25 +507,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Acts 12:25",
-          "question": "Barnabas and Saul, two teachers from the church in Antioch (Acts 11:26), finish their mission to Jerusalem and head back. Who do they bring with them?",
+          "question": "Barnabas and Saul, two teachers from the church in Antioch (Acts 11:26), fulfill their mission to ___ and head back.",
           "answers": [
             {
-              "text": "John also called Mark",
+              "text": "Jerusalem",
               "correct": true
             },
             {
-              "text": "Joseph also called Barsabbas",
+              "text": "Damascus",
               "correct": false
             },
             {
-              "text": "Simeon also called Niger",
+              "text": "Tarsus",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "story",
+          "verses": "Acts 12:25",
+          "text": "And they don't head back alone. They bring John, also called Mark, along with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

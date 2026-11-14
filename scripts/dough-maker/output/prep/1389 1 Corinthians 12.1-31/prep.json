@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Corinthians 12:2-3",
-          "text": "Idols that never say a word, like asking for directions and getting a blank STARE. So Paul gives them a way to tell when someone is really speaking by the Spirit of God.",
+          "text": "Idols that never say a word, like asking for directions and getting a blank STARE. So Paul tells them something about anyone who is speaking by the Spirit of God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 12:3",
-          "question": "True or false: Paul says a person speaking by the Spirit of God can say Jesus should be cursed.",
+          "question": "True or false: Paul says a person speaking by the Spirit of God says Jesus should be cursed.",
           "answers": [
             {
               "text": "True",
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "1 Corinthians 12:7",
-          "text": "Now Paul says something about every single believer in that church. Nobody's stuck in the back of the drawer on this one, friend.",
+          "text": "Now Paul says something about each one of them. No one gets skipped, friend, not even the guy who ALWAYS shows up late.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -152,16 +152,16 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Corinthians 12:8-9",
-          "text": "Then Paul starts listing gifts: one person gets the message of wisdom, another the message of knowledge, another faith, all by the same Spirit. Same oven, different batches, friend.",
+          "text": "Then Paul starts listing gifts: to one the message of wisdom, to another the message of knowledge, to another faith, to another gifts of healing.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "true_false",
-          "verses": "1 Corinthians 12:9",
-          "question": "True or false: gifts of healing are on Paul's list of gifts too.",
+          "verses": "1 Corinthians 12:8-9",
+          "question": "True or false: Paul says the message of wisdom, faith and gifts of healing all come by the same Spirit.",
           "answers": [
             {
               "text": "True",
@@ -173,13 +173,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "1 Corinthians 12:10-11",
-          "text": "Miracles! Prophecy! Distinguishing between spirits! Tongues AND interpreting tongues! And Paul says every one of them is the work of one and the same Spirit.",
+          "text": "The list keeps ROLLING: miracles, prophecy, distinguishing between spirits, speaking in various tongues and the interpretation of tongues. Paul says all these are the work of one and the same Spirit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -404,8 +404,8 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "1 Corinthians 12:23-24",
-          "text": "Paul says the parts we consider less honorable get treated with greater honor, and God has given greater honor to the parts that lacked it. And as the stamper who got called out of the back of a drawer, let me tell you, I am a BIG fan of that.",
+          "verses": "1 Corinthians 12:23",
+          "text": "Then Paul says something surprising: the parts we consider less honorable, we treat with greater honor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -414,7 +414,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 12:25",
-          "question": "Why does Paul say God put the body together that way?",
+          "question": "Paul says God composed the body and gave greater honor to the parts that lacked it. Why did God put the body together that way?",
           "answers": [
             {
               "text": "So there would be no division in the body",
@@ -429,7 +429,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -437,17 +437,11 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 12:26",
-          "question": "Paul says the parts of the body are tied together: If one part suffers, every part ___ with it; if one part is honored, every part ___ with it.",
+          "question": "Paul says the parts of the body are tied together: If one part suffers, every part suffers with it; if one part is honored, every part ___ with it.",
           "answers": [
             {
-              "text": "suffers",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "rejoices",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "waits",
@@ -455,10 +449,6 @@
             },
             {
               "text": "complains",
-              "correct": false
-            },
-            {
-              "text": "rests",
               "correct": false
             }
           ],
@@ -469,27 +459,27 @@
           "card": 16,
           "kind": "story",
           "verses": "1 Corinthians 12:27-28",
-          "text": "Then Paul lands it: \"Now you are the body of Christ, and each of you is a member of it.\" Next he lists what God has appointed in the church, and number two is prophets, number three is teachers, then miracle workers, healing, helping, administration and various tongues.",
+          "text": "Then Paul lands it: \"Now you are the body of Christ, and each of you is a member of it.\" Next he lists what God has appointed in the church: first apostles, second prophets, third teachers, then miracle workers, healing, helping, administration and various tongues.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Corinthians 12:28",
-          "question": "So who's at the top of Paul's list? In the church, God has appointed first of all ___.",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 12:29-30",
+          "question": "Then Paul fires off questions: Are all apostles? Are all teachers? Do all speak in tongues? Do all interpret? What answer is he pointing to?",
           "answers": [
             {
-              "text": "apostles",
+              "text": "Not everyone has every gift",
               "correct": true
             },
             {
-              "text": "elders",
+              "text": "Everyone should have every gift",
               "correct": false
             },
             {
-              "text": "deacons",
+              "text": "Only leaders have every gift",
               "correct": false
             }
           ],
@@ -498,29 +488,6 @@
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 12:29-30",
-          "question": "Then Paul fires off questions: Are all apostles? Are all teachers? Do all speak in tongues? Do all interpret? What answer is he pointing to?",
-          "answers": [
-            {
-              "text": "No not everyone has every gift",
-              "correct": true
-            },
-            {
-              "text": "Yes everyone should have them all",
-              "correct": false
-            },
-            {
-              "text": "Only leaders should have them all",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 12:31",
@@ -539,10 +506,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "1 Corinthians 12:31",
-          "text": "Then Paul says, \"And now I will show you the most excellent way.\" Friend, I'm leaning in so far my chef's hat is about to slide off, but Paul's teaching isn't done yet, so we'll pick it up right there next time.",
+          "text": "Then Paul says, \"And now I will show you the most excellent way.\" The MOST excellent way, friend, and Paul's teaching isn't done yet, so hold that thought.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

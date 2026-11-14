@@ -9,39 +9,39 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 9:1",
-          "text": "Meet Saul. Last time he showed up, he was dragging off men and women and putting them in prison (Acts 8:3). Now he's still breathing out murderous threats against the disciples of the Lord, and friend, that's not a bad mood, that's a LIFESTYLE.",
-          "needs_agent_fix": true,
+          "text": "Meet Saul, a man who has been going from house to house, dragging off men and women and putting them in prison (Acts 8:3). Now he's still breathing out murderous threats against the disciples of the Lord.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 9:1",
-          "question": "Saul wants to go after the disciples of the Lord. Who does he go to see first?",
-          "answers": [
-            {
-              "text": "The high priest",
-              "correct": true
-            },
-            {
-              "text": "King Herod",
-              "correct": false
-            },
-            {
-              "text": "Pontius Pilate",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 9:1-2",
+          "text": "He goes to the high priest and asks for letters to the synagogues in Damascus. Friend, this man isn't just mad, he's got PAPERWORK.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Acts 9:2",
-          "text": "Saul asks the high priest for letters to the synagogues in Damascus, so he can go after the Way there. Friend, this man isn't just mad, he's got PAPERWORK.",
-          "needs_agent_fix": true,
+          "question": "Saul's letters from the high priest are for the synagogues in Damascus. What does he plan to do with followers of the Way he finds there?",
+          "answers": [
+            {
+              "text": "Bring them to Jerusalem as prisoners",
+              "correct": true
+            },
+            {
+              "text": "Drive them out of the city",
+              "correct": false
+            },
+            {
+              "text": "Put them on trial in Damascus",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 9:2",
-          "question": "True or false: Saul's plan in Damascus is to go after only the men who belong to the Way.",
+          "question": "True or false: Saul's letters are for going after only the men who belong to the Way.",
           "answers": [
             {
               "text": "True",
@@ -60,136 +60,85 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 9:2",
-          "question": "Saul wants to bring the believers he finds in Damascus back as prisoners to ___.",
-          "answers": [
-            {
-              "text": "Jerusalem",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Caesarea",
-              "correct": false
-            },
-            {
-              "text": "Antioch",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 9:3",
+          "text": "So Saul hits the road with his letters. He's almost to Damascus when suddenly a light from heaven flashes around him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Acts 9:3",
-          "text": "So Saul hits the road with his letters. He's almost to Damascus when suddenly a light from heaven flashes around him.",
-          "needs_agent_fix": true,
+          "verses": "Acts 9:4",
+          "text": "Saul falls to the ground and hears a voice say to him, “Saul, Saul, why do you persecute Me?” Friend, all that PAPERWORK, and not one page covers THIS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Acts 9:4",
-          "question": "A light from heaven just flashed around Saul on the road. What happens to him?",
-          "answers": [
-            {
-              "text": "He falls to the ground",
-              "correct": true
-            },
-            {
-              "text": "He runs back to Jerusalem",
-              "correct": false
-            },
-            {
-              "text": "He hides his face in his cloak",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Acts 9:4",
-          "text": "Then he hears a voice say to him, “Saul, Saul, why do you persecute Me?” Friend, when somebody says your name TWICE, you already know it's serious.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Acts 9:5",
-          "question": "Saul answers the voice, “Who are You, Lord?” Who is speaking to him?",
+          "question": "On the ground, Saul asks the voice, “Who are You, Lord?” Who is speaking to Saul?",
           "answers": [
             {
               "text": "Jesus",
               "correct": true
             },
             {
-              "text": "The angel Gabriel",
+              "text": "Gabriel",
               "correct": false
             },
             {
-              "text": "The prophet Elijah",
+              "text": "Elijah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Acts 9:5",
+          "text": "“I am Jesus, whom you are persecuting,” He replied. Saul's been chasing down believers, and the whole time he's been chasing JESUS.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Acts 9:6",
+          "question": "Jesus tells Saul to get up and go into the city. What does Jesus say will happen to Saul there?",
+          "answers": [
+            {
+              "text": "He will be told what he must do",
+              "correct": true
+            },
+            {
+              "text": "He will meet the high priest there",
+              "correct": false
+            },
+            {
+              "text": "He will be put on trial there",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Acts 9:5",
-          "text": "“I am Jesus, whom you are persecuting,” He replied. Saul's been chasing down believers, and the whole time he's been chasing JESUS.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 9:6",
-          "question": "True or false: Right there on the road, Jesus tells Saul everything he must do.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Acts 9:6",
-          "text": "Not yet. Jesus says, “Now get up and go into the city, and you will be told what you must do.”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 9:7",
-          "question": "Saul isn't traveling alone. While all this happens, the men with him stand there ___.",
+          "question": "Saul isn't traveling alone. The men traveling with him stand there ___.",
           "answers": [
             {
               "text": "speechless",
@@ -205,38 +154,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 9:7",
-          "question": "True or false: The men traveling with Saul hear the voice but don't see anyone.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
+          "card": 11,
           "kind": "story",
-          "verses": "Acts 9:8",
-          "text": "Saul gets up from the ground, but when he opens his eyes, he can't see a thing. Friend, the man carrying the high priest's letters can't even READ them now.",
-          "needs_agent_fix": true,
+          "verses": "Acts 9:7-8",
+          "text": "The men hear the voice, but they don't see anyone. Then Saul gets up from the ground, and when he opens his eyes, he can't see a thing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 9:8",
@@ -255,31 +185,26 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Acts 9:9",
-          "question": "For ___ days Saul is without sight, and he doesn't eat or drink anything.",
+          "question": "True or false: In Damascus, Saul goes three days without eating or drinking anything.",
           "answers": [
             {
-              "text": "three",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "seven",
-              "correct": false
-            },
-            {
-              "text": "forty",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -291,25 +216,17 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Acts 9:10",
-          "text": "In Damascus there's a disciple named Ananias, and the Lord speaks to him in a vision. “Here I am, Lord,” Ananias answers.",
+          "verses": "Acts 9:10-11",
+          "text": "In Damascus there's a disciple named Ananias (not the Ananias of Acts 5:1), and the Lord speaks to him in a vision. The Lord tells him, “Get up!” and sends him to the house of Judas (not Judas Iscariot) on Straight Street.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "Acts 9:11",
-          "text": "The Lord tells him to go to the house of a man named Judas on Straight Street. Friend, the Lord gives better directions than my phone ever has.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 9:11",
-          "question": "The Lord sends Ananias to that house on Straight Street. Who is he supposed to ask for there?",
+          "question": "The Lord sends Ananias to the house of Judas on Straight Street. Who is he supposed to ask for there?",
           "answers": [
             {
               "text": "A man from Tarsus named Saul",
@@ -324,11 +241,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 9:12",
@@ -351,7 +268,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Acts 9:13",
           "text": "Ananias pushes back. He tells the Lord many people have told him about this man and all the harm he has done to the Lord's saints in Jerusalem.",
@@ -359,7 +276,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 9:14",
@@ -378,7 +295,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Acts 9:15",
           "text": "“Go!” said the Lord. I bet Ananias's knees were knocking louder than his hand was about to knock on that door.",
@@ -386,7 +303,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 9:15",
@@ -409,15 +326,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
-          "kind": "story",
-          "verses": "Acts 9:15",
-          "text": "The Gentiles and their kings, and the people of Israel. From arrest letters to KINGS, friend, that's not a promotion, that's a whole new LIFE.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 9:16",
@@ -436,7 +345,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "Acts 9:16-17",
           "text": "The Lord says, “I will show him how much he must suffer for My name.” So Ananias goes to the house and places his hands on Saul.",
@@ -444,7 +353,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 9:17",
@@ -468,38 +377,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "Acts 9:17",
-          "text": "He says the Lord Jesus, who appeared to Saul on the road, sent him so Saul may see again and be filled with the Holy Spirit. The man Ananias just warned the Lord about is now BROTHER Saul.",
+          "text": "He says the Lord Jesus, who appeared to Saul on the road, sent him so Saul may see again and be filled with the Holy Spirit. The man Ananias had heard all those things about is now BROTHER Saul.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Acts 9:18",
-          "question": "Ananias has his hands on Saul and has just told him why the Lord sent him. What happens to Saul at that instant?",
+          "question": "True or false: After Ananias places his hands on Saul, Saul's sight comes back little by little over the next few days.",
           "answers": [
             {
-              "text": "His sight is restored",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "He sees a vision of heaven",
-              "correct": false
-            },
-            {
-              "text": "He begins to prophesy",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
+          "kind": "story",
+          "verses": "Acts 9:18",
+          "text": "At that instant, something like scales falls from Saul's eyes, and his sight is restored. Friend, after years in the back of a junk drawer, I know how good it feels when the light finally comes back.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 9:18",
@@ -518,7 +431,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Acts 9:19",
           "text": "Saul takes some food and gets his strength back, and after three days of nothing, I believe it. Friend, I get cranky if I skip ONE cookie.",
@@ -526,7 +439,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 9:19",
@@ -550,7 +463,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Acts 9:19",
           "text": "And trust me, friend, the oven's still on, because Saul's story is just getting started.",

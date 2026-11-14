@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 27:1",
-          "text": "Paul is a prisoner, and he has appealed to Caesar (Acts 25:11). Now it's decided: Paul and some other prisoners are going to sail for Italy. Friend, this is one trip where you do NOT get to pick your seat.",
+          "text": "Paul the apostle is a prisoner, and he has appealed to Caesar, the Roman emperor (Acts 25:11). Now it's decided: Paul and some other prisoners are going to sail for Italy. Friend, this is one trip where you do NOT get to pick your seat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -39,7 +39,7 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Acts 27:2",
+          "verses": "Acts 27:1-2",
           "text": "They board a ship from Adramyttium, bound for ports along the coast of Asia, and put out to sea. The writer of Acts keeps saying 'we,' so he's ON this boat, friend, and so is Aristarchus, a Macedonian from Thessalonica.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -106,7 +106,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Acts 27:5",
-          "text": "They cross the open sea off Cilicia and Pamphylia and come to Myra in Lycia. Cilicia, Pamphylia, Lycia… friend, I can't say those three in a row without spitting cookie dough on the counter.",
+          "text": "They sail across the open sea off the coast of Cilicia and Pamphylia and come to Myra in Lycia. So far, so good, friend, but I'm not saying it twice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -173,14 +173,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 27:10",
-          "question": "With the voyage getting dangerous, Paul speaks up at Fair Havens. What does Paul warn the men he can see coming?",
+          "question": "With the voyage getting dangerous, Paul speaks up at Fair Havens. What does Paul tell the men he can see ahead for the voyage?",
           "answers": [
             {
               "text": "Disaster and great loss even of their lives",
               "correct": true
             },
             {
-              "text": "Pirates waiting for them along the coast",
+              "text": "A long delay but no real danger",
               "correct": false
             },
             {
@@ -215,21 +215,11 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Acts 27:11",
-          "question": "Instead of listening to Paul, Julius is persuaded by the ship's ___ and the ship's ___.",
+          "question": "Instead of listening to Paul, Julius is persuaded by the ___ and by the owner of the ship.",
           "answers": [
             {
               "text": "pilot",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "owner",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "passengers",
-              "correct": false
+              "correct": true
             },
             {
               "text": "soldiers",
@@ -268,25 +258,10 @@
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Acts 27:12",
-          "question": "The majority hope they can somehow reach a harbor called ___ and spend the winter there.",
-          "answers": [
-            {
-              "text": "Phoenix",
-              "correct": true
-            },
-            {
-              "text": "Joppa",
-              "correct": false
-            },
-            {
-              "text": "Cenchreae",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Their hope is to somehow reach Phoenix, a harbor in Crete facing southwest and northwest, and spend the winter there. I've got my mustache crossed for them, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -330,7 +305,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Acts 27:15",
-          "text": "The ship can't head into the wind, so they quit fighting it and let themselves be driven along. Friend, that was me every time somebody yanked open the junk drawer: no steering, just SLIDING.",
+          "text": "The ship can't head into the wind, so they quit fighting it and let themselves be driven along. Friend, that was me every time somebody yanked open the junk drawer I spent years in: no steering, just SLIDING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -386,9 +361,20 @@
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Acts 27:19",
-          "text": "On the third day, they throw the ship's tackle overboard with their own hands. Friend, when the crew starts tossing the ship's OWN gear, I'd be hugging the nearest post.",
+          "question": "True or false: On the third day of the storm, the men throw the ship's tackle overboard with their own hands.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -396,7 +382,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Acts 27:20",
-          "text": "For many days, neither sun nor stars appear, and the great storm keeps battering them. No stars for DAYS? Friend, lighting stars is my whole night shift, and I'm sweating just hearing this.",
+          "text": "For many days, neither sun nor stars appear, and the great storm keeps battering them. Friend, my sky gets a new star every time a cookie box is finished, so no stars for DAYS has me sweating.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -412,7 +398,7 @@
               "correct": true
             },
             {
-              "text": "They still hope to reach Phoenix",
+              "text": "They hope another ship will find them",
               "correct": false
             },
             {
@@ -420,7 +406,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -458,7 +444,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Acts 27:21-22",
-          "text": "Friend, that's a holy 'I told you so,' and I respect it. But then Paul turns right around and urges them to keep up their courage.",
+          "text": "Paul gets his 'I told you so' in first, friend, and honestly, he earned it. Then he turns right around and urges them to keep up their courage.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -467,15 +453,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 27:22",
-          "question": "True or false: Paul tells the men that some of them will lose their lives in this storm.",
+          "question": "True or false: Paul tells the men that not one of them will lose their life.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -493,11 +479,11 @@
               "correct": true
             },
             {
-              "text": "money",
+              "text": "lifeboat",
               "correct": false
             },
             {
-              "text": "prisoners",
+              "text": "mast",
               "correct": false
             }
           ],
@@ -508,7 +494,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Acts 27:23",
-          "text": "Paul says that just last night, an angel of the God he belongs to and serves stood beside him. Friend, an angel showed up at my junk drawer once, and trust me, you do NOT forget that.",
+          "text": "Paul says that just last night, an angel of the God he belongs to and serves stood beside him. Right there on a ship in THAT storm, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -517,18 +503,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 27:24",
-          "question": "The angel tells Paul not to be afraid. What does the angel say Paul must do?",
+          "question": "The angel who stood beside Paul tells him not to be afraid, and says God has granted him the lives of all who sail with him. What does the angel say Paul must do?",
           "answers": [
             {
               "text": "Stand before Caesar",
               "correct": true
             },
             {
-              "text": "Preach again in Jerusalem",
+              "text": "Preach in Jerusalem",
               "correct": false
             },
             {
-              "text": "Go back to his friends in Sidon",
+              "text": "Visit friends in Sidon",
               "correct": false
             }
           ],
@@ -537,29 +523,6 @@
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 27:24",
-          "question": "The angel tells Paul that God has granted him the lives of ___ who sail with him.",
-          "answers": [
-            {
-              "text": "all",
-              "correct": true
-            },
-            {
-              "text": "most",
-              "correct": false
-            },
-            {
-              "text": "half",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "story",
           "verses": "Acts 27:25",
           "text": "Then Paul tells the men, \"So take courage, men, for I believe God that it will happen just as He told me.\" A whole ship out of hope, and one prisoner standing there believing God.",
@@ -567,7 +530,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 27:26",
@@ -586,7 +549,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Acts 27:26",
           "text": "And that's where we'll leave it for now, friend, because this voyage is NOT over.",

@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Romans 1:1-7",
-          "text": "Paul, an apostle of Jesus, is writing a letter to the believers in Rome. He opens it the way you'd introduce yourself on a phone call to someone who doesn't have your number saved: name first, then what he does. He calls himself 'a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God'.",
+          "verses": "Romans 1:1, 7",
+          "text": "Paul is writing a letter to the believers in Rome, and he starts by telling them who he is. He calls himself 'a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -24,20 +24,21 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Romans 1:2",
-          "question": "Paul says God promised the gospel beforehand in the Holy Scriptures. Who did God promise it through?",
+          "question": "Paul says God promised the gospel beforehand through His ___ in the Holy Scriptures.",
           "answers": [
             {
-              "text": "His prophets",
-              "correct": true
+              "text": "prophets",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His priests",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "His judges",
+              "text": "judges",
               "correct": false
             }
           ],
@@ -46,10 +47,18 @@
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "Romans 1:3",
+          "text": "Paul says the gospel is about God's Son. On the human side, according to the flesh, the Son comes from the family line of a king of Israel.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 1:3",
-          "question": "Paul says the gospel is about God's Son, who was a descendant of ___ according to the flesh.",
+          "question": "Paul says God's Son was a descendant of ___ according to the flesh.",
           "answers": [
             {
               "text": "David",
@@ -57,27 +66,27 @@
               "blank": 1
             },
             {
-              "text": "Moses",
+              "text": "Saul",
               "correct": false
             },
             {
-              "text": "Saul",
+              "text": "Ahab",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Romans 1:3-4",
-          "text": "David, Israel's king, is the Son's family line on the human side. But Paul says that through the Spirit of holiness, He was declared with power to be the Son of God.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Romans 1:3-4",
+          "text": "That's the human side. Paul says that through the Spirit of holiness, the Son was declared with power to be the Son of God.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 1:4",
@@ -100,15 +109,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "Romans 1:4-5",
-          "text": "Then Paul gives Him His full name: 'Jesus Christ our Lord.' Through Him, Paul says, we received grace and apostleship, and friend, I've never heard a job title that came with grace stapled to the front.",
+          "text": "Then Paul gives Him His full name: 'Jesus Christ our Lord.' Through Him, Paul says, we received grace and apostleship.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 1:5",
@@ -123,7 +132,7 @@
               "correct": false
             },
             {
-              "text": "To build a new temple for the church in Rome",
+              "text": "To build a temple for the believers in Rome",
               "correct": false
             }
           ],
@@ -131,7 +140,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 1:6",
@@ -150,42 +159,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "Romans 1:7",
-          "text": "Paul's introduction runs six whole verses before he gets to the 'To' line: all in Rome who are called to be saints. Friend, that's longer than my voicemails, and my voicemails run so long the phone hangs up on ME.",
+          "text": "Paul writes to all in Rome who are loved by God and called to be saints. Most mail greets you with FINAL NOTICE, but Paul greets them with grace and peace.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Romans 1:7",
-          "question": "Paul writes to all in Rome who are ___ by God.",
+          "question": "Paul sends grace and peace to the believers in Rome. Who does he say it comes from?",
           "answers": [
             {
-              "text": "loved",
-              "correct": true,
-              "blank": 1
+              "text": "God our Father and the Lord Jesus Christ",
+              "correct": true
             },
             {
-              "text": "tested",
+              "text": "The angels of God and the prophets",
               "correct": false
             },
             {
-              "text": "judged",
+              "text": "The elders of the church in Jerusalem",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Romans 1:7",
-          "text": "Then comes the greeting itself: 'Grace and peace to you from God our Father and the Lord Jesus Christ.' Friend, every letter I open starts with 'FINAL NOTICE.' This one starts with GRACE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -199,7 +199,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Romans 1:8",
-          "text": "With the greeting done, Paul gets going: 'First, I thank my God through Jesus Christ for all of you.' Before anything else, he's grateful.",
+          "text": "With the greeting done, Paul gets going: 'First, I thank my God through Jesus Christ for all of you…' Before anything else, he's grateful.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -259,25 +259,33 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Romans 1:12",
-          "question": "Paul says he longs to see the believers in Rome so he can impart some spiritual gift to strengthen them. True or false: Paul says the encouragement would only go one way, from him to the believers in Rome.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Romans 1:11",
+          "text": "Paul says he longs to see them so he can impart some spiritual gift to strengthen them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Romans 1:12",
+          "question": "True or false: Paul says he and the believers in Rome would encourage each other through their faith.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "story",
           "verses": "Romans 1:13",
           "text": "Paul wants them to know how often he's planned to come to them. And still, he hasn't made it to Rome.",
@@ -285,7 +293,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 1:13",
@@ -308,7 +316,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "Romans 1:13-14",
           "text": "He wants a harvest among them, just like he's had among the other Gentiles. Paul says he's obligated to Greeks and non-Greeks, to the wise and the foolish.",
@@ -316,7 +324,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Romans 1:15",
@@ -340,15 +348,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "Romans 1:16",
-          "text": "Then Paul says it plain: 'I am not ashamed of the gospel.' Friend, I hide one lopsided cookie at the BOTTOM of the box, and this man puts it in WRITING for all of Rome.",
+          "text": "Then Paul says it plain: 'I am not ashamed of the gospel…' Out loud. In writing. To ALL of Rome.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 1:16",
@@ -371,7 +379,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 1:16",
@@ -390,18 +398,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Romans 1:16",
-          "text": "Paul says that power is for everyone who believes, first to the Jew, then to the Greek. EVERYONE who believes, friend.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 14,
           "kind": "story",
-          "verses": "Romans 1:17",
-          "text": "Lean in, friend. Paul says the gospel reveals the righteousness of God.",
+          "verses": "Romans 1:16-17",
+          "text": "That power is for EVERYONE who believes, first to the Jew, then to the Greek. And Paul says the gospel reveals the righteousness of God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -433,7 +433,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Romans 1:17",
-          "text": "Then Paul backs it up with Scripture from the prophet Habakkuk (Hab 2:4): 'The righteous will live by faith.' Start to finish, friend, every batch, not just the first one.",
+          "text": "Then Paul backs it up with Scripture. Paul quotes the prophet Habakkuk (Habakkuk 2:4): 'The righteous will live by faith.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

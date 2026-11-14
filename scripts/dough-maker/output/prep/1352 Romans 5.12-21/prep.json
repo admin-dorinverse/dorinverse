@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Romans 5:12",
-          "text": "Paul is writing to God's people in Rome (Romans 1:1, 7), and he's just told them they've been made right with God through Jesus (Romans 5:1). Now he goes all the way back to Adam, the first man (Genesis 2:7). Sin came into the world through that one man, and death came in through sin.",
+          "text": "Paul is writing to God's people in Rome (Romans 1:1, 7), and he's just told them they've been made right with God through Jesus (Romans 5:1). Now he goes all the way back to Adam, the first man (1 Corinthians 15:45). Sin came into the world through that one man, and death came in through sin.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 5:14",
-          "question": "Even with no law to count sin, death didn't take a day off. Paul says death reigned from Adam until which man?",
+          "question": "Even with no law to count sin, death still reigned. Paul says death reigned from Adam until which man?",
           "answers": [
             {
               "text": "Moses",
@@ -72,18 +72,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Romans 5:14",
-          "question": "From Adam to Moses, Israel's leader, death reigned even over people who didn't sin the way Adam did.",
+          "question": "Paul says death reigned only over people who sinned the same way Adam did.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -106,11 +106,11 @@
               "correct": true
             },
             {
-              "text": "Moses",
+              "text": "Abraham",
               "correct": false
             },
             {
-              "text": "Noah",
+              "text": "Solomon",
               "correct": false
             }
           ],
@@ -152,7 +152,7 @@
               "correct": false
             },
             {
-              "text": "The law given through Moses",
+              "text": "The reign of death",
               "correct": false
             }
           ],
@@ -163,37 +163,27 @@
           "card": 10,
           "kind": "story",
           "verses": "Romans 5:16",
-          "text": "Paul lines them up: one sin on one side, many trespasses on the other. That second pile looks a LOT like my first week of baking.",
+          "text": "Paul lines them up: one sin on one side, many trespasses on the other. That second pile looks a LOT like my first week stamping cookies in the Millers' kitchen.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Romans 5:16",
-          "question": "The judgment that followed one sin brought ___, but the gift that followed many trespasses brought ___.",
+          "question": "Paul says the judgment that followed one sin brought condemnation. What did the gift that followed many trespasses bring?",
           "answers": [
             {
-              "text": "condemnation",
-              "correct": true,
-              "blank": 1
+              "text": "Being made right with God",
+              "correct": true
             },
             {
-              "text": "justification",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "warning",
+              "text": "A longer list of charges",
               "correct": false
             },
             {
-              "text": "reward",
-              "correct": false
-            },
-            {
-              "text": "silence",
+              "text": "One more final warning",
               "correct": false
             }
           ],
@@ -204,7 +194,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Romans 5:17",
-          "text": "Then Paul says by the trespass of the one man, death reigned through that one man. ONE man, and death's walking around like it owns the place.",
+          "text": "Then Paul says that by the trespass of the one man, death reigned through that one man. I think that one's heavy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -231,27 +221,28 @@
           "card": 14,
           "kind": "story",
           "verses": "Romans 5:18",
-          "text": "Paul sums it up, and the first half is rough: one trespass brought condemnation for all men. ONE trespass, and it lands on EVERYBODY, like one burnt batch setting off the smoke alarm for the whole building.",
+          "text": "Paul sums it up: one trespass brought condemnation for all men.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Romans 5:18",
-          "question": "One trespass brought condemnation for all men. According to Paul, what brought justification and life for all men?",
+          "question": "One trespass brought condemnation for all men, and one act of ___ brought justification and life for all men.",
           "answers": [
             {
-              "text": "One act of righteousness",
-              "correct": true
+              "text": "righteousness",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Many good works",
+              "text": "worship",
               "correct": false
             },
             {
-              "text": "Keeping the whole law",
+              "text": "judgment",
               "correct": false
             }
           ],
@@ -323,7 +314,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Romans 5:20",
-          "question": "The law came in so that the trespass would increase. What did grace do where sin increased?",
+          "question": "Paul says sin increased. What did grace do where sin increased?",
           "answers": [
             {
               "text": "It increased all the more",
@@ -359,15 +350,15 @@
               "blank": 2
             },
             {
-              "text": "law",
-              "correct": false
-            },
-            {
               "text": "fear",
               "correct": false
             },
             {
-              "text": "pride",
+              "text": "wrath",
+              "correct": false
+            },
+            {
+              "text": "shame",
               "correct": false
             }
           ],

@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Acts 25:1",
-          "text": "Paul has been locked up in Caesarea for two years, and now there's a new governor: Porcius Festus, who took over from Felix (Acts 24:27). Just three days after Festus arrives in the province, he goes up from Caesarea to Jerusalem. THREE DAYS in and he's already on the road, friend, when three days into a new job I'm still asking where they keep the cookie sheets.",
-          "needs_agent_fix": true,
+          "text": "Paul, the apostle, has been held in prison for two years under Felix, the governor (Acts 24:27). Now Porcius Festus takes over from Felix, and three days after arriving in the province, Festus goes up from Caesarea to Jerusalem. THREE DAYS in and he's already on the road, friend, while three days into my bakery I was still opening every cupboard hunting for the cookie sheets.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Acts 25:2-3",
-          "text": "They urge Festus to grant them a concession against Paul by summoning him to Jerusalem. Friend, it's the new guy's first week, and EVERYBODY wants something from the new guy.",
-          "needs_agent_fix": true,
+          "text": "The leaders urge Festus to grant them a concession against Paul by summoning him to Jerusalem. The governor is brand new, friend, and EVERYBODY wants something from the new guy.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,34 +64,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 25:4-5",
-          "question": "The leaders ask Festus to bring Paul to Jerusalem. Festus agrees to do it.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 25:4",
+          "text": "But Festus replies, “Paul is being held in Caesarea, and I myself am going there soon.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Acts 25:4-5",
-          "text": "Festus tells them Paul is being held in Caesarea and he's going there soon himself, so some of their leaders can come down with him and accuse Paul there. Somebody's got to go tell the ambush crew the plans changed.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Acts 25:5",
+          "question": "Festus won't summon Paul to Jerusalem. What does Festus tell the leaders to do if Paul has done anything wrong?",
+          "answers": [
+            {
+              "text": "Come down with him and accuse Paul there",
+              "correct": true
+            },
+            {
+              "text": "Send their charges to him in a letter",
+              "correct": false
+            },
+            {
+              "text": "Wait until Caesar can hear the case",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,7 +103,7 @@
           "kind": "story",
           "verses": "Acts 25:6",
           "text": "Festus spends no more than eight or ten days with them in Jerusalem. Then he heads back down to Caesarea.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -122,38 +126,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Acts 25:7",
-          "text": "Paul is brought in, and the Jews who came down from Jerusalem stand all around him, bringing many serious charges. Friend, if that many people circled me and pointed, I'd confess to eating cookies I never even touched.",
-          "needs_agent_fix": true,
+          "text": "Paul is brought in, and the Jews who came down from Jerusalem stand all around him, bringing many serious charges they can't prove. Friend, if that many people circled me and pointed, I'd confess to eating cookies I never even touched.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Acts 25:7",
-          "question": "The accusers from Jerusalem are able to prove the serious charges they bring against Paul.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 25:8",
@@ -172,27 +157,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Acts 25:9",
+          "question": "Festus, wishing to do the Jews a favor, asks Paul if he's willing to go up to Jerusalem to stand trial.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Acts 25:8",
-          "text": "Paul says, “I have committed no offense against the law of the Jews or against the temple or against Caesar.” Not the law, not the temple, not Caesar, friend, the man covered every base before anybody could even swing.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Acts 25:9",
-          "text": "But Festus, wishing to do the Jews a favor, asks Paul, “Are you willing to go up to Jerusalem to stand trial before me on these charges?” Friend, the new governor is passing out favors like I pass out cookies at the bakery door.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Acts 25:10",
@@ -207,69 +195,50 @@
               "correct": false
             },
             {
-              "text": "Before the magistrates of Tarsus",
+              "text": "Before the magistrates of Philippi",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Acts 25:10",
+          "text": "Paul tells Festus he has done nothing wrong to the Jews, as Festus himself knows very well. That's looking the judge right in the eye, friend, and saying, YOU already know this.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Acts 25:11",
+          "question": "Paul says that if he's guilty of anything worthy of death, he does not refuse to die.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Acts 25:10",
-          "question": "Paul tells Festus he has done nothing wrong to the Jews, and Festus himself ___ it.",
-          "answers": [
-            {
-              "text": "knows",
-              "correct": true
-            },
-            {
-              "text": "doubts",
-              "correct": false
-            },
-            {
-              "text": "denies",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Acts 25:11",
+          "text": "But if there's no truth to their accusations, Paul says no one has the right to hand him over to them, and then he says, “I appeal to Caesar!” Friend, I can't even own up to one burnt batch without blaming the oven, and this man just put his LIFE on the table.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Acts 25:11",
-          "text": "Then Paul says if he's guilty of anything worthy of death, he doesn't refuse to die, but if there's no truth to the accusations, no one has the right to hand him over to them. Friend, I can't even own up to burning one batch without blaming the oven, and this man is putting his LIFE on the table.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Acts 25:11",
-          "question": "Paul says no one has the right to hand him over to his accusers. What does Paul do next?",
-          "answers": [
-            {
-              "text": "He appeals to Caesar",
-              "correct": true
-            },
-            {
-              "text": "He asks for Lysias the commander",
-              "correct": false
-            },
-            {
-              "text": "He asks Felix to hear his case",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Acts 25:12",
@@ -284,15 +253,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "Acts 25:12",
           "text": "Festus tells Paul, “You have appealed to Caesar. To Caesar you will go!” Keep your apron on, friend, because Paul's road isn't done yet, and neither are we.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
