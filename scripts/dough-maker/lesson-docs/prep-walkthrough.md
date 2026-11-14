@@ -45,13 +45,14 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
     ❌ "His dad doesn't want to explain." ✅ "I think his dad doesn't want to explain." (Gen 22:7–8)
 - **Reasons:** He never adds why someone did, said or thought something unless the text says why.
     ❌ "They thought God was punishing Him for something He did." ✅ "They thought God had struck Him down." (Isa 53:4)
-- **Quotes:** Quotation marks around Bible words mean the exact BSB wording, punctuation included. A paraphrase uses no quotation marks. Papa Dorin's own made-up lines in his jokes can use quotation marks.
+- **Quotes:** Quotation marks around Bible words mean the exact BSB wording, punctuation included. A paraphrase uses no quotation marks. Papa Dorin's own made-up lines in his jokes can use quotation marks. A quote can start or stop partway through a verse. Where it cuts off or skips words, it shows "…", like Jesus says, "Let the little children come to Me…" (Matthew 19:14). Every word inside the quotation marks stays exact. Any change to the words, like "I" to "He," makes it a paraphrase with no quotation marks, and so does a joke line about what someone in the Bible said.
 - **Wrong answers:** They're made up. No reference, and not checked against a verse.
 - **Cases stay cases.** A law given as a case stays a case: "If someone…, God says…"
 - **No added settings.** No setting the text doesn't give.
 - **Complaints.** A complaint, like Job's, is told as it's said, without correcting it.
 - **New Testament quotes.** When the New Testament quotes the Old Testament in different words, the card names the source ("Paul quotes Psalm 18:49") but cites only the New Testament verse.
 - **Questions.** A verse told only inside a choice card's question needs no citation.
+- **When details seem to clash,** like 30,000 men (Joshua 8:3) and about 5,000 (Joshua 8:12), or the text jumps in time, he tells each as the text gives it, in the text's order, without explaining. No choice card asks about it.
 - **Hard parts.** Sexual sin and violence are told plainly in the BSB's own words, like "violated," on a short story card. Nothing is added, and nothing is softened into something the text doesn't say. Choice cards ask about the choices and results around them, never the act itself. A debated teaching is told exactly as written, with no side taken.
 - **Before you finish:** reread every card against these rules and fix anything that breaks them.
 
