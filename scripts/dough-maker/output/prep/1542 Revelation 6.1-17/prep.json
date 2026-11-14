@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Revelation 5:1-7",
-          "text": "John, Jesus' servant and the one writing this book, is in the Spirit and sees a throne standing in heaven (Revelation 1:1, 11; 4:1-2). The One seated on the throne holds a scroll sealed with seven seals, and the only one found worthy to open it is the Lamb, Jesus (John 1:29). The Lamb has taken the scroll, and the first seal is about to break.",
+          "verses": "Revelation 6:1",
+          "text": "John, who was told to write down what he sees (Revelation 1:11), has seen the One on heaven's throne holding a scroll sealed with seven seals (Revelation 4:2; 5:1). Only the Lamb, Jesus (John 1:29), was found worthy to open it (Revelation 5:4-9). Now John watches as the Lamb opens one of the seven seals.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,24 +17,16 @@
           "card": 2,
           "kind": "story",
           "verses": "Revelation 6:1",
-          "text": "The Lamb opens one of the seven seals, and one of the four living creatures around the throne (Revelation 4:6) says in a voice like thunder, \"Come!\" Friend, my oven timer dings and I jump a foot in the air, gold base and all, so a voice like THUNDER would send me through the roof.",
+          "text": "One of the four living creatures around the throne (Revelation 4:6) says in a voice like thunder, \"Come!\" Friend, my oven timer dings and I jump a foot in the air, gold base and all, so a voice like THUNDER would send me through the roof.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Revelation 6:2",
-          "text": "John looks and sees a white horse. Its rider holds a bow, and he's given a crown.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 6:2",
-          "question": "The rider on the white horse holds a bow and is given a crown. What does he ride out to do?",
+          "question": "John looks and sees a white horse. Its rider holds a bow and is given a crown. What does the rider ride out to do?",
           "answers": [
             {
               "text": "To overcome and conquer",
@@ -53,30 +45,50 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Revelation 6:3-4",
-          "text": "The Lamb opens the second seal, and the second living creature says, \"Come!\" Another horse goes forth, bright red this time, and friend, I'd be watching through my mustache like it's a scary movie.",
+          "text": "The Lamb opens the second seal, and the second living creature says, \"Come!\" Another horse goes forth, bright red, and its rider is granted permission to make men slay one another.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Revelation 6:4",
+          "question": "The red horse's rider is also granted permission to take away ___ from the earth.",
+          "answers": [
+            {
+              "text": "peace",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "joy",
+              "correct": false
+            },
+            {
+              "text": "hope",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Revelation 6:4",
-          "question": "The rider of the bright red horse is granted permission to take something away from the earth. What is it?",
+          "question": "The red horse's rider is given a great sword.",
           "answers": [
             {
-              "text": "Peace",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Light",
-              "correct": false
-            },
-            {
-              "text": "Rain",
+              "text": "False",
               "correct": false
             }
           ],
@@ -85,127 +97,56 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Revelation 6:4",
-          "question": "The rider of the red horse is also granted permission to make men slay one another, and he's given a great sword.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Revelation 6:5",
+          "text": "The Lamb opens the third seal, and the third living creature says, \"Come!\" This time John sees a black horse, and its rider holds a pair of scales in his hand.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Revelation 6:5",
-          "text": "The Lamb opens the third seal, and the third living creature calls, \"Come!\" This time John sees a black horse.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Revelation 6:6",
+          "question": "The black horse's rider holds a pair of scales. Then John hears what sounds like a voice from among the four living creatures. What does it call out?",
+          "answers": [
+            {
+              "text": "Prices for wheat and barley",
+              "correct": true
+            },
+            {
+              "text": "Names of the twelve tribes",
+              "correct": false
+            },
+            {
+              "text": "Words of praise to the Lamb",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 6:5",
-          "question": "The rider of the black horse holds a pair of ___ in his hand.",
-          "answers": [
-            {
-              "text": "scales",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "keys",
-              "correct": false
-            },
-            {
-              "text": "chains",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Revelation 6:6",
+          "text": "The voice says a quart of wheat for a denarius, three quarts of barley for a denarius, and not to harm the oil and wine. Friend, MY price was a 25-cent sticker in the bin of a bakery that was closing, and the woman who took me home still turned me over in her hands before she paid it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Revelation 6:6",
-          "text": "Then what sounds like a voice from among the four living creatures calls out a price: a quart of wheat for a denarius.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 6:6",
-          "question": "The voice calls out a second price too: three quarts of ___ for a denarius.",
-          "answers": [
-            {
-              "text": "barley",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "millet",
-              "correct": false
-            },
-            {
-              "text": "spelt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Revelation 6:6",
-          "question": "Along with the prices, the voice also says, \"do not harm the oil and wine.\"",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Revelation 6:6-7",
-          "text": "Mother Miller got me for a quarter, friend, and nobody EVER called out my price like that. Then the Lamb opens the fourth seal, and the fourth living creature calls, \"Come!\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 6:8",
-          "question": "John looks and sees a pale green horse. What is the name of its rider?",
+          "question": "The Lamb opens the fourth seal, the fourth living creature says, \"Come!\" and John sees a pale green horse. What is its rider's name?",
           "answers": [
             {
               "text": "Death",
               "correct": true
             },
             {
-              "text": "Abaddon",
+              "text": "Legion",
               "correct": false
             },
             {
@@ -217,7 +158,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 6:8",
@@ -236,34 +177,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 6:8",
-          "question": "Death and Hades are given authority over a ___ of the earth.",
-          "answers": [
-            {
-              "text": "fourth",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "third",
-              "correct": false
-            },
-            {
-              "text": "tenth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
+          "card": 12,
           "kind": "story",
           "verses": "Revelation 6:8",
-          "text": "They're given authority to kill by sword, by famine, by plague and by the beasts of the earth.",
+          "text": "This part is heavy, friend. Death and Hades are given authority over a fourth of the earth, to kill by sword, by famine, by plague and by the beasts of the earth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -293,11 +210,11 @@
               "correct": true
             },
             {
-              "text": "For refusing to worship a golden idol",
+              "text": "For breaking the laws of their nation",
               "correct": false
             },
             {
-              "text": "For fighting in a great war",
+              "text": "For fighting in the armies of the king",
               "correct": false
             }
           ],
@@ -308,79 +225,43 @@
           "card": 3,
           "kind": "story",
           "verses": "Revelation 6:10",
-          "text": "They cry out in a loud voice, \"How long, O Lord, holy and true, until You judge those who dwell upon the earth and avenge our blood?\" Friend, I spent years in a junk drawer asking how long, so I feel this one.",
+          "text": "They cry out in a loud voice, \"How long, O Lord, holy and true, until You judge those who dwell upon the earth and avenge our blood?\" Friend, I feel that one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Revelation 6:11",
-          "question": "After they cry out, each of the souls under the altar is given a white ___.",
+          "question": "The souls under the altar asked how long. Each of them is given a white robe. What are they told to do?",
           "answers": [
             {
-              "text": "robe",
-              "correct": true,
-              "blank": 1
+              "text": "Rest a little while longer",
+              "correct": true
             },
             {
-              "text": "crown",
+              "text": "Go down and judge the earth",
               "correct": false
             },
             {
-              "text": "stone",
+              "text": "Sing a new song to the Lamb",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Revelation 6:11",
-          "question": "The souls under the altar asked how long. They're told their wait is over and judgment comes right now.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "They're to rest until the full number of their fellow servants, their brothers, are killed, just as they had been killed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 6:11",
-          "question": "The souls are told to rest a little while longer, until the full number of their fellow ___ are killed, just as they had been killed.",
-          "answers": [
-            {
-              "text": "servants",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "soldiers",
-              "correct": false
-            },
-            {
-              "text": "rulers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "story",
           "verses": "Revelation 6:12",
           "text": "Then the Lamb opens the sixth seal, and there's a great earthquake. Friend, my whole counter rattles when the mixer gets going, and that is NOTHING like this.",
@@ -388,7 +269,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 6:12",
@@ -411,22 +292,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Revelation 6:12",
-          "question": "While the sun goes black, what happens to the whole moon?",
+          "question": "When the sixth seal is opened, the whole moon turns blood red.",
           "answers": [
             {
-              "text": "It turns blood red",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "It vanishes from the sky",
-              "correct": false
-            },
-            {
-              "text": "It shines bright as day",
+              "text": "False",
               "correct": false
             }
           ],
@@ -434,7 +311,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Revelation 6:13",
           "text": "The stars of the sky fall to the earth like unripe figs dropping from a tree shaken by a great wind. Me? I lose it when ONE sprinkle rolls off my counter.",
@@ -442,7 +319,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 6:14",
@@ -466,11 +343,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 6:14",
-          "question": "As the sky recedes, every mountain and island is moved from its place.",
+          "question": "When the sky recedes, every mountain and island is moved from its place.",
           "answers": [
             {
               "text": "True",
@@ -485,7 +362,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Revelation 6:15",
           "text": "Then everybody hides: the kings of the earth, the nobles, the commanders, the rich, the mighty, and every slave and free man. EVERYBODY.",
@@ -493,22 +370,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Revelation 6:15",
-          "question": "The kings and everyone else go into hiding. Where do they hide?",
+          "question": "The kings and everyone with them hide in the ___ and among the rocks of the mountains.",
           "answers": [
             {
-              "text": "In the caves and among the rocks",
-              "correct": true
+              "text": "caves",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "In the temple and its courts",
+              "text": "towers",
               "correct": false
             },
             {
-              "text": "Behind the walls of the city",
+              "text": "palaces",
               "correct": false
             }
           ],
@@ -516,11 +394,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 6:16",
-          "question": "From their hiding places, they call to the mountains and the rocks, \"Fall on us and hide us\". Who are they hiding from?",
+          "question": "The people hiding call to the mountains and the rocks, \"Fall on us and hide us…\" Who are they hiding from?",
           "answers": [
             {
               "text": "The One on the throne and the Lamb",
@@ -539,11 +417,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 6:17",
-          "question": "They say the great day of Their wrath has come, and they're sure they can withstand it.",
+          "question": "The people hiding say they're able to withstand the great day of wrath.",
           "answers": [
             {
               "text": "True",
@@ -558,10 +436,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Revelation 6:17",
-          "text": "Six seals are open, and one is still sealed. Hang on to your apron, friend, because this scroll has more to show us.",
+          "text": "Six seals open, and the scroll had seven. Hang on to your apron, friend, because this story's not done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

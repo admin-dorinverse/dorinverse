@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "\"servants\" is a wrong answer here, but it was the right answer on card 6 of this same stop. An answer already shown on an earlier card is reused.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 4
+      },
+      "problem": "Verse 2 begins \"if the message spoken by angels was binding…\". The question says the writer states as fact that the message \"was binding\", and drops the \"if\".",
+      "rule": "Keep \"like,\" \"as,\" \"if\" and \"though\" as they are."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 2
+      },
+      "problem": "Card 1 already quotes the line and asks which angel God ever said it to. Card 2 then asks the same fact, so the answer is effectively given just before the question.",
+      "rule": "No card ever gives away the answer to a choice card that comes later. ... An easy follow-up asks something new. It never re-asks the same fact."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 2
+      },
+      "problem": "The True statement (pay closer attention so that we do not drift away) just repeats what story card 1 said (\"We must pay closer attention to what we have heard\"), plus the verse's closing phrase.",
+      "rule": "A True statement never just repeats the card before it."
+    }
+  ]
+}

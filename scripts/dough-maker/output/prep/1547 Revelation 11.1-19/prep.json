@@ -8,9 +8,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Revelation 10:10-11:1",
-          "text": "John, who's been seeing these visions, just ate a small scroll and was told to prophesy again. Now he's handed a measuring rod like a staff. Friend, I measure flour EVERY day, and half of it still ends up in my mustache!",
-          "needs_agent_fix": true,
+          "verses": "Revelation 11:1",
+          "text": "John, the one seeing these visions (Revelation 1:9), just ate a small scroll and was told to prophesy again (Revelation 10:10-11). Now he's handed a measuring rod like a staff and told to measure the temple of God and the altar. Friend, I measure flour EVERY day, and half of it still ends up in my mustache!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,72 +18,38 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 11:1",
-          "question": "John's holding the measuring rod. What's he told to go and measure?",
+          "question": "Besides measuring the temple of God and the altar, what is John told to count?",
           "answers": [
             {
-              "text": "The temple of God and the altar",
+              "text": "The worshipers there",
               "correct": true
             },
             {
-              "text": "The walls and gates of the city",
+              "text": "The stones in the altar",
               "correct": false
             },
             {
-              "text": "The tents of the camp of Israel",
+              "text": "The gates of the city",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Revelation 11:1",
-          "question": "Along with measuring, John is told to count the number of worshipers there.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Revelation 11:2",
+          "text": "But one part is left out. John is told not to measure the courtyard outside the temple.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Revelation 11:2",
-          "question": "John is told to leave one area unmeasured. Which one?",
-          "answers": [
-            {
-              "text": "The courtyard outside the temple",
-              "correct": true
-            },
-            {
-              "text": "The Most Holy Place inside",
-              "correct": false
-            },
-            {
-              "text": "The steps up to the altar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 11:2",
-          "question": "John skips the courtyard outside the temple because it's too holy to be measured.",
+          "question": "John is told not to measure the courtyard outside the temple because it's too holy to be measured.",
           "answers": [
             {
               "text": "True",
@@ -94,31 +60,46 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Revelation 11:2",
+          "question": "The courtyard has been given over to the nations. For 42 months, they will ___ the holy city.",
+          "answers": [
+            {
+              "text": "trample",
+              "correct": true
+            },
+            {
+              "text": "rebuild",
+              "correct": false
+            },
+            {
+              "text": "guard",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Revelation 11:2",
-          "text": "Nope. The courtyard has been given over to the nations, and they'll trample the holy city for 42 months.",
-          "needs_agent_fix": true,
+          "verses": "Revelation 11:3",
+          "text": "The one speaking to John goes on: \"And I will empower my two witnesses, and they will prophesy for 1,260 days…\" 1,260 DAYS, baker, and I used to think my double shifts at the oven were long!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Revelation 11:3",
-          "text": "Then the one speaking promises to empower two witnesses, who will prophesy for 1,260 days. 1,260 DAYS, baker, and I used to think my double shifts at the oven were long!",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 11:3",
-          "question": "The two witnesses are about to prophesy for 1,260 days. What are they clothed in?",
+          "question": "The two witnesses will prophesy for 1,260 days. What will they be clothed in?",
           "answers": [
             {
               "text": "Sackcloth",
@@ -133,46 +114,54 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Revelation 11:4",
+          "text": "John tells us who these witnesses are. They're the two olive trees and the two lampstands that stand before the Lord of the earth.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "Revelation 11:4",
-          "text": "John tells us who these witnesses are. They're the two olive trees and the two lampstands that stand before the Lord of the earth.",
-          "needs_agent_fix": true,
+          "verses": "Revelation 11:5",
+          "text": "Now listen to me, friend. If anyone wants to harm these two, fire comes out of their mouths.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Revelation 11:5",
-          "text": "Now listen to me. These two are NOT the ones you want to pick a fight with.",
-          "needs_agent_fix": true,
+          "question": "Fire comes out of the two witnesses' mouths when anyone wants to harm them. What does the fire do?",
+          "answers": [
+            {
+              "text": "It devours their enemies",
+              "correct": true
+            },
+            {
+              "text": "It purifies the holy city",
+              "correct": false
+            },
+            {
+              "text": "It lights up the temple",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Revelation 11:5",
-          "question": "What happens if anyone wants to harm the two witnesses?",
-          "answers": [
-            {
-              "text": "Fire comes out of their mouths",
-              "correct": true
-            },
-            {
-              "text": "The ground opens up beneath them",
-              "correct": false
-            },
-            {
-              "text": "An angel strikes them blind",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "In this way, anyone who wants to harm them must be killed. And that's not all these two can do.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -191,7 +180,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -214,7 +203,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -222,7 +211,7 @@
           "kind": "story",
           "verses": "Revelation 11:6",
           "text": "And they can strike the earth with every kind of plague, as often as they wish. Baker, the most power anybody had in my old junk drawer was the dead batteries, and they couldn't even run a flashlight.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -235,27 +224,27 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 11:7",
-          "text": "The two witnesses carry out their testimony. But when they finish it, something comes up from the Abyss to wage war with them.",
+          "text": "When the two witnesses have finished their testimony, something that comes up from the Abyss will wage war with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Revelation 11:7",
-          "question": "When the two witnesses finish their testimony, the ___ that comes up from the Abyss wages war with them.",
+          "question": "Something that comes up from the Abyss will wage war with the two witnesses. What is it?",
           "answers": [
             {
-              "text": "beast",
+              "text": "The beast",
               "correct": true
             },
             {
-              "text": "dragon",
+              "text": "The dragon",
               "correct": false
             },
             {
-              "text": "serpent",
+              "text": "The false prophet",
               "correct": false
             }
           ],
@@ -267,7 +256,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 11:7",
-          "question": "The beast overpowers and kills the two witnesses.",
+          "question": "The beast will overpower and kill the two witnesses.",
           "answers": [
             {
               "text": "True",
@@ -285,27 +274,27 @@
           "card": 4,
           "kind": "story",
           "verses": "Revelation 11:8",
-          "text": "Their bodies lie in the street of the great city, the one figuratively called Sodom and Egypt.",
+          "text": "Their bodies will lie in the street of the great city, the one figuratively called Sodom and Egypt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Revelation 11:8",
-          "question": "The great city where the witnesses' bodies lie gets one more description. What is it?",
+          "question": "The great city where the two witnesses' bodies will lie is also where their Lord was ___.",
           "answers": [
             {
-              "text": "Where their Lord was also crucified",
+              "text": "crucified",
               "correct": true
             },
             {
-              "text": "Where the ark of God was captured",
+              "text": "born",
               "correct": false
             },
             {
-              "text": "Where King David was first anointed",
+              "text": "baptized",
               "correct": false
             }
           ],
@@ -316,7 +305,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Revelation 11:9",
-          "text": "For three and a half days, all peoples and tribes and tongues and nations look at their bodies.",
+          "text": "For three and a half days, all peoples and tribes and tongues and nations will view their bodies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -325,7 +314,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 11:9",
-          "question": "For three and a half days, the nations view the two witnesses' bodies. What won't they permit?",
+          "question": "For three and a half days, the nations will view the two witnesses' bodies. What won't they permit?",
           "answers": [
             {
               "text": "The bodies to be laid in a tomb",
@@ -336,7 +325,7 @@
               "correct": false
             },
             {
-              "text": "Anyone to look upon the bodies",
+              "text": "Anyone to speak the prophets' names",
               "correct": false
             }
           ],
@@ -348,7 +337,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 11:10",
-          "question": "Those who dwell on the earth gloat over the two witnesses and send one another gifts.",
+          "question": "As the two witnesses' bodies lie in the street, those who dwell on the earth will send one another gifts.",
           "answers": [
             {
               "text": "True",
@@ -367,7 +356,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 11:10",
-          "question": "The people of the earth celebrate because these two prophets had ___ them.",
+          "question": "Those who dwell on the earth will celebrate because these two prophets had ___ them.",
           "answers": [
             {
               "text": "tormented",
@@ -439,8 +428,8 @@
           "card": 13,
           "kind": "story",
           "verses": "Revelation 11:11",
-          "text": "Great fear falls on everyone who sees them. Baker, I jump half off my gold base when the oven timer dings, and I'M the one who SET it!",
-          "needs_agent_fix": true,
+          "text": "Great fear falls on those who see them. Baker, I jump a foot in the air, gold base and all, when the oven timer dings, and I'M the one who SET it!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -470,8 +459,8 @@
           "card": 15,
           "kind": "story",
           "verses": "Revelation 11:12-13",
-          "text": "\"Come up here.\" That's all the voice says, and up they go. And in that hour, a great earthquake hits the city.",
-          "needs_agent_fix": true,
+          "text": "All the voice says is \"Come up here.\" And in that hour, a great earthquake hits the city.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -548,7 +537,7 @@
           "verses": "Revelation 11:15",
           "text": "Then the seventh angel sounds his trumpet, and loud voices call out in heaven. This is THE trumpet, baker, and I got goosebumps all the way down to my gold base.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -571,33 +560,33 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 11:15",
-          "question": "After announcing that the kingdom of the world has become the kingdom of our Lord and of His Christ, the voices in heaven say He will reign for a thousand years.",
+          "question": "After announcing that the kingdom of the world has become the kingdom of our Lord and of His Christ, the voices in heaven say He will reign forever and ever.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Revelation 11:16",
-          "text": "Forever and ever, friend. Then the twenty-four elders who sit on their thrones before God respond.",
-          "needs_agent_fix": true,
+          "text": "Then the twenty-four elders who sit on their thrones before God respond.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -627,7 +616,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Revelation 11:17",
-          "text": "As they worship, they say, \"We give thanks to You, O Lord God Almighty, the One who is and who was\" and they're not done.",
+          "text": "As they worship, they say, \"We give thanks to You, O Lord God Almighty, the One who is and who was…\" And they're not done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -667,28 +656,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 11:18",
-          "question": "The elders say the time has come to ___ the dead and to ___ God's servants the prophets.",
+          "question": "The elders say God's wrath has come, and the time has come to ___ the dead.",
           "answers": [
             {
               "text": "judge",
-              "correct": true,
-              "blank": 1
+              "correct": true
             },
             {
-              "text": "reward",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "bury",
+              "text": "mourn",
               "correct": false
             },
             {
-              "text": "gather",
-              "correct": false
-            },
-            {
-              "text": "warn",
+              "text": "count",
               "correct": false
             }
           ],
@@ -700,15 +679,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 11:18",
-          "question": "The elders say the reward is also for the saints and those who fear God's name, both small and great.",
+          "question": "The elders say the time has come to reward only God's servants the prophets.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -718,8 +697,8 @@
           "card": 12,
           "kind": "story",
           "verses": "Revelation 11:18",
-          "text": "Small AND great, baker. That means a 25-cent stamper from a bargain bin is on the list too.",
-          "needs_agent_fix": true,
+          "text": "The reward is also for the saints and those who fear God's name, both small and great. Small AND great, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -749,7 +728,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Revelation 11:19",
-          "text": "Then the temple of God in heaven is opened. I've waited by an oven door my whole life, friend, but THIS door?",
+          "text": "Then the temple of God in heaven is opened. Friend, lean in close for this one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -778,14 +757,6 @@
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Revelation 11:19",
-          "text": "And heaven doesn't open quietly.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 11:19",

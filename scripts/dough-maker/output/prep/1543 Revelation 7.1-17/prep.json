@@ -9,39 +9,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 7:1",
-          "text": "God's servant John is being shown a vision (Revelation 1:1). He just watched the Lamb, Jesus (John 1:29), open the sixth seal, and people on earth were asking who is able to withstand it (Revelation 6:12-17). Now, after this, John sees four angels standing at the four corners of the earth, and every one of them is holding something back.",
-          "needs_agent_fix": true,
+          "text": "God's servant John is being shown a vision (Revelation 1:1), and he just watched the Lamb, Jesus (John 1:29), open the sixth seal. People on earth hid and asked who is able to withstand it (Revelation 6:12-17). Now, after this, John sees four angels standing at the four corners of the earth, holding back its four winds.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 7:1",
-          "question": "The angels at the four corners of the earth are holding back its four ___.",
-          "answers": [
-            {
-              "text": "winds",
-              "correct": true
-            },
-            {
-              "text": "rivers",
-              "correct": false
-            },
-            {
-              "text": "horses",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 7:1",
-          "question": "With the four winds held back, the sea stays calm but the land still gets a breeze.",
+          "question": "With the four winds held back by the angels, a breeze can still blow on the trees.",
           "answers": [
             {
               "text": "True",
@@ -52,15 +29,34 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "story",
+          "verses": "Revelation 7:2",
+          "text": "Then John sees another angel coming up from the east, carrying a seal. And this one is NOT whispering when he calls out in a loud voice to the four angels.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Revelation 7:2",
-          "text": "Then John sees another angel coming up from the east, carrying the seal of the living God. And this one is NOT whispering when he calls out in a loud voice to the four angels.",
-          "needs_agent_fix": true,
+          "question": "The seal this angel from the east is carrying is the seal of the living God.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -83,7 +79,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +87,7 @@
           "kind": "story",
           "verses": "Revelation 7:3",
           "text": "His message to them is basically: not yet, not until one thing gets done first. Friend, it's holding the elevator door with your whole arm going WAIT, WAIT, ONE MORE!",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -114,69 +110,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 7:3",
-          "question": "The angel says the seal goes on the ___ of the servants of our God.",
-          "answers": [
-            {
-              "text": "foreheads",
-              "correct": true
-            },
-            {
-              "text": "hands",
-              "correct": false
-            },
-            {
-              "text": "robes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Revelation 7:3-4",
+          "text": "The seal goes on the foreheads of God's servants. Then John hears the number of those who were sealed: 144,000.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Revelation 7:4",
-          "text": "Then John hears the number of those who were sealed. 144,000.",
-          "needs_agent_fix": true,
+          "question": "The 144,000 who were sealed come from all the tribes of ___.",
+          "answers": [
+            {
+              "text": "Israel",
+              "correct": true
+            },
+            {
+              "text": "Midian",
+              "correct": false
+            },
+            {
+              "text": "Edom",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Revelation 7:4",
-          "question": "Where do the 144,000 who were sealed come from?",
-          "answers": [
-            {
-              "text": "All the tribes of Israel",
-              "correct": true
-            },
-            {
-              "text": "The seven churches in Asia",
-              "correct": false
-            },
-            {
-              "text": "The city of Jerusalem",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "story",
           "verses": "Revelation 7:5-8",
-          "text": "Then John hears it tribe by tribe, starting with Judah and ending with Benjamin: twelve tribes, 12,000 sealed from each one. Friend, I shared a drawer with a stack of receipts nobody would ever need, and NOT ONE of them was this organized.",
-          "needs_agent_fix": true,
+          "text": "Then John hears it tribe by tribe, from Judah to Benjamin, with 12,000 sealed from each one. Every tribe named gets the exact same number. Friend, I can't split ONE batch evenly between two cookie boxes without somebody getting all the broken ones.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -189,8 +162,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 7:9",
-          "text": "After this, John looks and sees a multitude too large to count, standing before the throne and before the Lamb. Friend, I counted falling dust for FUN in that junk drawer, and even I would give up on this crowd.",
-          "needs_agent_fix": true,
+          "text": "After this, John looks and sees a multitude too large to count, standing before the throne and before the Lamb. Friend, back when I was stuck in a junk drawer I counted falling dust for FUN, and even I would give up on this crowd.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -213,7 +186,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -232,7 +205,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -240,7 +213,7 @@
           "kind": "story",
           "verses": "Revelation 7:9-10",
           "text": "They're wearing white robes and holding palm branches in their hands. Then the whole multitude cries out in a loud voice.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -248,24 +221,14 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 7:10",
-          "question": "The multitude cries out: salvation to our ___, who sits on the throne, and to the ___!",
+          "question": "The multitude cries out: salvation to our God, who sits on the throne, and to the ___!",
           "answers": [
             {
-              "text": "God",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "Lamb",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "Prophet",
-              "correct": false
-            },
-            {
-              "text": "Angels",
               "correct": false
             },
             {
@@ -273,42 +236,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Revelation 7:11",
-          "text": "All the angels are standing around the throne, around the elders and the four living creatures who are around God's throne (Revelation 4:4, 6). Then the angels fall facedown before the throne and worship God.",
-          "needs_agent_fix": true,
+          "text": "All the angels are standing around the throne, around the elders and the four living creatures who are around God's throne (Revelation 4:4, 6). And then those angels do something right there before the throne.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Revelation 7:12",
-          "text": "Between an Amen at the start and an Amen at the end, they give God blessing, glory, wisdom, thanks, honor, power and strength. That's SEVEN in a row, friend, and I've only got six toppings and I STILL mix those up.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Revelation 7:11",
+          "question": "What do all the angels standing around the throne do next?",
+          "answers": [
+            {
+              "text": "Fall facedown and worship God",
+              "correct": true
+            },
+            {
+              "text": "Cover their faces with their wings",
+              "correct": false
+            },
+            {
+              "text": "Blow trumpets toward the earth",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Revelation 7:12",
-          "question": "The angels give God blessing, glory, honor and more, and they say it's His for a little while.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Between an Amen at the start and an Amen at the end, they say blessing, glory, wisdom, thanks, honor, power and strength be to our God forever and ever. That's SEVEN in a row, friend, and I've only got six toppings and I STILL mix those up.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -316,30 +283,26 @@
           "kind": "story",
           "verses": "Revelation 7:13",
           "text": "Then one of the elders turns to John with a question about all these people in white robes.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Revelation 7:13",
-          "question": "The elder asks John two things about the people in white robes. Which two?",
+          "question": "The elder asks John where the people in white robes have come from.",
           "answers": [
             {
-              "text": "Who they are and where they came from",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "How many there are and when they came",
-              "correct": false
-            },
-            {
-              "text": "What their names are and who sent them",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -347,7 +310,7 @@
           "kind": "story",
           "verses": "Revelation 7:14",
           "text": "John calls the elder sir and tells him he's the one who knows. Friend, I'm STEALING that move for the next time somebody asks me something I can't answer.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -370,30 +333,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Revelation 7:14",
-          "question": "The elder says the people in white robes have washed their robes and made them white in the ___ of the Lamb.",
+          "question": "The elder says the people in white robes have washed their robes and made them white. In what?",
           "answers": [
             {
-              "text": "blood",
+              "text": "The blood of the Lamb",
               "correct": true
             },
             {
-              "text": "light",
+              "text": "The waters of the Jordan",
               "correct": false
             },
             {
-              "text": "water",
+              "text": "The pool of Siloam",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -401,7 +364,7 @@
           "kind": "story",
           "verses": "Revelation 7:15",
           "text": "For this reason, they're before the throne of God, serving Him day and night in His temple. And the One seated on the throne will spread His tabernacle over them.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -420,15 +383,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Revelation 7:16",
-          "text": "Never again will they hunger or thirst, and no sun or scorching heat will beat down on them. Friend, I stand next to a hot oven ALL day, so that last part has Papa LISTENING.",
-          "needs_agent_fix": true,
+          "text": "The elder quotes Isaiah 49:10: never again will they hunger or thirst, and no sun or scorching heat will beat down on them. Friend, I stand next to a hot oven ALL day, so that last part has Papa LISTENING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -451,7 +414,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -459,7 +422,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 7:17",
-          "question": "The Lamb will lead them to springs of living ___, and God will wipe away every ___ from their eyes.",
+          "question": "Quoting Isaiah 49:10 and 25:8, the elder says the Lamb will lead the people in white robes to springs of living ___, and God will wipe away every ___ from their eyes.",
           "answers": [
             {
               "text": "water",
@@ -484,7 +447,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -492,7 +455,7 @@
           "kind": "story",
           "verses": "Revelation 7:17",
           "text": "Hold that picture, friend. John's vision keeps going after this, and so do we.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -38,9 +38,24 @@
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "James 2:15",
-          "text": "Then James paints a picture, and it's not a pretty one. Suppose a brother or sister is without clothes and daily food.",
+          "question": "Then James paints a picture of a brother or sister in real need. What are they without?",
+          "answers": [
+            {
+              "text": "Clothes and daily food",
+              "correct": true
+            },
+            {
+              "text": "A home and steady work",
+              "correct": false
+            },
+            {
+              "text": "Family and friends",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -55,29 +70,6 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "James 2:16",
-          "question": "A brother or sister has no clothes and no daily food, and all they get from you is warm words. What good does James say that does?",
-          "answers": [
-            {
-              "text": "No real good at all",
-              "correct": true
-            },
-            {
-              "text": "Enough to lift their spirits",
-              "correct": false
-            },
-            {
-              "text": "A good start for now",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "James 2:17",
           "question": "James ties his picture back to faith. Faith by itself, if it does not result in action, is ___.",
@@ -91,7 +83,7 @@
               "correct": false
             },
             {
-              "text": "growing",
+              "text": "hidden",
               "correct": false
             }
           ],
@@ -99,15 +91,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "James 2:18",
-          "text": "Then James lets someone argue back: 'You have faith and I have deeds.' Like faith and deeds are toppings at my bakery, and you just pick sprinkles OR chocolate chips.",
+          "text": "Then James says someone will say, 'You have faith and I have deeds.' Like splitting a pair of shoes: you take the left one, I'll take the right one, and we're BOTH hopping to work.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "James 2:18",
@@ -130,7 +122,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "James 2:19",
           "text": "Then James says, 'You believe that God is one. Good for you!' Friend, I think that 'Good for you!' comes with a raised eyebrow, and I know a thing or two about eyebrows.",
@@ -138,26 +130,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "James 2:19",
-          "question": "Believing that God is one is good. But James says even the ___ believe that, and shudder.",
+          "question": "Even the demons believe that God is one, James says. True or false: they rejoice about it.",
           "answers": [
             {
-              "text": "demons",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Romans",
-              "correct": false
-            },
-            {
-              "text": "Gentiles",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -171,73 +159,42 @@
           "kind": "story",
           "verses": "James 2:20",
           "text": "James keeps going, and now he gets direct: 'O foolish man, do you want evidence that faith without deeds is worthless?' Ohhh, James is bringing RECEIPTS.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "James 2:21",
-          "question": "James brings out his evidence that faith without deeds is worthless. Who does he call our father?",
-          "answers": [
-            {
-              "text": "Abraham",
-              "correct": true
-            },
-            {
-              "text": "Moses",
-              "correct": false
-            },
-            {
-              "text": "David",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "For his first piece of evidence, James goes straight to the top: our father Abraham. He says Abraham was justified by what he did when he offered his son Isaac on the altar.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "James 2:21",
-          "text": "Abraham! James goes straight to the top and says Abraham was justified by what he did.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "James 2:22",
+          "question": "Abraham offered his son Isaac on the altar. What does James say Abraham's faith was doing alongside his actions?",
+          "answers": [
+            {
+              "text": "Working with them",
+              "correct": true
+            },
+            {
+              "text": "Standing apart from them",
+              "correct": false
+            },
+            {
+              "text": "Pulling against them",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "James 2:21",
-          "question": "James says Abraham was justified by what he did. What did Abraham do?",
-          "answers": [
-            {
-              "text": "Offered his son Isaac on the altar",
-              "correct": true
-            },
-            {
-              "text": "Gave all he had to the poor",
-              "correct": false
-            },
-            {
-              "text": "Built a temple for the LORD",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "James 2:22",
-          "text": "James says Abraham's faith was working with his actions. Friend, dough with no oven isn't a cookie, it's just a STICKY situation.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "James 2:22",
@@ -248,7 +205,7 @@
               "correct": true
             },
             {
-              "text": "replaced",
+              "text": "weakened",
               "correct": false
             },
             {
@@ -256,38 +213,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 5,
           "kind": "story",
           "verses": "James 2:23",
-          "text": "And the Scripture was fulfilled that says, 'Abraham believed God, and it was credited to him as righteousness,' straight out of Genesis 15:6.",
-          "needs_agent_fix": true,
+          "text": "And James says Genesis 15:6 was fulfilled: 'Abraham believed God, and it was credited to him as righteousness,' and Abraham was called a friend of God. A FRIEND of God! Meanwhile the best name I ever got back in the Millers' junk drawer was 'what even IS this thing?'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "James 2:23",
-          "question": "True or false: Abraham was called a friend of God.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "James 2:24",
@@ -302,69 +240,61 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 7,
           "kind": "story",
           "verses": "James 2:25",
-          "text": "Then James says, 'In the same way,' and I bet nobody saw his next name coming. Rahab the prostitute, a woman of Jericho (Joshua 2:1), was justified by her actions too!",
-          "needs_agent_fix": true,
+          "text": "Then James says, 'In the same way,' and brings out a second example: Rahab the prostitute. She lived in Jericho, the city Joshua sent two spies to look over (Joshua 2:1).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "James 2:25",
-          "question": "James says Rahab was justified by her actions. What did Rahab do?",
+          "question": "James says Rahab of Jericho was justified by her actions. What did she do?",
           "answers": [
             {
-              "text": "Welcomed the spies and sent them another way",
+              "text": "Welcomed the spies and sent them off another way",
               "correct": true
             },
             {
-              "text": "Hid the ark and kept it safe",
+              "text": "Turned the spies over to the king",
               "correct": false
             },
             {
-              "text": "Fed the prophets hiding in a cave",
+              "text": "Kept the spies out of her house",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "James 2:26",
-          "text": "James wraps it up with one last picture, one every one of us knows: a body without the spirit.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "James 2:26",
-          "question": "James ends with a picture of a body without the spirit. What does he say that body and faith without deeds have in common?",
+          "question": "James wraps it up with one last picture. Faith without deeds is dead, just like what?",
           "answers": [
             {
-              "text": "Both are dead",
+              "text": "A body without the spirit",
               "correct": true
             },
             {
-              "text": "Both are asleep",
+              "text": "A tree without its fruit",
               "correct": false
             },
             {
-              "text": "Both are weak",
+              "text": "A lamp without its oil",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

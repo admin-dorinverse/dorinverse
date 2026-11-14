@@ -67,12 +67,36 @@
           "card": 5,
           "kind": "story",
           "verses": "Hebrews 1:2",
-          "text": "That Son is Jesus, the Son of God (Hebrews 4:14). And He isn't just a messenger: God appointed Him heir of all things.",
+          "text": "That Son is Jesus, the Son of God (Hebrews 4:14). And He isn't just a messenger.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Hebrews 1:2",
+          "question": "God appointed His Son ___ of all things.",
+          "answers": [
+            {
+              "text": "heir",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "steward",
+              "correct": false
+            },
+            {
+              "text": "witness",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 1:2",
@@ -91,15 +115,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "Hebrews 1:3",
-          "text": "The Son is the radiance of God's glory and the exact representation of His nature. I'm a stamper, friend, and EXACT is a word I could only dream about back in that drawer.",
+          "text": "Listen to how the writer describes the Son: He is the radiance of God's glory and the exact representation of His nature.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 1:3",
@@ -122,35 +146,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "Hebrews 1:3",
-          "text": "ALL things, and I need my whole mustache just to hold up ONE cookie box. Then the writer tells what the Son did about sins.",
+          "text": "ALL things, and I need my whole mustache just to hold up ONE cookie box. Then the writer says the Son provided purification for sins.",
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Hebrews 1:3",
-          "question": "The Son provided ___ for sins.",
-          "answers": [
-            {
-              "text": "purification",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "permission",
-              "correct": false
-            },
-            {
-              "text": "instruction",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         },
         {
@@ -180,7 +180,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Hebrews 1:4",
-          "text": "Now the writer brings in the angels. I've met one, friend, and I spent the whole time squinting into the light asking if he had the right drawer.",
+          "text": "Now the writer brings in the angels. I've met one, friend, the angel who called me out of that junk drawer, and I kept asking him if he had the right drawer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -221,7 +221,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Hebrews 1:5",
-          "text": "Now the writer shows the Son is above the angels, and the proof starts with a question. To which of the angels did God ever say, \"You are My Son; today I have become Your Father\"?",
+          "text": "Now the writer shows the Son is above the angels, and the proof starts with a question. To which of the angels did God ever say certain words?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -230,18 +230,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 1:5",
-          "question": "The writer asks which angel God ever said \"You are My Son\" to. What answer is the writer expecting?",
+          "question": "What words does the writer say God never said to any of the angels?",
           "answers": [
             {
-              "text": "Not a single angel",
+              "text": "You are My Son",
               "correct": true
             },
             {
-              "text": "Only the highest angel",
+              "text": "You are My priest",
               "correct": false
             },
             {
-              "text": "Every angel in heaven",
+              "text": "You are My prophet",
               "correct": false
             }
           ],
@@ -252,59 +252,59 @@
           "card": 3,
           "kind": "story",
           "verses": "Hebrews 1:5-6",
-          "text": "Then comes another line: \"I will be His Father, and He will be My Son\". And when God brings His firstborn into the world, He says something about all His angels.",
+          "text": "Then comes another line: \"I will be His Father, and He will be My Son\". And when God brings His firstborn into the world, He says something about how all God's angels should treat Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Hebrews 1:6",
-          "question": "When God brings His firstborn into the world, He says to let all God's angels ___ Him.",
+          "question": "When God brings His firstborn into the world, what does He say all God's angels should do?",
           "answers": [
             {
-              "text": "worship",
-              "correct": true,
-              "blank": 1
+              "text": "Worship Him",
+              "correct": true
             },
             {
-              "text": "guard",
+              "text": "Guard His throne",
               "correct": false
             },
             {
-              "text": "follow",
+              "text": "Lead His armies",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Hebrews 1:7",
-          "text": "Now here's what God says about the angels themselves: He makes them winds and flames of fire. Flames of FIRE, friend, and I get excited when my oven hits 350.",
+          "text": "Now here's what God says about the angels themselves: He makes them winds and flames of fire. Winds. FIRE. Friend, I take a step back every time I open my own oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Hebrews 1:7",
-          "question": "In that line about winds and flames of fire, what else does God call His angels?",
+          "question": "In the line about winds and flames of fire, God calls His angels His ___.",
           "answers": [
             {
-              "text": "His servants",
-              "correct": true
+              "text": "servants",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His sons",
+              "text": "sons",
               "correct": false
             },
             {
-              "text": "His kings",
+              "text": "kings",
               "correct": false
             }
           ],
@@ -315,7 +315,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Hebrews 1:8",
-          "text": "But about the Son, God says something completely different. He speaks to the Son and calls Him \"O God\".",
+          "text": "But about the Son, God says something completely different. He speaks to the Son and even calls Him God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -324,49 +324,48 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 1:8",
-          "question": "True or false: God says the Son's throne will last only for a season.",
+          "question": "True or false: God says the Son's throne endures forever and ever.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Hebrews 1:9",
-          "question": "In God's words, justice is the scepter of the Son's kingdom, and the Son has loved ___ and hated wickedness.",
-          "answers": [
-            {
-              "text": "righteousness",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "power",
-              "correct": false
-            },
-            {
-              "text": "wealth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Hebrews 1:8-9",
+          "text": "Justice is the scepter of His kingdom. And God says the Son has loved righteousness and hated wickedness.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Hebrews 1:9",
-          "text": "Therefore God anointed the Son above His companions with the oil of joy. The oil of JOY, friend, and for years the only thing anybody poured on me was dust.",
+          "question": "Because the Son loved righteousness and hated wickedness, what did God do?",
+          "answers": [
+            {
+              "text": "Anointed Him with the oil of joy",
+              "correct": true
+            },
+            {
+              "text": "Clothed Him in a robe of gold",
+              "correct": false
+            },
+            {
+              "text": "Gave Him a seat among the angels",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -374,7 +373,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Hebrews 1:10",
-          "text": "Still talking about the Son, the writer goes all the way back to the beginning, when the Lord laid the foundations of the earth.",
+          "text": "God's words about the Son go all the way back to the beginning, when the Lord laid the foundations of the earth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -383,15 +382,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 1:10",
-          "question": "True or false: in the line about the Lord laying the foundations of the earth, the heavens are called the work of the Lord's hands.",
+          "question": "True or false: in the line about the Lord laying the foundations of the earth, the heavens are called the work of the angels' hands.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -401,7 +400,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Hebrews 1:11",
-          "text": "Then the line says they will perish and all wear out like a garment. Friend, I KNOW about wearing out: my edges went soft and my lines went blurry.",
+          "text": "Then the line says the earth and the heavens will perish and all wear out like a garment. I KNOW wearing out, friend: after years of baking, my edges got so soft my cookies came out looking like a guess.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -409,7 +408,7 @@
           "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Hebrews 1:11-12",
+          "verses": "Hebrews 1:12",
           "question": "The heavens wear out like a garment. What does the line say about the Son?",
           "answers": [
             {
@@ -425,14 +424,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Hebrews 1:12-13",
-          "text": "He'll roll them up like a robe, but His years will never end. Then the writer asks the angel question again: which angel did God ever tell, \"Sit at My right hand\"?",
+          "text": "He'll roll them up like a robe, but His years will never end. Then the writer asks the angel question one more time, about sitting at God's right hand and a footstool for the Son's feet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -449,7 +448,7 @@
               "blank": 1
             },
             {
-              "text": "servants",
+              "text": "children",
               "correct": false
             },
             {
@@ -457,14 +456,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "Hebrews 1:14",
-          "text": "So what are the angels? The writer calls them ministering spirits, sent to serve, and the one at my drawer said, \"I've been sent,\" while I'm lying under three takeout menus going, \"Sent... for ME?\"",
+          "text": "So what are the angels, then? The writer calls them ministering spirits, sent to serve.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -501,7 +500,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Hebrews 2:1",
-          "text": "Now the writer turns all that teaching into a warning. We must pay closer attention to what we have heard.",
+          "text": "Now the writer turns all that teaching into a warning about what we have heard.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -528,7 +527,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Hebrews 2:1-2",
-          "text": "Drifting sneaks up on you, friend, like zoning out on the highway and looking up THREE exits past yours. Then the writer looks back at the message spoken by angels.",
+          "text": "Drifting sneaks up on you, friend, like zoning out on the highway and looking up THREE exits past yours. Then the writer looks back at the message spoken by angels, with an \"if\" that starts a big question.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -537,7 +536,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Hebrews 2:2",
-          "question": "The writer says the message spoken by angels was ___.",
+          "question": "The writer says: if the message spoken by angels was ___, and every transgression and disobedience received its just punishment…",
           "answers": [
             {
               "text": "binding",
@@ -553,14 +552,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Hebrews 2:2-3",
-          "text": "Back then, every transgression and disobedience received its just punishment. So how could we ever escape if we neglect such a great salvation?",
+          "text": "If that message was binding, the writer asks, how shall we escape if we neglect such a great salvation?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -618,7 +617,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Hebrews 2:4",
-          "text": "Then God affirmed it too. And friend, as a stamper, NOBODY loves a good stamp of approval more than me.",
+          "text": "Then God affirmed this salvation too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -658,18 +657,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 2:4",
-          "question": "True or false: the gifts of the Holy Spirit were handed out to whoever asked first.",
+          "question": "True or false: the writer says the gifts of the Holy Spirit were distributed according to His will.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Peter 1:12",
-          "text": "Peter, an apostle of Jesus Christ, is writing to people who have a faith as precious as his (2 Peter 1:1). He's just told them to keep adding to their faith, from virtue all the way up to love (2 Peter 1:5-7). Now he makes them a promise: he'll ALWAYS remind them of these things.",
+          "text": "Peter, an apostle of Jesus Christ, is writing to people who have a faith as precious as his (2 Peter 1:1). He's just told them to keep adding to their faith, from virtue all the way up to love (2 Peter 1:5-7). Now he tells them he'll ALWAYS remind them of these things.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -44,8 +44,8 @@
           "card": 4,
           "kind": "story",
           "verses": "2 Peter 1:13",
-          "text": "Peter thinks it's right to refresh their memory as long as he lives in the tent of his body. Not a house, not a castle, friend. A TENT.",
-          "needs_agent_fix": true,
+          "text": "Peter thinks it's right to refresh their memory as long as he lives in the tent of his body. Not a house, not a castle, friend, a TENT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -149,7 +149,7 @@
           "card": 10,
           "kind": "story",
           "verses": "2 Peter 1:17",
-          "text": "This isn't \"my cousin's coworker heard about it,\" friend. Here's what Peter saw: Jesus received honor and glory from God the Father, when a voice came to Him from the Majestic Glory.",
+          "text": "This isn't \"my cousin's coworker heard about it,\" friend. Peter points to when Jesus received honor and glory from God the Father, when a voice came to Him from the Majestic Glory.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -169,7 +169,7 @@
               "correct": false
             },
             {
-              "text": "This is the Lamb who takes away all their sin",
+              "text": "This is the Lamb who will take away all sin",
               "correct": false
             }
           ],
@@ -178,34 +178,29 @@
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "2 Peter 1:18",
-          "text": "A voice from heaven. And Peter isn't passing it along secondhand, friend, because he says they heard it THEMSELVES.",
+          "question": "Peter says he and the others heard that voice from heaven themselves.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Peter 1:18",
-          "question": "Peter and the others heard that voice from heaven when they were with Jesus on the holy ___.",
-          "answers": [
-            {
-              "text": "mountain",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "temple",
-              "correct": false
-            },
-            {
-              "text": "river",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And they heard it while they were with Jesus, up on the holy mountain. I'd remember a moment like that forever, friend, and I can't even remember where I set my timer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -227,7 +222,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Peter 1:19",
-          "question": "Now that they have eyewitnesses, Peter tells these believers they can set the word of the prophets aside.",
+          "question": "Peter tells these believers they can now set the word of the prophets aside.",
           "answers": [
             {
               "text": "True",
@@ -280,19 +275,19 @@
           "question": "Peter tells these believers to keep paying attention to the word of the prophets, as to a lamp shining in a dark place. Until when?",
           "answers": [
             {
-              "text": "Until day dawns and the morning star rises",
+              "text": "Until the day dawns and the morning star rises in their hearts",
               "correct": true
             },
             {
-              "text": "Until rain falls and the dry fields grow green",
+              "text": "Until the rain falls and the dry fields grow green once more",
               "correct": false
             },
             {
-              "text": "Until the sea calms and the winds grow still",
+              "text": "Until the storm passes and the winds over the sea grow still",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -315,11 +310,11 @@
               "correct": true
             },
             {
-              "text": "A dream in the night",
+              "text": "The teaching of elders",
               "correct": false
             },
             {
-              "text": "A vision from God",
+              "text": "A king's command",
               "correct": false
             }
           ],
@@ -331,15 +326,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Peter 1:21",
-          "question": "Peter says the prophets of Scripture spoke whatever they themselves decided to say.",
+          "question": "Peter says no prophecy was ever brought forth by the will of man.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -349,7 +344,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Peter 1:21",
-          "text": "No prophecy was ever brought forth by the will of man. Men spoke from God as they were carried along by the Holy Spirit, and that's good news, friend, because if MY recipes came out of my own head, you'd be eating mango-peppermint-blueberry surprise.",
+          "text": "Instead, men spoke from God as they were carried along by the Holy Spirit. And that's good news, friend, because if MY recipes came out of my own head, you'd be eating strawberry-peppermint-raisin surprise.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

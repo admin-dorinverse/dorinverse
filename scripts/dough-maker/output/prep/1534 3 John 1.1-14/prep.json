@@ -9,16 +9,16 @@
           "card": 1,
           "kind": "story",
           "verses": "3 John 1:1",
-          "text": "Short one, friend: John, who calls himself the elder, writes fourteen verses to one man, Gaius. John calls him beloved and says he loves him in the truth. Some of my cookie recipes run longer than this letter!",
+          "text": "This letter comes from a writer who calls himself the elder, and he's writing to one man, Gaius. The elder calls him beloved and says he loves him in the truth. If somebody greeted ME like that, I'd bake them cookies for a MONTH.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "3 John 1:2",
-          "question": "John opens by praying that Gaius will prosper and enjoy good health in every way. What does John say is already prospering?",
+          "question": "The elder opens by praying that Gaius will prosper and enjoy good health in every way. What does the elder say is already prospering?",
           "answers": [
             {
               "text": "His soul",
@@ -40,28 +40,27 @@
           "card": 3,
           "kind": "story",
           "verses": "3 John 1:3",
-          "text": "Some brothers came to John and testified about Gaius's devotion to the truth, and Gaius is still walking in it. How does John take the news? Like a man who just pulled a PERFECT batch out of the oven.",
-          "needs_agent_fix": true,
+          "text": "Some brothers came and testified about Gaius's devotion to the truth, and Gaius is still walking in it. The elder takes that news like a man pulling a PERFECT batch out of the oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "3 John 1:4",
-          "question": "John says he has no greater ___ than to hear that his children are walking in the truth.",
+          "question": "The elder is overjoyed by that report about Gaius. What does the elder say gives him no greater joy?",
           "answers": [
             {
-              "text": "joy",
-              "correct": true,
-              "blank": 1
+              "text": "Hearing his children walk in the truth",
+              "correct": true
             },
             {
-              "text": "honor",
+              "text": "Seeing his churches grow in number",
               "correct": false
             },
             {
-              "text": "reward",
+              "text": "Hearing his letters were read aloud",
               "correct": false
             }
           ],
@@ -72,24 +71,28 @@
           "card": 5,
           "kind": "story",
           "verses": "3 John 1:5",
-          "text": "Then John tells Gaius he's faithful in what he's doing for the brothers. FAITHFUL, friend! I've had oven timers that couldn't make it through one batch.",
-          "needs_agent_fix": true,
+          "text": "Then the elder tells Gaius he's FAITHFUL in what he's doing for the brothers. Friend, I've had oven timers that couldn't make it through one batch.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "3 John 1:5",
-          "question": "True or false: Gaius already knew these brothers well before he helped them.",
+          "question": "The elder calls Gaius faithful in what he's doing for the brothers. What does the elder say makes it especially so?",
           "answers": [
             {
-              "text": "True",
+              "text": "They are strangers to him",
+              "correct": true
+            },
+            {
+              "text": "They are old friends of his",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He has little to share",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -108,18 +111,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "3 John 1:6",
-          "question": "The traveling brothers Gaius has been helping are moving on. How does John say Gaius will do well to send them on their way?",
+          "question": "The traveling brothers Gaius has been helping are moving on. How does the elder say Gaius will do well to send them on their way?",
           "answers": [
             {
-              "text": "In a way worthy of God",
+              "text": "In a manner worthy of God",
               "correct": true
             },
             {
-              "text": "In a way that costs him nothing",
+              "text": "In a manner worthy of kings",
               "correct": false
             },
             {
-              "text": "In a way that draws no attention",
+              "text": "In a manner pleasing to the church",
               "correct": false
             }
           ],
@@ -128,26 +131,10 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "3 John 1:7",
-          "question": "These brothers went out on behalf of the Name. John says they accepted ___ from the Gentiles.",
-          "answers": [
-            {
-              "text": "nothing",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "money",
-              "correct": false
-            },
-            {
-              "text": "lodging",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Here's why it matters: the elder says these brothers went out on behalf of the Name, accepting nothing from the Gentiles.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -155,7 +142,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "3 John 1:8",
-          "question": "True or false: John says that supporting men like these makes us fellow workers for the truth.",
+          "question": "True or false: The elder says that supporting men like these makes us fellow workers for the truth.",
           "answers": [
             {
               "text": "True",
@@ -173,7 +160,7 @@
           "card": 11,
           "kind": "story",
           "verses": "3 John 1:9",
-          "text": "Now the letter turns, friend. John says he wrote to the church about this, but there's a man named Diotrephes, who loves to be first.",
+          "text": "Now the letter turns, friend. The elder says he has written to the church about this, and then he brings up a man named Diotrephes, who loves to be first.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -182,7 +169,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "3 John 1:9",
-          "question": "John wrote to the church about supporting these traveling brothers. True or false: Diotrephes accepts John's instruction.",
+          "question": "The elder has written to the church. True or false: Diotrephes accepts the elder's instruction.",
           "answers": [
             {
               "text": "True",
@@ -199,9 +186,9 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "3 John 1:9-10",
-          "text": "Loves to be first, like the dead batteries I shared a drawer with, arguing ALL DAY over who had the most charge left. And John says if he comes, he'll call attention to Diotrephes's malicious slander against them.",
-          "needs_agent_fix": true,
+          "verses": "3 John 1:10",
+          "text": "The elder doesn't let it slide. He says, \"So if I come, I will call attention to his malicious slander against us…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -209,7 +196,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "3 John 1:10",
-          "question": "Slander isn't enough for Diotrephes. John says he refuses to ___ the brothers.",
+          "question": "Slander isn't enough for Diotrephes. The elder says he refuses to ___ the brothers.",
           "answers": [
             {
               "text": "welcome",
@@ -244,7 +231,7 @@
               "correct": false
             },
             {
-              "text": "Asks John to settle it by letter",
+              "text": "Asks the elder to settle it by letter",
               "correct": false
             }
           ],
@@ -254,20 +241,21 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "3 John 1:11",
-          "question": "After the trouble with Diotrephes, John turns back to Gaius. What does John tell Gaius not to imitate?",
+          "question": "After the trouble with Diotrephes, the elder turns back to Gaius. He tells Gaius not to imitate what is evil, but what is ___.",
           "answers": [
             {
-              "text": "What is evil",
-              "correct": true
+              "text": "good",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "What is popular",
+              "text": "popular",
               "correct": false
             },
             {
-              "text": "What is new",
+              "text": "safe",
               "correct": false
             }
           ],
@@ -278,8 +266,8 @@
           "card": 17,
           "kind": "story",
           "verses": "3 John 1:11-12",
-          "text": "John says the one who does good is of God, and the one who does evil has not seen God. Then he brings up a new name: Demetrius. Different man, VERY different report.",
-          "needs_agent_fix": true,
+          "text": "The elder says the one who does good is of God, and the one who does evil has not seen God. Then a new name comes up, Demetrius, not the silversmith in Ephesus (Acts 19:24), and friend, this report sounds VERY different.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -287,7 +275,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "3 John 1:12",
-          "question": "Demetrius has a good testimony from everyone, and from the truth itself. True or false: John refuses to add his own testimony for Demetrius.",
+          "question": "Demetrius has a good testimony from everyone, and from the truth itself. True or false: The elder refuses to add his own testimony for Demetrius.",
           "answers": [
             {
               "text": "True",
@@ -305,27 +293,23 @@
           "card": 19,
           "kind": "story",
           "verses": "3 John 1:13-14",
-          "text": "John's got many things left to write, but he'd rather skip the pen and ink and see Gaius soon, face to face. Friend, John is NOT a group chat guy.",
+          "text": "The elder's got many things left to write, but he'd rather skip the pen and ink and see Gaius soon, face to face. Friend, the elder is NOT a group chat guy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "3 John 1:14",
-          "question": "John signs off wishing Gaius peace and sending greetings from the friends with him. What does he ask Gaius to do for the friends where Gaius is?",
+          "question": "The elder signs off wishing Gaius peace and sending greetings from the friends with him. True or false: He asks Gaius to greet each of the friends where Gaius is by name.",
           "answers": [
             {
-              "text": "Greet each of them by name",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Read them this whole letter",
-              "correct": false
-            },
-            {
-              "text": "Send them all to visit John",
+              "text": "False",
               "correct": false
             }
           ],

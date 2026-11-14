@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Hebrews 11:17",
-          "text": "Friend, the writer of Hebrews is writing to believers in Jesus (Hebrews 3:1), and he's in the middle of a list of people who lived by faith. Again and again, he starts with the same two words: by faith. Now he comes back to Abraham, on the day Abraham was tested.",
-          "needs_agent_fix": true,
+          "text": "Friend, the writer of Hebrews is writing to believers in Jesus (Hebrews 3:1), and he's in the middle of a list of people who lived by faith. Again and again, he starts with the same two words: by faith. Now he comes back to Abraham, Israel's forefather, on the day Abraham was tested.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,17 +18,11 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Hebrews 11:17",
-          "question": "When he was tested, Abraham was ready to offer his one and only ___ on the ___.",
+          "question": "When he was tested, Abraham was ready to offer up his one and only ___ on the altar.",
           "answers": [
             {
               "text": "son",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "altar",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "lamb",
@@ -37,21 +31,17 @@
             {
               "text": "servant",
               "correct": false
-            },
-            {
-              "text": "tent",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Hebrews 11:17-18",
-          "text": "Here's the twist: God had already told him, “Through Isaac your offspring will be reckoned.” The promise runs through Isaac, and now Isaac is on the altar, so friend, my brain would've burnt like a batch I forgot in the oven.",
-          "needs_agent_fix": true,
+          "text": "Here's the twist: God had already told him, “Through Isaac your offspring will be reckoned.” The promise runs through Isaac, and Isaac is the son on the altar.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -74,7 +64,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -93,73 +83,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Hebrews 11:20-21",
-          "text": "Then the list moves down the family line. By faith Isaac blesses his sons Jacob and Esau concerning the future, and later Jacob, when he's dying, gives blessings of his own.",
-          "needs_agent_fix": true,
+          "text": "Then the list moves down the family line, and by faith Isaac blesses his sons Jacob and Esau concerning the future. When Jacob is dying, he blesses each of the sons of Joseph, his son.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Hebrews 11:21",
-          "question": "As he was dying, Jacob blessed each of ___ sons.",
+          "question": "As dying Jacob leans on the top of his staff, what does he do?",
           "answers": [
             {
-              "text": "Joseph's",
+              "text": "He worships",
               "correct": true
             },
             {
-              "text": "Esau's",
+              "text": "He weeps aloud",
               "correct": false
             },
             {
-              "text": "Laban's",
+              "text": "He sends for Esau",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Hebrews 11:21",
-          "question": "Jacob is old and dying, but he still worships. What does he lean on as he worships?",
-          "answers": [
-            {
-              "text": "The top of his staff",
-              "correct": true
-            },
-            {
-              "text": "His son Joseph's arm",
-              "correct": false
-            },
-            {
-              "text": "A pillar of stone",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Hebrews 11:22",
+          "text": "Next is Joseph, and his end is near. By faith he looks ahead, the way Isaac did when he blessed his sons.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Hebrews 11:22",
-          "text": "Next comes Joseph, Jacob's son, and his end is near. Most folks spend their last words on who gets the good recliner, but not Joseph.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 11:22",
@@ -170,104 +137,62 @@
               "correct": true
             },
             {
-              "text": "The famine years in Egypt",
+              "text": "A famine coming to Canaan",
               "correct": false
             },
             {
-              "text": "His brothers selling him away",
+              "text": "A new king rising in Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Hebrews 11:22",
+          "text": "Joseph also gives instructions about his bones.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Hebrews 11:22",
-          "question": "Before he died, Joseph also gave instructions about his ___.",
-          "answers": [
-            {
-              "text": "bones",
-              "correct": true
-            },
-            {
-              "text": "flocks",
-              "correct": false
-            },
-            {
-              "text": "robe",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Hebrews 11:23",
+          "text": "Next is Moses, Israel's leader, and his part starts right after he's born. By faith his parents hide him for three months, because they saw that he was a beautiful child.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Hebrews 11:23",
-          "text": "Next is Moses, Israel's leader, and his part starts right after he's born. By faith his parents hide him for three months, because they saw that he was a beautiful child.",
-          "needs_agent_fix": true,
+          "question": "Moses' parents were afraid of the king's edict.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Hebrews 11:23",
-          "question": "Hiding a baby was risky business. What were Moses' parents unafraid of?",
-          "answers": [
-            {
-              "text": "The king's edict",
-              "correct": true
-            },
-            {
-              "text": "The Egyptian guards",
-              "correct": false
-            },
-            {
-              "text": "The river's current",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Hebrews 11:24",
+          "text": "Years pass, and Moses is grown. By faith he refuses to be called the son of Pharaoh's daughter, the daughter of Egypt's king.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Hebrews 11:24",
-          "text": "Fast forward: Moses is grown, and he's got a decision to make about what he'll be called. Friend, I've watched people take a whole HOUR to pick a username, and this one's a lot bigger than a username.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Hebrews 11:24",
-          "question": "When he was grown, Moses refused to be called the son of ___ daughter.",
-          "answers": [
-            {
-              "text": "Pharaoh's",
-              "correct": true
-            },
-            {
-              "text": "Jethro's",
-              "correct": false
-            },
-            {
-              "text": "Laban's",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 11:25",
@@ -282,38 +207,38 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "Hebrews 11:26",
-          "text": "Moses valued disgrace for Christ above the treasures of Egypt. Friend, I've watched people keep a job they can't stand just for the parking spot, and this man walks away from the TREASURES OF EGYPT.",
-          "needs_agent_fix": true,
+          "text": "Moses valued disgrace for Christ above the treasures of Egypt. Friend, people stay at a job they can't stand just for the parking spot, and this man puts the TREASURES OF EGYPT second.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Hebrews 11:26",
-          "question": "Why would Moses trade Egypt's treasures for disgrace?",
+          "question": "Moses valued disgrace for Christ above Egypt's treasures, because he was looking ahead to his ___.",
           "answers": [
             {
-              "text": "He was looking ahead to his reward",
+              "text": "reward",
               "correct": true
             },
             {
-              "text": "He wanted to lead an army someday",
+              "text": "throne",
               "correct": false
             },
             {
-              "text": "He hoped to win the people's praise",
+              "text": "palace",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -326,8 +251,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Hebrews 11:27",
-          "text": "Moses isn't done yet. By faith he leaves Egypt, and he isn't afraid of the king's anger.",
-          "needs_agent_fix": true,
+          "text": "Moses isn't done yet: by faith he leaves Egypt, not afraid of the king's anger. Friend, I flinch when my oven timer goes off.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -335,61 +260,57 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 11:27",
-          "question": "With an angry king behind him, what kept Moses going?",
+          "question": "Moses left Egypt without fearing the king's anger. What kept him going?",
           "answers": [
             {
-              "text": "He saw Him who is invisible",
+              "text": "He saw the God no one can see",
               "correct": true
             },
             {
-              "text": "His brother Aaron went with him",
+              "text": "He had his brother Aaron beside him",
               "correct": false
             },
             {
-              "text": "The people cheered him on",
+              "text": "He heard the people cheering him on",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Hebrews 11:28",
-          "text": "Then comes the Passover. By faith Moses keeps the Passover and the sprinkling of blood, and the destroyer of the firstborn is on the way.",
-          "needs_agent_fix": true,
+          "text": "Then comes the Passover. By faith Moses keeps the Passover and the sprinkling of blood.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Hebrews 11:28",
-          "question": "The destroyer of the firstborn is coming. Who does the Passover and the sprinkling of blood keep it from touching?",
+          "question": "The Passover and the sprinkling of blood kept the destroyer from touching Israel's own firstborn.",
           "answers": [
             {
-              "text": "Israel's own firstborn",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Pharaoh's whole household",
-              "correct": false
-            },
-            {
-              "text": "Egypt's flocks and herds",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Hebrews 11:29",
-          "text": "Now the whole people step out in faith, right up to the Red Sea. Water in front, Egyptians behind: friend, that's a morning that makes ME want to hit snooze.",
-          "needs_agent_fix": true,
+          "text": "Now by faith all the people come to the Red Sea. Friend, I can't get across my own bakery floor without slipping on spilled flour.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -412,7 +333,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -420,7 +341,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 11:29",
-          "question": "When the Egyptians tried to follow the people through the Red Sea, they made it across too.",
+          "question": "When the Egyptians tried to follow through the Red Sea, they made it across too.",
           "answers": [
             {
               "text": "True",
@@ -431,46 +352,46 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Hebrews 11:30",
-          "text": "Fast forward to Jericho and its walls. By faith those walls fall, but first the people have some walking to do.",
-          "needs_agent_fix": true,
+          "text": "Fast forward to Jericho, where by faith the walls fall, and the people's part takes seven days. SEVEN DAYS, friend, and I'm out of breath after stirring one batch of dough.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Hebrews 11:30",
-          "question": "The walls of Jericho fell after the people marched around them for ___ days.",
+          "question": "Before the walls of Jericho fell, what did the people do to them for seven days?",
           "answers": [
             {
-              "text": "seven",
+              "text": "They marched around them",
               "correct": true
             },
             {
-              "text": "three",
+              "text": "They dug beneath them",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "They shot arrows at them",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Hebrews 11:30-31",
-          "text": "Seven days of laps, and I get winded hopping between ovens! Next on the list is Rahab, the prostitute, who did not perish with those who were disobedient.",
-          "needs_agent_fix": true,
+          "verses": "Hebrews 11:31",
+          "text": "Next on the list is Rahab, the prostitute. By faith she does not perish with those who were disobedient.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -478,22 +399,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 11:31",
-          "question": "Why didn't Rahab perish with the disobedient?",
+          "question": "When Israel's spies came, what did Rahab do that kept her from perishing with the disobedient?",
           "answers": [
             {
-              "text": "She welcomed the spies in peace",
+              "text": "She welcomed them in peace",
               "correct": true
             },
             {
-              "text": "She fled to the hills in time",
+              "text": "She reported them to the king",
               "correct": false
             },
             {
-              "text": "She hid inside the king's house",
+              "text": "She kept them out of the city",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -507,7 +428,7 @@
           "kind": "story",
           "verses": "Hebrews 11:32",
           "text": "Then the writer says, “And what more shall I say?” He's got way more people of faith than he can cover.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -530,23 +451,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Hebrews 11:32",
-          "text": "So he rattles off names like somebody squeezing their whole week into a voicemail before it BEEPS. Gideon, Barak, Samson and Jephthah from the days of the judges (Judges 4–16), David, Israel's king (2 Samuel 5:3), Samuel the prophet (1 Samuel 3:20), and the prophets.",
-          "needs_agent_fix": true,
+          "text": "So he rattles off names like somebody squeezing a whole week into a voicemail before it BEEPS. Gideon, Barak, Samson and Jephthah from the days of the judges, plus David, Israel's king, Samuel the prophet, and the prophets.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Hebrews 11:33",
-          "text": "And here's what they did through faith: they conquered kingdoms, administered justice and gained what was promised. KINGDOMS, friend, and I throw a party when a batch comes out of the oven in one piece.",
-          "needs_agent_fix": true,
+          "text": "And here's what they did through faith: they conquered kingdoms, administered justice and gained what was promised.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -569,7 +490,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -592,30 +513,26 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Hebrews 11:34",
-          "question": "Through faith they gained ___ from weakness.",
+          "question": "Through faith, some of these people gained strength from weakness.",
           "answers": [
             {
-              "text": "strength",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "wealth",
-              "correct": false
-            },
-            {
-              "text": "honor",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -623,7 +540,7 @@
           "kind": "story",
           "verses": "Hebrews 11:34-35",
           "text": "They became mighty in battle and put foreign armies to flight. Women even received back their dead, raised to life again.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -631,7 +548,7 @@
           "kind": "story",
           "verses": "Hebrews 11:35",
           "text": "Then the list takes a hard turn. Others were tortured and refused their release.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -654,23 +571,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Hebrews 11:36-37",
-          "text": "Friend, I'm setting the jokes down for this part. Still others endured mocking and flogging, and even chains and imprisonment, and some were stoned, sawed in two and put to death by the sword.",
-          "needs_agent_fix": true,
+          "text": "Still others endured mocking and flogging, and even chains and imprisonment. They were stoned, sawed in two and put to death by the sword.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Hebrews 11:37-38",
-          "text": "They went around in sheepskins and goatskins, destitute, oppressed and mistreated, wandering in deserts and mountains and hiding in caves and holes in the ground. I spent years in the dark of a junk drawer, and friend, that was NOTHING next to this.",
-          "needs_agent_fix": true,
+          "text": "They went around in sheepskins and goatskins, destitute, oppressed and mistreated. They wandered in deserts and mountains, and hid in caves and holes in the ground.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -678,65 +595,34 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hebrews 11:38",
-          "question": "Looking at everything these people went through, the writer says the world was not worthy of them.",
+          "question": "After all these people went through, the writer says they were not worthy of the world.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
-          "verses": "Hebrews 11:39",
-          "text": "Then the writer steps back and looks at the whole list: these were all commended for their faith. Earlier he said some of them gained what was promised, but now there's a twist about all of them together.",
-          "needs_agent_fix": true,
+          "verses": "Hebrews 11:39-40",
+          "text": "Looking back over the whole list, the writer says these were all commended for their faith, yet they did not receive what was promised. But that's not the end of it, because God had something planned.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Hebrews 11:39",
-          "question": "Everyone on the list was commended for their faith. What does the writer say they did not receive?",
-          "answers": [
-            {
-              "text": "What was promised",
-              "correct": true
-            },
-            {
-              "text": "Honor from their people",
-              "correct": false
-            },
-            {
-              "text": "A place to rest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
           "verses": "Hebrews 11:40",
-          "text": "But that's not a dead end, friend. The writer says God had something planned.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Hebrews 11:40",
-          "question": "The people on this list didn't receive what was promised. What does the writer say God had planned?",
+          "question": "The people on this list did not receive what was promised. What does the writer say God had planned?",
           "answers": [
             {
               "text": "Something better for us",
@@ -751,30 +637,26 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Hebrews 11:40",
-          "question": "God had planned something better for us, so that together with us they would be made ___.",
+          "question": "The writer says the people on this list would be made perfect together with us.",
           "answers": [
             {
-              "text": "perfect",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "famous",
-              "correct": false
-            },
-            {
-              "text": "wealthy",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 1:1",
-          "text": "Last book of the Bible, friend, and it starts by telling you exactly what it is: the revelation of Jesus Christ. God gave it to Jesus to show His servants what must soon come to pass. Then it gets passed down the line to His servant John, like Minty passing a note down my old kitchen counter.",
-          "needs_agent_fix": true,
+          "text": "The book opens by telling you exactly what it is: the revelation of Jesus Christ, which God gave Him to show His servants what must soon come to pass. It's headed for His servant John, who's writing all this down. But first, someone has to deliver it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 1:1",
-          "question": "The revelation is headed for God's servant John. Who is sent to make it known to him?",
+          "question": "God gave the revelation of Jesus Christ to show His servants what must soon come to pass. Who is sent to make it known to His servant John?",
           "answers": [
             {
               "text": "His own angel",
@@ -33,42 +33,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Revelation 1:2",
-          "question": "True or false: John only testifies to some of what he saw.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "John testifies to everything he saw. Not the highlights, not the trailer, friend, the WHOLE thing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Revelation 1:3",
-          "text": "Before the story even STARTS, John hands out a blessing. No sign-up sheet, no waiting list, no take-a-number machine.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Revelation 1:3",
-          "question": "True or false: John's blessing is only for the one who reads the prophecy aloud.",
+          "verses": "Revelation 1:2",
+          "question": "True or false: John says what he's sharing is just his own opinion.",
           "answers": [
             {
               "text": "True",
@@ -79,46 +60,54 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Revelation 1:3",
+          "text": "Before the vision even STARTS, John hands out a blessing to the one who reads this prophecy aloud. No sign-up sheet. No take-a-number machine.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Revelation 1:3",
-          "text": "John says the time is near, and no, I'm not guessing a date, because Jesus said only the Father knows the day or hour (Matthew 24:36). My job is simple, friend: keep the ovens HOT.",
-          "needs_agent_fix": true,
+          "question": "John blesses the one who reads this prophecy aloud. Who else does John call blessed?",
+          "answers": [
+            {
+              "text": "Those who hear and obey it",
+              "correct": true
+            },
+            {
+              "text": "Those who copy it by hand",
+              "correct": false
+            },
+            {
+              "text": "Those who learn it by heart",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Revelation 1:4",
-          "text": "Then John writes like it's a letter, addressed to churches in the province of Asia. One letter for a whole stack of churches, while I need twenty minutes to label ONE cookie box.",
-          "needs_agent_fix": true,
+          "verses": "Revelation 1:3",
+          "text": "John says the time is near, and no, I'm not guessing a date, because Jesus said only the Father knows the day or hour (Matthew 24:36). My job is simple, friend: keep the ovens HOT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Revelation 1:4",
-          "question": "John writes to the ___ churches in the province of Asia.",
-          "answers": [
-            {
-              "text": "seven",
-              "correct": true
-            },
-            {
-              "text": "twelve",
-              "correct": false
-            },
-            {
-              "text": "three",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then John writes like he's starting a letter, to the seven churches in the province of Asia.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -141,61 +130,61 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Revelation 1:5",
-          "text": "And John doesn't just say His name, he stacks up the titles: the faithful witness, the firstborn from the dead, the ruler of the kings of the earth. That's not a name tag, friend, that's a BILLBOARD.",
-          "needs_agent_fix": true,
+          "question": "John calls Jesus Christ the faithful witness, the ruler of the kings of the earth, and the firstborn from the ___.",
+          "answers": [
+            {
+              "text": "dead",
+              "correct": true
+            },
+            {
+              "text": "nations",
+              "correct": false
+            },
+            {
+              "text": "heavens",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Revelation 1:5",
-          "question": "John praises the One who loves us and has released us from our ___ by His blood.",
-          "answers": [
-            {
-              "text": "sins",
-              "correct": true
-            },
-            {
-              "text": "enemies",
-              "correct": false
-            },
-            {
-              "text": "fears",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then John praises Him who loves us and has released us from our sins by His blood. Friend, I spent years in the dark at the back of a junk drawer, so that word released hits me RIGHT here.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Revelation 1:6",
-          "question": "What does John say Jesus has made His people to be?",
+          "question": "Jesus rules the kings of the earth, and John says He has made His people to be a ___, priests to His God and Father.",
           "answers": [
             {
-              "text": "A kingdom and priests to God",
+              "text": "kingdom",
               "correct": true
             },
             {
-              "text": "An army and judges for God",
+              "text": "city",
               "correct": false
             },
             {
-              "text": "A city and guards for God",
+              "text": "army",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -203,7 +192,7 @@
           "kind": "story",
           "verses": "Revelation 1:6-7",
           "text": "John gives Him the glory and power forever and ever, Amen. And then the big announcement: He is coming with the clouds.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -211,18 +200,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 1:7",
-          "question": "True or false: When He comes with the clouds, only a few people will see Him.",
+          "question": "True or false: John says every eye will see Jesus when He comes with the clouds.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -230,7 +219,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 1:7",
-          "question": "Every eye will see Him when He comes. John names one group in particular. Who?",
+          "question": "When Jesus comes with the clouds, John names one group in particular who will see Him. Who?",
           "answers": [
             {
               "text": "Those who pierced Him",
@@ -245,7 +234,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -253,30 +242,26 @@
           "kind": "story",
           "verses": "Revelation 1:7-8",
           "text": "All the tribes of the earth will mourn because of Him, and John says so shall it be. Then a different voice speaks up, and it is NOT John's.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Revelation 1:8",
-          "question": "This new voice says it is the Alpha and the Omega. Who is speaking?",
+          "question": "True or false: John says the Lord God is the One who calls Himself the Alpha and the Omega.",
           "answers": [
             {
-              "text": "The Lord God",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The angel Michael",
-              "correct": false
-            },
-            {
-              "text": "John the Baptist",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -290,30 +275,30 @@
           "kind": "story",
           "verses": "Revelation 1:9",
           "text": "Now John tells it himself, and he calls himself their brother and partner in the tribulation and kingdom and perseverance that are in Jesus. Translation: John is NOT writing this from a beach chair.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Revelation 1:9",
-          "question": "Where is John when all this happens?",
+          "question": "John says he was on the island of ___.",
           "answers": [
             {
-              "text": "The island of Patmos",
+              "text": "Patmos",
               "correct": true
             },
             {
-              "text": "The island of Cyprus",
+              "text": "Cyprus",
               "correct": false
             },
             {
-              "text": "The island of Crete",
+              "text": "Crete",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -321,7 +306,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 1:9",
-          "question": "True or false: John says he is on Patmos because of the word of God and his testimony about Jesus.",
+          "question": "True or false: John says he was on that island because of the word of God and his testimony about Jesus.",
           "answers": [
             {
               "text": "True",
@@ -332,7 +317,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -340,69 +325,65 @@
           "kind": "story",
           "verses": "Revelation 1:10",
           "text": "On the Lord's day John is in the Spirit, and then BEHIND him comes a loud voice like a trumpet. Friend, when my oven timer dings behind me, I jump so high my gold base earns frequent flyer miles.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Revelation 1:11",
-          "question": "What does the voice like a trumpet tell John to do?",
+          "question": "True or false: The loud voice like a trumpet tells John to keep what he sees to himself.",
           "answers": [
             {
-              "text": "Write what he sees and send it",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Go home and preach what he hears",
-              "correct": false
-            },
-            {
-              "text": "Wait in silence for seven days",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Revelation 1:11-12",
-          "text": "It's going to seven churches, named one by one: Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia and Laodicea. Then John turns to see the voice that was speaking with him.",
-          "needs_agent_fix": true,
+          "text": "John is to write it on a scroll and send it to seven churches: Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia and Laodicea. Then John turns to see the voice that was speaking with him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 1:12",
-          "question": "Having turned around, John sees seven golden ___.",
+          "type": "multiple_choice",
+          "verses": "Revelation 1:13",
+          "question": "John turns and sees seven golden lampstands. How does John describe the One among them?",
           "answers": [
             {
-              "text": "lampstands",
+              "text": "One like the Son of Man",
               "correct": true
             },
             {
-              "text": "altars",
+              "text": "One like a mighty angel",
               "correct": false
             },
             {
-              "text": "trumpets",
+              "text": "One like a roaring lion",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Revelation 1:13",
-          "text": "And among the lampstands is One like the Son of Man, dressed in a long robe with a golden sash around His chest. Hang on, friend, because John is about to use every comparison he's got.",
-          "needs_agent_fix": true,
+          "text": "He's dressed in a long robe, with a golden sash around His chest. Hang on, friend, the vision is just getting started.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -410,23 +391,23 @@
           "kind": "story",
           "verses": "Revelation 1:14",
           "text": "His hair is white like wool, as white as snow, and His eyes are like a blazing fire. I've stared into a LOT of hot ovens, friend, and I don't think even I could hold that gaze.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Revelation 1:15",
-          "text": "His feet are like polished bronze refined in a furnace, and His voice is like the roar of many waters. Friend, NOBODY is interrupting that voice on a conference call.",
-          "needs_agent_fix": true,
+          "text": "His feet are like polished bronze refined in a furnace, and His voice is like the roar of many waters.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Revelation 1:16",
-          "text": "In His right hand He holds seven stars, and a sharp double-edged sword comes from His mouth. Seven STARS in ONE hand, friend, and I need my whole mustache just to carry one tray of cookies.",
-          "needs_agent_fix": true,
+          "text": "In His right hand He holds seven stars, and a sharp double-edged sword comes from His mouth.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -434,7 +415,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 1:16",
-          "question": "John says His face was like the ___ shining at its brightest.",
+          "question": "John says the face of the One like the Son of Man was like the ___ shining at its brightest.",
           "answers": [
             {
               "text": "sun",
@@ -449,7 +430,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -457,7 +438,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 1:17",
-          "question": "John has just seen all of this up close. What does John do?",
+          "question": "John has just seen the One like the Son of Man. What does John do?",
           "answers": [
             {
               "text": "Falls at His feet like a dead man",
@@ -472,88 +453,111 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Revelation 1:17",
-          "text": "Then He places His right hand on John and says, “Do not be afraid.” He calls Himself the First and the Last, which sounds a lot like the Alpha and the Omega back in verse 8.",
-          "needs_agent_fix": true,
+          "question": "The One like the Son of Man places His right hand on John. What does He say first?",
+          "answers": [
+            {
+              "text": "Do not be afraid",
+              "correct": true
+            },
+            {
+              "text": "Stand up and listen",
+              "correct": false
+            },
+            {
+              "text": "Why have you fallen",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 1:18",
-          "question": "He calls Himself the Living One. He says He was ___, and now He is alive forever and ever.",
-          "answers": [
-            {
-              "text": "dead",
-              "correct": true
-            },
-            {
-              "text": "hidden",
-              "correct": false
-            },
-            {
-              "text": "silent",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Revelation 1:17-18",
+          "text": "The One like the Son of Man calls Himself the First and the Last, the Living One. Then He says, “I was dead, and behold, now I am alive forever and ever!”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Revelation 1:18",
-          "question": "The mystery key I shared a drawer with spent YEARS wondering what door it opened. No mystery here. What does He say He holds the keys of?",
+          "question": "The One like the Son of Man says He holds the keys of ___ and of Hades.",
           "answers": [
             {
-              "text": "Death and Hades",
+              "text": "Death",
               "correct": true
             },
             {
-              "text": "The gates of Jerusalem",
+              "text": "Heaven",
               "correct": false
             },
             {
-              "text": "The storehouses of Egypt",
+              "text": "Zion",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Revelation 1:19",
-          "question": "True or false: He tells John to write down only the things that will happen after this.",
+          "question": "The One like the Son of Man tells John to write down the things he has seen. What else does He tell John to write down?",
           "answers": [
             {
-              "text": "True",
+              "text": "The things that are and that will happen after this",
+              "correct": true
+            },
+            {
+              "text": "The names of everyone in the seven churches",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The words the old prophets spoke before him",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
+          "type": "true_false",
+          "verses": "Revelation 1:20",
+          "question": "True or false: The One like the Son of Man says the seven golden lampstands are the seven churches.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 19,
+          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 1:20",
-          "question": "Then He explains the mystery of the seven stars in His right hand. What are they?",
+          "question": "The One like the Son of Man also explains the seven stars in His right hand. What are they?",
           "answers": [
             {
               "text": "The angels of the seven churches",
@@ -568,34 +572,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Revelation 1:20",
-          "question": "True or false: The seven golden lampstands are the seven churches.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
           "kind": "story",
           "verses": "Revelation 1:20",
-          "text": "That's where we'll pause, friend, and trust me, John's scroll is about to get a whole lot longer.",
-          "needs_agent_fix": true,
+          "text": "And that's where we'll stop for now, friend. This vision is NOT finished, not even close.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

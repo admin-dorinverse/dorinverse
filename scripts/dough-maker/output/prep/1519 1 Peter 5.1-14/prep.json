@@ -74,21 +74,17 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Peter 5:2",
-          "question": "Peter says the elders shouldn't shepherd God's flock out of greed. What should drive them instead?",
+          "question": "True or false: Peter tells the elders to watch over God's flock to make a profit for themselves.",
           "answers": [
             {
-              "text": "Eagerness",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Duty",
-              "correct": false
-            },
-            {
-              "text": "Ambition",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -106,11 +102,11 @@
               "correct": true
             },
             {
-              "text": "Judges over the flock",
+              "text": "Teachers to the flock",
               "correct": false
             },
             {
-              "text": "Owners of the flock",
+              "text": "Friends to the flock",
               "correct": false
             }
           ],
@@ -121,7 +117,7 @@
           "card": 8,
           "kind": "story",
           "verses": "1 Peter 5:4",
-          "text": "And here's the payoff, friend. Peter says when the Chief Shepherd appears, and that's Jesus, the great Shepherd of the sheep (Hebrews 13:20), the elders will receive the crown of glory.",
+          "text": "And here's the payoff, friend. Peter says when the Chief Shepherd appears, the elders will receive the crown of glory.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,7 +184,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Peter 5:5",
-          "question": "Peter backs up his call to humility with a quote. It says God gives grace to the humble but opposes the ___.",
+          "question": "Peter backs up his call to humility by quoting Proverbs 3:34. It says God gives grace to the humble but opposes the ___.",
           "answers": [
             {
               "text": "proud",
@@ -200,7 +196,7 @@
               "correct": false
             },
             {
-              "text": "poor",
+              "text": "lazy",
               "correct": false
             }
           ],
@@ -218,38 +214,34 @@
           "kind": "story",
           "verses": "1 Peter 5:6",
           "text": "So, Peter says, humble yourselves under God's mighty hand, so that in due time He may exalt you. DUE time, friend, and I have opened enough ovens too early to respect those two words.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Peter 5:7",
-          "question": "Peter tells them to cast all their anxiety on God. What reason does he give?",
+          "question": "True or false: Peter tells them to cast all their anxiety on God because He cares for them.",
           "answers": [
             {
-              "text": "Because He cares for you",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Because worry won't help",
-              "correct": false
-            },
-            {
-              "text": "Because you have done enough",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Peter 5:7-8",
-          "text": "ALL of it, friend, even that bill sitting unopened on the counter for a week. Then Peter warns them to be sober-minded and alert, and he names their adversary: the devil.",
-          "needs_agent_fix": true,
+          "text": "ALL of it, friend, even that bill sitting unopened on the counter for a week. Then Peter says to be sober-minded and alert, and he names their adversary: the devil, who prowls around like a roaring lion.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -257,30 +249,45 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Peter 5:8",
-          "question": "Peter warns that their adversary the devil prowls around looking for someone to devour. What does Peter say the devil is like?",
+          "question": "Peter says the devil prowls around like a roaring lion. What is the devil seeking?",
           "answers": [
             {
-              "text": "A roaring lion",
+              "text": "Someone to devour",
               "correct": true
             },
             {
-              "text": "A hungry wolf",
+              "text": "Someone to follow",
               "correct": false
             },
             {
-              "text": "A wild bear",
+              "text": "Somewhere to hide",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Peter 5:8",
-          "text": "A roaring lion, seeking someone to devour. Friend, I'm a cookie stamper who JUMPS when the oven timer dings, so this verse has my full attention.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Peter 5:9",
+          "question": "The devil is on the prowl. What does Peter tell them to do about him?",
+          "answers": [
+            {
+              "text": "Resist him and stand firm",
+              "correct": true
+            },
+            {
+              "text": "Hide until he moves on",
+              "correct": false
+            },
+            {
+              "text": "Make peace with him",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -288,57 +295,34 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Peter 5:9",
-          "question": "True or false: Peter tells them to run from the devil instead of resisting him.",
+          "question": "Peter's readers are going through a fiery trial. True or false: he says their brothers throughout the world are undergoing the same kinds of suffering.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Peter 5:9",
-          "question": "As they resist the devil and stand firm in their faith, what does Peter want them to know about their brothers throughout the world?",
-          "answers": [
-            {
-              "text": "They face the same kinds of suffering",
-              "correct": true
-            },
-            {
-              "text": "They are praying for them every day",
-              "correct": false
-            },
-            {
-              "text": "They have already won the fight",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Peter 5:10",
+          "text": "They're not alone in it, friend. Then Peter looks past the suffering to the God of all grace, who called them to His eternal glory in Christ.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "1 Peter 5:9-10",
-          "text": "So they're not alone in it. Then Peter looks past the suffering: after a little while, the God of all grace, who called them to His eternal glory in Christ, will step in Himself.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Peter 5:10",
-          "question": "After they have suffered for a little while, what does Peter say the God of all grace will do?",
+          "question": "What does Peter say the God of all grace will Himself do for them?",
           "answers": [
             {
               "text": "Restore and strengthen them",
@@ -353,58 +337,45 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Peter 5:10",
+          "question": "True or false: Peter says they will suffer for a long time before the God of all grace steps in.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "1 Peter 5:11-12",
-          "text": "Peter breaks into praise: \"To Him be the power forever and ever. Amen.\" Then he says he wrote this letter through Silvanus, whom he calls a faithful brother.",
-          "needs_agent_fix": true,
+          "verses": "1 Peter 5:11",
+          "text": "Peter breaks into praise: \"To Him be the power forever and ever. Amen.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Peter 5:12",
-          "question": "Peter sums up why he wrote: to encourage them and testify that this is the true ___ of God.",
-          "answers": [
-            {
-              "text": "grace",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "judgment",
-              "correct": false
-            },
-            {
-              "text": "kingdom",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "1 Peter 5:12-13",
-          "text": "Stand firm in it, Peter tells them. Then come the greetings, from the church in Babylon and from someone Peter calls his son.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Peter 5:13",
-          "question": "Peter passes along greetings from someone he calls \"my son.\" Who is it?",
+          "verses": "1 Peter 5:12",
+          "question": "Peter says he wrote this letter through someone he regards as a faithful brother. Who is it?",
           "answers": [
             {
-              "text": "Mark",
+              "text": "Silvanus",
               "correct": true
             },
             {
@@ -412,38 +383,35 @@
               "correct": false
             },
             {
-              "text": "Titus",
+              "text": "Tychicus",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "1 Peter 5:12",
+          "text": "Peter says he wrote briefly to encourage them and testify that this is the true grace of God. \"Stand firm in it.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "1 Peter 5:13",
+          "text": "Then come greetings from the church in Babylon, chosen together with them, and from Mark, whom Peter calls his son.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Peter 5:14",
-          "question": "True or false: as he closes, Peter tells them to greet one another with a kiss of love.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "story",
           "verses": "1 Peter 5:14",
-          "text": "And Peter signs off: \"Peace to all of you who are in Christ.\" Friend, I've sealed a LOT of cookie boxes, and not one of them closed that sweet.",
-          "needs_agent_fix": true,
+          "text": "Peter tells them to greet one another with a kiss of love, and signs off: \"Peace to all of you who are in Christ.\" Friend, I've sealed a LOT of cookie boxes, and not one of them closed that sweet.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 2:1",
-          "text": "Jesus has messages for seven churches, and He tells His servant John, the one seeing this whole vision, to write them down (Revelation 1:1-2, 11, 19). First up: the angel of the church in Ephesus. John, I hope you stretched, because that's a LOT of dictation and there's NO backspace on a scroll.",
+          "text": "John, the one this revelation is sent to, is on the island of Patmos when he sees a vision of Jesus (Revelation 1:1, 9-13). Jesus tells John to write to seven churches (Revelation 1:11). First up: the angel of the church in Ephesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,30 +17,30 @@
           "card": 2,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Revelation 1:20",
-          "question": "Jesus opens the Ephesus letter as the One who holds the seven stars in His right hand and walks among the seven golden lampstands. In John's vision, the seven lampstands are the seven ___.",
+          "verses": "Revelation 2:1",
+          "question": "Jesus opens the Ephesus letter as the One who holds the seven ___ in His right hand.",
           "answers": [
             {
-              "text": "churches",
+              "text": "stars",
               "correct": true
             },
             {
-              "text": "angels",
+              "text": "seals",
               "correct": false
             },
             {
-              "text": "spirits",
+              "text": "trumpets",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Revelation 2:2",
-          "text": "Jesus tells Ephesus He knows their deeds, their labor and their perseverance. That's your boss stopping by your desk saying, 'I saw your work this week,' and for one long second you don't know if it's a raise or a MEETING.",
+          "text": "Jesus tells Ephesus He knows their deeds, their labor and their perseverance. Baker, in the junk drawer where I spent years, my only labor was collecting DUST.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 2:2",
-          "question": "Some people came to the church in Ephesus falsely claiming to be apostles. What did the church do with them?",
+          "question": "Some people claimed to be apostles. What did the church in Ephesus do with them?",
           "answers": [
             {
               "text": "Tested them and exposed them as liars",
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Revelation 2:4",
-          "text": "So far this letter reads like Employee of the Month. Then Jesus says, 'But I have this against you:' and all of Ephesus leans in real slow.",
+          "text": "So far Jesus has praised them for their work. Then He says, 'But I have this against you…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,24 +161,14 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 2:5",
-          "question": "Jesus tells Ephesus to ___ and perform the deeds they did at ___.",
+          "question": "Jesus tells Ephesus to ___ and perform the deeds they did at first.",
           "answers": [
             {
               "text": "repent",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "first",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "rejoice",
-              "correct": false
-            },
-            {
-              "text": "last",
               "correct": false
             },
             {
@@ -251,7 +241,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Revelation 2:7",
-          "text": "Then Jesus says, 'He who has an ear, let him hear what the Spirit says to the churches.' Friend, that's not 'skim it later.' That's PUT. THE PHONE. DOWN.",
+          "text": "Then Jesus says, 'He who has an ear, let him hear what the Spirit says to the churches.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -289,38 +279,34 @@
           "kind": "story",
           "verses": "Revelation 2:8",
           "text": "Letter number two goes to the angel of the church in Smyrna. This time Jesus calls Himself the First and the Last.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Revelation 2:8",
-          "question": "In the letter to Smyrna, Jesus also describes Himself by something He went through. What is it?",
+          "question": "True or false: In the letter to Smyrna, Jesus describes Himself as the One who died and returned to life.",
           "answers": [
             {
-              "text": "He died and returned to life",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He fasted for forty days",
-              "correct": false
-            },
-            {
-              "text": "He was driven into the desert",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Revelation 2:9",
-          "text": "Jesus tells Smyrna He knows their affliction and their poverty. Friend, the day Mother Miller found me she had ONE quarter to spend, and she spent it on a stamper with a MUSTACHE.",
-          "needs_agent_fix": true,
+          "text": "Jesus tells Smyrna He knows their affliction and their poverty. Friend, the family that took me home was low on money too, and Mother Miller spent her ONE quarter that day on a stamper with a MUSTACHE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -339,27 +325,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Revelation 2:9",
-          "text": "Jesus is also aware of the slander from those who falsely claim to be Jews. He says they are in fact a synagogue of Satan.",
-          "needs_agent_fix": true,
+          "verses": "Revelation 2:9-10",
+          "text": "Jesus is also aware of the slander from those who falsely claim to be Jews, and He says they are in fact a synagogue of Satan. Then He tells Smyrna straight: suffering is coming.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Revelation 2:10",
-          "text": "Then Jesus tells Smyrna straight: suffering is coming.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 2:10",
@@ -378,19 +356,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Revelation 2:10",
+          "text": "And He gets specific. The devil is about to throw some of them into prison, and Jesus tells them, '…you will suffer tribulation for ten days.'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Revelation 2:10",
-          "text": "And He gets specific. The devil is about to throw some of them into prison.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Revelation 2:10",
@@ -409,34 +387,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Revelation 2:10",
-          "question": "Jesus tells Smyrna they will suffer tribulation for ___ days.",
-          "answers": [
-            {
-              "text": "ten",
-              "correct": true
-            },
-            {
-              "text": "forty",
-              "correct": false
-            },
-            {
-              "text": "three",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Revelation 2:10",
@@ -455,42 +410,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Revelation 2:11",
+          "text": "Then that line again: 'He who has an ear, let him hear what the Spirit says to the churches.'",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Revelation 2:11",
+          "question": "True or false: Jesus says the one who overcomes will be harmed by the second death.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Revelation 2:11",
-          "text": "Then that line again: 'He who has an ear, let him hear what the Spirit says to the churches.'",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Revelation 2:11",
-          "question": "True or false: Jesus says the one who overcomes will not be harmed by the second death.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Revelation 2:11",
-          "text": "Two letters down, FIVE churches to go, and I bet John's hand is already cramping. Trust me, friend, Jesus isn't done talking yet.",
-          "needs_agent_fix": true,
+          "text": "Two letters down, FIVE to go. Trust me, friend, Jesus isn't done talking yet.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

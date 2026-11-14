@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 13:1",
-          "text": "Friend, this is John, writing down what he saw to send to the seven churches (Revelation 1:4, 11). Last time, the dragon, that ancient serpent called the devil and Satan, was hurled to the earth and ended up standing on the shore of the sea (Revelation 12:9, 17). Now John says, \"Then I saw a beast with ten horns and seven heads rising out of the sea.\"",
+          "text": "Friend, this is John, writing down what he saw to send to the seven churches (Revelation 1:4, 11). Right before this, the dragon, that ancient serpent called the devil and Satan, was hurled to the earth and stood on the shore of the sea (Revelation 12:9, 17). Now John says, \"Then I saw a beast with ten horns and seven heads rising out of the sea.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,15 +18,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 13:1",
-          "question": "The beast John sees rising out of the sea has ten royal crowns, and they sit on its ten horns.",
+          "question": "The beast John sees rising out of the sea wears its royal crowns on its heads.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Revelation 13:3",
-          "text": "Then John notices one of the beast's heads. It appeared to have been mortally wounded, and friend, that beast has SEVEN heads to keep safe while I can't even keep my ONE away from the oven door.",
+          "text": "Then John sees that one of the beast's heads appeared to have been mortally wounded.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -118,8 +118,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Revelation 13:4",
-          "text": "And the people don't stop at following. They worship the beast, saying, \"Who is like the beast, and who can wage war against it?\" Friend, the loudest cheer I ever got was from the dead batteries I shared that drawer with, and all they said was, \"Oh. He's still here.\"",
-          "needs_agent_fix": true,
+          "text": "And the people don't stop at following: they worship the beast, saying, \"Who is like the beast, and who can wage war against it?\" The loudest cheer I ever got was from the dead batteries I shared a junk drawer with for years, and all they said was, \"Oh. He's still here.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -127,7 +127,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 13:4",
-          "question": "The people worship the beast from the sea, but they never worship the dragon.",
+          "question": "The crowd that follows the beast from the sea never worships the dragon.",
           "answers": [
             {
               "text": "True",
@@ -244,15 +244,15 @@
           "question": "How far does the authority given to the beast from the sea reach?",
           "answers": [
             {
-              "text": "Every tribe and people and tongue and nation",
+              "text": "Every tribe and nation on earth",
               "correct": true
             },
             {
-              "text": "The kings and cities along the shore of the sea",
+              "text": "The kings along the shore of the sea",
               "correct": false
             },
             {
-              "text": "The rulers and armies of a single nation",
+              "text": "The rulers of one great nation",
               "correct": false
             }
           ],
@@ -294,7 +294,7 @@
           "card": 19,
           "kind": "story",
           "verses": "Revelation 13:9-10",
-          "text": "Then John calls out, \"He who has an ear, let him hear:\" Whoever is destined for captivity will go into captivity, and whoever is to die by the sword will be killed by the sword.",
+          "text": "Then John writes, \"He who has an ear, let him hear:\" Next comes a hard word: whoever is destined for captivity will go into captivity, and whoever is to die by the sword must be killed by the sword.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -306,7 +306,7 @@
           "question": "After that hard word about captivity and the sword, what does John say this is a call for?",
           "answers": [
             {
-              "text": "The perseverance and faith of the saints",
+              "text": "The saints to persevere in faith",
               "correct": true
             },
             {
@@ -331,7 +331,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Revelation 13:11",
-          "text": "Then John says, \"Then I saw another beast rising out of the earth.\" This one has two horns like a lamb, and I bet you're thinking, okay, this one looks gentle.",
+          "text": "John says, \"Then I saw another beast rising out of the earth.\" This one has two horns like a lamb, and I bet you're thinking, okay, this one looks gentle.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -450,33 +450,33 @@
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Revelation 13:15",
-          "text": "Then the second beast was permitted to give breath to the image of the first beast, so the image could speak.",
+          "question": "The second beast was permitted to give ___ to the image of the first beast, so that the image could speak.",
+          "answers": [
+            {
+              "text": "breath",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "gold",
+              "correct": false
+            },
+            {
+              "text": "wings",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Revelation 13:15",
-          "question": "The speaking image could cause all who refused to worship it to be ___.",
-          "answers": [
-            {
-              "text": "killed",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "imprisoned",
-              "correct": false
-            },
-            {
-              "text": "exiled",
-              "correct": false
-            }
-          ],
+          "text": "And the image could cause all who refused to worship it to be killed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -514,30 +514,20 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Revelation 13:17",
-          "question": "The mark from the second beast matters, because without it no one could ___ or ___.",
+          "question": "Why does the second beast's mark matter so much?",
           "answers": [
             {
-              "text": "buy",
-              "correct": true,
-              "blank": 1
+              "text": "No one could buy or sell without it",
+              "correct": true
             },
             {
-              "text": "sell",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "pray",
+              "text": "No one could marry or own land without it",
               "correct": false
             },
             {
-              "text": "travel",
-              "correct": false
-            },
-            {
-              "text": "rest",
+              "text": "No one could enter a city without it",
               "correct": false
             }
           ],
@@ -549,15 +539,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Revelation 13:17",
-          "question": "The mark people must have to buy or sell is the name of the beast or the number of its name.",
+          "question": "The mark people need to buy or sell is the name of the dragon or the number of his name.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -574,13 +564,14 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Revelation 13:18",
-          "question": "What does John say the number of the beast is?",
+          "question": "John says the number of the beast is ___.",
           "answers": [
             {
               "text": "666",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "144",

@@ -8,17 +8,17 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "James 1:1, 1:18-19",
-          "text": "James, a servant of God and of the Lord Jesus Christ, is writing a letter to the twelve tribes of the Dispersion. He just told them God chose to give us birth through the word of truth. Now he says, \"My beloved brothers, understand this:\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "James 1:19",
+          "text": "James, a servant of God and of the Lord Jesus Christ, is writing a letter to the twelve tribes of the Dispersion (James 1:1). He just told them God chose to give us birth through the word of truth (James 1:18). Now he says, \"My beloved brothers, understand this:\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "James 1:19",
-          "question": "James gives his beloved brothers three things to watch. Which one should everyone be QUICK to do?",
+          "question": "James names three things for his beloved brothers: one to be quick at and two to be slow at. Which one should everyone be QUICK to do?",
           "answers": [
             {
               "text": "Listen",
@@ -33,49 +33,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "James 1:19",
-          "question": "James also says everyone should be slow to speak and slow to anger.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "The other two are slow to speak and slow to anger. I once got mad at my oven timer for going off, and baker, the timer was RIGHT.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "James 1:20",
-          "question": "James gives a reason to be slow to anger. What is it?",
+          "question": "James says man's anger brings about the righteousness that God desires.",
           "answers": [
             {
-              "text": "It doesn't bring about the righteousness God desires",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "It makes the people around you stop listening",
-              "correct": false
-            },
-            {
-              "text": "It shows you don't have enough faith in God",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -83,7 +68,7 @@
           "kind": "story",
           "verses": "James 1:21",
           "text": "So James says to get rid of all moral filth and every expression of evil. That's scraping the burnt tray, baker, and you don't save a couple black crumbs on there for old times' sake.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +76,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "James 1:21",
-          "question": "James gives a second command in that same breath: humbly accept something. What is it?",
+          "question": "James also tells his brothers to humbly accept something that can save their souls. What is it?",
           "answers": [
             {
               "text": "The word planted in you",
@@ -106,30 +91,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "James 1:21",
-          "question": "James says the word planted in them can save their souls.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "James 1:22",
@@ -148,47 +114,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "James 1:22",
+          "text": "Hear the word and stop there, James says, and you're deceiving yourselves. That's mixing a whole bowl of dough and never turning on the oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "James 1:22",
-          "question": "James says if you only hear the word and stop there, you're deceiving ___.",
-          "answers": [
-            {
-              "text": "yourselves",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "your neighbors",
-              "correct": false
-            },
-            {
-              "text": "your leaders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "James 1:23",
+          "text": "Then James paints a picture. Someone who hears the word but doesn't carry it out is like a man who looks at his face in a mirror.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "James 1:23",
-          "text": "Then James paints a picture. Someone who hears the word but doesn't carry it out is like a man who looks at his face in a mirror.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "James 1:24",
-          "question": "After the man in the mirror looks himself over, he walks away and remembers exactly what he looks like.",
+          "question": "In James's mirror picture, the man looks himself over, then walks away remembering exactly what he looks like.",
           "answers": [
             {
               "text": "True",
@@ -199,73 +149,63 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "James 1:24",
+          "text": "And James says he forgets immediately. That's me reading the recipe, turning around to the bowl, and going, \"Wait. How many cups of flour?\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "James 1:24",
-          "text": "And James says he forgets immediately. That's me reading the recipe, turning around to the bowl, and going, \"Wait. How many cups of flour?\"",
-          "needs_agent_fix": true,
+          "verses": "James 1:25",
+          "text": "But James says there's another kind of person: one who looks intently into the perfect law of freedom and keeps at it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "James 1:25",
-          "question": "But James says there's another kind of person, who looks intently into something and keeps at it. What does he look into?",
+          "question": "James says the one who looks intently into the perfect law of freedom and keeps at it will be blessed in what he ___.",
           "answers": [
             {
-              "text": "The perfect law of freedom",
-              "correct": true
+              "text": "does",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The scrolls of the prophets",
+              "text": "hears",
               "correct": false
             },
             {
-              "text": "The record of his own deeds",
+              "text": "knows",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "James 1:25",
-          "question": "James says that person, not a forgetful hearer but an effective doer, will be blessed in what he hears.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "James 1:26",
+          "text": "Then James turns to anyone who considers himself religious and yet doesn't bridle his tongue: he deceives his heart. Baker, I've had words leave my mouth so fast my brain had to read about it LATER.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "James 1:26",
-          "text": "Then James asks us to picture this: what if someone considers himself religious and yet doesn't bridle his tongue? Baker, I've had words leave my mouth so fast my brain had to read about it LATER.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "James 1:26",
-          "question": "That man deceives his heart. And James says his religion is ___.",
+          "question": "Someone considers himself religious but doesn't bridle his tongue. James says he deceives his heart, and his religion is ___.",
           "answers": [
             {
               "text": "worthless",
@@ -273,64 +213,54 @@
               "blank": 1
             },
             {
-              "text": "unfinished",
+              "text": "admirable",
               "correct": false
             },
             {
-              "text": "untested",
+              "text": "complete",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "James 1:27",
+          "text": "Then James shows what religion that's pure and undefiled before our God and Father looks like. It comes in two parts.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "James 1:27",
-          "text": "Then James shows what religion that's pure and undefiled before our God and Father looks like. It comes in two parts.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "question": "James says pure religion means caring for certain people in their distress. Who are they?",
+          "answers": [
+            {
+              "text": "Orphans and widows",
+              "correct": true
+            },
+            {
+              "text": "Prophets and priests",
+              "correct": false
+            },
+            {
+              "text": "Kings and rulers",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "James 1:27",
-          "question": "James says pure religion means caring for ___ and ___ in their distress.",
-          "answers": [
-            {
-              "text": "orphans",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "widows",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "strangers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 19,
-          "kind": "choice",
           "type": "true_false",
           "verses": "James 1:27",
-          "question": "James says the other part of pure religion is keeping yourself from being polluted by the world.",
+          "question": "Besides caring for those in distress, James says pure religion means keeping yourself from being polluted by the world.",
           "answers": [
             {
               "text": "True",
@@ -341,8 +271,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

@@ -109,7 +109,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Peter 2:3-4",
-          "text": "One taste and you're coming back for the WHOLE box, friend, that's my cookie sample rule. Now Peter switches from milk to building and talks about coming to the Lord, the living stone, rejected by men.",
+          "text": "That's my cookie sample rule: one taste and you're back for the WHOLE box. Now Peter switches from milk to building and talks about coming to the Lord, the living stone, rejected by men.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -140,8 +140,8 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Peter 2:5",
-          "text": "Then Peter tells the believers that they, like living stones, are being built up too. Friend, I spent YEARS in a junk drawer waiting for somebody to put me back to work, so if I'm a stone and you pick me for the building, I'm hopping on this gold base yelling, \"ME? ME?!\"",
-          "needs_agent_fix": true,
+          "text": "Then Peter says the believers, like living stones, are being built up too. After YEARS in the back of a junk drawer, friend, anybody who wanted to put me back to work would've gotten a yes before they finished the sentence.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -169,39 +169,37 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Peter 2:5",
-          "question": "Peter says the believers are being built up to be a holy ___, offering spiritual ___ acceptable to God.",
-          "answers": [
-            {
-              "text": "priesthood",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "sacrifices",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "army",
-              "correct": false
-            },
-            {
-              "text": "crowns",
-              "correct": false
-            },
-            {
-              "text": "walls",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And this house has a job. Peter says the living stones are being built for a holy role, offering sacrifices to God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "1 Peter 2:5",
+          "question": "Peter says the living stones are being built to be a holy ___ that offers sacrifices to God.",
+          "answers": [
+            {
+              "text": "priesthood",
+              "correct": true
+            },
+            {
+              "text": "family",
+              "correct": false
+            },
+            {
+              "text": "choir",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Peter 2:5",
@@ -233,7 +231,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Peter 2:6",
-          "text": "Peter backs up all this stone talk with Scripture from the prophet Isaiah (Isa 28:16). God says, “See, I lay in Zion a stone, a chosen and precious cornerstone”",
+          "text": "Peter backs up all this stone talk with Scripture from the prophet Isaiah (Isa 28:16). God says, “See, I lay in Zion a stone, a chosen and precious cornerstone…”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -265,15 +263,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Peter 2:7",
-          "question": "To those who believe, Peter says this stone is precious.",
+          "question": "Peter says this stone is precious to everyone, whether they believe or not.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -289,25 +287,10 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Peter 2:8",
-          "question": "Peter quotes one more Scripture about this stone. To those who don't believe, it's a stone of ___.",
-          "answers": [
-            {
-              "text": "stumbling",
-              "correct": true
-            },
-            {
-              "text": "help",
-              "correct": false
-            },
-            {
-              "text": "witness",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Peter quotes one more Scripture about this stone, from Isaiah again (Isa 8:14): “A stone of stumbling and a rock of offense.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -337,7 +320,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Peter 2:8-9",
-          "text": "Peter adds that this is what they were appointed to. Then he turns right back to the believers with two big words: “But you”",
+          "text": "Peter adds that this is what they were appointed to. Then he turns right back to the believers with two big words: “But you…”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -346,18 +329,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Peter 2:9",
-          "question": "Peter piles up names for the believers: a chosen people, a holy nation, a people for God's own possession. What else does he call them?",
+          "question": "Peter piles up names for the believers: a chosen people, a royal priesthood, a holy nation. What else does he call them?",
           "answers": [
             {
-              "text": "A royal priesthood",
+              "text": "A people for God's own possession",
               "correct": true
             },
             {
-              "text": "A mighty army",
+              "text": "A people of great wealth and power",
               "correct": false
             },
             {
-              "text": "A wandering tribe",
+              "text": "A people scattered without a home",
               "correct": false
             }
           ],
@@ -427,30 +410,30 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Peter 2:10",
-          "question": "Peter says that once the believers had not received mercy, but now they have ___ mercy.",
+          "question": "Peter ends with one more before and after for the believers. What have they now received that they once hadn't?",
           "answers": [
             {
-              "text": "received",
+              "text": "Mercy",
               "correct": true
             },
             {
-              "text": "earned",
+              "text": "Riches",
               "correct": false
             },
             {
-              "text": "lost",
+              "text": "Strength",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }
