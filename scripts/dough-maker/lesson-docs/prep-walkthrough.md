@@ -103,7 +103,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 - Every story card moves the baker forward through the passage.
 - No recap cards.
-- **When the story continues.** If the passage is in a story group and isn't the last passage in it, the last story card ends with a short line from Papa Dorin saying the story isn't over (or the teaching isn't done). It gives nothing away about what happens next. The examples show the idea. Write your own line each time.
+- **When the story continues.** If the passage is in a story group and isn't the last passage in it, the last story card ends with a short line from Papa Dorin saying the story isn't over (or the teaching isn't done). It gives nothing away about what happens next. The examples show the idea. Write your own line each time. A card that is only this line cites the passage's last verse.
     - When the passage's last verse is asked on a choice card, the last story card can be just this line.
     - ✅ "And that's where we'll leave it for now. Trust me, friend, this story's not done."
     - ❌ "Don't worry, Haman gets what's coming to him later."
@@ -140,7 +140,9 @@ Some parts of a passage don't move it forward. They hold a lot of detail in one 
 
 The list isn't complete. If a stretch is mostly detail and not much happens, it counts.
 
-**Not a long stretch:** speeches, teaching and key laws, like the Ten Commandments. These carry the heart of a passage and get story cards and choice cards like anything else.
+**Not a long stretch:** speeches, teaching and key laws, like the Ten Commandments. These carry the heart of a passage and get story cards and choice cards like anything else. Rules spoken in a speech still count as a long stretch when they are a run of detail: cases, amounts, steps and repeats. The main commands, the reasons the text gives (like "Be holy, because I am holy"), and anything that happens get story and choice cards.
+
+**When the whole passage is a long stretch,** each part gets its own summary card. Choice cards ask only about what the text says a thing is for, what someone says, anything that happens, and short stories inside it. Never about measurements, materials, counts or names. These stops can have fewer choice cards than story cards.
 
 **The rule:** Papa Dorin sums up the stretch in one story card. A short story inside the stretch, like Nimrod in the list of nations (Genesis 10:8–12), is part of the stretch: it can be the standout detail on that card, but it gets no choice cards. A stretch never gets a stop of its own. Its one card sits in the stop with the moments around it. He says in a few words what it covers and doesn't go item by item. He can name a standout detail the text gives if it helps the stretch stick. The baker should know the stretch is there and what it's about, not memorize it. A long stretch never gets a choice card.
 
