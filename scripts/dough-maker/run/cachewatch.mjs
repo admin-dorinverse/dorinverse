@@ -11,15 +11,15 @@
 import { sha } from './docs.mjs';
 import { notify } from './events.mjs';
 
-export const LASTS = { opus: 60 * 60_000, sonnet: 60 * 60_000, kimi: 5 * 60_000 };   // Opus: measured in the caching test; Kimi: about 5 minutes
+export const LASTS = { opus: 60 * 60_000, sonnet: 60 * 60_000, haiku: 60 * 60_000, kimi: 5 * 60_000 };   // Opus: measured in the caching test; Kimi: about 5 minutes
 // Tokens per character, and the fixed text each provider puts before ours, measured in the caching test (Nov 2026).
 // Rerun cache-test.mjs after a Claude Code or model update: it prints each estimate next to what was reused.
-const PER_CHAR = { opus: { doc: 0.3565, bible: 0.385 }, sonnet: { doc: 0.3565, bible: 0.385 }, kimi: { doc: 0.24, bible: 0.265 } };   // Kimi docs: 0.24 from the Prep caching test (papa-dorin.md + prep-walkthrough.md + checker.md)
-const OPENING = { opus: 15, sonnet: 15, kimi: 24 };
-const MARGIN = { opus: 0.05, sonnet: 0.05, kimi: 0.05 };   // the estimate is good to a few percent; Kimi also reuses in 256-token steps
+const PER_CHAR = { opus: { doc: 0.3565, bible: 0.385 }, sonnet: { doc: 0.3565, bible: 0.385 }, haiku: { doc: 0.3565, bible: 0.385 }, kimi: { doc: 0.24, bible: 0.265 } };   // Kimi docs: 0.24 from the Prep caching test (papa-dorin.md + prep-walkthrough.md + checker.md)
+const OPENING = { opus: 15, sonnet: 15, haiku: 15, kimi: 24 };
+const MARGIN = { opus: 0.05, sonnet: 0.05, haiku: 0.05, kimi: 0.05 };   // the estimate is good to a few percent; Kimi also reuses in 256-token steps
 
 const seen = new Map();   // model|fingerprint -> last time sent
-const inARow = { opus: 0, sonnet: 0, kimi: 0 };
+const inARow = { opus: 0, sonnet: 0, haiku: 0, kimi: 0 };
 
 // pieces: [{ name, text, kind: 'doc' | 'bible' }], in the order they sit at the top of the call
 export function size(model, pieces) {

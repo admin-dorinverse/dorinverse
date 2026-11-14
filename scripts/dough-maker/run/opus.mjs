@@ -21,7 +21,8 @@ import { saveLimits } from './limits.mjs';
 import * as cachewatch from './cachewatch.mjs';
 
 export const OPUS = 'claude-opus-5-5';
-export const SONNET = 'claude-sonnet-5-5';   // the fix run's checker: a different model from the fixer, same subscription
+export const SONNET = 'claude-sonnet-5-5';
+export const HAIKU = 'claude-haiku-5-5';   // the fix run's checker: a different model from the fixer, same subscription
 const npmRoot = spawnSync('npm root -g', { encoding: 'utf8', shell: true }).stdout.trim();
 const EXE = path.join(npmRoot, '@anthropic-ai', 'claude-code', 'bin', process.platform === 'win32' ? 'claude.exe' : 'claude');
 // A fixed name, never a random one: if the folder's name ever reaches the call, it must be the same every time
@@ -33,7 +34,7 @@ export class LimitError extends Error {
 }
 
 export function opus({ system, prompt, passage = null, step = null, role = null, effort = 'medium', model = OPUS }) {
-  const name = model === SONNET ? 'sonnet' : 'opus';
+  const name = model === SONNET ? 'sonnet' : model === HAIKU ? 'haiku' : 'opus';
   fs.mkdirSync(EMPTY, { recursive: true });
   fs.mkdirSync(PROMPTS, { recursive: true });
   const id = randomUUID();
