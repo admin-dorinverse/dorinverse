@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 20:1",
-          "text": "This is a psalm of David, written for the choirmaster, so it's made to be sung. A whole group speaks a blessing over one person facing a day of trouble, and they start with this: may the LORD answer you. It's like the group chat flooding you with prayer hands before your big day, except this group chat has a CHOIR.",
-          "needs_agent_fix": true,
+          "text": "This is a psalm of David, the shepherd who beat Goliath (1 Samuel 17), written for the choirmaster. It opens with, \"May the LORD answer you in the day of trouble…\" It's like your phone blowing up with good wishes before a rough day, except these texts come with a CHOIR.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,18 +18,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 20:1",
-          "question": "Next comes the name of the God of Jacob, the man God renamed Israel (Genesis 32:28). What does the group hope that name will do for the person in trouble?",
+          "question": "Next comes the name of the God of Jacob, the man God renamed Israel (Genesis 32:28). What does the psalm hope that name will do for the one in the day of trouble?",
           "answers": [
             {
-              "text": "Protect this person",
+              "text": "Protect them",
               "correct": true
             },
             {
-              "text": "Test this person",
+              "text": "Test them",
               "correct": false
             },
             {
-              "text": "Judge this person",
+              "text": "Judge them",
               "correct": false
             }
           ],
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 20:2",
-          "text": "Next they tell this person, \"May He send you help from the sanctuary and sustain you from Zion.\" Help straight from God's own house, with no hold music and no 'please leave a message.'",
+          "text": "Then the psalm says, \"May He send you help from the sanctuary and sustain you from Zion.\" Help straight from God's own house, with no hold music and no 'please leave a message.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 20:3",
-          "text": "Then they hope He'll remember every gift this person has given. This choir isn't skimming the file, friend: they're going through EVERY page.",
+          "text": "Then it hopes He'll remember all the gifts of the one being prayed for. Not SOME of the gifts, friend. ALL of them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -57,7 +57,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 20:3",
-          "question": "The group hopes the LORD will remember this person's gifts. True or false: they also hope He'll look favorably on this person's burnt offerings.",
+          "question": "The psalm hopes the LORD will remember all your gifts. True or false: it also hopes He'll look favorably on your burnt offerings.",
           "answers": [
             {
               "text": "True",
@@ -75,7 +75,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Psalm 20:3-4",
-          "text": "Then a Selah lands right there in the song. After it, they tell this person they hope He'll give them the desires of their heart.",
+          "text": "Then a Selah lands right there in the song. After it, the psalm hopes He'll give you the desires of your heart.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -84,7 +84,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 20:4",
-          "question": "The group hopes God will give this person the desires of their heart. What do they hope for this person's plans?",
+          "question": "The psalm hopes God will give you the desires of your heart. What does it hope for your plans?",
           "answers": [
             {
               "text": "That all of them succeed",
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 20:5",
-          "question": "The group pictures the day this person wins. True or false: they hope they'll get to keep it quiet.",
+          "question": "Next the psalm pictures the day of your victory. True or false: it hopes to keep that day quiet.",
           "answers": [
             {
               "text": "True",
@@ -125,56 +125,79 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 20:5",
-          "text": "They hope they'll get to shout for joy and raise a banner in the name of their God, like a whole stadium waving one giant flag. And they hope the LORD grants every request this person makes.",
+          "text": "The psalm says, \"May we shout for joy at your victory and raise a banner in the name of our God.\" Like a whole stadium waving one giant flag.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 20:6",
-          "question": "Up to now, the psalm has been one 'may' after another. Then one voice says he knows it now: the LORD ___ His anointed.",
+          "type": "multiple_choice",
+          "verses": "Psalm 20:5",
+          "question": "The psalm has one more hope for you before it changes direction. What does it hope the LORD will grant?",
           "answers": [
             {
-              "text": "saves",
-              "correct": true,
-              "blank": 1
+              "text": "Every single request",
+              "correct": true
             },
             {
-              "text": "tests",
+              "text": "A long and easy life",
               "correct": false
             },
             {
-              "text": "warns",
+              "text": "Rest from every enemy",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Psalm 20:6",
-          "text": "He's sure the LORD saves His anointed and answers him from His holy heaven with the saving power of His right hand. Friend, MY right hand is half a mustache, and HIS right hand SAVES.",
+          "text": "Up to now, it's been one 'may' after another. Then the psalm says, \"Now I know that the LORD saves His anointed; He answers him from His holy heaven with the saving power of His right hand.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Psalm 20:7",
-          "text": "Then comes the big comparison: some trust in chariots, and others in horses. That's trusting horsepower, friend, and I have watched horsepower sit in rush hour traffic just like everybody else.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 20:6",
+          "question": "With 'Now I know,' the psalm turns from hoping to being ___.",
+          "answers": [
+            {
+              "text": "sure",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "afraid",
+              "correct": false
+            },
+            {
+              "text": "patient",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Psalm 20:7",
+          "text": "Then the psalm says, \"Some trust in chariots and others in horses…\" You know when somebody brags about their car's horsepower, and it still sits in rush hour traffic like everybody else's?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 20:7",
-          "question": "The group praying in this psalm doesn't trust in chariots or horses: we trust in the ___ of the LORD our God.",
+          "question": "Not chariots, not horses. The psalm says, we trust in the ___ of the LORD our God.",
           "answers": [
             {
               "text": "name",
@@ -194,7 +217,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 20:8",
@@ -213,11 +236,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
+          "kind": "story",
+          "verses": "Psalm 20:8",
+          "text": "The psalm says, \"They collapse and fall, but we rise up and stand firm.\" Friend, standing firm is the ONE thing I've got down, because I come with my own gold base.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 20:9",
-          "question": "The last line finally names the person this whole psalm has been praying for. Who is it?",
+          "question": "In the last line, the psalm calls on the LORD to save someone. Who is it?",
           "answers": [
             {
               "text": "The king",
@@ -236,11 +267,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 18,
           "kind": "story",
-          "verses": "Psalm 20:9",
-          "text": "Then they turn to the LORD Himself and ask Him to answer them on the day they call. The song opened hoping the LORD would answer this one person, and it closes asking Him to answer all of them.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 20:1, 9",
+          "text": "It ends, \"O LORD, save the king. Answer us on the day we call.\" The song opened with \"May the LORD answer you…\" and it closes with answer US.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

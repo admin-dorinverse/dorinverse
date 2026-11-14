@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 5:1-2",
-          "text": "This is a psalm of David, king of Israel, for the choirmaster, to be played with flutes. David asks the LORD to give ear to his words and consider his groaning, and he calls Him my King and my God. Groaning is not small talk, friend: that's the noise I make lifting a FULL cookie box.",
+          "text": "This is a psalm of David, king of Israel, for the choirmaster, to be played with flutes. David asks the LORD to give ear to his words and consider his groaning, and he calls Him \"my King and my God\" as he prays. Groaning is not small talk, friend: that's the noise I make lifting a FULL cookie box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 5:3-4",
-          "text": "David's up at daybreak to pray, while I'm still LOSING an argument with my snooze button. Then David says something about who God is: He's not a God who delights in wickedness.",
+          "text": "David's up at daybreak to pray, while most of us are still LOSING an argument with the snooze button. Then David says something about who God is: He's not a God who delights in wickedness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -93,24 +93,24 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 5:6",
-          "question": "David says the LORD destroys those who tell ___.",
+          "question": "David says the LORD destroys those who tell lies. What kind of man does David say the LORD abhors?",
           "answers": [
             {
-              "text": "lies",
+              "text": "The man of bloodshed and deceit",
               "correct": true
             },
             {
-              "text": "secrets",
+              "text": "The man who is poor and needy",
               "correct": false
             },
             {
-              "text": "riddles",
+              "text": "The man who is new in the land",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -146,33 +146,14 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 5:7",
-          "question": "True or false: David says he will bow down toward God's holy temple in reverence.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 5:7-8",
+          "text": "David says he'll bow down toward God's holy temple in reverence. Then he asks the LORD to lead him in His righteousness, and he says why: because of his enemies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Psalm 5:8",
-          "text": "Now David asks the LORD to lead him in His righteousness, and he says why: because of his enemies.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 5:8",
@@ -183,11 +164,11 @@
               "correct": true
             },
             {
-              "text": "His own heart",
+              "text": "David's own heart",
               "correct": false
             },
             {
-              "text": "His enemies' path",
+              "text": "The path of his enemies",
               "correct": false
             }
           ],
@@ -195,15 +176,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Psalm 5:8-9",
-          "text": "A straight way is MY prayer every time my phone says recalculating. Then David describes his enemies: their throats are open graves, and their tongues practice deceit.",
-          "needs_agent_fix": true,
+          "text": "Anybody whose phone has said recalculating five times in a row knows how GOOD a straight way sounds. Then David turns to his enemies, starting with the way they talk.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 5:9",
@@ -218,6 +199,14 @@
               "correct": true
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Psalm 5:9",
+          "text": "Destruction lies within them, David says. Their throats are open graves, and their tongues practice deceit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -294,20 +283,20 @@
         {
           "card": 20,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 5:12",
-          "question": "In the last line of the psalm, what does David say the LORD surrounds the righteous with?",
+          "question": "David says the LORD surrounds the righteous with the ___ of His favor.",
           "answers": [
             {
-              "text": "The shield of His favor",
+              "text": "shield",
               "correct": true
             },
             {
-              "text": "The sword of His Spirit",
+              "text": "sword",
               "correct": false
             },
             {
-              "text": "The armor of His light",
+              "text": "spear",
               "correct": false
             }
           ],

@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 53:1",
-          "text": "This is a Maskil of David, king of Israel, a song written for the choirmaster. It opens on a man talking to himself. Not out loud, friend, but down in his heart.",
-          "needs_agent_fix": true,
+          "text": "This is a Maskil of David, king of Israel, a song for the choirmaster. It opens on a fool talking to himself about God. Not out loud, friend, but down in his heart.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -25,7 +25,7 @@
               "correct": true
             },
             {
-              "text": "That God has forgotten him",
+              "text": "That God is angry with him",
               "correct": false
             },
             {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Psalm 53:1",
-          "text": "David calls that man a fool. Then he widens out to a whole crowd: \"They are corrupt; their ways are vile.\"",
-          "needs_agent_fix": true,
+          "text": "Then David widens out from that one fool to a whole crowd: \"They are corrupt; their ways are vile.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -60,132 +60,62 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Psalm 53:2",
-          "text": "Now the song looks up, because God is looking down on the sons of men. Picture me crouched at the oven window, squinting at a batch, whispering, \"Come on. SOMEBODY in there rise.\"",
-          "needs_agent_fix": true,
+          "text": "Now the song looks up, because God looks down from heaven on the sons of men.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 53:2",
-          "question": "God looks down from ___ upon the sons of men.",
+          "question": "In a song about corrupt people who do no good, what is God looking down to see?",
           "answers": [
             {
-              "text": "heaven",
-              "correct": true,
-              "blank": 1
+              "text": "If any understand and seek Him",
+              "correct": true
             },
             {
-              "text": "Sinai",
+              "text": "If any are strong enough to rule",
               "correct": false
             },
             {
-              "text": "Carmel",
+              "text": "If any have built Him an altar",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 53:2",
-          "question": "When God looks down on the sons of men, what is He looking for?",
-          "answers": [
-            {
-              "text": "Anyone who understands and seeks Him",
-              "correct": true
-            },
-            {
-              "text": "Anyone strong enough to rule them",
-              "correct": false
-            },
-            {
-              "text": "Anyone who has built Him an altar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 53:3",
+          "text": "All have turned away and together become corrupt, and no one does good, not even one. Friend, that's not one burnt cookie on the tray, that's the WHOLE TRAY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 53:3",
-          "question": "So what does God find when He looks down on the sons of men?",
-          "answers": [
-            {
-              "text": "All have turned away",
-              "correct": true
-            },
-            {
-              "text": "A faithful few remain",
-              "correct": false
-            },
-            {
-              "text": "Most are seeking Him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 53:4",
+          "text": "Then David asks, \"Will the workers of iniquity never learn?\" I ask myself the same thing every time I grab a hot tray without a mitt.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Psalm 53:3",
-          "text": "All have turned away and together become corrupt, and no one does good, not even one. Friend, that's not one burnt cookie on the tray. That's the WHOLE TRAY.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Psalm 53:4",
-          "text": "Then David asks, \"Will the workers of iniquity never learn?\" I ask myself the same thing every time I grab a hot tray without a mitt.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 53:4",
-          "question": "In the song, how do the workers of iniquity treat \"my people\"?",
-          "answers": [
-            {
-              "text": "They devour them like bread",
-              "correct": true
-            },
-            {
-              "text": "They scatter them like sheep",
-              "correct": false
-            },
-            {
-              "text": "They sell them like cattle",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 53:4",
-          "question": "True or false: the workers of iniquity refuse to call upon God.",
+          "question": "Of the workers of iniquity, the song says, \"They devour my people like bread…\" True or false: they also refuse to call upon God.",
           "answers": [
             {
               "text": "True",
@@ -196,42 +126,51 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Psalm 53:5",
+          "text": "Then the song flips. Now they're the ones in trouble, right where there was nothing to fear.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 53:5",
+          "question": "The song says, there they are, overwhelmed with ___, where there was nothing to fear.",
+          "answers": [
+            {
+              "text": "dread",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "hunger",
+              "correct": false
+            },
+            {
+              "text": "sorrow",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Psalm 53:5",
+          "text": "Then the song says, \"For God has scattered the bones of those who besieged you.\" Those besiegers are put to shame.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Psalm 53:5",
-          "text": "Then the song flips: \"There they are, overwhelmed with dread, where there was nothing to fear.\" That's me when my oven ticks as it cools, and I spin around on my base, mustache up, ready to fight an OVEN.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 53:5",
-          "question": "In David's song, who scatters the bones of those who besieged you?",
-          "answers": [
-            {
-              "text": "God Himself",
-              "correct": true
-            },
-            {
-              "text": "David's mighty men",
-              "correct": false
-            },
-            {
-              "text": "The army of Israel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 53:5",
@@ -246,72 +185,61 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Psalm 53:6",
+          "text": "After all that, the last verse turns to Israel. David longs for something to come from Zion, the City of David (2 Samuel 5:7).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 53:6",
+          "question": "From Zion, what does David long to see come to Israel?",
+          "answers": [
+            {
+              "text": "Salvation",
+              "correct": true
+            },
+            {
+              "text": "A new king",
+              "correct": false
+            },
+            {
+              "text": "A great army",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Psalm 53:6",
-          "text": "David ends with a longing for Israel's salvation. And he pictures the day God restores His captive people.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 53:6",
-          "question": "David longs for the salvation of Israel to come from ___.",
+          "question": "When God restores His captive people, how does David say Jacob and Israel should respond?",
           "answers": [
             {
-              "text": "Zion",
-              "correct": true,
-              "blank": 1
+              "text": "Rejoice and be glad",
+              "correct": true
             },
             {
-              "text": "Egypt",
+              "text": "Mourn and repent",
               "correct": false
             },
             {
-              "text": "Babylon",
+              "text": "Rest and be still",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 53:6",
-          "question": "When God restores His captive people, let Jacob ___, let Israel be ___!",
-          "answers": [
-            {
-              "text": "rejoice",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "glad",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "mourn",
-              "correct": false
-            },
-            {
-              "text": "afraid",
-              "correct": false
-            },
-            {
-              "text": "silent",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

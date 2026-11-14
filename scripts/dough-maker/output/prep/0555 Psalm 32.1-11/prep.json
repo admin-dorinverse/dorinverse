@@ -9,27 +9,31 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 32:1",
-          "text": "Pull up a stool, friend. This is a psalm of David, king of Israel (2 Samuel 5:3), and it's called a Maskil. Most songs open with a love story, but David opens by telling us who's blessed.",
-          "needs_agent_fix": true,
+          "text": "Pull up a stool, friend. This is a psalm of David, king of Israel (2 Samuel 5:3), and it's called a Maskil. David opens by telling us who's blessed, and he goes right to the subject of sin.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 32:1",
-          "question": "David's first blessing goes to the person who has never sinned.",
+          "question": "In his opening line, who does David call blessed?",
           "answers": [
             {
-              "text": "True",
+              "text": "The one whose transgressions are forgiven",
+              "correct": true
+            },
+            {
+              "text": "The one who has never sinned at all",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The one who keeps every command",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -37,30 +41,26 @@
           "kind": "story",
           "verses": "Psalm 32:2",
           "text": "Then David says it a second way: blessed is the man whose iniquity the LORD does not count against him. That's the bill showing up stamped PAID IN FULL, and you never sent a dime!",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 32:2",
-          "question": "David adds one more thing about this blessed man. Besides being forgiven, what's true of him?",
+          "question": "David says there is no deceit in the spirit of this blessed man, the one whose iniquity the LORD does not count against him.",
           "answers": [
             {
-              "text": "There is no deceit in his spirit",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "There is no fear in his heart",
-              "correct": false
-            },
-            {
-              "text": "There is no pride in his eyes",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -68,7 +68,7 @@
           "kind": "story",
           "verses": "Psalm 32:3",
           "text": "Now David gets personal and tells about a time he kept silent. Friend, that's putting tape over the check engine light and hoping the engine forgets.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -76,30 +76,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 32:3",
-          "question": "While David kept silent, what happened to his body?",
+          "question": "While David kept silent, what was it like for him?",
           "answers": [
             {
-              "text": "His bones became brittle from groaning",
+              "text": "He groaned all day long",
               "correct": true
             },
             {
-              "text": "His knees grew weak from fasting",
+              "text": "He rested easy all day long",
               "correct": false
             },
             {
-              "text": "His eyes grew dim from weeping",
+              "text": "He laughed all day long",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Psalm 32:4",
-          "text": "And it wasn't only his bones. Day and night, David tells the LORD, Your hand was heavy on me.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 32:3-4",
+          "text": "His bones became brittle from all that groaning. And David tells the LORD that day and night, the LORD's hand was heavy on him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 32:4",
-          "question": "With the LORD's hand heavy on him, David says his strength was drained as in the winter cold.",
+          "question": "With the LORD's hand heavy on him day and night, David says his strength held up just fine.",
           "answers": [
             {
               "text": "True",
@@ -118,11 +118,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "Psalm 32:4",
+          "text": "His strength was drained as in the summer heat. That's me after twelve batches back to back by the ovens, melted down like a chocolate chip on a hot tray!",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 32:5",
@@ -137,15 +145,15 @@
               "correct": false
             },
             {
-              "text": "name",
+              "text": "regret",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 32:5",
@@ -156,7 +164,7 @@
               "correct": true
             },
             {
-              "text": "He lays a penalty upon him",
+              "text": "He lays a penalty on him",
               "correct": false
             },
             {
@@ -164,15 +172,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Psalm 32:5",
-          "text": "Look at the order: David says he'll confess, and the very next words are \"and You forgave the guilt of my sin.\" No waiting room, no take-a-number, faster than my oven preheats!",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -234,8 +234,8 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "Psalm 32:5-7",
-          "text": "Then David tells the LORD, \"You are my hiding place.\" He quit hiding his iniquity and started hiding IN God, and friend, that beats the back of a junk drawer by a MILE!",
+          "verses": "Psalm 32:5, 7",
+          "text": "Then David tells the LORD, \"You are my hiding place.\" He quit hiding his iniquity and started hiding IN God, and friend, that beats the back of the junk drawer I spent years stuck in by a MILE!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -266,16 +266,16 @@
           "card": 6,
           "kind": "story",
           "verses": "Psalm 32:8",
-          "text": "Then the psalm makes a promise: \"I will instruct you and teach you the way you should go; I will give you counsel and watch over you.\" That's not just directions, friend, that's directions with somebody riding shotgun the WHOLE trip!",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the psalm says, \"I will instruct you and teach you the way you should go; I will give you counsel and watch over you.\" That's not getting handed a map and a \"good luck,\" friend, that's getting watched over the WHOLE trip!",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 32:9",
-          "question": "Right after that promise comes a warning: don't be like the horse or mule, which have no ___.",
+          "question": "Right after the line about being taught the way to go comes a warning: don't be like the horse or mule, which have no ___.",
           "answers": [
             {
               "text": "understanding",
@@ -290,14 +290,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Psalm 32:9",
-          "text": "They have to be controlled with bit and bridle just to make them come. Friend, that's me at a group photo. Somebody's gotta drag me in by the apron strings!",
+          "text": "They have to be controlled with bit and bridle to make them come. Friend, picture somebody yelling \"WARM COOKIES in the break room!\" and you still need a rope to get dragged in there. JUST COME!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -371,11 +371,11 @@
               "correct": true
             },
             {
-              "text": "Sit in quiet sorrow",
+              "text": "Sit still in quiet sorrow",
               "correct": false
             },
             {
-              "text": "Keep their joy to themselves",
+              "text": "Keep joy hidden inside",
               "correct": false
             }
           ],

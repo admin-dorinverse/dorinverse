@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "Psalm 6:1",
           "text": "This is a psalm of David, king of Israel, written for the choirmaster with stringed instruments. David is talking straight to the LORD, and friend, this is not a happy little tune. He opens with, \"O LORD, do not rebuke me in Your anger or discipline me in Your wrath.\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -68,15 +68,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 6:3",
-          "question": "David says the pain stops at his bones and his soul is doing just fine.",
+          "question": "David says it isn't only his bones that hurt. His soul is deeply distressed too.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -86,7 +86,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Psalm 6:3",
-          "text": "His soul is deeply distressed, and he cries out, \"How long, O LORD, how long?\"",
+          "text": "Then David cries out, \"How long, O LORD, how long?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -94,7 +94,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 6:4",
-          "text": "Then David asks the LORD to turn, deliver his soul and save him. No fancy speech and no plan B, just a man reaching for the only One who can actually help.",
+          "text": "Then David asks the LORD to turn, deliver his soul and save him. Short prayer. BIG ask.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,15 +161,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 6:6",
-          "question": "David says his tears dry up fast and he sleeps through the night.",
+          "question": "David says his weeping goes on all night long.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -179,7 +179,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Psalm 6:6",
-          "text": "All night he floods his bed with weeping and drenches his couch with tears. Friend, forget a towel: that couch needs a LIFEGUARD.",
+          "text": "He floods his bed with weeping and drenches his couch with tears. Friend, forget a towel: that couch needs a LIFEGUARD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,7 +188,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 6:7",
-          "question": "After all those nights of weeping, what does David say is happening to his eyes?",
+          "question": "After all that weeping through the night, what does David say is happening to his eyes?",
           "answers": [
             {
               "text": "They fail from grief",
@@ -203,7 +203,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

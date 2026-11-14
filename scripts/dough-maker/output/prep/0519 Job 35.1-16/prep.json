@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Job 35:1",
-          "text": "Job has lost almost everything (Job 1:13-19). Elihu, a younger man who waited his turn because the others were older (Job 32:4), is STILL talking, and he's got more to say to Job. This man saved up words the way I saved up dust in that drawer: a LOT, for a LONG time.",
+          "text": "Job has suffered terrible losses (Job 1:13-19; 2:7). Now Elihu son of Barachel, a younger man who waited to speak because the others were older (Job 32:2-4), keeps going, and he's got more to say to Job.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Job 35:3",
-          "text": "Elihu says Job has been asking a second question, and he quotes it right back at him. Friend, nothing stings like your own words read back to you, which is exactly why group chats need a delete button.",
+          "text": "Elihu says Job has been asking something too, and he quotes it right back at him. Friend, nothing stings like your own words read back to you, which is exactly why group chats need a delete button.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -95,7 +95,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Job 35:5",
-          "text": "Then Elihu says, \"Look to the heavens and see; gaze at the clouds high above you.\" Friend, my first night here I stood under that big sky and felt about two inches tall, which, to be fair, is not far off.",
+          "text": "Then Elihu says, \"Look to the heavens and see; gaze at the clouds high above you.\" Friend, my first night on this cookie planet I looked up at that big sky and felt about the size of one chocolate chip.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -124,20 +124,9 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Job 35:7",
-          "question": "Elihu says that if Job is righteous, God receives something He needs from Job's hand.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "And Elihu says it works the other way too. If Job is righteous, \"what do you give Him, or what does He receive from your hand?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -169,24 +158,28 @@
           "card": 10,
           "kind": "story",
           "verses": "Job 35:9",
-          "text": "Then Elihu talks about people in real trouble, crying out under great oppression and pleading for relief from the arm of the mighty. Friend, that's not a rough Monday, that's a whole weight sitting on you.",
+          "text": "Then Elihu talks about people crying out under great oppression, pleading for relief from the arm of the mighty. But he says one question is missing from all that crying out.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Job 35:10",
-          "question": "Elihu says these people crying for relief also go looking for God their Maker.",
+          "question": "Elihu says the people crying out under oppression never ask one question. What is it?",
           "answers": [
             {
-              "text": "True",
+              "text": "Where is God my Maker",
+              "correct": true
+            },
+            {
+              "text": "Who will punish the mighty",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "How long must we wait",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -195,8 +188,8 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Job 35:10",
-          "text": "Nobody asks, 'Where is God my Maker, who gives us songs in the night.' Friend, I spent YEARS in a dark junk drawer, and the only music in there was the rubber bands I shared it with, twanging off-key.",
+          "verses": "Job 35:10-11",
+          "text": "Elihu describes God as the One \"who gives us songs in the night, who teaches us more than the beasts of the earth and makes us wiser than the birds of the air?\" Wiser than the birds? Friend, I once spent ten minutes hunting for the timer I was holding in my own mustache.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -204,8 +197,8 @@
           "card": 13,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Job 35:10-11",
-          "question": "Elihu describes God our Maker as the One who gives songs in the night and teaches people more than the beasts. His point is that the people crying out never turn to the Maker who gives them so much.",
+          "verses": "Job 35:12",
+          "question": "Elihu says the people crying out under oppression get no answer from God.",
           "answers": [
             {
               "text": "True",
@@ -224,7 +217,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 35:12",
-          "question": "Elihu says these people cry out, but God does not answer them. Why, according to Elihu?",
+          "question": "Elihu says God doesn't answer the people crying out under oppression. Why, according to Elihu?",
           "answers": [
             {
               "text": "Because of the pride of evil men",
@@ -239,7 +232,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -279,28 +272,24 @@
           "card": 16,
           "kind": "story",
           "verses": "Job 35:14-15",
-          "text": "Then Elihu holds up Job's own words: Job can't see God, his case is before Him and he must wait, and God in His anger hasn't punished or taken much notice of folly. Friend, I know that kind of waiting, because I held my breath in a junk drawer for YEARS every time the light came in.",
+          "text": "Then Elihu turns to what he says Job claims: Job can't see God, his case is before Him and he must wait, and God in His anger hasn't punished or taken much notice of folly. I bet that waiting is hard, and I know a little about it from holding my breath for YEARS in the back of a junk drawer every time the light came in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Job 35:14",
-          "question": "Job says he can't see God and his case is waiting before Him. Elihu has just said God won't listen to empty pleas. So what does Elihu say about Job's words?",
+          "question": "Elihu says that since Job claims he can't see God and his case is before Him, God will listen to Job even more.",
           "answers": [
             {
-              "text": "God will listen to them even less",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "God will answer them right away",
-              "correct": false
-            },
-            {
-              "text": "God has already ruled for Job",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -309,33 +298,34 @@
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Job 35:16",
-          "question": "Elihu wraps up by saying Job opens his mouth in vain. What does Elihu say Job keeps multiplying?",
+          "question": "Elihu wraps up: Job opens his mouth in vain and multiplies words without ___.",
           "answers": [
             {
-              "text": "Words without knowledge",
-              "correct": true
+              "text": "knowledge",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Prayers without faith",
+              "text": "comfort",
               "correct": false
             },
             {
-              "text": "Tears without reason",
+              "text": "kindness",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "story",
           "verses": "Job 35:16",
-          "text": "And that's where we set the timer for now. Trust me, friend, Job's story is FAR from done.",
+          "text": "And that's where we pull this batch out of the oven for now. Trust me, friend, Job's story is FAR from over.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

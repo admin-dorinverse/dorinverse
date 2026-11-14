@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 75:1",
-          "text": "This song comes from Asaph, the head musician King David appointed to serve before the ark (1 Chronicles 16:4-5). It's even got the tune written on top for the choirmaster: \"Do Not Destroy.\" Then the song opens up: \"We give thanks to You, O God\"!",
+          "text": "This song comes from Asaph, the head musician King David appointed to serve before the ark (1 Chronicles 16:4-5). It's even got the tune written on top for the choirmaster: \"Do Not Destroy.\" Then the song opens up: \"We give thanks to You, O God…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 75:1",
-          "text": "Then the opening wraps up: \"The people declare Your wondrous works.\" When a batch comes out of my oven perfect, I declare it to EVERYBODY, which happens about once a week.",
+          "text": "Then the opening wraps up: \"The people declare Your wondrous works.\" When a batch comes out of my oven right, I announce it to the WHOLE planet, which is just me, clapping for myself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 75:2",
-          "text": "Then a new voice comes in, speaking as I, and friend, that voice is God. When that voice shows up, I straighten my apron, fix my mustache and sit DOWN.",
+          "text": "Then the song changes voice, and someone new speaks as I: \"…I will judge fairly.\" When a voice talks like that, I straighten my apron, fix my mustache and sit DOWN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -57,7 +57,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 75:2",
-          "question": "God says a time of judging is coming, and the people get to pick when it happens.",
+          "question": "This new voice says the people get to choose when the judging happens.",
           "answers": [
             {
               "text": "True",
@@ -73,64 +73,41 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 75:2",
-          "question": "When God judges, He says He will judge ___.",
-          "answers": [
-            {
-              "text": "fairly",
-              "correct": true
-            },
-            {
-              "text": "slowly",
-              "correct": false
-            },
-            {
-              "text": "secretly",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 75:3",
+          "text": "Next the voice paints a picture: a time when the earth and everybody living on it quake.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Psalm 75:3",
-          "text": "Now God paints a picture: a time when the earth and everybody living on it quake.",
+          "question": "When the earth and all its dwellers quake, what does this voice say it does?",
+          "answers": [
+            {
+              "text": "Bears up its pillars",
+              "correct": true
+            },
+            {
+              "text": "Calms the roaring seas",
+              "correct": false
+            },
+            {
+              "text": "Opens the gates of heaven",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 75:3",
-          "question": "When the earth and all its dwellers quake, who does God say bears up its pillars?",
-          "answers": [
-            {
-              "text": "God Himself",
-              "correct": true
-            },
-            {
-              "text": "The kings of the earth",
-              "correct": false
-            },
-            {
-              "text": "The mountains of Zion",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 75:4",
-          "question": "Next God speaks to the proud. He tells them not to ___.",
+          "question": "Next the voice speaks to the proud. It tells them not to ___.",
           "answers": [
             {
               "text": "boast",
@@ -149,19 +126,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Psalm 75:4-5",
-          "text": "Then God tells the wicked not to lift up their horn, or speak with an outstretched neck. You know that neck: chin up, nose up, like me the first time a batch came out perfect, strutting around the bakery till I bonked my chef's hat on the oven hood.",
+          "text": "Then the voice tells the wicked not to lift up their horn, or speak with an outstretched neck. You know that neck: nose in the air, like me after somebody compliments my mustache, strutting till I bonk my chef's hat on the oven hood.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 75:5",
-          "question": "God warns the wicked not to lift up their horn. Against what are they lifting it?",
+          "question": "The voice warns the wicked not to lift up their horn against something. What is it?",
           "answers": [
             {
               "text": "Heaven",
@@ -180,15 +157,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 75:6",
-          "text": "Now the song explains why all that strutting goes nowhere. Exaltation doesn't come from the east or the west, and not out of the desert either.",
+          "text": "Now the song says where exaltation doesn't come from: not the east, not the west, and not out of the desert either.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 75:7",
@@ -211,7 +188,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 75:7",
@@ -228,7 +205,7 @@
               "blank": 2
             },
             {
-              "text": "forgets",
+              "text": "spares",
               "correct": false
             },
             {
@@ -244,7 +221,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Psalm 75:8",
           "text": "Then the song shows us a cup in the hand of the LORD. It's full of foaming wine mixed with spices, and the LORD pours from it.",
@@ -252,7 +229,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 75:8",
@@ -275,7 +252,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 75:8",
@@ -294,11 +271,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 75:9",
-          "question": "After the cup, the psalmist turns to himself and says he will proclaim God forever.",
+          "question": "After the cup, the singer of the song says he will proclaim God forever.",
           "answers": [
             {
               "text": "True",
@@ -313,15 +290,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Psalm 75:9-10",
-          "text": "And he'll sing praise to the God of Jacob, the man God renamed Israel (Genesis 32:28). Then the last line circles back to horns, like the ones the wicked were lifting up with that outstretched neck, chin pointed at the ceiling.",
+          "text": "The singer also says he'll sing praise to the God of Jacob, the man God renamed Israel (Genesis 35:10). Then the last line circles back to horns.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 75:10",

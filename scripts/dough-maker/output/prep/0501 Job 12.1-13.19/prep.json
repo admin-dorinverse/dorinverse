@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Job 12:1-2",
-          "text": "Job's friend Zophar the Naamathite has just finished his speech (Job 11:1), and now Job answers: \"Truly then you are the people with whom wisdom itself will die!\" Ohhh, friend, when a man opens with \"truly,\" you KNOW the next part is gonna sting.",
+          "verses": "Job 12:1",
+          "text": "Job, a man who lost his children, his wealth and his health (Job 1:13-19; 2:7), has been going back and forth with three friends (Job 2:11; 6:1; 9:1). The latest, Zophar the Naamathite, told Job that if he put away the iniquity in his hand, his life would be brighter than noonday (Job 11:14, 17). Now Job answers.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 12:2-3",
-          "question": "Right after that line about wisdom dying with his friends, Job says, \"But I also have a mind; I am not inferior to you.\" True or false: Job really thinks his friends are the wisest people alive.",
+          "question": "Job opens with, \"Truly then you are the people with whom wisdom itself will die!\" True or false: Job really thinks his friends are the wisest people alive.",
           "answers": [
             {
               "text": "True",
@@ -35,33 +35,32 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Job 12:4",
-          "text": "Then Job talks about where he stands with these friends. He says he called on God, and God answered him.",
+          "verses": "Job 12:3",
+          "text": "Then Job says, \"But I also have a mind; I am not inferior to you. Who does not know such things as these?\" I think somebody is TIRED of being talked down to, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Job 12:4",
-          "question": "Job called on God, and God answered. But Job says that to his friends, he has become a ___.",
+          "question": "Job says he called on God, and God answered. So how does Job say his friends see him?",
           "answers": [
             {
-              "text": "laughingstock",
-              "correct": true,
-              "blank": 1
+              "text": "As a laughingstock",
+              "correct": true
             },
             {
-              "text": "stranger",
+              "text": "As a teacher",
               "correct": false
             },
             {
-              "text": "burden",
+              "text": "As a stranger",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -89,7 +88,7 @@
               "correct": false
             },
             {
-              "text": "priests",
+              "text": "farmers",
               "correct": false
             }
           ],
@@ -100,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Job 12:7-8",
-          "text": "Then Job sends his friends to some new teachers: the animals, the birds of the air, the earth and the fish of the sea. Friend, he just told these guys to go take notes from a FISH.",
+          "text": "Then Job points to some new teachers: the animals, the birds of the air, the earth and the fish of the sea. Friend, he's out here saying a FISH could set his friends straight.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -240,7 +239,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Job 12:17-21",
-          "text": "Then Job goes down a list of the most powerful people around: counselors, judges, kings, priests, elders, nobles and the mighty. Friend, this is the VIP section. Velvet rope and everything.",
+          "text": "Then Job runs down a list of the most powerful people around: counselors, judges, kings, priests, elders, nobles and the mighty. Friend, that's the VIP section, velvet rope and all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -248,19 +247,19 @@
           "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Job 12:17-21",
-          "question": "Counselors, judges, kings, priests, elders, nobles and the mighty. What does Job say God can do to every one of these powerful people?",
+          "verses": "Job 12:17, 19",
+          "question": "Job says God doesn't let the powerful keep their dignity. How does he say God leads counselors and priests away?",
           "answers": [
             {
-              "text": "Bring every one of them low",
+              "text": "Barefoot",
               "correct": true
             },
             {
-              "text": "Give every one of them more power",
+              "text": "In chains",
               "correct": false
             },
             {
-              "text": "Turn every one of them against Job",
+              "text": "On horseback",
               "correct": false
             }
           ],
@@ -271,7 +270,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Job 12:22-23",
-          "text": "Job says God reveals the deep things of darkness and brings deep shadows into light, and He makes nations great and destroys them. Friend, He found me at the back of a JUNK DRAWER, so deep shadows? Easy work.",
+          "text": "Job says God reveals the deep things of darkness and brings deep shadows into light. He makes nations great and destroys them, and He enlarges nations, then disperses them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -308,7 +307,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Job 13:1-2",
-          "text": "Job's still talking to his friends. His eyes have seen all this, his ears have heard it, and whatever they know, he knows too. Translation: I read the same manual, fellas.",
+          "text": "Job tells his friends his eyes have seen all this and his ears have heard and understood it, and whatever they know, he knows too. Friend, that's TWICE now he's said, \"I am not inferior to you.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -317,18 +316,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 13:3",
-          "question": "Job's done comparing notes with his friends. Who does he really want to argue his case before?",
+          "question": "Job knows everything his friends know. Yet what does he say he desires?",
           "answers": [
             {
-              "text": "The Almighty",
+              "text": "To speak to the Almighty",
               "correct": true
             },
             {
-              "text": "The elders",
+              "text": "To be left alone",
               "correct": false
             },
             {
-              "text": "The king",
+              "text": "To hear more advice",
               "correct": false
             }
           ],
@@ -339,52 +338,27 @@
           "card": 3,
           "kind": "story",
           "verses": "Job 13:4",
-          "text": "Then Job turns back to his friends, and he does NOT hold back. He says they smear with lies.",
+          "text": "Then Job turns on his friends and says they smear with lies. He calls them all worthless physicians, the kind of doctor visit where you pay the bill and STILL feel the same.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Job 13:4",
-          "question": "Job says his friends smear with lies. He calls all of them worthless ___.",
-          "answers": [
-            {
-              "text": "physicians",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "shepherds",
-              "correct": false
-            },
-            {
-              "text": "builders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Job 13:5",
-          "question": "Job says there's one thing his friends could do that would actually be their wisdom: remain ___.",
+          "question": "Job says his friends smear with lies. What does Job say would actually be their wisdom?",
           "answers": [
             {
-              "text": "silent",
-              "correct": true,
-              "blank": 1
+              "text": "Remaining silent",
+              "correct": true
             },
             {
-              "text": "humble",
+              "text": "Speaking more gently",
               "correct": false
             },
             {
-              "text": "patient",
+              "text": "Explaining themselves better",
               "correct": false
             }
           ],
@@ -392,15 +366,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
-          "verses": "Job 13:7-8",
+          "verses": "Job 13:5, 7-8",
           "text": "Friend, that is the oldest way there is to say PLEASE stop talking. Then Job asks if they'll speak wickedly on God's behalf, or show Him partiality.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 13:10",
@@ -419,7 +393,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Job 13:11",
           "text": "Then Job asks if God's majesty wouldn't terrify them, and if the dread of Him wouldn't fall on them. That's the kind of question that makes ANYBODY sit up straight.",
@@ -427,7 +401,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 13:12",
@@ -450,7 +424,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Job 13:13-14",
           "text": "Job tells them, \"Be silent, and I will speak. Then let come to me what may.\" He asks why he puts himself at risk and takes his life in his own hands.",
@@ -458,7 +432,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 13:15",
@@ -481,7 +455,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 13:15",
@@ -500,7 +474,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Job 13:16-17",
           "text": "Job says this will be his salvation, because no godless man can appear before God. Then he tells his friends to listen carefully and let his words ring in their ears.",
@@ -508,23 +482,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Job 13:18",
-          "question": "Job says he has prepared his case, and he knows that he will be ___.",
+          "question": "Job says he has prepared his case. What does he say he knows the outcome will show about him?",
           "answers": [
             {
-              "text": "vindicated",
-              "correct": true,
-              "blank": 1
+              "text": "That he is in the right",
+              "correct": true
             },
             {
-              "text": "condemned",
+              "text": "That he deserves his suffering",
               "correct": false
             },
             {
-              "text": "forgotten",
+              "text": "That he should stay quiet",
               "correct": false
             }
           ],
@@ -532,7 +505,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 13:19",
@@ -551,10 +524,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Job 13:19",
-          "text": "And that's where we'll pause, friend. Trust me, this conversation is FAR from over.",
+          "text": "We'll set the timer down right here for now, friend. Job's still got plenty left in this one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 25:1-2",
-          "text": "This is a psalm of David, king of Israel (2 Sam 5:3), and he's talking straight to the LORD. His first words: 'To You, O LORD, I lift up my soul; in You, my God, I trust.' No small talk, no weather report, just his whole soul set right out on the counter.",
+          "text": "This is a psalm of David, king of Israel (2 Samuel 5:3), and he's talking straight to the LORD. His first words: 'To You, O LORD, I lift up my soul; in You, my God, I trust.' No small talk, no weather report, just his whole soul set right out on the counter.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,15 +18,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 25:2",
-          "question": "David trusts the LORD, and he has enemies around him. He asks the LORD to let those enemies gloat over him.",
+          "question": "David asks the LORD not to let him be put to shame.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -71,22 +71,22 @@
               "correct": true
             },
             {
-              "text": "People who wait far too long",
+              "text": "People who trust in idols",
               "correct": false
             },
             {
-              "text": "People who ask too many questions",
+              "text": "People who mock the poor",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Psalm 25:4",
-          "text": "Then David goes from 'protect me' to 'teach me': 'Show me Your ways, O LORD; teach me Your paths.' That's a KING asking for directions, and me, I'd circle the block for an hour before I'd ask, and I don't even have legs.",
+          "text": "Then David goes from asking for cover to asking for lessons: 'Show me Your ways, O LORD; teach me Your paths.' Friend, some folks will circle the block for an HOUR before they ask for directions, and David just ASKS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -118,19 +118,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 25:5",
-          "question": "All day long, David ___ for the LORD.",
+          "question": "David says he waits for the LORD all ___ long.",
           "answers": [
             {
-              "text": "waits",
+              "text": "day",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "sings",
+              "text": "night",
               "correct": false
             },
             {
-              "text": "fights",
+              "text": "year",
               "correct": false
             }
           ],
@@ -141,7 +141,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 25:6-7",
-          "text": "Next, David has a request about the past: the LORD's past, and his own. And baker, my past has a junk drawer in it, so I'm listening real close.",
+          "text": "Next, David turns to the past, and he asks the LORD to remember.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -153,7 +153,7 @@
           "question": "What does David ask the LORD to remember?",
           "answers": [
             {
-              "text": "His own compassion and loving devotion",
+              "text": "The LORD's compassion and loving devotion",
               "correct": true
             },
             {
@@ -171,22 +171,17 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 25:7",
-          "question": "David asks the LORD not to ___ the sins of his youth or his rebellious acts.",
+          "question": "David asks the LORD to remember the sins of his youth.",
           "answers": [
             {
-              "text": "remember",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "announce",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "expose",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -237,15 +232,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 25:9",
-          "question": "David says the LORD guides the proud in what is right and teaches them His way.",
+          "question": "David says the LORD guides the humble in what is right.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -278,7 +273,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Psalm 25:11",
-          "text": "Then David drops right back into asking: forgive my iniquity, for the sake of Your name, O LORD. He asks on the strength of the LORD's name, and smart move, friend, because if this bakery ran on MY good name, we'd be closed by lunch.",
+          "text": "Then David turns right back to the LORD and asks Him to forgive his iniquity, for the sake of His name.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -343,7 +338,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 25:13",
-          "question": "David says that man's soul will dwell in prosperity, and his ___ will inherit the land.",
+          "question": "David says the soul of the man who fears the LORD will dwell in prosperity, and his ___ will inherit the land.",
           "answers": [
             {
               "text": "descendants",
@@ -359,43 +354,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Psalm 25:14",
-          "text": "Then David says the LORD confides in those who fear Him. The LORD, confiding in PEOPLE, and baker, I can't even get my oven to tell me when it's done.",
+          "text": "Then David says the LORD confides in those who fear Him and reveals His covenant to them. The LORD, confiding in PEOPLE, and baker, my oven won't even tell me when a batch is done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 25:14",
-          "question": "Besides confiding in those who fear Him, the LORD reveals His ___ to them.",
-          "answers": [
-            {
-              "text": "covenant",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "judgment",
-              "correct": false
-            },
-            {
-              "text": "anger",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
           "verses": "Psalm 25:15",
           "text": "Now David says his eyes are always on the LORD, not sometimes, ALWAYS. Me, I can't keep my eyes on one batch for five minutes without burning it.",
@@ -403,7 +374,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 25:15",
@@ -422,15 +393,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Psalm 25:16",
-          "text": "Then the psalm gets quiet, and David asks the LORD to turn to him and be gracious. Friend, this is the part of the song where the band drops out and it's just one voice.",
+          "text": "Then the psalm gets quiet, and David asks the LORD to turn to him and be gracious. Friend, this is the part of the song where the band drops out.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 25:16",
@@ -449,6 +420,14 @@
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Psalm 25:17-18",
+          "text": "David asks to be freed from his distress, and for the LORD to consider his affliction and trouble. No 'I'm fine, thanks' here, baker, just the HONEST answer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -473,14 +452,6 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Psalm 25:17-18",
-          "text": "He asks to be freed from his distress, and for the LORD to consider his affliction and trouble. That's not 'I'm fine, how are you?' baker. That's the HONEST answer.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 25:18",
@@ -492,7 +463,7 @@
               "blank": 1
             },
             {
-              "text": "enemies",
+              "text": "doubts",
               "correct": false
             },
             {
@@ -504,7 +475,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 25:19",
@@ -523,15 +494,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Psalm 25:20",
-          "text": "Then David asks the LORD to guard his soul and deliver him, and he says, 'let me not be put to shame.' That's the same request he opened with, friend, coming back around like an alarm on snooze.",
+          "text": "Then David asks the LORD to guard his soul and deliver him, and he says, 'let me not be put to shame…' That's the same request he opened with, friend, coming back around like an alarm on snooze.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 25:20",
@@ -554,11 +525,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 25:21",
-          "question": "David asks that integrity and uprightness preserve him, because he waits for the LORD.",
+          "question": "David asks that integrity and uprightness preserve him.",
           "answers": [
             {
               "text": "True",
@@ -573,15 +544,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Psalm 25:22",
-          "text": "And then, in the very last line, David looks past himself. After almost a whole psalm about his own trouble, it's like a man who's been praying 'me' the whole time suddenly remembers 'we.'",
+          "text": "And then, in the very last line, David looks past himself. Friend, that's a man in trouble thinking about somebody else, and I can't even do that when my timer's going off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 25:22",

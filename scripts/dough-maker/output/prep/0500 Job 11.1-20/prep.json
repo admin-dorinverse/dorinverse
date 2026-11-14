@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "Job 11:1",
           "text": "Job just finished a long speech telling God he's not guilty and asking Him why He's prosecuting him (Job 10:2, 7). Now Zophar the Naamathite, one of Job's three friends (Job 2:11), takes his turn. And friend, he did NOT come with a hug.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,23 +33,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Job 11:3",
-          "text": "Then Zophar asks if Job's babbling should silence everybody else. BABBLING, friend, no warm-up, no stretching, straight to babbling!",
-          "needs_agent_fix": true,
+          "text": "Then Zophar asks if Job's babbling should silence everybody else. I shared a junk drawer with dead batteries that argued all day about who had the most charge left, and NOBODY called that babbling!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Job 11:2-3",
-          "question": "Zophar also asks Job, \"Will you scoff without rebuke?\" True or false: Zophar thinks Job's words should go unanswered.",
+          "verses": "Job 11:3",
+          "question": "True or false: Zophar tells Job his words have been calm and humble.",
           "answers": [
             {
               "text": "True",
@@ -60,38 +60,39 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Job 11:4",
-          "question": "Zophar tells Job what he's heard him say. According to Zophar, Job has said his doctrine is sound and that he is what in God's sight?",
+          "question": "Zophar tells Job what he's heard him say: that his doctrine is sound, and that he is ___ in God's sight.",
           "answers": [
             {
-              "text": "Pure",
-              "correct": true
+              "text": "pure",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Forgotten",
+              "text": "weary",
               "correct": false
             },
             {
-              "text": "Small",
+              "text": "small",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Job 11:5",
-          "text": "Then Zophar wishes God would speak up and open His lips against Job. That's the coworker leaning over your desk going, \"Man, I wish the boss could hear you right now.\"",
-          "needs_agent_fix": true,
+          "text": "Then Zophar wishes God would speak and open His lips against Job. Still waiting on that hug, friend, STILL waiting.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,7 +100,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 11:6",
-          "question": "Zophar says that if God spoke, He'd show Job the secrets of wisdom. Then Zophar tells Job what God is demanding from him. What is it?",
+          "question": "Zophar wishes God would also show Job the secrets of wisdom. Then Zophar tells Job that God exacts something from him. How much?",
           "answers": [
             {
               "text": "Less than his iniquity deserves",
@@ -114,7 +115,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -122,88 +123,73 @@
           "kind": "story",
           "verses": "Job 11:7",
           "text": "Then Zophar turns to how big God is. He asks Job, \"Can you fathom the deep things of God or discover the limits of the Almighty?\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Job 11:8",
-          "question": "Zophar says the deep things of God are higher than one thing and deeper than another. Which two?",
-          "answers": [
-            {
-              "text": "The heavens and Sheol",
-              "correct": true
-            },
-            {
-              "text": "The clouds and the Abyss",
-              "correct": false
-            },
-            {
-              "text": "The stars and Abaddon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Zophar says those deep things are higher than the heavens and deeper than Sheol, the place of the dead.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Job 11:9",
-          "text": "And their measure is longer than the earth and wider than the sea. My whole cookie planet is just big enough for one bakery, friend, so I'm over here measuring in OVENS, and Zophar's measuring in OCEANS.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Job 11:8",
+          "question": "Right after the heavens and Sheol, Zophar asks Job, \"what can you do?\" and \"what can you know?\" What's Zophar's point?",
+          "answers": [
+            {
+              "text": "Job can't reach those deep things",
+              "correct": true
+            },
+            {
+              "text": "Job should search harder for them",
+              "correct": false
+            },
+            {
+              "text": "Job already understands them",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Job 11:7-9",
-          "question": "After all that, Zophar's point is that Job can find the limits of the Almighty if he keeps searching.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Job 11:9",
+          "text": "And their measure is longer than the earth and wider than the sea. My whole cookie planet is just big enough for one bakery, friend, so I'm over here measuring in OVENS, and Zophar's measuring in OCEANS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Job 11:10",
-          "text": "Then Zophar tells Job to picture God coming along to imprison him, or calling a court together.",
-          "needs_agent_fix": true,
+          "text": "Then Zophar sets up a what-if: God comes along to imprison Job, or convenes a court.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Job 11:10",
-          "question": "If God comes to imprison Job or calls a court, Zophar asks who can stop Him. What answer is he pointing to?",
+          "question": "If God comes to imprison Job or convenes a court, Zophar asks who can stop Him. True or false: Zophar is saying no one can stop Him.",
           "answers": [
             {
-              "text": "No one at all",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Only a righteous man",
-              "correct": false
-            },
-            {
-              "text": "Only a mediator",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -226,15 +212,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Job 11:12",
-          "text": "Then Zophar says a witless man can no more become wise than the colt of a wild donkey can be born a man. Things were getting deep and heavy, friend, and out of NOWHERE, a donkey walks in.",
-          "needs_agent_fix": true,
+          "text": "Then Zophar makes one more comparison, and this one has a wild donkey in it. He sets a witless man next to the colt of a wild donkey.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Job 11:12",
+          "question": "Zophar compares a witless man to the colt of a wild donkey being born a man. What's his point about the witless man?",
+          "answers": [
+            {
+              "text": "He can't become wise",
+              "correct": true
+            },
+            {
+              "text": "He learns wisdom quickly",
+              "correct": false
+            },
+            {
+              "text": "He just needs more time",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -247,41 +256,31 @@
           "card": 1,
           "kind": "story",
           "verses": "Job 11:13",
-          "text": "Then Zophar turns his words straight to Job and lays out what Job should do.",
+          "text": "Then Zophar turns right to Job: \"As for you, if you direct your heart and lift up your hands to Him…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Job 11:13-14",
-          "question": "Zophar lays out the steps for Job: direct your ___ and lift up your hands to God, and put away the ___ in your hand.",
+          "type": "multiple_choice",
+          "verses": "Job 11:14",
+          "question": "Zophar keeps going with his if for Job. What does he tell Job to put away?",
           "answers": [
             {
-              "text": "heart",
-              "correct": true,
-              "blank": 1
+              "text": "The iniquity in his hand",
+              "correct": true
             },
             {
-              "text": "iniquity",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "feet",
+              "text": "The broken pottery in his hand",
               "correct": false
             },
             {
-              "text": "sword",
-              "correct": false
-            },
-            {
-              "text": "silver",
+              "text": "The staff in his hand",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -295,20 +294,16 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Job 11:15",
-          "question": "If Job does all that, Zophar says Job will lift up his face and stand firm and unafraid. How will Job's face be?",
+          "question": "If Job does all that, Zophar says Job will lift up his face without blemish. True or false: Zophar also says Job will stand firm and unafraid.",
           "answers": [
             {
-              "text": "Without blemish",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Covered in ashes",
-              "correct": false
-            },
-            {
-              "text": "Wet with tears",
+              "text": "False",
               "correct": false
             }
           ],
@@ -320,7 +315,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 11:16",
-          "question": "Zophar promises Job will forget his misery and remember it only as waters gone by. What is that picture saying about Job's misery?",
+          "question": "Zophar says Job will forget his misery and remember it only as waters gone by. What is that picture saying about Job's misery?",
           "answers": [
             {
               "text": "It will pass and be gone",
@@ -342,8 +337,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Job 11:17",
-          "text": "Then Zophar says Job's life will be brighter than noonday, and its darkness will be like the morning. Same speech that called Job's words babbling, friend. SAME speech!",
-          "needs_agent_fix": true,
+          "text": "Then Zophar says Job's life will be brighter than noonday, and its darkness will be like the morning. That's the SAME speech that called Job's words babbling, friend!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -351,7 +346,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 11:18",
-          "question": "Zophar promises Job he'll be secure, because there is hope. True or false: Zophar also says Job will never rest easy again.",
+          "question": "Zophar tells Job he'll be secure, because there is hope. True or false: Zophar also says Job will never rest easy again.",
           "answers": [
             {
               "text": "True",
@@ -368,20 +363,21 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Job 11:19",
-          "question": "Zophar says Job will lie down without fear. And what does he say many people will do?",
+          "question": "Zophar says Job will lie down without fear, and many will ___ his favor.",
           "answers": [
             {
-              "text": "Court his favor",
-              "correct": true
+              "text": "court",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Envy his house",
+              "text": "lose",
               "correct": false
             },
             {
-              "text": "Leave him alone",
+              "text": "scorn",
               "correct": false
             }
           ],

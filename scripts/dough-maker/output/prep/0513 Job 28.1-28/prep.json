@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Job 28:1",
-          "text": "Job, the man who lost so much, is still talking, right where he left off with his friends. And now he goes somewhere NOBODY saw coming: underground. 'Surely there is a mine for silver and a place where gold is refined.'",
+          "text": "Job, the man who lost so much (Job 1:13-19), is still talking, right where he left off with his friends. And now he starts talking about something NOBODY saw coming. 'Surely there is a mine for silver and a place where gold is refined.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Job 28:3",
-          "text": "Then Job turns to the miner, who digs for ore in the deepest darkness. Friend, I spent YEARS in the back of a junk drawer begging for a little light, and this man goes down there ON PURPOSE.",
+          "text": "Then Job turns to the miner, who probes the farthest recesses for ore in deepest darkness. Friend, I spent YEARS in the dark at the back of a junk drawer, and this man goes down into it ON PURPOSE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,15 +49,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 28:3",
-          "question": "True or false: Job says the darkness deep down in the mine is too much for the miner.",
+          "question": "The miner goes down into the deepest darkness for ore. True or false: Job says man puts an end to the darkness.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -128,29 +128,25 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Job 28:7-8",
-          "text": "That path down to the treasure is so hidden, even the sharpest eyes in the sky have never seen it, and the proudest beasts have never set foot on it.",
+          "verses": "Job 28:7",
+          "text": "No bird of prey knows the path down to that treasure, Job says, and no falcon's eye has seen it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Job 28:7-8",
-          "question": "Job names a bird whose eye has never seen the miner's path and a beast that has never prowled over it. Which two?",
+          "type": "true_false",
+          "verses": "Job 28:8",
+          "question": "No falcon's eye has seen the path down to the treasure. True or false: Job says the lion has prowled over it.",
           "answers": [
             {
-              "text": "The falcon and the lion",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The dove and the ox",
-              "correct": false
-            },
-            {
-              "text": "The sparrow and the deer",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -187,8 +183,8 @@
           "card": 13,
           "kind": "story",
           "verses": "Job 28:11",
-          "text": "He even stops up the sources of the streams. WHOLE STREAMS, friend. Stopped up!",
-          "needs_agent_fix": true,
+          "text": "He even stops up the sources of the streams. WHOLE STREAMS, friend!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -208,29 +204,6 @@
             },
             {
               "text": "waste",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Job 28:1-11",
-          "question": "From silver mines to dark shafts to stopped-up streams, what is Job showing about people?",
-          "answers": [
-            {
-              "text": "They'll go to great lengths for hidden treasure",
-              "correct": true
-            },
-            {
-              "text": "They're too afraid to dig deep into the earth",
-              "correct": false
-            },
-            {
-              "text": "They leave the earth's treasure where it lies",
               "correct": false
             }
           ],
@@ -297,7 +270,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Job 28:14",
-          "text": "The ocean depths say, 'It is not in me,' while the sea declares, 'It is not with me.' The sea is the junk drawer of the whole world, EVERYTHING ends up down there, and even IT says nope.",
+          "text": "Ask the deep about wisdom, and the ocean depths say, 'It is not in me,' while the sea declares, 'It is not with me.' The sea is the junk drawer of the whole world: EVERYTHING ends up down there, and even IT says nope.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -330,29 +303,6 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Job 28:16-19",
-          "question": "How do all those treasures measure up next to wisdom?",
-          "answers": [
-            {
-              "text": "None of them can compare to it",
-              "correct": true
-            },
-            {
-              "text": "Rubies come the closest to it",
-              "correct": false
-            },
-            {
-              "text": "Together they can match its price",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "story",
           "verses": "Job 28:20-21",
           "text": "So Job asks again where wisdom comes from. It's hidden from the eyes of every living thing, even the birds of the air.",
@@ -360,11 +310,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 28:22",
-          "question": "Even Abaddon and Death have something to say about wisdom. What is it?",
+          "question": "Even Abaddon, the place of destruction, and Death speak up about wisdom. What do they say?",
           "answers": [
             {
               "text": "They've heard a rumor about it",
@@ -383,53 +333,45 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "story",
-          "verses": "Job 28:22",
-          "text": "A RUMOR. Abaddon and Death themselves, and all they've got is something somebody mentioned in the group chat.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Job 28:23",
-          "question": "Nobody alive has it, but Job knows who does: 'But God ___ its way, and He knows its place.'",
+          "question": "Wisdom is hidden from every living thing. Then Job says, 'But God ___ its way, and He knows its place.'",
           "answers": [
             {
               "text": "understands",
               "correct": true
             },
             {
-              "text": "hides",
+              "text": "guards",
               "correct": false
             },
             {
-              "text": "forgets",
+              "text": "seals",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 28:24",
-          "question": "Why does God know where wisdom is when nobody else does?",
+          "question": "Job says God knows where wisdom is. What reason does Job give?",
           "answers": [
             {
               "text": "He sees everything under the heavens",
               "correct": true
             },
             {
-              "text": "The ocean told Him where it was",
+              "text": "He has stored it in the heavens",
               "correct": false
             },
             {
-              "text": "He dug it up from the mountains",
+              "text": "He hid it away there Himself",
               "correct": false
             }
           ],
@@ -437,15 +379,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "Job 28:25-26",
-          "text": "Job takes it back to when God fixed the weight of the wind and measured out the waters, and set a limit for the rain and a path for the thunderbolt. Friend, I measure flour for ONE batch and still get it wrong.",
+          "text": "Job takes it back to when God fixed the weight of the wind and measured out the waters. He set a limit for the rain and a path for the thunderbolt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 28:27",
@@ -456,11 +398,11 @@
               "correct": true
             },
             {
-              "text": "He buried it under the deep sea",
+              "text": "He divided it among the nations",
               "correct": false
             },
             {
-              "text": "He handed it to the birds of the air",
+              "text": "He poured it out with the rain",
               "correct": false
             }
           ],
@@ -468,15 +410,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "Job 28:28",
           "text": "And then God speaks to man and tells him what wisdom is.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 28:28",
@@ -491,15 +433,15 @@
               "correct": false
             },
             {
-              "text": "The treasure of the deep",
+              "text": "The learning of the ages",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 28:28",
@@ -515,15 +457,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Job 28:28",
-          "text": "And that's where we'll leave it for now, friend. Job's not done talking, so keep your apron on.",
+          "text": "Job's not done talking yet, friend. Keep your apron on, because there's more coming.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

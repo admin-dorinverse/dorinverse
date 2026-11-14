@@ -11,7 +11,7 @@
           "verses": "Psalm 56:1",
           "text": "Here's a song from David, the shepherd who became Israel's king (1 Samuel 16:11-13; 2 Samuel 5:3). The heading says he wrote it when the Philistines seized him in Gath. Friend, David is in enemy hands, and he's about to talk to God about it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,15 +34,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Psalm 56:1",
-          "text": "Why mercy? Men are hounding him, and all day they press their attack. It's like a phone that buzzes ALL DAY, and every single notification is somebody coming after you.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Men are hounding him, and all day they press their attack. That's like a phone that buzzes ALL DAY, and every single notification is somebody coming after you.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -67,8 +67,8 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 56:3",
-          "text": "Then David gets honest and admits he gets afraid. Respect. I once jumped a foot in the air, gold base and all, because a kitchen timer went off.",
-          "needs_agent_fix": true,
+          "text": "Then David gets honest and says there are times he's afraid. I respect that, because I once jumped a foot in the air, gold base and all, when a kitchen timer went off.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -98,8 +98,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 56:4",
-          "text": "Then David says, \"In God, whose word I praise—in God I trust. I will not be afraid.\" One verse ago he was afraid. Now LOOK at him!",
-          "needs_agent_fix": true,
+          "text": "Then David says, \"In God, whose word I praise—in God I trust.\" And then, from the guy who JUST said he gets scared: \"I will not be afraid.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -129,7 +129,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Psalm 56:5",
-          "text": "But his enemies don't let up. All day long, they keep at him.",
+          "text": "But his enemies don't let up. All day long they come at David, and not even what he says is safe from them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -149,11 +149,11 @@
               "correct": false
             },
             {
-              "text": "record",
+              "text": "trust",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -167,20 +167,16 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 56:6",
-          "question": "David's enemies are watching his steps. What are they waiting for?",
+          "question": "True or false: David says his enemies are waiting to take his life.",
           "answers": [
             {
-              "text": "To take his life",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "To catch him lying",
-              "correct": false
-            },
-            {
-              "text": "To run him out of Gath",
+              "text": "False",
               "correct": false
             }
           ],
@@ -254,20 +250,20 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 56:8",
-          "question": "David asks God to put something of his in God's bottle. What is it?",
+          "question": "David asks God to put his ___ in God's bottle.",
           "answers": [
             {
-              "text": "His tears",
+              "text": "tears",
               "correct": true
             },
             {
-              "text": "His songs",
+              "text": "songs",
               "correct": false
             },
             {
-              "text": "His prayers",
+              "text": "prayers",
               "correct": false
             }
           ],
@@ -278,7 +274,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 56:8",
-          "text": "Then David asks, \"are they not in Your book?\" Friend, back in the junk drawer the only thing anybody kept count of was the dust falling, and here's David asking God to keep his TEARS.",
+          "text": "Then David asks, \"…are they not in Your book?\" Friend, back in the junk drawer where I spent years, the only thing anybody kept count of was the dust falling, and here's David asking God to keep his TEARS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -336,15 +332,15 @@
           "card": 8,
           "kind": "story",
           "verses": "Psalm 56:10-11",
-          "text": "Then here comes that line again, and this time David adds \"in the LORD, whose word I praise\" right after \"In God, whose word I praise,\" too. Me? I repeat myself so much in this bakery, the OVENS could finish my sentences.",
-          "needs_agent_fix": true,
+          "text": "Then here comes that line again, \"In God, whose word I praise…\" and this time it gets a partner: \"…in the LORD, whose word I praise…\" And once more, David trusts in God and will not be afraid.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 56:12",
-          "text": "Then David tells God he's bound by the vows he made to Him, and he's ready to follow through. That's more than I can say for my promises to the snooze button.",
+          "text": "Then David tells God he's bound by his vows to Him, and he's ready to follow through. That's more than I can say for the promise I make every morning to hit snooze only once.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -399,7 +395,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 56:13",
-          "question": "God kept David's feet from stumbling too. David says that's so he can do what?",
+          "question": "God delivered David's soul from death and his feet from stumbling. David says it's so he can do what?",
           "answers": [
             {
               "text": "Walk before God in the light of life",

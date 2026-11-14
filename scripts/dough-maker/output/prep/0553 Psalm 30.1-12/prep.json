@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 30:2",
-          "text": "Then David tells how it went down. Not a polite little text, friend, he CRIED to the LORD for help.",
+          "text": "Then David tells how it went down. He was hurting, and he didn't send a polite little text, friend, he CRIED to the LORD for help.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -64,30 +64,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Psalm 30:3",
-          "text": "And this was no paper cut, friend. David says the LORD pulled him up from Sheol and spared him from going down into the Pit.",
+          "text": "Then David goes even deeper. He says the LORD pulled him up from Sheol.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 30:3",
-          "question": "True or false: By Sheol and the Pit, David means he came close to dying.",
+          "question": "The LORD pulled David up from Sheol. What else does David say the LORD spared him from?",
           "answers": [
             {
-              "text": "True",
+              "text": "Going down into the Pit",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Losing his whole kingdom",
+              "correct": false
+            },
+            {
+              "text": "Being sent into exile",
               "correct": false
             }
           ],
@@ -98,27 +102,27 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 30:4",
-          "text": "Then David turns to everybody else and calls them in: \"Sing to the LORD, O you His saints, and praise His holy name.\" He went from crying for help to LEADING THE CHOIR.",
+          "text": "Then David calls out to the LORD's saints: \"Sing to the LORD, O you His saints, and praise His holy name.\" He went from crying for help to LEADING THE CHOIR.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 30:5",
-          "question": "David puts the LORD's anger side by side with His favor. What does he say about His anger?",
+          "question": "David tells the saints about the LORD: His anger is ___, but His favor lasts a lifetime.",
           "answers": [
             {
-              "text": "It's fleeting next to His favor",
+              "text": "fleeting",
               "correct": true
             },
             {
-              "text": "It outlasts His favor",
+              "text": "endless",
               "correct": false
             },
             {
-              "text": "It falls only on His foes",
+              "text": "hidden",
               "correct": false
             }
           ],
@@ -128,16 +132,20 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 30:5",
-          "question": "David has another line for the saints: \"Weeping may stay the night, but joy comes in the morning.\" True or false: he means sorrow won't last forever and joy is on its way.",
+          "question": "David has another picture for the saints. Weeping may stay the night. What does he say comes in the morning?",
           "answers": [
             {
-              "text": "True",
+              "text": "Joy",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Rest",
+              "correct": false
+            },
+            {
+              "text": "Quiet",
               "correct": false
             }
           ],
@@ -179,7 +187,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 30:7",
-          "text": "Back then, the LORD had favored him and made his mountain stand strong. I had a spot like that once, right on the Millers' kitchen counter, and then my edges went soft and I slid ALL the way to the back of the junk drawer.",
+          "text": "Back then, the LORD had favored David and made his mountain stand strong. Strong. Steady. Life was GOOD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,15 +196,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 30:7",
-          "question": "The LORD had made David's mountain stand strong. True or false: when the LORD hid His face, David stayed just as steady as before.",
+          "question": "The LORD had made David's mountain stand strong. True or false: when the LORD hid His face, David was dismayed.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -206,7 +214,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Psalm 30:8-9",
-          "text": "So David calls to the LORD and begs for mercy. Then he makes his case like it's closing arguments.",
+          "text": "David calls to the LORD and begs for mercy. Then he makes his case like it's closing arguments.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -215,7 +223,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 30:9",
-          "question": "David asks the LORD, \"Will the dust praise You?\" What's his point?",
+          "question": "David asks the LORD what gain there is in his going down to the Pit. Then he asks, \"Will the dust praise You?\" What's his point?",
           "answers": [
             {
               "text": "If he dies he can't praise the LORD",
@@ -277,7 +285,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 30:12",
-          "question": "Why does David say the LORD clothed him with joy?",
+          "question": "David's sackcloth is gone. Why does he say the LORD turned his mourning into dancing?",
           "answers": [
             {
               "text": "So his heart would sing and not be silent",
@@ -300,7 +308,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 30:12",
-          "question": "David closes with a promise to the LORD. True or false: he says he'll give thanks until his troubles are over.",
+          "question": "David closes by talking to the LORD. True or false: he says he'll give thanks until his troubles are over.",
           "answers": [
             {
               "text": "True",

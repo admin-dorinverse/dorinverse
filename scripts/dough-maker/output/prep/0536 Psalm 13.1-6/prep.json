@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 13:1",
-          "text": "This is a psalm David wrote for the choirmaster, and friend, he SKIPS the small talk. No 'hello,' no 'how's Your week.' The first words out of his mouth to the LORD are: \"How long, O LORD? Will You forget me forever?\"",
-          "needs_agent_fix": true,
+          "text": "This is a psalm of David, Israel's king, and he's talking to the LORD. And friend, he SKIPS the small talk. No 'hello,' no 'how's Your week.' The first words out of his mouth are: \"How long, O LORD?\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,18 +18,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 13:1",
-          "question": "David asks the LORD, \"Will You forget me forever?\" What does that question tell you about how David feels?",
+          "question": "David opens by asking the LORD, \"How long, O LORD?\" What does he ask the LORD right after that?",
           "answers": [
             {
-              "text": "He feels forgotten by God",
+              "text": "Whether God will forget him forever",
               "correct": true
             },
             {
-              "text": "He feels he forgot about God",
+              "text": "Whether God will send rain soon",
               "correct": false
             },
             {
-              "text": "He feels sure God is near",
+              "text": "Whether God will make him rich",
               "correct": false
             }
           ],
@@ -69,25 +69,6 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 13:1-2",
-          "question": "Every one of David's \"how long\" questions is about God hiding His face.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
           "verses": "Psalm 13:3",
           "text": "Then the questions stop, and David asks for something instead: \"Consider me and respond, O LORD my God.\" And he wants God to give light to his eyes.",
@@ -95,7 +76,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 13:3",
@@ -114,15 +95,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Psalm 13:4",
-          "text": "And David's not done. He gives the LORD one more \"lest,\" and this one is about his enemy.",
+          "text": "And David's not done. If he goes down, there's something else that could happen, and it's about his enemy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 13:4",
@@ -141,23 +122,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Psalm 13:4",
-          "text": "His enemy would get to say, \"I have overcome him.\" Same as all of us, friend: you trip in public, and the FIRST thing you check is who saw.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Psalm 13:5",
-          "text": "Then David drops one little word. Real quiet. ... But.",
+          "text": "His enemy would get to say, \"I have overcome him,\" and his foes would cheer. Being down is hard, and I think having someone cheer about it is harder.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
+          "kind": "story",
+          "verses": "Psalm 13:5",
+          "text": "Then David drops one little word. Real quiet. But.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 13:5",
@@ -180,7 +161,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 13:5",
@@ -203,15 +184,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
-          "verses": "Psalm 13:1-6",
-          "text": "Then David makes a promise: he will sing to the LORD. Five verses ago this man was asking if God forgot him, and now he's WARMING UP HIS VOICE!",
+          "verses": "Psalm 13:1, 6",
+          "text": "Then David says he will sing to the LORD. Five verses ago this man was asking if God would forget him forever, and now he's WARMING UP HIS VOICE!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 13:6",
@@ -226,7 +207,7 @@
               "correct": false
             },
             {
-              "text": "The choirmaster asked for a song",
+              "text": "His sorrow has finally lifted",
               "correct": false
             }
           ],

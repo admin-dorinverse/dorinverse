@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 36:3",
-          "question": "David says the wicked man's words are wicked and deceitful, but he's still wise and still does good.",
+          "question": "David says the words of the wicked man's mouth can be trusted.",
           "answers": [
             {
               "text": "True",
@@ -65,6 +65,14 @@
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Psalm 36:3",
+          "text": "His words are wicked and deceitful. He's ceased to be wise and well-doing.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 36:4",
@@ -87,42 +95,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "Psalm 36:4",
-          "text": "On his BED. I lie down and the only thing I plot is how many times I'm hitting snooze. And David adds that this man fails to reject evil.",
-          "needs_agent_fix": true,
+          "text": "On his BED. I lie down and the only thing I plot is how many times I'm hitting snooze.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 36:4",
-          "question": "David says the wicked man sets himself on a good path and only slips off it now and then.",
+          "question": "David says the wicked man sets himself on a path that is not good.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
-          "verses": "Psalm 36:5",
-          "text": "Then the psalm turns, HARD. David takes his eyes off the wicked man.",
+          "verses": "Psalm 36:4",
+          "text": "He fails to reject evil. Then the psalm turns, HARD, and David takes his eyes off the wicked man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 36:5",
@@ -145,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 36:5",
           "text": "\"Your loving devotion, O LORD, reaches to the heavens, Your faithfulness to the clouds.\" One verse ago we were in a schemer's bedroom, and now David's got his head in the SKY.",
@@ -153,31 +161,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "story",
-          "verses": "Psalm 36:6",
-          "text": "Then David says, \"Your righteousness is like the highest mountains; Your judgments are like the deepest sea.\" This man is a POET. Best comparison I ever came up with was \"this dough feels like dough.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 36:6",
-          "question": "David pictures God's righteousness as the highest mountains and His judgments as the deepest sea. Those pictures show how ___ they are.",
+          "question": "After the heavens and the clouds, David compares God's righteousness to something on earth. What is it?",
           "answers": [
             {
-              "text": "great",
-              "correct": true,
-              "blank": 1
+              "text": "The highest mountains",
+              "correct": true
             },
             {
-              "text": "gentle",
+              "text": "The tallest cedars",
               "correct": false
             },
             {
-              "text": "new",
+              "text": "The strongest towers",
               "correct": false
             }
           ],
@@ -186,18 +185,26 @@
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Psalm 36:6",
+          "text": "And His judgments are like the deepest sea. This man is a POET, and the best comparison I ever came up with was \"this dough feels like dough.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 36:6",
-          "question": "David says the LORD preserves people but leaves the animals on their own.",
+          "question": "David says the LORD preserves both people and animals.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -245,15 +252,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 36:8",
-          "question": "David says the people who take refuge in God get only the leftovers from His house.",
+          "question": "David says the people who take refuge in God feast on the abundance of His house.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -263,28 +270,27 @@
           "card": 4,
           "kind": "story",
           "verses": "Psalm 36:8",
-          "text": "They feast on the abundance of God's house, and He gives them drink from His river of delights. A RIVER of delights, and I still get emotional when the chocolate chips come in the big bag.",
+          "text": "On top of the feast, God gives them drink from His river of delights. A RIVER of delights, and I still get emotional when the chocolate chips come in the big bag.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 36:9",
-          "question": "David gives the reason for all this good: with God is the fountain of life. That picture means life ___ from God.",
+          "question": "With all that feasting and drinking, David names something that is with God. What does he call it?",
           "answers": [
             {
-              "text": "flows",
-              "correct": true,
-              "blank": 1
+              "text": "The fountain of life",
+              "correct": true
             },
             {
-              "text": "hides",
+              "text": "The spring of Gihon",
               "correct": false
             },
             {
-              "text": "turns",
+              "text": "The well of Bethlehem",
               "correct": false
             }
           ],
@@ -302,20 +308,21 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 36:10",
-          "question": "David asks God to keep His loving devotion coming. Who does he ask God to extend it to?",
+          "question": "David prays for God's loving devotion to reach the people who ___ Him.",
           "answers": [
             {
-              "text": "Those who know Him",
-              "correct": true
+              "text": "know",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Those who rule the land",
+              "text": "forget",
               "correct": false
             },
             {
-              "text": "Those who give the most",
+              "text": "oppose",
               "correct": false
             }
           ],

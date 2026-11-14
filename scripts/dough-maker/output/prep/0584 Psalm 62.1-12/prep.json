@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 62:1",
-          "text": "Here's a Psalm of David, written for the choirmaster and set according to Jeduthun, one of the musicians chosen to give thanks to the LORD (1 Chronicles 16:41). This one's a song, friend. David starts by telling us where his soul goes to rest.",
-          "needs_agent_fix": true,
+          "text": "Here's a Psalm of David, Israel's king, written for the choirmaster according to Jeduthun, one of the musicians chosen to give thanks to the LORD (1 Chronicles 16:41). This one's a song, friend. David starts by telling us where his soul goes to rest.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 62:3",
-          "text": "Then David speaks to the people threatening a man: \"How long will you threaten a man?\" I bet this has been going on a while.",
+          "text": "Then David asks, \"How long will you threaten a man? Will all of you throw him down like a leaning wall or a tottering fence?\" This didn't start yesterday, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -75,30 +75,30 @@
           "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Psalm 62:3",
-          "question": "David asks if they'll all throw that man down. What does David picture the man as?",
+          "verses": "Psalm 62:4",
+          "question": "The ones threatening this man have a plan. What do they fully intend to do to him?",
           "answers": [
             {
-              "text": "A leaning wall",
+              "text": "Cast him down from his lofty perch",
               "correct": true
             },
             {
-              "text": "A tall cedar",
+              "text": "Drive him out of the land",
               "correct": false
             },
             {
-              "text": "A city gate",
+              "text": "Take away all his riches",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Psalm 62:4",
-          "text": "Their whole plan is to cast him down from his lofty perch. And they delight in lies.",
+          "text": "And they delight in lies. They don't just tell them, friend, they ENJOY them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -107,44 +107,57 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 62:4",
-          "question": "These people are two-faced. With their mouths they ___, but inwardly they ___.",
+          "question": "The people out to cast this man down are two-faced. With their mouths they bless, but inwardly they ___.",
           "answers": [
             {
-              "text": "bless",
-              "correct": true,
-              "blank": 1
+              "text": "curse",
+              "correct": true
             },
             {
-              "text": "curse",
-              "correct": true,
-              "blank": 2
+              "text": "laugh",
+              "correct": false
             },
             {
               "text": "weep",
               "correct": false
-            },
-            {
-              "text": "fear",
-              "correct": false
-            },
-            {
-              "text": "rest",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 62:4-5",
-          "text": "That's the coworker who says \"Love it!\" in the meeting and then rips it APART in the group chat, friend. Then comes a Selah, and David tells his own soul to rest in God alone, because his hope comes from Him.",
+          "text": "That's the coworker who says \"Love it!\" in the meeting and then rips it APART in the group chat, friend. Then comes a Selah, and David turns to his own soul and tells it to rest in God alone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 62:5",
+          "question": "David tells his own soul to rest in God alone. What reason does he give?",
+          "answers": [
+            {
+              "text": "His hope comes from Him",
+              "correct": true
+            },
+            {
+              "text": "His enemies have gone quiet",
+              "correct": false
+            },
+            {
+              "text": "His battles are all won",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 62:6-7",
           "text": "Then that line comes back: God alone is his rock, his salvation and his fortress, and David will not be shaken. And now his salvation and his honor rest on God, his strong rock.",
@@ -152,42 +165,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 62:8",
-          "question": "Now David turns to everybody listening, \"O people\" and he tells them to trust God at ___ times.",
-          "answers": [
-            {
-              "text": "all",
-              "correct": true
-            },
-            {
-              "text": "holy",
-              "correct": false
-            },
-            {
-              "text": "set",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 62:8",
-          "question": "David tells the people to keep their hearts to themselves and stay quiet before God.",
+          "question": "David turns from his own soul to speak to the people. He tells them to pour out their hearts before God.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -197,7 +187,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Psalm 62:8-9",
-          "text": "Then he says it plain: \"God is our refuge.\" And next, David sizes people up: \"Lowborn men are but a vapor; the exalted are but a lie.\"",
+          "text": "He tells them to trust Him at all times, and says it plain: \"God is our refuge.\" Then he sizes people up: \"Lowborn men are but a vapor; the exalted are but a lie.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -206,18 +196,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 62:9",
-          "question": "Weighed on a scale, what happens to these men, lowborn and exalted alike?",
+          "question": "David says lowborn men and the exalted, weighed on a scale, go up. What does that picture say about them?",
           "answers": [
             {
-              "text": "They go up",
+              "text": "They weigh next to nothing",
               "correct": true
             },
             {
-              "text": "They go down",
+              "text": "They weigh more than gold",
               "correct": false
             },
             {
-              "text": "They hold steady",
+              "text": "They weigh more than they look",
               "correct": false
             }
           ],
@@ -285,9 +275,9 @@
         {
           "card": 19,
           "kind": "story",
-          "verses": "Psalm 62:12",
-          "text": "Then David turns and speaks right to God: loving devotion belongs to You, O Lord. Power AND loving devotion, friend, both from the same God.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 62:11-12",
+          "text": "Then David turns and speaks right to God: loving devotion belongs to You, O Lord. Power AND loving devotion, friend, both belong to the same God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -295,21 +285,11 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 62:12",
-          "question": "Power belongs to God, and loving devotion belongs to the Lord too. Then David ends with this: God will ___ each man according to his ___.",
+          "question": "David has said not to trust riches, and that lowborn and exalted alike are a vapor. He ends by telling the Lord that He will repay each man according to his ___.",
           "answers": [
             {
-              "text": "repay",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "deeds",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "forgive",
-              "correct": false
+              "correct": true
             },
             {
               "text": "wealth",
@@ -320,7 +300,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

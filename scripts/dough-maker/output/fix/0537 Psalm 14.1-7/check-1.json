@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Card 4 already asked whether anyone is doing good (v1: \"There is no one who does good\"). Card 7 asks the same fact again from v3, which repeats that line, so these two lines make the same point and should get one question.",
+      "rule": "An easy follow-up asks something new. It never re-asks the same fact. Two lines that make the same point get one question."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The question says \"When the LORD's search is done,\" which adds a time and an outcome. Psalm 14:3 doesn't say the search finishes or that David is reporting its result.",
+      "rule": "Times stay true. No time in the text means none added."
+    }
+  ]
+}

@@ -9,132 +9,47 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 45:1",
-          "text": "Alright, friend, this one's a love song, and the sons of Korah wrote it. They were a family of Levites who praised the LORD (2 Chronicles 20:19), and they wrote this for the choirmaster, to the tune of “The Lilies.” The writer says his heart is stirred by a noble theme as he recites his verses to the king.",
-          "needs_agent_fix": true,
+          "text": "Alright, friend, this love song comes from the sons of Korah, a family of Levites who praised the LORD (2 Chronicles 20:19). It's written for the choirmaster, to the tune of “The Lilies.” The writer says his heart is stirred by a noble theme, and his tongue is the pen of a skillful writer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 45:1",
-          "question": "The writer is so fired up, he says his tongue is the ___ of a skillful writer.",
+          "question": "The writer's heart is stirred by a noble theme. Who does he say he's reciting his verses to?",
           "answers": [
             {
-              "text": "pen",
+              "text": "The king",
               "correct": true
             },
             {
-              "text": "harp",
+              "text": "The priests",
               "correct": false
             },
             {
-              "text": "scroll",
+              "text": "The elders",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Psalm 45:2",
-          "text": "He opens BIG: he tells the king he's the most handsome of men. Nobody has EVER opened a poem to me like that, and I've got THIS mustache!",
-          "needs_agent_fix": true,
+          "text": "He opens BIG, telling the king, “You are the most handsome of men; grace has anointed your lips…” Nobody has EVER opened a poem to me like that, friend!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 45:2",
-          "question": "The king is the most handsome of men, and grace has anointed his lips. Therefore, the writer says, what has God done?",
-          "answers": [
-            {
-              "text": "Blessed him forever",
-              "correct": true
-            },
-            {
-              "text": "Made him rich forever",
-              "correct": false
-            },
-            {
-              "text": "Made him wise forever",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Psalm 45:3",
-          "text": "Then the song shifts gears. The writer calls the king a mighty warrior and tells him to appear in his majesty and splendor.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 45:3",
-          "question": "Before he heads out, the writer tells the mighty warrior to strap his ___ at his side.",
-          "answers": [
-            {
-              "text": "sword",
-              "correct": true
-            },
-            {
-              "text": "shield",
-              "correct": false
-            },
-            {
-              "text": "spear",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Psalm 45:4",
-          "text": "The writer tells the king to ride forth in his splendor. He's cheering him on like a man in the front row: may his right hand show his awesome deeds!",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 45:4",
-          "question": "The writer tells the king to ride forth in victory. On behalf of what?",
-          "answers": [
-            {
-              "text": "Truth and humility and justice",
-              "correct": true
-            },
-            {
-              "text": "Gold and glory and land",
-              "correct": false
-            },
-            {
-              "text": "Honor and power and fame",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 45:5",
-          "question": "The king's arrows pierce the hearts of his foes, and the nations fall beneath his feet.",
+          "verses": "Psalm 45:2",
+          "question": "The writer tells the king that God has blessed him forever.",
           "answers": [
             {
               "text": "True",
@@ -145,42 +60,100 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Psalm 45:3",
+          "text": "Then the song shifts gears. The writer tells the king to strap his sword at his side and appear in his majesty and splendor.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 45:3",
+          "question": "With the king's sword strapped at his side, the writer calls him a mighty ___.",
+          "answers": [
+            {
+              "text": "warrior",
+              "correct": true
+            },
+            {
+              "text": "shepherd",
+              "correct": false
+            },
+            {
+              "text": "judge",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Psalm 45:4-5",
+          "text": "The writer tells the king to ride forth in his splendor, in victory, on behalf of truth and humility and justice. His arrows pierce the hearts of the king's foes.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 45:5",
+          "question": "With the king's arrows flying, the nations rise up and drive him back.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Psalm 45:6",
+          "text": "Then the writer says, “Your throne, O God, endures forever and ever…”, and Hebrews says that line is about the Son, Jesus (Hebrews 1:8). The first time I read that, I dropped a WHOLE tray of dough.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Psalm 45:6",
-          "text": "Then the writer says, “Your throne, O God, endures forever and ever,” and Hebrews 1:8 says that line is about the Son, Jesus. The first time I read that, I dropped a WHOLE tray of dough.",
-          "needs_agent_fix": true,
+          "question": "This throne endures forever and ever. What does the writer say is the scepter of the kingdom?",
+          "answers": [
+            {
+              "text": "Justice",
+              "correct": true
+            },
+            {
+              "text": "Strength",
+              "correct": false
+            },
+            {
+              "text": "Wealth",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 45:6",
-          "question": "The psalm says ___ is the scepter of this forever kingdom.",
-          "answers": [
-            {
-              "text": "justice",
-              "correct": true
-            },
-            {
-              "text": "strength",
-              "correct": false
-            },
-            {
-              "text": "wealth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 45:7",
@@ -199,65 +172,69 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Psalm 45:8",
+          "text": "Now the writer catches a whiff: the king's garments are all fragrant with myrrh and aloes and cassia. Me? I smell like warm dough and a little bit of oven mitt.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Psalm 45:8",
-          "text": "Now the writer catches a whiff. The king's garments are all fragrant with myrrh and aloes and cassia, and me? I smell like warm dough and a little bit of oven mitt.",
-          "needs_agent_fix": true,
+          "question": "The harps play from palaces of ivory to make the king ___.",
+          "answers": [
+            {
+              "text": "glad",
+              "correct": true
+            },
+            {
+              "text": "afraid",
+              "correct": false
+            },
+            {
+              "text": "weary",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 45:8",
-          "question": "Harps play to make this king glad. Where does the psalm say the music comes from?",
-          "answers": [
-            {
-              "text": "Palaces of ivory",
-              "correct": true
-            },
-            {
-              "text": "Houses of cedar",
-              "correct": false
-            },
-            {
-              "text": "Tents of Kedar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 45:9",
+          "text": "Then the writer looks around the room. The daughters of kings are among the king's honored women.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Psalm 45:9",
-          "text": "Then the writer looks around the room. The daughters of kings are among the king's honored women.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Psalm 45:9",
-          "question": "The queen stands at the king's left hand, adorned with the gold of Ophir.",
+          "question": "Adorned with the gold of Ophir, who stands at the king's right hand?",
           "answers": [
             {
-              "text": "True",
+              "text": "The queen",
+              "correct": true
+            },
+            {
+              "text": "His mother",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "His sister",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -270,132 +247,136 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 45:10",
-          "text": "Now the song turns and speaks to someone new. The writer calls out, “Listen, O daughter!”",
-          "needs_agent_fix": true,
+          "text": "Now the song turns to someone new: “Listen, O daughter!” The writer tells her to consider and incline her ear, and to forget her people and her father's house.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Psalm 45:10",
-          "question": "The writer tells the daughter to consider and incline her ear. What does he tell her to forget?",
+          "verses": "Psalm 45:11",
+          "question": "The daughter is told to forget her people and her father's house. What does the writer say the king will do?",
           "answers": [
             {
-              "text": "Her people and her father's house",
+              "text": "Desire her beauty",
               "correct": true
             },
             {
-              "text": "Her fears and her many doubts",
+              "text": "Send her back home",
               "correct": false
             },
             {
-              "text": "Her jewels and her fine gowns",
+              "text": "Forget her name",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Psalm 45:11",
-          "question": "The writer goes on and tells the daughter the king will desire her ___.",
-          "answers": [
-            {
-              "text": "beauty",
-              "correct": true
-            },
-            {
-              "text": "wisdom",
-              "correct": false
-            },
-            {
-              "text": "riches",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then the writer tells her, “bow to him, for he is your lord.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Psalm 45:11",
-          "text": "Then the writer tells her to bow to him, because he is her lord. Leaving your father's house is a BIG move, and trust me, I know a thing or two about getting moved.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 45:12",
+          "text": "Then the writer says the Daughter of Tyre will come with a gift, and Tyre is a city by the sea. When I got stuck in the back of a junk drawer, nobody brought me ANYTHING!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Psalm 45:12",
-          "text": "A gift is coming, friend! The Daughter of Tyre will come with a gift, and when I landed in that junk drawer, nobody brought me ANYTHING.",
-          "needs_agent_fix": true,
+          "question": "The writer tells the daughter he's been speaking to that men of wealth will seek her ___.",
+          "answers": [
+            {
+              "text": "favor",
+              "correct": true
+            },
+            {
+              "text": "harm",
+              "correct": false
+            },
+            {
+              "text": "gold",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 45:12",
-          "question": "The Daughter of Tyre brings a gift. And the daughter the writer told to listen? What does the psalm say men of wealth will do toward her?",
-          "answers": [
-            {
-              "text": "Seek her favor",
-              "correct": true
-            },
-            {
-              "text": "Take her treasure",
-              "correct": false
-            },
-            {
-              "text": "Turn her away",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 45:13",
+          "text": "Now the princess is all glorious in her chamber, her gown embroidered with gold. My apron's embroidered too, friend, with FLOUR.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Psalm 45:13",
-          "text": "Now the princess is all glorious in her chamber, her gown embroidered with gold. My apron's embroidered too, friend, with FLOUR.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 45:14",
+          "question": "Dressed in colorful garments, the princess is led to the ___.",
+          "answers": [
+            {
+              "text": "king",
+              "correct": true
+            },
+            {
+              "text": "temple",
+              "correct": false
+            },
+            {
+              "text": "garden",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 45:14",
-          "question": "In colorful garments, the princess is led to the king. Who else is brought before him?",
+          "type": "true_false",
+          "verses": "Psalm 45:15",
+          "question": "The princess's virgin companions are brought in too. They're led into the palace of the king with fear and trembling.",
           "answers": [
             {
-              "text": "Her virgin companions",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Her father and brothers",
-              "correct": false
-            },
-            {
-              "text": "The king's own soldiers",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "Psalm 45:16",
+          "text": "Then the song looks way down the road to the next generation. Sons will succeed the fathers who came before them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 45:15",
-          "question": "The princess's companions are led into the palace of the king with joy and gladness.",
+          "verses": "Psalm 45:16",
+          "question": "The writer tells the king he will make his sons princes throughout the land.",
           "answers": [
             {
               "text": "True",
@@ -406,50 +387,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Psalm 45:16",
-          "text": "Then the song looks way down the road to the next generation. Sons will succeed the fathers who came before them.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 45:16",
-          "question": "The psalm says those sons will be made ___ throughout the land.",
-          "answers": [
-            {
-              "text": "princes",
-              "correct": true
-            },
-            {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Psalm 45:17",
+          "text": "And the writer signs off with a promise: he'll commemorate this name through all generations. ALL of them, friend, and I can't even promise a batch won't burn.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Psalm 45:17",
-          "text": "And the writer signs off with a promise: he'll commemorate this name through all generations. ALL of them, friend, and I can't even promise a batch won't burn.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 45:17",
@@ -468,7 +418,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

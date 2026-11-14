@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Esther 6:1",
-          "text": "Catch-up time, friend. Haman, the king's top official, just had a gallows built so Mordecai, Queen Esther's cousin, can be hanged on it (Esther 3:1; 2:7; 5:14). But that night, the king can't sleep.",
+          "text": "Catch-up time, friend. Haman, the king's top official, just had a gallows built so Mordecai, Queen Esther's cousin, can be hanged on it (Esther 3:1; 2:7; 5:14). But that night, King Xerxes can't sleep.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -39,8 +39,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Esther 6:2",
-          "text": "When I couldn't sleep in the junk drawer, I counted the dust falling. The king gets somebody reading him old records, and one of them is about a plot: Bigthana and Teresh, two eunuchs who guarded his entrance, had conspired to assassinate him.",
+          "verses": "Esther 6:1-2",
+          "text": "Some folks count sheep, but this king has the records read to him, and two pages of that would knock ME out cold. Then the reading hits a plot to assassinate the king, and Mordecai's name is right there in the record.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 6:3",
-          "question": "King Xerxes asks what honor Mordecai got for exposing the plot. His attendants say ___ has been done for him.",
+          "question": "Mordecai exposed Bigthana and Teresh, two eunuchs who plotted against the king. King Xerxes asks what honor Mordecai got for it. His attendants say ___ has been done for him.",
           "answers": [
             {
               "text": "nothing",
@@ -106,7 +106,7 @@
               "correct": true
             },
             {
-              "text": "Mordecai",
+              "text": "Hathach",
               "correct": false
             },
             {
@@ -155,20 +155,16 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Esther 6:6",
-          "question": "King Xerxes asks Haman what should be done for the man the king is delighted to honor. Who does Haman think the king means?",
+          "question": "King Xerxes asks Haman what should be done for the man the king is delighted to honor. Haman thinks the king must mean Haman himself.",
           "answers": [
             {
-              "text": "Haman himself",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Mordecai",
-              "correct": false
-            },
-            {
-              "text": "Queen Esther",
+              "text": "False",
               "correct": false
             }
           ],
@@ -188,7 +184,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 6:8",
-          "question": "Haman starts his wish list. He asks for a royal robe the king himself has ___ and a horse with a royal crest that the king himself has ___.",
+          "question": "Haman says to bring a royal robe the king himself has ___ and a horse the king himself has ___, with a royal crest on its head.",
           "answers": [
             {
               "text": "worn",
@@ -257,6 +253,14 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "Esther 6:9",
+          "text": "Haman even has the announcement ready, to be cried out before the honored man: \"This is what is done for the man whom the king is delighted to honor!\" Friend, this man just wrote his own theme song.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -280,15 +284,15 @@
           "question": "King Xerxes tells Haman to take the robe and the horse to the man he wants to honor. Who is it?",
           "answers": [
             {
-              "text": "Mordecai the Jew",
+              "text": "Mordecai",
               "correct": true
             },
             {
-              "text": "Haman himself",
+              "text": "Memucan",
               "correct": false
             },
             {
-              "text": "A noble prince",
+              "text": "Hegai",
               "correct": false
             }
           ],
@@ -327,18 +331,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 6:11",
-          "question": "So Mordecai is dressed in the robe and paraded through the city square. Who shouts \"This is what is done for the man whom the king is delighted to honor!\" in front of him?",
+          "question": "So Haman dresses Mordecai in the robe and parades him through the city square. What does Haman do along the way?",
           "answers": [
             {
-              "text": "Haman himself",
+              "text": "Cries out the honor announcement",
               "correct": true
             },
             {
-              "text": "A royal herald",
+              "text": "Reads out a royal decree",
               "correct": false
             },
             {
-              "text": "The king's attendants",
+              "text": "Hands out the king's gifts",
               "correct": false
             }
           ],
@@ -349,7 +353,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Esther 6:11",
-          "text": "Haman wrote that line for himself, and now he's SHOUTING it for Mordecai. That's like writing the speech for your own promotion party, then your boss says, \"Love it, now read it out loud for your rival.\"",
+          "text": "Haman came up with that line for himself, and now he's SHOUTING it for Mordecai. That's like writing the speech for your own promotion party, then your boss says, \"Love it, now read it out loud for your rival.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -384,11 +388,11 @@
               "correct": true
             },
             {
-              "text": "pride",
+              "text": "ashes",
               "correct": false
             },
             {
-              "text": "triumph",
+              "text": "oil",
               "correct": false
             }
           ],
@@ -399,7 +403,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Esther 6:13",
-          "text": "Haman tells his wife Zeresh and all his friends everything that happened. That's the same crowd he bragged to about his invite to Queen Esther's banquet with the king, and the same crowd who told him to build the gallows (Esther 5:12, 14).",
+          "text": "Haman tells his wife Zeresh and all his friends everything that happened. Yep, the same crowd that told him to build the gallows (Esther 5:14).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -442,7 +446,7 @@
               "correct": false
             },
             {
-              "text": "wealthy",
+              "text": "Egyptian",
               "correct": false
             }
           ],

@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 2:1",
-          "text": "Acts 4:25 says David spoke the words of this psalm. He opens with a big question about the whole world: 'Why do the nations rage and the peoples plot in vain?' Raging AND plotting is a FULL schedule, friend.",
-          "needs_agent_fix": true,
+          "text": "David, Israel's king, spoke the words of this psalm (Acts 4:25). He opens with a big question about the whole world: 'Why do the nations rage and the peoples plot in vain?' Raging AND plotting is a FULL schedule, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,15 +18,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 2:1",
-          "question": "True or false: When David says the peoples plot in vain, he means their plan is going to work.",
+          "question": "True or false: When David says the peoples plot in vain, he means their plotting won't get them anywhere.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -65,32 +65,32 @@
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Psalm 2:3",
-          "text": "Here's their big plan: 'Let us break Their chains and cast away Their cords.' It's a group chat full of coworkers planning to tell off the boss, and EVERYBODY is typing in all caps.",
+          "question": "The kings and rulers are taking their stand against the LORD and His Anointed One. What do they say they want to do with Their chains and cords?",
+          "answers": [
+            {
+              "text": "Break them and cast them away",
+              "correct": true
+            },
+            {
+              "text": "Gather them and hold them tight",
+              "correct": false
+            },
+            {
+              "text": "Bury them and leave them hidden",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Psalm 2:3",
-          "question": "The kings want to break the chains and cast away the cords of the LORD and His Anointed One. What are they really saying?",
-          "answers": [
-            {
-              "text": "We won't be ruled by Them",
-              "correct": true
-            },
-            {
-              "text": "We want Them to lead us",
-              "correct": false
-            },
-            {
-              "text": "We need Them to protect us",
-              "correct": false
-            }
-          ],
+          "text": "Here's their big plan: 'Let us break Their chains and cast away Their cords.' It's a group chat where everybody's planning to quit at once, and EVERYBODY is typing in all caps.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -179,7 +179,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 2:6",
-          "text": "'I have installed My King on Zion, upon My holy mountain.' The kings are still plotting to break free, and the King is already in place.",
+          "text": "'I have installed My King on Zion, upon My holy mountain.' The kings want to break free, and God's King is already in place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -193,47 +193,47 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 2:7",
-          "text": "Now the King Himself speaks up. He's ready to proclaim the decree the LORD spoke to Him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the psalm says, 'I will proclaim the decree spoken to Me by the LORD: “You are My Son; today I have become Your Father.”'",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 2:7",
-          "question": "In the decree, the LORD calls the King His ___ and says that today He has become His Father.",
+          "question": "In the decree, the LORD tells His King, 'You are My Son; today I have become Your Father.' What does this show about the King?",
           "answers": [
             {
-              "text": "Son",
+              "text": "He is close to the LORD like a son",
               "correct": true
             },
             {
-              "text": "Servant",
+              "text": "He won his crown in a great battle",
               "correct": false
             },
             {
-              "text": "Shepherd",
+              "text": "He will rule for only a short time",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Psalm 2:7-8",
-          "text": "Of every name I've ever been called, Papa is the best one, so a Father talking to His Son like that gets me EVERY time. And the Father isn't done: He tells the Son, 'Ask Me.'",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Psalm 2:8",
+          "text": "And the LORD isn't done. He tells the Son, 'Ask Me…' Two words, and I'm already on the edge of my gold base.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 2:8",
-          "question": "All the Son has to do is ask. True or false: If He asks, the LORD will make the nations the Son's inheritance and the ends of the earth His possession.",
+          "question": "True or false: The LORD says that if the Son asks, He will make the nations the Son's inheritance and the ends of the earth His possession.",
           "answers": [
             {
               "text": "True",
@@ -244,15 +244,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Psalm 2:9",
-          "text": "The LORD keeps going: 'You will break them with an iron scepter; You will shatter them like pottery.' Friend, I've seen a mixing bowl hit the kitchen floor. You do NOT glue that back together.",
-          "needs_agent_fix": true,
+          "text": "The LORD keeps going. He tells the Son He will shatter the nations like pottery.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -260,30 +260,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 2:9",
-          "question": "The LORD says the Son will shatter the nations like pottery. What does that picture show about the Son's power over them?",
+          "question": "The LORD says the Son will shatter the nations like pottery. What does He say the Son will break them with?",
           "answers": [
             {
-              "text": "Nothing can stand against it",
+              "text": "An iron scepter",
               "correct": true
             },
             {
-              "text": "It will slowly fade away",
+              "text": "A shepherd's staff",
               "correct": false
             },
             {
-              "text": "It is shared with the kings",
+              "text": "A bronze shield",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Psalm 2:10",
-          "text": "Then the psalm turns straight to the rulers: 'Therefore be wise, O kings; be admonished, O judges of the earth.' Nothing makes you sit up straight like a sentence that starts with THEREFORE.",
-          "needs_agent_fix": true,
+          "text": "Then the psalm turns to the kings and judges of the earth: 'Therefore be wise, O kings; be admonished, O judges of the earth.' Nothing makes you sit up straight like a sentence that starts with THEREFORE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -291,38 +291,38 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 2:11",
-          "question": "The kings of the earth are told to be wise. What does being wise look like for them?",
+          "question": "The kings and judges of the earth are told to be wise. What does the psalm tell them to do next?",
           "answers": [
             {
-              "text": "Serving the LORD with fear",
+              "text": "Serve the LORD with fear",
               "correct": true
             },
             {
-              "text": "Trusting in their chariots",
+              "text": "Trust in their chariots",
               "correct": false
             },
             {
-              "text": "Seeking help from Egypt",
+              "text": "Seek help from Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 2:11",
-          "text": "Right alongside that, they're told to rejoice with trembling. That's me opening the oven on a brand-new recipe, friend, excited and SHAKING.",
-          "needs_agent_fix": true,
+          "text": "They're also told to rejoice with trembling. That's me opening the oven on a brand-new cookie batch, friend: excited and SHAKING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Psalm 2:12",
-          "text": "Then the kings get one more instruction: 'Kiss the Son.' Friend, these guys showed up to break chains, and that meeting did NOT end the way they drew it up.",
-          "needs_agent_fix": true,
+          "text": "Then the kings get one more instruction: 'Kiss the Son…' These guys showed up to break chains, friend. THIS was not on their agenda.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -345,11 +345,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Psalm 2:12",
+          "question": "True or false: In the warning to the kings, the psalm says His wrath builds up slowly.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 2:12",
@@ -368,7 +387,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

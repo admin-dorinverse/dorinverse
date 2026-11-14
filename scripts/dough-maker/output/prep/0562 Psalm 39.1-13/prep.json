@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 39:1",
-          "text": "This is a psalm of David, for the choirmaster, for Jeduthun, one of the men chosen to give thanks to the LORD (1 Chronicles 16:41). David opens by telling us what he said he would do. The wicked are around, and he's going to be VERY careful about one thing.",
-          "needs_agent_fix": true,
+          "text": "This is a psalm of David, king of Israel, for the choirmaster, for Jeduthun, one of the men chosen to give thanks to the LORD (1 Chronicles 16:41). David opens by telling us what he said he would do. The wicked are around, and he's going to be VERY careful about one thing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -50,7 +50,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 39:2",
-          "question": "True or false: While David keeps that muzzle on, he still lets himself say good things.",
+          "question": "True or false: While David keeps his mouth muzzled, he still lets himself say good things.",
           "answers": [
             {
               "text": "True",
@@ -68,7 +68,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 39:2",
-          "text": "So David stays speechless and still, not even saying good things. And his sorrow? It gets stirred up.",
+          "text": "So David stays speechless and still, not even saying good things. And his sorrow gets stirred up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -137,20 +137,21 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 39:5",
-          "question": "David says the LORD has made his days as handbreadths. What is he saying about his life?",
+          "question": "David says the LORD has made his days as handbreadths. That means his life is very ___.",
           "answers": [
             {
-              "text": "It is very short",
-              "correct": true
+              "text": "short",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "It is long and lasting",
+              "text": "long",
               "correct": false
             },
             {
-              "text": "It is well protected",
+              "text": "safe",
               "correct": false
             }
           ],
@@ -161,7 +162,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Psalm 39:5",
-          "text": "He says his lifetime is as nothing before the LORD, and “Truly each man at his best exists as but a breath.” AT HIS BEST, friend, and he's still gone faster than a fresh batch on the cooling rack at an office party.",
+          "text": "He says his lifetime is as nothing before the LORD, and “Truly each man at his best exists as but a breath.” Even at his best, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -170,7 +171,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 39:6",
-          "question": "David says every man goes about like a phantom, bustles in vain and heaps up riches not knowing who will haul them away. What is David saying about all that bustling and heaping up?",
+          "question": "David says every man goes about like a phantom, bustles around and heaps up riches not knowing who will haul them away. What is David saying about all that bustling and heaping up?",
           "answers": [
             {
               "text": "It all comes to nothing",
@@ -193,15 +194,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 39:7",
-          "question": "David asks, “And now, O Lord, for what do I wait?” True or false: He says his hope is in the riches a man heaps up.",
+          "question": "David asks, “And now, O Lord, for what do I wait?” True or false: He says his hope is in the Lord.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -210,8 +211,8 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Psalm 39:7-8",
-          "text": "His hope is in the LORD, and he asks the LORD to deliver him from all his transgressions and not make him the reproach of fools. I get it, baker, NOBODY wants to be the joke in the group chat.",
+          "verses": "Psalm 39:8",
+          "text": "Then David asks the Lord to deliver him from all his transgressions and not make him the reproach of fools. I get it, baker, NOBODY wants to be the joke in the group chat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -220,30 +221,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 39:9",
-          "question": "David says he has become mute. He won't open his mouth because of what the ___ has done.",
+          "question": "David says he has become mute. He won't open his mouth because of what ___ did.",
           "answers": [
             {
-              "text": "LORD",
+              "text": "the Lord",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "wicked",
+              "text": "the fools",
               "correct": false
             },
             {
-              "text": "fools",
+              "text": "his friends",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Psalm 39:10",
-          "text": "Then David asks the LORD to remove His scourge from him, and says he's perishing by the force of His hand. Friend, I think this man is running on his last crumb.",
+          "text": "Then David asks the LORD to remove His scourge from him, and says he's perishing by the force of His hand. I think this one hurts, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -270,7 +271,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Psalm 39:12",
-          "text": "Then David begs the LORD to hear his prayer and not be deaf to his weeping. He calls himself a foreigner dwelling with the LORD.",
+          "text": "Then David asks the LORD to hear his prayer and his cry for help, and not to be deaf to his weeping. He calls himself a foreigner dwelling with the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

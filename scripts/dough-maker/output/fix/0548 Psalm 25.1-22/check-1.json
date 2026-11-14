@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The blank answer 'waits' is already given by earlier cards. Card 3 says 'everybody who waits for the LORD', and cards 4 and 5 repeat 'wait for the LORD'. The baker can fill the blank from those cards without reasoning.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "Story card 9 says 'he asks the LORD to remember', and card 10's question says 'ask the LORD to remember'. That hands over the right answer 'remember' before the blank card asks it.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "The statement makes two claims, that David asks not to be put to shame and that he asks the LORD to let his enemies gloat. A true or false statement should test only one claim.",
+      "rule": "A true or false statement tests one claim."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "Card 9 asks about verse 17 before any story card has told it. Story card 10 tells verses 17-18 only afterward, so the choice jumps ahead of the telling and the baker has no setup to reason from.",
+      "rule": "A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    }
+  ]
+}

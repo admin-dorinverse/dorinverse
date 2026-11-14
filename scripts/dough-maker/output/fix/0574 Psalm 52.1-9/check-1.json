@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "Story card 7 has just told the baker that David says the man loves evil more than good. This true/false asks the other half of the same line (truth vs falsehood), so the setup gives away the answer.",
+      "rule": "No card ever gives away the answer to a choice card that comes later. ... Two lines that make the same point get one question."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The wrong answer \"Until nightfall\" means nearly the same as the right answer \"All day long\", so a baker could argue it is right.",
+      "rule": "No near-matches. A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 1
+      },
+      "problem": "This card tells verse 5, where God brings the man to everlasting ruin and uproots him from the land of the living. It carries a joke about the man's \"time in the spotlight\" getting \"REAL uncomfortable\" instead of showing care.",
+      "rule": "A card that tells death, violence, abuse, serious sin or the body's private matters has no joke. He can show care instead, marked as his own (\"I think this one hurts\"). He can say once, simply, that a part is heavy."
+    }
+  ]
+}

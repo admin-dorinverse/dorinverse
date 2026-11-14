@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 50:1",
-          "text": "This is a psalm of Asaph, chief of the Levite musicians David put before the ark of the LORD (1 Chronicles 16:4-5). And right away, the Mighty One, God the LORD, speaks.",
-          "needs_agent_fix": true,
+          "text": "This is a psalm of Asaph, chief of the Levite musicians King David put before the ark of the LORD (1 Chronicles 16:4-5). And right away, the Mighty One, God the LORD, speaks.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -39,8 +39,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Psalm 50:1-2",
-          "text": "I holler across my bakery and barely reach the cooling racks, and God just summoned the WHOLE EARTH. From Zion, perfect in beauty, God shines forth.",
+          "verses": "Psalm 50:2",
+          "text": "From Zion, perfect in beauty, God shines forth. And friend, He's just getting STARTED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 50:3",
-          "text": "Consuming fire goes before Him, and a tempest rages around Him. And I used to brag about how hot MY oven runs.",
+          "text": "Consuming fire goes before Him, and a tempest rages around Him. Nobody's hitting snooze on THIS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -87,7 +87,7 @@
           "question": "God summons the heavens above and the earth. What does He call them in for?",
           "answers": [
             {
-              "text": "So He may judge His people",
+              "text": "So He can judge His people",
               "correct": true
             },
             {
@@ -106,50 +106,46 @@
           "card": 8,
           "kind": "story",
           "verses": "Psalm 50:5",
-          "text": "Then comes the call to gather God's saints. These are His people, joined to Him by a covenant.",
+          "text": "Then a call goes out about God's saints, the ones who made a covenant with Him by sacrifice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 50:5",
-          "question": "God's saints made a covenant with Him by ___",
+          "question": "A call goes out about God's saints, who made a covenant with Him by sacrifice. What does the call say should happen to them?",
           "answers": [
             {
-              "text": "sacrifice",
+              "text": "Be gathered to Him",
               "correct": true
             },
             {
-              "text": "oath",
+              "text": "Be sent to the nations",
               "correct": false
             },
             {
-              "text": "prayer",
+              "text": "Be set apart as priests",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Psalm 50:6",
-          "question": "Asaph says the heavens proclaim God's righteousness, for God Himself is ___",
+          "question": "True or false: Asaph says the heavens proclaim God's righteousness.",
           "answers": [
             {
-              "text": "Judge",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "King",
-              "correct": false
-            },
-            {
-              "text": "Light",
+              "text": "False",
               "correct": false
             }
           ],
@@ -187,7 +183,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Psalm 50:8-9",
-          "text": "Nope, their burnt offerings are ever before Him. But He has no need for a bull from their stall or goats from their pens.",
+          "text": "Their burnt offerings are ever before Him. But He has no need for a bull from their stall or goats from their pens.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -225,17 +221,21 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Psalm 50:12",
-          "question": "True or false: God says that if He were hungry, He would tell His people.",
+          "question": "God says that if He were hungry, He wouldn't tell His people, because the ___ is His.",
           "answers": [
             {
-              "text": "True",
+              "text": "world",
+              "correct": true
+            },
+            {
+              "text": "temple",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "throne",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -245,7 +245,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Psalm 50:12-13",
-          "text": "He wouldn't, because the world is His, and the fullness thereof. Then He asks, \"Do I eat the flesh of bulls, or drink the blood of goats?\"",
+          "text": "The world and the fullness thereof belong to Him. Then He asks, \"Do I eat the flesh of bulls, or drink the blood of goats?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -275,9 +275,9 @@
         {
           "card": 19,
           "kind": "story",
-          "verses": "Psalm 50:14",
+          "verses": "Psalm 50:14-15",
           "text": "He also tells them to fulfill their vows to the Most High. Then He makes them a promise for the hard days.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -285,7 +285,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 50:15",
-          "question": "\"Call upon Me in the day of trouble,\" God says. Then He will ___ you, and you will honor Him.",
+          "question": "God says, \"Call upon Me in the day of trouble…\" Then He promises He will ___ them, and they will honor Him.",
           "answers": [
             {
               "text": "deliver",
@@ -322,7 +322,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 50:17",
-          "question": "The wicked can recite God's statutes just fine. So what's God's problem with them?",
+          "question": "The wicked can recite God's statutes. So what does God say about them?",
           "answers": [
             {
               "text": "They hate His instruction",
@@ -353,15 +353,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 50:18",
-          "question": "True or false: God says that when the wicked see a thief, they keep their distance.",
+          "question": "True or false: God says that when the wicked see a thief, they befriend him.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -371,7 +371,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 50:18-19",
-          "text": "They throw in their lot with adulterers too, unleash their mouths for evil and harness their tongues to deceit. Those mouths are clocking OVERTIME.",
+          "text": "They throw in their lot with adulterers too. They unleash their mouths for evil and harness their tongues to deceit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -402,7 +402,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Psalm 50:21",
-          "text": "They did all of this, and God kept silent. Now watch what they made of that.",
+          "text": "They did all of this, and God kept silent. Then He tells them what they thought about Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -411,18 +411,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 50:21",
-          "question": "God stayed silent while the wicked did all this. What did they think that meant?",
+          "question": "God kept silent while the wicked did all this. What does He say they thought about Him?",
           "answers": [
             {
-              "text": "That God was just like them",
+              "text": "That He was just like them",
               "correct": true
             },
             {
-              "text": "That God had forgiven them",
+              "text": "That He had forgiven them",
               "correct": false
             },
             {
-              "text": "That God was far away",
+              "text": "That He was far away",
               "correct": false
             }
           ],

@@ -9,34 +9,34 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 15:1",
-          "text": "This is a psalm of David, and he opens with a big question for the LORD: who may abide in His tent and dwell on His holy mountain? Friend, I spent years in the back of a junk drawer. You had me at \"tent.\"",
+          "text": "This is a psalm of David, and he opens with a big question for the LORD: who may abide in His tent and dwell on His holy mountain? Not drop by. STAY.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 15:2-5",
-          "question": "David asks the LORD who may dwell on His holy mountain. True or false: David answers with a list of offerings to bring to the LORD's tent.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Psalm 15:2",
+          "text": "First, the big picture: this person walks with integrity. He's the SAME GUY in the meeting as he is in the parking lot when somebody takes his spot.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Psalm 15:2",
-          "text": "First, the big picture: this person walks with integrity and practices righteousness. He's the SAME GUY in the meeting as he is in the parking lot when somebody takes his spot.",
+          "question": "Besides walking with integrity, David says the one who dwells on the LORD's holy mountain practices righteousness.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -93,21 +93,17 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 15:3",
-          "question": "No slander on his tongue, no harm to his neighbor, no scorn on his friend. Who are all three of these about?",
+          "question": "David says the one who dwells on the LORD's holy mountain casts scorn on his friend.",
           "answers": [
             {
-              "text": "The people around him",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The priests in the tent",
-              "correct": false
-            },
-            {
-              "text": "The enemies of Israel",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -148,7 +144,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 15:4",
-          "text": "Now the tough one: this person made an oath, and it turns out to be a costly one. Like saying \"Sure, I'll help you move\" and THEN finding out it's a third floor walk-up with no elevator.",
+          "text": "Now the tough one: this person has made a costly oath. Like saying \"Sure, I'll help you move\" and THEN finding out it's a third floor walk-up with no elevator.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -157,7 +153,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 15:4",
-          "question": "Once his oath starts costing him, the person in Psalm 15 revises it.",
+          "question": "When keeping an oath is costly, the person in Psalm 15 revises it.",
           "answers": [
             {
               "text": "True",
@@ -175,38 +171,38 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 15:5",
-          "text": "Then David gets to the wallet: what this person does when he lends his money. This is right about where a lot of us start studying the ceiling real hard.",
+          "text": "Then David gets to the wallet, where this same no-harm-to-his-neighbor guy lends his money. This is right about where a lot of us start studying the ceiling real hard.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 15:5",
-          "question": "When the one who dwells on the LORD's holy mountain lends his money, he lends it without ___.",
+          "question": "How does the one who dwells on the LORD's holy mountain lend his money?",
           "answers": [
             {
-              "text": "interest",
+              "text": "He lends it without interest",
               "correct": true
             },
             {
-              "text": "delay",
+              "text": "He lends it for a small fee",
               "correct": false
             },
             {
-              "text": "witnesses",
+              "text": "He lends it for a short time",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Psalm 15:5",
-          "text": "Then David brings up a bribe, money to turn this person against the innocent. I'd love to tell you I've never been tempted, but you wave a bag of chocolate chips at me and I start NEGOTIATING.",
+          "text": "Then David brings up a bribe against the innocent. I'd love to tell you I've never been tempted, but you wave a bag of chocolate chips at me and I start NEGOTIATING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

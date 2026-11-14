@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 41:1",
-          "text": "Here's a psalm of David, written for the choirmaster. It opens by calling somebody blessed. And when a psalm does that, friend, you lean IN, because somebody's about to get some GOOD news.",
-          "needs_agent_fix": true,
+          "text": "Here's a psalm of David, Israel's king, written for the choirmaster. It opens by calling somebody blessed. And when a psalm does that, friend, you lean IN, because somebody's about to get some GOOD news.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -162,15 +162,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 41:4",
-          "question": "True or false: David asks the LORD for grace while telling Him he has done nothing wrong.",
+          "question": "True or false: In his prayer for healing, David tells the LORD he has sinned against Him.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -224,20 +224,21 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 41:6",
-          "question": "What does David's visitor do once he goes back out?",
+          "question": "When David's visitor goes back out, he spreads ___ about David.",
           "answers": [
             {
-              "text": "Spreads slander about him",
-              "correct": true
+              "text": "slander",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Prays for his healing",
+              "text": "praise",
               "correct": false
             },
             {
-              "text": "Tells the priests he is well",
+              "text": "hope",
               "correct": false
             }
           ],
@@ -248,7 +249,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Psalm 41:6-7",
-          "text": "He came in SMILING and walked out with a whole REPORT. And now all who hate David are whispering against him.",
+          "text": "He came in to VISIT and walked out with a whole REPORT. And now all who hate David are whispering against him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -276,7 +277,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 41:9",
-          "question": "Then comes the line that stings the most. Who does David say has lifted up his heel against him?",
+          "question": "I think this next line stings the most. Who does David say has lifted up his heel against him?",
           "answers": [
             {
               "text": "His close friend he trusted",
@@ -298,8 +299,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Psalm 41:9",
-          "text": "Lifted up his heel. That's not a nudge, that's a KICK, from the friend who shared David's bread. Centuries later, Jesus quotes this very line about Himself (John 13:18).",
-          "needs_agent_fix": true,
+          "text": "It's the friend who shared David's bread. Centuries later, Jesus quotes this line about one of His own disciples (John 13:18).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -329,7 +330,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Psalm 41:10",
-          "text": "David even says why he wants back up: so he can repay them. Flat on his back and already planning the comeback, while the big plan in MY drawer was counting dust.",
+          "text": "David even says why he wants back up: so he can repay them. Flat on his back and already planning the comeback, while back in the junk drawer I was stuck in for years, my big plan was counting dust.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -338,15 +339,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 41:11",
-          "question": "True or false: David says he knows the LORD delights in him because his enemy does not triumph over him.",
+          "question": "True or false: David says he knows the LORD delights in him because his enemies have stopped whispering.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -356,7 +357,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Psalm 41:12",
-          "text": "David says it's the LORD who upholds him in his integrity. Same as my gold base, friend: I don't hold it up, it holds ME up.",
+          "text": "David says it's the LORD who upholds him in his integrity. They said he'd never get up again, and now he's being held UP, friend, talk about a PLOT TWIST!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -387,9 +388,9 @@
           "card": 14,
           "kind": "story",
           "verses": "Psalm 41:13",
-          "text": "Then David wraps up the whole psalm. Watch how it lands, because it echoes the way it started.",
+          "text": "Then the psalm wraps up. Watch how it lands, because it echoes the way it started.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -413,34 +414,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Psalm 41:13",
-          "question": "True or false: David closes by blessing the LORD, the God of Israel, for as long as Israel stands.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Psalm 41:13",
-          "text": "From whispers and a kick from a friend all the way to \"Blessed be the LORD, the God of Israel, from everlasting to everlasting.\" And not one Amen, friend, TWO, because some praise you just gotta sign twice.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

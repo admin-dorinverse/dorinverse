@@ -9,16 +9,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 22:1",
-          "text": "This is a psalm of David, king of Israel (2 Samuel 5:3), written for the choirmaster to the tune of \"The Doe of the Dawn.\" The only tune in MY bakery is the oven timer, and friend, it knows ONE note. Then David opens his mouth: \"My God, my God, why have You forsaken me?\"",
+          "text": "This is a psalm of David, king of Israel (2 Samuel 5:3), written for the choirmaster to the tune of “The Doe of the Dawn.” Then David cries out, in words Jesus also cried from the cross (Matthew 27:46): \"My God, my God, why have You forsaken me?\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 22:1",
-          "question": "In his opening cry, David says God feels so far away. So far from doing what for him?",
+          "question": "In his opening cry, David asks why God is so far away. So far from doing what for him?",
           "answers": [
             {
               "text": "Saving him",
@@ -34,22 +34,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Psalm 22:1",
-          "text": "Friend, you might know that line. Jesus cried it out from the cross (Matthew 27:46).",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 22:2",
-          "question": "True or false: David says he cries out to God by day and by night, and God answers him right away.",
+          "question": "True or false: When David cries out to God by day, God answers him.",
           "answers": [
             {
               "text": "True",
@@ -64,7 +56,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Psalm 22:3-4",
           "text": "Then David says, \"Yet You are holy, enthroned on the praises of Israel.\" And he remembers Israel's fathers, the ones who trusted God.",
@@ -72,7 +64,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 22:4",
@@ -83,11 +75,11 @@
               "correct": true
             },
             {
-              "text": "tested",
+              "text": "scattered",
               "correct": false
             },
             {
-              "text": "scattered",
+              "text": "humbled",
               "correct": false
             }
           ],
@@ -95,15 +87,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Psalm 22:6",
-          "text": "Then David says, \"But I am a worm and not a man, scorned by men and despised by the people.\" Friend, I know that low place. I spent years in a junk drawer, and even the expired coupon I shared it with had more confidence than me.",
+          "text": "Then David says, \"But I am a worm and not a man, scorned by men and despised by the people.\" I spent years in a junk drawer, friend, and even the expired coupon in there had more confidence than me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 22:8",
@@ -114,11 +106,11 @@
               "correct": true
             },
             {
-              "text": "test",
+              "text": "correct",
               "correct": false
             },
             {
-              "text": "correct",
+              "text": "silence",
               "correct": false
             }
           ],
@@ -126,15 +118,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 22:9",
-          "text": "But David turns back to God with another \"Yet.\" \"Yet You brought me forth from the womb; You made me secure at my mother’s breast.\"",
+          "text": "But David turns back to God with another \"Yet\": \"Yet You brought me forth from the womb; You made me secure at my mother’s breast.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 22:10",
@@ -153,7 +145,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 22:11",
@@ -176,10 +168,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Psalm 22:12-13",
-          "text": "Now David paints a picture with wild animals. Strong bulls of Bashan encircle him, and they open their jaws against him like lions that roar and maul.",
+          "text": "Now David paints a picture with animals. Strong bulls of Bashan encircle him, and they open their jaws against him like lions that roar and maul.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Psalm 22:14",
+          "text": "Then David says, \"I am poured out like water, and all my bones are disjointed. My heart is like wax; it melts away within me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,18 +188,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 22:14",
-          "question": "David says he is poured out like water and his heart melts like wax. What is he describing?",
+          "question": "David says he is poured out like water and his heart melts like wax. What do these pictures show about David?",
           "answers": [
             {
-              "text": "He is falling apart",
+              "text": "He is weak and worn out",
               "correct": true
             },
             {
-              "text": "He is boiling with anger",
+              "text": "He is full of anger",
               "correct": false
             },
             {
-              "text": "He is overflowing with joy",
+              "text": "He is ready to fight",
               "correct": false
             }
           ],
@@ -218,7 +218,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Psalm 22:16",
-          "text": "And it gets darker. Dogs surround him, a band of evil men encircles him, and \"they have pierced my hands and feet.\"",
+          "text": "And it gets darker. Dogs surround him and a band of evil men encircles him, and David says, \"…they have pierced my hands and feet.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -246,31 +246,31 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 22:18",
-          "question": "The men around David stare and gloat. What do they do with his clothing?",
+          "question": "The evil men around David take something of his and cast lots for it. What is it?",
           "answers": [
             {
-              "text": "Cast lots for it",
+              "text": "His clothing",
               "correct": true
             },
             {
-              "text": "Burn it up",
+              "text": "His sword",
               "correct": false
             },
             {
-              "text": "Throw it away",
+              "text": "His crown",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
-          "verses": "Psalm 22:18",
-          "text": "Hold on, friend. John says the soldiers at Jesus' cross divided His clothes and cast lots, to fulfill this very Scripture (John 19:23-24).",
+          "verses": "Psalm 22:17-18",
+          "text": "The men around him stare and gloat, and they divide his garments among them. John says the soldiers at Jesus' cross did this very thing (John 19:23-24).",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -282,7 +282,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 22:19",
-          "text": "Then David calls out one more time. \"But You, O LORD, be not far off; O my Strength, come quickly to help me.\"",
+          "text": "Then David calls out again. \"But You, O LORD, be not far off; O my Strength, come quickly to help me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -313,39 +313,16 @@
           "card": 3,
           "kind": "story",
           "verses": "Psalm 22:21",
-          "text": "David asks God to save him from the mouth of the lion. Then he mentions the horns of the wild oxen.",
+          "text": "David asks God to save him from the mouth of the lion. Then everything turns: \"…at the horns of the wild oxen You have answered me!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 22:21",
-          "question": "Right there at the horns of the wild oxen, what does David say God has done?",
-          "answers": [
-            {
-              "text": "Answered him",
-              "correct": true
-            },
-            {
-              "text": "Shut the lion's mouth",
-              "correct": false
-            },
-            {
-              "text": "Broken their horns",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 22:22",
-          "question": "Now that God has answered, David says he will ___ God's name to his brothers.",
+          "question": "Then David says he will ___ God's name to his brothers.",
           "answers": [
             {
               "text": "proclaim",
@@ -364,7 +341,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Psalm 22:23",
           "text": "Now David goes from crying out to calling out. He calls on others to praise the LORD, honor Him and revere Him.",
@@ -372,7 +349,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 22:23",
@@ -391,7 +368,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 22:24",
@@ -402,7 +379,7 @@
               "correct": true
             },
             {
-              "text": "Made him rich and famous",
+              "text": "Made him a mighty king",
               "correct": false
             },
             {
@@ -414,15 +391,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Psalm 22:25",
-          "text": "His praise resounds in the great assembly, and he'll fulfill his vows before those who fear God. Friend, he went from \"I am a worm\" to the great assembly, and THAT is a comeback.",
+          "text": "David's praise resounds in the great assembly, and he'll fulfill his vows before those who fear God. Friend, he went from \"I am a worm…\" to the great assembly, and THAT is a comeback.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 22:26",
@@ -445,7 +422,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Psalm 22:27",
           "text": "Then the picture gets BIG. All the ends of the earth will remember and turn to the LORD, and all the families of the nations will bow down before Him.",
@@ -453,7 +430,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 22:28",
@@ -472,7 +449,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 22:29",
@@ -491,7 +468,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Psalm 22:29",
           "text": "Even all who go down to the dust will kneel before Him, even those unable to preserve their lives.",
@@ -499,11 +476,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 22:31",
-          "question": "As the psalm ends, future generations will declare the Lord to a new generation. What will they proclaim about Him?",
+          "question": "As the psalm ends, future generations will declare the Lord to a new generation. What will they tell about Him?",
           "answers": [
             {
               "text": "His righteousness",
@@ -522,7 +499,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Psalm 22:31",
           "text": "They will proclaim His righteousness \"to a people yet unborn—all that He has done.\" A psalm that started in the dark ends on all that God has done.",

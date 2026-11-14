@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 21:1",
-          "text": "A psalm for the choirmaster by David, son of Jesse, and he's talking to the LORD about the king. And friend, this king isn't a little bit happy. He is EXULTING, arms up, the whole thing!",
-          "needs_agent_fix": true,
+          "text": "A psalm for the choirmaster by David, Israel's king, and he's talking to the LORD about the king. And friend, this king isn't a little bit happy. He is EXULTING!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -97,39 +97,39 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Psalm 21:3-4",
-          "text": "Pure GOLD, friend. I went for twenty-five cents in a closing-sale bin, and this man is wearing a gold crown. Now hear what the king actually asked the LORD for.",
-          "needs_agent_fix": true,
+          "verses": "Psalm 21:4",
+          "text": "Then David tells the LORD what the king asked for, and it's not a small ask. He asked for life.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Psalm 21:4",
-          "question": "The king asked the LORD for ___.",
+          "question": "The king asked the LORD for life. How much life does the LORD grant him?",
           "answers": [
             {
-              "text": "life",
+              "text": "Length of days forever and ever",
               "correct": true
             },
             {
-              "text": "wisdom",
+              "text": "Seventy years and nothing more",
               "correct": false
             },
             {
-              "text": "peace",
+              "text": "Days until his enemies fall",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Psalm 21:4-5",
-          "text": "He asked for life, and the LORD granted it: \"length of days, forever and ever.\" I hit snooze for five extra minutes and feel guilty all morning, and this king walks away with FOREVER, plus splendor and majesty!",
+          "text": "You know when you hit snooze for five extra minutes and feel guilty all morning? This king gets FOREVER. On top of that, the LORD gives him splendor and majesty!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -167,71 +167,9 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Psalm 21:7",
-          "question": "After all those blessings, what does David say the king does?",
-          "answers": [
-            {
-              "text": "Trusts in the LORD",
-              "correct": true
-            },
-            {
-              "text": "Counts his chariots",
-              "correct": false
-            },
-            {
-              "text": "Builds high walls",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Psalm 21:7",
-          "question": "The king trusts in the LORD. Through the loving devotion of ___, the king will not be shaken.",
-          "answers": [
-            {
-              "text": "the Most High",
-              "correct": true
-            },
-            {
-              "text": "his army",
-              "correct": false
-            },
-            {
-              "text": "his nobles",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Psalm 21:8",
-          "text": "Then the psalm turns from gold crowns to enemies: \"Your right hand will seize those who hate You.\" That's a faster mood change than a group chat right after somebody types, \"We need to talk.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Psalm 21:9",
-          "text": "Friend, this part is heavy, so lean in. David tells the LORD, \"You will place them in a fiery furnace at the time of Your appearing.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 21:10",
-          "question": "True or false: the descendants of those enemies will live on among the sons of men.",
+          "verses": "Psalm 21:7",
+          "question": "True or false: after all those blessings, David says the king trusts in his horses and chariots.",
           "answers": [
             {
               "text": "True",
@@ -246,7 +184,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 13,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Psalm 21:7",
+          "question": "The king trusts in the LORD. Through the loving devotion of the Most High, the king will not be ___.",
+          "answers": [
+            {
+              "text": "shaken",
+              "correct": true
+            },
+            {
+              "text": "proud",
+              "correct": false
+            },
+            {
+              "text": "silent",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Psalm 21:8",
+          "text": "Then the psalm turns to enemies: \"Your hand will apprehend all Your enemies; Your right hand will seize those who hate You.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Psalm 21:9-10",
+          "text": "This part is heavy, friend. The psalm speaks of a fiery furnace and the LORD's wrath, and says even the enemies' descendants will be wiped from the earth.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 21:11",
@@ -265,22 +242,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Psalm 21:12",
-          "question": "Picture a bow trained right on those enemies. What happens to them?",
+          "question": "With a bow trained right on them, those enemies will be put to ___.",
           "answers": [
             {
-              "text": "They run away",
+              "text": "flight",
               "correct": true
             },
             {
-              "text": "They make peace",
+              "text": "shame",
               "correct": false
             },
             {
-              "text": "They fight back",
+              "text": "silence",
               "correct": false
             }
           ],
@@ -288,7 +265,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Psalm 21:13",
           "text": "Last line, and for the first time the psalm says \"we.\" It calls out, \"Be exalted, O LORD, in Your strength;\" and then comes the big finish.",
@@ -296,7 +273,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 21:13",

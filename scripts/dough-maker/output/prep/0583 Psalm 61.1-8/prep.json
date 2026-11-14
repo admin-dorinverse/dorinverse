@@ -15,10 +15,18 @@
         },
         {
           "card": 2,
+          "kind": "story",
+          "verses": "Psalm 61:2",
+          "text": "He's calling out to God from the ends of the earth. That's not the next room, friend, that's ONE bar of signal with your phone held up over your head.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 61:2",
-          "question": "David is crying out for God to hear him. He says he calls out to God whenever his heart is ___.",
+          "question": "David is crying out to God from the ends of the earth. He says he calls out whenever his heart is ___.",
           "answers": [
             {
               "text": "faint",
@@ -29,19 +37,11 @@
               "correct": false
             },
             {
-              "text": "steady",
+              "text": "glad",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Psalm 61:2",
-          "text": "Whenever his heart is faint, friend, and he's calling from the ends of the earth. That's not calling from the next room. That's calling with ONE bar of signal, holding the phone up over your head.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -69,10 +69,18 @@
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Psalm 61:3",
+          "text": "Then David gives his reason, and it's about what God has already done: He's been a tower of strength for David against the enemy. Not a pep talk, friend, a whole building you can run INTO.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 61:3",
-          "question": "David gives his reason for turning to God. He says God has already been his ___.",
+          "question": "David says God has been his ___ and a tower of strength against the enemy.",
           "answers": [
             {
               "text": "refuge",
@@ -87,50 +95,54 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Psalm 61:3",
-          "text": "A refuge and a tower of strength against the enemy. That's not a pep talk, friend, that's a building you can run INTO.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Psalm 61:4",
-          "question": "David asks to dwell in God's tent for one night, just until the trouble passes.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Next, David asks to dwell in God's tent. He's not asking for a visit, friend. He's asking for a place to stay.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Psalm 61:4",
-          "text": "Not one night, baker. FOREVER. David wants to live in God's tent and take refuge in the shelter of His wings.",
-          "needs_agent_fix": true,
+          "question": "David asks to dwell in God's tent. For how long?",
+          "answers": [
+            {
+              "text": "Forever",
+              "correct": true
+            },
+            {
+              "text": "For one night",
+              "correct": false
+            },
+            {
+              "text": "Until the war ends",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "Psalm 61:4",
+          "text": "And he wants to take refuge in the shelter of God's wings. Friend, I spent years in the back of a junk drawer. Trust me, a shelter sounds GOOD.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Psalm 61:4-5",
-          "question": "David asks to live in God's tent forever, and the reason he gives is that God has heard his vows.",
+          "verses": "Psalm 61:5",
+          "question": "After asking to live in God's tent forever, David says God has heard his vows.",
           "answers": [
             {
               "text": "True",
@@ -145,7 +157,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 61:5",
@@ -168,7 +180,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Psalm 61:5-6",
           "text": "RESERVED, baker, like a seat with your name already taped to it. Then the prayer turns to the king.",
@@ -176,7 +188,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 61:6",
@@ -199,7 +211,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "story",
           "verses": "Psalm 61:6",
           "text": "And may his years span many generations, baker. That's not 'happy birthday,' that's 'have ALL the birthdays.'",
@@ -207,11 +219,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 61:7",
-          "question": "The prayer asks for the king to rule far away from God's presence.",
+          "question": "Next, the prayer asks for the king to sit enthroned in God's presence for a set number of years.",
           "answers": [
             {
               "text": "True",
@@ -222,11 +234,11 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 61:7",
@@ -237,48 +249,46 @@
               "correct": true
             },
             {
-              "text": "A thousand of Israel's mighty warriors",
+              "text": "God's wisdom and knowledge",
               "correct": false
             },
             {
-              "text": "The priests and the Levites",
+              "text": "God's power and justice",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 17,
+          "kind": "story",
           "verses": "Psalm 61:8",
-          "question": "To close, David says he will ever ___ praise to God's name and fulfill his ___ day by day.",
+          "text": "To close, David makes a promise of his own. And this is no New Year's resolution that's gone by February, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 61:8",
+          "question": "David closes the psalm with what he will do day by day. What is it?",
           "answers": [
             {
-              "text": "sing",
-              "correct": true,
-              "blank": 1
+              "text": "Sing praise and fulfill his vows",
+              "correct": true
             },
             {
-              "text": "vows",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "whisper",
+              "text": "Rebuild the walls of Jerusalem",
               "correct": false
             },
             {
-              "text": "battles",
-              "correct": false
-            },
-            {
-              "text": "laws",
+              "text": "Lead the army out to battle",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

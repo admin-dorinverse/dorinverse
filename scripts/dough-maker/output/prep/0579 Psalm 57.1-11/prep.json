@@ -9,32 +9,32 @@
           "card": 1,
           "kind": "story",
           "verses": "Psalm 57:1",
-          "text": "This is a song of David, Israel's future king, written for the choirmaster to the tune of \"Do Not Destroy.\" The heading says it comes from when David fled from Saul, king of Israel, into a cave. Cold rock all around him, and David starts to pray.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "This is a song of David, Israel's future king, written for the choirmaster to the tune of \"Do Not Destroy.\" The heading says it comes from when David fled from Saul, king of Israel, into a cave. There in the cave, David cries out for mercy.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 57:1",
-          "question": "David begs God to have mercy on him, and he says his soul takes refuge in ___.",
+          "question": "Crying out for mercy from the cave, David says his soul takes refuge in ___.",
           "answers": [
             {
               "text": "God",
               "correct": true
             },
             {
-              "text": "his sling",
+              "text": "Jonathan",
               "correct": false
             },
             {
-              "text": "his sword",
+              "text": "his men",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -42,7 +42,7 @@
           "verses": "Psalm 57:1",
           "text": "Then David says he'll take shelter in the shadow of God's wings. Me? When something spooks me in the bakery, I hide behind my own mustache, so David picked a MUCH better hiding spot than I do.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -65,7 +65,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -95,15 +95,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 57:3",
-          "question": "David is crying out from a cave. True or false: David says God reaches down from heaven and saves him.",
+          "question": "David is crying out from a cave. True or false: David says God stays up in heaven and leaves him to wait it out alone.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -145,7 +145,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Psalm 57:4",
-          "question": "David says he lies down with ravenous beasts. But these beasts are really ___, whose teeth are spears and arrows and whose tongues are sharp swords.",
+          "question": "David says he lies down with ravenous beasts, with ___ whose teeth are spears and arrows and whose tongues are sharp swords.",
           "answers": [
             {
               "text": "men",
@@ -176,18 +176,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 57:5",
-          "question": "In the middle of the danger, what does David pray?",
+          "question": "In the middle of the danger, what does David say to God?",
           "answers": [
             {
-              "text": "That God be exalted above the heavens",
+              "text": "Be exalted above the heavens",
               "correct": true
             },
             {
-              "text": "That Saul would be struck down",
+              "text": "Strike down the men around me",
               "correct": false
             },
             {
-              "text": "That the cave would stay hidden",
+              "text": "Keep this cave hidden from Saul",
               "correct": false
             }
           ],
@@ -199,7 +199,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 57:6",
-          "question": "David says the ones after him spread a net for his feet, and his soul was despondent. They dug a pit in front of him too. True or false: the ones who dug the pit fall into it themselves.",
+          "question": "David says the ones after him spread a net for his feet, and his soul was despondent. They dug a pit in front of him too. True or false: David says the ones who dug the pit have fallen into it themselves.",
           "answers": [
             {
               "text": "True",
@@ -215,60 +215,64 @@
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Psalm 57:7",
-          "question": "David tells God his heart is ___, and he says it twice.",
-          "answers": [
-            {
-              "text": "steadfast",
-              "correct": true
-            },
-            {
-              "text": "troubled",
-              "correct": false
-            },
-            {
-              "text": "broken",
-              "correct": false
-            }
-          ],
+          "text": "Then David tells God, \"My heart is steadfast, O God, my heart is steadfast.\" In a CAVE. With a king on his trail.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Psalm 57:7-8",
-          "text": "David also says he'll sing and make music. He even calls out to his instruments: \"Awake, O harp and lyre!\"",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Psalm 57:7",
+          "question": "With his heart steadfast, even in the cave, what does David say he will do?",
+          "answers": [
+            {
+              "text": "Sing and make music",
+              "correct": true
+            },
+            {
+              "text": "Wait there in silence",
+              "correct": false
+            },
+            {
+              "text": "Run deeper into the cave",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Psalm 57:8",
-          "question": "David is ready to sing and make music. What does he say he will awaken?",
+          "question": "David is ready to sing and make music. True or false: David calls on his harp and lyre to wake up.",
           "answers": [
             {
-              "text": "The dawn",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The whole camp",
-              "correct": false
-            },
-            {
-              "text": "The king's guards",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
+          "kind": "story",
+          "verses": "Psalm 57:8",
+          "text": "Then David says, \"I will awaken the dawn.\" Friend, my oven timer has to go off THREE times before I'm awake, and David's out here waking up the morning.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Psalm 57:9",
@@ -287,7 +291,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Psalm 57:10",
@@ -310,10 +314,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "story",
           "verses": "Psalm 57:10-11",
-          "text": "And God's faithfulness reaches to the clouds. Then David closes with that line again: \"Be exalted, O God, above the heavens; may Your glory cover all the earth.\"",
+          "text": "And God's faithfulness reaches to the clouds. Then David closes with this: \"Be exalted, O God, above the heavens; may Your glory cover all the earth.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
