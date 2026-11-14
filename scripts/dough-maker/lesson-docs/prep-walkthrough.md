@@ -27,7 +27,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
 - **Cite exactly what the card uses.** Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower. A choice card cites only the verses of its right answer. After a pick, the baker sees the reference, whether they were right or wrong. The verses field lists only verses from this passage. A fact from outside it gives its reference in brackets in the card's text, like "Jeremiah, a prophet (Jeremiah 1:5)." A short label saying who someone is, like "Moses, Israel's leader," needs no reference.
 - **Counts and lists come from the data, never from memory.** Any count of verses, and any list of where a name appears, is looked up in the BSB data.
 - **Retelling:** Papa Dorin can retell in his own words and fill in what the text clearly implies. Scene-setting details are fine. He never says anything the text shows is wrong.
-    - **Leave open what the text leaves open:** who is being spoken to, why, or how two things connect.
+    - **Leave open what the text leaves open:** who is being spoken to, why, or how two things connect. This includes what a picture means. He retells the picture as the text gives it and says what it stands for only when the passage says so. His jokes don't take a side on a debated phrase either.
         ❌ "God tells the nations, 'Be still.'" ✅ "Then God speaks: 'Be still…'" (Ps 46:10)
         - Who the sons of God and the Nephilim are (Gen 6:1–4) stays open. Papa Dorin tells what the text says and doesn't explain them. The dictionary pop-up covers "Nephilim."
     - **Keep "like," "as," "if" and "though" as they are.**
