@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 5:12",
-          "text": "Jesus is in one of the towns when a man comes along covered with leprosy. Not a patch here and there, friend, COVERED. When he sees Jesus, he falls facedown and begs Him.",
+          "text": "Jesus is in one of the towns when a man comes along who is covered with leprosy. When he sees Jesus, he falls facedown and begs Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Luke 5:13",
-          "text": "Jesus reaches out His hand and TOUCHES the man. I bet that man did not see that coming.",
+          "text": "Jesus reaches out His hand and TOUCHES the man. He tells him He is willing, and says, “Be clean!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -68,18 +68,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 5:13",
-          "question": "The man said, \"Lord, if You are willing, You can make me clean.\" How does Jesus answer him?",
+          "question": "Jesus touches the man with leprosy and says, “Be clean!” How soon does the leprosy leave him?",
           "answers": [
             {
-              "text": "I am willing",
+              "text": "Immediately",
               "correct": true
             },
             {
-              "text": "Your faith is enough",
+              "text": "By sundown",
               "correct": false
             },
             {
-              "text": "Go and wash first",
+              "text": "Within seven days",
               "correct": false
             }
           ],
@@ -88,38 +88,14 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 5:13",
-          "question": "Jesus says, \"Be clean!\" And the man's leprosy leaves him ___.",
-          "answers": [
-            {
-              "text": "immediately",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "overnight",
-              "correct": false
-            },
-            {
-              "text": "gradually",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "story",
-          "verses": "Luke 5:14",
-          "text": "Then Jesus gives the healed man some instructions. That's walking out of the doctor's office with a clean bill of health AND a printout.",
+          "verses": "Luke 5:13-14",
+          "text": "Friend, my oven takes longer than that to preheat. Then Jesus gives the healed man some instructions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 5:14",
@@ -138,11 +114,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 5:14",
-          "question": "Jesus tells the healed man to go show himself to the ___ and present the offering Moses prescribed for his cleansing.",
+          "question": "Jesus tells the healed man to go show himself to the ___ and present the offering for his cleansing that Moses, Israel's lawgiver, prescribed.",
           "answers": [
             {
               "text": "priest",
@@ -158,11 +134,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Luke 5:14-15",
           "text": "Jesus said don't tell anyone. But the news about Jesus spreads ALL the more, like crumbs across a kitchen floor.",
@@ -170,7 +146,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 5:15",
@@ -193,19 +169,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 5:16",
-          "question": "With great crowds coming to Jesus, He stops slipping away to the wilderness to pray.",
+          "question": "Even with great crowds coming, Jesus often withdraws to the wilderness to pray.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -248,7 +224,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 5:18",
-          "text": "Just then some men show up carrying a paralyzed man. They want to get him inside and set him right in front of Jesus.",
+          "text": "Just then some men show up carrying a paralyzed man on a mat. They want to get him inside and set him right in front of Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -277,26 +253,10 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 5:19",
-          "question": "The men can't get the paralyzed man through the crowd, but they don't quit. They go up on the ___.",
-          "answers": [
-            {
-              "text": "roof",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wall",
-              "correct": false
-            },
-            {
-              "text": "balcony",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "But these men don't quit. Up on the roof they go, and they lower him on his mat through the tiles.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -329,20 +289,21 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 5:20",
-          "question": "Jesus looks at the men who lowered the paralyzed man through the roof. What does He see in them?",
+          "question": "The paralyzed man comes down right in front of Jesus, and Jesus sees their ___.",
           "answers": [
             {
-              "text": "Their faith",
-              "correct": true
+              "text": "faith",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Their wealth",
+              "text": "wealth",
               "correct": false
             },
             {
-              "text": "Their worry",
+              "text": "worry",
               "correct": false
             }
           ],
@@ -403,48 +364,25 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Luke 5:22",
-          "text": "Jesus knows what they're thinking, and He asks why they're thinking these things in their hearts. That's typing about your boss in the group chat, then seeing your boss is IN the group chat.",
+          "verses": "Luke 5:22-23",
+          "text": "Jesus knows what they're thinking, and He asks why they're thinking these things in their hearts. Then He asks which is easier: to say, ‘Your sins are forgiven,’ or to say, ‘Get up and walk.’",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 5:23",
-          "question": "Jesus asks the scribes and Pharisees which is easier to say to the paralyzed man. \"Your sins are forgiven\" or what?",
-          "answers": [
-            {
-              "text": "Get up and walk",
-              "correct": true
-            },
-            {
-              "text": "Go in peace",
-              "correct": false
-            },
-            {
-              "text": "Sin no more",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Luke 5:24",
+          "text": "Jesus calls Himself the Son of Man, and He wants the scribes and Pharisees to know something. Friend, this is where I drop the cookie box and LEAN in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Luke 5:24",
-          "text": "Jesus calls Himself the Son of Man, and He's about to prove a point to EVERYBODY in that room. Friend, this is where I drop the cookie box and LEAN in.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 5:24",
-          "question": "Jesus wants them to know the Son of Man has authority on the earth to do something. What is it?",
+          "question": "Jesus wants the scribes and Pharisees to know the Son of Man has authority on the earth to do something. What is it?",
           "answers": [
             {
               "text": "Forgive sins",
@@ -463,39 +401,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 5:24",
-          "question": "Jesus turns to the paralyzed man and tells him to get up, pick up his ___ and go home.",
+          "question": "Jesus turns to the paralyzed man. What does He tell him to do with his mat?",
           "answers": [
             {
-              "text": "mat",
-              "correct": true,
-              "blank": 1
+              "text": "Pick it up and go home",
+              "correct": true
             },
             {
-              "text": "cloak",
+              "text": "Leave it where it lies",
               "correct": false
             },
             {
-              "text": "staff",
+              "text": "Hand it to his friends",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "Luke 5:19, 25",
+          "text": "And IMMEDIATELY the man stands up in front of them and picks up what he'd been lying on. He came in lying on that mat, and now HE'S the one carrying IT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Luke 5:25",
-          "text": "And IMMEDIATELY the man stands up in front of them and picks up what he'd been lying on. He came in through the ROOF, and he goes home on his own two feet.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 5:25",
@@ -518,30 +455,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 5:26",
-          "question": "Everyone who saw the paralyzed man walk is amazed and glorifies God too.",
+          "question": "The people who saw the paralyzed man walk leave unsure what to make of it.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Luke 5:26",
-          "text": "They're filled with awe and say, “We have seen remarkable things today.” Friend, a man got lowered through the roof tiles and walked home, so I'd need to sit down for a WEEK.",
-          "needs_agent_fix": true,
+          "text": "They're filled with awe and say, “We have seen remarkable things today.” After a day like that, friend, I'd need to sit down for a WEEK.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

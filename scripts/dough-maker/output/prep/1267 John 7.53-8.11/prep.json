@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "John 7:40-8:1",
-          "text": "The crowd in Jerusalem is divided over who Jesus is, and the religious leaders are arguing about Him too. Then each went to his own home. But Jesus went to the Mount of Olives, a hill just outside the city.",
+          "verses": "John 7:53-8:1",
+          "text": "The crowd in Jerusalem is divided over who Jesus is, and the religious leaders are arguing about Him too (John 7:43-52). Then each one goes to his own home. But Jesus goes to the Mount of Olives, east of Jerusalem (Zechariah 14:4).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -24,20 +24,16 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 8:2",
-          "question": "With all those people gathered around Him in the temple courts, what does Jesus do?",
+          "question": "With all those people gathered around Him in the temple courts, Jesus sits down to teach them.",
           "answers": [
             {
-              "text": "He sits down to teach them",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He sends them home to rest",
-              "correct": false
-            },
-            {
-              "text": "He leads them in a song",
+              "text": "False",
               "correct": false
             }
           ],
@@ -54,26 +50,10 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "John 8:5",
-          "question": "Then the scribes and Pharisees bring up the Law. They tell Jesus that ___ commanded them to stone such a woman.",
-          "answers": [
-            {
-              "text": "Moses",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Aaron",
-              "correct": false
-            },
-            {
-              "text": "Joshua",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then they bring up Moses, Israel's leader: “In the Law Moses commanded us to stone such a woman. So what do You say?”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -102,20 +82,16 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 8:6",
-          "question": "With everyone in the temple courts waiting on His answer, what does Jesus do?",
+          "question": "After the scribes and Pharisees ask Jesus what He says, Jesus bends down and writes on the ground with His finger.",
           "answers": [
             {
-              "text": "He writes on the ground with His finger",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He picks up a stone from the ground",
-              "correct": false
-            },
-            {
-              "text": "He walks out of the temple courts",
+              "text": "False",
               "correct": false
             }
           ],
@@ -156,9 +132,9 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "John 8:8",
-          "text": "He says one line, and that's it. Then He bends down again and writes on the ground.",
-          "needs_agent_fix": true,
+          "verses": "John 8:7-8",
+          "text": "Jesus says that one line, and that's it. Then He bends down again and writes on the ground.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -208,7 +184,7 @@
           "card": 13,
           "kind": "story",
           "verses": "John 8:9",
-          "text": "One by one they're gone, until only Jesus was left, with the woman standing there. It's like a packed elevator emptying out floor by floor, until it's just two people and that quiet hum.",
+          "text": "One by one they go, until only Jesus is left, with the woman standing there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "John 5:6",
-          "text": "Jesus sees him lying there and realizes he's spent a long time this way. So Jesus walks up and asks him a question.",
+          "text": "Jesus sees him lying there and realizes he's spent a long time this way. So Jesus asks him a question.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -198,8 +198,8 @@
           "card": 12,
           "kind": "story",
           "verses": "John 5:12-13",
-          "text": "So the Jews want a name: who told you to pick it up and walk? And the healed man's got NOTHING. Best day of his life, and he can't give them a name.",
-          "needs_agent_fix": true,
+          "text": "So the Jews ask who told him to pick it up and walk. And the healed man's got NOTHING. Not a name, not a nickname, NOTHING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -307,7 +307,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 5:18",
-          "question": "After Jesus answers, the Jews try even harder to kill Him, and it's only because He broke the Sabbath.",
+          "question": "Jesus breaking the Sabbath is the only reason the Jews try even harder to kill Him.",
           "answers": [
             {
               "text": "True",
@@ -325,7 +325,7 @@
           "card": 20,
           "kind": "story",
           "verses": "John 5:18",
-          "text": "Not only was He breaking the Sabbath, He was even calling God His own Father, making Himself equal with God. And friend, Jesus does NOT back down.",
+          "text": "Not only was He breaking the Sabbath, He was even calling God His own Father, making Himself equal with God. And friend, Jesus isn't done talking.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -339,7 +339,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 5:19",
-          "text": "So Jesus replies, opening with \"Truly, truly, I tell you\" and friend, when those words ring out, that's Mags-level loud: EVERYBODY LISTEN.",
+          "text": "So Jesus replies, opening with \"Truly, truly, I tell you…\" When Ruby, my bell-shaped cookie cutter kid, had something to say, the whole kitchen stopped to listen, and friend, THIS is a stop-and-listen moment.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -366,27 +366,23 @@
           "card": 3,
           "kind": "story",
           "verses": "John 5:20",
-          "text": "The Father loves the Son and shows Him all He does, and to their amazement, He'll show Him even greater works than these. Friend, a man just walked off carrying his mat after thirty-eight years, and Jesus says THAT'S not the big one.",
+          "text": "The Father loves the Son and shows Him all He does, and He will show Him even greater works than these. GREATER? Friend, I'm on the edge of my gold base.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "John 5:21",
-          "question": "Just as the Father raises the dead and gives them life, Jesus says the Son gives ___ to whom He wishes.",
+          "question": "Jesus says that just as the Father raises the dead and gives them life, the Son also gives life to whom He wishes.",
           "answers": [
             {
-              "text": "life",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "rest",
-              "correct": false
-            },
-            {
-              "text": "riches",
+              "text": "False",
               "correct": false
             }
           ],
@@ -421,28 +417,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 5:24",
-          "question": "Jesus says whoever hears His word and believes the One who sent Him has eternal life and has crossed over from ___ to ___.",
+          "question": "Jesus says whoever hears His word and believes the One who sent Him won't come under judgment. That person has crossed over from death to ___.",
           "answers": [
             {
-              "text": "death",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "life",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "glory",
               "correct": false
             },
             {
-              "text": "honor",
-              "correct": false
-            },
-            {
-              "text": "wisdom",
+              "text": "rest",
               "correct": false
             }
           ],
@@ -452,29 +438,25 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "John 5:25-26",
-          "text": "Another \"Truly, truly\" from Jesus: the dead will hear the voice of the Son of God, and those who hear will live. And as the Father has life in Himself, He has granted the Son to have life in Himself.",
+          "verses": "John 5:25-27",
+          "text": "Another \"Truly, truly…\" from Jesus: the dead will hear the voice of the Son of God, and those who hear will live. The Father has granted the Son to have life in Himself, and authority to execute judgment, because He is the Son of Man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 5:29",
-          "question": "Jesus says the Father has given the Son authority to judge, because He is the Son of Man. All who are in their graves will hear His voice and come out. Those who have done good come out to the resurrection of life, and those who have done evil to the resurrection of ___.",
+          "type": "true_false",
+          "verses": "John 5:28-29",
+          "question": "Jesus says the hour is coming when only those who have done good will hear His voice and come out of their graves.",
           "answers": [
             {
-              "text": "judgment",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "sorrow",
-              "correct": false
-            },
-            {
-              "text": "silence",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -485,14 +467,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 5:30",
-          "question": "Jesus says He can do nothing by Himself and that His judgment is just. Why is it just?",
+          "question": "Jesus says those who have done good come out to the resurrection of life, and those who have done evil to the resurrection of judgment. Then He says His judgment is just. Why?",
           "answers": [
             {
               "text": "He seeks the will of the One who sent Him",
               "correct": true
             },
             {
-              "text": "He has studied every law of Moses",
+              "text": "He has studied every word of the Law",
               "correct": false
             },
             {
@@ -507,7 +489,7 @@
           "card": 10,
           "kind": "story",
           "verses": "John 5:31",
-          "text": "Now Jesus says, \"If I testify about Myself, My testimony is not valid.\" That's me writing my own five-star review: BEST COOKIES IN THE DORINVERSE, signed Papa Dorin.",
+          "text": "Now Jesus says, \"If I testify about Myself, My testimony is not valid.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -516,15 +498,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 5:32",
-          "question": "Jesus says there is another who testifies about Him, and that testimony is valid.",
+          "question": "Jesus says there is no one else who testifies about Him.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -534,7 +516,7 @@
           "card": 12,
           "kind": "story",
           "verses": "John 5:33-34",
-          "text": "Then Jesus brings up John the Baptist (Matthew 3:1): they sent to John, and John testified to the truth. Jesus doesn't accept human testimony, but He says these things so that they may be saved.",
+          "text": "Then Jesus brings up John, the man sent from God to testify about the light (John 1:6-7), and He says John testified to the truth. Jesus doesn't accept human testimony, but He says these things so that they may be saved.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -543,7 +525,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 5:35",
-          "question": "What picture does Jesus use to describe John the Baptist?",
+          "question": "What picture does Jesus use to describe John?",
           "answers": [
             {
               "text": "A lamp that burned and gave light",
@@ -596,7 +578,7 @@
           "card": 16,
           "kind": "story",
           "verses": "John 5:39-40",
-          "text": "Then Jesus points to the Scriptures they pore over: those are the very words that testify about Him, yet they refuse to come to Him to have life. That's reading the invitation ten times, memorizing the address, and never showing up.",
+          "text": "Then Jesus says they pore over the Scriptures because they presume that by them they possess eternal life. Those are the very words that testify about Him, yet they refuse to come to Him to have life.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -634,9 +616,9 @@
         {
           "card": 19,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 5:45",
-          "question": "Jesus asks how they can believe when they accept glory from one another and don't seek the glory that comes from the only God. Then He says He won't be the one to accuse them before the Father. Their accuser is the one they've put their hope in. Who is it?",
+          "question": "Jesus asks how they can believe when they accept glory from one another and don't seek the glory that comes from the only God. Then He says He won't be the one to accuse them before the Father. Their accuser is ___, the one they've put their hope in.",
           "answers": [
             {
               "text": "Moses",

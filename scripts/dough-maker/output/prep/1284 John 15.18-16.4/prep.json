@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "John 15:17-18",
-          "text": "It's still the night of the Last Supper, and Jesus is still teaching His disciples. He's just told them, \"Love one another.\" Now He turns to something harder: how the world will treat them.",
+          "verses": "John 15:18",
+          "text": "It's still the night of the Last Supper, and Jesus is still teaching His disciples. He's just told them, \"Love one another.\" (John 15:17) Now He turns to something harder: how the world will treat them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "John 15:19",
-          "text": "Jesus says He has chosen His disciples out of the world, so they are not of the world. Picked out of the crowd, friend! The last time I got picked out of anything, it was the bottom of a bakery's clearance bin with a sticker on me that said TWENTY-FIVE CENTS.",
-          "needs_agent_fix": true,
+          "text": "Jesus says His disciples are not of the world. He has chosen them out of the world. Me? I got chosen out of a closing bakery's clearance bin with a sticker on me that said TWENTY-FIVE CENTS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -56,7 +56,7 @@
               "correct": true
             },
             {
-              "text": "hate",
+              "text": "ignore",
               "correct": false
             },
             {
@@ -71,8 +71,8 @@
           "card": 5,
           "kind": "story",
           "verses": "John 15:20",
-          "text": "Then Jesus reminds them of a word He spoke before: \"No servant is greater than his master.\" It's the new hire showing up Monday and taking a corner office bigger than the CEO's. Friend, that is NOT how it works.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus reminds them of a word He spoke before: \"No servant is greater than his master.\" Friend, that's the new hire on Monday morning moving into a corner office BIGGER than the boss's, and that is NOT how it works.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +91,7 @@
               "correct": false
             },
             {
-              "text": "Honor them instead",
+              "text": "Forget all about them",
               "correct": false
             }
           ],
@@ -137,24 +137,24 @@
               "correct": true
             },
             {
-              "text": "The words of the prophets",
+              "text": "The man who baptized Him",
               "correct": false
             },
             {
-              "text": "The Law of Moses",
+              "text": "The ones who follow Him",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "John 15:22",
-          "text": "Then Jesus gets serious. If He had not come and spoken to them, they would not be guilty of sin, and I bet you could hear a crumb drop in that room.",
+          "text": "Then Jesus gets serious. If He had not come and spoken to them, they would not be guilty of sin.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -173,7 +173,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -202,28 +202,24 @@
           "card": 13,
           "kind": "story",
           "verses": "John 15:24",
-          "text": "And it's not only His words: Jesus did works among them that no one else did. The only thing I ever did that no one else did? Back when my edges wore down, I stamped cookies SO blurry they looked like thumbprints.",
-          "needs_agent_fix": true,
+          "text": "And it's not only His words. Jesus says He did works among them that no one else did.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 15:24",
-          "question": "After seeing works no one else did, what does Jesus say these people have done?",
+          "question": "Jesus says the people who hate Him never saw the works He did among them.",
           "answers": [
             {
-              "text": "Seen and hated both Him and His Father",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Believed in Him but kept it secret",
-              "correct": false
-            },
-            {
-              "text": "Asked Him to show them another sign",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -233,7 +229,7 @@
           "card": 15,
           "kind": "story",
           "verses": "John 15:25",
-          "text": "But Jesus says even this fulfills something written in their Law, a line about how they hated Him. Friend, the hard parts were written down too, and that tells you Somebody is still holding the pen.",
+          "text": "Jesus says even this fulfills what is written in their Law, a line He quotes from the Psalms (Psalm 35:19; 69:4) about how they hated Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -266,8 +262,8 @@
           "card": 1,
           "kind": "story",
           "verses": "John 15:26",
-          "text": "Okay, friend, breathe. HERE comes the hope: Jesus will send them the Advocate from the Father, the Spirit of truth who proceeds from the Father.",
-          "needs_agent_fix": true,
+          "text": "Okay, friend, breathe. HERE comes the hope: Jesus says He will send them the Advocate from the Father, the Spirit of truth who proceeds from the Father.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -290,30 +286,26 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 15:27",
-          "question": "The Spirit will testify about Jesus, and Jesus says the disciples must testify too. Why?",
+          "question": "Jesus says His disciples must testify about Him too, because they have been with Him from the beginning.",
           "answers": [
             {
-              "text": "They have been with Him from the beginning",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "They know the Law better than anyone",
-              "correct": false
-            },
-            {
-              "text": "The priests have asked them to speak",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -321,7 +313,7 @@
           "kind": "story",
           "verses": "John 16:1",
           "text": "Then Jesus stops and tells them why He's saying all this. Friend, when somebody pauses to explain WHY they're telling you something, you put the phone DOWN.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -344,7 +336,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -352,7 +344,7 @@
           "kind": "story",
           "verses": "John 16:2",
           "text": "Then Jesus gets specific: they will put the disciples out of the synagogues. I got slid into the back of a junk drawer once and gave up on myself for a while, and friend, this is WAY bigger than a drawer.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -375,70 +367,66 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "John 16:3",
-          "question": "People will put the disciples out of the synagogues and even kill them. Jesus says they'll do it because they have not known the ___ or Him.",
-          "answers": [
-            {
-              "text": "Father",
-              "correct": true
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "angels",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "They'll do these things, Jesus says, because they have not known the Father or Him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "John 16:4",
-          "text": "Jesus says He's telling them now, so when their hour comes, they'll remember He told them. It's the friend who warns you about the pothole before you hit it, so when you hit it you go, \"Oh yeah. He SAID that.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "question": "Jesus says He's telling His disciples these things now so that when their hour comes, they will ___ that He told them.",
+          "answers": [
+            {
+              "text": "remember",
+              "correct": true
+            },
+            {
+              "text": "doubt",
+              "correct": false
+            },
+            {
+              "text": "forget",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 16:4",
-          "question": "Jesus didn't tell His disciples these things from the beginning. Why not?",
+          "question": "Jesus says He told His disciples these things from the beginning.",
           "answers": [
             {
-              "text": "Because He was with them",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Because they never asked Him",
-              "correct": false
-            },
-            {
-              "text": "Because the Law kept Him from it",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "John 16:4",
-          "text": "And that's where we pause, friend. Jesus is NOT done talking to His disciples tonight, and trust me, you do not want to miss what He says next.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "And that's where we'll pause, friend. Jesus is NOT done talking to His disciples tonight.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

@@ -17,8 +17,8 @@
           "card": 2,
           "kind": "story",
           "verses": "Luke 23:2",
-          "text": "In front of Pilate, the charges pile up like a phone bill you're scared to open: subverting their nation and forbidding payment of taxes to Caesar.",
-          "needs_agent_fix": true,
+          "text": "In front of Pilate, the charges pile up like a phone bill you're scared to open: subverting their nation and forbidding payment of taxes to Caesar, Rome's emperor.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -29,7 +29,7 @@
           "question": "The council has one more charge against Jesus for Pilate. What is it?",
           "answers": [
             {
-              "text": "Claiming to be Christ the King",
+              "text": "Claiming to be Christ and a King",
               "correct": true
             },
             {
@@ -47,32 +47,9 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 23:3",
-          "question": "Pilate goes right at that last charge. He asks Jesus if He is the ___ of the Jews.",
-          "answers": [
-            {
-              "text": "King",
-              "correct": true
-            },
-            {
-              "text": "Prophet",
-              "correct": false
-            },
-            {
-              "text": "Priest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Luke 23:3",
-          "question": "When Pilate asks if He's the King of the Jews, Jesus denies it.",
+          "question": "Pilate asks Jesus, “Are You the King of the Jews?” Jesus denies it.",
           "answers": [
             {
               "text": "True",
@@ -87,15 +64,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Luke 23:3-4",
-          "text": "“You have said so,” Jesus replies. Then Pilate turns to the chief priests and the crowds. The governor has a verdict.",
-          "needs_agent_fix": true,
+          "text": "“You have said so,” Jesus replies. Then Pilate turns to the chief priests and the crowds with his verdict.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 23:4",
@@ -106,7 +83,7 @@
               "correct": true
             },
             {
-              "text": "He needs Caesar to decide",
+              "text": "He wants more time to decide",
               "correct": false
             },
             {
@@ -118,15 +95,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Luke 23:5",
-          "text": "No basis? Oh, the accusers are NOT letting that go. They keep insisting Jesus stirs up the people all over Judea with His teaching.",
-          "needs_agent_fix": true,
+          "text": "Oh, the accusers are NOT letting that go. They keep insisting Jesus stirs up the people all over Judea with His teaching.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 23:5",
@@ -149,15 +126,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Luke 23:6-7",
-          "text": "Pilate catches that one word and asks if the man is a Galilean. Turns out Jesus is under the jurisdiction of Herod, ruler of Galilee (Luke 3:1).",
+          "text": "Pilate catches that one word and asks if the man is a Galilean. Turns out Jesus is under the jurisdiction of Herod, ruler of Galilee (Luke 3:1), not the King Herod from when Jesus was born (Matthew 2:1).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 23:7",
@@ -180,23 +157,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Luke 23:7",
-          "text": "Herod happens to be in Jerusalem at that time. And I bet Pilate hits FORWARD on this case like a work email he did NOT want. “See below.”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Luke 23:8",
-          "text": "When Herod sees Jesus, he's greatly pleased. He's heard about Him and wanted to see Him for a long time, and friend, I spent YEARS in a junk drawer and nobody was ever that happy to see me.",
+          "text": "Herod happens to be in Jerusalem at that time. So Pilate hits FORWARD, like a work email that landed in the wrong department.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
+          "kind": "story",
+          "verses": "Luke 23:8",
+          "text": "When Herod sees Jesus, he's greatly pleased. He's heard about Him and has wanted to see Him for a long time.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 23:8",
@@ -219,19 +196,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Luke 23:9",
-          "text": "So Herod starts asking. And asking. And ASKING. He questions Jesus at great length, like a man who finally got the manager on the phone.",
-          "needs_agent_fix": true,
+          "text": "So Herod questions Jesus at great length. Question after question after QUESTION, like a man who finally got the manager on the phone.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Luke 23:9",
+          "question": "Through all of Herod's questions, Jesus gives him no answer.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Luke 23:9",
-          "question": "Through all of Herod's questions, Jesus gives him long, careful answers.",
+          "verses": "Luke 23:10",
+          "question": "While Herod questions Jesus, the chief priests and scribes stand there quietly.",
           "answers": [
             {
               "text": "True",
@@ -247,29 +243,6 @@
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 23:10",
-          "question": "While Herod questions Jesus, what are the chief priests and scribes doing?",
-          "answers": [
-            {
-              "text": "Fiercely accusing Him",
-              "correct": true
-            },
-            {
-              "text": "Waiting outside the gate",
-              "correct": false
-            },
-            {
-              "text": "Heading back to the temple",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "story",
           "verses": "Luke 23:11",
           "text": "Then even Herod and his soldiers ridicule and mock Jesus. They dress Him in a fine robe and send Him back to Pilate.",
@@ -277,32 +250,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 23:12",
-          "question": "That day Herod and Pilate became ___. Before this time they had been ___.",
+          "question": "That day Herod and Pilate became friends. Before this time they had been ___.",
           "answers": [
             {
-              "text": "friends",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "enemies",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "strangers",
               "correct": false
             },
             {
-              "text": "neighbors",
-              "correct": false
-            },
-            {
-              "text": "equals",
+              "text": "partners",
               "correct": false
             }
           ],
@@ -328,7 +291,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 23:14",
-          "question": "Pilate tells them he examined Jesus in their presence and found Him guilty of their charges.",
+          "question": "Pilate tells the chief priests, rulers and people that he examined Jesus in front of them and found Him guilty of their charges.",
           "answers": [
             {
               "text": "True",
@@ -339,26 +302,22 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Luke 23:15",
-          "question": "Pilate says he's not the only one who found nothing against Jesus. Who else does he name?",
+          "question": "Pilate tells the chief priests, rulers and people that Herod didn't find Jesus guilty either.",
           "answers": [
             {
-              "text": "Herod",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Caiaphas",
-              "correct": false
-            },
-            {
-              "text": "Caesar",
+              "text": "False",
               "correct": false
             }
           ],
@@ -378,24 +337,14 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 23:16",
-          "question": "So Pilate lays out his plan. He will ___ Jesus and then ___ Him.",
+          "question": "So Pilate lays out his plan. He will punish Jesus and then ___ Him.",
           "answers": [
             {
-              "text": "punish",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "release",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "crucify",
-              "correct": false
-            },
-            {
-              "text": "exile",
+              "text": "imprison",
               "correct": false
             },
             {
@@ -426,11 +375,11 @@
               "correct": true
             },
             {
-              "text": "Caiaphas",
+              "text": "Malchus",
               "correct": false
             },
             {
-              "text": "Malchus",
+              "text": "Zacchaeus",
               "correct": false
             }
           ],
@@ -441,7 +390,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Luke 23:19",
-          "text": "Quick word on this Barabbas. He's in prison for an insurrection in the city. And that's not all.",
+          "text": "Quick word on this Barabbas. He's in prison for an insurrection in the city, and that's not all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -503,46 +452,27 @@
           "card": 12,
           "kind": "story",
           "verses": "Luke 23:22",
-          "text": "A third time Pilate speaks to them: “What evil has this man done?” He says he has found in Him no offense worthy of death.",
+          "text": "A third time, Pilate speaks to them: “What evil has this man done?” He says he has found in Him no offense worthy of death, so he'll punish Him and release Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 23:22",
-          "question": "On this third try, Pilate still says he'll punish Jesus and then release Him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Luke 23:23",
+          "text": "But they won't budge, friend. They are insistent, and they keep demanding for Jesus to be crucified.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Luke 23:23",
-          "text": "But they won't budge, friend. They are insistent, and with loud voices they keep demanding for Jesus to be crucified.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 23:23",
-          "question": "Pilate keeps saying release. The chief priests, rulers and people keep saying crucify. Whose voice prevails?",
+          "question": "Pilate keeps saying release. The chief priests, rulers and people keep shouting crucify. What wins out?",
           "answers": [
             {
-              "text": "Their loud demands",
+              "text": "Their clamor",
               "correct": true
             },
             {
@@ -558,15 +488,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Luke 23:24",
-          "text": "Friend, here's where it all turns. Pilate sentences that their demand be met.",
+          "question": "The clamor of the chief priests, rulers and people prevails. So what does Pilate do?",
+          "answers": [
+            {
+              "text": "Sentences that their demand be met",
+              "correct": true
+            },
+            {
+              "text": "Releases both of the prisoners",
+              "correct": false
+            },
+            {
+              "text": "Calls for a brand new hearing",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 23:25",
@@ -585,11 +530,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Luke 23:25",
-          "text": "And Jesus? Pilate hands Him over to their will. We'll stop right here for now, friend. But this story is not done.",
-          "needs_agent_fix": true,
+          "text": "And Pilate hands Jesus over to their will. We'll stop here for now, friend, but this story is not done.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

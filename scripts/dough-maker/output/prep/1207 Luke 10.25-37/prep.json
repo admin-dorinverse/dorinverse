@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 10:25",
-          "text": "One day an expert in the law, a man who studies God's Law, stands up to test Jesus. 'Teacher,' he asks, 'what must I do to inherit eternal life?' Quizzing the Teacher takes nerve, friend, like a new hire on day one handing the boss a pop quiz.",
+          "text": "One day an expert in the law, a man who studies God's Law, stands up to test Jesus. 'Teacher,' he asks, 'what must I do to inherit eternal life?' Testing the Teacher? That takes nerve, friend, like a new hire walking in on day one to grill the boss.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Luke 10:27",
-          "text": "He answers, 'Love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind' and 'Love your neighbor as yourself.' Heart, soul, strength AND mind, friend, that's the whole batch down to the last crumb.",
+          "text": "He quotes the Law (Deuteronomy 6:5; Leviticus 19:18): 'Love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind' and 'Love your neighbor as yourself.' Heart, soul, strength AND mind, friend, that's the whole batch down to the last crumb.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -76,15 +76,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 10:28",
-          "question": "Jesus tells the expert in the law that he answered correctly.",
+          "question": "Jesus tells the expert in the law that his answer leaves something out.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -117,8 +117,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Luke 10:29",
-          "text": "Jesus just told him he's right. Case closed? NOPE, because the expert has one more question for Jesus.",
-          "needs_agent_fix": true,
+          "text": "Case closed? NOPE. Wanting to justify himself, the expert has one more question for Jesus.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -143,29 +143,6 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 10:29",
-          "question": "The expert in the law asks Jesus who his neighbor is because he wants to ___ himself.",
-          "answers": [
-            {
-              "text": "justify",
-              "correct": true
-            },
-            {
-              "text": "humble",
-              "correct": false
-            },
-            {
-              "text": "comfort",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
         }
       ]
     },
@@ -177,43 +154,20 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 10:30",
-          "text": "Jesus takes up the expert's question and answers with a story. A man is going down from Jerusalem to Jericho when he falls into the hands of robbers.",
+          "text": "Jesus takes up the expert's question with a story: a man going down from Jerusalem to Jericho falls into the hands of robbers. They strip him, beat him and go away, leaving him half dead.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 10:30",
-          "question": "In Jesus' story, the robbers strip the man on the road to Jericho and ___ him before they go away.",
-          "answers": [
-            {
-              "text": "beat",
-              "correct": true
-            },
-            {
-              "text": "bind",
-              "correct": false
-            },
-            {
-              "text": "chase",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "story",
-          "verses": "Luke 10:30-31",
-          "text": "They strip him, beat him and leave him half dead. Then, by chance, a priest comes down the same road and sees him.",
+          "verses": "Luke 10:31",
+          "text": "Now, by chance, a priest is going down that same road, and he sees the man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 10:31",
@@ -236,7 +190,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Luke 10:32",
           "text": "Next a Levite, a man from the tribe of Levi, comes to that same spot. He sees the man too.",
@@ -244,11 +198,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 10:32",
-          "question": "The Levite sees the hurt man on the road and stops to help him.",
+          "question": "The Levite stops to help the hurt man on the road.",
           "answers": [
             {
               "text": "True",
@@ -263,46 +217,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Luke 10:33",
-          "text": "Then a Samaritan, a man from the land of Samaria, comes upon him on a journey. John's Gospel tells us Jews didn't associate with Samaritans (John 4:9).",
+          "text": "But a Samaritan, a man from Samaria, comes upon him on a journey, and when he sees him, he has compassion. John's Gospel says Jews do not associate with Samaritans (John 4:9).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 10:34",
+          "question": "The priest and the Levite both passed by. The Samaritan has compassion on the hurt man. What does he do?",
+          "answers": [
+            {
+              "text": "He goes to him and bandages his wounds",
+              "correct": true
+            },
+            {
+              "text": "He calls out for anyone nearby to help",
+              "correct": false
+            },
+            {
+              "text": "He gives him his cloak and keeps going",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 10:33",
-          "question": "When the Samaritan sees the man the robbers left half dead, he has ___.",
-          "answers": [
-            {
-              "text": "compassion",
-              "correct": true
-            },
-            {
-              "text": "doubts",
-              "correct": false
-            },
-            {
-              "text": "fear",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Luke 10:34",
-          "text": "The Samaritan goes to him. He bandages his wounds, pouring on oil and wine.",
+          "text": "As he bandages the wounds, he pours on oil and wine.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 10:34",
@@ -325,7 +279,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 10:34",
@@ -348,7 +302,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 10:34",
@@ -367,7 +321,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Luke 10:34-35",
           "text": "His OWN animal, friend, and I won't even lend out my apron. The next day he takes out two denarii and gives them to the innkeeper.",
@@ -375,7 +329,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 10:35",
@@ -398,15 +352,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Luke 10:35",
-          "text": "'Take care of him,' he said, 'and on my return I will repay you for any additional expense.' An open tab for a STRANGER, when I've seen a group chat fight for three days over who owes for one box of cookies.",
+          "text": "'Take care of him,' he says, 'and on my return I will repay you for any additional expense.' An open tab for a man he came upon on the road, when I've seen a group chat fight for three days over who owes for one box of cookies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Luke 10:36",
           "text": "Then Jesus asks the expert, 'Which of these three do you think was a neighbor to the man who fell into the hands of robbers?'",
@@ -414,7 +368,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 10:37",
@@ -429,7 +383,30 @@
               "correct": false
             },
             {
-              "text": "The one who came by first",
+              "text": "The Levite who came next",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 10:37",
+          "question": "The expert answers Jesus' question about the three men. What does Jesus tell him to do?",
+          "answers": [
+            {
+              "text": "Go and do the same",
+              "correct": true
+            },
+            {
+              "text": "Go and teach the others",
+              "correct": false
+            },
+            {
+              "text": "Go and offer a sacrifice",
               "correct": false
             }
           ],
@@ -438,33 +415,10 @@
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 10:37",
-          "question": "Jesus sends the expert in the law off to show ___ just like the Samaritan did.",
-          "answers": [
-            {
-              "text": "mercy",
-              "correct": true
-            },
-            {
-              "text": "wisdom",
-              "correct": false
-            },
-            {
-              "text": "patience",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "story",
-          "verses": "Luke 10:37",
-          "text": "He asked who his neighbor was, and Jesus told him, 'Go and do likewise.' He came in to test the Teacher, friend, and he walks out with an ASSIGNMENT.",
-          "needs_agent_fix": true,
+          "verses": "Luke 10:25, 37",
+          "text": "Jesus tells him, 'Go and do likewise.' He stood up to test the Teacher, friend, and now HE'S the one with an ASSIGNMENT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

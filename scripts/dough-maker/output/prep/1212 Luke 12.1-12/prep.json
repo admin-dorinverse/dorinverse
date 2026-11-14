@@ -9,23 +9,27 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 12:1",
-          "text": "Jesus just called out the Pharisees and the experts in the law at a dinner, and now the scribes and Pharisees are bitterly opposing Him, waiting to catch Him in something He says (Luke 11:53-54). Meanwhile, a crowd of many thousands has packed in so tight they're trampling one another. Friend, that's not a crowd, that's a doorbuster sale at 5 a.m.",
-          "needs_agent_fix": true,
+          "text": "At a Pharisee's dinner, Jesus has just called out the Pharisees and the experts in the law, and now the scribes and Pharisees are bitterly opposing Him (Luke 11:37-54). Meanwhile, a crowd of many thousands has packed in so tight they're trampling one another, like a doorbuster sale at 5 a.m. With all those people around, Jesus begins to speak first to His disciples.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Luke 12:1",
-          "question": "True or false: With thousands pressing in, Jesus starts by speaking to His disciples.",
+          "question": "Jesus' first words to His disciples are a warning. What does He tell them to beware of?",
           "answers": [
             {
-              "text": "True",
+              "text": "The leaven of the Pharisees",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "The leaven of Herod",
+              "correct": false
+            },
+            {
+              "text": "The leaven of the Sadducees",
               "correct": false
             }
           ],
@@ -36,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 12:1",
-          "text": "His first words are a warning: beware of the leaven of the Pharisees. And remember, Jesus just told the Pharisees they clean the outside of the cup and dish, but inside they're full of greed and wickedness (Luke 11:39).",
+          "text": "So, the leaven of the Pharisees. Remember, at that dinner Jesus told the Pharisees they clean the outside of the cup and dish, but inside they're full of greed and wickedness (Luke 11:39).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Luke 12:2",
-          "text": "Then Jesus talks about the things people keep concealed and hidden, the back-of-the-drawer stuff. Friend, I would know.",
+          "text": "Then Jesus talks about what's concealed and hidden. Friend, I spent years hidden in the back of a junk drawer, so I'm LISTENING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -111,18 +115,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 12:4",
-          "question": "Jesus tells His friends not to fear the people who can kill the body. What's His reason?",
+          "question": "Jesus tells His friends not to fear the people who can kill the body. What does He say about those people after that?",
           "answers": [
             {
-              "text": "After that they can do no more",
+              "text": "They can do no more",
               "correct": true
             },
             {
-              "text": "They will never catch the disciples",
+              "text": "They will be judged at once",
               "correct": false
             },
             {
-              "text": "The crowd will stand up for them",
+              "text": "They will come to regret it",
               "correct": false
             }
           ],
@@ -156,7 +160,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Luke 12:6",
-          "text": "Then Jesus points to sparrows: five of them sell for two pennies. Friend, I came out of a closing-day bin with a 25-cent sticker on me, and even I'm saying that's CHEAP.",
+          "text": "Then Jesus points to sparrows: five of them sell for two pennies. Friend, a closing bakery sold me out of a bin for 25 cents, and even I'm saying that's CHEAP.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -165,15 +169,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 12:6",
-          "question": "True or false: Jesus says sparrows are so cheap that God forgets some of them.",
+          "question": "True or false: Jesus says that not one of those cheap sparrows is forgotten by God.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -190,21 +194,17 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Luke 12:7",
-          "question": "Jesus tells the disciples not to be afraid, because they are worth more than many ___.",
+          "question": "True or false: Jesus tells the disciples they are worth about the same as the sparrows.",
           "answers": [
             {
-              "text": "sparrows",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "doves",
-              "correct": false
-            },
-            {
-              "text": "ravens",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -220,7 +220,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 12:8",
-          "text": "Now Jesus talks about confessing Him before men, owning up to Him in front of people. Not a quiet little thumbs-up in the group chat, friend.",
+          "text": "Now Jesus talks about confessing Him before men, openly claiming Him in front of people. Out loud, friend, not mumbled the way I sing along when I only know the chorus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -229,18 +229,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 12:8",
-          "question": "When someone confesses Jesus before men, what does Jesus say the Son of Man will do?",
+          "question": "When someone confesses Jesus before men, the Son of Man, Jesus' name for Himself, will confess him too. Where?",
           "answers": [
             {
-              "text": "Confess him before the angels of God",
+              "text": "Before the angels of God",
               "correct": true
             },
             {
-              "text": "Reward him in front of the crowds",
+              "text": "Before the elders of Israel",
               "correct": false
             },
             {
-              "text": "Make him a ruler over Israel",
+              "text": "Before the whole crowd",
               "correct": false
             }
           ],
@@ -252,7 +252,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 12:9",
-          "question": "True or false: Jesus says whoever denies Him before men will be denied before the angels of God.",
+          "question": "True or false: Jesus says that whoever denies Him before men will be denied too.",
           "answers": [
             {
               "text": "True",
@@ -270,7 +270,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Luke 12:10",
-          "text": "Then Jesus gets serious. Everyone who speaks a word against the Son of Man will be forgiven.",
+          "text": "Then Jesus says everyone who speaks a word against the Son of Man will be forgiven. EVERYONE, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -286,7 +286,7 @@
               "correct": true
             },
             {
-              "text": "The angels of God",
+              "text": "Moses",
               "correct": false
             },
             {
@@ -301,27 +301,28 @@
           "card": 6,
           "kind": "story",
           "verses": "Luke 12:11",
-          "text": "Last, Jesus says the disciples will be brought before synagogues, rulers and authorities. Me? I'd be up all night practicing my speech in the bathroom mirror.",
+          "text": "Then Jesus says the disciples will be brought before synagogues, rulers and authorities. Me? I'd be up all night practicing my speech to the oven door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 12:11",
-          "question": "When the disciples are brought before rulers and authorities, what does Jesus tell them not to worry about?",
+          "question": "When the disciples are brought before rulers and authorities, Jesus tells them not to worry about how to ___ themselves.",
           "answers": [
             {
-              "text": "How to defend themselves",
-              "correct": true
+              "text": "defend",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Who will stand beside them",
+              "text": "hide",
               "correct": false
             },
             {
-              "text": "How long they will be held",
+              "text": "free",
               "correct": false
             }
           ],
@@ -331,31 +332,27 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Luke 12:12",
-          "question": "Jesus says that at that time the Holy ___ will teach the disciples what they should say.",
+          "question": "True or false: Jesus says the disciples will have to find the right words all on their own.",
           "answers": [
             {
-              "text": "Spirit",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Scriptures",
-              "correct": false
-            },
-            {
-              "text": "Angels",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Luke 12:12",
-          "text": "The Holy Spirit has the words covered, so I can cancel the mirror practice. But hold that thought, friend, because this teaching is far from finished.",
+          "text": "At that time, the Holy Spirit will teach them what they should say, so my oven door gets the night off. But hold that thought, friend, because this teaching is far from finished.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

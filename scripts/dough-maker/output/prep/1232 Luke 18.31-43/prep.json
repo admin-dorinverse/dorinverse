@@ -9,40 +9,39 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 18:31",
-          "text": "Jesus takes the Twelve aside, just His disciples. He says, \"Look, we are going up to Jerusalem,\" and He's got more to say. Friend, when anybody pulls you aside and starts with \"Look,\" you put your cookie DOWN.",
-          "needs_agent_fix": true,
+          "text": "Jesus takes the Twelve aside, just His disciples. He says, \"Look, we are going up to Jerusalem…\" and then He talks about the Son of Man, the name Jesus uses for Himself. Friend, when anybody pulls you aside and starts with \"Look,\" you put your cookie DOWN.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 18:31",
-          "question": "Jesus calls Himself the Son of Man. He says everything the ___ have written about the Son of Man will be fulfilled.",
+          "question": "Jesus says everything written about the Son of Man will be fulfilled. Who wrote those things?",
           "answers": [
             {
-              "text": "prophets",
-              "correct": true,
-              "blank": 1
+              "text": "The prophets",
+              "correct": true
             },
             {
-              "text": "kings",
+              "text": "The kings",
               "correct": false
             },
             {
-              "text": "scribes",
+              "text": "The scribes",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Luke 18:32",
-          "text": "Then Jesus tells them what's coming for the Son of Man, and baker, it is not a parade. First, He will be delivered over.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus tells them what's coming for the Son of Man, and it's heavy. He will be delivered over to the Gentiles.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -50,30 +49,38 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 18:32",
-          "question": "Jesus says the Son of Man will be delivered over. To whom?",
+          "question": "Jesus says the Son of Man will be delivered over to the Gentiles. How does He say the Son of Man will be treated?",
           "answers": [
             {
-              "text": "To the Gentiles",
+              "text": "Mocked and insulted and spit upon",
               "correct": true
             },
             {
-              "text": "To the Samaritans",
+              "text": "Welcomed and honored as a guest",
               "correct": false
             },
             {
-              "text": "To the Philistines",
+              "text": "Questioned and then set free",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Luke 18:33",
+          "text": "Jesus says they will flog Him and kill Him. But that's not the last thing He says.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Luke 18:32",
-          "question": "Jesus says the Son of Man will be mocked, insulted and spit upon.",
+          "verses": "Luke 18:33",
+          "question": "Jesus says that on the third day the Son of Man will rise again.",
           "answers": [
             {
               "text": "True",
@@ -84,65 +91,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Luke 18:33",
-          "text": "It gets heavier. Jesus says they will flog Him and kill Him, but He isn't done talking yet.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 18:33",
-          "question": "Jesus says the Son of Man will be killed. What does He say happens on the third day?",
-          "answers": [
-            {
-              "text": "He will rise again",
-              "correct": true
-            },
-            {
-              "text": "He will be buried",
-              "correct": false
-            },
-            {
-              "text": "He will be judged",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Luke 18:34",
+          "text": "But the disciples did not understand any of these things. Friend, I spent YEARS lying on a blender manual in the back of a junk drawer, and I still couldn't tell you how a blender works.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Luke 18:34",
-          "question": "The disciples understand what Jesus just told them about Jerusalem.",
+          "question": "Jesus has told the Twelve what's coming for the Son of Man. Why don't they understand it?",
           "answers": [
             {
-              "text": "True",
+              "text": "The meaning was hidden from them",
+              "correct": true
+            },
+            {
+              "text": "He spoke to them in a parable",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "They were too far away to hear",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Luke 18:34",
-          "text": "They don't get any of it; the meaning was hidden from them. Friend, I lay face down on a blender manual in that junk drawer for YEARS, and I still couldn't tell you how a blender works.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -225,20 +205,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 18:38",
-          "question": "The blind man calls out to Jesus, the Son of David. What does he ask Him for?",
+          "question": "The blind man calls out to Jesus, the Son of David, and asks Him for ___.",
           "answers": [
             {
-              "text": "Mercy",
-              "correct": true
+              "text": "mercy",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Money",
+              "text": "money",
               "correct": false
             },
             {
-              "text": "A guide",
+              "text": "a guide",
               "correct": false
             }
           ],
@@ -276,7 +257,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Luke 18:39",
-          "text": "Tell this man to hush and he cries out all the LOUDER. Mags would hire him on the spot.",
+          "text": "Tell this man to hush and he cries out all the LOUDER. My cookie cutter kid Ruby was the loudest voice in the Millers' kitchen, and this man could give her a run for it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -307,8 +288,8 @@
           "card": 11,
           "kind": "story",
           "verses": "Luke 18:40",
-          "text": "The folks leading the way wanted this man SILENT. Now he's standing near Jesus, and Jesus is asking HIM a question.",
-          "needs_agent_fix": true,
+          "text": "The man comes near, and Jesus asks him a question.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -338,32 +319,27 @@
           "card": 13,
           "kind": "story",
           "verses": "Luke 18:41-42",
-          "text": "The man calls Him Lord and asks to see again. No waiting room, no paperwork, Jesus just says, \"Receive your sight!\"",
+          "text": "The man calls Him Lord and asks to see again. Jesus replies, \"Receive your sight!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Luke 18:42",
-          "question": "Jesus tells the man it's his ___ that has healed him.",
+          "question": "Jesus tells the man near Jericho that his faith has healed him.",
           "answers": [
             {
-              "text": "faith",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "voice",
-              "correct": false
-            },
-            {
-              "text": "courage",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -372,7 +348,7 @@
           "verses": "Luke 18:43",
           "text": "And immediately, the man can see. Not in six to eight business days, friend, IMMEDIATELY!",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -395,14 +371,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 18:43",
-          "question": "When all the people see the blind man healed, they give praise to God.",
+          "question": "When all the people see the man healed, they give praise to God.",
           "answers": [
             {
               "text": "True",
@@ -414,7 +390,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

@@ -8,21 +8,13 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "John 1:35",
-          "text": "Friend, meet John the Baptist, the man who's been out by the Jordan baptizing people with water (John 1:26, 28). It's the next day, and John is there again with two of his disciples. Grab your apron, baker, because this is where it all starts.",
+          "verses": "John 1:35-36",
+          "text": "Friend, meet John the Baptist, the man who's been baptizing with water at Bethany beyond the Jordan (John 1:28). The day before, he testified that he saw the Spirit come down from heaven like a dove and rest on Jesus (John 1:29, 32). Now it's the next day, John is there again with two of his disciples, and here comes Jesus, just walking by.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "John 1:36",
-          "text": "Then here comes Jesus, just walking by. John sees Him and speaks up.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:36",
@@ -42,10 +34,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 1:37",
@@ -61,22 +53,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "John 1:38",
           "text": "So now two guys are walking right behind Jesus, and Jesus turns and sees them following. You KNOW that moment, friend, when somebody turns around and you have to act like you were headed that way anyway.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:38",
-          "question": "Jesus asks the two followers, \"What do you want?\" What do they ask Him back?",
+          "question": "Jesus asks the two followers, \"What do you want?\" They call Him \"Rabbi\" (which means Teacher) and ask Him something back. What do they ask?",
           "answers": [
             {
               "text": "Where are You staying",
@@ -92,46 +84,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 1:38",
-          "question": "When the two followers answer Jesus, they call Him ___, which means Teacher.",
-          "answers": [
-            {
-              "text": "Rabbi",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Prophet",
-              "correct": false
-            },
-            {
-              "text": "Lord",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "John 1:39",
           "text": "\"Come and see,\" Jesus replies. No address, no directions, no pin dropped in the group chat, just COME.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 1:39",
-          "question": "The two followers go and see where Jesus is staying, and they spend that day with Him.",
+          "question": "The two followers end up spending that day with Jesus.",
           "answers": [
             {
               "text": "True",
@@ -143,18 +111,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "story",
           "verses": "John 1:39-40",
           "text": "It was about the tenth hour. And one of those two followers has a name: Andrew, Simon Peter's brother.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 1:41",
@@ -170,42 +138,49 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 10,
+          "kind": "story",
           "verses": "John 1:41",
-          "question": "Andrew tells his brother Simon, We have found the ___.",
+          "text": "Andrew tells Simon, \"We have found the Messiah\" (which is translated as Christ). Friend, the biggest news back in that junk drawer I used to live in was a dead battery swearing it still had a little charge.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 1:42",
+          "question": "Andrew tells his brother Simon they've found the Messiah. What does Andrew do next?",
           "answers": [
             {
-              "text": "Messiah",
-              "correct": true,
-              "blank": 1
+              "text": "Brings Simon to Jesus",
+              "correct": true
             },
             {
-              "text": "Prophet",
+              "text": "Takes Simon to John the Baptist",
               "correct": false
             },
             {
-              "text": "Elijah",
+              "text": "Sends Simon to the priests",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "John 1:42",
+          "text": "Jesus looks at Simon and says, \"You are Simon son of John.\" No introductions needed, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "John 1:41-42",
-          "text": "Messiah, which is translated as Christ. Andrew brings Simon to Jesus, and Jesus looks at him and says, \"You are Simon son of John.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:42",
@@ -225,15 +200,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "John 1:42",
           "text": "Cephas, which is translated as Peter. Friend, it takes a new coworker a whole WEEK to earn a nickname, and Simon gets a brand new name the moment Jesus looks at him.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -246,8 +221,8 @@
           "kind": "story",
           "verses": "John 1:43",
           "text": "The next day, Jesus decides to set out for Galilee. And He finds a man named Philip.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -270,47 +245,43 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "John 1:44-45",
-          "text": "Philip is from Bethsaida, the same town as Andrew and Peter, so somebody's hometown group chat is about to get BUSY. Then Philip goes and finds a man named Nathanael.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Philip is from Bethsaida, the same town as Andrew and Peter. Then Philip goes and finds a man named Nathanael.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 1:45",
-          "question": "Philip tells Nathanael who they've found. How does Philip describe Jesus?",
+          "question": "Philip tells Nathanael they've found the One Moses wrote about in the Law.",
           "answers": [
             {
-              "text": "The One Moses wrote about in the Law",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The One the priests chose in the temple",
-              "correct": false
-            },
-            {
-              "text": "The One the elders sent from Jerusalem",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "John 1:45",
-          "text": "Then Philip says where He's from: Jesus of Nazareth, the son of Joseph. Nathanael hears the word Nazareth, and I don't think he's sold.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Philip adds that He's the One the prophets foretold. His name? Jesus of Nazareth, the son of Joseph.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -332,31 +303,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "John 1:46",
-          "text": "No debate, no slideshow, no forty-five minute speech. Philip just says, \"Come and see.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "John 1:39, 46-47",
+          "text": "\"Come and see,\" Philip says, the same words Jesus used with the first two followers. Then, as Nathanael walks up, Jesus sees him coming and says something about him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "John 1:47",
-          "text": "As Nathanael walks up, Jesus sees him coming and says something about him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 1:47",
-          "question": "As Nathanael walks up, Jesus says he is a true Israelite with no deceit in him.",
+          "question": "Jesus says Nathanael is a true Israelite with no deceit in him.",
           "answers": [
             {
               "text": "True",
@@ -367,19 +330,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "John 1:48",
           "text": "I bet Nathanael's jaw hits the FLOOR. He asks, \"How do You know me?\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:48",
@@ -398,47 +361,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 1:49",
-          "question": "After Jesus tells him about the fig tree, Nathanael calls Jesus the Son of God and the ___ of Israel.",
+          "question": "Jesus says He saw Nathanael under the fig tree before Philip called him. How does Nathanael answer?",
           "answers": [
             {
-              "text": "King",
-              "correct": true,
-              "blank": 1
+              "text": "He calls Jesus the Son of God",
+              "correct": true
             },
             {
-              "text": "Prophet",
+              "text": "He says Philip must have told Him",
               "correct": false
             },
             {
-              "text": "Shepherd",
+              "text": "He asks Jesus for a bigger sign",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "John 1:49",
+          "text": "Nathanael tells Jesus, \"You are the Son of God! You are the King of Israel!\" Friend, he went from doubting to ALL IN faster than my oven preheats.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "John 1:50",
-          "text": "Friend, Nathanael went from doubting to ALL IN faster than my oven preheats. And Jesus says to him, \"Do you believe just because I told you I saw you under the fig tree?\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 1:50",
-          "question": "Jesus tells Nathanael that the fig tree is the biggest thing he will ever see.",
+          "question": "After asking Nathanael, \"Do you believe just because I told you I saw you under the fig tree?\" Jesus says the fig tree is the biggest thing Nathanael will ever see.",
           "answers": [
             {
               "text": "True",
@@ -449,23 +411,23 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "John 1:50",
+          "text": "Jesus tells him, \"You will see greater things than these.\" Baker, the fig tree was just the TRAILER.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "John 1:50",
-          "text": "Not even close: Jesus says, \"You will see greater things than these.\" Baker, the fig tree was just the TRAILER.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:51",
-          "question": "Then Jesus says they will all see heaven open. What will they see ascending and descending on the Son of Man?",
+          "question": "Then Jesus declares, \"Truly, truly, I tell you, you will all see heaven open…\" What does He say will be ascending and descending on the Son of Man, the name Jesus uses for Himself (Mark 2:10)?",
           "answers": [
             {
               "text": "The angels of God",
@@ -480,8 +442,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

@@ -38,18 +38,10 @@
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Luke 11:1",
-          "text": "He also brings up another teacher who taught his own disciples to pray. It's the man who preached a baptism of repentance around the Jordan and had disciples of his own (Luke 3:3; Luke 7:18-20).",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:1",
-          "question": "The disciple says another teacher taught his disciples to pray. Which teacher does he name?",
+          "question": "The disciple asks Jesus to teach them to pray, just as another teacher taught his own disciples. Which teacher does he name?",
           "answers": [
             {
               "text": "John the Baptist",
@@ -68,19 +60,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Luke 11:2",
-          "text": "So Jesus tells them that when they pray, they should say, \"Father, hallowed be Your name. Your kingdom come.\" Not Dear Sir, not To Whom It May Concern, but FATHER!",
+          "text": "So Jesus gives them a prayer to say. And the very first word tells them who they're talking to.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:2",
-          "question": "The prayer Jesus gives His disciples starts with what they need for themselves. True or false?",
+          "question": "In the prayer Jesus gives them, the first thing they call God is King. True or false?",
           "answers": [
             {
               "text": "True",
@@ -95,10 +87,18 @@
           "needs_human_decision": false
         },
         {
+          "card": 6,
+          "kind": "story",
+          "verses": "Luke 11:2",
+          "text": "Jesus says to pray, \"Father, hallowed be Your name. Your kingdom come.\" God's name and God's kingdom come first, while I'd have jumped straight to my wish list.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 7,
           "kind": "story",
           "verses": "Luke 11:3",
-          "text": "Then the prayer comes down from heaven to the kitchen table. They ask God for their daily bread.",
+          "text": "Then the prayer turns to the kitchen table. They ask God to give them their bread.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,7 +138,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 11:4",
-          "question": "In the prayer, the disciples tell God they already ___ everyone who sins against them.",
+          "question": "In the prayer, the people praying it tell God that they ___ everyone who sins against them.",
           "answers": [
             {
               "text": "forgive",
@@ -160,7 +160,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Luke 11:4",
-          "text": "EVERYONE, even the shiny new stamper who took my spot on the counter, and friend, I forgave that guy a long time ago. Then the prayer ends with one last request, about not being led into something that pulls people toward sin.",
+          "text": "EVERYONE, even the shiny new stamper that took my spot on the Millers' counter, and yes, friend, I forgave that guy a long time ago. Then the prayer ends with one last request.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -256,15 +256,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:7",
-          "question": "The friend inside says his door is already shut and his children are in bed with him. True or false?",
+          "question": "The friend inside says he can't help because he's already out of bread. True or false?",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -274,7 +274,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Luke 11:7",
-          "text": "He says, \"I cannot get up to give you anything.\" Friend, that is a man who has made peace with his blanket.",
+          "text": "He says his door is already shut, he and his children are in bed, and \"I cannot get up to give you anything.\" Friend, that is a man who has made peace with his blanket.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -342,93 +342,86 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 11:9",
-          "text": "Then Jesus brings the story home. \"So I tell you,\" He says, and He gives them three things to do.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus brings the story home. Three things, friend: ask, seek and knock.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 11:9",
-          "question": "Jesus tells them to ask, seek and knock. What does He say happens when you knock?",
+          "question": "Jesus tells them to ask, seek and knock. Knock, He says, and the ___ will be opened to you.",
           "answers": [
             {
-              "text": "The door will be opened",
+              "text": "door",
               "correct": true
             },
             {
-              "text": "You will be sent away",
+              "text": "window",
               "correct": false
             },
             {
-              "text": "You must wait till morning",
+              "text": "heavens",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 11:10",
-          "question": "Jesus says that everyone who ___ receives.",
-          "answers": [
-            {
-              "text": "asks",
-              "correct": true
-            },
-            {
-              "text": "waits",
-              "correct": false
-            },
-            {
-              "text": "works",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Luke 11:9",
+          "text": "Seek, Jesus says, and you will find. Friend, I spent years in the back of a junk drawer, and the only thing anybody ever came looking for in there was the scissors.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Luke 11:10-11",
-          "text": "Friend, I spent years where nobody came looking for me, so that word everyone? I'm gonna need a minute, because Jesus is already asking a question for any father listening: his son asks him for a fish.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 11:10",
+          "question": "Jesus says the one who asks receives. Who does He say this is true for?",
+          "answers": [
+            {
+              "text": "Everyone who asks",
+              "correct": true
+            },
+            {
+              "text": "Only the righteous",
+              "correct": false
+            },
+            {
+              "text": "Only His disciples",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 11:11",
-          "question": "Jesus asks what father would give his son a ___ instead of the fish he asked for.",
-          "answers": [
-            {
-              "text": "snake",
-              "correct": true
-            },
-            {
-              "text": "stone",
-              "correct": false
-            },
-            {
-              "text": "thorn",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Jesus puts a question to any father among them. If his son asks for a fish, what father would hand him a snake instead?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Luke 11:12",
+          "text": "Or if the son asks for an egg, who gives him a scorpion? That's not a gift, friend, that's a jump scare.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Luke 11:12",
-          "question": "In Jesus' next example, the son asks for an egg, and Jesus asks what father would give him a stone instead. True or false?",
+          "verses": "Luke 11:11-12",
+          "question": "With His questions about the fish and the egg, Jesus is saying many fathers would hand their sons something harmful. True or false?",
           "answers": [
             {
               "text": "True",
@@ -439,15 +432,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Luke 11:11-12",
-          "text": "Nope, it's a SCORPION. Fish for a snake, egg for a scorpion, and no father does that, because that's not a gift, that's a jump scare.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -455,7 +440,7 @@
           "kind": "story",
           "verses": "Luke 11:13",
           "text": "Then Jesus lands it. And He's honest about the people He's talking to.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -463,7 +448,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:13",
-          "question": "Jesus says even people who are evil know how to give good gifts to their children. True or false?",
+          "question": "Jesus tells His listeners that even though they are evil, they know how to give good gifts to their children. True or false?",
           "answers": [
             {
               "text": "True",
@@ -474,7 +459,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -482,7 +467,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:13",
-          "question": "If people who are evil give their children good gifts, what does Jesus say about the Father in heaven?",
+          "question": "Jesus says His listeners know how to give good gifts even though they are evil. What does He say about the Father in heaven?",
           "answers": [
             {
               "text": "He gives even more",
@@ -497,7 +482,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -520,7 +505,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

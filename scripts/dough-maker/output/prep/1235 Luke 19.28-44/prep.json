@@ -90,9 +90,9 @@
           "card": 6,
           "kind": "story",
           "verses": "Luke 19:32",
-          "text": "So the two head out, and they find it just as Jesus had told them. Friend, when MY phone says “You have arrived,” I'm staring at an empty parking lot.",
+          "text": "So the two head out, and they find it just as Jesus had told them. You know when your phone's map says “You have arrived” and you're staring at an empty parking lot? Not this time.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -120,33 +120,14 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 19:34",
-          "question": "When the owners ask why, the two disciples answer with the line Jesus gave them: The Lord needs it.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
-          "verses": "Luke 19:35",
-          "text": "They lead the colt to Jesus. But before anybody climbs on, the disciples get it ready for Him.",
+          "verses": "Luke 19:34-35",
+          "text": "They answer just the way Jesus told them, and they lead the colt to Jesus. But before anybody climbs on, the disciples get it ready for Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 19:35",
@@ -169,10 +150,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Luke 19:36",
-          "text": "As Jesus rides along, the people spread their cloaks on the road. Friend, those cloaks just got PROMOTED. Yesterday they were jackets, today they're a red carpet.",
+          "text": "As Jesus rides along, the people spread their cloaks on the road. Friend, those cloaks just got PROMOTED from jackets to red carpet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -217,20 +198,43 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 19:38",
-          "text": "They shout, “Blessed is the King who comes in the name of the Lord!” “Peace in heaven and glory in the highest!”",
+          "text": "Then they shout a blessing on Jesus, the One who comes in the name of the Lord. And they add, “Peace in heaven and glory in the highest!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Luke 19:39",
-          "text": "But some of the Pharisees, a group of strict religious teachers, are in the crowd, and they've got a request for Jesus.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 19:38",
+          "question": "As Jesus rides the colt toward the descent from the Mount of Olives, the crowd of disciples shouts a blessing on Him. What title do they call Him?",
+          "answers": [
+            {
+              "text": "The King",
+              "correct": true
+            },
+            {
+              "text": "The Prophet",
+              "correct": false
+            },
+            {
+              "text": "The Shepherd",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Luke 19:39",
+          "text": "But some of the Pharisees, a group of strict religious leaders, are in the crowd, and they've got a request for Jesus.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 19:39",
@@ -246,7 +250,7 @@
               "correct": false
             },
             {
-              "text": "dismiss",
+              "text": "feed",
               "correct": false
             }
           ],
@@ -254,15 +258,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "Luke 19:40",
-          "text": "The Pharisees want the volume turned DOWN. Jesus doesn't touch the knob. He answers them right there in the middle of all that noise, and I bet they did NOT see this one coming.",
-          "needs_agent_fix": true,
+          "text": "The Pharisees want the volume turned DOWN. Jesus answers them right there in the middle of all that noise, and I bet they did NOT see this one coming.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 19:40",
@@ -285,7 +289,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "Luke 19:41",
           "text": "All that praise on the road, and now Jesus comes near Jerusalem. He sees the city.",
@@ -293,7 +297,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 19:41",
@@ -317,15 +321,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "Luke 19:42",
-          "text": "Then Jesus says, “If only you had known on this day what would bring you peace!” The crowd is shouting about peace in heaven, and Jesus is talking about the peace this city missed.",
+          "text": "Then Jesus says, “If only you had known on this day what would bring you peace!” The crowd is shouting about peace in heaven, and Jesus is talking about the peace this city didn't know.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 19:42",
@@ -344,30 +348,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Luke 19:43",
-          "text": "Then Jesus looks ahead. He says the days will come when the city's enemies will barricade it, surround it and hem it in on every side.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 19:44",
-          "question": "Jesus says the city's enemies will surround Jerusalem but leave its walls standing.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Luke 19:43-44",
+          "text": "Then Jesus looks ahead. He says the days will come when the city's enemies will barricade it, surround it, hem it in on every side and level it to the ground, the city and the children within its walls, without leaving one stone on another.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -375,7 +360,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 19:44",
-          "question": "Why does Jesus say all this will come on Jerusalem?",
+          "question": "Jesus says Jerusalem's enemies will one day level the city to the ground. Why does He say this will come on Jerusalem?",
           "answers": [
             {
               "text": "It did not recognize God's visit",
@@ -390,7 +375,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

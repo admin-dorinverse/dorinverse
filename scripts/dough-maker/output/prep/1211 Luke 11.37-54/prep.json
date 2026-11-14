@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 11:39",
-          "text": "Then the Lord says the Pharisees clean the outside of the cup and dish. Shiny lid on the cookie box, friend. Nobody's checking what's inside.",
-          "needs_agent_fix": true,
+          "text": "Then the Lord says the Pharisees clean the outside of the cup and dish. Shiny lid on the cookie box, and nobody checking what's inside.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -89,8 +89,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Luke 11:40-41",
-          "text": "Jesus doesn't tiptoe around it: \"You fools! Did not the One who made the outside make the inside as well?\" Then He tells them to give as alms the things that are within them.",
+          "verses": "Luke 11:40",
+          "text": "Jesus doesn't tiptoe around it: \"You fools! Did not the One who made the outside make the inside as well?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -107,11 +107,11 @@
               "blank": 1
             },
             {
-              "text": "returned",
+              "text": "ready",
               "correct": false
             },
             {
-              "text": "counted",
+              "text": "provided",
               "correct": false
             }
           ],
@@ -122,8 +122,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Luke 11:42",
-          "text": "Then Jesus says, \"Woe to you Pharisees!\" They tithe mint, rue and every herb, tiny leaves counted out one by one. That's me sorting sprinkles with TWEEZERS.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus says, \"Woe to you Pharisees!\" They tithe mint, rue and every herb, like me sorting sprinkles with TWEEZERS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -155,15 +155,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:42",
-          "question": "Jesus says the Pharisees should have practiced justice and the love of God.",
+          "question": "Jesus tells the Pharisees they can stop tithing their herbs.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -173,15 +173,15 @@
           "card": 11,
           "kind": "story",
           "verses": "Luke 11:42",
-          "text": "But Jesus doesn't toss out the herb tithing. He says, \"You should have practiced the latter without neglecting the former.\" Justice and the love of God, AND the mint. Both, friend.",
-          "needs_agent_fix": true,
+          "text": "Jesus says, \"You should have practiced the latter without neglecting the former.\" Justice and the love of God, AND the mint, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Luke 11:43",
-          "text": "Woe number two: Jesus says the Pharisees love the greetings in the marketplaces. Walk through town, and EVERYBODY better say hi, or the whole day is ruined.",
+          "text": "Woe number two: Jesus says the Pharisees love the greetings in the marketplaces. Honestly, friend? If nobody waves when I hop past, I hop past AGAIN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -280,7 +280,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 11:46",
-          "text": "Friend, the man basically raised his hand to get INCLUDED. And Jesus replies, \"Woe to you as well, experts in the law!\"",
+          "text": "Jesus doesn't back down. He replies, \"Woe to you as well, experts in the law!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -310,68 +310,48 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Luke 11:47",
-          "text": "That's the boss who drops a stack on your desk at 4:59 and walks out whistling. Next woe: the experts build tombs for the prophets.",
+          "verses": "Luke 11:46-47",
+          "text": "That's the boss who drops a stack on your desk at 4:59 and walks out whistling. Next woe: the experts build tombs for the prophets, but Jesus says it was their fathers who killed them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 11:47",
-          "question": "The experts in the law build tombs for the prophets, but Jesus says it was their ___ who killed them.",
-          "answers": [
-            {
-              "text": "fathers",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "neighbors",
-              "correct": false
-            },
-            {
-              "text": "enemies",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Luke 11:48",
-          "question": "Jesus says that by building those tombs, the experts in the law are witnesses consenting to what their fathers did.",
+          "question": "The experts in the law build tombs for the prophets their fathers killed. What does Jesus say that makes the experts?",
           "answers": [
             {
-              "text": "True",
+              "text": "Witnesses consenting to their fathers' deeds",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Judges condemning their fathers' deeds",
+              "correct": false
+            },
+            {
+              "text": "Strangers to their fathers' deeds",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Luke 11:49",
-          "text": "Then Jesus says the wisdom of God spoke about sending them prophets and apostles.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
+          "kind": "story",
+          "verses": "Luke 11:49",
+          "text": "Then Jesus says the wisdom of God spoke about sending prophets and apostles.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:49",
-          "question": "The wisdom of God says prophets and apostles will be sent to them. What does it say will happen to those prophets and apostles?",
+          "question": "Jesus tells what the wisdom of God said about sending prophets and apostles. What does it say will happen to those prophets and apostles?",
           "answers": [
             {
               "text": "Some will be killed and others persecuted",
@@ -386,11 +366,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Luke 11:50",
           "text": "As a result, Jesus says, this generation will be charged with the blood of all the prophets.",
@@ -398,11 +378,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:50",
-          "question": "Jesus says the blood charged to this generation goes all the way back to the foundation of the world.",
+          "question": "Jesus says the blood of the prophets charged to this generation goes all the way back to the foundation of the world.",
           "answers": [
             {
               "text": "True",
@@ -417,39 +397,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 11:51",
-          "question": "Jesus names where that blood starts and ends: from the blood of ___ to the blood of Zechariah.",
-          "answers": [
-            {
-              "text": "Abel",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Isaiah",
-              "correct": false
-            },
-            {
-              "text": "Jeremiah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "Luke 11:51",
-          "text": "From Abel, killed by his brother Cain (Genesis 4:8), all the way to Zechariah son of Berechiah (Matthew 23:35), killed between the altar and the sanctuary. And Jesus says, \"Yes, I tell you, all of it will be charged to this generation.\"",
+          "text": "Jesus names it from the blood of Abel, killed by his brother Cain (Genesis 4:8), to the blood of Zechariah, who was killed between the altar and the sanctuary. Then He says, \"Yes, I tell you, all of it will be charged to this generation.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Luke 11:52",
           "text": "Last woe, to the experts in the law: Jesus says they've taken away the key to knowledge. That's somebody walking off with the ONLY key to my bakery, friend, ONE key!",
@@ -457,7 +413,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:52",
@@ -476,7 +432,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:52",
@@ -499,7 +455,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "Luke 11:53",
           "text": "Jesus goes on from there, and the scribes (teachers of the law) and Pharisees begin to oppose Him bitterly. Then the questions start, about many things, like a group chat that will NOT stop buzzing.",
@@ -507,7 +463,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:54",

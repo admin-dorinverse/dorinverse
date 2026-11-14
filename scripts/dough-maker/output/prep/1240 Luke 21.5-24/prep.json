@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 21:6-7",
-          "text": "Every stone? Thrown DOWN? I bet the disciples are stunned. They call Him Teacher and ask Him two questions.",
-          "needs_agent_fix": true,
+          "text": "Every single stone thrown DOWN? I bet the disciples are stunned when they call Him Teacher and ask Him two questions.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Luke 21:9",
-          "text": "Next up, scary news: wars and rebellions. Friend, I spent years in a junk drawer panicking every time it rattled, so I am listening VERY closely to this part.",
+          "text": "Then Jesus talks about hearing of wars and rebellions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -153,15 +153,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 21:9",
-          "question": "Jesus says that wars and rebellions mean the end is coming right away.",
+          "question": "Jesus says that wars and rebellions do not mean the end is coming right away.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -252,8 +252,8 @@
           "card": 16,
           "kind": "story",
           "verses": "Luke 21:12",
-          "text": "On account of His name, they'll be handed over to synagogues and prisons and brought before kings and governors. Friend, I get nervous when the oven timer BEEPS. These guys are getting KINGS.",
-          "needs_agent_fix": true,
+          "text": "On account of His name, the disciples will be handed over to synagogues and prisons and brought before kings and governors. Friend, I get nervous when the oven timer BEEPS, and these guys are getting KINGS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -289,7 +289,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 21:14",
-          "text": "So Jesus tells them to 'make up your mind not to worry beforehand how to defend yourselves.' No rehearsing comebacks, and friend, I have won a LOT of arguments in my head and exactly zero out loud.",
+          "text": "So Jesus tells the disciples to 'make up your mind not to worry beforehand how to defend yourselves.' No rehearsing comebacks, and friend, I have won a LOT of arguments in my head and exactly zero out loud.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -336,7 +336,7 @@
               "correct": true
             },
             {
-              "text": "The rulers of the synagogues",
+              "text": "The soldiers of Rome",
               "correct": false
             },
             {
@@ -400,8 +400,8 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Luke 21:19-20",
-          "text": "Patient endurance. Friend, I did YEARS in the back of a junk drawer, so I've got a black belt in waiting, and now Jesus turns to Jerusalem itself.",
+          "verses": "Luke 21:20",
+          "text": "Then Jesus turns to Jerusalem itself. He tells the disciples what they'll see when the city's desolation is near.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -511,36 +511,11 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 21:24",
-          "question": "Jesus goes on about the people of Jerusalem: They will fall by the edge of the ___ and be led ___ into all the nations.",
-          "answers": [
-            {
-              "text": "sword",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "captive",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "road",
-              "correct": false
-            },
-            {
-              "text": "home",
-              "correct": false
-            },
-            {
-              "text": "safely",
-              "correct": false
-            }
-          ],
+          "text": "Jesus goes on: they will fall by the edge of the sword and be led captive into all the nations.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -559,7 +534,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
@@ -567,7 +542,7 @@
           "verses": "Luke 21:24",
           "text": "Keep that apron on, friend. Jesus has more to say, and we're not leaving the bakery until we hear it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

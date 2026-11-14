@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "John 9:3-4",
-          "text": "Jesus says this happened 'so that the works of God would be displayed in him.' They asked about the PAST, and Jesus points them to the work right in front of them: 'we must do the works of Him who sent Me.'",
+          "text": "Jesus says this happened 'so that the works of God would be displayed in him.' They asked about the PAST, and Jesus points them to the work right in front of them: '…we must do the works of Him who sent Me.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -78,33 +78,9 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 9:7",
-          "question": "With mud on the man's eyes, Jesus tells him to go wash in the Pool of ___.",
-          "answers": [
-            {
-              "text": "Siloam",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Bethesda",
-              "correct": false
-            },
-            {
-              "text": "Heshbon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
           "type": "true_false",
           "verses": "John 9:7",
-          "question": "Siloam means 'Sent.' True or false: the man goes, washes, and comes back seeing.",
+          "question": "Jesus tells the man, 'Go, wash in the Pool of Siloam' (which means 'Sent'). True or false: he goes, washes, and comes back seeing.",
           "answers": [
             {
               "text": "True",
@@ -119,15 +95,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "John 9:8-9",
-          "text": "The neighbors who used to see him begging can't agree: some say it's him, and others say, 'No, he just looks like him.' Friend, the man gets his sight back and the whole street acts like he showed up with a TWIN.",
+          "text": "The neighbors who used to see him begging can't agree: some say it's him, and others say, 'No, he just looks like him.' Friend, the man gets his sight back, and half the street decides he must have a TWIN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 9:9",
@@ -150,7 +126,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "John 9:10-11",
           "text": "So they ask how his eyes got opened. He tells them the man they call Jesus made mud, put it on his eyes and sent him to wash in Siloam: 'So I went and washed and received my sight.'",
@@ -158,7 +134,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 9:12",
@@ -177,23 +153,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
-          "verses": "John 9:12",
-          "text": "He says, 'I do not know.' To be fair, friend, the last time Jesus was standing in front of him, he couldn't SEE Him.",
+          "verses": "John 9:13",
+          "text": "Then they bring the man who had been blind to the Pharisees, a group of religious leaders. And there's one detail about the day all this happened that's about to stir things up.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 9:14",
+          "question": "What kind of day was it when Jesus made the mud and opened the man's eyes?",
+          "answers": [
+            {
+              "text": "A Sabbath",
+              "correct": true
+            },
+            {
+              "text": "A feast day",
+              "correct": false
+            },
+            {
+              "text": "A day of fasting",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "John 9:13-14",
-          "text": "So they bring the man who had been blind to the Pharisees, a group of religious leaders. And here's the detail that's about to stir things up: the day Jesus made the mud and opened his eyes was a Sabbath.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 9:15",
@@ -212,10 +203,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "John 9:15",
           "text": "He tells them, short and sweet: 'He put mud on my eyes, and I washed, and now I can see.' Friend, he went from the full story to the TEXT MESSAGE version.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "John 9:16",
+          "text": "Some of the Pharisees say, 'This man is not from God, for He does not keep the Sabbath.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -224,18 +223,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 9:16",
-          "question": "Some of the Pharisees say Jesus is not from God. What reason do they give?",
+          "question": "Other Pharisees don't agree that Jesus is not from God. What question do they ask?",
           "answers": [
             {
-              "text": "He does not keep the Sabbath",
+              "text": "How can a sinful man perform such signs",
               "correct": true
             },
             {
-              "text": "He eats with tax collectors",
+              "text": "Why would God heal on that day",
               "correct": false
             },
             {
-              "text": "He comes from Nazareth",
+              "text": "Who gave this man His authority",
               "correct": false
             }
           ],
@@ -246,7 +245,7 @@
           "card": 17,
           "kind": "story",
           "verses": "John 9:16",
-          "text": "But others say, 'How can a sinful man perform such signs?' Now there's division among them, like a group chat where everybody's typing at once and NOBODY agrees.",
+          "text": "Now there's division among them, like a group chat where everybody's typing at once and NOBODY agrees.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -285,7 +284,7 @@
           "verses": "John 9:18-19",
           "text": "The Jews still don't buy this man's story, so they summon his parents and start asking questions. They're checking it like a bank checking a SIGNATURE.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -325,15 +324,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 9:21",
-          "question": "The leaders also want to know how the man can now see. True or false: his parents tell them it was Jesus who opened his eyes.",
+          "question": "The Jews also ask the man's parents how he can now see. True or false: they say they do not know who opened his eyes.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -343,7 +342,7 @@
           "card": 4,
           "kind": "story",
           "verses": "John 9:21",
-          "text": "They say they don't know how he can see or who opened his eyes. 'Ask him. He is old enough to speak for himself.'",
+          "text": "His parents add, 'Ask him. He is old enough to speak for himself.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -352,7 +351,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 9:22",
-          "question": "The man's parents send every question back to their son. Why?",
+          "question": "The man's parents send the questions about how he can see back to their son. Why?",
           "answers": [
             {
               "text": "They are afraid of the Jews",
@@ -367,7 +366,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -405,7 +404,7 @@
           "card": 8,
           "kind": "story",
           "verses": "John 9:23",
-          "text": "That's why his parents say, 'He is old enough. Ask him.' It's the move every one of us has pulled in a tense meeting: 'Great question. Let's ask HIM.'",
+          "text": "That's why his parents point them back to their son. It's the move every one of us has pulled in a tense meeting: the hard question lands, and you slide it RIGHT down the table.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -422,7 +421,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 9:25",
-          "question": "The leaders call Jesus a sinner. What does the man say he knows for sure?",
+          "question": "Jesus is called a sinner to the man's face. What does the man say he knows for sure?",
           "answers": [
             {
               "text": "I was blind but now I see",
@@ -453,7 +452,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 9:27",
-          "question": "The leaders ask AGAIN how Jesus opened his eyes. True or false: the man walks them through the whole story one more time.",
+          "question": "The man is asked AGAIN how Jesus opened his eyes. True or false: he walks through the whole story one more time.",
           "answers": [
             {
               "text": "True",
@@ -480,7 +479,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 9:28",
-          "question": "The leaders heap insults on the man and tell him he's Jesus' disciple. Whose disciples do they say they are?",
+          "question": "The Jews heap insults on the man and tell him he's Jesus' disciple. Whose disciples do they say they are?",
           "answers": [
             {
               "text": "Disciples of Moses",
@@ -508,7 +507,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 9:29",
-          "text": "The leaders tell him, 'We know that God spoke to Moses, but we do not know where this man is from.' And now the whole room is waiting to see what HE says.",
+          "text": "The Jews tell the man who had been blind, 'We know that God spoke to Moses, but we do not know where this man is from.' Moses was Israel's leader, and 'this man' is Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -517,7 +516,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 9:30",
-          "question": "The leaders say they don't even know where Jesus is from. True or false: the man decides that settles it and backs down.",
+          "question": "The Jews say they don't even know where Jesus is from. True or false: the man decides that settles it and backs down.",
           "answers": [
             {
               "text": "True",
@@ -579,15 +578,15 @@
               "blank": 1
             },
             {
-              "text": "Moses",
+              "text": "Egypt",
               "correct": false
             },
             {
-              "text": "Galilee",
+              "text": "Babylon",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -595,7 +594,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 9:34",
-          "question": "The man who used to sit and beg has just made his case to the leaders. What do they do with him?",
+          "question": "The man who used to sit and beg has just made his case to the Jews. What do they do with him?",
           "answers": [
             {
               "text": "They throw him out",
@@ -625,7 +624,7 @@
           "card": 9,
           "kind": "story",
           "verses": "John 9:35",
-          "text": "When Jesus hears they threw him out, He goes and FINDS the man, and friend, I know a little something about getting found. He asks him, 'Do you believe in the Son of Man?'",
+          "text": "When Jesus hears they threw him out, He FINDS the man, and friend, after years in the back of a junk drawer, I know a little something about getting found. He asks him, 'Do you believe in the Son of Man?'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -738,7 +737,7 @@
           "card": 16,
           "kind": "story",
           "verses": "John 9:41",
-          "text": "Jesus replies, 'If you were blind, you would not be guilty of sin.'",
+          "text": "'If you were blind,' Jesus replies, 'you would not be guilty of sin.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -769,7 +768,7 @@
           "card": 18,
           "kind": "story",
           "verses": "John 9:41",
-          "text": "That's where we'll let the oven rest for now, friend. Jesus isn't done talking, and you're gonna want to be here for what He says next.",
+          "text": "That's where we'll let the oven rest for now, friend. Trust me, this story's not done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

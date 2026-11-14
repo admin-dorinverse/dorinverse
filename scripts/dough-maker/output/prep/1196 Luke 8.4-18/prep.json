@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 8:4-5",
-          "text": "Friend, this crowd is HUGE. People are coming to Jesus, God's Son, from town after town, and He tells them a parable. It starts simple: a farmer goes out to sow his seed.",
-          "needs_agent_fix": true,
+          "text": "Friend, a LARGE crowd is gathering, with people coming to Jesus from town after town. While they gather, He tells them a parable. It starts simple: a farmer goes out to sow his seed.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -119,20 +119,9 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Luke 8:8",
-          "question": "As He says this, Jesus calls out, \"He who has ears to hear, let him hear.\" True or false: He's telling the crowd to really listen and take it in.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "As Jesus says this, He calls out, \"He who has ears to hear, let him hear.\" And that's where the farmer's story ends.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -141,14 +130,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:9",
-          "question": "Then the disciples of Jesus come to Him with a question about the farmer and the seed. What do they ask?",
+          "question": "Then the disciples of Jesus ask Him a question about the farmer and the seed. What do they ask?",
           "answers": [
             {
               "text": "What the parable means",
               "correct": true
             },
             {
-              "text": "Who the farmer really is",
+              "text": "Where the farmer's field is",
               "correct": false
             },
             {
@@ -172,15 +161,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 8:10",
-          "question": "True or false: Jesus tells His disciples that the knowledge of the mysteries of the kingdom of God has been given to them.",
+          "question": "True or false: Jesus tells His disciples that the knowledge of the mysteries of the kingdom of God has been kept from them.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -190,7 +179,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Luke 8:10",
-          "text": "Jesus says He speaks to others in parables so that, \"though seeing, they may not see; though hearing, they may not understand.\" Hold on to your apron, friend, because this one's worth chewing on.",
+          "text": "To others, Jesus says, He speaks in parables, so that, \"though seeing, they may not see; though hearing, they may not understand.\" Those words go back to Isaiah 6:9, and friend, this one's worth chewing on.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -204,43 +193,20 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 8:11",
-          "text": "Now Jesus explains what the parable means, and friend, I LOVE an answer key. I spent years in a junk drawer full of instruction manuals, and not ONE of them ever explained anything.",
+          "text": "Now Jesus explains it: the seed is the word of God. Friend, I LOVE an answer key, because I spent years in a junk drawer full of instruction manuals, and not ONE of them ever explained anything.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 8:11",
-          "question": "Jesus says the seed in the parable is the ___ of God.",
-          "answers": [
-            {
-              "text": "word",
-              "correct": true
-            },
-            {
-              "text": "peace",
-              "correct": false
-            },
-            {
-              "text": "temple",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Luke 8:5, 12",
+          "text": "First, the seeds along the path, the ones the birds got. Those are people who hear, but then someone comes and takes the word away from their hearts.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Luke 8:12",
-          "text": "First, the seeds along the path, the ones the birds got. Those are people who hear, but then someone comes and takes the word away from their hearts.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:12",
@@ -263,15 +229,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Luke 8:12-13",
-          "text": "He takes it so that they may not believe and be saved. Next up, the rocky ground: people who hear the word and receive it with joy, front row, hands up, the WHOLE thing.",
+          "text": "The devil takes it so that they may not believe and be saved. Next, the rocky ground: people who hear the word and receive it with joy, and I picture them front row, hands up, the WHOLE thing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 8:13",
@@ -286,7 +252,7 @@
               "correct": false
             },
             {
-              "text": "time",
+              "text": "friends",
               "correct": false
             }
           ],
@@ -294,7 +260,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 8:13",
@@ -313,7 +279,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Luke 8:13-14",
           "text": "They believe for a season, but in the time of testing, they fall away. Then the thorns: these people hear too, but as they go on their way, they get choked.",
@@ -321,22 +287,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Luke 8:14",
-          "question": "Jesus says the people among the thorns are choked by the ___, riches, and pleasures of this life.",
+          "question": "True or false: Jesus says the people among the thorns are choked by the worries, riches, and pleasures of this life.",
           "answers": [
             {
-              "text": "worries",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "prayers",
-              "correct": false
-            },
-            {
-              "text": "promises",
+              "text": "False",
               "correct": false
             }
           ],
@@ -344,15 +306,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Luke 8:14",
-          "text": "And Jesus says their fruit does not mature. That's me pulling a batch out half-baked because ten other things grabbed my mustache, and friend, it LOOKS like a cookie, but it is NOT a cookie.",
+          "text": "And Jesus says their fruit does not mature. That's me pulling a batch out early because ten other things grabbed my mustache at once, and friend, the middle is still DOUGH.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Luke 8:15",
           "text": "And finally, the good soil: people with a noble and good heart who hear the word. These are the ones who produce a crop.",
@@ -360,7 +322,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:15",
@@ -383,7 +345,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Luke 8:16",
           "text": "Then Jesus switches to a new picture. Someone lights a lamp.",
@@ -391,34 +353,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 8:16",
-          "question": "True or false: Jesus says that after lighting a lamp, a person covers it with a jar or puts it under a bed.",
+          "question": "True or false: Jesus says a person who lights a lamp sets it on a stand, so those who enter can see the light.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Luke 8:16",
-          "text": "Of course not, he sets it on a stand, so those who enter can see the light. Hiding it would be like baking a perfect batch and shoving it in the back of a junk drawer, and trust me, I KNOW what that drawer does to things.",
+          "text": "Jesus says no one lights a lamp and covers it with a jar or puts it under a bed. That's like turning on your phone's flashlight and shoving the phone right back in your pocket, and who's that helping? NOBODY.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:17",
@@ -441,11 +403,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:18",
-          "question": "Remember \"He who has ears to hear\"? Now Jesus wraps up. What does He tell them to pay attention to?",
+          "question": "Jesus is wrapping up. What does He tell His listeners to pay attention to?",
           "answers": [
             {
               "text": "How they listen",
@@ -464,30 +426,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Luke 8:18",
-          "text": "Then Jesus says, \"Whoever has will be given more,\" and then He flips it around. Lean in for this last one, friend.",
+          "text": "Then Jesus says, \"Whoever has will be given more…\" Lean in for the second half, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 8:18",
-          "question": "Jesus says that whoever does not have, even what he thinks he has will be ___ from him.",
+          "question": "Jesus says that whoever does not have, even what he thinks he has will be ___.",
           "answers": [
             {
               "text": "taken away",
               "correct": true
             },
             {
-              "text": "given back",
+              "text": "doubled",
               "correct": false
             },
             {
-              "text": "kept safe",
+              "text": "protected",
               "correct": false
             }
           ],

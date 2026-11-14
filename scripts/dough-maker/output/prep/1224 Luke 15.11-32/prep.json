@@ -41,7 +41,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 15:12",
-          "question": "The father refuses the younger son's request and keeps his property all together.",
+          "question": "The father refuses the younger son's request.",
           "answers": [
             {
               "text": "True",
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Luke 15:12-13",
-          "text": "The father divides his property between both sons, and a few days later the younger one gets everything together and journeys to a distant country. A FEW DAYS, and he's out the door like the check might bounce!",
+          "text": "The father divides his property between both sons, and a few days later the younger one gets everything together and journeys to a distant country. A FEW DAYS! I've had cookies sit on the cooling rack longer than that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 15:13",
-          "question": "Out in the distant country, the younger son ___ his wealth in wild living.",
+          "question": "Out in that distant country, the younger son ___ his wealth in wild living.",
           "answers": [
             {
               "text": "squandered",
@@ -79,7 +79,7 @@
               "correct": false
             },
             {
-              "text": "saved",
+              "text": "shared",
               "correct": false
             }
           ],
@@ -97,16 +97,20 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Luke 15:15",
-          "question": "In need, the younger son hires himself out to a citizen of that country, who sends him into his fields to feed the pigs.",
+          "question": "In need, the younger son hires himself out to a citizen of that country. Where does the man send him?",
           "answers": [
             {
-              "text": "True",
+              "text": "Into his fields to feed the pigs",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Into his vineyard to pick grapes",
+              "correct": false
+            },
+            {
+              "text": "Into his house to serve meals",
               "correct": false
             }
           ],
@@ -115,32 +119,28 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Luke 15:16",
-          "question": "Out in the fields with the pigs, the younger son is hungry. What food does anyone give him?",
-          "answers": [
-            {
-              "text": "Nothing at all",
-              "correct": true
-            },
-            {
-              "text": "Leftovers from his boss",
-              "correct": false
-            },
-            {
-              "text": "A little from the other workers",
-              "correct": false
-            }
-          ],
+          "text": "He's so hungry he longs to fill his belly with the pods the pigs are eating. When you're eyeing the pigs' pods, friend, you have hit ROCK bottom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Luke 15:16",
-          "text": "He's so hungry he longs to fill his belly with the pods the pigs are eating. Friend, I spent YEARS in the back of a junk drawer, and I never once got jealous of a pig.",
+          "question": "Hungry out in the fields, the younger son gets food from people who take pity on him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -149,18 +149,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 15:17",
-          "question": "When the younger son finally comes to his senses, he realizes his father's hired servants have plenty of ___ while he's starving to death.",
+          "question": "When the younger son finally comes to his senses, he remembers there's plenty of food back at his ___'s place while he's starving.",
           "answers": [
             {
-              "text": "food",
+              "text": "father",
               "correct": true
             },
             {
-              "text": "money",
+              "text": "uncle",
               "correct": false
             },
             {
-              "text": "rest",
+              "text": "neighbor",
               "correct": false
             }
           ],
@@ -256,48 +256,23 @@
           "card": 16,
           "kind": "story",
           "verses": "Luke 15:21",
-          "text": "The son starts his speech: 'Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.' But that hired servant line he planned never comes out.",
+          "text": "The son gives his speech: he has sinned against heaven and against his father, and he's no longer worthy to be called his son. But the hired servant part? Not in it this time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 15:22",
-          "question": "The father tells his servants to bring the best ___ and put it on his son, and to put a ___ on his finger.",
-          "answers": [
-            {
-              "text": "robe",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "ring",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "crown",
-              "correct": false
-            },
-            {
-              "text": "staff",
-              "correct": false
-            },
-            {
-              "text": "scroll",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "But the father tells his servants, 'Quick! Bring the best robe and put it on him.' A ring on his finger, sandals on his feet.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "Luke 15:23",
-          "text": "Then the father says, 'Bring the fattened calf and kill it. Let us feast and celebrate.' This man walked into the boss's office with an apology and walked out with a PROMOTION.",
+          "text": "Then the father says, 'Bring the fattened calf and kill it.' That's walking into the boss's office with an apology and walking out with a PROMOTION.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -341,21 +316,17 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Luke 15:26",
-          "question": "The older son hears music and dancing coming from the house. What does he do?",
+          "question": "Hearing the music and dancing, the older son heads straight inside to see what's going on.",
           "answers": [
             {
-              "text": "Calls a servant and asks what's going on",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Runs straight inside to join the dancing",
-              "correct": false
-            },
-            {
-              "text": "Turns around and heads back to the field",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -364,56 +335,52 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Luke 15:27",
-          "text": "The servant tells him, 'Your brother has returned.' And the father has killed the fattened calf, because he has him back safe and sound.",
+          "verses": "Luke 15:26-27",
+          "text": "He calls one of the servants, who says his brother has returned, and the father has killed the fattened calf because he has him back safe and sound.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Luke 15:28",
-          "question": "How does the older son react when he hears his brother is home?",
+          "question": "Hearing that his brother is home, the older son refuses to go in.",
           "answers": [
             {
-              "text": "He gets angry and refuses to go in",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He runs inside to hug his brother",
-              "correct": false
-            },
-            {
-              "text": "He heads back out to finish his work",
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 15:28",
-          "question": "The older son is angry and refuses to go in. So his father comes out and ___ with him.",
+          "question": "The older son is angry and stays outside. So his father comes out and ___ with him.",
           "answers": [
             {
-              "text": "pleaded",
+              "text": "pleads",
               "correct": true
             },
             {
-              "text": "bargained",
+              "text": "bargains",
               "correct": false
             },
             {
-              "text": "waited",
+              "text": "argues",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -425,24 +392,9 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Luke 15:30",
-          "question": "Complaining to his father, how does the older son talk about his younger brother?",
-          "answers": [
-            {
-              "text": "As this son of yours",
-              "correct": true
-            },
-            {
-              "text": "As my little brother",
-              "correct": false
-            },
-            {
-              "text": "As our lost one",
-              "correct": false
-            }
-          ],
+          "text": "Then he says, '…when this son of yours returns from squandering your wealth with prostitutes, you kill the fattened calf for him!'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -451,15 +403,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 15:30",
-          "question": "The older son says his brother squandered the father's wealth with prostitutes.",
+          "question": "Complaining to his father, the older son calls the younger one my brother.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -467,28 +419,32 @@
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Luke 15:31",
-          "text": "The father answers, 'Son, you are always with me,' and all that is his belongs to the older son. That's me griping nobody ever saved me ONE cookie while I'm standing in my own bakery holding the keys!",
+          "question": "The older son complains he never got even a young goat. What does the father tell him?",
+          "answers": [
+            {
+              "text": "Everything the father has is his",
+              "correct": true
+            },
+            {
+              "text": "A feast for him is coming soon",
+              "correct": false
+            },
+            {
+              "text": "He can have the next fattened calf",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Luke 15:31",
-          "question": "By telling the older son that he is always with him and all that is his is the older son's, the father shows the older son never lost his place as a son.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "'Son, you are always with me,' the father says. That's me griping nobody ever saved me ONE cookie while I'm standing in my own bakery holding the keys!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

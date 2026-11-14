@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "John 6:1-2",
-          "text": "After this, Jesus crosses to the other side of the Sea of Galilee, also called the Sea of Tiberias. Same sea, two names, just like me with Papa and Dorin. And a large crowd is following Him.",
-          "needs_agent_fix": true,
+          "text": "Back in Jerusalem, Jesus healed a man who had been an invalid for thirty-eight years (John 5:5-9). After this, Jesus crosses to the other side of the Sea of Galilee, also called the Sea of Tiberias. And a large crowd is following Him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,27 +33,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "John 6:3-4",
-          "text": "Jesus goes up on the mountain and sits down with His disciples. Meanwhile, the Jewish Feast of the Passover is near.",
-          "needs_agent_fix": true,
+          "verses": "John 6:3-5",
+          "text": "Jesus goes up on the mountain and sits down with His disciples, and the Jewish Feast of the Passover is near. When He looks up and sees a large crowd coming toward Him, He asks Philip, one of His disciples, “Where can we buy bread for these people to eat?”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "John 6:5",
-          "text": "Then Jesus looks up and sees a large crowd coming toward Him. He turns to Philip, one of His disciples, and asks, “Where can we buy bread for these people to eat?”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 6:6",
@@ -73,120 +65,73 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "John 6:7",
+          "text": "So Philip looks out at that large crowd and does the math out loud. Friend, I can't even split one batch of cookies evenly without three tries and a recount.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "John 6:7",
-          "text": "So Philip does the math out loud, right there on the mountain. Friend, I can't even split one batch of cookies evenly without three tries and a recount.",
-          "needs_agent_fix": true,
+          "question": "Philip figures two hundred denarii would buy enough bread for everyone in the crowd to have a small piece.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 6:7",
-          "question": "Philip figures two hundred denarii would buy every person in the crowd a small piece of bread.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 6:8-9",
+          "text": "Then Andrew, another disciple and Simon Peter's brother, speaks up. He points out a boy with five barley loaves and two small fish.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "John 6:8-9",
-          "text": "Then Andrew, Simon Peter's brother, speaks up. He's spotted a boy with some food.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "John 6:9",
+          "question": "Andrew asks what difference the boy's five loaves and two fish will make among so many people.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 6:9",
-          "question": "Andrew points out a boy with some food. What does the boy have?",
-          "answers": [
-            {
-              "text": "Five barley loaves and two small fish",
-              "correct": true
-            },
-            {
-              "text": "Seven loaves and a few small fish",
-              "correct": false
-            },
-            {
-              "text": "A handful of flour and some oil",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 6:10",
+          "text": "“Have the people sit down,” Jesus says. There's plenty of grass in that place, so the men sit down, about five thousand of them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 6:9",
-          "question": "Andrew says the boy's food should be plenty for this crowd.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "John 6:10",
-          "text": "Five loaves and two fish for a huge crowd, and Jesus doesn't call a committee meeting. “Have the people sit down,” He says.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 6:10",
-          "question": "There's plenty of grass in that place, so the men sit down, about ___ thousand of them.",
-          "answers": [
-            {
-              "text": "five",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "four",
-              "correct": false
-            },
-            {
-              "text": "three",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:11",
@@ -205,19 +150,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 11,
           "kind": "story",
           "verses": "John 6:12",
           "text": "Everyone is full, and then Jesus gives His disciples a cleanup job. Friend, the second anybody says the word “cleanup,” I am suddenly VERY busy checking an oven timer.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 6:12",
@@ -237,42 +182,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 6:13",
-          "question": "The disciples fill twelve baskets with the leftover pieces.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
+          "card": 13,
           "kind": "story",
           "verses": "John 6:13",
-          "text": "Twelve baskets of leftovers from five barley loaves. I've baked a LOT of batches, friend, and I have NEVER ended one with more than I started with.",
-          "needs_agent_fix": true,
+          "text": "The disciples fill twelve baskets with the leftover pieces of those five barley loaves. I've baked a LOT of batches, friend, and I have NEVER ended one with more than I started with.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:14",
-          "question": "When the people see the sign Jesus performed, what do they start saying about Him?",
+          "question": "When the people see the sign Jesus performed with the loaves, what do they start saying about Him?",
           "answers": [
             {
               "text": "This is the Prophet who is to come",
@@ -287,19 +213,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 15,
           "kind": "story",
           "verses": "John 6:15",
           "text": "Then Jesus realizes what this crowd is about to do. They're about to come and make Him king, by force.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:15",
@@ -318,7 +244,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -331,35 +257,12 @@
           "card": 1,
           "kind": "story",
           "verses": "John 6:16-17",
-          "text": "When evening comes, His disciples go down to the sea. They get into a boat and start across.",
-          "needs_agent_fix": true,
+          "text": "When evening comes, His disciples go down to the sea. They get into a boat and start across the sea to Capernaum.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 6:17",
-          "question": "The disciples get into a boat and start across the sea. Where are they heading?",
-          "answers": [
-            {
-              "text": "Capernaum",
-              "correct": true
-            },
-            {
-              "text": "Tiberias",
-              "correct": false
-            },
-            {
-              "text": "Cana",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 6:17",
@@ -374,105 +277,73 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "story",
+          "verses": "John 6:17-18",
+          "text": "It's already dark, a strong wind is blowing, and the sea grows agitated. I spent years in the dark in a junk drawer, friend, and at least nobody asked me to row.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "John 6:17",
-          "text": "It's already dark out there. I spent years in the dark in a junk drawer, friend, and at least nobody asked me to row.",
-          "needs_agent_fix": true,
+          "verses": "John 6:19",
+          "text": "They've rowed about three or four miles when they see Jesus approaching the boat, walking on the sea.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 6:18",
-          "question": "The disciples are rowing across the sea in the dark. What makes the trip rough?",
+          "type": "true_false",
+          "verses": "John 6:19",
+          "question": "When the disciples see Jesus walking on the sea toward their boat, they're terrified.",
           "answers": [
             {
-              "text": "A strong wind stirs up the sea",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Heavy rain starts filling the boat",
-              "correct": false
-            },
-            {
-              "text": "A thick fog hides the shore",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "John 6:19",
-          "text": "They've rowed about three or four miles. Then they see Someone coming toward the boat.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 6:20",
+          "question": "The disciples are terrified as Jesus comes toward their boat on the sea. What does He tell them?",
+          "answers": [
+            {
+              "text": "It's Him and not to be afraid",
+              "correct": true
+            },
+            {
+              "text": "To row harder for the shore",
+              "correct": false
+            },
+            {
+              "text": "To keep quiet and hold on tight",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 6:19",
-          "question": "In the dark, the disciples see Jesus approaching their boat. He's ___ on the sea.",
-          "answers": [
-            {
-              "text": "walking",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "rowing",
-              "correct": false
-            },
-            {
-              "text": "sailing",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 6:19",
-          "question": "When the disciples see Jesus walking on the sea toward them, they stay calm.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "John 6:19-20",
-          "text": "They see Jesus walking on the sea, and they're terrified. But Jesus speaks up: “It is I; do not be afraid.”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:21",
-          "question": "Jesus tells His terrified disciples not to be afraid. What happens next?",
+          "question": "Jesus tells His terrified disciples, “It is I; do not be afraid.” What happens next?",
           "answers": [
             {
               "text": "They take Him in and land at once",
@@ -487,15 +358,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 8,
           "kind": "story",
           "verses": "John 6:21",
-          "text": "The boat's on shore, but keep that apron on, friend. This story is just getting started.",
-          "needs_agent_fix": true,
+          "text": "The boat reaches the shore, but keep that apron on, friend. This story is just getting started.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

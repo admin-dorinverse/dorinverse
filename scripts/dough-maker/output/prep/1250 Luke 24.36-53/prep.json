@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 24:36",
-          "text": "It's the same day Jesus rose, and the two who walked to Emmaus are back in Jerusalem with the Eleven, Jesus' closest disciples, and those with them (Luke 24:13, 33). They're telling everyone how they recognized Jesus when He broke the bread (Luke 24:35). And while they're still describing it, Jesus Himself stands right there among them and says, \"Peace be with you.\"",
+          "text": "It's the same day Jesus rose, and the two who walked to Emmaus have hurried back to the Eleven, Jesus' closest disciples, and those with them (Luke 24:13, 33). They're telling everyone how they recognized Jesus when He broke the bread (Luke 24:35). And while they're still describing it, Jesus Himself stands right there among them and says, \"Peace be with you.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,41 +59,16 @@
           "card": 4,
           "kind": "story",
           "verses": "Luke 24:38",
-          "text": "Jesus asks them why they're troubled and why doubts are rising in their hearts. Honestly, friend? I'd have been right there with them, hiding behind my own mustache like it was a curtain.",
-          "needs_agent_fix": true,
+          "text": "Jesus asks them why they're troubled and why doubts are rising in their hearts. I'd have been right there with them, friend, hiding behind my own mustache like it was a curtain.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 24:39",
-          "question": "To show them it's really Him, Jesus tells the disciples to look at His ___ and His ___.",
-          "answers": [
-            {
-              "text": "hands",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "feet",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "eyes",
-              "correct": false
-            },
-            {
-              "text": "face",
-              "correct": false
-            },
-            {
-              "text": "robe",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Jesus says, \"Look at My hands and My feet. It is I Myself.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -101,15 +76,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 24:39",
-          "question": "While He's proving it's really Him, Jesus tells the disciples not to touch Him.",
+          "question": "While He's proving it's really Him, Jesus tells the disciples to touch Him and see.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -117,9 +92,24 @@
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Luke 24:39",
-          "text": "Jesus says, \"It is I Myself.\" A spirit doesn't have flesh and bones, He tells them, and they can see He does.",
+          "question": "Jesus tells the frightened disciples to touch Him and see. What reason does He give?",
+          "answers": [
+            {
+              "text": "A spirit has no flesh and bones",
+              "correct": true
+            },
+            {
+              "text": "His touch will calm their fear",
+              "correct": false
+            },
+            {
+              "text": "It will show they're forgiven",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -159,7 +149,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 24:42",
-          "question": "What do the disciples hand Jesus?",
+          "question": "Jesus asks the disciples for something to eat. What do they give Him?",
           "answers": [
             {
               "text": "A piece of broiled fish",
@@ -300,15 +290,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 24:48",
-          "question": "Jesus tells the disciples to keep everything they've seen to themselves.",
+          "question": "Jesus tells the disciples that they are witnesses of these things.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -318,7 +308,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Luke 24:49",
-          "text": "Then Jesus says, \"And behold, I am sending the promise of My Father upon you.\" A promise from the Father beats anything I found in that junk drawer, friend, and I shared that drawer with an expired coupon that believed in itself HARD.",
+          "text": "Then Jesus says, \"And behold, I am sending the promise of My Father upon you.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -327,18 +317,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 24:49",
-          "question": "Jesus tells the disciples to wait until they've been clothed with power from on high. Where does He tell them to stay until then?",
+          "question": "Jesus tells the disciples to remain in the city for now. How long are they supposed to stay?",
           "answers": [
             {
-              "text": "In Jerusalem",
+              "text": "Until they're clothed with power from on high",
               "correct": true
             },
             {
-              "text": "In Emmaus",
+              "text": "Until they've told the elders all they have seen",
               "correct": false
             },
             {
-              "text": "In Capernaum",
+              "text": "Until they've gathered every believer from Galilee",
               "correct": false
             }
           ],

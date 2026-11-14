@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 8:22",
-          "text": "One day Jesus gets into a boat with His disciples, and they set out on the lake. A boat trip with Jesus? Friend, the farthest I ever traveled was from the counter to the back of a junk drawer, and I didn't even get a WINDOW SEAT. Jesus tells them exactly where they're headed.",
-          "needs_agent_fix": true,
+          "text": "One day Jesus gets into a boat with His disciples, and they set out. A boat trip with Jesus? Friend, back in my kitchen days, the farthest I ever traveled was from the counter to the back of a junk drawer, and I didn't even get a WINDOW SEAT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -21,15 +21,15 @@
           "question": "Jesus and His disciples are setting out in the boat. Where does Jesus say they're going?",
           "answers": [
             {
-              "text": "To the other side of the lake",
+              "text": "Across to the other side of the lake",
               "correct": true
             },
             {
-              "text": "Out into the deep water",
+              "text": "Up onto the mountainside to pray",
               "correct": false
             },
             {
-              "text": "Back to the town of Capernaum",
+              "text": "Down along the riverbank to fish",
               "correct": false
             }
           ],
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 8:23",
-          "text": "So off they sail across the lake. Somewhere out on the water, Jesus does what plenty of us do when somebody else is steering.",
+          "text": "So off they sail across the lake together. And somewhere out on that water, this trip is about to get interesting.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -125,49 +125,39 @@
           "card": 9,
           "kind": "story",
           "verses": "Luke 8:24-25",
-          "text": "Jesus rebukes the wind and the raging waters, and they settle down until all is calm, flat as cookie dough under a rolling pin. Then He turns to His disciples, real quiet: “Where is your faith?”",
+          "text": "Jesus rebukes the wind and the raging waters, and they settle down until all is calm, flat as cookie dough under a rolling pin. Then He asks, “Where is your faith?”",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 8:25",
-          "question": "Jesus has just calmed the storm and asked the disciples where their faith is. The disciples are ___ and ___.",
+          "question": "Jesus has just calmed the storm and asked the disciples where their faith is. The disciples are ___ and amazed.",
           "answers": [
             {
               "text": "frightened",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "amazed",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "angry",
               "correct": false
             },
             {
-              "text": "relieved",
-              "correct": false
-            },
-            {
-              "text": "tired",
+              "text": "ashamed",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:25",
-          "question": "Frightened and amazed after the storm, the disciples ask one another a question. What do they ask?",
+          "question": "After the storm is calmed, the disciples ask one another a question. What do they ask?",
           "answers": [
             {
               "text": "Who is this man",
@@ -183,15 +173,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Luke 8:25",
-          "text": "The disciples can't get over it: even the wind and the water obey Him. Friend, every morning I tell my cookie dough to spread out nice and round, and it STILL comes out shaped however it WANTS.",
+          "text": "The disciples say to one another, “He commands even the winds and the water, and they obey Him!” Friend, the storm scared them, and now the CALM scares them too.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -243,7 +233,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:28",
-          "question": "Lying before Jesus, the man shouts in a loud voice. What does he call Jesus?",
+          "question": "Fallen down before Jesus, the man shouts in a loud voice. What does he call Jesus?",
           "answers": [
             {
               "text": "Son of the Most High God",
@@ -264,25 +254,29 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Luke 8:28",
-          "text": "The man shouts, “What do You want with me, Jesus, Son of the Most High God? I beg You not to torture me!”",
+          "verses": "Luke 8:28-29",
+          "text": "The man shouts, “What do You want with me, Jesus, Son of the Most High God? I beg You not to torture me!” That's because Jesus had commanded the unclean spirit to come out of the man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Luke 8:29",
-          "question": "Many times the unclean spirit had seized this man, and when people bound him with chains and shackles, the chains held him.",
+          "question": "This man had been bound with chains and shackles. What happened to those chains?",
           "answers": [
             {
-              "text": "True",
+              "text": "He broke them",
+              "correct": true
+            },
+            {
+              "text": "They held him fast",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Someone unlocked them",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -292,15 +286,15 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 8:29",
-          "text": "The chains couldn't hold him, but that was no freedom, because the demon drove him off into solitary places. I know a little about being alone in the dark, friend, and this man had it so much worse.",
+          "text": "Many times the spirit had seized him, and after he broke the chains, the demon drove him off into solitary places. I spent years alone in the dark at the back of a junk drawer, friend, and I think this man had it so much worse.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Luke 8:29-30",
-          "text": "Jesus had already commanded the unclean spirit to come out of the man. Now He asks, “What is your name?”",
+          "verses": "Luke 8:30",
+          "text": "Now Jesus asks him, “What is your name?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -418,7 +412,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 8:34",
-          "text": "Those tending the pigs see what happened, and they RUN to report it in the town and countryside. Friend, I've seen people sprint for an oven timer, but nobody moves that fast unless they've got news THIS big.",
+          "text": "Those tending the pigs see what happened, and they RUN to report it in the town and countryside. Friend, if I'd seen that, I'd have hopped my gold base all the way to town too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -442,15 +436,15 @@
               "correct": true
             },
             {
-              "text": "chained",
+              "text": "weeping",
               "correct": false
             },
             {
-              "text": "hiding",
+              "text": "praying",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -507,7 +501,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 8:37-38",
-          "text": "So Jesus gets back in the boat to head back, and the man the demons left begs to go with Him. I get it, friend: when Somebody pulls you out of the dark, you don't want to let Him out of your sight.",
+          "text": "So Jesus gets into the boat and starts back, and the man the demons left begs to go with Him. Friend, I know what it's like to be pulled out of the dark, and I'd have begged too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -535,14 +529,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 8:39",
-          "question": "Jesus sends the man away with a job to do. What is it?",
+          "question": "Jesus sends the man the demons left away with a job to do. What is it?",
           "answers": [
             {
               "text": "Go home and tell what God has done",
               "correct": true
             },
             {
-              "text": "Wait at the shore for His return",
+              "text": "Go and tell no one what happened",
               "correct": false
             },
             {
@@ -557,7 +551,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Luke 8:39",
-          "text": "Jesus tells him, “Return home and describe how much God has done for you.” So the man goes and proclaims all over the town how much Jesus had done for him, and friend, from the tombs to the town square, THAT is a comeback.",
+          "text": "Jesus tells him, “Return home and describe how much God has done for you.” So the man goes and proclaims all over the town how much Jesus has done for him, and friend, from the tombs to all over town, THAT is a comeback.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

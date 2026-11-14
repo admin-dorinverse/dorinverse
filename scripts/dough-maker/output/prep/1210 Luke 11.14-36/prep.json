@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 11:14",
-          "text": "One day Jesus is driving out a demon that was mute. The demon leaves, and the man who couldn't say a word starts talking. Friend, I went quiet for YEARS in a junk drawer, and now look at me: I can't STOP.",
+          "text": "One day Jesus is driving out a demon that is mute. When the demon is gone, the man who had been mute speaks.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -47,21 +47,20 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 11:15",
-          "question": "Some in the crowd say it is by ___, the prince of the demons, that Jesus drives out demons.",
+          "question": "Some in the crowd say Jesus drives out demons by Beelzebul. Who do they say Beelzebul is?",
           "answers": [
             {
-              "text": "Beelzebul",
-              "correct": true,
-              "blank": 1
+              "text": "The prince of the demons",
+              "correct": true
             },
             {
-              "text": "Baal",
+              "text": "The king of Tyre",
               "correct": false
             },
             {
-              "text": "Dagon",
+              "text": "The captain of the guard",
               "correct": false
             }
           ],
@@ -70,64 +69,77 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Luke 11:16",
-          "question": "Others in the crowd test Jesus a different way. What do they demand from Him?",
-          "answers": [
-            {
-              "text": "A sign from heaven",
-              "correct": true
-            },
-            {
-              "text": "A tax for the temple",
-              "correct": false
-            },
-            {
-              "text": "A feast for the crowd",
-              "correct": false
-            }
-          ],
+          "text": "Others in the crowd try something different. They test Jesus by demanding proof that comes straight from heaven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Luke 11:17",
-          "text": "Jesus knows their thoughts, and friend, I can't even tell what my OVEN is thinking. He says every kingdom divided against itself will be laid waste, and a house divided against a house will fall.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 11:18",
-          "question": "Jesus says that if Satan is divided against himself, his kingdom will stand strong.",
+          "type": "fill_blank",
+          "verses": "Luke 11:16",
+          "question": "Others in the crowd test Jesus by demanding a ___ from heaven.",
           "answers": [
             {
-              "text": "True",
+              "text": "sign",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "voice",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "fire",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
-          "verses": "Luke 11:18-19",
-          "text": "Then Jesus takes their own claim and hands it RIGHT back to them, still warm, like a cookie fresh off the tray. If He drives out demons by Beelzebul, by whom do their own sons drive them out?",
+          "verses": "Luke 11:17",
+          "text": "Jesus knows their thoughts. He answers with a picture: a kingdom divided against itself, and a house divided against a house.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 11:17",
+          "question": "What does Jesus say happens to every kingdom divided against itself?",
+          "answers": [
+            {
+              "text": "It will be laid waste",
+              "correct": true
+            },
+            {
+              "text": "It will grow stronger",
+              "correct": false
+            },
+            {
+              "text": "It will make a treaty",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "Luke 11:18-19",
+          "text": "So if Satan is divided against himself, how can his kingdom stand? Then Jesus asks: if He drives out demons by Beelzebul, by whom do their own sons drive them out?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:19",
@@ -150,15 +162,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "Luke 11:20",
-          "text": "Now Jesus turns it all the way around: what if He drives out demons by the finger of God? One FINGER, friend, and I need my whole mustache just to lift a cookie box.",
+          "text": "Now Jesus turns it around: what if He drives out demons by the finger of God?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 11:20",
@@ -182,7 +194,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "Luke 11:21",
           "text": "Then Jesus paints a picture: when a strong man, fully armed, guards his house, his possessions are secure. FULLY armed, friend, and the only armor I've ever had is an apron.",
@@ -190,7 +202,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:22",
@@ -213,19 +225,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
-          "kind": "story",
-          "verses": "Luke 11:23",
-          "text": "Then Jesus says, “He who is not with Me is against Me,” so there's no sitting on the fence. Friend, I tried sitting on a fence once, and with this gold base I just tipped RIGHT over.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:23",
-          "question": "Jesus also says whoever does not gather with Him scatters.",
+          "question": "Jesus says, “He who is not with Me is against Me…” He also says whoever does not gather with Him scatters.",
           "answers": [
             {
               "text": "True",
@@ -243,7 +247,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Luke 11:24",
-          "text": "Then Jesus tells what happens when an unclean spirit comes out of a man. It passes through arid places seeking rest and doesn't find it, like me trying to nap while the oven timer goes off every four minutes.",
+          "text": "Then Jesus tells what happens when an unclean spirit comes out of a man. It passes through arid places seeking rest and doesn't find it, like trying to nap while the oven timer keeps going off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -275,7 +279,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Luke 11:25",
-          "text": "On its return, it finds the house swept clean and put in order. Swept AND organized, friend, which is more than anybody ever did for that junk drawer I lived in.",
+          "text": "On its return, it finds the house swept clean and put in order. Swept AND organized, which is more than I can say for my counter after a big batch.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -331,8 +335,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 11:27",
-          "text": "As Jesus is still answering the people who said He drives out demons by Beelzebul, a woman in the crowd raises her voice: “Blessed is the womb that bore You, and blessed are the breasts that nursed You!” Right in the MIDDLE of His teaching, friend, and I spent YEARS in a junk drawer too shy to ask a rubber band to scoot over.",
-          "needs_agent_fix": true,
+          "text": "As Jesus is saying these things, a woman in the crowd raises her voice: “Blessed is the womb that bore You, and blessed are the breasts that nursed You!”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -340,7 +344,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:28",
-          "question": "A woman calls a blessing on the mother who bore and nursed Jesus. Who does Jesus say are blessed rather?",
+          "question": "A woman in the crowd calls blessed the womb that bore Jesus. Who does Jesus say are blessed rather?",
           "answers": [
             {
               "text": "Those who hear the word of God and obey it",
@@ -362,40 +366,16 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 11:29",
-          "text": "The crowds keep growing, and Jesus calls this a wicked generation that demands a sign. A man who couldn't talk is TALKING, and they still want proof, friend, that's like smelling my ovens and asking if I've EVER baked.",
-          "needs_agent_fix": true,
+          "text": "The crowds keep growing, and Jesus calls this a wicked generation that demands a sign. He says none will be given it except the sign of Jonah, a prophet.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 11:29",
-          "question": "Jesus says no sign will be given this generation except the sign of ___.",
-          "answers": [
-            {
-              "text": "Jonah",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Moses",
-              "correct": false
-            },
-            {
-              "text": "Elijah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:30",
-          "question": "Jesus says that as the prophet Jonah was a sign to the Ninevites, the Son of Man will be a sign to this generation.",
+          "question": "Jesus says that as Jonah was a sign to the Ninevites, the Son of Man will be a sign to this generation.",
           "answers": [
             {
               "text": "True",
@@ -410,15 +390,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Luke 11:31",
-          "text": "Then Jesus brings up the Queen of the South, the queen of Sheba, who came from the ends of the earth to hear the wisdom of Solomon, king of Israel (1 Kings 10:1). The ENDS of the earth, friend, and I won't even walk across my bakery when the timer goes off.",
+          "text": "Then Jesus brings up the Queen of the South, who came from the ends of the earth to hear the wisdom of Solomon, king of Israel. People today won't drive across town for a sale, and she crossed the WHOLE map for some wisdom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 11:31",
@@ -442,7 +422,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:31",
@@ -461,15 +441,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Luke 11:32",
-          "text": "Then Jesus says the men of Nineveh will stand at the judgment with this generation and condemn it too. First a queen, now a whole CITY, friend, that is a ROUGH guest list.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus says the men of Nineveh will stand at the judgment with this generation and condemn it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:32",
@@ -492,23 +472,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Luke 11:32",
-          "text": "And just like with Solomon, Jesus says now One greater than Jonah is here. Friend, Jonah spent three days inside a fish (Jonah 1:17), and I still think my years in a junk drawer make a good story.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Luke 11:33",
-          "text": "Then Jesus switches pictures. No one lights a lamp and puts it in a cellar or under a basket, and that's like baking a perfect batch and hiding the box in the junk drawer.",
+          "text": "Then Jesus says now One greater than Jonah is here. Jonah spent three days and three nights inside a great fish (Jonah 1:17), and I thought my years in the back of a junk drawer made a good story.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
+          "kind": "story",
+          "verses": "Luke 11:33",
+          "text": "Then Jesus switches pictures. No one lights a lamp and puts it in a cellar or under a basket, and that's like baking a perfect batch and hiding the box in a cupboard.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:33",
@@ -531,7 +511,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Luke 11:34",
           "text": "Then Jesus brings the lamp picture closer to home: your eye is the lamp of your body. Friend, with these eyebrows hanging over mine, my lamp comes with a LAMPSHADE.",
@@ -539,19 +519,43 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 11:34",
-          "question": "Jesus says that when your eyes are good, your whole body is full of darkness.",
+          "question": "Jesus says that when your eyes are good, your whole body is full of light.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Luke 11:35",
+          "question": "Jesus calls the eye the lamp of the body and tells them to be careful that the light within them is not ___.",
+          "answers": [
+            {
+              "text": "darkness",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "borrowed",
+              "correct": false
+            },
+            {
+              "text": "wasted",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -559,37 +563,14 @@
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 11:35",
-          "question": "Jesus says the eye is the lamp of the body. What does He tell them to be careful about?",
-          "answers": [
-            {
-              "text": "That the light within them is not darkness",
-              "correct": true
-            },
-            {
-              "text": "That their lamps never run out of oil",
-              "correct": false
-            },
-            {
-              "text": "That no one walks off with their lamp",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Luke 11:36",
+          "text": "Jesus finishes the lamp picture with a whole body full of light, with no part of it in darkness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Luke 11:36",
-          "text": "Jesus finishes the lamp picture with a whole body full of light, with no part of it in darkness. No dark corners at ALL, friend, and I spent years living in NOTHING but a dark corner.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 11:36",

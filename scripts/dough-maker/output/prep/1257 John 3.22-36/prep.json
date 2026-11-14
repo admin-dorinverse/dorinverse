@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 3:22",
-          "text": "Jesus has just had a long talk at night with Nicodemus, a Pharisee and a ruler of the Jews (John 3:1-21). After this, Jesus heads out into the Judean countryside with His disciples and spends some time with them there. And He baptizes.",
+          "text": "Jesus has just had a long talk at night with Nicodemus, a Pharisee and a leader of the Jews (John 3:1-21). After this, Jesus heads out into the Judean countryside with His disciples and spends some time with them there. And He baptizes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,27 +17,27 @@
           "card": 2,
           "kind": "story",
           "verses": "John 3:23",
-          "text": "Meanwhile John, who's been baptizing people with water out beyond the Jordan (John 1:26, 28), is baptizing at Aenon near Salim. And people KEEP coming.",
+          "text": "Meanwhile John the Baptist, who's been baptizing with water beyond the Jordan (John 1:26, 28), is out baptizing at Aenon near Salim. And people KEEP coming.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 3:23",
-          "question": "Why is John baptizing at Aenon near Salim?",
+          "question": "John is baptizing at Aenon near Salim because the ___ was plentiful there.",
           "answers": [
             {
-              "text": "The water is plentiful there",
+              "text": "water",
               "correct": true
             },
             {
-              "text": "It is close to the temple",
+              "text": "shade",
               "correct": false
             },
             {
-              "text": "It is near the main road",
+              "text": "room",
               "correct": false
             }
           ],
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "John 3:25",
-          "text": "Then an argument breaks out between John's disciples and a certain Jew.",
+          "text": "Then a dispute breaks out between John's disciples and a certain Jew.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -76,7 +76,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 3:25",
-          "question": "What's the argument between John's disciples and this man about?",
+          "question": "What's the dispute between John's disciples and a certain Jew about?",
           "answers": [
             {
               "text": "Ceremonial washing",
@@ -91,7 +91,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 3:26",
-          "question": "John's disciples tell him that One, Jesus, is baptizing too. What do they say about the people?",
+          "question": "John's disciples tell him Jesus is baptizing now. What do they say about the people?",
           "answers": [
             {
               "text": "Everyone is going to Him",
@@ -118,7 +118,7 @@
               "correct": false
             },
             {
-              "text": "Only His disciples go to Him",
+              "text": "Everyone is asking for you",
               "correct": false
             }
           ],
@@ -127,95 +127,83 @@
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "John 3:26-27",
-          "text": "Everybody's going to Jesus now? When a shiny new stamper took MY spot on the counter, I went quiet in the back of a drawer, but John replies with a line about what a man can receive.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 3:27",
+          "question": "John's disciples just told him about Jesus baptizing. What's the first thing John says back?",
+          "answers": [
+            {
+              "text": "A man can receive only what is given him from heaven",
+              "correct": true
+            },
+            {
+              "text": "A man has to protect what he has built",
+              "correct": false
+            },
+            {
+              "text": "A man should not baptize without a teacher",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 3:27",
-          "question": "John answers that a man can receive only what is given him from ___.",
-          "answers": [
-            {
-              "text": "heaven",
-              "correct": true
-            },
-            {
-              "text": "his teacher",
-              "correct": false
-            },
-            {
-              "text": "the crowd",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 3:28",
-          "question": "John reminds his disciples of something they heard him say themselves. What was it?",
+          "question": "John reminds his disciples that they heard him say he is the Christ.",
           "answers": [
             {
-              "text": "I am not the Christ but am sent ahead of Him",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "I am the Christ but must wait for my time",
-              "correct": false
-            },
-            {
-              "text": "I am Elijah who was promised long ago",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "John 3:29",
-          "text": "Then John paints a wedding picture, and now he's speaking MY language. The bride belongs to the bridegroom, and the friend of the bridegroom stands and listens for him.",
+          "text": "Then John paints a wedding picture, and since I bake for a wedding feast, now he's speaking MY language. The bride belongs to the bridegroom, and the friend of the bridegroom stands and listens for him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "John 3:29",
+          "question": "In John's wedding picture, the friend of the bridegroom is ___ to hear the bridegroom's voice.",
+          "answers": [
+            {
+              "text": "overjoyed",
+              "correct": true
+            },
+            {
+              "text": "afraid",
+              "correct": false
+            },
+            {
+              "text": "sorry",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 3:29",
-          "question": "In John's wedding picture, how does the friend of the bridegroom feel when he hears the bridegroom's voice?",
-          "answers": [
-            {
-              "text": "Overjoyed",
-              "correct": true
-            },
-            {
-              "text": "Jealous",
-              "correct": false
-            },
-            {
-              "text": "Nervous",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
           "type": "true_false",
           "verses": "John 3:29",
-          "question": "John says that joy of the bridegroom's friend is his own joy, and it is now complete.",
+          "question": "John says the joy of the bridegroom's friend is his own joy, and it is now complete.",
           "answers": [
             {
               "text": "True",
@@ -230,32 +218,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 3:30",
-          "question": "So John sums up where he stands next to Jesus: He must ___; I must ___.",
+          "question": "John sums up where he stands next to Jesus. What does he say?",
           "answers": [
             {
-              "text": "increase",
-              "correct": true,
-              "blank": 1
+              "text": "He must increase and I must decrease",
+              "correct": true
             },
             {
-              "text": "decrease",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "follow",
+              "text": "We must grow side by side",
               "correct": false
             },
             {
-              "text": "wait",
-              "correct": false
-            },
-            {
-              "text": "speak",
+              "text": "I must lead and He must follow",
               "correct": false
             }
           ],
@@ -331,7 +309,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 3:33",
-          "question": "John adds a line about whoever does accept His testimony. What has that person certified?",
+          "question": "John adds a line about whoever does accept the testimony of the One from heaven. What has that person certified?",
           "answers": [
             {
               "text": "That God is truthful",
@@ -346,38 +324,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "John 3:34",
-          "text": "Why do His words carry so much weight? Because the One whom God has sent speaks the words of God.",
+          "question": "John keeps going and says someone speaks the words of God. Who is it?",
+          "answers": [
+            {
+              "text": "The One whom God has sent",
+              "correct": true
+            },
+            {
+              "text": "The one who is from the earth",
+              "correct": false
+            },
+            {
+              "text": "The friend of the bridegroom",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 3:34",
-          "question": "John says God gives the Spirit without ___.",
-          "answers": [
-            {
-              "text": "limit",
-              "correct": true
-            },
-            {
-              "text": "delay",
-              "correct": false
-            },
-            {
-              "text": "warning",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 3:34-35",
+          "text": "And John adds that God gives the Spirit WITHOUT limit. Then he says the Father loves the Son.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -385,7 +363,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 3:35",
-          "question": "John says the Father loves the Son but has placed only some things in His hands.",
+          "question": "John says the Father has placed only some things in the Son's hands.",
           "answers": [
             {
               "text": "True",
@@ -403,8 +381,8 @@
           "card": 9,
           "kind": "story",
           "verses": "John 3:36",
-          "text": "Then John lands the whole thing with two roads: believe in the Son, or reject Him. No third lane, friend. Not even a shoulder to pull over on.",
-          "needs_agent_fix": true,
+          "text": "Then John lands the whole thing with two roads: believe in the Son, or reject Him. No third lane, friend, and not even a shoulder to pull over on.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -435,7 +413,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 3:36",
-          "question": "John says whoever rejects the Son will not see life, and the wrath of God remains on him.",
+          "question": "John says the wrath of God remains on whoever rejects the Son.",
           "answers": [
             {
               "text": "True",

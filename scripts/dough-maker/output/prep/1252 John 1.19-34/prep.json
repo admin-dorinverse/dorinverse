@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "John 1:21",
-          "text": "So they start guessing: is he Elijah the prophet (1 Kings 18:36)? John says, “I am not.”",
+          "text": "So they ask: is he Elijah the prophet (1 Kings 18:36)? John says, “I am not.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,15 +49,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 1:21",
-          "question": "True or false: When the visitors ask John if he is the Prophet, he says yes.",
+          "question": "True or false: When the visitors ask John if he is the Prophet, he says no.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -65,93 +65,84 @@
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "John 1:20-22",
-          "text": "Three NOs in a row, and they still need an answer for the people who sent them. I think they're picturing walking into the boss's office with a report that just says no, no and no.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 1:23",
+          "question": "The visitors need an answer for the people who sent them, so they ask John what he says about himself. How does John answer?",
+          "answers": [
+            {
+              "text": "With the words of a prophet",
+              "correct": true
+            },
+            {
+              "text": "With the name of his family",
+              "correct": false
+            },
+            {
+              "text": "With a miracle from God",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "John 1:23",
-          "question": "So the visitors ask John what he says about himself. John answers in the words of ___ the prophet.",
-          "answers": [
-            {
-              "text": "Isaiah",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Jeremiah",
-              "correct": false
-            },
-            {
-              "text": "Ezekiel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "John answers in the words of Isaiah the prophet: he is “a voice of one calling in the wilderness…” They asked for a name, friend. He gave them a job description.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "John 1:23",
-          "text": "John says he is “a voice of one calling in the wilderness, ‘Make straight the way for the Lord.’” They asked for a name, friend, and he handed them a verse from Isaiah.",
+          "question": "In Isaiah's words, John is a voice calling in the wilderness. What does the voice call people to make straight?",
+          "answers": [
+            {
+              "text": "The way for the Lord",
+              "correct": true
+            },
+            {
+              "text": "The walls of the city",
+              "correct": false
+            },
+            {
+              "text": "The rows of the field",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 1:23",
-          "question": "John calls himself a voice in the wilderness, calling out to make straight the way for the Lord. So what does John say his job is?",
-          "answers": [
-            {
-              "text": "Getting the way ready for the Lord",
-              "correct": true
-            },
-            {
-              "text": "Ruling Israel in the Lord's place",
-              "correct": false
-            },
-            {
-              "text": "Judging the priests for the Lord",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "John 1:24-25",
+          "text": "Then the Pharisees who had been sent step up with one more question for John. Pharisees are the strictest group in the Jewish faith (Acts 26:5).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "John 1:24-25",
-          "text": "Then the Pharisees who had been sent step up, from the strictest group in the Jewish faith (Acts 26:5). John has been baptizing people, and they've got one more question for him about that.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 1:25",
-          "question": "The Pharisees ask John why he baptizes if he isn't the Christ, nor Elijah, nor the ___.",
+          "question": "The Pharisees ask John, if he isn't the Christ, nor Elijah, nor the Prophet, then why does he ___?",
           "answers": [
             {
-              "text": "Prophet",
+              "text": "baptize",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Priest",
+              "text": "fast",
               "correct": false
             },
             {
-              "text": "King",
+              "text": "pray",
               "correct": false
             }
           ],
@@ -159,7 +150,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "John 1:26",
           "text": "John answers, “I baptize with water,” but he isn't done. Then he tells them about One who is standing among them right now.",
@@ -167,22 +158,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 1:26",
-          "question": "John tells the Pharisees about One who stands among them. What does John say about them and this One?",
+          "question": "John tells the Pharisees that among them stands One they do not ___.",
           "answers": [
             {
-              "text": "They do not know Him",
-              "correct": true
+              "text": "know",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They have met Him before",
+              "text": "trust",
               "correct": false
             },
             {
-              "text": "They sent Him there",
+              "text": "fear",
               "correct": false
             }
           ],
@@ -190,7 +182,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "John 1:27",
           "text": "This One comes after John, and John says he isn't worthy to untie the straps of His sandals. Friend, that's the job NOBODY fights over, and John says he doesn't even qualify for it.",
@@ -198,7 +190,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:27",
@@ -221,26 +213,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 1:28",
-          "question": "The visitors came from Jerusalem to question John. True or false: All of this happens in Jerusalem.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "John 1:28",
           "text": "All this happens at Bethany beyond the Jordan, where John was baptizing. That's where the whole delegation found him.",
@@ -257,8 +230,8 @@
           "card": 1,
           "kind": "story",
           "verses": "John 1:29",
-          "text": "The next day, John sees Jesus of Nazareth (John 1:45) coming toward him. After all those nos, friend, John finally gets to point at somebody and say YES.",
-          "needs_agent_fix": true,
+          "text": "The next day, John sees Jesus coming toward him and says, “Look, the Lamb of God…” After all those nos, friend, John finally gets to point at somebody and say YES.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -266,159 +239,38 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:29",
-          "question": "When John sees Jesus coming toward him, what does John call Him?",
+          "question": "John calls Jesus the Lamb of God. What does John say this Lamb takes away?",
           "answers": [
             {
-              "text": "The Lamb of God",
+              "text": "The sin of the world",
               "correct": true
             },
             {
-              "text": "The Lion of Judah",
+              "text": "The fear of death",
               "correct": false
             },
             {
-              "text": "The Son of David",
+              "text": "The pain of the sick",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 1:29",
-          "question": "True or false: John says the Lamb of God takes away the sin of the world.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 1:30",
+          "text": "Then John points back to something he said before. This is the man he meant, the one who comes after John but has surpassed him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "John 1:30",
-          "text": "Then John points back to something he said before. This is the man he meant, the one who comes after John but has surpassed him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 1:30",
-          "question": "John says the man who comes after him has surpassed him. What reason does John give?",
-          "answers": [
-            {
-              "text": "He was before John",
-              "correct": true
-            },
-            {
-              "text": "He is stronger than John",
-              "correct": false
-            },
-            {
-              "text": "More people follow Him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "John 1:31",
-          "text": "Then John says, “I myself did not know Him” and friend, he JUST introduced the man! Now he says THAT?",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 1:31",
-          "question": "John says he didn't know Jesus himself. So why does John say he came baptizing with water?",
-          "answers": [
-            {
-              "text": "So He might be revealed to Israel",
-              "correct": true
-            },
-            {
-              "text": "So He might be crowned king of Israel",
-              "correct": false
-            },
-            {
-              "text": "So He might be welcomed in Jerusalem",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "John 1:32",
-          "text": "Then John testifies about something he saw with his own eyes.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 1:32",
-          "question": "John says he saw the Spirit come down from heaven like a ___ and rest on Jesus.",
-          "answers": [
-            {
-              "text": "dove",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "flame",
-              "correct": false
-            },
-            {
-              "text": "cloud",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "John 1:32-33",
-          "text": "A dove, friend, the same shape as my little Minty, and trust me, she'd want you to know that. Then John says that line again: “I myself did not know Him”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "John 1:33",
-          "text": "But the One who sent John to baptize with water gave him a sign to watch for. It's the man John sees the Spirit come down on and rest on.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "true_false",
-          "verses": "John 1:33",
-          "question": "True or false: The One who sent John told him the man the Spirit rests on will baptize with the Holy Spirit.",
+          "verses": "John 1:30",
+          "question": "True or false: John says this man has surpassed him because He was before John.",
           "answers": [
             {
               "text": "True",
@@ -429,11 +281,101 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 5,
+          "kind": "story",
+          "verses": "John 1:31",
+          "text": "Then John says, “I myself did not know Him…” Friend, he JUST introduced the man, and now he says THAT?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "John 1:31",
+          "question": "John says he came baptizing with water so that Jesus might be ___ to Israel.",
+          "answers": [
+            {
+              "text": "revealed",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "crowned",
+              "correct": false
+            },
+            {
+              "text": "promised",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "John 1:32",
+          "text": "Then John testifies about what he saw: “I saw the Spirit descending from heaven like a dove…”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "John 1:32",
+          "question": "True or false: John says the Spirit came down from heaven and then went back up.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "John 1:33",
+          "text": "Then John says that line again: “I myself did not know Him…” But the One who sent John to baptize with water gave him a sign to watch for: the man he sees the Spirit come down and rest on.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 1:33",
+          "question": "John baptizes with water. The One who sent John told him what the man of the sign will baptize with. What is it?",
+          "answers": [
+            {
+              "text": "The Holy Spirit",
+              "correct": true
+            },
+            {
+              "text": "Living water",
+              "correct": false
+            },
+            {
+              "text": "Holy oil",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 1:34",
@@ -452,7 +394,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

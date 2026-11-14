@@ -9,39 +9,51 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 2:21",
-          "text": "Mary and Joseph's baby Boy is eight days old, so it's time for His circumcision. It's also time for His name: Jesus. My name got CARVED into my handle, friend, so believe me, I know naming day is a big deal.",
-          "needs_agent_fix": true,
+          "text": "In Bethlehem, Mary has given birth to her firstborn Son (Luke 2:4-7). Now the eight days before His circumcision have passed.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Luke 2:21",
-          "question": "Mary and Joseph came up with the name Jesus on their own.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "He's named Jesus, a name picked out before He was even conceived. Me? I sat in a bakery's going-out-of-business bin with a 25-cent sticker on me until the Millers finally carved \"Dorin\" into my handle.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Luke 2:22",
-          "text": "Then the time of purification under the Law of Moses is complete. So His parents pack up the baby and hit the road to present Him to the Lord.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 2:21",
+          "question": "Jesus' name was picked out before He was even conceived. Who gave Him that name?",
+          "answers": [
+            {
+              "text": "An angel",
+              "correct": true
+            },
+            {
+              "text": "The shepherds",
+              "correct": false
+            },
+            {
+              "text": "A priest",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "Luke 2:22",
+          "text": "Then the time of purification under the Law of Moses is complete. So His parents pack up the baby and hit the road to present Him to the Lord.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 2:22",
@@ -60,38 +72,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Luke 2:23",
-          "text": "Why the trip? It's written right there in the Law of the Lord, and it's about baby boys like Jesus.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 2:23",
-          "question": "The Law of the Lord says every ___ male shall be consecrated to the Lord.",
-          "answers": [
-            {
-              "text": "firstborn",
-              "correct": true
-            },
-            {
-              "text": "youngest",
-              "correct": false
-            },
-            {
-              "text": "royal",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Why the trip? It's written in the Law of the Lord: \"Every firstborn male shall be consecrated to the Lord\".",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,22 +88,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 2:24",
-          "question": "The Law of the Lord also specifies a sacrifice for this visit. What is it?",
+          "question": "Besides presenting Jesus to the Lord, what else does the Law of the Lord have Mary and Joseph do on this visit?",
           "answers": [
             {
-              "text": "A pair of turtledoves or two young pigeons",
+              "text": "Offer a sacrifice",
               "correct": true
             },
             {
-              "text": "A young bull or two spotless goats",
+              "text": "Register for a census",
               "correct": false
             },
             {
-              "text": "A spotless heifer or a young ox",
+              "text": "Pay a temple tax",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -122,30 +111,26 @@
           "kind": "story",
           "verses": "Luke 2:25",
           "text": "Now meet Simeon, a righteous and devout man in Jerusalem, with the Holy Spirit upon him, waiting for the consolation of Israel. I spent YEARS in a junk drawer waiting for somebody to open it, so believe me, I RESPECT a man who waits.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Luke 2:26",
-          "question": "The Holy Spirit has revealed something to Simeon about his waiting. What is it?",
+          "question": "The Holy Spirit has revealed to Simeon that he will see the Lord's Christ before he dies.",
           "answers": [
             {
-              "text": "He won't see death before seeing the Lord's Christ",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He'll serve as high priest before he dies",
-              "correct": false
-            },
-            {
-              "text": "He'll see the temple rebuilt in his lifetime",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -153,7 +138,7 @@
           "kind": "story",
           "verses": "Luke 2:27",
           "text": "Now watch the timing on this, baker. Mary and Joseph carry baby Jesus into the temple courts to do what was customary under the Law, and Simeon is right there.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -172,7 +157,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -180,7 +165,7 @@
           "kind": "story",
           "verses": "Luke 2:28",
           "text": "Simeon takes the baby in his arms and blesses God. Somebody hands ME a baby, all I've got is a mustache, and I'm holding that child like a HOT cookie tray, sweating the whole time.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -188,7 +173,7 @@
           "kind": "story",
           "verses": "Luke 2:29",
           "text": "Then Simeon says, \"Sovereign Lord, as You have promised, You now dismiss Your servant in peace.\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -203,23 +188,38 @@
               "correct": true
             },
             {
-              "text": "His years of temple work are done",
+              "text": "His long years of service are complete",
               "correct": false
             },
             {
-              "text": "His family is finally safe at home",
+              "text": "His prayers for the temple are answered",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Luke 2:31",
-          "text": "Simeon says God has prepared this salvation in the sight of all people. Not a few folks peeking in. ALL people.",
-          "needs_agent_fix": true,
+          "question": "Simeon says God has prepared this salvation in the sight of whom?",
+          "answers": [
+            {
+              "text": "All people",
+              "correct": true
+            },
+            {
+              "text": "The temple priests",
+              "correct": false
+            },
+            {
+              "text": "The elders of Israel",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -242,7 +242,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -256,15 +256,15 @@
           "kind": "story",
           "verses": "Luke 2:33",
           "text": "Mary and Joseph are amazed at what's been said about their Child. Me, I'd be standing there with my eyebrows shot up PAST my chef's hat.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Luke 2:34",
-          "text": "Then Simeon blesses them and turns to Mary. He's got more to say about this Child.",
-          "needs_agent_fix": true,
+          "text": "Then Simeon blesses them and turns to Mary with a word about her Child.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -287,7 +287,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -306,77 +306,58 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Luke 2:34-35",
-          "text": "Right, this Child will be a sign that will be spoken against. And Simeon says it all has a purpose: what's hidden inside people is coming out into the open.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Luke 2:35",
+          "question": "Simeon says all this will happen so that the thoughts of many ___ will be revealed.",
+          "answers": [
+            {
+              "text": "hearts",
+              "correct": true
+            },
+            {
+              "text": "towns",
+              "correct": false
+            },
+            {
+              "text": "tribes",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Luke 2:35",
-          "question": "Simeon says that through this Child, the thoughts of many hearts will be revealed.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Simeon has a word for Mary herself: a sword will pierce her soul as well.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Luke 2:35",
-          "text": "Then Simeon has a word for Mary herself: a sword will pierce her soul as well.",
-          "needs_agent_fix": true,
+          "verses": "Luke 2:36-37",
+          "text": "Now meet Anna, a prophetess, the daughter of Phanuel, from the tribe of Asher. She had been married for seven years, and then was a widow to the age of eighty-four.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Luke 2:36",
-          "text": "Now meet Anna, a prophetess, the daughter of Phanuel, from the tribe of Asher. She's well along in years, and she had been married for seven years.",
-          "needs_agent_fix": true,
+          "verses": "Luke 2:37",
+          "text": "Anna worships night and day, fasting and praying. Night AND day, friend, and I can't stay awake through a twelve-minute oven timer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 2:37",
-          "question": "After those seven years of marriage, Anna was a widow to the age of ___.",
-          "answers": [
-            {
-              "text": "eighty-four",
-              "correct": true
-            },
-            {
-              "text": "sixty-two",
-              "correct": false
-            },
-            {
-              "text": "ninety-nine",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 2:37",
@@ -395,31 +376,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Luke 2:38",
+          "text": "Then Anna comes forward at that very moment. First Simeon, now Anna.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Luke 2:37",
-          "text": "Anna worships night and day, fasting and praying. Night AND day, friend, and I can't stay awake through a twelve-minute oven timer.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Luke 2:38",
-          "text": "Then Anna comes forward at that very moment. Talk about TIMING.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 2:38",
-          "question": "When Anna comes forward at that moment, what does she do first?",
+          "question": "When Anna comes forward at that moment, what does she do?",
           "answers": [
             {
               "text": "She gives thanks to God",
@@ -434,42 +407,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 2:38",
+          "question": "Like Simeon, many people are waiting for God to act. Who does Anna speak to about the Child?",
+          "answers": [
+            {
+              "text": "Everyone waiting for Jerusalem's redemption",
+              "correct": true
+            },
+            {
+              "text": "The priests serving in the temple",
+              "correct": false
+            },
+            {
+              "text": "The women from the tribe of Asher",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Luke 2:39",
+          "text": "Mary and Joseph do everything the Law of the Lord requires. Then it's time to head home.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 2:38",
-          "question": "Anna speaks about the Child to all who were waiting for the ___ of Jerusalem.",
-          "answers": [
-            {
-              "text": "redemption",
-              "correct": true
-            },
-            {
-              "text": "rebuilding",
-              "correct": false
-            },
-            {
-              "text": "peace",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Luke 2:39",
-          "text": "Mary and Joseph do everything the Law of the Lord requires. Then it's time to head home.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 2:39",
@@ -488,19 +461,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "Luke 2:40",
-          "text": "And the Child grows and becomes strong. Same tiny baby Simeon held in his arms, baker. Growing strong.",
-          "needs_agent_fix": true,
+          "text": "And the Child grows and becomes strong. The same baby Simeon held in his arms, baker, is getting BIG.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 2:40",
@@ -515,7 +488,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

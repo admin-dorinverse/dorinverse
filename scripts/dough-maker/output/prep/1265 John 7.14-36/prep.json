@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 7:14",
-          "text": "It's feast time in Jerusalem, and the Jews in Judea have been trying to kill Jesus, God's Son (John 7:1). So where does He show up about halfway through the feast? Right up in the temple courts, teaching out in the OPEN.",
+          "text": "The Jews in Judea have been trying to kill Jesus (John 7:1), and now it's the Feast of Tabernacles (John 7:2). He came up to the feast in secret, while the crowds whispered about Him (John 7:10-12). Then, about halfway through the feast, He walks right into the temple courts and starts to TEACH. So much for secret.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -63,23 +63,27 @@
           "card": 4,
           "kind": "story",
           "verses": "John 7:17",
-          "text": "Then Jesus says there's a way anyone can know for sure whether His teaching is from God, or whether He speaks on His own. No diploma required.",
+          "text": "Then Jesus says there's a way anyone can know whether His teaching is from God, or whether He speaks on His own. No diploma required.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "John 7:17",
-          "question": "Jesus says anyone who desires to do the will of the One who sent Him will know whether His teaching is from God.",
+          "question": "Jesus says someone can know whether His teaching is from God. Who does He say will know?",
           "answers": [
             {
-              "text": "True",
+              "text": "Anyone who desires to do God's will",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Anyone who has studied the law",
+              "correct": false
+            },
+            {
+              "text": "Anyone who has seen His miracles",
               "correct": false
             }
           ],
@@ -89,29 +93,36 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 7:18",
-          "question": "Jesus says someone who speaks on his own authority seeks his own glory. But the one who seeks the glory of the One who sent Him is a man of ___.",
+          "question": "Jesus talks about someone who speaks on his own authority. What does Jesus say that person seeks?",
           "answers": [
             {
-              "text": "truth",
-              "correct": true,
-              "blank": 1
+              "text": "His own glory",
+              "correct": true
             },
             {
-              "text": "courage",
+              "text": "The good of others",
               "correct": false
             },
             {
-              "text": "wealth",
+              "text": "The truth about God",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "John 7:18",
+          "text": "Then Jesus says, \"…He who seeks the glory of the One who sent Him is a man of truth; in Him there is no falsehood.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "story",
           "verses": "John 7:19",
           "text": "Jesus brings up Moses, Israel's leader long ago, who gave them the law. Then He says, \"Yet not one of you keeps it.\"",
@@ -119,7 +130,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:19",
@@ -142,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 7:20",
@@ -161,7 +172,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "John 7:20",
           "text": "The crowd fires back, \"You have a demon,\" and then asks, \"Who is trying to kill You?\" Jesus asks ONE question, and He gets back a whole COMMENT SECTION.",
@@ -169,18 +180,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "story",
-          "verses": "John 7:21",
-          "text": "Jesus answers, \"I did one miracle, and you are all amazed.\" ONE miracle, and everybody's amazed, while I stamped cookies for YEARS and never amazed anybody ONCE.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 12,
           "kind": "story",
-          "verses": "John 7:22",
-          "text": "Then Jesus points out that because Moses gave them circumcision, they circumcise a boy on the Sabbath.",
+          "verses": "John 7:21-22",
+          "text": "Jesus answers, \"I did one miracle, and you are all amazed.\" Then He reminds them that because Moses gave them circumcision, they circumcise a boy on the Sabbath, the day of rest.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -207,27 +210,28 @@
           "card": 14,
           "kind": "story",
           "verses": "John 7:23",
-          "text": "Now Jesus brings it home: if a boy can be circumcised on the Sabbath so the law of Moses won't be broken, why are they angry with Him? Friend, He's making His case straight out of THEIR rulebook, and I am pulling up a chair.",
+          "text": "Now Jesus brings it home: if a boy can be circumcised on the Sabbath so the law of Moses won't be broken, why are they angry with Him?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 7:23",
-          "question": "Jesus asks why the crowd is angry with Him over something He did on the Sabbath. What was it?",
+          "question": "Jesus asks why the crowd is angry with Him for making the whole man ___ on the Sabbath.",
           "answers": [
             {
-              "text": "Making a whole man well",
-              "correct": true
+              "text": "well",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Teaching in the temple courts",
+              "text": "wise",
               "correct": false
             },
             {
-              "text": "Traveling up to the feast",
+              "text": "calm",
               "correct": false
             }
           ],
@@ -247,24 +251,15 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 7:24",
-          "question": "Jesus finishes by telling the crowd to stop judging by outward ___ and start judging ___.",
+          "question": "Jesus tells the crowd to stop judging by outward appearances and start judging ___.",
           "answers": [
             {
-              "text": "appearances",
+              "text": "justly",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "justly",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "actions",
-              "correct": false
-            },
-            {
-              "text": "quietly",
+              "text": "quickly",
               "correct": false
             },
             {
@@ -272,7 +267,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -294,7 +289,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 7:26",
-          "question": "Some people of Jerusalem say that as Jesus speaks publicly, the rulers aren't saying anything to Him.",
+          "question": "Some people of Jerusalem notice that the ones trying to kill Jesus aren't saying anything to Him.",
           "answers": [
             {
               "text": "True",
@@ -312,7 +307,7 @@
           "card": 3,
           "kind": "story",
           "verses": "John 7:26",
-          "text": "So the people wonder, \"Have the rulers truly recognized that this is the Christ?\" And then, I kid you not, they talk themselves right back out of it.",
+          "text": "With Jesus speaking right out in public, the people wonder, \"Have the rulers truly recognized that this is the Christ?\" And then, I kid you not, they talk themselves right back out of it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -321,22 +316,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:27",
-          "question": "Why do the people of Jerusalem doubt that Jesus is the Christ?",
+          "question": "The people of Jerusalem say they know where Jesus is from. Why does that make them doubt He's the Christ?",
           "answers": [
             {
-              "text": "They know where He is from",
+              "text": "No one will know where the Christ is from",
               "correct": true
             },
             {
-              "text": "He hasn't performed any signs",
+              "text": "The Christ will come from the line of priests",
               "correct": false
             },
             {
-              "text": "They think He is too young",
+              "text": "The Christ will grow up in Jerusalem",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -370,7 +365,7 @@
           "card": 7,
           "kind": "story",
           "verses": "John 7:29-30",
-          "text": "But Jesus knows the One who sent Him, because He is from Him. So they try to seize Jesus, and the hands start reaching.",
+          "text": "But Jesus knows the One who sent Him, because He is from Him. So they try to seize Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -379,14 +374,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:30",
-          "question": "They try to seize Jesus in the temple courts, but no one lays a hand on Him. Why not?",
+          "question": "The people Jesus is speaking to in the temple courts try to seize Him, but no one lays a hand on Him. Why not?",
           "answers": [
             {
               "text": "His hour had not yet come",
               "correct": true
             },
             {
-              "text": "The crowd pushed them back",
+              "text": "The priests told them to wait",
               "correct": false
             },
             {
@@ -394,7 +389,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -456,40 +451,16 @@
           "card": 12,
           "kind": "story",
           "verses": "John 7:33",
-          "text": "Then Jesus says, \"I am with you only a little while longer,\" and after that He's going away. Lean in, friend, because He says exactly where.",
+          "text": "Then Jesus says, \"I am with you only a little while longer, and then I am going to the One who sent Me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 7:33",
-          "question": "After a little while, Jesus says, He is going to the One who ___ Him.",
-          "answers": [
-            {
-              "text": "sent",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "followed",
-              "correct": false
-            },
-            {
-              "text": "doubted",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
           "type": "true_false",
           "verses": "John 7:34",
-          "question": "Jesus tells the people in the temple courts that they will look for Him and find Him.",
+          "question": "Jesus tells the people listening that they will look for Him and find Him.",
           "answers": [
             {
               "text": "True",
@@ -504,7 +475,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:35",
@@ -527,10 +498,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "John 7:36",
-          "text": "They keep asking each other what He means about looking and not finding, and about a place they cannot come. Stick around, friend, because Jesus isn't done at this feast.",
+          "text": "They keep asking each other what He means about looking and not finding, and about a place they cannot come. Stick around, friend, because this story isn't over.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

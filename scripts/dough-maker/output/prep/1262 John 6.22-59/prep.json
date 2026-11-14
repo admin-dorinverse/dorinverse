@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 6:22-23",
-          "text": "It's the day after Jesus fed that huge crowd. The people still on that side of the sea notice something strange: only one boat was there, the disciples left in it alone, and Jesus never got on. Then some boats from Tiberias land nearby.",
+          "text": "It's the day after Jesus fed that huge crowd (John 6:10-11). The people still on that side of the sea notice something strange: only one boat was there, the disciples left in it alone, and Jesus never got on. Then some boats from Tiberias land nearby.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -71,8 +71,8 @@
           "card": 5,
           "kind": "story",
           "verses": "John 6:27",
-          "text": "Then Jesus tells them not to work for food that perishes. Friend, I know ALL about food that perishes. My best batch of the week? Stale by Thursday.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus tells them not to work for food that perishes. Friend, I know ALL about food that perishes, because I've got cookies on my counter right now that were PERFECT on Monday.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -133,7 +133,7 @@
           "card": 9,
           "kind": "story",
           "verses": "John 6:30",
-          "text": "Now they ask Jesus what sign He'll perform so they can see it and believe Him. Friend, these folks ate miracle bread YESTERDAY, and today they want to know what ELSE He's got.",
+          "text": "Now they ask Jesus what sign He'll perform so they can see it and believe Him. Friend, these folks already ate miracle bread, and now they want to know what ELSE He's got.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -142,7 +142,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:31",
-          "question": "To make their point, the crowd brings up what their fathers ate in the wilderness. What was it?",
+          "question": "Then the crowd brings up what their fathers ate in the wilderness. What was it?",
           "answers": [
             {
               "text": "Manna",
@@ -164,7 +164,7 @@
           "card": 11,
           "kind": "story",
           "verses": "John 6:31-32",
-          "text": "They even quote Scripture about it: \"He gave them bread from heaven to eat.\" Then Jesus starts in with \"Truly, truly, I tell you,\" and friend, when He says it twice, you LEAN in.",
+          "text": "They even quote Scripture about it: \"He gave them bread from heaven to eat.\" Then Jesus starts in with \"Truly, truly, I tell you…\" and friend, when He says it twice, you LEAN in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -173,7 +173,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 6:32",
-          "question": "Jesus says it was Moses who gave them the bread from heaven.",
+          "question": "Jesus says it was Moses, Israel's leader, who gave them the bread from heaven.",
           "answers": [
             {
               "text": "True",
@@ -184,14 +184,14 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "John 6:32-33",
-          "text": "Jesus says it's His Father who gives the true bread from heaven, and the bread of God is He who comes down from heaven and gives life to the world. My best batch EVER fed one block party.",
+          "text": "Jesus says it's His Father who gives the true bread from heaven. And the bread of God is He who comes down from heaven and gives life to the world.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -208,28 +208,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 6:35",
-          "question": "Jesus says whoever comes to Him will never ___, and whoever believes in Him will never ___.",
+          "question": "Jesus says whoever comes to Him will never ___, and whoever believes in Him will never thirst.",
           "answers": [
             {
               "text": "hunger",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "thirst",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "stumble",
-              "correct": false
+              "correct": true
             },
             {
               "text": "wander",
               "correct": false
             },
             {
-              "text": "sleep",
+              "text": "falter",
               "correct": false
             }
           ],
@@ -240,7 +230,7 @@
           "card": 16,
           "kind": "story",
           "verses": "John 6:36-37",
-          "text": "But Jesus tells them, \"you have seen Me and still you do not believe.\" Then, friend, He turns right around and makes a PROMISE about everyone the Father gives Him.",
+          "text": "But Jesus tells them, \"…you have seen Me and still you do not believe.\" Then He says everyone the Father gives Him will come to Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -249,7 +239,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 6:37",
-          "question": "Jesus promises He will never drive away the one who comes to Him.",
+          "question": "Jesus says He will never drive away the one who comes to Him.",
           "answers": [
             {
               "text": "True",
@@ -265,39 +255,40 @@
         },
         {
           "card": 18,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "John 6:38",
-          "text": "Jesus says He came down from heaven, not to do His own will, but to do the will of Him who sent Him. Me? I hop into the storeroom for chocolate chips and come back out with an apron, a timer and NO chocolate chips.",
-          "needs_agent_fix": true,
+          "question": "Jesus says He came down from heaven to do His own will.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 6:39",
-          "question": "Jesus says the will of the One who sent Him is that He shall ___ none of those the Father has given Him, but ___ them up at the last day.",
+          "question": "Jesus says the will of the One who sent Him is that He lose none of those the Father has given Him. What will He do with them at the last day?",
           "answers": [
             {
-              "text": "lose",
-              "correct": true,
-              "blank": 1
+              "text": "Raise them up",
+              "correct": true
             },
             {
-              "text": "raise",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "judge",
+              "text": "Judge them all",
               "correct": false
             },
             {
-              "text": "give",
-              "correct": false
-            },
-            {
-              "text": "send",
+              "text": "Reward their work",
               "correct": false
             }
           ],
@@ -306,20 +297,9 @@
         },
         {
           "card": 20,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "John 6:40",
-          "question": "Jesus says it's His Father's will that everyone who looks to the Son and believes in Him shall have eternal life, and He will raise him up at the last day.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Then Jesus says it's His Father's will that everyone who looks to the Son and believes in Him shall have eternal life, and He will raise him up at the last day.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -333,7 +313,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 6:41",
-          "text": "We're still in Capernaum, where Jesus has said, \"I am the bread that came down from heaven.\" Now the Jews there start to GRUMBLE about Him, and friend, after years in the back of a junk drawer, I know that sound.",
+          "text": "We're still in Capernaum, where Jesus has said, \"I am the bread that came down from heaven.\" Now the Jews there start to GRUMBLE about Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -364,8 +344,8 @@
           "card": 3,
           "kind": "story",
           "verses": "John 6:42-43",
-          "text": "Friend, you can run a whole company, and back home you're STILL just somebody's kid. Jesus' reply is short: \"Stop grumbling among yourselves.\"",
-          "needs_agent_fix": true,
+          "text": "It's like seeing a guy from your old street on the news, and all you can say is, \"Wait, isn't that Mike?\" Jesus tells them to stop grumbling among themselves.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -373,7 +353,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 6:44",
-          "question": "Jesus says no one can come to Him unless the Father who sent Him draws him, and He will raise him up at the last day.",
+          "question": "Jesus says no one can come to Him unless the Father who sent Him draws him.",
           "answers": [
             {
               "text": "True",
@@ -391,7 +371,7 @@
           "card": 5,
           "kind": "story",
           "verses": "John 6:45",
-          "text": "Jesus quotes the Prophets: \"And they will all be taught by God.\" Everyone who has heard the Father and learned from Him comes to Jesus, and friend, that's learning that LANDS, unlike the online class I quit after the welcome video.",
+          "text": "Jesus quotes the Prophets (Isaiah 54:13): \"And they will all be taught by God.\" He says everyone who has heard the Father and learned from Him comes to Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -418,8 +398,8 @@
           "card": 7,
           "kind": "story",
           "verses": "John 6:47-48",
-          "text": "Another \"Truly, truly, I tell you\" from Jesus, and by now I'm leaning in so far I'm about to tip right off my base: he who believes has eternal life. And He says that line again: \"I am the bread of life.\"",
-          "needs_agent_fix": true,
+          "text": "Another \"Truly, truly, I tell you…\" from Jesus, and friend, I'm leaning in so far my base and I are about to tip over TOGETHER. He says he who believes has eternal life, and He says that line again: \"I am the bread of life.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -457,7 +437,7 @@
               "correct": false
             },
             {
-              "text": "stumble",
+              "text": "sin",
               "correct": false
             }
           ],
@@ -468,7 +448,7 @@
           "card": 10,
           "kind": "story",
           "verses": "John 6:51",
-          "text": "Then Jesus says it plain: \"I am the living bread that came down from heaven.\" And He says the bread He will give for the life of the world is His flesh.",
+          "text": "Then Jesus says it plain: \"I am the living bread that came down from heaven.\" If anyone eats of this bread, He says, he will live forever.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -477,18 +457,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:51",
-          "question": "Jesus says if anyone eats of this living bread, how long will he live?",
+          "question": "Jesus says He will give this living bread for the life of the world. What does He say the bread is?",
           "answers": [
             {
-              "text": "Forever",
+              "text": "His flesh",
               "correct": true
             },
             {
-              "text": "A thousand years",
+              "text": "His teaching",
               "correct": false
             },
             {
-              "text": "Until he is old",
+              "text": "His word",
               "correct": false
             }
           ],
@@ -499,7 +479,7 @@
           "card": 12,
           "kind": "story",
           "verses": "John 6:52",
-          "text": "The Jews start arguing among themselves: \"How can this man give us His flesh to eat?\" Friend, I shared a junk drawer with dead batteries that argued for YEARS about who had the most charge left.",
+          "text": "The Jews start arguing among themselves: \"How can this man give us His flesh to eat?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -508,7 +488,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 6:53",
-          "question": "Jesus doesn't back down. What does He say about anyone who doesn't eat the flesh and drink the blood of the Son of Man?",
+          "question": "Then Jesus speaks again. What does He say about anyone who doesn't eat the flesh and drink the blood of the Son of Man?",
           "answers": [
             {
               "text": "They have no life in them",
@@ -530,8 +510,8 @@
           "card": 14,
           "kind": "story",
           "verses": "John 6:54-55",
-          "text": "Jesus says whoever eats His flesh and drinks His blood has eternal life, and He will raise him up at the last day: \"For My flesh is real food, and My blood is real drink.\" He doesn't soften a single word, friend, and me? One baker frowns at my cookies and I'm rewriting the WHOLE recipe.",
-          "needs_agent_fix": true,
+          "text": "Jesus says whoever eats His flesh and drinks His blood has eternal life, and He will raise him up at the last day. Then He says, \"For My flesh is real food, and My blood is real drink.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -561,7 +541,7 @@
           "card": 16,
           "kind": "story",
           "verses": "John 6:57-58",
-          "text": "Just as the living Father sent Jesus and He lives because of the Father, Jesus says the one who feeds on Him will live because of Him. Friend, I lose my train of thought between the dough and the oven, but Jesus comes ALL the way back to the manna: the fathers ate it and died, but whoever eats THIS bread will live forever.",
+          "text": "Jesus says that just as the living Father sent Him and He lives because of the Father, the one who feeds on Him will live because of Him. And He comes back to the manna: their fathers ate it and died, but the one who eats this bread will live forever.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -592,8 +572,8 @@
           "card": 18,
           "kind": "story",
           "verses": "John 6:59",
-          "text": "I bet that room had a LOT to chew on. Hang on, friend. This story isn't done yet.",
-          "needs_agent_fix": true,
+          "text": "That's where we'll stop for now, friend, but this story isn't done yet.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

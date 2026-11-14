@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "John 7:1",
-          "text": "Friend, Jesus just gave some hard teaching, and a lot of His disciples walked away (John 6:60, 66). After this, Jesus travels all around Galilee. But there's one region He's staying out of: Judea.",
-          "needs_agent_fix": true,
+          "text": "Friend, Jesus just gave some hard teaching, and a lot of His disciples walked away (John 6:60, 66). After this, Jesus travels throughout Galilee. He stays out of Judea, though, because it isn't safe for Him there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,143 +18,111 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:1",
-          "question": "Why doesn't Jesus want to travel in Judea?",
+          "question": "Why isn't Judea safe for Jesus?",
           "answers": [
             {
               "text": "The Jews there were trying to kill Him",
               "correct": true
             },
             {
-              "text": "Herod had banned Him from the region",
+              "text": "Roman soldiers were out to arrest Him",
               "correct": false
             },
             {
-              "text": "A famine had spread across the land",
+              "text": "Herod had sent men to capture Him",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "John 7:2-3",
-          "text": "But the Jewish Feast of Tabernacles is near. And here come Jesus' brothers with ADVICE, because a holiday is coming and family ALWAYS has advice.",
-          "needs_agent_fix": true,
+          "text": "But the Jewish Feast of Tabernacles is near. So Jesus' brothers tell Him to leave Galilee and go to Judea, and they've got somebody in mind to see what He does there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 7:3",
-          "question": "With the feast coming, Jesus' brothers tell Him to leave Galilee and go to ___.",
+          "question": "Jesus' brothers want Him in Judea for the feast. Who do they want to see the works He's doing?",
           "answers": [
             {
-              "text": "Judea",
-              "correct": true,
-              "blank": 1
+              "text": "His disciples there",
+              "correct": true
             },
             {
-              "text": "Samaria",
+              "text": "The chief priests",
               "correct": false
             },
             {
-              "text": "Egypt",
+              "text": "Herod the king",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 7:3",
-          "question": "Why do Jesus' brothers want Him to go to Judea?",
-          "answers": [
-            {
-              "text": "So His disciples there can see His works",
-              "correct": true
-            },
-            {
-              "text": "So He can make peace with the leaders",
-              "correct": false
-            },
-            {
-              "text": "So He can teach in the synagogues there",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 7:4",
+          "text": "Their pitch: nobody who wants to be known acts in secret, so \"show Yourself to the world.\" Friend, they sound like your friends at karaoke night shoving the mic in YOUR hand.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "John 7:4",
-          "text": "Their pitch: nobody who wants to be known acts in secret, so \"show Yourself to the world.\" Friend, they sound like your friends at karaoke night shoving the mic in YOUR hand.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "John 7:5",
+          "question": "Then the writer of this Gospel adds a note about Jesus' brothers. True or false: His own brothers believed in Him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 7:5",
-          "question": "Then John, the writer of this Gospel, adds a quiet note about Jesus' brothers. True or false: His own brothers believed in Him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "John 7:6",
+          "text": "Jesus answers His brothers, and He talks about timing. He tells them His time has not yet come.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "John 7:6",
-          "text": "Jesus answers His brothers, and He talks about timing. Friend, I'm a baker, so you KNOW I respect a man who talks about timing.",
-          "needs_agent_fix": true,
+          "question": "True or false: Jesus tells His brothers that their time is always at hand.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 7:6",
-          "question": "True or false: Jesus tells His brothers that His time has already come.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "John 7:6",
-          "text": "Here's the whole line. Jesus tells them, \"Although your time is always at hand, My time has not yet come.\" Any time works for them. Not for Him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:7",
@@ -173,38 +141,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
-          "verses": "John 7:8",
-          "text": "Then Jesus tells them, \"Go up to the feast on your own.\" He says He's not going up to this feast, because His time has not yet come.",
-          "needs_agent_fix": true,
+          "verses": "John 7:8-9",
+          "text": "Then Jesus tells them, \"Go up to the feast on your own.\" He says He's not going up to this feast, and He stays behind in Galilee.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 7:9",
-          "question": "True or false: After telling His brothers this, Jesus stays behind in Galilee.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 7:10",
@@ -223,71 +172,66 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "John 7:11",
+          "text": "So at the feast, the Jews are looking for Him and asking, \"Where is He?\" Friend, I know that hunt, because that's me looking for my rolling pin before every single batch.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 7:12",
+          "question": "Many in the crowds at the feast have something to say about Jesus. Some say, \"He is a good man.\" What do others reply?",
+          "answers": [
+            {
+              "text": "He deceives the people",
+              "correct": true
+            },
+            {
+              "text": "He breaks the Sabbath",
+              "correct": false
+            },
+            {
+              "text": "He hides from the leaders",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "John 7:13",
+          "question": "True or false: At the feast, people talk about Jesus out in the open.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "John 7:11",
-          "text": "So at the feast, the Jews are looking for Him and asking, \"Where is He?\" Friend, I heard that question every time somebody dug through my junk drawer for the scissors.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 7:12",
-          "question": "Many in the crowds at the feast are whispering about Jesus. What are they saying?",
-          "answers": [
-            {
-              "text": "Some call Him good and others a deceiver",
-              "correct": true
-            },
-            {
-              "text": "Some call Him a prophet and others a madman",
-              "correct": false
-            },
-            {
-              "text": "Some call Him the Messiah and others a sinner",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 7:13",
-          "question": "Even so, no one at the feast would speak publicly about Jesus for fear of the ___.",
-          "answers": [
-            {
-              "text": "Jews",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Romans",
-              "correct": false
-            },
-            {
-              "text": "Samaritans",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 18,
-          "kind": "story",
           "verses": "John 7:13",
           "text": "And that's where we'll leave it for now, friend. Keep that oven warm, because this feast is just getting started.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

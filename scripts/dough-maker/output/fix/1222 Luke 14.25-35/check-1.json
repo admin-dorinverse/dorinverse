@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The choice card asks about verse 29 before any story card has told it. The following story card (card 9) then tells verse 29 for the first time, so the question comes before its own setup.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "The choice card asks about verse 35 (salt not fit for the soil or the manure pile) before any story card has told that verse. Story card 16 tells it afterward.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The story card repeats the answer card 15 just revealed: that the salt is fit for neither the soil nor the manure pile and gets thrown out.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    }
+  ]
+}

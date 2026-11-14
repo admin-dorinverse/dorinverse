@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 10:22-23",
-          "text": "Picture it, friend: it's winter in Jerusalem, and the Feast of Dedication is going on. Jesus is walking in the temple courts, in Solomon’s Colonnade. It's so cold even my ovens would be asking for a scarf.",
+          "text": "Not long ago, Jesus called Himself the good shepherd (John 10:11). Now it's winter in Jerusalem, the Feast of Dedication is going on, and Jesus is walking in the temple courts, in Solomon’s Colonnade. Winter, friend. Even my ovens would be asking for a scarf.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,27 +17,28 @@
           "card": 2,
           "kind": "story",
           "verses": "John 10:24",
-          "text": "Then the Jews gather around Jesus and demand, “How long will You keep us in suspense?” That's me staring at those three little typing dots in a group chat, yelling JUST SEND IT.",
+          "text": "Then the Jews gather around Jesus and demand, “How long will You keep us in suspense?” You know when you're staring at those three little typing dots in a group chat, and you just want to yell JUST SEND IT?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 10:24",
-          "question": "The crowd around Jesus wants a straight answer. What do they ask Him to tell them plainly?",
+          "question": "The crowd around Jesus wants a straight answer. They tell Him that if He is the ___, He should tell them plainly.",
           "answers": [
             {
-              "text": "Whether He is the Christ",
-              "correct": true
+              "text": "Christ",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Whether He is Elijah",
+              "text": "Prophet",
               "correct": false
             },
             {
-              "text": "Whether He is Jeremiah",
+              "text": "Baptist",
               "correct": false
             }
           ],
@@ -111,7 +112,7 @@
               "correct": false
             },
             {
-              "text": "honor",
+              "text": "fear",
               "correct": false
             }
           ],
@@ -153,39 +154,20 @@
           "card": 10,
           "kind": "story",
           "verses": "John 10:29",
-          "text": "Then Jesus talks about His Father, the One who gave Him the sheep. He says His Father is greater than all.",
+          "text": "Then Jesus talks about His Father, the One who gave Him the sheep. He says His Father is greater than all, and no one can snatch them out of His Father’s hand.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 10:29",
-          "question": "Jesus is talking about His sheep and how safe they are. True or false: He says someone strong enough could snatch them out of His Father’s hand.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "John 10:30",
+          "text": "Then Jesus says, “I and the Father are one.” Six words, friend. Six. And the whole courtyard goes quiet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "John 10:30",
-          "text": "Then Jesus says, “I and the Father are one.” Six words, baker, so hold on to your apron.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 10:31",
@@ -217,7 +199,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 10:32",
-          "text": "With stones in their hands, Jesus tells them He has shown them many good works from the Father. Somebody picks up a stone near me, and I'm hopping this gold base clear across the planet before they let go.",
+          "text": "They've got stones in their hands. But Jesus tells them He has shown them many good works from the Father.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -247,20 +229,21 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 10:33",
-          "question": "The Jews say they're not stoning Jesus for any good work. What do they say it's for?",
+          "question": "The Jews say they're not stoning Jesus for any good work, but for ___.",
           "answers": [
             {
-              "text": "Blasphemy",
-              "correct": true
+              "text": "blasphemy",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Breaking the Sabbath",
+              "text": "sorcery",
               "correct": false
             },
             {
-              "text": "Rejecting the Law",
+              "text": "idolatry",
               "correct": false
             }
           ],
@@ -271,7 +254,7 @@
           "card": 4,
           "kind": "story",
           "verses": "John 10:33-34",
-          "text": "They say He's a man making Himself out to be God. Jesus answers with Scripture: “Is it not written in your Law: ‘I have said you are gods’?”",
+          "text": "They say He's a man making Himself out to be God. Jesus answers with Scripture from Psalm 82:6: “Is it not written in your Law: ‘I have said you are gods’?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -299,7 +282,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 10:36",
-          "question": "Jesus talks about the One the Father sanctified and sent into the world. How can they accuse Him of blasphemy, He asks, for saying He is who?",
+          "question": "Jesus talks about the One the Father sanctified and sent into the world. They accuse Him of blasphemy for saying He is someone. Who does He say He is?",
           "answers": [
             {
               "text": "The Son of God",
@@ -320,29 +303,28 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "John 10:37",
-          "text": "Then Jesus says, “If I am not doing the works of My Father, then do not believe Me.” That's like me saying: if no cookies ever come out of my oven, don't believe me when I tell you I'm a baker.",
+          "verses": "John 10:37-38",
+          "text": "Then Jesus says, “If I am not doing the works of My Father, then do not believe Me.” But if He is doing them, He tells them to believe the works themselves, even though they don't believe Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 10:38",
-          "question": "Even if the crowd doesn't believe Jesus Himself, He tells them to believe the ___ themselves.",
+          "question": "Jesus tells the crowd to believe His works even though they don't believe Him. What does He say the works will help them know and understand?",
           "answers": [
             {
-              "text": "works",
-              "correct": true,
-              "blank": 1
+              "text": "The Father is in Him and He is in the Father",
+              "correct": true
             },
             {
-              "text": "Scriptures",
+              "text": "The feast was set apart in His honor",
               "correct": false
             },
             {
-              "text": "prophets",
+              "text": "The temple courts were built for His coming",
               "correct": false
             }
           ],
@@ -354,7 +336,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 10:39",
-          "question": "Jesus tells the crowd the Father is in Him, and He is in the Father. True or false: At this, they finally seize Him and hold on to Him.",
+          "question": "Jesus has just told the crowd to believe the works. True or false: At this, they finally seize Him and hold on to Him.",
           "answers": [
             {
               "text": "True",
@@ -379,13 +361,14 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 10:40",
-          "question": "The place across the Jordan where Jesus stays is where somebody had first been baptizing. Who?",
+          "question": "The place across the Jordan where Jesus stays is where ___ had first been baptizing.",
           "answers": [
             {
               "text": "John",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Peter",
@@ -429,25 +412,24 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 10:41",
-          "question": "The people say everything John said about Jesus was ___.",
+          "question": "John never performed a sign. But what do the people across the Jordan say about everything John said about Jesus?",
           "answers": [
             {
-              "text": "true",
-              "correct": true,
-              "blank": 1
+              "text": "It was all true",
+              "correct": true
             },
             {
-              "text": "strange",
+              "text": "It was hard to accept",
               "correct": false
             },
             {
-              "text": "forgotten",
+              "text": "It was mostly forgotten",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

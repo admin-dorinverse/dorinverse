@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "This choice card asks about John 12:16 (the disciples not understanding at first) before any card has told that verse. The story card that tells it comes after (card 10). The question jumps ahead of the passage, and the baker has nothing to reason from.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "Story card 11 already says Jesus called Lazarus from the tomb and raised him from the dead. That gives away the right answer to card 13 (\"They heard He raised Lazarus\"), so the baker can pick it without reasoning.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "The right answer, \"Words written in Scripture\", sounds more like the Bible than the wrong answers (\"The crowd's loud request\", \"The disciples' careful plan\"), so it stands out from the other two.",
+      "rule": "Don't let the right answer stand out. All the answers should sound alike. None should sound more like the Bible, or more modern, than the others."
+    }
+  ]
+}

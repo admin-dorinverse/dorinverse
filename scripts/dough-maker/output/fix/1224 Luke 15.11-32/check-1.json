@@ -1,0 +1,53 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The question says 'hired servants'. That is the exact answer to the later card 12 ('Like one of his hired servants'), so card 12 is already given away.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The statement combines two claims (he hires himself out to a citizen of that country, and his job is feeding pigs).",
+      "rule": "A true or false statement tests one claim."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 18
+      },
+      "problem": "The joke puts 'This man' (the son in the Bible scene) inside the boss's-office image, so the comparison and the Bible setting are blended.",
+      "rule": "One image only. Never blend the comparison with the Bible setting."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "The question asks which exact phrase the older son uses for his brother. Nothing on the earlier cards lets a baker reason it out, and the setup story card (card 8) comes only after the question.",
+      "rule": "If the only way to get it right is luck, give the story card more context or ask a different question."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "The right answer is the verbatim Bible line, while the wrong answers are casual modern paraphrases, so the right answer stands out.",
+      "rule": "Don't let the right answer stand out. All the answers should sound alike. None should sound more like the Bible, or more modern, than the others."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The story card retells and quotes verse 31 right after the choice card on verse 31, so it reuses the answer ('all that is mine is yours') that card 9 just showed.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    }
+  ]
+}

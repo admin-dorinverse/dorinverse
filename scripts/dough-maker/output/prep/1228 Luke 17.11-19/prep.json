@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 17:11",
-          "text": "Jesus, the Son of God (Luke 1:35), is on His way to Jerusalem, passing between Samaria and Galilee. That's a LONG walk, friend. The longest trip I ever took was from the counter to the back of a junk drawer, and I still needed a nap.",
+          "text": "Jesus is on His way to Jerusalem, passing between Samaria and Galilee, two regions. Stick with me, friend. This road has a stop on it you won't forget.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -173,15 +173,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 17:15",
-          "question": "The healed man comes back praising God quietly, under his breath.",
+          "question": "The healed man is praising God in a loud voice.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -192,15 +192,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 17:16",
-          "question": "The healed man reaches Jesus and falls facedown at His feet.",
+          "question": "When the healed man reaches Jesus, he stops at a distance again, like the ten did before.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -210,7 +210,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Luke 17:16",
-          "text": "He's not back to ask for anything, only to say thank you. Then the story adds one more detail about who this man is.",
+          "text": "He falls facedown at Jesus' feet, giving thanks to Him. And there's one more thing about this man you need to know.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -219,7 +219,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 17:16",
-          "question": "Jesus is passing between Samaria and Galilee. The story says where the healed man who came back is from. What is he?",
+          "question": "Luke adds one more detail about the man lying at Jesus' feet. What is he?",
           "answers": [
             {
               "text": "A Samaritan",
@@ -295,20 +295,21 @@
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 17:19",
-          "question": "Jesus tells the Samaritan to rise and go. What does Jesus say has made him well?",
+          "question": "Jesus tells the Samaritan to rise and go. Jesus says the man's ___ has made him well.",
           "answers": [
             {
-              "text": "His faith",
-              "correct": true
+              "text": "faith",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His praise",
+              "text": "praise",
               "correct": false
             },
             {
-              "text": "His courage",
+              "text": "courage",
               "correct": false
             }
           ],

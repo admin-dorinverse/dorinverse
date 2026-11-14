@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 13:22-23",
-          "text": "Welcome to Mags' station, friend, where the words ring out LOUD. Jesus is traveling through the towns and villages, teaching as He makes His way toward Jerusalem. Then someone asks Him whether only a few people will be saved.",
+          "text": "Jesus is traveling through the towns and villages, teaching as He makes His way toward Jerusalem. Along the way, someone asks Him whether only a few people will be saved. Friend, that's a BIG question to drop on somebody in the middle of a road trip.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -41,15 +41,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 13:24",
-          "question": "Jesus says many will try to enter through that narrow door and will not be able.",
+          "question": "Jesus says everyone who tries to enter through the narrow door will be able to.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -97,17 +97,21 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Luke 13:27",
-          "question": "Once the people outside remind the master that they ate and drank with him, he opens the door and lets them in.",
+          "question": "The master won't open the door. He tells the people knocking to depart from him and calls them all ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "evildoers",
+              "correct": true
+            },
+            {
+              "text": "hypocrites",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "unbelievers",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -116,8 +120,8 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Luke 13:27-28",
-          "text": "The master doesn't budge: \"I tell you, I do not know where you are from. Depart from me, all you evildoers.\" And Jesus says there will be weeping and gnashing of teeth.",
+          "verses": "Luke 13:28",
+          "text": "Then Jesus says there will be weeping and gnashing of teeth when the ones knocking see who's inside the kingdom of God, while they themselves are thrown out.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -204,7 +208,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 13:31",
-          "text": "At that very hour, some Pharisees come to Jesus. They're a strict group in the Jewish religion (Acts 26:5), and what they say has to do with Herod, the ruler of Galilee (Luke 3:1).",
+          "text": "At that very hour, some Pharisees come to Jesus. They're a strict group in the Jewish religion (Acts 26:5), and what they say has to do with Herod, a ruler.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -231,8 +235,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 13:32",
-          "text": "Friend, I jump when my oven timer DINGS. Jesus hears that Herod wants Him dead, and He just says, \"Go tell that fox,\" then gives the fox a message.",
-          "needs_agent_fix": true,
+          "text": "Friend, I jump when my oven timer DINGS. Jesus hears that news, and He replies, \"Go tell that fox…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -240,7 +244,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 13:32",
-          "question": "Jesus sends a message to Herod. What does He say He'll keep doing today and tomorrow?",
+          "question": "Jesus sends a message to \"that fox.\" What does He say He'll keep doing today and tomorrow?",
           "answers": [
             {
               "text": "Driving out demons and healing people",
@@ -262,28 +266,24 @@
           "card": 5,
           "kind": "story",
           "verses": "Luke 13:32",
-          "text": "Jesus isn't running, friend. His message for Herod ends with, \"on the third day I will reach My goal.\"",
+          "text": "Jesus isn't running, friend. His message ends with, \"…on the third day I will reach My goal.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Luke 13:33",
-          "question": "Jesus says He must keep going today and tomorrow and the next day, because it is not admissible for a prophet to perish outside of ___.",
+          "question": "Jesus says He will stay right where He is until the danger passes.",
           "answers": [
             {
-              "text": "Jerusalem",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Nazareth",
-              "correct": false
-            },
-            {
-              "text": "Capernaum",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -292,8 +292,8 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Luke 13:34",
-          "text": "Then Jesus speaks to the city itself: \"O Jerusalem, Jerusalem, who kills the prophets and stones those sent to her...\" I don't know about you, friend, but I hear heartbreak in that.",
+          "verses": "Luke 13:33-34",
+          "text": "Jesus says it is not admissible for a prophet to perish outside of Jerusalem. Then He speaks to the city itself, and I hear heartbreak in it: \"O Jerusalem, Jerusalem, who kills the prophets and stones those sent to her…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -342,8 +342,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Luke 13:34-35",
-          "text": "Nope. In Jesus' words, \"you were unwilling!\" Then He says, \"Look, your house is left to you desolate.\"",
+          "verses": "Luke 13:35",
+          "text": "Then Jesus tells the city, \"Look, your house is left to you desolate.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

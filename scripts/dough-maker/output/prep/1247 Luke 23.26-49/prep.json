@@ -8,28 +8,28 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Luke 23:23-26",
-          "text": "Pilate has granted the crowd's demand that Jesus be crucified. As the soldiers lead Him away, they seize a man named Simon of Cyrene, who's on his way in from the country. One minute he's walking into town minding his business, and the next minute soldiers have him by the arm.",
+          "verses": "Luke 23:26",
+          "text": "Pilate, the Roman governor, has handed Jesus over to be crucified, just as the crowd demanded (Luke 23:23-25). As the soldiers lead Him away, they seize a man named Simon of Cyrene, who's on his way in from the country. I bet Simon had no idea his day was about to go like this.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 23:26",
-          "question": "The soldiers grab Simon of Cyrene off the road. What do they make him do?",
+          "question": "The soldiers seize Simon of Cyrene and put the ___ on him to carry behind Jesus.",
           "answers": [
             {
-              "text": "Carry the cross behind Jesus",
+              "text": "cross",
               "correct": true
             },
             {
-              "text": "Lead the way to the city gate",
+              "text": "chains",
               "correct": false
             },
             {
-              "text": "Hold back the crowd on the road",
+              "text": "spears",
               "correct": false
             }
           ],
@@ -39,7 +39,7 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Luke 23:27",
+          "verses": "Luke 23:26-27",
           "text": "Simon's not the only one following. A great number of people follow Jesus, including women who keep mourning and wailing for Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -69,17 +69,32 @@
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Luke 23:28-30",
-          "text": "He calls them daughters of Jerusalem. He warns that days are coming when people will call the women who never had children blessed, and they'll say to the mountains, \"Fall on us!\"",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Luke 23:29",
+          "question": "Jesus warns the weeping women, the daughters of Jerusalem, that days are coming when people will call women who never had children ___.",
+          "answers": [
+            {
+              "text": "blessed",
+              "correct": true
+            },
+            {
+              "text": "foolish",
+              "correct": false
+            },
+            {
+              "text": "forgotten",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Luke 23:31",
-          "text": "Then He leaves them with one more line: \"For if men do these things while the tree is green, what will happen when it is dry?\" Friend, that's a line you chew on for a long time.",
+          "verses": "Luke 23:30-31",
+          "text": "Jesus says that at that time they will say to the mountains, \"Fall on us!\" and to the hills, \"Cover us!\" Then He adds, \"For if men do these things while the tree is green, what will happen when it is dry?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -106,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Luke 23:33",
-          "text": "Then they come to the place called The Skull, and they crucify Him there. Friend, I've told a lot of stories in my bakery, and this is the hardest one to tell.",
+          "text": "Then they come to the place called The Skull, and they crucify Him there. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -159,24 +174,20 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Luke 23:34",
-          "question": "Right there below Jesus, they divide up His ___ by casting lots.",
+          "question": "The ones who crucified Jesus divide up His garments by casting lots.",
           "answers": [
             {
-              "text": "garments",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "money",
-              "correct": false
-            },
-            {
-              "text": "scrolls",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -220,20 +231,9 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Luke 23:38",
-          "question": "The inscription posted above Jesus on the cross calls Him the King of the Jews.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Above Him is posted an inscription: \"THIS IS THE KING OF THE JEWS.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -247,46 +247,46 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 23:39",
-          "text": "Jesus is on the cross, with a criminal hanging on each side. One of them heaps abuse on Him. \"Are You not the Christ?\" he says. \"Save Yourself and us!\"",
-          "needs_agent_fix": true,
+          "text": "One of the criminals who hung there heaps abuse on Jesus. He asks, \"Are You not the Christ?\" and then says, \"Save Yourself and us!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Luke 23:40",
-          "question": "The other criminal hanging beside Jesus joins right in and mocks Him too.",
+          "question": "The other criminal hanging beside Jesus rebukes the first one. What does he ask him?",
           "answers": [
             {
-              "text": "True",
+              "text": "Whether he even fears God",
+              "correct": true
+            },
+            {
+              "text": "Whether he even knows who Jesus is",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Whether he even hears the crowd",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Luke 23:41",
-          "question": "The second criminal rebukes the first one. What does he say about the punishment the two of them are getting?",
+          "question": "The second criminal says the two of them are being punished justly.",
           "answers": [
             {
-              "text": "It is just for what they did",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "It is far too harsh for them",
-              "correct": false
-            },
-            {
-              "text": "It is a mistake by the soldiers",
+              "text": "False",
               "correct": false
             }
           ],
@@ -320,27 +320,27 @@
           "card": 5,
           "kind": "story",
           "verses": "Luke 23:42",
-          "text": "Then he turns to Jesus: \"Jesus, remember me when You come into Your kingdom!\" Friend, the man is hanging on a cross, and he's asking about a KINGDOM.",
+          "text": "Then he speaks to Jesus: \"Jesus, remember me when You come into Your kingdom!\" Friend, the man is hanging on a cross, and he's asking about a KINGDOM.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 23:43",
-          "question": "The criminal asks Jesus to remember him. What does Jesus promise him?",
+          "question": "The criminal asks Jesus to remember him. Jesus promises that today he will be with Jesus in ___.",
           "answers": [
             {
-              "text": "Today you will be with Me in Paradise",
+              "text": "Paradise",
               "correct": true
             },
             {
-              "text": "Someday you will see My kingdom come",
+              "text": "Jerusalem",
               "correct": false
             },
             {
-              "text": "Tonight you will be taken down and freed",
+              "text": "Galilee",
               "correct": false
             }
           ],
@@ -351,7 +351,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 23:44-45",
-          "text": "It's now about the sixth hour, and darkness comes over all the land until the ninth hour. The sun is darkened, and friend, I spent years in the dark of a junk drawer, but this is a whole different kind of dark.",
+          "text": "It's now about the sixth hour, and darkness comes over all the land until the ninth hour. The sun is darkened.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -462,32 +462,9 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 23:48",
-          "question": "The crowd that gathered for the spectacle heads home. How do they go?",
-          "answers": [
-            {
-              "text": "Beating their breasts",
-              "correct": true
-            },
-            {
-              "text": "Cheering for the soldiers",
-              "correct": false
-            },
-            {
-              "text": "Arguing with the rulers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Luke 23:49",
-          "question": "Everyone who knew Jesus, including the women who followed Him from Galilee, stands right beside the cross.",
+          "verses": "Luke 23:48",
+          "question": "The crowd that gathered for this spectacle heads home cheering.",
           "answers": [
             {
               "text": "True",
@@ -499,15 +476,38 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 23:49",
+          "question": "What about all those who knew Jesus, including the women who followed Him from Galilee? What are they doing?",
+          "answers": [
+            {
+              "text": "Standing at a distance watching",
+              "correct": true
+            },
+            {
+              "text": "Following the crowd back home",
+              "correct": false
+            },
+            {
+              "text": "Heading back toward Galilee",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Luke 23:49",
-          "text": "All those who knew Jesus, including the women who followed Him from Galilee, stand at a distance watching these things. Keep that apron on, friend, because this story is NOT done.",
+          "text": "Keep that apron on, friend, because this story is NOT done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

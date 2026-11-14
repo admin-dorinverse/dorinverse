@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 12:20-21",
-          "text": "Friend, it's feast time in Jerusalem, and people have come up to worship. Some of them are Greeks. They walk right up to Philip, one of Jesus' disciples, who's from Bethsaida in Galilee.",
+          "text": "Friend, it's feast time, and people have come up to worship. Some of them are Greeks. They walk right up to Philip, one of Jesus' disciples, who's from Bethsaida in Galilee.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -38,49 +38,53 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "John 12:22",
-          "question": "Philip doesn't take the Greeks' request straight to Jesus. He relays it to ___, another of Jesus' disciples, first.",
-          "answers": [
-            {
-              "text": "Andrew",
-              "correct": true
-            },
-            {
-              "text": "Peter",
-              "correct": false
-            },
-            {
-              "text": "Thomas",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Philip doesn't take it straight to Jesus. He passes the Greeks' request along to Andrew, another of Jesus' disciples.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "John 12:22",
-          "text": "Then Philip and Andrew BOTH go tell Jesus. That's every adult who's ever told a coworker, \"Walk with me to the boss's office, you don't have to talk, just STAND there.\"",
+          "question": "Next, Philip and Andrew go to Jesus together to tell Him about the Greeks' request. True or false?",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "John 12:23",
-          "text": "Jesus doesn't answer with a yes or a no. He says, “The hour has come for the Son of Man to be glorified.”",
+          "verses": "John 12:22",
+          "text": "Two disciples, one request. That's every question at work that gets passed from one desk to the NEXT desk before it ever lands with the person who can answer it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "John 12:23",
+          "text": "Jesus replies, “The hour has come for the Son of Man to be glorified.” Son of Man is the name Jesus uses for Himself (Mark 2:10).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:24",
-          "question": "Next Jesus gives a picture of a kernel of wheat falling to the ground. What does He say has to happen to it before it bears much fruit?",
+          "question": "Next Jesus gives a picture of a kernel of wheat falling to the ground. What does He say has to happen to it for it to bear much fruit?",
           "answers": [
             {
               "text": "It dies",
@@ -99,7 +103,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "John 12:24",
           "text": "Unless the kernel dies, it remains only a seed. Same in my bakery, friend: dough that never goes in the oven stays DOUGH, and you can stare at that bowl all week for a cookie count of ZERO.",
@@ -107,7 +111,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:25",
@@ -126,7 +130,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "John 12:25-26",
           "text": "Flipped: whoever loves his life will lose it, but whoever hates his life in this world will keep it for eternal life. Then Jesus talks about anyone who serves Him.",
@@ -134,7 +138,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 12:26",
@@ -157,11 +161,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:26",
-          "question": "Jesus says the one who serves Him will be honored. Who does He say will honor him?",
+          "question": "Jesus says anyone who serves Him will be honored. Who does Jesus say will give that honor?",
           "answers": [
             {
               "text": "The Father",
@@ -180,15 +184,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
+          "card": 13,
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "John 12:27",
-          "text": "Then Jesus says something you might not expect. “Now My soul is troubled, and what shall I say?”",
+          "question": "Now that the hour has come, Jesus says something about His own soul. How does He say His soul is now?",
+          "answers": [
+            {
+              "text": "Troubled",
+              "correct": true
+            },
+            {
+              "text": "At rest",
+              "correct": false
+            },
+            {
+              "text": "Glad",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:27",
@@ -207,19 +226,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "John 12:27-28",
-          "text": "No, Jesus says it is for this purpose that He has come to this hour. So He prays, “Father, glorify Your name!”",
+          "text": "Instead, Jesus says it is for this purpose that He has come to this hour. Then He says, “Father, glorify Your name!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:28",
-          "question": "Jesus has just prayed for the Father to glorify His name. What happens right after?",
+          "question": "Jesus has just asked the Father to glorify His name. What happens right after?",
           "answers": [
             {
               "text": "A voice comes from heaven",
@@ -238,10 +257,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "story",
           "verses": "John 12:28",
-          "text": "The voice says, “I have glorified it, and I will glorify it again.” Friend, I've talked to my oven plenty of times, and the most it EVER said back was DING.",
+          "text": "The voice says, “I have glorified it, and I will glorify it again.” Out loud. From HEAVEN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -255,7 +274,7 @@
           "card": 1,
           "kind": "story",
           "verses": "John 12:29",
-          "text": "So a voice just came from heaven, and the crowd standing there heard it. But they can't agree on what it was.",
+          "text": "So a voice just came from heaven, and the crowd standing there heard it. But they don't all say the same thing about it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -286,7 +305,7 @@
           "card": 3,
           "kind": "story",
           "verses": "John 12:29-30",
-          "text": "Some say thunder, some say angel, and that's every house after a loud noise at night: one person says “just the wind,” and the other one is ALREADY holding a flashlight. Then Jesus speaks up.",
+          "text": "Some say thunder, some say angel, and that's every office after a loud bang down the hall: one person says “just the printer,” and the other one is ALREADY out of their chair to go look. Then Jesus speaks up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -345,7 +364,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:33",
-          "question": "The passage stops to explain that Jesus spoke of being lifted up to show the kind of death He was going to die. True or false?",
+          "question": "The writer explains that Jesus spoke of being lifted up to indicate the kind of death He was going to die. True or false?",
           "answers": [
             {
               "text": "True",
@@ -363,7 +382,7 @@
           "card": 8,
           "kind": "story",
           "verses": "John 12:34",
-          "text": "The crowd has a problem. They've heard from the Law that the Christ will remain forever, so how can the Son of Man be lifted up?",
+          "text": "The crowd pushes back. They've heard from the Law that the Christ, the Messiah (John 1:41), will remain forever, so how can Jesus say the Son of Man must be lifted up?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -372,7 +391,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:34",
-          "question": "The crowd can't make the Law and Jesus' words about being lifted up fit together. What do they ask Him?",
+          "question": "The crowd can't make the Law and Jesus' words about being lifted up fit together. What else do they ask Him?",
           "answers": [
             {
               "text": "Who this Son of Man is",
@@ -393,8 +412,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "John 12:34-35",
-          "text": "That's the face of somebody whose GPS just said “turn left” and there's a LAKE on the left. Then Jesus tells them, “For a little while longer, the Light will be among you.”",
+          "verses": "John 12:35",
+          "text": "Big question, friend. Then Jesus tells them, “For a little while longer, the Light will be among you.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -453,7 +472,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:36",
-          "question": "Jesus tells the crowd to believe in the Light while they have it. What does He say they may become?",
+          "question": "Jesus tells the crowd to believe while there's still time. If they do, what does He say they may become?",
           "answers": [
             {
               "text": "Sons of light",

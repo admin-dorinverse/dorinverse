@@ -98,21 +98,17 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 20:21",
-          "question": "Jesus tells the disciples that the Father has sent Him. So what does Jesus say He is doing with the disciples?",
+          "question": "After His second greeting of peace, Jesus tells the disciples to keep hiding behind their locked doors.",
           "answers": [
             {
-              "text": "He is sending them",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "He is keeping them hidden",
-              "correct": false
-            },
-            {
-              "text": "He is telling them to wait",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -121,13 +117,21 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "John 20:22",
-          "text": "Then Jesus leans in and breathes on them. Quiet moment, friend. Let it sit.",
-          "needs_agent_fix": true,
+          "verses": "John 20:21",
+          "text": "Jesus says, 'As the Father has sent Me, so also I am sending you.' Doors locked tight, and now they've got somewhere to go, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "John 20:22",
+          "text": "Then Jesus leans in and breathes on them. Quiet moment, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 20:22",
@@ -150,11 +154,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
+          "kind": "story",
+          "verses": "John 20:23",
+          "text": "Then Jesus talks to the disciples about forgiving sins.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 20:23",
-          "question": "Then Jesus talks to the disciples about forgiveness. If they forgive anyone his sins, they are ___. If they withhold forgiveness from anyone, it is ___.",
+          "question": "Jesus tells the disciples that if they forgive anyone his sins, those sins are ___.",
           "answers": [
             {
               "text": "forgiven",
@@ -162,25 +174,16 @@
               "blank": 1
             },
             {
-              "text": "withheld",
-              "correct": true,
-              "blank": 2
+              "text": "remembered",
+              "correct": false
             },
             {
               "text": "judged",
               "correct": false
-            },
-            {
-              "text": "recorded",
-              "correct": false
-            },
-            {
-              "text": "delayed",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -192,8 +195,8 @@
           "card": 1,
           "kind": "story",
           "verses": "John 20:24",
-          "text": "Now meet Thomas, called Didymus, one of the Twelve, and he was not with the disciples when Jesus came. Of ALL the nights to miss, friend. OF ALL THE NIGHTS.",
-          "needs_agent_fix": true,
+          "text": "Now meet Thomas, called Didymus, one of the Twelve. He was not with the disciples when Jesus came.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -235,11 +238,11 @@
               "correct": true
             },
             {
-              "text": "To hear Jesus speak himself",
+              "text": "To hear the Lord's own voice",
               "correct": false
             },
             {
-              "text": "To see the empty tomb himself",
+              "text": "To visit the empty tomb",
               "correct": false
             }
           ],
@@ -256,32 +259,33 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 20:27",
-          "question": "Jesus turns to Thomas. What does Jesus tell Thomas to do?",
-          "answers": [
-            {
-              "text": "Touch His hands and His side",
-              "correct": true
-            },
-            {
-              "text": "Go and tell the others",
-              "correct": false
-            },
-            {
-              "text": "Kneel down and pray for faith",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "John 20:25-27",
+          "text": "Jesus says to Thomas, 'Put your finger here and look at My hands. Reach out your hand and put it into My side.' Thomas told the OTHER disciples exactly what he needed, and Jesus offers him that very thing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "John 20:25-27",
-          "text": "Then Jesus tells him, 'Stop doubting and believe.' Thomas told the OTHER disciples exactly what he needed, and Jesus offers him that very thing.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "John 20:27",
+          "question": "Then Jesus tells Thomas, 'Stop ___ and believe.'",
+          "answers": [
+            {
+              "text": "doubting",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "fearing",
+              "correct": false
+            },
+            {
+              "text": "waiting",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -312,38 +316,24 @@
           "card": 9,
           "kind": "story",
           "verses": "John 20:29",
-          "text": "Jesus tells Thomas he has believed because he has seen Him. Then Jesus says who is blessed.",
+          "text": "Jesus tells Thomas, 'Because you have seen Me, you have believed…' Then He says who else is blessed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "John 20:29",
-          "question": "Jesus tells Thomas that blessed are those who have not ___ and yet have ___.",
+          "question": "Jesus says only those who see Him with their own eyes are blessed.",
           "answers": [
             {
-              "text": "seen",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "believed",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "doubted",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "waited",
-              "correct": false
-            },
-            {
-              "text": "followed",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -362,15 +352,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 20:30",
-          "question": "Every sign Jesus performed in front of His disciples is written in this book.",
+          "question": "The writer says Jesus performed many other signs that are not written in this book.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -381,7 +371,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 20:31",
-          "question": "The book says why these signs were written down. What is the reason?",
+          "question": "The writer says why the signs in this book are written. What is the reason?",
           "answers": [
             {
               "text": "So you may believe and have life",
@@ -397,7 +387,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -405,7 +395,7 @@
           "verses": "John 20:31",
           "text": "These signs are written 'so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name.' Keep your apron on, friend, because this story is NOT done yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

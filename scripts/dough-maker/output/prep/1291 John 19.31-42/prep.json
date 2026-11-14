@@ -9,32 +9,31 @@
           "card": 1,
           "kind": "story",
           "verses": "John 19:31",
-          "text": "Jesus has just bowed His head and yielded up His spirit on the cross (John 19:30). It's the day of Preparation, and the next day is a High Sabbath. The Jews don't want the bodies left on the crosses during the Sabbath, so they go to Pilate, the Roman governor.",
+          "text": "Jesus has just bowed His head and yielded up His spirit on the cross (John 19:30). It's the day of Preparation, and the next day is a High Sabbath. The Jews go to Pilate, the Roman governor, and ask him to have the legs of the crucified men broken and the bodies removed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 19:31",
-          "question": "The Jews ask Pilate to have the ___ broken and the bodies removed.",
+          "question": "The Jews ask Pilate to have the legs broken and the bodies removed. Why?",
           "answers": [
             {
-              "text": "legs",
-              "correct": true,
-              "blank": 1
+              "text": "So the bodies won't stay up on the Sabbath",
+              "correct": true
             },
             {
-              "text": "arms",
+              "text": "So the soldiers can leave before dark",
               "correct": false
             },
             {
-              "text": "crosses",
+              "text": "So the crowd will stop gathering there",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -42,15 +41,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 19:32",
-          "question": "The soldiers come and break the legs of both men who were crucified with Jesus.",
+          "question": "The soldiers break the legs of only one of the two men crucified with Jesus.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -59,8 +58,8 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "John 19:33",
-          "text": "The soldiers work their way down the line, and now they come to Jesus. Slow down with me here, friend, because the writer zooms all the way in on this moment.",
+          "verses": "John 19:32-33",
+          "text": "Two men, two sets of broken legs. Then the soldiers come to Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -91,45 +90,12 @@
           "card": 6,
           "kind": "story",
           "verses": "John 19:34",
-          "text": "Instead, one of the soldiers takes a spear and pierces Jesus' side. Stay right here with me, friend, because what happens next is something the writer wants you to see.",
+          "text": "Instead, one of the soldiers pierces Jesus' side with a spear, and immediately blood and water flow out. I think this one hurts just to read.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 19:34",
-          "question": "When the soldier's spear pierces Jesus' side, ___ and ___ flow out immediately.",
-          "answers": [
-            {
-              "text": "blood",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "water",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "oil",
-              "correct": false
-            },
-            {
-              "text": "wine",
-              "correct": false
-            },
-            {
-              "text": "sweat",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
           "kind": "story",
           "verses": "John 19:35",
           "text": "The writer hits PAUSE on the story right here. “The one who saw it has testified to this, and his testimony is true.”",
@@ -137,11 +103,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 19:35",
-          "question": "The one who saw the blood and water says he knows he's telling the truth. Why is he telling it?",
+          "question": "The one who saw the blood and water knows he's telling the truth. Why is he telling it?",
           "answers": [
             {
               "text": "So readers will believe too",
@@ -160,19 +126,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
-          "verses": "John 19:36-37",
-          "text": "Then the writer reaches back into the Scriptures, and he doesn't bring just one. He brings TWO.",
+          "verses": "John 19:36",
+          "text": "Then the writer turns to the Scriptures. The first one he gives says, “Not one of His bones will be broken.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 19:36",
-          "question": "The first Scripture is “Not one of His bones will be broken.” The writer says the soldiers not breaking Jesus' legs fulfills it.",
+          "question": "The writer says what the soldiers did at the cross happened so the Scripture would be fulfilled.",
           "answers": [
             {
               "text": "True",
@@ -187,22 +153,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 19:37",
-          "question": "The second Scripture says, “They will look on the One they have pierced.” Which moment at the cross does it point to?",
+          "question": "The writer adds a second Scripture, from the prophet Zechariah (Zechariah 12:10), about the One who was pierced. What does it say people will do?",
           "answers": [
             {
-              "text": "The spear in Jesus' side",
+              "text": "Look on Him",
               "correct": true
             },
             {
-              "text": "The legs of the two men",
+              "text": "Forget Him",
               "correct": false
             },
             {
-              "text": "The sign above the cross",
+              "text": "Hide Him",
               "correct": false
             }
           ],
@@ -226,20 +192,21 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 19:38",
-          "question": "Why has Joseph of Arimathea kept it secret that he's a disciple of Jesus?",
+          "question": "Joseph of Arimathea has kept it secret that he's a disciple of Jesus because he fears the ___.",
           "answers": [
             {
-              "text": "He is afraid of the Jews",
-              "correct": true
+              "text": "Jews",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He is afraid of the Romans",
+              "text": "Romans",
               "correct": false
             },
             {
-              "text": "Jesus asked him to keep quiet",
+              "text": "Samaritans",
               "correct": false
             }
           ],
@@ -250,7 +217,7 @@
           "card": 3,
           "kind": "story",
           "verses": "John 19:38",
-          "text": "Now Secret Joseph goes to Pilate and asks to remove the body of Jesus. Friend, that's the man who kept his camera off in every meeting, and he just knocked on the CEO's door.",
+          "text": "Now Joseph goes to Pilate and asks to remove the body of Jesus. I bet that took some nerve after all that hiding.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -277,7 +244,7 @@
           "card": 5,
           "kind": "story",
           "verses": "John 19:39",
-          "text": "Joseph isn't alone. Nicodemus comes too, the Pharisee who had come to Jesus at night back in John 3:1-2, and he brings a mixture of myrrh and aloes.",
+          "text": "Joseph isn't alone. Nicodemus comes too, a Pharisee who had come to Jesus at night (John 3:1-2), and he brings a mixture of myrrh and aloes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -308,32 +275,27 @@
           "card": 7,
           "kind": "story",
           "verses": "John 19:39-40",
-          "text": "And Nicodemus brings about SEVENTY-FIVE POUNDS of it, friend, and I once tried to lift a tub of cookie dough half that size until my mustache filed a complaint. Then the two men take the body of Jesus and wrap it with the spices, according to the Jewish burial custom.",
+          "text": "And Nicodemus's mixture weighs about SEVENTY-FIVE POUNDS. The two men take the body of Jesus and wrap it in linen cloths with the spices.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "John 19:40",
-          "question": "Joseph and Nicodemus wrap the body of Jesus with the spices in ___ cloths.",
+          "question": "Joseph and Nicodemus follow the Jewish burial custom when they wrap the body of Jesus.",
           "answers": [
             {
-              "text": "linen",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "wool",
-              "correct": false
-            },
-            {
-              "text": "silk",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -356,31 +318,35 @@
               "correct": true
             },
             {
-              "text": "An old tomb already holding many bodies",
+              "text": "The tomb where Lazarus had been buried",
               "correct": false
             },
             {
-              "text": "A stone room for storing burial spices",
+              "text": "The pool where a lame man had waited",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "John 19:42",
-          "question": "Joseph and Nicodemus have to carry Jesus far from where He was crucified to find a tomb.",
+          "question": "Why do Joseph and Nicodemus lay Jesus in the new tomb in the garden?",
           "answers": [
             {
-              "text": "True",
+              "text": "It is the day of Preparation and the tomb is nearby",
+              "correct": true
+            },
+            {
+              "text": "Jesus had asked to be buried in that garden",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Pilate had ordered that He be buried there",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,

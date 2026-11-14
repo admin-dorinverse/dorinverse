@@ -9,43 +9,20 @@
           "card": 1,
           "kind": "story",
           "verses": "John 11:1-2",
-          "text": "Jesus has been staying across the Jordan (John 10:40). Meanwhile, a man named Lazarus is sick, back home in the village of his sisters, Mary and Martha. This is the same Mary who will one day anoint the Lord with perfume and wipe His feet with her hair.",
-          "needs_agent_fix": true,
+          "text": "Jesus has been staying across the Jordan (John 10:40). Meanwhile, a man named Lazarus is sick in Bethany, the village of his sisters, Mary and Martha. This is the same Mary who was to anoint the Lord with perfume and wipe His feet with her hair.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 11:1",
-          "question": "Lazarus, the brother of Mary and Martha, is sick. Which village does he live in?",
-          "answers": [
-            {
-              "text": "Bethany",
-              "correct": true
-            },
-            {
-              "text": "Bethlehem",
-              "correct": false
-            },
-            {
-              "text": "Capernaum",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 11:3",
+          "text": "So the sisters send word to Jesus: \"Lord, the one You love is sick.\" Short and clear, friend, nothing like those group chat messages that run three paragraphs and STILL forget the point.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "John 11:3",
-          "text": "So the sisters send word to Jesus: \"Lord, the one You love is sick.\" Short and clear, friend, which is more than I can say for MY texts, which run three paragraphs and STILL forget the point.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 11:4",
@@ -60,111 +37,88 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 11:4",
           "question": "Jesus says Lazarus's sickness won't end in death. What does He say the sickness is for?",
           "answers": [
             {
-              "text": "The glory of God",
+              "text": "The glory of God and His Son",
               "correct": true
             },
             {
-              "text": "A test of the sisters' faith",
+              "text": "A test of the sisters' trust",
               "correct": false
             },
             {
-              "text": "A warning to the village",
+              "text": "A lesson for the whole village",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "John 11:5",
+          "text": "Then the story stops to make one thing crystal clear: Jesus loved Martha and her sister and Lazarus. Not \"liked.\" LOVED.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "John 11:5",
-          "text": "Then the story stops to make one thing crystal clear: Jesus loved Martha and her sister and Lazarus. Not \"liked.\" Not \"put up with at holidays.\" LOVED.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "John 11:6",
+          "question": "Jesus loves this family, and He's said the sickness won't end in death. When He hears Lazarus is sick, what does He do?",
+          "answers": [
+            {
+              "text": "Stays where He is for two days",
+              "correct": true
+            },
+            {
+              "text": "Leaves for Bethany that same hour",
+              "correct": false
+            },
+            {
+              "text": "Sends two disciples on ahead",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "John 11:6",
-          "question": "When Jesus hears Lazarus is sick, He sets out for Bethany right away.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "John 11:7",
+          "text": "Then Jesus tells the disciples, \"Let us go back to Judea.\" I bet the disciples' eyebrows shoot straight up, and friend, with eyebrows like MINE, I know a raised eyebrow when I see one.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "John 11:6",
-          "question": "Instead of leaving for Bethany, Jesus stays where He is for ___ days.",
-          "answers": [
-            {
-              "text": "two",
-              "correct": true
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "seven",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "John 11:7",
-          "text": "Then He tells the disciples, \"Let us go back to Judea.\" I bet the disciples' eyebrows shoot straight up, and friend, with eyebrows like MINE, I know a raised eyebrow when I see one.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 11:8",
-          "question": "The disciples call Jesus Rabbi and push back on going to Judea. What do they remind Him?",
+          "question": "When Jesus says to go back to Judea, the disciples remind Him that the Jews just tried to stone Him.",
           "answers": [
             {
-              "text": "The Jews just tried to stone Him",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Guards are watching every road",
-              "correct": false
-            },
-            {
-              "text": "The sisters told Him to stay away",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -178,7 +132,7 @@
           "kind": "story",
           "verses": "John 11:9",
           "text": "Jesus answers with a question: \"Are there not twelve hours of daylight?\" Friend, I spent YEARS in the back of a junk drawer with zero hours of daylight, so trust me, I'm listening.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -201,7 +155,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -209,7 +163,7 @@
           "kind": "story",
           "verses": "John 11:10-11",
           "text": "But whoever walks at night will stumble, because he has no light, and friend, I have found every cookie sheet in my bakery at midnight with my FACE. After that, Jesus tells them their friend Lazarus has fallen asleep.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -232,7 +186,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -251,15 +205,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "John 11:13",
-          "text": "The disciples are thinking actual sleep. A NAP. And honestly, friend, so would I: somebody tells me a friend is sleeping, I'm tiptoeing past with the oven timer on mute.",
-          "needs_agent_fix": true,
+          "text": "The disciples think Jesus means actual sleep, a NAP. Honestly, friend, so would I: tell me a friend is sleeping and I'm tiptoeing past with the oven timer on mute.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -282,15 +236,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "John 11:14",
-          "text": "So Jesus says it plainly. No pictures this time. Lazarus is dead.",
-          "needs_agent_fix": true,
+          "text": "So Jesus tells them plainly, \"Lazarus is dead…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -298,22 +252,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 11:15",
-          "question": "Jesus says He's glad He wasn't there when Lazarus died. Whose sake does He say that's for?",
+          "question": "Jesus tells the disciples He's glad He wasn't there when Lazarus died. Why does He say He's glad?",
           "answers": [
             {
-              "text": "The disciples' sake",
+              "text": "So the disciples may believe",
               "correct": true
             },
             {
-              "text": "Martha and Mary's sake",
+              "text": "So the sisters may learn patience",
               "correct": false
             },
             {
-              "text": "The crowd's sake",
+              "text": "So the crowds may stay away",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -321,26 +275,26 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "John 11:15",
-          "question": "Jesus says He's glad He wasn't there, so that the disciples may believe.",
+          "question": "Now that Lazarus is dead, Jesus says there's no reason for them to go to him.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "John 11:15-16",
-          "text": "Then Jesus says, \"But let us go to him.\" And Thomas, one of the disciples, also called Didymus, turns to the others, and friend, two names? I respect that, because one of mine got carved into my handle.",
-          "needs_agent_fix": true,
+          "text": "Jesus says, \"But let us go to him.\" Then Thomas, a disciple also called Didymus, speaks up, and I respect a man with two names, since my name Dorin got carved into my handle by the family who took me home.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -348,7 +302,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 11:16",
-          "question": "Judea is where they just tried to stone Jesus. What does Thomas tell his fellow disciples?",
+          "question": "Judea is where the Jews just tried to stone Jesus. What does Thomas tell his fellow disciples?",
           "answers": [
             {
               "text": "Let us also go so that we may die with Him",
@@ -363,15 +317,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "John 11:16",
-          "text": "Thomas is ready to go and die with Him, and me? I need a pep talk just to walk past a preheating oven. That's where we'll pause, friend, because this story is far from over.",
-          "needs_agent_fix": true,
+          "text": "And that's where we'll pause for now, friend. Trust me, this story is far from over.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

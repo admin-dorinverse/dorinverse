@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "John 12:1-12",
-          "text": "Jesus has been in Bethany, where they hosted a dinner for Him. The next day, the great crowd in town for the feast hears that Jesus is coming to Jerusalem. Friend, that news moves faster than a group chat after somebody texts “Big news. Call me.”",
+          "verses": "John 12:12",
+          "text": "Jesus has been in Bethany, where they hosted a dinner for Him (John 12:2). The next day, the great crowd in town for the feast hears that Jesus is coming to Jerusalem. Friend, that news moves faster than a group chat after somebody texts “Big news. Call me.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,23 +18,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 12:13",
-          "question": "The crowd grabs ___ branches and goes out to meet Jesus.",
+          "question": "With palm branches in hand, the great crowd goes out to ___ Jesus.",
           "answers": [
             {
-              "text": "palm",
+              "text": "meet",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "olive",
+              "text": "warn",
               "correct": false
             },
             {
-              "text": "cedar",
+              "text": "stop",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -68,54 +68,38 @@
           "card": 5,
           "kind": "story",
           "verses": "John 12:14",
-          "text": "Now Jesus, on His way to Jerusalem, finds something and sits on it. Me? I have never sat down once in my life, friend, because this gold base comes with me everywhere, so I just HOP.",
+          "text": "Then Jesus finds a young donkey and sits on it. Me, I never ride anything, friend, because this gold base goes everywhere with me, so I just HOP.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 12:14",
-          "question": "Jesus finds a young ___ and sits on it.",
+          "question": "The Gospel of John says Jesus sat on that young donkey just as something said He would. What?",
           "answers": [
             {
-              "text": "donkey",
-              "correct": true,
-              "blank": 1
+              "text": "What was written about Him",
+              "correct": true
             },
             {
-              "text": "horse",
+              "text": "What the crowd had asked",
               "correct": false
             },
             {
-              "text": "camel",
+              "text": "What the disciples had planned",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "John 12:14",
-          "question": "John says Jesus sat on that young donkey just as something said He would. What?",
-          "answers": [
-            {
-              "text": "Words written in Scripture",
-              "correct": true
-            },
-            {
-              "text": "The crowd's loud request",
-              "correct": false
-            },
-            {
-              "text": "The disciples' careful plan",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "John 12:15",
+          "text": "Then the Gospel of John quotes the prophet Zechariah (Zechariah 9:9), with words for the Daughter of Zion: “See, your King is coming, seated on the colt of a donkey.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -144,10 +128,18 @@
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "John 12:16",
+          "text": "Now the Gospel of John stops to tell us something about Jesus' disciples and all these things.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:16",
-          "question": "The disciples are right there for all of this. True or false: they understand what it means right away.",
+          "question": "Jesus' disciples understand these things about the young donkey and the written words right away.",
           "answers": [
             {
               "text": "True",
@@ -158,62 +150,42 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "John 12:16",
-          "text": "Not at first, friend. It clicks for them later, the way a joke finally hits me three days after somebody told it, and I'm laughing alone in the bakery at nothing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "John 12:16",
-          "question": "The disciples remember what was done to Jesus and realize it was written about Him after He was ___.",
-          "answers": [
-            {
-              "text": "glorified",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "baptized",
-              "correct": false
-            },
-            {
-              "text": "arrested",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "It's after Jesus is glorified that His disciples remember what was done to Him and realize these very things were written about Him. Friend, that's me finally getting a joke three days after somebody told it, laughing alone in the bakery at nothing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "John 12:17",
-          "text": "Meanwhile, there are many people who were with Jesus the day He called Lazarus, His friend from Bethany (John 11:1, 11), from the tomb and raised him from the dead. Friend, I thought a few years in the back of a junk drawer was rough, but this man came out of a TOMB.",
+          "text": "Meanwhile, there are many people around who were with Jesus the day He called Lazarus, His friend from Bethany (John 11:1, 11), from the tomb and raised him from the dead.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "John 12:17",
-          "question": "The people who saw Jesus raise Lazarus keep telling others what they saw.",
+          "question": "What do the people who were there when Jesus raised Lazarus keep doing?",
           "answers": [
             {
-              "text": "True",
+              "text": "Telling others about it",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Keeping it to themselves",
+              "correct": false
+            },
+            {
+              "text": "Asking for another miracle",
               "correct": false
             }
           ],
@@ -223,20 +195,16 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 12:18",
-          "question": "John gives another reason the crowd went out to meet Jesus. What is it?",
+          "question": "The Gospel of John says the crowd went out to meet Jesus because they heard about the sign He had performed.",
           "answers": [
             {
-              "text": "They heard He raised Lazarus",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "They heard He would be crowned",
-              "correct": false
-            },
-            {
-              "text": "They heard He was giving gifts",
+              "text": "False",
               "correct": false
             }
           ],
@@ -245,18 +213,10 @@
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "John 12:19",
-          "text": "Then the Pharisees, a group of Jewish religious leaders, huddle up and talk it over with one another.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:19",
-          "question": "Watching the crowd, the Pharisees tell one another that things are going well for them.",
+          "question": "The Pharisees, a group of Jewish religious leaders, watch all this and tell one another that things are going well for them.",
           "answers": [
             {
               "text": "True",
@@ -271,10 +231,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "John 12:19",
-          "text": "Not even close: “You can see that this is doing you no good. Look how the whole world has gone after Him!” Friend, that's two coworkers whispering by the copier, “Well, THIS isn't working,” while the entire office lines up behind somebody else.",
+          "text": "They tell one another it's doing them no good: “Look how the whole world has gone after Him!” Friend, that's two coworkers whispering by the copier, “Well, THIS isn't working,” while the entire office lines up behind somebody else.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

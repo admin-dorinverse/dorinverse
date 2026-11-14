@@ -24,20 +24,16 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 12:2",
-          "question": "This dinner is in Bethany, Lazarus's hometown, and Martha is serving. Who is among those reclining at the table with Jesus?",
+          "question": "At this dinner for Jesus, Lazarus is among those reclining at the table with Him.",
           "answers": [
             {
-              "text": "Lazarus",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Nicodemus",
-              "correct": false
-            },
-            {
-              "text": "Zacchaeus",
+              "text": "False",
               "correct": false
             }
           ],
@@ -48,8 +44,8 @@
           "card": 4,
           "kind": "story",
           "verses": "John 12:3",
-          "text": "Then Mary, Lazarus's other sister (John 11:1-2), brings out about a pint of expensive perfume made of pure nard. Not a little dab behind the ears, friend. A PINT.",
-          "needs_agent_fix": true,
+          "text": "Then Mary, Lazarus's other sister (John 11:1-2), brings out about a pint of expensive perfume made of pure nard. Not a little dab behind the ears, friend, a whole PINT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -96,7 +92,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 12:4",
-          "question": "John tells us Judas Iscariot is the disciple who was going to ___ Jesus.",
+          "question": "The Gospel of John tells us Judas Iscariot is the disciple who was going to ___ Jesus.",
           "answers": [
             {
               "text": "betray",
@@ -126,7 +122,7 @@
               "correct": true
             },
             {
-              "text": "The temple treasury",
+              "text": "The temple priests",
               "correct": false
             },
             {
@@ -134,7 +130,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -163,17 +159,21 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "John 12:6",
-          "question": "Judas had nothing to do with the money bag.",
+          "question": "Judas is a thief, and he wanted that perfume turned into money. What job does he have among Jesus' disciples?",
           "answers": [
             {
-              "text": "True",
+              "text": "He keeps the money bag",
+              "correct": true
+            },
+            {
+              "text": "He guards the house door",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He carries the group's letters",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -183,8 +183,8 @@
           "card": 12,
           "kind": "story",
           "verses": "John 12:6",
-          "text": "So the man asking about the poor is the keeper of the money bag, and he used to take from what was put into it. That's the coworker running the office cookie jar, asking where all the cookies went, with crumbs all over his SHIRT.",
-          "needs_agent_fix": true,
+          "text": "As keeper of the money bag, Judas used to take from what was put into it. So now you know what was really behind that question about the poor.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -195,6 +195,14 @@
       "cards": [
         {
           "card": 1,
+          "kind": "story",
+          "verses": "John 12:7",
+          "text": "Judas's question about the perfume is still hanging in the air, and Jesus answers it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:7",
@@ -217,7 +225,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 2,
+          "card": 3,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 12:7",
@@ -240,11 +248,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:8",
-          "question": "Jesus tells them they will always have the poor with them, and they will always have Him with them too.",
+          "question": "Jesus says, \"The poor you will always have with you…\" Then He says they will always have Him too.",
           "answers": [
             {
               "text": "True",
@@ -259,7 +267,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "story",
           "verses": "John 12:9",
           "text": "Meanwhile, word gets out. A large crowd of Jews learns that Jesus is there, and they come.",
@@ -267,7 +275,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 12:9",
@@ -290,15 +298,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "John 12:10",
-          "text": "Then come the chief priests, the leaders over the priests who serve at God's temple in Jerusalem. They start making plans.",
+          "text": "Then the chief priests, the leaders of the priests at God's temple in Jerusalem, start making plans.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 12:10",
@@ -321,7 +329,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "John 12:10",
           "text": "Catch those two little words, friend: Lazarus \"as well.\" The chief priests already have plans to kill Jesus (John 11:53), and now they want Lazarus too.",
@@ -329,7 +337,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 12:11",

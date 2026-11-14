@@ -35,21 +35,13 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "John 13:22",
-          "text": "Nope. They look at one another, perplexed, like when the boss says \"somebody in this room\" and EVERYBODY checks everybody.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
           "verses": "John 13:23-24",
           "text": "One of His disciples, the one whom Jesus loved, is reclining right at His side. And Simon Peter, another of Jesus' disciples, starts motioning to him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 13:24",
@@ -72,15 +64,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "John 13:25",
-          "text": "Peter's not waiting around, and honestly, I'd have just poked the guy with my mustache. So the disciple leans back against Jesus and asks, \"Lord, who is it?\"",
+          "text": "Honestly, I'd have just poked the guy with my mustache. Instead, the disciple leans back against Jesus and asks, \"Lord, who is it?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 13:26",
@@ -103,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 13:26",
@@ -126,7 +118,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "John 13:27",
           "text": "Judas, one of Jesus' disciples, takes the morsel, and Satan enters into him. Then Jesus tells Judas, \"What you are about to do, do quickly.\"",
@@ -134,38 +126,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 13:28",
-          "question": "Jesus tells Judas to do quickly what he's about to do. Everyone else at the table knows why Jesus said it.",
+          "question": "No one at the table knows why Jesus told Judas to do it quickly.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
-          "verses": "John 13:28-29",
-          "text": "Nobody at that table has a clue why Jesus said it. Here's a detail you'll want: Judas kept the money bag.",
+          "verses": "John 13:29",
+          "text": "Now, Judas is the one who keeps the money bag.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 13:29",
-          "question": "Judas keeps the money bag. So what do some of the disciples think Jesus is telling him to do?",
+          "question": "Judas keeps the money bag. Some disciples think Jesus is telling him to give something to the poor. What else do some think He means?",
           "answers": [
             {
               "text": "Buy what's needed for the feast",
@@ -184,15 +176,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "John 13:29",
-          "text": "Some think Jesus means buy what's needed for the feast, or give something to the poor. A whole table of guesses, and the best theory is a SHOPPING LIST.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 13:30",
@@ -250,8 +234,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "John 13:32-33",
-          "text": "Jesus says God will glorify Him at once. Then He calls them \"Little children\" and says He's with them only a little while longer.",
+          "verses": "John 13:33",
+          "text": "Then He says, \"Little children, I am with you only a little while longer.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -289,20 +273,20 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "John 13:34",
-          "question": "Jesus gives His disciples a new commandment. What is it?",
+          "question": "Jesus gives His disciples a new commandment: ___ one another.",
           "answers": [
             {
-              "text": "Love one another",
+              "text": "Love",
               "correct": true
             },
             {
-              "text": "Stay in the city",
+              "text": "Forgive",
               "correct": false
             },
             {
-              "text": "Keep watch all night",
+              "text": "Teach",
               "correct": false
             }
           ],
@@ -312,20 +296,20 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "John 13:34",
-          "question": "Jesus says His disciples must love one another the same way He has ___ them.",
+          "question": "Jesus gives His disciples a new commandment. What does He hold up as the example for keeping it?",
           "answers": [
             {
-              "text": "loved",
+              "text": "The way He has loved them",
               "correct": true
             },
             {
-              "text": "taught",
+              "text": "The way the prophets lived",
               "correct": false
             },
             {
-              "text": "warned",
+              "text": "The way Moses taught them",
               "correct": false
             }
           ],
@@ -343,20 +327,16 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "John 13:35",
-          "question": "How does Jesus say everyone will know they're His disciples?",
+          "question": "Jesus says everyone will know they're His disciples if they love one another.",
           "answers": [
             {
-              "text": "If they love one another",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "If they keep the feast",
-              "correct": false
-            },
-            {
-              "text": "If they heal the sick",
+              "text": "False",
               "correct": false
             }
           ],
@@ -365,18 +345,10 @@
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "John 13:35-36",
-          "text": "Love one another, THAT'S the name tag. But Simon Peter is still back on what Jesus said about going somewhere they can't come.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 13:36",
-          "question": "Peter is still thinking about Jesus leaving. What does Peter ask Him?",
+          "question": "Jesus has said He's going where His disciples cannot come. What does Simon Peter ask Him?",
           "answers": [
             {
               "text": "Lord where are You going",
@@ -395,7 +367,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "John 13:36",
           "text": "Jesus answers, \"Where I am going, you cannot follow Me now, but you will follow later.\"",
@@ -403,11 +375,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "John 13:37",
-          "question": "Jesus tells Peter he'll follow later. Peter accepts that and asks nothing more.",
+          "question": "Peter accepts Jesus' answer without asking anything more.",
           "answers": [
             {
               "text": "True",
@@ -422,7 +394,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "John 13:37",
           "text": "LATER? Peter wants to know why he can't follow Jesus NOW, and then he makes Jesus a big promise.",
@@ -430,7 +402,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "John 13:37",
@@ -453,7 +425,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "John 13:38",
           "text": "Peter goes ALL IN, no pause, no fine print. Then Jesus answers with a question: \"Will you lay down your life for Me?\"",
@@ -461,7 +433,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "John 13:38",
@@ -472,7 +444,7 @@
               "correct": true
             },
             {
-              "text": "follow",
+              "text": "praise",
               "correct": false
             },
             {
@@ -484,10 +456,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "John 13:38",
-          "text": "Three times, before the rooster crows. We'll leave this table here for now, friend, but this night is NOT finished.",
+          "text": "We'll leave this table here for now, friend. Trust me, this night is NOT finished.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
