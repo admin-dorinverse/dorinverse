@@ -1,0 +1,35 @@
+{
+  "agent": [],
+  "human": [
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The last story card only says the teaching isn't over. It tells nothing from the passage, but it cites 1 Corinthians 13:13. The docs allow a final card that is just this line, but they don't say what such a card should cite.",
+      "question": "What should the verses field be on a final story card that only says the story or teaching isn't over and tells no verse? Should it be the passage's last verse, null, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 13,
+        "verses": "1 Corinthians 13:13"
+      }
+    },
+    {
+      "covered": false,
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The closing story card only says the teaching isn't done. It tells no verse, but it cites 1 Corinthians 13:13, which the card before it already asked about.",
+      "question": "When the last story card is only the 'story isn't over' line and tells no verse, what should its verses field cite: the passage's last verse, nothing, or something else?",
+      "by": "opus",
+      "at": {
+        "stop": 2,
+        "card": 13,
+        "verses": "1 Corinthians 13:13"
+      }
+    }
+  ]
+}
