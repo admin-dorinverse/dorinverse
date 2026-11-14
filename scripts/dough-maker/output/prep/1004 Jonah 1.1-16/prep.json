@@ -11,14 +11,14 @@
           "verses": "Jonah 1:1",
           "text": "Pull up a stool, friend. The word of the LORD comes to Jonah son of Amittai, a prophet from Gath-hepher (2 Kings 14:25). And this is NOT small talk.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Jonah 1:2",
-          "text": "God tells Jonah to get up, go to the great city of Nineveh, and preach against it. Big city. BIG job.",
-          "needs_agent_fix": true,
+          "text": "God tells Jonah to get up, go to the great city of Nineveh, and preach against it. It's a big city, and a BIG job.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Jonah 1:3",
-          "text": "Nope. Jonah gets up to flee from the presence of the LORD, goes down to Joppa, and finds a ship, which is like your boss handing you the big project and you walking straight out of the office to book a flight.",
+          "text": "Jonah gets up to flee from the presence of the LORD, goes down to Joppa, and finds a ship. That's your boss handing you the big project and you walking straight out of the office to book a flight.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -128,8 +128,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Jonah 1:4",
-          "text": "Such a violent storm comes up that the ship is in danger of breaking apart. I spent YEARS in a junk drawer, friend, and even I'd rather be back in there than on that boat.",
+          "verses": "Jonah 1:4-5",
+          "text": "Such a violent storm comes up that the ship is in danger of breaking apart, and the sailors are afraid. I spent YEARS in a junk drawer, friend, and even I'd rather be back in there than on that boat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,7 +138,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 1:5",
-          "question": "The sailors are afraid, and each one cries out to his own god.",
+          "question": "In the storm, each of the sailors cries out to his own god.",
           "answers": [
             {
               "text": "True",
@@ -155,20 +155,20 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jonah 1:5",
-          "question": "Next, the sailors throw something into the sea to lighten the load. What is it?",
+          "question": "To lighten the load, the sailors throw the ship's ___ into the sea.",
           "answers": [
             {
-              "text": "The ship's cargo",
+              "text": "cargo",
               "correct": true
             },
             {
-              "text": "The ship's mast",
+              "text": "oars",
               "correct": false
             },
             {
-              "text": "The ship's oars",
+              "text": "sails",
               "correct": false
             }
           ],
@@ -180,7 +180,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jonah 1:5",
-          "question": "While the sailors work up top, Jonah has gone down to the lowest part of the ship, where he lies down in a deep ___.",
+          "question": "While the sailors work, Jonah has gone down to the lowest part of the ship, where he lies down and falls into a deep ___.",
           "answers": [
             {
               "text": "sleep",
@@ -203,7 +203,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 1:6",
-          "question": "The captain comes to Jonah and tells him to get up and call upon his God.",
+          "question": "The captain tells Jonah to get up and call upon his God.",
           "answers": [
             {
               "text": "True",
@@ -235,7 +235,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jonah 1:7",
-          "text": "Back up top, the sailors want to find out who's responsible for this calamity. Everybody's looking at everybody.",
+          "text": "The sailors want to find out who's responsible for this calamity. Everybody's looking at everybody.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -267,15 +267,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 1:7",
-          "question": "The sailors cast lots, and the lot falls on Jonah.",
+          "question": "The lot falls on the ship's captain.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -338,8 +338,8 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Jonah 1:10-11",
-          "text": "“What have you done?” they ask him, and hold up, because the man is running from the God who made the sea, and his getaway plan is a BOAT. Meanwhile, the sea keeps growing worse and worse.",
+          "verses": "Jonah 1:9-10",
+          "text": "“What have you done?” they ask him. Hold up. The man is running from the God who made the sea, and his getaway plan is a BOAT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -348,7 +348,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 1:12",
-          "question": "The sailors ask Jonah what they must do to him to calm the sea. Jonah tells them to throw him into the sea.",
+          "question": "The sea keeps growing worse, and the sailors ask Jonah what they must do to him to calm it. Jonah tells them to throw him into the sea.",
           "answers": [
             {
               "text": "True",
@@ -397,7 +397,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Jonah 1:13",
-          "text": "They row HARD to get back to dry land, but the sea rages against them more and more.",
+          "text": "Row as they might, they can't make it. The sea rages against them more and more.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,7 +429,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 1:15",
-          "question": "The sailors pick Jonah up and cast him into the sea, and the sea keeps on raging.",
+          "question": "Once the sailors cast Jonah into the sea, the sea keeps on raging.",
           "answers": [
             {
               "text": "True",
@@ -451,7 +451,7 @@
           "question": "With the sea calm, the men ___ the LORD greatly and make ___ to Him.",
           "answers": [
             {
-              "text": "feared",
+              "text": "fear",
               "correct": true,
               "blank": 1
             },
@@ -461,7 +461,7 @@
               "blank": 2
             },
             {
-              "text": "praised",
+              "text": "praise",
               "correct": false
             },
             {
@@ -469,7 +469,7 @@
               "correct": false
             },
             {
-              "text": "questioned",
+              "text": "thank",
               "correct": false
             }
           ],

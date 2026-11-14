@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Micah 5:7",
-          "text": "Micah, a prophet from Moresheth (Micah 1:1), has just spoken of a ruler from Bethlehem who will shepherd His flock (Micah 5:2-4). Now he looks ahead to the remnant of Jacob, what's left of God's people, out in the midst of many peoples. And friend, he paints TWO pictures of them.",
-          "needs_agent_fix": true,
+          "text": "Micah, a prophet from Moresheth (Micah 1:1), has just told of a ruler from Bethlehem who will shepherd His flock (Micah 5:2-4). Now he looks ahead to the remnant of Jacob, out in the midst of many peoples. And friend, he paints TWO pictures of them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,7 +41,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Micah 5:7",
-          "question": "Micah also compares the remnant to showers on the grass. Those showers wait on people before they come.",
+          "question": "Micah also compares the remnant to showers on the grass. He says the dew and showers wait for man.",
           "answers": [
             {
               "text": "True",
@@ -99,7 +99,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Micah 5:8",
-          "question": "In Micah's lion picture, someone comes along to rescue the sheep.",
+          "question": "In Micah's lion picture, he says someone is there to rescue them.",
           "answers": [
             {
               "text": "True",
@@ -117,34 +117,38 @@
           "card": 8,
           "kind": "story",
           "verses": "Micah 5:9",
-          "text": "Then the line turns to \"you\" and \"your\": \"Your hand will be lifted over your foes\"",
+          "text": "Then the words turn to \"you\": \"Your hand will be lifted over your foes…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Micah 5:9",
-          "question": "\"Your hand will be lifted over your foes,\" Micah says, and all your enemies will make peace with you.",
+          "question": "After \"Your hand will be lifted over your foes,\" what do the words say will happen to all the enemies?",
           "answers": [
             {
-              "text": "True",
+              "text": "They will be cut off",
+              "correct": true
+            },
+            {
+              "text": "They will make peace",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "They will become servants",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Micah 5:10",
-          "text": "Now the LORD speaks: \"In that day,\" declares the LORD, and He starts a list of what He'll remove from among His people. First up, two things from the army.",
+          "text": "\"In that day,\" declares the LORD, and He starts a list of things He'll remove. First up: the horses.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -153,39 +157,29 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Micah 5:10",
-          "question": "The LORD says He will remove their ___ from among them and wreck their ___.",
+          "question": "In that day, the LORD says He'll remove the horses from among the people He's speaking to and wreck their ___.",
           "answers": [
             {
-              "text": "horses",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "chariots",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "camels",
+              "text": "ships",
               "correct": false
             },
             {
               "text": "wagons",
               "correct": false
-            },
-            {
-              "text": "ships",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Micah 5:11",
-          "text": "Then He keeps going, and He says He'll remove the cities of their land.",
+          "text": "Then the LORD says, \"I will remove the cities of your land…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -194,7 +188,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Micah 5:11",
-          "question": "After the cities, the LORD says He will also tear down all their strongholds.",
+          "question": "Along with the cities, the LORD says He will tear down all the strongholds of the people He's speaking to.",
           "answers": [
             {
               "text": "True",
@@ -205,14 +199,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Micah 5:10-12",
-          "text": "Horses, chariots, cities, strongholds, all GONE, and friend, that's like me walking into my bakery to find no oven, no counter and no apron, just a mustache on a gold base going \"Hello?\" Then the list moves on, and the LORD says He'll cut the sorceries from their hand.",
+          "text": "Horses, chariots, cities, strongholds, all GONE, and friend, that's like me walking into my bakery to find no oven, no counter and no apron, just a mustache on a gold base going \"Hello?\" Then the LORD goes on: \"I will cut the sorceries from your hand…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -221,7 +215,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Micah 5:12",
-          "question": "Along with cutting off sorceries, the LORD says His people will have no ___.",
+          "question": "Along with cutting off sorceries, the LORD says the people He's speaking to will have no ___.",
           "answers": [
             {
               "text": "fortune-tellers",
@@ -242,8 +236,8 @@
         {
           "card": 16,
           "kind": "story",
-          "verses": "Micah 5:12-13",
-          "text": "No fortune-tellers, and I don't need one, because I already know my future and it smells like chocolate chips. Next the LORD names the carved images and sacred pillars, and this time He says why.",
+          "verses": "Micah 5:13",
+          "text": "Next the LORD names the carved images and sacred pillars, and He says why He'll cut them off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -255,7 +249,7 @@
           "question": "Why does the LORD say He'll cut off the carved images and sacred pillars?",
           "answers": [
             {
-              "text": "So they stop bowing to their own handiwork",
+              "text": "So the people stop bowing to their own handiwork",
               "correct": true
             },
             {
@@ -273,8 +267,8 @@
         {
           "card": 18,
           "kind": "story",
-          "verses": "Micah 5:13-14",
-          "text": "Bowing to your own handiwork? I make cookies with this mustache all day, friend, and I'll admit ONE batch almost got me on my knees. Then the LORD says He'll root out the Asherah poles and demolish their cities.",
+          "verses": "Micah 5:14",
+          "text": "Then the LORD says, \"I will root out the Asherah poles from your midst and demolish your cities.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

@@ -9,31 +9,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Zechariah 6:9",
-          "text": "Zechariah is a prophet to God's people, and they're rebuilding the house of God in Jerusalem with Zerubbabel the governor and Joshua the high priest (Zechariah 1:1; Haggai 1:1; Ezra 5:1-2). He's just seen four chariots ride out in a vision (Zechariah 6:1-8), and now the word of the LORD comes to him again. No horses this time, friend, just a TO-DO LIST.",
-          "needs_agent_fix": true,
+          "text": "Zechariah is a prophet (Zechariah 1:1), and he's just seen four chariots ride out in a vision (Zechariah 6:1-8). Now the word of the LORD comes to him again. No horses this time, friend, just a job to do.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Zechariah 6:10",
-          "text": "Step one: take an offering from three exiles who have arrived from Babylon: Heldai, Tobijah and Jedaiah. Babylon to Jerusalem is a LONG road, friend. The longest trip I ever took was across the Millers' kitchen, and it ended in a JUNK DRAWER.",
-          "needs_agent_fix": true,
+          "text": "Step one: take an offering from Heldai, Tobijah and Jedaiah, three exiles who have arrived from Babylon. That's a LONG trip, friend, and the longest trip I ever took was across a kitchen and into the back of a JUNK DRAWER.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Zechariah 6:10",
-          "question": "Zechariah's next stop is the house of Josiah son of Zephaniah. True or false: God tells him to go there that same day.",
+          "question": "God tells Zechariah to take the offering from the exiles and go that same day to someone's house. Whose house?",
           "answers": [
             {
-              "text": "True",
+              "text": "Josiah son of Zephaniah",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Hilkiah son of Shallum",
+              "correct": false
+            },
+            {
+              "text": "Jesse son of Obed",
               "correct": false
             }
           ],
@@ -44,39 +48,16 @@
           "card": 4,
           "kind": "story",
           "verses": "Zechariah 6:11",
-          "text": "Next, God tells Zechariah to take silver and gold and make something ornate. Me? I spent YEARS under takeout menus in a junk drawer, and NOBODY ever called me ornate.",
+          "text": "Next, God tells Zechariah to take silver and gold and make an ornate crown. The fanciest thing that's ever been on MY head is a chef's hat, and half the time it's covered in FLOUR.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Zechariah 6:11",
-          "question": "God's plan for that silver and gold: make an ornate ___.",
-          "answers": [
-            {
-              "text": "crown",
-              "correct": true
-            },
-            {
-              "text": "lampstand",
-              "correct": false
-            },
-            {
-              "text": "altar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 6:11",
-          "question": "God says to set the ornate silver and gold crown on the head of the high priest. Whose head is that?",
+          "question": "God says to set the silver and gold crown on the head of the high priest. Whose head is that?",
           "answers": [
             {
               "text": "Joshua son of Jehozadak",
@@ -87,7 +68,7 @@
               "correct": false
             },
             {
-              "text": "Josiah son of Zephaniah",
+              "text": "Zadok son of Ahitub",
               "correct": false
             }
           ],
@@ -95,19 +76,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Zechariah 6:11-12",
-          "text": "So the crown goes on Joshua son of Jehozadak, the high priest. Then Zechariah is to tell him what the LORD of Hosts says: 'Here is a man whose name is the Branch, and He will branch out from His place…'",
+          "text": "That crown is for Joshua son of Jehozadak, the high priest. Then Zechariah is to tell him what the LORD of Hosts says: 'Here is a man whose name is the Branch, and He will branch out from His place…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Zechariah 6:12",
-          "question": "God's people are rebuilding right now. So what will the man called the Branch do? He will build the ___ of the LORD.",
+          "question": "The man called the Branch will branch out from His place. Then what will He do? He will build the ___ of the LORD.",
           "answers": [
             {
               "text": "temple",
@@ -126,15 +107,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Zechariah 6:13",
-          "text": "Then it comes AGAIN: 'Yes, He will build the temple of the LORD; He will be clothed in splendor and will sit on His throne and rule.' When I repeat myself it's because I forgot, but when God repeats Himself, friend, you LEAN IN.",
+          "text": "Then it comes AGAIN: 'Yes, He will build the temple of the LORD; He will be clothed in splendor and will sit on His throne and rule.' A builder AND a ruler, friend, and meanwhile I lose arguments with my own oven timer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 6:13",
@@ -157,73 +138,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Zechariah 6:13",
-          "question": "The Branch will sit on His throne and rule, and He'll be a priest on His throne. Then God speaks of the two. What will there be between them?",
+          "question": "The Branch will rule on His throne, and He'll be a priest on His throne. True or false: God says there will be bitter rivalry between the two.",
           "answers": [
             {
-              "text": "Peaceful counsel",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Bitter rivalry",
-              "correct": false
-            },
-            {
-              "text": "Cold silence",
-              "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Zechariah 6:14",
+          "text": "The crown will reside in the temple of the LORD as a memorial to Helem, Tobijah, Jedaiah and the gracious son of Zephaniah. The family that owned me only carved my name into my handle, but these folks get remembered with a CROWN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Zechariah 6:14",
-          "text": "The crown becomes a memorial to Helem, Tobijah, Jedaiah and the gracious son of Zephaniah. The Millers carved MY name into my handle, but these folks get remembered with a CROWN, so same idea, WAY shinier.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Zechariah 6:14",
-          "question": "That memorial crown has to live somewhere. Where does it stay?",
-          "answers": [
-            {
-              "text": "In the temple of the LORD",
-              "correct": true
-            },
-            {
-              "text": "In the house of Josiah",
-              "correct": false
-            },
-            {
-              "text": "Back home in Babylon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Zechariah 6:15",
-          "text": "Then the message turns to the crew who will build the temple of the LORD. My whole bakery runs on invitations, friend, so I am VERY interested in who's on this crew.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 6:15",
-          "question": "True or false: people from far away will come and build the temple of the LORD.",
+          "question": "Then the message looks ahead to who will build the temple of the LORD. True or false: even people far away will come and build it.",
           "answers": [
             {
               "text": "True",
@@ -235,38 +181,38 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 13,
           "kind": "story",
           "verses": "Zechariah 6:15",
-          "text": "And here's the next line: 'you will know that the LORD of Hosts has sent Me to you.' But hold up, friend, because there's an IF.",
+          "text": "Then the message says, '…you will know that the LORD of Hosts has sent Me to you.' But hold up, friend, because there's an IF.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Zechariah 6:15",
-          "question": "God's message to Zechariah ends with an IF. What does it say?",
+          "question": "The message ends with an IF, and it's about the voice of the LORD their God. All this will happen if they diligently ___ it.",
           "answers": [
             {
-              "text": "If you diligently obey the LORD's voice",
+              "text": "obey",
               "correct": true
             },
             {
-              "text": "If you faithfully keep the Sabbath day",
+              "text": "fear",
               "correct": false
             },
             {
-              "text": "If you gladly give your silver and gold",
+              "text": "remember",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

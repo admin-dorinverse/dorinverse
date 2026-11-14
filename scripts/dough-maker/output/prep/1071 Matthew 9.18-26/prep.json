@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Matthew 9:14-18",
-          "text": "John's disciples just asked Jesus why His disciples don't fast, and He's still answering them when a synagogue leader walks up and kneels right in front of Him. Big job, big title, and the man is ON HIS KNEES. I bet this is the worst day of his life.",
+          "verses": "Matthew 9:18",
+          "text": "John's disciples just asked Jesus why His disciples don't fast (Matthew 9:14), and He's still answering them when a synagogue leader comes up and kneels right in front of Him. Big job, big title, and the man is ON HIS KNEES. I bet this is the worst day of his life.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -78,46 +78,50 @@
           "card": 5,
           "kind": "story",
           "verses": "Matthew 9:20",
-          "text": "On the way, SUDDENLY a woman comes up behind Jesus. She has suffered from bleeding for years.",
+          "text": "On the way, SUDDENLY a woman comes up behind Jesus. She has suffered from bleeding for twelve years.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 9:20",
-          "question": "The woman coming up behind Jesus has suffered from bleeding for ___ years.",
+          "question": "The woman comes up behind Jesus and reaches out. What does she touch?",
           "answers": [
             {
-              "text": "twelve",
+              "text": "The fringe of His cloak",
               "correct": true
             },
             {
-              "text": "three",
+              "text": "The strap of His sandal",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "The edge of His belt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 9:20",
-          "question": "Coming up behind Jesus, the woman touches the fringe of His cloak.",
+          "type": "fill_blank",
+          "verses": "Matthew 9:21",
+          "question": "The woman says to herself that if she only touches His cloak, she will be ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "healed",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "forgiven",
+              "correct": false
+            },
+            {
+              "text": "blessed",
               "correct": false
             }
           ],
@@ -126,39 +130,6 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 9:21",
-          "question": "Before she reaches Jesus, the woman tells herself that if she only touches His ___, she will be ___.",
-          "answers": [
-            {
-              "text": "cloak",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "healed",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "feet",
-              "correct": false
-            },
-            {
-              "text": "forgiven",
-              "correct": false
-            },
-            {
-              "text": "noticed",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Matthew 9:22",
           "text": "Jesus turns and sees her. Twelve years she's carried this, and now Jesus is looking RIGHT at her, and I bet her heart is POUNDING.",
@@ -166,69 +137,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 9:22",
-          "question": "Jesus tells the woman, “Take courage, daughter,” and then He says what healed her. What is it?",
+          "question": "Jesus says to the woman, “Take courage, daughter,” and then tells her that her ___ has healed her.",
           "answers": [
             {
-              "text": "Her faith",
+              "text": "faith",
               "correct": true
             },
             {
-              "text": "Her good deeds",
+              "text": "patience",
               "correct": false
             },
             {
-              "text": "Her long wait",
+              "text": "prayer",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Matthew 9:18, 22",
+          "text": "She's healed from that very hour, and did you catch what Jesus called her, friend? Daughter, the same word the synagogue leader used for his girl, and we haven't even reached his house yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Matthew 9:18-22",
-          "text": "She's healed from that very hour, and did you catch what Jesus called her, friend? Daughter, the same word the synagogue leader used for his girl, and we haven't even reached his house yet.",
+          "verses": "Matthew 9:23-24",
+          "text": "Jesus finally reaches the synagogue leader's house and sees the flute players and the noisy crowd. He tells them all to go away.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 9:23",
-          "question": "Jesus finally reaches the synagogue leader's house. Inside, He sees the ___ players and a noisy crowd.",
-          "answers": [
-            {
-              "text": "flute",
-              "correct": true
-            },
-            {
-              "text": "harp",
-              "correct": false
-            },
-            {
-              "text": "trumpet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Matthew 9:24",
-          "text": "Jesus tells that whole noisy crowd to go away. Flute players, everybody, OUT.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 9:24",
@@ -251,22 +199,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 9:24",
-          "question": "When Jesus says the girl is not dead but asleep, how does the crowd react?",
+          "question": "After Jesus speaks about the girl, the crowd at the synagogue leader's house ___ at Him.",
           "answers": [
             {
-              "text": "They laugh at Him",
+              "text": "laughed",
               "correct": true
             },
             {
-              "text": "They weep even louder",
+              "text": "shouted",
               "correct": false
             },
             {
-              "text": "They fall silent",
+              "text": "stared",
               "correct": false
             }
           ],
@@ -274,19 +222,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "Matthew 9:25",
-          "text": "Friend, when people laugh at ME, it's because I flipped a tray with my mustache and three cookies are STILL stuck to the ceiling. But Jesus isn't backing down: the crowd gets put outside, and He goes in to the girl.",
+          "text": "The crowd gets put outside. Then Jesus goes in to the girl.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 9:25",
-          "question": "The synagogue leader asked Jesus to place His hand on his daughter. When Jesus reaches the girl, what does He do?",
+          "question": "Jesus goes in to the synagogue leader's daughter. What does He do?",
           "answers": [
             {
               "text": "He takes her by the hand",
@@ -305,29 +253,29 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "choice",
-          "type": "true_false",
+          "card": 16,
+          "kind": "story",
           "verses": "Matthew 9:25",
-          "question": "When Jesus takes the synagogue leader's daughter by the hand, she gets up.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "And the girl gets UP. Out goes the noisy crowd, up gets the girl.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
-          "kind": "story",
-          "verses": "Matthew 9:25-26",
-          "text": "The girl is UP, and the news about this spreads throughout that region. Friend, you could NOT keep that in a cookie box if you taped it shut.",
+          "card": 17,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 9:26",
+          "question": "The news about the synagogue leader's daughter stays quiet inside his house.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Matthew 3:13-4:1",
-          "text": "Friend, Jesus has just been baptized in the Jordan, and a voice from heaven called Him God's beloved Son. Then the Spirit leads Jesus out into the wilderness. Pull up a stool, because this one's a showdown.",
+          "verses": "Matthew 4:1",
+          "text": "Friend, Jesus has just been baptized in the Jordan, and a voice from heaven called Him God's beloved Son (Matthew 3:13-17). Then the Spirit leads Jesus out into the wilderness. Pull up a stool, because this one's a showdown.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -47,9 +47,9 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "Matthew 3:17-4:3",
-          "text": "Then the tempter comes to Him and opens with a big fat IF: “If You are the Son of God,” he says. Hold on. A voice from HEAVEN already said He is!",
-          "needs_agent_fix": true,
+          "verses": "Matthew 4:3",
+          "text": "Then the tempter comes to Him and opens with a big fat IF: “If You are the Son of God…” Whoa, a voice from HEAVEN already said He is (Matthew 3:17)!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -80,7 +80,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 4:4",
-          "question": "True or false: Jesus turns the stones into bread to prove to the tempter that He is the Son of God.",
+          "question": "True or false: Jesus turns the stones into bread.",
           "answers": [
             {
               "text": "True",
@@ -96,25 +96,10 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Matthew 4:4",
-          "question": "Jesus answers the tempter with Scripture: a man doesn't live on bread alone. What else does he live on?",
-          "answers": [
-            {
-              "text": "Every word that comes from the mouth of God",
-              "correct": true
-            },
-            {
-              "text": "The strength God puts into his body",
-              "correct": false
-            },
-            {
-              "text": "The work of his own two hands",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Jesus answers, quoting Deuteronomy (Deuteronomy 8:3): “It is written: ‘Man shall not live on bread alone, but on every word that comes from the mouth of God.’”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,7 +115,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 4:6",
-          "question": "Up on the pinnacle of the temple, the devil tries his “If You are the Son of God” line again. What does he dare Jesus to do?",
+          "question": "Up on the pinnacle of the temple, the devil tries his “If You are the Son of God…” line again. What does he dare Jesus to do?",
           "answers": [
             {
               "text": "Throw Himself down",
@@ -152,39 +137,16 @@
           "card": 10,
           "kind": "story",
           "verses": "Matthew 4:6",
-          "text": "And now the devil quotes Scripture TOO: “He will command His angels concerning You, and they will lift You up in their hands, so that You will not strike Your foot against a stone.” Oh, so NOW he's a Bible scholar.",
+          "text": "And now the devil quotes a psalm TOO (Psalm 91:11-12): “He will command His angels concerning You, and they will lift You up in their hands, so that You will not strike Your foot against a stone.” Oh, so NOW he's a Bible scholar.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 4:7",
-          "question": "Jesus won't jump. Same as with the stones, He answers the devil with ___.",
-          "answers": [
-            {
-              "text": "Scripture",
-              "correct": true
-            },
-            {
-              "text": "a miracle",
-              "correct": false
-            },
-            {
-              "text": "a question",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 4:7",
-          "question": "True or false: The Scripture Jesus quotes back tells people not to put the Lord their God to the test.",
+          "question": "True or false: Jesus answers the devil that you should not put the Lord your God to the test.",
           "answers": [
             {
               "text": "True",
@@ -199,50 +161,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Matthew 4:8",
-          "text": "Third try. The devil takes Jesus to a very high mountain and shows Him all the kingdoms of the world and their glory. ALL of them. Friend, for years the best view I had was the inside of a junk drawer.",
-          "needs_agent_fix": true,
+          "text": "Then the devil takes Jesus to a very high mountain and shows Him all the kingdoms of the world and their glory. Friend, for years the best view I had was the inside of a junk drawer.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 4:9",
+          "question": "The devil offers Jesus all the kingdoms of the world and their glory. What does he want from Jesus in return?",
+          "answers": [
+            {
+              "text": "To fall down and worship him",
+              "correct": true
+            },
+            {
+              "text": "To stop speaking about God",
+              "correct": false
+            },
+            {
+              "text": "To leave the land of Israel",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 4:9",
-          "question": "The devil offers Jesus all the kingdoms of the world, if Jesus will fall down and ___ him.",
-          "answers": [
-            {
-              "text": "worship",
-              "correct": true
-            },
-            {
-              "text": "obey",
-              "correct": false
-            },
-            {
-              "text": "follow",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Matthew 4:10",
-          "text": "“Away from Me, Satan!” Jesus tells him. No counteroffer. No sleeping on it. Done.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 4:10",
-          "question": "Jesus sends Satan away and quotes Scripture one more time. Who does that Scripture say to worship and serve?",
+          "question": "“Away from Me, Satan!” Jesus tells the devil, and He answers with Scripture again. Who does Jesus say to worship and serve?",
           "answers": [
             {
               "text": "The Lord your God only",
@@ -261,25 +215,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 4:11",
-          "question": "The devil finally leaves Jesus. Then ___ come and take care of Him.",
+          "question": "Jesus has answered the devil's third test. What does the devil do next?",
           "answers": [
             {
-              "text": "angels",
+              "text": "He leaves Jesus",
               "correct": true
             },
             {
-              "text": "disciples",
+              "text": "He tries a fourth test",
               "correct": false
             },
             {
-              "text": "crowds",
+              "text": "He begs Jesus for mercy",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "Matthew 4:11",
+          "text": "Then angels come and minister to Jesus. Three tests, and every time Jesus answers with Scripture, and the tempter walks off with an EMPTY cookie box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Nahum 2:1",
-          "text": "Nahum the prophet has a message for Nineveh, and here it comes: one who scatters is marching on the city. Friend, that is NOT who you want showing up on the doorbell camera. So Nahum calls out to Nineveh to guard the fortress, watch the road, brace up and summon all its strength.",
+          "text": "Nahum the prophet has had a vision about Nineveh, and he's already said the LORD will make an end of that city (Nahum 1:1, 8). Now one who scatters advances against Nineveh, and friend, that is NOT who you want showing up on the doorbell camera. So the call goes out: \"Guard the fortress! Watch the road! Brace yourselves! Summon all your strength!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Nahum 2:3",
-          "text": "The attackers roll in with red shields, warriors dressed in scarlet, and chariot fittings that flash like fire. Friend, my whole wardrobe is one white apron, and these folks showed up COLOR-COORDINATED.",
+          "text": "The mighty men carry red shields, the warriors are dressed in scarlet, and the chariot fittings flash like fire. Friend, my whole wardrobe is one white apron, and these folks showed up COLOR-COORDINATED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,15 +80,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Nahum 2:6",
-          "question": "The river gates are thrown open, but the palace stands firm.",
+          "question": "When the river gates are thrown open, the palace collapses.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Nahum 2:7",
-          "text": "Oh, friend. Listen to that: her maidservants moan like doves and beat upon their breasts, and I bet that's a sound nobody in that city ever forgets.",
+          "text": "The city's maidservants moan like doves and beat upon their breasts. I think this one hurts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -179,8 +179,8 @@
           "card": 12,
           "kind": "story",
           "verses": "Nahum 2:9",
-          "text": "Then a new shout goes up: \"Plunder the silver! Plunder the gold!\" Friend, that's not a battle cry anymore. That's the office group chat when somebody types \"free stuff in the break room.\"",
-          "needs_agent_fix": true,
+          "text": "Then a new shout goes up: \"Plunder the silver! Plunder the gold!\" Friend, that sounds like the office group chat when somebody types \"free stuff in the break room.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -248,41 +248,31 @@
           "card": 16,
           "kind": "story",
           "verses": "Nahum 2:11",
-          "text": "Then Nahum asks where the lions' lair is now, the feeding ground where the lion and lioness prowled with nothing to frighten them away. Friend, NOTHING scared them, and a dropped baking sheet sends me three feet in the air, gold base and all.",
+          "text": "Then comes a question: where is the lions' lair, where the lion and lioness prowled with their cubs, with nothing to frighten them away? Friend, NOTHING scared them, and a dropped baking sheet sends me three feet in the air, gold base and all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Nahum 2:12",
-          "question": "In Nahum's picture, the lion mauled enough for its ___ and filled its lairs with mauled ___.",
+          "question": "In Nahum's picture, the lion hunts for its cubs and the lioness. How much does it bring back?",
           "answers": [
             {
-              "text": "cubs",
-              "correct": true,
-              "blank": 1
+              "text": "Enough to fill its dens",
+              "correct": true
             },
             {
-              "text": "prey",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "flock",
+              "text": "Barely enough to get by",
               "correct": false
             },
             {
-              "text": "straw",
-              "correct": false
-            },
-            {
-              "text": "stones",
+              "text": "Hardly anything at all",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -312,7 +302,7 @@
           "card": 19,
           "kind": "story",
           "verses": "Nahum 2:13",
-          "text": "And He spells it out: chariots to cinders, the sword devours the young lions, and the prey gets cut off from the earth. Friend, the last time I saw cinders I'd left a batch in during a phone call, and even THAT wasn't this final.",
+          "text": "Then He says He will reduce her chariots to cinders, the sword will devour her young lions, and He will cut off her prey from the earth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -321,18 +311,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Nahum 2:13",
-          "question": "One more thing the LORD says will be gone. What will no longer be heard?",
+          "question": "The LORD names one more thing Nineveh will lose. What will no longer be heard?",
           "answers": [
             {
-              "text": "The voices of your messengers",
+              "text": "The voices of her messengers",
               "correct": true
             },
             {
-              "text": "The songs of your temples",
+              "text": "The songs of her temples",
               "correct": false
             },
             {
-              "text": "The roar of your armies",
+              "text": "The roar of her armies",
               "correct": false
             }
           ],

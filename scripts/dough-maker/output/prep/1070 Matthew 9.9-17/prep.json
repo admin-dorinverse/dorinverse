@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 9:9",
-          "text": "Jesus has just healed a paralyzed man (Matthew 9:1-8), and now He moves on from there. He spots a man named Matthew sitting at the tax booth. Friend, NOBODY walks past a tax booth thinking, \"Ooh, let me go make a new friend over there,\" but Jesus does.",
+          "text": "Jesus has just healed a paralyzed man (Matthew 9:1-8), and now He moves on from there. He spots a man named Matthew sitting at the tax booth. Friend, NOBODY walks past a tax booth thinking, \"Ooh, let me go make a new friend over there.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,8 +59,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Matthew 9:9",
-          "text": "NOPE. Matthew gets up and follows Him, just like that. Friend, I have taken longer deciding which side of the dough to stamp.",
-          "needs_agent_fix": true,
+          "text": "Matthew gets up and follows Him, just like that. Friend, I have taken longer deciding which side of the dough to stamp.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -117,7 +117,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Matthew 9:11-12",
-          "text": "Nope, they go to His disciples: “Why does your Teacher eat with tax collectors and sinners?” Jesus hears it, and He answers with a picture from everyday life.",
+          "text": "The Pharisees ask His disciples, “Why does your Teacher eat with tax collectors and sinners?” Jesus hears it, and He answers with a picture from everyday life.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -181,7 +181,7 @@
           "verses": "Matthew 9:14",
           "text": "Then a new group walks up: John's disciples, the followers of John the Baptist. They've got a question about fasting, and they bring the Pharisees into it too.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -200,15 +200,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Matthew 9:14-15",
-          "text": "Right, it's the other way around: John's disciples and the Pharisees fast often, and Jesus's disciples don't. Jesus replies, “How can the guests of the bridegroom mourn while He is with them?”",
+          "text": "John's disciples ask why they and the Pharisees fast often, but Jesus's disciples don't. Jesus replies, “How can the guests of the bridegroom mourn while He is with them?”",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -231,7 +231,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -239,7 +239,7 @@
           "verses": "Matthew 9:15-16",
           "text": "And then, Jesus says, they will fast. Next picture: an old garment, and friend, after years in a junk drawer, I take old and worn out PERSONALLY.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
@@ -294,30 +294,20 @@
         {
           "card": 20,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 9:17",
-          "question": "Instead, Jesus says, new wine goes into ___ wineskins, and ___ are preserved.",
+          "question": "Instead, Jesus says, new wine goes into new wineskins. What does He say happens then?",
           "answers": [
             {
-              "text": "new",
-              "correct": true,
-              "blank": 1
+              "text": "The wine and the skins are both kept safe",
+              "correct": true
             },
             {
-              "text": "both",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "old",
+              "text": "The wine stays fresh for a long time",
               "correct": false
             },
             {
-              "text": "cracked",
-              "correct": false
-            },
-            {
-              "text": "neither",
+              "text": "The skins stretch to hold more wine",
               "correct": false
             }
           ],

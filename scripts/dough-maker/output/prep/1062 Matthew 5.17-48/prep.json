@@ -41,15 +41,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 5:18",
-          "question": "Jesus says the tiniest marks in the Law, a jot or a stroke of a pen, will disappear before everything is accomplished.",
+          "question": "Jesus says not a single jot, not a stroke of a pen, will disappear from the Law until everything is accomplished.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Matthew 5:18",
-          "text": "Not a jot, not a stroke, Jesus says, until heaven and earth pass away. Friend, that's smaller than the crumbs I miss EVERY time I wipe my counter.",
+          "text": "That holds until heaven and earth pass away, Jesus says. Not even the tiniest mark goes missing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -90,31 +90,27 @@
           "card": 6,
           "kind": "story",
           "verses": "Matthew 5:20",
-          "text": "Then Jesus brings up the scribes and Pharisees, religious leaders in Israel. I bet every ear on that mountain perked right up.",
+          "text": "Then Jesus brings up the scribes and Pharisees, religious leaders in Israel who taught the Law. I bet every ear on that mountain perked right up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Matthew 5:20",
-          "question": "Jesus says that unless your righteousness ___ that of the scribes and Pharisees, you will never enter the kingdom of heaven.",
+          "question": "Jesus says righteousness equal to that of the scribes and Pharisees is enough to enter the kingdom of heaven.",
           "answers": [
             {
-              "text": "exceeds",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "matches",
-              "correct": false
-            },
-            {
-              "text": "imitates",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -152,7 +148,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Matthew 5:22",
-          "text": "Words count too. Jesus says calling your brother “Raca” makes you subject to the Sanhedrin, and saying “You fool!” makes you subject to the fire of hell.",
+          "text": "Words count too. Jesus says calling your brother “Raca” makes you subject to the Sanhedrin, the high council, and saying “You fool!” makes you subject to the fire of hell.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -191,7 +187,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Matthew 5:24",
-          "text": "Reconcile first, then come back and offer the gift. Friend, if I tried that with a batch in the oven, I'd come back and have to apologize to the cookies too.",
+          "text": "First go be reconciled, then come back and offer the gift. The gift waits right there at the altar, and the brother comes first.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -200,7 +196,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 5:25",
-          "question": "Jesus says that if an adversary is taking you to court, it's best to wait and let the judge settle it.",
+          "question": "Jesus says that when you're on the way to court with an adversary, it's best to wait and let the judge settle it.",
           "answers": [
             {
               "text": "True",
@@ -227,7 +223,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 5:26",
-          "question": "If it goes all the way to prison, what does Jesus say you'll have to pay before you get out?",
+          "question": "Jesus warns that if you don't reconcile with your adversary on the way to court, you may end up in prison. What does He say you'll have to pay before you get out?",
           "answers": [
             {
               "text": "The last penny",
@@ -242,7 +238,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -298,15 +294,15 @@
           "question": "Jesus says to get rid of a right eye or a right hand that causes you to sin. Why does He say it?",
           "answers": [
             {
-              "text": "Losing one part beats your whole body in hell",
+              "text": "Better to lose one part than your whole body in hell",
               "correct": true
             },
             {
-              "text": "The eye and the hand were the most unclean parts",
+              "text": "The eye and the hand were counted the most unclean",
               "correct": false
             },
             {
-              "text": "The priests required it of anyone who sinned",
+              "text": "The priests required it after any sin at all",
               "correct": false
             }
           ],
@@ -348,7 +344,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Matthew 5:32",
-          "text": "And Jesus adds that he who marries a divorced woman commits adultery. This sermon doesn't skip the hard parts, friend.",
+          "text": "And Jesus adds that he who marries a divorced woman commits adultery.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -383,7 +379,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Matthew 5:34-35",
-          "text": "Not by heaven, Jesus says, because it's God's throne, and not by the earth, because it's His footstool. The whole EARTH is a footstool, friend, and my whole planet barely fits one bakery.",
+          "text": "Not by heaven, Jesus says, for it is God's throne. And not by the earth, for it is His footstool.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -519,20 +515,16 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Matthew 5:39",
-          "question": "If someone slaps you on your right cheek, what does Jesus say to do?",
+          "question": "If someone slaps you on your right cheek, Jesus says to turn to him the other also.",
           "answers": [
             {
-              "text": "Turn to him the other cheek also",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Walk away and say nothing",
-              "correct": false
-            },
-            {
-              "text": "Take it before the elders",
+              "text": "False",
               "correct": false
             }
           ],
@@ -666,15 +658,15 @@
           "card": 11,
           "kind": "story",
           "verses": "Matthew 5:45",
-          "text": "Same sun and same rain for the evil and the good, the righteous and the unrighteous. Friend, the sun even comes up on ME, and I've burned more batches than I'm willing to admit.",
+          "text": "Jesus says the Father causes His sun to rise on the evil and the good too. Same sunrise for everybody, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Matthew 5:46",
-          "text": "Then Jesus asks, “If you love those who love you, what reward will you get? Do not even tax collectors do the same?”",
+          "verses": "Matthew 5:46-47",
+          "text": "Then Jesus brings up two groups: tax collectors, and Gentiles, people who aren't Jewish.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -682,8 +674,8 @@
           "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Matthew 5:46",
-          "question": "Jesus says even tax collectors love those who love them. So what is He saying about loving only the people who love you back?",
+          "verses": "Matthew 5:46-47",
+          "question": "Jesus asks what reward you get for loving those who love you, since even tax collectors do the same, and even Gentiles greet their own brothers. What is He saying about loving only your own people?",
           "answers": [
             {
               "text": "It's nothing more than others already do",
@@ -704,28 +696,9 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 5:47",
-          "question": "Jesus says greeting only your brothers is something even the Gentiles, people who aren't Jewish, do.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 5:48",
-          "question": "Jesus wraps it all up. What does He tell them to be, as their heavenly Father is?",
+          "question": "After all this about loving even enemies, Jesus sums it up. What does He tell them to be, as their heavenly Father is?",
           "answers": [
             {
               "text": "Perfect",
@@ -741,15 +714,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Matthew 5:48",
           "text": "Hang on to your apron, friend. Jesus isn't done teaching on that mountain yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

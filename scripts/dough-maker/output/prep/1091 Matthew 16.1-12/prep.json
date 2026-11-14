@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Matthew 15:34-16:1",
-          "text": "Jesus just fed four thousand men, besides women and children, with seven loaves and a few small fish. Then He sails to Magadan, and the Pharisees and Sadducees show up. They're two groups of Jewish religious leaders, and they're here to test Him.",
+          "verses": "Matthew 16:1",
+          "text": "Jesus just fed a crowd of four thousand men, besides women and children (Matthew 15:38). Then He takes a boat to the region of Magadan (Matthew 15:39). Now the Pharisees and Sadducees, two groups of Jewish religious leaders, come to test Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -39,8 +39,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Matthew 16:1-2",
-          "text": "They ask for a SIGN from heaven, and Jesus answers them with the WEATHER report. When evening comes, He says, they say it'll be fair, because the sky is red.",
+          "verses": "Matthew 16:2",
+          "text": "Jesus answers by talking about the sky. When evening comes, He says, they say it'll be fair, because the sky is red.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 16:3",
-          "question": "In the morning, they say a red and overcast sky means a stormy day is coming.",
+          "question": "Jesus says that in the morning, the Pharisees and Sadducees say a red and overcast sky means a stormy day.",
           "answers": [
             {
               "text": "True",
@@ -139,21 +139,13 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Matthew 12:39-40; Matthew 16:4",
-          "text": "Nope, Jesus left them and went away. And that sign of Jonah? Back in Matthew 12, Jesus said the prophet Jonah was three days and three nights in a great fish, and the Son of Man will be three days and three nights in the heart of the earth.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
           "verses": "Matthew 16:5",
-          "text": "Three days in a fish, and I used to complain about a DRAWER. Then Jesus and the disciples cross to the other side, but the disciples forgot to pack something, and it's something IMPORTANT.",
+          "text": "Jesus and the disciples cross to the other side. But the disciples forgot to take something, and it's something IMPORTANT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 16:5",
@@ -176,7 +168,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Matthew 16:6",
           "text": "Then Jesus tells them, “Watch out!” and “Beware of the leaven of the Pharisees and Sadducees.” Now He's talking baker talk, and my mustache just stood straight up.",
@@ -184,23 +176,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Matthew 16:7",
-          "question": "The disciples talk it over and decide Jesus said it because they didn't bring any ___.",
+          "question": "The disciples talk it over and decide Jesus' warning about leaven is about the bread they didn't bring.",
           "answers": [
             {
-              "text": "bread",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "money",
-              "correct": false
-            },
-            {
-              "text": "fish",
+              "text": "False",
               "correct": false
             }
           ],
@@ -208,7 +195,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 16:8",
@@ -227,74 +214,74 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Matthew 16:8",
-          "text": "Jesus calls them “You of little faith” and asks why they're debating about having no bread. Friend, that's like standing right next to my oven, panicking about where I'm gonna bake.",
+          "text": "Jesus calls them “You of little faith” and asks why they're debating about having no bread. Ooh.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Matthew 16:9-10",
+          "question": "Jesus asks the disciples if they still don't remember the ___ for the five thousand and for the four thousand.",
+          "answers": [
+            {
+              "text": "loaves",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "healings",
+              "correct": false
+            },
+            {
+              "text": "parables",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 16:9",
-          "question": "Jesus asks if they still don't understand, and if they don't remember the ___ loaves for the five thousand.",
-          "answers": [
-            {
-              "text": "five",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "seven",
-              "correct": false
-            },
-            {
-              "text": "twelve",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Matthew 16:9-10",
+          "text": "Jesus brings up the five loaves for the five thousand AND the seven loaves for the four thousand. He asks how many basketfuls they gathered both times, and friend, you could hear a crumb drop.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Matthew 16:9-10",
-          "text": "Then He reminds them of the seven loaves for the four thousand, the meal they JUST saw. He asks how many basketfuls they gathered both times, and you could hear a crumb drop.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 16:11",
+          "question": "Jesus tells the disciples He was not telling them about bread.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 16:11",
-          "question": "Jesus tells the disciples He was talking about bread all along.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Matthew 16:11-12",
+          "text": "Then He gives the warning again: “But beware of the leaven of the Pharisees and Sadducees.” And FINALLY, the light comes on for the disciples.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
-          "kind": "story",
-          "verses": "Matthew 16:11-12",
-          "text": "Jesus says He wasn't telling them about bread, and then He says it again: “But beware of the leaven of the Pharisees and Sadducees.” And FINALLY, the light comes on for the disciples.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 16:12",
@@ -310,7 +297,7 @@
               "correct": false
             },
             {
-              "text": "temple",
+              "text": "prayers",
               "correct": false
             }
           ],

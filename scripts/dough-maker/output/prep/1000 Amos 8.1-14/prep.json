@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Amos 8:1",
-          "text": "Amos was a herdsman and a tender of sycamore-fig trees until the LORD sent him to prophesy to Israel (Amos 7:14-15). Now he tells what the Lord GOD showed him, and it's a basket of summer fruit. That's it, friend, that's the whole vision, and I'm ALREADY nervous.",
+          "text": "Amos was a herdsman and a tender of sycamore-fig trees until the LORD sent him to prophesy to Israel (Amos 7:14-15). Now he tells what the Lord GOD showed him, and it's a basket of summer fruit. I don't know about you, friend, but I'm ALREADY nervous.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -25,7 +25,7 @@
               "correct": true
             },
             {
-              "text": "A harvest",
+              "text": "A blessing",
               "correct": false
             },
             {
@@ -38,20 +38,9 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Amos 8:2",
-          "question": "The LORD tells Amos He will keep on sparing His people Israel.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Then the LORD adds, \"I will no longer spare them.\" Whew. Okay.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,7 +61,7 @@
               "correct": false
             },
             {
-              "text": "prayers",
+              "text": "cheering",
               "correct": false
             }
           ],
@@ -83,7 +72,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Amos 8:3",
-          "text": "And He says, \"Many will be the corpses, strewn in silence everywhere!\" That calm little fruit basket was NEVER calm, friend.",
+          "text": "The Lord GOD goes on: \"Many will be the corpses, strewn in silence everywhere!\" That one's heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -100,7 +89,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 8:5",
-          "question": "These people who trample the needy keep asking when the New Moon and the Sabbath will be over. Why?",
+          "question": "These people who trample the needy ask when the New Moon and the Sabbath will be over. Why?",
           "answers": [
             {
               "text": "So they can sell grain",
@@ -131,15 +120,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Amos 8:5",
-          "question": "These people who trample the needy plan to sell their grain using honest scales.",
+          "question": "Along with shrinking the ephah and raising the shekel, these people plan to cheat with dishonest scales.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -149,12 +138,20 @@
           "card": 10,
           "kind": "story",
           "verses": "Amos 8:6",
-          "text": "It gets worse. They talk about buying the poor with silver and the needy for a pair of sandals, and even selling the chaff with the wheat, which is like scraping the crumbs off the bottom of the box and selling them as a brand-new cookie.",
+          "text": "It gets worse. They talk about buying the poor with silver and the needy for a pair of sandals.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Amos 8:6",
+          "text": "They even plan on selling the chaff with the wheat. That's scraping the crumbs off the bottom of the cookie box and selling them as a brand-new cookie.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Amos 8:7",
@@ -173,11 +170,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 8:8",
-          "question": "The LORD asks, \"Will not the land quake for this, and all its dwellers mourn?\" Then He says the whole land will swell, surge and subside like a river. Which river?",
+          "question": "Then the prophecy asks, \"Will not the land quake for this, and all its dwellers mourn?\" It says the whole land will swell, surge and subside like a river. Which river?",
           "answers": [
             {
               "text": "The Nile",
@@ -196,15 +193,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "story",
           "verses": "Amos 8:9",
-          "text": "In that day, the Lord GOD says, He will make the sun go down at noon and darken the earth in the daytime. Noon, lunch break, and the sun just... clocks out.",
+          "text": "In that day, the Lord GOD says, He will make the sun go down at noon and darken the earth in the daytime. Darkness in the middle of the day.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 8:10",
@@ -227,7 +224,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "Amos 8:11",
           "text": "Then the Lord GOD says the days are coming when He will send a famine on the land. And friend, it's not the kind where you open the cupboard and stare at it like it owes you money.",
@@ -235,32 +232,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Amos 8:11",
-          "question": "The Lord GOD says it won't be a famine of bread or a thirst for water. It will be a famine of ___ the ___ of the LORD.",
+          "question": "The Lord GOD says it won't be a famine of bread or a thirst for water. It will be a famine of hearing the ___ of the LORD.",
           "answers": [
             {
-              "text": "hearing",
+              "text": "words",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "words",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "keeping",
+              "text": "songs",
               "correct": false
             },
             {
-              "text": "feasts",
-              "correct": false
-            },
-            {
-              "text": "seeing",
+              "text": "blessings",
               "correct": false
             }
           ],
@@ -268,7 +256,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Amos 8:12",
@@ -287,31 +275,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 19,
+          "kind": "story",
           "verses": "Amos 8:13",
-          "question": "In that day, the lovely young women and the young men as well will ___ from thirst.",
-          "answers": [
-            {
-              "text": "faint",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "cry",
-              "correct": false
-            },
-            {
-              "text": "beg",
-              "correct": false
-            }
-          ],
+          "text": "In that day, even the lovely young women and the young men as well will faint from thirst.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 8:14",

@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 15:22",
-          "text": "A Canaanite woman from that region comes to Him, and friend, this is NOT an inside voice. She's CRYING OUT: \"Lord, Son of David, have mercy on me!\"",
+          "text": "A Canaanite woman from that region comes to Him, and friend, this is NOT an inside voice: \"Lord, Son of David, have mercy on me!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 15:22",
-          "question": "What's going on that has the Canaanite woman crying out to Jesus for mercy?",
+          "question": "What's going on that has the Canaanite woman asking Jesus for mercy?",
           "answers": [
             {
               "text": "Her daughter is possessed by a demon",
@@ -72,7 +72,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 15:23",
-          "question": "The Canaanite woman is begging Jesus to help her daughter. Jesus answers her right away.",
+          "question": "When the Canaanite woman asks for mercy, Jesus answers her right away.",
           "answers": [
             {
               "text": "True",
@@ -116,20 +116,21 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 15:23",
-          "question": "Why do the disciples want Jesus to send the Canaanite woman away?",
+          "question": "The disciples want Jesus to send the Canaanite woman away because she keeps ___ after them.",
           "answers": [
             {
-              "text": "She keeps crying out after them",
-              "correct": true
+              "text": "crying out",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "It is getting late in the day",
+              "text": "whispering",
               "correct": false
             },
             {
-              "text": "The crowd is pressing in on them",
+              "text": "staring",
               "correct": false
             }
           ],
@@ -139,7 +140,7 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Matthew 15:23-24",
+          "verses": "Matthew 15:24",
           "text": "And then, after all that silence, Jesus speaks up. I'm leaning in like it's the last ten seconds on the oven timer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -190,7 +191,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Matthew 15:25",
-          "text": "NOPE. She comes and kneels before Him and says, \"Lord, help me!\"",
+          "text": "She comes right up, kneels before Him and says, \"Lord, help me!\" Three words. Every one of them counts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -207,71 +208,62 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 15:27",
-          "question": "The Canaanite woman answers Jesus' picture of the children's bread and the dogs. She says even the dogs get the ___ that fall from their master's table.",
+          "question": "The Canaanite woman's answer ___ the picture Jesus gave of the children's bread and the dogs.",
           "answers": [
             {
-              "text": "crumbs",
+              "text": "accepts",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "bones",
+              "text": "rejects",
               "correct": false
             },
             {
-              "text": "figs",
+              "text": "ignores",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Matthew 15:27",
-          "text": "She takes the very picture Jesus used and keeps right on asking. Friend, give me a HUNDRED more years in that junk drawer and I still don't come up with an answer like that.",
+          "text": "\"Yes, Lord,\" she says, \"even the dogs eat the crumbs that fall from their master's table.\" Friend, give me a HUNDRED more years in the junk drawer I got stuck in and I still don't come up with an answer like that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Matthew 15:27-28",
-          "text": "Back in the Millers' kitchen, crumbs hit that floor EVERY SINGLE BATCH, and I never once saw one go to waste. Then Jesus answers her.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 15:28",
+          "question": "Jesus answers the Canaanite woman. What does He praise in her?",
+          "answers": [
+            {
+              "text": "Her great faith",
+              "correct": true
+            },
+            {
+              "text": "Her great wisdom",
+              "correct": false
+            },
+            {
+              "text": "Her great courage",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 15:28",
-          "question": "She kept asking, even after Jesus' picture of the bread and the dogs. Jesus answers the Canaanite woman and tells her that her ___ is great.",
-          "answers": [
-            {
-              "text": "faith",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "kindness",
-              "correct": false
-            },
-            {
-              "text": "honesty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 15:28",
-          "question": "Jesus tells the Canaanite woman, \"Let it be done for you as you desire.\"",
+          "question": "Jesus tells the Canaanite woman it will be done for her as she desires.",
           "answers": [
             {
               "text": "True",
@@ -286,7 +278,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 15:28",

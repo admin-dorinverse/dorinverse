@@ -9,35 +9,12 @@
           "card": 1,
           "kind": "story",
           "verses": "Jonah 3:1",
-          "text": "Friend, Jonah is a prophet (2 Kings 14:25), and the last time God gave him a job, he ran to get away from the LORD (Jonah 1:3). Then a great fish vomited him onto dry land (Jonah 2:10). Now the word of the LORD comes to Jonah a second time.",
+          "text": "Friend, Jonah is a prophet (2 Kings 14:25). The LORD once told him to go to Nineveh, and he ran away from the LORD instead (Jonah 1:2-3). After a great fish vomited him onto dry land (Jonah 2:10), the word of the LORD comes to Jonah a second time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Jonah 3:2",
-          "question": "This second time, where does the LORD tell Jonah to go?",
-          "answers": [
-            {
-              "text": "Nineveh",
-              "correct": true
-            },
-            {
-              "text": "Tarshish",
-              "correct": false
-            },
-            {
-              "text": "Joppa",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "story",
           "verses": "Jonah 3:2",
           "text": "God tells Jonah to get up, go to the great city of Nineveh, and proclaim the message He gives him. Friend, after YEARS in the back of a junk drawer, I'm the PRESIDENT of the Second Chance Club.",
@@ -45,7 +22,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 3:3",
@@ -64,77 +41,38 @@
           "needs_human_decision": false
         },
         {
+          "card": 4,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Jonah 3:3",
+          "question": "Nineveh is an exceedingly great city. It's so big that it requires a ___ journey.",
+          "answers": [
+            {
+              "text": "three-day",
+              "correct": true
+            },
+            {
+              "text": "one-day",
+              "correct": false
+            },
+            {
+              "text": "ten-day",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 5,
           "kind": "story",
-          "verses": "Jonah 3:3",
-          "text": "And Nineveh is NOT a one-stoplight town, baker. The text calls it an exceedingly great city.",
+          "verses": "Jonah 3:4",
+          "text": "On the first day of his journey, Jonah heads into the city and proclaims, “Forty more days and Nineveh will be overturned!” Friend, I've opened fortune cookies with longer messages than that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Jonah 3:3",
-          "question": "A city THAT great, friend? How long a journey does Nineveh take?",
-          "answers": [
-            {
-              "text": "Three days",
-              "correct": true
-            },
-            {
-              "text": "One day",
-              "correct": false
-            },
-            {
-              "text": "Ten days",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Jonah 3:4",
-          "text": "On the first day of his journey, Jonah heads into the city and starts proclaiming. And friend, the message is SHORT.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Jonah 3:4",
-          "question": "Jonah's message says that in forty more days, Nineveh will be ___.",
-          "answers": [
-            {
-              "text": "overturned",
-              "correct": true
-            },
-            {
-              "text": "rebuilt",
-              "correct": false
-            },
-            {
-              "text": "blessed",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Jonah 3:4",
-          "text": "Jonah proclaims, “Forty more days and Nineveh will be overturned!” EIGHT words, friend, and I've cracked open fortune cookies with longer speeches.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jonah 3:5",
@@ -157,93 +95,89 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 7,
+          "kind": "story",
           "verses": "Jonah 3:5",
-          "question": "The Ninevites proclaim a ___ and dress in ___, from the greatest of them to the least.",
+          "text": "And they don't just nod along, friend. The Ninevites proclaim a fast and dress in sackcloth.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Jonah 3:5",
+          "question": "When the Ninevites fast and dress in sackcloth, who joins in?",
           "answers": [
             {
-              "text": "fast",
-              "correct": true,
-              "blank": 1
+              "text": "Everyone from greatest to least",
+              "correct": true
             },
             {
-              "text": "sackcloth",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "feast",
+              "text": "Only the city's leaders",
               "correct": false
             },
             {
-              "text": "linen",
-              "correct": false
-            },
-            {
-              "text": "silk",
+              "text": "Only the poorest families",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Jonah 3:5-6",
+          "text": "Everybody's in, the WHOLE city, like a group chat where everybody actually replies. Then word reaches the king of Nineveh.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Jonah 3:6",
+          "text": "The king gets up from his throne, takes off his royal robe, and covers himself with sackcloth too.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Jonah 3:6",
+          "question": "After the king of Nineveh leaves his throne and puts on sackcloth, where does he sit?",
+          "answers": [
+            {
+              "text": "In ashes",
+              "correct": true
+            },
+            {
+              "text": "At the city gate",
+              "correct": false
+            },
+            {
+              "text": "In the temple courts",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Jonah 3:5-6",
-          "text": "From the greatest to the least, the WHOLE city is in, like a group chat where everybody actually replies. Then word reaches the king of Nineveh.",
+          "verses": "Jonah 3:6-7",
+          "text": "From the throne to the ashes, friend, that's not a step down, that's the WHOLE staircase. Then the king issues a proclamation in Nineveh.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Jonah 3:6",
-          "question": "When word reaches him, the king of Nineveh gets up from his ___ and sits in ___.",
-          "answers": [
-            {
-              "text": "throne",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "ashes",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "chariot",
-              "correct": false
-            },
-            {
-              "text": "silence",
-              "correct": false
-            },
-            {
-              "text": "splendor",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Jonah 3:6-7",
-          "text": "He takes off his royal robe and goes from the throne to the ashes: not a step down, friend, the WHOLE staircase. Then he issues a proclamation in Nineveh, by the decree of the king and his nobles.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 3:7",
-          "question": "Under the king's decree, the herds and flocks must not eat or drink either.",
+          "question": "The king and his nobles issue a decree in Nineveh. Under it, the herds and flocks must not eat or drink either.",
           "answers": [
             {
               "text": "True",
@@ -258,7 +192,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jonah 3:8",
@@ -269,11 +203,11 @@
               "correct": true
             },
             {
-              "text": "Their idols and their altars",
+              "text": "Their wealth and their trade",
               "correct": false
             },
             {
-              "text": "Their wealth and their trade",
+              "text": "Their homes and their fields",
               "correct": false
             }
           ],
@@ -281,7 +215,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jonah 3:9",
@@ -300,7 +234,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Jonah 3:9-10",
           "text": "The king says, “Who knows? God may turn and relent; He may turn from His fierce anger, so that we will not perish.” Then God sees their actions, that they have turned from their evil ways.",
@@ -308,7 +242,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jonah 3:10",
@@ -331,7 +265,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "Jonah 3:10",
           "text": "Hang your apron up for now, friend, but don't get comfortable. This story is NOT done yet.",

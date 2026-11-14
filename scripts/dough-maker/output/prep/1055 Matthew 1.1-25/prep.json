@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 1:1",
-          "text": "Friend, the book of Matthew opens with a family tree. It's \"the record of the genealogy of Jesus Christ, the son of David, the son of Abraham\". My family tree? A bin at a closing bakery and a 25-cent price sticker.",
-          "needs_agent_fix": true,
+          "text": "Friend, the Gospel of Matthew opens with the record of the genealogy of Jesus Christ, the son of David, the son of Abraham. My family tree? One bin at a bakery that was closing down, and a price sticker that said 25 cents.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,7 +18,7 @@
           "kind": "story",
           "verses": "Matthew 1:2-17",
           "text": "Then comes the list, father to son: Abraham, Isaac, Jacob, down to David the king, down through the exile to Babylon, all the way to Joseph, the husband of Mary. A few moms make the list too, like Tamar, Rahab and Ruth. It adds up to three stretches of fourteen generations, and here I am losing count of the cookies on ONE tray.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -26,41 +26,22 @@
           "kind": "story",
           "verses": "Matthew 1:18",
           "text": "Now here's how the birth of Jesus Christ came about: His mother Mary is pledged in marriage to Joseph, but they haven't come together yet. That's the engaged stage, where the biggest problem is SUPPOSED to be the seating chart.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 1:18",
-          "question": "Before Mary and Joseph come together, Mary is found to be with child.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 1:18",
-          "question": "Mary is found to be with child before she and Joseph come together. Through whom?",
+          "question": "Before Mary and Joseph come together, Mary is found to be with child. Through whom?",
           "answers": [
             {
               "text": "The Holy Spirit",
               "correct": true
             },
             {
-              "text": "The angel of the Lord",
+              "text": "The priest Zechariah",
               "correct": false
             },
             {
@@ -68,82 +49,74 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Matthew 1:19",
+          "text": "Joseph, her husband, is a righteous man, and he's unwilling to disgrace Mary publicly. Friend, I spent years wedged between dead batteries in a junk drawer, and even I wouldn't trade places with Joseph right now.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Matthew 1:19",
-          "text": "Joseph, her husband, is a righteous man, and he's unwilling to disgrace Mary publicly. Friend, I spent years wedged between dead batteries in a junk drawer, and even I wouldn't trade places with Joseph right now.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Matthew 1:19",
-          "question": "Joseph is righteous and unwilling to disgrace Mary publicly. So what does he resolve to do?",
-          "answers": [
-            {
-              "text": "Quietly divorce her",
-              "correct": true
-            },
-            {
-              "text": "Ask her father for advice",
-              "correct": false
-            },
-            {
-              "text": "Speak with the priest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Matthew 1:20",
-          "text": "But after Joseph ponders these things, an angel of the Lord appears to him. Friend, the last time I heard of an angel dropping in on somebody, it was ME, in the back of a junk drawer, under a pile of takeout menus!",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Matthew 1:20",
-          "question": "After Joseph ponders all this, an angel of the Lord appears to him in a ___.",
+          "verses": "Matthew 1:19",
+          "question": "Joseph is righteous and unwilling to disgrace Mary publicly. So he resolves to ___ her quietly.",
           "answers": [
             {
-              "text": "dream",
+              "text": "divorce",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "temple",
+              "text": "marry",
               "correct": false
             },
             {
-              "text": "vineyard",
+              "text": "hide",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 7,
           "kind": "story",
           "verses": "Matthew 1:20",
-          "text": "The angel opens with \"Joseph, son of David\", and BOOM, the whole family tree from the top of the book gets squeezed into four words. Me? I can't tell you about one cookie without a twenty-minute story about a junk drawer!",
-          "needs_agent_fix": true,
+          "text": "But after Joseph ponders these things, an angel of the Lord appears to him. Friend, when I'M stuck pondering something, the only one who shows up is my oven timer!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 1:20",
+          "question": "After Joseph ponders all this, the angel of the Lord appears to him. Where does it happen?",
+          "answers": [
+            {
+              "text": "In a dream",
+              "correct": true
+            },
+            {
+              "text": "In the temple courts",
+              "correct": false
+            },
+            {
+              "text": "Out in the fields",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 1:20",
@@ -158,19 +131,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Matthew 1:21",
           "text": "Mary will give birth to a Son, the angel says, and Joseph is to give Him the name Jesus. No baby name book, no family group chat vote, the name comes SPECIAL DELIVERY!",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 1:21",
@@ -189,19 +162,43 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Matthew 1:22",
+          "text": "Then the Gospel of Matthew tells us all this took place to fulfill what the Lord had said through the prophet Isaiah (Isaiah 7:14). Lean in, friend, because these words are a BIG deal.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Matthew 1:23",
+          "question": "The prophet's words say the ___ will be with child and give birth to a son.",
+          "answers": [
+            {
+              "text": "virgin",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "widow",
+              "correct": false
+            },
+            {
+              "text": "queen",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Matthew 1:22-23",
-          "text": "Then the book steps back: all this took place to fulfill what the Lord had said through the prophet Isaiah, that the virgin will be with child and give birth to a son, and they will call Him Immanuel (Isaiah 7:14). The Lord called this one way back through Isaiah, friend, and I set THREE timers and still burn a batch.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 1:23",
@@ -220,58 +217,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 1:24",
+          "question": "When Joseph wakes up, what does he do?",
+          "answers": [
+            {
+              "text": "Embraces Mary as his wife",
+              "correct": true
+            },
+            {
+              "text": "Tells the priests what he saw",
+              "correct": false
+            },
+            {
+              "text": "Sends Mary to her relatives",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 1:24",
-          "question": "When Joseph wakes up, he does as the angel of the Lord commanded him and ___ Mary as his wife.",
-          "answers": [
-            {
-              "text": "embraces",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "divorces",
-              "correct": false
-            },
-            {
-              "text": "dismisses",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 1:25",
-          "question": "Joseph has no union with Mary until she gives birth to a Son.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "story",
           "verses": "Matthew 1:25",
-          "text": "And when the Son is born, Joseph gives Him the name Jesus, just like the angel said. Don't take that apron off yet, friend, because this story's got a LOT of baking left.",
-          "needs_agent_fix": true,
+          "text": "Joseph has no union with Mary until she gives birth to a Son. And he gives Him the name Jesus, but friend, this story is only getting started.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

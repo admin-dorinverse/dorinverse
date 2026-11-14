@@ -10,92 +10,73 @@
           "kind": "story",
           "verses": "Zechariah 9:1",
           "text": "Zechariah, a prophet the word of the LORD came to (Zechariah 1:1), has a new message, and it's called a burden. It's aimed at the land of Hadrach and at Damascus, its resting place, for the eyes of men and of all the tribes of Israel are on somebody.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Zechariah 9:1",
-          "question": "The burden against Hadrach and Damascus says the eyes of men and of all the tribes of Israel are on someone. Who?",
+          "question": "The burden against Hadrach and Damascus says the eyes of men and of all the tribes of Israel are on the ___.",
           "answers": [
             {
-              "text": "The LORD",
+              "text": "LORD",
               "correct": true
             },
             {
-              "text": "The king of Damascus",
+              "text": "king",
               "correct": false
             },
             {
-              "text": "The prophet Zechariah",
+              "text": "priests",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Zechariah 9:2",
-          "text": "The burden keeps rolling to Hamath, which borders it, and then on to Tyre and Sidon. Friend, this message has more stops than a delivery truck.",
-          "needs_agent_fix": true,
+          "text": "The burden keeps rolling to Hamath, which borders it, and then on to Tyre and Sidon, though they are very shrewd. Friend, this message has more stops than a delivery truck.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Zechariah 9:2",
-          "question": "Zechariah's burden describes Tyre and Sidon as very shrewd.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Zechariah 9:3",
+          "text": "Tyre has built herself a fortress and heaped up silver like dust and gold like the dirt of the streets. Friend, I spent YEARS in a junk drawer counting dust, and not one speck of it was silver.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Zechariah 9:3",
-          "text": "Tyre has built herself a fortress and heaped up silver like dust and gold like the dirt of the streets. Friend, I spent YEARS in a junk drawer counting dust, and not one speck of it was silver.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Zechariah 9:4",
+          "question": "Tyre has her fortress and her piles of silver and gold. What does the Lord say He'll do to her?",
+          "answers": [
+            {
+              "text": "Make her poor",
+              "correct": true
+            },
+            {
+              "text": "Add to her gold",
+              "correct": false
+            },
+            {
+              "text": "Guard her walls",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Zechariah 9:4",
-          "question": "Tyre has her fortress and her piles of silver and gold. What will the Lord do with all that wealth?",
-          "answers": [
-            {
-              "text": "Cast it into the sea",
-              "correct": true
-            },
-            {
-              "text": "Hand it over to Sidon",
-              "correct": false
-            },
-            {
-              "text": "Bury it in the desert",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 9:4",
@@ -110,23 +91,23 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Zechariah 9:4-5",
+          "text": "The Lord will cast her wealth into the sea. Ashkelon, a Philistine city, will see it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Zechariah 9:5",
-          "text": "Next on the list are Ashkelon, Gaza and Ekron. First up, Ashkelon will see.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 9:5",
-          "question": "When Ashkelon sees, it will celebrate.",
+          "question": "When Ashkelon sees what happens to Tyre, it will celebrate.",
           "answers": [
             {
               "text": "True",
@@ -137,46 +118,65 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Zechariah 9:5",
+          "text": "Ashkelon will fear. Gaza and Ekron, two more Philistine cities, will writhe in agony, for Ekron's hope will wither.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Zechariah 9:5",
-          "text": "Ashkelon will fear. Gaza will writhe in agony, and so will Ekron, because her hope will wither.",
-          "needs_agent_fix": true,
+          "question": "In all this, Gaza will lose her king.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Zechariah 9:5",
-          "question": "There will no longer be a ___ in Gaza, and Ashkelon will be left with no one living there.",
-          "answers": [
-            {
-              "text": "king",
-              "correct": true
-            },
-            {
-              "text": "priest",
-              "correct": false
-            },
-            {
-              "text": "prophet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Zechariah 9:5-6",
+          "text": "Ashkelon will be left with no one living there, and a mixed race will move into Ashdod, another Philistine city.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Zechariah 9:6",
-          "text": "A mixed race will move into Ashdod. Then the LORD says it straight: \"I will cut off the pride of the Philistines.\"",
-          "needs_agent_fix": true,
+          "question": "Ashdod gets new people, and the LORD says He'll cut off something of the Philistines. What?",
+          "answers": [
+            {
+              "text": "Their pride",
+              "correct": true
+            },
+            {
+              "text": "Their harvest",
+              "correct": false
+            },
+            {
+              "text": "Their trade",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -184,7 +184,7 @@
           "kind": "story",
           "verses": "Zechariah 9:7",
           "text": "Then the LORD says something more about the Philistines. He'll remove the blood from their mouths and the abominations from between their teeth.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -195,19 +195,19 @@
           "question": "Once the LORD removes the blood and the abominations from the Philistines' mouths, what will they become?",
           "answers": [
             {
-              "text": "A remnant for our God",
+              "text": "A remnant for God",
               "correct": true
             },
             {
-              "text": "A warning to the nations",
+              "text": "A warning to others",
               "correct": false
             },
             {
-              "text": "Servants of the city of Tyre",
+              "text": "Servants to Tyre",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -230,7 +230,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -238,7 +238,7 @@
           "kind": "story",
           "verses": "Zechariah 9:7",
           "text": "Even Ekron will be like the Jebusites, the people who ended up living among Judah in Jerusalem (Joshua 15:63). One minute they're on the burden list, the next minute they've got a name tag that says COUSIN.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -246,7 +246,7 @@
           "kind": "story",
           "verses": "Zechariah 9:8",
           "text": "Then the LORD makes a promise about His own house. He says He'll camp around it because of an army, because of those who march to and fro.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -269,7 +269,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -283,7 +283,7 @@
           "kind": "story",
           "verses": "Zechariah 9:9",
           "text": "Now the whole mood changes. A call goes out to the Daughter of Zion and the Daughter of Jerusalem, because somebody's on the way.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -302,38 +302,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Zechariah 9:9",
-          "text": "Why all the shouting? Their King is coming to them, righteous and victorious, and I'm already looking around for the trumpets.",
-          "needs_agent_fix": true,
+          "text": "Why all the shouting? Their King is coming to them, righteous and victorious, and humble too.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Zechariah 9:9",
-          "question": "This righteous and victorious King coming to Zion is also described as humble.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 9:9",
@@ -352,23 +333,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Zechariah 9:9",
+          "text": "I had the trumpets lined up, and the King comes humble, on a colt, the foal of a DONKEY. The Gospel of Matthew says this was fulfilled when Jesus rode into Jerusalem (Matthew 21:4-10).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Zechariah 9:9",
-          "text": "I had the trumpets lined up, and the King comes humble, on a colt, the foal of a DONKEY. The Gospel of Matthew says this was fulfilled when Jesus rode into Jerusalem (Matthew 21:4-10).",
-          "needs_agent_fix": true,
+          "verses": "Zechariah 9:10",
+          "text": "Then the LORD says He'll cut off the chariot from Ephraim and the horse from Jerusalem.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Zechariah 9:10",
-          "text": "Then the LORD says He'll cut off the chariot from Ephraim and the horse from Jerusalem, and the bow of war will be broken.",
-          "needs_agent_fix": true,
+          "question": "With the chariot and the horse cut off from Ephraim and Jerusalem, what will happen to the bow of war?",
+          "answers": [
+            {
+              "text": "It will be broken",
+              "correct": true
+            },
+            {
+              "text": "It will be restrung",
+              "correct": false
+            },
+            {
+              "text": "It will be stored away",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -391,7 +395,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -410,7 +414,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -418,15 +422,15 @@
           "kind": "story",
           "verses": "Zechariah 9:10",
           "text": "His dominion will reach from sea to sea, and from the Euphrates to the ends of the earth. Friend, that's more stops than the burden had, and the burden had a LOT.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Zechariah 9:11",
-          "text": "Now the LORD turns to His people, and some of them are prisoners in a waterless pit. Friend, I spent years in the dark at the back of a junk drawer, so this one hits close to home.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD speaks of \"your prisoners\" in a waterless pit, and of the blood of His covenant.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -434,7 +438,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 9:11",
-          "question": "What will the LORD do for His people's prisoners in the waterless pit?",
+          "question": "Because of the blood of His covenant, what will the LORD do for the prisoners in the waterless pit?",
           "answers": [
             {
               "text": "Release them",
@@ -449,61 +453,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Zechariah 9:11",
-          "question": "The LORD will set the prisoners free because of the blood of His ___.",
+          "type": "true_false",
+          "verses": "Zechariah 9:12",
+          "question": "Once they're released, the LORD tells the prisoners to return to their stronghold.",
           "answers": [
             {
-              "text": "covenant",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "warriors",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Zechariah 9:12",
-          "text": "Then He tells them to return to their stronghold and calls them prisoners of hope. That's the expired coupon I shared a drawer with, friend: way past its date and STILL believing.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Zechariah 9:12",
-          "question": "Even today, the LORD declares He'll restore to the prisoners of hope ___.",
-          "answers": [
-            {
-              "text": "double",
-              "correct": true
-            },
-            {
-              "text": "half",
-              "correct": false
-            },
-            {
-              "text": "a tenth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "He calls them prisoners of hope, and even today He declares He'll restore to them double. That's the expired coupon I shared a junk drawer with, friend: way past its date and STILL believing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -516,8 +493,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Zechariah 9:13",
-          "text": "Then the picture turns to battle. The LORD says He'll bend something as His bow.",
-          "needs_agent_fix": true,
+          "text": "Then the picture turns to battle. The LORD says He'll bend Judah as His bow and fit it with Ephraim.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -525,65 +502,53 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Zechariah 9:13",
-          "question": "The battle's coming. The LORD says He'll bend ___ as His bow.",
+          "question": "With Judah as His bow, the LORD will rouse the sons of ___ against the sons of Greece.",
           "answers": [
             {
-              "text": "Judah",
+              "text": "Zion",
               "correct": true
             },
             {
-              "text": "Tyre",
+              "text": "Moab",
               "correct": false
             },
             {
-              "text": "Damascus",
+              "text": "Edom",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Zechariah 9:13",
-          "text": "Judah's the bow, and He'll fit it with Ephraim. Then He'll rouse the sons of Zion against the sons of another nation.",
-          "needs_agent_fix": true,
+          "question": "The LORD rouses Zion's sons against the sons of Greece. What will He make Zion like?",
+          "answers": [
+            {
+              "text": "The sword of a mighty man",
+              "correct": true
+            },
+            {
+              "text": "A wall of bronze",
+              "correct": false
+            },
+            {
+              "text": "A lion in the forest",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Zechariah 9:13",
-          "question": "The LORD will rouse the sons of Zion against the sons of Egypt.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Zechariah 9:13",
-          "text": "It's the sons of Greece, and the LORD will make Zion like the sword of a mighty man.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Zechariah 9:14",
-          "question": "When the LORD appears over His people, His arrow will go forth like ___.",
+          "question": "In the battle, the LORD will appear over His people, and His arrow will go forth like ___.",
           "answers": [
             {
               "text": "lightning",
@@ -598,104 +563,100 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Zechariah 9:14",
+          "text": "The Lord GOD will sound the ram's horn and advance in the whirlwinds of the south.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Zechariah 9:15",
+          "question": "With the ram's horn sounding, what will the LORD of Hosts do for His people?",
+          "answers": [
+            {
+              "text": "Shield them",
+              "correct": true
+            },
+            {
+              "text": "Scatter them",
+              "correct": false
+            },
+            {
+              "text": "Send them home",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Zechariah 9:14",
-          "text": "The Lord GOD will sound the ram's horn and advance in the whirlwinds of the south. Friend, I JUMP when the oven timer goes off, so a ram's horn and a whirlwind would send me face-first into the chocolate chips, base and all.",
-          "needs_agent_fix": true,
+          "verses": "Zechariah 9:15",
+          "text": "They'll destroy and conquer with slingstones, and they'll drink and roar as with wine.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Zechariah 9:15",
-          "question": "With the ram's horn sounding, who will shield the people in the battle?",
+          "question": "The LORD's people will be filled like sprinkling bowls.",
           "answers": [
             {
-              "text": "The LORD of Hosts",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Ephraim's bowmen",
-              "correct": false
-            },
-            {
-              "text": "The walls of Zion",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "Zechariah 9:15",
-          "text": "They'll destroy and conquer with slingstones, and they'll drink and roar as with wine.",
-          "needs_agent_fix": true,
+          "verses": "Zechariah 9:15-16",
+          "text": "They'll be drenched like the corners of the altar. On that day, the LORD their God will save them as the flock of His people.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Zechariah 9:15",
-          "question": "The LORD's people will be ___ like sprinkling bowls.",
+          "verses": "Zechariah 9:16",
+          "question": "Like ___ in a crown, the LORD's people will sparkle over His land.",
           "answers": [
             {
-              "text": "filled",
+              "text": "jewels",
               "correct": true
             },
             {
-              "text": "emptied",
+              "text": "feathers",
               "correct": false
             },
             {
-              "text": "broken",
+              "text": "flowers",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Zechariah 9:16",
-          "question": "On that day, the LORD their God will save His people. He'll save them as what?",
-          "answers": [
-            {
-              "text": "The flock of His people",
-              "correct": true
-            },
-            {
-              "text": "The workers in His field",
-              "correct": false
-            },
-            {
-              "text": "The soldiers of His army",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Zechariah 9:16",
-          "text": "Like jewels in a crown, they will sparkle over His land. I bet Sparkle would be crying happy tears at this one.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 9:17",
@@ -710,15 +671,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Zechariah 9:17",
-          "text": "From prisoners in a waterless pit to jewels in a crown, friend. Grain will make the young men flourish, and new wine, the young women.",
-          "needs_agent_fix": true,
+          "text": "How lovely they will be, and how beautiful! Grain will make the young men flourish, and new wine, the young women.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

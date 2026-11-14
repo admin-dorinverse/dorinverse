@@ -67,39 +67,38 @@
           "card": 5,
           "kind": "story",
           "verses": "Nahum 1:3",
-          "text": "Then Nahum paints a picture: His path is in the whirlwind and storm, and clouds are the dust beneath His feet. Friend, I've got a gold base stuck to my feet and I STILL trip walking to the oven.",
+          "text": "Then Nahum paints a picture: His path is in the whirlwind and storm, and clouds are the dust beneath His feet. Friend, I'd be standing there holding my chef's hat on with my MUSTACHE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Nahum 1:3",
-          "question": "Storms for a road and clouds for dust. That picture shows how great the LORD's ___ is.",
-          "answers": [
-            {
-              "text": "power",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "gentleness",
-              "correct": false
-            },
-            {
-              "text": "kindness",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Nahum 1:4",
+          "text": "He rebukes the sea and dries it up, and He makes all the rivers run dry. I've watched dough dry out on the counter, friend, but whole RIVERS?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Nahum 1:4",
-          "text": "He rebukes the sea and dries it up, and Bashan and Carmel wither. Me? I rebuke my dough for not rising and it just sits there LOOKING at me.",
+          "question": "With the sea and the rivers run dry, what does Nahum say happens to the flower of Lebanon?",
+          "answers": [
+            {
+              "text": "It wilts",
+              "correct": true
+            },
+            {
+              "text": "It blooms brighter",
+              "correct": false
+            },
+            {
+              "text": "It stays green",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -130,8 +129,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Nahum 1:6",
-          "text": "Then Nahum asks, 'Who can withstand His indignation? Who can endure His burning anger?' Friend, I open a hot oven door and I flinch. Imagine standing in front of THAT.",
-          "needs_agent_fix": true,
+          "text": "Then Nahum asks, \"Who can endure His burning anger?\" His wrath is poured out like fire, and friend, I flinch just opening a hot oven door.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -139,7 +138,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Nahum 1:6",
-          "question": "In Nahum's picture, God's wrath is poured out like fire, and even rocks are shattered before Him.",
+          "question": "Nahum says that before the LORD's burning anger, even rocks are shattered.",
           "answers": [
             {
               "text": "True",
@@ -157,7 +156,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Nahum 1:7",
-          "text": "Then, right in the middle of all that thunder, Nahum says the LORD is good, a stronghold in the day of distress. It's like a storm rattling the whole street, and you've got a solid brick house to run into.",
+          "text": "Then, right in the middle of all that storm and fire, Nahum says the LORD is good, a stronghold in the day of distress. It's like a storm rattling the whole street, and you've got a solid brick house to run into.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -194,48 +193,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Nahum 1:8",
-          "text": "Then Nahum says the LORD will make an end of Nineveh and pursue His enemies into darkness. Running into the dark won't help, friend. He follows.",
-          "needs_agent_fix": true,
+          "text": "Then Nahum says that with an overwhelming flood, the LORD will make an end of Nineveh.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Nahum 1:8",
-          "question": "With an overwhelming ___, the LORD will make an end of Nineveh.",
-          "answers": [
-            {
-              "text": "flood",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "famine",
-              "correct": false
-            },
-            {
-              "text": "plague",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Nahum 1:9",
-          "text": "Then Nahum says that whatever you plot against the LORD, He will bring to an end. You can plan all night long. He decides where it stops.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Nahum 1:9",
-          "question": "Nahum says whatever is plotted against the LORD, He will bring to an end. Then he talks about affliction. He says it will rise up a second time.",
+          "verses": "Nahum 1:8",
+          "question": "Nahum says the LORD will let His enemies escape into darkness.",
           "answers": [
             {
               "text": "True",
@@ -250,11 +217,42 @@
           "needs_human_decision": false
         },
         {
+          "card": 3,
+          "kind": "story",
+          "verses": "Nahum 1:9",
+          "text": "Then Nahum says that whatever you plot against the LORD, He will bring to an end.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Nahum 1:9",
+          "question": "Plots against the LORD come to an end. Then Nahum talks about affliction. What does he say about it?",
+          "answers": [
+            {
+              "text": "It will not rise up a second time",
+              "correct": true
+            },
+            {
+              "text": "It will come back twice as strong",
+              "correct": false
+            },
+            {
+              "text": "It will last for many more years",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 5,
           "kind": "story",
           "verses": "Nahum 1:10",
-          "text": "Then Nahum stacks up the pictures. They'll be tangled up as with thorns, and consumed like the drink of a drunkard. Friend, I got my mustache tangled in a whisk ONE time and I'm still not over it. Thorns? No thank you.",
-          "needs_agent_fix": true,
+          "text": "Then Nahum stacks up pictures: they'll be entangled as with thorns and consumed like the drink of a drunkard. I got my mustache tangled in a whisk ONE time, friend, and I'm still not over it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -262,7 +260,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Nahum 1:10",
-          "question": "Nahum has one more picture. They'll be consumed like stubble that is fully ___.",
+          "question": "Nahum adds one more picture: being consumed like stubble that is fully ___.",
           "answers": [
             {
               "text": "dry",
@@ -278,14 +276,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Nahum 1:11",
-          "text": "Then Nahum speaks right to the city: from Nineveh comes a plotter of evil against the LORD, a counselor of wickedness. Plotting against the LORD? That's a cookie drawing up battle plans against the OVEN.",
+          "text": "Then Nahum speaks right to the city: from Nineveh comes a plotter of evil against the LORD, a counselor of wickedness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -325,7 +323,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Nahum 1:12",
-          "question": "Then the LORD turns to Judah, the kingdom that stayed with David's family (1 Kings 12:20). He says He has afflicted Judah, but He will afflict them no longer.",
+          "question": "Then the LORD speaks to Judah, the kingdom that stayed with David's family (1 Kings 12:20). He tells Judah He will afflict them no longer.",
           "answers": [
             {
               "text": "True",
@@ -342,20 +340,21 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Nahum 1:13",
-          "question": "The LORD says He will now tear away Judah's shackles. What will He break from Judah's neck?",
+          "question": "The LORD says He will now break the yoke from Judah's neck and ___ Judah's shackles.",
           "answers": [
             {
-              "text": "Their yoke",
-              "correct": true
+              "text": "tear away",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A gold chain",
+              "text": "tighten",
               "correct": false
             },
             {
-              "text": "A heavy stone",
+              "text": "lock up",
               "correct": false
             }
           ],
@@ -366,7 +365,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Nahum 1:14",
-          "text": "Then the LORD issues a command concerning Nineveh: He will cut off the carved image and cast idol from the house of its gods. Those idols are getting cleared out like a junk drawer on cleaning day, and friend, I spent YEARS dreading that day.",
+          "text": "Then the LORD issues a command concerning Nineveh.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -375,7 +374,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Nahum 1:14",
-          "question": "The LORD issues a command concerning Nineveh. In it, He says Nineveh will have descendants to carry on its name.",
+          "question": "The LORD's command says Nineveh will have descendants to carry on its name.",
           "answers": [
             {
               "text": "True",
@@ -391,6 +390,14 @@
         },
         {
           "card": 14,
+          "kind": "story",
+          "verses": "Nahum 1:14",
+          "text": "He will also cut off the carved image and cast idol from the house of Nineveh's gods.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Nahum 1:14",
@@ -413,15 +420,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "Nahum 1:15",
-          "text": "Then Nahum says look to the mountains: here come the feet of someone bringing good news, proclaiming peace. I know that feeling, friend: the drawer slides open and the light pours in.",
+          "text": "Then Nahum says look to the mountains: here come the feet of someone bringing good news, proclaiming peace. I know that feeling, friend: after years in the back of a junk drawer, I got called out with good news too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Nahum 1:15",
@@ -444,7 +451,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Nahum 1:15",

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Zechariah 5:1",
-          "text": "Zechariah the prophet (Zechariah 1:1) has been seeing visions, with an angel there to talk him through them, and he just saw a gold lampstand (Zechariah 4:1-2). Now he looks up again and sees a scroll, and it's FLYING. Friend, the only paper I ever saw fly was a takeout menu when somebody slammed the junk drawer.",
+          "text": "Zechariah the prophet (Zechariah 1:1) has been seeing visions, with an angel there to talk him through them, and he just saw a gold lampstand (Zechariah 4:1-2). Now he looks up again and sees a scroll, and it's FLYING. Friend, the only thing that flies in my bakery is sprinkles when I crank the mixer too high.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -43,20 +43,21 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Zechariah 5:3",
-          "question": "The angel says the flying scroll is going out over the face of all the land, and wrongdoers will be removed. What does he call the scroll?",
+          "question": "The angel says the flying scroll is the ___ going out over the face of all the land, and wrongdoers will be removed.",
           "answers": [
             {
-              "text": "The curse going out over all the land",
-              "correct": true
+              "text": "curse",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The law going out to every nation",
+              "text": "blessing",
               "correct": false
             },
             {
-              "text": "The record of everyone sent back home",
+              "text": "census",
               "correct": false
             }
           ],
@@ -67,27 +68,27 @@
           "card": 5,
           "kind": "story",
           "verses": "Zechariah 5:3",
-          "text": "One side of the scroll says every thief will be removed, and the other side goes after everyone who lies under oath. Front AND back, friend, this scroll does NOT waste paper.",
-          "needs_agent_fix": true,
+          "text": "One side of the scroll says every thief will be removed. Front AND back, friend, this scroll does NOT waste paper.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Zechariah 5:4",
-          "question": "The LORD of Hosts says He will send the curse out, and it will enter the house of the thief. Whose house will it also enter?",
+          "verses": "Zechariah 5:3",
+          "question": "One side of the flying scroll says every thief will be removed. Who does the other side say will be removed?",
           "answers": [
             {
-              "text": "The one who swears falsely by His name",
+              "text": "Everyone who lies under oath",
               "correct": true
             },
             {
-              "text": "The one who bows down to carved idols",
+              "text": "Everyone who bows to idols",
               "correct": false
             },
             {
-              "text": "The one who works on the Sabbath day",
+              "text": "Everyone who works on the Sabbath",
               "correct": false
             }
           ],
@@ -99,15 +100,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 5:4",
-          "question": "Once the curse enters the thief’s house, it only stops by for a moment and then moves on.",
+          "question": "The LORD of Hosts says the curse will enter the house of the thief and the house of the one who swears falsely by His name. Once it gets inside, it stays there.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -169,25 +170,9 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Zechariah 5:6",
-          "question": "The angel says the measuring basket is their ___ in all the land.",
-          "answers": [
-            {
-              "text": "iniquity",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "harvest",
-              "correct": false
-            },
-            {
-              "text": "offering",
-              "correct": false
-            }
-          ],
+          "text": "Then the angel adds, \"This is their iniquity in all the land.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -226,34 +211,24 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Zechariah 5:8",
-          "question": "Then the angel ___ the woman down into the basket and pushes the ___ cover back over its opening.",
+          "question": "The angel tells Zechariah the woman in the basket is Wickedness. What does the angel do with her next?",
           "answers": [
             {
-              "text": "shoves",
-              "correct": true,
-              "blank": 1
+              "text": "Shoves her down and shuts the lead cover",
+              "correct": true
             },
             {
-              "text": "lead",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "lifts",
+              "text": "Lets her climb out and walk away free",
               "correct": false
             },
             {
-              "text": "gold",
-              "correct": false
-            },
-            {
-              "text": "wooden",
+              "text": "Hands the basket over to Zechariah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -291,27 +266,28 @@
           "card": 17,
           "kind": "story",
           "verses": "Zechariah 5:10",
-          "text": "Now the basket's up in the air, and Zechariah asks the angel where they're taking it. Friend, that is the EXACT question I asked every time somebody opened that drawer.",
+          "text": "Now the basket's up in the air, and Zechariah asks the angel where they're taking it. Friend, if Wickedness is flying off in a basket, I want the forwarding address TOO.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Zechariah 5:11",
-          "question": "Where does the angel say the two women are taking the basket?",
+          "question": "The angel says the two women are taking the basket to the land of ___.",
           "answers": [
             {
-              "text": "To the land of Shinar",
-              "correct": true
+              "text": "Shinar",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "To the land of Goshen",
+              "text": "Goshen",
               "correct": false
             },
             {
-              "text": "To the land of Moab",
+              "text": "Moab",
               "correct": false
             }
           ],
@@ -320,28 +296,9 @@
         },
         {
           "card": 19,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Zechariah 5:11",
-          "question": "The angel says the basket will be thrown away once it gets to Shinar.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
           "kind": "story",
           "verses": "Zechariah 5:11",
-          "text": "The angel says a house will be built for the basket in Shinar, and when it's ready, the basket will be set there on its pedestal. Zechariah's night of visions isn't over yet, friend, so keep that oven warm.",
+          "text": "The angel says a house will be built for it there, and when it's ready, the basket will be set on its pedestal. Zechariah's night of visions isn't over yet, friend, so keep that oven warm.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 2:2",
-          "question": "The Magi go around Jerusalem asking where to find someone who's just been born. What title do they give Him?",
+          "question": "In Jerusalem, the Magi ask where to find someone who's just been born. What title do they give Him?",
           "answers": [
             {
               "text": "King of the Jews",
@@ -38,25 +38,10 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 2:2",
-          "question": "The Magi say they know about this newborn King because they saw His ___ in the east.",
-          "answers": [
-            {
-              "text": "star",
-              "correct": true
-            },
-            {
-              "text": "angel",
-              "correct": false
-            },
-            {
-              "text": "cloud",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And how do they know? They saw His star in the east, friend. A STAR.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -81,9 +66,9 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Matthew 2:3",
+          "verses": "Matthew 2:2-3",
           "text": "Word reaches King Herod. Picture it: strangers in HIS city asking where the King of the Jews is, like somebody in your office lobby asking, 'Which desk belongs to the NEW boss?'",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -162,17 +147,21 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Matthew 2:5",
-          "question": "The chief priests and scribes tell Herod the Christ will be born in Bethlehem in Judea, and they're sure because an angel told them.",
+          "question": "The chief priests and scribes answer Herod: the Christ will be born in Bethlehem in Judea, because that's what the ___ has written.",
           "answers": [
             {
-              "text": "True",
+              "text": "prophet",
+              "correct": true
+            },
+            {
+              "text": "king",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "priest",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -181,9 +170,9 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Matthew 2:6",
-          "text": "The prophet's words speak right to the little town: Bethlehem is 'by no means least among the rulers of Judah.' Little Bethlehem just got moved to the TOP of the guest list.",
-          "needs_agent_fix": true,
+          "verses": "Matthew 2:5-6",
+          "text": "The prophet wrote that Bethlehem, in the land of Judah, is by no means least among the rulers of Judah. Talk about a promotion: Bethlehem just got bumped to the TOP of the list.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -191,7 +180,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 2:6",
-          "question": "The prophecy says a ruler will come out of Bethlehem. What will He be to God's people Israel?",
+          "question": "The prophecy says a ruler will come out of Bethlehem. What will that ruler be to the people of Israel?",
           "answers": [
             {
               "text": "Their shepherd",
@@ -222,7 +211,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 2:7",
-          "question": "In that secret meeting, Herod learns from the Magi the exact ___ the star had appeared.",
+          "question": "Herod meets secretly with the Magi and learns from them the exact ___ the star had appeared.",
           "answers": [
             {
               "text": "time",
@@ -237,15 +226,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Matthew 2:8",
-          "text": "Then Herod sends the Magi off to Bethlehem: 'Go and search carefully for the Child.' Search carefully. That's me every morning hunting for my timer under a pile of parchment paper.",
-          "needs_agent_fix": true,
+          "text": "Then Herod sends the Magi off to Bethlehem: 'Go and search carefully for the Child…' Search carefully? That's me every morning, hunting for my timer under a pile of parchment paper.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -272,7 +261,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 2:8",
-          "question": "What reason does Herod give the Magi for wanting that report?",
+          "question": "Herod tells the Magi to report to him once they find the Child. What reason does he give them?",
           "answers": [
             {
               "text": "So he can go and worship Him too",
@@ -287,7 +276,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -354,8 +343,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Matthew 2:11",
-          "text": "They come to the house and see the Child with His mother Mary. End of the road, friend. There He is.",
-          "needs_agent_fix": true,
+          "text": "They come to the house and see the Child with His mother Mary. End of the road, friend, there He is.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -404,7 +393,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Matthew 2:11",
-          "text": "Gold, frankincense and myrrh. Friend, the fanciest gift I ever gave was a cookie with EXTRA mango bits, and I walked around for a week thinking I'd outdone myself.",
+          "text": "Gold, frankincense and myrrh. Friend, the fanciest gift I ever gave was a cookie with EXTRA strawberries, and I walked around for a week thinking I'd outdone myself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

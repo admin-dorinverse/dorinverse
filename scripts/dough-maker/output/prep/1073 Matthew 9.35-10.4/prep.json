@@ -36,9 +36,9 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 9:36",
-          "text": "Then Jesus looks out at the crowds. Matthew says He's moved with compassion for them.",
+          "text": "Then Jesus sees the crowds, and He's moved with compassion for them.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -61,14 +61,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 9:36",
-          "question": "The crowds are harassed and helpless. What picture does Matthew use to describe them?",
+          "question": "The crowds are harassed and helpless. What picture describes them?",
           "answers": [
             {
               "text": "Sheep without a shepherd",
@@ -84,7 +84,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -92,7 +92,7 @@
           "verses": "Matthew 9:36-37",
           "text": "Sheep without a shepherd is a forty-person group chat where NOBODY is making the plan. Then Jesus turns to His disciples and starts talking about a harvest.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -141,7 +141,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Matthew 10:1",
-          "text": "Then Jesus calls His twelve disciples to Him. When I got called, friend, I was under a stack of takeout menus with dust all over my mustache.",
+          "text": "Then Jesus calls His twelve disciples to Him. When I got called out of the back of a junk drawer, friend, I had dust all over my mustache.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -170,22 +170,33 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 10:1",
-          "question": "With the authority Jesus gives them, the twelve can drive out unclean spirits and heal ___ disease and sickness.",
+          "text": "With that authority, the twelve can drive unclean spirits out and heal every disease and sickness.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Matthew 10:2",
+          "text": "Then come the names of the twelve apostles. First up is Simon, called Peter, and his brother Andrew.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 10:2",
+          "question": "James son of Zebedee and John, the next two names on the list of the twelve apostles, are brothers.",
           "answers": [
             {
-              "text": "every",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "some",
-              "correct": false
-            },
-            {
-              "text": "one",
+              "text": "False",
               "correct": false
             }
           ],
@@ -193,12 +204,67 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 14,
           "kind": "story",
-          "verses": "Matthew 10:2-4",
-          "text": "Then Matthew lists the names of the twelve apostles. It opens with two pairs of brothers: Simon, called Peter, and his brother Andrew, then James son of Zebedee and his brother John. Matthew the tax collector makes the list, and it ends with Judas Iscariot, who betrayed Jesus. Twelve names on the roster, friend, and their story is only getting started.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Matthew 10:3-4",
+          "text": "Then come Philip, Bartholomew, Thomas, Matthew, James son of Alphaeus, Thaddaeus and Simon the Zealot. Two Simons and two Jameses on one team. Yell \"SIMON!\" in that room and TWO heads turn around.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Matthew 10:3",
+          "question": "On the list of the twelve apostles, Matthew is called Matthew the ___.",
+          "answers": [
+            {
+              "text": "tax collector",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "fisherman",
+              "correct": false
+            },
+            {
+              "text": "tentmaker",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 10:4",
+          "question": "The list of the twelve apostles ends with Judas Iscariot. What does it say about him?",
+          "answers": [
+            {
+              "text": "He betrayed Jesus",
+              "correct": true
+            },
+            {
+              "text": "He denied Jesus",
+              "correct": false
+            },
+            {
+              "text": "He doubted Jesus",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "story",
+          "verses": "Matthew 10:4",
+          "text": "And that's the team. Twelve names on the roster, friend, and their story's only getting started.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

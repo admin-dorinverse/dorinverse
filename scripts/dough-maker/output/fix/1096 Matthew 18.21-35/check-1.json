@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "The true/false statement bundles two claims: that Peter asks about forgiving up to seven times, and that Jesus says seven is enough. The first claim just restates what card 1 already told. The statement should test only Jesus' answer.",
+      "rule": "A true or false statement tests one claim."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 9
+      },
+      "problem": "The statement joins two claims: that the servant begs for patience, and that the master forgives the entire debt. The begging was already asked on card 7 (answer 'Falls on his knees and begs') and retold on card 8, so it is reused here. Only the forgiveness should be tested.",
+      "rule": "A true or false statement tests one claim. / An answer shown on one card, right or wrong, isn't used again on a later card."
+    }
+  ]
+}

@@ -39,9 +39,9 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Haggai 1:2-3",
-          "text": "Friend, \"not yet\" is the snooze button talking, and I KNOW that button, because I've hit it so hard it started hitting BACK. Then the word of the LORD comes through Haggai again, and this time it's a question.",
-          "needs_agent_fix": true,
+          "verses": "Haggai 1:2-4",
+          "text": "Not yet. Friend, that's the snooze button talking, and some of us hit that thing so many times the alarm clock files a COMPLAINT. Then the word of the LORD comes through Haggai again, and this time it's a question.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Haggai 1:4-5",
-          "text": "Paneled walls at home and ruins at the LORD's house is like me polishing my gold base till it GLOWS while the bakery oven sits there in PIECES. Now the LORD of Hosts says, 'Consider carefully your ways.'",
+          "text": "Living in paneled houses while the LORD's house lies in ruins is like me polishing my gold base till it GLOWS while the bakery oven sits there in PIECES. Now the LORD of Hosts says, 'Consider carefully your ways.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -98,7 +98,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Haggai 1:6",
-          "text": "Planted much, harvested LITTLE. And God keeps going: 'You eat but never have enough. You drink but never have your fill.'",
+          "text": "Planted much, harvested LITTLE, and God keeps going: they eat but never have enough, and they drink but never have their fill.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -125,7 +125,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Haggai 1:6",
-          "text": "Nope, never warm either, and their paychecks have it rough too. God says, 'You earn wages to put into a bag pierced through.'",
+          "text": "Their clothes never get them warm either, and their paychecks have it rough too. God says, 'You earn wages to put into a bag pierced through.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -137,7 +137,7 @@
           "question": "God says the people put their wages into a bag pierced through. What's the picture?",
           "answers": [
             {
-              "text": "Their money slips away as fast as it comes in",
+              "text": "Their money keeps slipping away from them",
               "correct": true
             },
             {
@@ -164,7 +164,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Haggai 1:8",
-          "text": "And then come the instructions, plain as a recipe card: 'Go up into the hills, bring down lumber, and build the house'",
+          "text": "Then the LORD of Hosts gets specific: 'Go up into the hills, bring down lumber, and build the house…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -220,37 +220,14 @@
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Haggai 1:9",
-          "question": "God asks why it all came to so little. His answer: His house still lies in ruins, while each of them is busy with his own ___.",
-          "answers": [
-            {
-              "text": "house",
-              "correct": true
-            },
-            {
-              "text": "flock",
-              "correct": false
-            },
-            {
-              "text": "trade",
-              "correct": false
-            }
-          ],
+          "text": "God asks, 'Why?' and answers it Himself: His house still lies in ruins, while each of them is busy with his own house. Busy, busy, BUSY, friend, just not on the LORD's house.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Haggai 1:9-10",
-          "text": "Busy, busy, BUSY, friend, just not on the LORD's house. Then God says the heavens have withheld their dew and the earth has withheld its crops.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Haggai 1:10",
@@ -269,11 +246,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Haggai 1:11",
-          "question": "The LORD says He has summoned a ___ on the fields and on the mountains.",
+          "question": "The earth has withheld its crops too. The LORD says He has summoned a ___ on the fields and on the mountains.",
           "answers": [
             {
               "text": "drought",
@@ -292,10 +269,29 @@
           "needs_human_decision": false
         },
         {
+          "card": 19,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Haggai 1:11",
+          "question": "God says the drought He has summoned spares the animals.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 20,
           "kind": "story",
           "verses": "Haggai 1:11",
-          "text": "That drought hits the grain, the new wine, the oil, man and beast, and all the labor of their hands. We'll pause the ovens right there, friend, because the LORD isn't done talking yet.",
+          "text": "That drought reaches the grain, the new wine, the oil, whatever the ground yields, and all the labor of their hands. We'll let that cool on the rack for now, friend, because this story isn't over.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

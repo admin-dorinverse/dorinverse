@@ -9,151 +9,74 @@
           "card": 1,
           "kind": "story",
           "verses": "Amos 1:1",
-          "text": "Baker, these are the words of a man named Amos, and what he saw concerns Israel. It came two years before the earthquake, when Uzziah was king of Judah and Jeroboam son of Jehoash was king of Israel. So who is this guy?",
-          "needs_agent_fix": true,
+          "text": "Baker, these are the words of Amos, one of the sheepherders of Tekoa, and what he saw concerns Israel. He saw it two years before the earthquake, when Uzziah was king of Judah and Jeroboam son of Jehoash was king of Israel. A sheepherder seeing all this, and a stamper from the back of a junk drawer telling you about it? Friend, NOBODY's too small for this job.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Amos 1:1",
-          "question": "Amos is about to carry the LORD's words. Amos was among the ___ of Tekoa.",
+          "type": "true_false",
+          "verses": "Amos 1:2",
+          "question": "Amos says the LORD roars from Zion and raises His voice from Jerusalem. True or false: Amos then says the pastures of the shepherds rejoice.",
           "answers": [
             {
-              "text": "sheepherders",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "fishermen",
-              "correct": false
-            },
-            {
-              "text": "merchants",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Amos 1:1-2",
-          "text": "A sheepherder from Tekoa, and I'm a cookie stamper who did years in a junk drawer, so who am I to judge a résumé? Then Amos says the LORD roars from Zion, and friend, that is not a whisper, that is a ROAR.",
-          "needs_agent_fix": true,
+          "verses": "Amos 1:3",
+          "text": "Then the LORD speaks, and He starts with Damascus, the head of Aram (Isaiah 7:8): \"For three transgressions of Damascus, even four, I will not revoke My judgment, because they threshed Gilead with sledges of iron.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Amos 1:2",
-          "question": "True or false: when the LORD roars from Zion, the pastures of the shepherds rejoice.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Amos 1:4",
+          "text": "So He will send fire upon the house of Hazael to consume the citadels of Ben-hadad. Hazael and Ben-hadad were kings of Aram (2 Kings 13:3).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Amos 1:3",
-          "text": "Then the LORD speaks, and He starts with Damascus, the head of Aram (Isaiah 7:8). He says, \"For three transgressions of Damascus, even four, I will not revoke My judgment,\" and He's got more to say.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Amos 1:5",
+          "question": "The LORD says He will break down the gates of Damascus. What does He say will happen to the rulers in the Valley of Aven and Beth-eden?",
+          "answers": [
+            {
+              "text": "They will be cut off",
+              "correct": true
+            },
+            {
+              "text": "They will be spared",
+              "correct": false
+            },
+            {
+              "text": "They will be made servants",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Amos 1:3",
-          "question": "The LORD says He will not revoke His judgment on Damascus. What does that mean?",
-          "answers": [
-            {
-              "text": "He won't take it back",
-              "correct": true
-            },
-            {
-              "text": "He'll wait and decide later",
-              "correct": false
-            },
-            {
-              "text": "He'll make it lighter",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Amos 1:3",
-          "question": "The LORD gives His reason for judging Damascus. What did Damascus do to Gilead?",
-          "answers": [
-            {
-              "text": "Threshed Gilead with sledges of iron",
-              "correct": true
-            },
-            {
-              "text": "Starved Gilead with a long siege",
-              "correct": false
-            },
-            {
-              "text": "Cut down Gilead's forests with axes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Amos 1:4",
-          "question": "The LORD names the house of Hazael and Ben-hadad, kings of Aram (2 Kings 13:3, 24). He says He will send ___ upon the house of Hazael to consume the citadels of Ben-hadad.",
-          "answers": [
-            {
-              "text": "fire",
-              "correct": true
-            },
-            {
-              "text": "locusts",
-              "correct": false
-            },
-            {
-              "text": "drought",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Amos 1:5",
-          "text": "Then He gets specific: He will break down the gates of Damascus and cut off the rulers in the Valley of Aven and Beth-eden. I once gave a baker directions by pointing my mustache and saying \"over there,\" and friend, the LORD does not do \"over there.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Amos 1:5",
-          "question": "True or false: the LORD says that after He breaks down the gates of Damascus, the people of Aram will get to stay in their land.",
+          "question": "The LORD is judging Damascus, in the land of Aram. True or false: He says the people of Aram will get to stay in their land.",
           "answers": [
             {
               "text": "True",
@@ -164,19 +87,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 7,
           "kind": "story",
           "verses": "Amos 1:6",
-          "text": "Next up is Gaza, a Philistine city (Joshua 13:3), and there's that line again: three transgressions, even four, and no taking back the judgment. Hear it twice and you know it like the beep of your own oven timer.",
-          "needs_agent_fix": true,
+          "text": "Next up is Gaza, a Philistine city (Joshua 13:3), and there's that line again: three transgressions, even four, and no taking back the judgment. That's two nations, friend, and I'm already counting on my mustache.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 1:6",
@@ -187,7 +110,7 @@
               "correct": true
             },
             {
-              "text": "Drove them out into the desert",
+              "text": "Stole all their flocks and herds",
               "correct": false
             },
             {
@@ -195,46 +118,69 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Amos 1:7-8",
+          "text": "So the LORD will send fire upon the walls of Gaza to consume its citadels. He will cut off the rulers of Ashdod and Ashkelon and turn His hand against Ekron, all Philistine cities too (Joshua 13:3).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Amos 1:8",
+          "question": "After Ashdod, Ashkelon and Ekron, the LORD speaks of the rest of the Philistines. True or false: He says the remnant of the Philistines will perish.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Amos 1:9",
+          "text": "Next is Tyre, a fortified city (Joshua 19:29), and the same opening line comes again: three transgressions, even four.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Amos 1:9",
+          "question": "The LORD's charge against Tyre sounds a lot like Gaza's. What does He say Tyre delivered up to Edom?",
+          "answers": [
+            {
+              "text": "A whole congregation of exiles",
+              "correct": true
+            },
+            {
+              "text": "All its finest treasures",
+              "correct": false
+            },
+            {
+              "text": "Its chariots and horses",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Amos 1:7-8",
-          "text": "So the LORD will send fire upon the walls of Gaza. Then He names Ashdod, Ashkelon and Ekron, like a whole group chat getting called out one name at a time.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Amos 1:8",
-          "question": "True or false: after Ashdod, Ashkelon and Ekron, the LORD says whoever is left of the Philistines will be spared.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Amos 1:9",
-          "text": "Next is Tyre, a fortified city (Joshua 19:29), and Tyre also delivered up a whole congregation of exiles to Edom. But Tyre's charge has one more piece.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 1:9",
@@ -253,15 +199,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 14,
           "kind": "story",
           "verses": "Amos 1:10",
           "text": "So the LORD will send fire upon the walls of Tyre to consume its citadels. Three nations in, and nobody's walked away clean.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -274,39 +220,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Amos 1:11",
-          "text": "Next on the list is Edom, and Esau, Jacob's twin brother, is the father of the Edomites (Genesis 25:24-26; 36:9). And there's that line again, three transgressions, even four, so by now you could say it right along with Him.",
-          "needs_agent_fix": true,
+          "text": "Next on the list is Edom, and Esau, Jacob's twin brother, is the father of the Edomites (Genesis 25:24-26; 36:9). The LORD's charge: Edom pursued his brother with the sword and stifled all compassion.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Amos 1:11",
-          "question": "Edom's charge sounds personal. What does the LORD say Edom did?",
-          "answers": [
-            {
-              "text": "Pursued his brother with the sword",
-              "correct": true
-            },
-            {
-              "text": "Sold his brother for silver",
-              "correct": false
-            },
-            {
-              "text": "Stole his brother's flocks",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Amos 1:11",
-          "question": "True or false: the LORD says Edom's anger flared up once and then cooled off.",
+          "question": "Edom stifled all compassion. True or false: the LORD says Edom's anger flared up once and then cooled off.",
           "answers": [
             {
               "text": "True",
@@ -317,27 +240,27 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "story",
+          "verses": "Amos 1:12",
+          "text": "So the LORD will send fire upon Teman to consume the citadels of Bozrah, two places in Edom (Jeremiah 49:7, 13).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Amos 1:12",
-          "text": "So the LORD will send fire upon Teman to consume the citadels of Bozrah. Teman, Bozrah, friend, I need a map just to keep up, and I live on a planet barely big enough for my bakery.",
-          "needs_agent_fix": true,
+          "verses": "Amos 1:13",
+          "text": "Then come the Ammonites, descended from Lot, Abraham's nephew (Genesis 12:5; 19:36, 38). Their charge is heavy: they ripped open the pregnant women of Gilead.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "Amos 1:13",
-          "text": "Then come the Ammonites, descended from Lot, Abraham's nephew (Genesis 12:5; 19:36, 38). What they did is hard to even say out loud: they ripped open the pregnant women of Gilead.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 1:13",
@@ -356,127 +279,96 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Amos 1:14",
+          "text": "So the LORD will kindle a fire in the walls of Rabbah, the Ammonite city (2 Samuel 12:26), to consume its citadels amid war cries on the day of battle and a violent wind on the day of tempest.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Amos 1:14",
-          "text": "So the LORD will kindle a fire in the walls of Rabbah, the Ammonite city (2 Samuel 12:26). War cries on the day of battle, a violent wind on the day of tempest, friend, Rabbah is getting the WHOLE forecast.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Amos 1:15",
+          "question": "The LORD says He will kindle a fire in Rabbah, the Ammonite city. What does He say will happen to the Ammonite king?",
+          "answers": [
+            {
+              "text": "He will go into exile with his princes",
+              "correct": true
+            },
+            {
+              "text": "He will flee alone to the desert",
+              "correct": false
+            },
+            {
+              "text": "He will surrender and keep his throne",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Amos 1:15",
-          "question": "The LORD says the Ammonite king will go into ___, he and his princes together.",
-          "answers": [
-            {
-              "text": "exile",
-              "correct": true
-            },
-            {
-              "text": "hiding",
-              "correct": false
-            },
-            {
-              "text": "battle",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Amos 2:1",
+          "text": "Next up is Moab, also descended from Lot (Genesis 19:36-37). Five nations down, and friend, I am on the very edge of my gold base waiting on this next charge.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Amos 2:1",
-          "text": "Next up is Moab, also descended from Lot (Genesis 19:36-37). Five nations down, and friend, I am on the very edge of my gold base waiting on this next charge.",
-          "needs_agent_fix": true,
+          "question": "The LORD gives His charge against Moab. True or false: Moab burned to lime the bones of Edom's king.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Amos 2:1",
-          "question": "Moab's charge has to do with the king of Edom, another nation's ruler. True or false: the LORD holds Moab responsible for it.",
+          "verses": "Amos 2:3",
+          "question": "The LORD will send fire against Moab to consume the citadels of Kerioth, and Moab will die in tumult amid war cries and the sound of the ram's horn. True or false: He says only the ruler of Moab will be cut off and his officials will be spared.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Amos 2:1",
-          "question": "What does the LORD say Moab did to the king of Edom?",
-          "answers": [
-            {
-              "text": "Burned his bones to lime",
-              "correct": true
-            },
-            {
-              "text": "Sold his sons as slaves",
-              "correct": false
-            },
-            {
-              "text": "Took his crown as a prize",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Amos 2:4",
+          "text": "And now the list comes home: the next name is Judah, where Amos's own town of Tekoa sits (2 Chronicles 11:5-6). It's like nodding along while everybody else's name gets read off a list, and then you hear YOUR name.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Amos 2:2",
-          "text": "So the LORD will send fire against Moab, on the citadels of Kerioth. Moab will die in tumult, with war cries and the sound of the ram's horn, and friend, that horn is NOT playing elevator music.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Amos 2:3",
-          "question": "True or false: the LORD says only the ruler of Moab will be cut off, and his officials will be spared.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Amos 2:4",
-          "text": "And now the list comes home: the next name is Judah, where Amos's own town of Tekoa sits (2 Chronicles 11:5-6). It's like nodding along in a meeting while everybody else gets called out, and then the boss says YOUR name.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Amos 2:4",
@@ -495,19 +387,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
-          "verses": "Amos 2:4",
-          "text": "Did you catch that, friend? Six nations got called out for what they did to people, and Judah gets called out for what it did with the Law of the LORD, a WHOLE different charge.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 2:4",
@@ -526,16 +410,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 14,
           "kind": "story",
           "verses": "Amos 2:5",
-          "text": "So Judah gets the same sentence as the nations: fire upon Judah to consume the citadels of Jerusalem. Same fire, friend, and not one name on this list gets a pass.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "So Judah gets the same fire as the nations before it: fire upon Judah to consume the citadels of Jerusalem. Not one name on this list gets a pass, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

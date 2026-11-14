@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 18:21",
-          "text": "Jesus has just been teaching what to do when your brother sins against you (Matthew 18:15). Then Peter, one of Jesus' disciples, comes to Him and asks, “Lord, how many times shall I forgive my brother who sins against me? Up to seven times?” Peter brought a NUMBER, friend.",
+          "text": "Jesus has just been teaching what to do when your brother sins against you (Matthew 18:15). Then Peter, one of Jesus' disciples, comes to Him and asks, “Lord, how many times shall I forgive my brother who sins against me? Up to seven times?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 18:22",
-          "question": "Peter asks if he should forgive his brother up to seven times. Jesus tells Peter that seven times is enough.",
+          "question": "Jesus tells Peter that forgiving his brother seven times is enough.",
           "answers": [
             {
               "text": "True",
@@ -36,7 +36,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 18:22",
-          "text": "Jesus says, “I tell you, not just seven times, but seventy-seven times!” I bet Peter thought seven was a marathon, and Jesus just told him that was the WARM-UP.",
+          "text": "Jesus answers, “I tell you, not just seven times, but seventy-seven times!” Peter came in with seven, and Jesus' answer piles SEVENTY more on top.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -44,7 +44,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Matthew 18:23-24",
-          "text": "Then Jesus tells a story: the kingdom of heaven is like a king who wanted to settle accounts with his servants. Audit day, friend, and the first debtor is walking in.",
+          "text": "Then Jesus tells a story: the kingdom of heaven is like a king who wanted to settle accounts with his servants. Audit day, friend, and the first debtor gets brought in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -53,7 +53,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 18:24",
-          "question": "The first servant brought before the king owes a huge debt. How much does he owe?",
+          "question": "The first servant brought before the king owes him a debt. How much does he owe?",
           "answers": [
             {
               "text": "Ten thousand talents",
@@ -130,15 +130,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 18:27",
-          "question": "The servant begs his master for patience. The master gives him more time to pay it all back.",
+          "question": "The master forgives the servant's entire debt.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -175,7 +175,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Matthew 18:28",
-          "text": "Instead, he grabs the man and starts choking him: “Pay back what you owe me!” The ink on his OWN forgiveness isn't even dry.",
+          "text": "Instead, he grabs the man and begins to choke him, saying, “Pay back what you owe me!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -215,40 +215,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 18:31",
-          "question": "The other servants see what happened. They are greatly ___, and they go and tell their ___ all of it.",
+          "question": "The other servants are greatly distressed by what they saw, and they go and tell their ___ all of it.",
           "answers": [
             {
-              "text": "distressed",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "master",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "relieved",
-              "correct": false
+              "correct": true
             },
             {
               "text": "families",
               "correct": false
             },
             {
-              "text": "friends",
+              "text": "neighbors",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Matthew 18:32",
-          "text": "The master summons him: “You wicked servant! I forgave all your debt because you begged me.” Ohhh, friend. He just got called into the boss's office, and the boss already KNOWS.",
-          "needs_agent_fix": true,
+          "text": "The master summons him and says, “You wicked servant! I forgave all your debt because you begged me.” Friend, that's the long walk to the boss's office nobody wants to take.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

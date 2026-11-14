@@ -38,25 +38,6 @@
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 14:2",
-          "question": "Herod tells his servants that John rising from the dead is why miraculous powers are at work in Jesus.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "story",
           "verses": "Matthew 14:3",
           "text": "To rise from the dead, John would have to die first, so Matthew rewinds the tape. Herod had arrested John, the man who baptized Jesus (Matthew 3:13-16), bound him and put him in prison.",
@@ -64,7 +45,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 14:4",
@@ -88,15 +69,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Matthew 14:5",
-          "text": "Herod wants John dead. Not quieted down. Not out of the way. DEAD. But he holds off.",
-          "needs_agent_fix": true,
+          "text": "Herod wants to kill John. But something holds him back.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 14:5",
@@ -119,15 +100,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Matthew 14:5",
-          "text": "The people regard John as a prophet, so Herod's like a manager who wants to fire the guy the whole office loves. Every time he heads for that desk, every head in the room pops up.",
+          "text": "The people regard John as a prophet, so John stays in that prison.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Matthew 14:6",
           "text": "Then comes Herod's birthday. The daughter of Herodias dances before them.",
@@ -135,7 +116,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 14:6",
@@ -154,7 +135,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 14:7",
@@ -177,15 +158,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Matthew 14:7",
-          "text": "WHATEVER she asks, sworn with an oath. Friend, I once told a baker he could have whatever was on my cooling rack, and I watched four dozen cookies leave in one apron pocket. And that was just cookies.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 14:8",
@@ -204,70 +177,54 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
+          "kind": "story",
+          "verses": "Matthew 14:8",
+          "text": "Then the girl says, \"Give me here on a platter the head of John the Baptist.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Matthew 14:8",
-          "question": "Prompted by her mother Herodias, what does the girl ask Herod for?",
+          "verses": "Matthew 14:9",
+          "question": "When Herod hears what the girl asks for, how does he feel?",
           "answers": [
             {
-              "text": "John's head on a platter",
+              "text": "He is grieved",
               "correct": true
             },
             {
-              "text": "John sent far away",
+              "text": "He is relieved",
               "correct": false
             },
             {
-              "text": "John kept in chains",
+              "text": "He is angry",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Matthew 14:9",
+          "text": "But because of his oaths and his guests, Herod orders that her wish be granted.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "Matthew 14:9",
-          "text": "The king is grieved. I bet you could hear a pin drop at that party.",
+          "verses": "Matthew 14:10-11",
+          "text": "He sends to have John beheaded in the prison. John's head is brought in on a platter and presented to the girl, and she carries it to her mother.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 14:9",
-          "question": "Herod is grieved by the girl's request, but because of his oaths and his ___, he orders that her wish be granted.",
-          "answers": [
-            {
-              "text": "guests",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "servants",
-              "correct": false
-            },
-            {
-              "text": "soldiers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Matthew 14:10-11",
-          "text": "So he sends to have John beheaded in the prison. John's head is brought in on a platter and presented to the girl, and she carries it to her mother.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 14:12",
@@ -291,22 +248,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 14:12",
-          "question": "After burying John, his disciples go and tell Herod.",
+          "question": "After burying John's body, John's disciples go and tell Jesus.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

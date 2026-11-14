@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Zechariah 6:1",
-          "text": "I spent YEARS staring at dust in a junk drawer, and Zechariah gets mountains of BRONZE. Not jealous, friend, just saying.",
+          "text": "Four chariots, rolling out from between two mountains of BRONZE. Friend, I spent years in the back of a junk drawer, and the fanciest thing I ever saw back there was a twist tie.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -57,15 +57,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 6:3",
-          "question": "Zechariah says only the white horses are strong.",
+          "question": "In Zechariah's vision, all four teams of horses are strong.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -73,14 +73,6 @@
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Zechariah 6:1-3",
-          "text": "Four chariots, four colors, ZERO explanation. Zechariah's looking at them like a driver looking at a brand-new warning light on the dashboard.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 6:4",
@@ -103,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Zechariah 6:4-5",
           "text": "Zechariah asks, \"What are these, my lord?\" The angel tells him they are the four spirits of heaven.",
@@ -111,25 +103,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 6:5",
           "question": "The angel says the four spirits of heaven are going forth. Where are they going forth from?",
           "answers": [
             {
-              "text": "Their station before the Lord of all the earth",
+              "text": "Their station before the Lord",
               "correct": true
             },
             {
-              "text": "The gates of the temple in Jerusalem",
+              "text": "The courts of the temple",
               "correct": false
             },
             {
-              "text": "A house built in the land of Shinar",
+              "text": "The plain of Shinar",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Zechariah 6:6",
+          "text": "Then the angel gives directions. The chariot with the black horses is going toward the land of the north, and the one with the white horses toward the west.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,10 +138,10 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Zechariah 6:6",
-          "question": "Then the angel tells Zechariah where the chariots are headed. The one with the black horses is going toward the land of the ___.",
+          "question": "The angel says the chariot with the dappled horses is going toward the ___.",
           "answers": [
             {
-              "text": "north",
+              "text": "south",
               "correct": true,
               "blank": 1
             },
@@ -150,46 +150,15 @@
               "correct": false
             },
             {
-              "text": "south",
+              "text": "north",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Zechariah 6:6",
-          "text": "The angel keeps going. The white horses go toward the west, and the dappled horses? SOUTH.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Zechariah 6:6",
-          "question": "The angel tells Zechariah where three of the chariots are going. Which chariot does he never mention?",
-          "answers": [
-            {
-              "text": "The one with red horses",
-              "correct": true
-            },
-            {
-              "text": "The one with white horses",
-              "correct": false
-            },
-            {
-              "text": "The one with dappled horses",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "Zechariah 6:7",
           "text": "These strong horses are EAGER to go. Like me when the oven timer dings, and I've singed my mustache twice racing to get there first.",
@@ -197,11 +166,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Zechariah 6:7",
-          "question": "The horses are eager to go, but the LORD tells them to wait at the mountains a little longer.",
+          "question": "The LORD tells the eager horses to wait at the mountains a little longer.",
           "answers": [
             {
               "text": "True",
@@ -216,51 +185,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "Zechariah 6:7",
-          "text": "Instead the LORD says, \"Go and patrol the earth.\" So off they go, and they patrol the earth.",
+          "text": "Then the LORD says, \"Go and patrol the earth.\" So off they go, and they patrol the earth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
-          "verses": "Zechariah 6:8",
-          "text": "Then the LORD summons Zechariah. He has news about the chariot with the black horses.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Zechariah 6:8",
-          "question": "The LORD's news is about the ones going to the land of the ___.",
-          "answers": [
-            {
-              "text": "north",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "west",
-              "correct": false
-            },
-            {
-              "text": "south",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Zechariah 6:8",
-          "question": "The LORD tells Zechariah that those going north have given rest to a spirit in the land of the north. Whose spirit is it?",
+          "question": "Then the LORD summons Zechariah. He says those going to the land of the north have given rest to a spirit in the land of the north. Whose spirit is it?",
           "answers": [
             {
               "text": "The LORD's",
