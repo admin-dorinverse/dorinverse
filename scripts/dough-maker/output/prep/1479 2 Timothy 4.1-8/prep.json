@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Timothy 4:1",
-          "text": "Paul, an apostle of Christ Jesus, is writing to Timothy, the one he calls his beloved child (2 Timothy 1:1-2). And this next part is NOT a \"hey, quick favor\" text. Paul charges Timothy in the presence of God and of Christ Jesus, in view of His appearing and His kingdom.",
+          "text": "Paul, an apostle of Christ Jesus, is writing to Timothy, the one he calls his beloved child (2 Timothy 1:1-2). He's just reminded Timothy that all Scripture is God-breathed (2 Timothy 3:16). And this next part is NOT a \"hey, quick favor\" text: Paul charges Timothy in the presence of God and of Christ Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -25,7 +25,7 @@
               "correct": true
             },
             {
-              "text": "Count every star in the sky",
+              "text": "Send a new prophet to Israel",
               "correct": false
             },
             {
@@ -40,27 +40,23 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Timothy 4:2",
-          "text": "So what's the charge? No warm-up, no \"hope this letter finds you well,\" just three words: preach the word.",
+          "text": "So what's the charge? Three words, friend, and they're BIG ones: preach the word. And Paul tells Timothy to be prepared in season and out of season.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Timothy 4:2",
-          "question": "Paul tells Timothy to be prepared in season and out of season. What does Paul mean?",
+          "question": "Paul tells Timothy to encourage people, not only to reprove and rebuke them.",
           "answers": [
             {
-              "text": "Ready when it's easy and when it's not",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Ready only during the feast days",
-              "correct": false
-            },
-            {
-              "text": "Ready only when someone asks him",
+              "text": "False",
               "correct": false
             }
           ],
@@ -70,20 +66,24 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "2 Timothy 4:2",
-          "question": "Paul tells Timothy to reprove and rebuke people, but to leave the encouraging to someone else.",
+          "question": "Paul tells Timothy to reprove, rebuke and encourage. Paul wants every form of Timothy's instruction to be ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "patient",
+              "correct": true
+            },
+            {
+              "text": "brief",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "private",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,7 +130,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Timothy 4:4",
-          "question": "Paul says people who gather teachers like that will turn their ears away from the truth. What will they turn aside to?",
+          "question": "When people won't tolerate sound doctrine, Paul says they'll turn their ears away from the truth. What will they turn aside to?",
           "answers": [
             {
               "text": "Myths",
@@ -145,7 +145,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -180,18 +180,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Timothy 4:5",
-          "question": "Paul tells Timothy to be sober in all things, do the work of an evangelist and fulfill his ministry. Paul wants Timothy to carry out his ministry ___.",
+          "question": "Paul tells Timothy to do the work of an evangelist. Paul wants Timothy to ___ his ministry, not leave it half done.",
           "answers": [
             {
-              "text": "completely",
+              "text": "fulfill",
               "correct": true
             },
             {
-              "text": "quietly",
+              "text": "shorten",
               "correct": false
             },
             {
-              "text": "briefly",
+              "text": "pause",
               "correct": false
             }
           ],
@@ -240,29 +240,6 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Timothy 4:8",
-          "question": "Paul says the crown of righteousness will be awarded on that day by the Lord, the righteous ___.",
-          "answers": [
-            {
-              "text": "Judge",
-              "correct": true
-            },
-            {
-              "text": "Priest",
-              "correct": false
-            },
-            {
-              "text": "Shepherd",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
           "type": "true_false",
           "verses": "2 Timothy 4:8",
           "question": "Paul says the crown of righteousness is waiting for him and for him alone.",
@@ -280,11 +257,45 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "story",
+          "card": 17,
+          "kind": "choice",
+          "type": "true_false",
           "verses": "2 Timothy 4:8",
-          "text": "That crown goes to all who crave His appearing. Friend, I spent years in a junk drawer waiting for that drawer to open, so craving that day? I GET it.",
-          "needs_agent_fix": true,
+          "question": "Paul says the Lord, the righteous Judge, will award him the crown of righteousness on that day.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Timothy 4:8",
+          "question": "Paul says the crown of righteousness is also for all who crave the Lord's ___.",
+          "answers": [
+            {
+              "text": "appearing",
+              "correct": true
+            },
+            {
+              "text": "miracles",
+              "correct": false
+            },
+            {
+              "text": "temple",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

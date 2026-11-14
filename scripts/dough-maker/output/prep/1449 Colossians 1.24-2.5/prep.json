@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "Colossians 1:24",
           "text": "Paul, an apostle of Christ Jesus, is writing to the believers in Colossae (Colossians 1:1-2). He's just spent a big stretch lifting up Christ (Colossians 1:15-20). Now Paul turns to himself and his sufferings for them.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Colossians 1:24",
-          "text": "Friend, I grumble when the oven timer beeps too loud, and Paul's out here REJOICING in suffering. Then he says, \"I fill up in my flesh what is lacking in regard to Christ’s afflictions,\" and he says who it's for.",
-          "needs_agent_fix": true,
+          "text": "Then Paul says, \"I fill up in my flesh what is lacking in regard to Christ’s afflictions…\" And he says who it's all for.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -65,7 +65,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -73,38 +73,34 @@
           "kind": "story",
           "verses": "Colossians 1:25",
           "text": "Paul says he became the church's servant. He got the job by a commission, so somebody handed it to him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Colossians 1:25",
-          "question": "Paul became the church's servant by a commission. Who gave it to him?",
+          "question": "Paul says Peter gave him his commission as the church's servant.",
           "answers": [
             {
-              "text": "God",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Peter",
-              "correct": false
-            },
-            {
-              "text": "Barnabas",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Colossians 1:25",
-          "text": "God handing out jobs? Friend, I KNOW that one: one night I'm a worn-out stamper in a junk drawer, the next I'm running a whole bakery. And Paul tells them exactly what his job is for.",
-          "needs_agent_fix": true,
+          "text": "And unlike all those job listings that end with \"other duties as assigned,\" Paul spells out exactly what this commission is for.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -127,15 +123,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Colossians 1:26",
-          "text": "Paul calls the word of God a mystery, hidden for ages and generations. Friend, I did years in a junk drawer and thought THAT was forever.",
-          "needs_agent_fix": true,
+          "text": "Paul calls the word of God a mystery, hidden for ages and generations. Friend, I spent years in the back of a junk drawer and thought I held the record for hidden.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -154,38 +150,34 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Colossians 1:27",
-          "text": "Now God makes a choice. He makes known the glorious riches of this mystery, and Paul says among whom.",
-          "needs_agent_fix": true,
+          "text": "Paul says God has chosen to make known the glorious riches of this mystery. And Paul says among whom.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Colossians 1:27",
-          "question": "God chose to make known the glorious riches of the mystery. Among whom?",
+          "question": "Paul says God makes the riches of this mystery known among the Gentiles.",
           "answers": [
             {
-              "text": "The Gentiles",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The Levites",
-              "correct": false
-            },
-            {
-              "text": "The Samaritans",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -208,46 +200,47 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
-          "verses": "Colossians 1:27-28",
-          "text": "Christ in you, the hope of glory. Paul says, \"We proclaim Him, admonishing and teaching everyone with all wisdom,\" and then he tells them the goal.",
-          "needs_agent_fix": true,
+          "verses": "Colossians 1:28",
+          "text": "Paul says about Christ, \"We proclaim Him, admonishing and teaching everyone with all wisdom…\" And all that teaching has a goal.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Colossians 1:28",
-          "question": "Paul proclaims Christ and teaches everyone with all wisdom. What is the goal?",
+          "question": "Paul proclaims Christ and teaches everyone with all wisdom. The goal is to present everyone ___ in Christ.",
           "answers": [
             {
-              "text": "To present everyone perfect in Christ",
-              "correct": true
+              "text": "perfect",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "To make everyone teachers of the law",
+              "text": "equal",
               "correct": false
             },
             {
-              "text": "To bring everyone under the law of Moses",
+              "text": "free",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Colossians 1:29",
-          "text": "To that end Paul labors, striving with all His energy working powerfully within him. Friend, if I ran this bakery on MY energy, the ovens would shut off by noon and you'd find me asleep in the flour bin.",
-          "needs_agent_fix": true,
+          "text": "To that end Paul labors, striving with all His energy working powerfully within him. Friend, if I ran this bakery on MY energy, the ovens would shut off by noon and you'd find me asleep under the cooling rack.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -261,70 +254,70 @@
           "kind": "story",
           "verses": "Colossians 2:1",
           "text": "Paul's still writing to the believers in Colossae. He wants them to know how hard he's struggling for them, and not only for them.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Colossians 2:1",
-          "question": "Paul is struggling for the believers in Colossae. Who else is he struggling for?",
+          "question": "Paul is struggling for the believers in Colossae and also for those at ___.",
           "answers": [
             {
-              "text": "Those at Laodicea and all who have not met him",
-              "correct": true
+              "text": "Laodicea",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The believers in Jerusalem and all of Judea",
+              "text": "Ephesus",
               "correct": false
             },
             {
-              "text": "The church at Corinth and the saints in Achaia",
+              "text": "Philippi",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Colossians 2:2",
-          "text": "Struggling hard for people he's never even met face to face. And here's what he wants for them: hearts that are encouraged, and people knit together by something.",
-          "needs_agent_fix": true,
+          "verses": "Colossians 2:1-2",
+          "text": "He's struggling for all who have never even met him face to face. And here's what he wants for them: hearts that are encouraged, and people knit together in something.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Colossians 2:2",
-          "question": "Paul wants their hearts encouraged and wants them knit together in ___.",
+          "question": "Paul wants their hearts encouraged. What does he want them knit together in?",
           "answers": [
             {
-              "text": "love",
-              "correct": true,
-              "blank": 1
+              "text": "Love",
+              "correct": true
             },
             {
-              "text": "duty",
+              "text": "Duty",
               "correct": false
             },
             {
-              "text": "tradition",
+              "text": "Tradition",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Colossians 2:2-3",
-          "text": "He wants them filled with the full riches of complete understanding, so they know the mystery of God, namely Christ. And in Christ, Paul says, the treasures of wisdom and knowledge are hidden.",
-          "needs_agent_fix": true,
+          "text": "Paul wants them filled with the full riches of complete understanding, so they know the mystery of God, namely Christ. And in Christ, he says, the treasures of wisdom and knowledge are hidden.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -347,15 +340,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Colossians 2:3-4",
-          "text": "ALL of them, friend, not most and not a bunch: ALL. Then Paul tells them why he's saying all this.",
-          "needs_agent_fix": true,
+          "verses": "Colossians 2:4",
+          "text": "Then Paul tells them why he's saying all this about Christ.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -378,15 +371,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Colossians 2:4-5",
-          "text": "Smooth rhetoric, friend, like that phone call saying you won a cruise you never even entered. Then Paul talks about how close he is to them.",
-          "needs_agent_fix": true,
+          "text": "Smooth rhetoric, friend, like that phone call saying you won a cruise you never even entered. Then Paul turns to how he and the Colossians are connected.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -405,30 +398,31 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Colossians 2:5",
-          "question": "Paul is absent in body but present with them in spirit. What does he delight to see in them?",
+          "question": "Paul is absent in body but present with them in spirit. He delights to see their orderly condition and firm ___ in Christ.",
           "answers": [
             {
-              "text": "Their orderly condition and firm faith in Christ",
-              "correct": true
+              "text": "faith",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Their growing crowds and new meeting places",
+              "text": "hope",
               "correct": false
             },
             {
-              "text": "Their generous gifts to the poor in Jerusalem",
+              "text": "joy",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

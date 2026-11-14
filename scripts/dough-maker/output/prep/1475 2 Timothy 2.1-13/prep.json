@@ -153,7 +153,7 @@
               "correct": false
             },
             {
-              "text": "coach",
+              "text": "plan",
               "correct": false
             }
           ],
@@ -220,31 +220,27 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Timothy 2:8",
-          "text": "Now Paul gets to the heart of it. He tells Timothy to remember Jesus Christ, raised from the dead, just as Paul's gospel proclaims.",
+          "text": "Now Paul gets to the heart of it. He tells Timothy to remember Jesus Christ, descended from David, just as Paul's gospel proclaims.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Timothy 2:8",
-          "question": "Paul tells Timothy to remember Jesus Christ, raised from the dead and descended from ___.",
+          "question": "Paul tells Timothy to remember Jesus Christ, raised from the dead.",
           "answers": [
             {
-              "text": "David",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Moses",
-              "correct": false
-            },
-            {
-              "text": "Aaron",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -281,71 +277,79 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Timothy 2:10",
-          "question": "Paul says he endures all things for the sake of the elect. Why?",
+          "question": "Paul endures all things for the sake of the elect, so that they too may obtain ___.",
           "answers": [
             {
-              "text": "So they too may obtain salvation",
+              "text": "salvation",
               "correct": true
             },
             {
-              "text": "So he can be set free soon",
+              "text": "freedom",
               "correct": false
             },
             {
-              "text": "So the church will honor him",
+              "text": "rest",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "2 Timothy 2:11-12",
-          "text": "Then Paul shares a trustworthy saying, and every line comes in a pair: if we died with Him, we'll also live with Him, and if we endure, we'll also reign with Him. Friend, that's the kind of promise you tape right to the oven door.",
+          "verses": "2 Timothy 2:10",
+          "text": "That salvation is in Christ Jesus, with eternal glory. Not the kind of glory that's gone by Tuesday, friend. ETERNAL.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Timothy 2:12",
-          "question": "Another pair in the saying: if we deny Him, He will also ___ us.",
-          "answers": [
-            {
-              "text": "deny",
-              "correct": true
-            },
-            {
-              "text": "forgive",
-              "correct": false
-            },
-            {
-              "text": "rescue",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Timothy 2:11-12",
+          "text": "Then Paul shares a trustworthy saying about Christ Jesus, and every line comes in a pair: if we died with Him, we'll also live with Him, and if we endure, we'll also reign with Him. Friend, that's the kind of promise you tape right to the oven door.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "2 Timothy 2:13",
-          "text": "And then the saying's last line: if we are faithless, He remains faithful. I know a little something about being found after you've given up on yourself.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Timothy 2:12",
+          "question": "Paul's trustworthy saying about Christ Jesus isn't only comfort. One line is a warning. Which one?",
+          "answers": [
+            {
+              "text": "If we deny Him He will also deny us",
+              "correct": true
+            },
+            {
+              "text": "If we rest He will take our crown",
+              "correct": false
+            },
+            {
+              "text": "If we doubt Him He will walk away",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "2 Timothy 2:13",
+          "text": "And then the last line of Paul's saying about Christ Jesus: if we are faithless, He remains faithful. Friend, read that one again. Slowly.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Timothy 2:13",
-          "question": "The saying says that if we are faithless, He remains faithful. Why?",
+          "question": "In Paul's trustworthy saying, Christ Jesus remains faithful even if we are faithless. Why?",
           "answers": [
             {
               "text": "He cannot deny Himself",
@@ -360,7 +364,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Colossians 1:1-2",
-          "text": "Friend, today we're reading somebody else's mail, and for once nobody's gonna yell at me for it. It's from Paul and Timothy, to the saints and faithful brothers in Christ at Colossae. Paul calls Timothy our brother, calls himself an apostle of Christ Jesus, and makes it clear who gave him the job.",
+          "text": "Friend, today we're reading somebody else's mail, and for once nobody's gonna yell at me for it. It's a letter from Paul, an apostle of Christ Jesus, and Timothy, our brother. It's going to the saints and faithful brothers in Christ at Colossae.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Colossians 1:1",
-          "question": "True or false: Paul says he's an apostle of Christ Jesus by the will of God.",
+          "question": "True or false: Paul says he became an apostle of Christ Jesus by the will of God.",
           "answers": [
             {
               "text": "True",
@@ -68,28 +68,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Colossians 1:4",
-          "question": "Paul and Timothy are thankful because of what they've heard about the Colossians: their ___ in Christ Jesus and their ___ for all the saints.",
+          "question": "Paul and Timothy are thankful because of what they've heard about the Colossians: their ___ in Christ Jesus and their love for all the saints.",
           "answers": [
             {
               "text": "faith",
-              "correct": true,
-              "blank": 1
+              "correct": true
             },
             {
-              "text": "love",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "wealth",
+              "text": "wisdom",
               "correct": false
             },
             {
-              "text": "fear",
-              "correct": false
-            },
-            {
-              "text": "doubt",
+              "text": "boldness",
               "correct": false
             }
           ],
@@ -131,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Colossians 1:5-6",
-          "text": "They first heard about that hope in the word of truth, the gospel. And Paul's got news about how the gospel is doing out there in the world.",
+          "text": "They've already heard about that hope in the word of truth, the gospel. And Paul's got news about how the gospel is doing out there in the world.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -163,15 +153,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Colossians 1:6",
-          "question": "True or false: Paul says the gospel has been bearing fruit among the Colossians too, ever since the day they heard it and truly understood the grace of God.",
+          "question": "True or false: Paul says the gospel didn't start bearing fruit among the Colossians until years after they heard it.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -204,27 +194,27 @@
           "card": 12,
           "kind": "story",
           "verses": "Colossians 1:7",
-          "text": "That's Epaphras, and Paul calls him \"our beloved fellow servant\" and a faithful minister of Christ. BELOVED, baker. The fanciest title I ever had was a price sticker that said 25 cents.",
-          "needs_agent_fix": true,
+          "text": "Paul calls Epaphras \"our beloved fellow servant\" and a faithful minister of Christ. BELOVED, baker, and the fanciest title I ever got was a 25-cent price sticker.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Colossians 1:8",
-          "question": "Epaphras also told Paul and Timothy about the Colossians. What did he tell them about?",
+          "question": "Epaphras also told Paul and Timothy about the Colossians' love. Paul calls it their love in the ___.",
           "answers": [
             {
-              "text": "Their love in the Spirit",
+              "text": "Spirit",
               "correct": true
             },
             {
-              "text": "Their zeal for the law",
+              "text": "law",
               "correct": false
             },
             {
-              "text": "Their suffering for the Lord",
+              "text": "church",
               "correct": false
             }
           ],
@@ -241,7 +231,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Colossians 1:9",
-          "text": "Since the day Paul and Timothy heard about the Colossians, they have not STOPPED praying for them. Baker, I can't stir one bowl of dough for five minutes straight without my mustache cramping up.",
+          "text": "Since the day Paul and Timothy heard about the Colossians, they have not STOPPED praying for them. No snooze button, no \"I'll pick this back up Monday,\" baker, just NOT. STOPPED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -294,9 +284,9 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "Colossians 1:10",
+          "verses": "Colossians 1:6, 10",
           "text": "Notice this, baker: earlier the gospel was bearing fruit and growing, and now Paul prays the Colossians will be bearing fruit in every good work and growing in the knowledge of God. Same dough, new batch, and the batch is THEM.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -351,56 +341,33 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Colossians 1:11-12",
-          "question": "Paul wants the Colossians strong and patient. What else does he want them doing, joyfully?",
-          "answers": [
-            {
-              "text": "Giving thanks to the Father",
-              "correct": true
-            },
-            {
-              "text": "Fasting before the Father",
-              "correct": false
-            },
-            {
-              "text": "Singing in the marketplace",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul also prays they'll be joyfully giving thanks to the Father. Then he says something about what the Father has done for them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Colossians 1:12",
-          "text": "Then Paul brings up an inheritance, the inheritance of the saints in the light. And the Colossians get a share in it.",
+          "question": "True or false: Paul says the Father has qualified the Colossians to share in the inheritance of the saints in the light.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Colossians 1:12",
-          "question": "True or false: Paul says the Colossians had to qualify themselves to share in the inheritance of the saints in the light.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "story",
           "verses": "Colossians 1:13",
           "text": "Then Paul tells what the Father has done for us. And baker, give me a second, because this one hits close to home.",
@@ -408,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Colossians 1:13",
@@ -431,7 +398,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Colossians 1:13",
           "text": "Rescued from the dark and brought into the kingdom of His beloved Son, Jesus. I spent YEARS in the back of a junk drawer, baker, so don't mind me, I'm just over here crying into my apron.",
@@ -439,7 +406,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Colossians 1:14",

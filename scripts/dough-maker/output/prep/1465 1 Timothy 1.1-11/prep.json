@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "1 Timothy 1:1-2",
           "text": "Paul, an apostle of Christ Jesus, is writing a letter to Timothy, a disciple Paul brought along on his travels (Acts 16:1-3). He opens with grace, mercy and peace from God the Father and Christ Jesus our Lord. Friend, that's not a hello, that's a whole CARE PACKAGE.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,7 +41,7 @@
           "kind": "story",
           "verses": "1 Timothy 1:2",
           "text": "Paul calls Timothy his true child in the faith. As a Papa myself, friend, that line gets me right in the apron.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "story",
           "verses": "1 Timothy 1:3",
           "text": "Then Paul gets down to business. When he left for Macedonia, he urged Timothy to stay on in one city.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,15 +72,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "1 Timothy 1:3-4",
+          "text": "Certain men in Ephesus are devoting themselves to myths and endless genealogies. ENDLESS, friend, like the dead batteries I shared that drawer with, arguing for YEARS over who had the most charge left.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Timothy 1:3",
-          "question": "Timothy is supposed to instruct certain men in that city to stop doing something. What is it?",
+          "question": "Paul wants Timothy to instruct those men in Ephesus. Besides chasing myths and genealogies, what should they stop doing?",
           "answers": [
             {
               "text": "Teaching false doctrines",
@@ -95,15 +103,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "1 Timothy 1:4",
-          "text": "These men are also hooked on myths and endless genealogies. ENDLESS, friend, like the dead batteries I shared that drawer with, arguing for YEARS over who had the most charge left.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -126,65 +126,58 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Timothy 1:5",
-          "question": "What does Paul say is the goal of his instruction?",
-          "answers": [
-            {
-              "text": "Love from a pure heart",
-              "correct": true
-            },
-            {
-              "text": "Knowledge of the whole law",
-              "correct": false
-            },
-            {
-              "text": "Respect for church leaders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul's instruction is aiming somewhere else entirely. He's after something that flows out of a pure heart, a clear conscience and a sincere faith.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "1 Timothy 1:5-6",
-          "text": "Love that comes from a pure heart, a clear conscience and a sincere faith. But some people have strayed from all that and turned aside to empty talk.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "1 Timothy 1:5",
+          "question": "Paul says the goal of his instruction is the ___ that comes from a pure heart, a clear conscience and a sincere faith.",
+          "answers": [
+            {
+              "text": "love",
+              "correct": true
+            },
+            {
+              "text": "knowledge",
+              "correct": false
+            },
+            {
+              "text": "success",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Timothy 1:7",
-          "question": "The people who turned aside to empty talk want to be teachers of the ___.",
-          "answers": [
-            {
-              "text": "law",
-              "correct": true
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "psalms",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Timothy 1:6",
+          "text": "But some have strayed from these ways and turned aside to empty talk.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "story",
+          "verses": "1 Timothy 1:7",
+          "text": "And get this, friend. These folks want to be teachers of the law.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Timothy 1:7",
@@ -199,19 +192,27 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "1 Timothy 1:7",
-          "text": "And they say it all so confidently. You know the type, friend: the guy in the group chat explaining traffic laws with his WHOLE chest who has never once driven a car.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
+          "kind": "story",
+          "verses": "1 Timothy 1:7",
+          "text": "And they say it all so confidently. You know the type, friend: the guy in the group chat explaining traffic laws with his WHOLE chest who has never once driven a car.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "1 Timothy 1:8",
+          "text": "These folks are misusing the law. So Paul stops to talk about the law itself.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Timothy 1:8",
@@ -230,11 +231,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Timothy 1:9",
@@ -249,19 +250,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 18,
           "kind": "story",
           "verses": "1 Timothy 1:9-10",
-          "text": "The law is for the lawless and rebellious, and Paul keeps going down a long list: the ungodly and sinful, murderers, the sexually immoral, slave traders, liars and more. He ends it with anyone else who is averse to sound teaching.",
-          "needs_agent_fix": true,
+          "text": "Paul says the law is for the lawless and rebellious, and he keeps going down a long list: the ungodly and sinful, murderers, the sexually immoral, slave traders, liars and more. He ends it with anyone else who is averse to sound teaching.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Timothy 1:11",
@@ -280,11 +281,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 20,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Timothy 1:11",
@@ -299,7 +300,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Philemon 1:2",
-          "text": "Philemon's not the only one this letter is addressed to. It's also to Apphia, \"our sister,\" and Archippus, \"our fellow soldier.\" Friend, this man adds names like he's starting a group chat.",
-          "needs_agent_fix": true,
+          "text": "This letter is also to Apphia, our sister, and Archippus, our fellow soldier. Friend, Paul adds names like he's starting a group chat.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -179,7 +179,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Philemon 1:9",
-          "text": "Then Paul adds: \"For I, Paul, am now aged, and a prisoner of Christ Jesus as well.\" An older man in chains asking NICELY, friend, who's saying no to that?",
+          "text": "Then Paul adds: \"For I, Paul, am now aged, and a prisoner of Christ Jesus as well.\" A prisoner asking NICELY? Friend, who's saying no to that?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -192,8 +192,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Philemon 1:10-16",
-          "text": "And here it is, friend, the reason for the whole letter: Onesimus, Philemon's slave, who has been away from him for a while (Philemon 1:15-16). Paul is appealing to Philemon for him, and he calls Onesimus his child.",
+          "verses": "Philemon 1:10",
+          "text": "And here it is, friend. Paul appeals to Philemon for a man named Onesimus, and he calls Onesimus his child.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -223,34 +223,24 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Philemon 1:11",
-          "question": "Paul gets honest about Onesimus. Formerly he was ___ to Philemon, but now he has become ___ both to Philemon and to Paul.",
+          "question": "Paul says Onesimus has changed in a way that matters to Philemon and to Paul. How?",
           "answers": [
             {
-              "text": "useless",
-              "correct": true,
-              "blank": 1
+              "text": "He was useless and now he's useful",
+              "correct": true
             },
             {
-              "text": "useful",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "careless",
+              "text": "He was sick and now he's healthy",
               "correct": false
             },
             {
-              "text": "careful",
-              "correct": false
-            },
-            {
-              "text": "helpless",
+              "text": "He was poor and now he's wealthy",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -266,15 +256,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philemon 1:13",
-          "question": "Paul says he would have liked to keep Onesimus with him, to help him while he's in chains for the gospel.",
+          "question": "Paul says he never wanted Onesimus to stay with him.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -283,8 +273,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Philemon 1:14",
-          "text": "No sneaking around it. Paul says he didn't want to do anything without Philemon's consent.",
+          "verses": "Philemon 1:13-14",
+          "text": "Paul says he would have liked to keep Onesimus with him, \"so that on your behalf he could minister to me in my chains for the gospel.\" But Paul didn't want to do anything without Philemon's consent.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -296,7 +286,7 @@
           "question": "Why does Paul want Philemon's consent before doing anything about Onesimus?",
           "answers": [
             {
-              "text": "So his goodness is by his own free will",
+              "text": "So Philemon's goodness comes by free will",
               "correct": true
             },
             {
@@ -378,37 +368,37 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philemon 1:17",
-          "question": "Paul says that if Philemon considers him a partner, he should receive Onesimus the way he'd receive a stranger.",
+          "question": "Paul says that if Philemon considers him a partner, Philemon should receive Onesimus the way he'd receive Paul himself.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Philemon 1:18",
-          "question": "Paul covers the money side too. If Onesimus has wronged Philemon or owes him anything, what does Paul say to do?",
+          "question": "Paul covers the money side too. If Onesimus has wronged Philemon or owes him anything, Paul says to charge it to Paul's ___.",
           "answers": [
             {
-              "text": "Charge it to Paul's account",
+              "text": "account",
               "correct": true
             },
             {
-              "text": "Let Onesimus work it off",
+              "text": "friends",
               "correct": false
             },
             {
-              "text": "Take it to the church elders",
+              "text": "church",
               "correct": false
             }
           ],
@@ -419,7 +409,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Philemon 1:19",
-          "text": "With his own hand, Paul writes that he'll repay it, and then, nice and easy: \"not to mention that you owe me your very self.\" He's not mentioning it, friend, he's just putting it in writing IN INK.",
+          "text": "With his own hand, Paul writes that he'll repay any debt, and then, nice and easy: \"not to mention that you owe me your very self.\" He's not mentioning it, friend, he's just putting it in writing IN INK.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

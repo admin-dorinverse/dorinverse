@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Ephesians 6:11",
-          "text": "Then Paul tells them to get dressed. Not in an apron, friend. In the full armor of God.",
-          "needs_agent_fix": true,
+          "text": "Then Paul tells them to suit up. Not halfway, friend: the FULL armor of God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -120,28 +120,20 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Ephesians 6:12",
-          "text": "Rulers, authorities, the powers of this world's darkness, and the spiritual forces of evil in the heavenly realms. That's a LOT, friend, and the toughest thing I ever go up against is my oven timer, and the timer's WINNING.",
+          "verses": "Ephesians 6:13",
+          "text": "So Paul comes back to it: take up the full armor of God. He wants them able to stand their ground, and having done everything, to stand.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Ephesians 6:13",
-          "text": "So Paul says it again: take up the full armor of God. A day of evil comes, and he wants them ready for it.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ephesians 6:13",
-          "question": "When the day of evil comes, Paul wants the believers, having done everything, to ___.",
+          "question": "Paul wants the believers to stand their ground when the day of ___ comes.",
           "answers": [
             {
-              "text": "stand",
+              "text": "evil",
               "correct": true
             },
             {
@@ -149,96 +141,96 @@
               "correct": false
             },
             {
-              "text": "rule",
+              "text": "harvest",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Ephesians 6:14",
+          "text": "STAND firm, Paul says, with the belt of truth buckled around the waist and the breastplate of righteousness on. After years lying flat in the back of a junk drawer, friend, I LOVE a standing job.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Ephesians 6:14",
-          "text": "STAND firm, Paul says, with the belt of truth buckled around the waist and the breastplate of righteousness on. No resting, and friend, I already did my years of resting in a drawer.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Ephesians 6:15",
+          "question": "Paul says the believers' feet are fitted with the readiness of something. What is it?",
+          "answers": [
+            {
+              "text": "The gospel of peace",
+              "correct": true
+            },
+            {
+              "text": "The law of Moses",
+              "correct": false
+            },
+            {
+              "text": "The kingdom of Israel",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ephesians 6:15",
-          "question": "Paul tells the believers to have their ___ fitted with the readiness of the gospel of peace.",
-          "answers": [
-            {
-              "text": "feet",
-              "correct": true
-            },
-            {
-              "text": "hands",
-              "correct": false
-            },
-            {
-              "text": "hearts",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Ephesians 6:16",
+          "text": "In addition to all this, Paul says, take up the shield of faith.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Ephesians 6:16",
-          "text": "In addition to all this, Paul says, take up the shield of faith. Every soldier needs one. In my bakery, it's an oven mitt.",
-          "needs_agent_fix": true,
+          "question": "Paul says the shield of faith can put out all the flaming arrows of the evil one.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ephesians 6:16",
-          "question": "Paul says the believers use the shield of faith to strike back at the evil one.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Ephesians 6:17",
+          "text": "Then comes the helmet of salvation, and friend, my chef's hat has never stopped ANYTHING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Ephesians 6:16-17",
-          "text": "Nope, the shield is for putting out all the flaming arrows of the evil one. Then comes the helmet of salvation, and friend, my chef's hat has never stopped ANYTHING.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Ephesians 6:17",
-          "question": "After the helmet of salvation, Paul says to take the sword of the Spirit. What does he say the sword is?",
+          "question": "Paul says the sword of the Spirit is the ___ of God.",
           "answers": [
             {
-              "text": "The word of God",
+              "text": "word",
               "correct": true
             },
             {
-              "text": "The power of prayer",
+              "text": "glory",
               "correct": false
             },
             {
-              "text": "The faith of the saints",
+              "text": "wisdom",
               "correct": false
             }
           ],
@@ -336,24 +328,28 @@
           "card": 6,
           "kind": "story",
           "verses": "Ephesians 6:20",
-          "text": "Paul calls himself an ambassador for the gospel, an ambassador in chains. AMBASSADOR! Friend, the biggest title I ever had was that stamper in the back of the drawer.",
-          "needs_agent_fix": true,
+          "text": "Then Paul tells them what the gospel has made him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Ephesians 6:20",
-          "question": "Paul asks the believers to pray that he'll be set free from his chains.",
+          "question": "What does Paul call himself for the sake of the gospel?",
           "answers": [
             {
-              "text": "True",
+              "text": "An ambassador in chains",
+              "correct": true
+            },
+            {
+              "text": "A shepherd of the flock",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "A watchman on the wall",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -363,7 +359,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Ephesians 6:20",
-          "text": "Nope, Paul asks for prayer to proclaim the gospel fearlessly, as he should. If that were me in the drawer, I'd have asked for a key, a flashlight AND a ride home.",
+          "text": "Paul asks them to pray that he'll proclaim the gospel fearlessly, as he should.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -422,7 +418,7 @@
               "correct": false
             },
             {
-              "text": "The prayers of all the saints",
+              "text": "Moses and the prophets",
               "correct": false
             }
           ],
@@ -445,14 +441,6 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Ephesians 6:24",
-          "text": "Grace to all who love our Lord Jesus Christ with an undying love. That's how Paul signs off, friend, and no, I'm not crying, that's just flour in my eye.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Philippians 2:20",
-          "text": "Then Paul says he has nobody else like Timothy. NOBODY, friend, and I'd want THAT carved on my handle right under my name.",
+          "text": "Then Paul says he has nobody else like Timothy. NOBODY, friend, and I'd want THAT carved on my handle, right under the name the Millers carved there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,7 +72,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 2:21",
-          "question": "Paul says all the others look after the interests of Jesus Christ, not their own.",
+          "question": "Besides Timothy, Paul says, all the others look after the interests of Jesus Christ, not their own.",
           "answers": [
             {
               "text": "True",
@@ -83,14 +83,14 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Philippians 2:21",
-          "text": "Catch those two words, \"own interests\"? Paul used them just a few lines back, when he told the church to look not only to their own interests but to the interests of others too (Philippians 2:4).",
+          "text": "Paul says all the others look after \"their own interests, not those of Jesus Christ.\" Timothy is the one who stands out from the rest.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Philippians 2:22",
-          "text": "Side by side with Paul, like a child with his father, to advance the gospel. Oh, this one gets me RIGHT in the handle, friend.",
+          "text": "Timothy has served with Paul like a child with his father, to advance the gospel. Friend, that line gets me RIGHT in the apron.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -194,30 +194,26 @@
           "kind": "story",
           "verses": "Philippians 2:25",
           "text": "But there's someone else Paul thought it necessary to send back to Philippi: Epaphroditus. Paul calls him his brother, fellow worker and fellow soldier, and he's the Philippians' own messenger.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Philippians 2:25",
-          "question": "Epaphroditus came to Paul as the Philippians' messenger. What does Paul say he was there to do?",
+          "question": "Paul says Epaphroditus, the Philippians' messenger, is also a minister to Paul's needs.",
           "answers": [
             {
-              "text": "Minister to Paul's needs",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Write down Paul's letters",
-              "correct": false
-            },
-            {
-              "text": "Speak for Paul at his trial",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -240,54 +236,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Philippians 2:26",
-          "text": "The man's the one who got sick, and HE'S the one distressed because THEY heard about it? I bet he's the friend texting the group chat \"I'm FINE\" from the hospital bed.",
-          "needs_agent_fix": true,
+          "text": "He's the one who got sick, and HE'S the one distressed because THEY heard about it? You know that friend who texts the group chat \"I'm FINE\" from a hospital bed? Same energy.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Philippians 2:27",
-          "text": "And friend, this was no little sniffle. Epaphroditus was sick indeed, nearly unto death.",
-          "needs_agent_fix": true,
+          "text": "And friend, this was no small thing. Epaphroditus was sick indeed, nearly unto death.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Philippians 2:27",
-          "question": "Epaphroditus nearly died, but Paul says God had mercy. On who?",
+          "question": "Paul says God had mercy on Epaphroditus, and on no one else.",
           "answers": [
             {
-              "text": "On Epaphroditus and on Paul too",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "On Epaphroditus and on Timothy",
-              "correct": false
-            },
-            {
-              "text": "On Epaphroditus and nobody else",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Philippians 2:27",
-          "text": "Paul says God spared him sorrow upon sorrow. He's already in chains, and I bet losing his friend would've piled one more on top.",
-          "needs_agent_fix": true,
+          "text": "God had mercy on Paul too, Paul says, to spare him sorrow upon sorrow. I think losing a friend like Epaphroditus would have hit Paul hard.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -295,63 +287,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Philippians 2:28",
-          "question": "Paul is all the more eager to send Epaphroditus home, so that when they see him again they may ___ and Paul may be less ___.",
+          "question": "Paul is all the more eager to send Epaphroditus home. He says that when the Philippians see him again they may rejoice, and Paul may be less ___.",
           "answers": [
             {
-              "text": "rejoice",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "anxious",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "rest",
+              "text": "lonely",
               "correct": false
             },
             {
-              "text": "busy",
-              "correct": false
-            },
-            {
-              "text": "ashamed",
+              "text": "tired",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Philippians 2:29",
-          "question": "Paul is sending Epaphroditus home. How does he tell the Philippians to welcome him?",
-          "answers": [
-            {
-              "text": "In the Lord with great joy",
-              "correct": true
-            },
-            {
-              "text": "In the Lord with gentle care",
-              "correct": false
-            },
-            {
-              "text": "In the Lord with solemn prayer",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Philippians 2:30",
-          "question": "Paul also tells the Philippians to honor men like Epaphroditus, who nearly died. What does Paul say he nearly died for?",
+          "question": "Paul tells the Philippians to welcome Epaphroditus in the Lord with great joy and to honor men like him. What does Paul say Epaphroditus nearly died for?",
           "answers": [
             {
               "text": "For the work of Christ",
@@ -366,15 +325,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Philippians 2:30",
-          "text": "Paul says he did it \"risking his life to make up for your deficit of service to me.\" Friend, if I could stamp that man's name on every cookie in this box, I WOULD.",
-          "needs_agent_fix": true,
+          "text": "Epaphroditus did it, Paul says, \"risking his life to make up for your deficit of service to me.\" Friend, a man like that gets the first cookie out of EVERY batch in my bakery.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

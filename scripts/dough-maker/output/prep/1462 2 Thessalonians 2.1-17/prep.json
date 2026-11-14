@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Thessalonians 2:1",
-          "text": "Paul is writing to the church of the Thessalonians, along with Silvanus and Timothy (2 Thessalonians 1:1). Now he gets to a BIG one: the coming of our Lord Jesus Christ and our being gathered together to Him. Something's been going around that church, and Paul wants to talk about it.",
-          "needs_agent_fix": true,
+          "text": "Paul, an apostle, writes to the church of the Thessalonians, along with Silvanus and Timothy, who send this letter with him (2 Thessalonians 1:1). Now he gets to a BIG one: the coming of our Lord Jesus Christ and our being gathered together to Him. And he has something to ask the brothers about it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Thessalonians 2:2",
-          "question": "Paul asks the brothers not to be easily alarmed by a message going around about the Lord's coming. What does that message claim?",
+          "question": "Paul asks the brothers not to be easily alarmed by any spirit or message or letter that seems to come from him and his team. What does that kind of message claim?",
           "answers": [
             {
               "text": "The Day of the Lord has already come",
@@ -38,14 +38,6 @@
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "2 Thessalonians 2:2",
-          "text": "Paul says not to be alarmed by \"any spirit or message or letter seeming to be from us\". Friend, that's a text from your boss's number saying the office is closed FOREVER, and half the team already went home without calling to check.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Thessalonians 2:3",
@@ -64,10 +56,33 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "2 Thessalonians 2:3",
-          "text": "Paul is clear: \"Let no one deceive you in any way\". That Day won't come until the rebellion happens and the man of lawlessness, the son of destruction, is revealed.",
+          "text": "Paul is clear: \"Let no one deceive you in any way…\" That Day won't come until the rebellion happens and the man of lawlessness, the son of destruction, is revealed.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Thessalonians 2:4",
+          "question": "Paul says the man of lawlessness will exalt himself above every so-called god or object of worship, proclaiming himself to be ___.",
+          "answers": [
+            {
+              "text": "God",
+              "correct": true
+            },
+            {
+              "text": "a prophet",
+              "correct": false
+            },
+            {
+              "text": "an angel",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -76,30 +91,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Thessalonians 2:4",
-          "question": "Paul says the man of lawlessness will oppose and exalt himself above every so-called god or object of worship. Who will he proclaim himself to be?",
-          "answers": [
-            {
-              "text": "God",
-              "correct": true
-            },
-            {
-              "text": "A prophet",
-              "correct": false
-            },
-            {
-              "text": "An angel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Thessalonians 2:4",
-          "question": "The man of lawlessness puts himself above everything people worship. Where does Paul say he will seat himself?",
+          "question": "Paul says the man of lawlessness will proclaim himself to be God. Where will he seat himself?",
           "answers": [
             {
               "text": "In the temple of God",
@@ -118,7 +110,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Thessalonians 2:5",
@@ -141,38 +133,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "2 Thessalonians 2:6",
-          "text": "Paul says they know what is restraining the man of lawlessness right now, so that he'll be revealed at the proper time. Paul doesn't spell out what it is here, and neither will I.",
+          "text": "Paul says they know what is now restraining the man of lawlessness, so that he'll be revealed at the proper time. They know it, Paul doesn't spell it out here, and I'm over here leaning in like the one coworker who missed the meeting.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "2 Thessalonians 2:7",
+          "text": "Paul says the mystery of lawlessness is ALREADY at work. It's just being held back for now.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Thessalonians 2:7",
-          "question": "Something is holding lawlessness back. Paul says the mystery of lawlessness is ___ at work.",
-          "answers": [
-            {
-              "text": "already",
-              "correct": true
-            },
-            {
-              "text": "not yet",
-              "correct": false
-            },
-            {
-              "text": "never",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Thessalonians 2:7",
@@ -195,11 +172,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Thessalonians 2:8",
-          "question": "Once the restrainer is out of the way, the lawless one is revealed. True or false: Paul says the Lord Jesus will slay him.",
+          "question": "Once the restrainer is out of the way, the lawless one will be revealed. True or false: Paul says the Lord Jesus will slay him.",
           "answers": [
             {
               "text": "True",
@@ -214,10 +191,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "2 Thessalonians 2:8",
-          "text": "All that big talk, and it ends with a breath. The Lord Jesus will slay him with the breath of His mouth and annihilate him by the majesty of His arrival.",
+          "text": "Paul says the Lord Jesus will slay the lawless one with the breath of His mouth and annihilate him by the majesty of His arrival.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -231,7 +208,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Thessalonians 2:9",
-          "text": "Paul says the lawless one's coming will come with the working of Satan, with \"every kind of power, sign, and false wonder\". Friend, that is one arrival you do NOT want to be impressed by.",
+          "text": "Paul says the lawless one will come with the working of Satan, the devil, with \"every kind of power, sign, and false wonder…\" Friend, that is one arrival you do NOT want to be impressed by.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -239,7 +216,7 @@
           "card": 2,
           "kind": "story",
           "verses": "2 Thessalonians 2:10",
-          "text": "Paul says the lawless one also comes with every wicked deception, aimed at those who are perishing.",
+          "text": "Paul says the lawless one will also come with every wicked deception, aimed at those who are perishing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -248,7 +225,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Thessalonians 2:10",
-          "question": "Paul says the people falling for the deception refused the love of the ___ that would have saved them.",
+          "question": "Paul says those who are perishing refused the love of the ___ that would have saved them.",
           "answers": [
             {
               "text": "truth",
@@ -279,7 +256,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Thessalonians 2:12",
-          "question": "Paul says judgment will come on everyone who disbelieved the truth. What else did they do?",
+          "question": "Paul says judgment will come on all who disbelieved the truth. What else does he say they did?",
           "answers": [
             {
               "text": "Delighted in wickedness",
@@ -301,7 +278,7 @@
           "card": 6,
           "kind": "story",
           "verses": "2 Thessalonians 2:13",
-          "text": "Then the letter turns so hard my mustache needs a seatbelt. Paul says, \"But we should always thank God for you, brothers who are loved by the Lord\".",
+          "text": "Then Paul flips the whole mood, like opening a bill braced for the worst and finding out they owe YOU. Paul says, \"But we should always thank God for you, brothers who are loved by the Lord…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -333,7 +310,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Thessalonians 2:13",
-          "question": "Others refused the truth. True or false: Paul says God chose the Thessalonians to be saved by the sanctification of the Spirit and by faith in the truth.",
+          "question": "Others refused the love of the truth. True or false: Paul says God chose the Thessalonians to be saved by faith in the truth.",
           "answers": [
             {
               "text": "True",
@@ -351,7 +328,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Thessalonians 2:14",
-          "text": "Paul says God called them to this through the gospel he and his team brought them. And friend, this is NOT a \"your car's warranty is expiring\" call, because this call has a purpose.",
+          "text": "Paul says God called them to this through the gospel he and his team brought them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -382,27 +359,27 @@
           "card": 11,
           "kind": "story",
           "verses": "2 Thessalonians 2:15",
-          "text": "Then Paul hits them with \"Therefore, brothers\". That's the part of the meeting where EVERYBODY puts the phone down, because here comes what they're supposed to actually do.",
+          "text": "Then Paul writes, \"Therefore, brothers…\" That's when EVERYBODY in the meeting puts the phone down, because here comes the part where you actually DO something.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Thessalonians 2:15",
-          "question": "With rumors flying about the Day of the Lord, what does Paul tell the brothers to do?",
+          "question": "After all this about the Day of the Lord, Paul tells the brothers to stand ___ and cling to the traditions he and his team taught them.",
           "answers": [
             {
-              "text": "Stand firm and hold to what they were taught",
+              "text": "firm",
               "correct": true
             },
             {
-              "text": "Write to Paul before believing anything",
+              "text": "back",
               "correct": false
             },
             {
-              "text": "Stay home and wait for the Day to come",
+              "text": "apart",
               "correct": false
             }
           ],
@@ -414,7 +391,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Thessalonians 2:15",
-          "question": "True or false: Paul says the traditions he taught the Thessalonians came to them only by speech.",
+          "question": "True or false: Paul says the traditions he and his team taught the Thessalonians came to them only by speech.",
           "answers": [
             {
               "text": "True",
@@ -432,23 +409,27 @@
           "card": 14,
           "kind": "story",
           "verses": "2 Thessalonians 2:16",
-          "text": "Paul ends this part with a \"Now may\" for them, naming our Lord Jesus Christ Himself and God our Father, \"who by grace has loved us and given us eternal comfort and good hope\". ETERNAL comfort, friend, and the comfiest spot I ever found in that junk drawer was half a takeout menu.",
+          "text": "Then Paul writes, \"Now may our Lord Jesus Christ Himself and God our Father, who by grace has loved us…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Thessalonians 2:17",
-          "question": "True or false: Paul says may our Lord Jesus Christ Himself and God our Father encourage the Thessalonians' hearts.",
+          "type": "multiple_choice",
+          "verses": "2 Thessalonians 2:16",
+          "question": "Paul says our Lord Jesus Christ and God our Father have loved us by grace. What else does he say They have given us?",
           "answers": [
             {
-              "text": "True",
+              "text": "Eternal comfort and good hope",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Great riches and long life",
+              "correct": false
+            },
+            {
+              "text": "Victory over every enemy",
               "correct": false
             }
           ],
@@ -457,24 +438,9 @@
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Thessalonians 2:17",
-          "question": "Paul also says may They strengthen the Thessalonians in every good word and deed. What part of the Thessalonians' lives is that about?",
-          "answers": [
-            {
-              "text": "What they say and what they do",
-              "correct": true
-            },
-            {
-              "text": "What they hope will happen someday",
-              "correct": false
-            },
-            {
-              "text": "What they remember from the past",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Thessalonians 2:16-17",
+          "text": "ETERNAL comfort, friend, from a stamper whose comfiest spot in the junk drawer I spent years stuck in was half a takeout menu. Then Paul finishes the line: may They encourage the Thessalonians' hearts and strengthen them in every good word and deed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

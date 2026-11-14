@@ -8,53 +8,40 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Colossians 1:1-2, 3:17",
-          "text": "Paul, an apostle of Christ Jesus, is writing to the believers at Colossae, and he just told them, \"And whatever you do, in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through Him.\" WHATEVER you do, friend, and that covers stamping cookies, answering emails, even sitting in traffic yelling at nobody. Now he goes through a household, one person at a time.",
+          "verses": "Colossians 3:18",
+          "text": "Paul, an apostle of Christ Jesus, is writing to the believers at Colossae (Colossians 1:1-2), and he just told them to do whatever they do, in word or deed, in the name of the Lord Jesus (Colossians 3:17). Now he speaks to a household, one person at a time. First up, the wives: \"Wives, submit to your husbands, as is fitting in the Lord.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "Colossians 3:18",
-          "text": "First up, the wives: \"Wives, submit to your husbands, as is fitting in the Lord.\" Paul is going down the list like a family group chat where EVERYBODY gets tagged.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Colossians 3:19",
+          "question": "Next, Paul turns to the husbands. He tells them to love their wives and not be harsh with them.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Colossians 3:19",
-          "question": "Next, Paul turns to the husbands. He tells them to ___ their wives and not be harsh with them.",
-          "answers": [
-            {
-              "text": "love",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "teach",
-              "correct": false
-            },
-            {
-              "text": "lead",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "story",
           "verses": "Colossians 3:20",
-          "text": "Then Paul turns to the children, and he tells them to obey their parents in everything. Short line, friend, but that word \"everything\" is doing some HEAVY lifting.",
+          "text": "Then Paul turns to the children and tells them to obey their parents in everything.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Colossians 3:20",
@@ -77,7 +64,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Colossians 3:21",
@@ -96,15 +83,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Colossians 3:22",
-          "text": "Next, Paul tells slaves to obey their earthly masters in everything. And friend, everybody else got ONE line, but Paul is just getting warmed up here.",
+          "text": "Next, Paul speaks to slaves and tells them to obey their earthly masters in everything.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Colossians 3:22",
@@ -127,11 +114,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Colossians 3:22",
-          "question": "Paul wants the slaves to obey with ___ of heart and ___ of the Lord.",
+          "question": "Instead, Paul wants the slaves to obey with ___ of heart and fear of the Lord.",
           "answers": [
             {
               "text": "sincerity",
@@ -139,28 +126,19 @@
               "blank": 1
             },
             {
-              "text": "fear",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "quickness",
+              "text": "hardness",
               "correct": false
             },
             {
               "text": "heaviness",
               "correct": false
-            },
-            {
-              "text": "knowledge",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Colossians 3:23",
           "text": "Then Paul says whatever you do, work at it with your whole being. Your WHOLE being, friend, not just the half that hit snooze three times and is still negotiating with the pillow.",
@@ -168,26 +146,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Colossians 3:23",
-          "question": "Paul says to work at whatever you do with your whole being, as for the Lord and not for men.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Colossians 3:24",
@@ -210,30 +169,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Colossians 3:24",
-          "question": "Paul tells the slaves who they are really serving in the end. Who is it?",
+          "question": "Paul tells the slaves that in the end they are really serving their earthly masters.",
           "answers": [
             {
-              "text": "The Lord Christ",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Their earthly masters",
-              "correct": false
-            },
-            {
-              "text": "The church leaders",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Colossians 3:25",
@@ -252,31 +207,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "Colossians 4:1",
-          "text": "Now Paul flips it around and talks to the masters. He tells them to supply their slaves with what is right and fair, and friend, NOBODY in this house is off the hook.",
+          "text": "Now Paul flips it around and talks to the masters, since they also have a Master in heaven. And friend, NOBODY in this house is off the hook.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Colossians 4:1",
-          "question": "Paul tells the masters to be fair to their slaves, since they also have a ___ in heaven.",
+          "question": "Paul tells the masters to supply their slaves with what is right and ___.",
           "answers": [
             {
-              "text": "Master",
+              "text": "fair",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "treasure",
+              "text": "firm",
               "correct": false
             },
             {
-              "text": "home",
+              "text": "strict",
               "correct": false
             }
           ],
@@ -324,7 +279,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Colossians 4:3",
-          "text": "Then Paul asks them to pray for him and those with him too. He's sitting in chains, friend, and his prayer request is all about the message of Christ.",
+          "text": "Then Paul asks them to pray for him and those with him too. And friend, he's writing this in chains.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -372,33 +327,17 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Colossians 4:4",
-          "question": "Paul asks them to pray that he may declare the message ___, as he should.",
-          "answers": [
-            {
-              "text": "clearly",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "quickly",
-              "correct": false
-            },
-            {
-              "text": "quietly",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Paul also asks them to pray that he may declare the mystery of Christ clearly, as he should.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Colossians 4:5",
-          "text": "Then Paul turns to how the believers treat outsiders, and he tells them to be redeeming the time. I spent YEARS in a drawer counting falling dust, friend, so trust me, I'm a big fan of redeeming the time.",
+          "text": "Then Paul turns to how the believers treat outsiders, and he tells them to be redeeming the time. I spent YEARS in a junk drawer counting falling dust, friend, so trust me, I'm a big fan of redeeming the time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "\"wealthy\" is a wrong answer here and was already a wrong answer on card 5 of this stop. A wrong answer shown on one card is reused on a later card.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "The right answer \"self-controlled\" is already stated on earlier story cards: card 3 (older men: \"self-controlled\") and card 6 (young women: \"self-controlled\"). That gives away this later choice.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "This is a True statement that just repeats the card before it (story card 12 told integrity, dignity and wholesome speech that is above reproach). It also tests several claims at once: the three qualities and the purpose clause.",
+      "rule": "A True statement never just repeats the card before it. A true or false statement tests one claim."
+    }
+  ]
+}

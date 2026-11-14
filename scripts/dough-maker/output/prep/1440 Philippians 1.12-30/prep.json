@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Philippians 1:12",
-          "text": "Paul, a servant of Christ Jesus, is writing to the believers in Philippi, and he's writing it in chains (Phil 1:1, 7). Now he wants them to know how his circumstances have turned out. So lean in, friend, because here comes the update.",
+          "text": "Paul, a servant of Christ Jesus, is writing to the believers in Philippi, and he's writing it in chains (Philippians 1:1, 7). Now he wants them to know how his circumstances have turned out. So lean in, friend, because here comes the update.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -30,7 +30,7 @@
               "correct": false
             },
             {
-              "text": "delay",
+              "text": "divide",
               "correct": false
             }
           ],
@@ -186,15 +186,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 1:18",
-          "question": "Paul asks, \"What then is the issue?\" He says the issue is stopping the ones who preach Christ with false motives. True or false?",
+          "question": "Paul asks, \"What then is the issue?\" He says it's just this: in every way, whether by false motives or true, Christ is preached. True or false?",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -228,7 +228,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Philippians 1:18",
-          "text": "And Paul says he will continue to rejoice. Friend, if somebody baked MY cookie recipe just to get under my skin, I'd be grumpy for a WEEK, and Paul's over here rejoicing.",
+          "text": "And Paul says he will continue to rejoice. Some folks preach thinking it'll make his chains worse, and Paul's like, they're preaching Christ? I'll TAKE it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -297,7 +297,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Philippians 1:20",
-          "text": "Paul eagerly expects and hopes he won't be ashamed in any way. He hopes for complete boldness, so Christ will be exalted in his body, and me, I need a pep talk just to peek in the oven.",
+          "text": "Paul eagerly expects and hopes he won't be ashamed in any way. He hopes for complete boldness, so that Christ will be exalted in his body.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -324,8 +324,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Philippians 1:21",
-          "text": "Then Paul says it plain: \"For to me, to live is Christ, and to die is gain.\" Read that one twice, friend. I'll wait.",
-          "needs_agent_fix": true,
+          "text": "Then Paul says it plain: \"For to me, to live is Christ, and to die is gain.\" Go ahead and read that one twice, friend, because I'll be right here.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -344,15 +344,15 @@
           "question": "Paul asks, \"So what shall I choose?\" between living on and dying. What's his answer?",
           "answers": [
             {
-              "text": "He doesn't know",
+              "text": "He says he does not know",
               "correct": true
             },
             {
-              "text": "He'll let the church decide",
+              "text": "He says the church should decide",
               "correct": false
             },
             {
-              "text": "He'll wait for the court to rule",
+              "text": "He says the court will decide it",
               "correct": false
             }
           ],
@@ -363,27 +363,28 @@
           "card": 9,
           "kind": "story",
           "verses": "Philippians 1:23",
-          "text": "Paul says he's torn between the two. I get torn between chocolate chips and sprinkles, and I think Paul sounds calmer about life and death than I do at the topping bar.",
+          "text": "Paul says he's torn between the two.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Philippians 1:23",
-          "question": "Paul says he desires to depart. What does he say departing would mean for him?",
+          "question": "Paul says he desires to depart and be with ___, which he calls far better indeed.",
           "answers": [
             {
-              "text": "Being with Christ",
-              "correct": true
+              "text": "Christ",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Seeing Jerusalem again",
+              "text": "his family",
               "correct": false
             },
             {
-              "text": "Going home to Tarsus",
+              "text": "the apostles",
               "correct": false
             }
           ],
@@ -402,7 +403,7 @@
               "correct": true
             },
             {
-              "text": "The palace guard",
+              "text": "Timothy",
               "correct": false
             },
             {
@@ -418,7 +419,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 1:25",
-          "question": "Paul is convinced he will remain and continue with the Philippians for their progress and joy in the faith. True or false?",
+          "question": "Paul says he knows he will remain and continue with the Philippians for their progress and joy in the faith. True or false?",
           "answers": [
             {
               "text": "True",
@@ -450,7 +451,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Philippians 1:27",
-          "text": "Then Paul turns from his own news to the Philippians, and you know that moment on a work call when the boss says, \"Okay, enough about me,\" and EVERYBODY sits up straight? He's got one big ask for them.",
+          "text": "Then Paul turns from his own news to the Philippians, and you know that moment when a friend finishes telling you about their week, says, \"Okay, enough about me,\" and you KNOW something's coming your way? He's got one big ask for them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -470,7 +471,7 @@
               "correct": false
             },
             {
-              "text": "Send a message to the palace guard",
+              "text": "Send Timothy to him right away",
               "correct": false
             }
           ],
@@ -490,11 +491,11 @@
               "blank": 1
             },
             {
-              "text": "place",
+              "text": "custom",
               "correct": false
             },
             {
-              "text": "town",
+              "text": "law",
               "correct": false
             }
           ],
@@ -504,9 +505,9 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "Philippians 1:28",
+          "verses": "Philippians 1:27-28",
           "text": "He wants them standing firm without being frightened in any way by those who oppose them. Picture the other team running their mouths all game, and your side just shrugs and keeps playing.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -517,23 +518,31 @@
           "question": "Right after telling the Philippians not to be frightened by those who oppose them, Paul says this is a clear sign. A sign of what?",
           "answers": [
             {
-              "text": "Their opponents' destruction and their salvation",
+              "text": "The opponents' destruction and the Philippians' salvation",
               "correct": true
             },
             {
-              "text": "Their opponents' victory and their defeat",
+              "text": "The opponents' victory and the Philippians' defeat",
               "correct": false
             },
             {
-              "text": "Their own pride and their weakness",
+              "text": "The opponents' strength and the Philippians' weakness",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Philippians 1:28",
+          "text": "And Paul says this is from God.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "story",
           "verses": "Philippians 1:29",
           "text": "Then Paul tells them what's been granted to them on behalf of Christ, and friend, in all my drawer years the only thing ever granted to me was more dust.",
@@ -541,7 +550,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Philippians 1:29",
@@ -565,7 +574,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 1:30",
@@ -584,10 +593,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "Philippians 1:30",
-          "text": "They saw Paul's struggle, and now they hear he's still in it. It's the same struggle they're in, and friend, I know from my drawer days how much it helps to be in the hard stuff together.",
+          "text": "They saw Paul's struggle, and now they hear he's still in it. It's the same struggle they're in, so nobody's carrying it alone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 17
+      },
+      "problem": "Stop 2 uses a junk drawer joke twice, on card 6 (\"After years in a dark junk drawer...\") and again on card 17 (\"An angel once found me in the back of a junk drawer...\").",
+      "rule": "His drawer years carry a joke at most once per stop."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 2
+      },
+      "problem": "The two wrong answers, \"The good works we have done\" and \"Our careful obedience\", mean nearly the same thing, so they are near-matches of each other.",
+      "rule": "Two wrong answers never mean the same as each other either."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 3
+      },
+      "problem": "The question says \"this grace\" without saying what grace it means. It points back to a card the baker can't see on screen.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "In \"how much Onesiphorus ministered to him,\" the word \"him\" could mean Timothy or Paul. A baker could read it as Timothy and mark the true statement false.",
+      "rule": "\"He,\" \"she\" and \"they\" always point to someone the baker can tell."
+    }
+  ]
+}

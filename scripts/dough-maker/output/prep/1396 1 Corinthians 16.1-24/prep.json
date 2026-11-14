@@ -9,75 +9,52 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 16:1",
-          "text": "The apostle Paul is wrapping up his letter to the church in Corinth, and now he gets practical. First up: the collection for the saints. He tells them to handle it the same way he directed the churches of Galatia.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Paul, an apostle, is wrapping up his letter to the church of God in Corinth (1 Corinthians 1:1-2), and now he gets practical. First up: the collection for the saints. He tells them to handle it the same way he directed the churches of Galatia.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Corinthians 16:2",
-          "question": "Paul wants each of them to set money aside for the collection on a schedule. How often?",
-          "answers": [
-            {
-              "text": "On the first day of every week",
-              "correct": true
-            },
-            {
-              "text": "On the last day of every month",
-              "correct": false
-            },
-            {
-              "text": "Once a year at the harvest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Here's the plan: every week, each of them sets aside a portion of his income and saves it up, so nothing has to be gathered when Paul comes. It's the cookie jar method, friend: a little goes in every week, until one day the lid won't CLOSE.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "1 Corinthians 16:2",
-          "text": "Each one sets aside a portion of his income and saves it up. It's the cookie jar method, friend: a little goes in every week, and one day the lid won't CLOSE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 16:2",
-          "question": "Paul wants the money saved up ahead of time, so that when he comes, no ___ will be needed.",
+          "question": "Paul wants each of the Corinthians to set aside a portion of his income on the ___ day of every week.",
           "answers": [
             {
-              "text": "collections",
+              "text": "first",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "letters",
+              "text": "last",
               "correct": false
             },
             {
-              "text": "sermons",
+              "text": "seventh",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "1 Corinthians 16:3",
           "text": "Once Paul gets to Corinth, that gift has a trip to make. And Paul will send letters along with it.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 16:3",
@@ -96,19 +73,20 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Corinthians 16:3",
-          "question": "Where will the people the Corinthians recommend take the gift?",
+          "question": "The people the Corinthians recommend will carry their gift to ___.",
           "answers": [
             {
               "text": "Jerusalem",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Antioch",
@@ -119,11 +97,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 16:4",
@@ -138,124 +116,81 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "1 Corinthians 16:5",
+          "text": "Now the travel plans: Paul IS coming to Corinth, but he's going through Macedonia first. Hey, I had a stop of my own before I got HERE: years in the back of a junk drawer.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "1 Corinthians 16:5",
-          "text": "Now the travel plans. Paul IS coming to Corinth, just not by the straightest road. Hey, I took the long way too, friend: years in the back of a junk drawer before I got HERE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 16:6",
+          "question": "Paul might stay in Corinth a while, maybe even spend the winter. What does he hope the Corinthians will do for him after that?",
+          "answers": [
+            {
+              "text": "Help him on his journey wherever he goes",
+              "correct": true
+            },
+            {
+              "text": "Keep the collection safe until spring",
+              "correct": false
+            },
+            {
+              "text": "Give him a house to stay in for good",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Corinthians 16:5",
-          "question": "After Paul goes through ___, he'll come to Corinth.",
-          "answers": [
-            {
-              "text": "Macedonia",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Cilicia",
-              "correct": false
-            },
-            {
-              "text": "Cappadocia",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
           "kind": "story",
           "verses": "1 Corinthians 16:7",
           "text": "Paul doesn't want to see them just in passing. This is NOT the friend who says he'll swing by, then honks from the driveway and pulls off.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 16:7",
+          "question": "Paul hopes to spend some time with the Corinthians, but he puts one condition on it. What is it?",
+          "answers": [
+            {
+              "text": "If the Lord permits",
+              "correct": true
+            },
+            {
+              "text": "If the collection is ready",
+              "correct": false
+            },
+            {
+              "text": "If the winter is mild",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 16:6",
-          "question": "How long does Paul say he might stay with the Corinthians?",
-          "answers": [
-            {
-              "text": "Maybe even the whole winter",
-              "correct": true
-            },
-            {
-              "text": "Until the next Passover",
-              "correct": false
-            },
-            {
-              "text": "Through the grain harvest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "1 Corinthians 16:8-9",
+          "text": "But Corinth will have to wait a little: Paul is staying in Ephesus until Pentecost. A great door for effective work has opened to him there.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Corinthians 16:6",
-          "question": "Paul hopes the Corinthians will help him on his journey, wherever he goes after his visit.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "1 Corinthians 16:8",
-          "text": "But Corinth will have to wait a little. Paul is staying in Ephesus until Pentecost.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 16:9",
-          "question": "Why is Paul staying in Ephesus until Pentecost?",
-          "answers": [
-            {
-              "text": "He has a great opening for effective work",
-              "correct": true
-            },
-            {
-              "text": "He is waiting for a ship heading west",
-              "correct": false
-            },
-            {
-              "text": "He is still recovering from an illness",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 16:9",
@@ -270,8 +205,8 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -284,8 +219,8 @@
           "kind": "story",
           "verses": "1 Corinthians 16:10",
           "text": "Next up: Timothy, a disciple Paul took along on his travels (Acts 16:1-3). If Timothy shows up in Corinth, Paul wants him to have nothing to fear while he's there.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -307,15 +242,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 16:11",
-          "question": "Paul says no one should treat Timothy with ___. Send him on his way in ___.",
+          "question": "Paul says no one should treat Timothy with ___.",
           "answers": [
             {
               "text": "contempt",
@@ -323,52 +258,43 @@
               "blank": 1
             },
             {
-              "text": "peace",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "honor",
+              "text": "favor",
               "correct": false
             },
             {
-              "text": "haste",
-              "correct": false
-            },
-            {
-              "text": "secret",
+              "text": "patience",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 16:11",
-          "question": "Paul is expecting Timothy to come back to him, along with the brothers.",
+          "question": "Paul wants the Corinthians to keep Timothy with them for good.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "1 Corinthians 16:12",
-          "text": "Then there's Apollos, a teacher who had already worked in Corinth (Acts 18:27-19:1; 1 Corinthians 3:6). Paul calls him our brother, and he STRONGLY urged him to go to Corinth with the brothers.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then there's Apollos, a teacher who had already worked in Corinth (Acts 18:27-19:1; 1 Corinthians 3:6). Paul calls Apollos our brother, and Paul STRONGLY urged Apollos to go to Corinth with the brothers.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -390,48 +316,32 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "1 Corinthians 16:13",
           "text": "Then Paul goes rapid-fire: \"Be on the alert. Stand firm in the faith. Be men of courage. Be strong.\" That's not a letter anymore, friend, that's a coach at HALFTIME.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Corinthians 16:14",
-          "question": "After those rapid-fire commands, Paul adds one more that covers everything the Corinthians do: do everything in ___.",
-          "answers": [
-            {
-              "text": "love",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "faith",
-              "correct": false
-            },
-            {
-              "text": "order",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "And then one more line that covers everything they do: \"Do everything in love.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "1 Corinthians 16:15",
           "text": "Then Paul brings up Stephanas and his household, the family Paul baptized himself (1 Corinthians 1:16). He reminds the Corinthians of something they already know about them.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -454,8 +364,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -477,46 +387,47 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "1 Corinthians 16:17",
-          "text": "Turns out Stephanas isn't just a name in this letter. He's arrived where Paul is, along with Fortunatus and Achaicus, and Paul is glad.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Turns out Stephanas has arrived where Paul is, along with Fortunatus and Achaicus. Paul is glad, because they supplied what was lacking from the Corinthians.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Corinthians 16:17",
-          "question": "Why is Paul glad that Stephanas, Fortunatus and Achaicus have arrived?",
+          "type": "fill_blank",
+          "verses": "1 Corinthians 16:18",
+          "question": "Paul says Stephanas, Fortunatus and Achaicus ___ his spirit, and the Corinthians' spirit as well.",
           "answers": [
             {
-              "text": "They supplied what was lacking from the Corinthians",
-              "correct": true
+              "text": "refreshed",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They came to escort Paul to Macedonia",
+              "text": "tested",
               "correct": false
             },
             {
-              "text": "They brought word that Apollos was on his way",
+              "text": "troubled",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 16:18",
-          "question": "Paul says these three men refreshed his spirit and the Corinthians' too, so they should show appreciation to men like these.",
+          "question": "Paul tells the Corinthians to show their appreciation to men like these.",
           "answers": [
             {
               "text": "True",
@@ -527,16 +438,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "1 Corinthians 16:19-20",
-          "text": "Then the greetings pile in: the churches in the province of Asia, all the brothers there, and Aquila and Prisca, the tentmaker couple Paul once stayed and worked with (Acts 18:2-3), along with the church that meets at their house. It's like a birthday card that got passed around the WHOLE office.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the greetings pile in: the churches in the province of Asia, Aquila and Prisca, Paul's fellow workers in Christ Jesus (Romans 16:3), the church that meets at their house, and all the brothers with Paul. It's like a birthday card that got passed around the WHOLE office.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -554,47 +465,47 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "1 Corinthians 16:21",
-          "text": "Then Paul writes this greeting in his own hand. Like the boss signing the office card last, right at the bottom.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then Paul writes this greeting in his own hand, and signs it: Paul.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Corinthians 16:22",
-          "question": "Paul writes a strong warning about anyone who does not love the Lord. What does he say?",
-          "answers": [
-            {
-              "text": "Let him be under a curse",
-              "correct": true
-            },
-            {
-              "text": "Let him be put out of the church",
-              "correct": false
-            },
-            {
-              "text": "Let him be warned by the elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then comes a hard line: \"If anyone does not love the Lord, let him be under a curse.\" And right after it: \"Come, O Lord!\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 19,
-          "kind": "story",
-          "verses": "1 Corinthians 16:22-24",
-          "text": "Then Paul cries out, \"Come, O Lord!\" And he signs off with the grace of the Lord Jesus, and his love for every one of them in Christ Jesus.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Corinthians 16:23-24",
+          "question": "After that hard line, what does Paul wish for the Corinthians as he signs off?",
+          "answers": [
+            {
+              "text": "The grace of the Lord Jesus and Paul's own love",
+              "correct": true
+            },
+            {
+              "text": "Safe travels for the gift to Jerusalem",
+              "correct": false
+            },
+            {
+              "text": "Patience as they wait for Timothy",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

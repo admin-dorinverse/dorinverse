@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Philippians 2:1",
-          "text": "Paul, a servant of Christ Jesus, is in chains for Christ, and he's writing a letter to the believers in Philippi (Philippians 1:1, 1:13). Now he stacks up four ifs: if you have any encouragement in Christ, any comfort from His love, any fellowship with the Spirit, any affection and compassion. Four ifs in a row, friend, and you KNOW something big is coming.",
+          "text": "Paul, a servant of Christ Jesus, is in chains for Christ and writing to the believers in Philippi, and he's just told them to conduct themselves in a manner worthy of the gospel of Christ (Philippians 1:1, 1:13, 1:27). Now he stacks up four ifs: if you have any encouragement in Christ, any comfort from His love, any fellowship with the Spirit, any affection and compassion. Four ifs in a row, friend, and you KNOW something big is coming.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -39,16 +39,21 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Philippians 2:2",
-          "question": "Paul says the believers in Philippi being like-minded and united would make his joy complete.",
+          "question": "Paul tells the believers in Philippi that living this way would make his ___ complete.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "joy",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "mission",
+              "correct": false
+            },
+            {
+              "text": "work",
               "correct": false
             }
           ],
@@ -58,8 +63,8 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "Philippians 2:2-3",
-          "text": "United in spirit and purpose, friend, when five adults in a group chat need FORTY messages just to pick a Tuesday? Then Paul names two things they should never act out of.",
+          "verses": "Philippians 2:3",
+          "text": "Five adults in a group chat need FORTY messages just to pick a Tuesday, so friend, Paul knows what he's up against. Then he names two things they should never act out of.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -103,7 +108,7 @@
               "correct": false
             },
             {
-              "text": "dangerous",
+              "text": "experienced",
               "correct": false
             }
           ],
@@ -132,21 +137,13 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Philippians 2:4",
-          "text": "Not only your own interests, but others' too. So when there's ONE chocolate chip left in the bowl, I'm supposed to look at you first, and friend, I'm WORKING on it.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
           "verses": "Philippians 2:5",
           "text": "Then Paul points to the One who shows how it's done. He writes, \"Let this mind be in you which was also in Christ Jesus:\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Philippians 2:6",
           "text": "Now Paul gets to the heart of it, friend, so lean in. Christ Jesus existed in the form of God, yet He did not consider equality with God something to be grasped.",
@@ -154,7 +151,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Philippians 2:7",
@@ -177,7 +174,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Philippians 2:7-8",
           "text": "He was made in human likeness and found in appearance as a man. Sit with that one a second, friend, because Paul still isn't finished telling how low He went.",
@@ -185,7 +182,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Philippians 2:8",
@@ -209,7 +206,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Philippians 2:9",
           "text": "Now watch this little word, friend, because it carries a lot: Therefore.",
@@ -217,11 +214,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Philippians 2:9",
-          "question": "Christ Jesus went as low as a cross. Because of that, what does God do?",
+          "question": "Christ Jesus humbled Himself all the way to death. Because of that, what does God do?",
           "answers": [
             {
               "text": "Exalts Him to the highest place",
@@ -240,7 +237,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Philippians 2:9-10",
           "text": "God gives Him the name above all names. Not near the top, friend, ABOVE all of them, and at the name of Jesus every knee should bow.",
@@ -248,26 +245,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 2:10",
-          "question": "Paul says every knee should bow at the name of Jesus, but only on earth.",
+          "question": "Paul says every knee should bow at the name of Jesus in heaven and on earth and under the earth.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Philippians 2:11",
@@ -331,15 +328,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 2:13",
-          "question": "Paul says working out their salvation is all up to the believers, with God just watching from a distance.",
+          "question": "Paul says it is God who works in the believers in Philippi, both to will and to act.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -349,7 +346,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Philippians 2:13",
-          "text": "Paul says it is God who works in them, to will and to act on behalf of His good purpose. The wanting AND the doing, friend, and some mornings I need help with the wanting part just to preheat the oven.",
+          "text": "All of it on behalf of His good purpose. And friend, some mornings I need that kind of help just to preheat the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -412,8 +409,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Philippians 2:16",
-          "text": "They shine as they hold forth the word of life. And that matters a lot to Paul.",
-          "needs_agent_fix": true,
+          "text": "All while they hold forth the word of life. And friend, that matters a lot to Paul.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -503,7 +500,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Philippians 2:18",
-          "text": "Paul tells them, \"So you too should be glad and rejoice with me.\" The man's in chains (Philippians 1:13), telling EVERYBODY else to cheer up, and me? I went quiet for a while in a junk drawer and didn't crack a single joke.",
+          "text": "Paul tells them, \"So you too should be glad and rejoice with me.\" The man's in chains for Christ (Philippians 1:13) and he's cheering EVERYBODY on, while I spent my years in a junk drawer without cracking a single joke.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

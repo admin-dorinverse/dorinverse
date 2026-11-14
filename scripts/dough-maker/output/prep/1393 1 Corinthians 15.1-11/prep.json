@@ -3,41 +3,45 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "1 Corinthians 15:1-4",
+      "verses": "1 Corinthians 15:1-5",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "1 Corinthians 15:1",
-          "text": "Paul, an apostle of Christ Jesus, is writing a letter to the church of God in Corinth (1 Corinthians 1:1-2). He's spent a good while on how they should run their gatherings (1 Corinthians 11-14). Now he switches gears to the BIG one: the gospel.",
-          "needs_agent_fix": true,
+          "text": "Paul, an apostle of Christ Jesus, is writing a letter to the church of God in Corinth (1 Corinthians 1:1-2). He's just been teaching them how to keep their gatherings orderly (1 Corinthians 14:26-40). Now he says he wants to remind them of the gospel he preached to them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Corinthians 15:1",
-          "question": "The gospel Paul brings up here is brand new to the Corinthians.",
+          "question": "Paul is reminding the Corinthians of the gospel he preached to them. What does he say about how they treat it?",
           "answers": [
             {
-              "text": "True",
+              "text": "They stand firm in it",
+              "correct": true
+            },
+            {
+              "text": "They argue over every word of it",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "They keep it to themselves",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "1 Corinthians 15:1-2",
-          "text": "Paul is reminding them. They received this gospel, they stand firm in it, and Paul says by this gospel they are saved.",
-          "needs_agent_fix": true,
+          "verses": "1 Corinthians 15:2",
+          "text": "And this isn't just a nice memory, friend. Paul says by this gospel they are saved.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -60,38 +64,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Corinthians 15:2-3",
-          "text": "Otherwise, Paul says, they have believed in vain. Then he gets to what he calls \"of first importance\", and friend, when Paul says FIRST importance, you put the phone DOWN.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Corinthians 15:2",
+          "question": "Paul says that if the Corinthians don't hold firmly to the word he preached, their believing still counts for something.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Corinthians 15:3",
-          "question": "Before Paul lists what's of first importance, he says what he did with this message. What was it?",
-          "answers": [
-            {
-              "text": "He received it and passed it on",
-              "correct": true
-            },
-            {
-              "text": "He kept it to himself for years",
-              "correct": false
-            },
-            {
-              "text": "He wrote it down for the elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Paul gets to what he calls \"of first importance\". Friend, when Paul says FIRST importance, you put the phone DOWN.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,30 +99,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 15:3",
-          "question": "First thing on Paul's list: Christ died for our ___, according to the Scriptures.",
+          "question": "Paul says the message of first importance is something he ___ and then passed on to the Corinthians.",
           "answers": [
             {
-              "text": "sins",
+              "text": "received",
               "correct": true
             },
             {
-              "text": "freedom",
+              "text": "wrote",
               "correct": false
             },
             {
-              "text": "hope",
+              "text": "changed",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "1 Corinthians 15:3-4",
-          "text": "Christ died, according to the Scriptures. Then He was buried, and friend, if the list stopped THERE, this would be the saddest letter ever written.",
-          "needs_agent_fix": true,
+          "text": "First on Paul's list: Christ died for our sins according to the Scriptures. Then He was buried.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,7 +130,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 15:4",
-          "question": "But Paul's list keeps going: Christ was raised. When?",
+          "question": "But Paul's list doesn't end with the burial. He says Christ was raised. When?",
           "answers": [
             {
               "text": "On the third day",
@@ -145,14 +145,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
           "type": "true_false",
-          "verses": "1 Corinthians 15:4",
+          "verses": "1 Corinthians 15:3-4",
           "question": "Paul says Christ being raised happened according to the Scriptures, just like His death.",
           "answers": [
             {
@@ -164,29 +164,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        }
-      ]
-    },
-    {
-      "stop": 2,
-      "verses": "1 Corinthians 15:5-11",
-      "cards": [
-        {
-          "card": 1,
-          "kind": "story",
-          "verses": "1 Corinthians 15:5",
-          "text": "Now Paul brings the receipts: the people who saw Christ after He was raised. First, He appeared to Cephas, that's Peter (John 1:42).",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 2,
+          "card": 11,
+          "kind": "story",
+          "verses": "1 Corinthians 15:5",
+          "text": "Now Paul brings the receipts: the people the risen Christ appeared to. First, He appears to Cephas, that's Peter (John 1:42).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 15:5",
-          "question": "After the risen Christ appears to Peter, who sees Him next on Paul's list?",
+          "question": "After Cephas, who does Paul say the risen Christ appears to next?",
           "answers": [
             {
               "text": "The Twelve",
@@ -201,61 +195,75 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        }
+      ]
+    },
+    {
+      "stop": 2,
+      "verses": "1 Corinthians 15:6-11",
+      "cards": [
+        {
+          "card": 1,
+          "kind": "story",
+          "verses": "1 Corinthians 15:6",
+          "text": "Paul's list of people the risen Christ appeared to keeps going, and friend, it gets BIG. Next, He appears to a crowd of brothers, all at once.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 15:6",
-          "question": "Then Paul names a whole crowd. How many brothers see the risen Christ at once?",
+          "question": "How many brothers does Paul say see the risen Christ at once?",
           "answers": [
             {
               "text": "More than five hundred",
               "correct": true
             },
             {
-              "text": "About seventy",
+              "text": "About one hundred twenty",
               "correct": false
             },
             {
-              "text": "Around three thousand",
+              "text": "Exactly seventy-two",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Corinthians 15:6",
+          "question": "Paul says most of the brothers who saw the risen Christ all at once have died by the time he writes this letter.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Corinthians 15:6",
-          "question": "Paul says most of the brothers in that crowd are still living when he writes this letter.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Corinthians 15:7",
+          "text": "Then He appears to someone named James, and then to all the apostles. And Paul's got one more name for the list.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Corinthians 15:7",
-          "text": "Then Christ appears to James, and then to all the apostles. And Paul's got one more name for the list.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Corinthians 15:8",
@@ -270,19 +278,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "1 Corinthians 15:8-9",
+          "text": "Paul says it happened to him \"as to one of untimely birth.\" Then he calls himself the least of the apostles, unworthy to be called an apostle at all.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "1 Corinthians 15:8-9",
-          "text": "Paul says it happened to him \"as to one of untimely birth.\" Then he calls himself the least of the apostles, unworthy to even be called one, and I bet there's a reason he feels that way.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 15:9",
@@ -301,19 +309,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "1 Corinthians 15:9-10",
+          "text": "Paul goes from \"the least of the apostles\" to \"I am what I am\" in one breath, friend. That's a BIG turnaround, and something got him there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "1 Corinthians 15:10",
-          "text": "Paul goes from \"the least of the apostles\" to \"I am what I am\" in one breath, friend. That's a BIG turnaround, and something got him there.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Corinthians 15:10",
@@ -332,7 +340,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "1 Corinthians 15:10",
+          "text": "And Paul says God's grace to him was not in vain. Not one crumb of it wasted, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -351,15 +367,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "1 Corinthians 15:10",
-          "text": "Then Paul adds, \"yet not I, but the grace of God that was with me.\" Friend, a worn-out stamper doesn't sharpen his own edges. Mine came back sharp, and I sure didn't do it.",
-          "needs_agent_fix": true,
+          "text": "Then Paul adds, \"yet not I, but the grace of God that was with me.\" Friend, I spent years as a worn-out stamper with blurry edges, and when my edges came back SHARP, I sure didn't do it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -367,7 +383,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Corinthians 15:11",
-          "question": "Whether it was Paul or the other apostles, this is what they ___, and this is what the Corinthians believed.",
+          "question": "Whether it was Paul or the others, this is what they ___, and this is what the Corinthians believed.",
           "answers": [
             {
               "text": "preach",
@@ -378,19 +394,19 @@
               "correct": false
             },
             {
-              "text": "doubt",
+              "text": "sing",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "1 Corinthians 15:11",
-          "text": "And that's where we'll leave it for now. Keep that oven warm, friend, because Paul's not done with this teaching. Not even close.",
-          "needs_agent_fix": true,
+          "text": "That's where we'll leave it for now, friend. Keep that oven warm, because Paul's not done with this teaching.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

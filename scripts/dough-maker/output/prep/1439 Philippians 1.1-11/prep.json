@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Philippians 1:1",
-          "question": "Right at the top of the letter, Paul and Timothy call themselves ___ of Christ Jesus",
+          "question": "At the top of this letter, Paul and Timothy call themselves ___ of Christ Jesus",
           "answers": [
             {
               "text": "servants",
@@ -34,7 +34,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -73,7 +73,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 1:4",
-          "question": "True or false: Paul says his prayers for the believers at Philippi are heavy with worry.",
+          "question": "True or false: Paul says he prays for only a few of the believers at Philippi.",
           "answers": [
             {
               "text": "True",
@@ -90,9 +90,9 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Philippians 1:5",
+          "verses": "Philippians 1:4-5",
           "text": "Then Paul tells them why he prays with joy. It goes back to the very first day, and it's still going NOW, which is more than I can say for my first batch of cookies.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -123,7 +123,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Philippians 1:6",
-          "text": "Next, Paul says what he's sure of: God began a good work in these believers. Me, I started building a cooling rack in the back of the bakery a while ago, and friend, it's a SHELF now and it's always gonna be a shelf.",
+          "text": "Next, Paul tells them what he's sure of. God began a good work in these believers, and Paul looks all the way ahead to the day of Christ Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -132,7 +132,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Philippians 1:6",
-          "question": "Paul is confident about the good work God began in the believers at Philippi. What will God do with it?",
+          "question": "Paul is confident about the good work God began in the believers at Philippi. What will God do with it until the day of Christ Jesus?",
           "answers": [
             {
               "text": "Carry it on to completion",
@@ -143,34 +143,38 @@
               "correct": false
             },
             {
-              "text": "Start it over again new",
+              "text": "Start it all over again",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Philippians 1:7",
-          "text": "Paul says it's right for him to feel this way, because he has them in his heart. And he's writing all this in CHAINS, friend, while I landed in a junk drawer and didn't crack a single joke for a LONG time.",
+          "text": "Paul says it's right for him to feel this way about every one of them. And he tells them why.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Philippians 1:7",
-          "question": "True or false: Paul says that in his chains and in his defense of the gospel, the believers at Philippi are all partners in grace with him.",
+          "question": "Paul says it's right for him to feel this way about the believers at Philippi. What reason does he give?",
           "answers": [
             {
-              "text": "True",
+              "text": "He has them in his heart",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "They always agree with him",
+              "correct": false
+            },
+            {
+              "text": "They have earned his trust",
               "correct": false
             }
           ],
@@ -180,13 +184,21 @@
         {
           "card": 12,
           "kind": "story",
+          "verses": "Philippians 1:7",
+          "text": "And Paul's in CHAINS, friend, defending the gospel, and he says they're all partners in grace with him in it. Me, I landed in a junk drawer and didn't crack a single joke for a LONG time.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
           "verses": "Philippians 1:8",
           "text": "Then Paul tells them how much he longs for all of them, with the affection of Christ Jesus. And he calls in a witness to back that up, which is more than I ever get when I swear I only ate ONE cookie.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Philippians 1:8",
@@ -205,7 +217,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Philippians 1:9",
           "text": "Then Paul gets to the big one: \"And this is my prayer:\" that their love would abound more and more. Love that overflows, friend, like me my first week in this bakery, putting sprinkles on EVERYTHING, including my own hat.",
@@ -213,7 +225,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Philippians 1:9",
@@ -236,19 +248,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
-          "verses": "Philippians 1:10",
-          "text": "Now Paul says what a love like that is FOR. Spoiler, friend: it's not decorating hats.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Philippians 1:10",
-          "question": "Paul prays their growing love helps them test and prove what is ___, so they'll be pure and blameless for the day of Christ",
+          "question": "Paul prays the believers at Philippi grow in love so they can test and prove what is ___ and be pure and blameless for the day of Christ",
           "answers": [
             {
               "text": "best",
@@ -264,34 +268,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "Philippians 1:11",
-          "text": "Last part of Paul's prayer: he wants them filled with the fruit of righteousness. That's not a topping, friend, so put the mango bits down.",
+          "text": "Last part of Paul's prayer, friend, and it's a FULL one: he wants the believers at Philippi filled with the fruit of righteousness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Philippians 1:11",
-          "question": "True or false: Paul says the fruit of righteousness he wants the believers at Philippi filled with comes through their own hard work.",
+          "question": "Paul wants the believers at Philippi filled with the fruit of righteousness that comes through ___",
           "answers": [
             {
-              "text": "True",
+              "text": "Jesus Christ",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "hard work",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "the Law",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -299,7 +308,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Philippians 1:11",
-          "question": "Paul ends his prayer by saying all of it is to the glory and praise of whom?",
+          "question": "Paul ends his prayer for the believers at Philippi by naming who gets the glory and praise. Who is it?",
           "answers": [
             {
               "text": "God",

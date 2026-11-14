@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Hebrews 1:4-2:5",
-          "text": "The writer of Hebrews has been telling believers one thing, LOUD and clear: God's Son is far greater than the angels. He just warned them not to drift away from what they've heard, and friend, I've zoned out on an oven timer before, so I'm LISTENING. Now he talks about the world to come, the one he's been writing about.",
+          "verses": "Hebrews 2:5",
+          "text": "The writer of Hebrews has been saying it LOUD and clear: God's Son is far greater than the angels (Hebrews 1:4). He just warned his readers not to drift away from what they've heard (Hebrews 2:1), and friend, I once zoned out on an oven timer and lost a whole batch, so I'm LISTENING. Now he talks about the world to come, the one he's been speaking about.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -36,78 +36,97 @@
           "card": 3,
           "kind": "story",
           "verses": "Hebrews 2:6",
-          "text": "Then he quotes Scripture that asks God a question: “What is man that You are mindful of him, or the son of man that You care for him?” Great question, and I asked something like it from the bottom of a junk drawer.",
+          "text": "Then he quotes Psalm 8:4-6, which asks God a question: “What is man that You are mindful of him, or the son of man that You care for him?” Friend, I asked something like that from the back of a junk drawer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Hebrews 2:7",
-          "text": "The quote keeps going: God made man a little lower than the angels and crowned him with glory and honor. Man gets a CROWN! I've got a chef's hat, and I'll be honest with you, mine's taller.",
-          "needs_agent_fix": true,
+          "question": "In that psalm quote, God made man a little lower than the angels.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Hebrews 2:8",
-          "question": "In that quote, God crowns man with glory and honor. How much does He put under man's feet?",
-          "answers": [
-            {
-              "text": "Everything",
-              "correct": true
-            },
-            {
-              "text": "Only the animals",
-              "correct": false
-            },
-            {
-              "text": "Only the land",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Hebrews 2:7-8",
+          "text": "The quote keeps going: God crowned man with glory and honor and placed everything under his feet. Man gets a CROWN, and all I got was a chef's hat, but between you and me, mine's taller.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Hebrews 2:8",
-          "text": "The writer says that when God put all things under man, He left nothing outside his control. Then he takes a look around at how things are right now.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Hebrews 2:8",
-          "question": "The writer says that right now we can see everything under man's control.",
+          "question": "When God put all things under man, the writer says He left ___ outside of his control.",
           "answers": [
             {
-              "text": "True",
+              "text": "nothing",
+              "correct": true
+            },
+            {
+              "text": "the sea",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "the heavens",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
-          "verses": "Hebrews 2:8-9",
-          "text": "Everything under man's feet, and I've watched people lose a wrestling match to a fitted sheet. But the writer says we DO see Jesus, made a little lower than the angels and now crowned with glory and honor.",
+          "verses": "Hebrews 2:8",
+          "text": "Then the writer takes a look around at how things are right now.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Hebrews 2:8",
+          "question": "The writer says that right now we don't see everything under man's control.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "Hebrews 2:8-9",
+          "text": "Everything under man's feet, and a fitted sheet can STILL win the wrestling match. But the writer says we DO see Jesus, made a little lower than the angels and now crowned with glory and honor.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 2:9",
@@ -130,33 +149,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Hebrews 2:9",
-          "question": "By the grace of God, Jesus tasted death for ___.",
-          "answers": [
-            {
-              "text": "everyone",
-              "correct": true
-            },
-            {
-              "text": "the angels",
-              "correct": false
-            },
-            {
-              "text": "the priests",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 11,
           "kind": "story",
-          "verses": "Hebrews 2:10",
-          "text": "Now the writer says God is bringing many sons to glory, and Jesus is the author of their salvation. And it was fitting for God to make Him perfect in one very particular way.",
+          "verses": "Hebrews 2:9",
+          "text": "Then the writer adds, “…so that by the grace of God He might taste death for everyone.” Everyone, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -165,18 +161,41 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 2:10",
-          "question": "How was it fitting for God to make Jesus, the author of their salvation, perfect?",
+          "question": "The writer says God is bringing a group to glory, and Jesus is the author of their salvation. Who is God bringing?",
           "answers": [
             {
-              "text": "Through suffering",
+              "text": "Many sons",
               "correct": true
             },
             {
-              "text": "Through miracles",
+              "text": "Many elders",
               "correct": false
             },
             {
-              "text": "Through ruling",
+              "text": "Many Levites",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Hebrews 2:10",
+          "question": "It was fitting for God, for whom and through whom all things exist, to make Jesus, the author of salvation, perfect through ___.",
+          "answers": [
+            {
+              "text": "suffering",
+              "correct": true
+            },
+            {
+              "text": "miracles",
+              "correct": false
+            },
+            {
+              "text": "victory",
               "correct": false
             }
           ],
@@ -193,7 +212,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Hebrews 2:11",
-          "text": "Now the writer looks at Jesus, the One who sanctifies, and at the people He sanctifies. Here comes the part that hits home, baker, and after years of calling a junk drawer home, I've got STRONG feelings about home.",
+          "text": "Now the writer looks at Jesus, the One who sanctifies, and at the people He sanctifies. Here comes the part that hits home, baker, so pull up a stool.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -221,7 +240,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Hebrews 2:11",
-          "question": "Because they're one family, Jesus is not ashamed to call them ___.",
+          "question": "Because Jesus and the people He sanctifies are one family, He is not ashamed to call those people ___.",
           "answers": [
             {
               "text": "brothers",
@@ -236,15 +255,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Hebrews 2:11-12",
-          "text": "Some folks will hide behind a pillar at the airport to dodge their own cousin, but Jesus is NOT ashamed to call them brothers. Then the writer quotes Jesus' own words three times, and the first quote starts like this.",
-          "needs_agent_fix": true,
+          "text": "Some folks spot a coworker at the store and suddenly duck behind a display, but Jesus is NOT ashamed to call the people He sanctifies brothers. Then the writer quotes Jesus, using words from Psalm 22:22, and He's speaking to God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -252,18 +271,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hebrews 2:12",
-          "question": "In the first quote, who does Jesus say He will proclaim God's name to?",
+          "question": "In that quote from Psalm 22:22, Jesus speaks to God. What does He say He will proclaim to His brothers?",
           "answers": [
             {
-              "text": "His brothers",
+              "text": "God's name",
               "correct": true
             },
             {
-              "text": "The angels",
+              "text": "God's law",
               "correct": false
             },
             {
-              "text": "The kings",
+              "text": "God's covenant",
               "correct": false
             }
           ],
@@ -282,8 +301,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Hebrews 2:13",
-          "text": "And again: “I will put My trust in Him.” And once again: “Here am I, and the children God has given Me.” Friend, I raised six little cookie cutters, so that last line hits me so hard my mustache needs a minute to wipe my eyes.",
-          "needs_agent_fix": true,
+          "text": "Then the writer quotes Jesus twice more with words from Isaiah 8:17-18: He'll put His trust in God, and, “Here am I, and the children God has given Me.” Friend, I raised six little cookie cutters, so that last line has my mustache dabbing my eyes.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -297,43 +316,43 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Hebrews 2:14",
-          "question": "By His death, Jesus would destroy the one who holds the power of death, the ___.",
+          "question": "Jesus shared in the children's humanity so that by His death He might destroy the one who holds the power of death. Who does the writer say that is?",
           "answers": [
             {
-              "text": "devil",
+              "text": "The devil",
               "correct": true
             },
             {
-              "text": "emperor",
+              "text": "Herod",
               "correct": false
             },
             {
-              "text": "king",
+              "text": "Goliath",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Hebrews 2:15",
-          "question": "Jesus also came to free people who were held in slavery all their lives. What were they slaves to?",
+          "question": "Sharing in human flesh and blood, Jesus would also free those who all their lives were held in slavery by their fear of ___.",
           "answers": [
             {
-              "text": "Their fear of death",
+              "text": "death",
               "correct": true
             },
             {
-              "text": "Their debts to the king",
+              "text": "judgment",
               "correct": false
             },
             {
-              "text": "Their masters in Egypt",
+              "text": "rulers",
               "correct": false
             }
           ],
@@ -378,41 +397,31 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Hebrews 2:17",
-          "question": "Being made like His brothers, Jesus could become a merciful and faithful ___ ___ in service to God, to make atonement for the sins of the people.",
+          "question": "Jesus was made like His brothers so He might become something merciful and faithful in service to God, to make atonement for the sins of the people. What does the writer say He became?",
           "answers": [
             {
-              "text": "high",
-              "correct": true,
-              "blank": 1
+              "text": "A high priest",
+              "correct": true
             },
             {
-              "text": "priest",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "royal",
+              "text": "A prophet",
               "correct": false
             },
             {
-              "text": "king",
-              "correct": false
-            },
-            {
-              "text": "prophet",
+              "text": "A king",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Hebrews 2:18",
-          "text": "One more thing, baker, and it's a BIG one, bigger than me in my tallest chef's hat. Jesus Himself suffered when He was tempted.",
+          "text": "One more thing, baker, and it's a BIG one. Jesus Himself suffered when He was tempted.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

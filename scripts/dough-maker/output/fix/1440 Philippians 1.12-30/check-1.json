@@ -1,0 +1,45 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "The two wrong answers, 'hinder' and 'delay', mean nearly the same thing as each other.",
+      "rule": "Two wrong answers never mean the same as each other either."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "'The palace guard' was the right answer on stop 1 card 3, and it comes back here as a wrong answer.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 2
+      },
+      "problem": "The wrong answer 'Send a message to the palace guard' reuses the palace guard, which stop 1 card 3 already showed as an answer.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 3
+      },
+      "problem": "The wrong answers 'place' and 'town' mean nearly the same as each other. Both are locations, so 'spirit' also stands out as the odd one out.",
+      "rule": "Two wrong answers never mean the same as each other either."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 10
+      },
+      "problem": "This is the second drawer joke in stop 3. Card 7 already has 'in all my drawer years', and card 10 adds 'from my drawer days'.",
+      "rule": "His drawer years carry a joke at most once per stop."
+    }
+  ]
+}

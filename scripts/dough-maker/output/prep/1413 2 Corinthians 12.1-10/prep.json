@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Corinthians 12:1",
-          "text": "Paul, an apostle, is writing to the church in Corinth, where false apostles have been boasting (2 Corinthians 1:1; 11:13-18). Since many are boasting, Paul boasts too, and he admits he's speaking as a fool (2 Corinthians 11:18, 21). Now he's in a FULL brag, friend, and he says he must go on boasting, even though there's nothing to gain.",
-          "needs_agent_fix": true,
+          "text": "Paul, an apostle, is writing to the church in Corinth (2 Corinthians 1:1). Since many are boasting, he's been boasting too, about beatings, shipwrecks and getting lowered out of a window in a basket (2 Corinthians 11:18, 25, 33). Now he's in a FULL brag, friend, and he says he must go on boasting, even though there's nothing to gain.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,65 +41,73 @@
           "kind": "story",
           "verses": "2 Corinthians 12:2",
           "text": "Paul says he knows a man in Christ who was caught up to the third heaven FOURTEEN years ago. Friend, I can't remember what I stamped this morning.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "2 Corinthians 12:2",
-          "question": "Paul says he knows for sure whether the man was in his body when he was caught up to the third heaven.",
+          "question": "Paul doesn't know if the man caught up to the third heaven was in the body or out of it. He says ___ knows.",
           "answers": [
             {
-              "text": "True",
+              "text": "God",
+              "correct": true
+            },
+            {
+              "text": "Timothy",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Peter",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Corinthians 12:3-4",
-          "text": "Paul circles back to it: in the body or out of it, he doesn't know, but God knows. And this man was caught up to Paradise.",
-          "needs_agent_fix": true,
+          "text": "Paul comes back to this man, with that line about the body again. And he says this man was caught up to Paradise.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Corinthians 12:4",
-          "question": "The man was caught up to Paradise. What does Paul say about the things he heard there?",
+          "question": "Paul says the man was free to tell others the things he heard in Paradise.",
           "answers": [
             {
-              "text": "No one is permitted to tell them",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Every church needs to hear them",
-              "correct": false
-            },
-            {
-              "text": "He wrote them all down later",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "2 Corinthians 12:5",
+          "text": "Paul says he'll boast about a man like that. But what about boasting about himself?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Corinthians 12:5",
-          "question": "Paul will boast about a man like that. But when it comes to himself, he'll boast only in his weaknesses.",
+          "question": "About himself, Paul says he'll boast only in his weaknesses.",
           "answers": [
             {
               "text": "True",
@@ -110,19 +118,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "2 Corinthians 12:6",
-          "text": "Then Paul talks about what it would be like if he did boast about himself. Even if he wanted to, he says he'd be speaking the truth.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "2 Corinthians 12:6",
+          "text": "Then Paul talks about what would happen if he did want to boast about himself.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Corinthians 12:6",
@@ -137,38 +145,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "2 Corinthians 12:6-7",
-          "text": "But Paul holds back anyway. He doesn't want anyone giving him more credit than what they see in him or hear from him, or because of these surpassingly great revelations.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Corinthians 12:7",
-          "question": "After those surpassingly great revelations, Paul says he was given something. What was it?",
-          "answers": [
-            {
-              "text": "A thorn in his flesh",
-              "correct": true
-            },
-            {
-              "text": "A limp in his hip",
-              "correct": false
-            },
-            {
-              "text": "A sore on his skin",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Corinthians 12:6-7",
+          "text": "Paul would be speaking the truth. But he holds back anyway, so no one gives him more credit than what they see in him or hear from him, or because of these surpassingly great revelations.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -176,7 +161,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Corinthians 12:7",
-          "question": "Paul says the thorn in his flesh was given to keep him from becoming ___.",
+          "question": "Paul says something was given to him to keep him from becoming ___.",
           "answers": [
             {
               "text": "conceited",
@@ -191,57 +176,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "2 Corinthians 12:7",
-          "question": "Paul calls the thorn in his flesh a messenger of Satan, sent to torment him.",
+          "question": "Paul says he was given something to keep him from becoming conceited. What was it?",
           "answers": [
             {
-              "text": "True",
+              "text": "A thorn in his flesh",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "A limp in his hip",
+              "correct": false
+            },
+            {
+              "text": "A sore on his skin",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
-          "verses": "2 Corinthians 12:8",
-          "text": "So Paul takes that thorn to the Lord and pleads with Him to take it away. Friend, I get ONE crumb stuck in my mustache and start acting like I need a doctor.",
-          "needs_agent_fix": true,
+          "verses": "2 Corinthians 12:7",
+          "text": "Paul calls that thorn in his flesh a messenger of Satan, to torment him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Corinthians 12:8",
-          "question": "Paul pleads with the Lord to take the thorn away from him. How many times?",
-          "answers": [
-            {
-              "text": "Three times",
-              "correct": true
-            },
-            {
-              "text": "Seven times",
-              "correct": false
-            },
-            {
-              "text": "Twelve times",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Three times, Paul pleads with the Lord to take it away. Friend, I get ONE crumb stuck in my mustache and start acting like I need a doctor.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -249,22 +223,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Corinthians 12:9",
-          "question": "Paul has pleaded three times for the thorn to go. What does the Lord say to him?",
+          "question": "Paul pleads three times for the thorn in his flesh to be taken away. What does the Lord say to him?",
           "answers": [
             {
               "text": "My grace is sufficient for you",
               "correct": true
             },
             {
-              "text": "My hand will lift it from you",
+              "text": "Keep pleading and wait on Me",
               "correct": false
             },
             {
-              "text": "Your pleading has been heard",
+              "text": "This thorn will soon be gone",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -287,7 +261,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -310,7 +284,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -318,7 +292,7 @@
           "kind": "story",
           "verses": "2 Corinthians 12:10",
           "text": "That's why, for the sake of Christ, Paul DELIGHTS in weaknesses, insults, hardships, persecutions and difficulties. Friend, I can't even delight in a burnt batch.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -341,7 +315,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

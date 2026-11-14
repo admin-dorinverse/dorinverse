@@ -8,71 +8,44 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Corinthians 9:1-5",
-          "text": "The apostle Paul is writing to the church in Corinth about a generous gift they promised for the saints. He's been bragging to the Macedonians that they're ready, so he's sending some brothers ahead to make sure. Friend, this is a man who told EVERYBODY you're bringing the cookies, and now he's double-checking.",
+          "verses": "2 Corinthians 9:6",
+          "text": "The apostle Paul is writing to the church in Corinth about a generous gift they promised for the saints, and he's sending some brothers ahead so it's ready (2 Corinthians 9:3-5). Now he grabs a picture every farmer knows: you sow seed, then you reap a harvest. I planted a chocolate chip once, friend, and I am STILL waiting.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Corinthians 9:6",
-          "text": "Now Paul grabs a picture every farmer knows: you sow seed, then you reap the harvest. I planted a chocolate chip once, friend, and I am STILL waiting.",
+          "question": "In Paul's farming picture, one person sows a little and another sows a lot. How does each harvest turn out?",
+          "answers": [
+            {
+              "text": "Just like what each one sowed",
+              "correct": true
+            },
+            {
+              "text": "The same size for both of them",
+              "correct": false
+            },
+            {
+              "text": "Bigger for the one who sowed less",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Corinthians 9:6",
-          "question": "In Paul's farming picture, what happens to the one who sows sparingly?",
-          "answers": [
-            {
-              "text": "He reaps sparingly",
-              "correct": true
-            },
-            {
-              "text": "He reaps generously",
-              "correct": false
-            },
-            {
-              "text": "He loses the field",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Corinthians 9:7",
+          "text": "So how much should each one give? Paul's not running a toll booth, friend: each one should give what he has decided in his heart to give.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Corinthians 9:6",
-          "question": "True or false: Paul says whoever sows generously will also reap generously.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "2 Corinthians 9:7",
-          "text": "So how much should each one give? Paul's not running a toll booth, friend: each one gives what he has decided in his heart to give.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Corinthians 9:7",
@@ -91,7 +64,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Corinthians 9:7",
@@ -114,10 +87,41 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "2 Corinthians 9:7-8",
-          "text": "Cheerful, so no handing over the cookie box with a face like the alarm just went off at 4 a.m. And Paul says God is able to make all grace abound to you.",
+          "text": "Cheerful, so no handing over the cookie box with a face like the alarm just went off at 4 a.m. And Paul says God is able to make all grace abound to the Corinthians.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Corinthians 9:8",
+          "question": "Paul says God is able to make all grace abound to the Corinthians, so they'll have all they need. What will they abound in?",
+          "answers": [
+            {
+              "text": "Every good work",
+              "correct": true
+            },
+            {
+              "text": "Every kind of wisdom",
+              "correct": false
+            },
+            {
+              "text": "Every hour of rest",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "2 Corinthians 9:9",
+          "text": "Then Paul backs it up with Scripture, quoting Psalm 112:9, a line about gifts scattered abroad.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -125,8 +129,8 @@
           "card": 9,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Corinthians 9:8",
-          "question": "True or false: Paul says God is able to make all grace abound to the Corinthians, so that, having all they need, they will abound in every good work.",
+          "verses": "2 Corinthians 9:9",
+          "question": "Paul quotes a psalm about gifts scattered abroad. True or false: those gifts go to the poor.",
           "answers": [
             {
               "text": "True",
@@ -143,29 +147,25 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "2 Corinthians 9:9",
-          "text": "Then Paul backs it up with Scripture, a line from Psalm 112:9 about gifts scattered abroad. And it ends with righteousness that endures forever.",
+          "verses": "2 Corinthians 9:10",
+          "text": "Back to the farm. Paul says God is the One who supplies seed to the sower and bread for food.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Corinthians 9:9",
-          "question": "Paul has just said God loves a cheerful giver. What is the Psalm line he quotes about?",
+          "type": "true_false",
+          "verses": "2 Corinthians 9:10",
+          "question": "True or false: Paul says God will keep the Corinthians' store of seed the same size.",
           "answers": [
             {
-              "text": "Giving freely to the poor",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Saving up for hard times",
-              "correct": false
-            },
-            {
-              "text": "Giving to be seen by others",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -173,41 +173,10 @@
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "2 Corinthians 9:10",
-          "text": "Back to the farm. Paul says God is the One who supplies seed to the sower and bread for food, and friend, the One handing out the seed is NOT about to run out of seed.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Corinthians 9:10",
-          "question": "God supplies the sower with seed. What does Paul say God will do with the Corinthians' store of seed?",
-          "answers": [
-            {
-              "text": "Supply and multiply it",
-              "correct": true
-            },
-            {
-              "text": "Keep it the same size",
-              "correct": false
-            },
-            {
-              "text": "Save it for next year",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Corinthians 9:10",
-          "question": "Paul's harvest picture isn't really about crops. He says God will increase the harvest of their ___.",
+          "question": "God supplies seed to the sower. Paul says God will also increase the harvest of the Corinthians' ___.",
           "answers": [
             {
               "text": "righteousness",
@@ -226,57 +195,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "2 Corinthians 9:11",
-          "text": "God enriches them in every way, so they can be generous on every occasion. That's me with a fresh batch, friend: those cookies are NOT for Papa.",
+          "text": "Paul says the Corinthians will be enriched in every way, so they can be generous on every occasion. Every occasion, friend, even when the batch comes out PERFECT and Papa wants to hide it behind the oven.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Corinthians 9:11",
+          "question": "Paul says that through him and his team, the Corinthians' generosity will produce ___ to God.",
+          "answers": [
+            {
+              "text": "thanksgiving",
+              "correct": true
+            },
+            {
+              "text": "sacrifices",
+              "correct": false
+            },
+            {
+              "text": "tithes",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "2 Corinthians 9:12",
+          "text": "Paul says this service isn't only supplying the needs of the saints. It's overflowing in many expressions of thanksgiving to God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Corinthians 9:11",
-          "question": "Through Paul and his team, what will the Corinthians' generosity produce?",
-          "answers": [
-            {
-              "text": "Thanksgiving to God",
-              "correct": true
-            },
-            {
-              "text": "Praise for Paul",
-              "correct": false
-            },
-            {
-              "text": "Fame in Macedonia",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Corinthians 9:12",
-          "question": "True or false: Paul says this service only supplies the needs of the saints and does nothing more.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Corinthians 9:13",
@@ -299,18 +257,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "2 Corinthians 9:14",
-          "text": "And the saints will pray for the Corinthians with affection, because of the surpassing grace God has given them. A gift that gets you PRAYED for, friend, is a better deal than the expired coupon I shared a junk drawer with.",
+          "text": "And the saints will pray for the Corinthians with affection, because of the surpassing grace God has given them. Friend, I spent years in the back of a junk drawer hoping somebody would just REMEMBER me, and these folks are getting prayed for.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "2 Corinthians 9:15",
-          "text": "Then Paul wraps it all up: “Thanks be to God for His indescribable gift!” A gift too big for words, friend, and you know Papa NEVER runs out of words.",
+          "text": "Then Paul wraps it all up: “Thanks be to God for His indescribable gift!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
