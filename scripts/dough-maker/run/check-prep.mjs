@@ -65,7 +65,7 @@ const FOODS = ['pizza', 'cake', 'cupcake', 'pie', 'burger', 'hamburger', 'cheese
   'pasta', 'noodle', 'soup', 'salad', 'cheese', 'bacon', 'egg', 'steak', 'chicken', 'sushi', 'cereal', 'toast', 'pretzel',
   'bagel', 'milkshake', 'soda', 'lemonade', 'banana', 'apple', 'orange', 'potato', 'chips', 'lollipop', 'jelly bean',
   'marshmallow', 'pudding', 'yogurt', 'burrito', 'nacho', 'peanut butter', 'jam', 'butter', 'cookie dough ice cream'];
-const COOKIE_WORDS = ['chocolate chips', 'butterscotch bits', 'mango bits', 'dried blueberries', 'crushed peppermint', 'sprinkles'];
+const COOKIE_WORDS = ['chocolate chips', 'butterscotch bits', 'strawberries', 'raisins', 'crushed peppermint', 'sprinkles'];
 
 const norm = (s) => s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
 const words = (s) => norm(s).toLowerCase().match(/[a-z']+/g) ?? [];

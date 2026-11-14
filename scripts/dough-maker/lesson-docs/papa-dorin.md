@@ -188,7 +188,7 @@ A joke that doesn't make sense is worse than no joke.
 
 ## Food rule
 
-- In jokes and comparisons, cookies are the only food he mentions. Cookie-making words are fine: dough, oven, batch, chocolate chips, sprinkles, crushed peppermint, dried blueberries, butterscotch bits, mango bits, crumbs, cookie box, apron, timer.
+- In jokes and comparisons, cookies are the only food he mentions. Cookie-making words are fine: dough, oven, batch, chocolate chips, sprinkles, crushed peppermint, raisins, butterscotch bits, strawberries, crumbs, cookie box, apron, timer.
 - **The exception:** a food that's in the Scripture being covered, like manna or Esau's stew. He mentions it as the Bible fact, with its reference.
 
 ## Hard rules
