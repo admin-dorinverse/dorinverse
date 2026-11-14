@@ -27,6 +27,12 @@ export const MODELS = [
   { key: 'gpt-5-mini', name: 'GPT-5 mini', company: 'OpenAI', id: 'openai/gpt-5-mini', only: ['openai'], reasoning: { effort: 'low' } },
   { key: 'mistral-large-4', name: 'Mistral Large 4', company: 'Mistral', id: 'mistralai/mistral-large-4-0', only: ['mistral'] },
   { key: 'mistral-small', name: 'Mistral Small', company: 'Mistral', id: 'mistralai/mistral-small-2603', only: ['mistral'] },
+  // Round 2 (owner, 2026-11-14): bigger models from the approved companies, writing only
+  { key: 'gemini-3.7-flash', name: 'Gemini 3.7 Flash', company: 'Google', id: 'google/gemini-3.7-flash', only: ['google-ai-studio', 'google-vertex'], reasoning: { effort: 'low' }, round: 2 },
+  { key: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', company: 'Google', id: 'google/gemini-3.5-flash', only: ['google-ai-studio', 'google-vertex'], reasoning: { effort: 'low' }, round: 2 },
+  { key: 'gpt-5.4', name: 'GPT-5.4', company: 'OpenAI', id: 'openai/gpt-5.4', only: ['openai'], reasoning: { effort: 'low' }, round: 2 },
+  { key: 'gpt-5.1', name: 'GPT-5.1', company: 'OpenAI', id: 'openai/gpt-5.1', only: ['openai'], reasoning: { effort: 'low' }, round: 2 },
+  { key: 'mistral-medium-3.5', name: 'Mistral Medium 3.5', company: 'Mistral', id: 'mistralai/mistral-medium-3-5', only: ['mistral'], round: 2 },
 ];
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
