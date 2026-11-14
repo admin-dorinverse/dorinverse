@@ -46,6 +46,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
     ❌ "They thought God was punishing Him for something He did." ✅ "They thought God had struck Him down." (Isa 53:4)
 - **Quotes:** Quotation marks around Bible words mean the exact BSB wording, punctuation included. A paraphrase uses no quotation marks. Papa Dorin's own made-up lines in his jokes can use quotation marks.
 - **Wrong answers:** They're made up. No reference, and not checked against a verse.
+- **Hard parts.** Sexual sin and violence are told plainly in the BSB's own words, like "violated," on a short story card. Nothing is added, and nothing is softened into something the text doesn't say. Choice cards ask about the choices and results around them, never the act itself. A debated teaching is told exactly as written, with no side taken.
 - **Before you finish:** reread every card against these rules and fix anything that breaks them.
 
 ## Stops
@@ -72,7 +73,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 ## Two kinds of cards
 
-- **Story card:** Papa Dorin's turn. He tells the next piece of the passage. The setup for a choice is on a story card. Not every choice card needs its own story card right before it: a choice card can follow another choice card when the setup is already told.
+- **Story card:** Papa Dorin's turn. He tells the next piece of the passage. The setup for a choice is on a story card. Not every choice card needs its own story card right before it: a choice card can follow another choice card when the setup is already told. A story card never reacts to the baker's pick, like "Right!" or "Nope." Every baker sees it, whatever they picked. Reactions come from the code.
 - **Choice card:** the baker's turn. A question and its answers, in one of three question types (see below).
 
 ## Question types
@@ -86,8 +87,8 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 ## What bite-sized means
 
-- **The opening card** can be up to 3 sentences. It says who is speaking, to whom, and what is going on. If the passage starts in the middle of a thought, it gives the context.
-- **Every other story card is 1 to 2 sentences.**
+- **The opening card,** the very first card of the walkthrough, can be up to 3 sentences. It says who is speaking, to whom, and what is going on. If the passage starts in the middle of a thought, it gives the context.
+- **Every other story card, including the first card of a later stop, is 1 to 2 sentences.**
 - **A summary story card** for a long stretch can be up to 4 sentences, jokes included, like the Genesis 5 example. If it is also the last story card, the "story isn't over" line goes on a card of its own.
 - **No em dashes or en dashes to make a sentence longer.** They make two sentences look like four or five.
 - **Don't spend card words explaining a hard word.** Hard words get a dictionary pop-up (definitions.md, made after the cards).
@@ -120,7 +121,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 ## Never give away an answer
 
-No card ever gives away the answer to a choice card that comes later. Once a choice has been answered, the cards after it can build on that answer. An easy follow-up is fine. For example, once the baker knows the greater light rules the day, a card can ask whether the lesser light rules the night.
+No card ever gives away the answer to a choice card that comes later. Once a choice has been answered, the cards after it can build on that answer. An easy follow-up is fine. For example, once the baker knows the greater light rules the day, a card can ask whether the lesser light rules the night. An easy follow-up asks something new. It never re-asks the same fact. Two lines that make the same point get one question. An answer shown on one card, right or wrong, isn't used again on a later card.
 
 - The passage title doesn't count. It's set before Prep is written. The book's name doesn't count, like the passage title.
 - A choice card's question never holds its own answer, or a form of it, like "rock badgers" for "in the rocks." Ask something else.
@@ -143,7 +144,7 @@ Some parts of a passage don't move it forward. They hold a lot of detail in one 
 
 The list isn't complete. If a stretch is mostly detail and not much happens, it counts.
 
-**Not a long stretch:** speeches, teaching and key laws, like the Ten Commandments. These carry the heart of a passage and get story cards and choice cards like anything else. Rules spoken in a speech still count as a long stretch when they are a run of detail: cases, amounts, steps and repeats. The main commands, the reasons the text gives (like "Be holy, because I am holy"), and anything that happens get story and choice cards.
+**Not a long stretch:** speeches, teaching and key laws, like the Ten Commandments. These carry the heart of a passage and get story cards and choice cards like anything else. Rules spoken in a speech still count as a long stretch when they are a run of detail: cases, amounts, steps and repeats. The main commands, the reasons the text gives (like "Be holy, because I am holy"), and anything that happens get story and choice cards. A short list that is the point of its passage or part of the teaching isn't one either, like the Twelve (Mark 3:16-19), the cities of refuge, or the gifts in 1 Corinthians 12. Ask about what it means and its standout items, not each item. A long run of names or repeats, like Paul's greetings (Romans 16:3-16), is still a long stretch.
 
 **When the whole passage is a long stretch,** each part gets its own summary card. Choice cards ask only about what the text says a thing is for, what someone says, anything that happens, and short stories inside it. Never about measurements, materials, counts or names. These stops can have fewer choice cards than story cards.
 
