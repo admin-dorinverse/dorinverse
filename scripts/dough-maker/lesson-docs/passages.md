@@ -1,6 +1,6 @@
 # Passages
 
-This file covers how to divide the Bible into passages and give each one a type. It does not pick stations. That has its own file.
+This file covers how to divide the Bible into passages and give each one a type.
 
 ## The text
 
