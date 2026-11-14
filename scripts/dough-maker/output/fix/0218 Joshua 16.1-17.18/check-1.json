@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The joke ('the last tenants are still on the couch holding the remote') tells the baker the Canaanites stay in Gezer. That gives away the answer to the very next choice card (card 5), which asks what Ephraim does about them.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "The True statement (Canaanites stay in Gezer among the Ephraimites) restates the right answer of card 5, which already said Ephraim does not drive them out. It adds only the forced labor detail from the same verse.",
+      "rule": "A True statement never just repeats the card before it."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "The right answer (the daughters got shares among the sons) re-asks the fact card 13 already settled, that Joshua gave Zelophehad's daughters an inheritance among their brothers. Card 12's question had also stated the request.",
+      "rule": "An easy follow-up asks something new. It never re-asks the same fact."
+    }
+  ]
+}

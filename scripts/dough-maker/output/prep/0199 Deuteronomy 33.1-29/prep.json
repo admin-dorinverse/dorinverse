@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Deuteronomy 33:1",
-          "text": "Moses, Israel's leader, is about to die. Before his death, Moses the man of God speaks a blessing over the Israelites. It's his last big speech, friend, and the man spends it blessing everybody else.",
+          "text": "Moses, Israel's leader, has been told by the LORD that he will die on Mount Nebo (Deuteronomy 32:49-50). Before his death, Moses the man of God speaks a blessing over the Israelites. With the end in sight, friend, he spends his words blessing everybody else.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -24,20 +24,21 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Deuteronomy 33:3",
-          "question": "After that blazing picture, Moses talks right to the LORD. What does Moses say about the LORD and the people?",
+          "question": "After that blazing picture, Moses speaks right to the LORD and says that He ___ the people.",
           "answers": [
             {
-              "text": "He loves them",
-              "correct": true
+              "text": "loves",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He forgets them",
+              "text": "judges",
               "correct": false
             },
             {
-              "text": "He leaves them",
+              "text": "warns",
               "correct": false
             }
           ],
@@ -48,7 +49,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Deuteronomy 33:3",
-          "text": "All the holy ones are in the LORD's hand, Moses says, and they sit down at His feet to receive His words. Friend, I spent YEARS sitting under a pile of takeout menus, and nobody handed me any words.",
+          "text": "All the holy ones are in the LORD's hand, Moses says, and they sit down at His feet, and each receives His words. Friend, I spent YEARS in the back of a junk drawer, and the only words I ever got were on old takeout menus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -176,7 +177,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Deuteronomy 33:9",
-          "text": "Then Moses says Levi said of his father and mother, \"I do not consider them.\" He disregarded his brothers and didn't even know his own sons.",
+          "text": "Then Moses says Levi said of his father and mother, \"I do not consider them.\" He disregarded his brothers and did not know his own sons.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -226,7 +227,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Deuteronomy 33:10-11",
-          "text": "Levi will serve at the altar too, and Moses asks the LORD to bless his substance and accept the work of his hands. Teaching AND the altar, friend, and I can't run ONE oven without singeing my mustache.",
+          "text": "Levi will serve at the altar too, and Moses asks the LORD to bless his substance and accept the work of his hands. Two big jobs, and I can't even watch one oven timer while holding a conversation.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -235,7 +236,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 33:12",
-          "question": "Next is the tribe of Benjamin. Moses says the beloved of the LORD rests secure in Him, and God shields him all day long. Where does Moses say Benjamin rests?",
+          "question": "Next is the tribe of Benjamin, whom Moses calls the beloved of the LORD. Moses says God shields him all day long. Where does Moses picture Benjamin resting?",
           "answers": [
             {
               "text": "Upon His shoulders",
@@ -246,7 +247,7 @@
               "correct": false
             },
             {
-              "text": "At His city gate",
+              "text": "Inside His tent",
               "correct": false
             }
           ],
@@ -257,7 +258,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Deuteronomy 33:13-15",
-          "text": "Then the tribe of Joseph, and Moses goes BIG: may his land be blessed with dew from heaven, deep waters below, the harvest from the sun and the best of the ancient mountains. That's not a blessing, friend, that's a whole TOPPING BAR.",
+          "text": "Then the tribe of Joseph, and Moses goes BIG: may his land be blessed with dew from heaven, deep waters below, the harvest from the sun and the best of the ancient mountains. Friend, Joseph is getting this blessing with EVERY topping on the shelf.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -269,7 +270,7 @@
           "question": "On top of all that, Moses names someone's favor to rest on Joseph's head. Whose favor is it?",
           "answers": [
             {
-              "text": "Him who dwelt in the burning bush",
+              "text": "The One who dwelt in the burning bush",
               "correct": true
             },
             {
@@ -286,33 +287,32 @@
         },
         {
           "card": 19,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Deuteronomy 33:17",
-          "question": "Moses says Joseph's majesty is like a firstborn bull, with horns like those of a wild ox. With those horns, he will ___ the nations.",
-          "answers": [
-            {
-              "text": "gore",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "guide",
-              "correct": false
-            },
-            {
-              "text": "feed",
-              "correct": false
-            }
-          ],
+          "text": "Joseph's majesty is like a firstborn bull, Moses says, and his horns are like those of a wild ox. With them he will gore the nations, even to the ends of the earth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 33:17",
-          "text": "Ephraim and Manasseh are Joseph's two sons (Genesis 41:51-52). Such are the myriads of Ephraim, Moses says, and such are the thousands of Manasseh.",
+          "question": "Moses closes Joseph's blessing with the names of Joseph's two sons (Genesis 41:51-52). Such are the myriads and the thousands, he says. Which two names?",
+          "answers": [
+            {
+              "text": "Ephraim and Manasseh",
+              "correct": true
+            },
+            {
+              "text": "Perez and Zerah",
+              "correct": false
+            },
+            {
+              "text": "Gershon and Kohath",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -385,7 +385,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 33:20",
-          "question": "Moses says Gad lies down like an animal and tears off an arm or a head. Which animal does Moses compare Gad to?",
+          "question": "Moses pictures Gad lying down like a fierce animal. Which animal?",
           "answers": [
             {
               "text": "A lion",
@@ -405,6 +405,14 @@
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Deuteronomy 33:20",
+          "text": "Then Moses adds that Gad tears off an arm or a head.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 33:21",
@@ -427,18 +435,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Deuteronomy 33:22",
-          "question": "The tribe of Dan gets the shortest blessing yet. Moses calls Dan a lion's cub leaping out of Bashan.",
+          "question": "Moses gives the tribe of Dan the shortest blessing yet: Dan is a lion's cub. Where does Moses say that cub is leaping out of?",
           "answers": [
             {
-              "text": "True",
+              "text": "Bashan",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Gilead",
+              "correct": false
+            },
+            {
+              "text": "Lebanon",
               "correct": false
             }
           ],
@@ -446,7 +458,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "Deuteronomy 33:23",
           "text": "Then the tribe of Naphtali. Moses says Naphtali is abounding with favor, full of the blessing of the LORD.",
@@ -454,7 +466,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 33:23",
@@ -473,7 +485,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
           "verses": "Deuteronomy 33:24",
           "text": "Last tribe on the list: Asher. And Moses saves a big one for the end.",
@@ -481,7 +493,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 33:24",
@@ -504,7 +516,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "Deuteronomy 33:24",
           "text": "Moses goes on: may Asher be the most favored among his brothers and dip his foot in oil. I once dipped my whole gold base in cookie dough, and NOBODY called that a blessing.",
@@ -512,7 +524,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "story",
           "verses": "Deuteronomy 33:25",
           "text": "Then Moses says, \"May the bolts of your gate be iron and bronze, and may your strength match your days.\"",
@@ -520,7 +532,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Deuteronomy 33:26-27",
           "text": "Then Moses is done naming tribes and comes back to the LORD: there is none like the God of Jeshurun, who rides the heavens to your aid. The eternal God is your dwelling place, and underneath are the everlasting arms.",
@@ -528,7 +540,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 33:27",
@@ -552,11 +564,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 33:28",
-          "question": "With God driving out the enemy, Moses says Israel dwells ___ in a land of grain and new wine.",
+          "question": "Then Moses says Israel dwells ___ in a land of grain and new wine, where even the heavens drip with dew.",
           "answers": [
             {
               "text": "securely",
@@ -576,7 +588,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 33:29",
@@ -599,7 +611,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 33:29",
@@ -618,10 +630,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "story",
           "verses": "Deuteronomy 33:29",
-          "text": "Their enemies will cower before them, Moses says. And that's where the blessing ends, friend, but trust me, Moses' story isn't done yet.",
+          "text": "Israel's enemies will cower before them, Moses says, and Israel will trample the enemies' high places. That's where the blessing ends, friend, but trust me, Moses' story isn't done yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

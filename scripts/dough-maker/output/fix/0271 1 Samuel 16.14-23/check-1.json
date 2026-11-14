@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card says David is 'the youngest son of Jesse of Bethlehem'. That gives away the answer ('Jesse') to the fill-in-the-blank on card 8, which asks 'a son of ___ of Bethlehem'.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "The story card repeats the donkey, bread, wine-skin and young goat that card 12 just asked about and answered. It is a recap and adds nothing new except David entering service, which the next cards cover.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "The last story card re-tells the answer to card 19 (Saul finds relief, feels better, the spirit of distress departs). The passage's last verse was already asked on a choice card, so the final card should be just the 'story isn't over' line.",
+      "rule": "When the passage's last verse is asked on a choice card, the last story card can be just this line."
+    }
+  ]
+}

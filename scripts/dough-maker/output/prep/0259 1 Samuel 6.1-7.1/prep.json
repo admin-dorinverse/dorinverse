@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 6:1-2",
-          "text": "For seven months the ark of the LORD has been sitting in the land of the Philistines. Now the Philistines call in their priests and diviners and ask them what to do with the ark and how to send it back to its place. SEVEN MONTHS, friend, and I'd have had that thing out the door before my first oven timer went off.",
+          "text": "The Philistines captured the ark of the LORD, and everywhere they took it, the LORD's hand was heavy on them (1 Samuel 5:1-12). After seven months in their land, the Philistines call in their priests and diviners and ask what to do with the ark and how to send it back to its place. I bet every one of those seven months felt longer than my whole stretch in the back of a junk drawer, friend.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 6:6",
-          "text": "Then the priests and diviners reach back to an old story. They ask the Philistines why they would harden their hearts the way the Egyptians and Pharaoh hardened theirs.",
+          "text": "Then the priests and diviners reach back to an old story. They ask the Philistines why they would harden their hearts the way the Egyptians and Pharaoh, Egypt's king, hardened theirs.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -209,16 +209,21 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "1 Samuel 6:9",
-          "question": "True or false: If the cart doesn't head toward Beth-shemesh, the Philistines will decide the disaster happened by chance.",
+          "question": "If the cart doesn't head toward Beth-shemesh, the Philistines will decide the disaster happened by ___.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "chance",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "mistake",
+              "correct": false
+            },
+            {
+              "text": "curse",
               "correct": false
             }
           ],
@@ -236,21 +241,17 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Samuel 6:12",
-          "question": "Two milk cows, their calves penned up back home, and an open road. Where do the cows go?",
+          "question": "True or false: Once the cart is sent off, the two milk cows turn off the road and wander back toward their penned-up calves.",
           "answers": [
             {
-              "text": "Straight up the road toward Beth-shemesh",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Back home to their penned up calves",
-              "correct": false
-            },
-            {
-              "text": "Off the road and into the open fields",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -260,7 +261,7 @@
           "card": 17,
           "kind": "story",
           "verses": "1 Samuel 6:12",
-          "text": "They stay on that one highway, lowing as they go, never straying to the right or to the left. Friend, those two cows have better lane discipline than ANYBODY I've ever seen in rush hour traffic.",
+          "text": "The cows head straight up the road toward Beth-shemesh, staying on that one highway, lowing as they go, never straying to the right or to the left. Friend, those two cows have better lane discipline than ANYBODY I've ever seen in rush hour traffic.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -294,38 +295,39 @@
           "kind": "story",
           "verses": "1 Samuel 6:13",
           "text": "Meanwhile, the people of Beth-shemesh are down in the valley harvesting wheat. They look up, and there it is: the ark.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 6:13",
-          "question": "How do the people of Beth-shemesh react when they see the ark coming up the road?",
+          "question": "When the people of Beth-shemesh look up and see the ark, they are ___ at the sight.",
           "answers": [
             {
-              "text": "Overjoyed",
-              "correct": true
+              "text": "overjoyed",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Terrified",
+              "text": "terrified",
               "correct": false
             },
             {
-              "text": "Confused",
+              "text": "confused",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 6:14",
-          "text": "No driver, no map, and the cart rolls right into the field of Joshua, a man of Beth-shemesh, and stops near a large rock. Meanwhile I've gotten turned around in my OWN bakery, friend.",
-          "needs_agent_fix": true,
+          "text": "No driver, no map, and the cart rolls right into the field of Joshua of Beth-shemesh (not the Joshua who led Israel) and stops near a large rock. Me, I've gotten lost in my OWN bakery, friend, and my whole planet is barely bigger than the bakery!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -348,38 +350,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Samuel 6:15",
-          "question": "Who takes the ark of the LORD and the chest of gold down off the cart?",
+          "question": "True or false: The rulers of the Philistines are the ones who lift the ark of the LORD down off the cart.",
           "answers": [
             {
-              "text": "The Levites",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The Philistine rulers",
-              "correct": false
-            },
-            {
-              "text": "The priests of Dagon",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "1 Samuel 6:14-15",
-          "text": "The ark and the chest go up on the large rock, and that day the men of Beth-shemesh offer burnt offerings and make sacrifices to the LORD. A cart, two cows and a rock, and they've got worship going on the spot, friend. Hand ME a cart, two cows and a rock and I'm still reading the instructions.",
-          "needs_agent_fix": true,
+          "verses": "1 Samuel 6:15",
+          "text": "The Levites, the tribe set apart to serve the LORD, set the ark and the chest of gold objects on the large rock. That day the men of Beth-shemesh offer burnt offerings and make sacrifices to the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -387,7 +385,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 6:16",
-          "question": "True or false: When the five rulers of the Philistines see all this, they go back to Ekron that same day.",
+          "question": "True or false: When the five rulers of the Philistines see the ark on the rock and the offerings at Beth-shemesh, they go back to Ekron that same day.",
           "answers": [
             {
               "text": "True",
@@ -398,15 +396,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 6:17-18",
-          "text": "Then the passage tallies up the gold: one gold tumor for each Philistine city, Ashdod, Gaza, Ashkelon, Gath and Ekron, and gold rats to match all the cities of the five rulers, villages included. Remember, I've never packed a box with ONE gold rat, and these folks sent them by the VILLAGE. And that large rock the ark sat on stands to this day in the field of Joshua of Beth-shemesh.",
-          "needs_agent_fix": true,
+          "text": "The passage tallies the gold: one gold tumor for each Philistine city, Ashdod, Gaza, Ashkelon, Gath and Ekron, and gold rats to match the cities of the five rulers, the fortified cities and their outlying villages. And the large rock the ark sat on was still there in the field of Joshua when this was written.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -414,7 +412,7 @@
           "kind": "story",
           "verses": "1 Samuel 6:19",
           "text": "But the joy doesn't last. God strikes down seventy men of Beth-shemesh, and the people mourn.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -437,7 +435,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -445,7 +443,7 @@
           "kind": "story",
           "verses": "1 Samuel 6:20",
           "text": "And the men of Beth-shemesh ask two big questions: “Who can stand in the presence of the LORD, this holy God? To whom should the ark go up from here?”",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -468,23 +466,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
-          "verses": "1 Samuel 6:21-7:1",
-          "text": "The message is simple: “The Philistines have returned the ark of the LORD. Come down and take it up with you.” So the men of Kiriath-jearim come for the ark of the LORD and carry it to a house on the hill, and friend, that's the shortest invitation I've ever heard, and I got mine from an ANGEL.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "1 Samuel 6:21",
+          "text": "The message is simple: “The Philistines have returned the ark of the LORD. Come down and take it up with you.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 7:1",
-          "question": "The men of Kiriath-jearim bring the ark of the LORD to a house on the hill. Whose house is it?",
+          "question": "The men of Kiriath-jearim come for the ark of the LORD and take it to a house on the hill. Whose house is it?",
           "answers": [
             {
               "text": "Abinadab's",
@@ -499,8 +497,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -523,16 +521,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "1 Samuel 7:1",
-          "text": "Seven months with the Philistines, a cart ride with no driver, and now the ark sits in a house on a hill. That's where we'll leave it for now, friend, and trust me, this story's not done.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "We'll stop right here for now, friend, but this story is far from done.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

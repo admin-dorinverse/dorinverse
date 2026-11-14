@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Deuteronomy 31:4",
-          "text": "Moses reminds them the LORD will do to these nations what He did to Sihon and Og, the kings of the Amorites, when He destroyed them and their land. That's your boss pulling up LAST year's record numbers right before the big meeting!",
+          "text": "Moses reminds them the LORD will do to these nations what He did to Sihon and Og, the kings of the Amorites, when He destroyed them along with their land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -115,25 +115,6 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 31:6",
-          "question": "Moses says the LORD will stay with them through the first battle, and after that they're on their own.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Deuteronomy 31:7",
           "text": "Then Moses calls for Joshua and, with ALL Israel watching, tells him what he told the people: be strong and courageous. That's getting your pep talk over the company-wide speaker, and I bet Joshua's palms were SWEATING.",
@@ -141,7 +122,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Deuteronomy 31:7",
@@ -165,34 +146,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
+          "card": 10,
+          "kind": "story",
           "verses": "Deuteronomy 31:8",
-          "question": "Moses tells Joshua that the LORD Himself goes before him and will be with him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Then Moses tells Joshua the LORD Himself goes before him and will never leave him nor forsake him. Don't be afraid or discouraged, he says.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Deuteronomy 31:9",
+          "text": "So Moses writes down this law. Then he puts it in somebody's hands.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Deuteronomy 31:9",
-          "text": "So Moses writes down this law, and he does NOT toss it in a junk drawer. Trust me, friend, I know exactly where things go to get forgotten.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 31:9",
@@ -215,7 +185,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Deuteronomy 31:10-11",
           "text": "Then Moses sets up a schedule. At the end of every seven years, during the Feast of Tabernacles, there's a gathering before the LORD at the place He will choose.",
@@ -223,7 +193,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 31:11",
@@ -246,46 +216,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 31:12",
-          "question": "Moses says to gather the people for that reading of the law. Who's supposed to be there?",
+          "question": "Moses says to gather the men, women and children for that reading of the law. Who else does he say to bring in?",
           "answers": [
             {
-              "text": "Every family plus the foreigners",
+              "text": "The foreigners living among them",
               "correct": true
             },
             {
-              "text": "Every man from each tribe",
+              "text": "The rulers of Edom",
               "correct": false
             },
             {
-              "text": "Every priest and elder",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 31:12",
-          "question": "Moses wants them all to listen and learn to ___ the LORD their God and carefully follow all the words of this law.",
-          "answers": [
-            {
-              "text": "fear",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "praise",
-              "correct": false
-            },
-            {
-              "text": "thank",
+              "text": "The officials of Egypt",
               "correct": false
             }
           ],
@@ -293,19 +239,43 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Deuteronomy 31:13",
-          "question": "Moses says the children who don't know the law yet should wait until they're grown to hear it.",
+          "type": "fill_blank",
+          "verses": "Deuteronomy 31:12",
+          "question": "Moses wants them all to listen and learn, so they'll carefully ___ all the words of this law.",
           "answers": [
             {
-              "text": "True",
+              "text": "follow",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "debate",
               "correct": false
             },
             {
-              "text": "False",
+              "text": "change",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Deuteronomy 31:13",
+          "question": "Moses says their children will learn to fear the LORD for as long as Israel lives in the land.",
+          "answers": [
+            {
+              "text": "True",
               "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -562,29 +532,6 @@
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 31:23",
-          "question": "The LORD tells Joshua he'll bring the Israelites into the land. What does the LORD promise him?",
-          "answers": [
-            {
-              "text": "That He will be with him",
-              "correct": true
-            },
-            {
-              "text": "That Moses will come back to help",
-              "correct": false
-            },
-            {
-              "text": "That no one will fight against him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
           "verses": "Deuteronomy 31:24-25",
           "text": "Moses finishes writing the words of this law in a book, from beginning to end. Then he gives a command to the Levites who carry the ark of the covenant of the LORD.",
@@ -592,11 +539,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 31:26",
-          "question": "Where does Moses tell the Levites to put the Book of the Law?",
+          "question": "Moses tells the Levites to put the Book of the Law somewhere it can stay as a witness against the people. Where?",
           "answers": [
             {
               "text": "Beside the ark of the covenant",
@@ -615,39 +562,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 31:26",
-          "question": "Moses says the Book of the Law is to stay there as a ___ against the people.",
-          "answers": [
-            {
-              "text": "witness",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "weapon",
-              "correct": false
-            },
-            {
-              "text": "curse",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "Deuteronomy 31:27",
-          "text": "Moses does NOT sugarcoat it: he says he knows how rebellious and stiff-necked they are. He even points out they're already rebelling against the LORD while he's still alive.",
+          "text": "Moses does NOT hold back: he says he knows how rebellious and stiff-necked they are.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Deuteronomy 31:27",
@@ -666,11 +589,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Deuteronomy 31:28",
-          "question": "Moses has more words to speak. Who does he ask to be gathered before him to hear them?",
+          "question": "Moses wants to speak these words in their hearing and call heaven and earth to witness against them. Who does he ask to be gathered before him?",
           "answers": [
             {
               "text": "The elders and officers of the tribes",
@@ -689,68 +612,59 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Deuteronomy 31:28",
-          "question": "Moses says he'll call ___ and ___ to witness against them.",
+          "type": "multiple_choice",
+          "verses": "Deuteronomy 31:29",
+          "question": "Moses says that after his death, the people will become utterly corrupt. What does he say they'll turn from?",
           "answers": [
             {
-              "text": "heaven",
+              "text": "The path he commanded them",
+              "correct": true
+            },
+            {
+              "text": "The land they settled",
+              "correct": false
+            },
+            {
+              "text": "The leaders Joshua chose",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Deuteronomy 31:29",
+          "question": "Moses says in the days to come ___ will fall on them, because they'll do evil in the sight of the LORD.",
+          "answers": [
+            {
+              "text": "disaster",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "earth",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "angels",
+              "text": "peace",
               "correct": false
             },
             {
-              "text": "mountains",
-              "correct": false
-            },
-            {
-              "text": "seas",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Deuteronomy 31:29",
-          "question": "Moses looks ahead to the days after his death. What does he say will happen to the people?",
-          "answers": [
-            {
-              "text": "Disaster because they do evil",
-              "correct": true
-            },
-            {
-              "text": "Peace because they keep the law",
-              "correct": false
-            },
-            {
-              "text": "Victory because Joshua is strong",
+              "text": "plenty",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "Deuteronomy 31:29",
           "text": "We'll set this batch on the cooling rack for now. Keep your apron on, friend, because this story is still going.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

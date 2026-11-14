@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 13:1-2",
-          "text": "Saul is king over Israel. He's thirty years old when he becomes king, and he reigns over Israel forty-two years. He picks three thousand men of Israel, splits them between himself and his son Jonathan (1 Samuel 13:16), and sends the rest of the troops home.",
+          "text": "Saul is king over Israel. He's thirty years old when he becomes king, and he reigns over Israel forty-two years. He picks three thousand men of Israel, splits them between himself and Jonathan, Saul's son, and sends the rest of the troops home.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -42,7 +42,7 @@
           "verses": "1 Samuel 13:3",
           "text": "Then Jonathan attacks the Philistine outpost at Geba, and the Philistines hear about it. Uh-oh.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -65,7 +65,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -73,7 +73,7 @@
           "verses": "1 Samuel 13:4",
           "text": "The news spreads to all Israel: “Saul has attacked an outpost of the Philistines, and now Israel has become a stench to the Philistines!” Jonathan does the attacking and Saul gets the headline, just like the time I stamped a THOUSAND cookies and everybody thanked the OVEN.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -96,7 +96,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -104,7 +104,7 @@
           "verses": "1 Samuel 13:5",
           "text": "The Philistines assemble to fight Israel with three thousand chariots, six thousand horsemen, and troops as numerous as the sand on the seashore. SAND on the SEASHORE, friend, and I spent years trying to count the dust in a junk drawer and never finished.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -123,7 +123,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -146,7 +146,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -154,26 +154,26 @@
           "verses": "1 Samuel 13:6-7",
           "text": "Caves, thickets, rocks, cellars, cisterns, and some Hebrews even cross the Jordan into the land of Gad and Gilead. That's not hiding anymore, friend, that's MOVING.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 13:7",
-          "question": "Saul stays at Gilgal, and all his troops there are calm and ready for battle.",
+          "question": "Saul himself stays at Gilgal, even though all his troops there are quaking in fear.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -184,21 +184,13 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "1 Samuel 10:8",
-          "text": "Back in 1 Samuel 10:8, Samuel the prophet (1 Samuel 3:20) told Saul to go down to Gilgal and wait seven days, until Samuel came to offer burnt offerings and peace offerings.",
+          "verses": "1 Samuel 13:8",
+          "text": "Saul is still at Gilgal, waiting seven days for the time appointed by Samuel, the prophet who told him to wait there until Samuel came (1 Samuel 10:8). Seven DAYS, friend, and I can't wait seven MINUTES on an oven timer without opening the door to check on my cookies.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "1 Samuel 13:7-8",
-          "text": "Now Saul is at Gilgal with his troops quaking, and he waits seven days for the time appointed by Samuel. Seven DAYS, friend, and I can't wait seven MINUTES on an oven timer without opening the door to check on my cookies.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 13:8",
@@ -218,10 +210,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 13:9",
@@ -241,45 +233,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 13:9",
-          "question": "With the offerings brought to him, Saul offers up the ___ offering himself.",
-          "answers": [
-            {
-              "text": "burnt",
-              "correct": true
-            },
-            {
-              "text": "grain",
-              "correct": false
-            },
-            {
-              "text": "guilt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "1 Samuel 13:10",
-          "text": "Just as Saul finishes offering the burnt offering, Samuel arrives, and Saul goes out to greet him. Seven days of waiting, friend, and the man walks in right as Saul's done.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
-          "verses": "1 Samuel 13:11-12",
-          "question": "When Samuel asks, “What have you done?” Saul admits his mistake and asks for forgiveness.",
+          "verses": "1 Samuel 13:9",
+          "question": "Once the offerings are brought, Saul waits for Samuel to arrive and offer them.",
           "answers": [
             {
               "text": "True",
@@ -291,18 +252,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 5,
+          "kind": "story",
+          "verses": "1 Samuel 13:10",
+          "text": "Just as Saul finishes offering the burnt offering, Samuel arrives, and Saul goes out to greet him. Seven days of waiting, friend, and the man walks in right as Saul's done.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "story",
           "verses": "1 Samuel 13:11",
-          "text": "Nope, Saul explains himself. The troops were deserting him, Samuel didn't come at the appointed time, and the Philistines were gathering at Michmash.",
+          "text": "“What have you done?” Samuel asks. Saul explains that the troops were deserting him, Samuel didn't come at the appointed time, and the Philistines were gathering at Michmash.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 13:12",
@@ -322,18 +291,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "story",
           "verses": "1 Samuel 13:12",
           "text": "So, Saul says, he felt compelled to offer the burnt offering. I bet the pressure was real, but Samuel has something to say about it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 13:13",
@@ -363,10 +332,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 13:13",
@@ -382,18 +351,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "1 Samuel 13:14",
           "text": "But Saul didn't keep it. So now, Samuel says, Saul's kingdom will not endure.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 13:14",
@@ -413,7 +382,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -427,7 +396,7 @@
           "verses": "1 Samuel 13:15",
           "text": "Then Samuel sets out from Gilgal and goes up to Gibeah in Benjamin. And Saul counts the troops who are still with him.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -450,7 +419,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -458,7 +427,7 @@
           "verses": "1 Samuel 13:15-16",
           "text": "About SIX HUNDRED men, friend, which still beats my old crew in the junk drawer: some rubber bands and a twist tie. Saul, his son Jonathan and their troops are staying in Geba of Benjamin.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -477,7 +446,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -500,7 +469,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -508,7 +477,7 @@
           "verses": "1 Samuel 13:17-18",
           "text": "One heads toward Ophrah in the land of Shual, one toward Beth-horon, and one down the border road overlooking the Valley of Zeboim facing the wilderness. Three raiding parties, three directions at once.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -531,7 +500,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -539,14 +508,14 @@
           "verses": "1 Samuel 13:20-21",
           "text": "So whenever Israelites need a plowshare, mattock, axe or sickle sharpened, they have to go down to the Philistines and pay the Philistines' price. Imagine your oven breaks, and the only repairman in town is the guy trying to shut down your bakery.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 13:22",
-          "question": "So when the day of battle comes, who among the troops with Saul and Jonathan has a sword or spear?",
+          "question": "So when the day of battle comes, who in Saul's army has a sword or spear?",
           "answers": [
             {
               "text": "Only Saul and Jonathan",
@@ -562,7 +531,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -570,7 +539,7 @@
           "verses": "1 Samuel 13:23",
           "text": "And a garrison of the Philistines has gone out to the pass at Michmash. Keep your apron on, friend, because this story is still in the oven.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

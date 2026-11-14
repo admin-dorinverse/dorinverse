@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "Card 1 says David 'stayed back in Jerusalem'. That gives away the answer to the later choice card 17 ('where do David and all his troops go?' / 'To Jerusalem'). It isn't a pop-up, so the exception doesn't apply.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The true/false statement joins two claims: David puts Rabbah's people to work, which card 15 just answered, and he leaves the other Ammonite cities alone. It tests more than one claim and repeats card 15's answer as a premise.",
+      "rule": "A true or false statement tests one claim."
+    }
+  ]
+}

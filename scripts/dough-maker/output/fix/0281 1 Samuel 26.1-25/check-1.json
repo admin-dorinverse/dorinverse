@@ -1,0 +1,45 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The question says 'with Saul's own spear right there', which points straight at the right answer 'Pin Saul to the ground with the spear'. Card 9 also set up the spear by Saul's head. The setup rules out the wrong answers (tie up, wake up).",
+      "rule": "A setup line can't rule out the wrong answers either."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The blank answer 'sleep' is given away. Card 9 says Saul is 'asleep', and the question says nobody 'wakes up'. The blank is trivial and needs no reasoning about the text.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 10
+      },
+      "problem": "The blank asks for the exact word 'inheritance' in a quoted line. No earlier card gives the baker anything to reason it out, so the baker is guessing wording they haven't seen. 'house' or 'army' look just as plausible.",
+      "rule": "The blank tests meaning the baker can reason out, not wording they haven't seen."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "The question says David 'valued' Saul's life, and the right answer starts 'Value it'. The question holds a form of its own answer. The answer's 'rescue him' is also ambiguous, since 'him' could mean Saul or David.",
+      "rule": "A choice card's question never holds its own answer, or a form of it, like \"rock badgers\" for \"in the rocks.\""
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 19
+      },
+      "problem": "The question asks 'where does each of them go?', but the answers 'David leaves' and 'David joins Saul's camp' are not places. Only part of the right answer is a place.",
+      "rule": "Each answer fits its question: in a blank, every answer matches the sentence's tense and form, and a \"where\" question gets places."
+    }
+  ]
+}

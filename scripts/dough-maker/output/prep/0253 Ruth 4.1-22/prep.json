@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ruth 4:1",
-          "text": "Last time, Boaz, a relative of Naomi's (Ruth 2:1), told Ruth that if the nearer kinsman-redeemer won't redeem her, he will (Ruth 3:13). Naomi said Boaz won't rest until the matter is settled today (Ruth 3:18). Meanwhile, Boaz goes to the city gate and sits down.",
+          "text": "Ruth, Naomi's daughter-in-law from Moab, has asked Boaz, a relative of Naomi's late husband (Ruth 2:1), to be her kinsman-redeemer (Ruth 3:9). Naomi says Boaz won't rest until the matter is settled today (Ruth 3:18). Meanwhile, Boaz goes to the city gate and sits down.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -21,7 +21,7 @@
           "question": "Boaz is sitting at the city gate. Who comes walking along?",
           "answers": [
             {
-              "text": "The nearer kinsman-redeemer",
+              "text": "A nearer kinsman-redeemer",
               "correct": true
             },
             {
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ruth 4:1",
-          "text": "Boaz calls out, \"Come over here, my friend, and sit down.\" So he sits, and I bet he has NO idea what kind of day he's about to have.",
+          "text": "Boaz calls out, \"Come over here, my friend, and sit down.\" So the man sits, and I bet he has NO idea what kind of day he's about to have.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,29 +49,29 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ruth 4:2",
-          "question": "Next, Boaz gathers ___ of the elders of the city and tells them to sit down too.",
+          "question": "Then Boaz gathers ten of the city's ___ and tells them to sit down too.",
           "answers": [
             {
-              "text": "ten",
+              "text": "elders",
               "correct": true
             },
             {
-              "text": "seven",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "twelve",
+              "text": "soldiers",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Ruth 4:3",
-          "text": "Then Boaz gets down to business. Naomi, who has come back from Moab, is selling the land that belonged to Elimelech, her late husband (Ruth 1:3).",
+          "text": "Then Boaz gets down to business. Naomi, who has come back from Moab, a neighboring land, is selling the land that belonged to Elimelech, her late husband (Ruth 1:3).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -79,7 +79,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Ruth 4:4",
-          "text": "Boaz says he's telling the man first, right in front of the elders. If you want to redeem it, do so, and if not, say so.",
+          "text": "Boaz says the man can buy it back right there, in front of the elders. If he wants to redeem it, he should do it, and if not, he should say so.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -158,14 +158,6 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Ruth 4:5",
-          "text": "Whoa, the land deal just came with a wedding attached. That's like grabbing ONE free sample and finding out you just agreed to run the whole bakery.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ruth 4:6",
@@ -184,7 +176,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ruth 4:6",
@@ -207,54 +199,54 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Ruth 4:6",
-          "text": "He tells Boaz, \"Take my right of redemption, because I cannot redeem it.\" And just like that, the door swings wide open for Boaz.",
+          "text": "The man tells Boaz, \"Take my right of redemption, because I cannot redeem it.\" And just like that, the door swings wide open for Boaz.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Ruth 4:7",
+          "text": "Quick note on how deals worked in former times in Israel. To make a deal about redeeming or trading property legally binding, a man would remove his sandal and give it to the other party.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Ruth 4:7",
-          "text": "Quick note on how deals worked back then. In former times in Israel, a deal about redeeming or trading property was made legally binding with one simple move.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Ruth 4:8",
+          "question": "The nearer kinsman-redeemer removes his sandal and speaks to Boaz. What does he say?",
+          "answers": [
+            {
+              "text": "Buy it for yourself",
+              "correct": true
+            },
+            {
+              "text": "Let us share it",
+              "correct": false
+            },
+            {
+              "text": "Sell it to another",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ruth 4:7",
-          "question": "To make a property deal binding in Israel, a man would remove his ___ and give it to the other party.",
-          "answers": [
-            {
-              "text": "sandal",
-              "correct": true
-            },
-            {
-              "text": "ring",
-              "correct": false
-            },
-            {
-              "text": "cloak",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "story",
-          "verses": "Ruth 4:8",
-          "text": "So the man pulls off his sandal and says to Boaz, \"Buy it for yourself.\" No pens, no fine print, just one shoe changing hands.",
+          "verses": "Ruth 4:8-9",
+          "text": "One sandal changes hands. No pens, no fine print. Then Boaz turns to the elders and all the people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ruth 4:9",
@@ -273,35 +265,35 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Ruth 4:10",
           "text": "Then Boaz announces he has acquired Ruth the Moabitess, Mahlon's widow, as his wife.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Ruth 4:10",
-          "question": "Boaz says he's taking Ruth as his wife so that something of the deceased won't disappear from among his brothers. What is it?",
+          "question": "Boaz says he's taking Ruth as his wife so that the ___ of the deceased won't disappear from among his brothers.",
           "answers": [
             {
-              "text": "His name",
+              "text": "name",
               "correct": true
             },
             {
-              "text": "His flocks",
+              "text": "flocks",
               "correct": false
             },
             {
-              "text": "His servants",
+              "text": "servants",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -313,9 +305,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Ruth 4:11",
-          "text": "Back at the city gate, the elders and all the people answer Boaz, \"We are witnesses,\" and they're not done talking.",
+          "text": "Right there at the city gate, the elders and all the people answer Boaz, \"We are witnesses,\" and they're not done talking.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -338,15 +330,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Ruth 4:11",
-          "text": "Rachel and Leah were the wives of Jacob (Genesis 29:30). Then the crowd says, \"May you be prosperous in Ephrathah and famous in Bethlehem,\" and friend, the closest I ever got to famous was the back of a junk drawer, with a fan club of one twist tie.",
+          "text": "Rachel and Leah were both wives of Jacob (Genesis 29:23, 28). Then the crowd says, \"May you be prosperous in Ephrathah and famous in Bethlehem,\" and friend, the closest I ever got to famous was a fan club of one, the twist tie I shared a junk drawer with.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -402,7 +394,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Ruth 4:14",
-          "text": "Then the women speak to Naomi. Remember, this is the woman who came home telling them to call her Mara, because the Almighty had dealt bitterly with her (Ruth 1:20).",
+          "text": "Then the women speak to Naomi. This is the woman who came home telling them to call her Mara, because the Almighty had dealt bitterly with her (Ruth 1:20).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -432,9 +424,32 @@
         {
           "card": 9,
           "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Ruth 4:15",
+          "question": "The women say Naomi's new grandson will renew her life. What else do they say he will do for her?",
+          "answers": [
+            {
+              "text": "Sustain her in her old age",
+              "correct": true
+            },
+            {
+              "text": "Take her back to Moab",
+              "correct": false
+            },
+            {
+              "text": "Build her a new house",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
           "type": "true_false",
           "verses": "Ruth 4:15",
-          "question": "The women tell Naomi her daughter-in-law, who loves her, is better to her than seven sons. They mean Ruth has blessed Naomi more than many sons could.",
+          "question": "The women tell Naomi that Ruth, who loves her, is better to her than seven sons.",
           "answers": [
             {
               "text": "True",
@@ -445,14 +460,6 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Ruth 4:15",
-          "text": "SEVEN sons, not one, not two, SEVEN, and Ruth still comes out on top. That's the greatest daughter-in-law review I've ever heard.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -506,35 +513,12 @@
           "card": 14,
           "kind": "story",
           "verses": "Ruth 4:17",
-          "text": "It's the neighbor women who do the naming. They say, \"A son has been born to Naomi,\" and there it is, Naomi's name on it, not Ruth's.",
+          "text": "It's the neighbor women who do the naming. They say, \"A son has been born to Naomi,\" and they name him Obed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ruth 4:17",
-          "question": "The neighbor women name the baby ___.",
-          "answers": [
-            {
-              "text": "Obed",
-              "correct": true
-            },
-            {
-              "text": "Omri",
-              "correct": false
-            },
-            {
-              "text": "Oded",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ruth 4:17",
@@ -557,7 +541,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Ruth 4:17",
           "text": "DAVID. The woman from Moab who followed Naomi home (Ruth 1:16) is the great-grandmother of David, who would become king of Israel (2 Samuel 5:3).",
@@ -565,7 +549,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Ruth 4:18-22",
           "text": "The book ends with the family line of Perez, the same Perez from the blessing at the gate. Ten names, father to son, from Perez down to David, and right there in the line is Boaz, the father of Obed.",

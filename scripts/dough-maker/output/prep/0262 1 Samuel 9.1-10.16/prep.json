@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 9:1",
-          "text": "Last time, Israel demanded a king, and the LORD told Samuel to appoint one (1 Samuel 8:5, 22). Samuel is Israel's prophet and judge (1 Samuel 3:20; 7:15). Now meet Kish, from the tribe of Benjamin, and the text calls him a powerful man.",
+          "text": "Israel has demanded a king, and the LORD told Samuel to appoint one (1 Samuel 8:5, 22). Samuel is Israel's prophet and judge (1 Samuel 3:20; 7:15). Now meet Kish, a powerful man from the tribe of Benjamin.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -39,8 +39,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "1 Samuel 9:2-3",
-          "text": "A head taller than everybody, so that man has NEVER had to say, \"Hey, can you grab that off the top shelf?\" One day Kish's donkeys wander off, and Kish sends Saul with one of the servants to go find them.",
+          "verses": "1 Samuel 9:3",
+          "text": "One day Kish's donkeys wander off. Kish tells Saul to take one of the servants and go look for them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -74,21 +74,17 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Samuel 9:5",
-          "question": "When they reach the land of Zuph, Saul tells the servant they should go back home. Why?",
+          "question": "When they reach the land of Zuph, Saul tells the servant they should go back home. True or false: Saul says it's because it's getting dark.",
           "answers": [
             {
-              "text": "His father will start worrying about them",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "They have run out of daylight",
-              "correct": false
-            },
-            {
-              "text": "The servant is too tired to go on",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -98,7 +94,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 9:5-6",
-          "text": "Saul's right, friend: stay gone long enough and Dad stops worrying about the donkeys and starts worrying about you. But the servant says there's a highly respected man of God in this city, and everything he says surely comes to pass.",
+          "text": "Saul's real worry: stay gone long enough, and his father will stop worrying about the donkeys and start worrying about them. But the servant says there's a highly respected man of God in this city, and everything he says surely comes to pass.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -145,7 +141,7 @@
               "correct": true
             },
             {
-              "text": "A small flask of oil",
+              "text": "A small pouch of spices",
               "correct": false
             },
             {
@@ -161,23 +157,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 9:9",
-          "question": "The text stops for a quick side note. Back then in Israel, the prophet of today was called the ___.",
+          "question": "A quick side note in the text: back then, someone going to ask God something would say, let's go to the seer. In the writer's day, a seer was called a ___.",
           "answers": [
             {
-              "text": "seer",
+              "text": "prophet",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "judge",
+              "text": "priest",
               "correct": false
             },
             {
-              "text": "watchman",
+              "text": "judge",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -242,28 +238,27 @@
           "card": 16,
           "kind": "story",
           "verses": "1 Samuel 9:14",
-          "text": "Up they go toward the city, and just as they're walking in, somebody's coming right toward them. Friend, God's timing beats every oven timer I've ever owned.",
+          "text": "Up they go toward the city, and just as they're walking in, there's Samuel coming toward them. Friend, after all those empty hills, that's the fastest anything has gone right for these two.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Samuel 9:14",
-          "question": "As Saul and his servant enter the city, ___ comes toward them on his way up to the high place.",
+          "question": "As Saul and his servant enter the city, Samuel comes toward them. Where is Samuel headed?",
           "answers": [
             {
-              "text": "Samuel",
-              "correct": true,
-              "blank": 1
+              "text": "Up to the high place",
+              "correct": true
             },
             {
-              "text": "Eli",
+              "text": "Home to Ramah",
               "correct": false
             },
             {
-              "text": "Nathan",
+              "text": "Off to Bethel",
               "correct": false
             }
           ],
@@ -280,7 +275,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 9:15",
-          "text": "Now hold on, friend, because the text rewinds one day. The day before Saul showed up, the LORD had revealed something to Samuel.",
+          "text": "Now hold on, friend. The day before Saul showed up, the LORD had revealed something to Samuel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -406,15 +401,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 9:20",
-          "question": "Samuel brings up the donkeys Saul lost three days ago. True or false: Samuel says the donkeys have been found.",
+          "question": "Samuel brings up the donkeys Saul lost three days ago. True or false: Samuel tells Saul to keep looking for them.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -424,7 +419,7 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Samuel 9:18-20",
-          "text": "Saul never said one word about donkeys, friend. Then Samuel goes bigger and asks who all the desire of Israel is upon, if not Saul and his father's house.",
+          "text": "The donkeys have been found, and friend, all Saul asked this man for was directions. Then Samuel goes bigger and asks who all the desire of Israel is upon, if not Saul and his father's house.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -455,7 +450,7 @@
           "card": 12,
           "kind": "story",
           "verses": "1 Samuel 9:21",
-          "text": "Smallest tribe, least clan. Saul's basically asking if Samuel's got the wrong guy, and friend, I once asked an angel if he had the right drawer, so I GET it.",
+          "text": "Smallest tribe, least clan, so why would Samuel say such a thing? Friend, when an angel came to call me out of a junk drawer, I asked him if he had the right drawer, so I GET it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -590,55 +585,12 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 10:2",
-          "text": "Then Samuel tells Saul what's going to happen when he leaves. First he'll find two men at the tomb of Rachel, Jacob's wife (Genesis 29:28), in Zelzah on the border of Benjamin.",
+          "text": "Then Samuel tells Saul that when he leaves today, he'll find two men at the tomb of Rachel, Jacob's wife (Genesis 29:28), in Zelzah on the border of Benjamin. They'll tell him the donkeys have been found, and his father has stopped worrying about the donkeys and started worrying about him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 10:2",
-          "question": "The two men at Rachel's tomb will tell Saul the ___ he's looking for have been found.",
-          "answers": [
-            {
-              "text": "donkeys",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "servants",
-              "correct": false
-            },
-            {
-              "text": "sheep",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Samuel 10:2",
-          "question": "True or false: the two men will also say Saul's father has stopped worrying about the donkeys and started worrying about Saul.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
           "verses": "1 Samuel 10:2-3",
           "text": "Saul CALLED that one back in Zuph, friend. Next, at the Oak of Tabor, three men going up to God at Bethel will meet him, carrying three young goats, three loaves of bread and a skin of wine.",
@@ -646,7 +598,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 10:4",
@@ -669,15 +621,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "1 Samuel 10:5",
-          "text": "Then at Gibeah of God, where the Philistines have an outpost, Saul will meet a group of prophets coming down from the high place, prophesying. They've got harps, tambourines, flutes AND lyres out in front, so friend, this isn't a walk, it's a parade.",
+          "text": "Then at Gibeah of God, where the Philistines have an outpost, Saul will meet a group of prophets coming down from the high place, prophesying. They'll have harps, tambourines, flutes AND lyres out in front, so friend, that's not a walk, that's a parade.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 10:6",
@@ -700,11 +652,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 10:6",
-          "question": "True or false: Samuel says Saul will prophesy with the prophets and be transformed into a different person.",
+          "question": "Samuel says more about what will happen at Gibeah. True or false: Samuel says Saul will be transformed into a different person.",
           "answers": [
             {
               "text": "True",
@@ -712,6 +664,53 @@
             },
             {
               "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "1 Samuel 10:7",
+          "question": "Samuel tells Saul that when these signs come, he should do as the occasion demands, for ___ is with him.",
+          "answers": [
+            {
+              "text": "God",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Samuel",
+              "correct": false
+            },
+            {
+              "text": "Kish",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Samuel 10:8",
+          "question": "Samuel tells Saul to go ahead of him to Gilgal and wait seven days. When Samuel comes, what will he do?",
+          "answers": [
+            {
+              "text": "Offer sacrifices and show Saul what to do",
+              "correct": true
+            },
+            {
+              "text": "Lead the army against the Philistines",
+              "correct": false
+            },
+            {
+              "text": "Bring Saul back home to his father",
               "correct": false
             }
           ],
@@ -720,120 +719,34 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "1 Samuel 10:7-8",
-          "text": "When these signs come, Samuel says, Saul should do as the occasion demands, for God is with him. Then Samuel tells him to go ahead of him to Gilgal, where Samuel will come to offer sacrifices.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "1 Samuel 10:9",
+          "question": "As Saul turns to leave Samuel, God changes Saul's ___.",
+          "answers": [
+            {
+              "text": "heart",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "name",
+              "correct": false
+            },
+            {
+              "text": "face",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 10:8",
-          "question": "Samuel tells Saul to wait at Gilgal for ___ days until he comes to show Saul what to do.",
-          "answers": [
-            {
-              "text": "seven",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "forty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "1 Samuel 10:9",
-          "text": "As Saul turns to leave Samuel, God changes Saul's heart, and all the signs come to pass that day.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "1 Samuel 10:10",
-          "text": "At Gibeah a group of prophets meets him. The Spirit of God rushes upon him, and Saul prophesies right along with them.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Samuel 10:11",
-          "question": "Everyone who knew Saul before sees him prophesying with the prophets. What do they ask one another?",
-          "answers": [
-            {
-              "text": "Whether Saul is also among the prophets",
-              "correct": true
-            },
-            {
-              "text": "Whether Saul is going to be king",
-              "correct": false
-            },
-            {
-              "text": "Whether Saul is Samuel's son",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "1 Samuel 10:12",
-          "text": "A man who lives there answers, \"And who is their father?\" and \"Is Saul also among the prophets?\" becomes a proverb. Friend, Saul left home looking for donkeys and came back a SAYING.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "1 Samuel 10:13-14",
-          "text": "When Saul finishes prophesying, he goes up to the high place. Then Saul's uncle asks where he and the servant went, and Saul says they looked for the donkeys, then went to Samuel.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Samuel 10:16",
-          "question": "Saul's uncle wants to know what Samuel said to them. What does Saul tell him?",
-          "answers": [
-            {
-              "text": "That the donkeys had been found",
-              "correct": true
-            },
-            {
-              "text": "That the Philistines were near",
-              "correct": false
-            },
-            {
-              "text": "That they should hurry home",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 19,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "1 Samuel 10:16",
-          "question": "True or false: Saul tells his uncle what Samuel said about the kingship.",
+          "verses": "1 Samuel 10:9",
+          "question": "Samuel gave Saul a whole list of signs. True or false: those signs take weeks to come to pass.",
           "answers": [
             {
               "text": "True",
@@ -845,15 +758,89 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 13,
+          "kind": "story",
+          "verses": "1 Samuel 10:10",
+          "text": "At Gibeah a group of prophets meets him. The Spirit of God rushes upon him, and Saul prophesies right along with them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Samuel 10:11",
+          "question": "Everyone who knew Saul before sees what's happening at Gibeah. What's the first thing they ask one another?",
+          "answers": [
+            {
+              "text": "What has happened to the son of Kish",
+              "correct": true
+            },
+            {
+              "text": "Who taught the son of Kish to play",
+              "correct": false
+            },
+            {
+              "text": "When did the son of Kish come back",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "1 Samuel 10:11-12",
+          "text": "They also ask, \"Is Saul also among the prophets?\" A man who lives there replies, \"And who is their father?\" and that line becomes a proverb. Friend, Saul left home to find donkeys and ended up a SAYING.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "1 Samuel 10:13-14",
+          "text": "When Saul finishes prophesying, he goes up to the high place. Then Saul's uncle asks where he and the servant went, and Saul says they went looking for the donkeys and, when they couldn't find them, went to Samuel.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "story",
+          "verses": "1 Samuel 10:15-16",
+          "text": "His uncle asks what Samuel said to them. Saul tells him Samuel assured them the donkeys had been found.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Samuel 10:16",
+          "question": "True or false: Saul also tells his uncle what Samuel said about the kingship.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 19,
           "kind": "story",
           "verses": "1 Samuel 10:16",
           "text": "We'll pause right here, friend. Keep your apron on, because Saul's story has a LOT more coming.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

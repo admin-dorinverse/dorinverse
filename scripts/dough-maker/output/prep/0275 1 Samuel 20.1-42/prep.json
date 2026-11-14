@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 20:1",
-          "text": "Saul, king of Israel, wants David dead. That's David, the young man Samuel anointed to be king (1 Samuel 16:1, 13). Now David runs from Naioth in Ramah to Jonathan, SAUL'S OWN SON, and he's got some questions.",
+          "text": "Saul, king of Israel, wants David dead (1 Samuel 19:1). That's David, the young man the prophet Samuel anointed to be king (1 Samuel 16:1, 13). So David runs from Naioth in Ramah straight to Jonathan, SAUL'S OWN SON.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -36,7 +36,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 20:2",
-          "text": "Jonathan shuts that down FAST: “Far from it!” “You will not die.” And friend, he's got a reason he's so sure.",
+          "text": "Jonathan shuts that down FAST: “Far from it!” And friend, he's got a reason he's so sure.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Samuel 20:3",
-          "text": "David swears, “As surely as the LORD lives and as you yourself live, there is but a step between me and death.” Jonathan thinks he's in every one of his dad's group chats, but according to David, there's one he's NOT in, and it's called Don't Tell Jonathan.",
+          "text": "David swears, “As surely as the LORD lives and as you yourself live, there is but a step between me and death.” You know when you're copied on every email at work, and then you find out about the one meeting NOBODY invited you to? David says this is that meeting.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -108,23 +108,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 20:5",
-          "question": "Instead of dining with the king at the New Moon, David will hide in the ___ until the third evening.",
+          "question": "Instead of dining with the king at the New Moon, David will ___ in the field until the third evening.",
           "answers": [
             {
-              "text": "field",
+              "text": "hide",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "cave",
+              "text": "hunt",
               "correct": false
             },
             {
-              "text": "city",
+              "text": "pray",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -140,7 +140,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 20:7",
-          "question": "If Saul hears that and says Good, David is safe. But if Saul is enraged, what will that tell Jonathan?",
+          "question": "If Jonathan tells Saul that David went to Bethlehem and Saul says good, David is safe. But if Saul is enraged, what will that tell Jonathan?",
           "answers": [
             {
               "text": "That his father has evil intentions",
@@ -155,7 +155,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -189,38 +189,34 @@
           "card": 13,
           "kind": "story",
           "verses": "1 Samuel 20:9-10",
-          "text": "“Never!” Jonathan says. Of course he'd tell David. Then David asks the real question: “Who will tell me if your father answers you harshly?”",
-          "needs_agent_fix": true,
+          "text": "“Never!” Jonathan replies, and of course he'd tell David. Then David asks the real question: “Who will tell me if your father answers you harshly?”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Samuel 20:11",
-          "question": "Before Jonathan answers David's question about who will tell him, where does Jonathan take David?",
-          "answers": [
-            {
-              "text": "Out into the field",
-              "correct": true
-            },
-            {
-              "text": "Up to the city gate",
-              "correct": false
-            },
-            {
-              "text": "Back to Samuel in Ramah",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "1 Samuel 20:11-12",
+          "text": "“Come,” Jonathan replies, “let us go out to the field.” Out there, he swears by the LORD, the God of Israel, that he'll sound out his father by this time tomorrow or the next day.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "1 Samuel 20:12",
-          "text": "Out in the field, Jonathan swears by the LORD, the God of Israel, that he'll sound out his father by tomorrow or the next day. If Saul is favorable toward David, Jonathan will send for him and tell him.",
+          "question": "True or false: Jonathan says that if his father is favorable toward David, he'll send for David and tell him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -229,7 +225,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 20:13",
-          "question": "And if Saul means to bring evil on David, what does Jonathan swear he'll do?",
+          "question": "What does Jonathan swear he'll do if his father means to bring evil on David?",
           "answers": [
             {
               "text": "Tell David and send him away safely",
@@ -251,7 +247,7 @@
           "card": 17,
           "kind": "story",
           "verses": "1 Samuel 20:13-14",
-          "text": "Then Jonathan blesses him: “May the LORD be with you, just as He has been with my father.” And he asks David to treat him with the LORD's loving devotion as long as he lives.",
+          "text": "Then Jonathan says, “May the LORD be with you, just as He has been with my father.” And he asks David to treat him with the LORD's loving devotion as long as he lives.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -353,20 +349,21 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 20:21",
-          "question": "If Jonathan tells the boy, “Look, the arrows are on this side of you; bring them,” what does that mean for David?",
+          "question": "If Jonathan tells the boy, “Look, the arrows are on this side of you; bring them,” that means it's ___ for David to come.",
           "answers": [
             {
-              "text": "It is safe to come out",
-              "correct": true
+              "text": "safe",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He must run right away",
+              "text": "dangerous",
               "correct": false
             },
             {
-              "text": "He should wait one more day",
+              "text": "forbidden",
               "correct": false
             }
           ],
@@ -404,8 +401,8 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 20:25",
-          "text": "Saul sits in his usual seat by the wall, across from Jonathan and beside Abner, the commander of his army (1 Samuel 14:50). And David's seat? EMPTY, and nothing at a dinner table talks louder than an empty chair.",
-          "needs_agent_fix": true,
+          "text": "Saul sits in his usual seat by the wall, across from Jonathan and beside Abner, the commander of his army (1 Samuel 14:50). But David's seat is EMPTY, and nothing at a dinner table talks louder than an empty chair.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -435,7 +432,7 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Samuel 20:27",
-          "text": "Day two, and David's seat is STILL empty, so Saul asks Jonathan why the son of Jesse hasn't come to the meal. Notice he doesn't say David's name, and friend, I don't love that.",
+          "text": "Day two, and David's seat is STILL empty, so Saul asks Jonathan why the son of Jesse hasn't come to the meal. That's David, Jesse's son (1 Samuel 17:12), and notice Saul doesn't say his name.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -553,10 +550,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 20:34",
-          "question": "Why does Jonathan go without food that second day?",
+          "question": "Why does Jonathan eat no food on the second day of the month, after leaving his father's table?",
           "answers": [
             {
-              "text": "He's grieved by how his father treated David",
+              "text": "He's hurt by how his father treated David",
               "correct": true
             },
             {
@@ -568,7 +565,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -590,7 +587,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 20:36-37",
-          "question": "Remember the signal. As the boy runs, where does Jonathan's arrow land?",
+          "question": "Saul is determined to kill David, and Jonathan's arrows are the signal for David. As the boy runs, where does Jonathan's arrow land?",
           "answers": [
             {
               "text": "Beyond the boy",
@@ -641,7 +638,7 @@
           "verses": "1 Samuel 20:40-41",
           "text": "Jonathan hands the boy his gear and sends him back to the city. Then David gets up from the south side of the stone, falls facedown and bows three times.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -651,21 +648,21 @@
           "question": "David and Jonathan kiss each other and ___ together, though David does it more.",
           "answers": [
             {
-              "text": "wept",
+              "text": "weep",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "laughed",
+              "text": "laugh",
               "correct": false
             },
             {
-              "text": "sang",
+              "text": "sing",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,

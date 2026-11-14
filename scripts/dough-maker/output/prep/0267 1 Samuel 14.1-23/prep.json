@@ -77,15 +77,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 14:3",
-          "question": "Saul's troops know that Jonathan has left.",
+          "question": "Saul's troops don't know that Jonathan has left.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -93,18 +93,10 @@
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "1 Samuel 14:4",
-          "text": "Now here's what stands between Jonathan and that Philistine outpost: a pass he has to cross to get there.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 14:4",
-          "question": "The pass Jonathan plans to cross has ___ on both sides.",
+          "question": "To reach the Philistine outpost, Jonathan has to cross a pass with ___ on both sides.",
           "answers": [
             {
               "text": "cliffs",
@@ -124,7 +116,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "1 Samuel 14:4-5",
           "text": "And these cliffs have NAMES: Bozez and Seneh, one standing to the north toward Michmash and the other to the south toward Geba. Friend, I named six cookie cutters, but it never crossed my mind to name a ROCK.",
@@ -132,15 +124,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "1 Samuel 14:6",
           "text": "Jonathan turns to his armor-bearer again: “Come, let us cross over to the outpost of these uncircumcised men.” And the plan comes with a PERHAPS: “Perhaps the LORD will work on our behalf.”",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:6",
@@ -160,25 +152,25 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:7",
           "question": "Jonathan just pitched a two-man attack on an outpost. What does his armor-bearer say?",
           "answers": [
             {
-              "text": "Go ahead because I am with you",
+              "text": "Go ahead and I am with you",
               "correct": true
             },
             {
-              "text": "Let us go back and ask your father",
+              "text": "Go back and ask your father first",
               "correct": false
             },
             {
-              "text": "Let us wait until more men come",
+              "text": "Wait here until more men come",
               "correct": false
             }
           ],
@@ -186,7 +178,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "1 Samuel 14:7",
           "text": "Heart and soul, no questions asked. Friend, that's the guy who says yes to helping you move before you even tell him which floor.",
@@ -194,7 +186,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "1 Samuel 14:8-10",
           "text": "Here's Jonathan's plan: they'll cross over and let the Philistines see them. Whatever the outpost says next tells them what to do.",
@@ -202,7 +194,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:9",
@@ -225,7 +217,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:10",
@@ -248,7 +240,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "1 Samuel 14:11",
           "text": "The two of them step into view, and the Philistines crack that the Hebrews are coming out of the holes they've been hiding in. Friend, I lived in the back of a junk drawer for years, and even I felt that one.",
@@ -256,7 +248,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:12",
@@ -279,21 +271,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
-          "kind": "choice",
-          "type": "true_false",
+          "card": 18,
+          "kind": "story",
           "verses": "1 Samuel 14:12",
-          "question": "Jonathan tells his armor-bearer to follow him, because the LORD has delivered the Philistines into the hand of Israel.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "“Follow me,” Jonathan tells his armor-bearer, “for the LORD has delivered them into the hand of Israel.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -338,7 +319,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 14:13-14",
-          "text": "His armor-bearer follows and finishes them off, and it all happens in about half an acre of land. That's not a battlefield, friend, that's a BACKYARD.",
+          "text": "His armor-bearer follows and finishes them off. It all happens in about half an acre of land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -355,11 +336,11 @@
               "blank": 1
             },
             {
-              "text": "two hundred",
+              "text": "fifty",
               "correct": false
             },
             {
-              "text": "six hundred",
+              "text": "two hundred",
               "correct": false
             }
           ],
@@ -452,7 +433,7 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Samuel 14:17-18",
-          "text": "They call the roll, and two names come up empty: Jonathan and his armor-bearer. Then Saul says to Ahijah the priest, “Bring the ark of God.”",
+          "text": "They call the roll, and two men are missing: Jonathan and his armor-bearer. Then Saul says to Ahijah the priest, “Bring the ark of God.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -472,7 +453,7 @@
           "question": "While Saul is still talking to the priest, what happens in the Philistine camp?",
           "answers": [
             {
-              "text": "The commotion keeps getting louder",
+              "text": "The commotion keeps growing",
               "correct": true
             },
             {
@@ -490,28 +471,20 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "1 Samuel 14:19",
-          "text": "So Saul tells the priest, “Withdraw your hand.” In other words, stop right there.",
+          "verses": "1 Samuel 14:19-20",
+          "text": "So Saul tells the priest, “Withdraw your hand.” Then Saul and all his troops gather up and march out to the battle.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "1 Samuel 14:20",
-          "text": "Then Saul and all his troops gather up and march out to the battle.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:20",
           "question": "When Saul's army reaches the Philistines, what do they find?",
           "answers": [
             {
-              "text": "Philistines swinging swords at each other",
+              "text": "Philistines in total confusion",
               "correct": true
             },
             {
@@ -523,6 +496,14 @@
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "1 Samuel 14:20",
+          "text": "It's total confusion in the Philistine camp, with each man wielding the sword against his neighbor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -561,7 +542,7 @@
               "correct": false
             },
             {
-              "text": "Head back to their own homes",
+              "text": "Wait to see who wins",
               "correct": false
             }
           ],
@@ -581,11 +562,11 @@
               "blank": 1
             },
             {
-              "text": "Jonathan",
+              "text": "army",
               "correct": false
             },
             {
-              "text": "Saul",
+              "text": "king",
               "correct": false
             }
           ],

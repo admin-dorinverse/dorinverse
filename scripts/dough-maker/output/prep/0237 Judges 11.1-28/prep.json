@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Judges 10:17-11:1",
-          "text": "The Ammonites are camped in Gilead, and Gilead's rulers need somebody to launch the attack. Enter Jephthah the Gileadite, a mighty man of valor. His father is Gilead, and his mother is a prostitute.",
+          "verses": "Judges 11:1",
+          "text": "Israel has put away its foreign gods and turned back to the LORD, but now the Ammonites are called to arms (Judges 10:16-17). Enter Jephthah the Gileadite, a mighty man of valor. His father is Gilead, and his mother is a prostitute.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -180,14 +180,14 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 11:8",
-          "question": "The elders say that's exactly why they came. If Jephthah fights the Ammonites with them, he'll become ___ over everyone who lives in Gilead.",
+          "question": "The elders of Gilead answer Jephthah: if he goes with them and fights the Ammonites, he'll become ___ over everyone who lives in Gilead.",
           "answers": [
             {
               "text": "leader",
               "correct": true
             },
             {
-              "text": "priest",
+              "text": "scribe",
               "correct": false
             },
             {
@@ -195,7 +195,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -203,7 +203,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 11:9",
-          "question": "Before saying yes, Jephthah double-checks with the elders: if the LORD gives him the Ammonites, will he really be their leader?",
+          "question": "Before saying yes, Jephthah asks the elders whether he'll really be their leader if the LORD gives him the Ammonites.",
           "answers": [
             {
               "text": "True",
@@ -277,8 +277,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Judges 11:12",
-          "text": "Jephthah's in charge now. His first move? He sends messengers to the king of the Ammonites.",
-          "needs_agent_fix": true,
+          "text": "Jephthah's in charge now. Next, he sends messengers to the king of the Ammonites.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -317,7 +317,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 11:13",
-          "question": "What does the king of the Ammonites demand Israel do with that land?",
+          "question": "The king of the Ammonites claims Israel seized his land when they came up out of Egypt. What does he demand Israel do with it?",
           "answers": [
             {
               "text": "Give it back peaceably",
@@ -332,7 +332,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -378,15 +378,15 @@
           "question": "From Kadesh, Israel sends messengers to the kings of Edom and Moab asking to pass through. How do those two kings answer?",
           "answers": [
             {
-              "text": "Both refuse",
+              "text": "Both kings refuse",
               "correct": true
             },
             {
-              "text": "Both agree",
+              "text": "Both kings agree",
               "correct": false
             },
             {
-              "text": "Edom agrees and Moab refuses",
+              "text": "Only Edom refuses",
               "correct": false
             }
           ],
@@ -397,8 +397,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Judges 11:17-18",
-          "text": "So Israel stays in Kadesh, then goes the long way through the wilderness around Edom and Moab. A WHOLE nation on a detour. That's the GPS saying \"recalculating\" for MILES.",
-          "needs_agent_fix": true,
+          "text": "So Israel stays in Kadesh, then takes the long way through the wilderness around Edom and Moab. Ever had your GPS say \"recalculating\" and tack on MILES?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -428,7 +428,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Judges 11:19",
-          "text": "Next, Israel sends messengers to Sihon, king of the Amorites, who rules in Heshbon. Same polite ask: please let us pass through your land into our own place.",
+          "text": "Next, Israel sends messengers to Sihon, king of the Amorites, who rules in Heshbon. Another polite ask: please let us pass through your land into our own place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -437,15 +437,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 11:20",
-          "question": "Sihon king of the Amorites trusts Israel and lets them pass through his territory.",
+          "question": "Sihon king of the Amorites won't trust Israel to pass through his territory.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -456,18 +456,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 11:21",
-          "question": "Instead, Sihon gathers all his people at Jahaz and fights Israel. How does that battle end?",
+          "question": "So Sihon gathers all his people at Jahaz and fights Israel. How does that battle end?",
           "answers": [
             {
-              "text": "The LORD delivers Sihon into Israel's hand",
+              "text": "The LORD gives Israel the win",
               "correct": true
             },
             {
-              "text": "Sihon drives Israel back to Kadesh",
+              "text": "Sihon pushes Israel back to Kadesh",
               "correct": false
             },
             {
-              "text": "Moab steps in and stops the fight",
+              "text": "Moab steps in to stop the fight",
               "correct": false
             }
           ],
@@ -476,24 +476,9 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Judges 11:21",
-          "question": "Israel takes everything from the Arnon to the Jabbok, from the wilderness to the Jordan. Before Israel, the people living in that land were the ___.",
-          "answers": [
-            {
-              "text": "Amorites",
-              "correct": true
-            },
-            {
-              "text": "Philistines",
-              "correct": false
-            },
-            {
-              "text": "Edomites",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Judges 11:21-22",
+          "text": "So Israel takes all the land of the Amorites, from the Arnon to the Jabbok and from the wilderness to the Jordan. Friend, the king of the Ammonites called that same stretch HIS land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -538,7 +523,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Judges 11:25",
-          "text": "Then he brings up Balak son of Zippor, king of Moab, and asks if this king thinks he's so much better than Balak. Did Balak ever contend with Israel or fight against them?",
+          "text": "Then Jephthah asks the king of the Ammonites if he's so much better than Balak son of Zippor, king of Moab. Did Balak ever contend with Israel or fight against them?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -613,15 +598,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Judges 11:28",
-          "text": "Jephthah made his case, and the king ignored every word. Keep that oven warm, baker. We are NOT done with Jephthah yet.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Keep that oven warm, friend, because we are NOT done with Jephthah yet.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

@@ -8,32 +8,28 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Judges 4:1-2",
-          "text": "Ehud, the deliverer the LORD raised up for Israel (Judges 3:15), has died, and the Israelites AGAIN do evil in the sight of the LORD. AGAIN, friend, like hitting snooze on the same alarm. So the LORD sells them into the hand of Jabin, king of Canaan, who reigns in Hazor, and his army commander is Sisera.",
+          "verses": "Judges 4:1-3",
+          "text": "Ehud, the deliverer the LORD raised up for Israel (Judges 3:15), has died, and the Israelites AGAIN do evil in the sight of the LORD. So the LORD sells them into the hand of Jabin, king of Canaan, who reigns in Hazor, and his army commander is Sisera. Jabin has nine hundred chariots of iron, and he harshly oppresses the Israelites for twenty years.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Judges 4:3",
-          "question": "Jabin has harshly oppressed the Israelites for twenty years, and they cry out to the LORD. Jabin has nine hundred chariots of ___.",
+          "question": "Under Jabin's harsh rule, true or false: the Israelites cry out to the LORD.",
           "answers": [
             {
-              "text": "iron",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "gold",
-              "correct": false
-            },
-            {
-              "text": "bronze",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -95,7 +91,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 4:8",
-          "question": "Barak answers Deborah. True or false: Barak says he'll go whether Deborah comes along or not.",
+          "question": "Barak answers Deborah's call to march. True or false: Barak says he'll go whether Deborah comes along or not.",
           "answers": [
             {
               "text": "True",
@@ -113,7 +109,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Judges 4:9",
-          "text": "Deborah says, \"I will certainly go with you,\" but she adds that this road will bring Barak no honor. That's a yes with a BUT, friend, and the but is doing all the heavy lifting.",
+          "text": "Deborah says, \"I will certainly go with you,\" but she adds that this road will bring Barak no honor. That's like a boss saying, \"Sure, you can run the big project,\" and then adding, \"but somebody else gets the credit.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -144,30 +140,15 @@
           "card": 9,
           "kind": "story",
           "verses": "Judges 4:9-11",
-          "text": "So Deborah goes with Barak to Kedesh, and ten thousand men of Zebulun and Naphtali follow him. Meanwhile, Heber the Kenite has pitched his tent near Kedesh, so tuck that name in your apron pocket.",
+          "text": "So Deborah goes with Barak to Kedesh, and ten thousand men of Zebulun and Naphtali follow him. Now Heber the Kenite, from the family of Moses' father-in-law Hobab, has pitched his tent near Kedesh, so tuck that name in your apron pocket.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Judges 4:13",
-          "question": "Sisera hears that Barak has gone up Mount Tabor. What does Sisera do?",
-          "answers": [
-            {
-              "text": "Calls out all nine hundred iron chariots",
-              "correct": true
-            },
-            {
-              "text": "Sends Barak a message asking for peace",
-              "correct": false
-            },
-            {
-              "text": "Pulls his whole army back to Hazor",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Judges 4:12-13",
+          "text": "Sisera hears that Barak has gone up Mount Tabor. So he summons all nine hundred of his iron chariots and all his men to the River Kishon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -193,28 +174,24 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Judges 4:15",
-          "text": "And in front of Barak, the LORD routs Sisera, his charioteers and his whole army. Nine hundred iron chariots, friend, and they don't matter ONE crumb.",
+          "verses": "Judges 4:14-15",
+          "text": "Barak comes down from Mount Tabor with ten thousand men following him. And in front of him, the LORD routs Sisera, all his charioteers and all his army with the sword.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Judges 4:15",
-          "question": "With his army falling apart, what does Sisera himself do?",
+          "question": "With his army falling apart, true or false: Sisera abandons his chariot and runs away on foot.",
           "answers": [
             {
-              "text": "Leaves his chariot and runs on foot",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Surrenders to Barak on the field",
-              "correct": false
-            },
-            {
-              "text": "Hides in a cave with his officers",
+              "text": "False",
               "correct": false
             }
           ],
@@ -223,18 +200,10 @@
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Judges 4:16-17",
-          "text": "Barak chases the chariots and the army all the way to Harosheth-hagoyim, and not a single man is left. Meanwhile Sisera, Mr. Nine Hundred Iron Chariots himself, is hoofing it on FOOT to the tent of Jael, the wife of Heber the Kenite.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 4:17",
-          "question": "Why does Sisera run to the tent of Jael, the wife of Heber the Kenite?",
+          "question": "Barak chases Sisera's army as far as Harosheth-hagoyim, and not a single man is left. Sisera runs on foot to the tent of Jael, the wife of Heber the Kenite. Why does Sisera go there?",
           "answers": [
             {
               "text": "There was peace between Jabin and Heber",
@@ -253,46 +222,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
-          "verses": "Judges 4:18",
-          "text": "Jael goes out to greet him: \"Come in, my lord. Come in with me. Do not be afraid.\" So in he goes, and the man with nine hundred iron chariots ends up under a blanket.",
+          "verses": "Judges 4:18-19",
+          "text": "Jael welcomes Sisera into her tent and covers him with a blanket, and when he asks for a little water, she gives him milk. The commander of nine hundred iron chariots, friend, tucked under a BLANKET.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Judges 4:20",
+          "question": "Sisera tells Jael to stand at the entrance to the tent. If anyone comes and asks, 'Is there a man here?' what does Sisera want her to do?",
+          "answers": [
+            {
+              "text": "Tell them no",
+              "correct": true
+            },
+            {
+              "text": "Send them to Hazor",
+              "correct": false
+            },
+            {
+              "text": "Ask them to wait",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Judges 4:19",
-          "question": "Sisera asks for a little water because he's thirsty, but Jael opens a container of ___.",
-          "answers": [
-            {
-              "text": "milk",
-              "correct": true
-            },
-            {
-              "text": "wine",
-              "correct": false
-            },
-            {
-              "text": "oil",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "story",
-          "verses": "Judges 4:20-21",
-          "text": "Sisera tells her to stand at the entrance and say no if anyone asks, \"Is there a man here?\" But as he lies sleeping from exhaustion, Jael takes a tent peg and a hammer and drives the peg through his temple, and he dies.",
+          "verses": "Judges 4:21",
+          "text": "But as Sisera lies sleeping from exhaustion, Jael takes a tent peg and a hammer and goes silently to him. She drives the peg through his temple and into the ground, and he dies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 4:22",
@@ -315,7 +284,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Judges 4:23-24",
           "text": "On that day God subdues Jabin king of Canaan before the Israelites, and their hand grows stronger and STRONGER against him until they destroy him. Twenty years under those iron chariots, friend, and the LORD flips the whole thing.",
@@ -332,7 +301,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Judges 5:1-2",
-          "text": "Chapter 4 told the story, and now Deborah and Barak SING it. The song opens with a call to bless the LORD when the princes take the lead and the people volunteer.",
+          "text": "On that day Deborah and Barak break into SONG. It opens with a call to bless the LORD when the princes take the lead and the people volunteer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -391,18 +360,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 5:8",
-          "question": "The song says war came to Israel's gates. When did it come?",
+          "question": "The song says war came to Israel's gates. What did Israel choose before that happened?",
           "answers": [
             {
-              "text": "When they chose new gods",
+              "text": "New gods",
               "correct": true
             },
             {
-              "text": "When they broke a treaty with Edom",
+              "text": "A new king",
               "correct": false
             },
             {
-              "text": "When they stopped paying tribute",
+              "text": "New lands",
               "correct": false
             }
           ],
@@ -413,7 +382,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Judges 5:9-11",
-          "text": "Deborah's heart is with the volunteers. She tells everyone, from riders on white donkeys to folks on the road, to ponder the voices of the singers at the watering places.",
+          "text": "The singer's heart is with the princes and the volunteers. The song tells everyone, from riders on white donkeys to folks on the road, to ponder the voices of the singers at the watering places.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -440,27 +409,27 @@
           "card": 8,
           "kind": "story",
           "verses": "Judges 5:12-14",
-          "text": "Then comes \"Awake, awake, O Deborah!\" and the people of the LORD come down from Ephraim, Benjamin, Machir and Zebulun. This song does NOT believe in the snooze button, friend.",
+          "text": "Then comes the call, \"Awake, awake, O Deborah!\" and the people of the LORD come down to fight, from tribes like Ephraim, Benjamin and Zebulun.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Judges 5:15-16",
-          "question": "The princes of Issachar rush into the valley at Barak's heels. But the song asks Reuben why he sat among the sheepfolds to hear the whistling for the flocks. In the clans of Reuben there was great ___.",
+          "question": "The princes of Issachar rush into the valley at Barak's heels. Then the song turns to the clans of Reuben, who sat among the sheepfolds to hear the whistling for the flocks. What does the song say was in the clans of Reuben?",
           "answers": [
             {
-              "text": "indecision",
+              "text": "Great indecision",
               "correct": true
             },
             {
-              "text": "courage",
+              "text": "Great courage",
               "correct": false
             },
             {
-              "text": "rejoicing",
+              "text": "Great rejoicing",
               "correct": false
             }
           ],
@@ -498,7 +467,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Judges 5:19",
-          "text": "The kings of Canaan come and fight at Taanach by the waters of Megiddo, but they take no plunder of silver. I bet they came expecting a payday, friend, and they went home with an EMPTY cookie box.",
+          "text": "The kings of Canaan come and fight at Taanach by the waters of Megiddo, but they take no plunder of silver.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -529,7 +498,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Judges 5:21-22",
-          "text": "The River Kishon, that ANCIENT river, sweeps them away, so never underestimate something old, friend, I'm living proof. Then the hooves of horses thunder with the mad galloping of his stallions.",
+          "text": "The River Kishon, that ancient river, sweeps them away, and the song cries, \"March on, O my soul, in strength!\" Then the hooves of horses thunder with the mad galloping of his stallions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -538,7 +507,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 5:23",
-          "question": "In the song, the angel of the LORD says to curse Meroz. Why?",
+          "question": "In the song, the angel of the LORD says to curse Meroz and her inhabitants. Why?",
           "answers": [
             {
               "text": "They didn't come to help the LORD",
@@ -560,7 +529,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Judges 5:24-25",
-          "text": "The song turns to Jael, \"most blessed of tent-dwelling women,\" who gave Sisera milk when he asked for water. Curds in a magnificent bowl, friend, he got the FANCY dish.",
+          "text": "The song calls Jael \"most blessed of tent-dwelling women.\" Sisera asked for water, and she gave him milk and brought him curds in a magnificent bowl, the FANCY dish, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -577,7 +546,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 5:28",
-          "question": "Far from the battle, someone peers through the lattice and asks, \"Why is his chariot so long in coming?\" Who is it?",
+          "question": "Someone looks through the window, peers through the lattice and asks, \"Why is his chariot so long in coming?\" Who is it?",
           "answers": [
             {
               "text": "Sisera's mother",
@@ -597,33 +566,33 @@
         },
         {
           "card": 19,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Judges 5:29-30",
-          "text": "Her wisest ladies answer, and she keeps telling herself the warriors must be finding and dividing the spoil. But we know what happened in that tent, friend.",
+          "question": "Sisera's mother is still waiting at the window for his chariots. Her wisest ladies answer, and she keeps telling herself something. What does she tell herself?",
+          "answers": [
+            {
+              "text": "They're dividing up the spoil",
+              "correct": true
+            },
+            {
+              "text": "He stopped to rest on the way",
+              "correct": false
+            },
+            {
+              "text": "The rain has slowed the chariots",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Judges 5:31",
-          "question": "The song closes: \"So may all Your enemies perish, O LORD! But may those who love You shine like the sun at its brightest.\" After all this, the land has rest for ___ years.",
-          "answers": [
-            {
-              "text": "forty",
-              "correct": true
-            },
-            {
-              "text": "eighty",
-              "correct": false
-            },
-            {
-              "text": "seven",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The song closes asking that all the LORD's enemies perish and that those who love Him shine like the sun at its brightest. And the land has rest for forty years.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

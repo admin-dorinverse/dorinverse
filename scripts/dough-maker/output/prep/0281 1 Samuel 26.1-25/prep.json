@@ -9,38 +9,34 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 26:1",
-          "text": "Saul, Israel’s king, has been chasing David for a while now, and David already let him go once, in a cave (1 Samuel 24). Now the Ziphites, people from around Ziph, show up at Saul’s place in Gibeah with a tip. Isn’t David hiding on the hill of Hachilah, opposite Jeshimon?",
+          "text": "Saul, Israel’s king, has been hunting David day after day (1 Samuel 23:14), and David already spared him once, in a cave (1 Samuel 24). Now the Ziphites, people from around Ziph, show up at Saul’s place in Gibeah with a tip. Isn’t David hiding on the hill of Hachilah, opposite Jeshimon?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "1 Samuel 26:2",
-          "question": "Saul goes down to the Wilderness of Ziph to search for David, and he takes ___ chosen men of Israel with him.",
+          "question": "The Ziphites tell Saul that David is hiding on the hill of Hachilah. Saul decides to stay home in Gibeah.",
           "answers": [
             {
-              "text": "three thousand",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "six hundred",
-              "correct": false
-            },
-            {
-              "text": "four hundred",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 26:2-3",
-          "text": "Three THOUSAND men to find ONE guy on ONE hill! Saul camps beside the road at Hachilah, and out in the wilderness, David realizes Saul has followed him there.",
+          "text": "Saul brings three thousand chosen men of Israel down to the Wilderness of Ziph and camps beside the road at Hachilah. Three THOUSAND men to find ONE guy on ONE hill!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +45,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 26:4",
-          "question": "Before he makes a move, David sends out spies to make sure Saul has really arrived.",
+          "question": "Out in the wilderness, David realizes Saul has followed him. David sends out spies to make sure Saul has really arrived.",
           "answers": [
             {
               "text": "True",
@@ -74,20 +70,20 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 26:5",
-          "question": "With three thousand troops in Saul’s camp, where is the king himself lying down?",
+          "question": "With three thousand troops in the camp, Saul himself is lying inside the ___ of the camp.",
           "answers": [
             {
-              "text": "Inside the inner circle of the camp",
+              "text": "inner circle",
               "correct": true
             },
             {
-              "text": "Out at the far edge of the camp",
+              "text": "far edge",
               "correct": false
             },
             {
-              "text": "Off by himself up on the hill",
+              "text": "back corner",
               "correct": false
             }
           ],
@@ -98,7 +94,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 26:6",
-          "text": "David turns to Ahimelech the Hittite and Abishai son of Zeruiah, Joab’s brother, and asks who will go down with him to Saul in the camp. Friend, a walk into a camp of three thousand soldiers isn’t a question, it’s a DARE.",
+          "text": "David turns to Ahimelech the Hittite (not Ahimelech the priest) and Abishai son of Zeruiah, Joab’s brother. He asks which of them will go down with him to Saul in the camp.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -107,7 +103,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 26:6",
-          "question": "David asks Ahimelech and Abishai who will go down with him into Saul’s camp. Who says yes?",
+          "question": "David asks Ahimelech the Hittite and Abishai who will go down with him into Saul’s camp. Who says yes?",
           "answers": [
             {
               "text": "Only Abishai",
@@ -136,20 +132,16 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Samuel 26:8",
-          "question": "Abishai is standing over the sleeping king, with Saul’s own spear right there. What does Abishai want to do?",
+          "question": "Standing over the sleeping king, Abishai asks David to let him strike Saul down with one stroke.",
           "answers": [
             {
-              "text": "Pin Saul to the ground with the spear",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Tie Saul up and carry him off",
-              "correct": false
-            },
-            {
-              "text": "Wake Saul up and make him surrender",
+              "text": "False",
               "correct": false
             }
           ],
@@ -160,7 +152,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Samuel 26:8",
-          "text": "Abishai says, “Today God has delivered your enemy into your hand.” He asks David to let him do it in one stroke, no second try needed, and friend, back when my edges were worn down, I never stamped ANYTHING that confidently.",
+          "text": "Abishai says, “Today God has delivered your enemy into your hand.” He wants to thrust the spear through Saul into the ground, and he says he won’t need to strike Saul twice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -189,9 +181,24 @@
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 26:10",
-          "text": "David adds that the LORD Himself will strike Saul down. Either Saul’s day will come and he’ll die, or he’ll go into battle and perish.",
+          "question": "David says the LORD Himself will strike Saul down: either Saul’s day will come and he will die, or he will go into ___ and perish.",
+          "answers": [
+            {
+              "text": "battle",
+              "correct": true
+            },
+            {
+              "text": "exile",
+              "correct": false
+            },
+            {
+              "text": "hiding",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -200,7 +207,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 26:11",
-          "question": "David tells Abishai to leave everything by Saul’s head untouched and just walk away.",
+          "question": "David won’t let Abishai strike Saul. He tells Abishai to leave everything by Saul’s head untouched and just walk away.",
           "answers": [
             {
               "text": "True",
@@ -216,40 +223,29 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Samuel 26:11",
-          "question": "David tells Abishai to take the spear and the ___ by Saul’s head instead, and then they’ll go.",
-          "answers": [
-            {
-              "text": "water jug",
-              "correct": true
-            },
-            {
-              "text": "royal robe",
-              "correct": false
-            },
-            {
-              "text": "bronze shield",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "David says the LORD forbid that he should extend his hand against the LORD’s anointed. He tells Abishai to take the spear and water jug by Saul’s head, and then they’ll go.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Samuel 26:12",
-          "question": "As David and Abishai leave with the spear and water jug, nobody in Saul’s camp wakes up, because a deep sleep from the LORD has fallen on them.",
+          "question": "David and Abishai head out with Saul’s spear and water jug, and nobody in the camp notices. Why not?",
           "answers": [
             {
-              "text": "True",
+              "text": "The LORD sent a deep sleep on them",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "The troops were worn out from marching",
+              "correct": false
+            },
+            {
+              "text": "The guards were off at the far end",
               "correct": false
             }
           ],
@@ -274,7 +270,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 26:13",
-          "text": "David crosses to the other side and stands on top of the mountain, way off in the distance, with a wide gulf between them. Smart man, because if you’ve got something to shout at a camp full of soldiers and their king, you do it from ACROSS a gulf.",
+          "text": "David crosses to the other side and stands on top of the mountain at a distance. There’s a wide gulf between them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -332,40 +328,15 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Samuel 26:16",
-          "text": "David says what Abner has done is not good, and all of them deserve to die for not protecting the LORD’s anointed. Then comes the line I use every time my sprinkles go missing: “Now look around.”",
+          "text": "David tells Abner this thing he has done is not good. As surely as the LORD lives, David says, all of them deserve to die, since they did not protect their lord, the LORD’s anointed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Samuel 26:16",
-          "question": "David asks Abner where the king’s ___ and water ___ are, the ones that were by his head.",
-          "answers": [
-            {
-              "text": "spear",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "jug",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "sword",
-              "correct": false
-            },
-            {
-              "text": "crown",
-              "correct": false
-            },
-            {
-              "text": "robe",
-              "correct": false
-            }
-          ],
+          "text": "Then comes the line I use every time my sprinkles go missing: “Now look around.” And David asks, “Where are the king’s spear and water jug that were by his head?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -374,15 +345,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 26:17",
-          "question": "Over in Saul’s camp, Abner is the one who recognizes David’s voice.",
+          "question": "When David’s voice carries across the gulf, it’s Saul himself who recognizes it.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -391,20 +362,20 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 26:18",
-          "question": "Saul recognizes David’s voice and calls him David my son, and David answers him as his lord and king. Then what does David ask the king?",
+          "question": "Saul calls out, “Is that your voice, David my son?” David says it is. Then David asks why his lord is ___ his servant.",
           "answers": [
             {
-              "text": "Why are you pursuing me",
+              "text": "pursuing",
               "correct": true
             },
             {
-              "text": "Will you make me your general",
+              "text": "rewarding",
               "correct": false
             },
             {
-              "text": "Can I come back to Gibeah",
+              "text": "summoning",
               "correct": false
             }
           ],
@@ -415,7 +386,7 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Samuel 26:18-19",
-          "text": "David keeps going: what has he done, and what evil is in his hand? If the LORD stirred Saul up against him, may He accept an offering, but if men did it, may they be cursed in the presence of the LORD, and I bet that’s a man who KNOWS his hands are clean.",
+          "text": "David keeps going: what has he done, and what evil is in his hand? If the LORD stirred Saul up against him, may He accept an offering, but if men did it, may they be cursed in the presence of the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -424,18 +395,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 26:19",
-          "question": "David says that if men are the ones who stirred Saul up, they have driven him away today, telling him to go serve other gods. Driven him away from sharing in what?",
+          "question": "If men stirred Saul up, David says they have driven him away today from sharing in the inheritance of the LORD. What does David say they’re telling him to do?",
           "answers": [
             {
-              "text": "The inheritance of the LORD",
+              "text": "Go serve other gods",
               "correct": true
             },
             {
-              "text": "The riches of the king",
+              "text": "Go back to his father’s house",
               "correct": false
             },
             {
-              "text": "The feasts at Gibeah",
+              "text": "Go live in another land",
               "correct": false
             }
           ],
@@ -445,20 +416,20 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 26:20",
-          "question": "David asks Saul not to let his blood fall far from the presence of the LORD. Then he says the king of Israel has come out, like someone hunting a partridge in the mountains, to look for what?",
+          "question": "David asks Saul not to let his blood fall far from the presence of the LORD. He says the king of Israel has come out to look for a ___, like one who hunts a partridge in the mountains.",
           "answers": [
             {
-              "text": "A flea",
+              "text": "flea",
               "correct": true
             },
             {
-              "text": "A lion",
+              "text": "lion",
               "correct": false
             },
             {
-              "text": "A giant",
+              "text": "giant",
               "correct": false
             }
           ],
@@ -505,7 +476,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 26:22",
-          "question": "David crosses back over the gulf and hands Saul’s spear back to him himself.",
+          "question": "David crosses back over the gulf to hand Saul his spear in person.",
           "answers": [
             {
               "text": "True",
@@ -531,27 +502,27 @@
           "card": 17,
           "kind": "story",
           "verses": "1 Samuel 26:23",
-          "text": "Then David says, “May the LORD repay every man for his righteousness and faithfulness.” The LORD delivered Saul into his hand today, and for the SECOND time, David would not extend his hand against the LORD’s anointed.",
+          "text": "Then David says, “May the LORD repay every man for his righteousness and faithfulness.” The LORD delivered Saul into his hand today, and for the SECOND time (1 Samuel 24), David would not extend his hand against the LORD’s anointed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Samuel 26:24",
-          "question": "David says that as surely as he valued Saul’s life today, so may the ___ value his life and rescue him from all trouble.",
+          "question": "David says he valued Saul’s life today. What does David ask the LORD for in return?",
           "answers": [
             {
-              "text": "LORD",
+              "text": "To treat David’s life as precious too",
               "correct": true
             },
             {
-              "text": "king",
+              "text": "To give David the throne right away",
               "correct": false
             },
             {
-              "text": "people",
+              "text": "To punish Saul for the long chase",
               "correct": false
             }
           ],
@@ -563,18 +534,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 26:25",
-          "question": "Saul blesses David and tells him he will accomplish great things and will surely prevail. After that, where do the two of them go?",
+          "question": "Saul tells David, “May you be blessed, David my son.” He says David will accomplish great things and will surely prevail. After that, what do David and Saul each do?",
           "answers": [
             {
-              "text": "David leaves and Saul goes home",
+              "text": "David goes his way and Saul goes home",
               "correct": true
             },
             {
-              "text": "Both go back to Gibeah",
+              "text": "David and Saul travel home together",
               "correct": false
             },
             {
-              "text": "David joins Saul’s camp",
+              "text": "David goes back into the king’s camp",
               "correct": false
             }
           ],
@@ -585,7 +556,7 @@
           "card": 20,
           "kind": "story",
           "verses": "1 Samuel 26:25",
-          "text": "Two men, two different roads, and that’s a LONG way from three thousand soldiers, friend. But hang on to your apron, because this story is still in the oven.",
+          "text": "Hang on to your apron, friend, because this story is still in the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

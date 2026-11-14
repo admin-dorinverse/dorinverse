@@ -10,77 +10,50 @@
           "kind": "story",
           "verses": "Judges 10:1-5",
           "text": "After the time of Abimelech, Gideon's son who ruled Israel (Judges 8:31; 9:22), Tola of Issachar rises up to save Israel and judges twenty-three years, and then Jair the Gileadite judges twenty-two. Jair has thirty sons who ride thirty donkeys and have thirty towns in Gilead. Friend, I can't count a dozen cookies into a box without coming up one short, and this man has thirty of EVERYTHING.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Judges 10:6",
-          "text": "And then comes the word nobody wants to see in Judges: again.",
-          "needs_agent_fix": true,
+          "text": "And again the Israelites do evil in the sight of the LORD, serving the Baals, the Ashtoreths, and the gods of Aram, Sidon, Moab, the Ammonites and the Philistines. That's not wandering off, friend, that's signing up for EVERY loyalty card in town.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 10:6",
-          "question": "Once again, the Israelites do evil in the sight of the LORD. What do they serve?",
+          "question": "Serving all those gods, the Israelites ___ the LORD and do not serve Him.",
           "answers": [
             {
-              "text": "The Baals and gods of many nations",
+              "text": "forsake",
               "correct": true
             },
             {
-              "text": "The golden calves at Dan and Bethel",
+              "text": "fear",
               "correct": false
             },
             {
-              "text": "The gods their fathers served in Egypt",
+              "text": "praise",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Judges 10:6",
-          "text": "The Baals, the Ashtoreths, the gods of Aram, Sidon and Moab, and the gods of the Ammonites and Philistines. Friend, that's not wandering off, that's signing up for EVERY loyalty card in town.",
-          "needs_agent_fix": true,
+          "verses": "Judges 10:7",
+          "text": "So the anger of the LORD burns against Israel. He sells them into the hands of two nations.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Judges 10:6",
-          "question": "Along with all those other gods, the Israelites keep serving the LORD too.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Judges 10:7",
-          "text": "So the anger of the LORD burns against Israel. He sells them into the hands of two nations at once.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 10:7",
@@ -91,19 +64,19 @@
               "correct": true
             },
             {
-              "text": "The Egyptians and Amalekites",
+              "text": "The Midianites and Edomites",
               "correct": false
             },
             {
-              "text": "The Moabites and Midianites",
+              "text": "The Hittites and Jebusites",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 10:8",
@@ -122,7 +95,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -142,20 +115,20 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 10:10",
-          "question": "Israel is in deep distress. What do the Israelites do?",
+          "question": "With Israel in deep distress, the Israelites ___ to the LORD.",
           "answers": [
             {
-              "text": "They cry out to the LORD",
+              "text": "cry out",
               "correct": true
             },
             {
-              "text": "They make peace with Ammon",
+              "text": "sing praises",
               "correct": false
             },
             {
-              "text": "They ask Egypt for help",
+              "text": "bring gifts",
               "correct": false
             }
           ],
@@ -181,21 +154,17 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Judges 10:12",
-          "question": "The LORD names the nations that oppressed Israel before. What does He say happened when Israel cried out to Him?",
+          "question": "The LORD says that when those nations oppressed Israel and Israel cried out to Him, He left them in their hands.",
           "answers": [
             {
-              "text": "He saved them from their hands",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "He left them there for good",
-              "correct": false
-            },
-            {
-              "text": "He sent them a king instead",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -204,20 +173,20 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 10:13",
-          "question": "But now Israel has forsaken the LORD and served other gods. What does the LORD say He will do?",
+          "question": "But Israel has forsaken the LORD and served other gods, so He says He will ___ save them.",
           "answers": [
             {
-              "text": "No longer save them",
+              "text": "no longer",
               "correct": true
             },
             {
-              "text": "Save them one last time",
+              "text": "always",
               "correct": false
             },
             {
-              "text": "Save them after seven years",
+              "text": "quickly",
               "correct": false
             }
           ],
@@ -237,18 +206,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 10:15",
-          "question": "After the LORD tells them to cry out to the gods they've chosen, how do the Israelites answer Him?",
+          "question": "After the LORD tells them to cry out to the gods they've chosen, what do the Israelites ask Him to do?",
           "answers": [
             {
-              "text": "They confess again and beg Him",
+              "text": "Deliver them today",
               "correct": true
             },
             {
-              "text": "They go cry out to the Baals",
+              "text": "Give them more time",
               "correct": false
             },
             {
-              "text": "They argue they never left Him",
+              "text": "Send them a king",
               "correct": false
             }
           ],
@@ -258,9 +227,9 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Judges 10:15",
+          "verses": "Judges 10:8, 15",
           "text": "They tell the LORD, “We have sinned,” and then, “Deal with us as You see fit; but please deliver us today!” I bet after eighteen years, TODAY was the only word that mattered.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -268,18 +237,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 10:16",
-          "question": "Words are one thing. What do the Israelites do with the foreign gods among them?",
+          "question": "Words are one thing. What do the Israelites do about the foreign gods among them?",
           "answers": [
             {
-              "text": "They put them away",
+              "text": "They put them away and serve the LORD",
               "correct": true
             },
             {
-              "text": "They hide them in their tents",
+              "text": "They hide them and keep serving them",
               "correct": false
             },
             {
-              "text": "They carry them to Mizpah",
+              "text": "They carry them along into battle",
               "correct": false
             }
           ],
@@ -291,7 +260,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 10:16",
-          "question": "The Israelites serve the LORD, and He can no longer bear the misery of Israel.",
+          "question": "Now the LORD can no longer bear the misery of Israel.",
           "answers": [
             {
               "text": "True",

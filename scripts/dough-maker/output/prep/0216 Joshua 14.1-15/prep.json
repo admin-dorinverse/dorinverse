@@ -8,36 +8,40 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Joshua 14:1",
-          "text": "The Israelites are about to get their portions of the land of Canaan. Handing them out are Eleazar the priest, Joshua son of Nun, Israel's leader, and the heads of the families of the tribes. Picture dividing up one cookie tray for a whole NATION, friend, with everybody leaning in to see who gets the corner piece.",
-          "needs_agent_fix": true,
+          "verses": "Joshua 14:1-2",
+          "text": "These are the portions of Canaan the Israelites inherit, handed out by Eleazar the priest, Joshua son of Nun, Israel's leader, and the heads of the families of the tribes. The land for nine and a half tribes is assigned by lot, as the LORD commanded through Moses, Israel's leader before Joshua. Picture dividing up one cookie tray for a whole NATION, friend, with everybody leaning in to see who gets the corner piece.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Joshua 14:2",
-          "question": "True or false: The land for the nine and a half tribes is assigned by lot, as the LORD commanded through Moses, Israel's leader before Joshua.",
+          "type": "multiple_choice",
+          "verses": "Joshua 14:3",
+          "question": "Only nine and a half tribes get land by lot here. Why not the other two and a half tribes?",
           "answers": [
             {
-              "text": "True",
+              "text": "Moses already gave them land east of the Jordan",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "They will get the land left over at the end",
+              "correct": false
+            },
+            {
+              "text": "They have to win their land in battle first",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Joshua 14:3-4",
-          "text": "Why nine and a half? Moses already gave the other two and a half tribes their land east of the Jordan, and Joseph's descendants became two tribes, Manasseh and Ephraim, so Joseph basically showed up with a plus-one.",
-          "needs_agent_fix": true,
+          "verses": "Joshua 14:4",
+          "text": "The descendants of Joseph became two tribes, Manasseh and Ephraim. So Joseph basically showed up with a plus-one.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -45,7 +49,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 14:4",
-          "question": "One tribe is different. The Levites get no portion of the land, except ___ to live in, along with ___ for their flocks and herds.",
+          "question": "The Levites get no portion of the land, only ___ to live in, with pasturelands for their flocks and herds.",
           "answers": [
             {
               "text": "cities",
@@ -53,126 +57,97 @@
               "blank": 1
             },
             {
-              "text": "pasturelands",
-              "correct": true,
-              "blank": 2
-            },
-            {
               "text": "tents",
               "correct": false
             },
             {
-              "text": "wells",
-              "correct": false
-            },
-            {
-              "text": "barns",
+              "text": "caves",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Joshua 14:5",
-          "text": "So the Israelites divide the land, just as the LORD commanded Moses. That's one BIG tray, friend, and it's getting cut.",
-          "needs_agent_fix": true,
+          "verses": "Joshua 14:5-6",
+          "text": "So the Israelites divide the land, just as the LORD commanded Moses. Then the sons of Judah come to Joshua at Gilgal, and Caleb son of Jephunneh the Kenizzite walks up like someone who held onto his receipt: \"You know what the LORD said to Moses the man of God at Kadesh-barnea about you and me.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Joshua 14:6",
-          "text": "Then the sons of Judah come to Joshua at Gilgal, and Caleb son of Jephunneh the Kenizzite, one of Judah's own, walks up like someone who held onto his receipt: \"You know what the LORD said to Moses the man of God at Kadesh-barnea about you and me.\"",
-          "needs_agent_fix": true,
+          "verses": "Joshua 14:7",
+          "text": "Caleb was forty years old when Moses the servant of the LORD sent him from Kadesh-barnea to spy out the land, and he says he brought back an honest report.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Joshua 14:7",
-          "question": "Caleb was forty years old when Moses sent him from Kadesh-barnea to spy out the land. Caleb says he brought Moses back an ___ report.",
+          "type": "multiple_choice",
+          "verses": "Joshua 14:8",
+          "question": "Caleb says his brothers who went with him made the hearts of the people melt with fear. What does Caleb say he did?",
           "answers": [
             {
-              "text": "honest",
-              "correct": true,
-              "blank": 1
+              "text": "He remained loyal to the LORD",
+              "correct": true
             },
             {
-              "text": "alarming",
+              "text": "He stayed quiet in the camp",
               "correct": false
             },
             {
-              "text": "unfinished",
+              "text": "He went back to spy again",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Joshua 14:8",
-          "question": "True or false: Caleb says he joined the other spies in making the hearts of the people melt with fear.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Joshua 14:9",
+          "text": "Caleb says that on that day, Moses swore him a promise about land.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Joshua 14:8-9",
-          "text": "The other spies had the people's hearts melting like chocolate chips on a hot tray, but Caleb remained loyal to the LORD his God. He says that on that day, Moses swore to him that the land his feet had touched would be an inheritance for him and his children forever.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Joshua 14:9",
+          "question": "Moses swore that one stretch of land would be an inheritance for Caleb and his children forever. Which land?",
+          "answers": [
+            {
+              "text": "The land his feet had walked on",
+              "correct": true
+            },
+            {
+              "text": "The land beside the Jordan",
+              "correct": false
+            },
+            {
+              "text": "The land around Gilgal",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Joshua 14:9",
-          "question": "Why does Moses promise Caleb that land?",
-          "answers": [
-            {
-              "text": "Because Caleb followed the LORD completely",
-              "correct": true
-            },
-            {
-              "text": "Because Caleb was the oldest of the spies",
-              "correct": false
-            },
-            {
-              "text": "Because Caleb went ahead of the other spies",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Joshua 14:9-10",
+          "text": "Moses gave the reason: \"…because you have wholly followed the LORD my God.\" Forty-five YEARS later, Caleb says the LORD has kept him alive, as He promised, while Israel wandered in the wilderness.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Joshua 14:10",
-          "text": "Caleb says that, as the LORD promised, He has kept him alive forty-five years since then, while Israel wandered in the wilderness. Forty-five YEARS holding onto a promise, and I stare at a twelve-minute oven timer like it owes me money.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 14:10",
@@ -191,11 +166,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 14:11",
@@ -210,42 +185,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Joshua 14:12",
+          "text": "Now Caleb asks for the hill country the LORD promised him that day, and he reminds Joshua that the Anakim were there, with great and fortified cities. Friend, they slid ME into a junk drawer when my edges went soft, and this man wants the HILL COUNTRY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Joshua 14:11-12",
-          "text": "Strong for war, for going out and for coming in, and now Caleb makes his ask: give him the hill country the LORD promised him on that day, since Joshua heard back then who was living up there. Friend, they slid ME into a junk drawer when my edges went soft, and this man wants the HILL COUNTRY.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Joshua 14:12",
-          "question": "Who does Caleb say lives in the hill country he's asking Joshua for?",
-          "answers": [
-            {
-              "text": "The Anakim",
-              "correct": true
-            },
-            {
-              "text": "The Philistines",
-              "correct": false
-            },
-            {
-              "text": "The Amalekites",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 14:12",
@@ -264,70 +216,66 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Joshua 14:13",
+          "question": "True or false: Joshua turns Caleb down and gives that hill country to another tribe.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "Joshua 14:13-14",
+          "text": "Joshua blesses Caleb son of Jephunneh and gives him Hebron as his inheritance. It still belonged to Caleb when this was written, because he wholly followed the LORD, the God of Israel.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Joshua 14:13",
-          "question": "Joshua blesses Caleb son of Jephunneh and gives him ___ as his inheritance.",
+          "verses": "Joshua 14:15",
+          "question": "Hebron used to be called Kiriath-arba, after Arba, the greatest man among the ___.",
           "answers": [
             {
-              "text": "Hebron",
+              "text": "Anakim",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Jericho",
+              "text": "Amorites",
               "correct": false
             },
             {
-              "text": "Gilgal",
+              "text": "Philistines",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
-          "verses": "Joshua 14:14-15",
-          "text": "Hebron belongs to Caleb to this day, because he wholly followed the LORD, the God of Israel. And get this: Hebron used to be called Kiriath-arba, after a man named Arba.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Joshua 14:15",
-          "question": "Who was Arba, the man Kiriath-arba was named after?",
-          "answers": [
-            {
-              "text": "The greatest man among the Anakim",
-              "correct": true
-            },
-            {
-              "text": "The king of the Amorites",
-              "correct": false
-            },
-            {
-              "text": "The captain of Pharaoh's guard",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
-          "verses": "Joshua 14:15",
-          "text": "Then the land had rest from war. Caleb held onto one promise for forty-five years, and here it is, friend, with his name on it.",
-          "needs_agent_fix": true,
+          "text": "Then the land had rest from war. You know that moment when the oven finally clicks off and the whole kitchen goes quiet? THAT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

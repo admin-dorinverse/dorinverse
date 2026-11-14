@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Judges 1:21",
-          "text": "The tribes of Israel are out claiming the land, one tribe at a time. Now we check in on the tribe of Benjamin. The Jebusites are living in Jerusalem, and they need to be driven out.",
+          "text": "After the death of Joshua, Israel's leader, the tribes of Israel go up to fight the Canaanites for the land (Judges 1:1-19). Now we check in on the tribe of Benjamin. The Jebusites are living in Jerusalem, and they need to be driven out.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -30,15 +30,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Judges 1:21",
-          "text": "So to this day, the Jebusites live right there among the Benjamites. Friend, that's not a move-out. That's a ROOMMATE.",
+          "text": "So the Jebusites are still living right there among the Benjamites when this was written. Friend, that's not an eviction, that's a ROOMMATE.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -70,20 +70,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 1:23",
-          "question": "Before the attack on Bethel, what does the house of Joseph send?",
+          "question": "Before the attack on Bethel, the house of Joseph sends ___ to the city.",
           "answers": [
             {
-              "text": "Spies",
-              "correct": true
+              "text": "spies",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Priests",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "Messengers",
+              "text": "messengers",
               "correct": false
             }
           ],
@@ -174,20 +175,21 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 1:26",
-          "question": "After Bethel falls, the man goes to the land of the Hittites. What does he do there?",
+          "question": "After Bethel falls, the man goes to the land of the Hittites and builds a ___.",
           "answers": [
             {
-              "text": "Builds a city named Luz",
-              "correct": true
+              "text": "city",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Joins the Hittite army",
+              "text": "temple",
               "correct": false
             },
             {
-              "text": "Sends word back to Bethel",
+              "text": "tower",
               "correct": false
             }
           ],
@@ -198,7 +200,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Judges 1:26",
-          "text": "And Luz is its name to this day. The man lost his city, so he went and built himself a SEQUEL.",
+          "text": "He calls it Luz, and that's still its name when this was written. The man lost his city, so he went and built himself a SEQUEL.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -206,7 +208,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Judges 1:27",
-          "text": "Now Manasseh, with five towns on the list: Beth-shean, Taanach, Dor, Ibleam and Megiddo. Five towns, and Manasseh drives the people out of exactly ZERO.",
+          "text": "Now the tribe of Manasseh, with five towns and their villages on the list: Beth-shean, Taanach, Dor, Ibleam and Megiddo. Five towns, and Manasseh drives the people out of exactly ZERO.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -280,37 +282,41 @@
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Judges 1:34",
-          "question": "Then there's the tribe of Dan, up against the Amorites. What do the Amorites do to the Danites?",
+          "text": "Then the tribe of Dan runs into the Amorites, another people of the land. The Amorites force the Danites up into the hill country.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Judges 1:34",
+          "question": "The Amorites let the tribe of Dan come down into the plain.",
           "answers": [
             {
-              "text": "Force them into the hill country",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Push them out to the coast",
-              "correct": false
-            },
-            {
-              "text": "Drive them across the Jordan",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "story",
           "verses": "Judges 1:34",
-          "text": "They won't even let Dan come down into the plain. That's like moving into your new house and the old owners make you live in the ATTIC.",
+          "text": "Stuck up in the hills, shut out of the plain. That's like buying a new house, and the old owners make you live in the ATTIC.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "story",
           "verses": "Judges 1:35",
           "text": "The Amorites are determined to dwell in Mount Heres, Aijalon and Shaalbim. But then the house of Joseph grows in strength.",
@@ -318,7 +324,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 1:35",
@@ -337,81 +343,68 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "Judges 1:35-36",
-          "text": "They press the Amorites into forced labor instead. And the border of the Amorites extended from the Ascent of Akrabbim to Sela and beyond.",
+          "text": "They press the Amorites into forced labor instead. And the Amorites' border runs from the Ascent of Akrabbim to Sela and beyond.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "Judges 2:1",
-          "text": "Now the scene changes. The angel of the LORD goes up from Gilgal to another place, and he has something to say.",
+          "text": "Now the scene changes. The angel of the LORD goes up from Gilgal to Bochim and says, 'I brought you up out of Egypt and led you into the land that I had promised to your fathers…'",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Judges 2:1",
-          "question": "Speaking as 'I,' the angel of the LORD starts with what was done for Israel. What comes first?",
+          "question": "The angel of the LORD says God promised He would never break His covenant with Israel.",
           "answers": [
             {
-              "text": "Brought them up out of Egypt",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Gave them a king to lead them",
-              "correct": false
-            },
-            {
-              "text": "Made them a great army",
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Judges 2:1",
-          "text": "The angel goes on: he led them into the land promised to their fathers. And he reminds them what he said back then, that he would never break his covenant with them.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Judges 2:2",
-          "question": "The angel says Israel was not to make a covenant with the people of this land. Instead, they were to tear down their ___.",
+          "question": "The angel says Israel was not to make a covenant with the people of this land. What were they to do with those people's altars?",
           "answers": [
             {
-              "text": "altars",
-              "correct": true,
-              "blank": 1
+              "text": "Tear them down",
+              "correct": true
             },
             {
-              "text": "walls",
+              "text": "Leave them standing",
               "correct": false
             },
             {
-              "text": "towers",
+              "text": "Take them for Israel",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Judges 2:2",
-          "text": "Then the angel says, 'Yet you have not obeyed My voice. What is this you have done?' Friend, NOBODY hears 'What is this you have done?' and thinks they're about to get a raise.",
+          "text": "Then the angel says, 'Yet you have not obeyed My voice. What is this you have done?' I bet that one stung.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -420,18 +413,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 2:3",
-          "question": "Because Israel didn't obey, what does the angel say 'I will not' do now?",
+          "question": "Because Israel didn't obey, what does the angel of the LORD say will no longer happen?",
           "answers": [
             {
-              "text": "Drive out these people before them",
+              "text": "The people of the land will not be driven out",
               "correct": true
             },
             {
-              "text": "Speak to them through prophets",
+              "text": "Prophets will not speak to Israel",
               "correct": false
             },
             {
-              "text": "Send rain on their fields",
+              "text": "Rain will not fall on Israel's fields",
               "correct": false
             }
           ],
@@ -443,7 +436,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 2:3",
-          "question": "The angel says the people of the land will be thorns in Israel's sides, and their gods will be a snare.",
+          "question": "The angel says the people of the land will be thorns in Israel's sides.",
           "answers": [
             {
               "text": "True",
@@ -461,39 +454,67 @@
           "card": 14,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Judges 2:4",
-          "question": "When the angel of the LORD finishes speaking to all the Israelites, the people lift up their voices and ___.",
+          "verses": "Judges 2:3",
+          "question": "The angel also says the gods of the people of the land will be a ___ to Israel.",
           "answers": [
             {
-              "text": "wept",
+              "text": "snare",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "sang",
+              "text": "shield",
               "correct": false
             },
             {
-              "text": "cheered",
+              "text": "blessing",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Judges 2:5",
-          "question": "The people name that place Bochim, and there they offer sacrifices to the LORD.",
+          "type": "fill_blank",
+          "verses": "Judges 2:4",
+          "question": "When the angel of the LORD finishes speaking to all the Israelites, the people lift up their voices and ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "weep",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "sing",
+              "correct": false
+            },
+            {
+              "text": "cheer",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Judges 2:5",
+          "question": "The people call that place Bochim. What do they do there?",
+          "answers": [
+            {
+              "text": "Offer sacrifices to the LORD",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Set up a memorial stone",
+              "correct": false
+            },
+            {
+              "text": "Sound the trumpets",
               "correct": false
             }
           ],

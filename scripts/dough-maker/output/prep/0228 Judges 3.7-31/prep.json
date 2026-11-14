@@ -8,9 +8,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Judges 3:5-7",
-          "text": "Welcome to the bakery, friend. We're in the book of Judges, where the Israelites are living among the nations of Canaan and marrying into their families. And now they do evil in the sight of the LORD and forget the LORD their God.",
-          "needs_agent_fix": true,
+          "verses": "Judges 3:7",
+          "text": "Welcome to the bakery, friend. We're in the book of Judges, where the Israelites are living among the peoples of Canaan and marrying into their families (Judges 3:5-6). And now they do evil in the sight of the LORD and forget the LORD their God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Judges 3:8",
-          "text": "The anger of the LORD burns against Israel, and He sells them into the hand of Cushan-rishathaim, king of Aram-naharaim. Friend, I tried saying that name ONE time and my mustache tied itself in a knot.",
-          "needs_agent_fix": true,
+          "text": "The anger of the LORD burns against Israel, and He sells them into the hand of Cushan-rishathaim, king of Aram-naharaim.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,78 +64,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Judges 3:9",
-          "question": "After eight years under a foreign king, the Israelites turn somewhere for help. Where do they turn?",
-          "answers": [
-            {
-              "text": "They cry out to the LORD",
-              "correct": true
-            },
-            {
-              "text": "They ask Egypt for help",
-              "correct": false
-            },
-            {
-              "text": "They pray harder to the Baals",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Judges 3:9",
-          "text": "The LORD raises up a deliverer to save them: Othniel, son of Caleb's younger brother Kenaz. They cry out and God answers, and friend, that's better service than my phone company, because they've had me on hold since TUESDAY.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Judges 3:10",
-          "question": "When Othniel is raised up as Israel's deliverer, the ___ of the LORD comes upon him.",
-          "answers": [
-            {
-              "text": "Spirit",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "hand",
-              "correct": false
-            },
-            {
-              "text": "fear",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Judges 3:10",
-          "text": "Othniel becomes Israel's judge and goes out to war, the LORD delivers the king of Aram into his hand, and Othniel prevails. Eight years of trouble, over in ONE verse, and friend, it takes me longer than that to find my oven mitts.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Judges 3:11",
-          "question": "True or false: after Othniel prevails, the land has rest for forty years, until Othniel dies.",
+          "verses": "Judges 3:9",
+          "question": "True or false: after eight years under Cushan-rishathaim, the Israelites cry out to the LORD.",
           "answers": [
             {
               "text": "True",
@@ -146,15 +83,74 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Judges 3:9",
+          "text": "The LORD raises up a deliverer to save them: Othniel, son of Caleb's younger brother Kenaz.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Judges 3:10",
+          "text": "The Spirit of the LORD comes upon Othniel, and he becomes Israel's judge and goes out to war.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Judges 3:10",
+          "question": "The LORD delivers Cushan-rishathaim king of Aram into Othniel's hand, and Othniel ___ against him.",
+          "answers": [
+            {
+              "text": "prevails",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "pleads",
+              "correct": false
+            },
+            {
+              "text": "bargains",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Judges 3:11",
+          "question": "True or false: after Othniel's victory, the land's rest ends while Othniel is still alive.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Judges 3:12",
-          "text": "Forty years of rest, and then once again the Israelites do evil in the sight of the LORD. That's me with the snooze button, friend: \"NEVER again,\" and the next morning, there goes my mustache, right back on it.",
-          "needs_agent_fix": true,
+          "verses": "Judges 3:11-12",
+          "text": "Forty years of rest, until Othniel dies, and then once again the Israelites do evil in the sight of the LORD. That's me and the snooze button, friend: every morning I swear I'm DONE with it, and every morning, SLAP, there goes my mustache.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -177,15 +173,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Judges 3:12-13",
-          "text": "This time it's Eglon king of Moab, and he brings backup: the Ammonites AND the Amalekites. Together they attack Israel and defeat them.",
-          "needs_agent_fix": true,
+          "text": "This time it's Eglon king of Moab, and he brings backup: the Ammonites AND the Amalekites. Together they attack and defeat Israel, and Eglon takes possession of the City of Palms.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -193,7 +189,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 3:14",
-          "question": "Eglon takes possession of the City of Palms, and Israel serves Eglon king of Moab for ___ years.",
+          "question": "Israel serves Eglon king of Moab for ___ years.",
           "answers": [
             {
               "text": "eighteen",
@@ -201,81 +197,54 @@
               "blank": 1
             },
             {
-              "text": "eight",
+              "text": "twelve",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "thirty",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Judges 3:15",
-          "question": "Eighteen years under Eglon king of Moab. You know how this goes by now, friend. What do the Israelites do?",
-          "answers": [
-            {
-              "text": "They cry out to the LORD again",
-              "correct": true
-            },
-            {
-              "text": "They make peace with Eglon",
-              "correct": false
-            },
-            {
-              "text": "They send to Aram for help",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Again they cry out to the LORD, and He raises up Ehud son of Gera, a left-handed Benjamite, as their deliverer. Hang on to that left-handed part, friend, because me, I'm mustache-handed, and nobody EVER writes that down.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Judges 3:15",
-          "text": "Again the LORD raises up a deliverer: Ehud son of Gera, a left-handed Benjamite. Hang on to that left-handed part, friend, because me, I'm mustache-handed, and nobody EVER writes that down.",
-          "needs_agent_fix": true,
+          "question": "True or false: the Israelites send Ehud to Eglon king of Moab carrying tribute.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Judges 3:15",
-          "question": "Israel has served Eglon for eighteen years, and now they send Ehud to him. What is Ehud bringing Eglon?",
-          "answers": [
-            {
-              "text": "Israel's tribute",
-              "correct": true
-            },
-            {
-              "text": "A peace treaty",
-              "correct": false
-            },
-            {
-              "text": "A declaration of war",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Judges 3:16",
+          "text": "But Ehud has also made himself a double-edged sword, a cubit long, and he hides it under his cloak. Tribute on its way, sword under his cloak, friend, this is NOT a regular delivery.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "Judges 3:16",
-          "text": "But Ehud has also made himself a double-edged sword, a cubit long, and he hides it under his cloak. Tribute on its way, sword under his cloak, friend, this is NOT a regular delivery.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 3:16",
@@ -294,15 +263,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Judges 3:17-18",
           "text": "Ehud brings the tribute to Eglon king of Moab, who was an obese man. Once the tribute is presented, Ehud sends off the men who carried it.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -379,53 +348,30 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Judges 3:22",
-          "question": "The sword goes in so deep that even the handle sinks in after the blade. What does Ehud do with the sword?",
-          "answers": [
-            {
-              "text": "He leaves it there",
-              "correct": true
-            },
-            {
-              "text": "He pulls it back out",
-              "correct": false
-            },
-            {
-              "text": "He drops it by the door",
-              "correct": false
-            }
-          ],
+          "text": "Even the handle sinks in after the blade, and Eglon's fat closes over it, so Ehud leaves the sword where it is. And Eglon's bowels empty.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Judges 3:22-23",
-          "text": "Eglon's fat closes over the sword, and his bowels empty. Ehud heads out through the porch.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 3:23",
-          "question": "On his way out, Ehud closes and ___ the doors of the upper room behind him.",
+          "question": "Then Ehud goes out through the porch, closing and ___ the doors of the upper room behind him.",
           "answers": [
             {
-              "text": "locks",
+              "text": "locking",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "guards",
+              "text": "guarding",
               "correct": false
             },
             {
-              "text": "marks",
+              "text": "marking",
               "correct": false
             }
           ],
@@ -433,7 +379,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Judges 3:24",
           "text": "Once Ehud is gone, Eglon's servants come in and find the doors of the upper room locked.",
@@ -441,7 +387,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 3:24",
@@ -464,7 +410,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Judges 3:25",
           "text": "So they wait until they get worried, and the doors still haven't opened. You know this one, friend: standing outside a door, checking your phone, nobody brave enough to knock.",
@@ -472,7 +418,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 3:25",
@@ -496,19 +442,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 3:26",
-          "question": "True or false: while Eglon's servants wait outside the doors, Ehud hides somewhere inside the palace.",
+          "question": "True or false: Ehud gets away while Eglon's servants are still waiting outside the doors.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -611,37 +557,18 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Judges 3:29",
-          "question": "At that time, Israel strikes down about ten thousand Moabites, all robust and valiant men. True or false: a handful of them escape.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "At that time they strike down about ten thousand Moabites, all robust and valiant men. Not one of them escapes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Judges 3:30",
-          "text": "Moab is subdued under the hand of Israel that day. Years of serving Moab, and it all turns around in ONE day, and friend, it takes me longer than that to admit a batch is burnt.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 3:30",
-          "question": "After Moab is subdued, the land has rest for ___ years.",
+          "question": "That day, Moab is subdued under the hand of Israel, and the land has rest for ___ years.",
           "answers": [
             {
               "text": "eighty",
@@ -658,10 +585,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Judges 3:31",
           "text": "After Ehud comes Shamgar son of Anath, and he too saves Israel.",
@@ -669,7 +596,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 3:31",

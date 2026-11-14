@@ -8,10 +8,10 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "1 Samuel 10:24-11:1",
-          "text": "Samuel has just told all the people that Saul is the one the LORD has chosen, and Israel shouted for its brand new king. But some worthless men said, \"How can this man save us?\" and Saul stayed silent. Now Nahash the Ammonite comes up and lays siege to the town of Jabesh-gilead.",
+          "verses": "1 Samuel 11:1",
+          "text": "Samuel, Israel's prophet, has just pointed to Saul as the one the LORD has chosen, and all the people shouted, \"Long live the king!\" (1 Samuel 10:24). But some worthless men said, \"How can this man save us?\" and Saul remained silent about it (1 Samuel 10:27). Now Nahash the Ammonite comes up and lays siege to the town of Jabesh-gilead.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,13 +34,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 11:2",
-          "text": "Nahash answers that sure, he'll make a treaty with them on ONE condition. And he says it will bring reproach upon all Israel.",
+          "text": "Nahash answers that he'll make a treaty with them on one condition: that he may put out everyone's right eye.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,18 +49,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 11:2",
-          "question": "What is Nahash's one condition for a treaty with Jabesh?",
+          "question": "Nahash says his condition for Jabesh will bring reproach upon whom?",
           "answers": [
             {
-              "text": "Put out everyone's right eye",
+              "text": "All Israel",
               "correct": true
             },
             {
-              "text": "Tear down every town wall",
+              "text": "The Philistines",
               "correct": false
             },
             {
-              "text": "Hand over every firstborn son",
+              "text": "The town of Gibeah",
               "correct": false
             }
           ],
@@ -90,7 +90,7 @@
           "card": 6,
           "kind": "story",
           "verses": "1 Samuel 11:3",
-          "text": "Instead, the elders ask Nahash to hold off for seven days so they can send messengers throughout Israel, waiting to see if anybody's coming for them. Friend, I did that for YEARS in the back of a junk drawer.",
+          "text": "Instead, the elders ask Nahash to hold off for seven days so they can send messengers throughout Israel. I think this one hurts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -99,15 +99,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 11:3",
-          "question": "The elders of Jabesh tell Nahash that if no one comes to save them, they'll fight to the last man.",
+          "question": "The elders of Jabesh tell Nahash that if no one comes to save them, they will surrender to him.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -201,7 +201,7 @@
               "correct": false
             },
             {
-              "text": "fear",
+              "text": "shame",
               "correct": false
             }
           ],
@@ -284,12 +284,20 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 11:8",
-          "text": "Try 300,000 Israelites and 30,000 men of Judah! Meanwhile I'm over here doing a happy dance when ONE baker answers my invitation.",
+          "text": "The count: 300,000 Israelites and 30,000 men of Judah! Meanwhile I'm over here doing a happy dance when ONE baker answers my invitation.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "1 Samuel 11:9",
+          "text": "Then the messengers who came from Jabesh are handed a message to carry back home.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 11:9",
@@ -308,11 +316,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "story",
           "verses": "1 Samuel 11:9-10",
           "text": "The men of Jabesh rejoice at the news. Then they have something to say to Nahash.",
@@ -320,7 +328,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 11:10",
@@ -343,61 +351,37 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "1 Samuel 11:11",
-          "text": "The next day, Saul organizes the troops into three divisions, and they invade the Ammonite camp during the morning watch. Morning watch, friend, that's before my first batch is even in the oven!",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 11:11",
-          "question": "Saul's troops strike the Ammonite camp during the morning watch and keep fighting until the ___ part of the day.",
-          "answers": [
-            {
-              "text": "hottest",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "coolest",
-              "correct": false
-            },
-            {
-              "text": "darkest",
-              "correct": false
-            }
-          ],
+          "text": "The next day, Saul organizes the troops into three divisions, ready to go during the morning watch. Friend, that's before my first batch is even in the oven!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "1 Samuel 11:11",
-          "question": "The Ammonite survivors regroup to fight another day.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Then they invade the Ammonite camp and slaughter them until the hottest part of the day.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "1 Samuel 11:11",
-          "text": "The survivors are so scattered that no two of them are left together. When I drop a whole bag of sprinkles on the floor, at least TWO land next to each other!",
+          "question": "The Ammonite survivors are so scattered that no two of them are left together.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -437,7 +421,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 11:13",
-          "question": "Saul agrees with the people and orders those men brought out.",
+          "question": "Saul agrees with the people and orders the men who said he shouldn't reign brought out.",
           "answers": [
             {
               "text": "True",
@@ -448,7 +432,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -510,30 +494,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 11:15",
-          "question": "At Gilgal, the people confirm Saul as king in the presence of the LORD and sacrifice ___ offerings before the LORD.",
+          "question": "At Gilgal, the people confirm Saul as king in the presence of the LORD and sacrifice peace offerings. Then Saul and all the Israelites ___ greatly.",
           "answers": [
             {
-              "text": "peace",
+              "text": "rejoice",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "sin",
+              "text": "mourn",
               "correct": false
             },
             {
-              "text": "guilt",
+              "text": "worry",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "1 Samuel 11:15",
-          "text": "And Saul and all the Israelites rejoice greatly. The king's confirmed, but trust me, friend, this story isn't done baking yet.",
+          "text": "That's where we'll set this batch down for now. Trust me, friend, this story isn't done baking yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

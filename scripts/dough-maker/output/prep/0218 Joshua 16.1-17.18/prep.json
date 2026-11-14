@@ -18,17 +18,12 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 16:4",
-          "question": "This land is the inheritance of Joseph's two sons, ___ and ___.",
+          "question": "This land is the inheritance of Joseph's two sons: Ephraim and ___.",
           "answers": [
-            {
-              "text": "Ephraim",
-              "correct": true,
-              "blank": 1
-            },
             {
               "text": "Manasseh",
               "correct": true,
-              "blank": 2
+              "blank": 1
             },
             {
               "text": "Reuben",
@@ -37,14 +32,10 @@
             {
               "text": "Benjamin",
               "correct": false
-            },
-            {
-              "text": "Judah",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -58,7 +49,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Joshua 16:10",
-          "text": "Ephraim moves in, but Canaanites are already living in the city of Gezer. That's getting the keys to your new place and the last tenants are still on the couch holding the remote.",
+          "text": "But there's one city in Ephraim's land where things get complicated. Canaanites live in Gezer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -90,7 +81,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 16:10",
-          "question": "True or false: The Canaanites stay in Gezer among the Ephraimites, but as forced laborers.",
+          "question": "True or false: The Canaanites who stay in Gezer become forced laborers.",
           "answers": [
             {
               "text": "True",
@@ -124,7 +115,7 @@
               "correct": true
             },
             {
-              "text": "Because he asked Moses first",
+              "text": "Because he asked for it first",
               "correct": false
             },
             {
@@ -139,7 +130,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Joshua 17:2",
-          "text": "So this allotment is for the rest of Manasseh's clans: Abiezer, Helek, Asriel, Shechem, Hepher and Shemida. That's one batch split six ways, friend, and I'd be counting cookies too.",
+          "text": "So this allotment goes to the rest of Manasseh's clans: Abiezer, Helek, Asriel, Shechem, Hepher and Shemida. Every one of those clans comes down through the sons.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -147,7 +138,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Joshua 17:3",
-          "text": "But in the line of Hepher, a man named Zelophehad had no sons, only daughters: Mahlah, Noah, Hoglah, Milcah and Tirzah. So where does their share go?",
+          "text": "But Zelophehad son of Hepher had no sons, only daughters: Mahlah, Noah (not the Noah of the flood), Hoglah, Milcah and Tirzah. So where does their share go?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -167,7 +158,7 @@
               "correct": false
             },
             {
-              "text": "Aaron the priest and the sons of Levi",
+              "text": "Phinehas the priest and the sons of Levi",
               "correct": false
             }
           ],
@@ -183,14 +174,15 @@
           "answers": [
             {
               "text": "Moses",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Aaron",
               "correct": false
             },
             {
-              "text": "Caleb",
+              "text": "Jacob",
               "correct": false
             }
           ],
@@ -202,7 +194,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 17:4",
-          "question": "True or false: Joshua turns Zelophehad's daughters away and gives their share to their uncles.",
+          "question": "True or false: Joshua turns Zelophehad's daughters away.",
           "answers": [
             {
               "text": "True",
@@ -219,8 +211,8 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Joshua 17:5",
-          "text": "Then the count comes in: ten shares fall to Manasseh, plus Gilead and Bashan beyond the Jordan. Friend, I get excited when a batch comes out with TEN cookies.",
+          "verses": "Joshua 17:5-6",
+          "text": "With the daughters' shares counted in, ten shares fall to Manasseh, plus Gilead and Bashan beyond the Jordan. Friend, I get excited when a batch comes out with TEN cookies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -229,18 +221,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 17:6",
-          "question": "Why does Manasseh end up with ten shares on top of Gilead and Bashan?",
+          "question": "And the land of Gilead beyond the Jordan? Who does it belong to?",
           "answers": [
             {
-              "text": "The daughters got shares among the sons",
+              "text": "The rest of the sons of Manasseh",
               "correct": true
             },
             {
-              "text": "Machir won more land in battle",
+              "text": "The daughters of Zelophehad",
               "correct": false
             },
             {
-              "text": "Ephraim gave up some of its land",
+              "text": "The clans of the tribe of Ephraim",
               "correct": false
             }
           ],
@@ -296,7 +288,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Joshua 17:13",
-          "text": "Time goes by, and the Israelites grow STRONGER, flexing like a stamper with brand-new edges. So what happens to those Canaanites who wouldn't budge?",
+          "text": "Then the Israelites grow STRONGER, and those Canaanites are still right there in the cities. So now what?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -305,15 +297,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 17:13",
-          "question": "True or false: Once they're stronger, the Israelites put the Canaanites to forced labor but don't drive them out completely.",
+          "question": "True or false: Once they're stronger, the Israelites drive the Canaanites out completely.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -322,8 +314,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Joshua 17:14",
-          "text": "Then the sons of Joseph come to Joshua, and friend, they are NOT here to say thank you. They've got a question about their share.",
+          "verses": "Joshua 17:13-14",
+          "text": "The Israelites put the Canaanites to forced labor, and the Canaanites stay. Then the sons of Joseph come to Joshua, and friend, they are NOT here to say thank you.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -359,7 +351,8 @@
           "answers": [
             {
               "text": "blessed",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "tested",
@@ -393,7 +386,7 @@
               "correct": true
             },
             {
-              "text": "Take some of Judah's hill towns",
+              "text": "Wait for the next allotment",
               "correct": false
             },
             {
@@ -408,7 +401,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Joshua 17:15-16",
-          "text": "Joshua's answer is basically: big family? Great, here's an axe. But the sons of Joseph push back: the hill country isn't enough for them, and they've got something to say about the Canaanites in the valley.",
+          "text": "Big family, big axe, friend. But the sons of Joseph push back: the hill country isn't enough for them, and they've got something to say about the Canaanites in the valley.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -421,7 +414,8 @@
           "answers": [
             {
               "text": "chariots",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "gates",
@@ -466,7 +460,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Joshua 17:18",
-          "text": "So the hill country is theirs too: it's a forest, clear it, and its farthest limits are theirs. Friend, that's a pep talk AND a chore list in one speech.",
+          "text": "So the hill country is theirs too: it's a forest, clear it, and its farthest limits are theirs. Joshua said it once, and friend, he's saying it AGAIN.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

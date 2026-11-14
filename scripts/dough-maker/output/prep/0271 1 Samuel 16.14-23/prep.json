@@ -8,25 +8,29 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "1 Samuel 16:1-13",
-          "text": "Back in verses 1 to 13, the LORD sent Samuel to anoint a new king from among the sons of Jesse, a man with eight sons. Samuel anointed the youngest, David, and the Spirit of the LORD rushed upon him from that day forward. Now we head over to Saul, king of Israel, where something's about to shift, friend.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "1 Samuel 16:14",
+          "text": "Samuel, the LORD's prophet, has just anointed young David, and the Spirit of the LORD rushed upon David from that day forward (1 Samuel 16:13). Now we head over to Saul, king of Israel, and the Spirit of the LORD departs from him. Then something else begins to torment him, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Samuel 16:14",
-          "question": "Over with Saul, the Spirit of the LORD rushes upon him too. True or false?",
+          "question": "Once the Spirit of the LORD departs from King Saul, what begins to torment him?",
           "answers": [
             {
-              "text": "True",
+              "text": "A spirit of distress from the LORD",
+              "correct": true
+            },
+            {
+              "text": "A sickness sent by his enemies",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "A dream he cannot understand",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -37,7 +41,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 16:15",
-          "question": "The Spirit of the LORD departs from Saul, and a spirit of distress from the LORD begins to torment him. Who speaks up and tells Saul about it?",
+          "question": "A spirit of distress is tormenting King Saul. Who speaks up and tells Saul about it?",
           "answers": [
             {
               "text": "His servants",
@@ -59,7 +63,7 @@
           "card": 4,
           "kind": "story",
           "verses": "1 Samuel 16:16",
-          "text": "His servants, and they've got a plan: Saul should command them to seek out someone with one special skill. Whenever the spirit of distress is upon him, that person uses it, and Saul will be well.",
+          "text": "Saul's servants have a plan: Saul should command them to seek out someone with one special skill. Whenever the spirit of distress is upon him, that person uses it, and Saul will be well.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -108,28 +112,29 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "1 Samuel 16:17-18",
-          "text": "Nope, Saul is ALL in: \"Find me someone who plays well, and bring him to me.\" And one of the servants? He already knows a guy.",
-          "needs_agent_fix": true,
+          "verses": "1 Samuel 16:18",
+          "text": "And one of Saul's servants already knows a guy. I bet he's been waiting for somebody to ask.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 16:18",
-          "question": "Whose son does Saul's servant say knows how to play the harp?",
+          "question": "One of Saul's servants says he has seen a son of ___ of Bethlehem who knows how to play the harp.",
           "answers": [
             {
-              "text": "A son of Jesse of Bethlehem",
-              "correct": true
+              "text": "Jesse",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A son of Eli of Shiloh",
+              "text": "Elkanah",
               "correct": false
             },
             {
-              "text": "A son of Elkanah of Ramah",
+              "text": "Eli",
               "correct": false
             }
           ],
@@ -172,8 +177,8 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Samuel 16:19",
-          "text": "So Saul sends messengers to Jesse: \"Send me your son David, who is with the sheep.\" The KING is calling, and David's out in a field. That's like the CEO ringing your phone while you're out mowing the lawn.",
-          "needs_agent_fix": true,
+          "text": "So Saul sends messengers to Jesse: \"Send me your son David, who is with the sheep.\" The KING is calling a shepherd in from the field, like your CEO ringing your phone while you're out mowing the lawn.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -202,8 +207,8 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "1 Samuel 16:20-21",
-          "text": "A donkey loaded with bread, a skin of wine and one young goat, plus one harp-playing son. David arrives and enters Saul's service.",
+          "verses": "1 Samuel 16:21",
+          "text": "David comes to Saul and enters his service. From watching sheep to working for the KING, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -212,7 +217,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 16:21",
-          "question": "When David comes and enters his service, Saul loves him very much. True or false?",
+          "question": "When David comes and enters Saul's service, Saul loves him very much. True or false?",
           "answers": [
             {
               "text": "True",
@@ -253,8 +258,8 @@
         {
           "card": 16,
           "kind": "story",
-          "verses": "1 Samuel 16:21-22",
-          "text": "From the sheep to the king's side, just like that. Then Saul sends word back to Jesse.",
+          "verses": "1 Samuel 16:22",
+          "text": "Then Saul sends word back to Jesse.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -312,7 +317,7 @@
           "card": 20,
           "kind": "story",
           "verses": "1 Samuel 16:23",
-          "text": "Saul finds relief, feels better, and the spirit of distress departs from him. That's where we'll leave it for now, friend, because this story is only just going into the oven.",
+          "text": "That's where we'll leave it for now, friend, because this story is only just going into the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

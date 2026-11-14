@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 1:1-2",
-          "text": "David, the man Samuel anointed to be the next king (1 Samuel 16:13), just got back from defeating the Amalekites and has been in Ziklag two days. On the third day, a man walks in from the camp of Saul, Israel's king, with his clothes torn and dust on his head.",
-          "needs_agent_fix": true,
+          "text": "Saul, Israel's king, is dead. David, whom Samuel the prophet anointed to be king (1 Samuel 16:1, 13), is back from the slaughter of the Amalekites and has been in Ziklag two days. On the third day, a man arrives from Saul's camp with torn clothes and dust on his head.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -45,18 +45,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 1:4",
-          "question": "The man tells David the troops fled from the battle. What does he say happened to Saul and his son Jonathan?",
+          "question": "The man tells David that Saul and his son Jonathan are dead. What does he say the troops did?",
           "answers": [
             {
-              "text": "They are both dead",
+              "text": "They fled from the battle",
               "correct": true
             },
             {
-              "text": "They were taken captive",
+              "text": "They surrendered to the enemy",
               "correct": false
             },
             {
-              "text": "They fled across the Jordan",
+              "text": "They held their ground",
               "correct": false
             }
           ],
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "2 Samuel 1:5",
-          "text": "David doesn't just take his word for it. He asks how he KNOWS Saul and Jonathan are dead, like when the group chat swears the boss quit and you go, \"Says WHO? Screenshot or it didn't happen.\"",
+          "text": "David doesn't just take his word for it. He asks the young man how he KNOWS Saul and Jonathan are dead.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -75,7 +75,7 @@
           "card": 6,
           "kind": "story",
           "verses": "2 Samuel 1:6-7",
-          "text": "The man says he \"happened to be on Mount Gilboa,\" and there was Saul, leaning on his spear, with the chariots and the cavalry closing in, and Saul turned and called out to him. Chariots AND cavalry closing in on one man, like every lane of rush hour merging into yours at once!",
+          "text": "The man says he \"happened to be on Mount Gilboa,\" and there was Saul, leaning on his spear, with the chariots and the cavalry closing in. He says Saul turned, saw him and called out to him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -107,18 +107,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 1:9",
-          "question": "The man says Saul, in agony with chariots closing in, begged him to stand over him and ___ him.",
+          "question": "The man says Saul begged him to stand over him and kill him, because ___ had seized him.",
           "answers": [
             {
-              "text": "kill",
+              "text": "agony",
               "correct": true
             },
             {
-              "text": "carry",
+              "text": "fear",
               "correct": false
             },
             {
-              "text": "hide",
+              "text": "shame",
               "correct": false
             }
           ],
@@ -159,20 +159,16 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Samuel 1:11",
-          "question": "When David hears the news, he and all his men take hold of their own ___ and tear them.",
+          "question": "When David hears the news and tears his clothes, all the men with him do the same.",
           "answers": [
             {
-              "text": "clothes",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "scrolls",
-              "correct": false
-            },
-            {
-              "text": "banners",
+              "text": "False",
               "correct": false
             }
           ],
@@ -269,9 +265,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Samuel 1:17",
+          "verses": "2 Samuel 1:17-18",
           "text": "Then David takes up a lament for Saul and his son Jonathan. And he gives an order about it.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -339,8 +335,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "2 Samuel 1:20-21",
-          "text": "You lose the big game, and the LAST place you want that news is the rival team's group chat. Then David speaks to the mountains of Gilboa: may they have no dew or rain, no fields yielding offerings of grain.",
+          "verses": "2 Samuel 1:21",
+          "text": "Then David speaks to the mountains of Gilboa: may they have no dew or rain, no fields yielding offerings of grain.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -376,15 +372,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 1:22",
-          "question": "In David's song, the sword of Saul did not return empty.",
+          "question": "In David's song, the sword of Saul returned empty.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -417,7 +413,7 @@
           "card": 11,
           "kind": "story",
           "verses": "2 Samuel 1:23",
-          "text": "David says they were swifter than eagles and stronger than lions, and this is the same Saul who searched for David every day (1 Samuel 23:14). EVERY DAY on his trail, and David's out here writing the man a SONG!",
+          "text": "David says they were swifter than eagles and stronger than lions. And this is the same Saul who searched for David every day (1 Samuel 23:14).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -448,7 +444,7 @@
           "card": 13,
           "kind": "story",
           "verses": "2 Samuel 1:25",
-          "text": "David comes back to that line, \"How the mighty have fallen,\" and then turns to Jonathan, Saul's son, lying slain on the heights.",
+          "text": "David comes back to that line: \"How the mighty have fallen in the thick of battle!\" Then he turns to Jonathan, Saul's son, lying slain on the heights.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -498,7 +494,7 @@
           "card": 16,
           "kind": "story",
           "verses": "2 Samuel 1:27",
-          "text": "David closes with that line one more time: \"How the mighty have fallen, and the weapons of war have perished!\" The song is over, friend, but this story is still in the oven.",
+          "text": "David closes with that line one more time: \"How the mighty have fallen, and the weapons of war have perished!\" The song is over, friend, but this story's not done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

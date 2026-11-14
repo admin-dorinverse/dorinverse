@@ -11,7 +11,7 @@
           "verses": "Judges 1:1",
           "text": "Joshua, Israel's leader, has died (Joshua 24:29), and there are still Canaanites in the land to fight. Somebody has to go first. So the Israelites do the smart thing and ask the LORD who it'll be.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,14 +34,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 1:2",
-          "question": "Before a single battle is fought, the LORD says He has already delivered the land into their hands.",
+          "question": "Before a single battle is fought, the LORD says He has already delivered the land into Judah's hands.",
           "answers": [
             {
               "text": "True",
@@ -53,15 +53,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Judges 1:3",
-          "text": "Judah doesn't go alone, though. The men of Judah turn to their brothers, the Simeonites, with a deal.",
+          "text": "Then the men of Judah turn to their brothers the Simeonites, another tribe of Israel, with a deal.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -84,107 +84,95 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Judges 1:3",
-          "text": "So the Simeonites go with them. Before you showed up, friend, my only teammate up here was an oven, and it burned me every chance it got.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Judges 1:4",
-          "question": "Judah attacks at Bezek, and the LORD delivers the Canaanites and Perizzites into their hands. There, they strike down ten thousand men.",
+          "verses": "Judges 1:3",
+          "question": "The Simeonites turn down Judah's offer.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Judges 1:4",
+          "text": "Then Judah attacks the Canaanites and the Perizzites, another people in the land, and strikes down ten thousand men at Bezek.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Judges 1:5-6",
-          "text": "There at Bezek they find Adoni-bezek, a ruler there, and fight against him. He runs, and they chase him down and seize him.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Judges 1:4",
+          "question": "Judah wins at Bezek by its own strength, without the LORD's help.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Judges 1:6",
-          "question": "What do the men of Judah do to Adoni-bezek once they catch him?",
-          "answers": [
-            {
-              "text": "Cut off his thumbs and big toes",
-              "correct": true
-            },
-            {
-              "text": "Put out both of his eyes",
-              "correct": false
-            },
-            {
-              "text": "Shave off half of his beard",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Judges 1:5-6",
+          "text": "At Bezek they find a man named Adoni-bezek and fight against him. As he flees, they chase him, seize him and cut off his thumbs and big toes.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Judges 1:7",
-          "text": "Then Adoni-bezek speaks up. He says seventy kings with their thumbs and big toes cut off used to gather the scraps under his table.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 1:7",
-          "question": "Adoni-bezek did this same thing to seventy kings. So what does he say has happened to him now?",
+          "question": "Adoni-bezek says, “Seventy kings with their thumbs and big toes cut off have gathered the scraps under my table.” What does he say has happened to him now?",
           "answers": [
             {
-              "text": "God has paid him back for it",
+              "text": "God has repaid him for it",
               "correct": true
             },
             {
-              "text": "Judah is crueler than he ever was",
+              "text": "His own men have turned on him",
               "correct": false
             },
             {
-              "text": "His own gods will avenge him soon",
+              "text": "His luck has finally run out",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Judges 1:7",
+          "text": "They bring Adoni-bezek to Jerusalem, and he dies there.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Judges 1:7",
-          "text": "Seventy kings, and the man kept COUNT. They bring him to Jerusalem, and he dies there.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 1:8",
@@ -205,15 +193,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Judges 1:8",
           "text": "They put Jerusalem to the sword and set it on fire. That's a heavy moment, friend, and Judah isn't stopping there.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -227,34 +215,23 @@
           "verses": "Judges 1:9",
           "text": "Next, Judah marches down to fight the Canaanites in the hill country, the Negev and the foothills. That's three places, friend, and I get winded hopping to my SECOND oven.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Judges 1:10",
-          "question": "Judah marches on Hebron, which used to be called Kiriath-arba. There, they strike down Sheshai, Ahiman and Talmai, three descendants of Anak (Numbers 13:22).",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Judah also marches against the Canaanites living in Hebron, which used to be called Kiriath-arba. There they strike down Sheshai, Ahiman and Talmai.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Judges 1:11-12",
-          "text": "From there, Judah marches on Debir, which used to be called Kiriath-sepher. Then Caleb, the spy who followed the LORD fully back in Moses' day (Numbers 13:6; 14:24), makes an announcement.",
+          "text": "From there, Judah marches on Debir, which used to be called Kiriath-sepher. Then Caleb, a spy who followed the LORD fully back when Moses led Israel (Numbers 13:6; 14:24), makes an announcement.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -264,7 +241,7 @@
           "question": "What does Caleb promise the man who strikes down Kiriath-sepher and captures it?",
           "answers": [
             {
-              "text": "His daughter Acsah in marriage",
+              "text": "His daughter in marriage",
               "correct": true
             },
             {
@@ -277,7 +254,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -300,23 +277,23 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Judges 1:13",
-          "text": "Othniel is the son of Caleb's younger brother Kenaz, and Caleb gives him Acsah in marriage. Othniel took a whole city, and the bravest thing I've done lately is reach into a hot oven without my mitts.",
+          "text": "Othniel is the son of Caleb's younger brother Kenaz, and Caleb gives him his daughter Acsah in marriage. Othniel took a whole city, and the bravest thing I've done lately is eat raw cookie dough.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Judges 1:14",
-          "text": "One day Acsah urges Othniel to ask her father for a field. She hops off her donkey, and before she says a word, Caleb asks her, “What do you desire?”",
+          "text": "One day Acsah urges Othniel to ask her father for a field. When she gets off her donkey, Caleb asks her, “What do you desire?”",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -339,7 +316,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -358,34 +335,38 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Judges 1:16",
-          "text": "Now here's a guest appearance: the descendants of Moses' father-in-law, the Kenite, go up with the men of Judah. They head from the City of Palms to the Wilderness of Judah, in the Negev near Arad.",
+          "text": "Now another group goes up with the men of Judah, from the City of Palms to the Wilderness of Judah in the Negev near Arad. They go to live among the people.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Judges 1:16",
-          "question": "Once they get there, the Kenites go to live among the people.",
+          "question": "A group goes up with the men of Judah from the City of Palms and settles among the people. Who are they?",
           "answers": [
             {
-              "text": "True",
+              "text": "Descendants of Moses' father-in-law",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Descendants of Lot",
+              "correct": false
+            },
+            {
+              "text": "Descendants of Esau",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -393,18 +374,19 @@
           "verses": "Judges 1:17",
           "text": "Then Judah teams up with their brothers the Simeonites again, and that partnership from the start is still going strong. Together they attack the Canaanites living in Zephath and devote the city to destruction.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 1:17",
-          "question": "After that, the city of Zephath gets a new name. What is it called?",
+          "question": "After that, Zephath is called by a new name: ___.",
           "answers": [
             {
               "text": "Hormah",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Gilgal",
@@ -416,22 +398,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
-          "verses": "Judges 1:18",
-          "text": "Judah also captures Gaza, Ashkelon and Ekron, each with its territory. Three cities in ONE verse, and it takes me longer than that to find my oven mitts.",
+          "verses": "Judges 1:18-19",
+          "text": "Judah also captures Gaza, Ashkelon and Ekron, each with its territory. The LORD is with Judah.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 1:19",
-          "question": "The LORD is with Judah, and they take possession of the hill country.",
+          "question": "Judah takes possession of the hill country.",
           "answers": [
             {
               "text": "True",
@@ -443,7 +425,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -466,15 +448,31 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Judges 1:20",
-          "text": "Just as Moses had promised, Judah gives Hebron to Caleb. A promise from Moses himself, and it comes through right on cue.",
+          "question": "Just as Moses had promised, Judah gives Hebron to ___.",
+          "answers": [
+            {
+              "text": "Caleb",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Othniel",
+              "correct": false
+            },
+            {
+              "text": "Phinehas",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
@@ -493,7 +491,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 19,
@@ -501,7 +499,7 @@
           "verses": "Judges 1:20",
           "text": "Pull this tray out for now, friend, but don't take that apron off. This story is still baking.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

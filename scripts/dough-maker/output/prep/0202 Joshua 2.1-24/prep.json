@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Joshua 2:1",
-          "text": "Israel is camped at Shittim. Joshua, Israel's new leader, secretly sends out two spies. His orders: “Go, inspect the land, especially Jericho.”",
+          "text": "Moses has died, and the LORD has told Joshua, Moses' assistant, to cross over the Jordan with all the people into the land (Joshua 1:1-2). Now, from Shittim, Joshua secretly sends out two spies. His orders: “Go, inspect the land, especially Jericho.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Joshua 2:2",
-          "text": "Word gets to the king of Jericho: men of Israel came tonight to spy out the land. They JUST got to town and they're already in the town group chat.",
+          "text": "Word gets to the king of Jericho: men of Israel came tonight to spy out the land. That's like sneaking into work late and finding your boss standing RIGHT at the door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -119,56 +119,37 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Joshua 2:6",
-          "question": "Rahab really took the spies up to her roof. She hid them among the stalks of ___ she had laid out there.",
-          "answers": [
-            {
-              "text": "flax",
-              "correct": true
-            },
-            {
-              "text": "reeds",
-              "correct": false
-            },
-            {
-              "text": "straw",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "But here's the truth. Rahab had taken them up to her roof and hidden them among the stalks of flax she had laid out there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Joshua 2:7",
-          "text": "The king's men take off after the spies, and the second they're out, the gate shuts. I bet those two are up on that roof holding their breath, like me in the junk drawer every time it rattled open.",
+          "text": "The king's men take off after the spies along the road to the fords of the Jordan. I bet those two up on the roof are holding their breath, like I did every time somebody rattled open that junk drawer I got stuck in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Joshua 2:7",
-          "question": "The king's men chase the spies along the road to the fords of the ___.",
+          "question": "True or false: As soon as the king's men go out of Jericho after the spies, the city gate is shut.",
           "answers": [
             {
-              "text": "Jordan",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Jabbok",
-              "correct": false
-            },
-            {
-              "text": "Arnon",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -225,38 +206,38 @@
           "card": 14,
           "kind": "story",
           "verses": "Joshua 2:10",
-          "text": "Then Rahab tells them how it happened: Jericho has heard what the LORD did for Israel. Israel isn't even here yet and the whole town's sweating, like hearing three coworkers tell you EXACTLY how their reviews went, and you're next.",
+          "text": "Then Rahab tells them what Jericho has heard. The LORD dried up the waters of the Red Sea before Israel when they came out of Egypt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Joshua 2:10",
-          "question": "Rahab says Jericho heard how the LORD dried up the waters of the ___ Sea when Israel came out of Egypt.",
+          "question": "Rahab also names Sihon and Og, two kings of the Amorites across the Jordan. What does she say Israel did to them?",
           "answers": [
             {
-              "text": "Red",
+              "text": "Devoted them to destruction",
               "correct": true
             },
             {
-              "text": "Salt",
+              "text": "Made a peace treaty with them",
               "correct": false
             },
             {
-              "text": "Great",
+              "text": "Let them flee across the river",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
-          "verses": "Joshua 2:10-11",
-          "text": "She names Sihon and Og too, two kings of the Amorites across the Jordan, whom Israel devoted to destruction. When Jericho heard all that, their hearts melted and everyone's courage failed.",
+          "verses": "Joshua 2:11",
+          "text": "Rahab says when they heard all that, their hearts melted and everyone's courage failed. You know that feeling when you hear the layoffs already started on the floor above you? Yeah. THAT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -294,20 +275,20 @@
         {
           "card": 19,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Joshua 2:13",
-          "question": "Rahab asks the spies to spare lives when Israel comes. Whose?",
+          "type": "fill_blank",
+          "verses": "Joshua 2:12-13",
+          "question": "Rahab asks the spies to spare the lives of her ___ and deliver them from death.",
           "answers": [
             {
-              "text": "Her whole family",
+              "text": "family",
               "correct": true
             },
             {
-              "text": "Just her own life",
+              "text": "town",
               "correct": false
             },
             {
-              "text": "Everyone in Jericho",
+              "text": "king",
               "correct": false
             }
           ],
@@ -350,20 +331,20 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Joshua 2:15",
-          "question": "Rahab's house is built into Jericho's wall. How does she get the spies out?",
+          "question": "Rahab's house is built into Jericho's wall. She lets the spies down through the window by a ___.",
           "answers": [
             {
-              "text": "Lets them down by a rope",
+              "text": "rope",
               "correct": true
             },
             {
-              "text": "Leads them through a tunnel",
+              "text": "ladder",
               "correct": false
             },
             {
-              "text": "Walks them out the gate",
+              "text": "basket",
               "correct": false
             }
           ],
@@ -383,18 +364,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 2:16",
-          "question": "The king's men are out on the road to the Jordan. Where does Rahab tell the spies to hide?",
+          "question": "Rahab tells the spies where to go so their pursuers won't find them. Where?",
           "answers": [
             {
-              "text": "In the hill country",
+              "text": "To the hill country",
               "correct": true
             },
             {
-              "text": "By the fords of the Jordan",
+              "text": "To the city of Ai",
               "correct": false
             },
             {
-              "text": "In the cave of Adullam",
+              "text": "To the wilderness of Zin",
               "correct": false
             }
           ],
@@ -404,24 +385,24 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Joshua 2:16",
-          "question": "Rahab tells the spies to hide there for ___ days until their pursuers have returned.",
+          "question": "Rahab tells the spies to stay hidden there for a while before going on their way. Until when?",
           "answers": [
             {
-              "text": "three",
+              "text": "Until their pursuers have returned",
               "correct": true
             },
             {
-              "text": "seven",
+              "text": "Until Joshua sends for them",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "Until the gate opens at dawn",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -437,7 +418,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 2:18",
-          "question": "First, what does Rahab have to tie in the window she let the spies down through?",
+          "question": "The spies' first condition: what does Rahab have to tie in the window she let them down through?",
           "answers": [
             {
               "text": "A scarlet cord",
@@ -460,7 +441,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 2:18",
-          "question": "True or false: Rahab also has to bring her father and mother and brothers and all her family into her house.",
+          "question": "True or false: The spies' other condition is that Rahab brings her father and mother and brothers and all her family into her house.",
           "answers": [
             {
               "text": "True",
@@ -477,8 +458,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Joshua 2:19",
-          "text": "And they spell it out: anyone who goes out the door into the street is on their own, but anyone inside with Rahab, the spies take that on themselves. Translation: this is NOT the day to step out and check the mailbox.",
+          "verses": "Joshua 2:19-20",
+          "text": "And they spell it out: anyone who goes out the door into the street is on his own, but if anyone inside with Rahab is harmed, that's on the spies. And if she reports their mission, the oath is off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -486,19 +467,19 @@
           "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Joshua 2:20",
-          "question": "The spies add one more condition. What would release them from the oath?",
+          "verses": "Joshua 2:21",
+          "question": "The spies have laid out all their terms. How does Rahab answer them?",
           "answers": [
             {
-              "text": "Rahab reporting their mission",
+              "text": "She agrees to their terms",
               "correct": true
             },
             {
-              "text": "Rahab asking them for gold",
+              "text": "She asks for more time",
               "correct": false
             },
             {
-              "text": "Rahab hiding someone else",
+              "text": "She argues for better terms",
               "correct": false
             }
           ],
@@ -509,7 +490,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Joshua 2:21",
-          "text": "Rahab doesn't argue. “Let it be as you say,” she replied, and she sent them away.",
+          "text": "She says, “Let it be as you say,” and she sends them away.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -536,7 +517,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Joshua 2:22",
-          "text": "The spies hide in the hill country for three days while their pursuers search all along the road. I did YEARS in a junk drawer, so three days sounds like a vacation to me.",
+          "text": "The spies hide in the hill country for three days while their pursuers search all along the road. I did YEARS in the back of a junk drawer, so three days sounds like a vacation to me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -572,18 +553,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 2:24",
-          "question": "What do the spies tell Joshua the LORD has surely done?",
+          "question": "Back with Joshua, the two spies sum up their whole trip. What do they say the LORD has surely done?",
           "answers": [
             {
               "text": "Delivered the entire land into their hands",
               "correct": true
             },
             {
-              "text": "Opened the gates of Jericho to them",
+              "text": "Made Jericho's king surrender to them",
               "correct": false
             },
             {
-              "text": "Sent the king of Jericho running",
+              "text": "Sent them a sign in the night sky",
               "correct": false
             }
           ],
@@ -594,7 +575,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Joshua 2:24",
-          "text": "They add that all who dwell in the land are melting in fear of Israel. Sound familiar? Rahab said nearly the same thing up on the roof, and friend, this story is just getting started.",
+          "text": "Two spies, one roof, a pile of flax and a scarlet cord in a window. And friend, this story is NOT done yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -1,17 +1,5 @@
 {
   "agent": [],
-  "human": [
-    {
-      "covered": false,
-      "where": null,
-      "problem": "Two cards use facts from outside their cited verses and carry the reference inline in the card text. Stop 1, card 1 cites 1 Samuel 13:1-2 but uses 1 Samuel 13:16 to say Jonathan is Saul's son. Stop 2, card 1 cites 1 Samuel 10:8, which is outside the passage and outside the stop's 1 Samuel 13:8-14 range, and it adds 1 Samuel 3:20 inline to introduce Samuel as a prophet. The docs allow outside facts 'with their reference', but they also require a card's verses field to cover exactly the verses it uses.",
-      "question": "When a card brings in a fact from outside its own verses to introduce a person or set the context, should that verse go in the card's verses field, or is an inline reference in the text enough? And can a story card cite a verse from outside the passage and outside its stop's verse range, like 1 Samuel 10:8 here?",
-      "by": "opus",
-      "at": {
-        "stop": null,
-        "card": null,
-        "verses": null
-      }
-    }
-  ]
+  "human": [],
+  "fixed": "2026-11-14T08:33:09.448Z"
 }

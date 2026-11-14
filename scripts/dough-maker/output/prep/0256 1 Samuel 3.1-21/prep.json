@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 3:1",
-          "text": "Meet the boy Samuel. He serves the LORD under Eli, the priest (1 Samuel 1:9). And friend, there's something strange about these days in Israel.",
+          "text": "Meet the boy Samuel, Hannah's son, who was given to the LORD (1 Samuel 1:20, 28). He serves the LORD before Eli, the priest (1 Samuel 1:9). And friend, something's different about these days in Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 3:1",
-          "question": "What's strange about those days in Israel?",
+          "question": "What's different about those days in Israel?",
           "answers": [
             {
               "text": "The word of the LORD is rare",
@@ -40,27 +40,28 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 3:2",
-          "text": "Rare, friend, like a phone that hasn't buzzed in MONTHS. And Eli, whose eyesight has grown so dim he can't see, is lying in his room.",
+          "text": "And Eli, whose eyesight has grown so dim he can't see, is lying in his room.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 3:3",
-          "question": "And where is the boy Samuel lying down?",
+          "question": "The boy Samuel is lying down in the ___ of the LORD, where the ark of God is.",
           "answers": [
             {
-              "text": "In the temple where the ark of God is",
-              "correct": true
+              "text": "temple",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "In his parents' house in Ramah",
+              "text": "mountain",
               "correct": false
             },
             {
-              "text": "Out in the hills with the flocks",
+              "text": "garden",
               "correct": false
             }
           ],
@@ -98,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 3:5",
-          "text": "He RUNS to Eli. No snooze button, no stretching, just a boy sprinting in the dark: \"Here I am, for you have called me.\"",
+          "text": "Samuel RUNS to Eli. No snooze button, no stretching, just straight out of bed: \"Here I am, for you have called me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -119,7 +120,7 @@
               "correct": false
             },
             {
-              "text": "trim the lamp",
+              "text": "pray quietly",
               "correct": false
             }
           ],
@@ -157,7 +158,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Samuel 3:6",
-          "text": "Up again, straight to Eli: \"Here I am, for you have called me.\" Eli calls him my son, says he didn't call, and sends him back to lie down, and the boy is now oh-for-two on figuring out who's calling.",
+          "text": "Up again, straight to Eli: \"Here I am, for you have called me.\" Eli sends him back to lie down again, and the boy is now oh-for-two on figuring out who's calling.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -166,18 +167,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 3:7",
-          "question": "Why doesn't Samuel recognize that it's the LORD calling him?",
+          "question": "Twice now Samuel has heard his name and run to Eli. What hasn't happened for Samuel yet?",
           "answers": [
             {
-              "text": "He doesn't know the LORD yet",
+              "text": "The word of the LORD hasn't been revealed to him",
               "correct": true
             },
             {
-              "text": "Eli told him to ignore voices",
+              "text": "He hasn't been brought into the temple of the LORD",
               "correct": false
             },
             {
-              "text": "He thinks only priests hear the LORD",
+              "text": "He hasn't started serving the LORD before Eli",
               "correct": false
             }
           ],
@@ -188,7 +189,7 @@
           "card": 13,
           "kind": "story",
           "verses": "1 Samuel 3:8",
-          "text": "For the third time the LORD calls, and for the third time Samuel shows up at Eli's side: \"Here I am, for you have called me.\" Three calls in one night, when I spent YEARS in a junk drawer and nobody called me ONCE?",
+          "text": "For the third time the LORD calls, and for the third time Samuel shows up at Eli's side: \"Here I am, for you have called me.\" Three for three. I bet Eli is about ready to put a lock on that door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -237,32 +238,39 @@
         {
           "card": 16,
           "kind": "story",
-          "verses": "1 Samuel 3:9-10",
-          "text": "So Samuel goes and lies down in his place. Then the LORD comes and stands there, calling as before, \"Samuel! Samuel!\"",
+          "verses": "1 Samuel 3:9",
+          "text": "So Samuel goes and lies down in his place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Samuel 3:10",
-          "question": "This time, no running. Samuel tells the LORD to ___ because he's listening.",
+          "question": "Samuel is back in his place. What does the LORD do this time?",
           "answers": [
             {
-              "text": "speak",
-              "correct": true,
-              "blank": 1
+              "text": "The LORD comes and stands there",
+              "correct": true
             },
             {
-              "text": "wait",
+              "text": "The LORD speaks through Eli",
               "correct": false
             },
             {
-              "text": "return",
+              "text": "The LORD sends an angel",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "story",
+          "verses": "1 Samuel 3:10",
+          "text": "The LORD calls as before, \"Samuel! Samuel!\" This time, no running: Samuel answers, \"Speak, for Your servant is listening.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -366,7 +374,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 3:15",
-          "text": "Samuel lies down until the morning, then opens the doors of the house of the LORD. Now he's holding a message about Eli, and Eli is right there.",
+          "text": "Samuel lies down until the morning, then opens the doors of the house of the LORD. Now he's holding a hard message about Eli.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -398,7 +406,7 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Samuel 3:16",
-          "text": "Then Eli calls to him, \"Samuel, my son.\" Samuel answers, \"Here I am,\" the same words he said to Eli three times that night, and this time it really IS Eli calling.",
+          "text": "Then Eli calls to him, \"Samuel, my son.\" Samuel answers, \"Here I am,\" and this time it really IS Eli calling.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,7 +437,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Samuel 3:17",
-          "text": "And Eli means it: \"May God punish you, and ever so severely, if you hide from me anything He said to you.\" That's not a request, friend, that's a meeting invite with no decline button.",
+          "text": "And Eli means it: \"May God punish you, and ever so severely, if you hide from me anything He said to you.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -479,7 +487,7 @@
           "card": 14,
           "kind": "story",
           "verses": "1 Samuel 3:19",
-          "text": "Samuel grows, and the LORD is with him. Three tries to learn a new voice? Friend, I still answer my oven timer like it called my name.",
+          "text": "Samuel grows, and the LORD is with him. Three runs to the wrong room in one night, and LOOK at him now.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -495,11 +503,11 @@
               "correct": true
             },
             {
-              "text": "Eli writes each one of them down on a scroll",
+              "text": "The LORD makes all of them echo through the land",
               "correct": false
             },
             {
-              "text": "The elders test each one before all of Israel",
+              "text": "The LORD lets each of them shine like a lamp",
               "correct": false
             }
           ],
@@ -553,7 +561,7 @@
           "card": 18,
           "kind": "story",
           "verses": "1 Samuel 3:21",
-          "text": "That quiet phone is BUZZING now, friend. Keep that apron on, because Samuel's story has more batches coming.",
+          "text": "And that's where we leave Samuel for now. Keep that apron on, friend, because this story's not done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

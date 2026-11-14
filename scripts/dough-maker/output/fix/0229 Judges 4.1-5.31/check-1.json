@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The answer 'Kishon' is already given in the question on card 5 (\"draw out Sisera, his chariots and his troops to the River Kishon\"). Card 10 then asks for it again as a fill in the blank, so the same fact is asked after it was shown.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "The blank sits at the end of a line from the song (\"In the clans of Reuben there was great ___\"). That asks the baker to supply the song's own wording, not meaning they can reason out. The question also says the song 'asks Reuben', but the text does not name who is being asked.",
+      "rule": "Never ask the baker to guess the next words of a line."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 18
+      },
+      "problem": "The question says Sisera's mother is 'Far from the battle'. The text gives no such setting; it only says she looks through the window and lattice.",
+      "rule": "No setting the text doesn't give."
+    }
+  ]
+}

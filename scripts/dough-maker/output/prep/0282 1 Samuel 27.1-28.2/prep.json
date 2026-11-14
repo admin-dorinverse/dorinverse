@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 27:1",
-          "text": "Last time, Saul blessed David and went home (1 Samuel 26:25). But I don't think David's unpacking his bags just yet, friend, because he says to himself, \"One of these days now I will be swept away by the hand of Saul.\"",
+          "text": "Saul, king of Israel, has been chasing David, and now he blesses him and heads home (1 Samuel 26:2, 25). But I don't think David's unpacking his bags just yet, friend. He says to himself, \"One of these days now I will be swept away by the hand of Saul.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 27:1",
-          "question": "David decides there's nothing better for him than to escape, so Saul will stop searching all over Israel. Where does he plan to go?",
+          "question": "David decides there's nothing better for him than to escape. Where does he plan to go?",
           "answers": [
             {
               "text": "The land of the Philistines",
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 27:2-3",
-          "text": "So David and his six hundred men set out for Achish son of Maoch, the king of Gath, and settle there with their families. The LAST time David was in Gath, he pretended to be insane and let his spit run down his beard (1 Samuel 21:13), and now he's moving BACK?!",
+          "text": "So David takes his six hundred men to Achish son of Maoch, the king of Gath, a Philistine city. They settle there, and every man has his family with him, so that's not a visit, friend, that's a WHOLE town moving in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,15 +72,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 27:4",
-          "question": "When Saul learns that David has fled to Gath, he keeps searching for him.",
+          "question": "When Saul learns that David has fled to Gath, he stops searching for him.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 27:6",
-          "text": "David asks for a spot in a town, and Achish hands him the WHOLE town: Ziklag. And the text says that to this day, it still belongs to the kings of Judah.",
+          "text": "That same day, Achish gives David Ziklag. And Ziklag still belonged to the kings of Judah when this was written.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -135,17 +135,25 @@
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "1 Samuel 27:9",
+          "text": "This part's heavy, friend. Whenever David attacks a territory, he leaves no man or woman alive.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 27:9",
-          "question": "Whenever David attacks a territory, what does he take with him?",
+          "question": "Whenever David attacks a territory, he doesn't come back empty-handed. What does he take?",
           "answers": [
             {
               "text": "Livestock and clothing",
               "correct": true
             },
             {
-              "text": "Captives to bring to Gath",
+              "text": "Gold and silver",
               "correct": false
             },
             {
@@ -157,18 +165,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "story",
-          "verses": "1 Samuel 27:9",
-          "text": "This part's heavy, friend. He leaves no man or woman alive, and then he heads back to Achish.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 12,
           "kind": "story",
-          "verses": "1 Samuel 27:10",
-          "text": "Back in Gath, Achish asks him, \"What have you raided today?\" And David answers, \"The Negev of Judah,\" or \"The Negev of Jerahmeel,\" or \"The Negev of the Kenites.\"",
+          "verses": "1 Samuel 27:9-10",
+          "text": "Then he goes back to Achish, who asks him, \"What have you raided today?\" And David answers, \"The Negev of Judah,\" or \"The Negev of Jerahmeel,\" or \"The Negev of the Kenites.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -177,7 +177,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 27:8-10",
-          "question": "David's raids hit the Geshurites, the Girzites and the Amalekites. When Achish asks what he raided, David tells him the truth.",
+          "question": "When Achish asks what he raided, David names the peoples he really attacked.",
           "answers": [
             {
               "text": "True",
@@ -238,8 +238,8 @@
           "card": 16,
           "kind": "story",
           "verses": "1 Samuel 27:12-28:1",
-          "text": "Achish trusts David, thinking, \"Since he has made himself an utter stench to his people Israel, he will be my servant forever.\" Then the Philistines gather their forces for war against Israel. Uh-oh.",
-          "needs_agent_fix": true,
+          "text": "Achish trusts David, thinking, \"Since he has made himself an utter stench to his people Israel, he will be my servant forever.\" Then the Philistines gather their forces for war against Israel.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -278,7 +278,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 28:2",
-          "question": "Achish already thinks David will be his servant forever. Now David says he'll show what he can do. So Achish makes David his ___ for life.",
+          "question": "Achish already thinks David will be his servant forever. Now David says he'll show what he can do. So Achish says he'll make David his ___ for life.",
           "answers": [
             {
               "text": "bodyguard",
@@ -301,8 +301,8 @@
           "card": 20,
           "kind": "story",
           "verses": "1 Samuel 28:2",
-          "text": "The bodyguard of a Philistine king, with a war against Israel on the way. We'll stop right there, friend, but trust me, this story is NOT done.",
-          "needs_agent_fix": true,
+          "text": "We'll stop right there for now, friend. But trust me, this story is NOT done.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -8,17 +8,17 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Judges 14:19-15:1",
-          "text": "Last time, Samson went home burning with anger after his wedding feast, and his wife was given to one of the men who'd been with him. Now it's wheat harvest time. Samson heads off to visit his wife, and he brings a young goat along.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Judges 15:1",
+          "text": "Samson, an Israelite, took a young Philistine woman from Timnah as his wife, at a time when the Philistines were ruling over Israel (Judges 14:1-4). After the wedding feast, Samson went home burning with anger (Judges 14:19). Now it's wheat harvest time, and Samson takes a young goat and goes to visit his wife.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 15:1",
-          "question": "Samson tells his wife's father he wants to go to his wife in her room. What does her father do?",
+          "question": "Samson says he wants to go to his wife in her room. What does her father do?",
           "answers": [
             {
               "text": "He will not let Samson enter",
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Judges 15:2",
           "text": "Her father says he was sure Samson thoroughly hated her, so he gave her to one of the men who'd been with him. Samson's standing there holding a goat, and friend, I've been in some awkward moments, but never one with a GOAT in it.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,7 +64,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,7 +72,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 15:3",
-          "question": "Samson speaks up about the Philistines. What does he say about doing them harm this time?",
+          "question": "After being turned away, Samson speaks about the Philistines. What does he say about doing them harm this time?",
           "answers": [
             {
               "text": "He will be blameless in doing it",
@@ -87,7 +87,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -95,30 +95,31 @@
           "kind": "story",
           "verses": "Judges 15:4",
           "text": "Then Samson goes out and catches three hundred foxes. THREE HUNDRED, friend, and I can't even catch one chocolate chip rolling off my counter.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 15:4",
-          "question": "Samson turns the foxes tail-to-tail in pairs. What does he fasten between each pair of tails?",
+          "question": "Samson turns the foxes tail-to-tail and fastens a ___ between each pair of tails.",
           "answers": [
             {
-              "text": "A torch",
-              "correct": true
+              "text": "torch",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A rope",
+              "text": "rope",
               "correct": false
             },
             {
-              "text": "A bell",
+              "text": "bell",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -141,7 +142,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -149,7 +150,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 15:5",
-          "question": "True or false: The fire from Samson's foxes burns the Philistines' grain but stops before their vineyards and olive groves.",
+          "question": "True or false: The fire from Samson's foxes stops before it reaches the Philistines' vineyards and olive groves.",
           "answers": [
             {
               "text": "True",
@@ -160,38 +161,23 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Judges 15:6",
-          "text": "The Philistines demand to know who did this. They're told it was Samson, the son-in-law of the Timnite, because his wife was given to his companion.",
-          "needs_agent_fix": true,
+          "text": "The Philistines demand to know who did this. They're told it was Samson, the son-in-law of the Timnite, the man from Timnah, because his wife was given to his companion.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Judges 15:6",
-          "question": "Once they know it was Samson, the Philistines go up to Samson's wife and her father. What do they do?",
-          "answers": [
-            {
-              "text": "They burn them to death",
-              "correct": true
-            },
-            {
-              "text": "They drive them out of town",
-              "correct": false
-            },
-            {
-              "text": "They take them as prisoners",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "So the Philistines go up and burn her and her father to death. I think this one hurts, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -210,7 +196,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -218,30 +204,31 @@
           "kind": "story",
           "verses": "Judges 15:8",
           "text": "And Samson strikes the Philistines ruthlessly, with a great slaughter.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 15:8",
-          "question": "After striking down the Philistines, where does Samson go down to stay?",
+          "question": "After striking down the Philistines, Samson goes down and stays in the ___ at the rock of Etam.",
           "answers": [
             {
-              "text": "A cave at the rock of Etam",
-              "correct": true
+              "text": "cave",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His father's house",
+              "text": "tent",
               "correct": false
             },
             {
-              "text": "The town of Timnah",
+              "text": "tower",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -254,31 +241,32 @@
           "card": 1,
           "kind": "story",
           "verses": "Judges 15:9",
-          "text": "Now the Philistines come up and camp in Judah. They spread out near the town of Lehi. That's a whole army parked in your neighborhood, and I bet the men of Judah have some questions.",
-          "needs_agent_fix": true,
+          "text": "Now the Philistines come up, camp in Judah, one of Israel's tribes, and spread out near the town of Lehi. That's a whole army parked in your neighborhood, and I bet the men of Judah have some questions.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 15:10",
-          "question": "The men of Judah ask the Philistines why they've attacked. What do the Philistines say they've come to do?",
+          "question": "The men of Judah ask the Philistines why they've attacked. The Philistines say they've come to ___ Samson and pay him back for what he has done.",
           "answers": [
             {
-              "text": "Arrest Samson and pay him back",
-              "correct": true
+              "text": "arrest",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Take Judah's wheat harvest",
+              "text": "warn",
               "correct": false
             },
             {
-              "text": "Find Samson's father and mother",
+              "text": "hire",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -286,7 +274,7 @@
           "kind": "story",
           "verses": "Judges 15:11",
           "text": "So three thousand men of Judah go to the cave at the rock of Etam. When I got slid to the back of a junk drawer, nobody came looking at ALL, and these guys send THREE THOUSAND for one man.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -309,7 +297,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -317,30 +305,26 @@
           "kind": "story",
           "verses": "Judges 15:12",
           "text": "Then the men of Judah tell Samson they've come down to arrest him and hand him over to the Philistines.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Judges 15:12",
-          "question": "Before he goes with the men of Judah, Samson asks them to swear something. What is it?",
+          "question": "True or false: Samson asks the men of Judah to swear that they will not kill him themselves.",
           "answers": [
             {
-              "text": "They will not kill him themselves",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "They will tell his father and mother",
-              "correct": false
-            },
-            {
-              "text": "They will let him keep his weapons",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -363,7 +347,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -371,7 +355,7 @@
           "kind": "story",
           "verses": "Judges 15:13-14",
           "text": "They lead Samson up from the rock to Lehi, and the Philistines come out shouting against him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -379,7 +363,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 15:14",
-          "question": "True or false: When the Spirit of the LORD comes mightily upon Samson, the ropes on his arms hold tight and the Philistines take him away.",
+          "question": "True or false: When the Spirit of the LORD comes mightily upon Samson, the ropes on his arms hold tight.",
           "answers": [
             {
               "text": "True",
@@ -390,15 +374,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Judges 15:14-15",
-          "text": "The ropes on his arms become like burnt flax, and the bonds fall off his hands. Then Samson finds the fresh jawbone of a donkey, reaches out and grabs it.",
-          "needs_agent_fix": true,
+          "verses": "Judges 15:14",
+          "text": "The ropes on his arms become like burnt flax, and the bonds break loose from his hands.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -406,30 +390,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 15:15",
-          "question": "With that donkey's jawbone in his hand, how many men does Samson strike down?",
+          "question": "With his hands free and the Philistines shouting against him, what does Samson find and take hold of?",
           "answers": [
             {
-              "text": "A thousand",
+              "text": "The fresh jawbone of a donkey",
               "correct": true
             },
             {
-              "text": "Three hundred",
+              "text": "A sharp ox goad",
               "correct": false
             },
             {
-              "text": "Three thousand",
+              "text": "A wooden tent peg",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Judges 15:16",
-          "text": "Then Samson says that with the jawbone of a donkey he has piled them into heaps, and with the jawbone of a donkey he has slain a thousand men. He says jawbone of a donkey TWICE, friend, and when you've got a good batch, you bake it twice.",
-          "needs_agent_fix": true,
+          "verses": "Judges 15:15-16",
+          "text": "Samson strikes down a thousand men with it, and then he says that with the jawbone of a donkey he has piled them into heaps.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -437,7 +421,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 15:17",
-          "question": "When he finishes speaking, Samson throws the jawbone down. What does he do with that place?",
+          "question": "When he finishes speaking, Samson throws the jawbone down. What does he do with the place where he struck down the thousand men?",
           "answers": [
             {
               "text": "He names it Ramath-lehi",
@@ -452,7 +436,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -460,7 +444,7 @@
           "kind": "story",
           "verses": "Judges 15:18",
           "text": "Then Samson gets very thirsty, so he cries out to the LORD. He says, 'You have accomplished this great deliverance through Your servant.'",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -483,30 +467,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 15:19",
-          "question": "Samson cries out to the LORD in his thirst. How does God answer him?",
+          "question": "Samson cries out to the LORD in his thirst. God opens up the hollow place in Lehi, and ___ comes out of it.",
           "answers": [
             {
-              "text": "He opens a hollow place and water comes out",
-              "correct": true
+              "text": "water",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He sends rain down on the town of Lehi",
+              "text": "honey",
               "correct": false
             },
             {
-              "text": "He leads Samson to the Jordan River",
+              "text": "oil",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -514,7 +499,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 15:19",
-          "question": "True or false: When Samson drinks the water God gives, his strength returns and he is revived.",
+          "question": "True or false: When Samson drinks, his strength returns.",
           "answers": [
             {
               "text": "True",
@@ -525,15 +510,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
-          "verses": "Judges 15:19",
-          "text": "Samson names that spot En-hakkore, and the writer tells us it remains in Lehi to this day.",
-          "needs_agent_fix": true,
+          "verses": "Judges 15:17, 19",
+          "text": "Samson names that spot En-hakkore, and the writer says it was still there in Lehi when this was written. First Ramath-lehi, now En-hakkore, friend: give this man a minute and EVERYTHING gets a name.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -556,7 +541,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -564,7 +549,7 @@
           "kind": "story",
           "verses": "Judges 15:20",
           "text": "Set that timer, friend, because Samson's story is NOT done yet.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

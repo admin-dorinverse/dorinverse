@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Judges 20:47-21:1",
-          "text": "The war with Benjamin is over, friend. Israel burned the Benjamite cities, and only 600 Benjamite men got away, hiding out at the rock of Rimmon. And back at Mizpah, the men of Israel had sworn an oath about Benjamin.",
+          "verses": "Judges 21:1",
+          "text": "Israel has just fought a war against Benjamin, one of its own tribes, and 600 Benjamite men escaped to the rock of Rimmon (Judges 20:47). Israel burned down the cities in their path (Judges 20:48). And back at Mizpah, the men of Israel had sworn an oath about Benjamin.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,18 +49,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 21:3",
-          "question": "Weeping before God at Bethel, what do the people cry out to the LORD?",
+          "question": "Weeping before God at Bethel, what do the people ask the LORD?",
           "answers": [
             {
-              "text": "Asking why one tribe is missing from Israel",
+              "text": "Why one tribe is missing from Israel",
               "correct": true
             },
             {
-              "text": "Asking why the battle took three whole days",
+              "text": "Why the battle took three whole days",
               "correct": false
             },
             {
-              "text": "Asking why Benjamin refused to hand anyone over",
+              "text": "Why Benjamin refused to hand anyone over",
               "correct": false
             }
           ],
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Judges 21:4-5",
-          "text": "Next day they're up early, building an altar and presenting burnt offerings and peace offerings. Then a question goes around: who among all the tribes didn't come to the assembly before the LORD?",
+          "text": "Next day they're up early, building an altar and presenting burnt offerings and peace offerings. Then the Israelites ask: who among all the tribes of Israel didn't come to the assembly before the LORD?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -103,24 +103,29 @@
           "card": 7,
           "kind": "story",
           "verses": "Judges 21:6",
-          "text": "Here's the turn, friend: the Israelites grieve for their brothers, the Benjamites. They say, “Today a tribe is cut off from Israel.”",
+          "text": "And the Israelites grieve for their brothers, the Benjamites. They say, “Today a tribe is cut off from Israel.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Judges 21:7",
-          "question": "The Israelites ask what to do about wives for the Benjamite survivors. True or false: they're free to give the survivors their own daughters.",
+          "question": "Grieving for Benjamin, the Israelites ask what they should do about ___ for the survivors.",
           "answers": [
             {
-              "text": "True",
+              "text": "wives",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "land",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "leaders",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -129,8 +134,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Judges 21:8",
-          "text": "Ever had your own promise box you in? So Israel turns to their other oath and asks which tribe failed to come up before the LORD at Mizpah.",
+          "verses": "Judges 21:7-8",
+          "text": "They've sworn by the LORD not to give the survivors their daughters. So they ask again which tribe failed to come up before the LORD at Mizpah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -146,7 +151,7 @@
               "correct": true
             },
             {
-              "text": "Ramoth-gilead",
+              "text": "Abel-meholah",
               "correct": false
             },
             {
@@ -160,44 +165,17 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Judges 21:10",
-          "text": "Then the congregation sends 12,000 of their most valiant men to Jabesh-gilead, with a command.",
+          "verses": "Judges 21:10-11",
+          "text": "Then the congregation sends 12,000 of their most valiant men to Jabesh-gilead, commanding them to put those living there to the sword, including women and children. Every male, and every woman who has had relations with a man, is to be devoted to destruction.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Judges 21:10",
-          "question": "True or false: the congregation commands the men to put the people of Jabesh-gilead to the sword, including women and children.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Judges 21:11-12",
-          "text": "Every male, and every woman who has had relations with a man, is to be devoted to destruction. The young women who have not had relations with a man are the only ones left alive.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 21:12",
-          "question": "The men find ___ young women in Jabesh-gilead and bring them to the camp at Shiloh.",
+          "question": "Among the people of Jabesh-gilead, the men find ___ young women who had not had relations with a man, and bring them to the camp at Shiloh.",
           "answers": [
             {
               "text": "400",
@@ -217,34 +195,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "Judges 21:13",
-          "text": "Then the whole congregation sends a message of peace to the Benjamites hiding at the rock of Rimmon.",
+          "text": "Then the whole congregation sends a message of peace to the Benjamites at the rock of Rimmon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Judges 21:14",
-          "question": "The Benjamites come back and are given the 400 women from Jabesh-gilead. Remember, 600 Benjamite men survived. So how does it work out?",
+          "question": "The Benjamites return and are given the women spared from Jabesh-gilead. True or false: there are enough women for all of them.",
           "answers": [
             {
-              "text": "There are not enough women for all of them",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Every single survivor ends up with a wife",
-              "correct": false
-            },
-            {
-              "text": "Some of the women go back to Jabesh-gilead",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -289,7 +263,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Judges 21:18",
-          "text": "But the oath still stands, because the Israelites had sworn, “Cursed is he who gives a wife to a Benjamite.” They are STUCK, friend.",
+          "text": "But the elders say they can't give them their own daughters, because the Israelites had sworn, “Cursed is he who gives a wife to a Benjamite.” They are STUCK, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -299,21 +273,21 @@
           "verses": "Judges 21:19",
           "text": "Then the elders say, “But look,” and start giving directions: north of Bethel, east of the road up to Shechem, south of Lebonah. Friend, that's not directions, that's a dropped pin.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Judges 21:19",
-          "question": "What happens every year at that spot north of Bethel?",
+          "question": "The elders point to a spot north of Bethel, east of the road up to Shechem and south of Lebonah. What happens there every year?",
           "answers": [
             {
               "text": "A feast to the LORD in Shiloh",
               "correct": true
             },
             {
-              "text": "A gathering of the elders at Mizpah",
+              "text": "A meeting of the elders of Israel",
               "correct": false
             },
             {
@@ -321,14 +295,29 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Judges 21:20",
-          "text": "So the elders give the Benjamites a command: “Go, hide in the vineyards”",
+          "question": "For the feast at Shiloh, where do the elders tell the Benjamites to go and hide?",
+          "answers": [
+            {
+              "text": "In the vineyards",
+              "correct": true
+            },
+            {
+              "text": "In the olive groves",
+              "correct": false
+            },
+            {
+              "text": "In the barley fields",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -357,10 +346,18 @@
         },
         {
           "card": 8,
+          "kind": "story",
+          "verses": "Judges 21:21",
+          "text": "When they see them, each Benjamite is to come out of the vineyards and catch a wife for himself.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 21:21",
-          "question": "True or false: when the dancers come out, each Benjamite is to catch a wife from the daughters of Shiloh and then settle down in Shiloh.",
+          "question": "True or false: once each Benjamite has caught a wife at Shiloh, the elders tell him to stay and settle in Shiloh.",
           "answers": [
             {
               "text": "True",
@@ -375,19 +372,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "Judges 21:22",
-          "text": "The elders even have a speech ready for the fathers or brothers who come to complain. They'll ask them to do Israel a favor by helping the Benjamites.",
+          "text": "The elders even have a speech ready for the fathers or brothers who come to complain. They'll ask them to do the elders a favor by helping the Benjamites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 21:22",
-          "question": "The elders' loophole: since the fathers didn't actually ___ their daughters to the Benjamites, they have no guilt.",
+          "question": "The elders' reasoning: since the fathers didn't actually ___ their daughters to the Benjamites, they have no guilt.",
           "answers": [
             {
               "text": "give",
@@ -395,11 +392,11 @@
               "blank": 1
             },
             {
-              "text": "bless",
+              "text": "sell",
               "correct": false
             },
             {
-              "text": "warn",
+              "text": "bring",
               "correct": false
             }
           ],
@@ -407,7 +404,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Judges 21:23",
           "text": "And the Benjamites do as instructed. They carry away the number of women they need from the dancers they catch.",
@@ -415,7 +412,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 21:23",
@@ -434,35 +431,35 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Judges 21:24-25",
-          "text": "Then everybody heads home, each to his own tribe, clan and inheritance. And the book of Judges ends with one sentence that sums up those days: there was no king in Israel.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
           "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Judges 21:25",
-          "question": "No king in Israel in those days. So what did everyone do?",
+          "verses": "Judges 21:24",
+          "question": "With the Benjamites settled again, where does each of the other Israelites go?",
           "answers": [
             {
-              "text": "What was right in his own eyes",
+              "text": "Back to his own tribe and inheritance",
               "correct": true
             },
             {
-              "text": "What was good in the sight of the LORD",
+              "text": "Up to Shiloh for the yearly feast",
               "correct": false
             },
             {
-              "text": "What was written in the law of Moses",
+              "text": "Down to Mizpah for another assembly",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Judges 21:25",
+          "text": "And the book of Judges ends with this: “In those days there was no king in Israel; everyone did what was right in his own eyes.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

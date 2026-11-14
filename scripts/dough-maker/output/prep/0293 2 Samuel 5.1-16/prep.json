@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 5:1",
-          "text": "Saul, king of Israel, is dead, and David has been anointed king over Judah at Hebron (1 Samuel 31:6; 2 Samuel 2:4). Now ALL the tribes of Israel come to David there. That's a CROWD, friend, and the biggest one I ever got in that junk drawer was one scared can opener sliding in.",
-          "needs_agent_fix": true,
+          "text": "David has been king over Judah at Hebron (2 Samuel 2:4), while Ish-bosheth, son of King Saul, reigned over Israel (2 Samuel 2:8-10). Now Ish-bosheth is dead (2 Samuel 4:7), and ALL the tribes of Israel come to David at Hebron. And they've got something to tell him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -25,15 +25,15 @@
               "correct": true
             },
             {
-              "text": "Friends of the house of Jesse",
+              "text": "Servants of Saul's house",
               "correct": false
             },
             {
-              "text": "Servants of Saul's house",
+              "text": "Guests from distant tribes",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,7 +41,7 @@
           "kind": "story",
           "verses": "2 Samuel 5:2",
           "text": "Then they bring up the old days, back while Saul was still king over them.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,73 +64,73 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Samuel 5:2",
-          "text": "And they remind David what the LORD said to him: \"You will shepherd My people Israel, and you will be ruler over them.\" Friend, you don't forget a word like that.",
-          "needs_agent_fix": true,
+          "text": "Then they bring up something the LORD said to David. Back before all this, David took care of his father's sheep (1 Samuel 16:11).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "2 Samuel 5:3",
-          "text": "So the elders of Israel come to King David at Hebron, and he makes a covenant with them before the LORD. Not a handshake, not a thumbs-up in the group chat, a COVENANT!",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Samuel 5:2",
+          "question": "What did the LORD say David would do for His people Israel, along with being ruler over them?",
+          "answers": [
+            {
+              "text": "Shepherd them",
+              "correct": true
+            },
+            {
+              "text": "Judge them",
+              "correct": false
+            },
+            {
+              "text": "Teach them",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Samuel 5:3",
-          "question": "After King David makes a covenant with the elders of Israel at Hebron, what do the elders do?",
-          "answers": [
-            {
-              "text": "Anoint him king over Israel",
-              "correct": true
-            },
-            {
-              "text": "Make him commander of the army",
-              "correct": false
-            },
-            {
-              "text": "Bring him the crown of Saul",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "So the elders of Israel come to King David at Hebron, and he makes a covenant with them before the LORD. Not a handshake, not a thumbs-up in the group chat, a COVENANT!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Samuel 5:4",
-          "question": "David is thirty years old when he becomes king.",
+          "verses": "2 Samuel 5:3",
+          "question": "After King David makes a covenant with the elders of Israel at Hebron, the elders make him commander of the army.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Samuel 5:4-5",
-          "text": "And David reigns FORTY years, starting with seven years and six months over Judah in Hebron. Friend, I couldn't keep one stamp sharp for forty years!",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 5:3-4",
+          "text": "So the elders anoint David king over Israel, and all told, David reigns FORTY years, starting when he's thirty. Friend, I've had oven timers quit on me after forty minutes.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -138,22 +138,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 5:5",
-          "question": "After Hebron, David reigns thirty-three years over all Israel and Judah. From which city?",
+          "question": "Of David's forty years as king, seven years and six months are over Judah in Hebron. How many years does he reign over all Israel and Judah in Jerusalem?",
           "answers": [
             {
-              "text": "Jerusalem",
+              "text": "Thirty-three years",
               "correct": true
             },
             {
-              "text": "Shechem",
+              "text": "Twenty-five years",
               "correct": false
             },
             {
-              "text": "Bethel",
+              "text": "Twelve years",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -166,8 +166,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 5:6",
-          "text": "One little problem: Jerusalem isn't David's yet. When David and his men march against the Jebusites who live there, the Jebusites have something to say.",
-          "needs_agent_fix": true,
+          "text": "One little problem: Jerusalem isn't David's yet. David and his men march against the Jebusites who live there, and I don't think the Jebusites are worried one bit.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -186,118 +186,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Samuel 5:6",
-          "text": "They're SO sure, they even think it to themselves: \"David cannot get in here.\" Friend, I said that about my chocolate chip bin once. Famous last words.",
-          "needs_agent_fix": true,
+          "text": "They're SO sure, they think to themselves, \"David cannot get in here.\" That's how sure I was that nobody would ever move me off the kitchen counter where I used to stamp cookies.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Samuel 5:7",
-          "question": "Nevertheless, David captures the fortress of ___, also known as the City of ___.",
-          "answers": [
-            {
-              "text": "Zion",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "David",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Moriah",
-              "correct": false
-            },
-            {
-              "text": "Saul",
-              "correct": false
-            },
-            {
-              "text": "Judah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "2 Samuel 5:8",
-          "text": "On that day, David gives the plan for reaching the lame and blind who are despised by David.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 5:8",
-          "question": "What does David say whoever attacks the Jebusites must use?",
-          "answers": [
-            {
-              "text": "The water shaft",
-              "correct": true
-            },
-            {
-              "text": "The main gate",
-              "correct": false
-            },
-            {
-              "text": "Ladders on the walls",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "2 Samuel 5:8-9",
-          "text": "That's why people say, \"The blind and the lame will never enter the palace.\" Then David moves into the fortress and calls it the City of David.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 5:9",
-          "question": "Once David moves into the fortress, what does he do with the City of David?",
-          "answers": [
-            {
-              "text": "Builds it up all the way around",
-              "correct": true
-            },
-            {
-              "text": "Hands it over to the elders",
-              "correct": false
-            },
-            {
-              "text": "Rebuilds only its city gates",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "2 Samuel 5:10",
-          "question": "From there, David becomes greater and greater, for the LORD God of Hosts was with him.",
+          "verses": "2 Samuel 5:7",
+          "question": "Even with the Jebusites so sure, David captures their fortress.",
           "answers": [
             {
               "text": "True",
@@ -308,19 +213,81 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "2 Samuel 5:7",
+          "text": "The fortress David takes is Zion, also known as the City of David.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "2 Samuel 5:8",
+          "text": "On that day, David says whoever attacks the Jebusites must use the water shaft to reach the lame and blind who are despised by David. That's where a saying about the blind and the lame comes from.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Samuel 5:9",
+          "question": "David moves into the fortress he captured. What does he do with the city?",
+          "answers": [
+            {
+              "text": "Builds it up all the way around",
+              "correct": true
+            },
+            {
+              "text": "Gives it back to the Jebusites",
+              "correct": false
+            },
+            {
+              "text": "Leaves it to go back to Hebron",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Samuel 5:10",
+          "question": "From there, David becomes greater and greater as king. Why?",
+          "answers": [
+            {
+              "text": "The LORD God of Hosts is with him",
+              "correct": true
+            },
+            {
+              "text": "His army outnumbers every nation",
+              "correct": false
+            },
+            {
+              "text": "The Jebusites join his side",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "2 Samuel 5:11",
+          "text": "Hiram, king of Tyre, sends envoys to David with cedar logs, carpenters and stonemasons. That's not a little gift, friend, that's a WHOLE construction crew!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "2 Samuel 5:11",
-          "text": "Hiram, king of Tyre, sends envoys to David with cedar logs, carpenters and stonemasons. That's not a little gift, friend, that's a WHOLE construction crew!",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 5:11",
@@ -339,11 +306,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 5:12",
@@ -358,15 +325,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "2 Samuel 5:13-16",
-          "text": "After arriving from Hebron, David takes more concubines and wives from Jerusalem, and more sons and daughters are born to him. Eleven children born in Jerusalem get named, Nathan and Solomon among them. ELEVEN! I named six stations after my six kids, and David would need a bakery twice the size!",
-          "needs_agent_fix": true,
+          "text": "After arriving from Hebron, David takes more concubines and wives from Jerusalem, and more sons and daughters are born to him. Eleven children born to him in Jerusalem are named, Solomon among them, and a son named Nathan (not Nathan the prophet). ELEVEN! I named six little cookie cutters once and thought THAT was a lot of naming.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

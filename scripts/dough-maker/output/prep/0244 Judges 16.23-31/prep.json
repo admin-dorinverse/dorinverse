@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Judges 16:23",
-          "text": "Last time, Delilah got Samson's secret, his hair was shaved, and the Philistines gouged out his eyes and put him to grinding grain in a Gaza prison. But his hair started growing back (Judges 16:17-22). Now the lords of the Philistines gather to offer a great sacrifice to their god Dagon.",
+          "text": "Samson, a judge of Israel, told Delilah, the woman he loved, the secret of his strength, and his hair was shaved. The Philistines gouged out his eyes and put him to grinding grain in a Gaza prison, but his hair started growing back (Judges 16:17-22). Now the lords of the Philistines gather to offer a great sacrifice to their god Dagon.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,14 +34,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Judges 16:24",
-          "question": "When the people see Samson, they praise their god and call Samson the enemy who destroyed their land and multiplied their dead.",
+          "question": "When the people see Samson, they say he destroyed their land and multiplied their dead.",
           "answers": [
             {
               "text": "True",
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Judges 16:25",
-          "question": "They call for Samson. So they bring him out of the prison to ___ them.",
+          "question": "The Philistines call for Samson. So they bring him out of the prison to ___ them.",
           "answers": [
             {
               "text": "entertain",
@@ -84,26 +84,27 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Judges 16:25",
-          "question": "Samson's out of the prison and in front of the crowd. Where do the Philistines station him?",
+          "question": "Samson's out of the prison and in front of the crowd. The Philistines station him between the ___.",
           "answers": [
             {
-              "text": "Between the pillars",
-              "correct": true
+              "text": "pillars",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "At the city gate",
+              "text": "gates",
               "correct": false
             },
             {
-              "text": "Beside the altar",
+              "text": "altars",
               "correct": false
             }
           ],
@@ -114,28 +115,27 @@
           "card": 7,
           "kind": "story",
           "verses": "Judges 16:26",
-          "text": "Samson can't see a thing, so a servant is holding his hand. Then Samson speaks up and asks the servant for something.",
+          "text": "A servant is holding Samson's hand. Samson asks the servant to lead him where he can feel the pillars supporting the temple.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Judges 16:26",
-          "question": "Samson asks the servant to lead him where he can feel the ___ supporting the temple, so he can lean against them.",
+          "question": "Samson asks the servant to lead him to the pillars supporting the temple. What does Samson say he wants to do there?",
           "answers": [
             {
-              "text": "pillars",
-              "correct": true,
-              "blank": 1
+              "text": "Lean against them",
+              "correct": true
             },
             {
-              "text": "walls",
+              "text": "Hide behind them",
               "correct": false
             },
             {
-              "text": "gates",
+              "text": "Hear the crowd better",
               "correct": false
             }
           ],
@@ -146,7 +146,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Judges 16:27",
-          "text": "This temple is PACKED: all the lords of the Philistines, and about three thousand men and women up on the roof alone, watching Samson. And I thought the junk drawer was crowded.",
+          "text": "This temple is PACKED: all the lords of the Philistines, and about three thousand men and women up on the roof alone, watching Samson. And I thought the junk drawer I spent years in was crowded.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -154,7 +154,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Judges 16:28",
-          "text": "Then Samson calls out to the LORD: \"O Lord GOD, please remember me.\" Friend, after years in the back of a junk drawer, I KNOW what it feels like to want somebody to remember you.",
+          "text": "Then Samson calls out to the LORD: \"O Lord GOD, please remember me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -180,21 +180,20 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Judges 16:28",
-          "question": "Samson asks for one blow to pay the Philistines back for his two ___.",
+          "question": "Samson prays for one vengeful blow. What does he want that blow to do?",
           "answers": [
             {
-              "text": "eyes",
-              "correct": true,
-              "blank": 1
+              "text": "Pay back the Philistines",
+              "correct": true
             },
             {
-              "text": "braids",
+              "text": "Break him free of his shackles",
               "correct": false
             },
             {
-              "text": "shackles",
+              "text": "Win him a way back home",
               "correct": false
             }
           ],
@@ -278,7 +277,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Judges 16:31",
-          "text": "Afterward, Samson's brothers and his father's family come down to get him, and they carry him back.",
+          "text": "Afterward, Samson's brothers and his father's family come down and carry him back.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -307,26 +306,10 @@
         },
         {
           "card": 19,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Judges 16:31",
-          "question": "One last detail about Samson: he had judged Israel for ___ years.",
-          "answers": [
-            {
-              "text": "twenty",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "forty",
-              "correct": false
-            },
-            {
-              "text": "eighty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And this is where Samson's story ends. He had judged Israel twenty years.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 31:1",
-          "text": "Last time, David got his family back from the Amalekites (1 Samuel 30:18-19). Now the Philistines are fighting against Israel, and Saul, Israel's king, is right in the middle of it. Pull up a stool, friend.",
+          "text": "David has just won back his family from Amalekite raiders (1 Samuel 30:18-19). Now the Philistines are at war with Israel, the nation led by Saul, its king. Pull up a stool, friend.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -66,44 +66,13 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "1 Samuel 31:3",
-          "text": "Then the battle intensifies, and it's pressing right on Saul himself. I'm holding my breath over here, friend.",
+          "verses": "1 Samuel 31:3-4",
+          "text": "Then the battle intensifies against Saul, and the archers wound him critically. He turns to his armor-bearer and says the Philistines will come and torture him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 31:3",
-          "question": "As the battle gets fierce around Saul, the ___ overtake him and wound him critically.",
-          "answers": [
-            {
-              "text": "archers",
-              "correct": true
-            },
-            {
-              "text": "horsemen",
-              "correct": false
-            },
-            {
-              "text": "spearmen",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "1 Samuel 31:3-4",
-          "text": "Saul is badly wounded. He turns to his armor-bearer, because he doesn't want the Philistines getting to him first.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 31:4",
@@ -123,52 +92,21 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 31:4",
-          "question": "Saul's armor-bearer does what Saul asks him to do.",
+          "question": "Saul's armor-bearer refuses to do what Saul asks him to do.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "1 Samuel 31:4",
-          "text": "Friend, I've got nothing funny for this one. His armor-bearer is terrified and refuses, so Saul takes his own sword and falls on it.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Samuel 31:5",
-          "question": "When Saul's armor-bearer sees that Saul is dead, what does he do?",
-          "answers": [
-            {
-              "text": "Falls on his own sword too",
-              "correct": true
-            },
-            {
-              "text": "Runs to the Philistine camp",
-              "correct": false
-            },
-            {
-              "text": "Carries Saul's body away",
               "correct": false
             }
           ],
@@ -176,7 +114,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 8,
+          "kind": "story",
+          "verses": "1 Samuel 31:4",
+          "text": "This part is heavy, friend. His armor-bearer is terrified and refuses, so Saul takes his own sword and falls on it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "1 Samuel 31:5",
+          "text": "When his armor-bearer sees that Saul is dead, he too falls on his own sword and dies with him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "story",
           "verses": "1 Samuel 31:6-7",
           "text": "Saul, his three sons, his armor-bearer and all his men die together that same day. Israelites in the valley and across the Jordan see that the army has fled and that Saul and his sons are dead.",
@@ -184,7 +138,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 31:7",
@@ -207,18 +161,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 31:7",
-          "question": "So the ___ came and moved into the cities those Israelites left behind.",
+          "question": "After the Israelites in the valley and across the Jordan run away, the ___ come and occupy their cities.",
           "answers": [
             {
               "text": "Philistines",
               "correct": true
             },
             {
-              "text": "Amalekites",
+              "text": "Moabites",
               "correct": false
             },
             {
@@ -239,7 +193,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 31:8",
-          "text": "The next day, the Philistines come back to strip the dead. And there on Mount Gilboa, they find Saul and his three sons.",
+          "text": "The next day, the Philistines come to strip the dead. And there on Mount Gilboa, they find Saul and his three sons.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -248,7 +202,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 31:9",
-          "question": "The Philistines came to strip the dead. From Saul's body, they strip off his ___.",
+          "question": "The Philistines cut off Saul's head. Then they strip off his ___.",
           "answers": [
             {
               "text": "armor",
@@ -270,7 +224,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 31:9",
-          "text": "They cut off Saul's head too. Now remember, the Philistines have temples for their idols, like the temple of Dagon, where they once put the ark of God (1 Samuel 5:2).",
+          "text": "Then they send messengers all through the land of the Philistines with the news.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -290,7 +244,7 @@
               "correct": false
             },
             {
-              "text": "On the walls of Jericho",
+              "text": "At the city gate of Gibeah",
               "correct": false
             }
           ],
@@ -301,27 +255,27 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Samuel 31:10",
-          "text": "Saul's armor goes into the temple of the Ashtoreths. But the Philistines aren't done with his body.",
+          "text": "Saul's armor goes into the temple of the Ashtoreths, false goddesses. But the Philistines aren't done with his body.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 31:10",
-          "question": "After putting Saul's armor in the temple of the Ashtoreths, what do the Philistines do with his body?",
+          "question": "The Philistines hang Saul's body on the wall of ___.",
           "answers": [
             {
-              "text": "Hang it on the wall of Beth-shan",
+              "text": "Beth-shan",
               "correct": true
             },
             {
-              "text": "Bury it on Mount Gilboa",
+              "text": "Jericho",
               "correct": false
             },
             {
-              "text": "Send it back to Israel",
+              "text": "Hebron",
               "correct": false
             }
           ],
@@ -332,7 +286,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 31:11",
-          "text": "Word reaches the people of Jabesh-gilead. Years ago, Saul rescued that town from the Ammonites (1 Samuel 11:1-11).",
+          "text": "Word reaches the people of Jabesh-gilead. Saul once rescued that town from the Ammonites (1 Samuel 11:1-11).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -363,20 +317,12 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Samuel 31:12",
-          "text": "They journey all night to get them. All night, friend. I can't make it past the second oven timer without nodding off.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "1 Samuel 31:12",
-          "text": "When they arrive at Jabesh, they burn the bodies of Saul and his sons there.",
+          "text": "They journey all night to get the bodies of Saul and his sons from the wall of Beth-shan. When they arrive at Jabesh, they burn the bodies there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 31:13",
@@ -399,11 +345,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 31:13",
-          "question": "After burying the bones under the tamarisk tree, they fast for seven days.",
+          "question": "After burying the bones under the tamarisk tree, the men of Jabesh fast for seven days.",
           "answers": [
             {
               "text": "True",

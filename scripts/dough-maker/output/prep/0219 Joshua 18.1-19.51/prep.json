@@ -9,20 +9,21 @@
           "card": 1,
           "kind": "story",
           "verses": "Joshua 18:1",
-          "text": "The whole congregation of Israel gathers in one place and sets up the Tent of Meeting there. EVERYBODY, in one spot. I spent years in a junk drawer, and even THAT didn't feel this crowded.",
+          "text": "Israel's tribes are receiving their land, and Judah and the sons of Joseph, Ephraim and Manasseh, already have theirs (Joshua 15:1; 16:4). Now the whole congregation of Israel gathers in one place and sets up the Tent of Meeting there. EVERYBODY, in one spot, and I panic when two bakers walk in at the same time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Joshua 18:1",
-          "question": "Where does the whole congregation of Israel gather and set up the Tent of Meeting?",
+          "question": "The whole congregation of Israel gathers at ___ and sets up the Tent of Meeting there.",
           "answers": [
             {
               "text": "Shiloh",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Gilgal",
@@ -39,29 +40,28 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Joshua 18:1-2",
-          "text": "The land is subdued before them, so the job's done, right? Not so fast, friend, because some tribes still haven't received their inheritance.",
+          "verses": "Joshua 18:1",
+          "text": "The land is subdued before them, so the job's done, right? Not so fast, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Joshua 18:2",
-          "question": "___ tribes of Israel still haven't received their inheritance.",
+          "question": "The land is subdued before Israel, so what's still unfinished?",
           "answers": [
             {
-              "text": "Seven",
-              "correct": true,
-              "blank": 1
+              "text": "Seven tribes haven't received their inheritance",
+              "correct": true
             },
             {
-              "text": "Five",
+              "text": "The Tent of Meeting has no priest",
               "correct": false
             },
             {
-              "text": "Three",
+              "text": "Judah's cities still need walls",
               "correct": false
             }
           ],
@@ -72,28 +72,24 @@
           "card": 5,
           "kind": "story",
           "verses": "Joshua 18:3",
-          "text": "So Joshua, Israel's leader, stands up with a question for the Israelites.",
+          "text": "So Joshua, Israel's leader, has a question for the Israelites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Joshua 18:3",
-          "question": "Seven tribes are still waiting on their land. What does Joshua ask the Israelites?",
+          "question": "With seven tribes still waiting on their land, Joshua asks the Israelites why they're in such a hurry.",
           "answers": [
             {
-              "text": "How long they'll put off taking the land",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Why they set up the Tent at Shiloh",
-              "correct": false
-            },
-            {
-              "text": "Who will lead them after he dies",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -102,8 +98,8 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Joshua 18:3-4",
-          "text": "Land the LORD, the God of their fathers, already GAVE them, and seven tribes are hitting the snooze button on it. So Joshua lays out a plan.",
+          "verses": "Joshua 18:3",
+          "text": "Joshua asks how long they'll put off taking the land the LORD, the God of their fathers, has given them. They're hitting the snooze button on a GIFT, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -112,7 +108,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 18:4",
-          "question": "Joshua tells the Israelites to appoint ___ men from each tribe.",
+          "question": "Joshua lays out a plan: the Israelites appoint ___ men from each tribe.",
           "answers": [
             {
               "text": "three",
@@ -156,52 +152,14 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Joshua 18:4-5",
-          "question": "When the men come back to Joshua, they'll divide the land into seven portions.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Joshua 18:5",
+          "text": "Joshua also says Judah stays in its territory in the south, and the house of Joseph stays in theirs in the north.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Joshua 18:5",
-          "text": "Joshua also mentions Judah and the house of Joseph. They won't be part of this, because they stay right where they are.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Joshua 18:5",
-          "question": "Joshua says Judah stays in its territory in the north, and the house of Joseph stays in its territory in the south.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 18:6",
@@ -224,15 +182,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Joshua 18:7",
-          "text": "And there's more. Joshua says the Levites have no portion among them.",
+          "text": "And there's more. Joshua says the Levites, the tribe that serves at the Tent of Meeting (Numbers 3:7), have no portion among them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 18:7",
@@ -252,15 +210,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 18:7",
-          "question": "Gad, Reuben and half the tribe of Manasseh aren't in this drawing either, because they already received land from Moses beyond the Jordan to the east.",
+          "question": "Gad, Reuben and half the tribe of Manasseh aren't in this drawing either, because Moses, Israel's leader before Joshua, already gave them land beyond the Jordan to the east.",
           "answers": [
             {
               "text": "True",
@@ -271,11 +229,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "Joshua 18:8",
           "text": "As the men get up to go, Joshua tells them again to survey the land, map it out and come back, so he can cast lots for them here in Shiloh before the LORD. Friend, that's exactly how I explain a recipe: twice, and then once more while you're already mixing.",
@@ -283,7 +241,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Joshua 18:9",
           "text": "So off they go, all through the land, mapping it city by city into seven portions.",
@@ -291,7 +249,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 18:9",
@@ -314,7 +272,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "Joshua 18:10",
           "text": "Then Joshua casts lots for them in the presence of the LORD at Shiloh and hands out the land. Friend, I haven't held my breath like this since my junk drawer days, when every time that drawer slid open, we all waited to see who'd get picked.",
@@ -331,12 +289,20 @@
           "card": 1,
           "kind": "story",
           "verses": "Joshua 18:11-19:48",
-          "text": "Then the lots come out one by one for Benjamin, Simeon, Zebulun, Issachar, Asher, Naphtali and Dan, each with its borders, cities and villages. Benjamin's cities include Jebus, that is, Jerusalem, and Simeon's land sits inside Judah's, because the share for Judah was too large for them. Yes, friend. THAT Jerusalem.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the lots come out one by one for Benjamin, Simeon, Zebulun, Issachar, Asher, Naphtali and Dan, each with its land, its cities and their villages. Benjamin's cities include Jebus, that is, Jerusalem, and Simeon's land sits inside Judah's, because the share for Judah's descendants was too large for them. Yes, friend. THAT Jerusalem.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "story",
+          "verses": "Joshua 19:49",
+          "text": "Once the land is all divided, the Israelites still have one more inheritance to give.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 19:49",
@@ -355,11 +321,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 19:50",
@@ -374,11 +340,11 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 19:50",
@@ -397,39 +363,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 19:50",
           "question": "Joshua ___ the city of Timnath-serah and settles in it.",
           "answers": [
             {
-              "text": "rebuilt",
+              "text": "rebuilds",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "divided",
+              "text": "divides",
               "correct": false
             },
             {
-              "text": "emptied",
+              "text": "empties",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Joshua 19:51",
-          "text": "Eleazar the priest, Joshua and the heads of the families handed out all these inheritances by lot, right at the entrance to the Tent of Meeting.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -437,7 +395,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 19:51",
-          "question": "All of these inheritances were handed out at Shiloh, before the LORD.",
+          "question": "Eleazar the priest, Joshua and the heads of the families hand out these inheritances to the tribes of Israel by lot at Shiloh, before the LORD.",
           "answers": [
             {
               "text": "True",
@@ -448,15 +406,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Joshua 19:51",
-          "text": "So they finished dividing up the land. Seven tribes, seven lots, and not one argument in these two chapters. Friend, I once got into an argument with an oven timer. And I LOST.",
-          "needs_agent_fix": true,
+          "text": "So they finish dividing up the land at the entrance to the Tent of Meeting. Seven tribes waiting, seven lots cast, and the job is DONE. Friend, I've been almost done with one cookie box since my timer was new.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

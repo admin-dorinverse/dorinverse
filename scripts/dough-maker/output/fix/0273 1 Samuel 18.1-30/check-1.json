@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "The question says \"After that song,\" which points back to a card the baker can't see. It never says which song or who sang it.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The question says \"Behind that price,\" which points back to the dowry on a previous card the baker can't see. It never says what the price is.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "This card re-asks a fact already asked. Card 2 already asked that Saul wants the Philistines to strike David down, and the baker answered it. Card 12 asks the same point again, that Saul intends David's death at the Philistines' hands.",
+      "rule": "An easy follow-up asks something new. It never re-asks the same fact. Two lines that make the same point get one question."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "The statement tests two claims at once: that the servants speak to David privately, and that they tell him the king is pleased with him.",
+      "rule": "A true or false statement tests one claim."
+    }
+  ]
+}

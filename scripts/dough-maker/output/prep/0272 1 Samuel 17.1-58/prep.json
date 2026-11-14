@@ -99,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Samuel 17:10",
-          "text": "No small talk, friend. He just yells it: \"I defy the ranks of Israel this day! Give me a man to fight!\"",
+          "text": "And he's not done. He says, \"I defy the ranks of Israel this day! Give me a man to fight!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -130,8 +130,8 @@
           "card": 9,
           "kind": "story",
           "verses": "1 Samuel 17:12-13",
-          "text": "Now over to Bethlehem. Jesse, an old man there, has eight sons, and one of them is named David. The three oldest, Eliab, Abinadab and Shammah, followed Saul into battle.",
-          "needs_agent_fix": true,
+          "text": "Now over to Bethlehem, where Jesse, an old man, has eight sons, and one of them is named David. The three oldest, Eliab, Abinadab and Shammah, followed Saul into battle.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -162,7 +162,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Samuel 17:15-16",
-          "text": "David goes back and forth from Saul to tend his father's sheep in Bethlehem. Meanwhile, Goliath keeps stepping out every morning and every evening, like an alarm clock nobody can find the off button for.",
+          "text": "David goes back and forth from Saul to tend his father's sheep in Bethlehem. Meanwhile, Goliath keeps stepping out every morning and every evening, like that alarm that keeps going off when you just can't find the button.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -335,7 +335,7 @@
           "card": 4,
           "kind": "story",
           "verses": "1 Samuel 17:26",
-          "text": "I'd hop down that hill for TAX-FREE alone, friend, gold base and all. And David asks the men around him, \"What will be done for the man who kills this Philistine and removes this disgrace from Israel?\"",
+          "text": "I'd run down that hill for TAX-FREE alone, friend. And David asks the men around him, \"What will be done for the man who kills this Philistine and removes this disgrace from Israel?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -393,7 +393,7 @@
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 17:28-29",
-          "text": "Eliab asks who's watching those few sheep and accuses David of pride, saying he came down to see the battle. David's answer is pure little brother: \"What have I done now?\"",
+          "text": "Eliab asks who's watching those few sheep and accuses David of pride, saying he came down to see the battle. David answers, \"What have I done now?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -482,19 +482,19 @@
           "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Samuel 17:36",
-          "question": "David tells Saul he has killed lions and bears. What does he say this Philistine will be like?",
+          "verses": "1 Samuel 17:35",
+          "question": "David tells Saul about the lions and bears he faced while tending sheep. What did he do when one reared up against him?",
           "answers": [
             {
-              "text": "Like one of them",
+              "text": "Grabbed it by its fur and killed it",
               "correct": true
             },
             {
-              "text": "Like a falling tree",
+              "text": "Climbed a tree until it left",
               "correct": false
             },
             {
-              "text": "Like a passing storm",
+              "text": "Called the other shepherds for help",
               "correct": false
             }
           ],
@@ -503,6 +503,14 @@
         },
         {
           "card": 15,
+          "kind": "story",
+          "verses": "1 Samuel 17:36",
+          "text": "David says he's killed lions and bears, and this uncircumcised Philistine will be like one of them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 17:37",
@@ -526,7 +534,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "story",
           "verses": "1 Samuel 17:37-38",
           "text": "Saul tells him to go, and may the LORD be with him. Then Saul dresses David in his own tunic, a bronze helmet and armor.",
@@ -534,7 +542,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 17:39",
@@ -553,15 +561,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "story",
-          "verses": "1 Samuel 17:40",
-          "text": "No armor this time. David goes down to the brook, picks out five smooth stones and drops them in the pouch of his shepherd's bag.",
+          "verses": "1 Samuel 17:39-40",
+          "text": "So David takes all of it off. Then he picks out five smooth stones from the brook and drops them in the pouch of his shepherd's bag.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 17:40",
@@ -682,21 +690,20 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Samuel 17:47",
-          "question": "David tells everyone gathered there that the LORD doesn't save by sword or spear. Why not? Because the battle is the ___'s.",
+          "question": "David tells everyone gathered there that the LORD doesn't save by sword or spear. What reason does David give?",
           "answers": [
             {
-              "text": "LORD",
-              "correct": true,
-              "blank": 1
+              "text": "The battle is the LORD's",
+              "correct": true
             },
             {
-              "text": "king",
+              "text": "Bronze armor stops every blade",
               "correct": false
             },
             {
-              "text": "army",
+              "text": "Swords belong to the king alone",
               "correct": false
             }
           ],
@@ -707,7 +714,7 @@
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 17:47-48",
-          "text": "David says the LORD will give them all into Israel's hands, and Goliath starts forward to attack. Everybody else ran AWAY from this man, friend, and David RUNS straight at him.",
+          "text": "David says the LORD will hand all the Philistines over to Israel, and Goliath starts forward to attack. Everybody else ran AWAY from this man, friend, and David RUNS straight at him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -739,8 +746,8 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Samuel 17:49",
-          "text": "The stone sinks into his forehead, and the champion falls facedown on the ground. Six cubits and a span, flat on his face. ONE stone.",
-          "needs_agent_fix": true,
+          "text": "The stone sinks into his forehead, and Goliath falls facedown on the ground.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -824,7 +831,7 @@
           "card": 16,
           "kind": "story",
           "verses": "1 Samuel 17:55",
-          "text": "Now back up a moment. As Saul watched David go out to face Goliath, he asked Abner, commander of the army, whose son this young man is, and Abner said he didn't know.",
+          "text": "Now back up a moment. As Saul watched David go out to face Goliath, he turned to Abner, commander of the army, with a question.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -832,19 +839,19 @@
           "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Samuel 17:56",
-          "question": "Abner doesn't know who David's father is. What does Saul tell him?",
+          "verses": "1 Samuel 17:55",
+          "question": "Saul watches David go out to face Goliath. What does Saul ask Abner about this young man?",
           "answers": [
             {
-              "text": "Find out whose son he is",
+              "text": "Whose son he is",
               "correct": true
             },
             {
-              "text": "Give him a sword and shield",
+              "text": "How old he is",
               "correct": false
             },
             {
-              "text": "Send him home to his family",
+              "text": "Where he learned the sling",
               "correct": false
             }
           ],
@@ -854,8 +861,8 @@
         {
           "card": 18,
           "kind": "story",
-          "verses": "1 Samuel 17:57",
-          "text": "So when David comes back, still holding Goliath's head in his hand, Abner brings him straight to Saul.",
+          "verses": "1 Samuel 17:55-57",
+          "text": "Abner says he doesn't know, so Saul tells him to find out. When David comes back, still holding Goliath's head in his hand, Abner brings him straight to Saul.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

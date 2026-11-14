@@ -9,75 +9,52 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 10:17-18",
-          "text": "After this, Samuel calls the people together to the LORD at Mizpah. Samuel is Israel's prophet, and he's got a message for the whole crowd. It comes straight from the LORD, the God of Israel.",
-          "needs_agent_fix": true,
+          "text": "After this, Samuel, Israel's prophet, calls the people together to the LORD at Mizpah. He tells them what the LORD, the God of Israel, says. The LORD says, “I brought Israel up out of Egypt, and I rescued you from the hands of the Egyptians and of all the kingdoms that oppressed you.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Samuel 10:18",
-          "question": "The LORD's message to Israel at Mizpah starts with a reminder. What does He say He did for them?",
+          "type": "fill_blank",
+          "verses": "1 Samuel 10:19",
+          "question": "But then Samuel says that today, Israel has ___ their God, who saves them from all their troubles and afflictions.",
           "answers": [
             {
-              "text": "Brought them up out of Egypt",
-              "correct": true
+              "text": "rejected",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Gave them a king long ago",
+              "text": "thanked",
               "correct": false
             },
             {
-              "text": "Built them a city at Mizpah",
+              "text": "followed",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Samuel 10:19",
-          "text": "Then Samuel turns it around: today, he says, they have rejected their God, who saves them from all their troubles and afflictions. They've told Him, “No, set a king over us.”",
-          "needs_agent_fix": true,
+          "text": "They've told God, “No, set a king over us.” So Samuel tells them, “Now therefore present yourselves before the LORD by your tribes and clans.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 10:19",
-          "question": "So Samuel tells Israel to present themselves before the LORD. They'll come forward by their tribes and ___.",
-          "answers": [
-            {
-              "text": "clans",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "towns",
-              "correct": false
-            },
-            {
-              "text": "elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Samuel 10:20",
+          "text": "So all the tribes of Israel come forward. I know this feeling, friend: YEARS in a junk drawer, holding my breath every time it opened to see who was getting picked.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Samuel 10:20",
-          "text": "So all the tribes of Israel come forward. I know this feeling, friend: YEARS in a junk drawer, holding my breath every time it opened to see who was getting picked.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 10:20",
@@ -96,7 +73,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "1 Samuel 10:21",
+          "text": "Then the tribe of Benjamin comes forward by its clans, and the clan of Matri is selected.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -104,34 +89,57 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 10:21",
-          "question": "Next the tribe of Benjamin comes forward clan by clan, and the clan of Matri is selected. Then one man is selected. Who is it?",
+          "question": "The clan of Matri, from the tribe of Benjamin, has been selected. Finally, one man is selected. Who is it?",
           "answers": [
             {
               "text": "Saul son of Kish",
               "correct": true
             },
             {
-              "text": "Abner son of Ner",
+              "text": "Ehud son of Gera",
               "correct": false
             },
             {
-              "text": "Kish son of Abiel",
+              "text": "Shimei son of Gera",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 10:21",
-          "text": "Saul son of Kish is the pick! A WHOLE nation narrowed down to ONE man, they go to get him, and... NOBODY can find him.",
-          "needs_agent_fix": true,
+          "text": "A WHOLE nation narrowed down to ONE man, they go to get him, and... NOBODY can find him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Samuel 10:22",
+          "question": "Nobody can find Saul son of Kish, the man who was just selected. So what do they do?",
+          "answers": [
+            {
+              "text": "Inquire of the LORD again",
+              "correct": true
+            },
+            {
+              "text": "Pick a different man",
+              "correct": false
+            },
+            {
+              "text": "Wait until morning",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 10:22",
@@ -151,34 +159,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Samuel 10:23",
-          "question": "They run and bring Saul out. When he stands among the people, he's a head taller than any of them.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "1 Samuel 10:24",
-          "text": "Then Samuel says to all the people, “Do you see the one the LORD has chosen? There is no one like him among all the people.” That is a BIG introduction for a man they just pulled out of the luggage.",
-          "needs_agent_fix": true,
+          "verses": "1 Samuel 10:23",
+          "text": "So they run and bring Saul, and he's a head taller than any of the others. Not bad for a man they just pulled out of the luggage.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -186,7 +175,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 10:24",
-          "question": "Samuel presents Saul as the one the LORD has chosen. All the people shout: long live the ___!",
+          "question": "Samuel says to all the people, “Do you see the one the LORD has chosen? There is no one like him among all the people.” And all the people shout: long live the ___!",
           "answers": [
             {
               "text": "king",
@@ -202,23 +191,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "1 Samuel 10:25",
-          "text": "Then Samuel explains the rights of kingship to the people. I bet the new king is still brushing baggage dust off his shoulders.",
-          "needs_agent_fix": true,
+          "text": "Then Samuel explains the rights of kingship to the people. He writes them on a scroll.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Samuel 10:25",
-          "question": "Samuel explains the rights of kingship to the people, but he never writes them down.",
+          "question": "Samuel has written the rights of kingship on a scroll. Where does he put it?",
+          "answers": [
+            {
+              "text": "Before the LORD",
+              "correct": true
+            },
+            {
+              "text": "At Rachel's tomb",
+              "correct": false
+            },
+            {
+              "text": "On Samuel's roof",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Samuel 10:26",
+          "question": "Samuel sends all the people away, each to his own home. Saul goes to his home in Gibeah all alone.",
           "answers": [
             {
               "text": "True",
@@ -229,50 +241,34 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "1 Samuel 10:25",
-          "text": "Samuel writes them on a scroll and lays it up before the LORD. Then he sends all the people away, each to his own home.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Samuel 10:26",
-          "question": "Saul heads to his home in Gibeah too. Who goes with him?",
+          "verses": "1 Samuel 10:27",
+          "question": "Saul goes home with men of valor whose hearts God had touched. But some worthless men aren't on board. What do they say about Saul?",
           "answers": [
             {
-              "text": "Men of valor God had touched",
+              "text": "How can this man save us",
               "correct": true
             },
             {
-              "text": "Prophets the LORD had sent",
+              "text": "Why did this man hide from us",
               "correct": false
             },
             {
-              "text": "Priests who served the LORD",
+              "text": "Who is this man's father",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "1 Samuel 10:27",
-          "text": "But not everybody's on board. Some worthless men say, “How can this man save us?”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 10:27",
@@ -291,15 +287,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "1 Samuel 10:27",
-          "text": "Not one word from the new king, and I'm impressed, because say ONE thing about my mustache and I've got a twenty-minute speech ready. But that's where we'll leave it for now, friend, because this king's story is far from over.",
-          "needs_agent_fix": true,
+          "text": "Not one word from the new king, and I'm impressed, because say ONE thing about my mustache and I've got a twenty-minute speech ready. But this king's story is FAR from over, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

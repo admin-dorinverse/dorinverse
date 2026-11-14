@@ -9,15 +9,15 @@
           "card": 1,
           "kind": "story",
           "verses": "Joshua 11:1",
-          "text": "Joshua and Israel have been taking city after city in Canaan (Joshua 10). Now, up north, Jabin, king of Hazor, hears about these things. So he sends word to Jobab, king of Madon, and to the kings of Shimron and Achshaph.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Joshua, Israel's leader, and all Israel have been taking city after city in Canaan (Joshua 10). Now Jabin, king of Hazor, hears about these things. So he sends word to Jobab, king of Madon, and to the kings of Shimron and Achshaph.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Joshua 11:2-3",
-          "text": "And he keeps going: kings and peoples from the mountains to the foothills, east and west, all the way to the foot of Hermon. Friend, Jabin is adding EVERYBODY to the group chat.",
+          "text": "And he keeps going: kings and peoples from the mountains to the foothills, east and west, all the way to the foot of Hermon, a mountain in the north. Friend, Jabin is adding EVERYBODY to the group chat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -26,7 +26,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 11:4",
-          "question": "Jabin's messages go out to the whole north. So these kings came out with all their ___.",
+          "question": "Jabin's messages go out far and wide. So these kings came out with all their ___.",
           "answers": [
             {
               "text": "armies",
@@ -57,7 +57,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 11:5",
-          "question": "All these northern kings join forces and set up camp to fight against Israel. Where do they camp?",
+          "question": "All these kings join forces and set up camp to fight against Israel. Where do they camp?",
           "answers": [
             {
               "text": "At the waters of Merom",
@@ -87,11 +87,11 @@
               "correct": true
             },
             {
-              "text": "Wait for them to leave",
+              "text": "Do not go out against them",
               "correct": false
             },
             {
-              "text": "Pull back to your camp",
+              "text": "Do not attack them yet",
               "correct": false
             }
           ],
@@ -102,24 +102,28 @@
           "card": 7,
           "kind": "story",
           "verses": "Joshua 11:6",
-          "text": "Then the LORD gives a deadline: \"for by this time tomorrow I will deliver all of them slain before Israel.\" Friend, my package tracker can't even promise me 'sometime this week.'",
+          "text": "Then the LORD gives Joshua a time: \"…by this time tomorrow I will deliver all of them slain before Israel.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Joshua 11:6",
-          "question": "The LORD tells Joshua to take the enemy's horses and chariots for Israel's own army.",
+          "question": "The LORD tells Joshua to hamstring the enemy's horses. What is Joshua to do with their chariots?",
           "answers": [
             {
-              "text": "True",
+              "text": "Burn them up",
+              "correct": true
+            },
+            {
+              "text": "Keep them for Israel",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Leave them at Merom",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -129,7 +133,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Joshua 11:7",
-          "text": "So Joshua doesn't sit and stare at that sea of chariots. By the waters of Merom, he and his whole army come upon them suddenly and attack.",
+          "text": "By the waters of Merom, Joshua and his whole army come upon the kings' armies suddenly and attack.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,7 +142,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 11:8",
-          "question": "Israel wins the battle at Merom because Israel's army is bigger than the northern kings' armies.",
+          "question": "Israel wins the battle at Merom because Israel's army is bigger than the kings' armies.",
           "answers": [
             {
               "text": "True",
@@ -156,27 +160,23 @@
           "card": 11,
           "kind": "story",
           "verses": "Joshua 11:8",
-          "text": "The LORD delivers them into Israel's hand, and Israel chases them all the way to Greater Sidon and Misrephoth-maim, and east to the Valley of Mizpeh. They strike them down, leaving no survivors.",
+          "text": "The LORD delivers the kings' armies into Israel's hand, and Israel chases them all the way to Greater Sidon and Misrephoth-maim, and east to the Valley of Mizpeh. They strike them down, leaving no survivors.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Joshua 11:9",
-          "question": "After the battle, Joshua hamstrung the enemy's horses and burned up their chariots. He treated them as the ___ had told him.",
+          "question": "After the battle, Joshua does just what the LORD told him to do with the horses and chariots.",
           "answers": [
             {
-              "text": "LORD",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "elders",
+              "text": "False",
               "correct": false
             }
           ],
@@ -193,9 +193,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Joshua 11:1, 10",
-          "text": "At that time, Joshua turns back toward Hazor. That's Jabin's city, yep, Mr. Group Chat himself.",
+          "text": "At that time, Joshua turns back and heads for Hazor, Jabin's city. Yep, Mr. Group Chat himself.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -218,7 +218,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -226,7 +226,7 @@
           "verses": "Joshua 11:10-11",
           "text": "Joshua captures Hazor and puts its king to the sword. Everyone in Hazor is devoted to destruction, and Joshua burns Hazor down.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -256,18 +256,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Joshua 11:13",
-          "question": "Just like Hazor, Israel burned all the other cities built on their mounds.",
+          "question": "Of all the cities built on their mounds, Hazor is the only one Israel burns.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -281,24 +281,24 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Joshua 11:15",
-          "question": "Joshua leaves nothing undone of all the LORD commanded. The LORD's command reached Joshua through ___.",
+          "question": "The LORD commanded His servant Moses, Israel's leader before Joshua, and Moses passed it on to Joshua. How much of it does Joshua leave undone?",
           "answers": [
             {
-              "text": "Moses",
+              "text": "Nothing at all",
               "correct": true
             },
             {
-              "text": "Aaron",
+              "text": "Only a little",
               "correct": false
             },
             {
-              "text": "Eleazar",
+              "text": "About half",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -333,7 +333,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Joshua 11:19",
-          "question": "Only one people made peace with Israel. All the others were taken in battle. Who made peace?",
+          "question": "No city made peace with Israel except one. All the others were taken in battle. Who made peace?",
           "answers": [
             {
               "text": "The Hivites of Gibeon",
@@ -355,7 +355,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Joshua 11:20",
-          "text": "The text says it was of the LORD to harden their hearts to engage Israel in battle. That way they would be set apart for destruction and receive no mercy, as the LORD had commanded Moses.",
+          "text": "As for all the others, it was of the LORD to harden their hearts to engage Israel in battle. That way they would be set apart for destruction and receive no mercy, as the LORD had commanded Moses.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -363,24 +363,28 @@
           "card": 12,
           "kind": "story",
           "verses": "Joshua 11:21",
-          "text": "Next up are the Anakim, a people Moses once called strong and tall (Deuteronomy 9:2), and friend, from down on my gold base, EVERYBODY's tall. Joshua eliminates them from the hill country and devotes them to destruction, along with their cities.",
+          "text": "At that time, Joshua turns to the Anakim, a people great and tall (Deuteronomy 9:2). He eliminates them from the hill country of Hebron, Debir and Anab, and devotes them to destruction, along with their cities.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Joshua 11:22",
-          "question": "After Joshua's campaign, no Anakim survived anywhere at all.",
+          "question": "No Anakim are left in the land of the Israelites. But in three cities, some Anakim survive. Which three?",
           "answers": [
             {
-              "text": "True",
+              "text": "Gaza and Gath and Ashdod",
+              "correct": true
+            },
+            {
+              "text": "Hebron and Debir and Anab",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Jericho and Ai and Bethel",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -388,14 +392,6 @@
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Joshua 11:22",
-          "text": "No Anakim are left in the land of the Israelites, friend. Only in Gaza, Gath and Ashdod do any survive.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Joshua 11:23",
@@ -418,7 +414,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Joshua 11:23",
           "text": "And after all those battles, the chapter ends with one quiet line: \"Then the land had rest from war.\"",

@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "1 Samuel 14:13-24",
-          "text": "Earlier that day, Jonathan, Saul's son, attacked a Philistine outpost, and the LORD saved Israel as the battle spread. Saul, Israel's king, has put his troops under an oath. And that day, the men of Israel are in distress.",
+          "verses": "1 Samuel 14:24",
+          "text": "Earlier that day, Jonathan, Saul's son, attacked a Philistine outpost, and the LORD saved Israel as the battle spread (1 Samuel 14:13-23). Saul, Israel's king, has put his troops under an oath. And that day, the men of Israel are in distress.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -160,9 +160,20 @@
         },
         {
           "card": 11,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "1 Samuel 14:29",
-          "text": "Jonathan says, \"My father has brought trouble to the land,\" and points to his own bright eyes. All that, he says, from a little honey.",
+          "question": "When Jonathan hears about the oath, he says his father has brought trouble to the land.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -171,7 +182,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:30",
-          "question": "Jonathan says the slaughter of the Philistines would have been much greater if the troops had done what?",
+          "question": "Jonathan points to how his eyes brightened after a little honey. He says the slaughter of the Philistines would have been much greater if the troops had done what?",
           "answers": [
             {
               "text": "Eaten freely from the plunder",
@@ -209,7 +220,7 @@
               "correct": true
             },
             {
-              "text": "Wait for Saul to divide it all up",
+              "text": "Drive it all back to their camp",
               "correct": false
             },
             {
@@ -222,33 +233,14 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "1 Samuel 14:33",
-          "question": "Someone reports to Saul that the troops are sinning against the LORD by eating meat with the blood still in it.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Someone reports it to Saul: the troops are sinning against the LORD. Saul says, \"You have broken faith,\" and orders a large stone rolled over at once.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "1 Samuel 14:33",
-          "text": "Saul says, \"You have broken faith,\" and orders a large stone rolled over at once.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 14:34",
@@ -267,15 +259,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "1 Samuel 14:34-35",
-          "text": "So that night, everyone brings his ox and slaughters it there. Then Saul builds something for the LORD.",
+          "text": "So that night, everyone brings his ox and slaughters it there. Then Saul builds something for the LORD, the first one he has ever built for Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 14:35",
@@ -295,30 +287,6 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Samuel 14:35",
-          "question": "It was the ___ time Saul had built an altar to the LORD.",
-          "answers": [
-            {
-              "text": "first",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "second",
-              "correct": false
-            },
-            {
-              "text": "third",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         }
       ]
@@ -422,15 +390,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 14:39",
-          "question": "After Saul swears that whoever sinned must die, even Jonathan, the troops speak up and tell him what Jonathan did.",
+          "question": "After Saul swears that whoever sinned must die, even Jonathan, not one of the troops says a word.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -533,7 +501,7 @@
               "correct": false
             },
             {
-              "text": "He is the son of the king",
+              "text": "He offered a sacrifice for his sin",
               "correct": false
             }
           ],
@@ -599,7 +567,7 @@
           "card": 17,
           "kind": "story",
           "verses": "1 Samuel 14:47-48",
-          "text": "From the time Saul takes the kingship, he fights enemies on every side: the Moabites, the Ammonites, the Edomites, the kings of Zobah and the Philistines. Wherever he turns, he routs them, and he fights valiantly against the Amalekites and delivers Israel from its plunderers.",
+          "text": "From the time Saul takes the kingship over Israel, he fights enemies on every side: the Moabites, the Ammonites, the Edomites, the kings of Zobah and the Philistines. Wherever he turns, he routs them. He fights valiantly, defeats the Amalekites, and delivers Israel from its plunderers.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

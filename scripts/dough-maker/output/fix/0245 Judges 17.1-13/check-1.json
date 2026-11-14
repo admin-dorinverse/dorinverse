@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 2
+      },
+      "problem": "Card 1 already says Micah has the silver with him, and the card 2 question repeats that. The True statement 'Micah is the one who took it' therefore just restates the card before it and asks nothing new.",
+      "rule": "A True statement never just repeats the card before it."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "Card 10 gives only the first half of verse 6 ('no king in Israel'). Card 11 then asks the baker to supply the rest of the line ('what is right in his own eyes'). No context lets the baker reason it out, so it is a guess at the next words of the line.",
+      "rule": "Never ask the baker to guess the next words of a line."
+    }
+  ]
+}

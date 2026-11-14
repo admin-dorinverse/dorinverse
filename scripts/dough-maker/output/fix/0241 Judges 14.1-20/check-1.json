@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 6
+      },
+      "problem": "Card 1 already calls her \"a young Philistine woman.\" That gives away the answer \"Philistines,\" so the baker doesn't need to reason it out.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "The wrong answer \"young\" fits \"a swarm of bees along with their young.\" Bees do have young, so a baker could argue it is right.",
+      "rule": "No near-matches. A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The wrong answers \"mother\" and \"sisters\" could be part of \"her people.\" The text doesn't rule them out, so they are close to the right answer.",
+      "rule": "No near-matches. A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it."
+    }
+  ]
+}
