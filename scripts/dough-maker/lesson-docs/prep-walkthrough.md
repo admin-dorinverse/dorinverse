@@ -24,7 +24,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
 
 ## Scripture rules
 
-- **Cite exactly what the card uses.** Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower. A choice card cites only the verses of its right answer. After a pick, the baker sees the reference, whether they were right or wrong.
+- **Cite exactly what the card uses.** Every story card cites the verses it tells, from the first verse it uses to the last, no wider and no narrower. A choice card cites only the verses of its right answer. After a pick, the baker sees the reference, whether they were right or wrong. The verses field lists only verses from this passage. A fact from outside it gives its reference in brackets in the card's text, like "Jeremiah, a prophet (Jeremiah 1:5)." A short label saying who someone is, like "Moses, Israel's leader," needs no reference.
 - **Counts and lists come from the data, never from memory.** Any count of verses, and any list of where a name appears, is looked up in the BSB data.
 - **Retelling:** Papa Dorin can retell in his own words and fill in what the text clearly implies. Scene-setting details are fine. He never says anything the text shows is wrong.
     - **Leave open what the text leaves open:** who is being spoken to, why, or how two things connect.
@@ -78,8 +78,8 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 ## Question types
 
 - **Multiple choice:** a question and 3 answers.
-- **True or false:** a statement the baker marks true or false.
-- **Fill in the blank:** the question has a blank for 1 or 2 words. One blank has 3 answers. Two blanks have 5 single words to choose from.
+- **True or false:** a statement the baker marks true or false. In a stop with 2 or more, at least one answer is True and at least one is False, in no set pattern. A True statement never just repeats the card before it.
+- **Fill in the blank:** the question has a blank for 1 or 2 words. One blank has 3 answers. Two blanks have 5 single words to choose from. With two blanks, each right word fits only its own blank. If the two right words could swap places, use one blank or another question type.
 - A blank is a word that matters to the meaning, never a word like "or," "and" or "he."
 - **No formula.** Which question type comes next, the order the types come in and where a blank falls are chosen naturally for each card. They never follow a pattern. No stop repeats another stop's pattern, and no type dominates a stop by a wide margin.
 - The rule against guessing the next words of a line (see below) applies to every passage, and to fill in the blank too. The blank tests meaning the baker can reason out, not wording they haven't seen.
