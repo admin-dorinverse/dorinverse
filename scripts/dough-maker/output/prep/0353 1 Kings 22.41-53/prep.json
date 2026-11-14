@@ -9,39 +9,40 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 22:41",
-          "text": "Time to head south to Judah, friend, where Jehoshaphat son of Asa becomes king in the fourth year of Ahab's reign over Israel. JEHOSHAPHAT. Papa tried saying that three times fast, and his mustache tied itself in a knot.",
-          "needs_agent_fix": true,
+          "text": "Ahab, king of Israel, just died in battle at Ramoth-gilead, and Jehoshaphat, king of Judah, rode into that battle right beside him (1 Kings 22:29, 35). Jehoshaphat is the son of Asa, and he became king of Judah in the fourth year of Ahab's reign over Israel.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Kings 22:42",
-          "question": "Jehoshaphat is thirty-five years old when he becomes king. How long does he reign in Jerusalem?",
-          "answers": [
-            {
-              "text": "Twenty-five years",
-              "correct": true
-            },
-            {
-              "text": "Forty years",
-              "correct": false
-            },
-            {
-              "text": "Twelve years",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "He's thirty-five when he becomes king, and he reigns twenty-five years. His mother's name is Azubah daughter of Shilhi.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "1 Kings 22:42",
-          "text": "His mother's name is Azubah daughter of Shilhi. Now the big question for every king in this book: what kind of king is he gonna be?",
-          "needs_agent_fix": true,
+          "question": "For twenty-five years, Jehoshaphat reigns as king of Judah in ___.",
+          "answers": [
+            {
+              "text": "Jerusalem",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Samaria",
+              "correct": false
+            },
+            {
+              "text": "Hebron",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,22 +50,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 22:43",
-          "question": "When it comes to how he lives, whose ways does Jehoshaphat walk in?",
+          "question": "Whose ways does Jehoshaphat walk in, without ever turning away from them?",
           "answers": [
             {
               "text": "His father Asa",
               "correct": true
             },
             {
-              "text": "Jeroboam son of Nebat",
+              "text": "King Ahab of Israel",
               "correct": false
             },
             {
-              "text": "King Ahab of Israel",
+              "text": "King Solomon",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,7 +73,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 22:43",
-          "question": "Jehoshaphat doesn't turn away from his father's ways. He does what is ___ in the eyes of the LORD.",
+          "question": "Jehoshaphat walks in his father Asa's ways. He does what is ___ in the eyes of the LORD.",
           "answers": [
             {
               "text": "right",
@@ -88,115 +89,100 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "1 Kings 22:43",
-          "text": "A GOOD KING! Papa hopped so hard on this gold base he knocked the whole jar of sprinkles off the shelf, and then he read the next word in the verse: \"however.\"",
-          "needs_agent_fix": true,
+          "text": "A GOOD KING! I hopped so high on this gold base the whole jar of sprinkles went flying. But the high places are not removed.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Kings 22:43",
-          "question": "Something in Judah doesn't get removed during Jehoshaphat's reign. What is it?",
+          "question": "With the high places still standing, the people still sacrifice and burn incense on them.",
           "answers": [
             {
-              "text": "The high places",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The Asherah poles",
-              "correct": false
-            },
-            {
-              "text": "The golden calves",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 22:43",
-          "question": "Once Jehoshaphat is king, the people stop sacrificing and burning incense on the high places.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 22:44",
+          "text": "Next up: Jehoshaphat and the king of Israel, his neighbor to the north. Remember, Jehoshaphat just rode into battle beside Israel's king.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "1 Kings 22:44",
-          "text": "Next up: Jehoshaphat and his neighbor to the north, the king of Israel. Two kingdoms, side by side. So how do these two get along?",
-          "needs_agent_fix": true,
+          "question": "Judah and Israel sit side by side, and their kings just fought together. How do things go between Jehoshaphat and the king of Israel?",
+          "answers": [
+            {
+              "text": "Jehoshaphat makes peace with him",
+              "correct": true
+            },
+            {
+              "text": "Jehoshaphat declares war on him",
+              "correct": false
+            },
+            {
+              "text": "Jehoshaphat refuses to speak to him",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 22:44",
-          "question": "Jehoshaphat makes peace with the king of Israel.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 22:45",
+          "text": "The rest of his acts, the might he exercised and how he waged war, are written in the Book of the Chronicles of the Kings of Judah.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "1 Kings 22:45",
-          "text": "The rest of his acts, his might and how he waged war are written in the Book of the Chronicles of the Kings of Judah, which is basically \"full recipe on the other card.\" Papa has NEVER found the other card when he needed it, but this book squeezes in one more cleanup job anyway.",
-          "needs_agent_fix": true,
+          "verses": "1 Kings 22:46",
+          "text": "And Jehoshaphat isn't done cleaning house. Some people were still in the land from the days of his father Asa.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Kings 22:46",
-          "question": "Some people were still in the land from the days of Jehoshaphat's father Asa. Who does Jehoshaphat banish?",
+          "question": "Jehoshaphat lets the male shrine prostitutes left over from his father Asa's days stay in the land.",
           "answers": [
             {
-              "text": "The male shrine prostitutes",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The prophets of Baal",
-              "correct": false
-            },
-            {
-              "text": "The Aramean soldiers",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -210,31 +196,30 @@
           "kind": "story",
           "verses": "1 Kings 22:47-48",
           "text": "Over in Edom, there's no king, just a deputy serving as king. Back in Judah, Jehoshaphat builds ships of Tarshish to sail to Ophir.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Kings 22:48",
-          "question": "Jehoshaphat's ships of Tarshish are headed to Ophir for ___.",
+          "question": "Jehoshaphat's ships of Tarshish are headed to Ophir. What are they going there to get?",
           "answers": [
             {
-              "text": "gold",
-              "correct": true,
-              "blank": 1
+              "text": "Gold",
+              "correct": true
             },
             {
-              "text": "cedar",
+              "text": "Cedar",
               "correct": false
             },
             {
-              "text": "horses",
+              "text": "Horses",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -242,38 +227,38 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 22:48",
-          "question": "Big ships, big plans, a trip to Ophir for gold. What happens to Jehoshaphat's ships?",
+          "question": "Jehoshaphat's ships of Tarshish never get past Ezion-geber. What happens to them there?",
           "answers": [
             {
-              "text": "They're wrecked before they ever sail",
+              "text": "They're wrecked before they sail",
               "correct": true
             },
             {
-              "text": "They come home loaded with gold",
+              "text": "Raiders from Edom seize them",
               "correct": false
             },
             {
-              "text": "Edom captures them out at sea",
+              "text": "They're sold off for gold",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "1 Kings 22:48",
-          "text": "Wrecked at Ezion-geber. Never even left. I KNOW that feeling, friend: you mix the dough, preheat the oven, and the whole tray slides off the counter before it ever sees the heat.",
-          "needs_agent_fix": true,
+          "text": "I KNOW that feeling, friend. You mix the dough, preheat the oven, and the whole tray slides off the counter before it ever sees the heat.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "1 Kings 22:49",
-          "text": "At that time, Ahaziah son of Ahab says to Jehoshaphat, “Let my servants sail with your servants,” and waits on an answer.",
-          "needs_agent_fix": true,
+          "text": "At that time, Ahaziah son of Ahab, who took his father's place as king of Israel (1 Kings 22:40), says to Jehoshaphat, \"Let my servants sail with your servants,\" and waits for an answer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -292,119 +277,82 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "1 Kings 22:49-50",
-          "text": "He says no. Then Jehoshaphat rests with his fathers and is buried with them in the city of his father David.",
-          "needs_agent_fix": true,
+          "text": "He says no. Then Jehoshaphat rests with his fathers, and his son Jehoram reigns in his place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 22:50",
-          "question": "Who reigns in Jehoshaphat's place in Judah?",
+          "question": "Jehoshaphat is buried with his fathers in the city of his father ___.",
           "answers": [
             {
-              "text": "His son Jehoram",
-              "correct": true
+              "text": "David",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "His son Rehoboam",
+              "text": "Solomon",
               "correct": false
             },
             {
-              "text": "His son Abijam",
+              "text": "Abraham",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "1 Kings 22:51",
-          "text": "Now back up north. In the seventeenth year of Jehoshaphat's reign over Judah, Ahaziah son of Ahab becomes king of Israel in Samaria.",
-          "needs_agent_fix": true,
+          "text": "Now back up north, where Ahaziah becomes king of Israel in the seventeenth year of Jehoshaphat's reign over Judah, and he reigns in Samaria two years. His father Ahab did more to provoke the LORD, the God of Israel, to anger than all the kings of Israel before him (1 Kings 16:33).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 22:51",
-          "question": "How long does Ahaziah reign in Samaria?",
+          "type": "true_false",
+          "verses": "1 Kings 22:52",
+          "question": "Ahaziah does evil in the sight of the LORD.",
           "answers": [
             {
-              "text": "Two years",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Twelve years",
-              "correct": false
-            },
-            {
-              "text": "Forty years",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "1 Kings 22:52",
-          "question": "Like Jehoshaphat, Ahaziah does what is right in the sight of the LORD.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "He walks in the ways of his father and mother, and of Jeroboam son of Nebat, who had caused Israel to sin.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 22:52",
-          "question": "Ahaziah walks in the ways of his father and mother, and in the ways of one more man, the one who caused Israel to sin. Who?",
-          "answers": [
-            {
-              "text": "Jeroboam son of Nebat",
-              "correct": true
-            },
-            {
-              "text": "Asa king of Judah",
-              "correct": false
-            },
-            {
-              "text": "David king of Israel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 22:53",
-          "question": "Ahaziah serves and worships ___, provoking the LORD, the God of Israel, to anger.",
+          "question": "Just as his father had done, Ahaziah serves and worships ___, provoking the LORD, the God of Israel, to anger.",
           "answers": [
             {
               "text": "Baal",
@@ -420,15 +368,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "1 Kings 22:53",
-          "text": "Just as his father had done. Papa can't follow a recipe without sneaking in extra chocolate chips, but Ahaziah copied his dad's right down to the burnt edges.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

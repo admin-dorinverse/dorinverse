@@ -8,33 +8,17 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Kings 23:37-24:8",
-          "text": "Judah's king Jehoiakim did evil in the sight of the LORD, and now his son Jehoiachin reigns in his place in Jerusalem. His mother is Nehushta, daughter of Elnathan, from right there in Jerusalem. The new king is eighteen years old with a WHOLE KINGDOM on his shoulders, friend, and I can't carry two cookie boxes without my mustache filing a complaint.",
+          "verses": "2 Kings 24:8",
+          "text": "Nebuchadnezzar, king of Babylon, invaded during the reign of Judah's king Jehoiakim, who served him three years and then rebelled (2 Kings 24:1). Now Jehoiakim has rested with his fathers (2 Kings 24:6), and his son Jehoiachin, whose mother is Nehushta, daughter of Elnathan, from Jerusalem, becomes king at eighteen. A WHOLE KINGDOM on his shoulders, friend, and I can't carry two cookie boxes without my mustache filing a complaint.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Kings 24:8",
-          "question": "Eighteen-year-old Jehoiachin becomes king of Judah. He reigns in Jerusalem for three ___.",
-          "answers": [
-            {
-              "text": "months",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "years",
-              "correct": false
-            },
-            {
-              "text": "decades",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Jehoiachin reigns in Jerusalem three months. Three months on the throne isn't a reign, friend, it's a FREE TRIAL.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -59,8 +43,8 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "2 Kings 24:8-10",
-          "text": "Three months on the throne isn't a reign, friend, it's a FREE TRIAL. And at that time, the servants of Nebuchadnezzar, king of Babylon, march up to Jerusalem.",
+          "verses": "2 Kings 24:10",
+          "text": "At that time, the servants of Nebuchadnezzar march up to Jerusalem. Uh-oh.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -141,7 +125,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Kings 24:12",
-          "text": "So in the eighth year of his reign, the king of Babylon takes Jehoiachin captive. Friend, I've been picked up and carried off to the back of a drawer, and I can tell you, NOBODY asks if you're ready.",
+          "text": "So Nebuchadnezzar, in the eighth year of his reign, takes Jehoiachin captive. Friend, I've been picked up and carried off to the back of a drawer, and I can tell you, NOBODY asks if you're ready.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -206,20 +190,21 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Kings 24:14",
-          "question": "The commanders, the mighty men, the craftsmen and the metalsmiths are all taken from Jerusalem. Who stays behind in the land?",
+          "question": "The commanders, the mighty men, the craftsmen and the metalsmiths are all taken from Jerusalem. Only the ___ people of the land remain.",
           "answers": [
             {
-              "text": "Only the poorest people",
-              "correct": true
+              "text": "poorest",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Only the temple priests",
+              "text": "oldest",
               "correct": false
             },
             {
-              "text": "Only the royal family",
+              "text": "youngest",
               "correct": false
             }
           ],
@@ -229,13 +214,32 @@
         {
           "card": 15,
           "kind": "story",
-          "verses": "2 Kings 24:15-16",
-          "text": "Jehoiachin goes to Babylon too, with his mother, his wives, his officials and the leading men of the land, and the king of Babylon also takes seven thousand men of valor and a thousand craftsmen and metalsmiths. That's not a raid, friend, that's a rival bakery walking out the door with every baker who can actually BAKE.",
+          "verses": "2 Kings 24:15",
+          "text": "Jehoiachin is carried off to Babylon, along with his mother, his officials and the leading men of the land. That's not a raid, friend, that's a rival bakery walking out the door with everybody who knows how to run the place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Kings 24:15",
+          "question": "Nebuchadnezzar takes Jehoiachin's wives into exile in Babylon too.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 24:16",
@@ -259,44 +263,43 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 24:17",
-          "question": "With Jehoiachin gone, the king of Babylon makes Mattaniah, Jehoiachin's ___, king in his place.",
+          "question": "With Jehoiachin carried off to Babylon, who chooses the next king of Judah?",
           "answers": [
             {
-              "text": "uncle",
-              "correct": true,
-              "blank": 1
+              "text": "The king of Babylon",
+              "correct": true
             },
             {
-              "text": "cousin",
+              "text": "The king of Egypt",
               "correct": false
             },
             {
-              "text": "nephew",
+              "text": "The leading men of Judah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 18,
-          "kind": "story",
-          "verses": "2 Kings 24:17",
-          "text": "Then the king of Babylon changes Mattaniah's name to Zedekiah. When I got my fresh start, the ONE thing I asked for was to keep my name, so believe me, I'd be holding that name tag with both ends of my mustache.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "story",
           "verses": "2 Kings 24:17",
+          "text": "The king of Babylon makes Mattaniah, Jehoiachin's uncle, king in Jehoiachin's place and changes his name to Zedekiah. When the angel gave me my fresh start, keeping my name was the first thing I asked for, so believe me, I'd be holding that name tag with both ends of my mustache.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 20,
+          "kind": "story",
+          "verses": "2 Kings 24:17",
           "text": "And that's where we set this batch down for now, friend. Trust me, Judah's story is not done yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

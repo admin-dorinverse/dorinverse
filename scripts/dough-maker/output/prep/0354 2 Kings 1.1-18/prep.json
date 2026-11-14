@@ -120,60 +120,28 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "2 Kings 1:6-7",
-          "text": "So Ahaziah just heard the LORD say he will surely die. And his next question is… describe the guy. What sort of man came up to meet you?",
-          "needs_agent_fix": true,
+          "verses": "2 Kings 1:6-8",
+          "text": "So the king hears he will surely die, and his VERY next question is, what sort of man told you this? A hairy man, they answer, with a leather belt around his waist.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Kings 1:8",
-          "question": "The messengers tell the king the man was a ___ man with a leather belt around his waist.",
-          "answers": [
-            {
-              "text": "hairy",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "tall",
-              "correct": false
-            },
-            {
-              "text": "young",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 1:8",
-          "question": "After hearing the description, Ahaziah has no idea who the man could be.",
+          "question": "From the messengers' description, Ahaziah can tell who the man was.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "2 Kings 1:8",
-          "text": "Ahaziah doesn't need a second clue. “It was Elijah the Tishbite,” the king says. A hairy man with a leather belt isn't a description, friend, it's a BUSINESS CARD.",
-          "needs_agent_fix": true,
           "needs_human_decision": false
         }
       ]
@@ -186,9 +154,9 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 1:9",
-          "text": "Then King Ahaziah sends a captain with his company of fifty men to Elijah, who's sitting on top of a hill. Fifty men. For one hairy guy who is SITTING DOWN.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then King Ahaziah sends a captain with his company of fifty men to Elijah, who's sitting on top of a hill. Fifty men, friend, to bring in one man who's SITTING.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -211,61 +179,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Kings 1:10",
-          "question": "Elijah answers the first captain with an if: if Elijah is a man of God, may ___ come down from heaven and consume the captain and his fifty men.",
-          "answers": [
-            {
-              "text": "fire",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "hail",
-              "correct": false
-            },
-            {
-              "text": "darkness",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Elijah answers the captain, “If I am a man of God, may fire come down from heaven and consume you and your fifty men.” And fire comes down from heaven and consumes the captain and his fifty men.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Kings 1:10",
-          "question": "Fire comes down from heaven and consumes the first captain and his fifty men.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Kings 1:11",
+          "text": "So the king sends another captain with his fifty men. This captain tells Elijah the king says, “Come down at once!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "2 Kings 1:11",
-          "text": "So the king sends another captain with his fifty men, and this one says, “Come down at once!” Fifty men just got consumed, friend, and this guy adds AT ONCE, like a man whose car is making a weird noise so he turns the radio UP.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 1:12",
@@ -284,7 +217,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 1:12",
@@ -307,15 +240,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
-          "verses": "2 Kings 1:13",
-          "text": "So the king sends a third captain with his fifty men. Two captains up that hill, and fire both times. I bet this man walked up SLOW.",
+          "verses": "2 Kings 1:13-14",
+          "text": "So the king sends a third captain with his fifty men. And this captain knows what happened to the first two captains and their men.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 1:13",
@@ -338,23 +271,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Kings 1:13",
-          "question": "On his knees, the third captain begs Elijah that his life and the lives of his fifty men would be ___ in Elijah's sight.",
+          "type": "multiple_choice",
+          "verses": "2 Kings 1:13-14",
+          "question": "On his knees, what does the third captain beg Elijah for?",
           "answers": [
             {
-              "text": "precious",
-              "correct": true,
-              "blank": 1
+              "text": "That his life and his men's would be spared",
+              "correct": true
             },
             {
-              "text": "forgotten",
+              "text": "That the king would be healed of his injury",
               "correct": false
             },
             {
-              "text": "hidden",
+              "text": "That Elijah would leave the land of Israel",
               "correct": false
             }
           ],
@@ -362,7 +294,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "2 Kings 1:15",
           "text": "Then the angel of the LORD speaks to Elijah again, right there on that hill.",
@@ -370,7 +302,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 1:15",
@@ -394,38 +326,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 1:15",
-          "question": "Elijah gets up and goes with the third captain. Where does he go?",
-          "answers": [
-            {
-              "text": "Down to the king",
-              "correct": true
-            },
-            {
-              "text": "Up to Mount Carmel",
-              "correct": false
-            },
-            {
-              "text": "Out to the Jordan",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 12,
           "kind": "story",
-          "verses": "2 Kings 1:16",
-          "text": "Now Elijah speaks the LORD's word to King Ahaziah himself, face to face: “Is there really no God in Israel for you to inquire of His word?” Then that ending again: “You will surely die.”",
+          "verses": "2 Kings 1:15-16",
+          "text": "So Elijah goes down to the king and speaks the LORD's word to Ahaziah face to face: “Is there really no God in Israel for you to inquire of His word?” And it ends the same way: “You will surely die.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 1:17",
@@ -444,7 +353,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 1:17",
@@ -467,10 +376,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "2 Kings 1:17-18",
-          "text": "And this Jehoram takes over in the second year of the reign of Jehoram son of Jehoshaphat over Judah, so now BOTH kingdoms have a Jehoram, and somebody is DEFINITELY getting the other guy's mail. The rest of Ahaziah's acts are written in the Book of the Chronicles of the Kings of Israel.",
+          "text": "He takes over in the second year of the reign of a different Jehoram, Jehoram son of Jehoshaphat, king of Judah. The rest of Ahaziah's acts are written in the Book of the Chronicles of the Kings of Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 17:24",
-          "text": "David's son Absalom has risen up against him (2 Samuel 15:10-12), and David has fled Jerusalem (2 Samuel 15:14) and crossed the Jordan River (2 Samuel 17:22). Now David goes to a city called Mahanaim, and Absalom crosses the Jordan too, with all the men of Israel. Baker, I thought getting slid into a junk drawer was family drama.",
+          "text": "David's son Absalom has turned against him (2 Samuel 15:10-12), and David has fled Jerusalem and crossed the Jordan River (2 Samuel 15:14; 17:22). Now David goes to a place called Mahanaim, and Absalom crosses the Jordan too, with all the men of Israel. Friend, when a father and son end up on opposite sides of a war, nobody's having a good week.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -57,7 +57,7 @@
           "card": 5,
           "kind": "story",
           "verses": "2 Samuel 17:28-29",
-          "text": "They bring beds, basins, clay pots, wheat, barley, flour, roasted grain, beans, lentils, honey, curds, sheep and cheese. When a new neighbor moved in next to the Millers, we sent over ONE batch of cookies and felt like heroes.",
+          "text": "They bring beds, basins, clay pots, wheat, barley, flour, roasted grain, beans, lentils, honey, curds, sheep and cheese. Back when I lived in the Millers' kitchen, with the family who first took me home, a new neighbor got ONE batch of cookies from us and we felt like heroes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -88,8 +88,8 @@
           "card": 7,
           "kind": "story",
           "verses": "2 Samuel 18:1-2",
-          "text": "Now David reviews his troops and appoints commanders over thousands and hundreds. He splits the army in three: one third under Joab, one under Joab's brother Abishai, and one under Ittai the Gittite, a man from Gath.",
-          "needs_agent_fix": true,
+          "text": "Now David reviews his troops and appoints commanders over thousands and hundreds. He splits the army in three: one third under Joab, one under Joab's brother Abishai, and one under Ittai the Gittite, a foreigner loyal to David (2 Samuel 15:19-21).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -119,7 +119,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Samuel 18:3",
-          "text": "But the troops plead, \"You must not go out!\" Picture telling your boss, \"Respectfully, sir, please go sit in your office.\"",
+          "text": "But his people plead, \"You must not go out!\" Picture telling your boss, \"Respectfully, sir, please go sit in your office.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -128,7 +128,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 18:3",
-          "question": "Why don't David's troops want the king out on the battlefield?",
+          "question": "Why don't David's people want the king out on the battlefield?",
           "answers": [
             {
               "text": "He is worth ten thousand of them",
@@ -151,7 +151,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 18:4",
-          "question": "After his troops plead with him, King David agrees to stay back from the battle.",
+          "question": "After his people plead with him, King David agrees to stay back from the battle.",
           "answers": [
             {
               "text": "True",
@@ -226,12 +226,35 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 18:6",
-          "text": "Here we go, friend. David's army marches into the field to face Israel, and the battle takes place in the forest of Ephraim.",
+          "text": "Here we go, friend. David's army marches into the field to face Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Samuel 18:6",
+          "question": "Where does the battle between David's army and Israel take place?",
+          "answers": [
+            {
+              "text": "The forest of Ephraim",
+              "correct": true
+            },
+            {
+              "text": "The Valley of Elah",
+              "correct": false
+            },
+            {
+              "text": "The plains of Moab",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 18:7",
@@ -250,34 +273,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "story",
           "verses": "2 Samuel 18:7-8",
-          "text": "The slaughter is great that day: twenty thousand men. And the battle spreads over the whole countryside.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Samuel 18:8",
-          "question": "Here's a strange detail about that day. The ___ devours more people than the sword.",
-          "answers": [
-            {
-              "text": "forest",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "river",
-              "correct": false
-            },
-            {
-              "text": "famine",
-              "correct": false
-            }
-          ],
+          "text": "The slaughter is great that day: twenty thousand men. The battle spreads over the whole countryside, and that day the forest devours more people than the sword.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -346,32 +345,28 @@
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "2 Samuel 18:11-12",
-          "text": "Joab says he would have given the man ten shekels of silver and a warrior's belt. But the man says even for a THOUSAND shekels, he would not raise his hand against the king's son.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Samuel 18:12",
+          "question": "Joab says he would have paid the man ten shekels of silver and a warrior's belt. The man tells Joab he would strike Absalom for a thousand shekels of silver.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Samuel 18:12",
-          "question": "Why won't the man raise his hand against Absalom, the king's son?",
-          "answers": [
-            {
-              "text": "They all heard the king's order to protect him",
-              "correct": true
-            },
-            {
-              "text": "He once served in Absalom's own house",
-              "correct": false
-            },
-            {
-              "text": "He thinks Absalom might still win the war",
-              "correct": false
-            }
-          ],
+          "text": "He won't raise his hand against the king's son. He reminds Joab they all heard the king command, 'Protect the young man Absalom for my sake.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -404,41 +399,18 @@
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 18:14",
-          "question": "After telling the man he won't wait, what does Joab do?",
-          "answers": [
-            {
-              "text": "Thrusts three spears into Absalom's heart",
-              "correct": true
-            },
-            {
-              "text": "Cuts Absalom down from the oak tree",
-              "correct": false
-            },
-            {
-              "text": "Sends for David to decide what to do",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Samuel 18:14-15",
+          "text": "Joab takes three spears in his hand and thrusts them through the heart of Absalom while he is still alive in the oak tree. Then ten young men who carry Joab's armor surround Absalom, strike him and kill him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "2 Samuel 18:15-16",
-          "text": "Then ten young men who carry Joab's armor surround Absalom, strike him and kill him. After that, Joab blows the ram's horn.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 18:16",
-          "question": "When Joab blows the ram's horn, what do his troops do?",
+          "question": "Then Joab blows the ram's horn. What do his troops do?",
           "answers": [
             {
               "text": "Stop chasing Absalom's army",
@@ -457,15 +429,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Samuel 18:17",
-          "text": "They take Absalom, cast him into a large pit in the forest, and pile a huge mound of stones over him.",
+          "question": "What do Joab's men do with Absalom's body?",
+          "answers": [
+            {
+              "text": "Throw him in a pit under stones",
+              "correct": true
+            },
+            {
+              "text": "Carry him back to King David",
+              "correct": false
+            },
+            {
+              "text": "Bury him in his father's tomb",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 18:17",
@@ -488,7 +475,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "2 Samuel 18:18",
           "text": "Here's a sad little detail. During his lifetime, Absalom set up a pillar for himself in the King's Valley and gave it his own name.",
@@ -496,7 +483,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 18:18",
@@ -520,10 +507,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "2 Samuel 18:18",
-          "text": "To this day it's called Absalom's Monument. Don't hang up that apron yet, baker, because this story still has more to tell.",
+          "text": "When this was written, it was still called Absalom's Monument. Don't hang up that apron yet, baker, because this story still has more to tell.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

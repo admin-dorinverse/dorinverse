@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 23:8",
-          "text": "Friend, these are the names of King David's mighty men. Up first is Josheb-basshebeth the Tahchemonite, chief of the Three. I've been practicing that name all week, and my mustache STILL trips over it.",
+          "text": "Right after the last words of David, Israel's king (2 Samuel 23:1), the writer lists the names of David's mighty men. First up is Josheb-basshebeth the Tahchemonite, chief of the Three. Me? I spent years in the back of a junk drawer, and the only thing I was ever chief of was the DUST.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 23:8",
-          "question": "Josheb-basshebeth picks up his spear. How many men does he take on, all at one time?",
+          "question": "Josheb-basshebeth wields his spear. How many men does he kill, all at one time?",
           "answers": [
             {
               "text": "Eight hundred",
@@ -33,14 +33,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "2 Samuel 23:8-9",
-          "text": "EIGHT HUNDRED at one time, and I lose fights with a bag of chocolate chips. Next in command is Eleazar son of Dodo the Ahohite, one of the three mighty men, who goes with David to taunt the Philistines gathered for battle at Pas-dammim.",
+          "verses": "2 Samuel 23:9",
+          "text": "Next in command is Eleazar son of Dodo the Ahohite, one of the three mighty men. He goes with David to taunt the Philistines who have gathered for battle at Pas-dammim.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "2 Samuel 23:9",
-          "text": "The men of Israel retreat, backing away like they all just remembered they left an oven on at home.",
+          "text": "The men of Israel retreat, backing away like they just remembered they left the oven on at home.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -79,7 +79,7 @@
           "card": 6,
           "kind": "story",
           "verses": "2 Samuel 23:10",
-          "text": "Eleazar stands his ground and strikes the Philistines until his hand grows weary and sticks to his sword. Baker, after a double batch, my mustache stays curled around the whisk for an HOUR.",
+          "text": "Eleazar stands his ground and strikes the Philistines until his hand grows weary and sticks to his sword.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -144,7 +144,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 23:11",
-          "question": "The Philistines band together near a field full of lentils. True or false: Israel's troops flee from them, just like the retreat at Pas-dammim.",
+          "question": "The Philistines band together near a field full of lentils. True or false: Israel's troops flee from them.",
           "answers": [
             {
               "text": "True",
@@ -170,11 +170,11 @@
               "correct": true
             },
             {
-              "text": "At the top of the hill",
+              "text": "At the edge of the field",
               "correct": false
             },
             {
-              "text": "At the gate of the city",
+              "text": "On the road past the field",
               "correct": false
             }
           ],
@@ -186,7 +186,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 23:12",
-          "question": "True or false: Shammah defends the lentil field, but the Philistines take it from him in the end.",
+          "question": "Shammah takes his stand in the middle of the lentil field and defends it. True or false: The Philistines take the field from him in the end.",
           "answers": [
             {
               "text": "True",
@@ -204,7 +204,7 @@
           "card": 13,
           "kind": "story",
           "verses": "2 Samuel 23:12",
-          "text": "Shammah defends that field and strikes down the Philistines, and the LORD brings about a great victory. One man holds a whole field, and I can't even defend the last cookie in the box from MYSELF.",
+          "text": "Shammah strikes down the Philistines. So the LORD brings about a great victory.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -271,7 +271,7 @@
               "correct": false
             },
             {
-              "text": "turn back from",
+              "text": "spy on",
               "correct": false
             }
           ],
@@ -291,7 +291,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 23:16",
-          "question": "Three men just broke through an enemy camp for one drink of water. True or false: David drinks it.",
+          "question": "Three men just broke through the Philistine camp for one drink of water. True or false: David drinks it.",
           "answers": [
             {
               "text": "True",
@@ -369,12 +369,36 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 23:18",
-          "text": "Back to the honor roll, friend. Next is Abishai son of Zeruiah, the brother of Joab, who's over David's army (2 Samuel 8:16), and Abishai's got a spear of his own.",
+          "text": "Back to the honor roll, friend. Next is Abishai son of Zeruiah, chief of the Three, and he's got a spear of his own.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Samuel 23:18",
+          "question": "Abishai son of Zeruiah is the brother of ___, David's army commander (2 Samuel 8:16).",
+          "answers": [
+            {
+              "text": "Joab",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Abner",
+              "correct": false
+            },
+            {
+              "text": "Amasa",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 23:18",
@@ -389,7 +413,7 @@
               "correct": false
             },
             {
-              "text": "One thousand",
+              "text": "Five hundred",
               "correct": false
             }
           ],
@@ -397,7 +421,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "story",
           "verses": "2 Samuel 23:18-19",
           "text": "Three hundred, and Abishai wins a name along with the Three. Then the passage asks, \"Was he not more honored than the Three?\"",
@@ -405,29 +429,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 23:19",
-          "question": "True or false: Abishai becomes the commander of the Three.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 5,
           "kind": "story",
           "verses": "2 Samuel 23:19",
-          "text": "Abishai is their commander, even though he's not included among the Three. That's like being made admin of a group chat you were never added to.",
+          "text": "Abishai becomes their commander, even though he's not included among the Three. That's like being made admin of a group chat you were never added to.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -467,7 +472,7 @@
           "card": 8,
           "kind": "story",
           "verses": "2 Samuel 23:20-21",
-          "text": "A snowy day, a pit AND a lion, and I hit snooze when the kitchen's a little chilly. There's also an Egyptian, a huge man with a spear in his hand, and Benaiah goes against him with a club.",
+          "text": "He goes down into a pit on a SNOWY day, and I hit snooze when the kitchen's a little chilly. Then there's an Egyptian, a huge man with a spear in his hand.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -476,18 +481,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 23:21",
-          "question": "The huge Egyptian has a spear, and Benaiah has only a club. True or false: Benaiah has to back away from the fight.",
+          "question": "The huge Egyptian has a spear in his hand, and Benaiah has only a club. True or false: Benaiah goes against him anyway.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -498,7 +503,7 @@
           "question": "Benaiah goes at the spear-holding Egyptian with just a club. How does he win?",
           "answers": [
             {
-              "text": "Snatches the spear and uses it on him",
+              "text": "Snatches the spear and uses it",
               "correct": true
             },
             {
@@ -506,7 +511,7 @@
               "correct": false
             },
             {
-              "text": "Calls in the guard to finish it",
+              "text": "Calls in the guard to help",
               "correct": false
             }
           ],
@@ -517,7 +522,7 @@
           "card": 11,
           "kind": "story",
           "verses": "2 Samuel 23:21-22",
-          "text": "Benaiah snatches the spear right out of the Egyptian's hand, kills him with it, and wins a name along with the three mighty men. He showed up with a club and went home with an UPGRADE.",
+          "text": "Benaiah snatches the spear right out of the Egyptian's hand and kills him with his own spear. These are Benaiah's exploits, and he wins a name along with the three mighty men.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -567,8 +572,8 @@
           "card": 14,
           "kind": "story",
           "verses": "2 Samuel 23:24-39",
-          "text": "Then comes the list of the Thirty, men from all over, starting with Asahel, Joab's brother, and even including an Ammonite and a man from Zobah. The very last name is Uriah the Hittite, Bathsheba's husband, the man David told Joab to put at the front of the fiercest battle so he would be killed (2 Samuel 11:3, 14-15). Thirty-seven in all.",
-          "needs_agent_fix": true,
+          "text": "Then comes the list of the Thirty, starting with Asahel, Joab's brother. The very last name is Uriah the Hittite, Bathsheba's husband, whose death David arranged (2 Samuel 11:3, 14-17). Thirty-seven in all.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

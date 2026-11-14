@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 2:1",
-          "text": "The text tells us right up front: the LORD is about to take Elijah the prophet up to heaven in a whirlwind. Elijah is on his way from Gilgal with Elisha son of Shaphat, the man God chose to succeed him as prophet (1 Kings 19:16). Friend, most stories don't hand you the big moment in the first line, so buckle up.",
+          "text": "Shortly before the LORD takes Elijah the prophet up to heaven in a whirlwind, Elijah is on his way from Gilgal with Elisha son of Shaphat, the man God chose to succeed him as prophet (1 Kings 19:16). Friend, a WHIRLWIND. I get dizzy when the mixer's on high.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "2 Kings 2:2-3",
-          "text": "Elisha is sticking to Elijah like dough on a rolling pin: shake it, scrape it, it is COMING with you. So they go down to Bethel, and the sons of the prophets there come out to meet Elisha.",
+          "text": "Elisha is sticking to Elijah like dough on a rolling pin: shake it, scrape it, it is COMING with you. So they go down to Bethel, where a group of prophets called the sons of the prophets comes out to meet Elisha.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -98,8 +98,8 @@
           "card": 7,
           "kind": "story",
           "verses": "2 Kings 2:3-4",
-          "text": "\"Yes, I know,\" Elisha replies. \"Do not speak of it.\" Then Elijah tries again: \"Please stay here, for the LORD has sent me on to Jericho.\"",
-          "needs_agent_fix": true,
+          "text": "Elisha replies, \"Yes, I know,\" and tells them, \"Do not speak of it.\" Then Elijah tries again: \"Please stay here, for the LORD has sent me on to Jericho.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -114,8 +114,8 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Kings 2:5",
-          "text": "The sons of the prophets at Jericho ask Elisha the same question, and he gives them the same answer. It's like my oven timer beeping every five minutes to tell me the cookies are almost done: I KNOW. I KNOW.",
-          "needs_agent_fix": true,
+          "text": "The sons of the prophets at Jericho ask Elisha the same question, and he gives them the same answer. It's like my oven timer beeping every five minutes to tell me the cookies are almost done: I KNOW, I KNOW.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -146,15 +146,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 2:6",
-          "question": "This third time, Elisha finally agrees to stay behind.",
+          "question": "This third time, Elisha still refuses to stay behind.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -196,7 +196,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 2:8",
-          "question": "The waters part to the right and to the left, and they cross over on ___ ground.",
+          "question": "The waters of the Jordan part to the right and to the left, and Elijah and Elisha cross over on ___ ground.",
           "answers": [
             {
               "text": "dry",
@@ -210,25 +210,6 @@
             {
               "text": "holy",
               "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Kings 2:7-8",
-          "question": "The fifty sons of the prophets cross the Jordan with Elijah and Elisha.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -325,7 +306,7 @@
           "card": 6,
           "kind": "story",
           "verses": "2 Kings 2:11",
-          "text": "So they walk along, talking together, and then suddenly a chariot of fire with horses of fire appears. Friend, I'd have dropped every cookie tray in the bakery.",
+          "text": "So they walk along, talking together, and then suddenly a chariot of fire with horses of fire appears. Friend, I'd have dropped a whole batch of cookies on the floor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -416,18 +397,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 2:14",
-          "question": "Elisha is on the bank of the Jordan, holding Elijah's cloak. What does he do with it?",
+          "question": "Elisha strikes the waters of the Jordan with Elijah's cloak. What does he ask as he does it?",
           "answers": [
             {
-              "text": "Strikes the waters",
+              "text": "Where the LORD the God of Elijah is now",
               "correct": true
             },
             {
-              "text": "Lays it on the ground",
+              "text": "Whether Elijah will ever come back",
               "correct": false
             },
             {
-              "text": "Throws it to the prophets",
+              "text": "Why Elijah left him all alone",
               "correct": false
             }
           ],
@@ -436,14 +417,6 @@
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "2 Kings 2:14",
-          "text": "As he strikes the waters with Elijah's cloak, Elisha asks, \"Where now is the LORD, the God of Elijah?\" Friend, I've held my breath at the oven window for a whole lot less than a river.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 2:14",
@@ -602,7 +575,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Kings 2:18",
-          "text": "They come back to Elisha, who's staying in Jericho, and he says, \"Didn't I tell you not to go?\" I say that same line to myself every time I grab a hot cookie tray without my mitt.",
+          "text": "They come back to Elisha, who's staying in Jericho, and he says, \"Didn't I tell you not to go?\" I say that same line to myself every time I open the oven early to peek and the cookies sink.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -631,7 +604,7 @@
               "correct": false
             },
             {
-              "text": "water",
+              "text": "sand",
               "correct": false
             }
           ],

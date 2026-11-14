@@ -36,7 +36,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 24:20",
-          "text": "Then the passage pulls back for the big picture. Because of the anger of the LORD, all this happened in Jerusalem and Judah, until He finally banished them from His presence.",
+          "text": "Then the writer gives the big picture: \"…because of the anger of the LORD, all this happened in Jerusalem and Judah, until He finally banished them from His presence.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -74,20 +74,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Kings 25:1",
-          "question": "Nebuchadnezzar's army camps outside Jerusalem. What do they build all around the city?",
+          "question": "Nebuchadnezzar's army camps outside Jerusalem and builds a siege ___ all around the city.",
           "answers": [
             {
-              "text": "A siege wall",
-              "correct": true
+              "text": "wall",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A watchtower",
+              "text": "tower",
               "correct": false
             },
             {
-              "text": "A deep trench",
+              "text": "trench",
               "correct": false
             }
           ],
@@ -96,33 +97,28 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Kings 25:2",
-          "question": "Jerusalem stays under siege until King Zedekiah's ___ year.",
-          "answers": [
-            {
-              "text": "eleventh",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "tenth",
-              "correct": false
-            },
-            {
-              "text": "twentieth",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And the siege doesn't let up. It drags on until King Zedekiah's eleventh year.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "2 Kings 25:3",
-          "text": "I did years shut in a junk drawer, friend, but this is a whole city sealed in. By the ninth day of the fourth month, the famine in the city is so severe that the people of the land have no food.",
+          "question": "After all that time under siege, Jerusalem still has plenty of food by the ninth day of the fourth month.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -131,14 +127,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 25:4",
-          "question": "Then Jerusalem's wall is breached, with the Chaldeans, Babylon's army, all around the city. What do Judah's men of war do?",
+          "question": "Then Jerusalem is breached, with the Chaldeans, Babylon's army, surrounding the city. What do Judah's men of war do?",
           "answers": [
             {
               "text": "They flee by night",
               "correct": true
             },
             {
-              "text": "They surrender at once",
+              "text": "They hide in the temple",
               "correct": false
             },
             {
@@ -160,29 +156,36 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 25:5",
-          "question": "But the Chaldeans give chase, and they overtake King Zedekiah in the plains of ___.",
+          "question": "King Zedekiah and his men of war have slipped out of Jerusalem in the dark. What does the Chaldean army do?",
           "answers": [
             {
-              "text": "Jericho",
-              "correct": true,
-              "blank": 1
+              "text": "They chase after them",
+              "correct": true
             },
             {
-              "text": "Moab",
+              "text": "They let them go",
               "correct": false
             },
             {
-              "text": "Sharon",
+              "text": "They send for more troops",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "story",
+          "verses": "2 Kings 25:5",
+          "text": "The Chaldeans overtake King Zedekiah in the plains of Jericho.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 25:5",
@@ -201,23 +204,24 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "story",
           "verses": "2 Kings 25:5-6",
-          "text": "Deserted by every last soldier. The Chaldeans seize Zedekiah and bring him up to the king of Babylon.",
+          "text": "Deserted by every last soldier. The Chaldeans seize Zedekiah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Kings 25:6",
-          "question": "Where is the king of Babylon when the Chaldeans bring Zedekiah to him?",
+          "question": "The Chaldeans bring King Zedekiah up to the king of Babylon at ___.",
           "answers": [
             {
               "text": "Riblah",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Nineveh",
@@ -232,61 +236,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "2 Kings 25:6",
-          "text": "There at Riblah, they pronounce judgment on Zedekiah. And friend, this is one verdict nobody wants to hear.",
+          "text": "There at Riblah, the Chaldeans pronounce judgment on Zedekiah. Friend, I think this part hurts.",
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 25:7",
-          "question": "What do they do to Zedekiah's sons?",
-          "answers": [
-            {
-              "text": "They slaughter them before his eyes",
-              "correct": true
-            },
-            {
-              "text": "They carry them off to Babylon",
-              "correct": false
-            },
-            {
-              "text": "They make them servants at court",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "2 Kings 25:7",
-          "text": "Then they put out Zedekiah's eyes. The last thing he ever saw was his sons.",
+          "text": "They slaughter Zedekiah's sons before his eyes. Then they put out his eyes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "2 Kings 25:7",
-          "question": "After that, Zedekiah is bound with bronze shackles and taken to Babylon.",
+          "question": "The Chaldeans bind King Zedekiah with bronze shackles. Where do they take him?",
           "answers": [
             {
-              "text": "True",
+              "text": "To Babylon",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "To Egypt",
+              "correct": false
+            },
+            {
+              "text": "To Tyre",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -349,7 +334,7 @@
           "card": 4,
           "kind": "story",
           "verses": "2 Kings 25:10",
-          "text": "Then the whole Chaldean army under him breaks down the walls around Jerusalem. Even the junk drawer I lived in still had all four of its sides.",
+          "text": "Then the whole Chaldean army under him breaks down the walls around Jerusalem.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -403,8 +388,8 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "2 Kings 25:13-16",
-          "text": "Then the Chaldeans strip the house of the LORD of its bronze, gold and silver and take it all away. King Solomon built that house (1 Kings 6:14), and the bronze from his two pillars, the Sea and the stands alone was beyond measure.",
+          "verses": "2 Kings 25:13-17",
+          "text": "Then the Chaldeans strip the house of the LORD of its bronze, gold and silver and carry it all off. King Solomon built that house (1 Kings 6:14), and the bronze from his two pillars, the Sea and the stands alone was beyond measure. Each pillar stood eighteen cubits tall.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -413,7 +398,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 25:18",
-          "question": "Nebuzaradan isn't only taking bronze and gold. He takes people too. Who does he take first?",
+          "question": "Besides the treasure, Nebuzaradan takes some people. Which of these does he take?",
           "answers": [
             {
               "text": "Priests and doorkeepers",
@@ -434,60 +419,21 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Kings 25:19",
-          "text": "From the people still in the city, he also takes a court official over the men of war, five royal advisors, the army captain's scribe and sixty more men.",
+          "verses": "2 Kings 25:19-20",
+          "text": "From those still in the city, he also takes a court official over the men of war, five royal advisors, the army captain's scribe and sixty more men. Nebuzaradan brings them all to the king of Babylon at Riblah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Kings 25:20",
-          "question": "Nebuzaradan brings them all to the king of Babylon at ___.",
-          "answers": [
-            {
-              "text": "Riblah",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Jericho",
-              "correct": false
-            },
-            {
-              "text": "Babylon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Kings 25:21",
-          "question": "What does the king of Babylon do with the priests and officials Nebuzaradan brings him?",
-          "answers": [
-            {
-              "text": "He puts them to death",
-              "correct": true
-            },
-            {
-              "text": "He makes them his servants",
-              "correct": false
-            },
-            {
-              "text": "He sends them back home",
-              "correct": false
-            }
-          ],
+          "text": "There at Riblah in the land of Hamath, the king of Babylon strikes them down and puts them to death.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 25:21",
@@ -506,7 +452,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "2 Kings 25:21",
           "text": "Don't hang up that apron yet, friend. Judah's far from home, but this story still has pages left.",

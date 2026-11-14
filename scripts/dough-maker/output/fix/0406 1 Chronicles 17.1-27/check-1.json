@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Card 2's right answer, 'Under a tent', already gives away the 'tent' in card 7's right answer, 'From tent to tent'. The card re-asks a closely related fact the baker has already seen, and the wrong answers (city to city, mountain to mountain) make 'tent' obvious.",
+      "rule": "An easy follow-up asks something new. It never re-asks the same fact. Two lines that make the same point get one question. An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 14
+      },
+      "problem": "Card 14's wrong answers ('The priests will build a house for the LORD', 'The people will build a house for the LORD') put 'build a house for the LORD' in front of the baker before card 16 asks what David's son will build. That gives away card 16's answer, 'A house for God'. Card 14's right answer is also the only one about David, while the two wrong answers mirror each other, so the right answer stands out.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    }
+  ]
+}

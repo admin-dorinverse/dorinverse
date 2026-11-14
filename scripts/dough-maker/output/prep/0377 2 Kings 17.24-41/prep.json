@@ -9,23 +9,27 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 17:24",
-          "text": "Israel has just been carried off into Assyria (2 Kings 17:23). Now the king of Assyria brings people from Babylon, Cuthah, Avva, Hamath and Sepharvaim and settles them in the towns of Samaria. Five different hometowns, all moving onto one street.",
+          "text": "Israel has just been carried off into Assyria (2 Kings 17:23). Now the king of Assyria brings in people from Babylon, Cuthah, Avva, Hamath and Sepharvaim to replace the Israelites. Five different hometowns, all moving onto one street.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "2 Kings 17:24",
-          "question": "True or false: The king of Assyria settles these new people in the towns of Samaria to replace the Israelites.",
+          "question": "The king of Assyria brings people from Babylon, Cuthah, Avva, Hamath and Sepharvaim to replace the Israelites. Where does he settle them?",
           "answers": [
             {
-              "text": "True",
+              "text": "In the towns of Samaria",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "In the cities of the Medes",
+              "correct": false
+            },
+            {
+              "text": "In Gozan by the Habor River",
               "correct": false
             }
           ],
@@ -36,43 +40,20 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 17:24-25",
-          "text": "They take over Samaria and move right into its towns. But when they first live there, they don't worship the LORD.",
+          "text": "They take over Samaria and move right into its towns. But at first they don't worship the LORD, so He sends lions among them, and the lions kill some of them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Kings 17:25",
-          "question": "The new settlers in Samaria don't worship the LORD, so He sends ___ among them, and some of them are killed.",
-          "answers": [
-            {
-              "text": "lions",
-              "correct": true
-            },
-            {
-              "text": "bears",
-              "correct": false
-            },
-            {
-              "text": "snakes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
-          "verses": "2 Kings 17:25-26",
-          "text": "LIONS, friend! I'd have crawled back into my old junk drawer and pulled it shut behind me, but the settlers send word to the king of Assyria instead.",
+          "verses": "2 Kings 17:26",
+          "text": "So the settlers send word to the king of Assyria about the lions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:26",
@@ -95,7 +76,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "2 Kings 17:27",
           "text": "The king of Assyria has a plan. Somebody has to go live there and teach these people the requirements of the God of the land.",
@@ -103,7 +84,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:27",
@@ -126,34 +107,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 17:28",
-          "question": "The priest comes back and lives in Bethel. True or false: He begins teaching the settlers how they should worship the LORD.",
+          "question": "One of the priests carried off from Samaria comes back to teach the settlers. True or false: He comes to live in Jerusalem.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
-          "verses": "2 Kings 17:29",
-          "text": "Problem solved, right? Then the story hits us with the word every storyteller hates to read out loud: nevertheless.",
+          "verses": "2 Kings 17:28",
+          "text": "So the priest starts teaching them how they should worship the LORD. Problem solved, right? Ohhh, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 17:29",
@@ -176,7 +157,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:29",
@@ -187,11 +168,11 @@
               "correct": true
             },
             {
-              "text": "In the temple of Dagon at Ashdod",
+              "text": "In the temple in Jerusalem",
               "correct": false
             },
             {
-              "text": "In the temple of Baal-berith at Shechem",
+              "text": "In the temple of Dagon",
               "correct": false
             }
           ],
@@ -199,11 +180,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "2 Kings 17:30-31",
-          "text": "Then comes the list: each nation makes a god of its own, one after another. And the Sepharvites go further. They burn their children in the fire to the gods of Sepharvaim.",
-          "needs_agent_fix": true,
+          "text": "Each nation makes its own gods, one after another. And the Sepharvites burn their children in the fire to the gods of Sepharvaim.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -248,10 +229,10 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 17:33",
-          "question": "The new residents worship the LORD, but they also serve their own ___, following the customs of the nations they came from.",
+          "question": "The new residents worship the LORD and serve their own gods too, following the ___ of the nations they came from.",
           "answers": [
             {
-              "text": "gods",
+              "text": "customs",
               "correct": true
             },
             {
@@ -259,7 +240,7 @@
               "correct": false
             },
             {
-              "text": "elders",
+              "text": "armies",
               "correct": false
             }
           ],
@@ -268,48 +249,14 @@
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "2 Kings 17:34",
-          "question": "The settlers worship the LORD and serve their own gods too. True or false: The writer says they keep the statutes, laws and commandments the LORD gave.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "The writer says that still, when this was written, they are practicing their former customs. None of them worship the LORD or keep the laws He gave the descendants of Jacob, whom He named Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 17:34",
-          "question": "None of the settlers keep the laws the LORD gave the descendants of the man He named Israel. Who is that man?",
-          "answers": [
-            {
-              "text": "Jacob",
-              "correct": true
-            },
-            {
-              "text": "Esau",
-              "correct": false
-            },
-            {
-              "text": "Ishmael",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
           "verses": "2 Kings 17:35",
           "text": "Then the writer looks back at the covenant the LORD made with the Israelites, and what He commanded them.",
@@ -317,7 +264,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:35",
@@ -340,38 +287,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Kings 17:36",
-          "question": "Instead, the Israelites are to worship the LORD, who brought them out of ___ with great power and an outstretched arm.",
+          "question": "The LORD brought the Israelites out of Egypt with great power. True or false: He tells them to bow down to Him and offer sacrifices to Him.",
           "answers": [
             {
-              "text": "Egypt",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Babylon",
-              "correct": false
-            },
-            {
-              "text": "Assyria",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "2 Kings 17:37-38",
-          "text": "He tells them to always keep His laws and never forget the covenant, and then He says it again, and AGAIN: “Do not worship other gods.” Friend, when I set three timers for one batch, that batch is IMPORTANT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
+          "kind": "story",
+          "verses": "2 Kings 17:37-38",
+          "text": "He tells them to always keep His laws and never forget the covenant, and then He says it again, and AGAIN: “Do not worship other gods.” Friend, when you hear the same line three times, that's the line to remember.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:39",
@@ -394,15 +337,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "2 Kings 17:40",
-          "text": "But they would not listen. They kept right on with their former customs.",
+          "text": "But the settlers would not listen. They kept right on with their former customs.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 17:41",

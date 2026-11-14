@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 21:1",
-          "text": "Saul was Israel's king before David, and now David's on the throne. During David's reign, a famine hits for three years in a row, and THREE years, friend, that's not a rough patch anymore, that's a lifestyle. So David seeks the face of the LORD.",
-          "needs_agent_fix": true,
+          "text": "Saul was Israel's king before David (1 Samuel 11:15), and now David's on the throne. During David's reign, a famine hits for three years in a row, and THREE years, friend, that's not a rough patch anymore, that's a lifestyle. So David seeks the face of the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Samuel 21:2",
-          "text": "So David calls in the Gibeonites. Quick background, friend: they're not Israelites. They're what's left of the Amorites.",
+          "text": "So David calls in the Gibeonites, who aren't Israelites but what's left of the Amorites. Israel had taken an oath concerning them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 21:2",
-          "question": "The Israelites had taken an oath concerning the Gibeonites, and Saul kept it.",
+          "question": "Saul kept the oath Israel had taken concerning the Gibeonites.",
           "answers": [
             {
               "text": "True",
@@ -65,18 +65,10 @@
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "2 Samuel 21:2",
-          "text": "In his zeal for Israel and Judah, Saul sought to kill them. Now it's on David's desk, like starting a new job and finding the last guy's overdue invoice waiting in your inbox.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 21:3",
-          "question": "David calls in the Gibeonites, the people Saul sought to kill. What does David ask them?",
+          "question": "David calls in the Gibeonites because of the famine. What does David ask them?",
           "answers": [
             {
               "text": "How he can make amends to them",
@@ -95,15 +87,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "2 Samuel 21:3-4",
-          "text": "David's hoping that afterward they'll bless the inheritance of the LORD. The Gibeonites say they need no silver or gold from Saul or his house, and David shouldn't put anyone in Israel to death for them.",
+          "text": "He wants them to be able to bless the inheritance of the LORD. The Gibeonites say they need no silver or gold from Saul or his house, and David shouldn't put anyone in Israel to death for them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 21:4",
@@ -126,11 +118,19 @@
           "needs_human_decision": false
         },
         {
+          "card": 8,
+          "kind": "story",
+          "verses": "2 Samuel 21:5",
+          "text": "Then the Gibeonites bring up Saul, the man who consumed them and plotted to wipe them out from every border of Israel.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "2 Samuel 21:5-6",
-          "question": "The Gibeonites talk about the man who consumed them and plotted to wipe them out of Israel. What do they ask David to hand over?",
+          "verses": "2 Samuel 21:6",
+          "question": "The Gibeonites want no silver or gold, and they're talking about Saul. What do they ask David to hand over?",
           "answers": [
             {
               "text": "Seven of Saul's male descendants",
@@ -145,15 +145,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "2 Samuel 21:6",
-          "text": "David said 'Whatever you ask' BEFORE he heard the ask, friend, and here it is: they want to hang the seven before the LORD at Gibeah of Saul. I bet you could hear a chocolate chip drop.",
-          "needs_agent_fix": true,
+          "text": "They say they want to hang them before the LORD at Gibeah of Saul.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,15 +161,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 21:6",
-          "question": "David turns down the Gibeonites' request for seven of Saul's descendants.",
+          "question": "David agrees to give the Gibeonites the seven they asked for.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -215,28 +215,28 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "2 Samuel 21:8",
-          "text": "Careful now, friend, because there's ANOTHER Mephibosheth, a son that Rizpah daughter of Aiah bore to Saul himself. Two Mephibosheths in one story, like two guys named Mike on the same work team.",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 21:7-8",
+          "text": "Careful now, friend, because there's ANOTHER Mephibosheth in this story, a son Rizpah daughter of Aiah bore to Saul himself. Two Mephibosheths, like two guys named Mike on the same work team.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 21:8",
-          "question": "Which Mephibosheth does David take, along with his brother Armoni?",
+          "question": "David takes Armoni and Mephibosheth, Rizpah's two sons. He also takes the sons of Saul's daughter ___.",
           "answers": [
             {
-              "text": "The son Rizpah bore to Saul",
+              "text": "Merab",
               "correct": true
             },
             {
-              "text": "The son of Jonathan son of Saul",
+              "text": "Michal",
               "correct": false
             },
             {
-              "text": "Both Mephibosheths in the story",
+              "text": "Dinah",
               "correct": false
             }
           ],
@@ -247,7 +247,7 @@
           "card": 5,
           "kind": "story",
           "verses": "2 Samuel 21:8",
-          "text": "Then David takes the sons of Saul's daughter Merab, the sons she bore to Adriel son of Barzillai the Meholathite.",
+          "text": "Merab bore them to Adriel son of Barzillai the Meholathite.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -278,7 +278,7 @@
           "card": 7,
           "kind": "story",
           "verses": "2 Samuel 21:9",
-          "text": "This one's heavy, friend. At the beginning of the barley harvest, David delivers the seven into the hands of the Gibeonites.",
+          "text": "This one's heavy, friend. David delivers the seven into the hands of the Gibeonites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -287,18 +287,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 21:9",
-          "question": "The Gibeonites said they would hang the seven before the LORD. Where do they hang them?",
+          "question": "When are the seven sons of Saul's house put to death?",
           "answers": [
             {
-              "text": "On the hill before the LORD",
+              "text": "At the beginning of the barley harvest",
               "correct": true
             },
             {
-              "text": "Inside the gates of Jerusalem",
+              "text": "At the end of the wheat harvest",
               "correct": false
             },
             {
-              "text": "On the banks of the Jordan",
+              "text": "During the grape harvest",
               "correct": false
             }
           ],
@@ -308,9 +308,9 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Samuel 21:9-10",
-          "text": "All seven fall together. Then Rizpah, the mother of Armoni and Mephibosheth, takes sackcloth and spreads it out for herself on a rock.",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 21:8-10",
+          "text": "They hang them on the hill before the LORD, and all seven fall together. Then Rizpah, the mother of Armoni and Mephibosheth, spreads sackcloth out for herself on a rock.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -318,22 +318,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 21:10",
-          "question": "Day and night on that rock, what does Rizpah keep away from the bodies?",
+          "question": "Rizpah keeps watch over the bodies of the seven who were hanged. What does she keep away from them, day and night?",
           "answers": [
             {
               "text": "Birds by day and beasts by night",
               "correct": true
             },
             {
-              "text": "Thieves by day and soldiers by night",
+              "text": "Thieves by day and strangers by night",
               "correct": false
             },
             {
-              "text": "Strangers by day and robbers by night",
+              "text": "Soldiers by day and mourners by night",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -341,7 +341,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 21:10",
-          "question": "Rizpah keeps watch over the bodies from the beginning of the harvest until the rain from heaven pours down on them.",
+          "question": "Rizpah keeps her watch until the rain from heaven pours down on the bodies.",
           "answers": [
             {
               "text": "True",
@@ -399,7 +399,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 21:13",
-          "question": "David brings back the bones of Saul and Jonathan but leaves the bones of the seven who were hanged where they are.",
+          "question": "The bones of the seven who were hanged are left where they are.",
           "answers": [
             {
               "text": "True",
@@ -417,27 +417,27 @@
           "card": 16,
           "kind": "story",
           "verses": "2 Samuel 21:14",
-          "text": "They bury the bones of Saul and Jonathan in Zela, in the land of Benjamin. I spent years in the back of a drawer, friend, so I know what it means when somebody finally comes back for you.",
+          "text": "They bury the bones of Saul and Jonathan in Zela, in the land of Benjamin.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 21:14",
-          "question": "In Zela, whose tomb are Saul and Jonathan buried in?",
+          "question": "Saul and Jonathan are buried in Zela, in the tomb of Saul's father ___.",
           "answers": [
             {
-              "text": "Saul's father Kish",
+              "text": "Kish",
               "correct": true
             },
             {
-              "text": "The prophet Samuel",
+              "text": "Jesse",
               "correct": false
             },
             {
-              "text": "David's father Jesse",
+              "text": "Ner",
               "correct": false
             }
           ],

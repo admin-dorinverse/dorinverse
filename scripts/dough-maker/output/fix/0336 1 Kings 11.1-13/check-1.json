@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "The answer 'Jerusalem' is given away before this question. Stop 1 card 1 says silver was common 'in Jerusalem', and stop 2 card 1 and card 2 both say the hill is 'east of Jerusalem'. Hebron and Bethel are never mentioned, so the baker can pick the right answer from the earlier cards without reasoning from the passage.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "The question says 'that tribe', which points back to the one-tribe question on the previous card. The baker can't see that card, so 'that tribe' has no context.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The question says 'these nations' and 'them' without naming the nations. Those words point back to the story card before it (card 3), which isn't on screen.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 5
+      },
+      "problem": "The statement says 'these nations' without saying which nations. It points back to a card that isn't on screen.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    }
+  ]
+}

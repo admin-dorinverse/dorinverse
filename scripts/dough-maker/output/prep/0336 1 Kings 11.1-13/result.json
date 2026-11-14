@@ -1,54 +1,5 @@
 {
-  "agent": [
-    {
-      "covered": true,
-      "where": {
-        "stop": 1,
-        "card": 3
-      },
-      "problem": "This non-opening story card has three sentences: the sentence listing the women and nations, followed by two separate joke sentences. It needs to be trimmed or combined into no more than two sentences.",
-      "rule": {
-        "link": "prep-walkthrough.md#what-bite-sized-means",
-        "text": "Every other story card is 1 to 2 sentences."
-      },
-      "by": "kimi",
-      "at": {
-        "stop": 1,
-        "card": 3,
-        "verses": "1 Kings 11:1"
-      }
-    }
-  ],
-  "human": [
-    {
-      "covered": false,
-      "where": {
-        "stop": 2,
-        "card": 16
-      },
-      "problem": "This last story card is only the 'story isn't over' line and tells no verse, but it cites 1 Kings 11:13, which was already asked on card 15. The citation rule says a story card cites the verses it tells, and this card tells none.",
-      "question": "What should the verses field be for a story card that is only the 'story isn't over' line and tells no verses: the passage's last verse, the verses of the previous card, or something else?",
-      "by": "opus",
-      "at": {
-        "stop": 2,
-        "card": 16,
-        "verses": "1 Kings 11:13"
-      }
-    },
-    {
-      "covered": false,
-      "where": {
-        "stop": 2,
-        "card": 16
-      },
-      "problem": "The closing card only says the story isn't over. It tells nothing from 1 Kings 11:13, but its verses field cites 1 Kings 11:13. The rules say a story card cites the verses it tells, no wider and no narrower. They also allow the last story card to be just this line when the last verse is asked on a choice card. They don't say what such a card should cite.",
-      "question": "When the last story card is only the story-isn't-over line and tells no verse, what should its verses field cite: the passage's last verse, nothing, or something else?",
-      "by": "opus",
-      "at": {
-        "stop": 2,
-        "card": 16,
-        "verses": "1 Kings 11:13"
-      }
-    }
-  ]
+  "agent": [],
+  "human": [],
+  "fixed": "2026-11-14T08:44:11.268Z"
 }

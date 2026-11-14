@@ -8,48 +8,56 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Samuel 15:12-13",
-          "text": "Absalom, King David's son, has sent for Ahithophel, David's counselor, and his conspiracy keeps gaining strength as the people supporting him increase. Now a messenger comes to David with the news: “The hearts of the men of Israel are with Absalom.”",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 15:13",
+          "text": "Absalom, King David's son, has sent for Ahithophel, David's counselor, and his conspiracy keeps gaining strength as the people supporting him increase (2 Samuel 15:12). Now a messenger comes to David with the news: “The hearts of the men of Israel are with Absalom.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Samuel 15:14",
-          "question": "Israel's hearts are going to Absalom. What does David tell his servants in Jerusalem?",
-          "answers": [
-            {
-              "text": "Get up and flee before Absalom comes",
-              "correct": true
-            },
-            {
-              "text": "Lock the gates and hold the city",
-              "correct": false
-            },
-            {
-              "text": "Gather the army and march on Hebron",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "David tells all his servants with him in Jerusalem to get up and flee. The KING of Israel is running out of his OWN city, friend, and he is NOT taking the scenic route.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Samuel 15:14",
-          "text": "David says they have to leave quickly, or Absalom will overtake them, heap disaster on them and put the city to the sword. The KING of Israel is running out of his OWN city, friend, and he is NOT taking the scenic route.",
-          "needs_agent_fix": true,
+          "question": "David tells his servants they must leave Jerusalem quickly. What does he say will happen if they don't?",
+          "answers": [
+            {
+              "text": "Absalom will overtake them and strike the city",
+              "correct": true
+            },
+            {
+              "text": "The gates will be shut and they'll be trapped",
+              "correct": false
+            },
+            {
+              "text": "The people will turn on them in the streets",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "2 Samuel 15:15",
+          "text": "His servants answer, “Whatever our lord the king decides, we are your servants.” Friend, I have NEVER gotten a yes that fast in my LIFE.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Samuel 15:15",
-          "question": "True or false: David's servants argue with him and beg him to stay and fight.",
+          "verses": "2 Samuel 15:16",
+          "question": "True or false: When David sets out from Jerusalem, his whole household stays behind.",
           "answers": [
             {
               "text": "True",
@@ -60,38 +68,31 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "2 Samuel 15:15-16",
-          "text": "His servants tell him that whatever the king decides, they're his servants, and friend, I have NEVER gotten a yes that fast in my LIFE. So David sets out, and his entire household follows him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 15:16",
-          "question": "David's household is leaving Jerusalem with him. Who does he leave behind to take care of the palace?",
+          "question": "David's household goes with him, but he leaves ten concubines behind to take care of the ___.",
           "answers": [
             {
-              "text": "Ten concubines",
-              "correct": true
+              "text": "palace",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Ten of his guards",
+              "text": "gates",
               "correct": false
             },
             {
-              "text": "Three of his sons",
+              "text": "fields",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,15 +100,15 @@
           "kind": "story",
           "verses": "2 Samuel 15:17-18",
           "text": "The king stops at the last house while all his servants march past him: the Cherethites and Pelethites, men under David's command, plus six hundred Gittites who followed him from Gath. Friend, that's not a household moving out, that's a PARADE.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "2 Samuel 15:19-20",
-          "text": "Then David turns to Ittai the Gittite, a foreigner and an exile, and tells him to go back and stay with the new king. Ittai only arrived yesterday, and David says he doesn't even know where he's going himself, which is the WORST sales pitch I have ever heard.",
-          "needs_agent_fix": true,
+          "text": "Then David tells Ittai the Gittite, a foreigner and an exile who arrived only yesterday, to go back and stay with the new king. David doesn't even know where he's going himself, and friend, he's not about to drag the new guy along on day two.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,139 +131,124 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "2 Samuel 15:21-22",
-          "text": "Ittai only got here YESTERDAY, and I've had sprinkles stuck on my apron longer than that, but life or death, he's sticking with the king. David tells him to march on.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Samuel 15:22",
+          "question": "True or false: When David tells Ittai to march on, Ittai marches past with all his men and the little ones with him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 15:22",
-          "question": "True or false: Ittai marches on alone and sends all his men back.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Samuel 15:23",
+          "text": "Everyone in the countryside is weeping loudly as all the people pass by. Then the king crosses the Kidron Valley.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 15:23",
-          "question": "David's people are passing through the countryside on their way out. What does the countryside do?",
+          "question": "As the king crosses the Kidron Valley, all the people pass toward the way of the ___.",
           "answers": [
             {
-              "text": "They weep loudly",
-              "correct": true
+              "text": "wilderness",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They cheer for Absalom",
+              "text": "city",
               "correct": false
             },
             {
-              "text": "They block the road",
+              "text": "sea",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
-          "verses": "2 Samuel 15:23",
-          "text": "The king crosses the Kidron Valley, and all the people head toward the way of the wilderness. Friend, that is not a road anybody puts on a postcard.",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 15:24-25",
+          "text": "Zadok the priest is there too, with the Levites carrying the ark of the covenant of God, and Abiathar the priest offers sacrifices until all the people have passed out of the city. Then David tells Zadok, “Return the ark of God to the city.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "2 Samuel 15:24",
-          "text": "Zadok the priest is there too, with Levites carrying the ark of the covenant of God, and they set it down while Abiathar the priest offers sacrifices until all the people have passed out of the city. After that parade, friend, that takes a WHILE.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Samuel 15:25",
+          "question": "David sends the ark of God back to Jerusalem. What does he say will happen if he finds favor in the eyes of the LORD?",
+          "answers": [
+            {
+              "text": "The LORD will bring him back to see it again",
+              "correct": true
+            },
+            {
+              "text": "The LORD will send the ark out to him",
+              "correct": false
+            },
+            {
+              "text": "The LORD will give him a new city",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "2 Samuel 15:25",
-          "question": "Zadok has the ark of God right there on the road out of the city. What does David tell him to do with it?",
+          "verses": "2 Samuel 15:26",
+          "question": "And if the LORD should say He doesn't delight in David? What does David say then?",
           "answers": [
             {
-              "text": "Take it back to the city",
+              "text": "Let the LORD do whatever seems good to Him",
               "correct": true
             },
             {
-              "text": "Carry it into the wilderness",
+              "text": "He will fight to take back his throne",
               "correct": false
             },
             {
-              "text": "Hide it in the Kidron Valley",
+              "text": "He will leave Israel and never return",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 15:25",
-          "question": "David is sending the ark of God back to Jerusalem. What does he say about it?",
-          "answers": [
-            {
-              "text": "If the LORD favors him He will bring him back",
-              "correct": true
-            },
-            {
-              "text": "The road ahead is far too dangerous for it",
-              "correct": false
-            },
-            {
-              "text": "The people in the city will need it to worship",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Samuel 15:27-28",
+          "text": "David tells Zadok to go back to the city in peace with his son Ahimaaz, and Abiathar with his son Jonathan (not Saul's son), while David waits at the fords of the wilderness. Friend, the fords of the wilderness do NOT come with a waiting room.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "2 Samuel 15:26",
-          "text": "And if the LORD should say He doesn't delight in him? Lean in, friend, because David says, “here I am; let Him do to me whatever seems good to Him.”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "story",
-          "verses": "2 Samuel 15:27-28",
-          "text": "David tells Zadok to go back to the city in peace with his son Ahimaaz, and Abiathar with his son Jonathan, while David waits at the fords of the wilderness. Friend, the fords of the wilderness do NOT come with a waiting room.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 15:28",
@@ -281,26 +267,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 15:29",
-          "question": "True or false: Zadok and Abiathar take the ark of God back to Jerusalem and stay there.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -314,7 +281,7 @@
           "kind": "story",
           "verses": "2 Samuel 15:30",
           "text": "David keeps going up the Mount of Olives, weeping as he goes. His head is covered, and he's walking barefoot.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -322,7 +289,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 15:30",
-          "question": "True or false: The people climbing the Mount of Olives with David cover their heads and weep too.",
+          "question": "True or false: The people climbing the Mount of Olives with David cover their heads just like he does.",
           "answers": [
             {
               "text": "True",
@@ -333,7 +300,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -341,7 +308,7 @@
           "kind": "story",
           "verses": "2 Samuel 15:31",
           "text": "Then someone tells David that Ahithophel is among the conspirators with Absalom. That's like finding out the guy who runs your group chat started a brand new one, and you're not in it.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -364,50 +331,27 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "2 Samuel 15:32",
-          "text": "At the summit, where David used to worship God, his friend Hushai the Archite is there to meet him. Robe torn, dust on his head, and I bet he's ready to follow David anywhere.",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 15:32-33",
+          "text": "At the summit, where David used to worship God, Hushai the Archite is there to meet him, robe torn and dust on his head. But David tells Hushai, “If you go on with me, you will be a burden to me.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 15:33",
-          "question": "Hushai has come to meet David on the mountain. If Hushai goes on with him, what does David say he'll be?",
-          "answers": [
-            {
-              "text": "A burden to him",
-              "correct": true
-            },
-            {
-              "text": "A comfort to him",
-              "correct": false
-            },
-            {
-              "text": "A shield for him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Samuel 15:34",
+          "text": "David has a different job for Hushai. Go back to Jerusalem and tell Absalom, “I will be your servant, my king; in the past I was your father’s servant, but now I will be your servant.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "2 Samuel 15:34",
-          "text": "But David has a different job for Hushai. Go back to the city and tell Absalom he'll be his servant now, the way he used to serve his father.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 15:34",
@@ -426,34 +370,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Samuel 15:35",
+          "question": "True or false: David tells Hushai to keep everything he hears in the king's palace a secret from Zadok and Abiathar the priests.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 15:35",
-          "question": "David reminds Hushai that Zadok and Abiathar the priests will be in the city too. What should Hushai do with them?",
-          "answers": [
-            {
-              "text": "Report everything he hears from the palace",
-              "correct": true
-            },
-            {
-              "text": "Help them keep the ark of God hidden",
-              "correct": false
-            },
-            {
-              "text": "Stay out of sight in their homes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 15:36",
@@ -472,42 +412,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "2 Samuel 15:37",
-          "text": "Friend, this man is BAREFOOT on a mountain and still running the most organized operation I've ever seen. Off goes Hushai, back to Jerusalem.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 15:37",
-          "question": "True or false: Hushai reaches Jerusalem just as Absalom is entering the city.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "2 Samuel 15:37",
-          "text": "Absalom's in the city, Hushai's in the city, and we're pausing right here. Friend, this story has a LOT more to tell.",
-          "needs_agent_fix": true,
+          "text": "So David's friend Hushai arrives in Jerusalem just as Absalom is entering the city. Talk about cutting it CLOSE, friend, and trust me, this story is nowhere near over.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

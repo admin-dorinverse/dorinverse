@@ -8,9 +8,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Samuel 11:27-12:1",
-          "text": "Last time, David took Uriah's widow as his wife, and the thing David had done was evil in the sight of the LORD. Now the LORD sends Nathan the prophet to David, and Nathan doesn't walk in with a speech. He walks in with a story, friend.",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 12:1",
+          "text": "David slept with Bathsheba, the wife of Uriah the Hittite, then had Uriah killed in battle and took her as his wife, and what David had done was evil in the sight of the LORD (2 Samuel 11:2-27). Now the LORD sends Nathan the prophet to David. And Nathan doesn't walk in with a speech, friend, he walks in with a story.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -52,7 +52,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -60,38 +60,39 @@
           "kind": "story",
           "verses": "2 Samuel 12:3",
           "text": "The poor man has just one small ewe lamb he bought, and it shares his food, drinks from his cup and sleeps in his ARMS. Friend, that lamb has it better than most house cats.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 12:3",
-          "question": "The poor man's lamb grew up with him and his children. Nathan says it was like what to him?",
+          "question": "The poor man's lamb grew up with him and his children, and it was like a ___ to him.",
           "answers": [
             {
-              "text": "A daughter",
-              "correct": true
+              "text": "daughter",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A servant",
+              "text": "servant",
               "correct": false
             },
             {
-              "text": "A brother",
+              "text": "brother",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "2 Samuel 12:2-4",
-          "text": "Then a traveler comes to the rich man, who needs to prepare something for his guest. Remember, this guy has a GREAT number of sheep and cattle, enough to host the whole city and still have a herd left over.",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 12:2, 4",
+          "text": "Then a traveler comes to the rich man, who has to prepare something for his guest. And remember, this guy has a GREAT number of sheep and cattle, animals to SPARE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -114,7 +115,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -127,54 +128,51 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 12:5",
-          "text": "Nathan's story lands HARD. David burns with anger against the man who did this, and friend, the king is HOT.",
-          "needs_agent_fix": true,
+          "text": "Nathan's story lands HARD. David burns with anger against the man who did this.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Samuel 12:5",
-          "question": "David swears by the life of the LORD. What does he say the man who did this deserves?",
+          "question": "David swears by the life of the LORD that the man who did this deserves to die.",
           "answers": [
             {
-              "text": "To die",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "To be sent away",
-              "correct": false
-            },
-            {
-              "text": "To be put in chains",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 12:6",
-          "question": "David also says the man must pay for the lamb. How many times over?",
+          "question": "David also says the man must pay for the lamb ___ times over.",
           "answers": [
             {
-              "text": "Four times",
-              "correct": true
+              "text": "four",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Two times",
+              "text": "two",
               "correct": false
             },
             {
-              "text": "Seven times",
+              "text": "seven",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -182,7 +180,7 @@
           "kind": "story",
           "verses": "2 Samuel 12:7",
           "text": "Then Nathan looks right at David.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -197,31 +195,31 @@
               "correct": true
             },
             {
-              "text": "He lives in your city",
+              "text": "That man lives in your city",
               "correct": false
             },
             {
-              "text": "The poor man forgives him",
+              "text": "That man must be found",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "2 Samuel 12:7",
-          "text": "David just sentenced the rich man, friend, and the rich man is HIM. Then Nathan brings a message from the LORD, who anointed David king and rescued him from Saul, the king before him.",
-          "needs_agent_fix": true,
+          "text": "David just sentenced the rich man, friend, and the rich man is HIM. Then Nathan brings a message from the LORD, who anointed David king over Israel and delivered him from the hand of Saul, the king before him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "2 Samuel 12:8",
-          "text": "The LORD reminds David that He gave him his master Saul's house, his master's wives, and the house of Israel and Judah. Friend, I got a junk drawer, and David got a whole KINGDOM.",
-          "needs_agent_fix": true,
+          "text": "The LORD reminds David that He gave him his master's house, his master's wives, and the house of Israel and Judah. Friend, I spent years in the back of a junk drawer, and David got a whole KINGDOM.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -240,7 +238,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -248,30 +246,31 @@
           "kind": "story",
           "verses": "2 Samuel 12:9",
           "text": "Then comes the hard question: why did David despise the LORD's command by doing evil in His sight? He put Uriah the Hittite to the sword and took his wife as his own.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 12:9",
-          "question": "The LORD says David killed Uriah with the sword of which people?",
+          "question": "The LORD says David killed Uriah with the sword of the ___.",
           "answers": [
             {
-              "text": "The Ammonites",
-              "correct": true
+              "text": "Ammonites",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The Philistines",
+              "text": "Philistines",
               "correct": false
             },
             {
-              "text": "The Moabites",
+              "text": "Moabites",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -279,30 +278,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 12:10",
-          "question": "Because David despised the LORD and took Uriah's wife, what does the LORD say will never depart from David's house?",
+          "question": "The LORD says the sword will never depart from David's house. What reason does He give?",
           "answers": [
             {
-              "text": "The sword",
+              "text": "David despised Him and took Uriah's wife",
               "correct": true
             },
             {
-              "text": "A famine",
+              "text": "David stayed home from the war",
               "correct": false
             },
             {
-              "text": "A plague",
+              "text": "David forgot to thank Him for the kingdom",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "2 Samuel 12:11",
-          "text": "And the LORD says He will raise up adversity against David from his own house. Before David's very eyes, his wives will be given to another.",
-          "needs_agent_fix": true,
+          "text": "The LORD says He will raise up adversity against David from his own house. Before David's very eyes, He will take David's wives and give them to another, and that man will lie with them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -310,7 +309,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 12:12",
-          "question": "David acted in secret. The LORD says He will give David's wives to another. How does the LORD say He will do it?",
+          "question": "David acted in secret. How does the LORD say He will do this thing?",
           "answers": [
             {
               "text": "In broad daylight before all Israel",
@@ -321,11 +320,11 @@
               "correct": false
             },
             {
-              "text": "Far away in another land",
+              "text": "In the dark of night",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -333,7 +332,7 @@
           "kind": "story",
           "verses": "2 Samuel 12:13",
           "text": "The message is done, and every word of it just landed on the king. Now it's David's turn to speak.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -348,38 +347,23 @@
               "correct": true
             },
             {
-              "text": "I will pay it back four times",
+              "text": "I have done nothing in secret",
               "correct": false
             },
             {
-              "text": "Let me explain what happened",
+              "text": "I have kept the LORD's command",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Samuel 12:13",
-          "question": "Nathan replies to David. What does he say the LORD has done?",
-          "answers": [
-            {
-              "text": "Taken away his sin",
-              "correct": true
-            },
-            {
-              "text": "Taken away his throne",
-              "correct": false
-            },
-            {
-              "text": "Taken away his blessing",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "\"The LORD has taken away your sin,\" Nathan replies.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -387,26 +371,26 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 12:13",
-          "question": "David said the man in the story deserves to die. Nathan tells David that he will not die.",
+          "question": "Nathan tells David that David himself will die for this.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "2 Samuel 12:14",
-          "text": "But then Nathan says, \"Nevertheless.\" Because by this deed David showed utter contempt for the word of the LORD, the son born to him will surely die.",
-          "needs_agent_fix": true,
+          "text": "But Nathan goes on: \"Nevertheless, because by this deed you have shown utter contempt for the word of the LORD, the son born to you will surely die.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -420,7 +404,7 @@
           "kind": "story",
           "verses": "2 Samuel 12:15",
           "text": "Nathan goes home. Then the LORD strikes the child that Uriah's wife bore to David, and the boy becomes ill.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -443,7 +427,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -451,7 +435,7 @@
           "kind": "story",
           "verses": "2 Samuel 12:16-17",
           "text": "David spends the night lying in sackcloth on the ground. The elders of his household stand beside him to help him up.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -470,7 +454,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -478,7 +462,7 @@
           "kind": "story",
           "verses": "2 Samuel 12:18",
           "text": "On the seventh day, the child dies. And David's servants are afraid to tell him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -501,77 +485,70 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Samuel 12:19",
-          "text": "But David sees his servants whispering to one another, and he picks up on it.",
-          "needs_agent_fix": true,
+          "question": "David's servants are afraid to tell him the news. So how does David figure out the child is dead?",
+          "answers": [
+            {
+              "text": "He sees his servants whispering",
+              "correct": true
+            },
+            {
+              "text": "Nathan comes back to tell him",
+              "correct": false
+            },
+            {
+              "text": "He hears mourners outside the house",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 12:19",
-          "question": "David asks his whispering servants a question. What is it?",
-          "answers": [
-            {
-              "text": "Is the child dead",
-              "correct": true
-            },
-            {
-              "text": "Where is Nathan now",
-              "correct": false
-            },
-            {
-              "text": "Is the boy getting better",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Samuel 12:19-20",
+          "text": "David asks them, and they answer, \"He is dead,\" just like that. Then David gets up from the ground, washes, anoints himself and changes his clothes.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "2 Samuel 12:19-20",
-          "text": "\"He is dead,\" they reply. Then David gets up from the ground.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Samuel 12:20",
+          "question": "Then David goes into the house of the LORD and ___.",
+          "answers": [
+            {
+              "text": "worships",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "fasts",
+              "correct": false
+            },
+            {
+              "text": "mourns",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 12:20",
-          "question": "What does David do after he gets up from the ground?",
-          "answers": [
-            {
-              "text": "He washes and goes to worship",
-              "correct": true
-            },
-            {
-              "text": "He tears his clothes and weeps",
-              "correct": false
-            },
-            {
-              "text": "He calls the elders together",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 12:20",
-          "question": "After he worships in the house of the LORD, David goes home and asks for food.",
+          "question": "After that, David goes to his own house and asks for food.",
           "answers": [
             {
               "text": "True",
@@ -582,26 +559,26 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "2 Samuel 12:21",
+          "text": "His servants ask, \"What is this you have done?\" He fasted and wept while the child was alive, but now that the child has died, he gets up and eats.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "2 Samuel 12:21",
-          "text": "His servants can't make sense of it and ask, \"What is this you have done?\" He fasted and wept while the child was alive, and now that the child has died, he gets up and eats.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 12:22",
           "question": "David answers his servants. Why did he fast and weep while the child was still alive?",
           "answers": [
             {
-              "text": "He hoped the LORD might let him live",
+              "text": "He hoped the LORD might let the child live",
               "correct": true
             },
             {
@@ -613,58 +590,55 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Samuel 12:23",
+          "question": "Now that the child is dead, David says fasting could still bring the child back.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Samuel 12:23",
-          "question": "Now that the child is dead, why does David say he won't fast anymore?",
-          "answers": [
-            {
-              "text": "He can't bring the child back",
-              "correct": true
-            },
-            {
-              "text": "Nathan told him to stop",
-              "correct": false
-            },
-            {
-              "text": "The LORD spoke to him again",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And David finishes his answer with this: \"I will go to him, but he will not return to me.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "2 Samuel 12:23",
-          "text": "And David finishes his answer with this: \"I will go to him, but he will not return to me.\"",
-          "needs_agent_fix": true,
+          "verses": "2 Samuel 12:24",
+          "text": "Then David comforts his wife Bathsheba, and she gives birth to another son.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "2 Samuel 12:24",
-          "text": "Then David comforts his wife Bathsheba, and she gives birth to another son.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 12:24",
-          "question": "What do David and Bathsheba name their new son?",
+          "question": "David and Bathsheba name their new son ___.",
           "answers": [
             {
               "text": "Solomon",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Absalom",
@@ -675,11 +649,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 12:24-25",
@@ -698,7 +672,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

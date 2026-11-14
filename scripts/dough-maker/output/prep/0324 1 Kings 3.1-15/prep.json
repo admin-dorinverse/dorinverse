@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 3:1",
-          "text": "Meet Solomon, and the first thing we hear is a BIG move. He forms an alliance with Pharaoh king of Egypt by marrying his daughter. He brings her to the City of David until he finishes his palace, the house of the LORD and the wall around Jerusalem.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Solomon, son of David, is now Israel's king. Later, he makes a BIG move: an alliance with Pharaoh king of Egypt, by marrying his daughter. He brings her to the City of David until he finishes his palace, the house of the LORD and the wall around Jerusalem.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -76,19 +76,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 3:3",
-          "question": "Solomon walked in his father David's statutes, except that he sacrificed and burned incense on the ___.",
+          "question": "Solomon walked in his father David's statutes, except that on the high places he sacrificed and burned ___.",
           "answers": [
             {
-              "text": "high places",
+              "text": "incense",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "city walls",
+              "text": "oil",
               "correct": false
             },
             {
-              "text": "palace roof",
+              "text": "grain",
               "correct": false
             }
           ],
@@ -99,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "1 Kings 3:4",
-          "text": "So the king heads to Gibeon, the great high place, and offers a THOUSAND burnt offerings on the altar there. Friend, I stamped forty cookies in a row once and had to go lie down on my gold base.",
+          "text": "Now the king goes to Gibeon, the great high place, and offers a THOUSAND burnt offerings on the altar there. Friend, I stamped forty cookies in a row once and had to go lie down on my gold base.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -123,7 +123,7 @@
               "correct": true
             },
             {
-              "text": "Go and build My house for Me",
+              "text": "Go and tear down the high places",
               "correct": false
             },
             {
@@ -154,11 +154,11 @@
               "correct": true
             },
             {
-              "text": "David won every battle he fought",
+              "text": "David was the firstborn son",
               "correct": false
             },
             {
-              "text": "David built Him many altars",
+              "text": "David asked Him for great riches",
               "correct": false
             }
           ],
@@ -175,49 +175,49 @@
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "1 Kings 3:7",
-          "text": "But Solomon says he's only a little child, not knowing how to go out or come in. That's day one as the BOSS, holding the keys to the whole building, and you can't even find the light switch.",
+          "question": "Now Solomon tells God how he sees himself as king. He says he's only a little ___.",
+          "answers": [
+            {
+              "text": "child",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "shepherd",
+              "correct": false
+            },
+            {
+              "text": "soldier",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "1 Kings 3:7",
-          "question": "True or false: Solomon tells God he already knows how to lead.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Solomon says he doesn't know how to go out or come in. That's day one as the BOSS, holding the keys to the whole building, and you can't even find the light switch.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "1 Kings 3:8",
-          "question": "Solomon says he's among the people God has chosen. He says they're too ___ to count or number.",
+          "question": "Solomon looks at the people God has chosen. True or false: he says they're too many to count.",
           "answers": [
             {
-              "text": "numerous",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "scattered",
-              "correct": false
-            },
-            {
-              "text": "stubborn",
+              "text": "False",
               "correct": false
             }
           ],
@@ -276,71 +276,24 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 3:10",
-          "text": "Now it pleased the Lord that Solomon asked for this. Me? I'd have asked for an oven that never burns a batch, and called it a prayer request.",
-          "needs_agent_fix": true,
+          "text": "Now it pleased the Lord that Solomon asked for an understanding heart. Me? I'd have asked for an oven that never burns a batch, and called it a prayer request.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "1 Kings 3:11",
-          "text": "So God answers him, starting with what Solomon DIDN'T ask for. Not long life, and not wealth for himself.",
-          "needs_agent_fix": true,
+          "text": "So God answers him, starting with what Solomon DIDN'T ask for: long life, wealth for himself or death for his enemies. Instead, Solomon asked for discernment to administer justice.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 3:11",
-          "question": "Besides long life and wealth, what else does God say Solomon didn't ask for?",
-          "answers": [
-            {
-              "text": "Death for his enemies",
-              "correct": true
-            },
-            {
-              "text": "A bigger army",
-              "correct": false
-            },
-            {
-              "text": "Peace with Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 3:12",
-          "question": "God says He'll do what Solomon asked and give him a wise and ___ heart.",
-          "answers": [
-            {
-              "text": "discerning",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "joyful",
-              "correct": false
-            },
-            {
-              "text": "steadfast",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 3:12",
-          "question": "True or false: God says there will never have been another like Solomon, and there never will be.",
+          "question": "Solomon's request pleased the Lord. True or false: God tells Solomon He will do what he asked.",
           "answers": [
             {
               "text": "True",
@@ -351,54 +304,89 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "1 Kings 3:12",
+          "question": "God says He'll give Solomon a ___ and discerning heart.",
+          "answers": [
+            {
+              "text": "wise",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "brave",
+              "correct": false
+            },
+            {
+              "text": "gentle",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 3:12",
+          "question": "God doesn't stop at a wise heart. True or false: He tells Solomon that someday there will be another like him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "1 Kings 3:13",
-          "text": "Then God keeps going. He's about to give Solomon something he never requested.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 3:13",
-          "question": "What does God give Solomon on top of what he asked for?",
+          "question": "God keeps going. What does He say He'll give Solomon that Solomon didn't request?",
           "answers": [
             {
               "text": "Riches and honor",
               "correct": true
             },
             {
-              "text": "Peace and rest",
+              "text": "Strength and speed",
               "correct": false
             },
             {
-              "text": "Land and cattle",
+              "text": "Health and safety",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "1 Kings 3:13",
+          "text": "Riches AND honor, and God says no man in any kingdom will be his equal all his days. That's like asking for one cookie and walking out with the bakery, the ovens AND the delivery cart.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "1 Kings 3:13",
-          "text": "Riches AND honor, with no man in any kingdom his equal all his days. That's like asking for one cookie and walking out with the bakery, the ovens AND the delivery cart.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 3:14",
-          "question": "God adds one promise with an if. If Solomon walks in God's ways like David did, God says, \"I will ___ your days.\"",
+          "question": "God adds one more promise, with an if. If Solomon walks in God's ways like David did, God says He will ___ Solomon's days.",
           "answers": [
             {
               "text": "prolong",
@@ -414,65 +402,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "1 Kings 3:15",
+          "text": "Then Solomon wakes up, and sure enough, it had been a dream. The best dream I ever had was a cookie box that packed itself, and I woke up hugging my own mustache.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "1 Kings 3:15",
-          "text": "Then Solomon wakes up, and sure enough, it had been a dream. The best dream I ever had was a cookie box that packed itself, and I woke up hugging my own mustache.",
-          "needs_agent_fix": true,
+          "text": "So he returns to Jerusalem and stands before the ark of the covenant of the Lord. He offers burnt offerings and peace offerings there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 3:15",
-          "question": "Solomon wakes up at Gibeon. True or false: he heads back to Jerusalem.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "1 Kings 3:15",
-          "text": "In Jerusalem, Solomon stands before the ark of the covenant of the Lord. He offers burnt offerings and peace offerings.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 3:15",
-          "question": "After his offerings before the ark, how does Solomon wrap it all up?",
+          "question": "After his offerings before the ark, what does Solomon do for all his servants?",
           "answers": [
             {
-              "text": "He holds a feast for his servants",
+              "text": "He holds a feast for them",
               "correct": true
             },
             {
-              "text": "He builds a new altar at Gibeon",
+              "text": "He gives each one a gift",
               "correct": false
             },
             {
-              "text": "He writes a song for the people",
+              "text": "He frees every one of them",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

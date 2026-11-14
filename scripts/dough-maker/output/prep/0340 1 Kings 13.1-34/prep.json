@@ -9,31 +9,32 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 13:1",
-          "text": "Jeroboam, king of Israel, is in Bethel, standing beside the altar to burn incense. Suddenly a man of God from Judah shows up, sent by the word of the LORD. And friend, this man did NOT come to sit quietly in the back row.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Jeroboam, king of Israel, has set up a golden calf and his own altar in Bethel (1 Kings 12:29, 33). He's standing beside that altar to burn incense when, suddenly, a man of God from Judah shows up by the word of the LORD. And friend, this man did NOT come to sit quietly in the back row.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 13:2",
-          "question": "The man of God starts crying out by the word of the LORD, but not at the king. What does he cry out against?",
+          "question": "The man of God cries out by the word of the LORD. He cries out against the ___.",
           "answers": [
             {
-              "text": "The altar",
-              "correct": true
+              "text": "altar",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The golden calf",
+              "text": "throne",
               "correct": false
             },
             {
-              "text": "The city gate",
+              "text": "gate",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,236 +42,182 @@
           "kind": "story",
           "verses": "1 Kings 13:2",
           "text": "He yells, \"O altar, O altar,\" and gives it a message from the LORD. Friend, he is preaching to the FURNITURE.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Kings 13:2",
-          "question": "The LORD says a son will be born to the house of David. What is his name?",
-          "answers": [
-            {
-              "text": "Josiah",
-              "correct": true
-            },
-            {
-              "text": "Hezekiah",
-              "correct": false
-            },
-            {
-              "text": "Jehoshaphat",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The LORD's message: a son named Josiah will be born to the house of David. On this very altar he will sacrifice the priests of the high places who burn incense on it, and human bones will be burned on it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Kings 13:2",
-          "text": "And on this very altar, that son will sacrifice the priests of the high places, and human bones will be burned on it. That altar is having the WORST day of its life.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 13:3",
+          "question": "That same day, the man of God gives a sign from the LORD. What does the sign say will happen?",
+          "answers": [
+            {
+              "text": "The altar will split apart",
+              "correct": true
+            },
+            {
+              "text": "The golden calf will melt",
+              "correct": false
+            },
+            {
+              "text": "The sky will go dark",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 13:3",
-          "question": "That same day, the man of God gives a sign from the LORD. What does the sign say will happen to the altar?",
-          "answers": [
-            {
-              "text": "It will split apart",
-              "correct": true
-            },
-            {
-              "text": "It will catch fire",
-              "correct": false
-            },
-            {
-              "text": "It will sink into the ground",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 13:4",
+          "text": "King Jeroboam hears every word. He stretches out his hand toward the man of God and says, \"Seize him!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "1 Kings 13:4",
-          "text": "King Jeroboam hears every word. He stretches out his hand toward the man of God and says, \"Seize him!\"",
-          "needs_agent_fix": true,
+          "question": "Jeroboam's hand is stretched out toward the man of God. What happens to the king's hand?",
+          "answers": [
+            {
+              "text": "It withers and gets stuck",
+              "correct": true
+            },
+            {
+              "text": "It turns white as snow",
+              "correct": false
+            },
+            {
+              "text": "It shakes and won't stop",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 13:4",
-          "question": "Jeroboam's outstretched hand ___ so he can't pull it back.",
-          "answers": [
-            {
-              "text": "withers",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "shakes",
-              "correct": false
-            },
-            {
-              "text": "burns",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 13:5",
+          "text": "And the altar splits apart, and the ashes pour out, just like the sign said. Friend, when this man of God gives a sign, you can set your oven timer by it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 13:5",
-          "question": "True or false: the altar splits apart and the ashes pour out, just like the sign said.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 13:6",
-          "question": "Jeroboam's hand is still stuck out. What does he do?",
-          "answers": [
-            {
-              "text": "Asks the man of God to pray for him",
-              "correct": true
-            },
-            {
-              "text": "Calls his own priests to pray for him",
-              "correct": false
-            },
-            {
-              "text": "Burns more incense at the altar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "1 Kings 13:6",
-          "text": "The man of God prays to the LORD, and the king's hand is restored, just like before. One minute it's seize him, next minute it's please pray for me, and friend, that is a FAST change of tune.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
           "type": "fill_blank",
-          "verses": "1 Kings 13:7",
-          "question": "Now the king wants the man of God to come home with him and refresh himself, and the king will give him a ___.",
+          "verses": "1 Kings 13:6",
+          "question": "With his hand stuck, Jeroboam asks the man of God to ___ for him.",
           "answers": [
             {
-              "text": "reward",
+              "text": "pray",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "title",
+              "text": "sacrifice",
               "correct": false
             },
             {
-              "text": "horse",
+              "text": "fast",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "1 Kings 13:6",
+          "text": "The man of God prays to the LORD, and the king's hand is restored, just like before. One minute it's seize him, next minute it's please pray for me, and friend, that is a FAST change of tune.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 13:8",
+          "question": "Now the king invites the man of God home to refresh himself and offers him a reward. True or false: the man of God accepts.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "1 Kings 13:8",
+          "text": "He says even if the king gave him half his possessions, he still wouldn't go with him, or eat bread or drink water in this place. Friend, I can't walk past a free cookie sample, and this man just walked past HALF of everything a king owns.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 13:8",
-          "question": "True or false: the man of God says he would go home with the king for half the king's possessions.",
+          "type": "multiple_choice",
+          "verses": "1 Kings 13:9",
+          "question": "Why won't the man of God eat bread or drink water in Bethel?",
           "answers": [
             {
-              "text": "True",
+              "text": "The LORD commanded him not to",
+              "correct": true
+            },
+            {
+              "text": "He doesn't trust the king's food",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He wants to get home before dark",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "1 Kings 13:8",
-          "text": "He says even IF the king gave him half his possessions, he still wouldn't go, not even for bread or water in this place. Friend, I can't walk past a free cookie sample, and this man would walk past HALF A PALACE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Kings 13:9",
-          "question": "The LORD commanded the man of God not to eat bread or drink water in Bethel. What was the third command?",
+          "verses": "1 Kings 13:9-10",
+          "question": "The LORD's command also covered the man of God's trip home. How does he leave Bethel?",
           "answers": [
             {
-              "text": "Don't return by the way you came",
+              "text": "He takes a different road",
               "correct": true
             },
             {
-              "text": "Don't speak to the king again",
+              "text": "He goes back the way he came",
               "correct": false
             },
             {
-              "text": "Don't stay past sundown",
+              "text": "He waits for the king's escort",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 13:10",
-          "question": "True or false: the man of God leaves Bethel by a different road than the one he came on.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -284,7 +231,7 @@
           "kind": "story",
           "verses": "1 Kings 13:11",
           "text": "Now an old prophet lives in Bethel. His sons come home and tell him everything the man of God did that day, and what he said to the king.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -292,7 +239,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 13:12",
-          "question": "The old prophet hears all about the man of God from Judah. What does he ask his sons?",
+          "question": "The old prophet hears all about the man of God from Judah, who has already left Bethel. What does he ask his sons?",
           "answers": [
             {
               "text": "Which way the man went",
@@ -307,38 +254,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Kings 13:13-14",
-          "text": "He says, \"Saddle the donkey for me,\" and off he rides after him. This man hears ONE story and he's out the door, like me when somebody says the oven timer just went off.",
-          "needs_agent_fix": true,
+          "text": "He says, \"Saddle the donkey for me,\" and off he rides after him. This man hears ONE story and he's out the door, like me when somebody says a fresh batch just came out of the oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 13:14",
-          "question": "The old prophet catches up with the man of God. Where does he find him?",
-          "answers": [
-            {
-              "text": "Sitting under an oak tree",
-              "correct": true
-            },
-            {
-              "text": "Resting beside a well",
-              "correct": false
-            },
-            {
-              "text": "Waiting at the city gate",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 13:14-15",
+          "text": "He finds the man of God sitting under an oak tree and checks that he's the one from Judah. Then the old prophet says, \"Come home with me and eat some bread.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -357,7 +289,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -365,7 +297,7 @@
           "kind": "story",
           "verses": "1 Kings 13:17-18",
           "text": "He tells the old prophet what the LORD commanded him. Then the old prophet says he's a prophet too, and an angel told him by the word of the LORD to bring the man back for bread and water.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -373,18 +305,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 13:18",
-          "question": "True or false: an angel really did tell the old prophet to bring the man of God home.",
+          "question": "The LORD gave the man of God his orders by His own word. Now the old prophet claims an angel brought different orders. True or false: the old prophet is lying.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -407,38 +339,62 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "1 Kings 13:20",
-          "text": "They're sitting at the table when the word of the LORD comes, and it comes to the old prophet who brought him back. I bet that's the most awkward dinner in all of Bethel.",
-          "needs_agent_fix": true,
+          "question": "While the man of God and the old prophet are sitting at the table, the word of the LORD comes. Who does it come to?",
+          "answers": [
+            {
+              "text": "The old prophet",
+              "correct": true
+            },
+            {
+              "text": "King Jeroboam",
+              "correct": false
+            },
+            {
+              "text": "The old prophet's sons",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 13:22",
-          "question": "The LORD's word at the table says the man of God defied His command by eating and drinking in that place. What does the LORD say will happen to the man's body?",
+          "type": "fill_blank",
+          "verses": "1 Kings 13:21",
+          "question": "The old prophet cries out the LORD's message to the man of God: he has ___ the word of the LORD.",
           "answers": [
             {
-              "text": "It will never reach his fathers' tomb",
-              "correct": true
+              "text": "defied",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "It will be carried home to Judah",
+              "text": "obeyed",
               "correct": false
             },
             {
-              "text": "It will rest under the oak tree",
+              "text": "forgotten",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "1 Kings 13:22",
+          "text": "Because the man of God went back and ate bread and drank water where the LORD told him not to, the LORD says his body will never reach the tomb of his fathers.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -451,89 +407,81 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 13:23-24",
-          "text": "After the meal, the old prophet saddles the donkey for him, and he heads out. On the road, a lion meets him and kills him.",
-          "needs_agent_fix": true,
+          "text": "After the meal, the old prophet saddles the donkey for him, and the man of God heads out. On the road, a lion meets him and kills him, and his body is left lying there with the donkey and the lion standing beside it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Kings 13:24",
-          "question": "The man of God's body is left lying in the road. What is standing beside it?",
+          "verses": "1 Kings 13:25",
+          "question": "Men passing by see the man of God's body in the road with the lion beside it. What do they do?",
           "answers": [
             {
-              "text": "The donkey and the lion",
+              "text": "Report it in the old prophet's city",
               "correct": true
             },
             {
-              "text": "The old prophet's sons",
+              "text": "Bury the body by the roadside",
               "correct": false
             },
             {
-              "text": "A pair of ravens",
+              "text": "Carry the body back to Judah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "1 Kings 13:25",
-          "text": "Men passing by see the body with the lion standing beside it, and they report it in the city where the old prophet lives.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 13:26",
+          "question": "True or false: when the old prophet hears the news, he says the lion found the man of God by chance.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 13:26",
-          "question": "True or false: when the old prophet hears the news, he says the LORD delivered the man to the lion because he disobeyed the LORD's command.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 13:27-28",
+          "text": "The old prophet's sons saddle the donkey for him again, and he rides out and finds the body in the road.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Kings 13:27-28",
-          "text": "His sons saddle the donkey for him again, and he rides out. He finds the body in the road, with the donkey and the lion still standing beside it.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 13:28",
+          "question": "True or false: the lion has not eaten the body or mauled the donkey.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 13:28",
-          "question": "True or false: the lion ate the body and attacked the donkey.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 13:30",
@@ -552,19 +500,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "1 Kings 13:30",
+          "text": "They lament over him, crying, \"Oh, my brother!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "1 Kings 13:30",
-          "text": "They lament over him, crying, \"Oh, my brother!\" The same man who brought him back is the one lamenting over him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 13:31",
@@ -584,11 +532,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 13:32",
@@ -607,19 +555,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "1 Kings 13:33",
+          "text": "And Jeroboam? Withered hand, split altar, and he STILL doesn't turn from his evil ways. Friend, the ALTAR cracked before the king did.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "1 Kings 13:33",
-          "text": "And Jeroboam? Withered hand, split altar, and he STILL doesn't turn from his evil ways. Friend, the ALTAR cracked before the king did.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 13:33",
@@ -638,15 +586,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 13:34",
-          "question": "True or false: Jeroboam's sin of making anyone who wants it a priest of the high places leads to the destruction of his house from the face of the earth.",
+          "question": "Jeroboam keeps making priests for the high places. True or false: the passage says this sin of his house leads to its destruction from the face of the earth.",
           "answers": [
             {
               "text": "True",
@@ -657,15 +605,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "1 Kings 13:34",
           "text": "We'll let the ovens cool on that one for now. But hold on to your apron, friend, because this kingdom's story is not done yet.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

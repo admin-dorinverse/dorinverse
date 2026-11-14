@@ -10,8 +10,8 @@
           "kind": "story",
           "verses": "2 Kings 17:1",
           "text": "In the twelfth year of Ahaz king of Judah, Hoshea son of Elah becomes king of Israel. He reigns in Samaria nine years. Nine years, friend, and most of my cookies don't last nine MINUTES.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -29,65 +29,50 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 17:3",
           "text": "Then Shalmaneser, king of Assyria, attacks Hoshea, and Hoshea becomes his vassal and pays him tribute. Basically, Hoshea's got a subscription he can't cancel, and Assyria is sending the bill.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Kings 17:4",
-          "question": "Hoshea conspires and sends envoys to another king behind Assyria's back. Which king?",
-          "answers": [
-            {
-              "text": "King So of Egypt",
-              "correct": true
-            },
-            {
-              "text": "King Rezin of Aram",
-              "correct": false
-            },
-            {
-              "text": "King Hiram of Tyre",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "But Hoshea conspires to send envoys to King So of Egypt.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 17:4",
-          "question": "True or false: Hoshea keeps paying tribute to the king of Assyria like he did in previous years.",
+          "question": "True or false: Hoshea stops paying the king of Assyria the tribute he paid in previous years.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:4",
-          "question": "The king of Assyria finds out about Hoshea's envoys and the missing payments. What does he do to Hoshea?",
+          "question": "The king of Assyria discovers Hoshea's plan with Egypt and the missing tribute. What does he do to Hoshea?",
           "answers": [
             {
               "text": "Arrests him and puts him in prison",
@@ -102,78 +87,93 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "2 Kings 17:5",
-          "text": "Then the king of Assyria invades the whole land and marches up to Samaria. The king of Israel is already locked up, friend, and the army is STILL coming.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "With Hoshea in prison, the king of Assyria invades the whole land and marches up to Samaria.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 17:5",
-          "question": "The king of Assyria besieges Samaria for ___ years.",
+          "question": "The king of Assyria reaches Samaria. What does he do to the city?",
           "answers": [
             {
-              "text": "three",
+              "text": "Besieges it for three years",
               "correct": true
             },
             {
-              "text": "two",
+              "text": "Makes a treaty and leaves",
               "correct": false
             },
             {
-              "text": "seven",
+              "text": "Passes it by on his way to Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Kings 17:6",
-          "text": "In the ninth year of Hoshea, friend, Samaria can't hold out any longer. The king of Assyria captures the city.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "question": "Then comes the ninth year of Hoshea. What happens to Samaria?",
+          "answers": [
+            {
+              "text": "The king of Assyria captures it",
+              "correct": true
+            },
+            {
+              "text": "Egypt's army rescues it",
+              "correct": false
+            },
+            {
+              "text": "Its people drive Assyria out",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 17:6",
-          "question": "After Samaria falls, the king of Assyria carries the Israelites away to ___.",
+          "question": "The king of Assyria carries the Israelites away and settles some of them in the cities of the ___.",
           "answers": [
             {
-              "text": "Assyria",
+              "text": "Medes",
               "correct": true
             },
             {
-              "text": "Egypt",
+              "text": "Hittites",
               "correct": false
             },
             {
-              "text": "Babylon",
+              "text": "Amorites",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "2 Kings 17:6",
-          "text": "He settles them in Halah, in Gozan by the Habor River, and in the cities of the Medes. And the question hanging over all of it, friend, is WHY.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "He also settles them in Halah, and in Gozan by the Habor River. And the question hanging over all of it, friend, is WHY.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -186,38 +186,38 @@
           "kind": "story",
           "verses": "2 Kings 17:7",
           "text": "Now the writer pauses the story to tell us why. All this happened because the people of Israel had sinned against the LORD their God.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:7",
-          "question": "The writer reminds us who the LORD is to Israel. What had He done for them long before?",
+          "question": "The writer reminds us the LORD brought Israel out from under the hand of Pharaoh. Out of which land?",
           "answers": [
             {
-              "text": "Brought them out of Egypt",
+              "text": "Egypt",
               "correct": true
             },
             {
-              "text": "Brought them out of Babylon",
+              "text": "Babylon",
               "correct": false
             },
             {
-              "text": "Brought them out of Assyria",
+              "text": "Aram",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Kings 17:7-8",
-          "question": "True or false: Israel worshiped other gods and walked in the customs of the nations the LORD had driven out before them.",
+          "verses": "2 Kings 17:7",
+          "question": "True or false: The writer says the people of Israel worshiped other gods.",
           "answers": [
             {
               "text": "True",
@@ -228,85 +228,85 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "2 Kings 17:9",
-          "text": "The Israelites secretly do things against the LORD their God that are not right. They build high places in all their cities, from watchtower to fortified city, like a franchise opening one on EVERY corner.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "2 Kings 17:8-9",
+          "text": "They walk in the customs of the nations the LORD drove out before them, and in practices the kings of Israel brought in. They even do things in secret against the LORD their God that are not right.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 17:10",
-          "question": "Israel sets up sacred pillars and Asherah poles for themselves. Where do they put them?",
+          "question": "Israel builds high places in all their cities, from watchtower to fortified city. Where do they set up sacred pillars and Asherah poles?",
           "answers": [
             {
-              "text": "On high hills and under green trees",
+              "text": "On every high hill and under every green tree",
               "correct": true
             },
             {
-              "text": "Inside the walls of Jerusalem",
+              "text": "In hidden rooms inside the palace",
               "correct": false
             },
             {
-              "text": "Along the banks of the Jordan",
+              "text": "Along the banks of the Jordan River",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "2 Kings 17:11-12",
           "text": "They burn incense on the high places, just like the nations the LORD drove out. And they serve idols, even though the LORD had told them, \"You shall not do this thing.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "2 Kings 17:13",
-          "text": "Yet through all His prophets and seers, the LORD warns Israel and Judah. He doesn't send one reminder, friend, He sends a whole TEAM.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Yet the LORD warns Israel and Judah through all His prophets and seers. Not one or two, friend. ALL of them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 17:13",
-          "question": "Through His prophets and seers, the LORD tells Israel and Judah to turn from their wicked ways and keep His ___.",
+          "question": "Through His prophets and seers, what does the LORD tell Israel and Judah to do?",
           "answers": [
             {
-              "text": "commandments",
+              "text": "Turn back and keep His commandments",
               "correct": true
             },
             {
-              "text": "borders",
+              "text": "Make peace with the king of Assyria",
               "correct": false
             },
             {
-              "text": "storehouses",
+              "text": "Build up Samaria's walls for war",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 17:14",
-          "question": "True or false: Israel listens to the prophets and turns back to the LORD.",
+          "question": "True or false: Israel listens to the prophets.",
           "answers": [
             {
               "text": "True",
@@ -317,47 +317,47 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "2 Kings 17:14",
-          "text": "Instead they stiffened their necks like their fathers, who did not believe the LORD their God. That's the move where somebody calls your name and you just keep staring at your phone, except it's a WHOLE NATION.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Instead they stiffen their necks like their fathers, who did not believe the LORD their God. Friend, I've been that stubborn with an oven timer, and I have the burnt batches to prove it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 17:15",
-          "question": "Israel rejects the LORD's covenant and chases after worthless idols. They become ___ themselves.",
+          "question": "Israel pursues worthless idols and becomes worthless themselves. They go after the surrounding nations too. What had the LORD commanded them about those nations?",
           "answers": [
             {
-              "text": "worthless",
+              "text": "Not to imitate them",
               "correct": true
             },
             {
-              "text": "wealthy",
+              "text": "Not to trade with them",
               "correct": false
             },
             {
-              "text": "wise",
+              "text": "Not to visit their cities",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "2 Kings 17:16",
-          "text": "And they don't just bend the commandments, friend. They abandon ALL of them, and they make idols for themselves.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "They abandon ALL the commandments of the LORD their God, and they make idols for themselves.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -379,23 +379,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "2 Kings 17:16",
-          "text": "They bow down to all the host of heaven, and they serve Baal. Friend, this list just keeps going.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "They bow down to all the host of heaven and serve Baal, a false god. Friend, this list just keeps going.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
+          "kind": "story",
+          "verses": "2 Kings 17:17",
+          "text": "This part is heavy, friend. They sacrifice their sons and daughters in the fire, and they practice divination and soothsaying.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 17:17",
-          "question": "True or false: Along with practicing divination and soothsaying, Israel sacrifices their own sons and daughters in the fire.",
+          "question": "True or false: The writer says Israel's evil provokes the LORD to anger.",
           "answers": [
             {
               "text": "True",
@@ -406,8 +414,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -420,8 +428,8 @@
           "kind": "story",
           "verses": "2 Kings 17:18",
           "text": "Now here's where it all lands, friend. The LORD is very angry with Israel, and He removes them from His presence.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -443,43 +451,43 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 17:19",
-          "question": "True or false: The tribe of Judah keeps the commandments of the LORD their God.",
+          "question": "True or false: The tribe of Judah lives by the customs Israel introduced.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "2 Kings 17:20",
-          "text": "So the LORD rejects all the descendants of Israel, and this part is heavy, friend. He afflicts them and hands them over to plunderers, until He has banished them from His presence.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "So the LORD rejects all the descendants of Israel. He afflicts them and hands them over to plunderers, until He has banished them from His presence.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Kings 17:21",
           "text": "Then the writer hits rewind to the day the kingdom split. When the LORD tore Israel away from the house of David, they made Jeroboam son of Nebat king.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -501,8 +509,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -520,8 +528,8 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -543,16 +551,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "2 Kings 17:23",
-          "text": "So Israel is exiled from their homeland into Assyria, where they are to this day. It's a heavy ending, friend, but don't miss how many prophets the LORD sent to warn them first.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "So Israel is exiled from their homeland into Assyria, and they're still there when this was written.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

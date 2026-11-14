@@ -10,8 +10,8 @@
           "kind": "story",
           "verses": "2 Samuel 11:1",
           "text": "It's spring, the time when kings march out to war. David sends out Joab, the commander of his army (2 Samuel 8:16), with the whole army of Israel. They destroy the Ammonites and lay siege to the city of Rabbah.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -33,42 +33,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "2 Samuel 11:2",
-          "text": "The whole army is off at war, and one evening David is just getting up from his bed to stroll around on the palace roof. From up there he sees a woman bathing, a very beautiful woman.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "2 Samuel 11:2-3",
+          "text": "One evening David gets up from his bed and strolls around on the palace roof, where he sees a woman bathing, a very beautiful woman. He sends someone to ask about her, and he's told her name: Bathsheba, the daughter of Eliam.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 11:3",
-          "question": "True or false: David sends someone to find out who the woman is.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 11:3",
-          "question": "David is told her name: Bathsheba, the daughter of Eliam. Then he's told one more thing about her. What is it?",
+          "question": "Besides her name, David is told one more thing about Bathsheba, the woman he saw from the roof. What is it?",
           "answers": [
             {
               "text": "She's the wife of Uriah the Hittite",
@@ -83,50 +64,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "2 Samuel 11:4",
+          "text": "Then David sends messengers to get her, and when she comes to him, he sleeps with her. She had just purified herself from her uncleanness, and then she returns home.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "2 Samuel 11:4",
-          "text": "Even so, David sends messengers to get her, and when she comes to him, he sleeps with her. She had just purified herself from her uncleanness, and then she returns home.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Samuel 11:5",
-          "question": "Some time later, Bathsheba sends word to David. What's her news?",
+          "question": "Then Bathsheba sends word to David, saying, 'I am ___.'",
           "answers": [
             {
-              "text": "She is pregnant",
+              "text": "pregnant",
               "correct": true
             },
             {
-              "text": "She is leaving the city",
+              "text": "leaving",
               "correct": false
             },
             {
-              "text": "Her husband is coming home",
+              "text": "afraid",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "2 Samuel 11:6-7",
+          "text": "David sends orders to Joab: 'Send me Uriah the Hittite.' When Uriah arrives, David asks how Joab and the troops are doing and how the war is going.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "2 Samuel 11:6-7",
-          "text": "David sends orders to Joab: 'Send me Uriah the Hittite.' When Uriah arrives, David asks how Joab, the troops and the war are doing, like a boss making small talk in the hallway.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 11:8",
@@ -145,23 +126,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "2 Samuel 11:8",
           "text": "So Uriah leaves the palace, and a gift from the king follows him out. A gift from the KING, friend, and all I ever got in the junk drawer was a dusty takeout menu.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 11:9",
-          "question": "Uriah has left the palace. Where does he sleep that night?",
+          "question": "Uriah has left the palace. Where does he sleep?",
           "answers": [
             {
               "text": "At the palace door with the servants",
@@ -176,96 +157,77 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "2 Samuel 11:10",
+          "text": "Then David is told, 'Uriah did not go home.' I bet the king is nervous now, and he asks Uriah, 'Haven't you just arrived from a journey?' and then, 'Why didn't you go home?'",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "2 Samuel 11:10",
-          "text": "Then David is told, 'Uriah did not go home.' So the king asks him, and I bet he's nervous now, 'Haven't you just arrived from a journey? Why didn't you go home?'",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 11:11",
-          "question": "Uriah has an answer for the king. Why won't he go home?",
+          "question": "Uriah tells David the ark, Israel and Judah are dwelling in tents, and Joab's soldiers are camped in the open field. So what does Uriah say he can't do?",
           "answers": [
             {
-              "text": "Joab and the soldiers are camped in the field",
+              "text": "Go home to his house and his wife",
               "correct": true
             },
             {
-              "text": "He's afraid of what the king might do",
+              "text": "Go back out to the battle",
               "correct": false
             },
             {
-              "text": "He has to leave for Rabbah at dawn",
+              "text": "Take a gift from the king",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "2 Samuel 11:11",
+          "text": "Then Uriah swears, 'As surely as you live, and as your soul lives, I will not do such a thing!' The man gets a free night in his own bed and turns it DOWN, friend, and me, I have never once turned down the snooze button.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Samuel 11:11",
-          "question": "True or false: Uriah tells David the ark is resting safely inside a house.",
+          "verses": "2 Samuel 11:12",
+          "question": "True or false: after Uriah refuses to go home, David tells him to stay in Jerusalem one more day.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "2 Samuel 11:11",
-          "text": "Then Uriah swears, 'As surely as you live, and as your soul lives, I will not do such a thing!' The man gets a free night in his own bed and turns it DOWN, friend, and me, I have never once turned down the snooze button.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "2 Samuel 11:12-13",
+          "text": "So Uriah stays in Jerusalem that day and the next, and David invites him to eat and drink with him. Then David gets Uriah drunk.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 11:12",
-          "question": "True or false: after hearing Uriah's answer, David sends him straight back to the battle that same day.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "2 Samuel 11:12-13",
-          "text": "Uriah stays in Jerusalem that day and the next, and David invites him to eat and drink with him. Then the king of Israel gets his own soldier DRUNK, friend, I'm not making this up.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 11:13",
@@ -280,8 +242,8 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     },
@@ -295,7 +257,7 @@
           "verses": "2 Samuel 11:14",
           "text": "The next morning, David writes a letter to Joab and sends it with Uriah. The letter goes to the front in Uriah's own hands.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -318,34 +280,34 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 11:15",
-          "question": "True or false: in David's letter, the plan is for the other soldiers to pull back and leave Uriah there.",
+          "question": "True or false: David's letter tells Joab to keep the other soldiers close beside Uriah.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "2 Samuel 11:16",
-          "text": "As Joab besieges the city, he puts Uriah where he knows the strongest enemy soldiers are. Joab got the letter, friend, and Joab follows the letter.",
+          "text": "As Joab besieges the city, he puts Uriah where he knows the strongest enemy soldiers are.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -368,15 +330,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "2 Samuel 11:17-19",
-          "text": "Some of David's servants fall too. Then Joab sends David a full account of the battle and gives the messenger instructions, like a manager prepping you before you walk into the big boss's office.",
+          "text": "Some of David's servants fall in the fighting too. Then Joab sends David a full account of the battle and gives the messenger instructions.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -399,22 +361,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "2 Samuel 11:21",
-          "text": "Joab even expects David to bring up Abimelech, a son of Gideon (Judges 8:31), who died when a woman dropped an upper millstone on him from the wall in Thebez. Joab didn't just send a report, friend, he sent a report, a SCRIPT, AND the king's lines!",
+          "text": "Joab even expects David to bring up Abimelech son of Jerubbesheth, who died at Thebez when a woman dropped an upper millstone on him from the wall.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 11:21",
-          "question": "If the king asks all that, the messenger has one line ready: 'Your servant ___ the Hittite is dead as well.'",
+          "question": "Joab tells the messenger that if King David gets angry about how close they fought to the wall, he should say, 'Your servant ___ the Hittite is dead as well.'",
           "answers": [
             {
               "text": "Uriah",
@@ -429,16 +391,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "2 Samuel 11:22-24",
-          "text": "The messenger tells David everything: the enemy came out, Israel drove them back to the gate, then archers shot from the wall and some of the king's servants were killed. He doesn't even wait for the king to ask, friend, he just drops it: 'And your servant Uriah the Hittite is dead as well.'",
+          "text": "The messenger tells David everything: the enemy came out, Israel drove them back to the gate, then archers shot from the wall and some of the king's servants were killed. Without waiting for the king to ask, he adds, 'And your servant Uriah the Hittite is dead as well.'",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -461,15 +423,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "2 Samuel 11:25",
-          "text": "That anger Joab warned about never shows up, friend. David just says, 'Do not let this matter upset you, for the sword devours one as well as another,' and then, 'Strengthen your attack against the city and demolish it.'",
+          "text": "That anger Joab warned about never shows up. David says the sword devours one as well as another, and he tells Joab, 'Strengthen your attack against the city and demolish it.'",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -488,7 +450,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -496,7 +458,7 @@
           "verses": "2 Samuel 11:27",
           "text": "When the time of mourning is over, David has her brought to his house, and she becomes his wife and bears him a son.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -519,15 +481,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "2 Samuel 11:27",
-          "text": "I bet David thinks it's all buried, but the LORD saw it. And friend, this story is far from over.",
+          "text": "And friend, this story isn't over. Not even close.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

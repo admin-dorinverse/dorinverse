@@ -38,26 +38,10 @@
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "2 Samuel 19:24",
-          "text": "No foot care, no clean clothes, no mustache trim, the whole time the king was gone. Friend, if I skipped a trim that long, you'd need a search party to find my chef's hat.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "2 Samuel 16:3-4",
-          "text": "Quick memory jog: when David fled, Ziba, Mephibosheth's servant, told the king that Mephibosheth stayed in Jerusalem, saying Israel would give him back his grandfather's kingdom. So David gave Ziba everything that belonged to Mephibosheth.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 19:25",
-          "question": "Now Mephibosheth comes from Jerusalem to meet the king. What does David ask him?",
+          "question": "Now Mephibosheth comes to meet the king. What does David ask him?",
           "answers": [
             {
               "text": "Why did you not go with me",
@@ -68,23 +52,23 @@
               "correct": false
             },
             {
-              "text": "Why did you stay so long",
+              "text": "Who told you I was coming",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "2 Samuel 19:26",
-          "text": "Mephibosheth has an answer, and it starts here: he's lame. He couldn't just stroll out the door with the king.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 4,
+          "kind": "story",
+          "verses": "2 Samuel 19:26",
+          "text": "Mephibosheth has an answer, and it starts here: he's lame. He couldn't just walk out the door with the king.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 19:26",
@@ -108,7 +92,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 19:26-27",
@@ -127,15 +111,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "story",
           "verses": "2 Samuel 19:26-27",
-          "text": "Mephibosheth says Ziba deceived him and slandered him to the king. That's your coworker telling the boss you skipped the meeting, when they never even SENT you the invite.",
+          "text": "Mephibosheth says Ziba deceived him and slandered him. Back when David fled, Ziba talked to David, and David gave Ziba everything that belonged to Mephibosheth (2 Samuel 16:3-4).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 19:27",
@@ -158,15 +142,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "2 Samuel 19:28",
-          "text": "Then Mephibosheth gets humble. He says all the house of his grandfather deserves death from the king.",
+          "text": "Then Mephibosheth says all the house of his grandfather Saul deserves death from the king.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 19:28",
@@ -190,7 +174,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "2 Samuel 19:28-29",
           "text": "So Mephibosheth asks what further right he has to keep appealing to the king. David answers, 'Why say any more?'",
@@ -198,7 +182,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Samuel 19:29",
@@ -222,7 +206,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 19:30",
@@ -243,25 +227,6 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Samuel 19:30",
-          "question": "Mephibosheth says Ziba can have it all, since the king has safely come to his own house.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
         }
       ]
     },
@@ -273,9 +238,9 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 19:31",
-          "text": "Now meet Barzillai the Gileadite, who has come down from Rogelim to cross the Jordan with the king and send him on his way.",
+          "text": "Now meet Barzillai the Gileadite, who has come down from Rogelim to cross the Jordan with the king.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -283,7 +248,7 @@
           "verses": "2 Samuel 19:32",
           "text": "Barzillai is eighty years old, and he's a very wealthy man.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -302,7 +267,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -383,14 +348,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "2 Samuel 19:36",
-          "text": "Then Barzillai asks why the king should repay him with such a reward. That's the friend who helps you move all day, then says, 'Thank me? I carried ONE box.'",
+          "text": "Then Barzillai asks why the king should repay him with such a reward. That's the friend who helps you move all day and won't even let you buy him a cookie.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -421,7 +386,7 @@
           "card": 11,
           "kind": "story",
           "verses": "2 Samuel 19:37",
-          "text": "But Barzillai has someone else in mind. He says, 'But here is your servant Chimham.'",
+          "text": "Barzillai has someone else in mind. He says, 'But here is your servant Chimham.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -453,15 +418,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 19:38",
-          "question": "David agrees to take Chimham, and he promises to do for Barzillai whatever he desires.",
+          "question": "David turns down Barzillai's request about Chimham.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -556,11 +521,11 @@
               "correct": true
             },
             {
-              "text": "The king forgave Shimei too quickly",
+              "text": "The king took too long to come back",
               "correct": false
             },
             {
-              "text": "Amasa was made the new commander",
+              "text": "The king left them out of his army",
               "correct": false
             }
           ],
@@ -588,7 +553,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -607,13 +572,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "2 Samuel 19:43",
-          "text": "Israel fires back that they have ten shares in the king, so they have more claim to David than Judah does. They're dividing up the king like the last box of cookies at the office party.",
+          "text": "Israel fires back that they have ten shares in the king, so they have more claim to David than Judah does. They're fighting over the king like coworkers over the last box of cookies in the break room.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -645,15 +610,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 19:43",
-          "question": "The men of Judah back down and let Israel have the last word.",
+          "question": "The men of Judah speak even more fiercely than the men of Israel.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -663,7 +628,7 @@
           "card": 10,
           "kind": "story",
           "verses": "2 Samuel 19:43",
-          "text": "Nope, Judah comes back even fiercer than Israel. We'll pause the oven right there, friend, because this story still has more coming out of it.",
+          "text": "We'll let this batch cool right there, friend. This story isn't finished yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

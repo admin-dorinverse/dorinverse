@@ -11,7 +11,7 @@
           "verses": "2 Samuel 2:12",
           "text": "Saul is dead (1 Samuel 31:6), and now there are TWO kings. The men of Judah anointed David king in Hebron, and Abner son of Ner, commander of Saul's army, made Saul's son Ish-bosheth king over Israel (2 Samuel 2:4, 8-9). One day Abner and the servants of Ish-bosheth march out from Mahanaim to Gibeon.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Samuel 2:13-14",
-          "text": "Two groups, one pool of Gibeon, each side lined up across the water from the other. It's a four-way stop where NOBODY wants to go first, and then Abner speaks up to Joab.",
+          "text": "The two groups take up positions on opposite sides of the pool of Gibeon, like two drivers nose to nose on a one-lane bridge. Then Abner speaks up to Joab.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -193,7 +193,7 @@
               "correct": false
             },
             {
-              "text": "Ner",
+              "text": "Amasa",
               "correct": false
             }
           ],
@@ -223,7 +223,7 @@
           "card": 14,
           "kind": "story",
           "verses": "2 Samuel 2:20",
-          "text": "With Asahel on his heels, Abner glances back and STILL checks caller ID: “Is that you, Asahel?” Asahel says it is.",
+          "text": "With Asahel right on his heels, Abner glances back: “Is that you, Asahel?” Asahel says it is, and friend, if somebody's sprinting at me, I don't need a name, I need a HEAD START.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -289,7 +289,7 @@
               "correct": true
             },
             {
-              "text": "Saul's son Ish-bosheth",
+              "text": "Saul's daughter Michal",
               "correct": false
             },
             {
@@ -302,32 +302,32 @@
         },
         {
           "card": 19,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Samuel 2:23",
-          "question": "Asahel still refuses to turn away from Abner. What happens?",
-          "answers": [
-            {
-              "text": "Abner strikes him with the butt of his spear",
-              "correct": true
-            },
-            {
-              "text": "Asahel catches Abner and takes his spear",
-              "correct": false
-            },
-            {
-              "text": "Joab runs up and calls Asahel off the chase",
-              "correct": false
-            }
-          ],
+          "text": "But Asahel refuses to turn away. So Abner thrusts the butt of his spear into his stomach, it comes out his back, and Asahel falls dead on the spot.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Samuel 2:23",
-          "text": "Asahel falls dead on the spot. And “every man paused when he came to the place where Asahel had fallen and died.”",
+          "question": "Asahel has fallen and died on the battlefield. What does every man do when he comes to the place where Asahel fell?",
+          "answers": [
+            {
+              "text": "He pauses at that spot",
+              "correct": true
+            },
+            {
+              "text": "He tears his robe there",
+              "correct": false
+            },
+            {
+              "text": "He piles a stone there",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -357,7 +357,7 @@
               "correct": true
             },
             {
-              "text": "Scatter and run home to Mahanaim",
+              "text": "Scatter and run off in every direction",
               "correct": false
             },
             {
@@ -372,7 +372,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Samuel 2:26",
-          "text": "Then Abner calls down from the hill to Joab: “Must the sword devour forever? Do you not realize that this will only end in bitterness?”",
+          "text": "Then Abner calls out to Joab: “Must the sword devour forever? Do you not realize that this will only end in bitterness?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -415,7 +415,7 @@
               "correct": false
             },
             {
-              "text": "The troops would have gone back to Hebron",
+              "text": "The troops would have surrounded the hill",
               "correct": false
             }
           ],
@@ -462,11 +462,11 @@
               "blank": 1
             },
             {
-              "text": "Hebron",
+              "text": "Ramah",
               "correct": false
             },
             {
-              "text": "Bethlehem",
+              "text": "Jericho",
               "correct": false
             }
           ],
@@ -475,32 +475,28 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Samuel 2:30-31",
-          "question": "Joab comes back from chasing Abner and gathers all his troops. How do the two sides' losses compare?",
-          "answers": [
-            {
-              "text": "David's side lost far fewer men",
-              "correct": true
-            },
-            {
-              "text": "Both sides lost about the same",
-              "correct": false
-            },
-            {
-              "text": "Abner's side lost far fewer men",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Samuel 2:30",
+          "text": "Joab comes back from chasing Abner and gathers all the troops. Besides Asahel, nineteen of David's servants are missing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "2 Samuel 2:30-31",
-          "text": "Besides Asahel, nineteen of David's servants are missing. But they struck down 360 Benjamites who were with Abner.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Samuel 2:31",
+          "question": "In the fighting with Abner, Abner's side lost far more men than David's side did.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -531,7 +527,7 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "2 Samuel 2:32",
+          "verses": "2 Samuel 2:29, 32",
           "text": "Then Joab and his men march all night and reach Hebron at daybreak. Two armies, two all-nighters, and the last all-nighter I pulled was counting dust in the back of that junk drawer, and I LOST COUNT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -541,15 +537,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 3:1",
-          "question": "After Gibeon, the war between the house of Saul and the house of David ends quickly.",
+          "question": "After Gibeon, the war between the house of Saul and the house of David drags on for a long time.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -560,7 +556,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 3:1",
-          "question": "The war between Saul's house and David's house drags on. What happens to the two sides over time?",
+          "question": "As the war between Saul's house and David's house goes on, what happens to the two sides?",
           "answers": [
             {
               "text": "David grows stronger and Saul's house grows weaker",
@@ -581,8 +577,16 @@
         {
           "card": 15,
           "kind": "story",
-          "verses": "2 Samuel 3:1-5",
-          "text": "Back in Hebron, six sons are born to David, each by a different mother, including his firstborn Amnon, by Ahinoam of Jezreel, and his third son Absalom, son of Maacah daughter of King Talmai of Geshur. Two houses, one long war, and friend, the oven timer on this story hasn't even gone off yet.",
+          "verses": "2 Samuel 3:2-5",
+          "text": "Back in Hebron, six sons are born to David, each by a different mother. His firstborn is Amnon, by Ahinoam of Jezreel, and his third is Absalom, son of Maacah daughter of King Talmai of Geshur.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "story",
+          "verses": "2 Samuel 3:5",
+          "text": "And that's where we leave it for now, friend. The oven timer on this story hasn't even gone off yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

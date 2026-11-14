@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 16:1-2",
-          "text": "New king in Judah, friend. Ahaz son of Jotham takes the throne at twenty years old and reigns in Jerusalem sixteen years, while Pekah son of Remaliah, king of Israel, is in his seventeenth year. And unlike David his father, Ahaz does not do what was right in the eyes of the LORD his God.",
-          "needs_agent_fix": true,
+          "text": "New king in Judah, friend. Ahaz son of Jotham takes the throne at twenty years old and reigns in Jerusalem sixteen years, while Pekah son of Remaliah, king of Israel, is in his seventeenth year. And unlike David his father, the great king he descends from, Ahaz does not do what was right in the eyes of the LORD his God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,22 +18,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:3",
-          "question": "King Ahaz turns away from what's right in the eyes of the LORD. Whose ways does he walk in instead?",
+          "question": "King Ahaz doesn't do what was right in the eyes of the LORD. Whose ways does he walk in instead?",
           "answers": [
             {
               "text": "The kings of Israel",
               "correct": true
             },
             {
-              "text": "The prophets of the LORD",
+              "text": "The kings of Moab",
               "correct": false
             },
             {
-              "text": "The priests of the LORD",
+              "text": "The kings of Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,46 +41,42 @@
           "kind": "story",
           "verses": "2 Kings 16:3",
           "text": "And then it gets darker. Ahaz even sacrifices his son in the fire, following the abominations of the nations the LORD had driven out before the Israelites.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Kings 16:4",
-          "question": "King Ahaz is following the ways of the nations the LORD drove out. Where does he sacrifice and burn incense?",
+          "question": "King Ahaz sacrifices and burns incense only at the temple in Jerusalem.",
           "answers": [
             {
-              "text": "On the high places and under every green tree",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Only at the temple in Jerusalem",
-              "correct": false
-            },
-            {
-              "text": "Only in the courts of his palace",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "2 Kings 16:4-5",
-          "text": "Under EVERY green tree, friend, and that is a whole lot of trees. Then Rezin, king of Aram, and Pekah, king of Israel, come up to wage war against Jerusalem, but their siege can't overcome Ahaz.",
-          "needs_agent_fix": true,
+          "verses": "2 Kings 16:5",
+          "text": "Then Rezin, king of Aram, and Pekah, king of Israel, come up to wage war against Jerusalem. They besiege Ahaz but can't overcome him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "2 Kings 16:6",
-          "text": "But at that time Rezin recovers Elath for Aram and drives out the men of Judah. He sends the Edomites into Elath, and they live there to this day.",
-          "needs_agent_fix": true,
+          "text": "At that time Rezin recovers Elath for Aram and drives out the men of Judah. He sends the Edomites into Elath, and they're still living there when this was written.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -88,7 +84,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:7",
-          "question": "Jerusalem holds, but Judah just lost Elath to Aram. Who does King Ahaz send messengers to for help?",
+          "question": "Jerusalem holds, but Judah has lost Elath to Aram. Who does King Ahaz send messengers to for help?",
           "answers": [
             {
               "text": "Tiglath-pileser king of Assyria",
@@ -103,42 +99,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "2 Kings 16:7",
-          "text": "So Ahaz sends messengers to Tiglath-pileser, king of Assyria. Two kings came against his walls, and Ahaz scrolls straight to the BIGGEST name in his contacts.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 16:7",
-          "question": "What does King Ahaz ask Tiglath-pileser, king of Assyria, to do?",
-          "answers": [
-            {
-              "text": "Save him from the kings of Aram and Israel",
-              "correct": true
-            },
-            {
-              "text": "Win back the town of Elath for Judah",
-              "correct": false
-            },
-            {
-              "text": "Make peace between Judah and Edom",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:7",
@@ -157,19 +122,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "2 Kings 16:7-8",
-          "text": "Servant AND son? Friend, that's not a letter, that's adoption paperwork. And Ahaz doesn't send it empty-handed.",
-          "needs_agent_fix": true,
+          "text": "Servant AND son? Friend, that's not a message, that's adoption paperwork, and Ahaz doesn't send it empty-handed.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:8",
@@ -188,19 +153,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
-          "verses": "2 Kings 16:8-9",
-          "text": "The king of Assyria responds to him and marches up to Damascus. Put some silver and gold in the mix, friend, and suddenly the king of Assyria is ALL ears.",
-          "needs_agent_fix": true,
+          "verses": "2 Kings 16:9",
+          "text": "Ahaz hits send, and Assyria actually writes BACK. The king of Assyria responds and marches up to Damascus, the capital of Aram (Isaiah 7:8).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 16:9",
@@ -215,31 +180,26 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Kings 16:9",
-          "question": "The king of Assyria takes the people of Damascus to ___ as captives.",
+          "question": "The king of Assyria leaves the people of Damascus in their city.",
           "answers": [
             {
-              "text": "Kir",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Babylon",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "Haran",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -252,20 +212,12 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 16:10",
-          "text": "With Damascus captured, King Ahaz goes there to meet Tiglath-pileser, king of Assyria. And while he's in Damascus, he sees the altar there.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 2,
-          "kind": "story",
-          "verses": "2 Kings 16:10",
-          "text": "Ahaz sends Uriah the priest a model of the altar and complete plans for building it. That's somebody on vacation texting their contractor a photo and the measurements before they've even unpacked.",
+          "text": "Then King Ahaz goes to Damascus to meet Tiglath-pileser, king of Assyria, sees the altar there and sends Uriah the priest a model of it and complete plans for building it. That's somebody on vacation texting their contractor a photo and the measurements before they've even flown home.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:11",
@@ -288,7 +240,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 16:11",
@@ -307,18 +259,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "2 Kings 16:12",
-          "question": "When King Ahaz comes back from Damascus and sees the new altar, he approaches it and presents offerings on it.",
+          "question": "King Ahaz comes back from Damascus and sees the new altar Uriah the priest built. What does Ahaz do?",
           "answers": [
             {
-              "text": "True",
+              "text": "Approaches it and presents offerings on it",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Has it torn down and carried away",
+              "correct": false
+            },
+            {
+              "text": "Orders Uriah to move it outside the city",
               "correct": false
             }
           ],
@@ -326,27 +282,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "2 Kings 16:13",
-          "text": "He offers his burnt offering and his grain offering, pours out his drink offering and splatters the blood of his peace offerings on the new altar. Friend, that's not a test run. That's a GRAND OPENING with the ribbon AND the big scissors.",
+          "text": "He offers his burnt offering and his grain offering, pours out his drink offering and splatters the blood of his peace offerings on the new altar. That's not a test run, friend, that's a GRAND OPENING with the ribbon AND the big scissors.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
-          "kind": "story",
-          "verses": "2 Kings 16:14",
-          "text": "So now there are TWO altars out front. The new one, and the bronze altar that stood before the LORD, sitting between the new altar and the house of the LORD.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:14",
-          "question": "What does King Ahaz do with the bronze altar that stood before the LORD?",
+          "question": "The bronze altar that stood before the LORD sits between the new altar and the house of the LORD. What does King Ahaz do with the bronze altar?",
           "answers": [
             {
               "text": "Moves it to the north side of the new altar",
@@ -365,7 +313,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "story",
           "verses": "2 Kings 16:15",
           "text": "Then King Ahaz gives Uriah the priest his orders. He says he'll use the bronze altar himself, to seek guidance.",
@@ -373,18 +321,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:15",
-          "question": "King Ahaz keeps the bronze altar for seeking guidance. So which altar gets the morning burnt offering, the evening grain offering and all the people's offerings?",
+          "question": "King Ahaz says he'll use the bronze altar to seek guidance. Which altar does he order to get the morning burnt offering, the evening grain offering and all the people's offerings?",
           "answers": [
             {
               "text": "The great new altar",
               "correct": true
             },
             {
-              "text": "The bronze altar",
+              "text": "The altar at Bethel",
               "correct": false
             },
             {
@@ -396,15 +344,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "2 Kings 16:15",
-          "text": "Friend, that new altar just got put on EVERY shift, morning AND evening, no lunch break. And all the blood of the burnt offerings and sacrifices gets splattered on it too.",
+          "text": "Friend, that new altar just got put on EVERY shift, morning AND evening, no days off. And Ahaz orders all the blood of the burnt offerings and sacrifices splattered on it too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 16:16",
@@ -423,10 +371,37 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Kings 16:17",
+          "question": "King Ahaz cuts off the frames of the movable stands in the temple and removes the bronze basin from each one.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "story",
           "verses": "2 Kings 16:17",
-          "text": "Ahaz cuts off the frames of the movable stands, removes the bronze basin from each one and takes down the Sea from the bronze oxen that were under it. This man is pulling things off and moving things around like he's got his own home makeover show.",
+          "text": "He also takes down the Sea from the bronze oxen that were under it and puts it on a stone base. This man is pulling things off and moving things around like he's got his own home makeover show.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "2 Kings 16:18",
+          "text": "Then he removes the Sabbath canopy they had built in the temple and closes the royal entryway outside the house of the LORD. The KING'S entryway, and the king himself closes it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -434,59 +409,28 @@
           "card": 14,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "2 Kings 16:17",
-          "question": "King Ahaz takes the Sea down off the bronze oxen and puts it on a ___ base.",
+          "verses": "2 Kings 16:18",
+          "question": "King Ahaz removes the Sabbath canopy and closes the royal entryway on account of the king of ___.",
           "answers": [
             {
-              "text": "stone",
+              "text": "Assyria",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "wooden",
+              "text": "Egypt",
               "correct": false
             },
             {
-              "text": "silver",
+              "text": "Babylon",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "2 Kings 16:18",
-          "text": "Then he removes the Sabbath canopy they had built in the temple and closes the royal entryway outside the house of the LORD. The KING'S entryway, and the king closes it. I'm not making this up, friend.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 16:18",
-          "question": "Why does King Ahaz remove the Sabbath canopy and close the royal entryway?",
-          "answers": [
-            {
-              "text": "On account of the king of Assyria",
-              "correct": true
-            },
-            {
-              "text": "On account of the new altar",
-              "correct": false
-            },
-            {
-              "text": "On account of Uriah the priest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "story",
           "verses": "2 Kings 16:19-20",
           "text": "The rest of Ahaz's acts are written in the Book of the Chronicles of the Kings of Judah, so if you want the extended cut, that's where it lives. Then Ahaz rests with his fathers and is buried with them in the City of David.",
@@ -494,7 +438,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 16:20",

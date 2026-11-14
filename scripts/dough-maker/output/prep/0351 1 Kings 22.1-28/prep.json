@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 22:1-2",
-          "text": "Three years pass with no war between Aram and Israel, and then Jehoshaphat king of Judah goes down to visit Ahab, the king of Israel. Three quiet years, friend. In my experience, that's EXACTLY when somebody gets an idea.",
+          "text": "Three years pass with no war between Aram and Israel. In the third year, Jehoshaphat king of Judah goes down to visit Ahab, the king of Israel. Three quiet years, friend, and that's EXACTLY when somebody gets an idea.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,7 +17,7 @@
           "card": 2,
           "kind": "story",
           "verses": "1 Kings 22:3",
-          "text": "Ahab turns to his servants. Ramoth-gilead is OURS, he says, and we still haven't taken it from the king of Aram.",
+          "text": "Ahab turns to his servants. The city of Ramoth-gilead is OURS, he says, and we still haven't taken it from the king of Aram.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -65,38 +65,14 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 22:5",
-          "question": "Jehoshaphat is in, horses and all. But before anybody marches, he asks Ahab to inquire first for the word of the ___.",
-          "answers": [
-            {
-              "text": "LORD",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "elders",
-              "correct": false
-            },
-            {
-              "text": "people",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
-          "verses": "1 Kings 22:6",
-          "text": "So Ahab assembles about four hundred prophets and asks if he should go to war against Ramoth-gilead or refrain. FOUR HUNDRED prophets, friend, and I can't get four people to answer a group chat.",
+          "verses": "1 Kings 22:4-6",
+          "text": "Jehoshaphat is in, horses and all, but he asks Ahab to inquire first for the word of the LORD. So Ahab assembles about four hundred prophets and asks if he should go to war against Ramoth-gilead or refrain.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 22:6",
@@ -119,7 +95,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 22:7",
@@ -138,30 +114,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "1 Kings 22:8",
-          "text": "Ahab admits there's still one man they can inquire of the LORD through. ONE prophet, and Ahab says he hates him.",
+          "text": "Ahab answers that there's still one man they can inquire of the LORD through. ONE prophet, and Ahab says he hates him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 22:8",
-          "question": "Why does Ahab hate this one prophet of the LORD?",
+          "question": "Ahab hates this one prophet of the LORD. He says it's because the man never prophesies anything ___ for him.",
           "answers": [
             {
-              "text": "He never prophesies anything good for Ahab",
-              "correct": true
+              "text": "good",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He once took sides with the king of Aram",
+              "text": "true",
               "correct": false
             },
             {
-              "text": "He refused to stand before Ahab's throne",
+              "text": "clear",
               "correct": false
             }
           ],
@@ -169,7 +146,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "1 Kings 22:8",
           "text": "The man is Micaiah son of Imlah, and Jehoshaphat replies, \"The king should not say that!\" Friend, Ahab just said he hates a prophet for bringing bad news, and he said it OUT LOUD, in front of company.",
@@ -177,7 +154,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 22:9",
@@ -196,15 +173,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "1 Kings 22:10",
-          "text": "Dressed in royal attire, Ahab and Jehoshaphat sit on their thrones at the threshing floor by the gate of Samaria, with all the prophets prophesying before them. Two kings, two thrones, four hundred prophets, and friend, this is a SHOW.",
+          "text": "Dressed in royal attire, Ahab and Jehoshaphat sit on their thrones at the threshing floor by the gate of Samaria, Israel's capital, with all the prophets prophesying before them. Two kings, two thrones, four hundred prophets, and friend, this is a SHOW.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "1 Kings 22:11",
           "text": "Then one of the prophets, Zedekiah son of Chenaanah, steps up with iron horns he made for himself. Arts and crafts, at a war meeting.",
@@ -212,22 +189,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 22:11",
-          "question": "Zedekiah holds up his iron horns. What does he say they mean?",
+          "question": "Zedekiah declares that this is what the LORD says: with these iron horns, the ___ will be gored until they are finished off.",
           "answers": [
             {
-              "text": "Israel will finish off the Arameans",
-              "correct": true
+              "text": "Arameans",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Aram will strike Israel first",
+              "text": "Philistines",
               "correct": false
             },
             {
-              "text": "The kings should sound the call to war",
+              "text": "Moabites",
               "correct": false
             }
           ],
@@ -235,23 +213,30 @@
           "needs_human_decision": false
         },
         {
+          "card": 15,
+          "kind": "story",
+          "verses": "1 Kings 22:12",
+          "text": "And all the prophets are prophesying the same: go up to Ramoth-gilead and triumph, for the LORD will deliver it into the hand of the king. Four hundred people agreeing on ANYTHING, friend, and most folks can't get four people in a group chat to agree on a time.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 22:12",
-          "question": "All the prophets say the same thing. They tell Ahab to go up to Ramoth-gilead and ___.",
+          "type": "multiple_choice",
+          "verses": "1 Kings 22:13",
+          "question": "The messenger who went to get Micaiah gives him some advice on the way. What is it?",
           "answers": [
             {
-              "text": "triumph",
-              "correct": true,
-              "blank": 1
+              "text": "Speak favorably like the other prophets",
+              "correct": true
             },
             {
-              "text": "retreat",
+              "text": "Tell the king to stay home this time",
               "correct": false
             },
             {
-              "text": "negotiate",
+              "text": "Say nothing at all in front of the kings",
               "correct": false
             }
           ],
@@ -260,30 +245,17 @@
         },
         {
           "card": 17,
-          "kind": "story",
-          "verses": "1 Kings 22:13",
-          "text": "Now the messenger who went to get Micaiah coaches him: the prophets are all speaking favorably to the king, so please let your words be like theirs. That's a coworker leaning over before the meeting going, everybody already said yes, just NOD.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "1 Kings 22:14",
-          "question": "The messenger wants Micaiah to go along with the crowd. Micaiah answers that he'll speak whatever the ___ tells him.",
+          "question": "Micaiah swears to the messenger that he'll speak whatever the LORD tells him.",
           "answers": [
             {
-              "text": "LORD",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "king",
-              "correct": false
-            },
-            {
-              "text": "messenger",
+              "text": "False",
               "correct": false
             }
           ],
@@ -507,7 +479,7 @@
           "card": 14,
           "kind": "story",
           "verses": "1 Kings 22:24",
-          "text": "Then Zedekiah, the iron horns guy, walks up and strikes Micaiah in the face. He demands, \"Which way did the Spirit of the LORD go when He departed from me to speak with you?\"",
+          "text": "Then Zedekiah son of Chenaanah, the prophet with the iron horns, goes up and strikes Micaiah in the face. He demands, \"Which way did the Spirit of the LORD go when He departed from me to speak with you?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -536,21 +508,29 @@
         },
         {
           "card": 16,
+          "kind": "story",
+          "verses": "1 Kings 22:26",
+          "text": "Then Ahab gives an order: take Micaiah back to Amon the governor of the city and to Joash the king's son.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 22:27",
-          "question": "Now Ahab gives an order about Micaiah. What is it?",
+          "question": "Ahab sends Micaiah back to Amon and Joash with a message from the king. What does he tell them to do with Micaiah?",
           "answers": [
             {
               "text": "Put him in prison until Ahab returns",
               "correct": true
             },
             {
-              "text": "Send him home to his father Imlah",
+              "text": "Let him go home to his father Imlah",
               "correct": false
             },
             {
-              "text": "Bring him along to Ramoth-gilead",
+              "text": "Guard him at the gate until the battle",
               "correct": false
             }
           ],
@@ -558,15 +538,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "story",
-          "verses": "1 Kings 22:26-27",
-          "text": "Ahab orders Micaiah taken back to Amon the governor of the city and Joash the king's son, on only bread and water, and in Ahab's words it lasts \"until I return safely.\" Friend, that's a man booking the victory party before the battle even starts.",
+          "verses": "1 Kings 22:27",
+          "text": "Bread and water only, \"until I return safely.\" Friend, that's a man booking the victory party before the battle even starts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 22:28",
@@ -585,10 +565,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "story",
           "verses": "1 Kings 22:28",
-          "text": "Then Micaiah adds, \"Take heed, all you people!\" Ramoth-gilead is still out there waiting, friend, so don't you take that apron off yet.",
+          "text": "Then Micaiah adds, \"Take heed, all you people!\" We'll stop right there for now, friend, but this story is NOT done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

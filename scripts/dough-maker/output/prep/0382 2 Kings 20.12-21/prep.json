@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 20:12",
-          "text": "Hezekiah is king of Judah. Then a delivery arrives from a king with a name that takes a while: Merodach-baladan son of Baladan, king of Babylon. I tried saying it three times fast, friend, and I'm STILL on the first one.",
+          "text": "Hezekiah, king of Judah, was about to die, but the LORD healed him and added fifteen years to his life (2 Kings 20:5-7). At that time Merodach-baladan son of Baladan, king of Babylon, sends Hezekiah letters. Friend, I spent YEARS in a junk drawer, and nobody sent me so much as a sticky note.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -35,7 +35,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -53,12 +53,12 @@
               "correct": false
             },
             {
-              "text": "He wanted help fighting Egypt",
+              "text": "He wanted to start trading with Judah",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -122,16 +122,16 @@
           "card": 8,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Kings 20:14-15",
-          "question": "Hezekiah tells Isaiah the men came from Babylon. When Isaiah asks what they've seen, Hezekiah says there is nothing among his treasures he didn't show them.",
+          "verses": "2 Kings 20:14",
+          "question": "Hezekiah tells Isaiah the envoys came from a land close by.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -140,13 +140,40 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Kings 20:16",
-          "text": "Then Isaiah says to Hezekiah, \"Hear the word of the LORD:\" I bet the whole room went quiet.",
+          "verses": "2 Kings 20:15",
+          "text": "Then Isaiah asks what they've seen in the palace. Hezekiah tells him straight: they've seen everything.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "2 Kings 20:16",
+          "text": "Then Isaiah says to Hezekiah, \"Hear the word of the LORD:\" I bet Hezekiah's stomach drops.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Kings 20:17",
+          "question": "The LORD says a few of the treasures in Hezekiah's palace will be left behind.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 20:17",
@@ -170,30 +197,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Kings 20:17",
-          "question": "The LORD says a few of the treasures will be left behind in Hezekiah's palace.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 20:18",
-          "question": "Isaiah says it goes beyond treasure. Some of Hezekiah's ___ will be taken away to the palace of the king of ___.",
+          "question": "Isaiah says it goes beyond treasure. Some of Hezekiah's ___ will be taken away to the palace of the king of Babylon.",
           "answers": [
             {
               "text": "descendants",
@@ -201,20 +209,11 @@
               "blank": 1
             },
             {
-              "text": "Babylon",
-              "correct": true,
-              "blank": 2
-            },
-            {
               "text": "soldiers",
               "correct": false
             },
             {
-              "text": "Egypt",
-              "correct": false
-            },
-            {
-              "text": "Assyria",
+              "text": "servants",
               "correct": false
             }
           ],
@@ -222,7 +221,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 20:19",
@@ -245,7 +244,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 20:19",
@@ -268,7 +267,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "2 Kings 20:20",
           "text": "The rest of Hezekiah's acts, and all his might, are written in the Book of the Chronicles of the Kings of Judah. So is the story of something he built for the city.",
@@ -276,7 +275,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 20:20",
@@ -295,7 +294,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "story",
           "verses": "2 Kings 20:21",
           "text": "And Hezekiah rested with his fathers. Now his son takes the throne.",
@@ -303,7 +302,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 20:21",

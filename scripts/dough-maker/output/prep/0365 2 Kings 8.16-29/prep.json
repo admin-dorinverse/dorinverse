@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 8:16",
-          "text": "Friend, we're in Judah, where Jehoram son of Jehoshaphat just succeeded his father as king. Up in Israel, the king is Joram son of Ahab, in his fifth year. Joram and Jehoram, two kings, SAME TIME, and somebody's mail is going to the wrong palace EVERY week.",
+          "text": "Friend, we're in Judah, where Jehoram son of Jehoshaphat just succeeded his father as king. Up in Israel, the king is Joram son of Ahab, in his fifth year. So that's Jehoram in Judah and Joram in Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -92,33 +92,32 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Kings 8:19",
-          "question": "The LORD is unwilling to destroy Judah for the sake of His servant ___.",
-          "answers": [
-            {
-              "text": "David",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Moses",
-              "correct": false
-            },
-            {
-              "text": "Elijah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Instead, for the sake of His servant David, Israel's great king long before, the LORD is unwilling to destroy Judah.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Kings 8:19",
-          "text": "The LORD had promised to maintain a lamp for David and his descendants forever. Friend, I spent YEARS in the back of a dark drawer, so trust me, nobody gets excited about one little light like I do.",
+          "question": "The LORD holds back from destroying Judah for the sake of His servant David. What's the reason behind it?",
+          "answers": [
+            {
+              "text": "He promised to keep a lamp for David forever",
+              "correct": true
+            },
+            {
+              "text": "David had asked Him to spare Judah",
+              "correct": false
+            },
+            {
+              "text": "Judah's people cried out for His mercy",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -126,7 +125,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Kings 8:20",
-          "text": "In Jehoram's days, Edom rebels against the hand of Judah. They are DONE taking orders.",
+          "text": "In Jehoram's days, Edom, a nation under Judah's hand, rebels. They are DONE taking orders.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -208,7 +207,7 @@
           "card": 14,
           "kind": "story",
           "verses": "2 Kings 8:21",
-          "text": "Nope, his troops flee to their homes. It's like calling a big team meeting at work, turning around, and EVERYBODY already clocked out.",
+          "text": "His troops flee to their homes. It's like calling a big team meeting at work, turning around, and EVERYBODY already clocked out.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -220,7 +219,7 @@
           "question": "After Zair, where does Edom stand with Judah?",
           "answers": [
             {
-              "text": "Still in rebellion to this day",
+              "text": "Still rebelling when this was written",
               "correct": true
             },
             {
@@ -239,7 +238,7 @@
           "card": 16,
           "kind": "story",
           "verses": "2 Kings 8:22-23",
-          "text": "Edom's not alone either: Libnah rebels at the same time, and Jehoram's kingdom is starting to look like a group chat where everybody keeps hitting leave. The rest of what Jehoram did is written in the book of the Chronicles of the Kings of Judah.",
+          "text": "Libnah, a town, rebels at the same time, and Jehoram's having the kind of week where the sink leaks and then the ceiling starts dripping too. The rest of what Jehoram did, along with all his accomplishments, is written in the book of the Chronicles of the Kings of Judah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -253,7 +252,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 8:24",
-          "text": "Jehoram rests with his fathers and is buried with them. Eight years as king, and the send-off gets HALF a verse, friend, my cookies get a longer goodbye than that, and they're GONE in four minutes.",
+          "text": "Jehoram rests with his fathers and is buried with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -283,8 +282,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "2 Kings 8:24-25",
-          "text": "His son Ahaziah reigns in his place, in the twelfth year of Joram over Israel. Joram's still up north on the SAME throne, and Judah's already on its SECOND new king during his reign, that's not a throne, that's a revolving door.",
+          "verses": "2 Kings 8:16, 24-25",
+          "text": "His son Ahaziah becomes king of Judah in the twelfth year of Joram over Israel, so Judah gets two new kings while Joram sits on that same throne. Judah's crown is a REVOLVING DOOR.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -292,12 +291,35 @@
           "card": 4,
           "kind": "story",
           "verses": "2 Kings 8:26",
-          "text": "Ahaziah is twenty-two, he reigns in Jerusalem one year, and his mother is Athaliah, the granddaughter of Omri king of Israel. ONE year, friend, I've had sprinkles in the pantry longer than that.",
+          "text": "Ahaziah is twenty-two when he becomes king, and he reigns in Jerusalem one year. ONE year on the throne? Friend, that's barely long enough for a new hire to find the supply closet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Kings 8:26",
+          "question": "Ahaziah's mother is named Athaliah. Whose granddaughter is she?",
+          "answers": [
+            {
+              "text": "Omri king of Israel",
+              "correct": true
+            },
+            {
+              "text": "Jehoshaphat king of Judah",
+              "correct": false
+            },
+            {
+              "text": "Ben-hadad king of Aram",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 8:27",
@@ -316,22 +338,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "2 Kings 8:27",
-          "text": "Nope, Ahaziah walks in the ways of the house of Ahab and does evil like them, and the text says why: \"for he was a son-in-law of the house of Ahab.\" Some families pass down a great cookie recipe, and this one keeps passing down the burnt batch.",
+          "text": "Ahaziah walks in the ways of the house of Ahab and does evil in the sight of the LORD like them, \"for he was a son-in-law of the house of Ahab.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 8:28",
-          "question": "Ahaziah goes to fight at Ramoth-gilead by joining another man's battle. Who does Ahaziah go with?",
+          "question": "Ahaziah heads off to fight at Ramoth-gilead. Who does he go with?",
           "answers": [
             {
-              "text": "Joram king of Israel",
+              "text": "Joram son of Ahab",
               "correct": true
             },
             {
@@ -339,7 +361,7 @@
               "correct": false
             },
             {
-              "text": "Elisha the prophet",
+              "text": "Elisha son of Shaphat",
               "correct": false
             }
           ],
@@ -347,58 +369,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Kings 8:28",
-          "question": "At Ramoth-gilead, Ahaziah and Joram fight against ___ king of Aram.",
-          "answers": [
-            {
-              "text": "Hazael",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Ben-hadad",
-              "correct": false
-            },
-            {
-              "text": "Rezin",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "2 Kings 8:28",
-          "question": "In the fight at Ramoth-gilead, the Arameans wound Ahaziah king of Judah.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Together they fight against Hazael king of Aram, the man who took Aram's throne after Ben-hadad died (2 Kings 8:15).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "2 Kings 8:29",
-          "text": "So King Joram goes back to Jezreel to recover from the wounds the Arameans gave him at Ramah, when he fought Hazael. A KING, laid up, and me? One little chip off my edge and I'm flat on the counter for a WEEK.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Kings 8:28",
+          "question": "In the fight at Ramoth-gilead, the Arameans wound Joram king of Israel.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "2 Kings 8:29",
+          "text": "So King Joram goes back to Jezreel to recover from the wounds the Arameans gave him at Ramah, when he fought against Hazael king of Aram.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 8:29",

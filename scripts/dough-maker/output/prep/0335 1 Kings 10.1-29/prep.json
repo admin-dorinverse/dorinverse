@@ -11,7 +11,7 @@
           "verses": "1 Kings 10:1",
           "text": "Solomon is king of Israel, and people are TALKING. The queen of Sheba hears about the fame of Solomon concerning the name of the LORD. And friend, she doesn't just nod and move on.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -42,30 +42,31 @@
           "verses": "1 Kings 10:2",
           "text": "She rolls into Jerusalem with a very large caravan, camels loaded DOWN. Me? I came out of a clearance bin with a 25 cent sticker on me.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 10:2",
-          "question": "What are the queen of Sheba's camels carrying into Jerusalem?",
+          "question": "The queen of Sheba's camels come into Jerusalem carrying spices, precious stones and plenty of ___.",
           "answers": [
             {
-              "text": "Spices and gold and precious stones",
-              "correct": true
+              "text": "gold",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Wool and bronze and fine linen",
+              "text": "silver",
               "correct": false
             },
             {
-              "text": "Silver and cedar and iron",
+              "text": "ivory",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -73,7 +74,7 @@
           "verses": "1 Kings 10:2",
           "text": "Then she sits down with Solomon and tells him everything that's on her mind. Every hard question she brought, right there on the table.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -92,7 +93,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -100,7 +101,7 @@
           "verses": "1 Kings 10:4-5",
           "text": "Then she sees it ALL: his wisdom, the palace he built, the food at his table, his servants and attendants, his cupbearers, and the burnt offerings he presents at the house of the LORD. Friend, she's checking out everything right down to the seating chart.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -123,7 +124,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -131,7 +132,7 @@
           "verses": "1 Kings 10:6",
           "text": "She tells the king, \"The report I heard in my own country about your words and wisdom is true.\" She came ALL that way to check out a report, and friend, I won't even get up to check if the oven's on.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -150,14 +151,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 10:7",
-          "question": "Now that she's seen it, how much of the real thing does the queen of Sheba say the report told her?",
+          "question": "The queen of Sheba has now seen Solomon's wisdom and prosperity for herself. How much of it does she say the report she heard told her?",
           "answers": [
             {
               "text": "Not even half",
@@ -172,8 +173,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -181,7 +182,7 @@
           "verses": "1 Kings 10:8",
           "text": "Then she says how blessed his men are, and the servants who stand before him all the time and hear his wisdom. I think she'd trade places with the STAFF in a heartbeat.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -204,14 +205,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 10:9",
-          "question": "The queen of Sheba says the LORD made Solomon king of Israel. What does she say He made him king to do?",
+          "question": "The queen of Sheba says the LORD delighted in Solomon and made him king of Israel because of His eternal love for Israel. What does she say the LORD made him king to do?",
           "answers": [
             {
               "text": "Carry out justice and righteousness",
@@ -226,8 +227,8 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -235,7 +236,7 @@
           "verses": "1 Kings 10:10",
           "text": "Then she hands the king 120 talents of gold, a great quantity of spices, and precious stones. Friend, my idea of a big gift is an EXTRA handful of chocolate chips.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -254,46 +255,47 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "1 Kings 10:11",
-          "text": "Quick side note in the text. Hiram king of Tyre (1 Kings 5:1) has a fleet bringing gold from Ophir, and it also hauls in a great cargo of almug wood and precious stones.",
+          "text": "Now, the fleet of Hiram king of Tyre (1 Kings 5:1) brings gold from Ophir. It also hauls in a great cargo of almug wood and precious stones.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 10:12",
-          "question": "What does Solomon make out of the almug wood Hiram's fleet brings in?",
+          "question": "Solomon makes the almug wood into steps for the house of the LORD and the king's palace, and into lyres and harps for the ___.",
           "answers": [
             {
-              "text": "Steps and lyres and harps",
-              "correct": true
+              "text": "singers",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Doors and beams and ships",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "Shields and cups and chairs",
+              "text": "guards",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "story",
           "verses": "1 Kings 10:13",
-          "text": "King Solomon gives the queen of Sheba WHATEVER she asks for, plus gifts out of his royal bounty, and she heads home with her servants. Friend, I asked that junk drawer for a little elbow room once and got a takeout menu in the face.",
+          "text": "King Solomon gives the queen of Sheba WHATEVER she asks for, plus gifts out of his royal bounty, and she heads home with her servants. Friend, back when I was stuck in a junk drawer, I asked for a little elbow room once and got a takeout menu in the face.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -305,9 +307,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 10:14-22",
-          "text": "Now the writer opens the books on Solomon's wealth: 666 talents of gold a year, plus what the merchants and kings bring in. Gold shields, gold drinking cups, ships of Tarshish hauling in gold, silver, ivory, apes and peacocks, and a great ivory throne overlaid with pure gold, with twelve lions on its six steps. Nothing like it had ever been made for any kingdom. Friend, the Millers got ME for a quarter.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then the gold just KEEPS coming: 666 talents a year for Solomon, not counting what the merchants, traders and kings bring in. He makes shields of hammered gold and a great ivory throne overlaid with pure gold, with twelve lions on its six steps, and nothing like it had ever been made for any kingdom. His drinking cups are gold, silver counts as nothing, and every three years the ships of Tarshish come in with gold, silver, ivory, apes and peacocks. Friend, I stand on ONE little gold base and I thought I was fancy.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -326,14 +328,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 10:24",
-          "question": "The whole world comes to hear Solomon's wisdom. Where did that wisdom come from?",
+          "question": "The whole world comes to hear Solomon's wisdom. How did Solomon get that wisdom?",
           "answers": [
             {
               "text": "God put it in his heart",
@@ -349,15 +351,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "1 Kings 10:25-29",
           "text": "Year after year, visitors bring tribute: silver and gold, clothing, weapons, spices, horses and mules. Solomon gathers 1,400 chariots and 12,000 horses and makes silver as common in Jerusalem as stones. His horses come in from Egypt and Kue, and chariots and horses go out again to the kings of the Hittites and the kings of Aram. Twelve THOUSAND horses, friend, and you thought finding parking downtown was rough.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "Card 1 already says Joram went back to Jezreel to recover from his wounds, so the answer 'King Joram is laid up there' is given away before the question. The choice also re-asks a fact already told.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 18
+      },
+      "problem": "Story card 14 already says Jehu meets the kings 'on the property of Naboth the Jezreelite'. That gives away the answer 'Naboth' before card 18 asks about the field of Naboth.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The question says Jehu 'tells them to bury her', but no one named before it is 'them'. The text never says whom Jehu is speaking to in 9:34, so the card adds an audience the text leaves open.",
+      "rule": "\"He,\" \"she\" and \"they\" always point to someone the baker can tell."
+    }
+  ]
+}

@@ -9,106 +9,51 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 3:16",
-          "text": "Solomon is king of Israel, and he just asked God for an understanding heart to judge His people (1 Kings 3:9). Now two prostitutes come and stand before him. Friend, whatever he was hoping for, this is NOT a parking ticket.",
+          "text": "Solomon is Israel's king, and he's asked God for an understanding heart to judge His people (1 Kings 3:9). Now two prostitutes come and stand before him. Friend, this is NOT a parking ticket.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 3:17",
-          "question": "One woman speaks first. She says she and the other woman live in the same ___.",
-          "answers": [
-            {
-              "text": "house",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "tent",
-              "correct": false
-            },
-            {
-              "text": "inn",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 3:17-18",
+          "text": "One woman speaks first: she and this woman live in the same house, and three days after she gave birth there, the other woman had a baby too. Two newborns under one roof. Friend, I can't keep two batches straight on one counter.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "1 Kings 3:17-18",
-          "text": "She says she gave birth in that house, and three days later the other woman had a baby too. Two newborns under one roof, and I bet that house was never quiet.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 3:18",
+          "question": "The first woman says only the two of them were in the house.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 3:18",
-          "question": "The first woman says someone else was staying in the house with the two of them.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "1 Kings 3:19",
+          "text": "Friend, this part is hard to hear. During the night, she says, the other woman's son died because his mother rolled over on him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "1 Kings 3:19",
-          "text": "Friend, this part is hard to hear. During the night, she says, the other woman's son died.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 3:19",
-          "question": "According to the first woman, how did the other woman's son die?",
-          "answers": [
-            {
-              "text": "She rolled over on him",
-              "correct": true
-            },
-            {
-              "text": "He caught a fever",
-              "correct": false
-            },
-            {
-              "text": "He fell from the bed",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "1 Kings 3:20",
-          "text": "So, she says, the other woman got up in the middle of the night. Lean in, friend, because this is where her story turns.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 3:20",
-          "question": "What does the first woman say the other woman did in the middle of the night?",
+          "question": "According to the first woman, what did the other woman do in the middle of the night?",
           "answers": [
             {
               "text": "Swapped her dead son for the living one",
@@ -119,7 +64,7 @@
               "correct": false
             },
             {
-              "text": "Woke her up and asked for help",
+              "text": "Woke the first woman up for help",
               "correct": false
             }
           ],
@@ -127,27 +72,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
-          "kind": "story",
-          "verses": "1 Kings 3:21",
-          "text": "Oh, friend, the next morning she gets up to nurse her son and finds him dead. Then she takes a closer look.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 3:21",
-          "question": "When the first woman looks closer at the dead baby, she realizes he isn't the son she gave birth to.",
+          "question": "The next morning, the first woman learns the dead baby isn't hers because the other woman confesses.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -195,7 +132,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Kings 3:22-23",
-          "text": "So they argue right there in front of the king. Solomon says it all back: this one says her son's alive and the other's is dead, and that one says the exact opposite.",
+          "text": "So they argue right there in front of the king. Solomon sums it up: each woman says the living son is hers and the dead one belongs to the other.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -204,7 +141,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 3:24",
-          "question": "Two stories, no witnesses. What does Solomon tell them to bring him?",
+          "question": "Two women, two stories, no witnesses. What does King Solomon call for?",
           "answers": [
             {
               "text": "A sword",
@@ -226,7 +163,7 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Kings 3:24",
-          "text": "So they bring the king a sword. I bet that room got real QUIET real fast.",
+          "text": "So they bring the king a sword. Then he gives an order.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -262,7 +199,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 3:26",
-          "question": "The woman whose son is alive speaks up first. What does she beg the king to do?",
+          "question": "The woman whose son is alive speaks up. What does she beg the king to do?",
           "answers": [
             {
               "text": "Give the baby to the other woman",
@@ -293,7 +230,7 @@
               "blank": 1
             },
             {
-              "text": "fear",
+              "text": "pride",
               "correct": false
             },
             {
@@ -308,7 +245,7 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Kings 3:26",
-          "text": "Then the other woman answers the king too. And friend, I'm gonna let her words speak for themselves.",
+          "text": "Then the other woman says something too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -351,7 +288,7 @@
               "correct": false
             },
             {
-              "text": "Bathsheba the king's mother",
+              "text": "The king's own household",
               "correct": false
             }
           ],
@@ -363,15 +300,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 3:27",
-          "question": "Solomon says the baby must not be killed, because the woman who begged for him is his mother.",
+          "question": "In his ruling, Solomon says the baby should still be cut in two.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -390,15 +327,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 3:28",
-          "question": "When all Israel hears about the king's judgment, they stand in awe of him.",
+          "question": "When all Israel hears about the king's judgment, they think he is too harsh.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -421,7 +358,7 @@
               "correct": false
             },
             {
-              "text": "law",
+              "text": "wrath",
               "correct": false
             }
           ],

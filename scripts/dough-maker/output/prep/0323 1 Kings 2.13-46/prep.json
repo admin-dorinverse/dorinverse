@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Kings 2:16-17",
-          "text": "Then he says he has just one request, and he wants Bathsheba to bring it to King Solomon, because Solomon will not turn her down. Friend, when a coworker says “one quick question,” you'd better cancel your afternoon.",
+          "text": "Then he says he has just one request: he wants Bathsheba to take it to King Solomon, who he says will not turn her down. Friend, when a coworker says “one quick question,” you'd better cancel your afternoon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -152,7 +152,7 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Kings 2:20",
-          "text": "Bathsheba tells her son she has just one small request, and adds, “Do not deny me.” She said SMALL, friend, so hold onto your apron.",
+          "text": "Bathsheba tells her son she has just one small request, and adds, “Do not deny me.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,15 +161,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 2:20",
-          "question": "Before he even hears what it is, King Solomon tells his mother he will not deny her request.",
+          "question": "King Solomon tells his mother he'll hear her request first and then decide.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -211,7 +211,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:22",
-          "question": "Solomon says that request for Adonijah would also be a request for two other men. Who are they?",
+          "question": "Solomon says that requesting the kingdom for Adonijah would also be requesting it for two other men. Who are they?",
           "answers": [
             {
               "text": "Abiathar the priest and Joab",
@@ -232,25 +232,17 @@
         {
           "card": 15,
           "kind": "story",
-          "verses": "1 Kings 2:23",
-          "text": "Abiathar the priest and Joab, commander of David's army (2 Samuel 8:16), both backed Adonijah when he tried to make himself king (1 Kings 1:7). Then King Solomon swears an oath by the LORD.",
+          "verses": "1 Kings 2:23-24",
+          "text": "Abiathar and Joab both backed Adonijah when he tried to make himself king (1 Kings 1:7), and now King Solomon swears by the LORD that Adonijah has made this request at the expense of his life. He swears that Adonijah shall be put to death today.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "1 Kings 2:23",
-          "text": "Solomon swears that Adonijah has made this request at the expense of his life. That “just one request” is not looking so little anymore.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 2:24",
-          "question": "Solomon swears by the LORD, the One who set him on the throne of his father David, that Adonijah will be put to death that very day.",
+          "question": "When King Solomon swears that Adonijah will die, he says the LORD founded a dynasty for him, just as He promised.",
           "answers": [
             {
               "text": "True",
@@ -265,33 +257,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 2:25",
-          "question": "So King Solomon gives orders to Benaiah son of Jehoiada, the man David put over his guard (2 Samuel 23:23). What does Benaiah do?",
-          "answers": [
-            {
-              "text": "He strikes Adonijah down",
-              "correct": true
-            },
-            {
-              "text": "He brings Adonijah to the king",
-              "correct": false
-            },
-            {
-              "text": "He locks Adonijah in his house",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "1 Kings 2:25",
-          "text": "And Adonijah dies. Heavy day in Jerusalem, friend, and Solomon isn't done yet.",
+          "text": "So King Solomon gives orders to Benaiah son of Jehoiada, the man David put over his guard (2 Samuel 23:23). Benaiah strikes Adonijah down, and he dies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -305,35 +274,12 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 2:26",
-          "text": "Next, King Solomon speaks to Abiathar the priest. He says Abiathar deserves to die, but he will not put him to death at this time.",
+          "text": "Next, King Solomon tells Abiathar the priest to go back to his fields in Anathoth. He says Abiathar deserves to die, but he won't put him to death at this time, and he gives a reason.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 2:26",
-          "question": "Instead, Solomon tells Abiathar to go back to his ___ in Anathoth.",
-          "answers": [
-            {
-              "text": "fields",
-              "correct": true
-            },
-            {
-              "text": "vineyards",
-              "correct": false
-            },
-            {
-              "text": "flocks",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:26",
@@ -356,7 +302,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "story",
           "verses": "1 Kings 2:27",
           "text": "So Solomon banishes Abiathar from the priesthood of the LORD. And with that, a word the LORD had spoken at Shiloh is fulfilled.",
@@ -364,22 +310,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 2:27",
-          "question": "The word the LORD spoke at Shiloh was against someone's house. Whose?",
+          "question": "The word the LORD spoke at Shiloh was against the house of ___.",
           "answers": [
             {
-              "text": "The house of Eli",
+              "text": "Eli",
               "correct": true
             },
             {
-              "text": "The house of Saul",
+              "text": "Saul",
               "correct": false
             },
             {
-              "text": "The house of Korah",
+              "text": "Korah",
               "correct": false
             }
           ],
@@ -387,7 +333,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "1 Kings 2:28",
           "text": "The news reaches Joab, who had conspired with Adonijah but not with Absalom, David's son who once rebelled against David (2 Samuel 15:10-12). And Joab RUNS, like when the boss says “got a minute?” and you suddenly remember an appointment across town.",
@@ -395,7 +341,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:28",
@@ -418,11 +364,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 2:28",
-          "question": "Once Joab gets there, he takes hold of the horns of the altar.",
+          "question": "At the tent of the LORD, Joab takes hold of the horns of the altar.",
           "answers": [
             {
               "text": "True",
@@ -437,7 +383,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "1 Kings 2:29-30",
           "text": "Solomon hears where Joab is and sends Benaiah: “Go, strike him down!” Benaiah enters the tent of the LORD and tells Joab, “The king says, ‘Come out!’”",
@@ -445,7 +391,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:30",
@@ -468,7 +414,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "1 Kings 2:30-31",
           "text": "Benaiah goes back and reports Joab's answer to the king. Solomon's reply: “Do just as he says.”",
@@ -476,7 +422,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:32",
@@ -499,11 +445,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 2:32",
-          "question": "Solomon calls those two men more righteous and better than Joab.",
+          "question": "Solomon calls Abner and Amasa more righteous and better than Joab.",
           "answers": [
             {
               "text": "True",
@@ -512,6 +458,25 @@
             {
               "text": "False",
               "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 2:33",
+          "question": "Solomon says the blood of Abner and Amasa will come back upon David and his house.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -529,23 +494,27 @@
           "card": 15,
           "kind": "story",
           "verses": "1 Kings 2:34-35",
-          "text": "Joab is buried at his own home in the wilderness. Now two jobs are open: Joab's place over the army, and Abiathar's place as priest, and Solomon fills them both.",
+          "text": "Joab is buried at his own home in the wilderness. Now two jobs are open: Joab's place over the army, and Abiathar's place as priest.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Kings 2:35",
-          "question": "Solomon puts Benaiah son of Jehoiada over the army in Joab's place.",
+          "question": "Who does Solomon put over the army in Joab's place?",
           "answers": [
             {
-              "text": "True",
+              "text": "Benaiah son of Jehoiada",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Abishai son of Zeruiah",
+              "correct": false
+            },
+            {
+              "text": "Ittai the Gittite",
               "correct": false
             }
           ],
@@ -554,25 +523,10 @@
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Kings 2:35",
-          "question": "In Abiathar's place, Solomon appoints ___ the priest.",
-          "answers": [
-            {
-              "text": "Zadok",
-              "correct": true
-            },
-            {
-              "text": "Ahimelech",
-              "correct": false
-            },
-            {
-              "text": "Eli",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And in Abiathar's place, Solomon appoints Zadok the priest, who did not side with Adonijah (1 Kings 1:8).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -644,7 +598,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:38",
-          "question": "How does Shimei answer the king's terms?",
+          "question": "Solomon tells Shimei to stay in Jerusalem and never cross the Kidron Valley, or he will die. How does Shimei answer?",
           "answers": [
             {
               "text": "The sentence is fair",
@@ -672,32 +626,32 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "1 Kings 2:39",
-          "question": "After three years, two of Shimei's slaves run away to Achish, king of ___.",
-          "answers": [
-            {
-              "text": "Gath",
-              "correct": true
-            },
-            {
-              "text": "Tyre",
-              "correct": false
-            },
-            {
-              "text": "Edom",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "After three years, two of Shimei's slaves run away to Achish son of Maacah, king of Gath, a Philistine city. Somebody tells Shimei, “Look, your slaves are in Gath.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "1 Kings 2:39-40",
-          "text": "Somebody tells Shimei, “Look, your slaves are in Gath.” So he saddles his donkey and heads out, and friend, I am YELLING at the page right now.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 2:40",
+          "question": "Shimei hears his slaves are in Gath. What does he do?",
+          "answers": [
+            {
+              "text": "He saddles his donkey and goes after them",
+              "correct": true
+            },
+            {
+              "text": "He sends a servant to bring them back",
+              "correct": false
+            },
+            {
+              "text": "He asks the king for permission to go",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -724,8 +678,8 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Kings 2:41-42",
-          "text": "Solomon is told Shimei went to Gath and came back, so he summons him and reminds him that the king made him swear by the LORD. Then he reads Shimei his own words, “The sentence is fair; I will comply,” and that's worse than a boss reading your old email out loud in a meeting.",
-          "needs_agent_fix": true,
+          "text": "Word reaches Solomon that Shimei went to Gath and came back, so he summons him and repeats Shimei's own words back to him: “The sentence is fair; I will comply.” Friend, that's worse than hearing your old group chat read out loud.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -733,7 +687,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 2:43",
-          "question": "Solomon asks why Shimei has not kept the king's command, and one more thing. What is it?",
+          "question": "Solomon asks Shimei why he hasn't kept the king's command. What else does Solomon say Shimei hasn't kept?",
           "answers": [
             {
               "text": "His oath to the LORD",
@@ -762,20 +716,16 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Kings 2:45",
-          "question": "Then Solomon speaks about himself and his father's throne. What does he say about David's throne?",
+          "question": "Solomon tells Shimei that David's throne will remain secure before the LORD forever.",
           "answers": [
             {
-              "text": "It will remain secure forever",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "It will be shared with his brothers",
-              "correct": false
-            },
-            {
-              "text": "It will be shaken for a while",
+              "text": "False",
               "correct": false
             }
           ],

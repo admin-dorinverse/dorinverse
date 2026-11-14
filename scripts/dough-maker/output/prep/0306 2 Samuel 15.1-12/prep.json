@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Samuel 15:1",
-          "text": "Meet Absalom, son of King David. Some time later, he gets himself a chariot with horses, and he adds a little extra. Me? Years in a junk drawer, and the fanciest ride I ever got was sliding to the back every time somebody slammed it shut.",
-          "needs_agent_fix": true,
+          "text": "Meet Absalom, King David's son (2 Samuel 3:3). The king has just summoned him and kissed him (2 Samuel 14:33), and some time later, Absalom gets himself a chariot with horses, plus a little extra. Me? Years in a junk drawer, and the fanciest ride I ever got was sliding to the back every time somebody slammed it shut.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -67,8 +67,8 @@
           "card": 5,
           "kind": "story",
           "verses": "2 Samuel 15:2",
-          "text": "Say the man answers that he's from one of the tribes of Israel. Then Absalom tells him what he thinks of his case.",
-          "needs_agent_fix": true,
+          "text": "Say the man answers that he's from one of the tribes of Israel. That's when Absalom leans in.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -76,7 +76,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 15:3",
-          "question": "Absalom tells the man from one of the tribes of Israel that his claims are weak and he should drop them.",
+          "question": "Absalom tells the man from one of the tribes of Israel that his claims are weak.",
           "answers": [
             {
               "text": "True",
@@ -95,7 +95,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Samuel 15:3",
-          "question": "Absalom says the man's claims are good and right. So what does Absalom say the problem is?",
+          "question": "Absalom tells a man bringing a grievance to the king that his claims are good and right. So what does Absalom say the problem is?",
           "answers": [
             {
               "text": "The king has no deputy to hear him",
@@ -110,14 +110,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "2 Samuel 15:4",
-          "text": "Then Absalom adds a wish. If only someone would give him a certain job, he says, everyone with a grievance or dispute could come to him, and he would give him justice.",
+          "text": "Then Absalom adds a wish. If only someone would give him a certain job, he says, everyone with a grievance or dispute could come to him, and he would give each one justice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -250,18 +250,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Samuel 15:9",
-          "question": "King David turns down Absalom's request and tells him to stay in Jerusalem.",
+          "question": "When Absalom asks to go to Hebron to fulfill his vow, King David tells him to go in peace.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -299,7 +299,7 @@
           "card": 6,
           "kind": "story",
           "verses": "2 Samuel 15:11",
-          "text": "Two hundred men from Jerusalem go along with Absalom, invited as guests. Friend, hand me an invitation and I'm hopping on my gold base before you finish the sentence.",
+          "text": "Two hundred men from Jerusalem go along with Absalom, invited as guests. Friend, hand me an invitation and I'm hopping out the door, gold base and all, before you finish the sentence.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -328,7 +328,7 @@
           "verses": "2 Samuel 15:12",
           "text": "Then Absalom sends for Ahithophel the Gilonite, David's counselor, to come from his hometown of Giloh. That's like the other team calling up your own coach at halftime.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -352,7 +352,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -375,7 +375,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -383,7 +383,7 @@
           "verses": "2 Samuel 15:12",
           "text": "The conspiracy is gaining strength. And that's where we'll pause for now, friend, because this story is FAR from over.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

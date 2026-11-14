@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "1 Kings 9:10-11",
           "text": "Twenty YEARS, friend. That's how long Solomon, king of Israel, spent building two houses: the house of the LORD and his royal palace. Now he has something for Hiram king of Tyre, the man who supplied him with cedar and cypress logs and gold for his every desire.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -34,15 +34,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
+          "kind": "story",
+          "verses": "1 Kings 9:12",
+          "text": "Twenty towns! So Hiram goes out from Tyre to inspect them himself.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 9:12",
-          "question": "Hiram goes out from Tyre to inspect his twenty new towns, and he's pleased with them.",
+          "question": "Hiram is pleased with the twenty towns Solomon gave him.",
           "answers": [
             {
               "text": "True",
@@ -53,104 +61,70 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "1 Kings 9:12-13",
-          "text": "He is NOT pleased: “What are these towns you have given me, my brother?” That's the face of a man who opened the cookie box and found crumbs.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 9:13",
-          "question": "Hiram gives Solomon's twenty towns a name, and it's still their name to this day. What does he call them?",
-          "answers": [
-            {
-              "text": "The Land of Cabul",
-              "correct": true
-            },
-            {
-              "text": "The Land of Goshen",
-              "correct": false
-            },
-            {
-              "text": "The Land of Nod",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 9:12-13",
+          "text": "Hiram is NOT pleased. “What are these towns you have given me, my brother?” he asks.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "1 Kings 9:14",
-          "text": "Oh, and Hiram had sent the king 120 talents of gold. ONE HUNDRED TWENTY TALENTS, friend, and the richest thing I ever shared a drawer with was an expired coupon.",
-          "needs_agent_fix": true,
+          "verses": "1 Kings 9:13",
+          "text": "He calls them the Land of Cabul, a name they still had when this was written. That's a man who opened the cookie box and found crumbs.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "1 Kings 9:15-19",
-          "text": "Next comes the account of the forced labor Solomon used to build the LORD's house, his palace, the supporting terraces, the wall of Jerusalem, and Hazor, Megiddo and Gezer. He also rebuilds more towns, plus store cities for his chariots and horses. And Gezer? Pharaoh king of Egypt had captured it, set it on fire, and given it as a dowry to his daughter, Solomon's wife. Some wedding gifts come in a box. This one was a whole city.",
-          "needs_agent_fix": true,
+          "verses": "1 Kings 9:14",
+          "text": "Oh, and Hiram had sent the king 120 talents of gold. Back when I lived in a junk drawer, the richest thing in there was an expired coupon.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "1 Kings 9:20-21",
-          "text": "That's a LOT of building. And still living in the land are people who aren't Israelites, the ones the Israelites were unable to devote to destruction: Amorites, Hittites, Perizzites, Hivites and Jebusites.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "1 Kings 9:15-19",
+          "text": "Next comes the account of the forced labor behind Solomon's building: the LORD's house, his palace, the wall of Jerusalem, towns like Hazor, Megiddo and Gezer, and store cities for his chariots and horses. About Gezer: Pharaoh king of Egypt had captured it, set it on fire and killed the Canaanites living there. Then he gave it as a dowry to his daughter, Solomon's wife.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 9:21",
-          "question": "Who does Solomon conscript to be his forced laborers?",
+          "question": "All that building takes forced labor. Who does Solomon conscript to do it?",
           "answers": [
             {
               "text": "The non-Israelites still in the land",
               "correct": true
             },
             {
-              "text": "Men from every tribe of Israel",
+              "text": "Captives brought up from Egypt",
               "correct": false
             },
             {
-              "text": "Captives brought up from Egypt",
+              "text": "Prisoners taken from Edom",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 9:22",
-          "question": "Solomon also puts some of the Israelites into slavery.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 9:20-21",
+          "text": "These are the Amorites, Hittites, Perizzites, Hivites and Jebusites left in the land, the ones the Israelites were unable to devote to destruction. They were still forced laborers when this was written.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,7 +135,7 @@
           "question": "Solomon doesn't consign a single Israelite to slavery. Why not?",
           "answers": [
             {
-              "text": "They serve as his soldiers and officers",
+              "text": "They are his men of war and commanders",
               "correct": true
             },
             {
@@ -173,148 +147,128 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "1 Kings 9:23",
-          "question": "On Solomon's projects, the Israelites are also the chief ___ over the people who do the work.",
+          "question": "On Solomon's projects, Israelites serve as the chief officers over the people who do the work.",
           "answers": [
             {
-              "text": "officers",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "laborers",
-              "correct": false
-            },
-            {
-              "text": "builders",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "1 Kings 9:23-24",
-          "text": "550 supervisors in all! And Pharaoh's daughter moves up from the City of David into the palace Solomon built for her.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 9:24",
+          "question": "Solomon built a palace for someone. As soon as she comes up from the City of David to it, he builds the supporting terraces. Who is she?",
+          "answers": [
+            {
+              "text": "Pharaoh's daughter",
+              "correct": true
+            },
+            {
+              "text": "The queen of Sheba",
+              "correct": false
+            },
+            {
+              "text": "Michal daughter of Saul",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "1 Kings 9:24",
-          "question": "As soon as Pharaoh's daughter moves into her palace, Solomon builds the supporting ___.",
+          "verses": "1 Kings 9:25",
+          "question": "Solomon offers burnt offerings and peace offerings on the altar he built for the LORD ___ times a year.",
           "answers": [
             {
-              "text": "terraces",
+              "text": "three",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "gates",
+              "text": "seven",
               "correct": false
             },
             {
-              "text": "towers",
+              "text": "twelve",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "1 Kings 9:25",
-          "text": "Solomon isn't only a builder. On the altar he built for the LORD, he offers burnt offerings and peace offerings, burning incense with them before the LORD.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 9:27",
+          "question": "King Solomon assembles a fleet of ships at Ezion-geber, near Eloth in Edom, on the shore of the Red Sea. Who sends servants, sailors who know the sea, to serve in the fleet?",
+          "answers": [
+            {
+              "text": "Hiram king of Tyre",
+              "correct": true
+            },
+            {
+              "text": "Pharaoh king of Egypt",
+              "correct": false
+            },
+            {
+              "text": "Hadad the Edomite",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 9:25",
-          "question": "Solomon brings burnt offerings and peace offerings before the LORD three times a year.",
+          "type": "fill_blank",
+          "verses": "1 Kings 9:28",
+          "question": "Hiram's sailors and Solomon's servants sail to ___ and bring back gold.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "Ophir",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "Cyprus",
+              "correct": false
+            },
+            {
+              "text": "Crete",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
-          "verses": "1 Kings 9:25-26",
-          "text": "So he completed the temple. And now King Solomon assembles a fleet of ships at Ezion-geber, near Eloth in Edom, on the shore of the Red Sea.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 9:27",
-          "question": "Hiram king of Tyre sends his servants, sailors who know the sea, to serve in Solomon's fleet.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "1 Kings 9:28",
-          "question": "Hiram's sailors and Solomon's servants set sail together. Where do they go to bring back gold?",
-          "answers": [
-            {
-              "text": "Ophir",
-              "correct": true
-            },
-            {
-              "text": "Tarshish",
-              "correct": false
-            },
-            {
-              "text": "Sheba",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
-          "verses": "1 Kings 9:28",
-          "text": "They bring back gold from Ophir, 420 talents of it, and deliver it to Solomon. FOUR HUNDRED TWENTY TALENTS, friend, and here I am feeling fancy about one gold base.",
-          "needs_agent_fix": true,
+          "text": "They bring back 420 talents of gold from Ophir and deliver it to Solomon.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 8:54",
-          "text": "Solomon, king of Israel, has built a house for the LORD, and the whole assembly of Israel is gathered there. He's been kneeling before the altar of the LORD with his hands spread out toward heaven, praying a long prayer, and now he's finished and gets up. I bet his knees had something to say about that, and friend, I don't even HAVE knees.",
+          "text": "Solomon, King David's son and now king of Israel, has built a house for the LORD, and he's been praying in front of the whole assembly of Israel (1 Kings 8:22, 27). He's been kneeling before the altar of the LORD with his hands spread out toward heaven, and now he's finished and gets up. I bet his knees had something to say about that, and friend, I don't even HAVE knees.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,15 +49,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 8:56",
-          "question": "Solomon says some of the good promises God made through His servant Moses have failed.",
+          "question": "Solomon says not one word has failed of all the good promises God made through Moses, Israel's leader.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -90,16 +90,16 @@
           "card": 6,
           "kind": "story",
           "verses": "1 Kings 8:58",
-          "text": "Next, Solomon's blessing turns to their insides: may the LORD incline their hearts to Himself. Smart, because left on its own, my heart inclines straight toward the chocolate chips.",
+          "text": "Next, Solomon's blessing turns to the heart: \"May He incline our hearts to Himself…\" Smart, because left on its own, my heart inclines straight toward the chocolate chips.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 8:58",
-          "question": "Solomon asks the LORD to incline the people's hearts to Himself. He wants those turned hearts to lead to lives of ___.",
+          "question": "Solomon asks the LORD to incline Israel's hearts to Himself. He wants those turned hearts to lead to lives of ___.",
           "answers": [
             {
               "text": "obedience",
@@ -116,7 +116,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -149,28 +149,24 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Kings 8:60",
-          "text": "All the peoples of the earth, so they'll know the LORD is God, and then Solomon adds, \"There is no other!\" That's not a suggestion, friend, that's a mic drop.",
+          "text": "Solomon wants all the peoples of the earth to know the LORD is God, and he adds, \"There is no other!\" Friend, that's not a suggestion, that's a mic drop.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Kings 8:61",
-          "question": "Solomon ends by telling the people to keep their hearts fully devoted to the LORD, walking in His statutes and keeping His commandments. What does he say about their hearts right now?",
+          "question": "Solomon tells the people to walk in the LORD's statutes and keep His commandments. He says giving Him their whole heart is something they haven't started yet.",
           "answers": [
             {
-              "text": "They are devoted to Him today",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "They are drifting from Him today",
-              "correct": false
-            },
-            {
-              "text": "They are far from Him today",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -212,20 +208,21 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 8:63",
-          "question": "With all these offerings, what do the king and all the Israelites do with the house of the LORD?",
+          "question": "With all these offerings, the king and all the Israelites ___ the house of the LORD.",
           "answers": [
             {
-              "text": "They dedicate it",
-              "correct": true
+              "text": "dedicate",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They make it bigger",
+              "text": "enlarge",
               "correct": false
             },
             {
-              "text": "They seal its doors",
+              "text": "close",
               "correct": false
             }
           ],
@@ -257,7 +254,7 @@
               "correct": false
             },
             {
-              "text": "low",
+              "text": "hot",
               "correct": false
             }
           ],
@@ -268,7 +265,7 @@
           "card": 6,
           "kind": "story",
           "verses": "1 Kings 8:65",
-          "text": "Then comes the feast. Solomon and all Israel keep it before the LORD, a great assembly of people from Lebo-hamath to the Brook of Egypt.",
+          "text": "Then comes the feast. Solomon and all Israel keep it before the LORD, and it's a great assembly of people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -277,18 +274,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 8:65",
-          "question": "The great assembly at Solomon's feast stretches from Lebo-hamath all the way to the Brook of Egypt. What does that tell us about who came?",
+          "question": "The great assembly at Solomon's feast covers a lot of ground. Where do the people come from?",
           "answers": [
             {
-              "text": "People came from across the land",
+              "text": "From Lebo-hamath to the Brook of Egypt",
               "correct": true
             },
             {
-              "text": "Only people from Jerusalem came",
+              "text": "From Bethel to the city of Jericho",
               "correct": false
             },
             {
-              "text": "Mostly visitors from other nations came",
+              "text": "From Gilgal to the hill of Gibeah",
               "correct": false
             }
           ],
@@ -300,15 +297,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 8:65",
-          "question": "Solomon and all Israel keep the feast before the LORD for fourteen days in all.",
+          "question": "Solomon and all Israel keep the feast before the LORD for just seven days.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -317,7 +314,7 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "1 Kings 8:66",
+          "verses": "1 Kings 8:55, 66",
           "text": "On the fifteenth day, Solomon sends the people away. He blessed them at the start, and now they bless the king right back on their way out the door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -365,7 +362,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

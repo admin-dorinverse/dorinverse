@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 19:1",
-          "text": "Elijah, the LORD's prophet, has just faced down the prophets of Baal on Mount Carmel (1 Kings 18:20-40). Now Ahab, king of Israel, goes and tells his wife Jezebel (1 Kings 16:31) everything Elijah did, including how he killed all the prophets with the sword. Friend, you can feel this one coming.",
-          "needs_agent_fix": true,
+          "text": "Elijah, the LORD's prophet, has just faced down the prophets of Baal, a false god, on Mount Carmel (1 Kings 18:20-40). Now Ahab, king of Israel, goes and tells his wife Jezebel (1 Kings 16:31) everything Elijah did, including how he killed all the prophets with the sword. Friend, you can feel this one coming.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Kings 19:2",
-          "text": "Her message: by this time tomorrow, she'll make his life like the lives of those he killed. Friend, that's not a threat, that's a CALENDAR INVITE.",
-          "needs_agent_fix": true,
+          "text": "Her message: she swears by her gods that by this time tomorrow, she'll make his life like the lives of those he killed.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,61 +49,69 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 19:3",
-          "question": "After everything on Mount Carmel, Elijah stands his ground and stays put when Jezebel's message comes. True or false?",
+          "question": "When Jezebel's message comes, Elijah runs for his life. True or false?",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "1 Kings 19:3",
-          "text": "Elijah was afraid and ran for his life. One message and he's GONE, faster than I hop away from a hot oven, and friend, I'm hopping with a whole gold base attached.",
-          "needs_agent_fix": true,
+          "text": "Elijah is afraid, and one message has him GONE. Faster than I hop away from a hot oven, and friend, I hop with a whole gold base attached.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "1 Kings 19:3",
-          "question": "Elijah runs until he reaches a town in Judah. Which one?",
-          "answers": [
-            {
-              "text": "Beersheba",
-              "correct": true
-            },
-            {
-              "text": "Hebron",
-              "correct": false
-            },
-            {
-              "text": "Bethlehem",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "He runs all the way to Beersheba, down in Judah, and there he leaves his servant behind.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "1 Kings 19:3-4",
-          "text": "He leaves his servant there and goes a day's journey into the wilderness, alone. Then he sits down under a broom tree, and I think he's running on empty.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 19:4",
+          "question": "Elijah leaves his servant in Beersheba. Where does Elijah himself go next?",
+          "answers": [
+            {
+              "text": "A day's journey into the wilderness",
+              "correct": true
+            },
+            {
+              "text": "Back north to Jezreel",
+              "correct": false
+            },
+            {
+              "text": "Up to Mount Carmel",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
+          "kind": "story",
+          "verses": "1 Kings 19:4",
+          "text": "There he sits down under a broom tree, all alone. I think he's running on empty.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 19:4",
@@ -122,19 +130,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "1 Kings 19:4-5",
-          "text": "Elijah says, \"I have had enough, LORD,\" and then, \"Take my life, for I am no better than my fathers.\" Then he lies down under the broom tree and falls asleep.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "1 Kings 19:4-5",
+          "text": "Elijah says, \"I have had enough, LORD,\" and then, \"Take my life, for I am no better than my fathers.\" Then he lies down under the broom tree and falls asleep.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 19:5",
@@ -149,23 +157,23 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "1 Kings 19:5-6",
-          "text": "An angel touches him and says, \"Get up and eat.\" I bet Elijah's looking around thinking, eat WHAT, friend, this is the wilderness.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "story",
+          "verses": "1 Kings 19:5",
+          "text": "An angel touches him and says, \"Get up and eat.\" I bet Elijah's lying there thinking, eat WHAT, out here in the WILDERNESS?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 19:6",
-          "question": "Right there by his head, Elijah finds a cake of ___ and a jar of water.",
+          "question": "Right there by his head, Elijah finds a cake of ___ baked over hot coals, and a jar of water.",
           "answers": [
             {
               "text": "bread",
@@ -181,42 +189,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "1 Kings 19:6",
-          "text": "Bread baked over hot coals, right by his head, and that's room service in the WILDERNESS! Elijah eats, drinks and lies right back down.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 19:7",
-          "question": "After Elijah lies back down, the angel lets him sleep and never comes back. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 19:6",
+          "text": "Bread by his head and a jar of water, friend, that's ROOM SERVICE. Elijah eats, drinks and lies right back down.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 19:7",
+          "question": "After Elijah lies back down, the angel of the LORD comes back and touches him a second time. True or false?",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 19:7",
-          "question": "The angel of the LORD touches Elijah a second time and tells him to get up and eat again. Why?",
+          "question": "The angel of the LORD tells Elijah to get up and eat again. What reason does the angel give?",
           "answers": [
             {
               "text": "The journey will be too much for him",
@@ -231,39 +239,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "1 Kings 19:8",
-          "text": "So Elijah gets up, eats and drinks. He hit snooze once, and friend, his alarm came BACK.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 19:8",
-          "question": "Strengthened by that food, Elijah walks for ___ days and nights.",
-          "answers": [
-            {
-              "text": "forty",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "seven",
-              "correct": false
-            },
-            {
-              "text": "three",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 19:7-8",
+          "text": "He hit snooze once, and friend, his alarm came BACK. So Elijah gets up, eats and drinks, and strengthened by that food, he walks forty days and forty nights.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -271,7 +255,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Kings 19:8",
-          "question": "Elijah's long walk ends at ___, the mountain of God.",
+          "question": "Elijah's long walk ends at ___, the mountain of God, where God once called to Moses, Israel's leader, from a burning bush (Exodus 3:1-4).",
           "answers": [
             {
               "text": "Horeb",
@@ -287,7 +271,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -300,8 +284,8 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 19:9",
-          "text": "On the mountain, Elijah enters a cave and spends the night, and after that walk I bet a cave feels like a five-star hotel. Then the word of the LORD comes to him: \"What are you doing here, Elijah?\"",
-          "needs_agent_fix": true,
+          "text": "At Horeb, Elijah enters a cave and spends the night. Then the word of the LORD comes to him: \"What are you doing here, Elijah?\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -309,15 +293,54 @@
           "kind": "story",
           "verses": "1 Kings 19:10",
           "text": "Elijah says he has been very zealous for the LORD, the God of Hosts. But the Israelites have forsaken the LORD's covenant, torn down His altars and killed His prophets with the sword.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Kings 19:10",
-          "question": "In the cave, Elijah tells the LORD he is the only one left. True or false?",
+          "question": "In the cave, Elijah tells the LORD the Israelites have killed His prophets. What does Elijah say about himself?",
+          "answers": [
+            {
+              "text": "He is the only one left",
+              "correct": true
+            },
+            {
+              "text": "He has friends hiding him",
+              "correct": false
+            },
+            {
+              "text": "He will go back and fight",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "story",
+          "verses": "1 Kings 19:10-11",
+          "text": "Elijah says, \"I am the only one left, and they are seeking my life as well.\" Then the LORD says, \"Go out and stand on the mountain before the LORD. Behold, the LORD is about to pass by.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "1 Kings 19:11",
+          "text": "A great and mighty wind tears into the mountains and shatters the rocks before the LORD. Rocks SHATTERING, and friend, I'd be hiding behind my own mustache.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 19:11",
+          "question": "The LORD was not in the great and mighty wind. True or false?",
           "answers": [
             {
               "text": "True",
@@ -328,70 +351,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "1 Kings 19:10-11",
-          "text": "\"I am the only one left, and they are seeking my life as well.\" Then the LORD tells him to go out and stand on the mountain, because the LORD is about to pass by.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 19:11",
-          "question": "Before the LORD on the mountain, a great and mighty ___ tears into the mountains and shatters the rocks.",
-          "answers": [
-            {
-              "text": "wind",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "flood",
-              "correct": false
-            },
-            {
-              "text": "hailstorm",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "1 Kings 19:11",
-          "text": "But the LORD was not in the wind, and after the wind comes an earthquake, and the LORD was not in the earthquake either. Rocks SHATTERING, ground shaking, and friend, I'd be hugging my gold base with BOTH ends of my mustache.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 19:12",
-          "question": "After the earthquake on the mountain, a third thing comes. What is it?",
-          "answers": [
-            {
-              "text": "A fire",
-              "correct": true
-            },
-            {
-              "text": "A hailstorm",
-              "correct": false
-            },
-            {
-              "text": "A darkness",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 19:11-12",
+          "text": "After the wind comes an earthquake, but the LORD was not in the earthquake. Then comes a fire.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -399,7 +367,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 19:12",
-          "question": "The LORD was in the fire on the mountain. True or false?",
+          "question": "The LORD was in the fire. True or false?",
           "answers": [
             {
               "text": "True",
@@ -410,15 +378,30 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "1 Kings 19:11-12",
-          "text": "Wind, earthquake, FIRE, all the big stuff, and the LORD wasn't in any of it. Then, after the fire, comes a still, small voice.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 19:12",
+          "question": "Wind, earthquake and fire have all come, and the LORD was in none of them. What comes after the fire?",
+          "answers": [
+            {
+              "text": "A still small voice",
+              "correct": true
+            },
+            {
+              "text": "A blinding flash of light",
+              "correct": false
+            },
+            {
+              "text": "A roaring rush of water",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -441,7 +424,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -449,26 +432,30 @@
           "kind": "story",
           "verses": "1 Kings 19:13",
           "text": "At the mouth of the cave, a voice asks him the same question as before: \"What are you doing here, Elijah?\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 19:14",
-          "question": "At the mouth of the cave, Elijah answers the voice with the very same words he said before. True or false?",
+          "type": "multiple_choice",
+          "verses": "1 Kings 19:10, 14",
+          "question": "At the mouth of the cave, how does Elijah answer the voice's question this time?",
           "answers": [
             {
-              "text": "True",
+              "text": "He says the same thing he said the first time",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "He says he is ready to go back to Israel",
+              "correct": false
+            },
+            {
+              "text": "He says he is sorry he ran from Jezebel",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -480,136 +467,103 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "1 Kings 19:15",
-          "text": "Now the LORD gives Elijah a job: go back the way he came, to the Desert of Damascus. He walked ALL that way to get here, friend, and step one is TURN AROUND.",
-          "needs_agent_fix": true,
+          "verses": "1 Kings 19:15-16",
+          "text": "The LORD tells Elijah to go back the way he came, to the Desert of Damascus, and anoint Hazael as king over Aram and Jehu son of Nimshi as king over Israel. Forty days to get here, friend, and step one is TURN AROUND.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Kings 19:15",
-          "question": "In the Desert of Damascus, who is Elijah told to anoint as king over Aram?",
+          "verses": "1 Kings 19:16",
+          "question": "The LORD also tells Elijah to anoint Elisha son of Shaphat, from Abel-meholah. What will Elisha be?",
           "answers": [
             {
-              "text": "Hazael",
+              "text": "Prophet in Elijah's place",
               "correct": true
             },
             {
-              "text": "Ben-hadad",
+              "text": "Priest over Israel",
               "correct": false
             },
             {
-              "text": "Naaman",
+              "text": "Judge over Israel",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 19:16",
-          "question": "The LORD also tells Elijah to anoint ___ as king over Israel and ___ to succeed him as prophet.",
-          "answers": [
-            {
-              "text": "Jehu",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Elisha",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Jonah",
-              "correct": false
-            },
-            {
-              "text": "Obadiah",
-              "correct": false
-            },
-            {
-              "text": "Gehazi",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 19:17",
+          "text": "Jehu will put to death whoever escapes Hazael's sword, and Elisha will put to death whoever escapes Jehu's. Then the LORD adds one more thing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "1 Kings 19:17",
-          "text": "Jehu will put to death whoever escapes Hazael's sword, and Elisha will put to death whoever escapes Jehu's. Then the LORD adds one more thing.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Kings 19:18",
+          "question": "The LORD tells Elijah that he really is the only one left in Israel who hasn't bowed to Baal. True or false?",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "1 Kings 19:18",
-          "question": "The LORD has reserved ___ thousand in Israel whose knees have not bowed to Baal.",
-          "answers": [
-            {
-              "text": "seven",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "ten",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 19:18-19",
+          "text": "The LORD has reserved SEVEN THOUSAND in Israel whose knees have not bowed to Baal, and Elijah said he was the only one left! So Elijah leaves and finds Elisha plowing with twelve teams of oxen, and Elisha is with the twelfth team.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "1 Kings 19:18-19",
-          "text": "SEVEN THOUSAND, and Elijah said he was the only one left! Then Elijah leaves and finds Elisha son of Shaphat, plowing with twelve teams of oxen, and he's with the twelfth.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "1 Kings 19:19",
+          "question": "Elijah passes by Elisha in the field and throws his ___ around him.",
+          "answers": [
+            {
+              "text": "cloak",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "belt",
+              "correct": false
+            },
+            {
+              "text": "rope",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 19:19",
-          "question": "Elijah passes by Elisha in the field and throws his cloak around him. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Kings 19:20",
+          "text": "Elisha leaves the oxen and RUNS after Elijah. One cloak, and the man is OUT of that field.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "1 Kings 19:20",
-          "text": "Elisha leaves the oxen and RUNS after Elijah. Twelve teams standing in the field, and he's OUT.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 19:20",
@@ -628,42 +582,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "1 Kings 19:20-21",
+          "text": "Elijah tells him, \"Go on back,\" and asks what he has done to Elisha. So Elisha turns back from him and takes his pair of oxen.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "1 Kings 19:20",
-          "text": "Elijah tells him, \"Go on back,\" and asks what he has done to him.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Kings 19:21",
-          "question": "Elisha takes his pair of oxen back to the farm and keeps working them. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 19:21",
-          "question": "What does Elisha do with his pair of oxen?",
+          "question": "Elisha takes his pair of oxen. What does he do with them?",
           "answers": [
             {
               "text": "Slaughters them and feeds the people",
@@ -674,23 +609,23 @@
               "correct": false
             },
             {
-              "text": "Sells them to pay for the trip",
+              "text": "Sells them to pay for the journey",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "1 Kings 19:21",
-          "text": "He uses the oxen's equipment for fuel, cooks the meat and gives it to the people, and they eat. Friend, he didn't just quit the job, he BURNED it and served the people.",
-          "needs_agent_fix": true,
+          "text": "He uses the oxen's equipment for fuel, cooks the meat and gives it to the people, and they eat. Friend, he didn't just quit his job, he BURNED it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 19:21",
@@ -705,7 +640,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

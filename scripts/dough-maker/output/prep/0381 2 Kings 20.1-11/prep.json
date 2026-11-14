@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 20:1",
-          "text": "In those days, Hezekiah, king of Judah, became mortally ill. Then the prophet Isaiah son of Amoz comes to him with a message from the LORD. Friend, a PROPHET at your bedside? I'd be sitting up straight and brushing the crumbs off the blanket.",
-          "needs_agent_fix": true,
+          "text": "In those days, Hezekiah, king of Judah, becomes mortally ill. Then the prophet Isaiah son of Amoz comes to him with a message from the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 20:2",
-          "text": "That's the message. Straight, no sprinkles. So Hezekiah turns his face to the wall.",
-          "needs_agent_fix": true,
+          "text": "That's a heavy message. So Hezekiah turns his face to the wall.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -142,24 +142,9 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Kings 20:5",
-          "question": "The LORD's message for Hezekiah: He has heard his prayer, and He has seen his ___.",
-          "answers": [
-            {
-              "text": "tears",
-              "correct": true
-            },
-            {
-              "text": "armies",
-              "correct": false
-            },
-            {
-              "text": "offerings",
-              "correct": false
-            }
-          ],
+          "text": "So Isaiah brings the LORD's message to Hezekiah: \"I have heard your prayer; I have seen your tears.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -232,27 +217,27 @@
           "card": 13,
           "kind": "story",
           "verses": "2 Kings 20:6",
-          "text": "And the LORD isn't done. He'll also deliver Hezekiah and this city from the hand of the king of Assyria, and friend, that's not a second helping, that's the WHOLE cookie box.",
+          "text": "And the LORD isn't done. He'll also deliver Hezekiah and the city from the hand of the king of Assyria, and friend, that's not one extra cookie, that's the WHOLE cookie box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Kings 20:6",
-          "question": "The LORD says He'll defend the city for His own sake and for the sake of whom?",
+          "question": "The LORD says He'll defend the city for His own sake and for the sake of His servant ___.",
           "answers": [
             {
-              "text": "His servant David",
+              "text": "David",
               "correct": true
             },
             {
-              "text": "His servant Moses",
+              "text": "Moses",
               "correct": false
             },
             {
-              "text": "His prophet Elijah",
+              "text": "Solomon",
               "correct": false
             }
           ],
@@ -269,7 +254,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 20:7",
-          "text": "Then Isaiah gives the people around the king an order. The prophet is calling out a recipe, and you KNOW I'm leaning in.",
+          "text": "Then Isaiah says to prepare something. A prophet with a recipe? You KNOW I'm leaning in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -278,7 +263,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 20:7",
-          "question": "What does Isaiah tell them to prepare for Hezekiah's boil?",
+          "question": "What does Isaiah say to prepare for Hezekiah's boil?",
           "answers": [
             {
               "text": "A poultice of figs",
@@ -293,14 +278,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 20:7",
-          "text": "They bring it, they put it on the boil, and Hezekiah recovers. Friend, I've got a whole bakery and NOTHING in it does that.",
+          "text": "They bring it, they put it on the boil, and Hezekiah recovers. Friend, I went from the back of a junk drawer to a gold base, so I KNOW a comeback when I see one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -315,20 +300,20 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 20:8",
-          "question": "Hezekiah had asked Isaiah what would be the ___ that the LORD will heal him.",
+          "question": "What had Hezekiah asked Isaiah for?",
           "answers": [
             {
-              "text": "sign",
+              "text": "A sign that the LORD would heal him",
               "correct": true
             },
             {
-              "text": "price",
+              "text": "A prayer for the people of the city",
               "correct": false
             },
             {
-              "text": "hour",
+              "text": "A blessing over the sons of the king",
               "correct": false
             }
           ],
@@ -384,17 +369,21 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "2 Kings 20:11",
-          "question": "When Isaiah calls out to the LORD, the shadow on the stairway of Ahaz, Hezekiah's father, goes back only five steps.",
+          "question": "Isaiah calls out to the LORD, and the LORD brings the shadow back ten steps on the stairway of ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "Ahaz",
+              "correct": true
+            },
+            {
+              "text": "Solomon",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Jehoshaphat",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -404,7 +393,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Kings 20:11",
-          "text": "TEN steps backward, friend, and I can't even get my dough to un-rise. Hezekiah's story isn't over yet, so keep that oven warm.",
+          "text": "TEN steps backward on the stairway of Ahaz, Hezekiah's father (2 Kings 16:20), and I can't even get my dough to un-rise. Hezekiah's story isn't over yet, so keep that oven warm.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

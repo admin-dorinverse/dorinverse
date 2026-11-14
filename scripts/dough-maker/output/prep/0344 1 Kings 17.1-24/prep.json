@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 17:1",
-          "text": "Ahab, king of Israel, has done more evil in the LORD's sight than every king before him, and he's serving Baal (1 Kings 16:30-31). Then Elijah the Tishbite, one of the settlers of Gilead, walks right up to the king. No intro, no warm-up, friend: he's got something to say.",
+          "text": "Ahab, king of Israel, has done more evil in the LORD's sight than every king before him, and he's serving Baal, a false god (1 Kings 16:30-31). Then Elijah the Tishbite, one of the settlers of Gilead, walks right up to the king. No intro, no warm-up, friend: he's got something to say.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -53,7 +53,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -66,20 +66,20 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 17:4",
-          "question": "Out at the Brook of Cherith, Elijah can drink the water. But what does the LORD say He's commanded to feed him there?",
+          "question": "Out at the Brook of Cherith, Elijah will drink from the brook, and the LORD has commanded ___ to feed him there.",
           "answers": [
             {
-              "text": "Ravens",
+              "text": "ravens",
               "correct": true
             },
             {
-              "text": "Doves",
+              "text": "doves",
               "correct": false
             },
             {
-              "text": "Eagles",
+              "text": "eagles",
               "correct": false
             }
           ],
@@ -97,42 +97,28 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "1 Kings 17:6",
-          "question": "Every morning and evening, the ravens bring Elijah ___ and ___.",
+          "question": "The ravens keep bringing Elijah food every morning and every evening.",
           "answers": [
             {
-              "text": "bread",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "meat",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "fish",
-              "correct": false
-            },
-            {
-              "text": "figs",
-              "correct": false
-            },
-            {
-              "text": "honey",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "1 Kings 17:7",
-          "text": "Elijah's got water and twice-a-day deliveries, living the quiet life. Then some time later, the Brook of Cherith dries up.",
-          "needs_agent_fix": true,
+          "verses": "1 Kings 17:6-7",
+          "text": "Bread and meat from the ravens, water from the brook, and Elijah's set. Then some time later, the Brook of Cherith dries up.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -237,20 +223,16 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Kings 17:11",
-          "question": "What else does Elijah ask the widow to bring him?",
+          "question": "Along with the water, Elijah asks the widow to bring him a piece of bread.",
           "answers": [
             {
-              "text": "A piece of bread",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "A cloak to keep warm",
-              "correct": false
-            },
-            {
-              "text": "A lamp for the night",
+              "text": "False",
               "correct": false
             }
           ],
@@ -417,7 +399,7 @@
           "kind": "story",
           "verses": "1 Kings 17:17",
           "text": "Later, the widow's son gets sick. His sickness grows worse and worse, until no breath is left in him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -425,7 +407,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 17:18",
-          "question": "The widow turns to Elijah. What does she ask him?",
+          "question": "With her son gone, the widow turns to Elijah. What does she ask him?",
           "answers": [
             {
               "text": "If he came to remind her of her sin",
@@ -440,7 +422,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -448,7 +430,7 @@
           "kind": "story",
           "verses": "1 Kings 17:19",
           "text": "Elijah says to her, \"Give me your son.\" He takes the boy from her arms, carries him up to the upper room where he's staying, and lays him on his own bed.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -463,38 +445,38 @@
               "correct": true
             },
             {
-              "text": "A widow who has always feared the LORD",
+              "text": "A widow who has asked him to leave her home",
               "correct": false
             },
             {
-              "text": "A widow known for her kindness in Zarephath",
+              "text": "A widow who has fed everyone in Zarephath",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Kings 17:21",
-          "question": "Elijah stretches himself out over the widow's son and cries out to the LORD again. What does he ask for?",
+          "question": "Elijah stretches himself out over the boy three times and cries out to the LORD, asking for the boy's ___ to return to him.",
           "answers": [
             {
-              "text": "For the boy's life to return to him",
+              "text": "life",
               "correct": true
             },
             {
-              "text": "For his own life in the boy's place",
+              "text": "sight",
               "correct": false
             },
             {
-              "text": "For rain to fall on the land again",
+              "text": "voice",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -513,7 +495,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -521,38 +503,34 @@
           "kind": "story",
           "verses": "1 Kings 17:23",
           "text": "Elijah brings the boy down from the upper room and gives him back to his mother. \"Look, your son is alive,\" Elijah declares, and friend, I'm over here wiping my eyes with my MUSTACHE.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Kings 17:24",
-          "question": "Now the widow tells Elijah she knows something. What is it?",
+          "question": "Even with her son alive again, the widow still isn't sure Elijah is a man of God.",
           "answers": [
             {
-              "text": "He's a man of God who speaks the LORD's truth",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The drought will be over very soon",
-              "correct": false
-            },
-            {
-              "text": "Her son will never get sick again",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "1 Kings 17:24",
-          "text": "And that's where we'll leave it for now, friend. The sky's still shut tight, and trust me, this story is just getting started.",
-          "needs_agent_fix": true,
+          "text": "She knows now that Elijah is a man of God, and that the word of the LORD from his mouth is truth. The sky's still shut tight, though, and trust me, friend, this story is just getting started.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

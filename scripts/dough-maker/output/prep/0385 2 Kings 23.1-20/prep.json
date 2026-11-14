@@ -9,32 +9,28 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 23:1",
-          "text": "King Josiah of Judah just heard the Book of the Law read, and he tore his clothes (2 Kings 22:11). The prophetess Huldah said the LORD would bring calamity on this place, but Josiah's eyes would not see it (2 Kings 22:16, 20). Then the king summons all the elders of Judah and Jerusalem.",
+          "text": "King Josiah of Judah heard the Book of the Law read, and he tore his clothes (2 Kings 22:11). The prophetess Huldah said the LORD would bring calamity on this place and its people, but Josiah's eyes would not see it (2 Kings 22:16, 20). Then the king summons all the elders of Judah and Jerusalem.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Kings 23:2",
-          "question": "Josiah goes up to the house of the LORD. Who goes up there with him?",
+          "question": "Only the elders Josiah summoned go up with him to the house of the LORD.",
           "answers": [
             {
-              "text": "Everyone from Judah and Jerusalem",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Just the elders he summoned",
-              "correct": false
-            },
-            {
-              "text": "Just his royal officials",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -57,7 +53,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -80,14 +76,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 23:3",
-          "question": "Josiah makes his covenant to follow the LORD and keep His commandments alone, and the people stay out of it.",
+          "question": "Josiah makes the covenant to follow the LORD by himself, and the people stay out of it.",
           "answers": [
             {
               "text": "True",
@@ -99,15 +95,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "2 Kings 23:3-4",
-          "text": "Everybody's in. Friend, I've been promising to reorganize my sprinkle shelf for AGES, and Josiah makes a covenant and the very next thing he does is give orders to Hilkiah the high priest, the priests second in rank and the doorkeepers.",
+          "verses": "2 Kings 23:4",
+          "text": "Friend, when I promise to scrub my ovens, I scrub ONE and sit down for a week. Not Josiah. He gives orders to Hilkiah the high priest, the priests second in rank and the doorkeepers.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -125,20 +121,20 @@
               "correct": false
             },
             {
-              "text": "The old stones from the repair work",
+              "text": "The timber bought for the repairs",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "2 Kings 23:4",
-          "text": "He burns them outside Jerusalem in the fields of Kidron and carries their ashes to Bethel. Friend, I spent YEARS in a junk drawer nobody ever cleaned out, and this man is hauling off the ASHES.",
+          "text": "He burns them outside Jerusalem in the fields of Kidron and carries their ashes to Bethel. Not even the ASHES get to stay in town, friend.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -148,7 +144,7 @@
           "question": "Josiah also does away with the priests the kings of Judah had ordained for the high places. What had those priests been doing?",
           "answers": [
             {
-              "text": "Burning incense to Baal and the sun",
+              "text": "Burning incense to the sun and moon",
               "correct": true
             },
             {
@@ -161,15 +157,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "2 Kings 23:6",
-          "text": "Next up is the Asherah pole, and Josiah brings it out of the house of the LORD, down to the Kidron Valley outside Jerusalem. Friend, I lived in a drawer FULL of “we might need this someday,” and Josiah does not do someday.",
+          "text": "Next up is the Asherah pole. Josiah brings it out of the house of the LORD, down to the Kidron Valley outside Jerusalem.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -192,7 +188,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -200,26 +196,15 @@
           "verses": "2 Kings 23:6",
           "text": "Then he throws its dust on the graves of the common people. Burned, POWDERED and scattered, that pole is not coming back for a sequel, friend, because there's not enough left of it for a CAMEO.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "2 Kings 23:7",
-          "question": "Josiah also tears down the quarters of the male shrine prostitutes that were in the house of the LORD, where women had woven tapestries for Asherah.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "He also tears down the quarters of the male shrine prostitutes that were in the house of the LORD, where the women had woven tapestries for Asherah.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -227,7 +212,7 @@
           "verses": "2 Kings 23:8",
           "text": "Then Josiah brings all the priests in from the cities of Judah. EVERY one of them, and I bet that's the group chat nobody wanted to get added to.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
@@ -250,7 +235,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -258,34 +243,34 @@
           "verses": "2 Kings 23:8",
           "text": "He even tears down the high places of the gates at the entrance of the gate of Joshua, the governor of the city. That gate sits to the left of the city gate, and now those high places are gone.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 23:9",
-          "question": "The priests of the high places come up to the altar of the LORD in Jerusalem.",
+          "question": "The priests of the high places don't come up to the altar of the LORD in Jerusalem.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "2 Kings 23:9",
-          "text": "They don't come up to the altar, but they do eat unleavened bread with their fellow priests. Off the counter but still in the kitchen, and friend, I know that spot.",
+          "text": "Still, they eat unleavened bread with their fellow priests. Not at the altar, friend, but still at the table.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -297,7 +282,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 23:10",
-          "text": "Josiah keeps going, friend, and I don't hear anybody saying “let's pick this up Monday.” Next he desecrates Topheth, in the Valley of Ben-hinnom.",
+          "text": "Josiah keeps going. Next he desecrates Topheth, a place in the Valley of Ben-hinnom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -328,7 +313,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 23:11",
-          "text": "Then Josiah removes the horses the kings of Judah had dedicated to the sun, from the very entrance to the house of the LORD. Horses for the SUN at the LORD's front door is like a rival bakery's sign hanging over MY oven.",
+          "text": "Then Josiah removes the horses the kings of Judah had dedicated to the sun from the entrance to the house of the LORD. Horses for the SUN, friend, right at the LORD's front door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -355,7 +340,7 @@
           "card": 5,
           "kind": "story",
           "verses": "2 Kings 23:11",
-          "text": "Nope, Josiah burns up the chariots of the sun. Those chariots are officially OFF the road, friend.",
+          "text": "Josiah burns up the chariots of the sun. Those chariots are officially OFF the road, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -372,18 +357,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 23:12",
-          "question": "Josiah pulls down the altars on the roof and the ones Manasseh set up in the two courtyards, pulverizes them and throws their dust into the ___ Valley.",
+          "question": "Josiah pulls down the altars on the roof and the ones Manasseh set up in the two courtyards. He ___ them there and throws their dust into the Kidron Valley.",
           "answers": [
             {
-              "text": "Kidron",
+              "text": "pulverizes",
               "correct": true
             },
             {
-              "text": "Jordan",
+              "text": "repairs",
               "correct": false
             },
             {
-              "text": "Jezreel",
+              "text": "guards",
               "correct": false
             }
           ],
@@ -394,7 +379,7 @@
           "card": 8,
           "kind": "story",
           "verses": "2 Kings 23:13",
-          "text": "Then he desecrates the high places east of Jerusalem, south of the Mount of CORRUPTION, built for Ashtoreth, Chemosh and Milcom, the abominations of the Sidonians, the Moabites and the Ammonites. With a hill called THAT, friend, nobody was expecting a petting zoo.",
+          "text": "Then he desecrates the high places east of Jerusalem, south of the Mount of Corruption. They were built for Ashtoreth, Chemosh and Milcom, the abominations of the Sidonians, the Moabites and the Ammonites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -426,7 +411,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 23:14",
-          "question": "Josiah smashes the sacred pillars to pieces, cuts down the Asherah poles and covers the sites with human bones.",
+          "question": "After smashing the sacred pillars and cutting down the Asherah poles, Josiah covers the sites with human bones.",
           "answers": [
             {
               "text": "True",
@@ -444,28 +429,24 @@
           "card": 11,
           "kind": "story",
           "verses": "2 Kings 23:15",
-          "text": "Josiah even pulls down the altar at Bethel, the high place set up by Jeroboam son of Nebat, a king of Israel who had caused Israel to sin (1 Kings 12:20). Then he burns the high place and grinds it to powder, and friend, that's not a quick wipe of the counter, that's a DEEP clean.",
+          "text": "Josiah even pulls down the altar at Bethel, the high place set up by Jeroboam son of Nebat, a king of Israel (1 Kings 12:20), who had caused Israel to sin. Then he burns the high place and grinds it to powder.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Kings 23:15",
-          "question": "At Jeroboam's high place in Bethel, Josiah ___ the Asherah pole.",
+          "question": "At Bethel, Josiah leaves the Asherah pole standing.",
           "answers": [
             {
-              "text": "burns",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "spares",
-              "correct": false
-            },
-            {
-              "text": "hides",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -487,7 +468,7 @@
               "correct": false
             },
             {
-              "text": "Moves them to a new grave",
+              "text": "Returns them to their families",
               "correct": false
             }
           ],
@@ -498,7 +479,7 @@
           "card": 14,
           "kind": "story",
           "verses": "2 Kings 23:16",
-          "text": "This is exactly what a man of God from Judah foretold by the word of the LORD back in Jeroboam's day, crying out against this very altar that a son named Josiah would be born to the house of David (1 Kings 13:1-2). The Millers had to OWN me before they carved Dorin on my handle, and this man called Josiah's name before Josiah was even BORN.",
+          "text": "This happens according to the word of the LORD proclaimed by the man of God who had foretold these things. That man had called out Josiah by name long before (1 Kings 13:2).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -506,8 +487,8 @@
           "card": 15,
           "kind": "story",
           "verses": "2 Kings 23:17",
-          "text": "The king stops. Looks. And asks, “What is this monument I see?”",
-          "needs_agent_fix": true,
+          "text": "Then something on that hillside catches the king's eye. He asks, “What is this monument I see?”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -526,7 +507,7 @@
               "correct": false
             },
             {
-              "text": "The prophet Elijah",
+              "text": "The prophet Samuel from Ramah",
               "correct": false
             }
           ],
@@ -556,27 +537,27 @@
           "card": 18,
           "kind": "story",
           "verses": "2 Kings 23:18",
-          "text": "“Let him rest,” said Josiah, and then, “Do not let anyone disturb his bones.” So they leave his bones undisturbed, along with those of the prophet who had come from Samaria, an old prophet who asked to be buried beside the man of God (1 Kings 13:31).",
+          "text": "Josiah says, “Let him rest,” and, “Do not let anyone disturb his bones.” So they leave his bones undisturbed, along with those of the prophet who had come from Samaria.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Kings 23:19",
-          "question": "Just as he did at Bethel, Josiah removes all the shrines of the high places in the cities of Samaria, set up by the kings of ___.",
+          "question": "In the cities of Samaria, what does Josiah do with the shrines of the high places?",
           "answers": [
             {
-              "text": "Israel",
+              "text": "Removes them all just as at Bethel",
               "correct": true
             },
             {
-              "text": "Moab",
+              "text": "Leaves them standing for the people",
               "correct": false
             },
             {
-              "text": "Egypt",
+              "text": "Hands them over to the priests",
               "correct": false
             }
           ],

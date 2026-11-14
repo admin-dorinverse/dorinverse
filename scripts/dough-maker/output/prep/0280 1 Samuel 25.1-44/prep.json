@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Samuel 25:1",
-          "text": "Sad news to start, friend. Samuel, Israel's prophet, has died, and all Israel gathers to mourn for him and bury him at his home in Ramah. Then David sets out and goes down to the Wilderness of Paran.",
+          "text": "Sad news to start, friend. Samuel, Israel's prophet, has died, and all Israel gathers to mourn for him and bury him at his home in Ramah. Then David, the man King Saul has been hunting (1 Samuel 24:2), sets out and goes down to the Wilderness of Paran.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -19,7 +19,7 @@
           "verses": "1 Samuel 25:2",
           "text": "Now meet a man from Maon whose business is in Carmel, and he's VERY wealthy, with a thousand goats and three thousand sheep. I've got a gold base and a mustache, and I thought I was doing alright.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -42,15 +42,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "1 Samuel 25:3",
-          "text": "His name is Nabal, and his wife is Abigail. The text says she's intelligent and beautiful.",
+          "text": "His name is Nabal, and his wife is Abigail. She's intelligent and beautiful.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -69,7 +69,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -77,7 +77,7 @@
           "verses": "1 Samuel 25:4-5",
           "text": "Out in the wilderness, David hears Nabal is shearing sheep. So he sends ten young men up to Carmel to greet Nabal in his name.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -100,7 +100,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -108,10 +108,29 @@
           "verses": "1 Samuel 25:7",
           "text": "Then the message makes its case: when Nabal's shepherds were with them, David's men didn't harass them, and nothing of theirs went missing the whole time they were in Carmel.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Samuel 25:8",
+          "question": "David's message tells Nabal to ask his own young men if the story checks out.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 25:8",
@@ -131,41 +150,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Samuel 25:8",
-          "question": "David's message tells Nabal to ask his own young men if the story checks out.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "1 Samuel 25:9",
-          "text": "David's men deliver every word to Nabal, and then they wait. Like hitting send on a big text and watching the three dots show up... and disappear.",
+          "text": "David's men deliver every word to Nabal, and then they wait. Like hitting send on a big text and staring at those three little dots.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 25:10",
-          "question": "Nabal finally answers David's men. What does he say about David?",
+          "question": "Then Nabal answers David's men. What does he say about David?",
           "answers": [
             {
               "text": "He asks who David even is",
@@ -181,22 +181,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "1 Samuel 25:10",
-          "text": "Then Nabal adds, \"Many servants these days are breaking away from their masters.\" I think he's calling David a runaway servant, and friend, that's a man who woke up and chose CHAOS.",
+          "text": "Then Nabal adds, \"Many servants these days are breaking away from their masters.\" Friend, that's a man who woke up and chose CHAOS.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Samuel 25:11",
-          "question": "Nabal says his bread, water and meat are for his ___, not for men whose origin he doesn't know.",
+          "question": "Nabal asks why he should give his bread, his water and the meat he slaughtered for his ___ to men whose origin he doesn't know.",
           "answers": [
             {
               "text": "shearers",
@@ -213,50 +213,57 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "1 Samuel 25:12-13",
-          "text": "David's men turn around and report every word, and David says, \"Strap on your swords!\" Friend, we went from wishing the man peace to THIS.",
+          "verses": "1 Samuel 25:12",
+          "text": "David's men turn around, head back and report every word to him.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Samuel 25:13",
-          "question": "About ___ men follow David, while two hundred stay with the supplies.",
+          "question": "Nabal has thrown David's greeting back at him. What does David tell his men?",
           "answers": [
             {
-              "text": "four hundred",
-              "correct": true,
-              "blank": 1
+              "text": "Strap on your swords",
+              "correct": true
             },
             {
-              "text": "six hundred",
+              "text": "Let it go and move on",
               "correct": false
             },
             {
-              "text": "three thousand",
+              "text": "Send a second message",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
-          "verses": "1 Samuel 25:14",
-          "text": "Meanwhile, one of Nabal's young men tells Abigail that David sent messengers to greet their master, and Nabal screamed at them. Who screams at men wishing him PEACE?",
+          "verses": "1 Samuel 25:13",
+          "text": "David and all his men strap on their swords. About four hundred follow David, while two hundred stay with the supplies, and friend, this went from zero to FOUR HUNDRED real quick.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
+          "kind": "story",
+          "verses": "1 Samuel 25:14",
+          "text": "Meanwhile, one of Nabal's young men tells Abigail that David sent messengers to greet their master, and Nabal screamed at them. Who screams at men wishing him PEACE?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 25:16",
@@ -272,30 +279,31 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 25:17",
-          "question": "The young man tells Abigail to think carefully about what to do. What does he say looms over Nabal and his household?",
+          "question": "The young man warns Abigail to think carefully, because ___ looms over Nabal and all his household.",
           "answers": [
             {
-              "text": "Disaster",
-              "correct": true
+              "text": "disaster",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Famine",
+              "text": "famine",
               "correct": false
             },
             {
-              "text": "Sickness",
+              "text": "sickness",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -309,7 +317,7 @@
           "verses": "1 Samuel 25:18",
           "text": "Abigail hurries and loads donkeys with two hundred loaves of bread, two skins of wine, five butchered sheep, roasted grain, a hundred clusters of raisins and two hundred cakes of figs. I've packed a LOT of cookie boxes with this mustache, friend, and I'm impressed.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -328,7 +336,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -336,15 +344,15 @@
           "verses": "1 Samuel 25:19-20",
           "text": "She sends her young men ahead and rides right behind them on her donkey. In a mountain ravine, she sees David and his men coming down toward her.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "1 Samuel 25:21",
-          "text": "Now David had just been saying he protected everything Nabal owned in the wilderness for nothing. Nabal paid him back evil for good.",
+          "text": "Now David had just been saying that protecting everything Nabal owned out in the wilderness was all in vain. He says Nabal paid him back evil for good.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -367,37 +375,33 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Samuel 25:23",
-          "question": "Abigail is face to face with David and his armed men. What does she do when she sees David?",
+          "question": "When Abigail sees David and his men coming, she hides from them in the ravine.",
           "answers": [
             {
-              "text": "Gets off and bows facedown",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Turns back toward home",
-              "correct": false
-            },
-            {
-              "text": "Calls her young men back",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 25:24",
-          "question": "At David's feet, Abigail asks for the blame to be on her alone.",
+          "question": "Bowing at David's feet, Abigail asks for the blame to be on her alone.",
           "answers": [
             {
               "text": "True",
@@ -409,7 +413,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -417,18 +421,19 @@
           "verses": "1 Samuel 25:25",
           "text": "Then she talks about her own husband. She tells David to pay no attention to this scoundrel Nabal, because he lives up to his name.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 25:25",
-          "question": "According to Abigail, what does the name Nabal mean?",
+          "question": "Abigail says Nabal lives up to his name, because his name means ___.",
           "answers": [
             {
               "text": "Fool",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Proud",
@@ -440,15 +445,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "1 Samuel 25:25",
-          "text": "Imagine going around the room on your first day at a new job and saying, \"Hi, I'm Fool.\" Abigail also tells David she never saw the young men he sent.",
+          "text": "Abigail also tells David that she never saw the young men he sent.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -472,18 +477,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "1 Samuel 25:27-28",
-          "text": "She asks David to give her gift to the young men who follow him, and to forgive her offense. Then she looks ahead to what the LORD will do for David.",
+          "verses": "1 Samuel 25:27",
+          "text": "She asks David to give her gift to the young men who follow him.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "1 Samuel 25:28",
+          "text": "She asks him to forgive her offense. Then she looks ahead to what the LORD will do for David.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 25:28",
@@ -503,18 +516,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "1 Samuel 25:29",
           "text": "If anyone comes after David's life, she says the LORD will keep it bound securely in the bundle of the living, and his enemies will be flung away \"like stones from a sling.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Samuel 25:30",
@@ -530,10 +543,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 25:31",
@@ -553,65 +566,61 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "1 Samuel 25:32-33",
-          "text": "David says, \"Blessed be the LORD, the God of Israel, who sent you to meet me this day!\" Then he blesses her discernment, and her too.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "1 Samuel 25:33",
-          "question": "Why does David say Abigail is blessed?",
+          "verses": "1 Samuel 25:32",
+          "question": "Abigail has finished speaking, and David answers with a blessing. Who does he bless for sending her to meet him?",
           "answers": [
             {
-              "text": "She kept him from bloodshed and revenge",
+              "text": "The LORD the God of Israel",
               "correct": true
             },
             {
-              "text": "She told him where Saul was camped",
+              "text": "The prophet Samuel",
               "correct": false
             },
             {
-              "text": "She promised him all of Nabal's flock",
+              "text": "King Saul",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 19,
           "kind": "story",
-          "verses": "1 Samuel 25:34",
-          "text": "David's honest about how close it was. If she hadn't come quickly, he says, no male belonging to Nabal would have been left alive by morning light.",
+          "verses": "1 Samuel 25:33-34",
+          "text": "Then David blesses her discernment, and her too, because today she kept him from bloodshed and from avenging himself by his own hand. If she hadn't come quickly, he says, no male belonging to Nabal would have been left alive by morning light.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 20,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Samuel 25:35",
-          "question": "David turns down the gift Abigail brought him.",
+          "question": "David accepts what Abigail brought him. Then what does he tell her?",
           "answers": [
             {
-              "text": "True",
+              "text": "Go home in peace",
+              "correct": true
+            },
+            {
+              "text": "Ride with us to Carmel",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Stay here with my men",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -625,7 +634,7 @@
           "verses": "1 Samuel 25:36",
           "text": "Abigail heads home, and there's Nabal in the house, holding a feast fit for a king, in high spirits and very drunk. Friend, the man is partying like nothing happened.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -644,7 +653,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -652,30 +661,30 @@
           "verses": "1 Samuel 25:37",
           "text": "Morning comes, and Nabal is sober. Abigail tells him everything.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Samuel 25:37",
-          "question": "Abigail tells a sober Nabal how close David came to attacking and how she rode out to meet him. How does Nabal take the news?",
+          "question": "When Nabal hears what happened with David, how does he take the news?",
           "answers": [
             {
-              "text": "His heart fails and he becomes like a stone",
+              "text": "His heart fails within him",
               "correct": true
             },
             {
-              "text": "He laughs and goes back to the feast",
+              "text": "He flies into a rage",
               "correct": false
             },
             {
-              "text": "He rides out to apologize to David",
+              "text": "He weeps and asks forgiveness",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -698,7 +707,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -706,62 +715,62 @@
           "verses": "1 Samuel 25:39",
           "text": "David hears Nabal is dead. He says, \"Blessed be the LORD, who has upheld my cause against the reproach of Nabal and has restrained His servant from evil.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Samuel 25:39",
-          "question": "David says the LORD has brought the ___ of Nabal down upon his own head.",
+          "question": "David says the LORD has brought something down on Nabal's own head. What is it?",
           "answers": [
             {
-              "text": "wickedness",
-              "correct": true,
-              "blank": 1
+              "text": "His own wickedness",
+              "correct": true
             },
             {
-              "text": "wealth",
+              "text": "A great famine",
               "correct": false
             },
             {
-              "text": "flocks",
+              "text": "David's sword",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "1 Samuel 25:39",
-          "text": "Then David sends word to Abigail.",
+          "text": "Then David sends word to Abigail. Friend, lean in for this one.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Samuel 25:39-40",
-          "question": "What's David's message to Abigail?",
+          "question": "David's message asks Abigail to become his ___.",
           "answers": [
             {
-              "text": "He asks her to become his wife",
-              "correct": true
+              "text": "wife",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He asks her for more supplies",
+              "text": "advisor",
               "correct": false
             },
             {
-              "text": "He asks her to tend his flocks",
+              "text": "ally",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -769,7 +778,7 @@
           "verses": "1 Samuel 25:41",
           "text": "Abigail bows facedown and says, \"Here is your servant, ready to serve and to wash the feet of my lord's servants.\" Not even his feet, friend, his SERVANTS' feet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -788,46 +797,61 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "1 Samuel 25:42-43",
-          "text": "With five of her maidens, she follows David's messengers and becomes his wife. David had also married Ahinoam of Jezreel, so both of them are his wives.",
+          "verses": "1 Samuel 25:42",
+          "text": "With five of her maidens, she follows David's messengers and becomes his wife.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Samuel 25:44",
-          "question": "And Michal, Saul's daughter and David's wife? What has Saul done with her?",
+          "type": "true_false",
+          "verses": "1 Samuel 25:43",
+          "question": "Abigail is David's only wife.",
           "answers": [
             {
-              "text": "Given her to another man",
-              "correct": true
-            },
-            {
-              "text": "Sent her back to David",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "Kept her home in Gibeah",
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Samuel 25:44",
+          "question": "Saul, Israel's king, has given his daughter Michal, David's wife, to another man.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "1 Samuel 25:44",
-          "text": "Saul gave Michal to Palti son of Laish, from Gallim. We'll set this batch on the cooling rack for now, friend, but David and Saul? Oh, there's a LOT more coming out of this oven.",
+          "text": "Saul gave Michal to Palti son of Laish, from Gallim. And friend, this David and Saul batch is NOT done baking yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

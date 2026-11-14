@@ -8,9 +8,9 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Kings 6:1",
-          "text": "Elisha is a prophet in Israel (2 Kings 5:8), and he meets with a group called the sons of the prophets. One day they come to him with a problem about the place where they all meet.",
-          "needs_agent_fix": true,
+          "verses": "2 Kings 6:1-2",
+          "text": "Elisha is a prophet in Israel (2 Kings 5:8), and he meets with a group called the sons of the prophets. They ask Elisha to let them go down to the Jordan and build. But first, they tell him about a problem with the place where they meet with him now.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,30 +18,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 6:1",
-          "question": "What's the problem with the place where the sons of the prophets meet with Elisha?",
+          "question": "The sons of the prophets want to build a new place by the Jordan. What's the problem with the place where they meet with Elisha now?",
           "answers": [
             {
               "text": "It's too small for them",
               "correct": true
             },
             {
-              "text": "It's too far from the river",
+              "text": "It's too noisy for them",
               "correct": false
             },
             {
-              "text": "It's falling apart around them",
+              "text": "It's too cold for them",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 6:2",
-          "text": "Their plan: head down to the Jordan, each one gets a log, and they build themselves a place to live there. Me? I'd show up dragging a twig with my mustache, yelling that I BROUGHT MY PART.",
-          "needs_agent_fix": true,
+          "text": "Here's the plan: each of them gets a log at the Jordan, and they build themselves a place to live there. Me? I'd show up dragging a twig with my mustache, yelling that I BROUGHT MY PART.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -60,11 +60,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "2 Kings 6:3",
+          "text": "They're about to head out. Then one of them speaks up to Elisha.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 6:3",
@@ -83,31 +91,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "2 Kings 6:3-4",
-          "text": "“I will come,” Elisha says, and when they reach the Jordan, they start cutting down trees. That's asking your boss to help you move, and he actually says YES.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "2 Kings 6:5",
-          "text": "Everybody's chopping. Then one man swings at a tree, and the iron axe head comes right off the handle.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Kings 6:5",
-          "question": "The man is cutting trees beside the Jordan when the iron axe head comes off, and it falls into the water.",
+          "verses": "2 Kings 6:3",
+          "question": "Elisha tells the man he will come with them to the Jordan.",
           "answers": [
             {
               "text": "True",
@@ -118,15 +110,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "2 Kings 6:3-4",
+          "text": "“I will come,” Elisha says, and when they reach the Jordan, they start cutting down trees. That's asking your boss to help you move, and he actually says YES.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "story",
+          "verses": "2 Kings 6:5",
+          "text": "Everybody's chopping. Then one man swings at a tree, and something goes wrong.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Kings 6:5",
+          "question": "While the man is cutting down a tree by the Jordan, the iron axe head falls into the water.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 6:5",
-          "question": "The man cries out to Elisha about the lost iron axe head. What makes it even worse is that it was ___.",
+          "question": "The man cries out to Elisha about the lost iron axe head: it was ___.",
           "answers": [
             {
               "text": "borrowed",
@@ -142,19 +169,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 12,
           "kind": "story",
           "verses": "2 Kings 6:5-6",
           "text": "Borrowed. That's borrowing your buddy's car and calling him from the side of the road like, “Sooo… about your car.” Then Elisha, the man of God, asks the man one question.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 6:6",
@@ -173,23 +200,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 14,
           "kind": "story",
           "verses": "2 Kings 6:6",
-          "text": "The man shows Elisha the spot. Me? I'd have dived in face-first and sunk straight to the bottom, gold base and all.",
-          "needs_agent_fix": true,
+          "text": "The man shows Elisha the spot. Now everybody's just staring at one patch of river. Waiting.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 6:6",
-          "question": "Elisha doesn't go into the water after the axe head. He cuts a ___ and throws it right where it fell.",
+          "question": "Elisha cuts a ___ and throws it where the axe head fell.",
           "answers": [
             {
               "text": "stick",
@@ -205,11 +232,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 6:6",
@@ -228,15 +255,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 17,
+          "kind": "story",
+          "verses": "2 Kings 6:7",
+          "text": "The iron is floating on the Jordan. “Lift it out,” Elisha tells the man.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 6:7",
-          "question": "Elisha lifts the floating axe head out of the water himself and hands it back to the man.",
+          "question": "When Elisha tells him to lift it out, the man has to dive into the water after the axe head.",
           "answers": [
             {
               "text": "True",
@@ -247,15 +282,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 19,
           "kind": "story",
           "verses": "2 Kings 6:7",
-          "text": "“Lift it out,” Elisha says, and the man reaches out his hand and takes it. IRON. FLOATING. Friend, I sat in the back of a junk drawer for YEARS, and that axe head went into the river and came right back up. I'm not saying I'm jealous… I'm a LITTLE jealous.",
-          "needs_agent_fix": true,
+          "text": "He just reaches out his hand and takes it. IRON. FLOATING. Friend, I spent YEARS in the back of a junk drawer waiting for somebody to pull me out, and this axe head gets out of a RIVER just like that.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

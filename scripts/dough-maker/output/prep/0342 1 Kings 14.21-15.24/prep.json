@@ -15,32 +15,32 @@
         },
         {
           "card": 2,
-          "kind": "story",
-          "verses": "1 Kings 14:23-24",
-          "text": "Under Rehoboam, Judah builds high places, sacred pillars and Asherah poles on every high hill and under every green tree. EVERY green tree, baker, and there are even male shrine prostitutes in the land.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Kings 14:22",
+          "question": "Under Rehoboam, Judah does evil in the sight of the LORD. How much do their sins provoke Him, compared with their fathers?",
+          "answers": [
+            {
+              "text": "More than all their fathers",
+              "correct": true
+            },
+            {
+              "text": "Less than their fathers",
+              "correct": false
+            },
+            {
+              "text": "About as much as their fathers",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Kings 14:22",
-          "question": "With all those high places and Asherah poles going up, how does Judah stand in the LORD's sight?",
-          "answers": [
-            {
-              "text": "They provoke Him more than their fathers did",
-              "correct": true
-            },
-            {
-              "text": "They provoke Him less than their fathers did",
-              "correct": false
-            },
-            {
-              "text": "They please Him just as their fathers did",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "1 Kings 14:23-24",
+          "text": "Judah builds high places, sacred pillars and Asherah poles on every high hill and under every green tree. There are even male shrine prostitutes in the land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "1 Kings 14:25",
-          "text": "In the fifth year of Rehoboam's reign, Shishak king of Egypt attacks Jerusalem. And friend, Egypt did NOT come for the sightseeing.",
+          "text": "In the fifth year of Rehoboam's reign, Shishak king of Egypt attacks Jerusalem. And friend, he did NOT come for the sightseeing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -145,7 +145,7 @@
               "correct": true
             },
             {
-              "text": "Into the house of the LORD",
+              "text": "Into the royal treasury",
               "correct": false
             },
             {
@@ -160,7 +160,7 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Kings 14:29",
-          "text": "The rest of Rehoboam's acts are in the Book of the Chronicles of the Kings of Judah. And Jeroboam is still up there ruling Israel, the tribes that broke away from Rehoboam.",
+          "text": "The rest of Rehoboam's acts are in the Book of the Chronicles of the Kings of Judah. And Jeroboam is still reigning over Israel all this time (1 Kings 14:20).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -169,15 +169,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 14:30",
-          "question": "True or false: Rehoboam and Jeroboam king of Israel make peace after a few years.",
+          "question": "True or false: There is war between Rehoboam and Jeroboam king of Israel throughout their days.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -187,7 +187,7 @@
           "card": 13,
           "kind": "story",
           "verses": "1 Kings 14:31",
-          "text": "After seventeen years on the throne, Rehoboam rests with his fathers, and his son Abijam reigns in his place.",
+          "text": "Then Rehoboam rests with his fathers, and his son Abijam reigns in his place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -224,7 +224,7 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Kings 15:1-2",
-          "text": "Now Abijam son of Rehoboam becomes king of Judah in the eighteenth year of Jeroboam son of Nebat, and he reigns in Jerusalem three years. His mother's name is Maacah daughter of Abishalom.",
+          "text": "Now Abijam son of Rehoboam becomes king of Judah in the eighteenth year of Jeroboam son of Nebat, and he reigns in Jerusalem three years.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -233,7 +233,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 15:3",
-          "question": "Which way does Abijam walk?",
+          "question": "Which way does Abijam son of Rehoboam walk?",
           "answers": [
             {
               "text": "In all the sins of his father",
@@ -309,7 +309,7 @@
           "card": 6,
           "kind": "story",
           "verses": "1 Kings 15:5",
-          "text": "It's for David's sake, because David did what was right in the eyes of the LORD and didn't turn aside from anything the LORD commanded all his life. Well... ALMOST anything.",
+          "text": "It's for David's sake, because David did what was right in the eyes of the LORD and didn't turn aside from anything the LORD commanded all his life, except in one matter.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -358,7 +358,7 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "1 Kings 15:7-8",
+          "verses": "1 Kings 15:2, 7-8",
           "text": "Abijam's acts are in the Book of the Chronicles of the Kings of Judah, and then he rests with his fathers and his son Asa reigns in his place. Three years, friend, and I've had dough in the freezer longer than that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -367,7 +367,7 @@
           "card": 10,
           "kind": "story",
           "verses": "1 Kings 15:9-10",
-          "text": "Asa becomes king of Judah in the twentieth year of Jeroboam's reign over Israel, and he reigns in Jerusalem FORTY-ONE years. His dad got three, so that's not a reign, friend, that's a career.",
+          "text": "Asa becomes king of Judah in the twentieth year of Jeroboam's reign over Israel, and he reigns in Jerusalem FORTY-ONE years. That's not a reign, friend, that's a career.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -376,22 +376,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 15:10",
-          "question": "Asa's grandmother has a name we heard when his father Abijam took the throne. Who is she?",
+          "question": "Who is Asa's grandmother?",
           "answers": [
             {
               "text": "Maacah daughter of Abishalom",
               "correct": true
             },
             {
-              "text": "Naamah the Ammonite",
+              "text": "Michal daughter of Saul",
               "correct": false
             },
             {
-              "text": "Bathsheba wife of Uriah",
+              "text": "Achsah daughter of Caleb",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -475,7 +475,7 @@
           "card": 17,
           "kind": "story",
           "verses": "1 Kings 15:13",
-          "text": "Then Asa chops down her pole and burns it in the Kidron Valley. I don't know what the holidays looked like after that, but I bet they were QUIET.",
+          "text": "Then Asa chops down her pole and burns it in the Kidron Valley. Not tucked in the back of a junk drawer for later, friend. Chopped AND burned.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -503,7 +503,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Kings 15:14",
-          "question": "The high places stay standing in Judah. So what's true of Asa's heart?",
+          "question": "What does the text say about King Asa's heart?",
           "answers": [
             {
               "text": "Fully devoted to the LORD all his days",
@@ -600,24 +600,24 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Kings 15:19",
-          "question": "Asa asks Ben-hadad king of Aram to break his ___ with Baasha king of Israel.",
+          "question": "What does Asa ask Ben-hadad king of Aram to do?",
           "answers": [
             {
-              "text": "treaty",
+              "text": "Break his treaty with Baasha king of Israel",
               "correct": true
             },
             {
-              "text": "trade",
+              "text": "Send his soldiers to guard Jerusalem",
               "correct": false
             },
             {
-              "text": "ranks",
+              "text": "Make peace between Judah and Israel",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -660,15 +660,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Kings 15:21",
-          "question": "True or false: When Baasha learns his cities are falling, he keeps right on fortifying Ramah.",
+          "question": "True or false: When Baasha learns his cities are falling, he stops fortifying Ramah.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -732,7 +732,7 @@
           "card": 14,
           "kind": "story",
           "verses": "1 Kings 15:23",
-          "text": "The rest of Asa's acts, all his might, all his accomplishments and the cities he built, are in the Book of the Chronicles of the Kings of Judah. Forty-one years, baker, so that book has some PAGES.",
+          "text": "The rest of Asa's acts, all his might, all his accomplishments and the cities he built, are in the Book of the Chronicles of the Kings of Judah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
