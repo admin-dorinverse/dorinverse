@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 65:1",
-          "text": "Right before this, the prophet prayed for the LORD to tear open the heavens and come down, and he asked whether the LORD would keep silent (Isaiah 64:1, 12). Now the LORD speaks. And He starts with people who never asked for Him and never even looked for Him.",
+          "text": "Right before this, God's people pray for the LORD to tear open the heavens and come down, and they ask whether He will keep silent (Isaiah 64:1, 12). Now the LORD speaks. He starts with people who never asked for Him and never even looked for Him.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -42,22 +42,14 @@
           "verses": "Isaiah 65:1",
           "text": "To a nation that didn't even call His name, He says, 'Here I am! Here I am!' Friend, after all my years in that junk drawer, I'd have CRIED if anybody said that to me just ONCE.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Isaiah 65:2",
-          "text": "All day long, the LORD says, He has held out His hands to an obstinate people who walk in the wrong path. ALL DAY, friend. My mustache gives out holding a cookie tray for ten minutes.",
-          "needs_agent_fix": true,
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 65:2",
-          "question": "The LORD holds out His hands all day to these people. What does He say they follow?",
+          "question": "All day long, the LORD holds out His hands to an obstinate people who walk in the wrong path. What does He say they follow?",
           "answers": [
             {
               "text": "Their own imaginations",
@@ -76,15 +68,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Isaiah 65:3",
-          "text": "And the LORD says these people provoke Him continually. Not behind His back, friend. Right to His face.",
+          "text": "And the LORD says these people continually provoke Him to His face. Not behind His back, friend, RIGHT to His face.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 65:3",
@@ -107,50 +99,27 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Isaiah 65:4",
-          "text": "It keeps going. They sit among the graves and spend nights in secret places, and I did years in a dark drawer and NEVER once volunteered for it.",
+          "text": "It keeps going. They sit among the graves, spend nights in secret places, and eat the meat of pigs and polluted broth from their bowls.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Isaiah 65:5",
+          "text": "Then they say, 'Keep to yourself; do not come near me, for I am holier than you!' That's somebody covered head to toe in cookie dough telling YOU to go wash up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 65:4",
-          "question": "Along with polluted broth from their bowls, these people are eating the meat of ___.",
-          "answers": [
-            {
-              "text": "pigs",
-              "correct": true
-            },
-            {
-              "text": "lambs",
-              "correct": false
-            },
-            {
-              "text": "goats",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Isaiah 65:5",
-          "text": "Then they tell people, 'Keep to yourself; do not come near me, for I am holier than you!' That's a baker covered head to toe in flour telling YOU to go wash up.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 65:5",
-          "question": "The LORD hears people saying they're holier than everyone else. What does He say people like that are to Him?",
+          "question": "These people say, 'Keep to yourself; do not come near me…' What does the LORD say people like that are to Him?",
           "answers": [
             {
               "text": "Smoke in His nostrils",
@@ -165,7 +134,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Isaiah 65:5",
+          "question": "The LORD also says people like that are a fire that burns all day long.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Isaiah 65:6",
+          "text": "Then the LORD says, 'Behold, it is written before Me…'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -173,7 +169,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 65:6",
-          "question": "The LORD says it is written before Him, and after the obstinate people have provoked Him to His face, He will keep silent.",
+          "question": "After all this, the LORD says He will keep silent.",
           "answers": [
             {
               "text": "True",
@@ -190,56 +186,29 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "Isaiah 65:6",
-          "text": "No silence here. The LORD says He will repay, and He'll pay it back right into their laps.",
+          "verses": "Isaiah 65:6-7",
+          "text": "He says He will repay, right into their laps, both for their iniquities and for those of their fathers.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Isaiah 65:7",
-          "question": "The LORD says He will repay their iniquities and also the iniquities of their ___.",
+          "question": "The LORD says He'll repay these people. What does He say they did on the mountains and the hills?",
           "answers": [
             {
-              "text": "fathers",
+              "text": "Burned incense and scorned Him",
               "correct": true
             },
             {
-              "text": "neighbors",
+              "text": "Hid their silver from the priests",
               "correct": false
             },
             {
-              "text": "enemies",
+              "text": "Gathered armies to fight Judah",
               "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Isaiah 65:7",
-          "text": "And He names it plainly. They burned incense on the mountains and scorned Him on the hills.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 65:7",
-          "question": "For their former deeds, the LORD says He will measure only part of the payment into their laps.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -255,7 +224,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 65:8",
-          "text": "Then the LORD paints a picture. He says it's like new wine found in a cluster of grapes, and men say, 'Do not destroy it, for it contains a blessing.'",
+          "text": "Then the LORD paints a picture: new wine found in a cluster of grapes. Men say to leave that cluster alone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -264,18 +233,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 65:8",
-          "question": "Men won't destroy a cluster of grapes with new wine in it, because it contains a blessing. In the same way, what does the LORD say He'll do for His servants?",
+          "question": "In the LORD's picture, why do men say to leave a cluster of grapes with new wine in it alone?",
           "answers": [
             {
-              "text": "Not destroy them all",
+              "text": "It contains a blessing",
               "correct": true
             },
             {
-              "text": "Test them one more time",
+              "text": "It belongs to the king",
               "correct": false
             },
             {
-              "text": "Leave them on their own",
+              "text": "It is not yet ripe",
               "correct": false
             }
           ],
@@ -285,9 +254,9 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Isaiah 65:9",
-          "text": "The LORD says He'll bring forth descendants from Jacob, Israel's forefather, and heirs from Judah, the tribe of Jacob's son Judah. HEIRS, friend! The only thing I ever inherited was a 25-cent price sticker.",
-          "needs_agent_fix": true,
+          "verses": "Isaiah 65:8-9",
+          "text": "So the LORD says He will not destroy all His servants. He'll bring forth descendants from Jacob, whom God renamed Israel (Genesis 35:10), and heirs from Judah, one of Jacob's sons (Genesis 35:23).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -295,7 +264,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 65:9",
-          "question": "The LORD says His elect will possess His mountains, and His servants will dwell there.",
+          "question": "The LORD says His servants will dwell on His mountains.",
           "answers": [
             {
               "text": "True",
@@ -344,7 +313,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Isaiah 65:11",
-          "text": "Then the LORD turns back to the ones who forsake Him and forget His holy mountain. Friend, I lose my timer under a pile of dough, but a whole MOUNTAIN?",
+          "text": "Then the LORD turns to the ones who forsake Him and forget His holy mountain.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -364,7 +333,7 @@
               "correct": false
             },
             {
-              "text": "For the poor",
+              "text": "For Molech",
               "correct": false
             }
           ],
@@ -375,7 +344,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Isaiah 65:11-12",
-          "text": "They fill bowls of mixed wine for Destiny. And the LORD says, 'I will destine you for the sword, and you will all kneel down to be slaughtered.'",
+          "text": "They also fill bowls of mixed wine for Destiny, and like Fortune, Destiny is a false god. The LORD tells them, 'I will destine you for the sword, and you will all kneel down to be slaughtered…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -462,25 +431,10 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Isaiah 65:15",
-          "question": "The ones who forsook the LORD will leave behind their ___ as a curse for His chosen ones.",
-          "answers": [
-            {
-              "text": "name",
-              "correct": true
-            },
-            {
-              "text": "land",
-              "correct": false
-            },
-            {
-              "text": "silver",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The ones who forsook the LORD will leave behind their name as a curse for His chosen ones. And the Lord GOD will slay them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -506,7 +460,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Isaiah 65:16",
-          "text": "Whoever invokes a blessing or takes an oath in the land will do it by the God of truth. Not like the expired coupon I shared that drawer with, swearing up and down it was STILL GOOD.",
+          "text": "Whoever invokes a blessing or takes an oath in the land will do it by the God of truth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

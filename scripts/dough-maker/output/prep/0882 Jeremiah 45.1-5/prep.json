@@ -8,72 +8,48 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Jeremiah 45:1",
-          "text": "Jeremiah the prophet has a word from the LORD, and it's for one man: Baruch son of Neriah, who's been getting Jeremiah's words down. A personal word from the LORD, friend, for ONE guy. The most personal message I ever got was a price sticker that said 25 CENTS.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 45:1-2",
+          "text": "Jeremiah the prophet has a word for Baruch son of Neriah, the man writing Jeremiah's words on a scroll as Jeremiah speaks them, in the fourth year of Jehoiakim son of Josiah, king of Judah. It's from the LORD, the God of Israel, and it's for Baruch, BY NAME. Friend, back in that junk drawer, if anybody had called MY name, I'd have jumped so high my hat would still be up there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Jeremiah 45:1",
-          "question": "When this word comes, Baruch is writing Jeremiah's words down on a ___.",
-          "answers": [
-            {
-              "text": "scroll",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wall",
-              "correct": false
-            },
-            {
-              "text": "tablet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Jeremiah 45:3",
+          "text": "The LORD starts by quoting Baruch's own words back to him. And they open with \"Woe is me…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Jeremiah 45:1",
-          "text": "Jeremiah talks and Baruch writes, word for word, in the fourth year of Jehoiakim son of Josiah, king of Judah. Baruch is basically Jeremiah's voice-to-text, except voice-to-text never gets a HAND CRAMP.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Jeremiah 45:3",
+          "question": "Baruch cries \"Woe is me.\" What does he say the LORD has added to his pain?",
+          "answers": [
+            {
+              "text": "Sorrow",
+              "correct": true
+            },
+            {
+              "text": "Strength",
+              "correct": false
+            },
+            {
+              "text": "Courage",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Jeremiah 45:3",
-          "question": "The LORD speaks to Baruch by name and starts with Baruch's own words. How has Baruch been feeling?",
-          "answers": [
-            {
-              "text": "Worn out with no rest",
-              "correct": true
-            },
-            {
-              "text": "Angry at Jeremiah",
-              "correct": false
-            },
-            {
-              "text": "Afraid of the king",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 45:3",
-          "question": "Baruch says the LORD has added sorrow on top of the pain he already had.",
+          "question": "Baruch says he has found no rest.",
           "answers": [
             {
               "text": "True",
@@ -84,46 +60,55 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Jeremiah 45:3",
+          "text": "Baruch is worn out with groaning. And I know worn out, friend: years of stamping wore my edges so smooth, my cookies came out looking like a GUESS.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Jeremiah 45:3-4",
-          "text": "Baruch's complaint gets an ANSWER, friend, which is more than my groaning ever got from the back of a junk drawer. Jeremiah passes along the LORD's answer, and it starts with the whole land.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 45:4",
+          "text": "Then Jeremiah gets more of the LORD's word to pass along to Baruch, and it starts with the whole land.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 45:4",
-          "question": "Throughout the land, the LORD says He will demolish and uproot. Whose work is coming down?",
+          "question": "Throughout the land, the LORD says He will ___ what He has built and uproot what He has planted.",
           "answers": [
             {
-              "text": "What He Himself built and planted",
-              "correct": true
+              "text": "demolish",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "What the kings of Judah built and planted",
+              "text": "guard",
               "correct": false
             },
             {
-              "text": "What Babylon built and planted",
+              "text": "repair",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Jeremiah 45:5",
-          "text": "Then the LORD turns from the whole land right back to Baruch, with a question about what Baruch has been reaching for. Friend, I know reaching: I once stretched my mustache for the top shelf and brought the WHOLE cookie jar down on my hat.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 45:4-5",
+          "text": "Then the LORD turns from the whole land right back to Baruch, with a question about what Baruch is looking for.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -131,22 +116,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 45:5",
-          "question": "The LORD asks Baruch about what he's reaching for. What does He ask if Baruch is seeking?",
+          "question": "The LORD asks Baruch whether he's seeking something. What is it?",
           "answers": [
             {
               "text": "Great things for himself",
               "correct": true
             },
             {
-              "text": "Approval from Jeremiah",
+              "text": "Revenge on his enemies",
               "correct": false
             },
             {
-              "text": "A safe home in Egypt",
+              "text": "Praise from Jeremiah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -165,7 +150,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -173,7 +158,7 @@
           "kind": "story",
           "verses": "Jeremiah 45:5",
           "text": "Instead, the LORD tells him, \"Stop seeking!\" I need that taped above my ovens, friend, because some mornings I'm out here trying to stamp the FANCIEST cookie in the whole Dorinverse.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -181,22 +166,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 45:5",
-          "question": "Next the LORD says He will bring disaster. What will it fall on?",
+          "question": "Next the LORD says He will bring disaster. Who will it fall on?",
           "answers": [
             {
               "text": "Every living creature",
               "correct": true
             },
             {
-              "text": "Every idol in the land",
+              "text": "The officials of Judah",
               "correct": false
             },
             {
-              "text": "Every wall of Jerusalem",
+              "text": "The false prophets",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -220,7 +205,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 7:18",
-          "question": "In the streets of Jerusalem, the sons gather wood and the fathers light the fire. What are the women making?",
+          "question": "In the cities of Judah and the streets of Jerusalem, the sons gather wood and the fathers light the fire. What are the women making?",
           "answers": [
             {
               "text": "Cakes for the Queen of Heaven",
@@ -79,7 +79,7 @@
               "correct": false
             },
             {
-              "text": "A cake for the prophet Elijah",
+              "text": "Cakes for the king's feast",
               "correct": false
             }
           ],
@@ -90,7 +90,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Jeremiah 7:18",
-          "text": "The whole family's on the dough, and on top of that, they pour out drink offerings to other gods. That's a family baking day, friend, for the WRONG party.",
+          "text": "The Queen of Heaven is a false goddess, and the whole family's on the dough for her. Friend, I know a family baking day when I see one, and this one's for the WRONG party.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -120,16 +120,20 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Jeremiah 7:19",
-          "question": "The LORD asks if He's really the One they're provoking. Then He asks if it isn't themselves they spite, to their own shame.",
+          "question": "The LORD asks if He's really the One they're provoking. Isn't it ___ they spite?",
           "answers": [
             {
-              "text": "True",
+              "text": "themselves",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "their neighbors",
+              "correct": false
+            },
+            {
+              "text": "the prophets",
               "correct": false
             }
           ],
@@ -245,50 +249,36 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 7:24",
-          "text": "The LORD is still speaking to Jeremiah about His people. Their fathers did not listen or incline their ear. They followed the stubborn inclinations of their own evil hearts.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Their fathers, the LORD says, did not listen or incline their ear. They followed the stubborn inclinations of their own evil hearts.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Jeremiah 7:24",
-          "question": "Instead of walking in the LORD's ways, the fathers who came out of Egypt went ___ and not ___.",
+          "question": "Following their own stubborn hearts, the fathers went forward and not backward.",
           "answers": [
             {
-              "text": "backward",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "forward",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "east",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "west",
-              "correct": false
-            },
-            {
-              "text": "north",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 7:24-25",
-          "text": "Backward, like a car stuck in reverse with the gas FLOORED. And from the day their fathers came out of Egypt until this day, the LORD has sent His servants the prophets.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Backward, like when you throw the car in reverse and FLOOR it. And from the day their fathers came out of Egypt until this day, the LORD has sent His servants the prophets.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -310,15 +300,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Jeremiah 7:26",
-          "text": "And still they would not listen to Him or incline their ear. That's not one ignored text, friend, that's GENERATIONS of left on read.",
-          "needs_agent_fix": true,
+          "text": "And still they would not listen to Him or incline their ear. They stiffened their necks. That's not one ignored text, friend, that's GENERATIONS of left on read.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -326,18 +316,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 7:26",
-          "question": "The people stiffened their necks, but the LORD says they did less evil than their fathers.",
+          "question": "The LORD says the people of Jeremiah's day did more evil than their fathers.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -360,46 +350,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "Jeremiah 7:28",
-          "text": "Therefore the LORD gives Jeremiah a message to say to them anyway.",
-          "needs_agent_fix": true,
+          "text": "Therefore the LORD gives Jeremiah a message for them anyway. He's to call this the nation that would not listen to the voice of the LORD their God and would not receive correction.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 7:28",
-          "question": "Jeremiah's message gives Judah a name. What is he to call it?",
+          "question": "Jeremiah's message says truth has ___ and disappeared from their lips.",
           "answers": [
             {
-              "text": "The nation that would not listen",
+              "text": "perished",
               "correct": true
             },
             {
-              "text": "The nation that kept the feasts",
+              "text": "returned",
               "correct": false
             },
             {
-              "text": "The nation that built the temple",
+              "text": "spread",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Jeremiah 7:28-29",
-          "text": "A nation that would not receive correction, where truth has perished and disappeared from their lips. Then the message turns to mourning: \"Cut off your hair and throw it away.\"",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 7:29",
+          "text": "Then the message turns to mourning: \"Cut off your hair and throw it away.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -422,7 +412,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -466,31 +456,12 @@
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 7:31",
-          "text": "Friend, this is the hardest line in the passage. They built the high places of Topheth in the Valley of Ben-hinnom so they could burn their sons and daughters in the fire.",
+          "text": "Friend, this is the hardest line in the passage. They built the high places of Topheth in the Valley of Ben-hinnom to burn their sons and daughters in the fire, something the LORD says He never commanded and that never even entered His mind.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Jeremiah 7:31",
-          "question": "The LORD says burning their sons and daughters was something He commanded.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
           "verses": "Jeremiah 7:32",
           "text": "So the days are coming, the LORD says, when that place won't be called Topheth or the Valley of Ben-hinnom anymore. They'll bury the dead in Topheth until there's no more room.",
@@ -498,7 +469,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 7:32",
@@ -521,46 +492,46 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Jeremiah 7:33",
-          "text": "And it gets heavier, friend. The corpses of this people will become food for the birds of the air and the beasts of the earth.",
+          "text": "The corpses of this people will become food for the birds of the air and the beasts of the earth.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 7:33",
-          "question": "When the birds and beasts come for the corpses, someone will be there to scare them away.",
+          "question": "No one will be there to scare the birds and beasts away from the corpses.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Jeremiah 7:34",
-          "text": "Then the LORD says He'll remove the sounds of joy and gladness from Judah's cities and Jerusalem's streets, even the voices of the bride and bridegroom. Friend, I bake for a wedding, and that line stops me cold.",
+          "text": "Then the LORD says He'll remove the sounds of joy and gladness from Judah's cities and Jerusalem's streets, and the voices of the bride and bridegroom. Friend, I think that one hurts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 7:34",
-          "question": "The LORD will remove the sounds of joy and gladness, and even the voices of the bride and bridegroom, from Judah's cities. Why?",
+          "question": "The LORD will remove the sounds of joy and gladness, and the voices of the bride and bridegroom, from Judah's cities. Why?",
           "answers": [
             {
               "text": "The land will become a wasteland",
@@ -579,7 +550,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Jeremiah 8:1",
           "text": "At that time, the LORD says, bones will be removed from their graves. Kings, officials, priests, prophets and the people of Jerusalem, friend, the whole list.",
@@ -587,11 +558,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 8:2",
-          "question": "Those bones will be exposed to the sun and moon and all the host of heaven. What does the LORD say the people did with those?",
+          "question": "Those dug-up bones will lie exposed to the sun, the moon and all the host of heaven. What does the LORD say the people did with the sun, moon and host of heaven?",
           "answers": [
             {
               "text": "Loved and served them",
@@ -610,7 +581,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 8:2",
@@ -629,15 +600,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Jeremiah 8:2",
-          "text": "Instead, they'll become like dung lying on the ground. Kings and priests right along with everyone else, friend, and that's a hard picture to sit with.",
+          "text": "Instead, they'll become like dung lying on the ground. Kings and priests right along with everyone else.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 8:3",

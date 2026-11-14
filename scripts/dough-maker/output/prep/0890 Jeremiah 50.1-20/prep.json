@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 50:1",
-          "text": "Friend, this is the word the LORD spoke through Jeremiah the prophet, and it's about Babylon, the land of the Chaldeans. And I'll tell you right now, this word does NOT read like a fan letter.",
+          "text": "Friend, the LORD has already spoken through Jeremiah the prophet about Damascus, Kedar and Elam (Jeremiah 49:23-39). Now it's Babylon's turn: this word is about Babylon and the land of the Chaldeans.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 50:2",
-          "text": "Captured. And the news doesn't stop at the city. Babylon's own gods get named in the announcement too: Bel and Marduk.",
+          "text": "Captured. And the news doesn't stop at the city. Babylon's false gods get named in the announcement too: Bel and Marduk.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,38 +67,38 @@
           "card": 5,
           "kind": "story",
           "verses": "Jeremiah 50:2",
-          "text": "Bel is put to shame, and Marduk is shattered. Friend, when the news puts SHATTERED right next to your god's name, it might be time to rethink some things.",
+          "text": "The announcement says Bel is put to shame and Marduk is shattered. Friend, when the news puts SHATTERED right next to your god's name, it might be time to rethink some things.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Jeremiah 50:3",
-          "question": "A nation from the ___ will come against Babylon and make her land a desolation.",
+          "question": "The LORD says a nation from the north will come against Babylon. What will it make of her land?",
           "answers": [
             {
-              "text": "north",
+              "text": "A desolation",
               "correct": true
             },
             {
-              "text": "south",
+              "text": "A prize split between two kings",
               "correct": false
             },
             {
-              "text": "west",
+              "text": "A bigger city than before",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Jeremiah 50:3-4",
-          "text": "No one will live in that land, and man and beast both flee. Then the LORD looks ahead to those days, and somebody's on the road, weeping as they come.",
+          "text": "No one will live in Babylon's land, and man and beast will both flee. Then the LORD looks ahead to those days, when people will come weeping as they come.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 50:4",
-          "question": "In those days, who comes together, weeping as they come, to seek the LORD their God?",
+          "question": "In those days, who will come together, weeping as they come, to seek the LORD their God?",
           "answers": [
             {
               "text": "The children of Israel and Judah",
@@ -127,25 +127,10 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Jeremiah 50:5",
-          "question": "Seeking the LORD, Israel and Judah ask the way to ___ and turn their faces toward it.",
-          "answers": [
-            {
-              "text": "Zion",
-              "correct": true
-            },
-            {
-              "text": "Babylon",
-              "correct": false
-            },
-            {
-              "text": "Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "They will ask the way to Zion, the city of Jerusalem, and turn their faces toward it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -153,7 +138,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 50:5",
-          "question": "When Israel and Judah join themselves to the LORD, it's in a covenant that will run out someday.",
+          "question": "When Israel and Judah join themselves to the LORD, it will be in a covenant that runs out someday.",
           "answers": [
             {
               "text": "True",
@@ -171,7 +156,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Jeremiah 50:6",
-          "text": "Then the LORD says how they got so lost: \"My people are lost sheep; their shepherds have led them astray,\" wandering from mountain to hill. That's following a GPS that keeps saying \"recalculating\" until you're three towns past where you started.",
+          "text": "Then the LORD says, \"My people are lost sheep; their shepherds have led them astray…\" Mountain to hill they've wandered, like following a GPS that sends you the wrong way at every turn until you're three towns past where you started.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -202,7 +187,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Jeremiah 50:7",
-          "text": "Anyone who finds these sheep devours them. And their enemies already have a speech ready.",
+          "text": "Everyone who found these sheep devoured them. And their enemies had a speech ready.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -211,7 +196,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 50:7",
-          "question": "What do Israel's enemies say about devouring them?",
+          "question": "What did Israel's enemies say about devouring them?",
           "answers": [
             {
               "text": "We're not guilty since they sinned against the LORD",
@@ -242,18 +227,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 50:8",
-          "question": "The LORD tells His people to flee from the midst of Babylon. As they go, what should they be like?",
+          "question": "With Babylon's fall coming, what does the LORD tell His people to do?",
           "answers": [
             {
-              "text": "He-goats that lead the flock",
+              "text": "Flee from the midst of Babylon",
               "correct": true
             },
             {
-              "text": "Lambs that trail behind the flock",
+              "text": "Stay and guard Babylon's walls",
               "correct": false
             },
             {
-              "text": "Sheep that stay inside the pen",
+              "text": "Send gifts to Babylon's king",
               "correct": false
             }
           ],
@@ -262,6 +247,14 @@
         },
         {
           "card": 17,
+          "kind": "story",
+          "verses": "Jeremiah 50:8",
+          "text": "Depart from the land of the Chaldeans, He says, and be like the he-goats that lead the flock. Out the door FIRST, friend, no waiting around.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 50:9",
@@ -280,19 +273,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "story",
           "verses": "Jeremiah 50:9",
-          "text": "Those nations line up against her, and their arrows are like skilled warriors who don't come back empty-handed. Me? I tossed a handful of sprinkles at a bowl across the bakery once, and the ceiling's STILL sparkly.",
+          "text": "Those nations will line up against her, and from the north she will be captured. Their arrows will be like skilled warriors.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 50:10",
-          "question": "When Chaldea is plundered, the ones who plunder her walk away with barely anything.",
+          "question": "When Chaldea is plundered, the ones who plunder her will walk away with barely anything.",
           "answers": [
             {
               "text": "True",
@@ -316,7 +309,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 50:11",
-          "text": "Now the LORD talks straight to the ones who plunder His inheritance, rejoicing and singing in triumph, frolicking like a heifer treading grain and neighing like stallions. That's a whole empire doing a LOUD victory dance in the end zone.",
+          "text": "Now the LORD talks straight to the ones who plunder His inheritance, rejoicing and singing in triumph, frolicking like a heifer treading grain and neighing like stallions. That's a LOUD victory dance in the end zone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -325,7 +318,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 50:12",
-          "question": "Because of all that celebrating, Babylon, the mother of those plunderers, will be the ___ of the nations.",
+          "question": "Because of all that celebrating, the LORD says the plunderers' mother will be the ___ of the nations.",
           "answers": [
             {
               "text": "least",
@@ -348,7 +341,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 50:13",
-          "question": "Because of the LORD's wrath, Babylon ends up a desert nobody lives in. People passing through will stop to admire what's left of her.",
+          "question": "When Babylon becomes completely desolate, people passing through will stop to admire what's left of her.",
           "answers": [
             {
               "text": "True",
@@ -406,18 +399,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 50:15",
-          "question": "As the war cry goes up all around her, what does Babylon do?",
+          "question": "As the war cry goes up all around her, what has Babylon done?",
           "answers": [
             {
-              "text": "She throws up her hands in surrender",
+              "text": "Thrown up her hands in surrender",
               "correct": true
             },
             {
-              "text": "She calls on her allies for help",
+              "text": "Called on her allies for help",
               "correct": false
             },
             {
-              "text": "She fires back from her high towers",
+              "text": "Fired back from her high towers",
               "correct": false
             }
           ],
@@ -448,7 +441,7 @@
               "correct": false
             },
             {
-              "text": "least",
+              "text": "minimum",
               "correct": false
             }
           ],
@@ -544,7 +537,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Jeremiah 50:19",
-          "text": "Then the scattered flock comes home. The LORD will return Israel to his pasture, to graze on Carmel and Bashan.",
+          "text": "Then the LORD says the scattered flock will come home. He will return Israel to his pasture, to graze on Carmel and Bashan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -553,7 +546,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 50:19",
-          "question": "Back home on the hills of Ephraim and Gilead, how does Israel's soul end up?",
+          "question": "Back home on the hills of Ephraim and Gilead, how will Israel's soul be?",
           "answers": [
             {
               "text": "Satisfied",
@@ -575,7 +568,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Jeremiah 50:19-20",
-          "text": "From lost sheep to a satisfied soul, friend, I know that one: one night I'm sharing a drawer with dead batteries, and in a blink I've got a whole planet and a sky to myself. But one question's left, because in those days the LORD says a search will be made for Israel's guilt.",
+          "text": "From lost sheep to a satisfied soul, friend, I know that kind of trip: one night I'm stuck in a junk drawer next to dead batteries, and in a blink I've got a whole planet and a sky to myself. But one question's left, because in those days the LORD says a search will be made for Israel's guilt.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -606,7 +599,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Jeremiah 50:20",
-          "text": "The LORD says why: \"for I will forgive the remnant I preserve.\" And trust me, friend, this word against Babylon is just getting started.",
+          "text": "Judah's sins won't be found either, because the LORD says, \"I will forgive the remnant I preserve.\" And trust me, friend, this word against Babylon is just getting started.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

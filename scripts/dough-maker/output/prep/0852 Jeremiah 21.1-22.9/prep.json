@@ -39,21 +39,16 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Jeremiah 21:2",
-          "question": "Zedekiah's men hope the LORD will do something like all His past ___, so Nebuchadnezzar will pull back.",
+          "question": "Zedekiah's men hope the LORD will do something like His past wonders so Nebuchadnezzar will withdraw from them.",
           "answers": [
             {
-              "text": "wonders",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "warnings",
-              "correct": false
-            },
-            {
-              "text": "promises",
+              "text": "False",
               "correct": false
             }
           ],
@@ -95,7 +90,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Jeremiah 21:4",
-          "text": "And the LORD says He will assemble the Chaldeans' forces right in the center of the city. Friend, the army outside the wall is getting moved INTO the living room.",
+          "text": "And about the king of Babylon and the Chaldeans, the LORD says, \"I will assemble their forces in the center of this city.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -121,25 +116,29 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Jeremiah 21:6",
-          "text": "The LORD says He will strike down the people of the city, both man and beast. They will die in a terrible plague.",
+          "verses": "Jeremiah 21:5-6",
+          "text": "The LORD says He'll fight against them with an outstretched hand and a mighty arm, with anger, fury and great wrath. He will strike down the people of the city, both man and beast, and they will die in a terrible plague.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Jeremiah 21:7",
-          "question": "After the plague, the LORD says He will hand Zedekiah, his officers and the survivors over to Nebuchadnezzar. Nebuchadnezzar will show them pity.",
+          "question": "After the plague, the LORD says He will hand Zedekiah, his officers and the survivors over to Nebuchadnezzar. How will Nebuchadnezzar treat them?",
           "answers": [
             {
-              "text": "True",
+              "text": "He will not spare them",
+              "correct": true
+            },
+            {
+              "text": "He will make them his servants",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He will send them home to Judah",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -149,7 +148,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Jeremiah 21:8",
-          "text": "Then the LORD has a message for the people: 'Behold, I set before you the way of life and the way of death.' Two roads, friend, and NO third one marked 'I'll get back to You.'",
+          "text": "Then the LORD has a message for the people: \"Behold, I set before you the way of life and the way of death.\" Two roads, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -179,20 +178,21 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 21:10",
-          "question": "The LORD says He has set His face against the city and will hand it to the king of Babylon. What will that king do to it?",
+          "question": "The LORD says He has set His face against the city and will hand it to the king of Babylon, who will destroy it with ___.",
           "answers": [
             {
-              "text": "Destroy it with fire",
-              "correct": true
+              "text": "fire",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Make it his new capital",
+              "text": "flood",
               "correct": false
             },
             {
-              "text": "Rule it from far away",
+              "text": "earthquake",
               "correct": false
             }
           ],
@@ -254,7 +254,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Jeremiah 21:13",
-          "text": "Then the LORD says He is against the ones who live above the valley, atop the rocky plateau. Friend, I spent years at the bottom of a junk drawer, so living up high sounds AMAZING to me.",
+          "text": "Then the LORD says He is against the ones who dwell above the valley, atop the rocky plateau. Prime real estate, friend. GREAT view.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -284,8 +284,8 @@
         {
           "card": 18,
           "kind": "story",
-          "verses": "Jeremiah 21:13-14",
-          "text": "The LORD says He will punish them as their deeds deserve, with a fire in their forest that consumes everything around them. So much for \"Who can come against us?\"",
+          "verses": "Jeremiah 21:14",
+          "text": "The LORD says He'll punish them as their deeds deserve. He'll kindle a fire in their forest that will consume everything around them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -307,7 +307,7 @@
           "card": 2,
           "kind": "story",
           "verses": "Jeremiah 22:3",
-          "text": "Sound familiar? Administer justice and righteousness, and rescue the victim of robbery from the hand of his oppressor.",
+          "text": "The LORD tells the king to administer justice and righteousness, and to rescue the victim of robbery from the hand of his oppressor. Sound familiar?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -365,7 +365,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Jeremiah 22:5",
-          "text": "Then the other side of that IF. The LORD swears by Himself, and friend, He has no one greater to swear by (Hebrews 6:13).",
+          "text": "Then comes the other side of that IF. If the king doesn't obey, the LORD says, \"…I swear by Myself…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -374,7 +374,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 22:5",
-          "question": "If the king doesn't obey, what does the LORD swear this palace will become?",
+          "question": "If the king doesn't obey these words, what does the LORD swear this house will become?",
           "answers": [
             {
               "text": "A pile of rubble",
@@ -396,7 +396,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Jeremiah 22:6",
-          "text": "The LORD tells the king's house, \"You are like Gilead to Me, like the summit of Lebanon\". Friend, if anybody ever compared ME to the summit of Lebanon, I'd frame it and hang it over the oven.",
+          "text": "The LORD tells the king's house, \"You are like Gilead to Me, like the summit of Lebanon…\" Gilead is a land east of the Jordan, and Lebanon is a land north of Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -405,15 +405,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 22:6",
-          "question": "Even so, the LORD says He will turn the king's house into a desert, like cities where no one lives.",
+          "question": "The LORD says He will never turn the king's house into a desert.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -424,7 +424,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 22:7",
-          "question": "The LORD will appoint destroyers who cut down the choicest ___ of the king's house and throw them into the ___.",
+          "question": "The LORD will appoint destroyers, each man with his weapons, who cut down the choicest ___ of the king's house and throw them into the fire.",
           "answers": [
             {
               "text": "cedars",
@@ -432,20 +432,11 @@
               "blank": 1
             },
             {
-              "text": "fire",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "gates",
+              "text": "vineyards",
               "correct": false
             },
             {
-              "text": "river",
-              "correct": false
-            },
-            {
-              "text": "horses",
+              "text": "fig trees",
               "correct": false
             }
           ],
@@ -456,7 +447,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Jeremiah 22:8",
-          "text": "Then the LORD says many nations will pass by the city and ask one another, 'Why has the LORD done such a thing to this great city?'",
+          "text": "Then the LORD says many nations will pass by the city and ask one another, \"Why has the LORD done such a thing to this great city?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

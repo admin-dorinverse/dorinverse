@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 17:1",
-          "text": "Jeremiah, whom the LORD appointed as a prophet (Jeremiah 1:5), is passing along a heavy message from the LORD about Judah. Judah's sin isn't scribbled in pencil, friend. It's written with an iron stylus and engraved with a diamond point, and that is NOT a sticky note on the fridge.",
+          "text": "In the book of Jeremiah, the LORD has a heavy message about Judah. Their sin isn't scribbled in pencil, friend. It's written with an iron stylus and engraved with a diamond point, and that is NOT a sticky note on the fridge.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,38 +40,34 @@
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 17:2",
-          "text": "The LORD keeps going. Someone else remembers those altars and Asherah poles by the green trees and on the high hills.",
+          "text": "The LORD keeps going. He talks about their altars and Asherah poles by the green trees and on the high hills.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Jeremiah 17:2",
-          "question": "The LORD says that even Judah's ___ remember their altars and Asherah poles.",
+          "question": "True or false: The LORD says Judah's children have forgotten their altars and Asherah poles.",
           "answers": [
             {
-              "text": "children",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "enemies",
-              "correct": false
-            },
-            {
-              "text": "prophets",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Jeremiah 17:3",
-          "text": "Then the LORD calls out, \"O My mountain in the countryside,\" and He names the problem. It's the sin of their high places, within all their borders.",
+          "text": "Then the LORD calls out, \"O My mountain in the countryside…\" and He names the problem. It's the sin of their high places, within all their borders.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -306,7 +302,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 17:10",
-          "question": "The heart is so deceitful that the LORD asks, \"Who can understand it?\" So who searches the heart?",
+          "question": "About the deceitful heart, the question comes: \"Who can understand it?\" So who searches the heart?",
           "answers": [
             {
               "text": "The LORD Himself",
@@ -329,28 +325,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 17:10",
-          "question": "The LORD examines the ___ to reward a man by what his ___ deserve.",
+          "question": "The LORD searches the heart to reward a man by what his ___ deserve.",
           "answers": [
             {
-              "text": "mind",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "deeds",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "wealth",
+              "text": "riches",
               "correct": false
             },
             {
-              "text": "name",
-              "correct": false
-            },
-            {
-              "text": "family",
+              "text": "ancestors",
               "correct": false
             }
           ],
@@ -361,7 +347,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Jeremiah 17:11",
-          "text": "Then the LORD paints a strange picture: a partridge hatching eggs it did not lay. Friend, that's the coworker who presents YOUR slides in the meeting.",
+          "text": "Then the LORD gives a strange picture: a partridge hatching eggs it did not lay.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -410,40 +396,25 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Jeremiah 17:12-13",
-          "text": "Then the words turn into prayer. A glorious throne, exalted from the beginning, is the place of our sanctuary, and the LORD is the hope of Israel.",
+          "verses": "Jeremiah 17:11",
+          "text": "In the end, that man will be the fool. Friend, that's the coworker who presents YOUR slides, and then the boss asks him ONE question about slide two.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Jeremiah 17:13",
-          "text": "All who abandon the LORD will be put to shame, and the ones who turn away get written down. Friend, that is NOT a list you want to be on.",
+          "verses": "Jeremiah 17:12-13",
+          "text": "Then the words turn into prayer. A glorious throne, exalted from the beginning, is the place of our sanctuary, and the LORD is the hope of Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Jeremiah 17:13",
-          "question": "All who turn away from the LORD will be written in the ___.",
-          "answers": [
-            {
-              "text": "dust",
-              "correct": true
-            },
-            {
-              "text": "stone",
-              "correct": false
-            },
-            {
-              "text": "iron",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "All who abandon the LORD will be put to shame, and all who turn away will be written in the dust. Friend, that is NOT a list you want to be on.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -473,7 +444,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Jeremiah 17:14-15",
-          "text": "Now Jeremiah prays for himself: \"Heal me, O LORD, and I will be healed; save me, and I will be saved, for You are my praise.\" Then he tells the LORD what people keep saying to him, and spoiler, it is NOT \"Great message, Jeremiah!\"",
+          "text": "Then the prayer turns personal: \"Heal me, O LORD, and I will be healed; save me, and I will be saved, for You are my praise.\" Next it tells the LORD what people keep saying, and spoiler, it is NOT \"Great message!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -482,30 +453,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 17:15",
-          "question": "What do people keep saying to Jeremiah about the word of the LORD?",
+          "question": "People keep asking the one praying, \"Where is the word of the LORD?\" What do they demand?",
           "answers": [
             {
-              "text": "They want it to come now",
+              "text": "That it come now",
               "correct": true
             },
             {
-              "text": "They want it to stop",
+              "text": "That it stop for good",
               "correct": false
             },
             {
-              "text": "They want it in writing",
+              "text": "That it be written down",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "Jeremiah 17:15-16",
-          "text": "They're tapping their watch at a PROPHET. But Jeremiah says he hasn't run away from being the LORD's shepherd, and the LORD knows his words were spoken in His presence.",
-          "needs_agent_fix": true,
+          "text": "It's like warning a friend the road ahead is icy and hearing, \"Oh yeah? Show me the ice.\" But the prayer says, \"I have not run away from being Your shepherd,\" and the LORD knows those words were spoken in His presence.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -513,15 +484,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 17:16",
-          "question": "True or false: Jeremiah tells the LORD that he has desired the day of despair.",
+          "question": "True or false: The one praying tells the LORD that he has not desired the day of despair.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -530,20 +501,16 @@
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Jeremiah 17:17",
-          "question": "Jeremiah asks the LORD not to become a terror to him. In the day of disaster, he calls the LORD his ___.",
+          "question": "True or false: The one praying calls the LORD his refuge in the day of disaster.",
           "answers": [
             {
-              "text": "refuge",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "banner",
-              "correct": false
-            },
-            {
-              "text": "portion",
+              "text": "False",
               "correct": false
             }
           ],
@@ -555,7 +522,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 17:18",
-          "question": "Jeremiah prays about the people persecuting him. What does he ask for when it comes to shame?",
+          "question": "The prayer turns to the people persecuting the one praying. What does he ask for when it comes to shame?",
           "answers": [
             {
               "text": "Shame for them but not for him",
@@ -577,7 +544,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Jeremiah 17:18",
-          "text": "Same goes for fear: let them be terrified, but not him. And he ends with this: \"Bring upon them the day of disaster and shatter them with double destruction.\"",
+          "text": "Same goes for fear: let them be terrified, but not him. And the prayer ends with this: \"Bring upon them the day of disaster and shatter them with double destruction.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -41,7 +41,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 2:2",
-          "question": "Back then, Israel followed the LORD through a land of planted fields.",
+          "question": "Back then, in the wilderness, Israel followed the LORD through a land of planted fields.",
           "answers": [
             {
               "text": "True",
@@ -59,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Jeremiah 2:3",
-          "text": "Israel was holy to the LORD, the firstfruits of His harvest. Nobody touches my first batch of the morning either, and I WILL defend it with this mustache.",
+          "text": "Back then, Israel was holy to the LORD, the firstfruits of His harvest. That's the first tray out of the oven, friend. The one EVERYBODY in the kitchen has been staring at through the glass.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -89,9 +89,9 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Jeremiah 2:4",
-          "text": "Now the prophet calls out to the house of Jacob and all the families of Israel to hear the word of the LORD. And the LORD asks a question that stings.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 2:4-5",
+          "text": "Then comes a call to the house of Jacob and all the families of Israel: hear the word of the LORD. And the LORD asks a question that stings.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -146,7 +146,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 2:6",
-          "question": "Israel's fathers strayed far from the LORD. What question did they never ask?",
+          "question": "Israel's fathers strayed far from the LORD. What question didn't they ask?",
           "answers": [
             {
               "text": "Where is the LORD who brought us out of Egypt",
@@ -210,32 +210,27 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Jeremiah 2:8",
-          "question": "And the prophets? They prophesied by ___ and followed useless idols.",
+          "question": "Just like the priests and the leaders, the prophets turned from the LORD too.",
           "answers": [
             {
-              "text": "Baal",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "Dagon",
-              "correct": false
-            },
-            {
-              "text": "Molech",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "Jeremiah 2:9",
-          "text": "So the LORD declares it: He will contend with them again. He's bringing a case.",
+          "verses": "Jeremiah 2:8-9",
+          "text": "The prophets prophesied by Baal, a false god, and followed useless idols. So the LORD declares it: He will contend with them again, and He's bringing a case.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -268,7 +263,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 2:10",
-          "text": "Now the LORD says to cross over to the coasts of Cyprus, send to Kedar, and look carefully. See if there has ever been anything like this.",
+          "text": "Now the LORD says to cross over to the coasts of Cyprus and send to Kedar, a desert tribe, and look carefully. See if there has ever been anything like this.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -399,7 +394,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Jeremiah 2:14",
-          "text": "Next the LORD asks, \"Is Israel a slave? Was he born into slavery?\"",
+          "text": "Next the LORD asks, \"Is Israel a slave? Was he born into slavery? Why then has he become prey?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -407,19 +402,19 @@
           "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Jeremiah 2:14",
-          "question": "After asking whether Israel is a slave, what does the LORD ask next?",
+          "verses": "Jeremiah 2:15",
+          "question": "Israel has become prey. What does the LORD say has roared at him?",
           "answers": [
             {
-              "text": "Why he has become prey",
+              "text": "Young lions",
               "correct": true
             },
             {
-              "text": "Why he has grown so strong",
+              "text": "Wild bulls",
               "correct": false
             },
             {
-              "text": "Why he has gone to war",
+              "text": "Desert jackals",
               "correct": false
             }
           ],
@@ -430,7 +425,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Jeremiah 2:15",
-          "text": "The young lions have roared at him. They have laid waste his land, and his cities lie in ruins.",
+          "text": "The young lions have sounded their voices. They have laid waste his land.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -457,28 +452,27 @@
           "card": 13,
           "kind": "story",
           "verses": "Jeremiah 2:16",
-          "text": "Then the LORD says, \"The men of Memphis and Tahpanhes have shaved the crown of your head.\" Friend, my hands are a MUSTACHE, so I don't even like hearing the word shaved.",
+          "text": "Then the LORD names Memphis and Tahpanhes, two cities in Egypt. \"The men of Memphis and Tahpanhes have shaved the crown of your head.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Jeremiah 2:17",
-          "question": "The LORD asks if Israel has brought all this on himself by ___ the LORD his God when He led him in the way.",
+          "question": "Israel's cities lie in ruins. The LORD asks a pointed question about who brought this on him. Who is it?",
           "answers": [
             {
-              "text": "forsaking",
-              "correct": true,
-              "blank": 1
+              "text": "Israel himself",
+              "correct": true
             },
             {
-              "text": "obeying",
+              "text": "The people of Kedar",
               "correct": false
             },
             {
-              "text": "praising",
+              "text": "The people of Cyprus",
               "correct": false
             }
           ],
@@ -488,8 +482,8 @@
         {
           "card": 15,
           "kind": "story",
-          "verses": "Jeremiah 2:18",
-          "text": "Now the LORD asks what they'll gain on the way to Egypt and on the way to Assyria, just to go drink somebody else's water. After those leaky cisterns, I can't even watch.",
+          "verses": "Jeremiah 2:17-18",
+          "text": "He brought it on himself by forsaking the LORD his God when He led him in the way. Now the LORD asks what he'll gain on the way to Egypt, or on the way to Assyria, a great empire, to drink their waters.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -498,7 +492,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 2:18",
-          "question": "On the way to Egypt, they go to drink the waters of the ___.",
+          "question": "The LORD asks what Israel will gain on the way to Egypt to drink the waters of the ___.",
           "answers": [
             {
               "text": "Nile",
@@ -514,42 +508,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Jeremiah 2:19",
-          "question": "The Lord GOD of Hosts brings it all home. What does He say will discipline His people?",
-          "answers": [
-            {
-              "text": "Their own evil",
-              "correct": true
-            },
-            {
-              "text": "The kings of Egypt",
-              "correct": false
-            },
-            {
-              "text": "The prophets of Baal",
-              "correct": false
-            }
-          ],
+          "text": "Then the Lord GOD of Hosts brings it home: \"Your own evil will discipline you; your own apostasies will reprimand you.\" Ignore the oven timer, friend, and the smoke alarm does the scolding for you.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "story",
-          "verses": "Jeremiah 2:19",
-          "text": "And their own apostasies will reprimand them too. Ignore the oven timer, friend, and the smoke alarm does the scolding for you.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 2:19",

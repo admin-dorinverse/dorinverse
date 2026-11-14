@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 25:1-2",
-          "text": "The prophet Jeremiah gets a word from the LORD for all the people of Judah, in the fourth year of Jehoiakim, king of Judah. That's also year one for Nebuchadnezzar, king of Babylon, and friend, when the Bible starts telling time by BABYLON'S calendar, pull up a chair. Jeremiah speaks to all of Judah and everyone living in Jerusalem.",
+          "text": "The prophet Jeremiah gets a word from the LORD about all the people of Judah. It's the fourth year of Jehoiakim, king of Judah, which is also the first year of Nebuchadnezzar, king of Babylon. So Jeremiah speaks to all of Judah and everyone living in Jerusalem.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -71,25 +71,29 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Jeremiah 25:4",
-          "text": "It's not just Jeremiah, either: the LORD has sent ALL His servants the prophets to them, again and again. That's the same message from every single person in the group chat.",
+          "verses": "Jeremiah 25:3",
+          "text": "And Jeremiah isn't the only messenger the LORD has sent to Judah. Not even close.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Jeremiah 25:4",
-          "question": "Jeremiah says the people of Judah listened to the other prophets the LORD sent, just not to him.",
+          "question": "Besides Jeremiah, who has the LORD sent to the people of Judah again and again?",
           "answers": [
             {
-              "text": "True",
+              "text": "All His servants the prophets",
+              "correct": true
+            },
+            {
+              "text": "All the priests of the temple",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "All the elders of the city",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -99,7 +103,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Jeremiah 25:5",
-          "text": "The prophets' message fits on one recipe card: turn now, each of you, from your evil ways and deeds. Friend, I've burnt cookies following WAY harder instructions than that.",
+          "text": "The prophets' message fits on one recipe card: turn now, each of you, from your evil ways and deeds. Friend, I've followed recipes with WAY more steps than that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -199,7 +203,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 25:8",
-          "text": "Twenty-three years of warnings, and now Jeremiah gets to the \"therefore.\" The LORD of Hosts says, 'Because you have not obeyed My words,' and then He says what He will do.",
+          "text": "Twenty-three years of warnings, and now the LORD of Hosts gives His answer. It starts, 'Because you have not obeyed My words,' and then He says what He will do.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -231,15 +235,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 25:9",
-          "question": "In this message, the LORD calls Nebuchadnezzar king of Babylon 'My servant.'",
+          "question": "In this message, the LORD calls Nebuchadnezzar king of Babylon His enemy.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -258,10 +262,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 25:9",
-          "question": "Who does the LORD say He will bring Nebuchadnezzar against?",
+          "question": "The LORD says He will bring Nebuchadnezzar against which lands?",
           "answers": [
             {
-              "text": "This land and the nations around it",
+              "text": "Judah and the nations around it",
               "correct": true
             },
             {
@@ -280,7 +284,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Jeremiah 25:9-10",
-          "text": "An object of horror and contempt, an EVERLASTING desolation: friend, the LORD is not whispering here. Then He gets specific about what He'll take away from them.",
+          "text": "The LORD says He will devote them to destruction and make them an object of horror and contempt, an everlasting desolation. Then He names what He will take away from them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -289,7 +293,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 25:10",
-          "question": "Which of these does the LORD say He will banish from the land?",
+          "question": "Which of these does the LORD say He will banish?",
           "answers": [
             {
               "text": "The voices of the bride and bridegroom",
@@ -311,7 +315,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Jeremiah 25:10-11",
-          "text": "No sounds of joy, no millstones grinding, no light of the lamp. I know dark from my years in the junk drawer, friend, but this is a whole land becoming a desolate wasteland.",
+          "text": "The LORD says the sounds of joy, the millstones and the light of the lamp will be gone too. I know dark from my years in the junk drawer, friend, but this is a whole land that will become a desolate wasteland.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -328,11 +332,11 @@
               "blank": 1
             },
             {
-              "text": "forty",
+              "text": "fifty",
               "correct": false
             },
             {
-              "text": "twelve",
+              "text": "thirty",
               "correct": false
             }
           ],
@@ -343,7 +347,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Jeremiah 25:12",
-          "text": "Seventy years serving the same boss. That's a whole career with ZERO vacation days, but when those seventy years are complete, the LORD has a word about Babylon itself.",
+          "text": "Seventy years serving the king of Babylon. But when those seventy years are complete, the LORD has a word about Babylon itself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -393,7 +397,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Jeremiah 25:13",
-          "text": "The LORD says He'll bring on that land every word He's spoken against it, everything written in this book, which Jeremiah prophesied against all the nations. Babylon's been the big boss this whole time, and now the big boss is getting WRITTEN UP.",
+          "text": "The LORD says He will bring on that land every word He has spoken against it, everything written in this book, which Jeremiah prophesied against all the nations.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

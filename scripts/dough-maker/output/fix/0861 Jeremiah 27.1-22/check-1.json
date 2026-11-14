@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "Stop 1 card 17 is a story card that already says 'He'll banish them, and they'll perish' (v10). This card then asks for the same fact from v15, so an earlier card has given away the answer, and the line is also repeated in the passage.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 13
+      },
+      "problem": "The question says 'that nation' and 'it', which point back to the previous choice card (card 12). That card is no longer on screen, so the question doesn't say who or what is being punished.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The question opens with 'those voices', which points back to the prophets, diviners and sorcerers named in card 15's question. The baker can't see that card anymore, so the question doesn't say who is meant.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    }
+  ]
+}

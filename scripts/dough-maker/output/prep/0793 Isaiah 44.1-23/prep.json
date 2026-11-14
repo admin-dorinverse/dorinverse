@@ -8,17 +8,17 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Isaiah 43:28-44:1",
-          "text": "Isaiah the prophet brings a message from the LORD to Jacob, another name for His people Israel. Right before this, the LORD said He would devote Jacob to destruction (Isaiah 43:28). Then everything turns: \"But now listen, O Jacob My servant, Israel, whom I have chosen.\"",
+          "verses": "Isaiah 44:1",
+          "text": "Isaiah the prophet brings a message from the LORD to His people, whom He calls Jacob and Israel. Right before this, the LORD said He would devote Jacob to destruction (Isaiah 43:28). Then the message turns: \"But now listen, O Jacob My servant, Israel, whom I have chosen.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 44:2",
-          "question": "The prophet says this word comes from the LORD, Jacob's ___, the One who formed him from the womb.",
+          "question": "This word comes from the LORD, Jacob's ___, the One who formed him from the womb.",
           "answers": [
             {
               "text": "Maker",
@@ -144,7 +144,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Isaiah 44:5",
-          "text": "Right on his hand, and he will take the name of Israel. No hands here, friend, so I'd have to write mine on my MUSTACHE.",
+          "text": "That person will also take the name of Israel. I've got no hands, friend, so mine's going on my MUSTACHE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -152,7 +152,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Isaiah 44:6",
-          "text": "Then the prophet introduces the speaker: the LORD, the King and Redeemer of Israel, the LORD of Hosts. And He makes a big claim.",
+          "text": "Next comes a word from the LORD, the King and Redeemer of Israel, the LORD of Hosts. He says, \"I am the first and I am the last…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,7 +161,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 44:6",
-          "question": "The LORD says He is the first and the last, and there are other gods beside Him.",
+          "question": "Right after calling Himself the first and the last, the LORD says other gods stand beside Him.",
           "answers": [
             {
               "text": "True",
@@ -179,38 +179,23 @@
           "card": 12,
           "kind": "story",
           "verses": "Isaiah 44:7",
-          "text": "Then comes the challenge: \"Who then is like Me? Let him say so!\" Friend, that's the kind of question where the smart move is to stay real quiet.",
+          "text": "Then the LORD asks, \"Who then is like Me? Let him say so!\" Friend, that's the kind of question where the smart move is to stay real quiet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Isaiah 44:7",
-          "question": "To prove they're like Him, the LORD dares any rival to ___ the things to come.",
-          "answers": [
-            {
-              "text": "foretell",
-              "correct": true
-            },
-            {
-              "text": "control",
-              "correct": false
-            },
-            {
-              "text": "prevent",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Whoever claims to be like Him can declare his case before Him, since He established an ancient people. And he can foretell the things to come, and what is to take place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Isaiah 44:8",
-          "text": "Then the LORD turns back to His people: \"Do not tremble or fear.\" He told them all this long ago.",
+          "text": "Then the LORD turns to His people: \"Do not tremble or fear.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -219,7 +204,30 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 44:8",
-          "question": "The LORD told His people these things long ago. What does He call them?",
+          "question": "The LORD dares anyone to foretell what's coming. What does He say He already did for His people?",
+          "answers": [
+            {
+              "text": "Told them long ago",
+              "correct": true
+            },
+            {
+              "text": "Kept it hidden from them",
+              "correct": false
+            },
+            {
+              "text": "Showed it in a dream",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Isaiah 44:8",
+          "question": "Right after telling His people not to tremble or fear, the LORD says what they are to Him. What does He call them?",
           "answers": [
             {
               "text": "My witnesses",
@@ -238,7 +246,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 44:8",
@@ -275,18 +283,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 44:9",
-          "question": "Idol makers are nothing, and their witnesses fail to see or comprehend. What happens to those witnesses?",
+          "question": "Idol makers are nothing, and so are the things they treasure. What do their witnesses fail to do?",
           "answers": [
             {
-              "text": "They are put to shame",
+              "text": "See or comprehend",
               "correct": true
             },
             {
-              "text": "They are made rich",
+              "text": "Speak or sing",
               "correct": false
             },
             {
-              "text": "They are made priests",
+              "text": "Stand or walk",
               "correct": false
             }
           ],
@@ -296,25 +304,29 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Isaiah 44:10-11",
-          "text": "Then a question: who makes a god that profits him nothing? The craftsmen are only human, so friend, that's a cookie trying to bake the oven.",
+          "verses": "Isaiah 44:10",
+          "text": "The message asks, \"Who fashions a god or casts an idol which profits him nothing?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Isaiah 44:11",
-          "question": "When all the idol makers gather and take their stand, they come out looking strong.",
+          "question": "The idol maker's companions will all be put to shame. What reason does the message give?",
           "answers": [
             {
-              "text": "True",
+              "text": "The craftsmen are only human",
+              "correct": true
+            },
+            {
+              "text": "They worked on the Sabbath",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "They copied the nations around them",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -323,13 +335,21 @@
         {
           "card": 5,
           "kind": "story",
+          "verses": "Isaiah 44:11",
+          "text": "Only humans making a god? I've stamped a mountain of cookies, and not ONE of them ever got up to help me. Let them all assemble and take their stand, and they'll all be brought to terror and shame.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
           "verses": "Isaiah 44:12",
           "text": "First up, the blacksmith labors over the coals and hammers out an idol with his strong arms. Big muscles, big hammer, BIG plans.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 44:12",
@@ -352,15 +372,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
           "verses": "Isaiah 44:13",
-          "text": "Next, the woodworker: measuring line, stylus, chisels, compass. That's more tools than my whole bakery, and I AM a tool.",
+          "text": "Next, the woodworker goes to work with a measuring line, a stylus, chisels and a compass. Friend, that's more gear than my whole BAKERY.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 44:13",
@@ -380,93 +400,95 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 44:14",
-          "question": "Before the shaping starts, the woodworker gets his wood from beams pulled out of an old house.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 44:15",
-          "question": "The woodworker uses some of the same wood to warm himself and bake bread.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Isaiah 44:14",
+          "text": "His wood comes from the forest. He cuts down cedars or gets a cypress or oak, and lets it grow strong among the trees.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Isaiah 44:15-16",
-          "text": "Here's the twist: that same wood becomes a god, and he bows down to it. He burns some of it, roasts meat, eats and is satisfied, and says, \"Ah! I am warm; I see the fire.\"",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Isaiah 44:14",
+          "question": "The woodworker also plants a laurel. What makes it grow?",
+          "answers": [
+            {
+              "text": "The rain",
+              "correct": true
+            },
+            {
+              "text": "His own watering",
+              "correct": false
+            },
+            {
+              "text": "A nearby stream",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 44:16-17",
-          "question": "He burns ___ of the wood in the fire and makes a god from the ___.",
+          "type": "true_false",
+          "verses": "Isaiah 44:15",
+          "question": "The woodworker uses some of his wood to warm himself and bake bread.",
           "answers": [
             {
-              "text": "half",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "rest",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "most",
-              "correct": false
-            },
-            {
-              "text": "scraps",
-              "correct": false
-            },
-            {
-              "text": "core",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Isaiah 44:15",
+          "question": "From that same wood, the woodworker also fashions a ___ and bows down to it.",
+          "answers": [
+            {
+              "text": "god",
+              "correct": true
+            },
+            {
+              "text": "door",
+              "correct": false
+            },
+            {
+              "text": "bed",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Isaiah 44:16",
+          "text": "He burns half of it in the fire and roasts meat on that half. He eats the roast, he's satisfied, and he says, \"Ah! I am warm; I see the fire.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 44:17",
-          "question": "He bows down to the god he carved from that wood and prays to it. What does he ask it to do?",
+          "question": "The woodworker prays to the god he carved from the rest of his wood. What does he ask it to do?",
           "answers": [
             {
               "text": "Save him",
@@ -481,7 +503,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -525,7 +547,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Isaiah 44:19",
-          "text": "Nobody stops to think it through: I baked bread on half of it, so should I bow down to a block of wood?",
+          "text": "Not one idol maker stops to think it through and ask himself, \"Shall I bow down to a block of wood?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -603,7 +625,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 44:22",
-          "question": "Because He has redeemed them, the LORD tells His people to ___ to Him.",
+          "question": "After blotting out their sins, the LORD tells His people to ___ to Him.",
           "answers": [
             {
               "text": "return",
@@ -625,7 +647,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Isaiah 44:23",
-          "text": "Then comes a call to sing, to the heavens, the depths of the earth, the mountains, the forests and all their trees. I bet the trees that never got carved into idols sing the LOUDEST.",
+          "text": "Then comes a call to sing: the heavens, the depths of the earth, the mountains, the forests and all their trees. I bet the trees that never got carved into idols sing the LOUDEST.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

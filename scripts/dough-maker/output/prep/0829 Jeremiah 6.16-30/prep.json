@@ -9,36 +9,43 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 6:16",
-          "text": "The LORD has a message for His people, and He speaks it through Jeremiah, the man He appointed as a prophet (Jeremiah 1:4-5). He tells them to stand at the crossroads and look, and to ask for the ancient paths: where is the good way? Then walk in it.",
+          "text": "Jerusalem has been warned that disaster is coming from the north (Jeremiah 6:1). Now the LORD says, “Stand at the crossroads and look.” Picture a traveler stopped where the roads split, deciding which way to go.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Jeremiah 6:16",
-          "question": "The LORD promises that if they walk in the good way, they will find ___ for their souls.",
+          "question": "Standing at the crossroads, the people are told to ask for the ancient paths. What question should they ask?",
           "answers": [
             {
-              "text": "rest",
-              "correct": true,
-              "blank": 1
+              "text": "Where is the good way",
+              "correct": true
             },
             {
-              "text": "riches",
+              "text": "Which way is the shortest",
               "correct": false
             },
             {
-              "text": "glory",
+              "text": "Who will guide us home",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
+          "kind": "story",
+          "verses": "Jeremiah 6:16",
+          "text": "Then the LORD gives the promise: “Then walk in it, and you will find rest for your souls.” Friend, I spent years lying perfectly still in the back of a junk drawer, and trust me, that was NOT rest.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 6:16",
@@ -57,7 +64,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "story",
           "verses": "Jeremiah 6:16-17",
           "text": "Their answer: “We will not walk in it!” The LORD also says He appointed watchmen over them and told them, “Listen for the sound of the ram’s horn.”",
@@ -65,7 +72,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 6:17",
@@ -88,15 +95,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
-          "verses": "Jeremiah 6:18-19",
-          "text": "Twice they say no, so the LORD calls on the nations, the congregations and the whole earth to hear what will happen to this people. Friend, this just left the private chat and went out to EVERYBODY.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 6:18",
+          "text": "So the LORD calls out for others to hear and learn what will happen to this people.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Jeremiah 6:18-19",
+          "question": "Who does the LORD call on to hear what will happen to this people?",
+          "answers": [
+            {
+              "text": "The nations and the whole earth",
+              "correct": true
+            },
+            {
+              "text": "Only the priests of Jerusalem",
+              "correct": false
+            },
+            {
+              "text": "The watchmen on the walls",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 6:19",
@@ -119,66 +149,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Jeremiah 6:19",
-          "question": "The LORD calls the disaster coming on this people the fruit of their own ___.",
-          "answers": [
-            {
-              "text": "schemes",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "neighbors",
-              "correct": false
-            },
-            {
-              "text": "prayers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "Jeremiah 6:20",
-          "text": "Their gifts are fancy: frankincense from Sheba and sweet cane from a distant land, plus burnt offerings and sacrifices. Friend, that’s ordering something from the other side of the world and paying more for SHIPPING than for the thing itself.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Jeremiah 6:20",
-          "question": "True or false: The LORD says their burnt offerings are acceptable to Him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Then the LORD asks, “What use to Me is frankincense from Sheba or sweet cane from a distant land?” Sheba is a land in Arabia, and friend, that is a LONG way to haul anything.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Jeremiah 6:21",
-          "text": "Therefore the LORD says He will lay stumbling blocks before this people. You know that dark living room at night, where your FEET find every single thing you left on the floor?",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Jeremiah 6:20",
+          "question": "True or false: The LORD says the people’s sacrifices do not please Him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "story",
+          "verses": "Jeremiah 6:21",
+          "text": "Therefore the LORD says He will lay stumbling blocks before this people. You know that dark living room at night, when your FEET find every single thing on the floor?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 6:21",
@@ -250,7 +256,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 6:24",
-          "question": "True or false: When the people hear the report about this army, they get ready to fight.",
+          "question": "True or false: When the report about this army is heard, everyone gets ready to fight.",
           "answers": [
             {
               "text": "True",
@@ -268,7 +274,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Jeremiah 6:24",
-          "text": "Then the prophet speaks as one of the people: “We have heard the report; our hands hang limp.” Anguish has them in its grip, pain like that of a woman in labor.",
+          "text": "Then comes the cry: “We have heard the report; our hands hang limp. Anguish has gripped us, pain like that of a woman in labor.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -277,15 +283,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 6:25",
-          "question": "The enemy has a sword, and terror is on every side. True or false: The people are told to go out to the fields and walk the road.",
+          "question": "The enemy has a sword, and terror is on every side. True or false: The warning says not to go out to the fields or walk the road.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -296,7 +302,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 6:26",
-          "question": "Then the prophet calls on the daughter of his people to dress in sackcloth, roll in ashes and mourn as they would for an only son. Why mourn like that?",
+          "question": "Then comes the call: “O daughter of my people, dress yourselves in sackcloth and roll in ashes.” They are to mourn as they would for an only son. Why mourn like that?",
           "answers": [
             {
               "text": "The destroyer will come suddenly",
@@ -377,7 +383,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Jeremiah 6:29",
-          "text": "The refining proceeds in vain. That's me pulling a batch out after an hour at full heat, and it's STILL dough in the middle.",
+          "text": "The refining proceeds in vain, for the wicked are not purged. All that heat, and nothing comes out clean.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -386,21 +392,29 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 6:30",
-          "question": "In the end, the LORD's people are called rejected silver. Why that name?",
+          "question": "At the end of the furnace picture, what does the LORD say His people are called?",
           "answers": [
             {
-              "text": "Because the LORD has rejected them",
+              "text": "Rejected silver",
               "correct": true
             },
             {
-              "text": "Because the nations have rejected them",
+              "text": "Tarnished gold",
               "correct": false
             },
             {
-              "text": "Because the fire has melted them",
+              "text": "Worthless clay",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Jeremiah 6:30",
+          "text": "And the reason is the hardest line of all: the LORD has rejected them. I think this one hurts, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

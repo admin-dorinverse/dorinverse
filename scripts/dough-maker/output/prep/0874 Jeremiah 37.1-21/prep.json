@@ -106,7 +106,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Jeremiah 37:6-7",
-          "text": "Then the word of the LORD comes to Jeremiah, with a message for the king of Judah who sent to Him. It's about Pharaoh's army, the one that marched out to help Judah.",
+          "text": "Then the word of the LORD comes to Jeremiah, with a message for the king of Judah, the one who sent to Jeremiah. It's about Pharaoh's army, the one that marched out to help Judah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -193,31 +193,31 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 37:11-12",
-          "text": "Back to that moment the Chaldean army pulled away from Jerusalem, for fear of Pharaoh's army. That's when Jeremiah starts to leave Jerusalem.",
+          "text": "Back to that moment the Chaldean army pulled away from Jerusalem, for fear of Pharaoh's army. Jeremiah starts to leave Jerusalem for the land of Benjamin, where he's from (Jeremiah 1:1).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Jeremiah 37:12",
-          "question": "Jeremiah sets out for the land of ___ to claim his portion there among the people.",
+          "question": "Jeremiah heads out of Jerusalem toward the land of Benjamin. What is he going there to do?",
           "answers": [
             {
-              "text": "Benjamin",
+              "text": "Claim his portion there among the people",
               "correct": true
             },
             {
-              "text": "Moab",
+              "text": "Hide away from King Zedekiah's men",
               "correct": false
             },
             {
-              "text": "Egypt",
+              "text": "Bring the LORD's word to the towns",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -231,20 +231,20 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 37:13",
-          "question": "What does Irijah, the captain of the guard, accuse Jeremiah of?",
+          "question": "Irijah, the captain of the guard, grabs Jeremiah and accuses him of deserting to the ___.",
           "answers": [
             {
-              "text": "Deserting to the Chaldeans",
+              "text": "Chaldeans",
               "correct": true
             },
             {
-              "text": "Spying for Pharaoh's army",
+              "text": "Egyptians",
               "correct": false
             },
             {
-              "text": "Stealing from the temple",
+              "text": "Philistines",
               "correct": false
             }
           ],
@@ -262,17 +262,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Jeremiah 37:14",
-          "question": "Irijah listens to Jeremiah and lets him go on his way to Benjamin.",
+          "question": "Irijah won't listen to Jeremiah and arrests him. Who does Irijah take Jeremiah to?",
           "answers": [
             {
-              "text": "True",
+              "text": "The officials",
+              "correct": true
+            },
+            {
+              "text": "The priests",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The elders",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -280,40 +284,40 @@
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Jeremiah 37:14-15",
-          "text": "Irijah won't listen. He arrests Jeremiah and hauls him to the officials, and the officials are angry, and they beat him.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Jeremiah 37:15",
+          "question": "When Irijah brings Jeremiah in, the officials are ___ with him.",
+          "answers": [
+            {
+              "text": "angry",
+              "correct": true
+            },
+            {
+              "text": "pleased",
+              "correct": false
+            },
+            {
+              "text": "patient",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Jeremiah 37:15",
-          "question": "The officials put Jeremiah in jail in the house of Jonathan the ___, which had been made into a prison.",
-          "answers": [
-            {
-              "text": "scribe",
-              "correct": true
-            },
-            {
-              "text": "priest",
-              "correct": false
-            },
-            {
-              "text": "prophet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The officials beat Jeremiah and put him in jail in the house of Jonathan the scribe, which had been made into a prison.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Jeremiah 37:16",
-          "text": "So Jeremiah goes into a cell in the dungeon, and he stays there a long time. I did years in the dark in the back of a junk drawer, friend, and I STILL say Jeremiah got the worse deal.",
+          "text": "So Jeremiah goes into a cell in the dungeon, and he stays there a long time. I know a little about long stretches in the dark from my years at the back of a junk drawer, and I think this one hurts.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -333,7 +337,7 @@
           "question": "After a long time in the dungeon, what word from the LORD does Jeremiah give King Zedekiah?",
           "answers": [
             {
-              "text": "He will be handed over to Babylon's king",
+              "text": "Zedekiah will be handed to Babylon's king",
               "correct": true
             },
             {
@@ -383,7 +387,7 @@
               "correct": false
             },
             {
-              "text": "Egypt would rebuild the walls of the city",
+              "text": "Egypt would rebuild the city's walls",
               "correct": false
             }
           ],
@@ -393,9 +397,9 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Jeremiah 37:19-20",
-          "text": "Those prophets said Babylon's king would NOT come, and Babylon's army had the city surrounded! Then Jeremiah brings the king a petition: “Do not send me back to the house of Jonathan the scribe, or I will die there.”",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 37:20",
+          "text": "Then Jeremiah pleads, “But now please listen, O my lord the king.” Here's his petition: “Do not send me back to the house of Jonathan the scribe, or I will die there.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -420,20 +424,20 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 37:21",
-          "question": "Instead, King Zedekiah has Jeremiah placed in the courtyard of the guard and given a loaf of bread every day. Where does that bread come from?",
+          "question": "Instead, King Zedekiah has Jeremiah placed in the courtyard of the guard, with a loaf of bread every day from the street of the ___.",
           "answers": [
             {
-              "text": "The street of the bakers",
+              "text": "bakers",
               "correct": true
             },
             {
-              "text": "The king's own table",
+              "text": "potters",
               "correct": false
             },
             {
-              "text": "The temple storerooms",
+              "text": "merchants",
               "correct": false
             }
           ],
@@ -444,7 +448,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Jeremiah 37:21",
-          "text": "A whole STREET of bakers, friend, and up here it's just me, six stations and a timer that will NOT quit. Jeremiah gets his daily loaf until all the bread in the city is gone.",
+          "text": "A whole STREET of bakers, friend, and I have to send out invitations just to get one in my kitchen! Jeremiah gets his daily loaf until all the bread in the city is gone.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 59:1",
-          "text": "Back in Isaiah 58:3, God's people asked why He hadn't noticed their fasting. Now Isaiah, the prophet, speaks up. He starts with two things: the LORD's arm and the LORD's ear.",
+          "text": "Back in Isaiah 58:3, God's people asked why He hadn't noticed their fasting. Now Isaiah, the prophet (Isaiah 1:1), speaks up. He starts with two things: the LORD's arm and the LORD's ear.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -65,37 +65,18 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 59:2",
-          "question": "Isaiah says the people's sins have hidden God's face from them, so that He does not hear.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Isaiah 59:3",
+          "text": "Then Isaiah names what's going on: hands stained with blood, and fingers stained with iniquity.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Isaiah 59:3",
-          "text": "Then Isaiah goes down the list like a doctor with a clipboard: hands stained with blood, fingers stained with iniquity. Friend, nobody wants THAT checkup.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 59:3",
-          "question": "In Isaiah's checkup, what does he say the people's lips have spoken?",
+          "question": "What does Isaiah say the people's lips have spoken?",
           "answers": [
             {
               "text": "Lies",
@@ -114,15 +95,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Isaiah 59:4",
-          "text": "Next Isaiah looks at the place where people are supposed to call for justice and plead their cases.",
+          "text": "Next Isaiah turns to justice and to people pleading their cases.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 59:4",
@@ -146,15 +127,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Isaiah 59:4-5",
-          "text": "They rely on empty pleas and tell lies. Then Isaiah grabs a picture: they hatch viper eggs, and friend, nobody's cracking THOSE into the cookie dough.",
+          "text": "They rely on empty pleas and tell lies. Then Isaiah grabs two pictures: they hatch viper eggs and weave a spider's web, and friend, nobody's cracking THOSE eggs into the cookie dough.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 59:5",
@@ -169,7 +150,7 @@
               "correct": false
             },
             {
-              "text": "They go blind",
+              "text": "They fall asleep",
               "correct": false
             }
           ],
@@ -177,15 +158,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Isaiah 59:5",
-          "text": "Second picture: they weave a spider's web. Lots of work, lots of thread.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 59:6",
@@ -208,65 +181,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
+          "kind": "story",
+          "verses": "Isaiah 59:6",
+          "text": "They can't cover themselves with their works. Their deeds are sinful deeds, and acts of violence are in their hands.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Isaiah 59:6",
-          "question": "Isaiah says the people can cover themselves with their works.",
+          "verses": "Isaiah 59:7",
+          "question": "Isaiah says the people's feet run to evil.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Isaiah 59:7-8",
+          "text": "They're swift to shed innocent blood, and ruin and destruction lie in their wake. There's no justice in their tracks, and they've turned them into crooked paths.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Isaiah 59:6-7",
-          "text": "Isaiah says their deeds are sinful deeds, with acts of violence in their hands. And their feet are moving FAST.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 59:7",
-          "question": "Where does Isaiah say the people's feet run?",
-          "answers": [
-            {
-              "text": "To evil",
-              "correct": true
-            },
-            {
-              "text": "To the temple",
-              "correct": false
-            },
-            {
-              "text": "To the hills",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Isaiah 59:7-8",
-          "text": "They're swift to shed innocent blood, and ruin and destruction lie in their wake. They've turned their roads into crooked paths, like a GPS stuck on \"recalculating\" forever.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 59:8",
@@ -282,7 +232,7 @@
               "correct": false
             },
             {
-              "text": "home",
+              "text": "honor",
               "correct": false
             }
           ],
@@ -362,7 +312,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Isaiah 59:10",
-          "text": "And here's the thing about the blind, friend: noon doesn't help them one bit more than midnight.",
+          "text": "They're groping like those without eyes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -389,7 +339,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Isaiah 59:11",
-          "text": "Then come the sounds: they growl like bears and moan like doves. That's the EXACT noise I made every time the drawer opened and it was just somebody hunting for tape.",
+          "text": "Then come the sounds: they growl like bears and moan like doves. They hope for justice, but find none.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -432,7 +382,7 @@
               "correct": true
             },
             {
-              "text": "Their enemies",
+              "text": "Their neighbors",
               "correct": false
             },
             {
@@ -498,7 +448,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Isaiah 59:14",
-          "text": "So justice gets turned away. Righteousness stands at a distance, like the coworker at the office party who never leaves the wall.",
+          "text": "So justice gets turned away, and righteousness stands at a distance.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -594,7 +544,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 59:16",
-          "question": "Isaiah started by saying the LORD's arm isn't too short to save. So with no one to intercede, what brought salvation?",
+          "question": "With no one to intercede, Isaiah says something of the LORD's own stepped in to save. What was it?",
           "answers": [
             {
               "text": "His own arm",
@@ -624,39 +574,38 @@
           "card": 6,
           "kind": "story",
           "verses": "Isaiah 59:17",
-          "text": "Now the LORD suits up like a warrior, with righteousness on like a breastplate. My whole outfit is one apron and one hat, and I STILL put the apron on backwards.",
+          "text": "Now the LORD puts on righteousness like a breastplate, and the helmet of salvation on His head.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Isaiah 59:17",
-          "question": "On His head, the LORD puts the helmet of ___.",
-          "answers": [
-            {
-              "text": "salvation",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "glory",
-              "correct": false
-            },
-            {
-              "text": "wisdom",
-              "correct": false
-            }
-          ],
+          "text": "Then He puts on garments of vengeance.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Isaiah 59:17",
-          "text": "Over that go garments of vengeance, and He wraps Himself in a cloak of zeal.",
+          "question": "After the garments of vengeance, what does the LORD wrap Himself in?",
+          "answers": [
+            {
+              "text": "A cloak of zeal",
+              "correct": true
+            },
+            {
+              "text": "A robe of peace",
+              "correct": false
+            },
+            {
+              "text": "A coat of mourning",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -715,7 +664,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Isaiah 59:19",
-          "text": "And how does He come? Not a trickle, not a drip, but like a RAGING flood.",
+          "text": "And how will He come? Not a trickle, not a drip, but like a RAGING flood.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

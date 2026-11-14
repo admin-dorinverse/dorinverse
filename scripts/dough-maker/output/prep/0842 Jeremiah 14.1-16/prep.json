@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 14:1-2",
-          "text": "Jeremiah, a prophet in Judah, gets a word from the LORD about a drought. Judah mourns, her gates languish, and a cry goes up from Jerusalem. Friend, this is not a 'we're out of sprinkles' kind of morning.",
+          "text": "Jeremiah, a prophet in Judah, gets a word from the LORD about a drought. Judah mourns, her gates languish, and a cry goes up from Jerusalem. Friend, this is not a 'we're out of sprinkles' kind of trouble.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,35 +40,12 @@
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 14:3",
-          "text": "The jars come back EMPTY. All that walking, and I bet those empty jars felt heavier on the way home.",
+          "text": "The jars come back EMPTY, and shame and humiliation come back with them. I bet those empty jars felt heavier on the way home.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Jeremiah 14:3",
-          "question": "When the jars come back empty from the cisterns, what do they do in their shame?",
-          "answers": [
-            {
-              "text": "Cover their heads",
-              "correct": true
-            },
-            {
-              "text": "Tear their clothes",
-              "correct": false
-            },
-            {
-              "text": "Throw down their jars",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
           "verses": "Jeremiah 14:4",
           "text": "Out in the countryside, it's no better. The farmers look down at their fields, and the ground is cracked.",
@@ -76,7 +53,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 14:4",
@@ -100,11 +77,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 14:4",
-          "question": "Looking at the cracked ground, the farmers are ashamed and cover their heads too.",
+          "question": "Out in the cracked fields of Judah, the farmers cover their heads.",
           "answers": [
             {
               "text": "True",
@@ -119,7 +96,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Jeremiah 14:5",
           "text": "Then even the animals feel it. The doe in the field deserts her newborn fawn.",
@@ -127,7 +104,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 14:5",
@@ -142,7 +119,7 @@
               "correct": false
             },
             {
-              "text": "A lion is close by",
+              "text": "Her herd has moved on",
               "correct": false
             }
           ],
@@ -150,7 +127,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Jeremiah 14:6",
           "text": "Wild donkeys stand up on the heights, panting for air like jackals. Friend, I haven't breathed that hard since I chased a runaway chocolate chip across my whole counter.",
@@ -158,62 +135,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 14:6",
-          "question": "Up on the heights, the wild donkeys' eyes fail for lack of pasture.",
+          "question": "Up on the heights, the wild donkeys still find some pasture.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Jeremiah 14:7",
+          "text": "Then the voice changes, and a prayer goes up to the LORD. It opens with a confession: \"Although our iniquities testify against us…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Jeremiah 14:7",
-          "text": "Then the voice changes, and a prayer goes up to the LORD.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Jeremiah 14:7",
-          "question": "Praying to the LORD in the drought, they say their ___ are many.",
-          "answers": [
-            {
-              "text": "rebellions",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "enemies",
-              "correct": false
-            },
-            {
-              "text": "sorrows",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 14:7",
-          "question": "Even with their sins testifying against them, what do they ask the LORD to do?",
+          "question": "Even with their iniquities testifying against them, what does the prayer ask the LORD to do?",
           "answers": [
             {
               "text": "Act for the sake of His name",
@@ -232,23 +185,42 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Jeremiah 14:7",
+          "question": "In the prayer during the drought, the people say they have not sinned against the LORD.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "story",
           "verses": "Jeremiah 14:8",
-          "text": "They call Him the Hope of Israel, its Savior in times of distress. Then they ask why He's like a stranger in the land, like a traveler who stays but a night.",
+          "text": "The prayer calls Him the Hope of Israel, its Savior in times of distress. Then it asks why He's like a stranger in the land, like a traveler who stays but a night.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Jeremiah 14:9",
+          "text": "Next it asks why He's like a man taken by surprise, like a warrior powerless to save. That's a HARD question to bring to God, and this prayer brings it anyway.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Jeremiah 14:9",
-          "text": "Then they ask why He's like a man taken by surprise, like a warrior powerless to save. That's a HARD question to bring to God, and they bring it anyway.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 14:9",
@@ -271,7 +243,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 14:9",
@@ -308,15 +280,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 14:10",
-          "question": "Because the people love to wander, the LORD accepts them and forgets their iniquity.",
+          "question": "The LORD says that because this people loves to wander, He does not accept them.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -327,7 +299,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 14:10",
-          "question": "Instead of forgetting this people's iniquity, what does the LORD say He will now do?",
+          "question": "What does the LORD say He will now do about this people's iniquity?",
           "answers": [
             {
               "text": "Remember it and punish their sins",
@@ -488,7 +460,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Jeremiah 14:14",
-          "text": "He says He did not send them, appoint them or speak to them. That's somebody signing YOUR name on a card you never even saw.",
+          "text": "The LORD says, \"I did not send them or appoint them or speak to them.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -520,28 +492,24 @@
           "card": 15,
           "kind": "story",
           "verses": "Jeremiah 14:15",
-          "text": "Then the LORD speaks about the prophets He didn't send, the ones who say, 'No sword or famine will touch this land.'",
+          "text": "Then the LORD speaks about the prophets He didn't send, the ones who say, \"No sword or famine will touch this land.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Jeremiah 14:15",
-          "question": "How does the LORD say those very prophets will meet their end?",
+          "question": "The LORD says the prophets who promise no sword or famine will be spared from them.",
           "answers": [
             {
-              "text": "By sword and famine",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Peacefully in old age",
-              "correct": false
-            },
-            {
-              "text": "As captives in exile",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -560,7 +528,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 14:16",
-          "question": "The people those prophets prophesy to will be thrown into the streets of Jerusalem with no one to bury them.",
+          "question": "The LORD says the people those prophets prophesy to will be thrown into the streets of Jerusalem.",
           "answers": [
             {
               "text": "True",

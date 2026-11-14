@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 49:14",
-          "text": "Isaiah the prophet is speaking for the LORD, and Zion, another name for Jerusalem (Isaiah 52:1), is pictured as a woman. Heaven and earth were just told to sing for joy (Isaiah 49:13), but Zion's not singing. She says, \"The LORD has forsaken me; the Lord has forgotten me!\"",
+          "text": "Zion, another name for Jerusalem (Isaiah 52:1), is pictured here as a woman, and the LORD is about to answer her. Heaven and earth were just told to shout for joy (Isaiah 49:13), but Zion's not shouting. She says, \"The LORD has forsaken me; the Lord has forgotten me!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -25,11 +25,11 @@
               "correct": true
             },
             {
-              "text": "Her jewelry",
+              "text": "Her first home",
               "correct": false
             },
             {
-              "text": "Her wedding attire",
+              "text": "Her own name",
               "correct": false
             }
           ],
@@ -66,20 +66,20 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 49:16",
-          "question": "Zion is inscribed on the palms of the LORD's hands. What does that picture show?",
+          "question": "Zion is inscribed on the palms of the LORD's hands, and her ___ are ever before Him.",
           "answers": [
             {
-              "text": "He will never forget her",
+              "text": "walls",
               "correct": true
             },
             {
-              "text": "He is angry with her",
+              "text": "gates",
               "correct": false
             },
             {
-              "text": "He is sending her away",
+              "text": "towers",
               "correct": false
             }
           ],
@@ -89,9 +89,9 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Isaiah 49:16-17",
-          "text": "Her walls are ever before Him. And the destroyers and wreckers who tore her down? They're packing up and leaving.",
-          "needs_agent_fix": true,
+          "verses": "Isaiah 49:17",
+          "text": "Zion's destroyers and wreckers are packing up and LEAVING. Friend, that's the one moving truck the whole street is happy to see.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -120,28 +120,28 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Isaiah 49:18",
+          "verses": "Isaiah 49:14, 18",
           "text": "Then the LORD tells her, \"Lift up your eyes and look around.\" Zion said she'd been forgotten, and now there's a whole CROWD gathering and heading her way.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Isaiah 49:18",
-          "question": "The LORD swears by His own life that Zion will wear this crowd as jewelry and put them on like a bride. That picture makes the crowd her ___.",
+          "question": "The LORD says Zion will wear this crowd as jewelry. What does He say she will put them on like?",
           "answers": [
             {
-              "text": "beauty",
+              "text": "A bride",
               "correct": true
             },
             {
-              "text": "burden",
+              "text": "A mourner",
               "correct": false
             },
             {
-              "text": "punishment",
+              "text": "A soldier",
               "correct": false
             }
           ],
@@ -153,15 +153,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 49:19",
-          "question": "The LORD says Zion's ruined and desolate land will now be too small for her people.",
+          "question": "The LORD says Zion's ruined and desolate land will have more room than her people need.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -180,18 +180,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 49:21",
-          "question": "Zion was bereaved and barren, exiled and left all alone. When she sees all these children, what does she do in her heart?",
+          "question": "Zion will say in her heart that she was bereaved and barren, exiled and left all alone. What will she ask about all these children?",
           "answers": [
             {
-              "text": "She wonders where they came from",
+              "text": "Where they came from",
               "correct": true
             },
             {
-              "text": "She tells them all to move out",
+              "text": "When they will leave",
               "correct": false
             },
             {
-              "text": "She sends them back to the nations",
+              "text": "Why they came so late",
               "correct": false
             }
           ],
@@ -217,18 +217,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 49:22",
-          "question": "When the LORD raises His banner to the nations, what do they do with Zion's sons and daughters?",
+          "question": "The LORD lifts His hand to the nations and raises His banner. What will the nations do with Zion's sons and daughters?",
           "answers": [
             {
-              "text": "They carry them back to her",
+              "text": "Carry them to her",
               "correct": true
             },
             {
-              "text": "They keep them as servants",
+              "text": "Keep them as servants",
               "correct": false
             },
             {
-              "text": "They send them farther away",
+              "text": "Send them farther away",
               "correct": false
             }
           ],
@@ -240,28 +240,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 49:23",
-          "question": "The LORD says kings will be Zion's foster ___, and their queens her nursing ___.",
+          "question": "The LORD says kings will care for Zion's children. He says the kings will be her foster ___.",
           "answers": [
             {
               "text": "fathers",
-              "correct": true,
-              "blank": 1
+              "correct": true
             },
             {
-              "text": "mothers",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "soldiers",
+              "text": "brothers",
               "correct": false
             },
             {
-              "text": "judges",
-              "correct": false
-            },
-            {
-              "text": "strangers",
+              "text": "masters",
               "correct": false
             }
           ],
@@ -272,8 +262,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Isaiah 49:23",
-          "text": "Those kings will bow to her facedown and lick the dust at her feet. That's like the whole board of directors lying FACEDOWN on the carpet in front of the intern's desk. Friend, I'd have to sit down!",
-          "needs_agent_fix": true,
+          "text": "Those kings and queens will bow to her facedown and lick the dust at her feet. Friend, that's the whole board of directors FACEDOWN on the carpet in front of the intern's desk!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -281,7 +271,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 49:23",
-          "question": "The LORD says Zion will know that He is the LORD. What does He promise those who hope in Him?",
+          "question": "The LORD says Zion will know that He is the LORD. What does He say about those who hope in Him?",
           "answers": [
             {
               "text": "They will never be put to shame",
@@ -331,7 +321,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 49:25",
-          "question": "The LORD promises to save Zion's children. Who does He say He will contend with?",
+          "question": "The LORD says He will save Zion's children. Who does He say He will contend with?",
           "answers": [
             {
               "text": "The ones who oppose her",
@@ -342,11 +332,11 @@
               "correct": false
             },
             {
-              "text": "The kings who carry her sons",
+              "text": "The nations carrying her sons",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

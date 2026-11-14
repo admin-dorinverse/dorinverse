@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 55:1",
-          "text": "The prophet Isaiah is passing along the LORD's own words, and they open with the LORD calling out, \"Come, all you who are thirsty, come to the waters\". Friend, in all my years in that junk drawer, NOBODY ever pulled it open and yelled, \"Come on, everybody!\" And He's not done calling people in.",
+          "text": "The prophet Isaiah is passing along the LORD's own words, and they open with the LORD calling out, \"Come, all you who are thirsty, come to the waters…\" Friend, in all my years stuck in the back of a junk drawer, NOBODY ever pulled it open and yelled, \"Come on, everybody!\" And He's not done calling people in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 55:1",
-          "question": "The LORD also calls out to people who have no money at all. What does He tell them to do?",
+          "question": "The LORD also calls out to people who have no money. What does He tell them to do?",
           "answers": [
             {
               "text": "Come buy and eat",
@@ -38,10 +38,26 @@
         },
         {
           "card": 3,
+          "kind": "story",
+          "verses": "Isaiah 55:1",
+          "text": "And it's not just water on offer. Then He says, \"Come, buy wine and milk without money and without cost!\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "story",
+          "verses": "Isaiah 55:2",
+          "text": "Then the LORD asks, \"Why spend money on that which is not bread…\" Friend, don't ask me about spending money, because when a closing bakery put me in its last bin, my WHOLE price tag was 25 cents.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Isaiah 55:1",
-          "question": "True or false: the wine and milk the LORD offers will cost them something.",
+          "verses": "Isaiah 55:2",
+          "question": "The LORD also asks about spending labor. True or false: He says it goes to something that satisfies.",
           "answers": [
             {
               "text": "True",
@@ -50,37 +66,6 @@
             {
               "text": "False",
               "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Isaiah 55:2",
-          "text": "Then the LORD turns to what people have been spending their money and their hard work on. Friend, don't ask me about spending money, my WHOLE price tag was 25 cents.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 55:2",
-          "question": "The LORD asks why people spend their money and their work on certain things. What's the trouble with those things?",
-          "answers": [
-            {
-              "text": "They do not satisfy",
-              "correct": true
-            },
-            {
-              "text": "They cost too much",
-              "correct": false
-            },
-            {
-              "text": "They belong to others",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -119,76 +104,57 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Isaiah 55:3",
-          "question": "The LORD promises to make a covenant with them. He says that covenant will last ___.",
-          "answers": [
-            {
-              "text": "forever",
-              "correct": true
-            },
-            {
-              "text": "a lifetime",
-              "correct": false
-            },
-            {
-              "text": "a season",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then the LORD makes them a promise: \"I will make with you an everlasting covenant…\" Friend, my edges wore DOWN after a few years of stamping cookies, so everlasting? That's a whole different league.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Isaiah 55:3-4",
-          "text": "This covenant comes with the loving devotion the LORD promised to David, Israel's king. Then the LORD points right at David and says He made him a leader and commander of the peoples.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Isaiah 55:3",
+          "question": "The LORD's everlasting covenant comes with His loving devotion. Who does He say that loving devotion was promised to?",
+          "answers": [
+            {
+              "text": "David",
+              "correct": true
+            },
+            {
+              "text": "Moses",
+              "correct": false
+            },
+            {
+              "text": "Abraham",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 55:4",
-          "question": "David is a leader and commander of the peoples. The LORD says He also made David a witness to the ___.",
-          "answers": [
-            {
-              "text": "nations",
-              "correct": true
-            },
-            {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Isaiah 55:3-4",
+          "text": "That's David, Israel's king. Then the LORD says, \"Behold, I have made him a witness to the nations, a leader and commander of the peoples.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Isaiah 55:5",
-          "question": "The LORD goes on, \"Surely you will summon a nation you do not know\". What will nations who do not know you do?",
+          "question": "Then the LORD says, \"Surely you will summon a nation you do not know…\" True or false: He says nations who do not know you will turn away from you.",
           "answers": [
             {
-              "text": "Run to you",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Turn from you",
-              "correct": false
-            },
-            {
-              "text": "Rise against you",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -319,7 +285,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Isaiah 55:10",
-          "text": "Now the LORD paints a picture from the weather: rain and snow falling from heaven. Friend, the only weather we ever got in that junk drawer was falling dust, and we COUNTED it for fun.",
+          "text": "Now the LORD paints a picture from the weather: rain and snow falling from heaven. Friend, the only snow in MY bakery is when I sneeze near the flour.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -328,15 +294,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 55:10",
-          "question": "True or false: the rain and snow go back up without ever watering the earth.",
+          "question": "True or false: the rain and snow do not go back without watering the earth.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -362,7 +328,7 @@
               "correct": true
             },
             {
-              "text": "slowly",
+              "text": "unchanged",
               "correct": false
             },
             {
@@ -375,78 +341,61 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Isaiah 55:11",
-          "question": "The LORD's word will accomplish what He pleases. What does He say it will do where He sends it?",
-          "answers": [
-            {
-              "text": "Prosper",
-              "correct": true
-            },
-            {
-              "text": "Fade",
-              "correct": false
-            },
-            {
-              "text": "Rest",
-              "correct": false
-            }
-          ],
+          "text": "And the LORD says His word \"will accomplish what I please, and it will prosper where I send it.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Isaiah 55:12",
-          "question": "The message closes with the people heading out. They will go out with ___ and be led forth in ___.",
-          "answers": [
-            {
-              "text": "joy",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "peace",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "fear",
-              "correct": false
-            },
-            {
-              "text": "haste",
-              "correct": false
-            },
-            {
-              "text": "silence",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then the LORD makes a promise: \"You will indeed go out with joy and be led forth in peace…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Isaiah 55:12",
-          "text": "The mountains and hills will burst into song before them, and all the trees of the field will clap their hands. Friend, I can't get ONE round of applause out of a cookie sheet.",
+          "question": "The LORD says the mountains and hills will do something before you as you go out with joy. What is it?",
+          "answers": [
+            {
+              "text": "Burst into song",
+              "correct": true
+            },
+            {
+              "text": "Bow down low",
+              "correct": false
+            },
+            {
+              "text": "Melt like wax",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
-          "verses": "Isaiah 55:13",
-          "text": "Then the land changes: instead of the thornbush, the cypress will grow, and instead of the brier, the myrtle will spring up. That's a bigger glow-up than me coming out of the drawer, and friend, I came out with a FULLER MUSTACHE.",
+          "verses": "Isaiah 55:12",
+          "text": "And all the trees of the field will clap their hands. Friend, I can't get ONE round of applause out of a cookie sheet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
+          "kind": "story",
+          "verses": "Isaiah 55:13",
+          "text": "Then the LORD says instead of the thornbush, the cypress will grow, and instead of the brier, the myrtle will spring up. That's a bigger glow-up than mine, and friend, when God made me new, I came out with a FULLER MUSTACHE.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 55:13",
@@ -469,10 +418,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "story",
           "verses": "Isaiah 55:13",
-          "text": "And the LORD adds that this sign will never be destroyed. Friend, I spent years in a junk drawer wondering if today was the day somebody tossed us all in the trash, so NEVER to be destroyed sounds real good to me.",
+          "text": "And the LORD adds that this sign will never be destroyed. Friend, I spent years in the back of a junk drawer wondering if today was the day somebody tossed me and the other forgotten odds and ends in the trash, so NEVER to be destroyed sounds real good to me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

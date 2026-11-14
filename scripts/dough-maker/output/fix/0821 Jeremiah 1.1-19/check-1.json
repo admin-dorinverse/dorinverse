@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 15
+      },
+      "problem": "The card says 'And there's that line again, friend: I am with you to deliver you.' No earlier card showed that line. Stop 1 card 12 only had a blank question ('He is with him to ___ him'), so the exact line was never shown and the 'line again' callback is not true.",
+      "rule": "Noticing: What he points out must be true. \"Same words\" means an exact match. He only points back to words a card has shown."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 15
+      },
+      "problem": "The card opens with 'Here's the real promise', which answers the false statement on the card right before it. Every baker sees this card whatever they picked, so it reacts to the baker's answer on card 14.",
+      "rule": "A story card never reacts to the baker's pick, like \"Right!\" or \"Nope.\" Every baker sees it, whatever they picked. Reactions come from the code."
+    }
+  ]
+}

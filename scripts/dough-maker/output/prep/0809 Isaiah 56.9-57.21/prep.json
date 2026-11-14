@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 56:9-10",
-          "text": "Isaiah, God's prophet, has just shared the LORD's promise to gather people from all the nations to His house of prayer (Isaiah 56:7-8). Then the message turns: a call goes out to all the beasts of the field and the forest to come and eat greedily. Next up are Israel's watchmen, and a watchman's whole job is to see trouble coming.",
+          "text": "Isaiah, God's prophet, has just shared the LORD's promise that His house will be called a house of prayer for all the nations (Isaiah 56:7). Then the message turns: a call goes out to all the beasts of the field and the forest to come and eat greedily. Next up are Israel's watchmen, and a watchman's whole job is to see trouble coming.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 56:10",
-          "question": "Israel's watchmen should be the first to see trouble coming, but they are all ___.",
+          "question": "Israel's watchmen should be the first to see trouble coming, but they are ___.",
           "answers": [
             {
               "text": "blind",
@@ -120,9 +120,9 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Isaiah 56:12",
-          "text": "The watchdogs can't bark, and these shepherds? They're planning a PARTY. They call for wine and strong drink.",
-          "needs_agent_fix": true,
+          "verses": "Isaiah 56:10-12",
+          "text": "The watchmen are blind, the dogs can't bark, and the shepherds are calling for WINE and STRONG DRINK.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -184,15 +184,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 57:2",
-          "question": "True or false: Those who walk uprightly find no rest, even in death.",
+          "question": "True or false: Those who walk uprightly find rest as they lie down in death.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -217,7 +217,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 57:4",
-          "question": "True or false: God calls these mockers children of transgression and offspring of deceit.",
+          "question": "True or false: God asks the mockers if they are not children of transgression and offspring of deceit.",
           "answers": [
             {
               "text": "True",
@@ -252,18 +252,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 57:6",
-          "question": "After a drink offering and a grain offering to the smooth stones of the valley, what does God ask?",
+          "question": "God asks a question about their offerings to the smooth stones of the valley. What is He asking?",
           "answers": [
             {
-              "text": "Should I relent because of these",
+              "text": "Whether He should relent because of them",
               "correct": true
             },
             {
-              "text": "Who taught you to do these things",
+              "text": "Who taught them to bring such offerings",
               "correct": false
             },
             {
-              "text": "When will you return to Me",
+              "text": "When they will come back to Him",
               "correct": false
             }
           ],
@@ -280,10 +280,18 @@
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "Isaiah 57:8",
+          "text": "God says they set up their memorial behind the door and doorpost. They uncovered their bed, made a pact with those whose bed they loved, and gazed upon their nakedness.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 57:8",
-          "question": "God says they uncovered their bed while ___ Him.",
+          "question": "With a bed on the hill and a memorial behind the door, God says they were ___ Him.",
           "answers": [
             {
               "text": "forsaking",
@@ -302,30 +310,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
-          "verses": "Isaiah 57:8-9",
-          "text": "They made a pact with those whose bed they loved. And they went to Molech, a false god of the Ammonites (1 Kings 11:7), with oil and more and more perfume.",
+          "verses": "Isaiah 57:9",
+          "text": "They went to Molech, a false god of the Ammonites (1 Kings 11:7), with oil and more and more perfume.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 57:9",
-          "question": "God says they sent their envoys a great distance. How far down did they go?",
+          "question": "God says they sent out their envoys. How far does He say they sent them?",
           "answers": [
             {
-              "text": "Even to Sheol itself",
+              "text": "A great distance",
               "correct": true
             },
             {
-              "text": "Even to Egypt itself",
+              "text": "Only to the next town",
               "correct": false
             },
             {
-              "text": "Even to the sea itself",
+              "text": "Just across the river",
               "correct": false
             }
           ],
@@ -333,15 +341,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "story",
-          "verses": "Isaiah 57:10",
-          "text": "Trip after trip after trip. All those journeys wear them OUT.",
+          "verses": "Isaiah 57:9-10",
+          "text": "They even descended to Sheol itself. Trip after trip after trip, and all those journeys wear them OUT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 57:10",
@@ -360,18 +368,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Isaiah 57:10",
-          "text": "Nope, they found renewal of their strength, so they didn't grow weak. That's the guy three hours lost on the highway with the gas light on, STILL saying, \"Nah, I know EXACTLY where I'm going.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 13,
           "kind": "story",
-          "verses": "Isaiah 57:11",
-          "text": "Then comes a question, and it's a heavy one, friend. God asks whom they've dreaded and feared so much that they lied and failed to remember Him.",
+          "verses": "Isaiah 57:10",
+          "text": "They found renewal of their strength, so they didn't grow weak. You know when someone's been lost three hours on the highway, gas light on, and they're STILL saying, \"Nah, I know EXACTLY where I'm going\"?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -380,7 +380,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 57:11",
-          "question": "God asks a question about why they don't fear Him. What reason does He raise?",
+          "question": "God asks whom they've dreaded and feared so much that they lied and failed to remember Him. Then He asks about why they don't fear Him. What reason does He raise?",
           "answers": [
             {
               "text": "He has long been silent",
@@ -400,9 +400,20 @@
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Isaiah 57:12",
-          "text": "Here's the bottom line. God says He will expose their righteousness and their works, and none of it will profit them.",
+          "question": "True or false: God says their righteousness and their works will profit them.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -434,7 +445,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 57:13",
-          "question": "True or false: A breath of wind is enough to take all those idols away.",
+          "question": "True or false: God says the wind will carry off all those idols.",
           "answers": [
             {
               "text": "True",
@@ -628,7 +639,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Isaiah 57:18-19",
-          "text": "And God doesn't stop at heal. He'll guide him and restore comfort to him and his mourners, bringing praise to their lips, and friend, I know a little something about being brought back like that.",
+          "text": "And God doesn't stop at heal. He'll guide him and restore comfort to him and his mourners, bringing praise to their lips.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -654,9 +665,9 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "Isaiah 57:20",
+          "verses": "Isaiah 57:19-20",
           "text": "Peace to those far and near, and then, BAM, a hard turn. The wicked are like the storm-tossed sea.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -686,28 +697,24 @@
           "card": 15,
           "kind": "story",
           "verses": "Isaiah 57:20",
-          "text": "Its waves churn up mire and muck. That's my brain at 3 a.m., replaying something dumb I said to a mixing bowl twenty years ago.",
+          "text": "Its waves churn up mire and muck. That's my brain at 3 a.m., replaying one dumb thing I said years ago, over and over and OVER.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Isaiah 57:21",
-          "question": "The prophet closes with the words of his God: there is no ___ for the wicked.",
+          "question": "True or false: The passage ends with God saying there is peace for the wicked.",
           "answers": [
             {
-              "text": "peace",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "glory",
-              "correct": false
-            },
-            {
-              "text": "hiding",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 39:1",
-          "text": "Friend, Jeremiah, the LORD's prophet, has been telling Zedekiah king of Judah that if he surrenders to Babylon, he'll live (Jer 38:17). Now the story goes back to where all this started. In the ninth year of Zedekiah's reign, in the tenth month, Nebuchadnezzar king of Babylon marches against Jerusalem with his ENTIRE army.",
+          "text": "Friend, Jeremiah, the LORD's prophet, has been telling Zedekiah king of Judah that if he surrenders to Babylon, he'll live (Jeremiah 38:17). In the ninth year of Zedekiah's reign, in the tenth month, Nebuchadnezzar king of Babylon marches against Jerusalem with his ENTIRE army.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 39:1-2",
-          "text": "Ninth year. Tenth year. ELEVENTH year of Zedekiah's reign, and Babylon is still sitting out there. And I used to complain about waiting on the oven to preheat.",
+          "text": "The siege starts in Zedekiah's ninth year. Babylon is STILL sitting out there in his ELEVENTH year. And I used to complain about waiting on the oven to preheat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 39:2",
-          "question": "On the ninth day of the fourth month of Zedekiah's eleventh year, the city was ___.",
+          "question": "On the ninth day of the fourth month of Zedekiah's eleventh year, Jerusalem was ___.",
           "answers": [
             {
               "text": "breached",
@@ -65,15 +65,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Jeremiah 39:3",
-          "text": "The walls are open, and in walk all the officials of the king of Babylon. The name Nergal-sharezer shows up TWICE on that list, so imagine being the guy taking attendance.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 39:2-3",
+          "text": "Jerusalem is breached, and in walk all the officials of the king of Babylon. Nergal-sharezer, Nebo-sarsekim and the rest of them, all coming through together.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -110,21 +110,17 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Jeremiah 39:4",
-          "question": "Zedekiah king of Judah and his soldiers see the Babylonian officials sitting in the gate. What do they do?",
+          "question": "Zedekiah king of Judah and his soldiers see Babylon's officials sitting in the gate, and they surrender to them.",
           "answers": [
             {
-              "text": "They flee the city",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "They surrender to them",
-              "correct": false
-            },
-            {
-              "text": "They attack the gate",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -135,15 +131,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 39:4",
-          "question": "Zedekiah and his soldiers leave Jerusalem in broad daylight.",
+          "question": "Zedekiah and his soldiers leave Jerusalem at night.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -153,7 +149,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Jeremiah 39:4",
-          "text": "They slip out at night by way of the king's garden, through the gate between the two walls, heading toward the Arabah. Picture a whole army on tiptoe going \"Shhh!\" past the flower beds.",
+          "text": "They go out by way of the king's garden, through the gate between the two walls, heading toward the Arabah, the valley along the Jordan River. Picture a whole army on tiptoe going \"Shhh!\" past the flower beds.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,27 +157,28 @@
           "card": 11,
           "kind": "story",
           "verses": "Jeremiah 39:5",
-          "text": "But the army of the Chaldeans, Babylon's army, comes after them. Jeremiah had told Zedekiah, \"you yourself will not escape their grasp\" (Jer 38:18).",
+          "text": "But the army of the Chaldeans, Babylon's army, comes after them. Jeremiah had told Zedekiah, \"…you yourself will not escape their grasp\" (Jeremiah 38:18).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 39:5",
-          "question": "Zedekiah is running for the Arabah. Where does the Chaldean army overtake him?",
+          "question": "Zedekiah is running toward the Arabah. The Chaldean army overtakes him in the plains of ___.",
           "answers": [
             {
-              "text": "In the plains of Jericho",
-              "correct": true
+              "text": "Jericho",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "In the plains of Moab",
+              "text": "Moab",
               "correct": false
             },
             {
-              "text": "In the Valley of Elah",
+              "text": "Shinar",
               "correct": false
             }
           ],
@@ -190,37 +187,41 @@
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Jeremiah 39:5",
-          "text": "They seize Zedekiah and bring him up to Nebuchadnezzar at Riblah, in the land of Hamath. There, the king of Babylon pronounces judgment on him.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Jeremiah 39:6",
-          "question": "At Riblah, the king of Babylon spares Zedekiah's sons.",
+          "type": "multiple_choice",
+          "verses": "Jeremiah 39:5",
+          "question": "The Chaldeans seize Zedekiah and bring him up to Nebuchadnezzar king of Babylon. Where do they bring Zedekiah?",
           "answers": [
             {
-              "text": "True",
+              "text": "To Riblah in the land of Hamath",
+              "correct": true
+            },
+            {
+              "text": "To Carchemish by the Euphrates",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "To Lachish in the land of Judah",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
+          "card": 14,
+          "kind": "story",
+          "verses": "Jeremiah 39:5",
+          "text": "There at Riblah, the king of Babylon pronounces judgment on Zedekiah. This part is heavy, friend.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 15,
           "kind": "story",
-          "verses": "Jeremiah 39:6",
-          "text": "This is a hard one, friend. Right there at Riblah, Zedekiah's sons are killed before his eyes, and so are all the nobles of Judah.",
-          "needs_agent_fix": true,
+          "verses": "Jeremiah 39:6-7",
+          "text": "The king of Babylon slaughters Zedekiah's sons before Zedekiah's eyes, and he also kills all the nobles of Judah. Then he puts out Zedekiah's eyes and binds him with bronze chains.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -228,7 +229,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 39:7",
-          "question": "Then Nebuchadnezzar puts out Zedekiah's eyes and binds him with bronze chains to take him to ___.",
+          "question": "Zedekiah is bound with bronze chains to be taken to ___.",
           "answers": [
             {
               "text": "Babylon",
@@ -257,7 +258,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 39:8",
-          "text": "Back in Jerusalem, the Chaldeans aren't done. They start setting fires, just like Jeremiah warned (Jer 38:18).",
+          "text": "Back in Jerusalem, the Chaldeans aren't done. They start setting fires, just like Jeremiah said they would (Jeremiah 38:18).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -319,20 +320,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 39:10",
-          "question": "Nebuzaradan doesn't take everyone to Babylon. Who does he leave behind in the land of Judah?",
+          "question": "Nebuzaradan doesn't take everyone to Babylon. He leaves behind some of the ___ people in the land of Judah.",
           "answers": [
             {
-              "text": "Some of the poor with no property",
-              "correct": true
+              "text": "poor",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The nobles and their families",
+              "text": "noble",
               "correct": false
             },
             {
-              "text": "The palace guards and officials",
+              "text": "skilled",
               "correct": false
             }
           ],
@@ -412,39 +414,38 @@
           "card": 10,
           "kind": "story",
           "verses": "Jeremiah 39:13-14",
-          "text": "So Nebuzaradan, along with the other officials and captains of the king of Babylon, has Jeremiah brought out of the courtyard of the guard.",
+          "text": "So Nebuzaradan, along with the other officials and captains of the king of Babylon, has Jeremiah brought out of the courtyard of the guard. They turn him over to Gedaliah son of Ahikam, the son of Shaphan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Jeremiah 39:14",
-          "question": "They turn Jeremiah over to ___ son of Ahikam, the son of Shaphan, to take him home.",
+          "question": "Babylon's officials hand Jeremiah over to Gedaliah son of Ahikam. What is Gedaliah supposed to do with Jeremiah?",
           "answers": [
             {
-              "text": "Gedaliah",
-              "correct": true,
-              "blank": 1
+              "text": "Take him home",
+              "correct": true
             },
             {
-              "text": "Baruch",
+              "text": "Bring him to Babylon",
               "correct": false
             },
             {
-              "text": "Hananiah",
+              "text": "Keep him under guard",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Jeremiah 39:14",
-          "text": "So Jeremiah remains among his own people. After all that time confined in the courtyard of the guard, I bet that felt like my old drawer finally sliding open.",
+          "text": "So Jeremiah remains among his own people. I bet that felt like the night I got called out of the junk drawer I was stuck in for years.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -452,7 +453,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Jeremiah 39:15-16",
-          "text": "One more piece, from back when Jeremiah was still confined in the courtyard of the guard. The word of the LORD came to him with a message for Ebed-melech the Cushite, the court official who got Jeremiah pulled out of a muddy cistern (Jer 38:6-13).",
+          "text": "Back when Jeremiah was still confined in the courtyard of the guard, the word of the LORD came to him. It's a message for Ebed-melech the Cushite, the court official who got Jeremiah pulled out of a muddy cistern (Jeremiah 38:7-13).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -525,7 +526,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Jeremiah 39:18",
-          "text": "Ebed-melech will escape with his life like a spoil of war. Jeremiah used that same picture back when he said whoever surrendered to the Chaldeans would live (Jer 38:2).",
+          "text": "Ebed-melech will escape with his life like a spoil of war. That's the same picture Jeremiah used when he told the people the LORD's word: whoever surrenders to the Chaldeans will live (Jeremiah 38:2).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
