@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 27:1",
-          "text": "Friend, it's been a long night for Jesus. Now morning comes, and the chief priests and elders of the people all get together about Him. This is no friendly breakfast meeting, and NOBODY brought cookies.",
-          "needs_agent_fix": true,
+          "text": "Friend, it's been a long night. Jesus was questioned at the house of Caiaphas the high priest, and Peter denied knowing Him three times (Matthew 26:57-75). Now morning comes, and all the chief priests and elders of the people get together against Jesus.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,62 +33,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 27:2",
-          "question": "So they bind Jesus, lead Him away and hand Him over to ___ the governor.",
-          "answers": [
-            {
-              "text": "Pilate",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Felix",
-              "correct": false
-            },
-            {
-              "text": "Festus",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then they lead Jesus away and hand Him over to Pilate the governor.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Matthew 27:3",
-          "text": "Then the story swings over to Judas, the man who betrayed Jesus. He sees that Jesus has been condemned.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 27:2",
+          "question": "True or false: the chief priests and elders let Jesus go to Pilate untied.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Matthew 27:3",
-          "question": "When Judas sees that Jesus is condemned, what happens inside him?",
-          "answers": [
-            {
-              "text": "He is filled with remorse",
-              "correct": true
-            },
-            {
-              "text": "He is relieved it's over",
-              "correct": false
-            },
-            {
-              "text": "He grows angry at Jesus",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then the story swings over to Judas, the man who betrayed Jesus. He sees that Jesus has been condemned, and he brings the thirty pieces of silver back to the chief priests and elders.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -96,23 +76,23 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 27:3",
-          "question": "Judas takes the ___ pieces of silver back to the chief priests and elders.",
+          "question": "When Judas sees that Jesus is condemned and brings back the silver, he is filled with ___.",
           "answers": [
             {
-              "text": "thirty",
+              "text": "remorse",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "forty",
+              "text": "joy",
               "correct": false
             },
             {
-              "text": "twelve",
+              "text": "anger",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -120,7 +100,7 @@
           "kind": "story",
           "verses": "Matthew 27:4",
           "text": "Judas stands in front of them and doesn't dress it up. \"I have sinned by betraying innocent blood,\" he says.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -143,74 +123,77 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Matthew 27:5",
-          "text": "So Judas throws the silver into the temple and leaves, and then he goes away and hangs himself. That's a heavy one, friend, so take a breath with me.",
-          "needs_agent_fix": true,
+          "question": "Judas came to give the silver back to the chief priests and elders. Before he leaves, what does he do with it?",
+          "answers": [
+            {
+              "text": "He throws it into the temple",
+              "correct": true
+            },
+            {
+              "text": "He gives it to the poor",
+              "correct": false
+            },
+            {
+              "text": "He hides it in his house",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "Matthew 27:6",
-          "text": "The chief priests pick up the pieces of silver Judas threw. Then they say it's unlawful to put it into the treasury.",
-          "needs_agent_fix": true,
+          "verses": "Matthew 27:5",
+          "text": "Then Judas leaves, goes away and hangs himself. That's a heavy one, friend, so take a breath with me.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Matthew 27:6",
-          "question": "True or false: the chief priests say the silver can't go into the treasury because it is blood money.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The chief priests pick up the pieces of silver Judas threw.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Matthew 27:7",
-          "text": "Then the chief priests confer together, and friend, I bet somebody in that huddle said, \"Let's circle back on this.\" In the end, they decide to spend the silver on a piece of land.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 27:6",
+          "question": "The chief priests pick up the silver Judas threw. What do they say about putting it into the treasury?",
+          "answers": [
+            {
+              "text": "It's unlawful because it's blood money",
+              "correct": true
+            },
+            {
+              "text": "It's allowed because it's an offering",
+              "correct": false
+            },
+            {
+              "text": "It's allowed after a sacrifice",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 27:7",
-          "question": "With the silver Judas threw back, the chief priests buy the ___ field.",
-          "answers": [
-            {
-              "text": "potter's",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "farmer's",
-              "correct": false
-            },
-            {
-              "text": "shepherd's",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then the chief priests confer together, and friend, I bet somebody in that huddle said, \"Let's circle back on this.\" In the end, they use the silver to buy the potter's field.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -218,7 +201,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 27:7",
-          "question": "The chief priests buy the potter's field. What is it going to be?",
+          "question": "The chief priests won't put the silver in the treasury, so they buy the potter's field with it. What is the field going to be?",
           "answers": [
             {
               "text": "A burial place for foreigners",
@@ -233,97 +216,65 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 27:8",
-          "question": "Because of the money that bought it, the potter's field has been called the Field of ___ to this day.",
-          "answers": [
-            {
-              "text": "Blood",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Shame",
-              "correct": false
-            },
-            {
-              "text": "Tears",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Matthew 27:8-9",
+          "text": "That's why it's been called the Field of Blood, and it was still called that when this was written. Then the Gospel of Matthew says that what was spoken through Jeremiah the prophet was fulfilled.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Matthew 27:9",
-          "text": "Then comes the line that ties it all together, so lean in for this one, friend. All of this fulfills what was spoken through a prophet.",
-          "needs_agent_fix": true,
+          "question": "In the words spoken through Jeremiah, what are the thirty pieces of silver?",
+          "answers": [
+            {
+              "text": "The price set on Him by Israel",
+              "correct": true
+            },
+            {
+              "text": "A gift for the temple",
+              "correct": false
+            },
+            {
+              "text": "A fine for breaking the law",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Matthew 27:9",
-          "question": "The thirty pieces of silver and the potter's field fulfill what was spoken through which prophet?",
+          "type": "true_false",
+          "verses": "Matthew 27:10",
+          "question": "True or false: in the prophet's words, the thirty pieces of silver are given for the potter's field.",
           "answers": [
             {
-              "text": "Jeremiah",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Isaiah",
-              "correct": false
-            },
-            {
-              "text": "Ezekiel",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
-          "verses": "Matthew 27:9",
-          "text": "The prophet's words say they took the thirty pieces of silver, \"the price set on Him by the people of Israel\". Read that again, friend, because that's a PRICE set on Jesus.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 27:10",
-          "question": "True or false: in the prophet's words, the thirty pieces of silver are given to the temple treasury.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
           "verses": "Matthew 27:10",
           "text": "The prophet's words end with \"as the Lord had commanded me.\" And that's where we'll leave it for now, friend, because this story is far from over.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,15 +9,15 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 28:1",
-          "text": "Friend, the Sabbath is over, and it's dawn on the first day of the week. Mary Magdalene, one of the women who followed Jesus from Galilee, heads out with the other Mary to see the tomb.",
-          "needs_agent_fix": true,
+          "text": "Friend, the body of Jesus has been laid in a tomb cut into the rock, with a great stone sealed across the entrance and a guard posted (Matthew 27:57-66). Now the Sabbath is over, and it's dawn on the first day of the week. Mary Magdalene, one of the women who followed Jesus from Galilee (Matthew 27:55-56), heads out with the other Mary to see the tomb.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Matthew 28:2",
-          "text": "Then suddenly, a GREAT earthquake. Friend, my oven timer DINGS and I jump a foot in the air, gold base and all.",
+          "text": "Then suddenly, a GREAT earthquake. I jump a foot in the air when my oven timer DINGS, gold base and all, so for an earthquake I'd be in ORBIT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -37,7 +37,7 @@
               "correct": false
             },
             {
-              "text": "The disciples were moving the stone away",
+              "text": "A storm was rolling in over the city",
               "correct": false
             }
           ],
@@ -47,31 +47,27 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Matthew 28:2",
-          "question": "The angel rolls away the stone from the tomb and then ___ on it.",
+          "question": "The angel rolls the great stone away from the entrance to the tomb.",
           "answers": [
             {
-              "text": "sits",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "stands",
-              "correct": false
-            },
-            {
-              "text": "kneels",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Matthew 28:3",
-          "text": "His appearance is like lightning, and his clothes are white as snow. Friend, I can't keep my apron white through ONE batch of dough.",
+          "verses": "Matthew 28:2-3",
+          "text": "He sits right on top of that stone, his appearance like lightning and his clothes white as snow. Friend, I can't keep my apron white through ONE batch of dough.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -102,7 +98,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Matthew 28:5",
-          "text": "Then the angel speaks to the women: 'Do not be afraid, for I know that you are looking for Jesus, who was crucified.' And the guards? NOBODY is giving them that speech.",
+          "text": "But the angel speaks to the women: 'Do not be afraid, for I know that you are looking for Jesus, who was crucified.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -118,11 +114,11 @@
               "correct": true
             },
             {
-              "text": "His disciples took His body away",
+              "text": "He was moved to another tomb",
               "correct": false
             },
             {
-              "text": "Joseph moved His body in the night",
+              "text": "He has gone to the temple courts",
               "correct": false
             }
           ],
@@ -134,15 +130,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 28:6",
-          "question": "The angel invites the women to come and see the place where Jesus lay.",
+          "question": "The angel tells the women to stay away from the place where Jesus lay.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -152,7 +148,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Matthew 28:7",
-          "text": "Then the angel gives the women a job: go quickly and tell His disciples that He has risen from the dead. Biggest news in history, and it has to go out FAST, while my group chat takes three days to answer a yes or no question.",
+          "text": "Then the angel gives the women a job: go quickly and tell His disciples that He has risen from the dead. This is NOT the kind of news that sits in a group chat for a week waiting for somebody to answer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -260,7 +256,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Matthew 28:10",
-          "text": "Jesus tells them, 'Do not be afraid,' just like the angel did. And He sends a message to the disciples, calling them 'My brothers.'",
+          "text": "Jesus tells them, 'Do not be afraid,' just like the angel did. Then He gives them a message: the disciples are to go to Galilee, and there they will see Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -269,15 +265,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 28:10",
-          "question": "Jesus tells the women that His brothers, the disciples, will see Him in Jerusalem.",
+          "question": "In His message for the disciples, Jesus calls them 'My brothers.'",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -293,7 +289,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 28:11",
-          "text": "While the women are on their way, some of the guards go into the city and report to the chief priests all that had happened. Imagine giving THAT report to your boss: 'So... there was an earthquake, a guy who looked like lightning, and then we kind of... lay down.'",
+          "text": "While the women are on their way, some of the guards go into the city and report to the chief priests all that had happened. Imagine walking into your boss's office to explain THAT shift: earthquake, angel, and the whole crew trembling.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -323,20 +319,20 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 28:13",
-          "question": "The chief priests have paid the soldiers. What story do they tell the soldiers to say about the tomb?",
+          "question": "The chief priests tell the soldiers to say that His disciples came by night and stole Him away while the soldiers were ___.",
           "answers": [
             {
-              "text": "His disciples stole Him while we slept",
+              "text": "asleep",
               "correct": true
             },
             {
-              "text": "Pilate's men moved Him in the night",
+              "text": "away",
               "correct": false
             },
             {
-              "text": "Joseph took Him away before dawn",
+              "text": "outnumbered",
               "correct": false
             }
           ],
@@ -367,7 +363,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 28:15",
-          "question": "The guards turn down the chief priests' money and tell everyone the truth.",
+          "question": "The guards turn down the chief priests' money.",
           "answers": [
             {
               "text": "True",
@@ -385,7 +381,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Matthew 28:13-15",
-          "text": "Matthew says this account has been circulated among the Jews to this very day. Asleep the whole time, but you KNOW who did it? That's me waking up from a nap swearing I know exactly who ate the chocolate chips.",
+          "text": "Asleep the whole time, yet sure who did it, is like me waking from a nap swearing I know who ate the chocolate chips. And the guards' account is still going around among the Jews when this Gospel is written.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -467,15 +463,15 @@
               "correct": true
             },
             {
-              "text": "Only the people of Israel",
+              "text": "People of Israel alone",
               "correct": false
             },
             {
-              "text": "The people of Galilee",
+              "text": "People of Galilee alone",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

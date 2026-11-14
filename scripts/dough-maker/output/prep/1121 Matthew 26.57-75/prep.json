@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Matthew 26:56-57",
-          "text": "Jesus has just been arrested, and all of His disciples deserted Him and fled. The men who arrested Him lead Him away to the house of Caiaphas, the high priest. The scribes and elders are gathered there.",
+          "verses": "Matthew 26:57",
+          "text": "Jesus has just been arrested, and all of His disciples deserted Him and fled (Matthew 26:56). The men who arrested Him lead Him away to the house of Caiaphas, the high priest. The scribes and elders are gathered there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,27 +40,28 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 26:58",
-          "text": "He follows all the way to the high priest's courtyard, and then he walks right in.",
+          "text": "Peter follows all the way to the high priest's courtyard, and then he walks right in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 26:58",
-          "question": "Peter is inside the high priest's courtyard. Who does he sit down with?",
+          "question": "Inside the high priest's courtyard, Peter sits down with the ___.",
           "answers": [
             {
-              "text": "The guards",
-              "correct": true
+              "text": "guards",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The scribes and elders",
+              "text": "scribes",
               "correct": false
             },
             {
-              "text": "The other disciples",
+              "text": "disciples",
               "correct": false
             }
           ],
@@ -79,34 +80,38 @@
           "card": 6,
           "kind": "story",
           "verses": "Matthew 26:59",
-          "text": "Inside, the chief priests and the whole Sanhedrin are looking for false testimony against Jesus, so they can put Him to death.",
+          "text": "Inside, the chief priests and the whole Sanhedrin, the ruling council, are looking for false testimony against Jesus, so they can put Him to death.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Matthew 26:60",
-          "question": "Many false witnesses come forward against Jesus, and the council finds the testimony it's looking for right away.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "Many false witnesses come forward. And they STILL don't find any! A whole line of liars, and not one story they can use.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Matthew 26:60-61",
-          "text": "A line of false witnesses out the door, and STILL nothing! Finally two men come forward and say Jesus claimed He's able to destroy the temple of God and rebuild it in three days.",
+          "question": "Finally two men come forward and say Jesus claimed He's able to destroy something and rebuild it in three days. What?",
+          "answers": [
+            {
+              "text": "The temple of God",
+              "correct": true
+            },
+            {
+              "text": "The walls of Jerusalem",
+              "correct": false
+            },
+            {
+              "text": "The house of Caiaphas",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -114,7 +119,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Matthew 26:62",
-          "text": "So the high priest stands up, and I bet he's got the face of a man whose big presentation just froze on slide one. He asks Jesus, \"Have You no answer? What are these men testifying against You?\"",
+          "text": "So the high priest stands up and asks Jesus, \"Have You no answer? What are these men testifying against You?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -144,32 +149,31 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 26:63",
-          "question": "Then the high priest charges Jesus under oath by the living God to tell them if He is the ___, the Son of God.",
+          "question": "Then the high priest charges Jesus under oath by the living God. What does he demand that Jesus tell them?",
           "answers": [
             {
-              "text": "Christ",
-              "correct": true,
-              "blank": 1
+              "text": "Whether He is the Christ",
+              "correct": true
             },
             {
-              "text": "Prophet",
+              "text": "Where His disciples have gone",
               "correct": false
             },
             {
-              "text": "Priest",
+              "text": "Why He came to Jerusalem",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Matthew 26:64",
-          "text": "All that silence, and NOW Jesus speaks. \"You have said it yourself,\" He answers, and He tells them all that from now on they will see the Son of Man sitting at the right hand of Power and coming on the clouds of heaven.",
+          "text": "All that silence, and NOW Jesus speaks. \"You have said it yourself,\" He answers, and He tells them all that from now on they will see the Son of Man, the name Jesus uses for Himself (Mark 2:10), sitting at the right hand of Power and coming on the clouds of heaven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -178,7 +182,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 26:65",
-          "question": "When he hears this, the high priest tears his clothes and declares that Jesus has ___.",
+          "question": "When Jesus says they will see the Son of Man at the right hand of Power, the high priest tears his clothes. He declares that Jesus has ___.",
           "answers": [
             {
               "text": "blasphemed",
@@ -194,7 +198,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -205,7 +209,7 @@
           "question": "The high priest says they don't need any more witnesses against Jesus. Why not?",
           "answers": [
             {
-              "text": "They heard the blasphemy themselves",
+              "text": "They have all heard it themselves",
               "correct": true
             },
             {
@@ -225,7 +229,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 26:66",
-          "question": "The high priest asks the council what they think, and they answer that Jesus deserves to die.",
+          "question": "When the high priest asks what they think, the council answers that Jesus deserves to die.",
           "answers": [
             {
               "text": "True",
@@ -243,7 +247,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Matthew 26:67-68",
-          "text": "Then they spit in His face and strike Him, and others slap Him and say, \"Prophesy to us, Christ! Who hit You?\" Read that one slow, friend.",
+          "text": "Then they spit in His face and strike Him, and others slap Him and say, \"Prophesy to us, Christ! Who hit You?\" I think this one hurts, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -287,8 +291,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Matthew 26:70-71",
-          "text": "That's like your phone ringing in your pocket and you looking around going, \"WHAT phone?\" Then Peter moves out to the gateway.",
+          "verses": "Matthew 26:71",
+          "text": "Then Peter moves out to the gateway.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -338,15 +342,15 @@
           "card": 6,
           "kind": "story",
           "verses": "Matthew 26:72",
-          "text": "Peter says, \"I do not know the man!\" Not Jesus, friend. Just \"the man.\"",
-          "needs_agent_fix": true,
+          "text": "Peter says, \"I do not know the man!\" Not Jesus, just \"the man.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Matthew 26:73",
-          "text": "After a little while, the people standing nearby walk up to Peter. \"Surely you are one of them,\" they say, and I bet Peter's heart is pounding.",
+          "text": "After a little while, the people standing nearby walk up to Peter. \"Surely you are one of them,\" they say.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -371,7 +375,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -379,7 +383,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 26:74",
-          "question": "The third time, what does Peter begin to do as he tells them he doesn't know Jesus?",
+          "question": "Now the people standing nearby are calling Peter out. What does he begin to do as he tells them he doesn't know Jesus?",
           "answers": [
             {
               "text": "Curse and swear",

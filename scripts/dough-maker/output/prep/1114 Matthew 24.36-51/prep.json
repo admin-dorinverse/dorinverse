@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Matthew 24:3-35",
-          "text": "Jesus is sitting on the Mount of Olives, and His disciples have asked Him privately when these things will happen and what the sign of His coming will be. He's been telling them what to watch for. Now He gets to the WHEN.",
+          "verses": "Matthew 24:36",
+          "text": "Jesus is sitting on the Mount of Olives, and His disciples have asked Him privately when these things will happen (Matthew 24:3). He's been telling them the signs to watch for (Matthew 24:4-35). Now He gets to the big one: that day or hour.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,18 +18,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 24:36",
-          "question": "The disciples want to know when Jesus is coming. Who does Jesus say knows that day or hour?",
+          "question": "The disciples asked Jesus when. Who does Jesus say knows about that day or hour?",
           "answers": [
             {
               "text": "Only the Father",
               "correct": true
             },
             {
-              "text": "The angels in heaven",
+              "text": "Only the Son",
               "correct": false
             },
             {
-              "text": "The prophet Daniel",
+              "text": "Only the angels in heaven",
               "correct": false
             }
           ],
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 24:36",
-          "text": "Not the angels, not even the Son, only the Father. When the angel invited me here I asked him for the date, got the same answer, and this oven has been preheating EVER since.",
+          "text": "Not the angels, not even the Son, only the Father. When the angel came to bring me to this bakery, I asked him for the date, got that same answer, and my ovens have been preheating EVER since.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Matthew 24:37",
-          "text": "Then Jesus reaches WAY back for a comparison, to a time long ago. Further back than the oldest takeout menu in my old junk drawer, and friend, THAT menu was ancient.",
+          "text": "Then Jesus reaches WAY back in history for a comparison. Before ovens. Before cookies. Friend, before SPRINKLES.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -68,11 +68,11 @@
               "correct": false
             },
             {
-              "text": "Abraham",
+              "text": "David",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -103,7 +103,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 24:39",
-          "question": "True or false: the people before the flood saw it coming and got ready.",
+          "question": "True or false: the people before the flood saw it coming.",
           "answers": [
             {
               "text": "True",
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Matthew 24:39",
-          "text": "They were oblivious, friend, phone-in-hand-while-the-cookies-burn oblivious, until the flood came and swept them all away. Then that line again: 'So will it be at the coming of the Son of Man.'",
+          "text": "They were oblivious until the flood came and swept them all away. Then that line again: 'So will it be at the coming of the Son of Man.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -129,7 +129,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Matthew 24:40",
-          "text": "Then Jesus paints a plain, everyday picture: two men out in the field. Regular workday, nothing on the calendar, nobody even checking the time.",
+          "text": "Then Jesus paints an everyday picture: two men out in the field. Just a regular day on the job.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -138,7 +138,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 24:40",
-          "question": "Two men are in the field. What does Jesus say happens to them?",
+          "question": "Two men are in the field. What does Jesus say will happen to them?",
           "answers": [
             {
               "text": "One taken and one left",
@@ -158,20 +158,9 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Matthew 24:41",
-          "question": "True or false: Jesus gives the same picture with two women grinding at the mill.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Then the same picture with two women grinding at the mill: one will be taken and the other left.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -217,10 +206,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 24:43",
-          "question": "If the homeowner had known which watch of the night the thief was coming, what would he have done?",
+          "question": "If the homeowner had known which watch of the night the thief was coming, what does Jesus say he would have done?",
           "answers": [
             {
-              "text": "Kept watch over his house",
+              "text": "Kept the thief from breaking in",
               "correct": true
             },
             {
@@ -228,7 +217,7 @@
               "correct": false
             },
             {
-              "text": "Gone to stay with family",
+              "text": "Left the house for the night",
               "correct": false
             }
           ],
@@ -260,20 +249,9 @@
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Matthew 24:44",
-          "question": "True or false: Jesus says the Son of Man will come at an hour you do not expect.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "Why? Because, Jesus says, '…the Son of Man will come at an hour you do not expect.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -296,7 +274,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 24:46",
-          "question": "The master returns and finds that servant doing his job. What does Jesus say about him?",
+          "question": "The master put a servant in charge of his household to give the others their food at the proper time. When the master returns and finds him doing just that, what does Jesus say about that servant?",
           "answers": [
             {
               "text": "He is blessed",
@@ -311,7 +289,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -319,7 +297,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 24:47",
-          "question": "True or false: the master puts the faithful servant in charge of all his possessions.",
+          "question": "True or false: Jesus says the master will put the faithful servant in charge of all his possessions.",
           "answers": [
             {
               "text": "True",
@@ -357,7 +335,7 @@
               "correct": false
             },
             {
-              "text": "My master has forgotten about me",
+              "text": "My master trusts me completely",
               "correct": false
             }
           ],
@@ -369,7 +347,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 24:49",
-          "question": "True or false: while the master is away, the wicked servant keeps giving the others their food on time.",
+          "question": "True or false: while the master is away, the wicked servant keeps giving his fellow servants their food at the proper time.",
           "answers": [
             {
               "text": "True",
@@ -385,35 +363,10 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 24:49",
-          "question": "While the master is away, the wicked servant begins to ___ his fellow servants and to eat and drink with ___.",
-          "answers": [
-            {
-              "text": "beat",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "drunkards",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "mock",
-              "correct": false
-            },
-            {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "strangers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Instead, he begins to beat his fellow servants and to eat and drink with drunkards.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -421,14 +374,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 24:50",
-          "question": "The wicked servant is sure his master will be away a long time. When does the master come back?",
+          "question": "The wicked servant tells himself his master will be away a long time. When does Jesus say the master will come back?",
           "answers": [
             {
-              "text": "On a day he does not expect",
+              "text": "On a day the servant does not expect",
               "correct": true
             },
             {
-              "text": "Right on the expected day",
+              "text": "On the very day he promised",
               "correct": false
             },
             {
@@ -441,32 +394,9 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 24:51",
-          "question": "The master cuts the wicked servant to pieces and assigns him a place with the ___.",
-          "answers": [
-            {
-              "text": "hypocrites",
-              "correct": true
-            },
-            {
-              "text": "drunkards",
-              "correct": false
-            },
-            {
-              "text": "tax collectors",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "story",
           "verses": "Matthew 24:51",
-          "text": "It's a place where there will be weeping and gnashing of teeth. Jesus is dead serious here, friend, and His teaching on the Mount of Olives isn't done yet.",
+          "text": "Jesus says the master will cut him to pieces and assign him a place with the hypocrites, where there will be weeping and gnashing of teeth. That's a heavy one, friend, and Jesus isn't done teaching yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

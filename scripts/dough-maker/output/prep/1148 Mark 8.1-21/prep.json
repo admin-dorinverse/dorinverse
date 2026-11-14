@@ -25,16 +25,16 @@
               "correct": true
             },
             {
-              "text": "seven",
+              "text": "forty",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "ten",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -42,7 +42,7 @@
           "verses": "Mark 8:2-3",
           "text": "THREE days, friend, and I can't wait three MINUTES for a batch to cool without standing at the rack blowing on every cookie like that's gonna help. And Jesus has a concern about sending these folks home hungry.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -65,7 +65,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -84,13 +84,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Mark 8:4",
-          "text": "Now the disciples look around at where they are: a desolate place, with a crowd this size. Friend, that's me finding out the whole neighborhood's coming over for cookies, and the nearest bag of flour is three planets away.",
+          "text": "Now the disciples look around at where they are: a desolate place, with a crowd this size. Friend, that's me finding out a hundred bakers are coming over for cookies, and my dough bowl is EMPTY.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -137,11 +137,11 @@
               "correct": true
             },
             {
-              "text": "Three",
+              "text": "Nine",
               "correct": false
             },
             {
-              "text": "Ten",
+              "text": "Four",
               "correct": false
             }
           ],
@@ -217,7 +217,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Mark 8:7",
-          "text": "And it's not just bread. They've also got a few small fish, so Jesus blesses those too and has them set before the people.",
+          "text": "And it's not just bread. They've also got a few small fish, and Jesus blesses those too and has them set before the people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -251,20 +251,16 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 8:8",
-          "question": "After everyone has eaten, the disciples pick up ___ basketfuls of broken pieces.",
+          "type": "true_false",
+          "verses": "Mark 8:5, 8",
+          "question": "After everyone eats, the disciples pick up as many basketfuls of broken pieces as there were loaves to start with.",
           "answers": [
             {
-              "text": "seven",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "two",
-              "correct": false
-            },
-            {
-              "text": "ten",
+              "text": "False",
               "correct": false
             }
           ],
@@ -370,7 +366,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 8:13-14",
-          "text": "Jesus leaves them and crosses to the other side in the boat, and the disciples realize they forgot to take bread. I've done that, friend: walked out the door with the cookie box and left the cookies on the counter.",
+          "text": "Jesus leaves them and crosses to the other side in the boat, and the disciples have forgotten to take bread. I've done that, friend: walked out the door with the cookie box and left the cookies on the counter.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -390,7 +386,7 @@
               "correct": false
             },
             {
-              "text": "three loaves",
+              "text": "six loaves",
               "correct": false
             }
           ],
@@ -403,14 +399,14 @@
           "verses": "Mark 8:14-15",
           "text": "One loaf for a whole boatful of disciples, friend: that's not lunch, that's a crumb with ambition. Then Jesus cautions them, \"Watch out!\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 8:15",
-          "question": "Jesus tells His disciples to beware of something belonging to the Pharisees and to Herod, a king. What is it?",
+          "question": "Jesus tells His disciples to beware of something belonging to the Pharisees and to Herod, the ruler of Galilee. What is it?",
           "answers": [
             {
               "text": "Their leaven",
@@ -426,28 +422,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 8:16",
-          "question": "Right after Jesus warns them about leaven, the disciples start discussing something with one another. What is it?",
-          "answers": [
-            {
-              "text": "The fact that they have no bread",
-              "correct": true
-            },
-            {
-              "text": "Which Pharisee to watch most",
-              "correct": false
-            },
-            {
-              "text": "Where King Herod might be",
-              "correct": false
-            }
-          ],
+          "text": "So the disciples begin discussing with one another the fact that they have no bread.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -456,15 +437,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 8:17",
-          "question": "The disciples manage to keep their talk about bread hidden from Jesus.",
+          "question": "Jesus is aware of the disciples' conversation about having no bread.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -473,9 +454,9 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Mark 8:16-17",
-          "text": "Jesus says leaven, and all they hear is BREAD, which is me hearing somebody say \"this thing is on the rise\" and sprinting to check my dough. Jesus asks them why they're debating about having no bread, if they still don't understand, and if their hearts are that hard.",
-          "needs_agent_fix": true,
+          "verses": "Mark 8:17",
+          "text": "Jesus asks them why they're debating about having no bread. And He asks if their hearts are that hard.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -483,18 +464,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 8:17-18",
-          "question": "Jesus asks His disciples, \"Having eyes, do you not see? And having ears, do you not hear?\" What is He getting at?",
+          "question": "Jesus asks His disciples if, having eyes, they don't see, and having ears, they don't hear. What is Jesus getting at?",
           "answers": [
             {
-              "text": "They are missing what is right in front of them",
+              "text": "They still do not understand",
               "correct": true
             },
             {
-              "text": "They should keep a closer watch on the Pharisees",
+              "text": "They are too tired to listen",
               "correct": false
             },
             {
-              "text": "They need to listen to the crowds more closely",
+              "text": "They should stay away from crowds",
               "correct": false
             }
           ],
@@ -505,27 +486,27 @@
           "card": 13,
           "kind": "story",
           "verses": "Mark 8:18-19",
-          "text": "Then Jesus asks, \"And do you not remember?\" He takes them back to the day He broke five loaves for the five thousand.",
+          "text": "Then Jesus asks, \"And do you not remember?\" He takes them back to the time He broke five loaves for the five thousand.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 8:19",
-          "question": "When Jesus broke the five loaves for the five thousand, how many basketfuls of broken pieces did the disciples collect?",
+          "question": "When Jesus broke the five loaves for the five thousand, the disciples collected ___ basketfuls of broken pieces.",
           "answers": [
             {
-              "text": "Twelve",
+              "text": "twelve",
               "correct": true
             },
             {
-              "text": "Two",
+              "text": "eight",
               "correct": false
             },
             {
-              "text": "Four",
+              "text": "twenty",
               "correct": false
             }
           ],
@@ -536,15 +517,26 @@
           "card": 15,
           "kind": "story",
           "verses": "Mark 8:20",
-          "text": "Then He asks about the seven loaves for the four thousand, and how many basketfuls they collected that time. They answer, \"Seven.\"",
+          "text": "Then He asks about the seven loaves for the four thousand, and how many basketfuls they collected that time. Their answer: seven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Mark 8:21",
-          "text": "They remember every number, friend. Then Jesus asks them, \"Do you still not understand?\"",
+          "question": "After the disciples answer about the basketfuls, Jesus tells them they finally understand.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

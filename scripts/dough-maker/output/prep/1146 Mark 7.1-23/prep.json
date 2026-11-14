@@ -8,98 +8,63 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Mark 7:1",
-          "text": "The Pharisees and some of the scribes who came from Jerusalem gather around Jesus. The Pharisees are a strict group of Jewish religious leaders, and the scribes are teachers of the law. That's a LOT of company crowding around one Man.",
-          "needs_agent_fix": true,
+          "verses": "Mark 7:1-2",
+          "text": "The Pharisees and some of the scribes who had come from Jerusalem gather around Jesus. The Pharisees are a strict group of Jewish religious leaders, and the scribes are teachers of the law. They see some of His disciples eating with hands that were defiled, that is, unwashed.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Mark 7:2",
-          "question": "The Pharisees and scribes notice something about how some of Jesus' disciples are eating. What is it?",
+          "verses": "Mark 7:3",
+          "question": "The Gospel of Mark explains that some people don't eat until they wash their hands ceremonially, holding to the tradition of the elders. Who does this?",
           "answers": [
             {
-              "text": "Their hands are unwashed",
+              "text": "The Pharisees and all the Jews",
               "correct": true
             },
             {
-              "text": "They're eating on the Sabbath",
+              "text": "Only the priests at the temple",
               "correct": false
             },
             {
-              "text": "They're eating with tax collectors",
+              "text": "Only the scribes from Jerusalem",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Mark 7:3",
-          "text": "Mark stops to explain the tradition of the elders: the Pharisees and all the Jews don't eat until they wash their hands ceremonially.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 7:4",
+          "question": "When the Pharisees and all the Jews come back from the market, they eat without washing first. True or false?",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Mark 7:4",
-          "question": "And when the Pharisees and the Jews come back from the ___, they don't eat unless they wash.",
-          "answers": [
-            {
-              "text": "market",
-              "correct": true
-            },
-            {
-              "text": "temple",
-              "correct": false
-            },
-            {
-              "text": "fields",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And they have many other traditions, like washing cups, pitchers, kettles and even couches for dining. They wash the COUCHES, friend, and I sat in a junk drawer for years without anybody dusting me ONCE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 7:4",
-          "question": "Mark says the Pharisees and the Jews have many other traditions to keep. Besides hands, what else gets washed?",
-          "answers": [
-            {
-              "text": "Cups and kettles",
-              "correct": true
-            },
-            {
-              "text": "Sandals and cloaks",
-              "correct": false
-            },
-            {
-              "text": "Scrolls and lamps",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Mark 7:4",
-          "text": "Pitchers too, and even couches for dining. Friend, they wash the COUCHES, and I sat in a junk drawer for years without anybody dusting me ONCE.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 7:5",
@@ -118,46 +83,61 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Mark 7:6",
+          "text": "Jesus answers them, “Isaiah prophesied correctly about you hypocrites…” and then He quotes Isaiah, a prophet (Isaiah 29:13). Oof.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 7:6",
+          "question": "In the words Jesus quotes from Isaiah, these people honor God with their lips. True or false?",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Mark 7:6",
-          "text": "Jesus answers them, “Isaiah prophesied correctly about you hypocrites,” and then He quotes the prophet. Oof.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Mark 7:7",
+          "question": "In the words Jesus quotes, these people's hearts are far from God, and they worship Him in vain. What do they teach as doctrine?",
+          "answers": [
+            {
+              "text": "The precepts of men",
+              "correct": true
+            },
+            {
+              "text": "The words of the prophets",
+              "correct": false
+            },
+            {
+              "text": "The law of Moses",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 7:6",
-          "question": "In the words Jesus quotes from Isaiah, these people honor God with their lips, and their hearts are close to Him. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Mark 7:7",
-          "text": "Isaiah's words go on: they worship in vain, and they teach the precepts of men as doctrine. People's rules, wearing God's apron.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 7:8",
@@ -176,73 +156,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Mark 7:9",
+          "text": "He goes on, “You neatly set aside the command of God to maintain your own tradition.” Neatly, friend. Like folding a fresh apron.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Mark 7:10",
+          "text": "Then Jesus gives an example, quoting Moses, Israel's leader (Exodus 20:12; 21:17): “Honor your father and your mother” and “Anyone who curses his father or mother must be put to death.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Mark 7:9",
-          "text": "He goes on, “You neatly set aside the command of God to maintain your own tradition.” Neatly, friend. Like folding a fresh apron.",
-          "needs_agent_fix": true,
+          "verses": "Mark 7:11",
+          "text": "But here's their tradition: a man can tell his father or mother that whatever they would have received from him is Corban, a gift devoted to God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Mark 7:10",
-          "question": "Jesus gives the Pharisees and scribes an example, starting with something Moses, Israel's leader, said. Which command does He bring up?",
-          "answers": [
-            {
-              "text": "Honor your father and your mother",
-              "correct": true
-            },
-            {
-              "text": "Remember the Sabbath day",
-              "correct": false
-            },
-            {
-              "text": "You shall not steal",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 7:10",
-          "question": "Jesus also reminds the Pharisees and scribes that Moses said anyone who curses his father or mother must be put to death. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Mark 7:11",
-          "text": "But here's their tradition: a man can tell his father or mother that whatever they would have received from him is Corban, a gift devoted to God. Somebody asks him for a cookie and he goes, “Ooh, sorry. That one's CORBAN!”",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
           "verses": "Mark 7:12",
-          "question": "Once a man says his help is Corban, what does the Pharisees' tradition permit him to do for his father or mother?",
+          "question": "Jesus says that under their tradition, once a man calls it Corban, what is he permitted to do for his father or mother?",
           "answers": [
             {
               "text": "Nothing at all anymore",
@@ -257,49 +203,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 14,
+          "kind": "story",
           "verses": "Mark 7:13",
-          "question": "Jesus tells the Pharisees and scribes that by the tradition they've handed down, they ___ the word of God.",
-          "answers": [
-            {
-              "text": "nullify",
-              "correct": true
-            },
-            {
-              "text": "fulfill",
-              "correct": false
-            },
-            {
-              "text": "honor",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 7:13",
-          "question": "Jesus says Corban is the only matter where the Pharisees and scribes nullify the word of God by their tradition. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Jesus says that by the tradition they've handed down, they nullify the word of God, and they do so in many such matters. Corban isn't one cookie, friend. It's a whole BATCH.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -312,7 +224,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 7:14",
-          "text": "Once again Jesus calls the crowd to Him and says, “All of you, listen to Me and understand:” EVERYBODY, put the phones down for this one.",
+          "text": "Once again Jesus calls the crowd to Him and says, “All of you, listen to Me and understand:” That's the kind of line that makes a whole room put their phones face-down.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -321,18 +233,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 7:15",
-          "question": "Jesus tells the crowd what can't defile a man. What is it?",
+          "question": "Jesus tells the crowd that something can't defile a man at all. What is it?",
           "answers": [
             {
-              "text": "Nothing that enters him from the outside",
+              "text": "Anything that enters him from outside",
               "correct": true
             },
             {
-              "text": "Nothing he says when he's angry",
+              "text": "Anything he says when he's angry",
               "correct": false
             },
             {
-              "text": "Nothing he does in secret",
+              "text": "Anything he does in secret",
               "correct": false
             }
           ],
@@ -377,21 +289,17 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 7:19",
-          "question": "Jesus explains it to the disciples: what enters a man from the outside can't defile him. Where does it go?",
+          "question": "Jesus tells the disciples that what enters a man from the outside goes into his heart. True or false?",
           "answers": [
             {
-              "text": "Into his stomach and then out",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Into his mind and then his words",
-              "correct": false
-            },
-            {
-              "text": "Into his blood and then his bones",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -401,7 +309,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Mark 7:19",
-          "text": "That's the point, Jesus says: it doesn't enter his heart, it just goes into the stomach and then it's eliminated. A cookie can WIN your heart, friend, but it never actually gets IN there.",
+          "text": "It doesn't enter his heart, Jesus says. It goes into the stomach and then is eliminated.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -410,7 +318,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 7:19",
-          "question": "Mark adds a note about what Jesus said: thus all foods are ___.",
+          "question": "Right after Jesus' words, the Gospel of Mark adds a short note: thus all foods are ___.",
           "answers": [
             {
               "text": "clean",
@@ -454,58 +362,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Mark 7:21",
-          "text": "Then Jesus starts listing what comes out: evil thoughts, sexual immorality, theft, murder, adultery.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 7:22",
-          "question": "Jesus lists the evils that come out of the hearts of men and defile a man. His list stops at things like theft and murder, and something like envy doesn't make it. True or false?",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Mark 7:21-22",
-          "text": "The list keeps going: greed, wickedness, deceit, debauchery, envy, slander, arrogance, and foolishness. Thirteen things, friend, and not ONE of them is about hands.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 7:23",
-          "question": "Jesus wraps it up for the disciples: all these evils come from ___, and these are what defile a man.",
-          "answers": [
-            {
-              "text": "within",
-              "correct": true
-            },
-            {
-              "text": "outside",
-              "correct": false
-            },
-            {
-              "text": "elsewhere",
-              "correct": false
-            }
-          ],
+          "verses": "Mark 7:21-23",
+          "text": "Then Jesus lists what comes out: evil thoughts, sexual immorality, theft, murder, adultery, greed, wickedness, deceit, debauchery, envy, slander, arrogance and foolishness. All these evils come from within, Jesus says, and these are what defile a man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

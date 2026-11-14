@@ -9,31 +9,32 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 1:14",
-          "text": "Friend, John the Baptist has been arrested. After that, Jesus goes out proclaiming the gospel of God.",
-          "needs_agent_fix": true,
+          "text": "Friend, Jesus has been baptized by John the Baptist, a man who preached a baptism of repentance, and has spent forty days in the wilderness (Mark 1:4, 9-13). Then John is arrested, and Jesus goes out proclaiming the gospel of God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:14",
-          "question": "After John the Baptist is arrested, where does Jesus go to proclaim the gospel of God?",
+          "question": "After John the Baptist is arrested, Jesus goes into ___ and proclaims the gospel of God.",
           "answers": [
             {
               "text": "Galilee",
-              "correct": true
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Judea",
+              "correct": false
             },
             {
               "text": "Samaria",
               "correct": false
-            },
-            {
-              "text": "Egypt",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,81 +42,77 @@
           "kind": "story",
           "verses": "Mark 1:15",
           "text": "Jesus opens by saying the time is fulfilled. That's the oven timer going DING, and EVERYBODY in the kitchen looks up at once.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 1:15",
-          "question": "In Galilee, Jesus says the kingdom of God is near.",
+          "question": "Jesus says the time is fulfilled. What does He say is near?",
           "answers": [
             {
-              "text": "True",
+              "text": "The kingdom of God",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "A great famine",
+              "correct": false
+            },
+            {
+              "text": "The rebuilding of Jerusalem",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Mark 1:15",
-          "text": "Then Jesus gives the call: \"Repent and believe in the gospel!\" Short list, friend. Two items, no fine print.",
-          "needs_agent_fix": true,
+          "question": "Then Jesus gives a call with two parts. What does He say to do?",
+          "answers": [
+            {
+              "text": "Repent and believe in the gospel",
+              "correct": true
+            },
+            {
+              "text": "Fast and pray at the temple",
+              "correct": false
+            },
+            {
+              "text": "Bring offerings to the priests",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Mark 1:16",
-          "text": "Now Jesus is walking beside the Sea of Galilee. He sees two brothers, Simon and Andrew, hard at work.",
-          "needs_agent_fix": true,
+          "text": "Now Jesus is walking beside the Sea of Galilee, and He sees two brothers, Simon and Andrew. They're fishermen, casting a net into the sea.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 1:16",
-          "question": "When Jesus sees Simon and his brother Andrew by the Sea of Galilee, what are they doing?",
-          "answers": [
-            {
-              "text": "Casting a net into the sea",
-              "correct": true
-            },
-            {
-              "text": "Selling fish at the market",
-              "correct": false
-            },
-            {
-              "text": "Building a boat on the shore",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Mark 1:17",
+          "text": "Jesus tells them to come and follow Him, and He hands them a whole new job description in one sentence. No orientation binder, no training video, NOTHING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Mark 1:17",
-          "text": "Jesus tells them to come and follow Him, and He describes their new job with a picture straight out of their old one. No orientation binder, no training video, just one sentence.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:17",
-          "question": "Jesus tells the fishermen Simon and Andrew what He will make them. What is it?",
+          "question": "Jesus tells Simon and Andrew what He will make them. What is it?",
           "answers": [
             {
               "text": "Fishers of men",
@@ -130,62 +127,66 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 1:18",
+          "question": "When Jesus calls Simon and Andrew, they leave their nets and follow Him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Mark 1:18",
-          "question": "At once, Simon and Andrew leave their ___ and follow Jesus.",
-          "answers": [
-            {
-              "text": "nets",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "sheep",
-              "correct": false
-            },
-            {
-              "text": "scrolls",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And they do it AT ONCE. Some people hit snooze three times just to get out of bed, and these two drop their nets on the spot.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Mark 1:18-19",
-          "text": "AT ONCE, friend. I hit snooze three times just to get out of bed, and these two drop their nets on the spot. Jesus goes a little farther and spots two more brothers: James and John, the sons of Zebedee (a different John, not John the Baptist).",
-          "needs_agent_fix": true,
+          "verses": "Mark 1:19",
+          "text": "Jesus goes a little farther and spots two more brothers: James and John, the sons of Zebedee (a different John, not John the Baptist).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:19",
-          "question": "When Jesus spots James and John, the sons of Zebedee, what are they doing?",
+          "question": "When Jesus spots them, James and John are in a boat, ___ their nets.",
           "answers": [
             {
-              "text": "Mending their nets in a boat",
-              "correct": true
+              "text": "mending",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Counting fish on the shore",
+              "text": "selling",
               "correct": false
             },
             {
-              "text": "Selling fish in the market",
+              "text": "washing",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -193,7 +194,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:20",
-          "question": "Jesus waits a while before calling James and John to follow Him.",
+          "question": "When Jesus calls James and John, they stay behind with their father Zebedee.",
           "answers": [
             {
               "text": "True",
@@ -204,34 +205,38 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 1:20",
-          "question": "When James and John follow Jesus, they leave their father Zebedee all alone in the boat.",
+          "question": "James and John leave their father Zebedee in the boat. Who is still there with him?",
           "answers": [
             {
-              "text": "True",
+              "text": "The hired men",
+              "correct": true
+            },
+            {
+              "text": "Their mother",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Some Pharisees",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Mark 1:20",
-          "text": "So Zebedee stays in the boat with the hired men, and his sons follow Jesus. I bet he's sitting there holding a half-mended net going, \"Okay. So THIS one's mine now.\"",
-          "needs_agent_fix": true,
+          "text": "So James and John follow Jesus, and Zebedee stays put. I bet he picks up that half-mended net, looks at the hired men and goes, \"Guess we're finishing THIS one ourselves.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

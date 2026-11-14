@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 15:21",
-          "text": "The soldiers are leading Jesus out to be crucified. Right then, a man named Simon of Cyrene is passing by on his way in from the country. He's the father of Alexander and Rufus, and I bet this is the LAST thing he expected on his walk into town.",
+          "text": "The soldiers are leading Jesus out to crucify Him (Mark 15:20). Right then, a man named Simon of Cyrene is passing by on his way in from the country. He's the father of Alexander and Rufus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 15:22-23",
-          "text": "They bring Jesus to Golgotha, which means The Place of the Skull, and they offer Him wine mixed with myrrh. Now think back to the Last Supper, friend, when Jesus said He wouldn't drink of the fruit of the vine again until the day He drinks it new in the kingdom of God (Mark 14:25).",
+          "text": "They bring Jesus to a place called Golgotha, which means The Place of the Skull. There they offer Him wine mixed with myrrh.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 15:24",
-          "text": "“And they crucified Him.” Four words, friend, and Mark doesn't dress them up, so I won't either.",
+          "text": "“And they crucified Him.” This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -98,7 +98,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Mark 15:25-26",
-          "text": "It's the third hour when they crucify Him. And they put up a charge against Him, friend, using the same title Pilate kept asking about at the trial (Mark 15:2, 9, 12).",
+          "text": "It's the third hour when they crucify Him. And a charge is written up against Him, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -196,7 +196,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 15:32",
-          "question": "The passersby mock Jesus, and so do the chief priests and scribes. Even the two robbers crucified with Him berate Him.",
+          "question": "Even the two robbers crucified with Jesus berate Him.",
           "answers": [
             {
               "text": "True",
@@ -261,7 +261,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 15:35",
-          "question": "Some people standing nearby hear Jesus cry out “Eloi, Eloi.” Who do they think He's calling?",
+          "question": "Some people standing nearby hear Jesus cry out “Eloi, Eloi…” Who do they think He's calling?",
           "answers": [
             {
               "text": "Elijah",
@@ -283,23 +283,28 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 15:36",
-          "text": "Somebody runs over, fills a sponge with sour wine, puts it on a reed and holds it up for Jesus to drink. Now listen close, friend, to what he says while he's holding it up.",
+          "text": "Somebody runs over, fills a sponge, puts it on a reed and holds it up for Jesus to drink. He says, “Leave Him alone. Let us see if Elijah comes to take Him down.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Mark 15:36",
-          "question": "As he holds up the sponge, the man says to leave Jesus alone and see if Elijah comes to take Him down.",
+          "question": "The man at the cross fills a sponge with ___ and holds it up on a reed for Jesus to drink.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "sour wine",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "water",
+              "correct": false
+            },
+            {
+              "text": "olive oil",
               "correct": false
             }
           ],
@@ -310,7 +315,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Mark 15:37",
-          "text": "“But Jesus let out a loud cry and breathed His last.” Friend, take a breath with me right here.",
+          "text": "“But Jesus let out a loud cry and breathed His last.” I think this one hurts, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -319,7 +324,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 15:38",
-          "question": "Jesus has breathed His last. Then Mark takes us to the temple, where something is torn in two. What is it?",
+          "question": "Jesus has breathed His last. Then at the temple, something is torn in two. What is it?",
           "answers": [
             {
               "text": "The veil",
@@ -348,29 +353,32 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Mark 15:39",
-          "question": "The centurion standing in front of Jesus says, Truly this man was the ___ of God!",
+          "question": "The centurion standing in front of Jesus has seen how He breathed His last. When he speaks up, he mocks Jesus like the others did.",
           "answers": [
             {
-              "text": "Son",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Servant",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "Prophet",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Mark 15:39",
+          "text": "Here's what the centurion says: “Truly this man was the Son of God!” Out loud, friend, right there in front of Him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 15:40",
@@ -393,19 +401,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Mark 15:40",
-          "text": "With Mary Magdalene are Mary the mother of James the younger and of Joses, and Salome. These women knew Jesus long before today, friend, back up north in the region where He first started preaching (Mark 1:14).",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 15:41",
-          "question": "Mary Magdalene, the other Mary and Salome had followed Jesus and ministered to Him before. Where?",
+          "question": "Mary Magdalene, Mary the mother of James the younger and of Joses, and Salome had followed Jesus and ministered to Him before. Where?",
           "answers": [
             {
               "text": "Galilee",

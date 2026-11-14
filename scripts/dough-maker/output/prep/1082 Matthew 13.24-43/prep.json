@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 13:24",
-          "text": "Friend, Jesus is teaching in parables, and He puts another one before the people listening. The kingdom of heaven is like a man who sowed good seed in his field.",
+          "text": "Friend, Jesus is teaching the crowds in parables, and He already told one about a farmer sowing seed (Matthew 13:3). Now He puts another parable before them. The kingdom of heaven is like a man who sowed good seed in his field.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -81,7 +81,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 13:26",
-          "question": "True or false: In the man's field, the weeds show up the very next morning, before the wheat even sprouts.",
+          "question": "True or false: In the man's field, the weeds show up before the wheat even sprouts.",
           "answers": [
             {
               "text": "True",
@@ -98,63 +98,40 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Matthew 13:27",
+          "verses": "Matthew 13:26-27",
           "text": "Once the weeds appear, the owner's servants come to him. They ask, “Sir, didn’t you sow good seed in your field? Where then did the weeds come from?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Matthew 13:28",
-          "question": "How does the owner answer his servants when they ask where the weeds came from?",
-          "answers": [
-            {
-              "text": "An enemy did this",
-              "correct": true
-            },
-            {
-              "text": "The seed was bad",
-              "correct": false
-            },
-            {
-              "text": "The rain carried them",
-              "correct": false
-            }
-          ],
+          "text": "“An enemy did this,” the owner replies. So the servants ask him, “Do you want us to go and pull them up?”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Matthew 13:28",
-          "text": "The servants ask him, “Do you want us to go and pull them up?” I bet those servants already have their sleeves rolled up and are READY to go, friend.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 13:29",
-          "question": "True or false: The owner tells his servants to go pull up the weeds right away.",
+          "question": "True or false: The owner tells his servants to leave the weeds alone for now.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:29",
@@ -177,7 +154,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Matthew 13:30",
           "text": "So the owner says, “Let both grow together until the harvest.” Friend, I waited YEARS in the back of a junk drawer, so this man has my full respect.",
@@ -185,40 +162,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Matthew 13:30",
-          "question": "At harvest time, the owner will have the harvesters collect the ___ first, then gather the ___ into his barn.",
+          "question": "True or false: At harvest, the owner wants the wheat gathered into his barn before the weeds are collected.",
           "answers": [
             {
-              "text": "weeds",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wheat",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "thorns",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "stones",
-              "correct": false
-            },
-            {
-              "text": "branches",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:30",
@@ -363,7 +326,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Matthew 13:34",
-          "text": "Now the passage steps back from the stories for a moment. Jesus speaks all these things to the crowds in parables.",
+          "text": "That's three parables in a row. Then the Gospel of Matthew steps back and tells us how Jesus teaches the crowds.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -390,7 +353,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Matthew 13:35",
-          "text": "Friend, even this way of teaching was spoken of long before. It fulfills what was spoken through the prophet: “I will open My mouth in parables; I will utter things hidden since the foundation of the world.”",
+          "text": "The Gospel of Matthew says this fulfills what was spoken through the prophet. It quotes a psalm (Psalm 78:2): “I will open My mouth in parables; I will utter things hidden since the foundation of the world.”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -405,7 +368,7 @@
           "kind": "story",
           "verses": "Matthew 13:36",
           "text": "Then Jesus dismisses the crowds and goes into the house. His disciples come to Him with a request.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -428,7 +391,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -436,62 +399,27 @@
           "kind": "story",
           "verses": "Matthew 13:37",
           "text": "And Jesus explains it, piece by piece. Friend, I shared that junk drawer with a stack of old instruction manuals, and not ONE of them ever explained anything this clearly.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Matthew 13:37",
-          "question": "True or false: In the parable of the weeds, Jesus says the One who sows the good seed is the Son of Man.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "He starts with the sower: “The One who sows the good seed is the Son of Man.” That's the name Jesus uses for Himself (Matthew 8:20), so HE'S the one sowing.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 13:38",
-          "question": "In Jesus' explanation, the field is the ___.",
-          "answers": [
-            {
-              "text": "world",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "temple",
-              "correct": false
-            },
-            {
-              "text": "nation",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Jesus says, “The field is the world, and the good seed represents the sons of the kingdom.” Friend, that's the crop every farmer is rooting for.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Matthew 13:37-38",
-          "text": "Jesus calls Himself the Son of Man in Matthew 8:20, so HE'S the one sowing. And the good seed represents the sons of the kingdom, the crop every farmer is rooting for, friend.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:38",
@@ -510,11 +438,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 13:39",
@@ -529,40 +457,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Matthew 13:30, 39",
+          "text": "Remember, in the parable everything waits until the harvest. Jesus says, “The harvest is the end of the age…”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Matthew 13:39",
-          "text": "Remember, in the parable everything waits until the harvest. Now Jesus says what the harvest is, and who's doing the harvesting.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 13:39",
-          "question": "Jesus says the harvest is the end of the ___, and the harvesters are ___.",
+          "question": "In Jesus' explanation, the harvesters are ___.",
           "answers": [
             {
-              "text": "age",
+              "text": "angels",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "angels",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "year",
-              "correct": false
-            },
-            {
-              "text": "servants",
+              "text": "disciples",
               "correct": false
             },
             {
@@ -570,23 +489,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 13:40",
+          "question": "True or false: Jesus says the weeds will be spared at the end of the age.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Matthew 13:40-41",
-          "text": "Now Jesus gets serious, friend: “As the weeds are collected and burned in the fire, so will it be at the end of the age.” And He says the Son of Man will send out His angels.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:41",
-          "question": "What will the Son of Man's angels weed out of His kingdom?",
+          "question": "Jesus says the Son of Man will send out His angels. What will they weed out of His kingdom?",
           "answers": [
             {
               "text": "Every cause of sin and all who practice lawlessness",
@@ -601,47 +531,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Matthew 13:42",
+          "text": "Jesus says the angels will throw them into the fiery furnace, where there will be weeping and gnashing of teeth. This part is heavy, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Matthew 13:42",
-          "text": "Jesus says, “And they will throw them into the fiery furnace, where there will be weeping and gnashing of teeth.” Friend, I'm setting my jokes down for this one, because Jesus means every word.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 13:43",
+          "question": "True or false: Jesus says the righteous will shine like the sun in the kingdom of their Father.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 13:43",
-          "question": "After all that, Jesus says the righteous will ___ like the sun in the kingdom of their Father.",
-          "answers": [
-            {
-              "text": "shine",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "rest",
-              "correct": false
-            },
-            {
-              "text": "sing",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "story",
           "verses": "Matthew 13:43",
           "text": "Jesus ends with, “He who has ears, let him hear.” And He's not done teaching about the kingdom yet, friend, so keep both ears open.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

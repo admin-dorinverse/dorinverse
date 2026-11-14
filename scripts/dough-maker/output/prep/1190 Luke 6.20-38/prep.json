@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 6:20",
-          "text": "Jesus has just come down the mountain with His twelve new apostles, and a huge crowd is pushing in just to touch Him (Luke 6:13-19). He looks up at His disciples and says, “Blessed are you who are poor,” and friend, I spent YEARS in a junk drawer owning nothing but dust. So I am LEANING in.",
+          "text": "Jesus has just come down the mountain with His twelve new apostles, and a huge crowd is trying to touch Him (Luke 6:13-19). He looks up at His disciples and says, “Blessed are you who are poor…” and friend, I spent YEARS in a junk drawer owning nothing but dust. So I am LEANING in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,7 +72,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Luke 6:22",
-          "text": "Then Jesus calls you blessed even when people hate you, shut you out, insult you and reject your name as evil because of the Son of Man. That's not getting left out of the group chat, friend, that's getting left out AND talked about in it.",
+          "text": "Then Jesus calls you blessed even when people hate you, shut you out, insult you and reject your name as evil because of the Son of Man, the name Jesus uses for Himself (Mark 2:10). That's not getting left out of the group chat, friend, that's getting left out AND talked about in it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -104,18 +104,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 6:23",
-          "question": "True or false: Jesus says the reward for being hated because of the Son of Man will come here on earth.",
+          "question": "True or false: Jesus says the ones hated because of the Son of Man have a great reward in heaven.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,7 +130,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Luke 6:24",
-          "text": "Then Jesus turns the whole sermon around: “But woe to you who are rich,” and friend, I'm standing on a GOLD base. I'm sweating.",
+          "text": "Then Jesus turns the whole sermon around: “But woe to you who are rich…” and friend, I'm standing on a GOLD base. I'm sweating.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -139,15 +139,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 6:24",
-          "question": "True or false: Jesus says the rich have already received their comfort.",
+          "question": "True or false: Jesus says the rich will receive their comfort later.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -188,7 +188,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Luke 6:26",
-          "text": "One more woe, and this one isn't about money, food or laughing. Friend, I'm already sweating on my gold base, and He is NOT done.",
+          "text": "One more woe, and this one isn't about money, food or laughing. It's about what people say about you.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -216,7 +216,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 6:26",
-          "question": "The hated ones got treated like the prophets. For the ones everybody praises, Jesus says their fathers treated the ___ prophets in the same way.",
+          "question": "When all men speak well of you, Jesus says, their fathers treated the ___ prophets in the same way.",
           "answers": [
             {
               "text": "false",
@@ -245,7 +245,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 6:27",
-          "text": "Then Jesus says, “But to those of you who will listen, I say:” and He's about to talk about enemies. Friend, when somebody opens like THAT, you put the cookie down and lean in.",
+          "text": "Then Jesus says, “But to those of you who will listen, I say…” and He's about to talk about enemies. Friend, when somebody opens like THAT, you set the cookie down.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -335,7 +335,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 6:29-30",
-          "text": "If someone takes your cloak, don't hold back your tunic, and give to everyone who asks you. So if somebody takes my apron, I offer up the HAT, and friend, that hat is half my height.",
+          "text": "If someone takes your cloak, don't hold back your tunic, and give to everyone who asks you. So if somebody takes my apron, I offer up the HAT too, and friend, that is a LOT of hat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -420,7 +420,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Luke 6:33-34",
-          "text": "Same goes for doing good to people who do good to you, and lending where you expect to be repaid, because even sinners do that. Lending to somebody who'll pay you back in full isn't generosity, friend, it's just a bank wearing an apron.",
+          "text": "Same goes for doing good to people who do good to you, and lending where you expect to be repaid, because even sinners do that. Friend, lending to somebody who'll pay you back in full is just being a bank in an apron.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -482,21 +482,20 @@
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 6:37",
-          "question": "Same pattern one more time: Jesus says if you forgive, you will be ___.",
+          "question": "After judging and condemning, Jesus gives one more pair just like those. Which one is it?",
           "answers": [
             {
-              "text": "forgiven",
-              "correct": true,
-              "blank": 1
+              "text": "Forgive and you will be forgiven",
+              "correct": true
             },
             {
-              "text": "rewarded",
+              "text": "Pray and you will be heard",
               "correct": false
             },
             {
-              "text": "remembered",
+              "text": "Ask and you will receive",
               "correct": false
             }
           ],

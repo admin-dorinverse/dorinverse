@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 12:35",
-          "text": "We're in the temple courts, and Jesus, God's Son, is teaching. This time, HE'S the one asking the question. It's about the scribes, the teachers of the law, and what they say about the Christ, God's promised King.",
-          "needs_agent_fix": true,
+          "text": "Nobody dares to question Jesus anymore (Mark 12:34). Now He's teaching the crowd in the temple courts, and this time HE'S the one asking the question. It's about what the scribes, teachers of the law, say about the Christ, the Anointed One.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 12:36",
-          "text": "Then Jesus brings up David, Israel's king, who spoke by the Holy Spirit and declared a line where the Lord speaks to someone David calls “my Lord.” TWO Lords in ONE line, and I'm on my third read with my mustache scratching my head.",
-          "needs_agent_fix": true,
+          "text": "Then Jesus quotes David, Israel's king, speaking by the Holy Spirit. In David's words, the Lord speaks to someone David calls “my Lord.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 12:36",
-          "question": "In David's line, what does the Lord tell David's Lord to do until His enemies are under His feet?",
+          "question": "In David's words, the Lord will put the enemies of David's Lord under His feet. Until then, what is David's Lord told to do?",
           "answers": [
             {
               "text": "Sit at His right hand",
@@ -71,28 +71,24 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 12:37",
-          "text": "Here's what Jesus points out: David himself calls the Christ “Lord.” A KING calling somebody else Lord is like me handing over my chef's hat, and friend, NOBODY gets the hat.",
+          "text": "Jesus points out that David himself calls the Christ “Lord,” and asks, “So how can He be David's son?” A KING calling somebody else Lord is like me handing over my chef's hat, and friend, NOBODY gets the hat.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 12:37",
-          "question": "If David himself calls the Christ “Lord,” what does Jesus ask?",
+          "question": "There's a large crowd taking all this in. True or false: the crowd is upset with Jesus.",
           "answers": [
             {
-              "text": "So how can He be David's son",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "So how can David be His king",
-              "correct": false
-            },
-            {
-              "text": "So why don't the scribes call Him Lord",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -100,25 +96,6 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 12:37",
-          "question": "There's a large crowd taking all this in. True or false: they listen to Jesus with delight.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "story",
           "verses": "Mark 12:38",
           "text": "Jesus keeps teaching, and He says, “Watch out for the scribes.” Friend, when Jesus says watch out, I put DOWN the mixing spoon.",
@@ -126,15 +103,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Mark 12:38",
-          "text": "They like to walk around in long robes and receive greetings in the marketplaces. I've got a chef's hat taller than I am, and the only one on my planet who greets me is the oven timer.",
+          "text": "They like to walk around in long robes and receive greetings in the marketplaces. Me? I live alone on a cookie planet, and the only one who greets me is the oven timer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 12:39",
@@ -158,38 +135,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Mark 12:40",
-          "text": "Then Jesus moves from what the scribes like to how they treat people. And friend, this is where I set my cookie down.",
+          "text": "Then Jesus says the scribes defraud widows of their houses. This part is heavy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 12:40",
-          "question": "True or false: Jesus says the scribes defraud orphans of their houses.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 12:40",
-          "question": "Jesus says the scribes defraud widows of their houses, and they make lengthy prayers for a ___.",
+          "question": "Jesus says that for a ___, the scribes make lengthy prayers.",
           "answers": [
             {
               "text": "show",
@@ -209,7 +167,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 12:40",
@@ -220,11 +178,11 @@
               "correct": true
             },
             {
-              "text": "A double blessing",
+              "text": "A double portion",
               "correct": false
             },
             {
-              "text": "A seat of honor",
+              "text": "A long life",
               "correct": false
             }
           ],
@@ -232,15 +190,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "story",
           "verses": "Mark 12:41",
-          "text": "Jesus sits down opposite the treasury and watches the crowd putting money in, and many rich people put in large amounts. The most money I've ever been near was my own 25-cent price sticker.",
+          "text": "Jesus sits down opposite the treasury and watches the crowd putting money in, and many rich people put in large amounts. The most money I've ever been near was the 25-cent price sticker on me the day Mother Miller bought me.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 12:42",
@@ -263,7 +221,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "Mark 12:42-43",
           "text": "All together, her coins are worth a small fraction of a denarius, like two chocolate chips left at the bottom of the bowl. Then Jesus calls His disciples over.",
@@ -271,7 +229,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 12:43",
@@ -290,7 +248,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 12:44",
@@ -301,44 +259,11 @@
               "correct": true
             },
             {
-              "text": "She gave with a long loud prayer",
+              "text": "She gave without anyone seeing",
               "correct": false
             },
             {
               "text": "She gave before anyone else did",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 12:44",
-          "question": "Jesus says the others all gave out of their ___, but she gave out of her ___.",
-          "answers": [
-            {
-              "text": "surplus",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "poverty",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "wages",
-              "correct": false
-            },
-            {
-              "text": "sorrow",
-              "correct": false
-            },
-            {
-              "text": "fear",
               "correct": false
             }
           ],

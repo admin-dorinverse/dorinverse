@@ -15,37 +15,14 @@
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Matthew 16:14",
-          "question": "The disciples tell Jesus what people are saying about Him. Which name do some people say?",
-          "answers": [
-            {
-              "text": "John the Baptist",
-              "correct": true
-            },
-            {
-              "text": "Moses",
-              "correct": false
-            },
-            {
-              "text": "King David",
-              "correct": false
-            }
-          ],
+          "text": "The disciples say some people answer John the Baptist, the prophet who baptized Jesus (Matthew 3:13), and others say Elijah, a prophet from long ago (1 Kings 17:1). Still others say Jeremiah, another prophet (Jeremiah 1:5), or one of the prophets.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Matthew 16:14",
-          "text": "Others say the prophet Elijah, and still others say Jeremiah or one of the prophets. It's the whole break room trying to figure out the new manager.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "story",
           "verses": "Matthew 16:15",
           "text": "Then Jesus turns it around with \"But what about you?\" and asks, \"Who do you say I am?\" Ohhh, no more \"people say,\" now it's YOUR turn.",
@@ -53,7 +30,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 16:16",
@@ -76,10 +53,29 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Matthew 16:16",
           "text": "Peter goes all the way: \"You are the Christ, the Son of the living God.\" Somebody asks ME a question that big, I'm still clearing my throat.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 16:17",
+          "question": "When Peter says Jesus is the Christ, Jesus answers by calling Peter blessed.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -88,53 +84,34 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 16:17",
-          "question": "Jesus tells Peter, \"Blessed are you, Simon son of Jonah!\" Who does Jesus say revealed this to Peter?",
+          "question": "Peter says Jesus is the Christ, the Son of the living God. Who does Jesus say revealed this to Peter?",
           "answers": [
             {
-              "text": "His Father in heaven",
+              "text": "Jesus' Father in heaven",
               "correct": true
             },
             {
-              "text": "John the Baptist",
+              "text": "An angel of the Lord",
               "correct": false
             },
             {
-              "text": "The prophet Elijah",
+              "text": "Peter's brother Andrew",
               "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 16:17",
-          "question": "Jesus says Peter learned who He is from flesh and blood.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
-          "verses": "Matthew 16:18",
-          "text": "Then Jesus tells him, \"you are Peter, and on this rock I will build My church.\" The biggest thing I ever built was a pile of old takeout menus in the back of a junk drawer.",
-          "needs_agent_fix": true,
+          "verses": "Matthew 16:17-18",
+          "text": "It wasn't flesh and blood, Jesus says. Then He tells Peter, \"And I tell you that you are Peter, and on this rock I will build My church…\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 16:18",
@@ -153,7 +130,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Matthew 16:19",
           "text": "Jesus also says He will give Peter the keys of the kingdom of heaven. I shared a junk drawer with a mystery key that spent YEARS guessing which door it opened, and THAT key would've lost its mind hearing this.",
@@ -161,22 +138,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 16:19",
-          "question": "Jesus tells Peter that whatever he binds on earth will be bound in ___.",
+          "question": "Jesus tells Peter that whatever he binds on earth will be bound in heaven. What does Jesus say about whatever Peter looses on earth?",
           "answers": [
             {
-              "text": "heaven",
+              "text": "It will be loosed in heaven",
               "correct": true
             },
             {
-              "text": "Jerusalem",
+              "text": "It will be bound in heaven",
               "correct": false
             },
             {
-              "text": "Babylon",
+              "text": "It will be forgotten in heaven",
               "correct": false
             }
           ],
@@ -184,19 +161,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Matthew 16:19",
-          "text": "And it goes the other way too. Whatever Peter looses on earth will be loosed in heaven.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 16:20",
-          "question": "Now that the disciples know, Jesus tells them to tell everyone that He is the Christ.",
+          "question": "Then Jesus tells the disciples to tell everyone that He is the Christ.",
           "answers": [
             {
               "text": "True",
@@ -250,7 +219,7 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Matthew 16:22",
+          "verses": "Matthew 16:17, 22",
           "text": "Peter hears all this. Then Peter, the same Peter Jesus just called blessed, takes Jesus aside.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -315,18 +284,10 @@
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Matthew 16:24",
-          "text": "Then Jesus tells His disciples what it takes to come after Him. Anyone who wants to must deny himself.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 16:24",
-          "question": "Jesus says anyone who wants to come after Him must deny himself and follow Him. What must he take up?",
+          "question": "Then Jesus tells His disciples that anyone who wants to come after Him must deny himself and follow Him. What must he take up?",
           "answers": [
             {
               "text": "His cross",
@@ -345,22 +306,30 @@
           "needs_human_decision": false
         },
         {
+          "card": 9,
+          "kind": "story",
+          "verses": "Matthew 16:25",
+          "text": "Then Jesus explains why, and it turns everything upside down. Holding on and letting go don't work the way you'd think.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 16:25",
-          "question": "Jesus says whoever wants to save his life will ___ it.",
+          "question": "Jesus says something surprising about whoever wants to save his life. What happens to that life?",
           "answers": [
             {
-              "text": "lose",
+              "text": "He will lose it",
               "correct": true
             },
             {
-              "text": "keep",
+              "text": "He will keep it forever",
               "correct": false
             },
             {
-              "text": "guard",
+              "text": "He will win it back later",
               "correct": false
             }
           ],
@@ -372,7 +341,34 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 16:25",
-          "question": "Jesus says whoever loses his life for His sake will find it.",
+          "question": "Jesus says whoever loses his life for His sake will lose it for good.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Matthew 16:26",
+          "text": "Then Jesus asks about a man who gains the WHOLE world. Friend, that's not finding a good parking spot, that's owning EVERY parking lot on the planet.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 16:26",
+          "question": "Jesus asks what it will profit a man if he gains the whole world, yet forfeits his soul.",
           "answers": [
             {
               "text": "True",
@@ -387,41 +383,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Matthew 16:26",
-          "text": "Then Jesus asks about a man who gains the WHOLE world. Friend, that's not a raise at work, that's owning the company, the building AND the parking lot.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 16:26",
-          "question": "Jesus asks what it will profit a man if he gains the whole world, yet forfeits his ___.",
-          "answers": [
-            {
-              "text": "soul",
-              "correct": true
-            },
-            {
-              "text": "home",
-              "correct": false
-            },
-            {
-              "text": "name",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 14,
           "kind": "story",
           "verses": "Matthew 16:26",
-          "text": "Then He asks, \"what can a man give in exchange for his soul?\" I shared a drawer with an expired coupon that thought it could buy ANYTHING, and even he wouldn't try that trade.",
+          "text": "Then He asks, \"Or what can a man give in exchange for his soul?\" I shared a drawer with an expired coupon that thought it could buy ANYTHING, and even he wouldn't try that trade.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,7 +394,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Matthew 16:27",
-          "text": "Then Jesus looks ahead. The Son of Man will come in His Father's glory with His angels, and friend, that is NOT a quiet entrance.",
+          "text": "Then Jesus looks ahead: the Son of Man will come in His Father's glory with His angels. Friend, that's why my ovens stay ready.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -467,21 +432,17 @@
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Matthew 16:28",
-          "question": "Jesus says some who are standing there will not taste death before they see something. What is it?",
+          "question": "Jesus says none of the people standing there will see the Son of Man coming in His kingdom before they die.",
           "answers": [
             {
-              "text": "The Son of Man coming in His kingdom",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Fire coming down from heaven",
-              "correct": false
-            },
-            {
-              "text": "The temple being torn down",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,

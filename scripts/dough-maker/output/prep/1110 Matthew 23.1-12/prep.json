@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 23:1-2",
-          "text": "Jesus has just asked the Pharisees a question they can't answer, and from that day on nobody dares question Him anymore (Matthew 22:46). Now He turns to the crowds and His disciples and talks about the scribes and Pharisees, the teachers of the law and the religious leaders. He starts by saying they sit in Moses' seat.",
+          "text": "Jesus has just asked the Pharisees a question they can't answer, and from that day on nobody dares question Him anymore (Matthew 22:46). Now He speaks to the crowds and His disciples about the scribes, teachers of the law, and the Pharisees, a group of religious leaders. He starts by saying they sit in the seat of Moses, Israel's leader.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 23:3",
-          "question": "Since the scribes and Pharisees sit in Moses' seat, Jesus tells the crowds to ignore everything they teach.",
+          "question": "Since the scribes and Pharisees sit in Moses' seat, Jesus tells the crowds and His disciples to ignore everything they teach.",
           "answers": [
             {
               "text": "True",
@@ -36,7 +36,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 23:3",
-          "text": "So practice what they tell you, BUT here comes the catch, friend. Follow the recipe card, just don't copy the baker.",
+          "text": "Jesus says to practice and observe everything they tell you, BUT don't do what they do. Follow the recipe card, friend, just don't copy the guy holding it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -45,7 +45,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 23:3",
-          "question": "Why does Jesus tell the crowds not to do what the scribes and Pharisees do?",
+          "question": "Why does Jesus tell the crowds and His disciples not to do what the scribes and Pharisees do?",
           "answers": [
             {
               "text": "They do not practice what they preach",
@@ -56,7 +56,7 @@
               "correct": false
             },
             {
-              "text": "They change the law every single year",
+              "text": "They do not keep the Sabbath day",
               "correct": false
             }
           ],
@@ -96,37 +96,29 @@
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Matthew 23:4",
-          "text": "That's the friend who signs you up to help him move, then spends all Saturday on the couch pointing at boxes and saying, \"Careful, that one's HEAVY.\"",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 23:5",
+          "question": "Jesus says all the deeds of the scribes and Pharisees are done for one purpose. What is it?",
+          "answers": [
+            {
+              "text": "So people will see them",
+              "correct": true
+            },
+            {
+              "text": "So the poor will be fed",
+              "correct": false
+            },
+            {
+              "text": "So God will forgive them",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 23:5",
-          "question": "Jesus says all the deeds of the scribes and Pharisees are done for ___ to see.",
-          "answers": [
-            {
-              "text": "men",
-              "correct": true
-            },
-            {
-              "text": "God",
-              "correct": false
-            },
-            {
-              "text": "angels",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Matthew 23:5",
           "text": "They broaden their phylacteries and lengthen their tassels. Friend, if a taller chef's hat got me noticed, I'd have stretched mine till it scraped the ceiling, and I am NOT proud of that.",
@@ -134,7 +126,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Matthew 23:6",
           "text": "Then Jesus starts listing what they love, and friend, this is not a short list. This is a \"scroll down, there's more\" list.",
@@ -142,7 +134,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 23:6",
@@ -165,11 +157,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Matthew 23:6-7",
-          "question": "Jesus says the scribes and Pharisees love the chief seats in the synagogues and the greetings in the marketplaces.",
+          "verses": "Matthew 23:6",
+          "question": "Jesus says the scribes and Pharisees love the chief seats in the synagogues.",
           "answers": [
             {
               "text": "True",
@@ -184,15 +176,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Matthew 23:7",
-          "text": "And they love being addressed by the title Rabbi. That's the guy who makes assistant shift lead and has his email signature updated before lunch.",
+          "text": "They also love the greetings in the marketplaces and being addressed by the title Rabbi. That's the guy who makes assistant shift lead and has his email signature updated before lunch.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 23:8",
@@ -215,7 +207,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 23:9",
@@ -238,34 +230,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Matthew 23:10",
-          "question": "Jesus tells His listeners not to be called instructors, because their one Instructor is Moses, whose seat the scribes and Pharisees sit in.",
+          "question": "Jesus says His listeners are not to be called instructors, because their one Instructor is ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "the Christ",
+              "correct": true
+            },
+            {
+              "text": "Moses",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Elijah",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Matthew 23:11",
-          "text": "Then Jesus says who the greatest among them shall be, and friend, I have read this line a HUNDRED times and I still gasp like it's the first time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
+          "kind": "story",
+          "verses": "Matthew 23:11",
+          "text": "Then Jesus says who the greatest among His listeners shall be, and friend, I have read this line a HUNDRED times and I still gasp like it's the first time.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 23:11",
@@ -288,45 +284,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Matthew 23:12",
-          "question": "Whoever exalts himself will be ___, and whoever humbles himself will be ___.",
+          "question": "Jesus says whoever exalts himself will be exalted.",
           "answers": [
             {
-              "text": "humbled",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "exalted",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "tested",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "ignored",
-              "correct": false
-            },
-            {
-              "text": "forgiven",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Matthew 23:12",
-          "text": "And that's where this batch comes out of the oven. Jesus has a whole lot more to say, so keep that apron ON, friend.",
+          "text": "Jesus says, \"For whoever exalts himself will be humbled, and whoever humbles himself will be exalted.\" That's where this batch comes out of the oven, friend, but keep that apron ON, because Jesus has a whole lot more to say.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

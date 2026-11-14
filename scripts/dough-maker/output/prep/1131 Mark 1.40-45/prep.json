@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 1:40",
-          "text": "This passage is six verses, friend. I've had batches in the oven longer than that, and it still hits HARD. A man with leprosy comes to Jesus, drops to his knees and starts begging.",
-          "needs_agent_fix": true,
+          "text": "Jesus has been going all through Galilee, preaching and driving out demons (Mark 1:39). Then a man with leprosy comes to Him, drops to his knees and starts begging. Under the Law, a leper had to live alone, outside the camp (Leviticus 13:46).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -25,23 +25,23 @@
               "correct": true
             },
             {
-              "text": "strong",
+              "text": "wise",
               "correct": false
             },
             {
-              "text": "free",
+              "text": "brave",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Mark 1:40",
-          "text": "Now listen to HOW he asks. He's already sure Jesus CAN do it. His 'if' is about something else.",
-          "needs_agent_fix": true,
+          "text": "Now listen to HOW he asks, friend. He says Jesus can make him clean. But he puts one little \"if\" in front of it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,22 +49,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:40",
-          "question": "The leper is sure Jesus can make him clean. What is his 'if' about?",
+          "question": "The leper says Jesus can make him clean. What \"if\" does he put in front of it?",
           "answers": [
             {
-              "text": "Whether Jesus is willing",
+              "text": "If You are willing",
               "correct": true
             },
             {
-              "text": "Whether God will allow it",
+              "text": "If I am worthy",
               "correct": false
             },
             {
-              "text": "Whether he has enough faith",
+              "text": "If I have enough faith",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,7 +72,7 @@
           "kind": "story",
           "verses": "Mark 1:41",
           "text": "Jesus looks at this man down on his knees, and He is moved with compassion.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -80,26 +80,26 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:41",
-          "question": "Moved with compassion, Jesus heals the leper from a distance, without touching him.",
+          "question": "Moved with compassion, Jesus reaches out His hand and touches the leper.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Mark 1:41",
-          "text": "Jesus reaches out His hand and touches the man. “I am willing,” He says. “Be clean!”",
-          "needs_agent_fix": true,
+          "text": "Then Jesus tells the man He's willing, and says, \"Be clean!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:42",
-          "question": "When Jesus tells the leper “Be clean!” the leprosy leaves him right away.",
+          "question": "When Jesus says \"Be clean!\" the leprosy leaves the man right away.",
           "answers": [
             {
               "text": "True",
@@ -118,63 +118,61 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "Mark 1:42-43",
-          "text": "Leprosy GONE. Immediately. Friend, I can't get dough to rise that fast. Then Jesus promptly sends the man away, with a stern warning on his way out.",
-          "needs_agent_fix": true,
+          "verses": "Mark 1:43",
+          "text": "Then Jesus promptly sends him off with a stern warning. Not a friendly wave, friend. A STERN warning.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:44",
-          "question": "Jesus sends the healed man away with a stern warning. What is the warning?",
+          "question": "Jesus sends the healed man away with a stern warning: don't ___ anyone.",
           "answers": [
             {
-              "text": "Don't tell anyone",
+              "text": "tell",
               "correct": true
             },
             {
-              "text": "Don't go back home",
+              "text": "touch",
               "correct": false
             },
             {
-              "text": "Don't come back here",
+              "text": "visit",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Mark 1:44",
+          "text": "But Jesus also gives him somewhere to go. He's to present the offering that Moses, Israel's leader, prescribed for his cleansing.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 1:44",
-          "question": "Jesus tells the healed man to go show himself to the ___ and present the offering ___ prescribed for his cleansing.",
+          "question": "Jesus tells the healed man to go show himself to the ___.",
           "answers": [
             {
               "text": "priest",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Moses",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "scribes",
-              "correct": false
-            },
-            {
-              "text": "Elijah",
               "correct": false
             },
             {
@@ -182,38 +180,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 1:44",
-          "question": "Why does Jesus send the healed man to the priest with that offering?",
-          "answers": [
-            {
-              "text": "As a testimony to them",
-              "correct": true
-            },
-            {
-              "text": "To ask for the priest's blessing",
-              "correct": false
-            },
-            {
-              "text": "To pay the priest for the healing",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Mark 1:45",
-          "text": "Then the healed man heads out, clean, with a priest to go see. Me? My first day out of that junk drawer, I just stood on my gold base blinking at the light.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Mark 1:44",
+          "question": "The healed man is to bring the offering Moses prescribed. What does Jesus say it will be?",
+          "answers": [
+            {
+              "text": "A testimony",
+              "correct": true
+            },
+            {
+              "text": "A payment for sin",
+              "correct": false
+            },
+            {
+              "text": "A gift for the poor",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -232,15 +222,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Mark 1:45",
-          "text": "Nope. He goes out and openly proclaims it and spreads the news. Honestly, if somebody pulled ME out of that junk drawer, I'd have told the DUST.",
-          "needs_agent_fix": true,
+          "text": "Honestly, if somebody pulled ME out of the junk drawer I sat in for years, I'd have told the DUST. But all that talk changes things for Jesus.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -263,7 +253,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -278,7 +268,7 @@
               "correct": true
             },
             {
-              "text": "He finally gets some time alone",
+              "text": "His disciples go back to fishing",
               "correct": false
             },
             {
@@ -286,7 +276,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 22:1-2",
-          "text": "Jesus is teaching in the temple courts (Matthew 21:23), and the chief priests and Pharisees already know His parables are about them (Matthew 21:45). Once again, Jesus speaks in parables, and He says the kingdom of heaven is like a king who prepares a wedding banquet. A wedding banquet, friend? Now you're speaking MY language!",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Jesus is teaching in the temple courts (Matthew 21:23), and the chief priests and Pharisees already know His parables are about them (Matthew 21:45). Once again, He speaks in parables: the kingdom of heaven is like a king who prepares a wedding banquet. Friend, the second I hear \"banquet,\" I'm already preheating the oven.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,14 +34,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Matthew 22:3",
-          "text": "The king sends his servants to call the people he invited. A personal invite from the KING, friend, delivered by hand. That is NOT a group text.",
-          "needs_agent_fix": true,
+          "text": "The king sends his servants to call the people he invited. A personal invite from the KING, hand-delivered, friend, and that is NOT a group text.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,15 +49,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 22:3",
-          "question": "True or false: When the king's servants call the invited guests, the guests come to the banquet.",
+          "question": "True or false: When the king's servants call the invited guests, the guests refuse to come.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -97,36 +97,13 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Matthew 22:5",
-          "text": "One goes off to his field, another to his business. The KING calls, and these guys hit snooze.",
+          "verses": "Matthew 22:6",
+          "text": "The rest seize the king's servants, mistreat them and kill them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Matthew 22:6",
-          "question": "The rest of the invited guests go even further with the king's servants. What do they do?",
-          "answers": [
-            {
-              "text": "Seize them and kill them",
-              "correct": true
-            },
-            {
-              "text": "Chase them out of town",
-              "correct": false
-            },
-            {
-              "text": "Lock them in a storeroom",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 22:7",
@@ -151,7 +128,7 @@
               "correct": false
             },
             {
-              "text": "palace",
+              "text": "ships",
               "correct": false
             }
           ],
@@ -159,15 +136,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Matthew 22:8",
-          "text": "Then the king tells his servants, \"The wedding banquet is ready, but those I invited were not worthy.\" Friend, that's paying for the venue, the band AND the photographer, and the whole guest list leaves you on read.",
+          "text": "Then the king tells his servants, \"The wedding banquet is ready, but those I invited were not worthy.\" The tables are set, and the seats are empty.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 22:9",
@@ -191,7 +168,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 22:9",
@@ -210,7 +187,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Matthew 22:10",
           "text": "So the servants head out into the streets and start gathering guests. Me, with a whole banquet hall to fill, I'd yell FREE COOKIES and get out of the way.",
@@ -218,7 +195,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 22:10",
@@ -241,15 +218,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Matthew 22:10-11",
-          "text": "The wedding hall is filled with guests, wall to wall. Then the king comes in to see them, and he spots one man.",
+          "text": "The wedding hall is filled with guests. Then the king comes in to see them, and he spots one man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 22:11",
@@ -272,7 +249,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 22:12",
@@ -296,15 +273,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Matthew 22:13",
-          "text": "Then the king tells the servants, \"Tie him hand and foot, and throw him into the outer darkness, where there will be weeping and gnashing of teeth.\" Friend, I spent years in the dark of a junk drawer, and that was nothing like this.",
+          "text": "Then the king tells the servants, \"Tie him hand and foot, and throw him into the outer darkness, where there will be weeping and gnashing of teeth.\" This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 22:14",
@@ -323,7 +300,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Matthew 22:14",
           "text": "\"For many are called, but few are chosen.\" That's where Jesus ends this parable, friend, but He's not done in the temple, and neither are we.",

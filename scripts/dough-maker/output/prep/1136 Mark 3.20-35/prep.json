@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 3:20-21",
-          "text": "Can't even EAT, friend, and I've never had a line out my bakery door so long I couldn't sneak one cookie off the tray. Then word about all this gets around, and somebody decides it's time to step in.",
+          "text": "Too busy to EAT? Friend, I'm surrounded by cookies all day and I have NEVER been that busy. Then word about all this gets around, and somebody decides it's time to step in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -90,7 +90,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Mark 3:22",
-          "text": "Meanwhile, some scribes have come down from Jerusalem. And they've got their own explanation for how Jesus drives out demons.",
+          "text": "Then there are the scribes who have come down from Jerusalem. They're saying Jesus is possessed by Beelzebul, and they've got an explanation for how He drives out demons.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -116,33 +116,6 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Mark 3:22",
-          "text": "They even say He's possessed by Beelzebul, the prince of the demons (Matthew 12:24). That's like a firefighter putting out your kitchen fire, and you look him dead in the eye and go, \"Mm. Arsonist.\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 3:21-22",
-          "question": "Jesus' family and the scribes from Jerusalem are saying the exact same thing about Him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
         }
       ]
     },
@@ -160,29 +133,6 @@
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 3:23",
-          "question": "Jesus asks, \"How can Satan drive out Satan?\" What's He pointing out?",
-          "answers": [
-            {
-              "text": "Satan would not fight against himself",
-              "correct": true
-            },
-            {
-              "text": "Satan is too weak to fight anyone",
-              "correct": false
-            },
-            {
-              "text": "Demons leave on their own over time",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
           "kind": "story",
           "verses": "Mark 3:24",
           "text": "Then Jesus paints a picture. Imagine a kingdom divided against itself.",
@@ -190,7 +140,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 3:24",
@@ -209,7 +159,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Mark 3:25",
           "text": "Same goes for a house divided against itself: it cannot stand. It's like moving a couch with somebody pushing the OTHER way, and now that couch just lives in the doorway.",
@@ -217,15 +167,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
-          "kind": "story",
-          "verses": "Mark 3:26",
-          "text": "Then Jesus turns it to Satan. What if Satan is divided and rises against himself?",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 3:26",
@@ -248,15 +190,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "story",
           "verses": "Mark 3:27",
-          "text": "Now a new picture. Somebody wants to get into a strong man's house and steal his possessions, with the strong man right there.",
+          "text": "Now a new picture. Somebody wants to get into a strong man's house and steal his possessions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 3:27",
@@ -279,7 +221,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 3:27",
@@ -308,7 +250,7 @@
           "kind": "story",
           "verses": "Mark 3:28",
           "text": "Jesus isn't done, friend. He says, \"Truly I tell you, the sons of men will be forgiven all sins and blasphemies, as many as they utter.\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -331,15 +273,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 3:29",
+          "question": "Jesus says whoever blasphemes against the Holy Spirit is guilty of eternal sin.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 3:30",
-          "question": "Jesus warns about blasphemy against the Holy Spirit because of something the scribes from Jerusalem were saying about Him. What were the scribes saying?",
+          "question": "The Gospel of Mark tells us why Jesus said all this. What were people saying about Him?",
           "answers": [
             {
               "text": "He has an unclean spirit",
@@ -354,34 +315,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Mark 3:31",
-          "text": "Then Jesus' mother and brothers come and stand outside. They send someone in to call for Him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Mark 3:32",
-          "text": "A crowd is sitting around Jesus, and someone tells Him His mother and brothers are outside, asking for Him. You know that packed meeting where the door cracks open and somebody whispers, \"Your MOTHER is in the lobby,\" and twenty grown adults turn around in their chairs like owls?",
-          "needs_agent_fix": true,
+          "verses": "Mark 3:31",
+          "text": "Then Jesus' mother and brothers come and stand outside. They send someone in to call for Him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Mark 3:32",
+          "text": "A crowd is sitting around Jesus, and someone tells Him His mother and brothers are outside, asking for Him. You know that packed meeting where the door cracks open, somebody whispers your name, and twenty grown adults turn around in their chairs like owls?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 3:33",
           "question": "Jesus hears His mother and brothers are outside asking for Him. How does He answer?",
           "answers": [
             {
-              "text": "He asks who His family are",
+              "text": "He asks who His mother and brothers are",
               "correct": true
             },
             {
@@ -393,38 +354,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Mark 3:33-34",
-          "text": "Jesus replies, \"Who are My mother and My brothers?\" Then He looks at the people seated in a circle around Him.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 3:34",
-          "question": "Looking at the people seated in a circle around Him, Jesus calls them His mother and brothers.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Mark 3:33-34",
+          "text": "Jesus replies, \"Who are My mother and My brothers?\" Then He looks at the people seated in a circle around Him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 3:34",
+          "question": "Looking at the people seated in a circle around Him, Jesus says they are His followers but not His family.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 3:35",
@@ -443,7 +404,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

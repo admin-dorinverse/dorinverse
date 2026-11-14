@@ -9,27 +9,28 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 3:1-2",
-          "text": "It's the fifteenth year of Tiberius Caesar's reign, with Pontius Pilate governor of Judea, Herod and two others ruling as tetrarchs, and Annas and Caiaphas in the high priesthood. Luke rolls out more big names than the opening credits of a movie. And THEN the real story starts.",
+          "text": "It's the fifteenth year of the reign of Tiberius Caesar, the Roman emperor, with Pontius Pilate governor of Judea, Herod tetrarch of Galilee (not the King Herod from when Jesus was born), and Annas and Caiaphas as high priests. That's a WHOLE lot of important men in charge, friend. But the word of God is about to come to somebody who isn't on that list.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 3:2",
-          "question": "With all those big names in charge, the word of God comes to John, son of Zechariah. Where is John when it comes?",
+          "question": "With all those big names in charge, the word of God comes to John, son of Zechariah, in the ___.",
           "answers": [
             {
-              "text": "In the wilderness",
-              "correct": true
+              "text": "wilderness",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "In the temple courts",
+              "text": "temple",
               "correct": false
             },
             {
-              "text": "In Nazareth",
+              "text": "city",
               "correct": false
             }
           ],
@@ -40,7 +41,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 3:3",
-          "text": "John goes into all the region around the Jordan and starts preaching. One man, one river, one message.",
+          "text": "John goes into all the region around the Jordan, preaching a baptism for the forgiveness of sins. One man, one river, one message.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -65,35 +66,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Luke 3:4",
-          "text": "Luke says this is just what was written in the book of the words of Isaiah the prophet. Isaiah wrote about a voice of one calling in the wilderness.",
+          "text": "This is just as it is written in the book of the words of Isaiah the prophet. Isaiah wrote about a voice of one calling in the wilderness.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 3:4",
-          "question": "Isaiah's voice in the wilderness calls out to prepare the ___ for the Lord and make straight paths for Him.",
+          "question": "In Isaiah's words, the voice in the wilderness calls for a way to be prepared and paths made straight. Who are they for?",
           "answers": [
             {
-              "text": "way",
-              "correct": true,
-              "blank": 1
+              "text": "For the Lord",
+              "correct": true
             },
             {
-              "text": "feast",
+              "text": "For the king's army",
               "correct": false
             },
             {
-              "text": "temple",
+              "text": "For the returning exiles",
               "correct": false
             }
           ],
@@ -104,7 +104,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 3:5",
-          "text": "Then Isaiah's picture turns into the BIGGEST road project you've ever seen: every valley filled in, every mountain and hill made low. And for once, road work isn't making anybody late.",
+          "text": "Then Isaiah's picture turns into the BIGGEST road project you've ever seen: every valley will be filled in, and every mountain and hill made low. And for once, road work won't be making anybody late.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -113,15 +113,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 3:5",
-          "question": "True or false: In Isaiah's picture of the road for the Lord, the rough ways are made smooth.",
+          "question": "True or false: In Isaiah's picture of the road for the Lord, the crooked ways are left as they are.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -129,26 +129,10 @@
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Luke 3:6",
-          "question": "Then Isaiah's words end with a promise: all ___ will see God's salvation.",
-          "answers": [
-            {
-              "text": "humanity",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Israel",
-              "correct": false
-            },
-            {
-              "text": "Judea",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And Isaiah's words end with a promise: \"And all humanity will see God’s salvation.\" EVERYBODY, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -245,18 +229,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 3:9",
-          "question": "In John's picture of the axe at the root, what happens to every tree that does not produce good fruit?",
+          "question": "In John's picture of the axe at the root, what will happen to every tree that does not produce good fruit?",
           "answers": [
             {
-              "text": "It's cut down and thrown into the fire",
+              "text": "It will be cut down and thrown into the fire",
               "correct": true
             },
             {
-              "text": "It's given one more year to grow",
+              "text": "It will be given one more year to grow",
               "correct": false
             },
             {
-              "text": "It's dug up and planted somewhere else",
+              "text": "It will be dug up and planted somewhere else",
               "correct": false
             }
           ],
@@ -294,7 +278,7 @@
               "correct": false
             },
             {
-              "text": "bargain",
+              "text": "pray",
               "correct": false
             }
           ],
@@ -394,18 +378,10 @@
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Luke 3:15",
-          "text": "By now the people are waiting expectantly. And everybody's wondering the same thing about John, deep in their hearts.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 3:15",
-          "question": "What are the people all wondering in their hearts about John?",
+          "question": "By now the people are waiting expectantly, and they're all wondering the same thing about John in their hearts. What is it?",
           "answers": [
             {
               "text": "If John could be the Christ",
@@ -424,7 +400,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Luke 3:16",
           "text": "John answers all of them: he baptizes with water, but One more powerful than he is will come. Then John tells them exactly where he stands next to that One.",
@@ -432,7 +408,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 3:16",
@@ -455,15 +431,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Luke 3:16",
-          "text": "That One, John says, will baptize them with the Holy Spirit and with fire. John keeps pointing away from himself, and me? I get ONE compliment on a batch and I brag for a WEEK.",
+          "text": "That One, John says, will baptize them with the Holy Spirit and with fire. John keeps pointing away from himself, while I get ONE compliment on a batch and brag about it for a WEEK.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Luke 3:17",
           "text": "Then John gives a harvest picture: His winnowing fork is in His hand to clear His threshing floor.",
@@ -471,11 +447,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 3:17",
-          "question": "True or false: In John's harvest picture, the chaff is gathered into the barn along with the wheat.",
+          "question": "True or false: In John's harvest picture, the chaff will be gathered into the barn along with the wheat.",
           "answers": [
             {
               "text": "True",
@@ -490,47 +466,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Luke 3:17",
-          "text": "The wheat gets gathered into His barn, but He burns up the chaff with unquenchable fire. Fire AGAIN, friend, just like those trees with no good fruit.",
+          "text": "John says the wheat will be gathered into His barn, but He will burn up the chaff with unquenchable fire. Fire AGAIN, friend, just like those trees with no good fruit.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Luke 3:18-19",
+          "text": "With these and many other exhortations, John proclaims the good news to the people. But he also rebukes Herod the tetrarch about Herodias, his brother's wife, and all the evils Herod had done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Luke 3:18-19",
-          "text": "With these and many other exhortations, John proclaims the good news to the people. And he doesn't stop at the crowds: he rebukes Herod the tetrarch about his brother's wife and all the evils he had done.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 3:19",
-          "question": "John rebukes Herod the tetrarch about his brother's wife, ___.",
-          "answers": [
-            {
-              "text": "Herodias",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Bernice",
-              "correct": false
-            },
-            {
-              "text": "Salome",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 3:20",

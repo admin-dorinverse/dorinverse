@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Luke 9:11",
-          "text": "Private getaway? Not for long, because the crowds find out and follow Him. That's like putting your phone on silent and the whole group chat shows up at your front door.",
-          "needs_agent_fix": true,
+          "text": "But the crowds find out and follow Him. That's like putting your phone on silent and the whole group chat shows up at your front door.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 9:11",
-          "question": "The crowds find out where Jesus went and follow Him. Jesus sends them away so He can be alone with the apostles.",
+          "question": "When the crowds show up, Jesus sends them away.",
           "answers": [
             {
               "text": "True",
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 9:11",
-          "question": "Jesus welcomes the crowds. He speaks to them about the kingdom of God, and He ___ those who need it.",
+          "question": "Jesus welcomes the crowds and speaks to them about the kingdom of God. He also ___ the ones who are sick.",
           "answers": [
             {
               "text": "heals",
@@ -91,8 +91,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Luke 9:12",
-          "text": "As the day nears its end, the Twelve come to Jesus with a plan. And you know how it goes, friend. When a whole group walks up to the boss together, somebody's about to make a suggestion.",
-          "needs_agent_fix": true,
+          "text": "As the day nears its end, out in a desolate place, the Twelve all come to Jesus together. Twelve people walking up at once, friend, that's not a visit, that's a MEETING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -120,33 +120,14 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 9:12",
-          "question": "The Twelve say the crowd needs to go to the villages because they're all out in a desolate place.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Luke 9:13",
+          "text": "But Jesus tells them, \"You give them something to eat.\" I bet twelve jaws just dropped at the same time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Luke 9:13",
-          "text": "But Jesus tells them, \"You give them something to eat.\" That's like emailing your boss 'Who should handle this?' and getting back one word: 'You.'",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 9:13",
@@ -169,39 +150,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Luke 9:13-14",
-          "text": "They say the only other way is to go buy food for all these people, and there are about five thousand men. FIVE THOUSAND, friend, and I break a sweat when a batch comes out three cookies short.",
+          "text": "They say the only other way is to go buy food for all these people, and there are about five thousand men. I once ran out of sprinkles halfway through ONE tray and had to sit down.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 9:14",
+          "question": "With about five thousand men out there, what does Jesus tell the disciples to have the crowd do?",
+          "answers": [
+            {
+              "text": "Sit down in groups of about fifty",
+              "correct": true
+            },
+            {
+              "text": "Stand in lines of about a hundred",
+              "correct": false
+            },
+            {
+              "text": "Walk to the nearest village together",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 9:14",
-          "question": "Jesus tells the disciples to have the crowd sit down in groups of about ___ each.",
-          "answers": [
-            {
-              "text": "fifty",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "ten",
-              "correct": false
-            },
-            {
-              "text": "five hundred",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 9:15",
@@ -220,30 +200,31 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
-          "verses": "Luke 9:15-16",
-          "text": "So picture it: thousands of people seated in their groups, waiting. And Jesus takes the five loaves and the two fish.",
+          "verses": "Luke 9:16",
+          "text": "Then Jesus takes the five loaves and the two fish into His hands.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 9:16",
-          "question": "Jesus is holding the five loaves and the two fish. What does He do before He breaks them?",
+          "question": "Before He breaks the five loaves and the two fish, Jesus looks up to ___ and speaks a blessing.",
           "answers": [
             {
-              "text": "Looks up to heaven and speaks a blessing",
-              "correct": true
+              "text": "heaven",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Asks the crowd if anyone has more",
+              "text": "the crowd",
               "correct": false
             },
             {
-              "text": "Sends the Twelve to count the people",
+              "text": "the disciples",
               "correct": false
             }
           ],
@@ -251,7 +232,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 9:16",
@@ -270,7 +251,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 9:17",
@@ -294,15 +275,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Luke 9:17",
-          "text": "Everybody's had enough, and now the disciples go around picking up the broken pieces left over. LEFTOVERS, friend, from five loaves.",
+          "text": "Then the disciples go around picking up the broken pieces left over. In the Millers' kitchen, where I used to live, nothing was ever left over, because the whole family crowded in to steal the dough.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 9:17",

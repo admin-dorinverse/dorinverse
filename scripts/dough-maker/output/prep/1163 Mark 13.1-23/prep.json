@@ -47,20 +47,16 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 13:4",
-          "question": "Peter, James, John and Andrew ask Jesus when these things will happen. What else do they want to know?",
+          "question": "Peter, James, John and Andrew ask Jesus for the sign that these things are about to be fulfilled.",
           "answers": [
             {
-              "text": "The sign that it's about to happen",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Where they should go to hide",
-              "correct": false
-            },
-            {
-              "text": "Whether they may tell the others",
+              "text": "False",
               "correct": false
             }
           ],
@@ -144,7 +140,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Mark 13:8",
-          "text": "Jesus keeps the list coming: nation against nation, kingdom against kingdom, earthquakes in various places, and famines. Friend, my mustache is gripping the counter just HEARING it.",
+          "text": "Jesus keeps going. Nation will rise against nation, kingdom against kingdom, and there will be earthquakes in various places, and famines.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -225,7 +221,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Mark 13:11",
-          "text": "Jesus says when they're arrested and handed over, don't worry beforehand about what to say. No rehearsing your big speech in the shower ELEVEN times the night before!",
+          "text": "Jesus says when they're arrested and handed over, don't worry beforehand about what to say. Me? I'd be practicing my big speech to the oven ELEVEN times the night before.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -312,27 +308,27 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 13:14",
-          "text": "Jesus gets specific. He talks about seeing “the abomination of desolation standing where it should not be (let the reader understand),” and when that happens, people need to move.",
+          "text": "Jesus gets specific. He talks about seeing “the abomination of desolation standing where it should not be…” and when that happens, people need to move.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 13:14",
-          "question": "When they see the abomination of desolation, what does Jesus tell those in Judea to do?",
+          "question": "When they see the abomination of desolation, Jesus says those in Judea should flee to the ___.",
           "answers": [
             {
-              "text": "Flee to the mountains",
+              "text": "mountains",
               "correct": true
             },
             {
-              "text": "Gather at the temple",
+              "text": "temple",
               "correct": false
             },
             {
-              "text": "Hide in the cities",
+              "text": "cities",
               "correct": false
             }
           ],
@@ -350,31 +346,27 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Mark 13:16",
-          "question": "Someone out working in the field shouldn't go back for his ___.",
+          "question": "Jesus says someone out working in the field can run back for his cloak before he flees.",
           "answers": [
             {
-              "text": "cloak",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "sandals",
-              "correct": false
-            },
-            {
-              "text": "staff",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Mark 13:17",
-          "text": "In all that rush, Jesus thinks of the mothers, friend: “How miserable those days will be for pregnant and nursing mothers!”",
+          "text": "Then Jesus says, “How miserable those days will be for pregnant and nursing mothers!”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -383,7 +375,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 13:18",
-          "question": "Running for the mountains is hard enough. Jesus tells them to pray it won't happen in the ___.",
+          "question": "Running for the mountains is hard enough. Jesus tells the four to pray it won't happen in the ___.",
           "answers": [
             {
               "text": "winter",
@@ -405,7 +397,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Mark 13:19",
-          "text": "Jesus calls them “days of tribulation unseen from the beginning of God’s creation until now, and never to be seen again.” Friend, I spent YEARS in a junk drawer, and I'm not even putting that in the same sentence.",
+          "text": "Jesus calls those days “days of tribulation unseen from the beginning of God’s creation until now, and never to be seen again.” That one's heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -482,9 +474,9 @@
           "card": 12,
           "kind": "story",
           "verses": "Mark 13:22",
-          "text": "False Christs and false prophets will appear and perform signs and wonders. Like that \"bank\" email with the logo and everything: looks real, is NOT your bank.",
+          "text": "False Christs and false prophets will appear and perform signs and wonders. Like that fancy blue tin on the counter: you open it up for cookies, and it's SEWING supplies.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -507,7 +499,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -530,15 +522,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Mark 13:23",
-          "text": "And that's where we'll pause, friend. Jesus is still sitting on that mountain, and He is NOT done teaching, so keep that apron on.",
+          "text": "And that's where we'll pause, friend. Jesus is NOT done teaching, so keep that apron on.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

@@ -9,31 +9,31 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 12:13",
-          "text": "Jesus is in the temple courts in Jerusalem, where the chief priests, scribes and elders have already questioned His authority (Mark 11:27-28). Later, they send some men to Him. Some are Pharisees, strict keepers of the law, and some are Herodians, supporters of Herod's family.",
+          "text": "Jesus is in the temple courts in Jerusalem, and the leaders who questioned His authority want to arrest Him, but they fear the crowd (Mark 11:27-28, 12:12). Later, they send some men to Him. Some are Pharisees, strict keepers of the law, and some are Herodians, supporters of Herod's family.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Mark 12:13",
-          "question": "The leaders send these Pharisees and Herodians to catch Jesus in His ___.",
+          "question": "What do the leaders send these Pharisees and Herodians to do?",
           "answers": [
             {
-              "text": "words",
+              "text": "Catch Jesus in His words",
               "correct": true
             },
             {
-              "text": "deeds",
+              "text": "Ask Jesus to heal their sick",
               "correct": false
             },
             {
-              "text": "plans",
+              "text": "Warn Jesus about Herod",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -176,7 +176,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 12:17",
-          "question": "The Pharisees and Herodians came to catch Jesus in His words, but when they hear His answer, they marvel at Him.",
+          "question": "When the Pharisees and Herodians hear Jesus' answer, they marvel at Him.",
           "answers": [
             {
               "text": "True",
@@ -208,8 +208,8 @@
           "card": 2,
           "kind": "story",
           "verses": "Mark 12:19",
-          "text": "They remind Jesus of something Moses wrote: if a man dies and leaves a wife but no children, his brother is to marry the widow and raise up offspring for him.",
-          "needs_agent_fix": true,
+          "text": "They remind Jesus of something Moses, Israel's leader, wrote: if a man dies and leaves a wife but no children, his brother is to marry the widow and raise up offspring for him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -247,7 +247,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 12:21",
-          "text": "The second brother also dies with no children, and the third does the same. Friend, this isn't a question anymore, this is a TV drama, and we're only on season three.",
+          "text": "The second brother also dies with no children, and the third does the same.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -256,15 +256,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 12:22",
-          "question": "In the Sadducees' story, one of the seven brothers finally leaves a child.",
+          "question": "In the Sadducees' story, none of the seven brothers leaves any children.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -272,18 +272,10 @@
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Mark 12:22-23",
-          "text": "Last of all, the woman dies too. Seven husbands, one widow, and now the Sadducees have their question ready.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 12:23",
-          "question": "What do the Sadducees ask Jesus about the woman?",
+          "question": "Last of all, the woman dies too. What do the Sadducees ask Jesus about her?",
           "answers": [
             {
               "text": "Whose wife will she be in the resurrection",
@@ -302,11 +294,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 12:24",
-          "question": "Jesus tells the Sadducees, who say there is no resurrection, that they're mistaken. What does He say they don't know?",
+          "question": "Jesus answers the Sadducees with a question: aren't they mistaken because they don't know two things? What are they?",
           "answers": [
             {
               "text": "The Scriptures or the power of God",
@@ -322,10 +314,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 12:25",
@@ -344,58 +336,66 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 10,
+          "kind": "story",
           "verses": "Mark 12:25",
-          "question": "Jesus says the dead who rise won't marry. Instead, they will be like the ___ in heaven.",
-          "answers": [
-            {
-              "text": "angels",
-              "correct": true
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "stars",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "No weddings, Jesus says. Instead, when the dead rise, they will be like the angels in heaven.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Mark 12:26",
+          "text": "Then, about the dead rising, Jesus points the Sadducees to the Book of Moses and quotes Exodus 3:6, where God told Moses, \"I am the God of Abraham, the God of Isaac, and the God of Jacob\". Abraham, Isaac and Jacob, Israel's forefathers, had died long before God spoke to Moses (Genesis 25:8, 35:29, 49:33).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Mark 12:26",
-          "text": "Then Jesus points the Sadducees to the burning bush in the Book of Moses, where God told Moses, \"I am the God of Abraham, the God of Isaac, and the God of Jacob.\" Abraham, Isaac and Jacob, Israel's forefathers, had died long before that day (Gen 25:8, 35:29, 49:33).",
-          "needs_agent_fix": true,
+          "question": "Which scene in the Book of Moses does Jesus point the Sadducees to?",
+          "answers": [
+            {
+              "text": "The burning bush",
+              "correct": true
+            },
+            {
+              "text": "The crossing of the Red Sea",
+              "correct": false
+            },
+            {
+              "text": "The crossing of the Jordan",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 12:27",
-          "question": "At the burning bush, God called Himself the God of Abraham, Isaac and Jacob. What does Jesus say this shows about God?",
+          "question": "God called Himself the God of Abraham, Isaac and Jacob long after they died. Jesus says He is not the God of the dead, but of the ___.",
           "answers": [
             {
-              "text": "He is God of the living not the dead",
+              "text": "living",
               "correct": true
             },
             {
-              "text": "He chose Israel above all the nations",
+              "text": "faithful",
               "correct": false
             },
             {
-              "text": "Abraham Isaac and Jacob are gone for good",
+              "text": "chosen",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
@@ -403,7 +403,7 @@
           "verses": "Mark 12:27",
           "text": "Then Jesus wraps it up: \"You are badly mistaken!\" Friend, I've been told I was mistaken PLENTY of times, but never with \"badly\" parked right in front of it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -446,7 +446,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 12:29",
-          "text": "Jesus begins His answer right here: \"Hear, O Israel, the Lord our God, the Lord is One.\"",
+          "text": "Jesus begins His answer by quoting Deuteronomy 6:4: \"Hear, O Israel, the Lord our God, the Lord is One.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -477,31 +477,16 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 12:30",
-          "text": "Jesus spells it out: with all your heart, all your soul, all your mind and all your strength. Friend, God isn't asking for one cookie off the tray, He's asking for the WHOLE box.",
+          "text": "Still quoting Deuteronomy 6:5, Jesus spells it out: with all your heart, all your soul, all your mind and all your strength. Friend, that's not one cookie off the tray, that's the WHOLE box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Mark 12:31",
-          "question": "The scribe asked for one commandment, but Jesus gives him a second one too: love your ___ as yourself.",
-          "answers": [
-            {
-              "text": "neighbor",
-              "correct": true
-            },
-            {
-              "text": "enemy",
-              "correct": false
-            },
-            {
-              "text": "master",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The scribe asked for one commandment, but Jesus gives him a second one too, quoting Leviticus 19:18: \"Love your neighbor as yourself.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -582,15 +567,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 12:34",
-          "question": "Jesus tells the scribe he is far from the kingdom of God.",
+          "question": "Jesus tells the scribe he is not far from the kingdom of God.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,

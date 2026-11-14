@@ -88,7 +88,7 @@
               "correct": false
             },
             {
-              "text": "The birds pecked at them",
+              "text": "The rain washed them away",
               "correct": false
             }
           ],
@@ -138,20 +138,16 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 4:8",
-          "question": "What happens to the farmer's seed on the good soil?",
+          "question": "On the good soil, the farmer's seed sprouts, grows up and produces a crop.",
           "answers": [
             {
-              "text": "It grows and produces a crop",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "It sprouts and then withers away",
-              "correct": false
-            },
-            {
-              "text": "It grows but never forms a head",
+              "text": "False",
               "correct": false
             }
           ],
@@ -160,68 +156,45 @@
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Mark 4:8",
-          "question": "All the seed on the good soil produces the exact same size crop.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "One bears thirtyfold, another sixtyfold, and another a hundredfold. Friend, if my dough came out a HUNDRED times bigger, I'd need a bigger planet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Mark 4:8",
-          "text": "One bears thirtyfold, another sixtyfold, and another a hundredfold. A HUNDRED times what went in, friend? If my dough did that, I'd need a bigger planet.",
-          "needs_agent_fix": true,
+          "verses": "Mark 4:9-10",
+          "text": "Then Jesus says, \"He who has ears to hear, let him hear.\" Later, when He's alone with the Twelve, His closest disciples, and the others around Him, they've got something to ask.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Mark 4:9",
-          "text": "Jesus wraps it up with, \"He who has ears to hear, let him hear.\" No explanation, friend, He just leaves it on the counter like a cookie with no label.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Mark 4:10",
-          "text": "As soon as Jesus is alone with the Twelve, His closest disciples, and the others around Him, they come to Him with a question.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 4:10",
-          "question": "When Jesus is alone with the Twelve and those around Him, they ask Him about the crowd on the shore.",
+          "question": "When Jesus is alone with the Twelve and those around Him, what do they ask Him about?",
           "answers": [
             {
-              "text": "True",
+              "text": "The parable He just told",
+              "correct": true
+            },
+            {
+              "text": "The crowd along the shore",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The boat He sat in",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:11",
@@ -244,19 +217,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "story",
           "verses": "Mark 4:12",
-          "text": "Then Jesus quotes the prophet Isaiah (Isaiah 6:9-10), about people who are \"ever seeing but never perceiving, and ever hearing but never understanding\".",
+          "text": "Then Jesus quotes words from the prophet Isaiah (Isaiah 6:9-10) about people who \"may be ever seeing but never perceiving, and ever hearing but never understanding…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:12",
-          "question": "In the words Jesus quotes, what might happen otherwise, if those people did perceive and understand?",
+          "question": "In the words Jesus quotes, what might happen otherwise?",
           "answers": [
             {
               "text": "They might turn and be forgiven",
@@ -284,32 +257,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 4:13",
-          "text": "Jesus is still alone with the Twelve and those around Him, and He asks, \"Do you not understand this parable? Then how will you understand any of the parables?\" Friend, that's me with a brand new oven manual: if I can't get past page one, page forty is NOT happening.",
+          "text": "Still alone with the Twelve and those around Him, Jesus asks if they don't understand this parable, and if not, how they'll understand any of the parables. Friend, that's me with a new oven manual: if page one loses me, page forty is NOT happening.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Mark 4:14",
-          "question": "Jesus starts explaining the parable: the farmer sows the ___.",
-          "answers": [
-            {
-              "text": "word",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "law",
-              "correct": false
-            },
-            {
-              "text": "promise",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Jesus explains the parable, starting with the farmer: \"The farmer sows the word.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -339,28 +296,27 @@
           "card": 4,
           "kind": "story",
           "verses": "Mark 4:15-16",
-          "text": "Satan, the devil, snatches the word just like those birds on the path. Then come the rocky-ground people, who hear the word and at once receive it with joy.",
+          "text": "Satan, the devil, takes the word away just like those birds on the path. Then come the rocky-ground people, who hear the word and at once receive it with joy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Mark 4:17",
-          "question": "The rocky-ground people receive the word with joy, but they have no ___, so they remain for only a season.",
+          "question": "The rocky-ground people have no root. What makes them fall away?",
           "answers": [
             {
-              "text": "root",
-              "correct": true,
-              "blank": 1
+              "text": "Trouble or persecution over the word",
+              "correct": true
             },
             {
-              "text": "fruit",
+              "text": "Growing bored of the same message",
               "correct": false
             },
             {
-              "text": "water",
+              "text": "Finding a new teacher they prefer",
               "correct": false
             }
           ],
@@ -396,24 +352,9 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 4:19",
-          "question": "Jesus names three things that come in and choke the word in the thorny-ground people. Which one is on His list?",
-          "answers": [
-            {
-              "text": "The deceitfulness of wealth",
-              "correct": true
-            },
-            {
-              "text": "The fear of man",
-              "correct": false
-            },
-            {
-              "text": "The pride of life",
-              "correct": false
-            }
-          ],
+          "text": "Jesus names what comes in: the worries of this life, the deceitfulness of wealth, and the desire for other things. They come in and choke the word.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -422,15 +363,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 4:19",
-          "question": "In the thorny-ground people, the word still produces a small crop.",
+          "question": "In the thorny-ground people, the word ends up unfruitful.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -439,36 +380,28 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Mark 4:19",
-          "text": "Here's Jesus's whole list: the worries of this life, the deceitfulness of wealth, and the desire for other things. They come in and choke the word, and it becomes unfruitful.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
           "verses": "Mark 4:20",
           "text": "Then Jesus gets to the last group, the ones like the seeds sown on good soil. Friend, THIS is the one I've been waiting for.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:20",
-          "question": "The good-soil people hear the word. What happens next?",
+          "question": "The good-soil people hear the word. What else does Jesus say they do?",
           "answers": [
             {
-              "text": "They receive it and produce a crop",
+              "text": "Receive it and produce a crop",
               "correct": true
             },
             {
-              "text": "They receive it and keep it hidden",
+              "text": "Study it and teach others",
               "correct": false
             },
             {
-              "text": "They study it but never share it",
+              "text": "Keep it and tell no one",
               "correct": false
             }
           ],
@@ -476,7 +409,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Mark 4:21",
           "text": "Jesus keeps going. He asks, \"Does anyone bring in a lamp to put it under a basket or under a bed?\"",
@@ -484,22 +417,23 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 4:21",
-          "question": "Nobody brings in a lamp to put it under a basket or under a bed. Where does Jesus say it goes?",
+          "question": "Nobody brings in a lamp to put it under a basket or under a bed. Jesus says you set it on a ___.",
           "answers": [
             {
-              "text": "On a stand",
-              "correct": true
+              "text": "stand",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Inside a jar",
+              "text": "floor",
               "correct": false
             },
             {
-              "text": "Down in a cellar",
+              "text": "doorstep",
               "correct": false
             }
           ],
@@ -507,7 +441,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 4:22",
@@ -526,15 +460,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Mark 4:23-24",
-          "text": "Then that line again: \"If anyone has ears to hear, let him hear.\" And He goes on: \"Pay attention to what you hear.\"",
+          "text": "Then Jesus says, \"If anyone has ears to hear, let him hear.\" And He goes on: \"Pay attention to what you hear.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:24",
@@ -557,7 +491,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:25",
@@ -588,8 +522,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Mark 4:26",
-          "text": "Jesus has another one: the kingdom of God is like a man who scatters seed on the ground. Not neat little rows, friend. Scattering, like me with chocolate chips: a big handful, a little toss, and good luck everybody.",
+          "verses": "Mark 4:26-27",
+          "text": "Jesus has another one: the kingdom of God is like a man who scatters seed on the ground. Then the man just sleeps and wakes, night and day, and friend, I can't even leave a batch in the oven without staring through the glass the WHOLE time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -681,37 +615,13 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Mark 4:30",
-          "text": "Then Jesus asks, \"To what can we compare the kingdom of God? With what parable shall we present it?\"",
+          "verses": "Mark 4:30-31",
+          "text": "Then Jesus asks, \"To what can we compare the kingdom of God?\" His answer is a mustard seed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 4:31",
-          "question": "Next, Jesus compares the kingdom of God to a ___ seed.",
-          "answers": [
-            {
-              "text": "mustard",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "cumin",
-              "correct": false
-            },
-            {
-              "text": "barley",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 4:31",
@@ -730,7 +640,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Mark 4:32",
           "text": "Now watch what happens once that mustard seed is planted. Friend, I came out of a 25-cent bin, so I am ROOTING for this little guy.",
@@ -738,7 +648,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:32",
@@ -761,11 +671,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 4:32",
-          "question": "The mustard plant puts forth great branches, so that the foxes of the field make their dens in its shade.",
+          "question": "The mustard plant puts forth great branches, so that the cattle of the field rest in its shade.",
           "answers": [
             {
               "text": "True",
@@ -780,7 +690,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Mark 4:32-33",
           "text": "Birds AGAIN, friend: on the path they ate the seed, and here they nest in the shade of what a seed grew into. With many such parables, Jesus spoke the word to them, \"to the extent that they could understand.\"",
@@ -788,7 +698,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 4:34",

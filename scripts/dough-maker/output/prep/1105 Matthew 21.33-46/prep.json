@@ -8,7 +8,7 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Matthew 21:23-33",
+          "verses": "Matthew 21:33",
           "text": "Jesus is teaching in the temple courts, and the chief priests, the temple's leading priests, and the elders of the people, the people's leaders, just asked Him who gave Him His authority (Matthew 21:23). He wouldn't tell them (Matthew 21:27), but then He told them a story about two sons (Matthew 21:28-31). Now He tells them another parable.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -24,21 +24,17 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Matthew 21:33",
-          "question": "The landowner rents his vineyard out to some tenants. Then what does he do?",
+          "question": "After renting out his vineyard to some tenants, the landowner stays to keep an eye on them.",
           "answers": [
             {
-              "text": "Goes away on a journey",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Moves into the tower",
-              "correct": false
-            },
-            {
-              "text": "Stays to work the winepress",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -71,23 +67,27 @@
           "card": 5,
           "kind": "story",
           "verses": "Matthew 21:35",
-          "text": "So this is where the tenants hand it over, right? NOPE. They seize the servants.",
-          "needs_agent_fix": true,
+          "text": "You'd think the tenants would just hand over the fruit. Instead, they seize his servants, beat one, kill another and stone a third.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 21:35",
-          "question": "The tenants beat one of the landowner's servants, kill another and stone a third.",
+          "type": "multiple_choice",
+          "verses": "Matthew 21:36",
+          "question": "The tenants beat, kill and stone the landowner's servants. What does the landowner do next?",
           "answers": [
             {
-              "text": "True",
+              "text": "Sends more servants than the first group",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Sends soldiers after the tenants",
+              "correct": false
+            },
+            {
+              "text": "Gives up on his share of the fruit",
               "correct": false
             }
           ],
@@ -97,40 +97,13 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Matthew 21:36",
-          "text": "When nobody answers my first text, I send FIVE more. This landowner's the same way: he sends other servants, more than the first group.",
+          "verses": "Matthew 21:36-37",
+          "text": "But the tenants do the same to them. Finally, the landowner sends somebody close to him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 21:36",
-          "question": "The tenants treat the landowner's second, bigger group of servants better than the first.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Matthew 21:37",
-          "text": "Finally, the landowner sends somebody new. Somebody close to him.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 21:37",
@@ -153,22 +126,49 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Matthew 21:37",
-          "question": "The landowner sends his son to the tenants. What does he expect them to do?",
+          "question": "When the landowner sends his son, he says the tenants will respect him.",
           "answers": [
             {
-              "text": "Respect his son",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Trust his son",
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Matthew 21:38",
+          "text": "But when the tenants see the son, they say to one another, \"This is the heir.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 21:38",
+          "question": "The tenants plan to kill the landowner's son. What do they want to take?",
+          "answers": [
+            {
+              "text": "His inheritance",
+              "correct": true
+            },
+            {
+              "text": "His robe",
               "correct": false
             },
             {
-              "text": "Pity his son",
+              "text": "His signet ring",
               "correct": false
             }
           ],
@@ -178,50 +178,8 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "Matthew 21:38",
-          "text": "But the tenants see the son coming and say to one another, \"This is the heir.\" Friend, they are NOT rolling out the welcome mat.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Matthew 21:38",
-          "question": "The tenants see the landowner's son, the heir. What do they plan to do?",
-          "answers": [
-            {
-              "text": "Kill him and take his inheritance",
-              "correct": true
-            },
-            {
-              "text": "Send him back with a message",
-              "correct": false
-            },
-            {
-              "text": "Buy the vineyard from him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
           "verses": "Matthew 21:39",
-          "question": "The tenants seize the landowner's son and kill him right there inside the vineyard.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "So they seize him, throw him out of the vineyard and kill him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -267,15 +225,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 21:41",
-          "question": "Jesus' listeners say the new tenants will give the owner his share of the fruit at harvest time.",
+          "question": "Jesus' listeners say the new tenants will keep all the fruit for themselves.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -285,7 +243,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Matthew 21:42",
-          "text": "Then Jesus asks if they've never read in the Scriptures about the stone the builders rejected, from Psalm 118:22. Friend, when somebody starts with \"Have you never read,\" you sit up STRAIGHT.",
+          "text": "Then Jesus asks, \"Have you never read in the Scriptures…\" and quotes Psalm 118:22, about the stone the builders rejected. Friend, when a question opens like that, you sit up STRAIGHT.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -335,7 +293,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Matthew 21:43",
-          "text": "Then Jesus tells His listeners that the kingdom of God will be taken away from them. Friend, the story just walked right off the page and sat down next to them.",
+          "text": "Then Jesus tells His listeners that the kingdom of God will be taken away from them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -375,7 +333,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 21:45",
-          "question": "The chief priests and the Pharisees, a Jewish group known for strictly keeping the Law, hear Jesus' parables. What do they realize?",
+          "question": "The chief priests and the Pharisees, the strictest group in the Jewish faith (Acts 26:5), hear Jesus' parables. What do they realize?",
           "answers": [
             {
               "text": "Jesus is speaking about them",
@@ -390,7 +348,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -399,7 +357,7 @@
           "verses": "Matthew 21:46",
           "text": "They want to arrest Jesus. But they don't.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -432,15 +390,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "Matthew 21:46",
-          "text": "And that's where we'll leave it for now, friend. Tie that apron tight, because this teaching isn't done.",
+          "text": "Keep that apron on, friend. This teaching's not done yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

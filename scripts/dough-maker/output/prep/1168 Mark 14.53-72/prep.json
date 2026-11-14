@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 14:53-54",
-          "text": "Jesus has just been arrested. They lead Him away to the high priest, and all the chief priests, elders and scribes gather. Peter, one of Jesus' twelve disciples, follows Him at a distance.",
+          "text": "Jesus has just been arrested (Mark 14:46). They lead Him away to the high priest, and all the chief priests, elders and scribes gather. Peter, one of Jesus' disciples, follows Him at a distance.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -25,55 +25,46 @@
               "correct": true
             },
             {
-              "text": "To the city gate and no farther",
+              "text": "Only as far as the city walls",
               "correct": false
             },
             {
-              "text": "Back to the garden of Gethsemane",
+              "text": "Only as far as the Kidron Valley",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 14:54",
-          "question": "Inside the high priest's courtyard, Peter sits with the ___ and warms himself by the ___.",
+          "question": "Inside the high priest's courtyard, Peter sits down with the officers and ___ himself by the fire.",
           "answers": [
             {
-              "text": "officers",
+              "text": "warms",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "fire",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "fishermen",
+              "text": "hides",
               "correct": false
             },
             {
-              "text": "priests",
-              "correct": false
-            },
-            {
-              "text": "lamp",
+              "text": "dries",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Mark 14:55",
-          "text": "Meanwhile, the chief priests and the whole Sanhedrin are looking for testimony against Jesus. They want it so they can put Him to death.",
+          "text": "Meanwhile, the chief priests and the whole Sanhedrin, the Jewish ruling council, are looking for testimony against Jesus. They want it so they can put Him to death.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -100,8 +91,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Mark 14:56",
-          "text": "Oh, people come forward. MANY people. And they bear false witness against Jesus.",
-          "needs_agent_fix": true,
+          "text": "Oh, people come forward, MANY of them, and they bear false witness against Jesus.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -126,8 +117,8 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Mark 14:57-58",
-          "text": "This courtroom is like coworkers retelling one meeting and somehow describing two COMPLETELY different meetings. Then some men stand up and testify falsely against Jesus, with a claim about the temple.",
+          "verses": "Mark 14:57",
+          "text": "Then some men stand up and testify falsely against Jesus. Their claim is about the temple.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -290,30 +281,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Mark 14:65",
-          "text": "Friend, this part is hard to read. Some of them start to spit on Jesus, blindfold Him, hit Him with their fists and say to Him, “Prophesy!”",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 14:65",
-          "question": "Jesus is blindfolded and beaten. How do the officers receive Him?",
-          "answers": [
-            {
-              "text": "With slaps in His face",
-              "correct": true
-            },
-            {
-              "text": "With chains on His wrists",
-              "correct": false
-            },
-            {
-              "text": "With a crown of thorns",
-              "correct": false
-            }
-          ],
+          "text": "Friend, this part is hard: some of them start to spit on Jesus, blindfold Him, strike Him with their fists and say to Him, “Prophesy!” And the officers receive Him with slaps in His face.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -366,7 +334,7 @@
               "correct": true
             },
             {
-              "text": "He says yes and he's proud of it",
+              "text": "He says yes and asks where Jesus is",
               "correct": false
             },
             {
@@ -381,7 +349,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Mark 14:68",
-          "text": "Friend, that's a full-on “new phone, who dis.” Then Peter heads out to the gateway.",
+          "text": "I think this one hurts, friend. Then Peter heads out to the gateway.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -412,7 +380,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Mark 14:69",
-          "text": "Then the servant girl sees Peter there too. Friend, she's that one person who NEVER forgets a face.",
+          "text": "At the gateway, the servant girl sees Peter again.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -463,7 +431,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Mark 14:70",
-          "text": "After a little while, the people standing nearby try one more time. And now they've got a reason.",
+          "text": "After a little while, the people standing nearby try one more time. This time they give a reason.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -488,7 +456,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -523,21 +491,12 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 14:72",
-          "question": "Right then, Peter remembers what Jesus told him: before the rooster crows ___ times, Peter will deny Him ___ times.",
+          "question": "Right then, Peter remembers what Jesus told him: before the rooster crows twice, Peter will deny Him ___ times.",
           "answers": [
-            {
-              "text": "two",
-              "correct": true,
-              "blank": 1
-            },
             {
               "text": "three",
               "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "one",
-              "correct": false
+              "blank": 1
             },
             {
               "text": "four",
@@ -578,7 +537,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Mark 14:72",
-          "text": "Peter's in tears, and Jesus has been condemned. But friend, the oven timer on this story has NOT gone off yet.",
+          "text": "And that's where we'll leave it for now, friend. The oven timer on this story has NOT gone off yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

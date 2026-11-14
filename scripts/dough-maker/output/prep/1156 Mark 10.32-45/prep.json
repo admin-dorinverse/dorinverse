@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 10:33",
-          "text": "Jesus says it plain. They're going up to Jerusalem, and the Son of Man, Jesus talking about Himself, will be delivered over to the chief priests and scribes.",
+          "text": "Jesus says it plain. They're going up to Jerusalem, and the Son of Man, the name Jesus uses for Himself (Mark 2:10), will be delivered over to the chief priests and scribes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -65,56 +65,37 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 10:33",
-          "question": "After condemning Him, the chief priests and scribes will hand the Son of Man over to the ___.",
-          "answers": [
-            {
-              "text": "Gentiles",
-              "correct": true
-            },
-            {
-              "text": "Levites",
-              "correct": false
-            },
-            {
-              "text": "Pharisees",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Mark 10:33-34",
+          "text": "Jesus doesn't soften any of it. They will deliver Him over to the Gentiles, who will mock Him, spit on Him, flog Him and kill Him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "fill_blank",
           "verses": "Mark 10:34",
-          "text": "Jesus doesn't soften any of it. The Gentiles will mock Him, spit on Him, flog Him and kill Him.",
+          "question": "Jesus tells the Twelve that after ___ days He will rise again.",
+          "answers": [
+            {
+              "text": "three",
+              "correct": true
+            },
+            {
+              "text": "seven",
+              "correct": false
+            },
+            {
+              "text": "forty",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 10:34",
-          "question": "Jesus tells the Twelve that after three days He will rise again.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "story",
           "verses": "Mark 10:35",
           "text": "Then James and John, the sons of Zebedee, come up to Jesus. They've got something to say.",
@@ -122,7 +103,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 10:35",
@@ -141,15 +122,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Mark 10:35-36",
-          "text": "That's sliding a paper across your boss's desk and saying, 'Sign first. I'll tell you what it is LATER.' So Jesus asks them what they want.",
+          "text": "That's the friend who texts, 'Need a favor. Say YES first, then I'll tell you what it is.' Jesus asks them what they want.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 10:37",
@@ -172,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Mark 10:37",
           "text": "One on His right, one on His left, in His glory. Front row, names on the chairs, NOBODY else allowed!",
@@ -180,7 +161,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 10:38",
@@ -199,11 +180,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 10:39",
-          "question": "Jesus asks James and John if they can drink the cup He will drink and be baptized with His baptism. What do the brothers answer?",
+          "question": "Jesus asks James and John if they can drink the cup He will drink, or be baptized with the baptism He will undergo. What do the brothers answer?",
           "answers": [
             {
               "text": "We can",
@@ -222,7 +203,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 10:40",
@@ -245,10 +226,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Mark 10:40",
-          "text": "Jesus says, \"These seats belong to those for whom they have been prepared.\" James and John walked up to book the front row. Turns out the front row was never up for booking.",
+          "text": "Jesus says, \"These seats belong to those for whom they have been prepared.\" James and John came to book the front row, and it turns out the front row was never up for booking.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -293,7 +274,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 10:41-42",
-          "text": "Ask the boss for the corner office, and by quitting time EVERYBODY in the building knows. So Jesus calls them all together and starts with something they already know: how the rulers of the Gentiles act.",
+          "text": "Put in for the corner office, and by quitting time EVERYBODY in the building knows. So Jesus calls them all together and starts with something they already know: how the rulers of the Gentiles act.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -309,7 +290,7 @@
               "correct": true
             },
             {
-              "text": "Serve them gladly",
+              "text": "Protect them well",
               "correct": false
             },
             {
@@ -367,32 +348,22 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 10:44",
-          "question": "Jesus takes it even further: whoever wants to be ___ must be the ___ of all.",
+          "question": "Jesus tells His disciples that whoever wants to be first must be the ___ of all.",
           "answers": [
             {
-              "text": "first",
-              "correct": true,
-              "blank": 1
+              "text": "slave",
+              "correct": true
             },
             {
-              "text": "slave",
-              "correct": true,
-              "blank": 2
+              "text": "leader",
+              "correct": false
             },
             {
               "text": "judge",
               "correct": false
-            },
-            {
-              "text": "guest",
-              "correct": false
-            },
-            {
-              "text": "rich",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

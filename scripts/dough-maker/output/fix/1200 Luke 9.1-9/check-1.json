@@ -1,0 +1,45 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 1
+      },
+      "problem": "The opening card says Jesus 'drove demons out of a man.' That hands over 'demons', the right answer to the fill-in-the-blank on card 2.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 8
+      },
+      "problem": "This story card retells the list of no staff, no bag, no bread, no money, no second tunic right after card 7 asked about bread and money. It reuses an answer already shown and adds nothing new to move the passage along.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 17
+      },
+      "problem": "The question 'Others say ___ has appeared.' doesn't say who is being talked about or who 'others' are. It depends on card 16, which the baker can no longer see.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 19
+      },
+      "problem": "The question asks the baker to pick how John was killed (beheaded, stoned or crucified). That asks about the violent act itself.",
+      "rule": "Choice cards ask about the choices and results around them, never the act itself."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "The true/false statement joins two claims: Herod asks who this man is, and he then gives up trying to see Jesus.",
+      "rule": "A true or false statement tests one claim."
+    }
+  ]
+}

@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "Mark 8:22",
           "text": "Jesus and His disciples arrive at Bethsaida, and some people bring Him a man who is blind. They don't just ask Jesus for help, friend. They BEG Him, the way I beg my oven timer to hurry up, except this actually matters.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,73 +33,62 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Mark 8:23",
-          "text": "Jesus takes the blind man by the hand and walks him along Himself. This man can't see one step in front of him, and his personal escort is JESUS, while the last hand that held me used it to shove me face-first into dough.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Jesus takes the blind man by the hand and starts leading him somewhere. I bet every step feels like a mystery to that man.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 8:23",
-          "question": "Jesus heals the blind man right there in Bethsaida, in the middle of the village.",
+          "question": "Jesus takes the blind man by the hand. Where does Jesus lead him?",
           "answers": [
             {
-              "text": "True",
+              "text": "Out of the village",
+              "correct": true
+            },
+            {
+              "text": "Into the synagogue",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Down to the sea",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 8:23",
-          "question": "Out past the village, Jesus does something to the man's eyes before placing His hands on him. What is it?",
-          "answers": [
-            {
-              "text": "Spits on them",
-              "correct": true
-            },
-            {
-              "text": "Washes them with water",
-              "correct": false
-            },
-            {
-              "text": "Covers them with mud",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Out past the village, Jesus spits on the man's eyes and places His hands on him. Then He asks, “Can you see anything?”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Mark 8:23",
-          "text": "Then Jesus checks in, like the eye doctor flipping lenses in front of your face. He asks, “Can you see anything?”",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Mark 8:24",
+          "text": "The man looks up and says, “I can see the people, but they look like trees walking around.”",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 8:24",
-          "question": "Jesus asks the blind man, “Can you see anything?” At that moment, the man can see everything clearly.",
+          "question": "The man says people look like trees walking around. Right now, he can see everything clearly.",
           "answers": [
             {
               "text": "True",
@@ -110,46 +99,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Mark 8:24",
-          "text": "The man looks up. He can see PEOPLE! Well... kind of.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 8:24",
-          "question": "The man can see people now, but not clearly yet. What does he say they look like?",
-          "answers": [
-            {
-              "text": "Trees walking around",
-              "correct": true
-            },
-            {
-              "text": "Shadows on a wall",
-              "correct": false
-            },
-            {
-              "text": "Sheep in a field",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 8:25",
-          "question": "The man can see a little, but everything is still blurry. What does Jesus do next?",
+          "question": "The man can see people, but they look like trees walking around. What does Jesus do next?",
           "answers": [
             {
               "text": "Places His hands on his eyes again",
@@ -160,54 +118,50 @@
               "correct": false
             },
             {
-              "text": "Tells him to go show a priest",
+              "text": "Tells him to come back later",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Mark 8:25",
+          "text": "Once again, Jesus places His hands on the man's eyes, and the man opens them. Friend, I'm on the edge of my gold base right now.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 8:25",
+          "question": "When the man opens his eyes this time, he can see everything clearly.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Mark 8:25",
-          "text": "Once again, Jesus places His hands on the man's eyes. And the man who just watched a whole forest go out for a stroll opens his eyes.",
-          "needs_agent_fix": true,
+          "verses": "Mark 8:25-26",
+          "text": "Now he can see everything clearly, sharp as a fresh stamp on cookie dough. Then Jesus sends him home.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 8:25",
-          "question": "When the man opens his eyes this time, his sight is ___.",
-          "answers": [
-            {
-              "text": "restored",
-              "correct": true
-            },
-            {
-              "text": "dimmed",
-              "correct": false
-            },
-            {
-              "text": "unchanged",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Mark 8:25-26",
-          "text": "Now he can see everything clearly, sharp as a fresh stamp on cookie dough. Then Jesus sends him home.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 8:26",
@@ -226,7 +180,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

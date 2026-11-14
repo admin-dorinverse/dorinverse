@@ -9,16 +9,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 1:1",
-          "text": "Pull up a chair, friend, because Mark is about to tell us the good news about Jesus, and he says so in his very first line: \"This is the beginning of the gospel of Jesus Christ, the Son of God.\" Mark gets right to it, and I respect that. I once spent ten minutes just deciding which oven to preheat.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Pull up a chair, friend, because the Gospel of Mark opens with good news, and it says so in its very first line: \"This is the beginning of the gospel of Jesus Christ, the Son of God.\" No warm-up, no small talk, straight to it. I once spent ten minutes just deciding which oven to preheat.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Mark 1:2",
-          "text": "Then it reaches back to words written in Isaiah the prophet. And I'm leaning in, because somebody's getting sent ahead.",
-          "needs_agent_fix": true,
+          "text": "Then Mark's gospel reaches back to words written in Isaiah the prophet. And I'm leaning in, because somebody's getting sent ahead.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,7 +41,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,26 +49,26 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:3",
-          "question": "Isaiah's words keep going, with a voice calling out, \"Prepare the way for the Lord, make straight paths for Him.\" True or false: that voice is calling out in a crowded city.",
+          "question": "Isaiah's words keep going, with a voice calling out in the wilderness to get ready for the Lord. True or false: the voice calls for straight paths for Him.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Mark 1:4",
-          "text": "And then, right on cue, here he comes. John the Baptist appears in the wilderness, and the man is preaching.",
-          "needs_agent_fix": true,
+          "text": "And then, out in that wilderness, John the Baptist appears, and the man is preaching.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -76,115 +76,92 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:4",
-          "question": "Out in the wilderness, what is John the Baptist preaching?",
+          "question": "Out in the wilderness, what is John preaching?",
           "answers": [
             {
-              "text": "A baptism of repentance for forgiveness of sins",
+              "text": "A baptism for the forgiveness of sins",
               "correct": true
             },
             {
-              "text": "A new temple for the people of God to build",
+              "text": "A new temple for the people to build",
               "correct": false
             },
             {
-              "text": "A tax to rebuild the walls around Jerusalem",
+              "text": "A tax to rebuild the city walls",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Mark 1:5",
-          "text": "And people COME, from all of Jerusalem and the countryside of Judea. I can't get a baker across the kitchen for a warm batch, and this man pulls a whole city out into the wilderness!",
-          "needs_agent_fix": true,
+          "text": "And people COME, from all of Jerusalem and the countryside of Judea, and John baptizes them in the Jordan River. I can't get a baker across the kitchen for a warm batch, and this man pulls a whole city out into the wilderness!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Mark 1:5",
-          "question": "John baptizes the crowds that come out to him in the ___ River.",
+          "question": "The people John baptizes in the Jordan don't confess their sins.",
           "answers": [
             {
-              "text": "Jordan",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Nile",
-              "correct": false
-            },
-            {
-              "text": "Euphrates",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 1:5",
-          "question": "The people John baptizes in the river are confessing their sins.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Mark 1:6",
+          "text": "John wears camel's hair, with a leather belt around his waist. Everything about this man says wilderness, right down to his menu.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Mark 1:6",
-          "text": "John wears camel's hair, with a leather belt around his waist. Friend, I've worn the same white apron every single day since I got here, so I am in NO position to judge anybody's wardrobe.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:6",
-          "question": "And what does John eat out there in the wilderness?",
+          "question": "What does John eat out there in the wilderness?",
           "answers": [
             {
               "text": "Locusts and wild honey",
               "correct": true
             },
             {
-              "text": "Manna and quail",
+              "text": "Bread and fish",
               "correct": false
             },
             {
-              "text": "Figs and goat's milk",
+              "text": "Lamb and bitter herbs",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Mark 1:7",
+          "text": "Then John tells them who's coming next. Someone after him, and more powerful than he is.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Mark 1:7",
-          "text": "Then John tells them who's coming next. Someone after him, and more powerful than he is.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:7",
@@ -203,32 +180,22 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 1:8",
-          "question": "John says he baptizes with ___. The One coming after him will baptize with the Holy ___.",
+          "question": "John says he baptizes the people with ___.",
           "answers": [
             {
               "text": "water",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Spirit",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "oil",
-              "correct": false
-            },
-            {
-              "text": "wine",
               "correct": false
             },
             {
@@ -236,7 +203,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Mark 1:8",
+          "text": "Then John says the One coming after him will baptize them with the Holy Spirit. Friend, that is a WHOLE other level.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -250,7 +225,7 @@
           "kind": "story",
           "verses": "Mark 1:9",
           "text": "In those days, Jesus comes from Nazareth in Galilee. And He comes to the Jordan, where John is.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -258,7 +233,65 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:9",
-          "question": "Jesus comes to the Jordan, and John baptizes Him there.",
+          "question": "When Jesus comes to the Jordan, John sends Him away without baptizing Him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "story",
+          "verses": "Mark 1:10",
+          "text": "As soon as Jesus comes up out of the water, He sees the heavens breaking open. I spent years in the back of a junk drawer getting one thin slice of kitchen light whenever it opened, and here the HEAVENS break open!",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Mark 1:10",
+          "question": "As the heavens break open over Jesus, what does He see descending on Him?",
+          "answers": [
+            {
+              "text": "The Spirit",
+              "correct": true
+            },
+            {
+              "text": "A pillar of fire",
+              "correct": false
+            },
+            {
+              "text": "A bright cloud",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Mark 1:10-11",
+          "text": "The Spirit comes down on Him like a dove. Then a voice comes from heaven.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 1:11",
+          "question": "The voice from heaven calls Jesus His beloved Son.",
           "answers": [
             {
               "text": "True",
@@ -269,69 +302,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Mark 1:10",
-          "text": "As soon as Jesus comes up out of the water, He sees the heavens breaking open. Every time that junk drawer opened, I got one little slice of kitchen light, and here the HEAVENS break open!",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 1:10",
-          "question": "As the heavens break open, Jesus sees the Spirit descending on Him like a ___.",
-          "answers": [
-            {
-              "text": "dove",
-              "correct": true
-            },
-            {
-              "text": "flame",
-              "correct": false
-            },
-            {
-              "text": "cloud",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Mark 1:10-11",
-          "text": "Like a dove, and my Minty would NEVER stop talking about that. Then a voice comes from heaven.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Mark 1:11",
-          "question": "What does the voice from heaven call Jesus?",
-          "answers": [
-            {
-              "text": "My beloved Son",
-              "correct": true
-            },
-            {
-              "text": "My faithful servant",
-              "correct": false
-            },
-            {
-              "text": "My chosen prophet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -339,7 +310,7 @@
           "kind": "story",
           "verses": "Mark 1:11-12",
           "text": "The voice from heaven says, \"You are My beloved Son; in You I am well pleased.\" And then at once, the Spirit drives Jesus away.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -362,88 +333,69 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Mark 1:13",
-          "text": "He's out there a long time. And somebody shows up to tempt Him.",
-          "needs_agent_fix": true,
+          "text": "Jesus is out there a long time, being tempted by Satan.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:13",
-          "question": "Out in the wilderness, who is tempting Jesus?",
+          "question": "Jesus is out in the wilderness for ___ days, being tempted by Satan.",
           "answers": [
             {
-              "text": "Satan",
+              "text": "forty",
               "correct": true
             },
             {
-              "text": "Herod",
+              "text": "seven",
               "correct": false
             },
             {
-              "text": "Pilate",
+              "text": "three",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 1:13",
-          "question": "How long is Jesus out in the wilderness being tempted?",
-          "answers": [
-            {
-              "text": "Forty days",
-              "correct": true
-            },
-            {
-              "text": "Seven days",
-              "correct": false
-            },
-            {
-              "text": "Twelve days",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Forty days, out there with the wild animals. Friend, I live out here alone on this cookie planet, and the wildest thing I've got for company is my oven timer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Mark 1:13",
-          "text": "Forty days, out there with the wild animals. Friend, I live out here alone on this cookie planet, and the wildest thing I've got for company is my oven timer.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 1:13",
-          "question": "Out there in the wilderness, angels minister to Jesus.",
+          "question": "Jesus is out in the wilderness with the wild animals, and angels are there too. What do the angels do?",
           "answers": [
             {
-              "text": "True",
+              "text": "Take care of Him",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Test Him further",
+              "correct": false
+            },
+            {
+              "text": "Keep their distance",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

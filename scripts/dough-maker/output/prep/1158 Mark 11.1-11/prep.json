@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 11:1",
-          "text": "Jesus and His disciples are getting close to Jerusalem. They come to Bethphage and Bethany at the Mount of Olives. And right there, Jesus sends two of His disciples out on an errand.",
-          "needs_agent_fix": true,
+          "text": "Jesus and His disciples just left Jericho, where a blind beggar named Bartimaeus received his sight (Mark 10:52). Now they're getting close to Jerusalem, and they come to Bethphage and Bethany at the Mount of Olives. Right there, Jesus sends two of His disciples out on an errand.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -39,20 +39,16 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Mark 11:2",
-          "question": "Jesus tells the two disciples what to do once they find the colt: ___ it and bring it here.",
+          "question": "True or false: Jesus tells the two disciples that no one has ever sat on this colt.",
           "answers": [
             {
-              "text": "Untie",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Feed",
-              "correct": false
-            },
-            {
-              "text": "Saddle",
+              "text": "False",
               "correct": false
             }
           ],
@@ -63,7 +59,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Mark 11:2-3",
-          "text": "Oh, and no one has EVER sat on this colt, friend. And Jesus even hands them a line to use in case anybody asks what they're doing.",
+          "text": "They're to untie it and bring it right back. And Jesus even hands them a line to use in case anybody asks what they're doing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -94,7 +90,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Mark 11:4",
-          "text": "So off they go, and there's the colt, out in the street, tied at a doorway, right where Jesus said. You could tell ME the sprinkles are on the top shelf, and I'd STILL check the oven, the sink and my own hat first.",
+          "text": "So off they go, and there's the colt, out in the street, tied at a doorway, just like Jesus said. You could tell ME the sprinkles are on the top shelf, and I'd STILL check the oven, the sink and my own hat first.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -130,7 +126,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 11:7",
-          "question": "True or false: The disciples lead the colt to Jesus and throw their cloaks over it, and then He sits on it.",
+          "question": "True or false: Once the disciples bring the colt to Jesus, He sits on it.",
           "answers": [
             {
               "text": "True",
@@ -147,31 +143,16 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Mark 11:8",
-          "text": "Jesus is on the colt now, and the crowd goes ALL in. When I walk into a room, friend, the most I get is somebody asking if the cookies are done.",
+          "verses": "Mark 11:7-8",
+          "text": "Jesus is on the colt now, sitting on the cloaks His disciples threw over it, and the crowd goes ALL in. When I walk into a room, friend, the most I get is somebody asking if the cookies are done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 11:8",
-          "question": "As Jesus rides along, what do many people in the crowd spread on the road?",
-          "answers": [
-            {
-              "text": "Their cloaks",
-              "correct": true
-            },
-            {
-              "text": "Their sandals",
-              "correct": false
-            },
-            {
-              "text": "Their shields",
-              "correct": false
-            }
-          ],
+          "text": "Many in the crowd spread their cloaks on the road. That's a red carpet, friend, made out of the clothes off their backs.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -202,7 +183,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Mark 11:9",
-          "text": "Front of the line, back of the line, EVERYBODY is shouting: \"Hosanna!\" \"Blessed is He who comes in the name of the Lord!\"",
+          "text": "Front of the line, back of the line, they're BOTH shouting: \"Hosanna!\" \"Blessed is He who comes in the name of the Lord!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -226,7 +207,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -260,7 +241,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Mark 11:11",
-          "text": "In the temple courts, Jesus looks around at everything. I bet not one thing in there gets past Him.",
+          "text": "In the temple courts, Jesus looks around at everything.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

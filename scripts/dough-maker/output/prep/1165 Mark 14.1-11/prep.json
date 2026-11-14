@@ -9,24 +9,28 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 14:1",
-          "text": "Mark 14 opens with a countdown: the Passover and the Feast of Unleavened Bread are two days away. Everybody's getting ready for a feast. But the chief priests and scribes are getting ready for something ELSE, friend.",
+          "text": "The Passover and the Feast of Unleavened Bread are two days away, and everybody's getting ready for a feast. But the chief priests and scribes, Israel's religious leaders, are getting ready for something ELSE, friend. They're looking for a covert way to go after Jesus.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 14:1",
-          "question": "Two days before the Passover, the chief priests and scribes are looking for a way to welcome Jesus to the feast.",
+          "question": "Two days before the Passover, what are the chief priests and scribes looking for a covert way to do?",
           "answers": [
             {
-              "text": "True",
+              "text": "Arrest Jesus and kill Him",
+              "correct": true
+            },
+            {
+              "text": "Question Jesus in front of a crowd",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Drive Jesus out of Jerusalem",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -35,8 +39,8 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Mark 14:1-2",
-          "text": "They're looking for a covert way to arrest Jesus and kill Him, and even a sneaky plan comes with fine print. \"But not during the feast,\" they say, like they're rescheduling a dentist appointment.",
+          "verses": "Mark 14:2",
+          "text": "They've got one condition. \"But not during the feast,\" they say.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 14:3",
-          "text": "Meanwhile, Jesus is in Bethany, reclining at the table in the home of a man called Simon the Leper. Reclining, friend, and if I try that on this gold base, I roll across the bakery like a runaway rolling pin.",
+          "text": "Now Jesus is in the village of Bethany, reclining at the table in the home of Simon the Leper (not Simon Peter). Reclining, friend, and if I tried that on this gold base, I'd roll across the bakery like a runaway rolling pin.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -75,7 +79,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Mark 14:3",
-          "text": "Then a woman comes in with an alabaster jar of expensive perfume, made of pure nard. This is NOT the bottle you crack open on some random Tuesday.",
+          "text": "Then a woman comes in with an alabaster jar of expensive perfume, made of pure nard. This is NOT the bottle you pull out on some random Tuesday.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -159,31 +163,16 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Mark 14:5-6",
-          "text": "She gives her very best, and some of the guests turn it into a performance review. Then Jesus speaks up: \"Leave her alone; why are you bothering her? She has done a beautiful deed to Me.\"",
+          "verses": "Mark 14:6",
+          "text": "Then Jesus steps in, friend. \"Leave her alone; why are you bothering her? She has done a beautiful deed to Me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 14:7",
-          "question": "Jesus tells the grumblers they'll always have the poor with them, and they can help them whenever they want. What does He say about Himself?",
-          "answers": [
-            {
-              "text": "They won't always have Him with them",
-              "correct": true
-            },
-            {
-              "text": "He'll stay with them in Bethany for good",
-              "correct": false
-            },
-            {
-              "text": "He'll take care of the poor Himself",
-              "correct": false
-            }
-          ],
+          "text": "Jesus keeps going: \"The poor you will always have with you, and you can help them whenever you want. But you will not always have Me.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -213,16 +202,20 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Mark 14:9",
-          "question": "Jesus says that wherever the gospel is preached in all the world, what this woman did will be told in memory of her.",
+          "question": "Jesus makes a promise about the woman's beautiful deed. Wherever the gospel is preached in all the world, what will happen to what she did?",
           "answers": [
             {
-              "text": "True",
+              "text": "It will be told in memory of her",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "It will be kept quiet among the Twelve",
+              "correct": false
+            },
+            {
+              "text": "It will be written on the temple wall",
               "correct": false
             }
           ],
@@ -233,7 +226,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Mark 14:10",
-          "text": "Remember the chief priests hunting for a covert way to get Jesus? Well, friend... the way walks right up to them, and it's one of the Twelve, ready to betray Him.",
+          "text": "Remember the chief priests looking for a covert way to arrest Jesus? Well, friend... one of the Twelve, Jesus' chosen disciples, goes straight to them to betray Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -249,7 +242,7 @@
               "correct": true
             },
             {
-              "text": "Simon the Zealot",
+              "text": "Thaddaeus",
               "correct": false
             },
             {

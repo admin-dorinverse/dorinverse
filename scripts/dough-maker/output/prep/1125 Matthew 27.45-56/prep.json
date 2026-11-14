@@ -3,84 +3,49 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Matthew 27:45-50",
+      "verses": "Matthew 27:45-49",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Matthew 27:45",
-          "text": "Jesus is on the cross at Golgotha (Matthew 27:33). The chief priests mock Him, people passing by heap abuse on Him, and even the two robbers beside Him berate Him (Matthew 27:39-44). Then, starting at the sixth hour, something comes over all the land.",
-          "needs_agent_fix": true,
+          "text": "Jesus is on the cross at Golgotha (Matthew 27:33-35). The chief priests mock Him, people passing by heap abuse on Him, and even the two robbers beside Him berate Him (Matthew 27:39-44). Then, at the sixth hour, darkness comes.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Matthew 27:45",
-          "question": "Starting at the sixth hour, while Jesus hangs on the cross, ___ comes over all the land.",
+          "question": "The darkness that comes at the sixth hour covers only Golgotha, where Jesus is crucified.",
           "answers": [
             {
-              "text": "darkness",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "hail",
-              "correct": false
-            },
-            {
-              "text": "fire",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Matthew 27:45-46",
-          "text": "That darkness lasts until the ninth hour. Then, about the ninth hour, Jesus cries out in a loud voice, \"Eli, Eli, lema sabachthani?\"",
-          "needs_agent_fix": true,
+          "text": "The darkness lasts until the ninth hour. About the ninth hour, Jesus cries out in a loud voice, \"Eli, Eli, lema sabachthani?\" which means, \"My God, My God, why have You forsaken Me?\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Matthew 27:46",
-          "question": "On the cross, Jesus cries out, \"Eli, Eli, lema sabachthani?\" Who is He calling out to?",
-          "answers": [
-            {
-              "text": "God",
-              "correct": true
-            },
-            {
-              "text": "His disciples",
-              "correct": false
-            },
-            {
-              "text": "The chief priests",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Matthew 27:46-47",
-          "text": "Matthew tells us what it means: \"My God, My God, why have You forsaken Me?\" But some of the people standing there hear it, and they say He's calling someone else.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 27:47",
-          "question": "When some of the people standing by the cross hear Jesus cry \"Eli, Eli,\" who do they say He is calling?",
+          "question": "Some of the people standing by the cross hear Jesus cry \"Eli, Eli\" and say He is calling ___.",
           "answers": [
             {
               "text": "Elijah",
@@ -95,168 +60,114 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Matthew 27:47-48",
+          "text": "Elijah, the prophet from long ago (1 Kings 18:36). Then one of the people standing there quickly runs, fills a sponge with sour wine and puts it on a reed.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 27:48",
+          "question": "A man at the cross has a sponge full of sour wine on a reed. What does he do with it?",
+          "answers": [
+            {
+              "text": "Holds it up for Jesus to drink",
+              "correct": true
+            },
+            {
+              "text": "Hands it over to the soldiers",
+              "correct": false
+            },
+            {
+              "text": "Sets it down beside the cross",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Matthew 27:47-48",
-          "text": "Elijah, the prophet from long ago (1 Kings 18:36). Then one of them quickly runs and brings a sponge.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 27:49",
+          "question": "One man at the cross holds up a sponge of sour wine for Jesus. What do the others standing there say?",
+          "answers": [
+            {
+              "text": "Leave Him alone",
+              "correct": true
+            },
+            {
+              "text": "Give Him more to drink",
+              "correct": false
+            },
+            {
+              "text": "Bring Him down now",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 27:48",
-          "question": "One of the people standing by the cross fills the sponge with ___, puts it on a reed and holds it up for Jesus to drink.",
-          "answers": [
-            {
-              "text": "sour wine",
-              "correct": true
-            },
-            {
-              "text": "fresh water",
-              "correct": false
-            },
-            {
-              "text": "goat's milk",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Matthew 27:49",
-          "text": "Then the others standing there speak up to the man with the sponge.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 27:49",
-          "question": "The others at the cross tell the man with the sponge to hurry up and give Jesus the drink.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Matthew 27:49-50",
-          "text": "They say, \"Leave Him alone. Let us see if Elijah comes to save Him.\" Then Jesus cries out again in a loud voice.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Matthew 27:50",
-          "question": "On the cross, Jesus cries out again in a loud voice. What happens next?",
-          "answers": [
-            {
-              "text": "He yields up His spirit",
-              "correct": true
-            },
-            {
-              "text": "He comes down from the cross",
-              "correct": false
-            },
-            {
-              "text": "Elijah comes to save Him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then they add, \"Let us see if Elijah comes to save Him.\" They want to watch and see, friend. Just watch.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
     },
     {
       "stop": 2,
-      "verses": "Matthew 27:51-56",
+      "verses": "Matthew 27:50-56",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Matthew 27:50-51",
-          "text": "Jesus has yielded up His spirit, and at that very moment, something happens. Not at the cross, friend, at the temple.",
-          "needs_agent_fix": true,
+          "text": "Jesus cries out again in a loud voice, and He yields up His spirit. At that moment, the veil of the temple is torn in two from top to bottom.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 27:51",
-          "question": "At the moment Jesus yields up His spirit, what happens to the veil of the temple?",
+          "question": "At the moment Jesus yields up His spirit, the earth ___, and the rocks are split.",
           "answers": [
             {
-              "text": "It is torn in two",
+              "text": "quakes",
               "correct": true
             },
             {
-              "text": "It catches fire",
+              "text": "floods",
               "correct": false
             },
             {
-              "text": "It falls to the ground",
+              "text": "burns",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 27:51",
-          "question": "When Jesus yields up His spirit, the veil of the temple tears from the bottom up.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "story",
-          "verses": "Matthew 27:51-52",
-          "text": "At that same moment, the earth quakes and the rocks split. And the tombs break open. Friend, I'm holding my breath just telling it.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 27:52",
-          "question": "When Jesus dies, the tombs break open. What happens to the bodies of many saints who had fallen asleep?",
+          "question": "As the earth quakes, the tombs break open. What happens to the bodies of many saints who had fallen asleep?",
           "answers": [
             {
               "text": "They are raised",
@@ -271,46 +182,46 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "story",
+          "verses": "Matthew 27:53",
+          "text": "Matthew says that after Jesus' resurrection, when they had come out of the tombs, these saints enter the holy city.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 27:53",
+          "question": "The saints who were raised appear to many people in the holy city.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Matthew 27:53",
-          "text": "These saints come out of the tombs, enter the holy city and appear to many people. Can you imagine turning the corner and running into one of them?",
-          "needs_agent_fix": true,
+          "verses": "Matthew 27:54",
+          "text": "Back at the cross, a centurion, a Roman officer, and the men with him guarding Jesus see the earthquake and all that has happened. These are soldiers on guard duty, and now the ground itself is SHAKING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 27:53",
-          "question": "The saints who were raised come out of the tombs and go into the holy city before Jesus' resurrection.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Matthew 27:54",
-          "text": "Back at the cross, the mockers had sneered that Jesus said He was the Son of God (Matthew 27:43). Now a centurion, a Roman officer, and his men guarding Jesus see the earthquake and all that has happened.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 27:54",
@@ -329,11 +240,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 27:54",
@@ -352,19 +263,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "Matthew 27:55",
-          "text": "And many women are there too, watching from a distance. They had followed Jesus all the way from Galilee.",
-          "needs_agent_fix": true,
+          "text": "And many women are there too, watching from a distance. They had followed Jesus all the way from Galilee, and they're still here.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 27:55",
@@ -383,34 +294,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 27:56",
-          "question": "Mary Magdalene, the woman seven demons had gone out of (Luke 8:2), is among the women watching from a distance.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 11,
           "kind": "story",
           "verses": "Matthew 27:56",
-          "text": "Mary Magdalene is there with Mary the mother of James and Joseph, and the mother of Zebedee's sons, the apostles James and John (Matthew 10:2). We'll stop here for now, friend, but this story is NOT over.",
-          "needs_agent_fix": true,
+          "text": "Among them are Mary Magdalene, Mary the mother of James and Joseph, and the mother of Zebedee's sons, the apostles James and John (Matthew 10:2). We'll stop here for now, friend, but this story is NOT over.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

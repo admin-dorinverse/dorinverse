@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 9:28",
-          "text": "About eight days after Jesus tells His disciples He must suffer, be killed and be raised to life (Luke 9:22), He takes three of them with Him: Peter, John and James. Out of the whole group, only THREE get the invite. Friend, the last time I got picked out of a group, I was in a clearance bin with a 25 cent sticker on my face.",
+          "text": "About eight days after Jesus tells His disciples He must suffer, be killed and be raised to life (Luke 9:22), He takes three of them with Him: Peter, John and James. Out of the whole group, only THREE get the invite. Friend, the day I got picked, I was at the bottom of a bargain bin wearing a 25 cent sticker.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,8 +48,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Luke 9:30",
-          "text": "Then, SUDDENLY, two men are there talking with Jesus: Moses, who led Israel long ago, and Elijah, the prophet. Friend, if two people showed up in my bakery out of nowhere, I'd be face first in the chocolate chips.",
-          "needs_agent_fix": true,
+          "text": "Then, SUDDENLY, two men are there talking with Jesus: Moses, Israel's leader, and Elijah, the prophet. Friend, if two people showed up in my bakery out of nowhere, I'd be face first in the chocolate chips.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -57,7 +57,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 9:31",
-          "question": "Moses and Elijah are talking with Jesus on the mountain. What do they talk about?",
+          "question": "Moses and Elijah appear in glory and talk with Jesus on the mountain. What do they talk about?",
           "answers": [
             {
               "text": "His departure at Jerusalem",
@@ -72,14 +72,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Luke 9:32",
-          "text": "Meanwhile, Peter and his companions are overcome by sleep, with Moses and Elijah RIGHT THERE. Friend, I'm the guy who falls asleep in the last ten minutes of every movie, so I'm not saying a word.",
+          "text": "Meanwhile, Peter and his companions are overcome by sleep. Friend, I've dozed off next to a warm oven more times than I can count, so I'm not saying a word.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -88,7 +88,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 9:32",
-          "question": "True or false: by the time Peter and his companions wake up, Moses and Elijah are already gone.",
+          "question": "True or false: when Peter and his companions wake up and see Jesus' glory, Moses and Elijah are already gone.",
           "answers": [
             {
               "text": "True",
@@ -104,37 +104,14 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 9:32",
-          "question": "When Peter and his companions wake up, they see Jesus' ___ and the two men standing with Him.",
-          "answers": [
-            {
-              "text": "glory",
-              "correct": true
-            },
-            {
-              "text": "throne",
-              "correct": false
-            },
-            {
-              "text": "crown",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Luke 9:33",
+          "text": "As Moses and Elijah are leaving, Peter speaks up: “Master, it is good for us to be here.” I think Peter is in awe, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Luke 9:33",
-          "text": "As Moses and Elijah are leaving, Peter speaks up: “Master, it is good for us to be here.” I think Peter wants this moment to last, friend.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 9:33",
@@ -157,18 +134,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 9:33",
-          "question": "Right after Peter's idea about the shelters, Luke adds a short note about Peter. What does it say?",
+          "question": "Right after Peter's idea about the shelters, the writer adds a short note about Peter. What does it say?",
           "answers": [
             {
               "text": "He did not know what he was saying",
               "correct": true
             },
             {
-              "text": "He was speaking for all three of them",
+              "text": "He had learned it from Moses",
               "correct": false
             },
             {
@@ -176,30 +153,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Luke 9:34",
+          "text": "Peter isn't even done talking when a cloud appears and envelops them, and they are afraid as they enter the cloud. Mid-sentence, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Luke 9:34",
-          "text": "Peter isn't even done talking when a cloud appears and wraps all around them. I know that feeling, friend: the oven timer goes off every time I start a good story.",
+          "verses": "Luke 9:35",
+          "text": "Then a voice comes from the cloud, saying, “This is My Son, whom I have chosen…”",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 9:34",
-          "question": "True or false: the disciples are afraid as they enter the cloud.",
+          "type": "multiple_choice",
+          "verses": "Luke 9:35",
+          "question": "Peter was still talking when the cloud came. Now the voice from the cloud gives a command about Jesus. What is it?",
           "answers": [
             {
-              "text": "True",
+              "text": "Listen to Him",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Build Him a shelter",
+              "correct": false
+            },
+            {
+              "text": "Stay here with Him",
               "correct": false
             }
           ],
@@ -209,8 +198,8 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Luke 9:35",
-          "text": "Then a voice comes from the cloud. Friend, when a voice speaks out of a cloud, even I stop talking.",
+          "verses": "Luke 9:36",
+          "text": "The voice has spoken. Friend, I'd be checking that whole mountain twice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -218,81 +207,27 @@
           "card": 15,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Luke 9:35",
-          "question": "The voice from the cloud says Jesus is His ___, whom He has chosen.",
+          "verses": "Luke 9:36",
+          "question": "After the voice from the cloud has spoken, only ___ is present with the disciples.",
           "answers": [
             {
-              "text": "Son",
+              "text": "Jesus",
               "correct": true
             },
             {
-              "text": "prophet",
+              "text": "Moses",
               "correct": false
             },
             {
-              "text": "messenger",
+              "text": "Elijah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 9:35",
-          "question": "After calling Jesus His chosen Son, the voice from the cloud gives the disciples a command: ___ to Him!",
-          "answers": [
-            {
-              "text": "Listen",
-              "correct": true
-            },
-            {
-              "text": "Pray",
-              "correct": false
-            },
-            {
-              "text": "Bow",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Luke 9:36",
-          "text": "After the voice has spoken, the disciples look around the mountain. I bet Peter isn't pitching any more shelters, friend.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 9:36",
-          "question": "After the voice from the cloud has spoken, who is still there with the disciples?",
-          "answers": [
-            {
-              "text": "Only Jesus",
-              "correct": true
-            },
-            {
-              "text": "Jesus and Moses",
-              "correct": false
-            },
-            {
-              "text": "Jesus and Elijah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 9:36",

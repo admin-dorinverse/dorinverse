@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 10:1",
-          "text": "Jesus leaves that place and heads into the region of Judea, beyond the Jordan. And here come the crowds, AGAIN. Friend, back in the junk drawer, the only thing that ever crowded around me was dust, and this Man can't cross a river without a crowd finding Him.",
+          "text": "Jesus leaves Capernaum (Mark 9:33) and heads into the region of Judea, beyond the Jordan. And here come the crowds, AGAIN. Friend, back in the junk drawer the only thing that ever crowded around me was dust, and this Man can't go anywhere without a crowd finding Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 10:2",
-          "text": "Then some Pharisees walk up, from the strictest group in the Jewish religion (Acts 26:5). And Mark doesn't hide it: they came to test Him.",
+          "text": "Then some Pharisees show up. They belong to the strictest group in the Jewish religion (Acts 26:5), and they came to test Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -69,37 +69,14 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 10:3",
-          "question": "Jesus doesn't answer the Pharisees straight off. He answers with a question of His own: What did ___ command you?",
-          "answers": [
-            {
-              "text": "Moses",
-              "correct": true
-            },
-            {
-              "text": "Abraham",
-              "correct": false
-            },
-            {
-              "text": "Joshua",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
-          "verses": "Mark 10:3-4",
-          "text": "That's like a coworker asking you something in a meeting and you going, \"Great question. What does the handbook say?\" And the Pharisees came READY, like they had the page bookmarked, straight to what Moses, Israel's lawgiver, wrote in the law (Deuteronomy 24:1).",
+          "verses": "Mark 10:3",
+          "text": "Jesus points them back to Moses, Israel's leader, and asks, \"What did Moses command you?\" Oh, the Pharisees have an answer for THAT one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 10:4",
@@ -122,7 +99,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Mark 10:5",
           "text": "Jesus calls it a commandment Moses wrote for them. Then He gets to the WHY, and friend, I'm standing here like it's the last ten seconds on the oven timer.",
@@ -130,97 +107,91 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 10:5",
-          "question": "Why does Jesus say Moses wrote the commandment about the certificate of divorce?",
+          "question": "Jesus calls the certificate of divorce a commandment Moses wrote for the people. Why does He say Moses wrote it?",
           "answers": [
             {
-              "text": "Because of their hardness of heart",
+              "text": "Because their hearts were hard",
               "correct": true
             },
             {
-              "text": "Because a famine had struck the land",
+              "text": "Because the elders asked for it",
               "correct": false
             },
             {
-              "text": "Because their elders had asked him to",
+              "text": "Because God wanted it that way",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Mark 10:6",
+          "text": "Then Jesus goes WAY back, past Moses. Me? The furthest back I ever go to make a point is last Tuesday.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Mark 10:6",
-          "text": "Then Jesus goes WAY back, past Moses, all the way to the beginning of creation, and quotes Genesis (Genesis 1:27). And here I thought I was old-school every time I start a story about my years in the drawer.",
+          "question": "Answering the Pharisees about divorce, Jesus goes back past Moses. How far back does He go?",
+          "answers": [
+            {
+              "text": "To the beginning of creation",
+              "correct": true
+            },
+            {
+              "text": "To the days of Noah",
+              "correct": false
+            },
+            {
+              "text": "To the time of Abraham",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 10:6",
-          "question": "Jesus goes back to the beginning of creation and quotes that God made them ___ and ___.",
-          "answers": [
-            {
-              "text": "male",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "female",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "rulers",
-              "correct": false
-            },
-            {
-              "text": "keepers",
-              "correct": false
-            },
-            {
-              "text": "servants",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Mark 10:6-7",
+          "text": "Jesus quotes Genesis 1:27: \"God made them male and female.\" Then He quotes Genesis 2:24: a man will leave his father and mother and be united to his wife.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Mark 10:7",
-          "text": "Then Jesus quotes Genesis again (Genesis 2:24): a man will leave his father and mother and be united to his wife. Me? I left the counter once and got united to a junk drawer, and friend, that is NOT the same thing.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 10:8",
+          "question": "Jesus quotes that a man will be united to his wife. True or false: the quote goes on to say the two stay two separate people.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Mark 10:8",
-          "question": "Jesus keeps quoting Genesis: the two will become one flesh. What does Jesus say that means for a husband and wife?",
-          "answers": [
-            {
-              "text": "They are no longer two",
-              "correct": true
-            },
-            {
-              "text": "They share everything they own",
-              "correct": false
-            },
-            {
-              "text": "They answer to the same family",
-              "correct": false
-            }
-          ],
+          "text": "Then Jesus drives it home: \"So they are no longer two, but one flesh.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -245,79 +216,45 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 10:9",
-          "question": "Jesus tells the Pharisees that what God has joined together, let man not ___.",
-          "answers": [
-            {
-              "text": "separate",
-              "correct": true
-            },
-            {
-              "text": "question",
-              "correct": false
-            },
-            {
-              "text": "hurry",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Mark 10:9-10",
+          "text": "Jesus tells them, \"Therefore what God has joined together, let man not separate.\" Later, back inside the house, the subject comes RIGHT back around.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Mark 10:10",
-          "text": "Later, they're back inside the house, and the subject comes up again. Every kitchen I've ever known works like that: you think the conversation's over, and then it comes RIGHT back around.",
+          "question": "Back inside the house, who asks Jesus more about what He said on divorce?",
+          "answers": [
+            {
+              "text": "His disciples",
+              "correct": true
+            },
+            {
+              "text": "The scribes",
+              "correct": false
+            },
+            {
+              "text": "The crowds",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 10:10",
-          "question": "True or false: back inside the house, the Pharisees ask Jesus more about divorce.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Mark 10:11",
-          "question": "Jesus tells His disciples that whoever divorces his wife and marries another woman commits ___ against her.",
-          "answers": [
-            {
-              "text": "adultery",
-              "correct": true
-            },
-            {
-              "text": "slander",
-              "correct": false
-            },
-            {
-              "text": "theft",
-              "correct": false
-            }
-          ],
+          "text": "Jesus tells His disciples, \"Whoever divorces his wife and marries another woman commits adultery against her.\" I think this one hits close to home for a lot of people.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 10:12",

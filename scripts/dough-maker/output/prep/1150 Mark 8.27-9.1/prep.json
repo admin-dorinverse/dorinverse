@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Mark 8:27",
-          "text": "Jesus and His disciples head out to the villages around Caesarea Philippi, and on the way He asks them, \"Who do people say I am?\" Basically, what's the word on the street? And friend, they are ON the street.",
+          "text": "Jesus and His disciples head out to the villages around Caesarea Philippi. On the way, He asks them, \"Who do people say I am?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 8:28",
-          "text": "Yep, some say John the Baptist, the one who baptized people in the wilderness (Mark 1:4). Others say Elijah, the prophet from long ago (1 Kings 18:36), and still others say one of the prophets.",
+          "text": "Some say John the Baptist, the one who preached in the wilderness (Mark 1:4). Others say Elijah, the prophet from long ago (1 Kings 18:36), and still others say one of the prophets.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,20 +48,21 @@
           "card": 4,
           "kind": "story",
           "verses": "Mark 8:29",
-          "text": "Then Jesus asks, \"But what about you?\" and \"Who do you say I am?\" Ohhh, now it's the boss going around the meeting table, and it just landed on YOU.",
+          "text": "Then Jesus asks, \"But what about you?\" and \"Who do you say I am?\" Passing along what everybody ELSE says is easy, but answering with your own name on it? Whole different batch.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 8:29",
-          "question": "Jesus asks the disciples who THEY say He is. One of His twelve disciples (Mark 3:14-16) answers. Which one?",
+          "question": "Jesus asks the disciples who THEY say He is. The one who answers is ___, one of His twelve disciples (Mark 3:14-16).",
           "answers": [
             {
               "text": "Peter",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Thomas",
@@ -122,9 +123,9 @@
           "card": 8,
           "kind": "story",
           "verses": "Mark 8:31",
-          "text": "Then Jesus begins to teach them about the Son of Man, and He says some things MUST happen. Not might, not maybe, MUST.",
+          "text": "Then Jesus begins to teach them about the Son of Man, the name Jesus uses for Himself (Mark 2:10), and He says some things MUST happen. Not might. Not maybe. MUST.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -142,94 +143,84 @@
               "correct": false
             },
             {
-              "text": "He must stay hidden from Herod",
+              "text": "He must travel to Rome",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 8:31",
-          "question": "Jesus says the Son of Man must suffer many things, be rejected by the elders, chief priests and scribes, and be killed. But He isn't done. What does He say happens after three days?",
+          "question": "Jesus also says the Son of Man must be rejected by the elders, chief priests and scribes. True or false: He says that after three days the Son of Man will rise again.",
           "answers": [
             {
-              "text": "He will rise again",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He will return to Galilee",
-              "correct": false
-            },
-            {
-              "text": "He will be taken up",
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Mark 8:32",
-          "text": "Jesus says all this \"quite frankly,\" and Peter takes Him aside. Friend, you know that move: the \"Hey, got a sec?\" walk down the hallway.",
+          "text": "Jesus says all this \"quite frankly,\" and Peter takes Him aside and begins to rebuke Him. Friend, you know that move: the \"Hey, got a sec?\" walk down the hallway.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Mark 8:32",
-          "question": "Peter has Jesus off to the side. Mark sums up what happens next: Peter begins to ___ Him.",
+          "type": "true_false",
+          "verses": "Mark 8:33",
+          "question": "Peter has pulled Jesus aside to set Him straight. True or false: Jesus agrees with what Peter says.",
           "answers": [
             {
-              "text": "rebuke",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "comfort",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "question",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "Mark 8:33",
-          "text": "But Jesus turns, looks at His disciples, and rebukes Peter: \"Get behind Me, Satan!\" Peter went from the big answer to THIS in four verses, like nailing the morning presentation and getting called into the boss's office by lunch.",
+          "text": "Jesus turns, looks at His disciples, and rebukes Peter: \"Get behind Me, Satan!\" Peter went from the big answer to THIS, and as a stamper who once went from the kitchen counter to the back of a junk drawer, I have NO room to talk.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Mark 8:33",
-          "question": "Jesus tells Peter he does not have in mind the things of God, but the things of ___.",
+          "question": "Jesus tells Peter he does not have in mind the things of God. What does Jesus say Peter has in mind instead?",
           "answers": [
             {
-              "text": "men",
-              "correct": true,
-              "blank": 1
+              "text": "The things of men",
+              "correct": true
             },
             {
-              "text": "angels",
+              "text": "The things of the Law",
               "correct": false
             },
             {
-              "text": "prophets",
+              "text": "The things of the temple",
               "correct": false
             }
           ],
@@ -253,20 +244,21 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 8:34",
-          "question": "Jesus tells the crowd and His disciples what anyone who wants to come after Him must do. Which of these is one of the things He names?",
+          "question": "Jesus is talking about anyone who wants to come after Him. He says that person must ___ Him.",
           "answers": [
             {
-              "text": "Deny himself",
-              "correct": true
+              "text": "follow",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Prove himself",
+              "text": "lead",
               "correct": false
             },
             {
-              "text": "Defend himself",
+              "text": "teach",
               "correct": false
             }
           ],
@@ -277,7 +269,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Mark 8:34",
-          "text": "Deny himself, and Jesus says he must also \"take up his cross and follow Me.\" No free trial, no cancel-anytime button, friend: this is ALL in.",
+          "text": "Jesus says that person must also deny himself and take up his cross. No free trial, no cancel-anytime button, friend: this is ALL in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -286,7 +278,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 8:35",
-          "question": "Jesus has just told the crowd to deny themselves. True or false: He says whoever wants to save his life will keep it.",
+          "question": "Jesus has just told the crowd what it takes to follow Him. True or false: He says whoever wants to save his life will keep it.",
           "answers": [
             {
               "text": "True",
@@ -304,7 +296,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Mark 8:35",
-          "text": "Nope: whoever wants to save his life will lose it, but whoever loses his life for Jesus' sake and for the gospel will save it. Lose it to save it, save it to lose it, and I read that FIVE times, friend, because the stamper brain needed a minute.",
+          "text": "Jesus says whoever wants to save his life will lose it, but whoever loses his life for Jesus' sake and for the gospel will save it. Hold on tight and lose it, let go for Him and keep it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -343,27 +335,28 @@
           "card": 8,
           "kind": "story",
           "verses": "Mark 8:38",
-          "text": "Then Jesus speaks about anyone who is ashamed of Him and His words in this adulterous and sinful generation. This is one of those moments where the whole bakery goes quiet, friend.",
+          "text": "Then Jesus speaks about this adulterous and sinful generation. This is one of those moments where the whole bakery goes quiet, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 8:38",
-          "question": "If anyone is ashamed of Jesus and His words, what does Jesus say the Son of Man will do when He comes?",
+          "question": "Jesus warns about anyone in this adulterous and sinful generation who is ___ of Him and His words.",
           "answers": [
             {
-              "text": "Be ashamed of him too",
-              "correct": true
+              "text": "ashamed",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Pass him by in silence",
+              "text": "afraid",
               "correct": false
             },
             {
-              "text": "Give him one more chance",
+              "text": "tired",
               "correct": false
             }
           ],
@@ -375,7 +368,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 8:38",
-          "question": "True or false: Jesus says the Son of Man will come in His Father's glory with the holy angels.",
+          "question": "True or false: Jesus says the Son of Man will be ashamed of that person when He comes.",
           "answers": [
             {
               "text": "True",
@@ -392,8 +385,8 @@
         {
           "card": 11,
           "kind": "story",
-          "verses": "Mark 9:1",
-          "text": "Then Jesus opens with \"Truly I tell you\" and has one more thing to tell them. When Jesus opens like that, friend, you put the cookie DOWN and lean in.",
+          "verses": "Mark 8:38-9:1",
+          "text": "Jesus says the Son of Man comes in His Father's glory with the holy angels. Then He opens with \"Truly I tell you,\" and when Jesus opens like that, friend, you put the cookie DOWN and lean in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -409,7 +402,7 @@
               "correct": true
             },
             {
-              "text": "The temple rebuilt in three days",
+              "text": "Fire come down from heaven",
               "correct": false
             },
             {

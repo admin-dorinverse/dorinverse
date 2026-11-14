@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Matthew 22:23",
-          "text": "That same day, right after the question about Caesar's coin (Matthew 22:15-22), the Sadducees come to Jesus with a question of their own. It's like clearing out your inbox and hearing that DING before you even sit back down. The Sadducees are a party tied to the high priest (Acts 5:17), and Matthew tells us one big thing about what they believe.",
+          "text": "That same day, after the question about Caesar's coin (Matthew 22:15-22), the Sadducees come to Jesus with a question of their own. It's like clearing out your inbox and hearing that DING before you even sit back down. The Sadducees are a party tied to the high priest (Acts 5:17), and Matthew tells us one big thing they say.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,15 +18,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 22:23",
-          "question": "Matthew says the Sadducees who come to Jesus believe the dead will rise again.",
+          "question": "According to Matthew, the Sadducees who come to Jesus say there is no resurrection.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -36,8 +36,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 22:24",
-          "text": "They call Him Teacher, and then they bring up a rule from Moses. If a man dies without having children, his brother is to marry the widow.",
-          "needs_agent_fix": true,
+          "text": "They call Him Teacher and bring up something Moses, Israel's leader, declared. If a man dies without having children, his brother is to marry the widow.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -45,7 +45,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 22:24",
-          "question": "In the rule from Moses the Sadducees quote, why does the brother marry the widow?",
+          "question": "In the case the Sadducees bring up from Moses, why does the brother marry his brother's widow?",
           "answers": [
             {
               "text": "To raise up children for his brother",
@@ -67,24 +67,28 @@
           "card": 5,
           "kind": "story",
           "verses": "Matthew 22:25",
-          "text": "Then they tell Jesus about seven brothers among them. The first one marries and dies without having children, so he leaves his wife to his brother.",
+          "text": "Then they tell Jesus about seven brothers among them. The first one marries and dies without having children.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 22:26",
-          "question": "In the Sadducees' story, the second brother has a child with the widow, and that's where it stops.",
+          "type": "multiple_choice",
+          "verses": "Matthew 22:25",
+          "question": "In the Sadducees' story, the first brother dies without children. Who does he leave his wife to?",
           "answers": [
             {
-              "text": "True",
+              "text": "His brother",
+              "correct": true
+            },
+            {
+              "text": "His father",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "His servant",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -93,8 +97,8 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Matthew 22:27",
-          "text": "And last of all, the woman dies. Now the Sadducees lean in for the big finish.",
+          "verses": "Matthew 22:26-27",
+          "text": "The same thing happens to the second and third brothers, all the way down to the seventh. And last of all, the woman dies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -154,6 +158,14 @@
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "Matthew 22:30",
+          "text": "Then Jesus answers their puzzle about the seven brothers by telling them what the resurrection is like.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 22:30",
@@ -172,38 +184,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 22:30",
-          "question": "Jesus says that in the resurrection, people will be like the ___ in heaven.",
-          "answers": [
-            {
-              "text": "angels",
-              "correct": true
-            },
-            {
-              "text": "stars",
-              "correct": false
-            },
-            {
-              "text": "elders",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
           "card": 13,
           "kind": "story",
-          "verses": "Matthew 22:31",
-          "text": "Then Jesus takes on the bigger question, whether the dead rise at all. He asks the Sadducees if they've never read what God said to them.",
+          "verses": "Matthew 22:30-31",
+          "text": "Instead, Jesus says, they will be like the angels in heaven. Then He takes on the bigger question, whether the dead rise at all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Matthew 22:31",
+          "question": "On whether the dead rise, Jesus asks the Sadducees if they've never read something. What is it?",
+          "answers": [
+            {
+              "text": "What God said to them",
+              "correct": true
+            },
+            {
+              "text": "What the prophets wrote about Him",
+              "correct": false
+            },
+            {
+              "text": "What the elders handed down",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "story",
           "verses": "Matthew 22:32",
           "text": "Jesus quotes God's own words: \"I am the God of Abraham, the God of Isaac, and the God of Jacob\". Abraham, Isaac and Jacob are Israel's forefathers (Acts 3:13).",
@@ -211,32 +223,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 22:32",
-          "question": "Jesus says God is not the God of the ___, but of the ___.",
+          "question": "Jesus says God is not the God of the dead, but of the ___.",
           "answers": [
             {
-              "text": "dead",
-              "correct": true,
-              "blank": 1
-            },
-            {
               "text": "living",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
-              "text": "proud",
+              "text": "chosen",
               "correct": false
             },
             {
               "text": "humble",
-              "correct": false
-            },
-            {
-              "text": "lost",
               "correct": false
             }
           ],
@@ -244,35 +246,35 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Matthew 22:33",
-          "question": "When the crowds hear Jesus answer the Sadducees, how do they react?",
+          "question": "When the crowds hear Jesus answer the Sadducees, they are ___ at His teaching.",
           "answers": [
             {
-              "text": "They are astonished at His teaching",
+              "text": "astonished",
               "correct": true
             },
             {
-              "text": "They turn and walk away quietly",
+              "text": "offended",
               "correct": false
             },
             {
-              "text": "They ask Jesus to explain it again",
+              "text": "troubled",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "story",
           "verses": "Matthew 22:33",
-          "text": "Question after question, and Jesus is still standing. Stick around, friend, because this day's not done yet.",
+          "text": "Pull this batch out of the oven, friend, but don't turn the oven off. This story's still going.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

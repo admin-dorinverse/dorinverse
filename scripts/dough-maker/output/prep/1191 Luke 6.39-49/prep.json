@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 6:39",
-          "text": "Jesus is still teaching, and He's just said, 'Do not judge, and you will not be judged.' (Luke 6:37) Now He tells them a parable, and it opens with a question: 'Can a blind man lead a blind man?' Friend, I can't find my rolling pin with the lights ON, so who's following ME in the dark?",
-          "needs_agent_fix": true,
+          "text": "Jesus is still teaching His disciples (Luke 6:20), and He's just told them, 'Do not judge, and you will not be judged.' (Luke 6:37) Now He tells them a parable, and it opens with a question: 'Can a blind man lead a blind man?'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -66,21 +66,20 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 6:40",
-          "question": "Jesus says everyone who is fully ___ will be like his teacher.",
+          "question": "Jesus says everyone who is fully trained will be like whom?",
           "answers": [
             {
-              "text": "trained",
-              "correct": true,
-              "blank": 1
+              "text": "His teacher",
+              "correct": true
             },
             {
-              "text": "tested",
+              "text": "His father",
               "correct": false
             },
             {
-              "text": "chosen",
+              "text": "His brother",
               "correct": false
             }
           ],
@@ -91,27 +90,28 @@
           "card": 6,
           "kind": "story",
           "verses": "Luke 6:41",
-          "text": "Then Jesus asks why you'd look at the speck in your brother's eye. A SPECK, friend? I've had bigger crumbs fall out of this mustache.",
+          "text": "Then Jesus asks why you'd look at the speck in your brother's eye, and friend, I've had bigger crumbs than a speck hiding in this mustache.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 6:41",
-          "question": "While you look at the speck in your brother's eye, what does Jesus say you fail to notice in your own eye?",
+          "question": "Jesus says you look at the speck in your brother's eye but fail to notice the ___ in your own eye.",
           "answers": [
             {
-              "text": "A beam",
-              "correct": true
+              "text": "beam",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A thorn",
+              "text": "thorn",
               "correct": false
             },
             {
-              "text": "A grain of sand",
+              "text": "hair",
               "correct": false
             }
           ],
@@ -181,7 +181,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 6:43",
-          "question": "True or false: Jesus says a bad tree can still bear good fruit.",
+          "question": "True or false: Jesus says a bad tree can still grow something good.",
           "answers": [
             {
               "text": "True",
@@ -231,7 +231,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Luke 6:45",
-          "text": "Then Jesus moves from trees to people: the good man and the evil man. Same idea, friend, only now the tree is us.",
+          "text": "Then Jesus turns from trees to people: the good man and the evil man. Both bring things out, friend, but from where?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -262,7 +262,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Luke 6:45",
-          "text": "And the evil man brings evil things out of the evil treasure of his heart. Then Jesus wraps it up with one more line.",
+          "text": "And the evil man brings evil things out of the evil treasure of his heart. Then Jesus adds one more line.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -271,10 +271,10 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 6:45",
-          "question": "Jesus says out of the overflow of the heart the ___ speaks.",
+          "question": "Jesus says out of the overflow of the ___ the mouth speaks.",
           "answers": [
             {
-              "text": "mouth",
+              "text": "heart",
               "correct": true,
               "blank": 1
             },
@@ -371,7 +371,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 6:48",
-          "question": "The builder who dug down deep laid his foundation on the ___.",
+          "question": "The builder who dug down deep set the base of his house on the ___.",
           "answers": [
             {
               "text": "rock",

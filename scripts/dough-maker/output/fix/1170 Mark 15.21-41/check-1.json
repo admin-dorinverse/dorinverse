@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The story card calls the charge \"the same title Pilate kept asking about at the trial.\" That points the baker to \"King of the Jews\" before choice card 8 asks what the charge says, so it gives away the answer.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "Pilate is named for the first time with no label saying who he is.",
+      "rule": "The first time someone shows up, he says simply who they are, like “Cyrus, king of Persia” or “Moses, Israel's leader.”"
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 8
+      },
+      "problem": "The question says \"Mark takes us to the temple,\" which names the writer. The Gospel of Mark doesn't name its writer. The line also comments on how the passage is told.",
+      "rule": "When a book doesn't name its writer, he says \"the writer,\" or what the text calls him, like \"the elder.\" He can still use the book's name, like \"the Gospel of John.\""
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 6
+      },
+      "problem": "Card 4 already used \"Elijah\" as its answer. Card 6's True statement relies on Elijah again and re-asks the same fact from the neighboring verse.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    }
+  ]
+}

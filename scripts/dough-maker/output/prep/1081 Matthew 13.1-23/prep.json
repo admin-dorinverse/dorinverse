@@ -39,44 +39,13 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Matthew 13:2",
-          "text": "Into a boat He goes, while all the people stand on the shore. Friend, in a crowd that size, a little stamper like me would need a LADDER.",
+          "verses": "Matthew 13:2-3",
+          "text": "Into a boat He goes, while all the people stand on the shore. Then He tells them many things in parables, starting with a farmer who goes out to sow his seed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Matthew 13:3",
-          "question": "Sitting in the boat, Jesus tells the people many things in ___.",
-          "answers": [
-            {
-              "text": "parables",
-              "correct": true
-            },
-            {
-              "text": "psalms",
-              "correct": false
-            },
-            {
-              "text": "prayers",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Matthew 13:3",
-          "text": "First up, a farmer goes out to sow his seed. Simple plan, friend, so what could POSSIBLY go wrong?",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 13:4",
@@ -99,15 +68,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 5,
           "kind": "story",
           "verses": "Matthew 13:4-5",
-          "text": "Those birds devour it faster than the Millers could clear a fresh batch off the counter. Next, some seed falls on rocky ground, where there isn't much soil.",
+          "text": "Those birds devour that seed faster than the Millers, the family I used to live with, cleared a fresh batch off the counter. Next, some seed falls on rocky ground, where there isn't much soil.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 13:5",
@@ -126,15 +95,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 7,
           "kind": "story",
-          "verses": "Matthew 13:5-6",
-          "text": "Nope, it springs up FAST, looking like a total winner. Then the sun rises, and those seedlings get scorched.",
+          "verses": "Matthew 13:5",
+          "text": "It springs up quickly because the soil is shallow. Friend, that little sprout looks like a total WINNER.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Matthew 13:6",
+          "question": "When the sun rises, the seedlings on the rocky ground get scorched.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:6",
@@ -157,7 +145,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Matthew 13:7",
           "text": "Other seed falls among thorns. Friend, this farmer tosses seed the way I toss sprinkles: EVERYWHERE.",
@@ -165,11 +153,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 13:7",
-          "question": "Among the thorns, the thorns grow up around the new seedlings and ___ them.",
+          "question": "In the thorny patch, the thorns grow up and ___ the seedlings.",
           "answers": [
             {
               "text": "choke",
@@ -180,7 +168,7 @@
               "correct": false
             },
             {
-              "text": "shade",
+              "text": "strengthen",
               "correct": false
             }
           ],
@@ -188,15 +176,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
-          "verses": "Matthew 13:8",
+          "verses": "Matthew 13:4-8",
           "text": "Path, rocks, thorns. This farmer is 0 for 3, friend, but still other seed falls on good soil.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:8",
@@ -219,29 +207,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Matthew 13:9",
-          "question": "After the seed on good soil, Jesus tells the crowd exactly what each kind of soil means.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "Matthew 13:9",
-          "text": "Nope, Jesus just says, 'He who has ears, let him hear.' That's the ending, friend, like getting a text that just says 'call me' and NOTHING else.",
+          "text": "Then Jesus says, \"He who has ears, let him hear.\" That's the ending, friend, like getting a text that just says 'call me' and NOTHING else.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -351,20 +320,20 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Matthew 13:13",
-          "question": "Jesus says that though the people are hearing Him, they don't ___ what they hear.",
+          "question": "Jesus says the people are seeing and hearing. So why does He speak to them in parables?",
           "answers": [
             {
-              "text": "understand",
+              "text": "They do not truly see or understand",
               "correct": true
             },
             {
-              "text": "obey",
+              "text": "They have not heard enough stories",
               "correct": false
             },
             {
-              "text": "enjoy",
+              "text": "They are standing too far away",
               "correct": false
             }
           ],
@@ -375,7 +344,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Matthew 13:13-14",
-          "text": "Seeing without seeing, like me hunting the whole bakery for my chef's hat while it's ON MY HEAD. And Jesus says the prophecy of Isaiah, the prophet, is fulfilled in them.",
+          "text": "Seeing without seeing, like me hunting the whole bakery for my chef's hat while it's ON MY HEAD. And Jesus says the prophecy of Isaiah, the prophet (Isaiah 6:9-10), is fulfilled in them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -384,18 +353,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Matthew 13:15",
-          "question": "In Isaiah's prophecy, this people's heart has grown ___.",
+          "question": "In Isaiah's prophecy, this people's heart has grown callous, and they hardly hear with their ears. And their eyes? They have ___ them.",
           "answers": [
             {
-              "text": "callous",
+              "text": "closed",
               "correct": true
             },
             {
-              "text": "tender",
+              "text": "opened",
               "correct": false
             },
             {
-              "text": "humble",
+              "text": "lifted",
               "correct": false
             }
           ],
@@ -404,14 +373,6 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Matthew 13:15",
-          "text": "This people hardly hears with their ears, and they've closed their eyes. Friend, that's not sleeping through the alarm, that's hitting SNOOZE.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 13:15",
@@ -430,7 +391,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:16",
@@ -453,7 +414,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Matthew 13:16-17",
           "text": "Blessed eyes, blessed ears. Then Jesus tells them about the prophets and righteous men who came before.",
@@ -461,7 +422,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Matthew 13:17",
@@ -480,7 +441,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Matthew 13:17",
           "text": "They longed to see it and did not see it, and the disciples have it right in front of them. Friend, that's a FRONT ROW seat.",
@@ -506,7 +467,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:19",
-          "question": "The seed on the path is anyone who hears the message of the kingdom but doesn't understand it. Like the birds, who comes and snatches away what was sown in his heart?",
+          "question": "The seed on the path is someone who hears the message of the kingdom. Who comes and snatches away what was sown in his heart?",
           "answers": [
             {
               "text": "The evil one",
@@ -528,7 +489,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Matthew 13:19-20",
-          "text": "The evil one snatches it, just like those birds on the path. Next up, the seed on rocky ground, and that's someone who hears the word.",
+          "text": "The evil one snatches it away. Next up, the seed on rocky ground, and that's someone who hears the word.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -575,7 +536,7 @@
               "correct": false
             },
             {
-              "text": "stands firm",
+              "text": "fights back",
               "correct": false
             }
           ],
@@ -584,42 +545,32 @@
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Matthew 13:22",
-          "question": "The seed among the thorns is the one who hears the word. Then the ___ of this life and the deceitfulness of ___ choke the word.",
-          "answers": [
-            {
-              "text": "worries",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wealth",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "promises",
-              "correct": false
-            },
-            {
-              "text": "duties",
-              "correct": false
-            },
-            {
-              "text": "customs",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Next, the seed among the thorns: that's the one who hears the word. But the worries of this life and the deceitfulness of wealth choke the word.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Matthew 13:22-23",
-          "text": "Choked out, just like those seedlings in the thorns, and the word becomes unfruitful. Last up, the seed on good soil, friend, the one we've all been WAITING for.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Matthew 13:22",
+          "question": "In the one sown among the thorns, the choked word becomes ___.",
+          "answers": [
+            {
+              "text": "unfruitful",
+              "correct": true
+            },
+            {
+              "text": "stronger",
+              "correct": false
+            },
+            {
+              "text": "hidden",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -628,7 +579,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Matthew 13:23",
-          "question": "The seed on good soil is the one who hears the word. What does he do with it that the one on the path doesn't?",
+          "question": "Last up, the seed on good soil: the one who hears the word. What else does he do with the word?",
           "answers": [
             {
               "text": "He understands it",

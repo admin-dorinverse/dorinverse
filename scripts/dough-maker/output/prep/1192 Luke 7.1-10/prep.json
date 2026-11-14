@@ -16,31 +16,31 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Luke 7:3",
-          "question": "The centurion hears about Jesus and wants Him to come heal his servant. So he sends some Jewish ___ to ask Him.",
+          "question": "The centurion hears about Jesus and sends some Jewish elders to Him. With his servant about to die, what does he send them to ask Jesus?",
           "answers": [
             {
-              "text": "elders",
+              "text": "To come and heal his servant",
               "correct": true
             },
             {
-              "text": "priests",
+              "text": "To come and bless his house",
               "correct": false
             },
             {
-              "text": "scribes",
+              "text": "To come and teach his soldiers",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Luke 7:4",
-          "text": "The elders come to Jesus and plead with Him earnestly, \"This man is worthy to have You grant this,\" and friend, these elders show up like a reference letter with LEGS.",
+          "text": "The elders come to Jesus and plead with Him earnestly, \"This man is worthy to have You grant this…\" and friend, these elders show up like a reference letter with LEGS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -98,30 +98,15 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 7:6",
-          "text": "Instead the message begins, \"Lord, do not trouble Yourself,\" and friend, the man is turning down a house call from JESUS.",
+          "text": "The message says, \"Lord, do not trouble Yourself, for I am not worthy to have You come under my roof.\" Friend, the man is turning down a house call from JESUS.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 7:6",
-          "question": "The centurion tells Jesus not to trouble Himself coming to the house. What reason does the centurion give?",
-          "answers": [
-            {
-              "text": "He isn't worthy to have Jesus under his roof",
-              "correct": true
-            },
-            {
-              "text": "His house isn't ready for a guest",
-              "correct": false
-            },
-            {
-              "text": "His servant is too sick for visitors",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Luke 7:7",
+          "text": "He didn't come to Jesus in person either. He says he didn't consider himself worthy to.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -130,18 +115,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 7:7",
-          "question": "The centurion sent others instead of going to Jesus in person. Why does he say he didn't go himself?",
+          "question": "The centurion doesn't want Jesus to trouble Himself coming under his roof. So how does he ask Jesus to heal his servant?",
           "answers": [
             {
-              "text": "He didn't think himself worthy",
+              "text": "By just saying the word",
               "correct": true
             },
             {
-              "text": "He couldn't leave his servant",
+              "text": "By sending one of His disciples",
               "correct": false
             },
             {
-              "text": "He was busy with his soldiers",
+              "text": "By coming back another day",
               "correct": false
             }
           ],
@@ -150,29 +135,6 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 7:7",
-          "question": "The centurion doesn't want Jesus to trouble Himself coming under his roof. He asks Jesus to just say the ___, and his servant will be healed.",
-          "answers": [
-            {
-              "text": "word",
-              "correct": true
-            },
-            {
-              "text": "prayer",
-              "correct": false
-            },
-            {
-              "text": "blessing",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "story",
           "verses": "Luke 7:8",
           "text": "Then the centurion explains how he sees it: \"For I myself am a man under authority, with soldiers under me.\" This man knows a thing or two about giving orders.",
@@ -180,7 +142,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 7:8",
@@ -199,7 +161,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Luke 7:8",
           "text": "He says, \"I tell one to go, and he goes, and another to come, and he comes.\" Friend, I set my oven timer for twelve minutes once, and it went off whenever it FELT like it.",
@@ -207,7 +169,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Luke 7:8",
           "text": "Then he brings it right back home: \"I tell my servant to do something, and he does it.\"",
@@ -215,84 +177,53 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 7:7-8",
-          "question": "The centurion says his orders get carried out the moment he gives them. What is he saying about Jesus?",
+          "type": "fill_blank",
+          "verses": "Luke 7:9",
+          "question": "Jesus hears the centurion's message about orders and authority, and He ___ at the centurion.",
           "answers": [
             {
-              "text": "Jesus can heal with just a word",
+              "text": "marvels",
               "correct": true
             },
             {
-              "text": "Jesus must come and touch the servant",
+              "text": "frowns",
               "correct": false
             },
             {
-              "text": "Jesus needs the elders to approve it",
+              "text": "sighs",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 7:9",
+          "question": "Jesus turns to the crowd following Him. What does He say about the centurion's faith?",
+          "answers": [
+            {
+              "text": "He hasn't found faith this great even in Israel",
+              "correct": true
+            },
+            {
+              "text": "He has seen faith like this in every town",
+              "correct": false
+            },
+            {
+              "text": "This faith still has to grow before the healing",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 7:9",
-          "question": "Jesus hears the centurion's message about orders and authority. How does Jesus react to the centurion?",
-          "answers": [
-            {
-              "text": "He marvels at him",
-              "correct": true
-            },
-            {
-              "text": "He rebukes him",
-              "correct": false
-            },
-            {
-              "text": "He questions him",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Luke 7:9",
-          "text": "Jesus turns to the crowd following Him, and He's got something to say about this centurion's faith. Friend, the only thing I ever made marvel was a smoke alarm, and that wasn't marveling, that was SCREAMING.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 18,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 7:9",
-          "question": "Jesus tells the crowd following Him that not even in ___ has He found such great faith.",
-          "answers": [
-            {
-              "text": "Israel",
-              "correct": true
-            },
-            {
-              "text": "Egypt",
-              "correct": false
-            },
-            {
-              "text": "Babylon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 7:10",

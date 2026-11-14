@@ -41,7 +41,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 5:28",
-          "question": "Jesus tells Levi, “Follow Me.” What does Levi do?",
+          "question": "Jesus tells Levi to follow Him. What does Levi do?",
           "answers": [
             {
               "text": "Gets up and leaves everything",
@@ -52,7 +52,7 @@
               "correct": false
             },
             {
-              "text": "Says he needs some time",
+              "text": "Asks why Jesus chose him",
               "correct": false
             }
           ],
@@ -70,20 +70,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Luke 5:29",
-          "question": "Levi hosts a great banquet for Jesus at his house. Who makes up the large crowd there?",
+          "question": "Levi hosts a great banquet for Jesus at his house. A large crowd of ___ is there.",
           "answers": [
             {
-              "text": "Tax collectors",
-              "correct": true
+              "text": "tax collectors",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Fishermen",
+              "text": "fishermen",
               "correct": false
             },
             {
-              "text": "Roman soldiers",
+              "text": "soldiers",
               "correct": false
             }
           ],
@@ -113,7 +114,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Luke 5:30",
-          "text": "Not everybody's celebrating, because every party has somebody standing by the door with their arms crossed. Here it's the Pharisees, a group of religious leaders, and their scribes, and they bring a complaint to Jesus' disciples.",
+          "text": "Then the Pharisees, a group of religious leaders, and their scribes come to Jesus' disciples with a complaint.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -144,63 +145,16 @@
           "card": 9,
           "kind": "story",
           "verses": "Luke 5:31",
-          "text": "Jesus answers, and of ALL things, He starts talking about doctors.",
+          "text": "Jesus answers them with a picture everybody knows: doctors and the people who need them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 5:31",
-          "question": "Jesus answers the complaint about who He eats with. Who does He say needs a doctor?",
-          "answers": [
-            {
-              "text": "The sick",
-              "correct": true
-            },
-            {
-              "text": "The healthy",
-              "correct": false
-            },
-            {
-              "text": "The rich",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Luke 5:32",
-          "question": "Jesus says He has not come to call the righteous, but ___, to repentance.",
-          "answers": [
-            {
-              "text": "sinners",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "rulers",
-              "correct": false
-            },
-            {
-              "text": "angels",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Luke 5:33",
-          "question": "Next, the Pharisees and their scribes bring up fasting and praying. True or false: they say Jesus' disciples fast and pray more than anyone.",
+          "verses": "Luke 5:31",
+          "question": "Answering the complaint about who He eats with, Jesus talks about doctors. True or false: He says it's the healthy who need a doctor.",
           "answers": [
             {
               "text": "True",
@@ -215,10 +169,57 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Luke 5:32",
+          "question": "Jesus says He has not come to call the righteous, but sinners, to ___.",
+          "answers": [
+            {
+              "text": "repentance",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "judgment",
+              "correct": false
+            },
+            {
+              "text": "service",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "story",
           "verses": "Luke 5:33",
-          "text": "They say the disciples of John the Baptist and the Pharisees often fast and pray, but Jesus' disciples keep on eating and drinking. Friend, if keeping on eating is the charge, I'm guilty of taste-testing every batch I've EVER baked.",
+          "text": "Then they tell Jesus that John's disciples, followers of John the Baptist, often fast and pray, and so do the Pharisees' disciples. Friend, I taste-test every batch I've EVER baked, so fasting is not my department.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 5:33",
+          "question": "John's disciples and the Pharisees' disciples often fast and pray. What do the Pharisees and scribes say Jesus' own disciples keep on doing?",
+          "answers": [
+            {
+              "text": "Eating and drinking",
+              "correct": true
+            },
+            {
+              "text": "Healing the sick",
+              "correct": false
+            },
+            {
+              "text": "Sleeping and resting",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -226,7 +227,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Luke 5:34",
-          "text": "Jesus answers with a picture from a wedding, with the bridegroom right there with His guests. And nobody shows up to a wedding to sit in the corner looking gloomy.",
+          "text": "Jesus answers with a question, and He sets it at a wedding, with the bridegroom right there with the guests.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -259,7 +260,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 5:35",
-          "question": "True or false: Jesus says a time will come when the bridegroom will be taken from His guests.",
+          "question": "True or false: Jesus says a time will come when the bridegroom will be taken from the guests.",
           "answers": [
             {
               "text": "True",
@@ -277,7 +278,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Luke 5:35",
-          "text": "And when the bridegroom is taken from them, Jesus says, then they will fast. Whoa. I bet that whole banquet table got real quiet for a second.",
+          "text": "And then, Jesus says, they will fast. Whoa. I think that one's heavy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -291,7 +292,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Luke 5:36",
-          "text": "Jesus tells them a parable, and it starts with clothes: no one tears a piece of cloth from a new garment and sews it on an old one. Good, because the only sewing I know is retying my apron strings.",
+          "text": "Jesus also tells a parable, and it starts with clothes: no one tears a piece of cloth from a new garment and sews it on an old one. Good, because the only sewing I know is retying my apron strings.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -300,45 +301,22 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 5:36",
-          "question": "True or false: Jesus says that if someone sews a patch from a new garment onto an old one, he tears the new garment too.",
+          "question": "Jesus says that if someone sews a patch from a new garment onto an old one, the new garment gets torn too. True or false: He also says the patch will match the old garment.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Luke 5:36",
-          "question": "Someone sews a patch from a new garment onto an old one. What else does Jesus say goes wrong?",
-          "answers": [
-            {
-              "text": "The patch won't match the old",
               "correct": true
-            },
-            {
-              "text": "The old garment rips in half",
-              "correct": false
-            },
-            {
-              "text": "The patch shrinks in the wash",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 3,
           "kind": "story",
           "verses": "Luke 5:37",
           "text": "Then a second picture: no one pours new wine into old wineskins. And after my years in that junk drawer, I take that word OLD personally.",
@@ -346,7 +324,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 5:37",
@@ -369,7 +347,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Luke 5:37",
           "text": "Burst skins, spilled wine, and the wineskins are ruined. It's like cramming a fresh batch into a cookie box held together with tape, and you KNOW how that ends.",
@@ -377,7 +355,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 5:38",
@@ -401,26 +379,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Luke 5:39",
-          "question": "Jesus' last picture is someone who has just been drinking old wine. What does Jesus say that person says?",
+          "question": "Jesus' last picture is someone who has just been drinking old wine. True or false: Jesus says that person doesn't want the new.",
           "answers": [
             {
-              "text": "The old is better",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The new is better",
-              "correct": false
-            },
-            {
-              "text": "They taste the same",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Luke 5:39",
+          "text": "And why not? Because, Jesus says, that person says, \"The old is better.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

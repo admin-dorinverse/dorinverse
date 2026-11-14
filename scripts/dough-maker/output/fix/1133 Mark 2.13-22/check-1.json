@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The statement bundles two claims. Its first sentence, 'Jesus tells Levi to follow Him,' repeats the answer to card 3, and only the second sentence (Levi asks for time) is new.",
+      "rule": "A true or false statement tests one claim."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 7
+      },
+      "problem": "The question says 'Levi the tax collector is the host,' which already contains a form of the right answer, 'Many tax collectors and sinners.'",
+      "rule": "A choice card's question never holds its own answer, or a form of it, like \"rock badgers\" for \"in the rocks.\" Ask something else."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "The question already says 'new wine' and 'old wineskins.' The answer 'Into new wineskins' follows directly from those words, so the question gives away its own answer.",
+      "rule": "A choice card's question never holds its own answer, or a form of it, like \"rock badgers\" for \"in the rocks.\" Ask something else."
+    }
+  ]
+}

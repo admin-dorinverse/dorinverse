@@ -10,30 +10,31 @@
           "kind": "story",
           "verses": "Mark 1:21",
           "text": "Jesus has just called four fishermen to follow Him: the brothers Simon and Andrew, and the brothers James and John (Mark 1:16-20). Now they all head into Capernaum, and right away, on the Sabbath, Jesus walks into the synagogue and starts to teach. No warm-up, no small talk, straight to it.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:22",
-          "question": "Jesus is teaching in the synagogue in Capernaum. How do the people react to His teaching?",
+          "question": "Jesus is teaching in the synagogue in Capernaum. The people there are ___ at His teaching.",
           "answers": [
             {
-              "text": "They are astonished",
-              "correct": true
+              "text": "astonished",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They argue with Him",
+              "text": "offended",
               "correct": false
             },
             {
-              "text": "They ask Him to leave",
+              "text": "bored",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,23 +42,42 @@
           "kind": "story",
           "verses": "Mark 1:22",
           "text": "Mark tells us why: He taught “as one who had authority, and not as the scribes.” Me? I talk to my dough with authority every single morning, and it STILL does whatever it wants.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Mark 1:23-24",
-          "text": "Then, suddenly, a man with an unclean spirit cries out right there in the synagogue. The spirit says, “What do You want with us, Jesus of Nazareth? Have You come to destroy us?”",
-          "needs_agent_fix": true,
+          "text": "Then, suddenly, a man with an unclean spirit cries out right there in the synagogue: “What do You want with us, Jesus of Nazareth? Have You come to destroy us?…”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
+          "type": "true_false",
+          "verses": "Mark 1:24",
+          "question": "The man with the unclean spirit says he knows who Jesus is.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:24",
-          "question": "The unclean spirit cries out at Jesus in the synagogue. What does it call Him?",
+          "question": "The man with the unclean spirit says he knows who Jesus is. What does he call Jesus?",
           "answers": [
             {
               "text": "The Holy One of God",
@@ -72,34 +92,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Mark 1:24",
-          "question": "The unclean spirit has no idea who Jesus is.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Mark 1:25",
-          "text": "Jesus isn't having any of it. He rebukes the spirit.",
-          "needs_agent_fix": true,
+          "text": "But Jesus rebukes the spirit, right there in front of everybody.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -122,7 +123,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -130,30 +131,26 @@
           "kind": "story",
           "verses": "Mark 1:26",
           "text": "The spirit throws the man into convulsions and comes out with a loud shriek. It leaves, but it does NOT leave quietly.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 1:27",
-          "question": "All the people in the synagogue are amazed. They ask one another what this is. What do they call it?",
+          "question": "After the unclean spirit comes out, the people in the synagogue say nothing about it.",
           "answers": [
             {
-              "text": "A new teaching with authority",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "A sign from the old prophets",
-              "correct": false
-            },
-            {
-              "text": "A wonder of the scribes",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,7 +158,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Mark 1:27",
-          "question": "The amazed people keep going. They say Jesus ___ even the unclean spirits, and they ___ Him.",
+          "question": "The amazed people in the synagogue ask one another what this is. They say Jesus ___ even the unclean spirits, and they ___ Him.",
           "answers": [
             {
               "text": "commands",
@@ -186,7 +183,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -194,7 +191,7 @@
           "kind": "story",
           "verses": "Mark 1:28",
           "text": "Something like this doesn't stay inside one building. If they'd had group chats back then, this is the message EVERYBODY forwards.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -217,7 +214,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -231,7 +228,7 @@
           "kind": "story",
           "verses": "Mark 1:29",
           "text": "As soon as they leave the synagogue, Jesus and His companions head to the home of Simon and Andrew. James and John come along too.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -254,7 +251,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -262,7 +259,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:30",
-          "question": "They wait a few days before telling Jesus about Simon's sick mother-in-law.",
+          "question": "Nobody tells Jesus about Simon's sick mother-in-law for a few days.",
           "answers": [
             {
               "text": "True",
@@ -273,7 +270,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -281,53 +278,50 @@
           "kind": "story",
           "verses": "Mark 1:31",
           "text": "So Jesus goes to her. He takes her by the hand and helps her up.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Mark 1:31",
-          "question": "Jesus takes Simon's mother-in-law by the hand and helps her up. What happens to her fever?",
+          "question": "When Jesus helps Simon's mother-in-law up, her fever leaves her.",
           "answers": [
             {
-              "text": "It leaves her",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "It gets worse",
-              "correct": false
-            },
-            {
-              "text": "It stays a while",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:31",
-          "question": "With her fever gone, what does Simon's mother-in-law begin to do?",
+          "question": "With her fever gone, Simon's mother-in-law begins to ___ them.",
           "answers": [
             {
-              "text": "Serve them",
-              "correct": true
+              "text": "serve",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Sleep it off",
+              "text": "thank",
               "correct": false
             },
             {
-              "text": "Tell the neighbors",
+              "text": "warn",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -335,38 +329,39 @@
           "kind": "story",
           "verses": "Mark 1:32",
           "text": "That evening, after sunset, people bring Jesus all the sick and demon-possessed.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Mark 1:33",
-          "question": "That evening, people bring all the sick and demon-possessed to Jesus. Who gathers at the door?",
+          "question": "That evening, people bring all the sick and demon-possessed to Jesus, and the whole ___ gathers at the door.",
           "answers": [
             {
-              "text": "The whole town",
-              "correct": true
+              "text": "town",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "A few neighbors",
+              "text": "family",
               "correct": false
             },
             {
-              "text": "Just Simon's family",
+              "text": "synagogue",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Mark 1:33-34",
-          "text": "The WHOLE town at one front door, and here I get flustered when the oven timer and the doorbell go off together. Jesus heals many who are ill with various diseases and drives out many demons.",
-          "needs_agent_fix": true,
+          "text": "Not half the town. Not most of the town. The WHOLE town, at one door. And Jesus heals many who are ill with various diseases and drives out many demons.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -389,15 +384,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Mark 1:35",
-          "text": "Early in the morning, while it's still dark, Jesus gets up and goes out to a solitary place. Me? Before sunrise, I'm hitting snooze and negotiating with my own mustache.",
-          "needs_agent_fix": true,
+          "text": "Early in the morning, while it's still dark, Jesus gets up and goes out to a solitary place. I spent years in the dark at the back of a junk drawer, and I never got one quiet night, because the dead batteries stuck in there with me argued NONSTOP.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -409,7 +404,8 @@
           "answers": [
             {
               "text": "pray",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "rest",
@@ -420,7 +416,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -428,7 +424,7 @@
           "kind": "story",
           "verses": "Mark 1:36",
           "text": "Simon and his companions go looking for Him. Friend, I can't even find my apron in the morning, and it's TIED ON ME.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -451,19 +447,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Mark 1:38",
-          "text": "If a whole town lined up at MY bakery door, I'd be sprinting back with flour still on my mustache. But Jesus answers them.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Mark 1:38",
@@ -482,15 +470,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Mark 1:38",
-          "question": "Jesus says they should go on so He can preach in the neighboring towns too, and He adds that this is why He has come.",
+          "question": "Jesus tells Simon and his companions that preaching is why He has come.",
           "answers": [
             {
               "text": "True",
@@ -501,15 +489,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "story",
           "verses": "Mark 1:39",
           "text": "So He goes throughout Galilee, preaching in their synagogues and driving out demons. One town was never going to be big enough.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

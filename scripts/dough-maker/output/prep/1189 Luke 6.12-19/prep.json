@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Luke 6:6-12",
-          "text": "Jesus just healed a man's withered hand on the Sabbath, and the scribes and Pharisees are filled with rage. They're talking with one another about what they might do to Him. Then, in those days, Jesus goes out to the mountain.",
+          "verses": "Luke 6:12",
+          "text": "Jesus has healed a man's withered hand on the Sabbath, and the scribes and Pharisees are filled with rage (Luke 6:6-11). They're discussing with one another what they might do to Him. Then, in those days, Jesus goes out to the mountain.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -41,7 +41,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 6:12",
-          "question": "Up on the mountain, Jesus prays for a little while and heads back down before dark.",
+          "question": "Up on the mountain, Jesus prays to God for only a short while.",
           "answers": [
             {
               "text": "True",
@@ -59,8 +59,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Luke 6:12-13",
-          "text": "When daylight comes, Jesus calls His disciples to Him and starts picking some of them out. He prayed ALL NIGHT before this, friend. I can't even stay awake through one batch in the oven.",
-          "needs_agent_fix": true,
+          "text": "When daylight comes, after praying ALL NIGHT, Jesus calls His disciples to Him and starts choosing some of them. Friend, I can't even stay awake through one batch in the oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -112,32 +112,28 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Luke 6:14-16",
-          "text": "Then come the names: Simon, whom He named Peter, and his brother Andrew, James and John, Matthew, Thomas and more. Count 'em up and you get two Simons, two Jameses and two Judases. Name tag day must have been WILD. And the last name lands heavy: Judas Iscariot, \"who became a traitor.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Luke 6:17",
-          "text": "Then Jesus comes down with them to a level place, where a large crowd of His disciples and a great number of people from all over Judea and Jerusalem are waiting. Friend, my whole planet is one bakery big, so this crowd would be standing on my ROOF.",
+          "verses": "Luke 6:14",
+          "text": "Then come the names of the twelve. First up is Simon, and his brother Andrew.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Luke 6:17",
-          "question": "Some of the people in the crowd at the level place came from as far as the seacoast of Tyre and Sidon.",
+          "type": "multiple_choice",
+          "verses": "Luke 6:14",
+          "question": "Jesus gives Simon, the first apostle on the list, a new name. What is it?",
           "answers": [
             {
-              "text": "True",
+              "text": "Peter",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Stephen",
+              "correct": false
+            },
+            {
+              "text": "Silas",
               "correct": false
             }
           ],
@@ -145,7 +141,77 @@
           "needs_human_decision": false
         },
         {
+          "card": 9,
+          "kind": "story",
+          "verses": "Luke 6:14-15",
+          "text": "The list keeps going: James and John, Philip and Bartholomew, Matthew and Thomas, and James son of Alphaeus. That's two Jameses on one team, so I hope they're both good at answering to \"No, the OTHER James.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 10,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Luke 6:15",
+          "question": "There's a second Simon among the twelve apostles too. He's called Simon the ___.",
+          "answers": [
+            {
+              "text": "Zealot",
+              "correct": true
+            },
+            {
+              "text": "Tanner",
+              "correct": false
+            },
+            {
+              "text": "Leper",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Luke 6:16",
+          "text": "Then comes Judas son of James. And the last name on the list is another Judas: Judas Iscariot.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Luke 6:16",
+          "question": "Judas Iscariot is the last apostle on the list. What does the text say he became?",
+          "answers": [
+            {
+              "text": "A traitor",
+              "correct": true
+            },
+            {
+              "text": "A tax collector",
+              "correct": false
+            },
+            {
+              "text": "A fisherman",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Luke 6:17",
+          "text": "Then Jesus comes down with the twelve to a level place, and a huge crowd is there: His disciples, plus people from all over Judea, Jerusalem, and the seacoast of Tyre and Sidon. Friend, my whole planet is one bakery big, so this crowd would be standing on my ROOF.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 6:18",
@@ -168,34 +234,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Luke 6:18",
-          "question": "People troubled by unclean spirits were in that crowd too. They had to leave without being healed.",
+          "question": "The people in that crowd who were troubled by unclean spirits were healed.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 16,
           "kind": "story",
           "verses": "Luke 6:19",
-          "text": "And it's not just a few folks here and there. The ENTIRE crowd is set on one thing. Only time I've seen a whole room that locked in, it was bakers staring down my oven timer.",
-          "needs_agent_fix": true,
+          "text": "And it's not just a few folks here and there, friend. The ENTIRE crowd is set on one thing, and the only time I've seen a room that locked in, it was bakers staring down my oven timer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Luke 6:19",
@@ -218,7 +284,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Luke 6:19",
