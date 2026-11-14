@@ -11,7 +11,7 @@
           "verses": "2 Chronicles 31:1",
           "text": "Hezekiah, king of Judah, just called the people to a Passover in Jerusalem, and there was great joy in the city (2 Chronicles 30:1, 26). Now it's all over, and the Israelites who were there head out into the cities of Judah. And friend, they are NOT heading straight home.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,26 +34,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 31:1",
-          "question": "The Israelites tear down the high places and altars throughout Judah and Benjamin. True or false: they stop there and leave Ephraim and Manasseh alone.",
+          "question": "The Israelites tear down the high places and altars throughout Judah and Benjamin. True or false: they do the same in Ephraim and Manasseh.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -61,15 +61,15 @@
           "verses": "2 Chronicles 31:1",
           "text": "They keep going until every last one is destroyed, and THEN they go home, each to his own property. Me, I can't scrape out ONE mixing bowl without stopping to taste the dough.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Chronicles 31:2",
-          "text": "Back in Jerusalem, Hezekiah puts the divisions of the priests and Levites back in place. Every group gets its own duties again.",
+          "text": "Next, Hezekiah puts the divisions of the priests and Levites back in place. Every group gets its own duties again.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -92,7 +92,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -100,7 +100,7 @@
           "verses": "2 Chronicles 31:3",
           "text": "The Law calls for burnt offerings every morning and every evening, plus Sabbaths, New Moons and the appointed feasts. That's a LOT of offerings, friend, and somebody's footing that bill.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -123,7 +123,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -131,7 +131,7 @@
           "verses": "2 Chronicles 31:4",
           "text": "Then Hezekiah turns to the people living in Jerusalem. He commands them to make a contribution for the priests and Levites.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
@@ -149,12 +149,12 @@
               "correct": false
             },
             {
-              "text": "So they can buy the sacrifices for the LORD",
+              "text": "So they can rebuild the walls of Jerusalem",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
@@ -162,7 +162,7 @@
           "verses": "2 Chronicles 31:5",
           "text": "The order goes out, and the Israelites start bringing in a tithe of everything their fields grow. Friend, I get excited when somebody hands me ONE extra bag of chocolate chips.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
@@ -186,7 +186,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
@@ -205,38 +205,39 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "2 Chronicles 31:6",
-          "text": "The folks in the cities of Judah bring a tithe of their herds, their flocks and the holy things too, and they lay it all out in large heaps. I fill cookie boxes for a living, friend, and I have NEVER once needed the word heaps.",
+          "text": "The folks in the cities of Judah bring a tithe of their herds, their flocks and the holy things too, and they lay it all out in large heaps. The tallest stack I EVER made was cookies on one cooling rack, and it tipped over before the timer beeped.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 31:7",
-          "question": "The people start building up the heaps in the third month. When do they finish?",
+          "question": "The people start building up the heaps in the third month and finish in the ___ month.",
           "answers": [
             {
-              "text": "In the seventh month",
-              "correct": true
+              "text": "seventh",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "In the fourth month",
+              "text": "fourth",
               "correct": false
             },
             {
-              "text": "In the twelfth month",
+              "text": "twelfth",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -244,31 +245,30 @@
           "verses": "2 Chronicles 31:7-8",
           "text": "From the third month to the seventh, friend, that's not a pile, that's a SEASON. Then Hezekiah and his officials come out to see the heaps for themselves.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 31:8",
-          "question": "When Hezekiah and his officials view the heaps, they ___ the LORD and His people Israel.",
+          "question": "Hezekiah and his officials come and view the heaps the people brought. What do they do?",
           "answers": [
             {
-              "text": "blessed",
-              "correct": true,
-              "blank": 1
+              "text": "They bless the LORD and His people Israel",
+              "correct": true
             },
             {
-              "text": "warned",
+              "text": "They count each heap and write it down",
               "correct": false
             },
             {
-              "text": "rebuked",
+              "text": "They order the gifts sent to the palace",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -282,7 +282,7 @@
           "verses": "2 Chronicles 31:9-10",
           "text": "Then Hezekiah asks the priests and Levites about all these heaps. Azariah, the chief priest of the household of Zadok, gives him the answer.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -305,22 +305,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 31:10",
-          "text": "Then Azariah says it: \"this great abundance is what is left over.\" That's LEFTOVERS, friend, and my leftovers after a batch are three crumbs and one lonely chocolate chip.",
+          "text": "Then Azariah says it: \"…this great abundance is what is left over.\" That's LEFTOVERS, friend, and my leftovers after a batch are three crumbs and one lonely chocolate chip.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 31:11",
-          "question": "With that much left over, Hezekiah commands the priests and Levites to prepare ___ in the house of the LORD.",
+          "question": "After hearing Azariah, Hezekiah commands the priests and Levites to prepare ___ in the house of the LORD.",
           "answers": [
             {
               "text": "storerooms",
@@ -337,57 +337,57 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Chronicles 31:12-19",
-          "text": "From then on they faithfully bring in the gifts, and Conaniah the Levite runs it all with his brother Shimei and a team of overseers under them. Kore, the Levite who keeps the East Gate, handles the freewill offerings, and his men share out portions to the priests and Levites in their cities, old and young, families included.",
+          "text": "They faithfully bring in the gifts, with Conaniah the Levite in charge, his brother Shimei second, and a team of overseers under them. Kore, the Levite who keeps the East Gate, is in charge of the freewill offerings. Under him, men faithfully hand out portions to their fellow priests in their cities, old and young alike. Portions go to the Levites too, by their duties and divisions.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 31:20",
-          "question": "Hezekiah did all this throughout Judah. How does Scripture sum up what he did before the LORD his God?",
+          "question": "Hezekiah did all this throughout Judah. How does the writer sum up what he did before the LORD his God?",
           "answers": [
             {
               "text": "He did what was good and upright and true",
               "correct": true
             },
             {
-              "text": "He did what was right but kept the high places",
+              "text": "He did what the priests told him to do",
               "correct": false
             },
             {
-              "text": "He did what was evil in the eyes of the LORD",
+              "text": "He did what his officials thought best",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 31:21",
-          "question": "True or false: Hezekiah does the work for the house of God with half his heart, just going through the motions.",
+          "question": "True or false: Hezekiah acts with all his heart in every work he begins in the service of the house of God.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -410,7 +410,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -418,7 +418,7 @@
           "verses": "2 Chronicles 31:21",
           "text": "And that's where we'll leave Hezekiah for now. Keep your apron on, friend, because this king's story isn't done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

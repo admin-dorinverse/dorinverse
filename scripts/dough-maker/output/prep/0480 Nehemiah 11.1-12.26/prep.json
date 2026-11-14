@@ -9,16 +9,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Nehemiah 11:1",
-          "text": "Jerusalem is large and spacious, friend, but there are few people in it, and the houses haven't been rebuilt yet (Nehemiah 7:4). A big city with hardly anybody home? That's a cookie box with three cookies rattling around in it, so now it's time to settle people in the holy city.",
+          "text": "After the wall was rebuilt, Jerusalem was large and spacious, but there were few people in it (Nehemiah 7:1-4). That's a cookie box with three cookies rattling around in it. Now, friend, people start settling in Jerusalem.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Nehemiah 11:1",
-          "question": "Filling up the holy city starts at the top. Which group settles in Jerusalem first?",
+          "question": "The passage opens with one group settling in Jerusalem. Who are they?",
           "answers": [
             {
               "text": "The leaders of the people",
@@ -34,14 +34,33 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
+          "type": "true_false",
+          "verses": "Nehemiah 11:1",
+          "question": "The rest of the people choose who else moves into Jerusalem by casting lots.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "choice",
           "type": "fill_blank",
           "verses": "Nehemiah 11:1",
-          "question": "The rest of the people cast lots to choose who else moves in. The lots pick ___ out of every ten people to live in Jerusalem.",
+          "question": "The lots pick ___ out of every ten people to live in Jerusalem.",
           "answers": [
             {
               "text": "one",
@@ -57,29 +76,33 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Nehemiah 11:1",
-          "question": "After the lots are cast, the other nine out of every ten stay in their own towns.",
+          "question": "The people the lots pick will live in Jerusalem, and here it gets a special name: the ___ city.",
           "answers": [
             {
-              "text": "True",
+              "text": "holy",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "royal",
+              "correct": false
+            },
+            {
+              "text": "ancient",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Nehemiah 11:2",
@@ -99,31 +122,39 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 6,
-          "kind": "story",
-          "verses": "Nehemiah 11:3-24",
-          "text": "Then comes the roll call of who settles in Jerusalem: families from Judah and Benjamin, priests, Levites, and gatekeepers who keep watch at the gates. Every group gets a head count, right down to the number. I tried counting the dust in my old junk drawer once, friend. I gave up at SEVEN.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Nehemiah 11:25-36",
-          "text": "Everyone else spreads out over the villages of Judah and Benjamin. Judah's people settle all the way from Beersheba to the Valley of Hinnom, and Benjamin's settle in towns like Michmash and Bethel. I spent YEARS in one drawer, and these folks get a whole map!",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "verses": "Nehemiah 11:3-24",
+          "text": "Then comes the roll call of who settles in Jerusalem: families from Judah and Benjamin, priests, Levites, and gatekeepers who keep watch at the gates. Most groups get a head count. I used to count the falling dust back in the junk drawer I got stuck in, friend. I gave up at SEVEN.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
+          "verses": "Nehemiah 11:25-36",
+          "text": "Everyone else spreads out over the villages of Judah and Benjamin. Judah's people settle all the way from Beersheba to the Valley of Hinnom, and Benjamin's settle in towns like Michmash and Bethel. That's not a neighborhood, friend, that's a ROAD TRIP.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
           "verses": "Nehemiah 12:1-26",
-          "text": "Next, the record goes back to the priests and Levites who went up with Zerubbabel son of Shealtiel and Jeshua the high priest, two of the men the exiles came home with (Ezra 2:1-2; Haggai 1:1). It traces the priestly families down the generations, plus Levites giving praise and thanksgiving as David the man of God prescribed, and gatekeepers guarding the storerooms, all the way to the days of Nehemiah the governor and Ezra the priest and scribe. Generations of names, friend, and every one of them written DOWN. Trust me, I know what that's worth. And this city's story? NOT done.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Next comes the record of the priests and Levites who went up with Zerubbabel son of Shealtiel and with Jeshua, two of the men the exiles came home with (Ezra 2:2). It follows the priestly families down the generations, with Levites giving praise and thanksgiving as prescribed by David the man of God, all the way to the days of Nehemiah the governor and Ezra the priest and scribe. Generation after generation, somebody kept the record. Me? I've got three oven timers going and I can't tell which one is beeping.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 10,
+          "kind": "story",
+          "verses": "Nehemiah 12:26",
+          "text": "That's where we'll leave this city for now, friend. Trust me, Jerusalem's story is NOT done.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

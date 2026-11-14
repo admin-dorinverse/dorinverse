@@ -9,16 +9,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezra 4:1",
-          "text": "Picture it, friend. The exiles are back from captivity, and they've just laid the foundation of the temple of the LORD in Jerusalem (Ezra 3:10-11). Then the Bible says the enemies of Judah and Benjamin hear that the exiles are building a temple for the LORD, the God of Israel.",
-          "needs_agent_fix": true,
+          "text": "Picture it, friend. The exiles are back in Jerusalem from captivity, and the foundation of the temple of the LORD has just been laid (Ezra 3:10-11). Then the enemies of Judah and Benjamin hear that the exiles are building a temple for the LORD, the God of Israel.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Ezra 4:2",
-          "text": "So they walk right up to Zerubbabel, governor of Judah (Haggai 1:1), and the heads of the families. And they did NOT come empty-handed, friend: they came with an offer.",
-          "needs_agent_fix": true,
+          "text": "So they walk right up to Zerubbabel, governor of Judah (Haggai 1:1), and the heads of the families. They say they seek Israel's God just like the exiles do, and they've been sacrificing to Him since King Esar-haddon of Assyria brought them there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -26,7 +26,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 4:2",
-          "question": "The enemies of Judah and Benjamin come to Zerubbabel and the family heads with an offer. What is it?",
+          "question": "The enemies of Judah and Benjamin tell Zerubbabel they seek the same God he does. So what do they offer him?",
           "answers": [
             {
               "text": "To help build the temple",
@@ -41,96 +41,73 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezra 4:2",
-          "question": "True or false: Making their offer, they say they've been sacrificing to Israel's God ever since a king of Assyria brought them there.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Ezra 4:3",
+          "text": "Zerubbabel, Jeshua the priest (Ezra 3:2) and the other heads of the families hear them out. Then it's their turn to answer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Ezra 4:3",
-          "text": "Zerubbabel, Jeshua the priest (Ezra 3:2) and the other heads of the families hear them out. Then it's their turn to answer.",
-          "needs_agent_fix": true,
+          "question": "True or false: Zerubbabel, Jeshua and the family heads welcome the offer from the enemies of Judah and Benjamin to help build.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezra 4:3",
-          "question": "What do Zerubbabel, Jeshua and the family heads tell the people offering to help build?",
-          "answers": [
-            {
-              "text": "You have no part in this",
-              "correct": true
-            },
-            {
-              "text": "Come and build beside us",
-              "correct": false
-            },
-            {
-              "text": "Ask the king's permission first",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezra 4:3",
-          "question": "Zerubbabel and the family heads say they alone must build the house for the LORD, as ___ king of Persia commanded them.",
+          "question": "Zerubbabel and the family heads say they alone must build the house for the LORD, as King ___ commanded them.",
           "answers": [
             {
               "text": "Cyrus",
               "correct": true
             },
             {
-              "text": "Xerxes",
+              "text": "Esar-haddon",
               "correct": false
             },
             {
-              "text": "Artaxerxes",
+              "text": "Nebuchadnezzar",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Ezra 4:4",
+          "text": "Then the people of the land make a move of their own against the people of Judah.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Ezra 4:4",
-          "text": "The people of the land just heard no. Some folks hear no and go home, but these folks change their whole approach.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 4:4",
-          "question": "After hearing no, the people of the land change their approach. What do they set out to do to the people of Judah?",
+          "question": "What do the people of the land set out to do to the people of Judah?",
           "answers": [
             {
               "text": "Make them afraid to build",
@@ -145,23 +122,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Ezra 4:5",
+          "text": "Then they hire counselors against Judah to frustrate their plans. That's like paying somebody a FULL salary just to walk in every morning and unplug my oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Ezra 4:5",
-          "text": "Then they hire counselors against Judah to frustrate their plans. That's like paying somebody a FULL salary just to walk in every morning and unplug my oven.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 4:5",
-          "question": "The hired counselors keep frustrating Judah's plans from the reign of Cyrus all the way down to the reign of which king?",
+          "question": "The counselors hired against Judah keep frustrating their plans from the reign of Cyrus all the way down to the reign of which king?",
           "answers": [
             {
               "text": "Darius",
@@ -172,19 +149,11 @@
               "correct": false
             },
             {
-              "text": "Nebuchadnezzar",
+              "text": "Sennacherib",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Ezra 4:5",
-          "text": "That's Darius, king of Persia, one king after another. That's a LOT of mornings somebody unplugs my oven, friend.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -197,7 +166,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezra 4:6",
-          "text": "Now the Bible moves on through the kings of Persia. At the beginning of the reign of Xerxes, an accusation is lodged against the people of Judah.",
+          "text": "At the beginning of the reign of Xerxes, king of Persia, an accusation is lodged against the people of Judah and Jerusalem.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -205,7 +174,7 @@
           "card": 2,
           "kind": "story",
           "verses": "Ezra 4:7",
-          "text": "Then in the days of Artaxerxes king of Persia, Bishlam, Mithredath, Tabeel and their associates write him a letter, written in Aramaic and then translated. Friend, these folks are NOT playing.",
+          "text": "Then in the days of Artaxerxes king of Persia, Bishlam, Mithredath, Tabeel and the rest of his associates write a letter to him. Friend, these folks are NOT playing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -213,19 +182,19 @@
           "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Ezra 4:8",
-          "question": "Rehum the commander and Shimshai the scribe write a letter to King Artaxerxes. What city is it against?",
+          "verses": "Ezra 4:7",
+          "question": "The letter from Bishlam, Mithredath and Tabeel to King Artaxerxes is written in one language and then translated. Which language is it written in?",
           "answers": [
             {
-              "text": "Jerusalem",
+              "text": "Aramaic",
               "correct": true
             },
             {
-              "text": "Babylon",
+              "text": "Hebrew",
               "correct": false
             },
             {
-              "text": "Susa",
+              "text": "Greek",
               "correct": false
             }
           ],
@@ -235,8 +204,8 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "Ezra 4:9-11",
-          "text": "Rehum and Shimshai's letter opens with a LONG list of who it's from: judges, officials, the Elamites of Susa, and the peoples the great and honorable Ashurbanipal, king of Assyria, deported and settled in Samaria, all calling themselves the king's servants west of the Euphrates. That's the birthday card at work where the whole office signs and nobody can find room to write.",
+          "verses": "Ezra 4:8-11",
+          "text": "Rehum the commander and Shimshai the scribe write a letter against Jerusalem to King Artaxerxes. It opens with a LONG list of who it's from: judges, officials, the Elamites of Susa, and the peoples the great and honorable Ashurbanipal deported and settled in Samaria and elsewhere west of the Euphrates. That's the birthday card at work where the whole office signs and nobody can find room to write.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -298,7 +267,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Ezra 4:14",
-          "text": "They say they're only writing because it's not fitting for them to let the king be dishonored. That's the coworker who CCs your boss on everything and signs off, \"Just looking out for the team!\"",
+          "text": "They say they're writing because they serve the palace and it's not fitting for them to let the king be dishonored. That's the coworker who CCs your boss on everything and signs off, \"Just looking out for the team!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -307,7 +276,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 4:15",
-          "question": "Rehum and Shimshai want the king to believe Jerusalem has always been trouble. How do they say he can check?",
+          "question": "Rehum and Shimshai tell King Artaxerxes how he can verify what they say about Jerusalem. How?",
           "answers": [
             {
               "text": "Search his fathers' record books",
@@ -330,29 +299,29 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezra 4:16",
-          "question": "Their big finish: if Jerusalem is rebuilt and its walls restored, the king will have no ___ west of the Euphrates.",
+          "question": "Rehum and Shimshai end their letter with a warning: if Jerusalem is rebuilt and its walls restored, King Artaxerxes will have no ___ west of the Euphrates.",
           "answers": [
             {
               "text": "dominion",
               "correct": true
             },
             {
-              "text": "harvest",
+              "text": "allies",
               "correct": false
             },
             {
-              "text": "temple",
+              "text": "trade",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Ezra 4:17-18",
-          "text": "King Artaxerxes writes back and says their letter was translated and read in his presence. The WHOLE thing, friend, and I can't get anybody to read a recipe card past the word \"preheat.\"",
+          "text": "King Artaxerxes writes back and says their letter was translated and read in his presence. Somebody sat and read that letter to a king, friend, and I can't get anybody to read a recipe card past the word \"preheat.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -444,7 +413,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Ezra 4:22",
-          "text": "Then the king tells them not to neglect this matter. That's the boss who ends every email with \"Let's not drop the ball on this.\"",
+          "text": "Then the king tells them not to neglect this matter. He's leaning on it HARD, like me hovering over the oven door when a batch is one minute from done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -473,34 +442,11 @@
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezra 4:24",
-          "question": "So the construction of the house of God in Jerusalem stops. How long does it stay at a standstill?",
-          "answers": [
-            {
-              "text": "Until the second year of Darius",
-              "correct": true
-            },
-            {
-              "text": "Until the tenth year of Cyrus",
-              "correct": false
-            },
-            {
-              "text": "Until the first year of Xerxes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 19,
           "kind": "story",
           "verses": "Ezra 4:24",
-          "text": "So the work sits still, right where they left it. But keep that apron on, friend, because this story is NOT done.",
+          "text": "Then the Bible says, \"Thus the construction of the house of God in Jerusalem ceased, and it remained at a standstill until the second year of the reign of Darius king of Persia.\" But keep that apron on, friend, because this story is NOT done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

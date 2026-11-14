@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Nehemiah 1:1",
-          "text": "This is Nehemiah son of Hacaliah, and he's telling this story himself, so you're getting it straight from the man. It's the month of Chislev, in the twentieth year. He's in the citadel of Susa, a LONG way from Jerusalem.",
+          "text": "This is Nehemiah son of Hacaliah, and he's telling this story himself, so you're getting it straight from the man. It's the month of Chislev, in the twentieth year. He's in the citadel of Susa, a royal city of Persia.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Nehemiah 1:3",
-          "text": "The men tell him the survivors of the exile are there in the province, in great trouble and disgrace. Friend, he asks how everybody's doing back home, and they don't even warm up with a \"well, the weather's been nice\" first!",
+          "text": "The men tell him the survivors of the exile are there in the province, in great trouble and disgrace. Friend, he asks how everybody's doing in Judah, and they don't even warm up with a \"well, the weather's been nice\" first!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -92,7 +92,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -100,7 +100,7 @@
           "verses": "Nehemiah 1:4",
           "text": "And it's not a quick cry and back to work. Nehemiah mourns for DAYS, and friend, when a batch sticks to my pan, I give it ten seconds of silence and grab the spatula.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -123,7 +123,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -165,7 +165,26 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Nehemiah 1:6",
-          "question": "When Nehemiah confesses the Israelites' sins, he says he and his father's house are innocent.",
+          "question": "In his prayer, Nehemiah says both he and his father's house have sinned.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Nehemiah 1:7",
+          "question": "Nehemiah says Israel has kept the commandments, statutes and ordinances God gave His servant Moses, Israel's leader.",
           "answers": [
             {
               "text": "True",
@@ -180,33 +199,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Nehemiah 1:7",
-          "question": "Nehemiah says Israel hasn't kept the commandments, statutes and ordinances God gave His servant ___.",
-          "answers": [
-            {
-              "text": "Moses",
-              "correct": true
-            },
-            {
-              "text": "Joshua",
-              "correct": false
-            },
-            {
-              "text": "Samuel",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 14,
           "kind": "story",
           "verses": "Nehemiah 1:8",
-          "text": "Then Nehemiah asks God to remember His word to Moses, Israel's leader: if the people are unfaithful, God will scatter them among the nations. Nehemiah's quoting it back like a man who KEPT THE RECEIPT.",
+          "text": "Then Nehemiah asks God to remember His word to Moses: if the people are unfaithful, God will scatter them among the nations. Nehemiah's praying God's own words right back to Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -237,7 +233,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Nehemiah 1:10",
-          "text": "Then Nehemiah reminds God whose people these are: His servants and His people, the ones He redeemed by His great power and mighty hand. I know a little about being redeemed, friend, and I can tell you it BEATS the back of a junk drawer.",
+          "text": "Then Nehemiah tells God whose people these are: His servants and His people, the ones He redeemed by His great power and mighty hand. I know a little about being rescued from the back of a junk drawer, friend, and I can tell you it BEATS staying there.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -245,7 +241,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Nehemiah 1:11",
-          "text": "Nehemiah asks God to listen to his prayer and the prayers of His servants who delight to revere His name. Then he asks God for success this day, and it has something to do with facing one particular man.",
+          "text": "Nehemiah asks God to listen to his prayer and the prayers of His servants who delight to revere His name. Then he asks God for success this day, and it has something to do with one particular man.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -254,7 +250,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Nehemiah 1:11",
-          "question": "Nehemiah's prayer has been humble from the very start. He asks God to grant him ___ in the sight of this man.",
+          "question": "At the end of his prayer, Nehemiah asks God to grant him ___ in the sight of one particular man.",
           "answers": [
             {
               "text": "mercy",
@@ -299,7 +295,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Nehemiah 1:11",
-          "text": "Cupbearer to the king. I'm not gonna lie, I was ROOTING for chief baker, but stick around, friend, because Nehemiah's story is just getting started.",
+          "text": "That's where Nehemiah's prayer leaves us for now, friend. Trust me, this story is just getting STARTED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

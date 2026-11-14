@@ -9,38 +9,38 @@
           "card": 1,
           "kind": "story",
           "verses": "Esther 7:1",
-          "text": "Banquet number two, friend. Queen Esther has King Xerxes of Persia and Haman, the king's top official, back at her table (Esther 3:1; 5:8). Haman got rushed over here after leading Mordecai, Esther's cousin who raised her, through the city square on horseback, and I bet he thinks things can't possibly get any worse (Esther 2:7; 6:11-14).",
+          "text": "Banquet number two, friend. Queen Esther has King Xerxes of Persia and Haman, the official the king set above all his princes, back at her table, where she promised to answer the king's question (Esther 3:1; 5:8). Haman got rushed over here straight from a really rough afternoon, and I bet his stomach is in KNOTS (Esther 6:12-14).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Esther 7:2",
-          "question": "As they drink their wine on that second day, King Xerxes asks Esther once more what her petition is. He promises it will be fulfilled, even up to half the ___.",
+          "question": "On that second day, as they drink their wine, what does King Xerxes ask Queen Esther once more?",
           "answers": [
             {
-              "text": "kingdom",
+              "text": "What her petition is",
               "correct": true
             },
             {
-              "text": "treasury",
+              "text": "Why she invited Haman",
               "correct": false
             },
             {
-              "text": "army",
+              "text": "Where her family is from",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Esther 7:3",
-          "text": "Esther's been holding this in since the first banquet, friend (Esther 5:7-8). Now she finally says, \"If I have found favor in your sight, O king, and if it pleases the king…\"",
+          "verses": "Esther 7:2-3",
+          "text": "The king promises it will be given to her, even up to half the kingdom. So Esther finally says, \"If I have found favor in your sight, O king, and if it pleases the king…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Esther 7:4",
-          "text": "Then she says why: she and her people have been sold out to destruction, death and annihilation. Three words for the same ending, friend, and she says EVERY one of them.",
+          "text": "Then she says why: she and her people have been sold out to destruction, death and annihilation. I think saying that out loud took everything she had.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -137,11 +137,11 @@
               "correct": true
             },
             {
-              "text": "triumph",
+              "text": "defiance",
               "correct": false
             },
             {
-              "text": "defiance",
+              "text": "relief",
               "correct": false
             }
           ],
@@ -152,7 +152,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Esther 7:7",
-          "text": "The king gets up from his wine and walks right out. Friend, I spent YEARS in the back of a junk drawer, and even I'm looking at Haman's seat saying, nope, that's a tighter spot.",
+          "text": "The king gets up from his wine and goes out to the palace garden. Friend, I spent YEARS stuck in the back of a junk drawer, and I would NOT trade places with Haman right now.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,32 +161,22 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 7:7",
-          "question": "In his ___, King Xerxes leaves his wine and goes out to the palace ___.",
+          "question": "King Xerxes gets up from his wine and goes out to the palace garden in his ___.",
           "answers": [
             {
               "text": "fury",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "garden",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "sorrow",
               "correct": false
             },
             {
-              "text": "stables",
-              "correct": false
-            },
-            {
-              "text": "gate",
+              "text": "confusion",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -222,10 +212,18 @@
         },
         {
           "card": 14,
+          "kind": "story",
+          "verses": "Esther 7:8",
+          "text": "The king exclaims, \"Would he actually assault the queen while I am in the palace?\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 7:8",
-          "question": "When King Xerxes sees Haman on Queen Esther's couch, he accuses Haman of trying to hide from him.",
+          "question": "As soon as the words leave King Xerxes' mouth, Haman gets a chance to explain himself.",
           "answers": [
             {
               "text": "True",
@@ -240,27 +238,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "story",
-          "verses": "Esther 7:8",
-          "text": "The king cries out, \"Would he actually assault the queen while I am in the palace?\" The words are barely out of his mouth before they cover Haman's face.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 16,
           "kind": "story",
-          "verses": "Esther 7:9",
-          "text": "Then Harbonah, one of the eunuchs attending the king, speaks up: there's a gallows fifty cubits high at Haman's house. Some folks remember birthdays, friend, but Harbonah knows the EXACT height of a gallows.",
+          "verses": "Esther 7:8-9",
+          "text": "With Haman's face covered, Harbonah, one of the eunuchs attending the king, speaks up. He says there's a gallows fifty cubits high at Haman's house.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Esther 7:9",
-          "question": "Harbonah says Haman built that gallows for the man whose report saved the king. Who is that man?",
+          "question": "Harbonah says Haman built that gallows for ___, the man whose report saved the king.",
           "answers": [
             {
               "text": "Mordecai",

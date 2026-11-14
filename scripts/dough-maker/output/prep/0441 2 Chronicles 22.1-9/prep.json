@@ -47,8 +47,8 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "2 Chronicles 22:2-3",
-          "text": "His mother is Athaliah, the granddaughter of Omri, a king of Israel (1 Kings 16:23). And Ahaziah walks in the ways of the house of Ahab, Omri's son (1 Kings 16:28).",
+          "verses": "2 Chronicles 22:3-4",
+          "text": "Ahaziah walks in the ways of the house of Ahab, a king of Israel (1 Kings 16:29), and does evil in the sight of the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -64,11 +64,11 @@
               "correct": true
             },
             {
-              "text": "father",
+              "text": "wife",
               "correct": false
             },
             {
-              "text": "brother",
+              "text": "sister",
               "correct": false
             }
           ],
@@ -78,8 +78,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "2 Chronicles 22:4",
-          "text": "So Ahaziah does evil in the sight of the LORD, just like the house of Ahab. And after his father dies, Ahab's house becomes his counselors too.",
+          "verses": "2 Chronicles 22:2, 4",
+          "text": "That mother is Athaliah, the granddaughter of Omri, Ahab's father (1 Kings 16:28). And after Ahaziah's father dies, the house of Ahab becomes his counselors too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -110,7 +110,7 @@
           "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 22:5",
-          "text": "Ahaziah follows their counsel and goes to war with Joram son of Ahab king of Israel. They head out to fight at Ramoth-gilead.",
+          "text": "Ahaziah follows their counsel and goes along with Joram son of Ahab king of Israel. They head out to fight at Ramoth-gilead.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -257,29 +257,21 @@
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "2 Chronicles 22:7-8",
-          "text": "Jehu is executing judgment on the house of Ahab. And Ahaziah walked out right beside Ahab's son, like parking next to the car the tow truck came for!",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 22:8",
-          "question": "Jehu finds the rulers of Judah and Ahaziah's nephews serving Ahaziah. Jehu ___ them.",
+          "question": "While Jehu executes judgment on the house of Ahab, he finds the ___ of Judah serving Ahaziah.",
           "answers": [
             {
-              "text": "kills",
+              "text": "rulers",
               "correct": true
             },
             {
-              "text": "spares",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "frees",
+              "text": "prophets",
               "correct": false
             }
           ],
@@ -287,10 +279,18 @@
           "needs_human_decision": false
         },
         {
+          "card": 8,
+          "kind": "story",
+          "verses": "2 Chronicles 22:8",
+          "text": "Ahaziah's nephews are there serving him too. This part is heavy, friend, because Jehu kills them.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 9,
           "kind": "story",
           "verses": "2 Chronicles 22:9",
-          "text": "Then Jehu goes looking for Ahaziah. And the king of Judah does EXACTLY what I'd do if a man with Jehu's job came looking for me.",
+          "text": "Then Jehu goes looking for Ahaziah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -299,18 +299,18 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 22:9",
-          "question": "Jehu's soldiers capture Ahaziah while he's hiding in Jerusalem.",
+          "question": "Jehu's soldiers capture Ahaziah while he's hiding in Samaria.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

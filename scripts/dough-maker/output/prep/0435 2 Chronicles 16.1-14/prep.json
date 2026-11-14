@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 16:1",
-          "text": "Asa, king of Judah, is thirty-six years into his reign when trouble rolls in. Baasha, king of Israel, marches up against Judah. And he starts fortifying a place called Ramah.",
+          "text": "It's the thirty-sixth year of the reign of Asa, king of Judah, when trouble rolls in. Baasha, king of Israel, marches up against Judah. And he starts fortifying a place called Ramah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -25,7 +25,7 @@
               "correct": true
             },
             {
-              "text": "To guard his own border against Aram",
+              "text": "To guard his own border against the Philistines",
               "correct": false
             },
             {
@@ -56,15 +56,15 @@
               "correct": true
             },
             {
-              "text": "New taxes collected from the people",
+              "text": "The ships that bring gold from Ophir",
               "correct": false
             },
             {
-              "text": "Selling off the royal farmland",
+              "text": "The yearly tribute from the land of Moab",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -93,20 +93,21 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 16:3",
-          "question": "Asa tells Ben-hadad they should have a treaty like their fathers did. Then he gets to the real ask. What does Asa want Ben-hadad to do?",
+          "question": "Asa asks Ben-hadad for a treaty like the one their fathers had. Then he asks Ben-hadad to ___ his treaty with Baasha king of Israel.",
           "answers": [
             {
-              "text": "Break his treaty with Baasha",
-              "correct": true
+              "text": "break",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Send soldiers to guard Jerusalem",
+              "text": "keep",
               "correct": false
             },
             {
-              "text": "Make peace between him and Baasha",
+              "text": "expand",
               "correct": false
             }
           ],
@@ -117,7 +118,7 @@
           "card": 7,
           "kind": "story",
           "verses": "2 Chronicles 16:4",
-          "text": "Ben-hadad takes the deal, and his commanders conquer Ijon, Dan, Abel-maim and all the store cities of Naphtali. Meanwhile Baasha's still out at Ramah stacking stones, like guarding your front door while somebody carries your couch out the BACK.",
+          "text": "Ben-hadad takes the deal, and his commanders conquer Ijon, Dan, Abel-maim and all the store cities of Naphtali. Meanwhile Baasha's still out at Ramah stacking stones, like you're busy blocking your neighbor's driveway while somebody carries your couch out YOUR back door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -148,8 +149,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Chronicles 16:5-6",
-          "text": "Baasha's GONE from Ramah. So Asa calls up ALL the men of Judah.",
+          "verses": "2 Chronicles 16:6",
+          "text": "Then King Asa brings ALL the men of Judah, and they get to work.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -222,7 +223,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 16:8",
-          "question": "Hanani reminds Asa of the vast Cushite and Libyan army. He says the LORD delivered that army into Asa's hand because Asa relied on Him.",
+          "question": "Hanani says the LORD delivered the vast Cushite and Libyan army into Asa's hand because Asa relied on Him.",
           "answers": [
             {
               "text": "True",
@@ -264,19 +265,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 16:9",
-          "question": "Hanani tells Asa he acted foolishly. From now on, he says, Asa will be at ___.",
+          "question": "Hanani tells Asa he acted foolishly. From now on, he says, Asa will be ___.",
           "answers": [
             {
-              "text": "war",
+              "text": "at war",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "peace",
+              "text": "at peace",
               "correct": false
             },
             {
-              "text": "rest",
+              "text": "in exile",
               "correct": false
             }
           ],
@@ -352,20 +353,21 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 16:12",
-          "question": "Even in his illness, who does King Asa seek?",
+          "question": "Even in his illness, King Asa does not seek the LORD. He seeks only the ___.",
           "answers": [
             {
-              "text": "Only the physicians",
-              "correct": true
+              "text": "physicians",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The LORD his God",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "The priests at the temple",
+              "text": "prophets",
               "correct": false
             }
           ],
@@ -392,7 +394,7 @@
               "correct": true
             },
             {
-              "text": "In a cave his fathers had bought",
+              "text": "In the cave of Machpelah",
               "correct": false
             },
             {

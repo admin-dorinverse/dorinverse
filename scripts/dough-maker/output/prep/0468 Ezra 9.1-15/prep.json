@@ -9,16 +9,24 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezra 9:1",
-          "text": "Ezra, a priest and scribe, is telling this one himself. He and the exiles have made it to Jerusalem, handed over the silver and gold for God's house, and offered burnt offerings (Ezra 8:32-35). Then the leaders come to him with that \"got a minute?\" look, and NOBODY who says \"got a minute?\" only needs a minute.",
-          "needs_agent_fix": true,
+          "text": "Ezra, a priest and scribe (Ezra 7:11), is telling this one himself. He and the exiles have made it to Jerusalem, handed over the silver and gold for God's house, and offered burnt offerings (Ezra 8:32-35). Then the leaders come to him with that \"got a minute?\" look, and NOBODY who says \"got a minute?\" only needs a minute.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "story",
+          "verses": "Ezra 9:1",
+          "text": "The leaders' report is about the surrounding peoples. They say those peoples have abominations like those of the Canaanites, the Hittites, the Ammonites, the Moabites, the Egyptians and more.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 9:1",
-          "question": "The leaders tell Ezra that the people of Israel haven't done something with the surrounding peoples. What haven't they done?",
+          "question": "The leaders say the people of Israel haven't done something with those surrounding peoples. What haven't they done?",
           "answers": [
             {
               "text": "Kept themselves separate",
@@ -33,34 +41,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezra 9:1",
-          "question": "The leaders tell Ezra that even the priests and Levites are caught up in this.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Ezra 9:1",
-          "text": "The leaders say these surrounding peoples have abominations like those of the Canaanites, the Hittites, the Ammonites, the Moabites, the Egyptians and more. Friend, the leaders are NOT easing into this one.",
-          "needs_agent_fix": true,
+          "verses": "Ezra 9:1-2",
+          "text": "The leaders say this reaches all the way to the priests and Levites. They also say the holy seed has been mixed with the people of the land.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -68,22 +57,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 9:2",
-          "question": "So what have the Israelites done with these surrounding peoples?",
+          "question": "The leaders say the holy seed has been mixed with the people of the land. How did that happen?",
           "answers": [
             {
-              "text": "Taken their daughters as wives",
+              "text": "They married women from those peoples",
               "correct": true
             },
             {
-              "text": "Bought land in their cities",
+              "text": "They traded in those peoples' markets",
               "correct": false
             },
             {
-              "text": "Joined them in their armies",
+              "text": "They served in those peoples' armies",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +80,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezra 9:2",
-          "question": "The leaders report that the leaders and officials stayed out of this unfaithfulness.",
+          "question": "The leaders' report says the leaders and officials stayed out of this unfaithfulness.",
           "answers": [
             {
               "text": "True",
@@ -102,15 +91,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Ezra 9:2-3",
-          "text": "The leaders call it the holy seed being mixed with the people of the land. Then the report lands on Ezra, and friend, it hits him HARD.",
-          "needs_agent_fix": true,
+          "verses": "Ezra 9:3",
+          "text": "When Ezra hears this report, it hits him HARD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -129,15 +118,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Ezra 9:3",
-          "text": "Ezra pulls out some hair from his head and beard, and he sits down in horror. If I tried that with my mustache, friend, I'd be pulling off my own HANDS.",
-          "needs_agent_fix": true,
+          "text": "Ezra pulls out some hair from his head and beard, and he sits down in horror.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -160,42 +149,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezra 9:4",
-          "question": "Ezra sits there in horror with people gathered around him. How long does he stay like that?",
-          "answers": [
-            {
-              "text": "Until the evening offering",
-              "correct": true
-            },
-            {
-              "text": "For three whole days",
-              "correct": false
-            },
-            {
-              "text": "Until the next morning",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Ezra 9:4-5",
+          "text": "Ezra sits there in horror until the evening offering. Then he gets up, his tunic and cloak still torn.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Ezra 9:5-6",
-          "text": "At the evening offering, Ezra gets up with his clothes still torn, falls on his knees and spreads out his hands to the LORD his God. He tells God he's ashamed and embarrassed to even lift his face to Him.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Ezra 9:5",
+          "question": "At the evening offering, Ezra gets up with his tunic and cloak still torn. What does he do next?",
+          "answers": [
+            {
+              "text": "Kneels and spreads his hands to God",
+              "correct": true
+            },
+            {
+              "text": "Calls all the leaders together",
+              "correct": false
+            },
+            {
+              "text": "Writes a letter to the king",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Ezra 9:6",
+          "text": "On his knees, Ezra tells the LORD he's ashamed and embarrassed to even lift his face to Him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezra 9:6",
@@ -215,34 +212,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezra 9:7",
-          "question": "In his prayer, Ezra says Israel's great guilt only started with his own generation.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "Ezra 9:7",
-          "text": "From the days of their fathers to this day, Ezra says, their guilt has been great. Because of it, they and their kings and priests were handed over to the kings of the earth: sword, captivity, pillage and humiliation.",
-          "needs_agent_fix": true,
+          "text": "Ezra says their guilt has been great from the days of their fathers to this day. He says they and their kings and priests were handed over to the kings of the earth, and it's still that way this day.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Ezra 9:7",
+          "question": "Ezra names the sword, captivity, pillage and humiliation. Why does he say all that came on them?",
+          "answers": [
+            {
+              "text": "Because of their iniquities",
+              "correct": true
+            },
+            {
+              "text": "Because their walls were too weak",
+              "correct": false
+            },
+            {
+              "text": "Because their kings made no treaties",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -271,7 +272,7 @@
               "correct": true
             },
             {
-              "text": "Rest and peace from all their foes",
+              "text": "Herds and flocks in every field",
               "correct": false
             },
             {
@@ -349,7 +350,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Ezra 9:10",
-          "text": "Then Ezra says, \"And now, our God, what can we say after this?\" That's the look you get when your boss hands you a raise the SAME morning you backed into his car.",
+          "text": "Then Ezra says, \"And now, our God, what can we say after this?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

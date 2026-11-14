@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 25:1",
-          "text": "Judah has a new king, Amaziah, who's twenty-five years old and will reign in Jerusalem twenty-nine years. Twenty-five with a WHOLE kingdom? Friend, some days I can't handle one oven.",
-          "needs_agent_fix": true,
+          "text": "Judah's King Joash has been killed by his own servants (2 Chronicles 24:25). Now his son Amaziah becomes king at twenty-five and reigns in Jerusalem twenty-nine years. His mother is Jehoaddan, from Jerusalem.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 25:3",
-          "text": "First order of business. As soon as the kingdom is firmly in his grasp, Amaziah executes the servants who murdered his father, the king.",
-          "needs_agent_fix": true,
+          "text": "As soon as the kingdom is firmly in his grasp, Amaziah executes the servants who murdered his father, the king.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -60,7 +60,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -83,7 +83,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -91,7 +91,7 @@
           "kind": "story",
           "verses": "2 Chronicles 25:4",
           "text": "Here's the LORD's command in the Book of Moses: \"Fathers must not be put to death for their children, and children must not be put to death for their fathers; each is to die for his own sin.\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,38 +99,39 @@
           "kind": "story",
           "verses": "2 Chronicles 25:5",
           "text": "Then Amaziah gets organized and counts the men of Judah and Benjamin twenty and older: 300,000 chosen men ready for spear and shield. Friend, I lose count of chocolate chips at TWELVE.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 25:6",
-          "question": "King Amaziah has 300,000 soldiers, but he adds 100,000 more mighty men of valor. Where do they come from?",
+          "question": "King Amaziah already has 300,000 soldiers, but he adds 100,000 more mighty men of valor, hired from ___.",
           "answers": [
             {
-              "text": "He hires them from Israel",
-              "correct": true
+              "text": "Israel",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He hires them from Moab",
+              "text": "Moab",
               "correct": false
             },
             {
-              "text": "He hires them from Egypt",
+              "text": "Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "2 Chronicles 25:6",
-          "text": "The price for those troops: a hundred talents of silver. Friend, I went for a QUARTER out of a closing-down bin, and this king is dropping a hundred TALENTS on hired help.",
-          "needs_agent_fix": true,
+          "text": "The price for those troops from Israel, the kingdom to the north: a hundred talents of silver. Friend, I went for a QUARTER out of a closing-down bin, and this king is dropping a hundred TALENTS on hired help.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -153,7 +154,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -168,15 +169,15 @@
               "correct": true
             },
             {
-              "text": "Israel's army is too small",
+              "text": "Israel's troops cannot be trusted",
               "correct": false
             },
             {
-              "text": "Israel's army is not trained",
+              "text": "Israel's king wants them back",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -195,38 +196,34 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "2 Chronicles 25:8-9",
-          "text": "Bravery won't save him, the man of God says, \"for God has power to help and power to overthrow.\" And Amaziah's big question? Friend, it's about the MONEY.",
-          "needs_agent_fix": true,
+          "text": "The reason, says the man of God: \"God has power to help and power to overthrow.\" Then Amaziah asks his big question, and friend, it's all about the MONEY.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Chronicles 25:9",
-          "question": "King Amaziah already gave a hundred talents to the troops of Israel. What does the man of God tell him about it?",
+          "question": "King Amaziah asks about the hundred talents he already paid Israel's troops. The man of God answers that the LORD is able to give him much more than this.",
           "answers": [
             {
-              "text": "The LORD is able to give you much more",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The LORD will make Israel return it all",
-              "correct": false
-            },
-            {
-              "text": "The LORD counts it as an offering to Him",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -234,30 +231,31 @@
           "kind": "story",
           "verses": "2 Chronicles 25:10",
           "text": "So Amaziah sends home the troops he hired from Israel, the men who came to him from Ephraim. Now, friend, how do you think THAT news goes over?",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 25:10",
-          "question": "King Amaziah sends the hired troops from Ephraim home. How do they take it?",
+          "question": "King Amaziah sends the hired troops from Ephraim home, and they're ___ with Judah.",
           "answers": [
             {
-              "text": "They're furious with Judah",
-              "correct": true
+              "text": "furious",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They're glad to go home",
+              "text": "pleased",
               "correct": false
             },
             {
-              "text": "They're sad to leave the king",
+              "text": "patient",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -269,8 +267,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Chronicles 25:11",
-          "text": "No hired help this time. Amaziah summons his strength and leads his troops to the Valley of Salt to fight the men of Seir, from Edom.",
+          "verses": "2 Chronicles 25:11, 14",
+          "text": "No hired help this time. Amaziah summons his strength and leads his troops to the Valley of Salt to fight the men of Seir, the Edomites.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -387,7 +385,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 25:14",
-          "question": "King Amaziah sets up Edom's gods as his own gods and bows before them.",
+          "question": "King Amaziah sets up Edom's gods as his own gods.",
           "answers": [
             {
               "text": "True",
@@ -404,8 +402,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "2 Chronicles 25:15",
-          "text": "So the anger of the LORD burns against Amaziah. And He sends him a prophet.",
+          "verses": "2 Chronicles 25:14-15",
+          "text": "He bows before them and burns sacrifices to them. So the anger of the LORD burns against Amaziah, and He sends him a prophet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -435,21 +433,13 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "2 Chronicles 25:15",
-          "text": "Gods that just LOST to him, friend. That's like winning the bake-off and then asking the guy who burned his whole batch for baking tips.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
           "verses": "2 Chronicles 25:16",
-          "text": "The prophet's still talking when the king cuts him off: \"Have we made you the counselor to the king? Stop! Why be struck down?\" The man is mid-sentence, and the king wants to see his NAME TAG.",
+          "text": "The prophet's still talking when the king cuts him off: \"Have we made you the counselor to the king? Stop! Why be struck down?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 25:16",
@@ -472,7 +462,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 25:16",
@@ -480,7 +470,8 @@
           "answers": [
             {
               "text": "destroy",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "spare",
@@ -495,11 +486,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "2 Chronicles 25:16",
-          "text": "The prophet goes quiet. But Amaziah's reign isn't over yet, friend. The rest of this batch is still in the oven.",
-          "needs_agent_fix": true,
+          "text": "The prophet goes quiet, but friend, Amaziah's reign isn't over. The rest of this batch is still in the oven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

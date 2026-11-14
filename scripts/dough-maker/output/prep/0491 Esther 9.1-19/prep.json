@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Esther 9:1",
-          "text": "Here it is, friend: the thirteenth day of the twelfth month, Adar. It's the day the command and edict of King Xerxes of Persia are to be carried out. The enemies of the Jews had hoped to overpower them on this very day.",
-          "needs_agent_fix": true,
+          "text": "Here it is, friend: the thirteenth day of the twelfth month, Adar. It's the day the king's command and edict are to be carried out. The enemies of the Jews had hoped to overpower them on this very day.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,18 +18,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 9:1",
-          "question": "The enemies of the Jews planned to overpower them on the thirteenth of Adar. How does that plan turn out?",
+          "question": "The enemies of the Jews had a plan for the thirteenth of Adar. How does it turn out?",
           "answers": [
             {
-              "text": "The Jews overpower them instead",
+              "text": "The Jews overpower those who hated them",
               "correct": true
             },
             {
-              "text": "They overpower the Jews easily",
+              "text": "The enemies win the day without a fight",
               "correct": false
             },
             {
-              "text": "The king cancels the whole day",
+              "text": "The king calls the whole day off",
               "correct": false
             }
           ],
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 9:2",
-          "question": "True or false: Plenty of men in the provinces are able to stand against the Jews that day.",
+          "question": "True or false: Plenty of men in the provinces are able to stand against the Jews on the thirteenth of Adar.",
           "answers": [
             {
               "text": "True",
@@ -60,7 +60,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -90,8 +90,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Esther 9:3",
-          "text": "Now, what about the people who run the provinces: the satraps, the governors and the king's administrators? Three layers of officials, friend. My bakery has ONE: me. I'm the satrap, the governor AND the guy who sweeps up the crumbs.",
-          "needs_agent_fix": true,
+          "text": "Now, what about the people who run the provinces: the officials, the satraps, the governors and the king's administrators?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -99,7 +99,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 9:3",
-          "question": "What do the satraps, governors and administrators of the provinces do on the thirteenth of Adar?",
+          "question": "What do the officials, satraps, governors and king's administrators of the provinces do on the thirteenth of Adar?",
           "answers": [
             {
               "text": "They help the Jews",
@@ -151,8 +151,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Esther 9:5-6",
-          "text": "The Jews put their enemies to the sword, and they do as they please to those who hated them. Then the text zooms in on the citadel of Susa.",
+          "verses": "Esther 9:5",
+          "text": "This part is heavy, friend. The Jews put all their enemies to the sword, and they do as they please to those who hated them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -192,15 +192,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 9:10",
-          "question": "The king's letter allowed the Jews to plunder their enemies' possessions (Esther 8:11). True or false: In Susa, the Jews take the plunder.",
+          "question": "The king's letter allowed the Jews to plunder their enemies' possessions (Esther 8:11). True or false: In Susa, the Jews leave the plunder untouched.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -225,7 +225,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 9:12",
-          "question": "Then King Xerxes asks Queen Esther a question he's asked her before (Esther 5:3; 7:2). What does he want to know?",
+          "question": "Then King Xerxes asks Queen Esther a question he's asked her before (Esther 5:6; 7:2). What does he want to know?",
           "answers": [
             {
               "text": "What her petition is",
@@ -245,14 +245,6 @@
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Esther 9:12",
-          "text": "And whatever she asks, he promises it'll be done. Friend, I spent YEARS in a junk drawer, and every time it opened, nobody ever asked, 'Papa, what's your petition?' They just wanted the SCISSORS.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 9:13",
@@ -275,7 +267,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "story",
           "verses": "Esther 9:13",
           "text": "Then comes her second request: that the bodies of Haman's ten sons be hanged on the gallows.",
@@ -283,11 +275,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 9:14",
-          "question": "True or false: King Xerxes turns down Esther's requests this time.",
+          "question": "True or false: King Xerxes turns down Esther's requests.",
           "answers": [
             {
               "text": "True",
@@ -302,7 +294,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Esther 9:14-15",
           "text": "An edict goes out in Susa, and Haman's ten sons are hanged. Then on the fourteenth of Adar, the Jews in Susa come together again.",
@@ -310,7 +302,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 9:15",
@@ -333,23 +325,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
-          "verses": "Esther 9:15",
-          "text": "Once again, they don't lay a hand on the plunder. Friend, that's DISCIPLINE. I can't walk past a cooling rack without 'quality checking' a cookie.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Esther 9:16",
-          "text": "Out in the rest of the provinces, the Jews assemble to defend themselves and rid themselves of their enemies.",
+          "verses": "Esther 9:15-16",
+          "text": "Once again, they don't lay a hand on the plunder. Out in the rest of the provinces, the Jews assemble to defend themselves and rid themselves of their enemies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 9:16",
@@ -372,7 +356,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 9:17",
@@ -391,7 +375,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 9:18",
@@ -414,7 +398,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Esther 9:19",
           "text": "So that's why the Jews out in the villages keep the fourteenth of Adar as a day of joy and feasting.",
@@ -422,7 +406,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 9:19",
@@ -445,11 +429,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "Esther 9:19",
-          "text": "Joy, feasting AND gifts? Friend, I pack cookie boxes all day long and NOBODY has ever sent me one back. But don't hang up your apron yet, because Esther's story isn't done.",
-          "needs_agent_fix": true,
+          "text": "Hang onto your apron, friend, because Esther's story isn't done.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

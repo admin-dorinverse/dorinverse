@@ -182,11 +182,11 @@
               "blank": 2
             },
             {
-              "text": "prophet",
+              "text": "servant",
               "correct": false
             },
             {
-              "text": "priest",
+              "text": "Shepherd",
               "correct": false
             },
             {
@@ -200,20 +200,24 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Chronicles 28:7",
-          "question": "True or false: God promises to establish Solomon's kingdom forever, no matter what Solomon does.",
+          "question": "God promises to establish Solomon's kingdom forever, on one condition. What is it?",
           "answers": [
             {
-              "text": "True",
+              "text": "He resolutely carries out God's commandments",
+              "correct": true
+            },
+            {
+              "text": "He finishes building the house quickly",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He defeats every enemy around Israel",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -226,8 +230,8 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Chronicles 28:8",
-          "text": "Now David tells the whole crowd, in the sight of all Israel and in the hearing of God, to keep and seek out all the commandments of the LORD. In the hearing of God, friend. NOBODY is on mute for that meeting.",
-          "needs_agent_fix": true,
+          "text": "Now David tells the whole crowd, in the sight of all Israel and in the hearing of God, to keep and seek out all the commandments of the LORD. In the hearing of God, friend, NOBODY in that crowd gets to be on mute.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -305,37 +309,56 @@
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "1 Chronicles 28:9-10",
-          "text": "David is straight with him, too: if Solomon forsakes God, He will reject him forever. Then David reminds Solomon that the LORD chose him to build this house and says, “Be strong and do it.”",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Chronicles 28:9",
+          "question": "True or false: David tells Solomon that even if he forsakes the LORD, the LORD will never reject him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "1 Chronicles 28:11-19",
-          "text": "Then David hands Solomon the plans: the portico, the rooms, the treasuries, the divisions of the priests and Levites, and the weight of the gold and silver for every lampstand, table, bowl and FORK, right down to the gold cherubim spreading their wings over the ark. Friend, I've seen a LOT of recipe cards, and not ONE of them told me what the fork should weigh. Then David tells Solomon where all these details came from.",
-          "needs_agent_fix": true,
+          "verses": "1 Chronicles 28:10",
+          "text": "Then David reminds Solomon that the LORD chose him to build a house for the sanctuary and says, “Be strong and do it.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
+          "kind": "story",
+          "verses": "1 Chronicles 28:11-19",
+          "text": "Then David gives Solomon the plans: the portico, the rooms and treasuries, the divisions of the priests and Levites, and the weight of the gold and silver for the lampstands, tables, bowls and forks, right up to the gold cherubim spreading their wings over the ark. Friend, I measure chocolate chips by the mustache-full, and this plan weighs out the gold for every single BOWL. Then David tells Solomon where all these details came from.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Chronicles 28:19",
-          "question": "David says the ___ made all the details of this plan clear to him.",
+          "question": "David tells Solomon where all the details of this plan came from. What does he say?",
           "answers": [
             {
-              "text": "LORD",
+              "text": "The LORD made them clear to him in writing",
               "correct": true
             },
             {
-              "text": "prophets",
+              "text": "His counselors drew them up over many years",
               "correct": false
             },
             {
-              "text": "priests",
+              "text": "He copied them from the old tabernacle plans",
               "correct": false
             }
           ],
@@ -343,15 +366,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "1 Chronicles 28:20",
-          "text": "Then David tells Solomon, “Be strong and courageous, and do it.” That's the second time he's told him to be strong, and when a dad says it twice, friend, you WRITE IT DOWN.",
+          "text": "Then David tells Solomon, “Be strong and courageous, and do it.” That's the second time he's said be strong, and when a step shows up on the recipe card TWICE, friend, you do NOT skip it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Chronicles 28:20",
@@ -367,33 +390,33 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Chronicles 28:20",
-          "question": "David promises Solomon that the LORD will neither fail him nor forsake him. What work does David name in that promise?",
+          "question": "David promises the LORD will neither fail Solomon nor forsake him before all the work for the service of the ___ of the LORD is finished.",
           "answers": [
             {
-              "text": "The service of the house of the LORD",
+              "text": "house",
               "correct": true
             },
             {
-              "text": "The building of his own palace",
+              "text": "city",
               "correct": false
             },
             {
-              "text": "The rebuilding of the city walls",
+              "text": "people",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "1 Chronicles 28:21",
           "text": "And Solomon won't be building this alone. David says the divisions of the priests and Levites are ready for all the service of the house of God.",
@@ -401,30 +424,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Chronicles 28:21",
-          "question": "David also says every ___ man of every skill will be at Solomon's disposal for the work.",
+          "question": "David says the priests and Levites are ready. Who else does he say will be at Solomon's disposal for the work?",
           "answers": [
             {
-              "text": "willing",
+              "text": "Every willing man of every skill",
               "correct": true
             },
             {
-              "text": "hired",
+              "text": "Only the strongest men of Judah",
               "correct": false
             },
             {
-              "text": "foreign",
+              "text": "Workers paid from the royal treasury",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "1 Chronicles 28:21",
           "text": "The officials and all the people are fully at Solomon's command. We'll pause David's big assembly right there, friend, but trust me, it's not over.",

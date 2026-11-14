@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Chronicles 32:22-24",
-          "text": "Friend, meet Hezekiah, king of Judah. The LORD has saved him and Jerusalem from the king of Assyria, and now all the nations look up to him. Then, in those days, Hezekiah becomes mortally ill.",
+          "verses": "2 Chronicles 32:24",
+          "text": "Friend, meet Hezekiah, king of Judah. The LORD has saved him and Jerusalem from the king of Assyria, and now he's exalted in the eyes of all nations (2 Chronicles 32:22-23). Then, in those days, Hezekiah becomes mortally ill.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -58,9 +58,9 @@
         {
           "card": 4,
           "kind": "story",
-          "verses": "2 Chronicles 32:24-25",
-          "text": "That's favor from the LORD, friend. When I got pulled out of that junk drawer, I said thank you so many times my OVENS started saying \"you're welcome\" back. But Hezekiah doesn't repay the favor shown to him.",
-          "needs_agent_fix": true,
+          "verses": "2 Chronicles 32:25",
+          "text": "When the Most High called me out of that junk drawer, I said thank you so many times my OVENS started saying \"you're welcome.\" But Hezekiah doesn't repay the favor shown to him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -68,7 +68,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 32:25",
-          "question": "Hezekiah doesn't repay the favor the LORD showed him. Why not?",
+          "question": "Hezekiah doesn't repay the favor shown to him. Why not?",
           "answers": [
             {
               "text": "His heart is proud",
@@ -89,20 +89,20 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 32:25",
-          "question": "Because Hezekiah's heart is proud, wrath comes upon him and upon Judah and ___.",
+          "question": "Because Hezekiah's heart is proud, wrath comes. Who does it come upon?",
           "answers": [
             {
-              "text": "Jerusalem",
+              "text": "Hezekiah and Judah and Jerusalem",
               "correct": true
             },
             {
-              "text": "Samaria",
+              "text": "Only Hezekiah himself",
               "correct": false
             },
             {
-              "text": "Egypt",
+              "text": "Only the leaders of Judah",
               "correct": false
             }
           ],
@@ -154,20 +154,20 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 32:26",
-          "question": "Because Hezekiah and the people humble themselves, the wrath of the LORD doesn't come upon them during the days of ___.",
+          "question": "Hezekiah and the people of Jerusalem humble themselves. What happens with the LORD's wrath?",
           "answers": [
             {
-              "text": "Hezekiah",
+              "text": "It does not come in Hezekiah's days",
               "correct": true
             },
             {
-              "text": "Solomon",
+              "text": "It comes on them all the same",
               "correct": false
             },
             {
-              "text": "Ahaz",
+              "text": "It falls on Assyria instead",
               "correct": false
             }
           ],
@@ -192,38 +192,34 @@
           "card": 2,
           "kind": "story",
           "verses": "2 Chronicles 32:30",
-          "text": "Hezekiah's a builder too. At the Spring of Gihon, he blocks the upper outlet and sends that water somewhere new.",
+          "text": "Hezekiah's a builder too. He blocks the upper outlet of the Spring of Gihon and channels the water down to the west side of the City of David.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Chronicles 32:30",
-          "question": "Hezekiah blocks the upper outlet of the Spring of Gihon and channels the water down to the ___ side of the City of David.",
+          "question": "With all his riches and building, Hezekiah struggles in most of what he does.",
           "answers": [
             {
-              "text": "west",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "east",
-              "correct": false
-            },
-            {
-              "text": "north",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "2 Chronicles 32:30-31",
-          "text": "Hezekiah prospers in all he does. Then visitors show up: ambassadors sent by the rulers of Babylon.",
+          "verses": "2 Chronicles 32:31",
+          "text": "Then visitors show up: ambassadors sent by the rulers of Babylon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -253,16 +249,20 @@
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "2 Chronicles 32:31",
-          "question": "While the ambassadors from Babylon are there, God leaves Hezekiah alone to test him, so He might know all that is in Hezekiah's heart.",
+          "question": "When the ambassadors from Babylon come, God leaves Hezekiah alone to ___ him, that He might know all that is in Hezekiah's heart.",
           "answers": [
             {
-              "text": "True",
+              "text": "test",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "protect",
+              "correct": false
+            },
+            {
+              "text": "punish",
               "correct": false
             }
           ],
@@ -273,12 +273,20 @@
           "card": 7,
           "kind": "story",
           "verses": "2 Chronicles 32:32",
-          "text": "The rest of Hezekiah's acts and his deeds of loving devotion are written in the vision of the prophet Isaiah son of Amoz, in the Book of the Kings of Judah and Israel. My whole life story? Five letters carved in a handle. D-O-R-I-N. That's it. That's the WHOLE book.",
-          "needs_agent_fix": true,
+          "text": "The rest of Hezekiah's acts and his deeds of loving devotion are written in the vision of the prophet Isaiah son of Amoz, in the Book of the Kings of Judah and Israel.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
+          "kind": "story",
+          "verses": "2 Chronicles 32:33",
+          "text": "And then Hezekiah rests with his fathers.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 32:33",
@@ -301,7 +309,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 32:33",
@@ -320,26 +328,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 32:33",
-          "question": "After Hezekiah dies, his son ___ reigns in his place.",
+          "question": "After Hezekiah dies, who reigns in his place?",
           "answers": [
             {
-              "text": "Manasseh",
+              "text": "His son Manasseh",
               "correct": true
             },
             {
-              "text": "Amon",
+              "text": "His steward Eliakim",
               "correct": false
             },
             {
-              "text": "Jotham",
+              "text": "His scribe Shebna",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

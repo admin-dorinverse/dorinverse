@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Chronicles 18:28-19:1",
-          "text": "Jehoshaphat, king of Judah, just went to war alongside Ahab, king of Israel, and Ahab didn't make it home. Jehoshaphat did. He's back in Jerusalem, safe.",
+          "verses": "2 Chronicles 19:1",
+          "text": "Jehoshaphat, king of Judah, just went to war alongside Ahab, king of Israel, and Ahab didn't make it home (2 Chronicles 18:28-34). Jehoshaphat did. He's back in Jerusalem, safe.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,7 +17,7 @@
           "card": 2,
           "kind": "story",
           "verses": "2 Chronicles 19:2",
-          "text": "He's home, and who goes out to confront him? Jehu son of Hanani the seer, and friend, that man did NOT bring a welcome-home cookie box.",
+          "text": "He's home, and who goes out to confront him? Jehu son of Hanani the seer (not King Jehu of Israel), and friend, that man did NOT bring a welcome-home cookie box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -70,14 +70,6 @@
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "2 Chronicles 19:3",
-          "text": "OUCH. The wrath of the LORD. But hold on, baker, Jehu's not done yet, because now he looks at the other side of the king's record.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 19:3",
@@ -96,7 +88,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 19:3",
@@ -119,7 +111,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "2 Chronicles 19:3",
           "text": "Jehu adds that Jehoshaphat has set his heart on seeking God. That's your boss saying \"We need to talk\" and then \"Also, GREAT work this year\" in the same meeting.",
@@ -127,22 +119,34 @@
           "needs_human_decision": false
         },
         {
+          "card": 8,
+          "kind": "story",
+          "verses": "2 Chronicles 19:4",
+          "text": "Jehoshaphat lives in Jerusalem, and once again he goes out among the people, from Beersheba all the way to the hill country of Ephraim.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 19:4",
-          "question": "When Jehoshaphat once again goes out among the people, from Beersheba to the hill country of Ephraim, he gathers soldiers for war.",
+          "question": "Jehoshaphat goes out among the people from Beersheba to the hill country of Ephraim. What does he do there?",
           "answers": [
             {
-              "text": "True",
+              "text": "He turns the people back to God",
+              "correct": true
+            },
+            {
+              "text": "He gathers soldiers for war",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He collects taxes for the palace",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -179,18 +183,10 @@
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "2 Chronicles 19:6-7",
-          "text": "The LORD is with them when they render judgment, he says. And now, may the fear of the LORD be upon them, and they'd better be careful what they do.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 19:7",
-          "question": "Jehoshaphat tells the judges to be careful. What reason does he give about the LORD?",
+          "question": "Jehoshaphat tells the judges the LORD is with them when they judge, and may the fear of the LORD be upon them. Why does he tell them to be careful?",
           "answers": [
             {
               "text": "With the LORD there is no partiality or bribery",
@@ -209,7 +205,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "2 Chronicles 19:7-8",
           "text": "Nobody's slipping the judge a cookie box under the table, not even one of mine, and baker, mine are GOOD. Then Jehoshaphat appoints judges in Jerusalem too, to judge on behalf of the LORD and settle disputes.",
@@ -217,43 +213,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 19:8",
-          "question": "In Jerusalem, Jehoshaphat appoints some of the Levites, ___ and heads of the Israelite families to judge on behalf of the LORD.",
-          "answers": [
-            {
-              "text": "priests",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "scribes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "2 Chronicles 19:9-10",
-          "text": "He charges them to serve faithfully and wholeheartedly in the fear of the LORD. Every dispute from their brothers in the cities, bloodshed or some other violation of the law, comes to THEM, and friend, that's being the one person everybody tags in the group chat when there's an argument.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Chronicles 19:10",
-          "question": "When a dispute comes from their brothers in the cities, Jehoshaphat tells the Jerusalem judges to warn them.",
+          "verses": "2 Chronicles 19:8",
+          "question": "The judges Jehoshaphat appoints in Jerusalem to judge on behalf of the LORD include some of the priests.",
           "answers": [
             {
               "text": "True",
@@ -268,22 +232,73 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 15,
+          "kind": "story",
+          "verses": "2 Chronicles 19:9-10",
+          "text": "He charges them to serve faithfully and wholeheartedly in the fear of the LORD. Every dispute from their brothers in the cities comes to THEM, and friend, that's being the one person everybody tags in the group chat when there's an argument.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Chronicles 19:10",
-          "question": "Why does Jehoshaphat want the Jerusalem judges to warn the people who bring disputes?",
+          "question": "Jehoshaphat tells the Jerusalem judges they will hear only small disputes, never cases of bloodshed.",
           "answers": [
             {
-              "text": "So they won't incur guilt before the LORD",
-              "correct": true
-            },
-            {
-              "text": "So the courts won't be burdened with cases",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "So the king won't be troubled by disputes",
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Chronicles 19:10",
+          "question": "Jehoshaphat tells the Jerusalem judges to warn the people who bring disputes, so that they will not incur ___ before the LORD.",
+          "answers": [
+            {
+              "text": "guilt",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "debt",
+              "correct": false
+            },
+            {
+              "text": "shame",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Chronicles 19:11",
+          "question": "Jehoshaphat puts two men over the Jerusalem judges: Amariah the chief priest and Zebadiah son of Ishmael, the ruler of the house of Judah. Who is over all that pertains to the LORD?",
+          "answers": [
+            {
+              "text": "Amariah the chief priest",
+              "correct": true
+            },
+            {
+              "text": "Zebadiah the ruler",
+              "correct": false
+            },
+            {
+              "text": "The two of them together",
               "correct": false
             }
           ],
@@ -292,34 +307,9 @@
         },
         {
           "card": 19,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "2 Chronicles 19:11",
-          "question": "Jehoshaphat names who's over the judges. Amariah the chief priest is over all that pertains to the ___, and Zebadiah son of Ishmael, ruler of the house of Judah, is over all that pertains to the ___.",
-          "answers": [
-            {
-              "text": "LORD",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "king",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "army",
-              "correct": false
-            },
-            {
-              "text": "harvest",
-              "correct": false
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            }
-          ],
+          "text": "Zebadiah is over all that pertains to the king, and the Levites will serve as officers before the judges.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -327,7 +317,7 @@
           "card": 20,
           "kind": "story",
           "verses": "2 Chronicles 19:11",
-          "text": "The Levites will serve as officers, and Jehoshaphat sends them off with this: \"Act resolutely; may the LORD be with the upright!\" We'll leave King Jehoshaphat right there for now, friend, but his story is still in the oven.",
+          "text": "Then Jehoshaphat sends them off with this: \"Act resolutely; may the LORD be with the upright!\" We'll leave King Jehoshaphat right there for now, friend, but his story is still in the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

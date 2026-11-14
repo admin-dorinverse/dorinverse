@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Chronicles 25:11-17",
-          "text": "Amaziah, king of Judah, just beat Edom, bowed down to Edom's gods and told a prophet to stop talking. Now he takes counsel and sends word to Jehoash, king of Israel. Friend, this is the man who just told a PROPHET to hush, so I'm already nervous about what's in that message.",
+          "verses": "2 Chronicles 25:17",
+          "text": "Amaziah, king of Judah, has just beaten Edom (2 Chronicles 25:11), and he told a prophet to stop talking (2 Chronicles 25:16). Now he takes counsel and sends word to Jehoash, king of Israel. Friend, a king fresh off a big win sending a message to ANOTHER king, and I'm already nervous.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 25:18",
-          "text": "Jehoash answers with a little story: a thistle in Lebanon sends a message to a cedar in Lebanon, asking for the cedar's daughter as a wife for the thistle's son. Friend, a THISTLE asking a CEDAR? That's one little sprinkle asking the whole bakery to marry into its family.",
-          "needs_agent_fix": true,
+          "text": "Jehoash answers with a little story: a thistle in Lebanon asks a cedar in Lebanon to give its daughter to the thistle's son in marriage. A THISTLE. Asking a CEDAR. Friend, that's one crumb asking the whole cookie box for its daughter's hand.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "2 Chronicles 25:19",
-          "text": "Then Jehoash drops the little story and gets personal: Amaziah, you have said you defeated Edom. Friend, I think we all know who the thistle is now.",
+          "text": "Then Jehoash drops the little story and gets personal: Amaziah, you have said you defeated Edom. Friend, nobody wants their own brag read back to them out loud.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,15 +80,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 25:19",
-          "question": "Jehoash tells Amaziah that beating Edom has made his heart humble.",
+          "question": "Jehoash tells Amaziah, king of Judah, that beating Edom has made his heart proud.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -183,7 +183,7 @@
           "question": "At Beth-shemesh, Judah is routed before Israel. What do Judah's soldiers do?",
           "answers": [
             {
-              "text": "Every man flees to his own home",
+              "text": "They all scatter and run away",
               "correct": true
             },
             {
@@ -245,7 +245,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 25:24",
-          "question": "Jehoash heads back to Samaria with the gold, the silver and the articles from the house of God and the palace treasuries, plus some ___ too.",
+          "question": "Jehoash, king of Israel, heads back to Samaria with the gold, the silver and the articles from the house of God and the palace treasuries, plus some ___.",
           "answers": [
             {
               "text": "hostages",

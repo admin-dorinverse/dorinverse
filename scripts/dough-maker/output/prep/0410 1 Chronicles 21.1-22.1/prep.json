@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "1 Chronicles 21:2",
-          "text": "So David tells Joab, the commander of his army (1 Chronicles 18:15), and the troop commanders to go count the Israelites from Beersheba to Dan and bring him the number. And I bet Joab gives him THE look, the same one your coworker gives when the boss says, \"Quick favor.\"",
+          "text": "So David tells Joab, the commander of his army (1 Chronicles 18:15), and the troop commanders to go count the Israelites from Beersheba to Dan and bring him the number. And I bet Joab feels the dread you get when the boss says, \"Quick favor,\" and you KNOW it isn't.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -99,7 +99,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Chronicles 21:6",
-          "question": "Joab's count leaves two tribes out: ___ and ___.",
+          "question": "Joab's count leaves out two tribes: Benjamin and ___.",
           "answers": [
             {
               "text": "Levi",
@@ -107,32 +107,23 @@
               "blank": 1
             },
             {
-              "text": "Benjamin",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "Judah",
-              "correct": false
-            },
-            {
-              "text": "Dan",
-              "correct": false
-            },
-            {
               "text": "Ephraim",
+              "correct": false
+            },
+            {
+              "text": "Asher",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Chronicles 21:6",
-          "question": "Joab leaves Levi and Benjamin out of the count because King David's command is detestable to him.",
+          "question": "Joab leaves two tribes out of the count because King David's command is detestable to him.",
           "answers": [
             {
               "text": "True",
@@ -144,7 +135,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
@@ -177,16 +168,16 @@
           "card": 11,
           "kind": "story",
           "verses": "1 Chronicles 21:8",
-          "text": "Nope. David tells God, \"I have sinned greatly because I have done this thing.\" No excuses. No \"well, TECHNICALLY Joab did the counting.\"",
-          "needs_agent_fix": true,
+          "text": "David tells God, \"I have sinned greatly because I have done this thing.\" No \"well, TECHNICALLY Joab did the counting,\" just a king begging God to take away his iniquity.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "1 Chronicles 21:9",
-          "text": "Then the LORD gives Gad, David's seer, a message to carry to David.",
-          "needs_agent_fix": true,
+          "text": "Then the LORD instructs Gad, David's seer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -252,7 +243,8 @@
           "answers": [
             {
               "text": "mercies",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "armies",
@@ -319,7 +311,7 @@
           "card": 4,
           "kind": "story",
           "verses": "1 Chronicles 21:16",
-          "text": "David looks up and sees the angel of the LORD standing between heaven and earth, with a drawn sword stretched out over Jerusalem. Friend, that is NOT a snooze-button moment.",
+          "text": "David looks up and sees the angel of the LORD standing between heaven and earth, with a drawn sword in his hand stretched out over Jerusalem.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -350,7 +342,7 @@
           "card": 6,
           "kind": "story",
           "verses": "1 Chronicles 21:17",
-          "text": "Then David prays. He says he's the one who gave the order to count the people, and then he asks, \"But these sheep, what have they done?\"",
+          "text": "Then David speaks to God. He says he's the one who gave the order to count the people, and then he asks, \"But these sheep, what have they done?\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -390,7 +382,8 @@
           "answers": [
             {
               "text": "Ornan",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "Boaz",
@@ -415,17 +408,21 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "1 Chronicles 21:20",
-          "question": "Ornan's four sons are with him at the threshing floor, and they run off to tell the king.",
+          "question": "Ornan's four sons are with him when he turns and sees the angel. What do the sons do?",
           "answers": [
             {
-              "text": "True",
+              "text": "They hide themselves",
+              "correct": true
+            },
+            {
+              "text": "They run to tell the king",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "They bow down to the angel",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -434,21 +431,13 @@
         {
           "card": 12,
           "kind": "story",
-          "verses": "1 Chronicles 21:20",
-          "text": "Nope, those four sons hide themselves, and I can't blame them ONE bit. If an angel with a drawn sword showed up at my bakery, you'd find me face-first in the chocolate chips, gold base and all.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "story",
           "verses": "1 Chronicles 21:21-22",
           "text": "Then David arrives, and Ornan bows facedown before him. David asks to buy the threshing floor for the full price, so he can build the altar and the plague can be halted.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Chronicles 21:23",
@@ -471,7 +460,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Chronicles 21:24",
@@ -494,7 +483,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "1 Chronicles 21:25-26",
           "text": "So David pays Ornan six hundred shekels of gold for the site. Then he builds an altar there, offers burnt offerings and peace offerings, and calls on the LORD.",
@@ -502,7 +491,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "1 Chronicles 21:26",
@@ -510,7 +499,8 @@
           "answers": [
             {
               "text": "fire",
-              "correct": true
+              "correct": true,
+              "blank": 1
             },
             {
               "text": "rain",
@@ -525,7 +515,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Chronicles 21:27",
@@ -544,15 +534,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "1 Chronicles 21:28-30",
-          "text": "David sees the LORD has answered him, so he offers sacrifices right there. The tabernacle Moses made is at the high place in Gibeon, but David can't go there to inquire of God, because he's afraid of the sword of the angel of the LORD.",
+          "text": "When David sees the LORD has answered him, he offers sacrifices right there. The tabernacle that Moses, Israel's leader, made in the wilderness is at the high place in Gibeon, but David can't go there to inquire of God, because he's afraid of the sword of the angel of the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Chronicles 22:1",

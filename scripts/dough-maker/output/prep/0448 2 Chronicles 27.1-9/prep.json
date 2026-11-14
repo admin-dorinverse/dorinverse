@@ -9,39 +9,35 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 27:1",
-          "text": "A new king takes the throne in Jerusalem: Jotham, twenty-five years old. His mother is Jerushah, daughter of Zadok. Twenty-five and running a KINGDOM, while it takes me three tries just to set an oven timer.",
-          "needs_agent_fix": true,
+          "text": "King Uzziah of Judah went into the temple to burn incense, a job only for the priests, and leprosy broke out on his forehead (2 Chronicles 26:16-21). While he lived cut off, his son Jotham had charge of the palace and governed the people (2 Chronicles 26:21). Now Jotham becomes king at twenty-five, and he reigns in Jerusalem sixteen years.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 27:1",
-          "question": "King Jotham reigns in Jerusalem for ___ years.",
-          "answers": [
-            {
-              "text": "sixteen",
-              "correct": true
-            },
-            {
-              "text": "forty",
-              "correct": false
-            },
-            {
-              "text": "seven",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 27:2",
+          "text": "So how does Jotham do? He does what's right in the eyes of the LORD, just like his father Uzziah, and that's a GOOD start, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "2 Chronicles 27:2",
-          "text": "So how does Jotham do? He does what's right in the eyes of the LORD, just like his father Uzziah. Good start, friend. GOOD start.",
-          "needs_agent_fix": true,
+          "question": "King Jotham goes into the temple of the LORD, the way his father Uzziah did.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,88 +45,65 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 27:2",
-          "question": "Jotham does what's right like his father Uzziah. But the text adds one place Jotham does not enter. Where?",
+          "question": "King Jotham does what's right in the eyes of the LORD. What about the people of Judah?",
           "answers": [
             {
-              "text": "The temple of the LORD",
+              "text": "They still behave corruptly",
               "correct": true
             },
             {
-              "text": "The palace of Samaria",
+              "text": "They turn back to the LORD",
               "correct": false
             },
             {
-              "text": "The city of Damascus",
+              "text": "They tear down their idols",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 27:2",
-          "question": "While Jotham is king, the people of Judah behave ___.",
-          "answers": [
-            {
-              "text": "corruptly",
-              "correct": true
-            },
-            {
-              "text": "faithfully",
-              "correct": false
-            },
-            {
-              "text": "humbly",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 27:3",
+          "text": "Then Jotham rebuilds the Upper Gate of the house of the LORD and works extensively on the wall at the hill of Ophel. EXTENSIVELY, friend, this man did NOT hit the snooze button.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "2 Chronicles 27:3",
-          "text": "Then Jotham rebuilds the Upper Gate of the house of the LORD and works extensively on the wall at the hill of Ophel. EXTENSIVELY, friend. That's a man who did NOT hit the snooze button.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Chronicles 27:4",
+          "question": "Jotham builds cities in the hill country of Judah, and out in the forests he builds fortresses and ___.",
+          "answers": [
+            {
+              "text": "towers",
+              "correct": true
+            },
+            {
+              "text": "altars",
+              "correct": false
+            },
+            {
+              "text": "barns",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 27:4",
-          "question": "Jotham keeps building, with cities in the hill country of Judah. Out in the forests, what does he put up?",
-          "answers": [
-            {
-              "text": "Fortresses and towers",
-              "correct": true
-            },
-            {
-              "text": "Altars and shrines",
-              "correct": false
-            },
-            {
-              "text": "Barns and storehouses",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 27:5",
+          "text": "Jotham isn't only a builder, friend. He also goes to war against the king of the Ammonites, a nation across the Jordan.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "2 Chronicles 27:5",
-          "text": "Jotham isn't only a builder. He also wages war against the king of the Ammonites.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 27:5",
@@ -149,85 +122,77 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "2 Chronicles 27:5",
+          "text": "And that year the Ammonites give him a hundred talents of silver, ten thousand cors of wheat and ten thousand cors of barley. TEN THOUSAND cors of wheat, friend, and I have never seen that much flour in one place in my LIFE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "2 Chronicles 27:5",
-          "text": "And that year the Ammonites pay up: a hundred talents of silver, ten thousand cors of wheat and ten thousand cors of barley. TEN THOUSAND cors of wheat? I bake for a living, friend, and I have NEVER seen that much flour in one place.",
-          "needs_agent_fix": true,
+          "question": "After that first year, the Ammonites never pay King Jotham again.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 27:5",
-          "question": "The Ammonites pay Jotham the same silver, wheat and barley again in the second and third years.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 27:6",
+          "text": "So Jotham grows powerful, and the text tells us exactly why. Lean in, friend, because this is the whole recipe right here.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "2 Chronicles 27:6",
-          "text": "So Jotham grows powerful, and the text tells us exactly why. Lean in, friend, because this is the whole recipe right here.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 27:6",
           "question": "King Jotham grows powerful. Why?",
           "answers": [
             {
-              "text": "He ordered his ways before the LORD his God",
+              "text": "He kept his ways right before God",
               "correct": true
             },
             {
-              "text": "He brought many offerings before the LORD his God",
+              "text": "He brought God many offerings",
               "correct": false
             },
             {
-              "text": "He made peace with all the kings around him",
+              "text": "He made peace with the kings around him",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "2 Chronicles 27:7, 9",
+          "text": "The rest of what Jotham did, all his wars and his ways, is written in the Book of the Kings of Israel and Judah. Sixteen years of building and battles, and then Jotham rests with his fathers.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "2 Chronicles 27:7",
-          "text": "The rest of what Jotham did, all his wars and his ways, is written in the Book of the Kings of Israel and Judah. All his WARS? We heard about ONE! The rest are in that book, friend.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "2 Chronicles 27:8-9",
-          "text": "Twenty-five when he became king, sixteen years reigning in Jerusalem. Then Jotham rests with his fathers.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 27:9",
@@ -246,15 +211,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 27:9",
-          "question": "After Jotham, his son Ahaz reigns in his place.",
+          "question": "After King Jotham, his son Ahaz reigns in his place.",
           "answers": [
             {
               "text": "True",
@@ -265,7 +230,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

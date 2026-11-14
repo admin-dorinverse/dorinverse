@@ -16,20 +16,21 @@
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 35:2",
-          "question": "Josiah gets the priests ready for the service of the house of the LORD. Besides appointing them to their duties, what does he do for them?",
+          "question": "Josiah appoints the priests to their duties and ___ them in the service of the house of the LORD.",
           "answers": [
             {
-              "text": "He encourages them",
-              "correct": true
+              "text": "encourages",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He tests them",
+              "text": "tests",
               "correct": false
             },
             {
-              "text": "He pays them",
+              "text": "warns",
               "correct": false
             }
           ],
@@ -40,7 +41,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 35:3",
-          "text": "Then Josiah turns to the Levites, the ones who taught all Israel and were holy to the LORD. He gives them instructions about the holy ark, and then tells them to serve the LORD their God and His people Israel.",
+          "text": "Then Josiah turns to the Levites, the ones who taught all Israel and were holy to the LORD. He tells them to put the holy ark in the temple built by Solomon son of David king of Israel, and to serve the LORD their God and His people Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +50,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 35:3",
-          "question": "Josiah tells the Levites the ark is still to be carried around on their shoulders.",
+          "question": "Josiah tells the Levites the ark is to be carried around on their shoulders.",
           "answers": [
             {
               "text": "True",
@@ -65,53 +66,29 @@
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 35:4",
-          "question": "Josiah tells the Levites to prepare by families in their divisions, following the instructions written by David king of Israel and ___ his son.",
-          "answers": [
-            {
-              "text": "Solomon",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Absalom",
-              "correct": false
-            },
-            {
-              "text": "Adonijah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
-          "verses": "2 Chronicles 35:5-6",
-          "text": "Josiah's got the Levites standing in the Holy Place by family divisions, slaughtering the Passover lambs and consecrating themselves. It's a wedding seating chart, friend, and the guest list is a whole NATION.",
+          "verses": "2 Chronicles 35:4-5",
+          "text": "Josiah tells them to prepare by families in their divisions, following the instructions written by David and his son Solomon, and to stand in the Holy Place by the divisions of the families. Friend, that's the biggest seating chart I've ever heard of, and SOMEBODY get this man a clipboard.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 35:6",
-          "question": "Josiah tells the Levites to make preparations for somebody besides themselves. Who?",
+          "question": "Josiah tells the Levites to slaughter the Passover lambs, consecrate themselves, and make preparations for others too. For whom?",
           "answers": [
             {
               "text": "Their fellow countrymen",
               "correct": true
             },
             {
-              "text": "The royal bodyguards",
+              "text": "The envoys from Babylon",
               "correct": false
             },
             {
-              "text": "The visiting envoys",
+              "text": "The Gibeonites",
               "correct": false
             }
           ],
@@ -119,7 +96,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 35:6",
@@ -138,7 +115,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 35:7",
           "text": "Now, a Passover for everybody who shows up takes animals. A LOT of animals, friend, more than all the chocolate chips I've ever owned, and I have owned a SHAMEFUL amount of chocolate chips.",
@@ -146,7 +123,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 35:7",
@@ -169,10 +146,33 @@
           "needs_human_decision": false
         },
         {
+          "card": 10,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Chronicles 35:8",
+          "question": "Josiah isn't the only one giving. His officials contribute to the people, priests and Levites too. How do they give?",
+          "answers": [
+            {
+              "text": "Willingly",
+              "correct": true
+            },
+            {
+              "text": "Grudgingly",
+              "correct": false
+            },
+            {
+              "text": "In secret",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 11,
           "kind": "story",
           "verses": "2 Chronicles 35:8-9",
-          "text": "And the king's not the only one giving, because his officials chip in willingly too. Hilkiah, Zechariah and Jehiel, chief officials of the house of God, give the priests 2,600 Passover offerings and 300 bulls, and the officers of the Levites give the Levites 5,000 Passover offerings and 500 bulls.",
+          "text": "The chief officials of the house of God give the priests thousands of Passover offerings and hundreds of bulls, and the officers of the Levites do the same for the Levites. Everybody's bringing something to this one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -245,15 +245,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 35:13",
-          "question": "The other holy offerings are boiled in pots, kettles and bowls, then left there until the next morning before the people get any.",
+          "question": "After the other holy offerings are boiled in pots, kettles and bowls, they're brought quickly to all the people.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -262,8 +262,8 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "2 Chronicles 35:14",
-          "text": "Everybody's been served, but the priests, the descendants of Aaron, are still offering burnt offerings and fat until nightfall. That's me on a big order day: every cookie box in the bakery packed except mine.",
+          "verses": "2 Chronicles 35:13-14",
+          "text": "Everybody's been served, but the priests, the descendants of Aaron, are still offering burnt offerings and fat until nightfall. That's me on a big baking day: every batch out of the oven, and I still haven't had a single crumb.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -272,18 +272,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 35:14",
-          "question": "The priests are busy at the altar until nightfall. Who makes preparations for them?",
+          "question": "The priests are busy offering burnt offerings and fat until nightfall. Who makes preparations for them?",
           "answers": [
             {
               "text": "The Levites",
               "correct": true
             },
             {
-              "text": "The royal servants",
+              "text": "The temple servants",
               "correct": false
             },
             {
-              "text": "The temple guards",
+              "text": "The Rechabites",
               "correct": false
             }
           ],
@@ -294,7 +294,7 @@
           "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 35:15",
-          "text": "Meanwhile, the singers, the descendants of Asaph, are at their stations, just as David, Asaph, Heman and Jeduthun the king's seer commanded. Asaph and Heman were musicians back in David's day (1 Chronicles 15:19).",
+          "text": "Meanwhile, the singers, the descendants of Asaph, are at their stations.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -303,18 +303,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 35:15",
-          "question": "The gatekeepers don't need to leave their posts at the gates. Why not?",
+          "question": "The singers, the descendants of Asaph, are at their stations by a king's command. Whose?",
           "answers": [
             {
-              "text": "Their fellow Levites prepare for them",
+              "text": "King David's",
               "correct": true
             },
             {
-              "text": "They fast through the whole Passover",
+              "text": "King Hezekiah's",
               "correct": false
             },
             {
-              "text": "The king sends their share to the gates",
+              "text": "King Jehoshaphat's",
               "correct": false
             }
           ],
@@ -324,52 +324,36 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "2 Chronicles 35:16",
-          "text": "So on that day the entire service of the LORD is carried out, the Passover and the burnt offerings on the altar, just as King Josiah commanded. I can't get through ONE Saturday without forgetting the sprinkles, and this man pulled off a whole nation's Passover.",
+          "verses": "2 Chronicles 35:15",
+          "text": "And the gatekeepers at each gate don't need to leave their posts, because their fellow Levites make preparations for them.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 35:17",
-          "question": "The Israelites who are there observe the Passover, as well as the Feast of Unleavened Bread for ___ days.",
-          "answers": [
-            {
-              "text": "seven",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "three",
-              "correct": false
-            },
-            {
-              "text": "forty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 35:16",
+          "text": "So on that day the entire service of the LORD is carried out, the Passover and the burnt offerings on the altar, just as King Josiah commanded. Friend, when every job on the list gets done just like the boss said, I call that a GOOD day at work.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "2 Chronicles 35:18",
-          "question": "Israel hasn't seen a Passover like this one since the days of which prophet?",
+          "verses": "2 Chronicles 35:17",
+          "question": "Along with the Passover, the Israelites who are present observe the Feast of Unleavened Bread. For how long?",
           "answers": [
             {
-              "text": "Samuel",
+              "text": "Seven days",
               "correct": true
             },
             {
-              "text": "Elijah",
+              "text": "Three days",
               "correct": false
             },
             {
-              "text": "Elisha",
+              "text": "Forty days",
               "correct": false
             }
           ],
@@ -379,17 +363,22 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "2 Chronicles 35:18",
-          "question": "One of the earlier kings of Israel observed a Passover just like Josiah's.",
+          "question": "No Passover like Josiah's has been observed in Israel since the days of ___ the prophet.",
           "answers": [
             {
-              "text": "True",
+              "text": "Samuel",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Elijah",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Elisha",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,

@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "2 Chronicles 5:1",
           "text": "It's DONE, friend. Solomon, king of Israel, has finished all the work on the house of the LORD. I can't finish a batch without sneaking three cookies, and this man finished a TEMPLE.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 5:2",
-          "text": "Then Solomon calls in everybody who's anybody. He gathers the elders of Israel in Jerusalem: all the tribal heads and family leaders.",
-          "needs_agent_fix": true,
+          "text": "Then Solomon calls in everybody who's anybody to Jerusalem: the elders of Israel, all the tribal heads and family leaders. He needs them to bring something holy up from Zion, the City of David.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -65,65 +65,58 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Chronicles 5:3",
-          "text": "All the men of Israel come together to the king at the feast in the seventh month. Friend, I've watched four people in a group chat take two WEEKS to pick a day, and Solomon gets a whole nation into one city.",
-          "needs_agent_fix": true,
+          "text": "All the men of Israel come together to the king at the feast in the seventh month. A group chat of four people can take two WEEKS to pick a day, and Solomon gets all the men of Israel in one place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "2 Chronicles 5:4",
-          "question": "When all the elders of Israel have arrived, the Levites take up the ark.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "All the elders of Israel have arrived. Now it's time to move the ark.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 5:5",
-          "question": "The ark is on the move, but it isn't going up alone. What else do the Levitical priests carry up with it?",
+          "type": "true_false",
+          "verses": "2 Chronicles 5:4",
+          "question": "With all the elders gathered, King Solomon takes up the ark himself.",
           "answers": [
             {
-              "text": "The Tent of Meeting and its furnishings",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The bronze Sea and its twelve oxen",
-              "correct": false
-            },
-            {
-              "text": "The gold lampstands and the tables",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
+          "kind": "story",
+          "verses": "2 Chronicles 5:5",
+          "text": "The Levitical priests carry the ark up, and with it comes the Tent of Meeting and all its sacred furnishings.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 5:6",
-          "question": "Right there before the ark, King Solomon and the whole congregation sacrifice so many sheep and oxen that they could not be ___.",
+          "question": "Right there before the ark, King Solomon and the whole congregation sacrifice so many sheep and oxen that they can't be ___.",
           "answers": [
             {
               "text": "counted",
@@ -139,19 +132,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "2 Chronicles 5:6-7",
-          "text": "So many nobody could count them, and I lose count of chocolate chips at about forty, so I'd have been NO help. Then the priests carry the ark of the covenant of the LORD into the temple, to its place.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "2 Chronicles 5:6-7",
+          "text": "So many nobody could count them, and I lose count of chocolate chips at about forty, so I'd have been NO help. Then the priests carry the ark of the covenant of the LORD into the temple, to its place.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 5:7",
@@ -170,34 +163,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 5:7",
-          "question": "In the Most Holy Place, the ark sits beneath the wings of the cherubim.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "2 Chronicles 5:8-9",
-          "text": "The cherubim spread their wings over the ark and its poles. The poles are long enough that their ends show from in front of the inner sanctuary but not from outside the Holy Place, and the writer says they're there to this day.",
-          "needs_agent_fix": true,
+          "verses": "2 Chronicles 5:7-9",
+          "text": "There the ark rests beneath the wings of the cherubim, which spread over the ark and its poles. The poles are long enough that their ends show from in front of the inner sanctuary but not from outside the Holy Place, and they were still there when this was written.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -212,7 +186,7 @@
               "correct": true
             },
             {
-              "text": "The gold that David dedicated",
+              "text": "The high priest's robes",
               "correct": false
             },
             {
@@ -220,7 +194,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -228,7 +202,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 5:10",
-          "question": "The two tablets inside the ark were placed there by ___.",
+          "question": "At Horeb, where the LORD made a covenant with the Israelites after they came out of Egypt, the two tablets were placed in the ark by ___.",
           "answers": [
             {
               "text": "Moses",
@@ -244,15 +218,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "2 Chronicles 5:10",
-          "text": "Moses, Israel's leader, put them in at Horeb, where the LORD made a covenant with the Israelites after they came out of Egypt. Nothing else in there, friend: no takeout menus, no dead batteries, no mystery key, and as a stamper who spent years in a junk drawer, I RESPECT that.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -265,48 +231,24 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 5:11",
-          "text": "Every priest there has consecrated himself, no matter what his division, so NOBODY is sitting this one out. Then the priests come out of the Holy Place.",
-          "needs_agent_fix": true,
+          "text": "Every priest who's there has consecrated himself, whatever his division. Then the priests come out of the Holy Place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "2 Chronicles 5:12",
-          "text": "The Levitical singers take their spot on the east side of the altar: Asaph, Heman, Jeduthun, and their sons and relatives, in fine linen with cymbals, harps and lyres. Friend, the loudest music my old junk drawer ever had was the dead batteries rattling when somebody slammed it shut.",
-          "needs_agent_fix": true,
+          "text": "The Levitical singers, Asaph, Heman, Jeduthun and their sons and relatives, stand on the east side of the altar in fine linen with cymbals, harps and lyres, and 120 priests with trumpets join them. Friend, the loudest music my old junk drawer ever had was the dead batteries rattling when somebody slammed it shut.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 5:12",
-          "question": "Standing with the singers are 120 priests sounding ___.",
-          "answers": [
-            {
-              "text": "trumpets",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "bells",
-              "correct": false
-            },
-            {
-              "text": "flutes",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 5:13",
-          "question": "The trumpeters and singers join together to praise and thank the LORD. How do they sound?",
+          "question": "The trumpeters and singers praise and thank the LORD. How do they sound?",
           "answers": [
             {
               "text": "Like one voice",
@@ -321,23 +263,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
+          "kind": "story",
+          "verses": "2 Chronicles 5:13",
+          "text": "You know when an office sings happy birthday and half the room is on \"dear\" while the other half is still on \"happy\"? These folks lift their voices with trumpets, cymbals and instruments in praise to the LORD: \"For He is good; His loving devotion endures forever.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "2 Chronicles 5:13",
-          "text": "Friend, I've heard an office sing happy birthday with half the room on \"dear\" and the other half still on \"happy.\" These folks lift their voices with trumpets, cymbals and instruments in praise to the LORD: \"For He is good; His loving devotion endures forever.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 5:13",
-          "question": "While they praise the LORD, the temple, the house of the LORD, fills with something. What is it?",
+          "question": "The singers and trumpeters praise the LORD. Then the temple, the house of the LORD, is filled with something. What is it?",
           "answers": [
             {
               "text": "A cloud",
@@ -348,19 +290,19 @@
               "correct": false
             },
             {
-              "text": "Rising water",
+              "text": "Flowing water",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 5:14",
-          "question": "Because of the cloud, the priests can't stand there to minister.",
+          "question": "Because of the cloud filling the temple, the priests can't stand there to minister.",
           "answers": [
             {
               "text": "True",
@@ -371,11 +313,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 5:14",
@@ -395,15 +337,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 5:14",
           "text": "And that's where we'll set this one down for now, friend. Keep that apron on, because this story isn't done.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

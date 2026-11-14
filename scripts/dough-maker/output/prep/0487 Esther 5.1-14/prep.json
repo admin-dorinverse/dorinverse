@@ -8,29 +8,21 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Esther 2:7-4:8",
-          "text": "Friend, here's where we are. Haman, the official the king promoted above all his princes, has promised money to the king's treasury to destroy the Jews. Mordecai, the cousin who raised Queen Esther, tells her to go to the king and plead with him for her people.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 2,
-          "kind": "story",
-          "verses": "Esther 4:11-17",
-          "text": "Problem is, walking in on the king without being summoned can get you put to death, and she hasn't been called in thirty days. So the Jews in Susa fast, Esther fasts too, and she says, \"And if I perish, I perish!\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
-          "kind": "story",
           "verses": "Esther 5:1",
-          "text": "On the third day, Esther puts on her royal robes and stands in the inner court, right across from the king's quarters. The king is on his throne, facing the entrance, so there is NO sneaking in on this man.",
+          "text": "Friend, Haman, the king's top official, has promised money to destroy the Jews, and Mordecai, Queen Esther's cousin, has urged her to go plead with the king for her people (Esther 4:7-8). Going in to the king without being summoned can mean death, but Esther calls for a three-day fast and says, \"And if I perish, I perish!\" (Esther 4:11, 16). On the third day, she puts on her royal robes and stands in the inner court, across from the king's quarters.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 2,
+          "kind": "story",
+          "verses": "Esther 5:1",
+          "text": "The king is sitting on his royal throne, facing the entrance. Friend, there is NO sneaking in on this man.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 5:2",
@@ -49,7 +41,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 5:2",
@@ -73,15 +65,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Esther 5:3",
-          "text": "She's still standing, friend. Everybody breathe. Then the king asks, \"What is it, Queen Esther?\" and he makes her an offer.",
-          "needs_agent_fix": true,
+          "text": "She's still standing, friend, so everybody breathe. Then the king asks, \"What is it, Queen Esther?\" and makes her an offer.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 5:3",
@@ -104,7 +96,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 5:4",
@@ -127,11 +119,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 5:5",
-          "question": "When Esther invites them to her banquet, the king says there's no rush to bring Haman.",
+          "question": "When Esther invites the king and Haman to her banquet, the king says there's no rush to bring Haman.",
           "answers": [
             {
               "text": "True",
@@ -142,41 +134,22 @@
               "correct": true
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Esther 5:5-6",
+          "text": "So the king and Haman go to the banquet Esther prepared. As they drink their wine, the king asks Esther once more what her petition is, with the same offer of up to half the kingdom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Esther 5:5-6",
-          "text": "So the king and Haman go to the banquet Esther prepared. As they drink their wine, the king asks her again what her petition is.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Esther 5:6",
-          "question": "At the banquet, the king once again offers Esther up to half the kingdom.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Esther 5:7-8",
+          "verses": "Esther 5:8",
           "question": "The king asks Esther again what she wants. What does she answer him?",
           "answers": [
             {
@@ -184,7 +157,7 @@
               "correct": true
             },
             {
-              "text": "Cancel the law against the Jews",
+              "text": "Let Mordecai join them at the table",
               "correct": false
             },
             {
@@ -192,11 +165,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "story",
           "verses": "Esther 5:8",
           "text": "Tomorrow, she says, and then she'll answer the king's question. That's like texting somebody that you've got big news and then going quiet until TOMORROW, and NOBODY sleeps easy after that.",
@@ -213,7 +186,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Esther 5:9",
-          "text": "That day Haman walks out full of joy and glad of heart, strutting like his oven timer just went off on a perfect batch. Then he hits the king's gate and the music stops, because sitting right there is Mordecai.",
+          "text": "That day Haman walks out full of joy and glad of heart, the kind of glad you feel when the timer goes off on a perfect batch. Then he gets to the king's gate, and there's Mordecai.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -287,7 +260,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Esther 5:10-11",
-          "text": "Haman holds it together, goes home, calls in his friends and his wife Zeresh, and gives them the full highlight reel: his glorious wealth, his many sons, every way the king has honored and promoted him. Friend, the man called his own WIFE in to tell her how many sons he has.",
+          "text": "Haman holds it together, goes home, calls in his friends and his wife Zeresh, and goes on about his glorious wealth, his many sons, and every way the king has honored and promoted him. Friend, the man is reading his own résumé out loud to people who already know him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -317,22 +290,17 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Esther 5:13",
-          "question": "After all that bragging, Haman says none of it satisfies him as long as he sees ___ sitting at the king's gate.",
+          "question": "After all that bragging to his friends and Zeresh, Haman says he's finally satisfied.",
           "answers": [
             {
-              "text": "Mordecai",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Esther",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "Hathach",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -342,7 +310,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Esther 5:14",
-          "text": "Now this is where a good friend says, let it go, it's one guy sitting at a gate. Zeresh and all his friends speak up, and friend, they do NOT say that.",
+          "text": "Zeresh and all his friends have an answer for him. Friend, this part is heavy.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -374,7 +342,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 5:14",
-          "question": "Zeresh and his friends tell Haman to ask the king in the morning to have Mordecai hanged, then go to the banquet with the king and enjoy himself.",
+          "question": "Haman's wife Zeresh and his friends tell Haman to go to the banquet with the king and enjoy himself.",
           "answers": [
             {
               "text": "True",
@@ -392,7 +360,15 @@
           "card": 11,
           "kind": "story",
           "verses": "Esther 5:14",
-          "text": "The advice pleases Haman, and he has the gallows built, all fifty cubits of it, over one man who didn't rise. We'll leave it right there, friend, because this story is a long way from done.",
+          "text": "The plan is to ask the king in the morning to have Mordecai hanged on it. The advice pleases Haman, and he has the gallows built.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "story",
+          "verses": "Esther 5:14",
+          "text": "We'll leave it right there, friend, because this story is a long way from done.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

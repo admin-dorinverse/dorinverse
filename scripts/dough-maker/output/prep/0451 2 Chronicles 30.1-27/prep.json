@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:1",
           "text": "King Hezekiah of Judah sends word throughout all Israel and Judah, and he even writes letters to Ephraim and Manasseh. He's inviting them all to keep the Passover of the LORD. Friend, this man is inviting the WHOLE country, and I get nervous inviting over one baker.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,39 +33,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 30:3",
-          "text": "One problem. The Passover has a regular time, and this year they missed it.",
-          "needs_agent_fix": true,
+          "text": "One problem. The Passover has a regular time, and they couldn't keep it then.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 30:2",
-          "question": "Since they missed the regular time, the king, his officials and the whole assembly in Jerusalem decide to keep the Passover in the ___ month.",
+          "question": "Judah missed the Passover's regular time. What do the king, his officials and the whole assembly in Jerusalem decide to do?",
           "answers": [
             {
-              "text": "second",
-              "correct": true,
-              "blank": 1
+              "text": "Keep it in the second month",
+              "correct": true
             },
             {
-              "text": "seventh",
+              "text": "Wait until next year's Passover",
               "correct": false
             },
             {
-              "text": "twelfth",
+              "text": "Keep it in their own towns",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -76,19 +75,19 @@
           "question": "Why couldn't Judah keep the Passover at the regular time?",
           "answers": [
             {
-              "text": "Not enough priests had consecrated themselves",
+              "text": "Too few priests were consecrated and the people weren't gathered",
               "correct": true
             },
             {
-              "text": "The temple doors were still locked up",
+              "text": "The temple was still locked and its lamps were out",
               "correct": false
             },
             {
-              "text": "The king was away fighting a war",
+              "text": "The king was at war and the roads were closed",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -107,7 +106,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -115,15 +114,15 @@
           "kind": "story",
           "verses": "2 Chronicles 30:5",
           "text": "So they make it official: a proclamation goes all through Israel, from Beersheba to Dan, calling the people to Jerusalem for the Passover. It hadn't been kept in great numbers the way it was written.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 30:6",
-          "text": "The couriers head out across Israel and Judah carrying letters from the king and his officials. No group chat, no email, friend, just feet, and I BET those feet hurt.",
-          "needs_agent_fix": true,
+          "text": "The couriers head out across Israel and Judah carrying letters from the king and his officials, written to the people who escaped the grasp of the kings of Assyria, a powerful empire. No group chat, no email, no 'reply all,' friend, every single invite goes out by HAND.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -142,66 +141,43 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 30:6",
-          "question": "The king's letter speaks to the people who remain, the ones who escaped the grasp of the kings of ___.",
-          "answers": [
-            {
-              "text": "Assyria",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Egypt",
-              "correct": false
-            },
-            {
-              "text": "Babylon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 30:7-8",
+          "text": "Then the letter gets honest. Don't be like your fathers and brothers who were unfaithful to the LORD, and don't stiffen your necks the way they did.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "2 Chronicles 30:7-8",
-          "text": "Then the letter gets honest. Don't be like your fathers and brothers who were unfaithful to the LORD, and don't stiffen your necks the way they did.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Chronicles 30:8",
+          "question": "Instead of stiffening their necks like their fathers, the king's letter tells the people to submit to the LORD and come to His ___.",
+          "answers": [
+            {
+              "text": "sanctuary",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "wilderness",
+              "correct": false
+            },
+            {
+              "text": "camp",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 30:8",
-          "question": "Instead of stiffening their necks, what does the king's letter tell the people to do?",
-          "answers": [
-            {
-              "text": "Submit to the LORD and come to His sanctuary",
-              "correct": true
-            },
-            {
-              "text": "Build an altar to the LORD in their own town",
-              "correct": false
-            },
-            {
-              "text": "Wait at home until a prophet comes to them",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 30:9",
@@ -216,11 +192,11 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 30:9",
@@ -239,52 +215,42 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "2 Chronicles 30:10",
+          "text": "So the couriers go city to city through Ephraim and Manasseh, all the way to Zebulun, carrying a personal invitation from the KING. If that had landed in my junk drawer, I'd have read it out loud every single night to the dead batteries I shared that drawer with, whether they were listening or not.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "2 Chronicles 30:10",
-          "text": "So the couriers go city to city through Ephraim and Manasseh, all the way to Zebulun, carrying a personal invitation from the KING. If that had landed in my junk drawer, I'd have read it out loud every single night to the dead batteries I shared that drawer with, whether they were listening or not.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 30:10",
-          "question": "How do the people in Ephraim, Manasseh and Zebulun treat the king's couriers? They ___ and ___ them.",
+          "question": "How do the people in Ephraim, Manasseh and Zebulun treat the king's couriers?",
           "answers": [
             {
-              "text": "scorn",
-              "correct": true,
-              "blank": 1
+              "text": "They scorn and mock them",
+              "correct": true
             },
             {
-              "text": "mock",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "chase",
+              "text": "They welcome them in every city",
               "correct": false
             },
             {
-              "text": "stone",
-              "correct": false
-            },
-            {
-              "text": "arrest",
+              "text": "They arrest them at the gates",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 30:11",
@@ -299,19 +265,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "story",
+          "verses": "2 Chronicles 30:12",
+          "text": "And down in Judah? The power of God is on the people there.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "story",
-          "verses": "2 Chronicles 30:12",
-          "text": "Mocked up north, but now look at Judah. The power of God is on the people there.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 30:12",
@@ -330,7 +296,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -344,7 +310,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:13-14",
           "text": "In the second month, a VERY great assembly gathers in Jerusalem for the Feast of Unleavened Bread. And then the GUESTS start cleaning up, friend, the guests, which is exactly the kind of crowd I want in my bakery.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -352,7 +318,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 30:14",
-          "question": "Before the feast, what does the great crowd in Jerusalem clear out of the city?",
+          "question": "Once the great crowd gathers in Jerusalem, what do they clear out of the city?",
           "answers": [
             {
               "text": "The altars and the incense altars",
@@ -367,31 +333,30 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 30:14",
-          "question": "The crowd throws those altars out of Jerusalem and into the ___ Valley.",
+          "question": "The crowd takes away the altars in Jerusalem. What do they do with them?",
           "answers": [
             {
-              "text": "Kidron",
-              "correct": true,
-              "blank": 1
+              "text": "Throw them into the Kidron Valley",
+              "correct": true
             },
             {
-              "text": "Hinnom",
+              "text": "Set them up outside the city",
               "correct": false
             },
             {
-              "text": "Jezreel",
+              "text": "Hand them over to the priests",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -399,30 +364,31 @@
           "kind": "story",
           "verses": "2 Chronicles 30:15",
           "text": "On the fourteenth day of the second month, they slaughter the Passover lamb. Then something hits the priests and Levites.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 30:15",
-          "question": "The Passover lamb is slaughtered on the fourteenth day of the second month. How do the priests and Levites feel?",
+          "question": "On the fourteenth day of the second month, the Passover lamb is slaughtered, and the priests and Levites are ___.",
           "answers": [
             {
-              "text": "Ashamed",
-              "correct": true
+              "text": "ashamed",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Proud",
+              "text": "proud",
               "correct": false
             },
             {
-              "text": "Angry",
+              "text": "angry",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -430,7 +396,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:15",
           "text": "Then they consecrate themselves and bring burnt offerings to the house of the LORD.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -438,7 +404,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:16",
           "text": "The priests and Levites stand at their prescribed posts by the Law of Moses the man of God, and the priests splatter the blood the Levites hand them. Smooth handoff, no fumbles, which is more than I can say for my first week packing cookie boxes with a mustache.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -446,7 +412,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:17",
           "text": "Problem: many in the crowd hadn't consecrated themselves. So the Levites slaughter the Passover lambs for every unclean person, like one coworker covering EVERYBODY'S shift at once.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -465,15 +431,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "2 Chronicles 30:18",
-          "text": "Nope, they ate the Passover anyway, contrary to what was written. Ohhh, friend. Now what's the KING gonna do about that?",
-          "needs_agent_fix": true,
+          "text": "They ate the Passover anyway, contrary to what was written. Ohhh, friend. Now what's the KING gonna do about that?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -496,14 +462,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "2 Chronicles 30:18-19",
+          "verses": "2 Chronicles 30:19",
           "question": "Hezekiah speaks up for the people who ate without being purified, saying, \"May the LORD, who is good, provide atonement for everyone…\" Everyone who does what?",
           "answers": [
             {
@@ -519,7 +485,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -538,7 +504,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -551,8 +517,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 30:21",
-          "text": "The people are healed, and now the Feast of Unleavened Bread runs seven days with great joy, the Levites and priests praising the LORD day after day with LOUD instruments. After years of quiet in a junk drawer, friend, LOUD is my favorite kind of music.",
-          "needs_agent_fix": true,
+          "text": "Now the Feast of Unleavened Bread runs seven days with great joy, the Levites and priests praising the LORD day after day with LOUD instruments. After years of quiet in a junk drawer, friend, LOUD is my favorite kind of music.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -575,7 +541,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -583,31 +549,30 @@
           "kind": "story",
           "verses": "2 Chronicles 30:22-23",
           "text": "For seven days they eat their assigned portion, sacrifice peace offerings and give thanks to the LORD, the God of their fathers. Then the whole assembly makes a decision.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 30:23",
-          "question": "The feast has run seven days. Then the whole assembly agrees to observe ___ more days.",
+          "question": "The feast has run seven days with joy. What does the whole assembly agree to do?",
           "answers": [
             {
-              "text": "seven",
-              "correct": true,
-              "blank": 1
+              "text": "Keep the feast seven more days",
+              "correct": true
             },
             {
-              "text": "three",
+              "text": "Head home the very next morning",
               "correct": false
             },
             {
-              "text": "forty",
+              "text": "Hold the feast again next year",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -615,7 +580,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:24",
           "text": "Hezekiah gives a thousand bulls and seven thousand sheep, the officials give a thousand bulls and TEN THOUSAND sheep, and a great number of priests consecrate themselves. Friend, the most I've ever handed out at once is a double scoop of sprinkles, and I STILL felt like a big shot.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -634,15 +599,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "2 Chronicles 30:26",
-          "text": "So there's great rejoicing in Jerusalem. Nothing like it in a long, LONG time.",
-          "needs_agent_fix": true,
+          "text": "So there's great rejoicing in Jerusalem, the kind the city hasn't seen in a long, LONG time.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -662,11 +627,11 @@
               "correct": false
             },
             {
-              "text": "Amnon",
+              "text": "Adonijah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -674,7 +639,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 30:27",
-          "question": "To close out the feast, the priests and Levites stand to bless the people. What happens to their prayer?",
+          "question": "Then the priests and Levites stand to bless the people. What happens to their prayer?",
           "answers": [
             {
               "text": "It reaches God's holy dwelling in heaven",
@@ -689,7 +654,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -697,7 +662,7 @@
           "kind": "story",
           "verses": "2 Chronicles 30:27",
           "text": "And that's where we pause, friend. The oven's still warm on Hezekiah's story, and it is NOT done baking.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

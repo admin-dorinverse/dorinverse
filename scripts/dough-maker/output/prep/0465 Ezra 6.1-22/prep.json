@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezra 6:1",
-          "text": "Picture it, friend. Tattenai, a governor, has written to King Darius asking him to check whether King Cyrus ever approved rebuilding the house of God in Jerusalem (Ezra 5:6-17). So Darius orders a search of the archives stored in the treasury of Babylon.",
+          "text": "Picture it, friend. Tattenai, governor of the region west of the Euphrates, has written to King Darius asking him to check whether King Cyrus ever issued a decree to rebuild the house of God in Jerusalem (Ezra 5:6-17). So Darius orders a search of the archives stored in the treasury of Babylon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Ezra 6:6",
-          "text": "So Darius has his answer, and he writes back to Tattenai, Shethar-bozenai and their officials. Those are the men who went asking the Jews who authorized all this building (Ezra 5:3-4).",
+          "text": "So Darius has his answer, and he issues a decree to Tattenai, Shethar-bozenai and their officials. Those are the men who went asking the Jews who authorized all this building (Ezra 5:3-4).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -130,7 +130,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 6:6",
-          "question": "King Darius writes to Tattenai, the governor who questioned the Jews about the building. What's the first thing Darius tells him?",
+          "question": "King Darius's decree goes to Tattenai, the governor who questioned the Jews about the building. What's the first thing Darius tells him?",
           "answers": [
             {
               "text": "Stay away from that place",
@@ -152,8 +152,8 @@
           "card": 10,
           "kind": "story",
           "verses": "Ezra 6:7-8",
-          "text": "Darius keeps going: \"Leave this work on the house of God alone.\" And the cost? Paid in full from the royal treasury.",
-          "needs_agent_fix": true,
+          "text": "Darius keeps going: \"Leave this work on the house of God alone.\" And the cost gets paid in full from the royal treasury.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,29 +161,29 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezra 6:8",
-          "question": "Darius says the building costs come from the royal treasury, out of the taxes of the provinces west of the ___.",
+          "question": "Darius says the elders building God's house get their costs paid in full, so that the work will not be ___.",
           "answers": [
             {
-              "text": "Euphrates",
+              "text": "hindered",
               "correct": true
             },
             {
-              "text": "Jordan",
+              "text": "questioned",
               "correct": false
             },
             {
-              "text": "Nile",
+              "text": "inspected",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Ezra 6:6-8",
-          "text": "Here's the part that gets me, friend. Tattenai is governor of the region west of the Euphrates, so his own region's taxes are now paying the BILL.",
+          "text": "Here's the part that gets me, friend. That money comes out of the taxes of the provinces west of the Euphrates, and that's Tattenai's own region, so his side is now paying the BILL.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -192,22 +192,22 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezra 6:9",
-          "question": "Darius also orders young bulls, rams and lambs for burnt offerings, plus wheat, salt, wine and oil, whatever the priests in Jerusalem request. They get it ___ without fail.",
+          "question": "Darius also orders young bulls, rams and lambs for burnt offerings, plus wheat, salt, wine and oil. They're given daily, whatever is requested by the ___ in Jerusalem.",
           "answers": [
             {
-              "text": "daily",
+              "text": "priests",
               "correct": true
             },
             {
-              "text": "monthly",
+              "text": "elders",
               "correct": false
             },
             {
-              "text": "yearly",
+              "text": "prophets",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -215,7 +215,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezra 6:10",
-          "question": "True or false: Darius says all these supplies let the priests offer sacrifices to the God of heaven and pray for the lives of the king and his sons.",
+          "question": "True or false: Darius says he's providing these supplies so the priests can also pray for the lives of the king and his sons.",
           "answers": [
             {
               "text": "True",
@@ -226,23 +226,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "Ezra 6:10-11",
-          "text": "The king's covering the supplies, and he's like, while you're up there, put in a word for me and the boys. Then he adds a warning for anyone who interferes with this decree, and friend, this king does NOT mess around.",
+          "verses": "Ezra 6:10",
+          "text": "So sacrifices of a sweet aroma can go up to the God of heaven. The king is covering the supplies, and he's basically saying, hey, while you're at it, put in a word for me and the boys.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
+          "kind": "story",
+          "verses": "Ezra 6:11",
+          "text": "Then Darius adds a warning: if any man interferes with this decree, a beam is to be torn from his house, and he is to be impaled on it.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 6:11",
-          "question": "Darius warns that anyone who interferes with his decree will be impaled on a beam torn from his own house. And what happens to the house?",
+          "question": "Under Darius's warning, what happens to the house of any man who interferes with the decree?",
           "answers": [
             {
               "text": "It becomes a pile of rubble",
@@ -261,7 +269,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "story",
           "verses": "Ezra 6:12",
           "text": "Then come Darius's words about God: \"May God, who has caused His Name to dwell there…\"",
@@ -269,7 +277,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 6:12",
@@ -292,7 +300,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "story",
           "verses": "Ezra 6:12",
           "text": "Then he signs off: \"Let it be carried out with diligence.\" That box is SEALED, friend.",
@@ -390,8 +398,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Ezra 6:15",
-          "text": "And then, friend, it happens. The house of God is finished. DONE. COMPLETE. Not almost done. DONE.",
-          "needs_agent_fix": true,
+          "text": "And then, friend, it happens: the house of God is finished. Not almost done, not nearly done, DONE.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -430,7 +438,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezra 6:17",
-          "question": "For the dedication they offer a hundred bulls, two hundred rams and four hundred lambs, plus a sin offering for all Israel of twelve male goats. Why twelve?",
+          "question": "For the dedication of the house of God, the people of Israel offer a hundred bulls, two hundred rams and four hundred lambs, plus a sin offering for all Israel of twelve male goats. Why twelve?",
           "answers": [
             {
               "text": "One for each tribe of Israel",
@@ -445,7 +453,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -576,11 +584,11 @@
               "correct": true
             },
             {
-              "text": "The harvest had come in",
+              "text": "Their neighbors made peace with them",
               "correct": false
             },
             {
-              "text": "Their enemies had fled",
+              "text": "The prophets promised them rest",
               "correct": false
             }
           ],

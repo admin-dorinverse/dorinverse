@@ -1,35 +1,5 @@
 {
   "agent": [],
-  "human": [
-    {
-      "covered": false,
-      "where": {
-        "stop": 1,
-        "card": 1
-      },
-      "problem": "Card 1 says Rehoboam is 'son of Solomon,' and stop 2 card 10 calls Jeroboam 'king of Israel.' Neither fact is in 2 Chronicles 12. The cards cite only 12:1 and 12:15. The docs allow outside facts 'with their reference,' but the card's verses field is a single range inside the passage. So there is no way to cite an outside verse like 2 Chronicles 9:31 or 10:2.",
-      "question": "When a card states a helpful fact from outside the passage, such as who a person is, how should its reference be given in the JSON? Should the verses field be extended, should a separate field be added, or is the fact allowed without a reference when the person comes from earlier passages in the same story group?",
-      "by": "opus",
-      "at": {
-        "stop": 1,
-        "card": 1,
-        "verses": "2 Chronicles 12:1"
-      }
-    },
-    {
-      "covered": false,
-      "where": {
-        "stop": 1,
-        "card": 1
-      },
-      "problem": "The card states facts from outside the passage: Rehoboam is the son of Solomon and king of Judah (2 Chronicles 9:31; 10:17). The card cites only 2 Chronicles 12:1. Stop 2 card 11 does the same when it calls Jeroboam 'king of Israel' (2 Chronicles 10). The docs say outside facts come 'with their reference.' They also say a card cites 'from the first verse it uses to the last, no wider and no narrower,' and the JSON has only one 'verses' field. They don't say where an outside reference goes.",
-      "question": "When a card uses a fact from outside the passage, such as who a new person is, should the outside reference be added to the card's 'verses' field, written into the card text, or left off?",
-      "by": "opus",
-      "at": {
-        "stop": 1,
-        "card": 1,
-        "verses": "2 Chronicles 12:1"
-      }
-    }
-  ]
+  "human": [],
+  "fixed": "2026-11-14T08:55:07.133Z"
 }

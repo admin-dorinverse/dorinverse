@@ -10,7 +10,7 @@
           "kind": "story",
           "verses": "2 Kings 14:23",
           "text": "Grab an apron, friend, because today the crowns come off FAST. God's people are split into two kingdoms: Israel in the north and Judah in the south (1 Kings 12:16-20). In the fifteenth year of Amaziah king of Judah, Jeroboam son of Jehoash becomes king of Israel, and he reigns in Samaria forty-one years.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,120 +33,141 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 14:24-25",
-          "text": "Yep. He does evil in the sight of the LORD. And yet, PLOT TWIST: this Jeroboam wins back Israel's borders, from Lebo-hamath all the way to the Sea of the Arabah.",
-          "needs_agent_fix": true,
+          "text": "He does evil in the sight of the LORD. And yet, PLOT TWIST: this Jeroboam wins back Israel's borders, from Lebo-hamath all the way to the Sea of the Arabah.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Kings 14:25",
-          "question": "The LORD had said those borders would come back, through His servant the prophet. You might know this prophet: he's the same man the LORD sent to Nineveh (Jonah 1:1-2). Who is it?",
+          "question": "King Jeroboam wins back Israel's borders just as the LORD had said through His servant, a ___ from Gath-hepher.",
           "answers": [
             {
-              "text": "Jonah son of Amittai",
-              "correct": true
+              "text": "prophet",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Elisha son of Shaphat",
+              "text": "priest",
               "correct": false
             },
             {
-              "text": "Isaiah son of Amoz",
+              "text": "soldier",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Kings 14:25",
-          "text": "YES, it's THAT Jonah son of Amittai (Jonah 1:1), and here we learn he's the prophet from Gath-hepher. Friend, I thought years in a junk drawer was rough, and this man spent three days and three nights inside a great fish (Jonah 1:17).",
-          "needs_agent_fix": true,
+          "text": "The prophet is Jonah son of Amittai, the same Jonah the LORD sent to Nineveh (Jonah 1:1-2). And I thought MY years in a junk drawer were rough, friend, but this man did three days in a great fish (Jonah 1:17).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "2 Kings 14:26",
-          "text": "So why does the LORD do this for Israel? He sees that their suffering is very bitter, slave and free, and there's no one to help Israel.",
-          "needs_agent_fix": true,
+          "question": "The LORD wins back Israel's borders through King Jeroboam because Jeroboam turns back to Him.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 14:27",
-          "question": "The LORD also had said something about Israel's future. What had He said He would not do to Israel?",
-          "answers": [
-            {
-              "text": "Wipe out its name forever",
-              "correct": true
-            },
-            {
-              "text": "Take away its prophets forever",
-              "correct": false
-            },
-            {
-              "text": "Let its enemies rule it forever",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Kings 14:26",
+          "text": "Here's why: the LORD sees that Israel's suffering is very bitter, slave and free, and there's no one to help Israel.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "2 Kings 14:28",
-          "question": "King Jeroboam son of Jehoash also wages war and recovers two cities for Israel. Which two?",
+          "verses": "2 Kings 14:27",
+          "question": "The LORD had also said something about Israel. What had He said He would not do?",
           "answers": [
             {
-              "text": "Damascus and Hamath",
+              "text": "Blot out Israel's name",
               "correct": true
             },
             {
-              "text": "Tyre and Sidon",
+              "text": "Take away Israel's prophets",
               "correct": false
             },
             {
-              "text": "Nineveh and Babylon",
+              "text": "Give Israel's land away",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "2 Kings 14:29",
-          "text": "Then Jeroboam rests with his fathers, and his son Zechariah reigns in his place.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Kings 14:28",
+          "question": "So the LORD saves Israel by the hand of Jeroboam son of Jehoash. Jeroboam also wages war and recovers ___ and Hamath for Israel.",
+          "answers": [
+            {
+              "text": "Damascus",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "Tyre",
+              "correct": false
+            },
+            {
+              "text": "Gaza",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
-          "verses": "2 Kings 15:1-2",
-          "text": "Down south in Judah, in Jeroboam's twenty-seventh year, Azariah son of Amaziah becomes king at SIXTEEN and reigns in Jerusalem FIFTY-TWO YEARS. Friend, my batches don't last fifty-two MINUTES.",
-          "needs_agent_fix": true,
+          "verses": "2 Kings 14:29",
+          "text": "Then Jeroboam rests with his fathers, and his son Zechariah reigns in his place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
+          "kind": "story",
+          "verses": "2 Kings 15:1-2",
+          "text": "Down south in Judah, in Jeroboam's twenty-seventh year, Azariah son of Amaziah becomes king at SIXTEEN and reigns in Jerusalem FIFTY-TWO YEARS. Friend, my batches don't last fifty-two MINUTES.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Kings 15:3",
@@ -161,19 +182,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "2 Kings 15:3-4",
-          "text": "He sure does. But you KNOW there's a but: the high places are not taken away.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "2 Kings 15:4",
+          "text": "But here comes the catch: the high places are not taken away.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 15:4",
@@ -192,19 +213,35 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "2 Kings 15:5",
-          "text": "Then the LORD afflicts King Azariah with leprosy until the day he dies, and he lives in a separate house.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Kings 15:5",
+          "question": "The LORD afflicts King Azariah with ___ until the day he dies, so he lives in a separate house.",
+          "answers": [
+            {
+              "text": "leprosy",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "blindness",
+              "correct": false
+            },
+            {
+              "text": "boils",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 15:5",
@@ -223,96 +260,75 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 17,
+          "kind": "story",
           "verses": "2 Kings 15:7",
-          "question": "King Azariah rests with his fathers and is buried near them in the City of David. Then his son ___ reigns in his place.",
-          "answers": [
-            {
-              "text": "Jotham",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Ahaz",
-              "correct": false
-            },
-            {
-              "text": "Zechariah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "King Azariah rests with his fathers and is buried near them in the City of David. His son Jotham reigns in his place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
     },
     {
       "stop": 2,
-      "verses": "2 Kings 15:8-22",
+      "verses": "2 Kings 15:8-21",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "2 Kings 15:8",
-          "text": "Back up north. In the thirty-eighth year of Azariah's reign over Judah, Jeroboam's son Zechariah becomes king of Israel in Samaria. Friend, don't get too attached to this one.",
-          "needs_agent_fix": true,
+          "text": "Back up north, in the thirty-eighth year of Azariah's reign over Judah, Jeroboam's son Zechariah becomes king of Israel. He reigns in Samaria six months, so friend, don't get too attached.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Kings 15:8",
-          "question": "King Zechariah son of Jeroboam doesn't last long. He reigns in Samaria for just six ___.",
+          "type": "multiple_choice",
+          "verses": "2 Kings 15:9",
+          "question": "King Zechariah son of Jeroboam does evil in the sight of the LORD. How does he compare to his fathers before him?",
           "answers": [
             {
-              "text": "months",
-              "correct": true,
-              "blank": 1
+              "text": "He does just as they did",
+              "correct": true
             },
             {
-              "text": "weeks",
+              "text": "He's far worse than they were",
               "correct": false
             },
             {
-              "text": "years",
+              "text": "He's far better than they were",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 15:9-10",
-          "text": "Six months. In that time he does evil as his fathers had done, and he doesn't turn away from the sins of Jeroboam son of Nebat. Then Shallum son of Jabesh conspires against him.",
-          "needs_agent_fix": true,
+          "text": "He doesn't turn away from the sins of Jeroboam son of Nebat either. Then Shallum son of Jabesh conspires against him and kills him in front of the people.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Kings 15:10",
-          "question": "How does Shallum's conspiracy against King Zechariah end?",
+          "question": "After Shallum son of Jabesh kills King Zechariah, Shallum takes the throne of Israel himself.",
           "answers": [
             {
-              "text": "He kills Zechariah in front of the people",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He drives Zechariah out of Samaria",
-              "correct": false
-            },
-            {
-              "text": "He makes Zechariah give up the throne",
+              "text": "False",
               "correct": false
             }
           ],
@@ -321,18 +337,10 @@
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "2 Kings 15:12",
-          "text": "Then the passage points out that a word the LORD spoke to Jehu, an earlier king of Israel, has come true. Zechariah comes from Jehu's family line.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Kings 15:12",
-          "question": "The LORD had told Jehu that ___ generations of his sons would sit on the throne of Israel.",
+          "question": "King Zechariah comes from the family line of Jehu, an earlier king of Israel. When Zechariah dies, a word the LORD spoke to Jehu is fulfilled: ___ generations of Jehu's sons would sit on the throne of Israel.",
           "answers": [
             {
               "text": "four",
@@ -348,46 +356,27 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "2 Kings 15:13",
+          "text": "In the thirty-ninth year of the reign of Uzziah over Judah, Shallum becomes king and reigns in Samaria one full month. ONE MONTH, friend, and I've had dust sit on me in the junk drawer I used to live in longer than he sat on that throne.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "2 Kings 15:13",
-          "text": "Shallum becomes king in the thirty-ninth year of Uzziah's reign over Judah, and Uzziah is just another name for Azariah (2 Kings 15:7, 32). He reigns in Samaria one full month.",
+          "verses": "2 Kings 15:14",
+          "text": "Then Menahem son of Gadi goes up from Tirzah to Samaria, strikes down Shallum, kills him and reigns in his place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "2 Kings 15:13-14",
-          "text": "ONE MONTH. Friend, I've had dust sit on me in that junk drawer longer than this man sat on a throne. Then Menahem son of Gadi comes up from Tirzah to Samaria.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Kings 15:14",
-          "question": "Menahem son of Gadi strikes down and kills Shallum, and reigns in his place.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 15:16",
@@ -410,15 +399,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "story",
           "verses": "2 Kings 15:16",
-          "text": "No joke here, friend. The attack is brutal: Menahem rips open all the pregnant women.",
+          "text": "This part is heavy, friend. Menahem attacks Tiphsah and rips open all the pregnant women.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "2 Kings 15:17-19",
           "text": "Menahem reigns ten years in Samaria, and through his whole reign he doesn't turn away from the sins of Jeroboam son of Nebat. Then Pul king of Assyria invades the land.",
@@ -426,22 +415,65 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 15:19",
-          "question": "When Pul king of Assyria invades, Menahem hands him a thousand talents of silver. What is Menahem after?",
+          "question": "When Pul king of Assyria invades, what does Menahem give him?",
           "answers": [
             {
-              "text": "His support to hold the kingdom",
+              "text": "A thousand talents of silver",
               "correct": true
             },
             {
-              "text": "His help to attack Judah",
+              "text": "His own son as a hostage",
               "correct": false
             },
             {
-              "text": "His help against the king of Aram",
+              "text": "All the gold of his palace",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Kings 15:19",
+          "question": "Menahem gives Pul the silver to gain his support and strengthen his own grip on the kingdom.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Kings 15:20",
+          "question": "A thousand talents is a LOT of silver. Menahem collects it from each of the ___ men of Israel.",
+          "answers": [
+            {
+              "text": "wealthy",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "fighting",
+              "correct": false
+            },
+            {
+              "text": "young",
               "correct": false
             }
           ],
@@ -450,24 +482,9 @@
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "2 Kings 15:20",
-          "question": "A thousand talents is a LOT of silver. Who does Menahem collect it from?",
-          "answers": [
-            {
-              "text": "The wealthy men of Israel",
-              "correct": true
-            },
-            {
-              "text": "The priests in Samaria",
-              "correct": false
-            },
-            {
-              "text": "The people of Tiphsah",
-              "correct": false
-            }
-          ],
+          "text": "Menahem takes fifty shekels of silver from each man, and friend, there's no number to call to dispute THAT bill.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -489,27 +506,19 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "2 Kings 15:20-22",
-          "text": "Every wealthy man in Israel gets the same bill, fifty shekels of silver, and there's no number to call to dispute it. Then Menahem rests with his fathers, and his son Pekahiah reigns in his place.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
         }
       ]
     },
     {
       "stop": 3,
-      "verses": "2 Kings 15:23-38",
+      "verses": "2 Kings 15:22-38",
       "cards": [
         {
           "card": 1,
           "kind": "story",
-          "verses": "2 Kings 15:23-24",
-          "text": "In the fiftieth year of Azariah's reign over Judah, Pekahiah son of Menahem becomes king of Israel. He reigns two years in Samaria, and he does evil in the sight of the LORD.",
-          "needs_agent_fix": true,
+          "verses": "2 Kings 15:22-24",
+          "text": "Menahem rests with his fathers, and his son Pekahiah reigns in his place. In the fiftieth year of Azariah's reign over Judah, Pekahiah becomes king of Israel, reigns two years in Samaria and does evil in the sight of the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -517,170 +526,143 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Kings 15:25",
-          "question": "Then one of King Pekahiah's own officers conspires against him. Who is it?",
+          "question": "Then a conspiracy forms against King Pekahiah. Who leads it?",
           "answers": [
             {
-              "text": "Pekah son of Remaliah",
+              "text": "One of his own officers",
               "correct": true
             },
             {
-              "text": "Abner son of Ner",
+              "text": "The king of Assyria",
               "correct": false
             },
             {
-              "text": "Joab son of Zeruiah",
+              "text": "A prophet from Judah",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "2 Kings 15:25",
-          "text": "With Argob, Arieh and fifty men of Gilead, Pekah strikes down Pekahiah at the citadel of the king's palace and reigns in his place. Pekah takes the throne from PEKAHIAH, and friend, I've read that three times and I'm STILL checking who's who.",
-          "needs_agent_fix": true,
+          "text": "His officer Pekah son of Remaliah conspires with Argob, Arieh and fifty men of Gilead. At the citadel of the king's palace in Samaria, Pekah strikes down Pekahiah, kills him and reigns in his place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Kings 15:27",
-          "question": "King Pekahiah got just two years. Pekah, the officer who killed him, reigns over Israel in Samaria much longer: twenty years.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Kings 15:27-29",
+          "text": "Pekah reigns over Israel in Samaria twenty years, and he does evil in the sight of the LORD too. In his days, Tiglath-pileser king of Assyria comes and captures a whole list of towns, plus Gilead, Galilee and all the land of Naphtali.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
-          "verses": "2 Kings 15:28-29",
-          "text": "Like the kings before him, Pekah does evil in the sight of the LORD and doesn't turn away from the sins of Jeroboam son of Nebat. In his days, Tiglath-pileser king of Assyria comes and captures a whole list of towns, plus Gilead, Galilee and all the land of Naphtali.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Kings 15:29",
+          "question": "Tiglath-pileser king of Assyria captures Gilead, Galilee and all the land of Naphtali in King Pekah's days. What does he do with the people there?",
+          "answers": [
+            {
+              "text": "Takes them as captives",
+              "correct": true
+            },
+            {
+              "text": "Makes them pay silver",
+              "correct": false
+            },
+            {
+              "text": "Lets them stay and rebuild",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "true_false",
-          "verses": "2 Kings 15:29",
-          "question": "Tiglath-pileser king of Assyria leaves the people he captures in their own land.",
+          "verses": "2 Kings 15:30",
+          "question": "After Hoshea son of Elah leads a conspiracy and kills King Pekah, Hoshea reigns in his place.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 15:30",
-          "question": "Then Hoshea son of Elah leads a conspiracy against King Pekah. What does Hoshea do?",
-          "answers": [
-            {
-              "text": "Attacks and kills him",
-              "correct": true
-            },
-            {
-              "text": "Hands him over to Assyria",
-              "correct": false
-            },
-            {
-              "text": "Drives him out of Samaria",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Kings 15:32, 34-35",
+          "text": "Down south in Judah, back in Pekah's second year, Jotham son of Uzziah becomes king and does what is right in the eyes of the LORD, just as his father Uzziah had done. But the high places STILL aren't taken away, friend, like glitter that just WON'T leave.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "2 Kings 15:30-33",
-          "text": "Hoshea reigns over Israel in Pekah's place, and friend, that's the FOURTH king in this passage to get the throne by killing the king before him. Down south in Judah, back in Pekah's second year, Jotham son of Uzziah becomes king at twenty-five and reigns sixteen years in Jerusalem.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Kings 15:35",
+          "question": "Even with the high places still standing, King Jotham of Judah rebuilds something. What is it?",
+          "answers": [
+            {
+              "text": "The Upper Gate of the LORD's house",
+              "correct": true
+            },
+            {
+              "text": "A new palace in Jerusalem",
+              "correct": false
+            },
+            {
+              "text": "A fortress at Beth-shemesh",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "2 Kings 15:34-35",
-          "text": "Jotham does what is right in the eyes of the LORD, just like his father Uzziah. And again, the high places stay, and the people keep sacrificing and burning incense there.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "2 Kings 15:35",
-          "question": "Even with the high places still standing, King Jotham rebuilds the ___ Gate of the house of the LORD.",
+          "verses": "2 Kings 15:37",
+          "question": "In King Jotham's days, the LORD begins to send two kings against Judah: Rezin king of Aram and ___ son of Remaliah.",
           "answers": [
             {
-              "text": "Upper",
+              "text": "Pekah",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Horse",
+              "text": "Hoshea",
               "correct": false
             },
             {
-              "text": "Fish",
+              "text": "Menahem",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Kings 15:37",
-          "question": "In King Jotham's days, Rezin king of Aram and Pekah son of Remaliah begin coming against Judah. Who begins to send them?",
-          "answers": [
-            {
-              "text": "The LORD",
-              "correct": true
-            },
-            {
-              "text": "Tiglath-pileser",
-              "correct": false
-            },
-            {
-              "text": "Hoshea son of Elah",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "2 Kings 15:38",
-          "text": "Jotham rests with his fathers and is buried with them in the City of David, and his son Ahaz reigns in his place. Friend, that is a WHOLE lot of crowns for one batch.",
-          "needs_agent_fix": true,
+          "text": "Jotham rests with his fathers and is buried with them in the City of David, and his son Ahaz reigns in his place.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 18:1-2",
-          "text": "Jehoshaphat, king of Judah, has an abundance of riches and honor, and he's allied himself with Ahab, king of Israel, by marriage. Some years later he goes down to visit Ahab in Samaria, and Ahab sacrifices many sheep and cattle for him and everyone with him. Friend, when somebody rolls out a welcome THAT big, I start wondering what favor is coming.",
+          "text": "Jehoshaphat, king of Judah, has an abundance of riches and honor, and he's allied himself with Ahab, king of Israel, by marriage. Some years later he goes down to visit Ahab in Samaria, and Ahab sacrifices many sheep and cattle for him and everyone with him. Friend, when I landed in the Millers' junk drawer, my whole welcome was a dead battery rolling over.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 18:3",
-          "text": "Then Ahab asks, \"Will you go with me against Ramoth-gilead?\" THERE it is, friend, the favor I TOLD you was coming.",
+          "text": "Then Ahab asks him flat out, \"Will you go with me against Ramoth-gilead?\" Now Jehoshaphat has to answer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -66,7 +66,7 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "2 Chronicles 18:4",
+          "verses": "2 Chronicles 18:3-4",
           "text": "Jehoshaphat's in. But before anybody marches anywhere, he has one request for Ahab.",
           "needs_agent_fix": false,
           "needs_human_decision": false
@@ -107,7 +107,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 18:5",
-          "question": "True or false: the four hundred prophets tell the kings not to go up to Ramoth-gilead.",
+          "question": "True or false: the four hundred prophets tell Ahab not to go up to Ramoth-gilead.",
           "answers": [
             {
               "text": "True",
@@ -124,8 +124,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Chronicles 18:6",
-          "text": "Four hundred prophets say go, and Jehoshaphat still asks, \"Is there not still a prophet of the LORD here of whom we can inquire?\" Four HUNDRED, and the man's like, you got anybody else in the back?",
+          "verses": "2 Chronicles 18:5-6",
+          "text": "Four hundred prophets say go up, and Jehoshaphat asks, \"Is there not still a prophet of the LORD here of whom we can inquire?\" That's the shopper staring at a whole wall of shoes going, you got anything in the back?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -157,15 +157,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 18:7",
-          "question": "Ahab says he hates Micaiah because Micaiah never prophesies anything good for him. True or false: Jehoshaphat agrees Ahab has every reason to say that.",
+          "question": "Ahab says he hates Micaiah. True or false: Jehoshaphat tells Ahab that the king should not say that.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -222,7 +222,7 @@
           "card": 16,
           "kind": "story",
           "verses": "2 Chronicles 18:12",
-          "text": "Meanwhile, the messenger who went to get Micaiah gives him a little coaching on the way.",
+          "text": "Meanwhile, the messenger who went to get Micaiah gives him a little coaching.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -357,37 +357,14 @@
         },
         {
           "card": 6,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 18:17",
-          "question": "After hearing Micaiah's vision of the scattered sheep, what does Ahab say to Jehoshaphat?",
-          "answers": [
-            {
-              "text": "He told him Micaiah only prophesies bad for him",
-              "correct": true
-            },
-            {
-              "text": "He told him to stop asking the prophets",
-              "correct": false
-            },
-            {
-              "text": "He told him to lead the army without him",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Chronicles 18:17-18",
+          "text": "Ahab turns to Jehoshaphat: \"Did I not tell you that he never prophesies good for me, but only bad?\" But Micaiah keeps going: he saw the LORD sitting on His throne, with all the host of heaven standing on His right and on His left.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "2 Chronicles 18:18",
-          "text": "Micaiah isn't done. He says he saw the LORD sitting on His throne, with all the host of heaven standing on His right and on His left.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 18:19",
@@ -410,7 +387,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 18:19-20",
           "text": "One suggests this, another that, until a spirit comes forward, stands before the LORD, and says, \"I will entice him.\" The LORD asks, \"By what means?\"",
@@ -418,22 +395,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 18:21",
-          "question": "In Micaiah's vision, how does the spirit say it will entice Ahab?",
+          "question": "In Micaiah's vision, the spirit says it will entice Ahab by being a ___ spirit in the mouths of all Ahab's prophets.",
           "answers": [
             {
-              "text": "By being a lying spirit in his prophets' mouths",
+              "text": "lying",
               "correct": true
             },
             {
-              "text": "By sending Ahab a frightening dream at night",
+              "text": "warning",
               "correct": false
             },
             {
-              "text": "By stirring up the king of Aram against him",
+              "text": "guiding",
               "correct": false
             }
           ],
@@ -441,7 +418,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "2 Chronicles 18:21-22",
           "text": "The LORD tells the spirit it will surely entice him and prevail, and to go and do it. Then Micaiah brings it home: the LORD has put a lying spirit in the mouths of these prophets of Ahab's, and the LORD has pronounced disaster against him.",
@@ -449,30 +426,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "2 Chronicles 18:23",
-          "text": "Remember Zedekiah, the iron horns guy? He walks right up to Micaiah.",
+          "text": "Then Zedekiah, the prophet with the iron horns, goes up and strikes Micaiah in the face.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 18:23",
-          "question": "What does Zedekiah do when he reaches Micaiah?",
+          "question": "After striking Micaiah, what does Zedekiah demand to know?",
           "answers": [
             {
-              "text": "Strikes him in the face",
+              "text": "Which way the Spirit of the LORD went to reach Micaiah",
               "correct": true
             },
             {
-              "text": "Grabs him by the robe",
+              "text": "Who gave Micaiah the right to speak to the king",
               "correct": false
             },
             {
-              "text": "Spits at his feet",
+              "text": "Why Micaiah dared to stand before the two kings",
               "correct": false
             }
           ],
@@ -480,15 +457,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
-          "kind": "story",
-          "verses": "2 Chronicles 18:23",
-          "text": "Then Zedekiah demands, \"Which way did the Spirit of the LORD go when He departed from me to speak with you?\" Friend, the man showed up with a slap AND a follow-up question.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 18:24",
@@ -511,42 +480,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "2 Chronicles 18:25",
-          "text": "I think Ahab's had enough. He orders Micaiah taken back to Amon, the governor of the city, and to Joash, the king's son.",
+          "text": "Then Ahab gives his orders: take Micaiah back to Amon, the governor of the city, and to Joash, the king's son (not the later King Joash of Judah).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "2 Chronicles 18:26",
-          "question": "Ahab's orders: put Micaiah in ___ and feed him only bread and water until Ahab returns safely.",
+          "question": "Ahab orders Micaiah put in prison until Ahab returns safely. True or false: Ahab also orders that Micaiah be fed well while he waits.",
           "answers": [
             {
-              "text": "prison",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "a cistern",
-              "correct": false
-            },
-            {
-              "text": "the stocks",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 18:27",
-          "question": "Ahab says Micaiah stays on bread and water until Ahab returns safely. What does Micaiah say back about that?",
+          "question": "Ahab says Micaiah stays locked up until Ahab returns safely. What does Micaiah say back about that?",
           "answers": [
             {
               "text": "If you return safely the LORD has not spoken through me",
@@ -565,7 +530,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "story",
           "verses": "2 Chronicles 18:27",
           "text": "Then Micaiah adds one more line for everybody listening: \"Take heed, all you people!\"",
@@ -622,7 +587,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 18:30",
-          "question": "Over on the other side, the king of Aram orders his chariot commanders to fight no one, small or great, except the king of ___.",
+          "question": "Over on the other side, the king of Aram, the nation they're fighting, orders his chariot commanders to fight no one, small or great, except the king of ___.",
           "answers": [
             {
               "text": "Israel",
@@ -676,7 +641,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 18:32",
-          "question": "God draws the chariot commanders away from Jehoshaphat. True or false: once they see he isn't the king of Israel, they keep chasing him anyway.",
+          "question": "True or false: once the chariot commanders see that Jehoshaphat isn't the king of Israel, they keep chasing him anyway.",
           "answers": [
             {
               "text": "True",
@@ -694,7 +659,7 @@
           "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 18:33",
-          "text": "Meanwhile Ahab is out there in disguise, blending in. Then a certain man draws his bow without taking special aim.",
+          "text": "Meanwhile Ahab is out there in disguise, blending in. Then a certain man draws his bow without taking special aim, and he strikes the king of Israel between the joints of his armor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -703,34 +668,26 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 18:33",
-          "question": "A man in the battle draws his bow without taking special aim. Where does his arrow hit the king of Israel?",
+          "question": "Badly wounded, what does Ahab, the king of Israel, tell his charioteer?",
           "answers": [
             {
-              "text": "Between the joints of his armor",
+              "text": "Turn around and take me out of the battle",
               "correct": true
             },
             {
-              "text": "Right in the middle of his forehead",
+              "text": "Drive me straight toward the king of Aram",
               "correct": false
             },
             {
-              "text": "Through the shield on his arm",
+              "text": "Go find Jehoshaphat and bring him here",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "2 Chronicles 18:33",
-          "text": "A whole army of chariots couldn't find him, and the one guy who wasn't even AIMING did. Ahab tells his charioteer, \"Turn around and take me out of the battle, for I am badly wounded!\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 18:34",
@@ -746,15 +703,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "2 Chronicles 18:34",
           "text": "That's where we'll set this batch down for now. Trust me, friend, Jehoshaphat's story is still in the oven.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

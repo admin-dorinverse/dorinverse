@@ -57,7 +57,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 1:3",
-          "question": "With all those animals and servants, Job is the greatest man of all the people of the East.",
+          "question": "Job is the greatest man of all the people of the East.",
           "answers": [
             {
               "text": "True",
@@ -75,7 +75,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Job 1:4",
-          "text": "Job's sons take turns holding feasts in their homes, and they invite their three sisters to eat and drink with them. Friend, the dead batteries I shared that drawer with couldn't even take turns TALKING.",
+          "text": "Job's sons take turns holding feasts in their homes, and they invite their three sisters to eat and drink with them. Ten siblings on one schedule and NOBODY's arguing? Friend, I've seen a group chat take three days to pick a Saturday.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -148,7 +148,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Job 1:6",
-          "text": "Now the scene moves: one day the sons of God come to present themselves before the LORD. Satan comes with them, the one the Bible calls our adversary, the devil (1 Peter 5:8).",
+          "text": "Then one day the sons of God come to present themselves before the LORD. And Satan comes with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -164,11 +164,11 @@
               "correct": true
             },
             {
-              "text": "From the land of Uz",
+              "text": "From the land of Egypt",
               "correct": false
             },
             {
-              "text": "From the depths of the sea",
+              "text": "From the city of Nineveh",
               "correct": false
             }
           ],
@@ -238,7 +238,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Job 1:11",
-          "question": "Satan says if everything Job has is struck, Job will surely ___ God to His face.",
+          "question": "Satan says if everything Job has is struck, Job will surely ___ God.",
           "answers": [
             {
               "text": "curse",
@@ -250,7 +250,7 @@
               "correct": false
             },
             {
-              "text": "seek",
+              "text": "obey",
               "correct": false
             }
           ],
@@ -270,15 +270,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 1:12",
-          "question": "The LORD also lets Satan lay a hand on Job himself.",
+          "question": "The LORD gives Satan one limit: he must not lay a hand on Job himself.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -303,7 +303,7 @@
           "kind": "story",
           "verses": "Job 1:13-14",
           "text": "One day, Job's sons and daughters are eating and drinking wine in their oldest brother's house. Then a messenger comes to Job.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -326,7 +326,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -334,31 +334,27 @@
           "kind": "story",
           "verses": "Job 1:15",
           "text": "Raiders called the Sabeans swooped down, took the animals and put the servants to the sword. And the messenger says, \"I alone have escaped to tell you!\"",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Job 1:16",
-          "question": "The first messenger is still speaking to Job. What happens next?",
+          "question": "While the first messenger is still speaking, another messenger arrives.",
           "answers": [
             {
-              "text": "Another messenger arrives",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Job's friends arrive",
-              "correct": false
-            },
-            {
-              "text": "The Sabeans come back",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -380,16 +376,16 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Job 1:16",
           "text": "He says, \"The fire of God fell from heaven.\" It burned up the sheep and the servants, and then that line again: \"I alone have escaped to tell you!\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -412,81 +408,59 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Job 1:17",
-          "text": "The Chaldeans raided the camels and put the servants to the sword. And one more time: \"I alone have escaped to tell you!\"",
-          "needs_agent_fix": true,
+          "verses": "Job 1:17-18",
+          "text": "The Chaldeans raided the camels and put the servants to the sword, and one more time: \"I alone have escaped to tell you!\" While he's still speaking, a fourth messenger arrives with news about Job's sons and daughters.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Job 1:18",
-          "question": "While the third messenger is still speaking, a fourth one comes to Job. Who is this news about?",
+          "type": "fill_blank",
+          "verses": "Job 1:19",
+          "question": "The fourth messenger says a mighty ___ swept in from the desert and struck the house where Job's sons and daughters were eating.",
           "answers": [
             {
-              "text": "Job's sons and daughters",
-              "correct": true
+              "text": "wind",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Job's servants in the fields",
+              "text": "army",
               "correct": false
             },
             {
-              "text": "Job's neighbors in Uz",
+              "text": "flood",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Job 1:19",
-          "question": "Job's sons and daughters were eating and drinking wine in their oldest brother's house. What does the fourth messenger say struck the house?",
-          "answers": [
-            {
-              "text": "A mighty wind from the desert",
-              "correct": true
-            },
-            {
-              "text": "An army from the east",
-              "correct": false
-            },
-            {
-              "text": "A great shaking of the ground",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The house collapsed on the young people, and they are dead. And the messenger says, \"I alone have escaped to tell you!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Job 1:19",
-          "text": "The house collapsed on the young people, and they are dead. And the messenger says, \"I alone have escaped to tell you!\"",
-          "needs_agent_fix": true,
+          "verses": "Job 1:14-20",
+          "text": "Four messengers, one right after another. Then Job stands up, tears his robe and shaves his head.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Job 1:20",
-          "text": "Four messengers, one right after another. Then Job stands up, tears his robe and shaves his head.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 1:20",
@@ -505,42 +479,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Job 1:21",
+          "text": "And Job says, \"Naked I came from my mother’s womb, and naked I will return.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Job 1:21",
-          "text": "And Job says, \"Naked I came from my mother’s womb, and naked I will return.\"",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Job 1:21",
-          "question": "Job says he came from his mother's womb naked and will return naked. What does he mean?",
-          "answers": [
-            {
-              "text": "He came with nothing and will leave with nothing",
-              "correct": true
-            },
-            {
-              "text": "He is ashamed to stand before God now",
-              "correct": false
-            },
-            {
-              "text": "He wants to start his whole life over",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Job 1:21",
@@ -551,7 +502,7 @@
               "correct": true
             },
             {
-              "text": "He questions it",
+              "text": "He swears by it",
               "correct": false
             },
             {
@@ -559,11 +510,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Job 1:22",
@@ -578,15 +529,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Job 1:22",
           "text": "Friend, I've got a whole lot more to tell you about Job. Don't you DARE take that apron off yet.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

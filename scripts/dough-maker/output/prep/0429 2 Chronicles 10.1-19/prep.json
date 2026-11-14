@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 10:1",
-          "text": "Rehoboam, son of King Solomon, heads to Shechem, because all Israel has gone there to make him king. ALL Israel, friend. Crowning day, and the WHOLE guest list showed up!",
-          "needs_agent_fix": true,
+          "text": "King Solomon has died, and his son Rehoboam reigns in his place (2 Chronicles 9:31). Now Rehoboam heads to Shechem, because all Israel has gone there to make him king. Crowning day, friend, and the WHOLE guest list showed up!",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -24,9 +24,9 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 10:2",
-          "question": "Jeroboam son of Nebat is heading back after fleeing from King Solomon. Where had he been?",
+          "question": "Jeroboam son of Nebat had fled from King Solomon, and now he comes back from ___.",
           "answers": [
             {
               "text": "Egypt",
@@ -48,7 +48,7 @@
           "card": 4,
           "kind": "story",
           "verses": "2 Chronicles 10:3",
-          "text": "The people send for Jeroboam, and he and all Israel come to Rehoboam with a request. Friend, that's the biggest group chat ever to show up in PERSON.",
+          "text": "So Jeroboam is sent for, and he and all Israel come to Rehoboam with a request. Friend, that's the biggest group chat ever to show up in PERSON.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,15 +80,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 10:4",
-          "question": "Israel promises King Rehoboam that if he lightens their burden, they will serve him.",
+          "question": "Israel warns King Rehoboam that they won't serve him, no matter what he does.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -118,7 +118,7 @@
               "correct": false
             },
             {
-              "text": "The prophets who lived in Jerusalem",
+              "text": "The prophets who served the LORD",
               "correct": false
             }
           ],
@@ -130,18 +130,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 10:7",
-          "question": "The elders advise King Rehoboam to be ___ to the people who came to him.",
+          "question": "The elders advise King Rehoboam to answer the people with ___ words.",
           "answers": [
             {
               "text": "kind",
               "correct": true
             },
             {
-              "text": "firm",
+              "text": "stern",
               "correct": false
             },
             {
-              "text": "strict",
+              "text": "few",
               "correct": false
             }
           ],
@@ -153,7 +153,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 10:7",
-          "question": "The elders tell Rehoboam that if he pleases the people with kind words, they will be his servants forever.",
+          "question": "The elders say that if Rehoboam pleases the people, they will be his servants forever.",
           "answers": [
             {
               "text": "True",
@@ -209,20 +209,20 @@
         {
           "card": 14,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 10:11",
-          "question": "The young men tell Rehoboam to promise that he will make Israel's yoke ___.",
+          "question": "The young men also tell Rehoboam what to say about the heavy yoke his father put on Israel. What is it?",
           "answers": [
             {
-              "text": "heavier",
+              "text": "He will add to it",
               "correct": true
             },
             {
-              "text": "lighter",
+              "text": "He will lift it off",
               "correct": false
             },
             {
-              "text": "gentler",
+              "text": "He will leave it as it is",
               "correct": false
             }
           ],
@@ -245,28 +245,32 @@
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 10:13",
-          "question": "When the people return, King Rehoboam follows the elders' advice and answers them kindly.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 10:13-14",
+          "text": "The king answers them harshly, rejecting the elders' advice and speaking as the young men advised: “Whereas my father scourged you with whips, I will scourge you with scorpions.” Whips to SCORPIONS. The sequel NOBODY asked for. But friend, there's more going on here than one stubborn king.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "2 Chronicles 10:13-14",
-          "text": "Instead he answers harshly, just as the young men advised: “Whereas my father scourged you with whips, I will scourge you with scorpions.” Whips to SCORPIONS, the sequel NOBODY asked for, but friend, there's more going on here than one stubborn king.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "2 Chronicles 10:15",
+          "question": "King Rehoboam doesn't listen to the people. This turn of events is from ___.",
+          "answers": [
+            {
+              "text": "God",
+              "correct": true
+            },
+            {
+              "text": "the elders",
+              "correct": false
+            },
+            {
+              "text": "the Philistines",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -275,18 +279,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 10:15",
-          "question": "King Rehoboam won't listen to the people, but there's more going on than one stubborn king. Who is this turn of events from?",
+          "question": "This turn of events is from God, so that the LORD might fulfill the word He had spoken through Ahijah the Shilonite, a prophet (1 Kings 11:29). Who had that word been spoken to?",
           "answers": [
             {
-              "text": "God",
+              "text": "Jeroboam son of Nebat",
               "correct": true
             },
             {
-              "text": "Jeroboam",
+              "text": "Nathan the prophet",
               "correct": false
             },
             {
-              "text": "The king of Egypt",
+              "text": "Iddo the seer",
               "correct": false
             }
           ],
@@ -296,8 +300,8 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "2 Chronicles 10:15",
-          "text": "It was from God, so the LORD could fulfill the word He had spoken through Ahijah the Shilonite, a prophet (1 Kings 11:29), to Jeroboam son of Nebat. Kings make their choices, friend, and God's word still comes true.",
+          "verses": "2 Chronicles 10:16",
+          "text": "When all Israel sees the king won't listen, they answer: “What portion do we have in David, and what inheritance in the son of Jesse?” David was Solomon's father (2 Chronicles 9:31), and Jesse was David's father (Ruth 4:22).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -306,14 +310,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 10:16",
-          "question": "King Rehoboam has refused to listen to the people. What does all Israel do?",
+          "question": "All Israel asks King Rehoboam what portion they have in David. What do they do next?",
           "answers": [
             {
               "text": "Turn from David’s house and go home",
               "correct": true
             },
             {
-              "text": "Agree to serve Rehoboam anyway",
+              "text": "Stay and plead with the king again",
               "correct": false
             },
             {
@@ -322,18 +326,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "2 Chronicles 10:16",
-          "text": "Their answer rings out: “To your tents, O Israel! Look now to your own house, O David!” And just like that, all the Israelites go home.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 10:17",
@@ -352,64 +348,41 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "2 Chronicles 10:18",
-          "text": "Then King Rehoboam sends out Hadoram, the man in charge of the forced labor, to THIS crowd. Friend, I'm hiding behind my mustache just reading it.",
+          "text": "Then King Rehoboam sends out Hadoram, who was in charge of the forced labor, but the Israelites stone him to death.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "2 Chronicles 10:18",
+          "question": "Hadoram, the man in charge of the forced labor, has been stoned to death. What does King Rehoboam do?",
+          "answers": [
+            {
+              "text": "Flees in his chariot to Jerusalem",
+              "correct": true
+            },
+            {
+              "text": "Calls the elders back for advice",
+              "correct": false
+            },
+            {
+              "text": "Goes out to speak with the crowd",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 10:18",
-          "question": "King Rehoboam sends Hadoram, who's in charge of the forced labor, out to the Israelites. What do they do to him?",
-          "answers": [
-            {
-              "text": "They stone him to death",
-              "correct": true
-            },
-            {
-              "text": "They take him as a prisoner",
-              "correct": false
-            },
-            {
-              "text": "They send him back to the king",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 10:18",
-          "question": "With Hadoram dead, King Rehoboam mounts his chariot in a hurry and escapes to ___.",
-          "answers": [
-            {
-              "text": "Jerusalem",
-              "correct": true
-            },
-            {
-              "text": "Hebron",
-              "correct": false
-            },
-            {
-              "text": "Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "story",
           "verses": "2 Chronicles 10:19",
-          "text": "So to this day, Israel has been in rebellion against the house of David. And friend, Rehoboam's story is only just getting started.",
+          "text": "So Israel was still in rebellion against the house of David when this was written. And friend, Rehoboam's story is only just getting started.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

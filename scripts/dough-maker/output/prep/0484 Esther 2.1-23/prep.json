@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Esther 2:1",
-          "text": "Last time, Queen Vashti refused to come when King Xerxes called, and it was decreed that she'd never come before him again (Esther 1:12, 19). Some time later, the king's anger has cooled off. Now he remembers Vashti, what she did and what was decreed against her.",
+          "text": "King Xerxes rules 127 provinces from the citadel of Susa (Esther 1:1-2). His queen, Vashti, refused to come when he called for her, and it was decreed that she'd never come before him again (Esther 1:12, 19). Some time later, his anger has cooled, and he remembers Vashti, what she did and what was decreed against her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,36 +17,12 @@
           "card": 2,
           "kind": "story",
           "verses": "Esther 2:2-3",
-          "text": "His attendants pitch a plan, and these guys do NOT think small. Commissioners in EVERY province, gathering beautiful young women into the harem at the citadel of Susa, with beauty treatments for all of them.",
+          "text": "His attendants propose a plan: commissioners in every province gather beautiful young women into the harem at the citadel of Susa. There they'll be under the care of Hegai, the king's eunuch in charge of the women, and get beauty treatments.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Esther 2:3",
-          "question": "In the attendants' plan, the young women will be placed under the care of ___, the king's eunuch in charge of the women.",
-          "answers": [
-            {
-              "text": "Hegai",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Memucan",
-              "correct": false
-            },
-            {
-              "text": "Carshena",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 2:4",
@@ -69,7 +45,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 2:4",
@@ -88,7 +64,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Esther 2:5-6",
           "text": "Now meet Mordecai son of Jair, a Jewish man from the tribe of Benjamin, living at the citadel of Susa. He was carried into exile from Jerusalem by Nebuchadnezzar king of Babylon, along with Jeconiah king of Judah.",
@@ -96,58 +72,57 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Esther 2:7",
-          "text": "Mordecai has brought up a young woman named Hadassah. You'll know her by her other name: Esther.",
+          "text": "Mordecai has brought up Hadassah, the daughter of his uncle. You'll know her by her other name: Esther.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Esther 2:7",
+          "question": "Why has Mordecai brought up Esther, the daughter of his uncle?",
+          "answers": [
+            {
+              "text": "She has no father or mother",
+              "correct": true
+            },
+            {
+              "text": "Her parents live far away in Jerusalem",
+              "correct": false
+            },
+            {
+              "text": "Her father serves in the king's palace",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Esther 2:7",
-          "question": "Esther, the young woman Mordecai brought up, is the daughter of Mordecai's ___.",
-          "answers": [
-            {
-              "text": "uncle",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "brother",
-              "correct": false
-            },
-            {
-              "text": "sister",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Esther 2:7",
-          "question": "True or false: Mordecai took Esther as his own daughter after her father and mother died.",
+          "question": "True or false: Mordecai raised Esther as a servant in his household, not as his daughter.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Esther 2:7-8",
           "text": "Esther is lovely in form and appearance. When the king's edict goes out, many young women gather at Susa, and Esther is taken to the palace and placed under Hegai's care.",
@@ -155,7 +130,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 2:9",
@@ -170,7 +145,7 @@
               "correct": false
             },
             {
-              "text": "He sends her home to Mordecai",
+              "text": "He sends her back home",
               "correct": false
             }
           ],
@@ -178,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Esther 2:9",
           "text": "When Hegai likes you, things MOVE: he quickly gets Esther her beauty treatments and the special diet. Meanwhile, I once let a batch of dough sit so long it filed a complaint.",
@@ -186,7 +161,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Esther 2:9",
@@ -210,7 +185,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 2:10",
@@ -229,7 +204,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 2:10",
@@ -240,7 +215,7 @@
               "correct": true
             },
             {
-              "text": "Hegai told her to keep quiet",
+              "text": "The king's servants warned her",
               "correct": false
             },
             {
@@ -252,7 +227,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 2:11",
@@ -263,7 +238,7 @@
               "correct": true
             },
             {
-              "text": "Sends letters to Esther through Hegai",
+              "text": "Sends letters to Esther in the harem",
               "correct": false
             },
             {
@@ -275,11 +250,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Esther 2:11",
-          "text": "EVERY day, back and forth, just to learn how Esther's doing and what's happening to her. That's a man refreshing his phone over and over for one text, and honestly? I respect it.",
-          "needs_agent_fix": true,
+          "text": "EVERY day, back and forth, just to learn how Esther's doing and what's happening to her. That's a man refreshing his phone over and over for one text, and honestly, I respect it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -359,11 +334,11 @@
               "blank": 1
             },
             {
-              "text": "Mordecai",
+              "text": "Shaashgaz",
               "correct": false
             },
             {
-              "text": "Shaashgaz",
+              "text": "Carshena",
               "correct": false
             }
           ],
@@ -419,30 +394,20 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Esther 2:17",
-          "question": "King Xerxes places the royal ___ on Esther's head and makes her ___ in place of Vashti.",
+          "question": "King Xerxes makes Esther queen in place of Vashti. What does he place on her?",
           "answers": [
             {
-              "text": "crown",
-              "correct": true,
-              "blank": 1
+              "text": "The royal crown",
+              "correct": true
             },
             {
-              "text": "queen",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "scepter",
+              "text": "The royal robe",
               "correct": false
             },
             {
-              "text": "governor",
-              "correct": false
-            },
-            {
-              "text": "advisor",
+              "text": "The royal signet ring",
               "correct": false
             }
           ],
@@ -517,7 +482,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Esther 2:20",
-          "text": "She's queen of the whole empire, and she still obeys Mordecai, just like she did under his care. I can't get my own dough to listen to me for five minutes.",
+          "text": "Queen of the whole empire, crown and all, and she still obeys Mordecai, just like she did under his care. Friend, the crown changed her address. It did NOT change her.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -541,11 +506,11 @@
               "correct": true
             },
             {
-              "text": "Hegai",
+              "text": "Memucan",
               "correct": false
             },
             {
-              "text": "Memucan",
+              "text": "Harbona",
               "correct": false
             }
           ],
@@ -557,15 +522,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 2:22",
-          "question": "True or false: When Esther tells the king about the plot, she leaves Mordecai out of it.",
+          "question": "True or false: When Esther tells the king about the plot, she does it on Mordecai's behalf.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -592,7 +557,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -615,15 +580,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Esther 2:23",
-          "text": "We'll pull this batch out of the oven right here. But friend? This story is only just getting warmed up.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "We'll pull this batch out of the oven right here, but friend, this story is only just getting warmed up.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         }
       ]
     }

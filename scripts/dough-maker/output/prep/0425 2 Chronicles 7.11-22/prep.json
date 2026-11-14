@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 7:11",
-          "text": "Solomon, king of Israel, has finished the house of the LORD and his own royal palace, and everything he set his heart on doing for them is DONE. That man finished his WHOLE to-do list, friend, and I've had \"organize the sprinkles\" on mine since the day I got here.",
-          "needs_agent_fix": true,
+          "text": "Solomon, king of Israel, has finished praying at the new temple, and the people have gone home joyful (2 Chronicles 7:1, 10). Now the house of the LORD and his royal palace are DONE, with everything he set his heart on doing for them carried out. That man finished his WHOLE to-do list, friend, and I've had \"organize the sprinkles\" on mine since the day I got here.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -57,7 +57,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -65,7 +65,7 @@
           "kind": "story",
           "verses": "2 Chronicles 7:13",
           "text": "Then the LORD talks about hard days. What if He closes the sky so there's no rain, or commands the locusts to eat up the land, or sends a plague among His people?",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -73,7 +73,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 7:14",
-          "question": "If hard days like that come, the LORD says He will hear from heaven if His people do something first. What is it?",
+          "question": "If the LORD stops the rain, sends locusts or sends a plague, He says He will hear from heaven if His people do something. What is it?",
           "answers": [
             {
               "text": "Humble themselves and seek Him",
@@ -84,19 +84,19 @@
               "correct": false
             },
             {
-              "text": "Ask their king to fix it",
+              "text": "Call on their king for help",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "2 Chronicles 7:14",
-          "text": "He spells it out: if His people who are called by His name humble themselves, pray, seek His face and turn from their wicked ways. That last one is turning AROUND, like realizing you've been driving the wrong way for an hour and actually taking the exit.",
-          "needs_agent_fix": true,
+          "text": "They also need to pray and turn from their wicked ways. That's turning AROUND, like realizing you've been driving the wrong way for an hour and actually taking the exit.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -104,21 +104,12 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 7:14",
-          "question": "If His people do all that, the LORD says He will hear from heaven, ___ their sin and ___ their land.",
+          "question": "The LORD says that when His people turn back to Him, He will hear from heaven, forgive their sin and ___ their land.",
           "answers": [
-            {
-              "text": "forgive",
-              "correct": true,
-              "blank": 1
-            },
             {
               "text": "heal",
               "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "punish",
-              "correct": false
+              "blank": 1
             },
             {
               "text": "flood",
@@ -129,7 +120,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -137,7 +128,7 @@
           "kind": "story",
           "verses": "2 Chronicles 7:15",
           "text": "And this brand-new temple? The LORD says from now on His eyes will be open and His ears attentive to the prayers offered in this place.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -156,15 +147,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "2 Chronicles 7:17",
-          "text": "Now the LORD turns to Solomon himself: if you walk before Me as your father David walked, doing all I've commanded and keeping My statutes and ordinances. Measuring up to your dad's WALK? Friend, I'm stuck on a gold base, I can't measure up to ANYBODY'S walk, I just HOP!",
-          "needs_agent_fix": true,
+          "text": "Now the LORD turns to Solomon himself: if you walk before Me as your father David walked, doing all I've commanded and keeping My statutes and ordinances. Following in the footsteps of DAVID? I bet that's a LOT to live up to.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -188,23 +179,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "2 Chronicles 7:18",
-          "text": "It's the same covenant the LORD made with David when He said, 'You will never fail to have a man to rule over Israel.'",
-          "needs_agent_fix": true,
+          "text": "It's the same covenant the LORD made with David when He said, \"You will never fail to have a man to rule over Israel.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 7:19",
-          "text": "But then the LORD gives the other side. If you turn away and forsake the statutes and commandments I set before you, and go off to serve and worship other gods...",
-          "needs_agent_fix": true,
+          "question": "Then the LORD gives the other side and warns about turning away from His statutes and commandments. What else does He warn about going off to do?",
+          "answers": [
+            {
+              "text": "Serve and worship other gods",
+              "correct": true
+            },
+            {
+              "text": "Make treaties with other nations",
+              "correct": false
+            },
+            {
+              "text": "Build altars on the high hills",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -212,7 +218,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 7:20",
-          "question": "The LORD warns about going off to serve other gods. If that happens, what will He do to Israel?",
+          "question": "If Israel goes off to serve other gods, what does the LORD say He will do to them?",
           "answers": [
             {
               "text": "Uproot them from their land",
@@ -227,7 +233,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -235,7 +241,7 @@
           "kind": "story",
           "verses": "2 Chronicles 7:20",
           "text": "And the temple He set apart for His Name? He'll banish it from His presence and make it an object of scorn and ridicule among all the peoples.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -243,49 +249,34 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 7:21",
-          "question": "If it comes to that, the temple will become a heap of rubble, and all who pass by it will be appalled.",
+          "question": "The LORD says that when this temple has become a heap of rubble, the people passing by will pay it no attention.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 7:22",
-          "question": "Passersby ask why the LORD did this to the land and the temple. What do others answer?",
-          "answers": [
-            {
-              "text": "They forsook Him for other gods",
-              "correct": true
-            },
-            {
-              "text": "Their enemies were too strong",
-              "correct": false
-            },
-            {
-              "text": "The temple was built wrong",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "2 Chronicles 7:21",
+          "text": "All who pass by will be appalled and ask, \"Why has the LORD done such a thing to this land and to this temple?\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "2 Chronicles 7:22",
-          "text": "And look who they walked away from: the LORD, the God of their fathers, who brought them out of the land of Egypt. That's a heavy word to end on, friend, and Solomon heard every bit of it.",
-          "needs_agent_fix": true,
+          "text": "Others will answer that they forsook the LORD, the God of their fathers who brought them out of the land of Egypt, and embraced other gods, so He brought all this disaster on them. That's a heavy word, friend, and Solomon heard every bit of it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

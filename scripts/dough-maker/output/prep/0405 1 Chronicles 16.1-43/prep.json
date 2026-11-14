@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "1 Chronicles 16:1",
-          "text": "The ark of God has arrived, and they set it inside the tent that David, king of Israel, pitched for it. Then they present burnt offerings and peace offerings before God. Friend, I lived in the back of a junk drawer for years, so trust me: a spot set up JUST for you is a BIG deal.",
-          "needs_agent_fix": true,
+          "text": "David, king of Israel, and all Israel have brought the ark of God into the City of David with shouting, horns, harps and lyres (1 Chronicles 15:28-29). They place it inside the tent David pitched for it. Then they present burnt offerings and peace offerings before God.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -33,7 +33,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,7 +41,7 @@
           "kind": "story",
           "verses": "1 Chronicles 16:3",
           "text": "Then David starts handing out food: a loaf of bread, a date cake and a raisin cake. Three treats and not ONE cookie, but I'm not upset, friend, I'm just saying it out loud.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "1 Chronicles 16:3",
-          "question": "Only the men of Israel get a share of David's bread, date cake and raisin cake.",
+          "question": "David hands out the bread, date cake and raisin cake only to the Levites who carried the ark.",
           "answers": [
             {
               "text": "True",
@@ -60,170 +60,171 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "1 Chronicles 16:4",
-          "text": "Next, David appoints some of the Levites to minister before the ark of the LORD. I had to appoint MYSELF to every job in my bakery, friend, so David having options? I'm a little jealous.",
-          "needs_agent_fix": true,
+          "text": "Next, David appoints some of the Levites, the ones the LORD chose to carry the ark (1 Chronicles 15:2), to minister before the ark of the LORD. Part of the job is to CELEBRATE, friend, so somebody put THAT on my apron.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Chronicles 16:4",
-          "question": "What job does David give the Levites he appoints before the ark?",
+          "question": "David appoints some Levites to minister before the ark: to celebrate, to give ___ and to praise the LORD, the God of Israel.",
           "answers": [
             {
-              "text": "To give thanks and praise the LORD",
-              "correct": true
+              "text": "thanks",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "To carry the ark around the city",
+              "text": "orders",
               "correct": false
             },
             {
-              "text": "To repair the tent every morning",
+              "text": "warnings",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "1 Chronicles 16:5-6",
-          "text": "Asaph is the chief, with a whole crew under him on harps and lyres while he sounds the cymbals. The priests Benaiah and Jahaziel blow the trumpets regularly before the ark.",
-          "needs_agent_fix": true,
+          "text": "Asaph, one of the Levite singers (1 Chronicles 15:16-17), is the chief, with a whole crew under him on harps and lyres while he sounds the cymbals. The priests Benaiah and Jahaziel blow the trumpets regularly before the ark.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "1 Chronicles 16:7-8",
-          "text": "On that day David first commits to Asaph and his associates a song of thanksgiving to the LORD. It opens like a to-do list: give thanks to the LORD and call on His name.",
-          "needs_agent_fix": true,
+          "text": "On that day David first commits to Asaph and his associates a song of thanksgiving to the LORD. It opens with a call: give thanks to the LORD, call on His name and make known His deeds among the nations.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Chronicles 16:8",
-          "question": "David's song says the LORD's deeds should be made known among the nations.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Chronicles 16:9-10",
+          "text": "Then it keeps going: sing to Him, sing praises to Him, tell of all His wonders and glory in His holy name. That's four things to do, friend, and I can't get TWO done before my oven timer goes off.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "1 Chronicles 16:9-10",
-          "text": "The list keeps going: sing to Him, sing praises, tell of all His wonders, glory in His holy name. I can't get FOUR things done before my oven timer goes off, and this song is just getting warmed up.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "1 Chronicles 16:10",
+          "question": "David's song calls on the hearts of those who seek the LORD to rejoice.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Chronicles 16:11",
-          "question": "David's song tells the people to seek the LORD's face only on feast days.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "1 Chronicles 16:11-12",
+          "text": "Then the song says to seek out the LORD and His strength, seek His face always, and remember the wonders He has done, His marvels and the judgments He has pronounced. Friend, I walk across my bakery to the oven and forget why I came, and my WHOLE planet is one bakery.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "1 Chronicles 16:12-13",
-          "text": "Then the song tells the sons of Jacob, also called Israel, His chosen ones, to remember His wonders, His marvels and the judgments He has pronounced. Friend, I walk across my bakery to the oven and forget why I came, and my WHOLE planet is one bakery.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Chronicles 16:13",
+          "question": "This part of David's song calls people to seek the LORD and remember His wonders. Who does it call?",
+          "answers": [
+            {
+              "text": "The offspring of Israel",
+              "correct": true
+            },
+            {
+              "text": "The kings of the nations",
+              "correct": false
+            },
+            {
+              "text": "The elders of Jerusalem",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Chronicles 16:14",
-          "question": "How far does David's song say the LORD's judgments carry?",
+          "question": "David's song says the LORD's judgments reach only as far as Israel.",
           "answers": [
             {
-              "text": "Throughout the earth",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Only within Israel",
-              "correct": false
-            },
-            {
-              "text": "As far as the Jordan",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "1 Chronicles 16:15-17",
-          "text": "Next the song says to remember His covenant forever, the word He ordained for a thousand generations, made with Abraham, Israel's forefather, sworn to Abraham's son Isaac and confirmed to Jacob as an everlasting covenant. A thousand generations, friend, and the warranty cards in my old junk drawer couldn't make it ONE year.",
-          "needs_agent_fix": true,
+          "text": "Next the song says to remember His covenant forever, the word He ordained for a thousand generations. It's the covenant He made with Abraham, the forefather of God's people, the oath He swore to Abraham's son Isaac, confirmed to Isaac's son Jacob as an everlasting covenant.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "1 Chronicles 16:18",
-          "question": "In His covenant, God promises to give them the land of ___ as the portion of their inheritance.",
+          "question": "David's song says God made a covenant with Abraham, Isaac and Jacob. What does God say He will give them?",
           "answers": [
             {
-              "text": "Canaan",
+              "text": "The land of Canaan",
               "correct": true
             },
             {
-              "text": "Egypt",
+              "text": "A crown of gold",
               "correct": false
             },
             {
-              "text": "Moab",
+              "text": "A temple of cedar",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "1 Chronicles 16:19-20",
-          "text": "But back then they were few in number, strangers in the land, wandering from nation to nation. Few INDEED, friend, that's not a nation, that's a group chat.",
-          "needs_agent_fix": true,
+          "text": "But back when they were few in number, few indeed, and strangers in the land, they wandered from nation to nation. Few INDEED, friend, that's not a nation, that's a group chat.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -246,26 +247,31 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "1 Chronicles 16:21-22",
-          "question": "The LORD even rebukes kings for the wanderers' sake, warning them not to touch His anointed ones.",
+          "type": "fill_blank",
+          "verses": "1 Chronicles 16:21",
+          "question": "The LORD lets no one oppress the wanderers. He rebukes ___ on their behalf: “Do not touch My anointed ones! Do no harm to My prophets!”",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "kings",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "priests",
+              "correct": false
+            },
+            {
+              "text": "elders",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -279,7 +285,7 @@
           "kind": "story",
           "verses": "1 Chronicles 16:23-24",
           "text": "Now David's song turns to the whole world: sing to the LORD, all the earth, and proclaim His salvation day after day. Declare His glory among the nations, His wonders among ALL peoples.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -302,15 +308,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "1 Chronicles 16:27",
-          "text": "“Splendor and majesty are before Him; strength and joy fill His dwelling.” My bakery has flour on the floor and a timer that beeps at me, so friend, we are NOT the same.",
-          "needs_agent_fix": true,
+          "text": "Then the song says, “Splendor and majesty are before Him; strength and joy fill His dwelling.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -329,7 +335,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -337,7 +343,7 @@
           "kind": "story",
           "verses": "1 Chronicles 16:29",
           "text": "Ascribe to the LORD the glory due His name, the song goes on, and come before Him. Worship the LORD in the splendor of His holiness.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -352,31 +358,31 @@
               "correct": true
             },
             {
-              "text": "A gift for the king",
+              "text": "Their idols",
               "correct": false
             },
             {
-              "text": "Their household gods",
+              "text": "Their swords",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "1 Chronicles 16:30",
-          "text": "The song says all the earth should tremble before Him, and the world is firmly established and cannot be moved. Firmly established, friend, and I can't even get my cooling rack to stop wobbling.",
-          "needs_agent_fix": true,
+          "text": "The song says all the earth should tremble before Him, and the world is firmly established and cannot be moved.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
           "verses": "1 Chronicles 16:31-32",
-          "text": "Then the song says: let the heavens be glad and the earth rejoice, and let them say among the nations, ‘The LORD reigns!’ Let the sea resound and the fields exult too: the FIELDS, friend, and my oven timer has to beep THREE times before I even get moving.",
-          "needs_agent_fix": true,
+          "text": "Then the song says: let the heavens be glad and the earth rejoice, and let them say among the nations, “The LORD reigns!” Let the sea resound, and the fields exult too.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -384,7 +390,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "1 Chronicles 16:33",
-          "question": "In David's song, the trees of the forest sing for joy before the LORD too. What reason does the song give?",
+          "question": "In David's song, the trees of the forest will sing for joy before the LORD too. What reason does the song give?",
           "answers": [
             {
               "text": "He is coming to judge the earth",
@@ -399,7 +405,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -407,38 +413,15 @@
           "kind": "story",
           "verses": "1 Chronicles 16:34",
           "text": "Then the song circles right back to where it started: give thanks to the LORD.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "1 Chronicles 16:34",
-          "question": "Why does David's song say to give thanks to the LORD this time?",
-          "answers": [
-            {
-              "text": "He is good and His love lasts forever",
-              "correct": true
-            },
-            {
-              "text": "He gave them rest from every war",
-              "correct": false
-            },
-            {
-              "text": "He made their fields grow tall",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "1 Chronicles 16:35",
-          "question": "Near the end, David's song gives the people a cry to God to save them, gather them and deliver them. The reason it gives is so they may give thanks to His holy name.",
+          "verses": "1 Chronicles 16:34",
+          "question": "This time, David's song says to give thanks to the LORD because He is good and His loving devotion endures forever.",
           "answers": [
             {
               "text": "True",
@@ -449,69 +432,89 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 12,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "1 Chronicles 16:35",
+          "question": "Then David's song gives the people a cry to God: save us, gather us and deliver us from the nations. What reason does the cry give?",
+          "answers": [
+            {
+              "text": "So they may give thanks to His holy name",
+              "correct": true
+            },
+            {
+              "text": "So they may rule over every nation",
+              "correct": false
+            },
+            {
+              "text": "So they may build Him a great temple",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "1 Chronicles 16:36",
-          "text": "And the song closes: “Blessed be the LORD, the God of Israel, from everlasting to everlasting.” Friend, THAT is how you land a song.",
-          "needs_agent_fix": true,
+          "text": "And the song closes: “Blessed be the LORD, the God of Israel, from everlasting to everlasting.”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "1 Chronicles 16:36",
-          "question": "David's song of thanksgiving is done. How do all the people respond?",
+          "question": "When David's song of thanksgiving ends, all the people answer with Amen and Praise the LORD.",
           "answers": [
             {
-              "text": "They say Amen and Praise the LORD",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "They shout Long live King David",
-              "correct": false
-            },
-            {
-              "text": "They stand in total silence",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
           "verses": "1 Chronicles 16:37-42",
-          "text": "So David leaves Asaph and his associates before the ark to minister there regularly, with Obed-edom and others as gatekeepers. And he leaves Zadok the priest and his fellow priests before the tabernacle of the LORD at Gibeon, presenting burnt offerings morning and evening, with Heman, Jeduthun and their musicians giving thanks to the LORD.",
-          "needs_agent_fix": true,
+          "text": "So David leaves Asaph and his associates before the ark to minister there regularly, along with Obed-edom and his sixty-eight relatives. Sixty-eight relatives on one job, friend, and my whole staff is me and a mustache. David also leaves Zadok the priest and his fellow priests before the tabernacle of the LORD at the high place in Gibeon, presenting burnt offerings morning and evening according to all that was written in the Law of the LORD. With them are Heman, Jeduthun and the rest chosen to give thanks to the LORD, with trumpets and cymbals for the music.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "1 Chronicles 16:43",
-          "question": "Then all the people depart for their homes, and David heads home too. What does David go home to do?",
+          "question": "Then all the people depart for their homes, and David returns home to ___ his household.",
           "answers": [
             {
-              "text": "Bless his household",
-              "correct": true
+              "text": "bless",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Count the offerings",
+              "text": "teach",
               "correct": false
             },
             {
-              "text": "Write another song",
+              "text": "gather",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

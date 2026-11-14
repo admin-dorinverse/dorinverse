@@ -8,36 +8,40 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Esther 7:6-8:1",
-          "text": "Queen Esther has just exposed Haman as the enemy behind the plan to destroy her people, the Jews, and King Xerxes had him hanged on the gallows. That same day, the king gives Esther the estate of Haman, the enemy of the Jews. Friend, that's like the coworker who tried to get you fired, and now YOU'VE got his corner office.",
+          "verses": "Esther 8:1",
+          "text": "Queen Esther has just exposed Haman as the enemy plotting to destroy her people, the Jews, and King Xerxes had him hanged on his own gallows (Esther 7:3-10). That same day, the king gives Queen Esther the estate of Haman, the enemy of the Jews.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Esther 8:1",
-          "question": "Mordecai the Jew now walks right into King Xerxes's presence, because Esther revealed his ___ to her.",
-          "answers": [
-            {
-              "text": "relation",
-              "correct": true
-            },
-            {
-              "text": "loyalty",
-              "correct": false
-            },
-            {
-              "text": "bravery",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Mordecai, Esther's cousin who raised her as his own daughter (Esther 2:7), walks right into the king's presence.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Esther 8:1",
+          "question": "Mordecai gets in to see King Xerxes because Esther has revealed how he's related to her.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 4,
           "kind": "story",
           "verses": "Esther 8:2",
           "text": "The king had taken something back from Haman. Now he hands it straight to Mordecai.",
@@ -45,7 +49,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 8:2",
@@ -56,7 +60,7 @@
               "correct": true
             },
             {
-              "text": "The gold scepter",
+              "text": "A gold chain",
               "correct": false
             },
             {
@@ -68,7 +72,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 8:2",
@@ -87,34 +91,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "Esther 8:3",
-          "text": "The ring, the estate, Mordecai's moving UP. But Haman's evil scheme against the Jews is still standing, and Esther goes to the king once again.",
+          "text": "The ring, the estate, Mordecai's moving UP. But Haman's evil scheme against the Jews is still standing, so Esther goes to the king once again and falls at his feet, weeping and begging.",
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Esther 8:3",
-          "question": "Esther comes before King Xerxes again and falls at his feet ___.",
-          "answers": [
-            {
-              "text": "weeping",
-              "correct": true
-            },
-            {
-              "text": "silently",
-              "correct": false
-            },
-            {
-              "text": "trembling",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         },
         {
@@ -137,7 +118,7 @@
           "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Esther 8:5",
+          "verses": "Esther 8:3, 5",
           "question": "After all that warm-up, what does Esther ask King Xerxes for?",
           "answers": [
             {
@@ -159,20 +140,20 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Esther 8:6",
-          "question": "Esther tells King Xerxes why she's asking. What does she say?",
+          "question": "Esther tells King Xerxes she can't bear to see the ___ of her kindred.",
           "answers": [
             {
-              "text": "She can't bear to see her people destroyed",
+              "text": "destruction",
               "correct": true
             },
             {
-              "text": "She's afraid of losing her place as queen",
+              "text": "exile",
               "correct": false
             },
             {
-              "text": "She wants Haman's name to be forgotten",
+              "text": "poverty",
               "correct": false
             }
           ],
@@ -190,30 +171,20 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Esther 8:8",
-          "question": "King Xerxes tells Esther and Mordecai they may write about the Jews in the king's ___ as they please, and seal it with the royal signet ___.",
+          "question": "King Xerxes tells Esther and Mordecai what they may do about the Jews. What is it?",
           "answers": [
             {
-              "text": "name",
-              "correct": true,
-              "blank": 1
+              "text": "Write as they please in the king's name",
+              "correct": true
             },
             {
-              "text": "ring",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "honor",
+              "text": "Burn every one of Haman's letters",
               "correct": false
             },
             {
-              "text": "scepter",
-              "correct": false
-            },
-            {
-              "text": "crown",
+              "text": "Send soldiers to guard every Jew",
               "correct": false
             }
           ],
@@ -225,7 +196,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 8:8",
-          "question": "King Xerxes says a decree written in his name and sealed with his signet ring can be revoked later.",
+          "question": "King Xerxes says a decree written in his name and sealed with his signet ring can be revoked.",
           "answers": [
             {
               "text": "True",
@@ -361,31 +332,16 @@
           "card": 8,
           "kind": "story",
           "verses": "Esther 8:11",
-          "text": "And the letters go further. The Jews may destroy any force of any people or province hostile to them, including women and children, and plunder their possessions.",
+          "text": "And the letters go further. The Jews may destroy, kill and annihilate all the forces of any people or province hostile to them, including women and children, and plunder their possessions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Esther 8:12",
-          "question": "The edict sets one single day across all of King Xerxes's provinces: the thirteenth day of the twelfth month, the month of ___.",
-          "answers": [
-            {
-              "text": "Adar",
-              "correct": true
-            },
-            {
-              "text": "Sivan",
-              "correct": false
-            },
-            {
-              "text": "Nisan",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "The edict sets one single day across all of King Xerxes's provinces: the thirteenth day of the twelfth month, the month of Adar. That's the very same day Haman's letters had set for destroying the Jews (Esther 3:13).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -443,7 +399,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Esther 8:15",
-          "question": "When Mordecai walks out dressed like that, the city of Susa is thrown into confusion.",
+          "question": "When Mordecai walks out in royal garments and a gold crown, the city of Susa is thrown into confusion.",
           "answers": [
             {
               "text": "True",
@@ -454,27 +410,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
-          "verses": "Esther 8:16",
-          "text": "For the Jews, it's a time of light and gladness, of joy and honor. Friend, I know a thing or two about light showing up after a long dark.",
+          "verses": "Esther 8:16-17",
+          "text": "For the Jews, it's a time of light and gladness, of joy and honor, and in every city the edict reaches they feast and celebrate. Friend, after years in the back of a junk drawer, I know a thing or two about light showing up after a long dark.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Esther 8:17",
-          "text": "And it spreads. In every province and every city the king's edict reaches, the Jews have joy and gladness, with feasting and celebrating.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Esther 8:17",
@@ -497,11 +445,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Esther 8:17",
-          "text": "And that's where we'll set it down for now. Keep that thirteenth day of Adar in mind, friend, because this story's not done.",
-          "needs_agent_fix": true,
+          "text": "And that's where we'll set it down for now. Friend, there's a whole lot more coming in this story.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

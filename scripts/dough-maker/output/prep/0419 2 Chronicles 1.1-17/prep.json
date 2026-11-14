@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 1:3",
-          "text": "That's the very tent Moses, the servant of the LORD, made back in the wilderness, and it's STILL on the job. My edges got a little blurry and they retired me to a JUNK DRAWER.",
+          "text": "That's the Tent of Meeting that Moses, the servant of the LORD, made back in the wilderness. And Solomon doesn't go alone, friend. He brings the WHOLE assembly with him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,62 +49,57 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 1:4",
-          "question": "The ark of God isn't at Gibeon with the Tent of Meeting. David had brought it from Kiriath-jearim and pitched a ___ for it in Jerusalem.",
+          "question": "The ark of God isn't at Gibeon. David brought it from Kiriath-jearim and pitched a tent for it in ___.",
           "answers": [
             {
-              "text": "tent",
+              "text": "Jerusalem",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "temple",
+              "text": "Hebron",
               "correct": false
             },
             {
-              "text": "palace",
+              "text": "Bethel",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "2 Chronicles 1:5",
-          "text": "But Gibeon still has the bronze altar made by Bezalel son of Uri, the craftsman God called by name to make the tabernacle and its furnishings in the wilderness (Exodus 31:1-11). It sits right before the tabernacle of the LORD, so that's where Solomon and the assembly inquire of Him.",
+          "text": "But Gibeon still has the bronze altar made by Bezalel son of Uri, the craftsman God called by name to make the tabernacle and its furnishings in the wilderness (Exodus 31:1-11). It sits right before the tabernacle of the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 1:6",
-          "question": "Solomon offers sacrifices before the LORD on the bronze altar at the Tent of Meeting. He offers a ___ burnt offerings.",
+          "type": "true_false",
+          "verses": "2 Chronicles 1:5",
+          "question": "At Gibeon, where the bronze altar is, Solomon and the assembly inquire of the LORD.",
           "answers": [
             {
-              "text": "thousand",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "few",
-              "correct": false
-            },
-            {
-              "text": "dozen",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "2 Chronicles 1:7",
-          "text": "A THOUSAND, and I used to think two hundred cookies made a big day. That night, God appears to Solomon.",
+          "verses": "2 Chronicles 1:6",
+          "text": "Solomon offers sacrifices before the LORD on the bronze altar at the Tent of Meeting: a thousand burnt offerings. A THOUSAND, friend, and I used to think two hundred cookies made a big day.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -113,7 +108,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 1:7",
-          "question": "When God appears to Solomon that night, He says, \"Ask, and I will give it to you!\"",
+          "question": "That night, God appears to Solomon and says, \"Ask, and I will give it to you!\"",
           "answers": [
             {
               "text": "True",
@@ -130,25 +125,29 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Chronicles 1:8-9",
-          "text": "Solomon answers by remembering the loving devotion God showed his father David. Then he asks God to let His promise to David be fulfilled, since God made him king over a people as numerous as the dust of the earth.",
+          "verses": "2 Chronicles 1:8",
+          "text": "Solomon replies that God has shown much loving devotion to his father David, and has made him king in David's place.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 1:10",
-          "question": "Solomon is king over a people as numerous as the dust of the earth. He tells God that governing a people that great is something he can easily handle on his own.",
+          "type": "multiple_choice",
+          "verses": "2 Chronicles 1:9",
+          "question": "Solomon is king in his father David's place. What does he ask God to let be fulfilled?",
           "answers": [
             {
-              "text": "True",
+              "text": "God's promise to David",
+              "correct": true
+            },
+            {
+              "text": "Moses' blessing on Israel",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The vow Solomon made",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -156,18 +155,10 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "2 Chronicles 1:10",
-          "text": "Then Solomon asks, \"For who is able to govern this great people of Yours?\" Friend, I looked after six little cookie cutters on ONE counter and it took my WHOLE mustache.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 1:10",
-          "question": "God said ask, and Solomon has a whole nation to lead. What does Solomon ask God to grant him?",
+          "question": "Solomon says God made him king over a people as numerous as the dust of the earth. Then he makes his request. What does he ask God to grant him?",
           "answers": [
             {
               "text": "Wisdom and knowledge",
@@ -186,42 +177,50 @@
           "needs_human_decision": false
         },
         {
+          "card": 12,
+          "kind": "story",
+          "verses": "2 Chronicles 1:10",
+          "text": "Then Solomon asks, \"For who is able to govern this great people of Yours?\" Friend, I looked after six little cookie cutters on ONE counter and it took my WHOLE mustache.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "2 Chronicles 1:11",
-          "question": "When God answers Solomon, He says the request for wisdom and knowledge was in Solomon's heart.",
+          "question": "God tells Solomon that he asked for wisdom and knowledge to govern God's people, instead of riches or wealth or honor for himself, or death for his enemies. What else does God say Solomon didn't even request?",
           "answers": [
             {
-              "text": "True",
+              "text": "Long life",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "A great army",
+              "correct": false
+            },
+            {
+              "text": "More land",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "2 Chronicles 1:12",
-          "question": "God grants Solomon the wisdom and knowledge he asked for. What does God say He'll give him on top of that?",
+          "question": "God grants Solomon the wisdom and knowledge he asked for, and says that's all He'll give him.",
           "answers": [
             {
-              "text": "Riches and wealth and honor",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Long life and many sons",
-              "correct": false
-            },
-            {
-              "text": "Victory over all his enemies",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -229,47 +228,14 @@
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 1:12",
-          "question": "God says Solomon's riches and honor will be unlike anything given to the kings ___ him or ___ him.",
-          "answers": [
-            {
-              "text": "before",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "after",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "beside",
-              "correct": false
-            },
-            {
-              "text": "under",
-              "correct": false
-            },
-            {
-              "text": "against",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "2 Chronicles 1:12-13",
+          "text": "God also promises him riches and wealth and honor unlike anything given to the kings before him or after him. Then Solomon leaves Gibeon, goes to Jerusalem and reigns over Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "2 Chronicles 1:13",
-          "text": "So Solomon leaves Gibeon, goes to Jerusalem and reigns over Israel. God said ASK, and the man picked wisdom, while I'd have asked for a bigger oven and felt GREAT about it.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "story",
           "verses": "2 Chronicles 1:14-17",
           "text": "Solomon gathers 1,400 chariots and 12,000 horses, with a horse and chariot trade reaching from Egypt and Kue out to the kings of the Hittites and Aram. The king makes silver and gold as common in Jerusalem as stones, which is how sprinkles are in my bakery: EVERYWHERE, and I quit even looking down years ago.",

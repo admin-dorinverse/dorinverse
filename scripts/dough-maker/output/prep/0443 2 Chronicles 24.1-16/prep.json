@@ -9,103 +9,43 @@
           "card": 1,
           "kind": "story",
           "verses": "2 Chronicles 24:1",
-          "text": "Joash becomes king of Judah at SEVEN years old, and he reigns in Jerusalem. Friend, I've had oven timers older than that, and not one of them could run a kingdom. His mother is Zibiah, from Beersheba.",
-          "needs_agent_fix": true,
+          "text": "Joash spent six years hidden in the house of God, until Jehoiada the priest crowned him king (2 Chronicles 22:12, 23:11). Joash is seven years old when he becomes king of Judah, and he reigns in Jerusalem forty years. His mother is Zibiah, from Beersheba.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 24:1",
-          "question": "The seven-year-old king takes the throne, and Joash reigns in Jerusalem ___ years.",
+          "type": "multiple_choice",
+          "verses": "2 Chronicles 24:2",
+          "question": "Young King Joash does what is right in the eyes of the LORD. How long does that last?",
           "answers": [
             {
-              "text": "forty",
-              "correct": true,
-              "blank": 1
+              "text": "All the days of Jehoiada the priest",
+              "correct": true
             },
             {
-              "text": "twenty",
+              "text": "All forty years of his reign",
               "correct": false
             },
             {
-              "text": "twelve",
+              "text": "Only for his first seven years",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "2 Chronicles 24:2",
-          "text": "Here's the good news, friend. Joash does what is right in the eyes of the LORD, and the text tells us exactly how long that lasts.",
-          "needs_agent_fix": true,
+          "verses": "2 Chronicles 24:3-4",
+          "text": "Jehoiada takes two wives for Joash, and sons and daughters follow. Some time later, the king who grew up hidden in the house of God sets his heart on a big project.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "2 Chronicles 24:2",
-          "question": "Joash does what is right in the eyes of the LORD all the days of ___ the priest.",
-          "answers": [
-            {
-              "text": "Jehoiada",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Zadok",
-              "correct": false
-            },
-            {
-              "text": "Abiathar",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "2 Chronicles 24:3",
-          "text": "Now Jehoiada the priest steps into King Joash's family story.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 24:3",
-          "question": "True or false: Jehoiada the priest takes two wives for King Joash.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "2 Chronicles 24:3-4",
-          "text": "And Joash has sons and daughters. Then some time later, Joash sets his heart on a big project.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 24:4",
@@ -124,127 +64,104 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "2 Chronicles 24:5",
+          "text": "So Joash gathers the priests and Levites: go out to the cities of Judah and collect the money due every year from all Israel, to repair the house of your God. Then the king adds, \"Do it quickly.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Chronicles 24:5",
+          "question": "King Joash tells the Levites to collect the money quickly. True or false: The Levites hurry right out to collect the money.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "2 Chronicles 24:5-6",
+          "text": "The Levites do NOT make haste, and friend, I know slow: I spent years in a junk drawer watching dust land. So King Joash calls in Jehoiada the high priest.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "2 Chronicles 24:6",
+          "question": "King Joash asks Jehoiada why the Levites haven't brought in the tax for the Tent of the Testimony. True or false: The king says that tax was imposed by Moses and the assembly of Israel.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
-          "verses": "2 Chronicles 24:5",
-          "text": "So Joash gathers the priests and Levites: go out to the cities of Judah and collect the money due every year from all Israel, to repair the house of your God. Then the king adds, \"Do it quickly.\"",
-          "needs_agent_fix": true,
+          "verses": "2 Chronicles 24:7",
+          "text": "Then the text gives some background about the house of God and the sons of that wicked woman Athaliah. She ruled the land while Joash was hidden (2 Chronicles 22:12).",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 24:5",
-          "question": "True or false: When King Joash tells them to do it quickly, the Levites hurry right out to collect the money.",
+          "type": "multiple_choice",
+          "verses": "2 Chronicles 24:7",
+          "question": "The text explains what the sons of Athaliah had done to the house of God. What was it?",
           "answers": [
             {
-              "text": "True",
+              "text": "They broke in and used its sacred objects for the Baals",
+              "correct": true
+            },
+            {
+              "text": "They tore down its walls and burned its wooden doors",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "They stripped its gold and carried it off to Egypt",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "2 Chronicles 24:5-6",
-          "text": "The Levites do NOT make haste, and friend, I know slow: I spent years in a junk drawer watching dust land. So King Joash calls in Jehoiada the high priest with a question.",
-          "needs_agent_fix": true,
+          "verses": "2 Chronicles 24:8",
+          "text": "So at King Joash's command, a chest is made, a place for the people to bring in that tax.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 24:6",
-          "question": "What does King Joash ask Jehoiada the high priest?",
-          "answers": [
-            {
-              "text": "Why he hasn't made the Levites bring in the tax",
-              "correct": true
-            },
-            {
-              "text": "Why he hasn't opened the temple doors yet",
-              "correct": false
-            },
-            {
-              "text": "Why he hasn't offered the morning sacrifice",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 24:6",
-          "question": "The tax King Joash wants brought in for the Tent of the Testimony isn't something new. True or false: Moses and the assembly of Israel imposed it.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "2 Chronicles 24:7",
-          "text": "Now, some background: Athaliah reigned over the land before Joash (2 Chronicles 22:12). And here the text calls her a wicked woman.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "2 Chronicles 24:7",
-          "question": "Why does the house of God need repairing in the first place?",
-          "answers": [
-            {
-              "text": "Athaliah's sons broke in and used its sacred objects for the Baals",
-              "correct": true
-            },
-            {
-              "text": "Athaliah's soldiers tore down its walls and burned its wooden doors",
-              "correct": false
-            },
-            {
-              "text": "Athaliah's servants stripped its gold and sent it away to Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "2 Chronicles 24:7-8",
-          "text": "Athaliah's sons broke in AND used the sacred objects for the Baals, which is NOT what I'd call normal wear and tear. So at King Joash's command, a chest is made.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "2 Chronicles 24:8",
@@ -264,38 +181,39 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 13,
           "kind": "story",
           "verses": "2 Chronicles 24:9",
           "text": "Then a proclamation goes out across Judah and Jerusalem: bring to the LORD the tax Moses the servant of God set on Israel in the wilderness. Same tax, brand new chest.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "2 Chronicles 24:10",
-          "question": "When the proclamation goes out, how do the officers and the people respond?",
+          "question": "When the proclamation goes out, all the officers and all the people ___ and drop their contributions in the chest until it's full.",
           "answers": [
             {
-              "text": "They rejoice and fill the chest with contributions",
-              "correct": true
+              "text": "rejoice",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "They complain but pay what they owe",
+              "text": "grumble",
               "correct": false
             },
             {
-              "text": "They wait for the Levites to come collect",
+              "text": "hesitate",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -340,7 +258,7 @@
           "card": 3,
           "kind": "story",
           "verses": "2 Chronicles 24:11-12",
-          "text": "EVERY SINGLE DAY, friend, and I've seen a cookie jar go from full to empty that fast, but NEVER from empty to full. King Joash and Jehoiada hand the money to the men supervising the work on the house of the LORD.",
+          "text": "They gather money in ABUNDANCE, friend, and I have NEVER seen a cookie jar go from empty to full that fast. Then King Joash and Jehoiada hand it to the men supervising the work on the house of the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -349,7 +267,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 24:12",
-          "question": "Who do the supervisors hire with the money to restore the house of the LORD?",
+          "question": "The supervisors use the money to hire workers to restore the house of the LORD. Who do they hire?",
           "answers": [
             {
               "text": "Stonecutters and carpenters and metalworkers",
@@ -380,15 +298,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "2 Chronicles 24:13",
-          "question": "True or false: The workmen rebuild the house of God in a brand new design.",
+          "question": "True or false: The workmen restore the house of God according to its specifications.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -398,7 +316,7 @@
           "card": 7,
           "kind": "story",
           "verses": "2 Chronicles 24:13-14",
-          "text": "They restore the house of God to its specifications, and they reinforce it. And when they finish, there's money LEFT OVER, and friend, I have NEVER in my life seen a repair job come in under budget.",
+          "text": "They reinforce it too. And when they finish, there's money LEFT OVER, and friend, I have NEVER in my life seen a repair job come in under budget.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,7 +347,7 @@
           "card": 9,
           "kind": "story",
           "verses": "2 Chronicles 24:14",
-          "text": "Utensils for the service and the burnt offerings, dishes, and objects of gold and silver. Brand new things made for the house of the LORD, and NONE of it is headed for the back of a drawer.",
+          "text": "Utensils for the service and the burnt offerings, dishes, and other objects of gold and silver, all made for the house of the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -461,7 +379,7 @@
           "card": 11,
           "kind": "story",
           "verses": "2 Chronicles 24:15",
-          "text": "Then comes the sad part. Jehoiada the priest grows old and full of years, and he dies.",
+          "text": "I think this part is heavy, friend. Jehoiada the priest is old and full of years, and he dies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -491,37 +409,10 @@
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "2 Chronicles 24:15",
-          "text": "ONE HUNDRED AND THIRTY, friend, and I felt ancient after a few years in a junk drawer. Now watch where they bury him.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "2 Chronicles 24:16",
-          "question": "True or false: Jehoiada the priest is buried with the kings in the City of David.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "2 Chronicles 24:16",
-          "question": "Why is Jehoiada the priest buried with the kings?",
+          "question": "Jehoiada the priest is buried with the kings in the City of David. Why?",
           "answers": [
             {
               "text": "He did what was good in Israel for God and His temple",
@@ -540,10 +431,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "2 Chronicles 24:16",
-          "text": "A priest, laid to rest with the kings. And Joash? He's still on that throne, friend, and we haven't seen the last of him yet.",
+          "text": "And Joash? He's still on that throne, friend, and his story isn't over yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
