@@ -9,66 +9,43 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 35:1",
-          "text": "Isaiah, the prophet, just finished a hard word about Edom: streams turned to tar, towers overgrown with thorns, jackals moving in (Isaiah 34:9, 13). Now he turns to the wilderness and the dry land. Friend, pull up a stool, because Isaiah's got something to say about some DIRT.",
+          "text": "Isaiah, the prophet, just warned that Edom's streams will turn to tar and jackals will move in (Isaiah 34:9, 13). Now he turns to the wilderness and the dry land. Friend, pull up a stool, because Isaiah's got something to say about some DIRT.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 35:1",
-          "question": "Isaiah looks at the wilderness and the dry land. How does he say they will feel?",
+          "question": "Isaiah says the wilderness and the dry land will be ___.",
           "answers": [
             {
-              "text": "They will be glad",
+              "text": "glad",
               "correct": true
             },
             {
-              "text": "They will be ashamed",
+              "text": "ashamed",
               "correct": false
             },
             {
-              "text": "They will be afraid",
+              "text": "afraid",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 35:1",
-          "question": "The desert will rejoice and ___ like a rose.",
-          "answers": [
-            {
-              "text": "blossom",
-              "correct": true
-            },
-            {
-              "text": "shine",
-              "correct": false
-            },
-            {
-              "text": "sway",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Isaiah 35:1-2",
+          "text": "The desert will blossom like a rose and bloom profusely with joy and singing. That desert's going to act like me my first morning out of the junk drawer: mustache flung wide, SINGING to the ovens.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Isaiah 35:2",
-          "text": "It blooms profusely and rejoices with joy and singing. That desert is acting like me my first morning out of the junk drawer: mustache flung wide, SINGING to the ovens.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 35:2",
@@ -84,14 +61,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 35:2",
-          "question": "In that blooming desert, Isaiah says they will see someone's glory and splendor. Whose?",
+          "question": "In that blooming desert, Isaiah says someone's glory and splendor will be seen. Whose?",
           "answers": [
             {
               "text": "The LORD's",
@@ -107,18 +84,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "story",
           "verses": "Isaiah 35:3",
           "text": "Then comes a command, and this one's about people: \"Strengthen the limp hands and steady the feeble knees!\" Friend, I don't even HAVE knees, and mine felt that.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 35:4",
@@ -138,10 +115,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 35:4",
@@ -157,72 +134,68 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Isaiah 35:4-5",
+          "text": "Isaiah says it plain: \"With divine retribution He will come to save you.\" Then, Isaiah says, the eyes of the blind will be opened.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Isaiah 35:4-5",
-          "text": "Isaiah says it plain: \"With divine retribution He will come to save you.\" Then blind eyes get opened, and after years in a dark drawer, friend, that one gets me right in the apron.",
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Isaiah 35:5",
+          "question": "True or false: Isaiah says the ears of the deaf will be opened too.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Isaiah 35:5",
-          "question": "Blind eyes are opened. What happens to the ears of the deaf?",
+          "verses": "Isaiah 35:6",
+          "question": "Blind eyes and deaf ears will be opened. What does Isaiah say the lame will do?",
           "answers": [
             {
-              "text": "They are unstopped",
+              "text": "Leap like a deer",
               "correct": true
             },
             {
-              "text": "They stay closed",
+              "text": "Sit down and rest",
               "correct": false
             },
             {
-              "text": "They grow even duller",
+              "text": "Be carried home",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 35:6",
-          "question": "Then the lame will ___ like a deer.",
-          "answers": [
-            {
-              "text": "leap",
-              "correct": true
-            },
-            {
-              "text": "hide",
-              "correct": false
-            },
-            {
-              "text": "rest",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "story",
+          "verses": "Isaiah 35:6-7",
+          "text": "The mute tongue will shout for joy, and the desert will go from bone dry to SPLASH ZONE. Waters will gush in the wilderness, streams will run in the desert, and the parched ground will become a pool.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Isaiah 35:6-7",
-          "text": "The mute tongue shouts for joy, and the desert goes from cracked dirt to SPLASH ZONE. Waters gush in the wilderness, streams run in the desert, and the parched ground becomes a pool.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 35:7",
@@ -242,41 +215,41 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Isaiah 35:8",
+          "text": "Then Isaiah says there will be a highway called the Way of Holiness, and only those who walk in the Way will travel it. Finally, a highway that isn't under construction for three YEARS.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Isaiah 35:8",
-          "text": "Then Isaiah says there will be a highway, and it has a name: the Way of Holiness. Finally, a highway that isn't under construction for three YEARS.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 35:8",
-          "question": "The highway is called the Way of Holiness. Who does Isaiah say will not travel it?",
+          "question": "Isaiah says the ___ will not travel the Way of Holiness.",
           "answers": [
             {
-              "text": "The unclean",
+              "text": "unclean",
               "correct": true
             },
             {
-              "text": "The weary",
+              "text": "weary",
               "correct": false
             },
             {
-              "text": "The poor",
+              "text": "poor",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 35:8",
@@ -292,56 +265,46 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "story",
+          "verses": "Isaiah 35:9",
+          "text": "No lion or vicious beast will go up on it, but the redeemed will walk upon it. Friend, that's a commute with ZERO surprises.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "story",
-          "verses": "Isaiah 35:8-9",
-          "text": "Only those who walk in the Way travel it, and no lion or vicious beast goes up on it. Friend, that's a commute with ZERO surprises.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 19,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Isaiah 35:10",
-          "question": "Isaiah says the ___ of the LORD will return and enter Zion with ___.",
+          "question": "Isaiah says the redeemed of the LORD will return and enter Zion. How does he say they will come in?",
           "answers": [
             {
-              "text": "redeemed",
-              "correct": true,
-              "blank": 1
+              "text": "With singing",
+              "correct": true
             },
             {
-              "text": "singing",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "wicked",
+              "text": "With weeping",
               "correct": false
             },
             {
-              "text": "weeping",
-              "correct": false
-            },
-            {
-              "text": "armies",
+              "text": "In silence",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "story",
           "verses": "Isaiah 35:10",
-          "text": "They come in crowned with everlasting joy, gladness and joy overtake them, and sorrow and sighing FLEE. Friend, that's the first time I've ever cheered for something running away.",
+          "text": "The redeemed will be crowned with everlasting joy, gladness and joy will overtake them, and sorrow and sighing will FLEE. Friend, that's the first time I've ever cheered for something running away.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

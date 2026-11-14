@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 3
+      },
+      "problem": "Card 3 says the description 'takes the scenic route' after noting that the earlier description started at her eyes. That tells the baker that the description does not start at her head, which is the answer to the true/false on card 4.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 11
+      },
+      "problem": "The question says the Shulammite speaks 'about who she belongs to', and the right answer is 'She belongs to her beloved…'. The question holds a form of its own answer.",
+      "rule": "A choice card's question never holds its own answer, or a form of it, like \"rock badgers\" for \"in the rocks.\" Ask something else."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 16
+      },
+      "problem": "The blank answer 'beloved' has already been shown on earlier cards: 'my beloved' in the quote on card 10, the right answer on card 11, and 'her beloved' in the question on card 12. The baker can fill the blank without reasoning from the passage.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 20
+      },
+      "problem": "The card points back to 'His left hand is under my head…' (2:6) and to the charge in 2:7 and 3:5. No earlier card showed any of those words.",
+      "rule": "What he points out must be true. \"Same words\" means an exact match. He only points back to words a card has shown."
+    }
+  ]
+}

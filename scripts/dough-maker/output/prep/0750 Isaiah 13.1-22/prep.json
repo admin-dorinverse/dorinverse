@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 13:1",
-          "text": "Isaiah son of Amoz, the prophet, receives a burden against Babylon. Get comfortable, friend. This message is HEAVY, the grab-it-with-both-ends-of-the-mustache kind of heavy.",
+          "text": "Isaiah son of Amoz, a prophet, receives a burden against Babylon, a great city. Pull up a stool by the oven, friend, and lean in.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -19,37 +19,37 @@
           "verses": "Isaiah 13:2",
           "text": "It opens with a signal: raise a banner on a barren hilltop, call out and wave your hand, so they can enter the gates of the nobles. That's a LOT of waving for somebody Isaiah hasn't even named yet, and friend, I wave with a mustache.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:3",
-          "question": "A banner goes up on a bare hilltop, and someone is waved through the gates of the nobles. Then the LORD speaks. Who does He say He has summoned?",
+          "question": "A banner goes up on a bare hilltop. Then the burden says, \"I have commanded My sanctified ones…\" Who else does it say are summoned?",
           "answers": [
             {
-              "text": "His warriors",
+              "text": "My warriors",
               "correct": true
             },
             {
-              "text": "His prophets",
+              "text": "My prophets",
               "correct": false
             },
             {
-              "text": "His priests",
+              "text": "My judges",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 13:3",
-          "question": "The LORD summons His warriors to carry out His ___.",
+          "question": "In the burden, the warriors are summoned to execute My ___ and exult in My triumph.",
           "answers": [
             {
               "text": "wrath",
@@ -65,22 +65,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Isaiah 13:4",
-          "text": "Then a noise. A tumult on the mountains, like a great multitude, and an uproar among the kingdoms, like nations gathered together. That's LOUDER than the dead batteries I shared a drawer with, arguing over who had the most charge left.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Listen: a tumult on the mountains like a great multitude, and an uproar among the kingdoms like nations gathered together. That's LOUDER than the dead batteries I shared a drawer with, arguing over who had the most charge left.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:4",
-          "question": "All that uproar on the mountains and among the kingdoms. What's causing it?",
+          "question": "There's an uproar on the mountains and among the kingdoms. What does Isaiah say is going on?",
           "answers": [
             {
               "text": "The LORD of Hosts raising an army",
@@ -96,95 +96,107 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Isaiah 13:5",
-          "question": "The army the LORD is gathering comes from close by, just over the nearest hill.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "This army is coming from faraway lands, from the ends of the heavens. The LORD and the weapons of His wrath are on the move.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Isaiah 13:5-6",
-          "text": "And they're coming to destroy the whole country. Then the cry goes out: wail, because the Day of the LORD is near.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Isaiah 13:5",
+          "question": "The LORD and the weapons of His wrath are coming to destroy the whole ___.",
+          "answers": [
+            {
+              "text": "country",
+              "correct": true
+            },
+            {
+              "text": "temple",
+              "correct": false
+            },
+            {
+              "text": "army",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Isaiah 13:6",
-          "question": "Isaiah says the Day of the LORD will come as ___ from the Almighty.",
+          "question": "Then the cry goes out to wail. What reason does Isaiah give?",
           "answers": [
             {
-              "text": "destruction",
+              "text": "The Day of the LORD is near",
               "correct": true
             },
             {
-              "text": "rescue",
+              "text": "The king of Babylon has died",
               "correct": false
             },
             {
-              "text": "comfort",
+              "text": "The harvest has been lost",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Isaiah 13:6-7",
+          "text": "The Day of the LORD will come as destruction from the Almighty, and all hands will fall limp.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 13:7",
-          "question": "When the Day of the LORD comes, all hands fall limp. What happens to every man's heart?",
+          "question": "On the Day of the LORD, every man's heart will ___.",
           "answers": [
             {
-              "text": "It will melt",
+              "text": "melt",
               "correct": true
             },
             {
-              "text": "It will rejoice",
+              "text": "rejoice",
               "correct": false
             },
             {
-              "text": "It will harden",
+              "text": "harden",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Isaiah 13:8",
-          "text": "Terror, pain and anguish seize them. They look at one another, their faces flushed with fear.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
+          "kind": "story",
+          "verses": "Isaiah 13:8",
+          "text": "Terror, pain and anguish will seize the people. They'll look at one another, their faces flushed with fear.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:8",
-          "question": "Isaiah compares the way these terrified people writhe to someone. Who?",
+          "question": "With terror and anguish seizing them on the Day of the LORD, Isaiah says the people will writhe like someone. Who?",
           "answers": [
             {
               "text": "A woman in labor",
@@ -195,58 +207,54 @@
               "correct": false
             },
             {
-              "text": "A sailor lost at sea",
+              "text": "A sailor in a storm",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 13,
-          "kind": "story",
-          "verses": "Isaiah 13:9",
-          "text": "Behold, the Day of the LORD is coming, cruel, with fury and burning anger. It comes to make the earth a desolation.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Isaiah 13:9",
-          "question": "The Day of the LORD comes to make the earth a desolation. Who does it destroy within it?",
+          "text": "Behold, the Day of the LORD is coming, cruel, with fury and burning anger. It's coming to make the earth a desolation.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Isaiah 13:9",
+          "question": "Isaiah says the Day of the LORD is coming to destroy the sinners within the earth.",
           "answers": [
             {
-              "text": "The sinners",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The shepherds",
-              "correct": false
-            },
-            {
-              "text": "The merchants",
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Isaiah 13:10",
-          "text": "Then the lights start going out. The stars of heaven and their constellations won't give their light, and friend, I light stars for a living, so that one hits me right in the apron.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
+          "kind": "story",
+          "verses": "Isaiah 13:10",
+          "text": "The stars of heaven and their constellations won't give their light, and the rising sun will be darkened. Friend, my whole sky lights up one cookie box at a time, so that one hits me right in the apron.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 13:10",
-          "question": "On the Day of the LORD, the rising sun will be darkened, but the moon will still give its light.",
+          "question": "On the Day of the LORD, Isaiah says the moon will still give its light.",
           "answers": [
             {
               "text": "True",
@@ -258,7 +266,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     },
@@ -270,16 +278,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 13:11",
-          "text": "The LORD keeps speaking: \"I will punish the world for its evil and the wicked for their iniquity.\"",
+          "text": "Then the burden goes on: \"I will punish the world for its evil and the wicked for their iniquity.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:11",
-          "question": "The LORD says He'll punish the wicked. Who else does He say He'll bring low?",
+          "question": "The burden says the wicked will be punished. Who else does it say will be brought low?",
           "answers": [
             {
               "text": "The arrogant and the ruthless",
@@ -290,27 +298,27 @@
               "correct": false
             },
             {
-              "text": "The prophets and the priests",
+              "text": "The weak and the weary",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Isaiah 13:12",
-          "text": "Next, the LORD talks about gold. Not just any gold, the gold of Ophir. And as a guy who once sold for 25 cents, I am NOT the expert on precious things.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Next comes gold, even the gold of Ophir. And as a guy who once sold for 25 cents, I am NOT the expert on precious things.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:12",
-          "question": "The LORD says He'll make man scarcer than pure gold, rarer than the gold of Ophir. What's that picture saying?",
+          "question": "The burden says man will be made scarcer than pure gold, rarer than the gold of Ophir. What's that picture saying?",
           "answers": [
             {
               "text": "Very few people will be left",
@@ -326,15 +334,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Isaiah 13:13-14",
-          "text": "The heavens tremble, and the earth is shaken from its place. And the people scatter like a hunted gazelle, like a sheep without a shepherd.",
+          "text": "The heavens will tremble, and the earth will be shaken from its place at the wrath of the LORD of Hosts. And everyone will scatter like a hunted gazelle, like a sheep without a shepherd.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -357,22 +365,30 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Isaiah 13:15-16",
-          "text": "Isaiah doesn't soften this part, friend. Whoever is caught dies by the sword, houses are looted, and families suffer terribly.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Whoever is caught will be stabbed, and whoever is captured will die by the sword. Their infants will be dashed to pieces before their eyes, their houses will be looted, and their wives will be ravished.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 8,
+          "kind": "story",
+          "verses": "Isaiah 13:17",
+          "text": "Then the burden names who's coming, the Medes, a people from the land of Media: \"Behold, I will stir up against them the Medes…\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 13:17",
-          "question": "In this burden against Babylon, God says He'll stir up the Medes, a people from the land of Media, against the people this prophecy is about. True or false: the Medes can be bought off with silver and gold.",
+          "question": "The Medes who will be stirred up against them have a great desire for silver and gold.",
           "answers": [
             {
               "text": "True",
@@ -383,19 +399,19 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
-        },
-        {
-          "card": 9,
-          "kind": "story",
-          "verses": "Isaiah 13:18-19",
-          "text": "Their bows show no mercy, not even to the children. Then Isaiah calls Babylon by name: the jewel of the kingdoms, the glory of the pride of the Chaldeans, Babylon's people.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Isaiah 13:18-19",
+          "text": "Their bows will dash young men to pieces, with no mercy on the fruit of the womb and no pity on the children. And Babylon, the jewel of the kingdoms, the glory of the pride of the Chaldeans, Babylon's people, will be overthrown.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:19",
@@ -415,41 +431,41 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 13:20",
-          "question": "After Babylon is overthrown, a later generation will move back in and settle there again.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Isaiah 13:20",
-          "text": "Never inhabited, from generation to generation. Not even a nomad pitches his tent there, and no shepherd rests his flock there.",
+          "question": "Isaiah says that after Babylon is overthrown, she will never be inhabited again.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Isaiah 13:20",
+          "text": "Not even a nomad will pitch his tent there, and no shepherd will rest his flock there.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 13:21",
-          "question": "Once Babylon is empty, Isaiah says some new residents move into her houses. Who does he say will be found there?",
+          "question": "Isaiah says that once Babylon is empty, new residents will move in. Who will live there?",
           "answers": [
             {
               "text": "Desert creatures and ostriches",
@@ -465,18 +481,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Isaiah 13:22",
           "text": "Hyenas will howl in her fortresses, and jackals in her luxurious palaces. The jewel of the kingdoms is headed for the WORST rental listing you have ever seen.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 13:22",
@@ -492,7 +508,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

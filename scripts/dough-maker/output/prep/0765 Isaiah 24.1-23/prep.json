@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Isaiah 24:3",
-          "text": "The earth will be utterly laid waste and thoroughly plundered. It's like a blackout on the whole block, baker: the boss's fancy fridge goes dark same as yours, ice maker and all.",
+          "text": "The earth will be utterly laid waste and thoroughly plundered. This part is heavy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 24:3",
-          "question": "Isaiah says the earth will be utterly laid waste and thoroughly plundered. True or false: He says this is only his own guess.",
+          "question": "Isaiah says the earth will be utterly laid waste and thoroughly plundered. True or false: Isaiah says this is only his own guess.",
           "answers": [
             {
               "text": "True",
@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Isaiah 24:4",
-          "text": "The earth mourns and withers, the world fades, and even the exalted of the earth waste away. Turns out the VIPs don't get a VIP exit.",
+          "text": "The earth mourns and withers, and the world languishes and fades. Big title or no title, even the exalted of the earth waste away.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -99,7 +99,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 24:6",
-          "question": "Isaiah says a curse has consumed the earth, and its people must bear the guilt. True or false: He says everyone on the earth survives.",
+          "question": "Isaiah says a curse has consumed the earth, and its people must bear the guilt. True or false: Isaiah says everyone on the earth survives.",
           "answers": [
             {
               "text": "True",
@@ -148,7 +148,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Isaiah 24:8",
-          "text": "Tambourines, revelers, harp: all gone quiet, and friend, I KNOW that kind of quiet. In my old junk drawer, a rubber band snapping was the big news for a WEEK.",
+          "text": "Tambourines, revelers, harp: all gone quiet, and friend, I KNOW that kind of quiet. Back when I was stuck in the back of a junk drawer, a rubber band snapping was the big news for a WEEK.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -188,7 +188,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 24:11",
-          "question": "In the streets of the city of chaos, they cry out for wine. All joy turns to ___.",
+          "question": "In the streets, they cry out for wine. All joy turns to ___.",
           "answers": [
             {
               "text": "gloom",
@@ -211,15 +211,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 24:12",
-          "question": "True or false: When the city of chaos is left in ruins, its gate is still standing strong.",
+          "question": "True or false: When the city is left in ruins, its gate is reduced to rubble.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -238,18 +238,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 24:13",
-          "question": "Isaiah compares the earth and the nations to an olive tree after the harvest and a vine after the grapes are gathered. What does that picture show?",
+          "question": "Isaiah says it will be like this on the earth and among the nations. He pictures two things from harvest time. What are they?",
           "answers": [
             {
-              "text": "Only a little is left",
+              "text": "A harvested olive tree and leftover grapes",
               "correct": true
             },
             {
-              "text": "The trees grow back fast",
+              "text": "A threshing floor and a winepress",
               "correct": false
             },
             {
-              "text": "The harvest gets bigger",
+              "text": "A fig tree and a barley field",
               "correct": false
             }
           ],
@@ -272,28 +272,32 @@
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 24:15-16",
-          "question": "True or false: The only praise for the LORD anyone hears is coming from the west.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Isaiah 24:15",
+          "text": "There's a call to glorify the LORD in the east and in the islands of the sea. It's the world's biggest group chat, and for once EVERYBODY replies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Isaiah 24:15-16",
-          "text": "There's a call to glorify the LORD in the east and in the islands of the sea, and from the ends of the earth there's singing: \"Glory to the Righteous One.\" It's the world's biggest group chat, and for once EVERYBODY replies.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Isaiah 24:16",
+          "question": "From the ends of the earth, singing can be heard. What are they singing?",
+          "answers": [
+            {
+              "text": "Glory to the Righteous One",
+              "correct": true
+            },
+            {
+              "text": "Our harvest has been gathered",
+              "correct": false
+            },
+            {
+              "text": "Our city will stand forever",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -302,7 +306,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 24:16",
-          "question": "The ends of the earth are singing glory to the Righteous One. Then the prophet cuts in with a but. How does he react?",
+          "question": "The ends of the earth are singing. Then the prophet cuts in with a but. How does he react?",
           "answers": [
             {
               "text": "With woe for himself",
@@ -324,7 +328,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Isaiah 24:16",
-          "text": "The prophet says, \"I am wasting away! I am wasting away! Woe is me.\" And the next line: \"The treacherous betray; the treacherous deal in treachery.\"",
+          "text": "The prophet says, \"I am wasting away! I am wasting away! Woe is me.\" Then: \"The treacherous betray; the treacherous deal in treachery.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -332,7 +336,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Isaiah 24:17",
-          "text": "Then the message turns to whoever lives on the earth. Terror and pit and snare are waiting.",
+          "text": "Then the message turns to whoever lives on the earth: \"Terror and pit and snare await you, O dweller of the earth.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -341,18 +345,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 24:18",
-          "question": "Terror and pit and snare are waiting for the earth's people. Someone flees the sound of panic. Where do they end up?",
+          "question": "Terror, pit and snare are waiting for whoever lives on the earth. Can anyone get away from them?",
           "answers": [
             {
-              "text": "They fall into the pit",
+              "text": "No because escaping one leads into the next",
               "correct": true
             },
             {
-              "text": "They reach a city of refuge",
+              "text": "Yes if they run far enough away",
               "correct": false
             },
             {
-              "text": "They hide in the temple",
+              "text": "Yes if they hide up in the hills",
               "correct": false
             }
           ],
@@ -361,25 +365,6 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 24:18",
-          "question": "True or false: Whoever climbs out of the pit is finally safe.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Isaiah 24:18-19",
           "text": "Isaiah says, \"For the windows of heaven are open, and the foundations of the earth are shaken.\" The earth is broken apart, split open and shaken violently.",
@@ -387,7 +372,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 24:20",
@@ -398,11 +383,11 @@
               "correct": true
             },
             {
-              "text": "A warhorse",
+              "text": "A wounded soldier",
               "correct": false
             },
             {
-              "text": "A shepherd",
+              "text": "A tired traveler",
               "correct": false
             }
           ],
@@ -410,11 +395,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 24:20",
-          "question": "The earth staggers like a drunkard and sways like a shack. Earth's ___ weighs it down, and it falls, never to rise again.",
+          "question": "Isaiah says the earth sways like a shack. Earth's ___ weighs it down, and it falls, never to rise again.",
           "answers": [
             {
               "text": "rebellion",
@@ -433,15 +418,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Isaiah 24:21",
-          "text": "Then Isaiah looks ahead to that day. He sees what's coming, both up above and down below.",
+          "text": "Then Isaiah speaks of that day, and what the LORD will do up above and down below.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 24:21",
@@ -474,15 +459,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Isaiah 24:22",
-          "text": "They'll be gathered together like prisoners in a pit, confined to a dungeon and punished after many days. And I used to think my junk drawer was a tight squeeze.",
+          "text": "They will be gathered together like prisoners in a pit. They'll be confined to a dungeon and punished after many days.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 24:23",
@@ -505,29 +490,29 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 24:23",
-          "question": "True or false: Isaiah says the LORD of Hosts will reign on Mount Zion and in Jerusalem.",
+          "question": "Isaiah says the LORD of Hosts will reign on Mount Zion and in Jerusalem. True or false: Isaiah says the LORD will reign there in secret, with no one to see.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Isaiah 24:23",
-          "text": "He'll reign there before His elders, with great glory. The sun and moon are the brightest lights we've got, baker, and next to Him, the moon is confounded and the sun is ashamed.",
+          "text": "He'll reign there before His elders, with great glory. And THAT, friend, is where this whole message lands.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

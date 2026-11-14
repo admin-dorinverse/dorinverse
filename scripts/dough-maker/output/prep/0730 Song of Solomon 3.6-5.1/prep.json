@@ -66,17 +66,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Song of Solomon 3:8",
-          "question": "All sixty of the warriors around Solomon's carriage are skilled with the sword. Each one keeps his sword at his side so he can salute the king.",
+          "question": "All sixty of the warriors around Solomon's carriage are skilled with the sword and experienced in warfare. Each one keeps his sword at his side. What is each warrior ready for?",
           "answers": [
             {
-              "text": "True",
+              "text": "The terror of the night",
+              "correct": true
+            },
+            {
+              "text": "An attack at sunrise",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "The king's call to battle",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -186,21 +190,17 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Song of Solomon 4:2",
-          "question": "The groom says his bride's teeth are like newly shorn sheep coming up from the washing, and “each has its twin, and not one of them is lost.” What is he praising?",
+          "question": "The groom pictures his bride's teeth as a flock of newly shorn sheep with one of them missing.",
           "answers": [
             {
-              "text": "Her full and perfect smile",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Her gentle and quiet spirit",
-              "correct": false
-            },
-            {
-              "text": "Her skill with the flocks",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -210,7 +210,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Song of Solomon 4:3",
-          "text": "If I tried lines like that on anybody, friend, I'd be back in the junk drawer by morning. But he's not done: her lips are like a scarlet ribbon, her mouth is lovely, and her brow behind her veil is like a slice of pomegranate.",
+          "text": "Friend, the BEST compliment I've ever given anybody is “nice batch.” But he's not done: her lips are like a scarlet ribbon, her mouth is lovely, and her brow behind her veil is like a slice of pomegranate.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -227,7 +227,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Song of Solomon 4:4",
-          "question": "The groom says his bride's neck is like the ___ of David, with a thousand shields hanging on it.",
+          "question": "The groom says his bride's neck is like the ___ of David, Israel's king, with a thousand shields hanging on it.",
           "answers": [
             {
               "text": "tower",
@@ -238,11 +238,11 @@
               "correct": false
             },
             {
-              "text": "harp",
+              "text": "city",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -258,15 +258,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 4:7",
-          "question": "After describing his bride one picture at a time, the groom says she has just one flaw.",
+          "question": "After describing his bride one picture at a time, the groom tells her there is no flaw in her.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -322,15 +322,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 4:9",
-          "question": "The groom says his bride has stolen his heart. He says it took her a long time to win it.",
+          "question": "The groom tells his bride she stole his heart with one glance of her eyes.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -349,7 +349,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 4:10",
-          "question": "The groom says his bride's love is sweet, but not as good as wine.",
+          "question": "The groom says wine is better than his bride's love.",
           "answers": [
             {
               "text": "True",
@@ -465,18 +465,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Song of Solomon 4:16",
-          "question": "The call for the winds to breathe on the garden first calls it “my garden.” By the end of that call, the beloved is invited to come in and taste its choicest fruits. Whose garden is it called now?",
+          "question": "The same call invites someone to come into the garden and taste its choicest fruits. Who is invited?",
           "answers": [
             {
-              "text": "The beloved's garden",
+              "text": "The beloved",
               "correct": true
             },
             {
-              "text": "Uzza's garden",
+              "text": "The watchmen",
               "correct": false
             },
             {
-              "text": "Xerxes's garden",
+              "text": "The shepherds",
               "correct": false
             }
           ],
@@ -488,15 +488,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 5:1",
-          "question": "When the beloved is invited into the garden, the groom answers that he'll come another day.",
+          "question": "After the invitation into the garden, the groom says he has come to his garden.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -506,7 +506,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Song of Solomon 5:1",
-          "text": "He's come to his garden. He's gathered his myrrh with his spice, eaten his honeycomb with his honey and drunk his wine with his milk.",
+          "text": "He's gathered his myrrh with his spice, eaten his honeycomb with his honey and drunk his wine with his milk.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -515,7 +515,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Song of Solomon 5:1",
-          "question": "At the end, a voice calls out to the friends for a celebration. What are the friends told to do?",
+          "question": "At the end, a voice calls out to the friends. What are the friends told to do?",
           "answers": [
             {
               "text": "Eat and drink",
@@ -537,7 +537,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Song of Solomon 5:1",
-          "text": "“Eat, O friends, and drink; drink freely, O beloved.” Friend, I spent years in a junk drawer where the big party was the dead batteries arguing over who had the most charge left, so THIS is my kind of ending.",
+          "text": "“Eat, O friends, and drink; drink freely, O beloved.” Friend, I spent years in a junk drawer where the big party was the dead batteries arguing over who had the most charge left, so friends getting invited to eat is MY kind of ending.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

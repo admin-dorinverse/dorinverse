@@ -9,43 +9,20 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 31:1",
-          "text": "Proverbs is almost done, and a new voice steps up: King Lemuel, crown, throne, the whole deal. These are his words, a burden somebody taught him.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Proverbs 31:1",
-          "question": "King Lemuel is about to pass on words someone taught him. Who taught him?",
-          "answers": [
-            {
-              "text": "His mother",
-              "correct": true
-            },
-            {
-              "text": "His father",
-              "correct": false
-            },
-            {
-              "text": "A prophet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 3,
-          "kind": "story",
-          "verses": "Proverbs 31:2",
-          "text": "Before any advice, she asks what she should say three times: O my son, O son of my womb, O son of my vows. I think she's gathering herself, like me typing a text, deleting it, and typing it AGAIN.",
+          "text": "These are the words of King Lemuel, the burden his mother taught him. So this is a mother talking to her son, who happens to be a king. And friend, wearing a crown does NOT get Lemuel out of this talk.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 2,
+          "kind": "story",
+          "verses": "Proverbs 31:2",
+          "text": "Before any advice, she asks three times what she should say: O my son, O son of my womb, O son of my vows. You know when you start a text, delete it, and start it AGAIN?",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "story",
           "verses": "Proverbs 31:3",
           "text": "Her first warning: don't spend your strength on women. And she's not done, because that line has a second half.",
@@ -53,34 +30,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Proverbs 31:3",
-          "question": "Lemuel's mother tells him to spend his vigor on those who ruin kings.",
+          "question": "Lemuel's mother also warns the king not to spend his vigor on some people. What does she say they do?",
           "answers": [
             {
-              "text": "True",
+              "text": "Ruin kings",
+              "correct": true
+            },
+            {
+              "text": "Flatter kings",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Serve kings",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Proverbs 31:4",
-          "text": "Next she calls him by name, O Lemuel, and says something is not for kings. Then she says it's not for kings AGAIN, and friend, when somebody says it twice, you put your cookie down and listen.",
+          "text": "Next she says something is not for kings, O Lemuel. Then she says it's not for kings AGAIN, and friend, when somebody says it twice, you put your cookie down and listen.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 31:4",
@@ -99,6 +80,14 @@
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Proverbs 31:4",
+          "text": "And rulers shouldn't crave strong drink either. Then she gives the reason.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -151,24 +140,28 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Proverbs 31:6",
-          "text": "Then she flips it. Strong drink goes to the one who is perishing, and wine to the bitter in soul.",
+          "verses": "Proverbs 31:6-7",
+          "text": "Then she flips it. She says to give strong drink to the one who is perishing, and wine to the bitter in soul, and to let him drink so he can forget something.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Proverbs 31:7",
-          "question": "Lemuel's mother says to let the suffering one drink and forget his poverty.",
+          "question": "Lemuel's mother says to let the one who is perishing drink. What does she say he'll forget?",
           "answers": [
             {
-              "text": "True",
+              "text": "His poverty",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "His enemies",
+              "correct": false
+            },
+            {
+              "text": "His sins",
               "correct": false
             }
           ],
@@ -216,9 +209,20 @@
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Proverbs 31:8",
-          "text": "And she keeps going. Open your mouth for the cause of all the dispossessed.",
+          "question": "Lemuel's mother also tells the king to open his mouth for the cause of all the dispossessed.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -248,21 +252,17 @@
         {
           "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Proverbs 31:9",
-          "question": "In her last line, Lemuel's mother tells the king to defend someone's cause. Whose?",
+          "question": "In her last line, Lemuel's mother tells the king to defend the cause of the rich.",
           "answers": [
             {
-              "text": "The poor and needy",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "The kings and rulers",
-              "correct": false
-            },
-            {
-              "text": "The priests and elders",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,

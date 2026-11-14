@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 14:1",
-          "text": "Proverbs 14 is part of the proverbs of Solomon, son of David, king of Israel (Proverbs 1:1; 10:1). It's two-line sayings with the wise on one side and the fool on the other, like a tray where half the batch comes out golden and the other half looks like it lost an argument with the OVEN. First up, two women, one wise and one foolish, and each one has a house.",
+          "text": "Proverbs 14 is part of the proverbs of Solomon, son of David, king of Israel (Proverbs 1:1; 10:1). It's mostly two-line sayings, and a lot of them put the wise right next to the fool, like a tray where half the batch comes out golden and the other half looks like it lost an argument with the OVEN. First up, two women, one wise and one foolish, and each one has a house.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -98,7 +98,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Proverbs 14:3-4",
-          "text": "The lips of the wise protect them instead. Then Solomon heads out to the farm: where there are no oxen, the manger is empty.",
+          "text": "The lips of the wise protect them instead. Then Solomon talks oxen: where there are no oxen, the manger is empty.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -115,7 +115,7 @@
               "blank": 1
             },
             {
-              "text": "herd",
+              "text": "dust",
               "correct": false
             },
             {
@@ -129,8 +129,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Proverbs 14:4-5",
-          "text": "Want the harvest, keep the ox, friend, same as no flour on my counter means no cookies in my box. And a quick one: an honest witness does not deceive, but a dishonest witness pours forth lies.",
+          "verses": "Proverbs 14:5-6",
+          "text": "An honest witness does not deceive, but a dishonest witness pours forth lies. Then a mocker goes out looking for wisdom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -154,7 +154,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -186,78 +186,95 @@
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Proverbs 14:8",
-          "question": "The prudent man's wisdom is to ___ his way, but a fool's own folly ___ him.",
-          "answers": [
-            {
-              "text": "discern",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "deceives",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "forget",
-              "correct": false
-            },
-            {
-              "text": "guards",
-              "correct": false
-            },
-            {
-              "text": "hide",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Next, Solomon puts the prudent man and the fool side by side. The prudent man's wisdom is to discern his way.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Proverbs 14:9",
-          "text": "And while fools mock the making of amends, goodwill is found among the upright.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Proverbs 14:8",
+          "question": "The prudent man discerns his way. What does Solomon say the fool's own folly does to him?",
+          "answers": [
+            {
+              "text": "It deceives him",
+              "correct": true
+            },
+            {
+              "text": "It protects him",
+              "correct": false
+            },
+            {
+              "text": "It teaches him",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Proverbs 14:10",
-          "question": "Solomon says the heart knows its own bitterness, and no stranger shares in its joy. What's he getting at?",
-          "answers": [
-            {
-              "text": "Your heart knows things nobody else can",
-              "correct": true
-            },
-            {
-              "text": "Strangers will try to steal your joy",
-              "correct": false
-            },
-            {
-              "text": "Joy should be kept to yourself",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Proverbs 14:9-10",
+          "text": "Fools mock the making of amends, but goodwill is found among the upright. Then Solomon looks inside the heart, which knows its own bitterness.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "story",
-          "verses": "Proverbs 14:11",
-          "text": "Then the house of the wicked will be destroyed, but the tent of the upright will flourish. A TENT, friend, the thing with the zipper that sticks and the pole that's ALWAYS missing, and it beats the whole HOUSE.",
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Proverbs 14:10",
+          "question": "The heart knows its own bitterness. Who does Solomon say doesn't share in its joy?",
+          "answers": [
+            {
+              "text": "A stranger",
+              "correct": true
+            },
+            {
+              "text": "A brother",
+              "correct": false
+            },
+            {
+              "text": "A servant",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
+          "kind": "story",
+          "verses": "Proverbs 14:11",
+          "text": "Then Solomon sets the house of the wicked next to the tent of the upright. A whole house versus a TENT, friend, the thing that wobbles every time the wind sneezes.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Proverbs 14:11",
+          "question": "True or false: Solomon says the house of the wicked will flourish.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 19,
           "kind": "story",
           "verses": "Proverbs 14:12",
           "text": "Then this one: there is a way that seems right to a man. Like me last week, stamping with TOTAL confidence for ten whole minutes before I noticed I was stamping the counter.",
@@ -265,7 +282,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 20,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 14:12",
@@ -293,7 +310,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 14:13",
-          "text": "Next, Solomon looks underneath a smile, the way I flip a cookie over to check if the bottom's burnt.",
+          "text": "Next, Solomon talks about laughter, joy and what's going on in the heart.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -320,7 +337,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Proverbs 14:13-14",
-          "text": "Even in laughter the heart may ache, and joy may end in sorrow. Then the backslider in heart receives the fill of his own ways, which is fancy talk for you burned the batch, now you eat the batch.",
+          "text": "Even in laughter the heart may ache, and joy may end in sorrow. Then the backslider in heart receives the fill of his own ways, like me sneaking spoonfuls of dough all afternoon and wondering why I'm too stuffed to taste-test the batch.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -352,7 +369,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Proverbs 14:15",
-          "text": "Then two men get handed the same story. The prudent man watches his steps.",
+          "text": "Then Solomon sets the simple man next to the prudent man, who watches his steps.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -361,18 +378,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 14:15",
-          "question": "The prudent man watches his steps. What does the simple man do with the story he's handed?",
+          "question": "The prudent man watches his steps. What does the simple man do?",
           "answers": [
             {
               "text": "Believes every word",
               "correct": true
             },
             {
-              "text": "Ignores all of it",
+              "text": "Doubts every word",
               "correct": false
             },
             {
-              "text": "Checks it twice",
+              "text": "Forgets every word",
               "correct": false
             }
           ],
@@ -383,7 +400,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Proverbs 14:15-16",
-          "text": "He's the guy who forwards every URGENT!!! message to the whole group chat. The wise man, meanwhile, fears and turns from evil.",
+          "text": "The simple man is the guy forwarding every URGENT message to the whole group chat. The wise man, meanwhile, fears and turns from evil.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -415,7 +432,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Proverbs 14:17",
-          "text": "Then the man with the short fuse walks in. Full disclosure, friend: I once yelled at an oven timer, and that timer is STILL beeping.",
+          "text": "Then Solomon gets to the man with the short fuse. Full disclosure, friend: I once yelled at an oven timer, and that timer is STILL beeping.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -481,6 +498,14 @@
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Proverbs 14:20",
+          "text": "Then Solomon says something hard about how people treat the poor.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 14:20",
@@ -499,19 +524,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Proverbs 14:21",
-          "text": "Then Solomon comes back around to neighbors and the poor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
+          "kind": "story",
+          "verses": "Proverbs 14:21-22",
+          "text": "And he who despises his neighbor sins. Then Solomon asks, \"Do not those who contrive evil go astray?\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 14:21",
@@ -530,14 +555,6 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "story",
-          "verses": "Proverbs 14:21-22",
-          "text": "And he who despises his neighbor sins. Then Solomon asks, \"Do not those who contrive evil go astray?\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
@@ -549,7 +566,7 @@
               "correct": true
             },
             {
-              "text": "Riches and a long life",
+              "text": "Rest and an easy road",
               "correct": false
             },
             {
@@ -562,6 +579,14 @@
         },
         {
           "card": 18,
+          "kind": "story",
+          "verses": "Proverbs 14:23",
+          "text": "Then Solomon sets real work next to mere talk.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 14:23",
@@ -576,11 +601,11 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 20,
           "kind": "story",
           "verses": "Proverbs 14:23-24",
           "text": "Mere talk leads only to poverty, friend: every meeting about the meeting about getting started. And the crown of the wise is their wealth, but the effort of fools is folly.",
@@ -596,8 +621,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Proverbs 14:25",
-          "text": "Back to the courtroom one more time: a truthful witness saves lives, but one who utters lies is deceitful.",
+          "verses": "Proverbs 14:25-26",
+          "text": "One more word on witnesses: a truthful witness saves lives, but one who utters lies is deceitful. Then Solomon turns to the man who fears the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -617,14 +642,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Proverbs 14:27",
-          "text": "Then comes the line this whole passage is named for: the fear of the LORD is a fountain of life. Friend, after years in a dusty junk drawer, just the word FOUNTAIN gets me emotional.",
+          "text": "Then Solomon says the fear of the LORD is a fountain of life. After all those years in a dusty junk drawer, friend, just the word FOUNTAIN gets me choked up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -655,12 +680,44 @@
           "card": 5,
           "kind": "story",
           "verses": "Proverbs 14:28",
-          "text": "Then a word for kings: a large population is a king’s splendor, but a lack of subjects is a prince’s ruin. A king with nobody to rule is just a man in a fancy hat, and believe me, I know fancy hats.",
+          "text": "Then a word for kings and the people they rule.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Proverbs 14:28",
+          "question": "A large population is a king's splendor, but a lack of subjects is a prince's ___.",
+          "answers": [
+            {
+              "text": "ruin",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "joy",
+              "correct": false
+            },
+            {
+              "text": "pride",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Proverbs 14:28-29",
+          "text": "A king with nobody to rule is just a man in a fancy hat, and believe me, I know fancy hats. Then Solomon comes back to the quick-tempered man and sets a patient man next to him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 14:29",
@@ -675,11 +732,11 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 9,
           "kind": "story",
           "verses": "Proverbs 14:29-30",
           "text": "A patient man has great understanding, but a quick-tempered man promotes folly. Then Solomon checks on the heart and the bones.",
@@ -687,7 +744,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 14:30",
@@ -710,15 +767,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 11,
           "kind": "story",
           "verses": "Proverbs 14:30-31",
-          "text": "Envy is staring at somebody else's cookie box so long your own batch burns. Then Solomon ties how people treat the poor straight to God.",
+          "text": "Envy is staring at the next guy's cookie box so long you forget to fill your own. Then Solomon ties how people treat the poor straight to God.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 14:31",
@@ -742,7 +799,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 13,
           "kind": "story",
           "verses": "Proverbs 14:31-32",
           "text": "But whoever is kind to the needy honors Him. Then the wicked man is thrown down by his own sin.",
@@ -750,7 +807,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 14:32",
@@ -773,7 +830,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 15,
           "kind": "story",
           "verses": "Proverbs 14:33-34",
           "text": "Wisdom rests in the heart of the discerning, and even among fools she is known. Then Solomon zooms out from one person to whole nations.",
@@ -781,7 +838,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 16,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 14:34",
@@ -814,11 +871,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 17,
+          "kind": "story",
+          "verses": "Proverbs 14:35",
+          "text": "Last one, and it's about a king and the people who serve him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 14:35",
-          "question": "Last line, back in the palace. A king delights in a wise servant. What falls on the shameful one?",
+          "question": "A king delights in a wise servant. What falls on the shameful?",
           "answers": [
             {
               "text": "His anger",
@@ -833,7 +898,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

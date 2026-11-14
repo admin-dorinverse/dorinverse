@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 30:1",
-          "text": "Isaiah the prophet speaks to Judah and Jerusalem, the LORD's own people (Isaiah 1:1-2). Now the message opens: “Woe to the rebellious children,” declares the LORD. Those children are His people, and they have a plan that isn't His.",
+          "text": "Isaiah son of Amoz is a prophet who saw a vision concerning Judah and Jerusalem (Isaiah 1:1). Here the message opens: “Woe to the rebellious children,” declares the LORD. These children are carrying out a plan that isn't His.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -59,8 +59,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Isaiah 30:2",
-          "text": "The plan is to go down to Egypt and take refuge under the protection of Pharaoh, Egypt's king. Pharaoh's shade is the whole sales pitch, friend.",
-          "needs_agent_fix": true,
+          "text": "The plan is to go down to Egypt, seek shelter under the protection of Pharaoh, Egypt's king, and take refuge in Egypt's shade.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -110,39 +110,38 @@
           "card": 7,
           "kind": "story",
           "verses": "Isaiah 30:4",
-          "text": "Their princes are already at Zoan, and their envoys have made it all the way to Hanes. Meanwhile the farthest I ever traveled in my junk drawer was three inches, every time somebody yanked it open looking for tape.",
+          "text": "Their princes are at Zoan, a city in Egypt (Numbers 13:22), and their envoys have arrived in Hanes. Meanwhile the farthest I ever traveled in my years in the junk drawer was three inches, every time somebody yanked it open looking for tape.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Isaiah 30:5",
-          "question": "All that travel, and the LORD calls the Egyptians a people ___ to them.",
+          "question": "The princes and envoys have gone to Egypt. What does the LORD say the Egyptians bring?",
           "answers": [
             {
-              "text": "useless",
-              "correct": true,
-              "blank": 1
+              "text": "Neither help nor benefit",
+              "correct": true
             },
             {
-              "text": "loyal",
+              "text": "Soldiers for the battle",
               "correct": false
             },
             {
-              "text": "dangerous",
+              "text": "Gold for the treasury",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Isaiah 30:6",
-          "text": "Next comes a burden against the beasts of the Negev, a land of hardship and distress, with lions, vipers and FLYING serpents. Friend, I jump when my oven timer goes off.",
+          "text": "Next comes a burden against the beasts of the Negev, the southern desert: a trip through a land of hardship and distress, of lions, vipers and FLYING serpents. Friend, I jump when my oven timer goes off.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -151,7 +150,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 30:6",
-          "question": "Through that land of lions and serpents, how are they carrying their wealth and treasures?",
+          "question": "Through that land of lions and serpents, how is the wealth and treasure carried?",
           "answers": [
             {
               "text": "On donkeys and camels",
@@ -204,28 +203,24 @@
           "card": 13,
           "kind": "story",
           "verses": "Isaiah 30:8",
-          "text": "Then comes an order to write it on a tablet in front of them and inscribe it on a scroll. Not a sticky note on the fridge, friend, a SCROLL.",
+          "text": "That's not the Rahab of Jericho, friend. Then comes an order to write it on a tablet in front of them and inscribe it on a scroll.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Isaiah 30:8",
-          "question": "The order is to write it on a tablet and inscribe it on a scroll. Why?",
+          "question": "The writing on the tablet and the scroll is meant only for that one day.",
           "answers": [
             {
-              "text": "To be a witness for the days to come",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "To be carried ahead to Pharaoh",
-              "correct": false
-            },
-            {
-              "text": "To be signed by the princes",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -242,20 +237,21 @@
         {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 30:10",
-          "question": "They tell the prophets not to prophesy the truth to them. What do they want to hear instead?",
+          "question": "Instead of the truth, the people tell the prophets to speak ___ words to them.",
           "answers": [
             {
-              "text": "Pleasant words and illusions",
-              "correct": true
+              "text": "pleasant",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Harder warnings and rebukes",
+              "text": "harsh",
               "correct": false
             },
             {
-              "text": "Old songs and family stories",
+              "text": "ancient",
               "correct": false
             }
           ],
@@ -299,7 +295,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 30:12",
-          "text": "Now the Holy One of Israel answers. They rejected this message, and they're trusting in oppression and relying on deceit.",
+          "text": "Then the Holy One of Israel speaks. They rejected this message, and they're trusting in oppression and relying on deceit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -338,7 +334,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Isaiah 30:14",
-          "text": "And when it goes, it breaks in pieces like a potter's jar. Shattered.",
+          "text": "And when it goes, it'll break in pieces like a potter's jar. Shattered.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -347,15 +343,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 30:14",
-          "question": "When the potter's jar shatters, a few pieces will still be big enough to scoop coals from a hearth.",
+          "question": "When the potter's jar shatters, not one piece will be left big enough to scoop coals from a hearth.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -406,9 +402,9 @@
         {
           "card": 8,
           "kind": "story",
-          "verses": "Isaiah 30:16",
-          "text": "Instead, they say no, they'll flee on horses, swift horses. Repentance and rest, offered FREE, and they said, nah, we'll take the horses.",
-          "needs_agent_fix": true,
+          "verses": "Isaiah 30:15-16",
+          "text": "Instead, they say no, they'll flee on horses, so flee is exactly what they'll do. They were offered rest, friend, and they signed up for a horse race.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -440,7 +436,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 30:17",
-          "question": "How many of their enemies will it take to make a thousand of them flee?",
+          "question": "The people who chose horses will flee. A thousand of them will run at the threat of how many?",
           "answers": [
             {
               "text": "Just one",
@@ -463,7 +459,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 30:17",
-          "question": "After all that fleeing, they will be left ___, like a pole on a mountaintop.",
+          "question": "At the threat of five, they all flee, until they're left ___, like a pole on a mountaintop, like a banner on a hill.",
           "answers": [
             {
               "text": "alone",

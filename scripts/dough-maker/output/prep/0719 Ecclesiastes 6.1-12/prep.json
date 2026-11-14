@@ -46,33 +46,28 @@
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Ecclesiastes 6:2",
-          "question": "God doesn't let the man enjoy his riches. Instead, a ___ will enjoy them.",
-          "answers": [
-            {
-              "text": "stranger",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "servant",
-              "correct": false
-            },
-            {
-              "text": "brother",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Instead, a stranger will enjoy them. That's like baking a perfect batch, and while you're still hunting for the oven mitts, some guy you've NEVER MET walks in and eats every single one.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Ecclesiastes 6:2",
-          "text": "The Teacher calls it futile and a grievous affliction. That's like baking a perfect batch, and while you're still hunting for the oven mitts, some guy you've NEVER MET walks in and eats every single one.",
+          "question": "True or false: the Teacher calls this situation futile and a grievous affliction.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,7 +75,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Ecclesiastes 6:3",
-          "text": "Then the Teacher goes bigger: a man may father a hundred children and live for many years. A HUNDRED, friend, and my mustache was busy enough catching six of mine before they wobbled off the counter.",
+          "text": "Then the Teacher goes bigger: a man may father a hundred children and live for many years. A huge family and a long life, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -108,7 +103,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 6:3",
-          "question": "Say that man is unsatisfied with his prosperity and doesn't even receive a proper burial. Who does the Teacher say is better off than he is?",
+          "question": "Picture a man with a hundred children and a long life who is unsatisfied with his prosperity and doesn't even receive a proper burial. Who does the Teacher say is better off than he is?",
           "answers": [
             {
               "text": "A stillborn child",
@@ -123,7 +118,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -161,7 +156,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Ecclesiastes 6:6",
-          "text": "The Teacher says that holds even if the man lives a thousand years twice over but fails to enjoy his prosperity. TWO THOUSAND YEARS, friend, and that's like sleeping the whole time and waking up STILL tired.",
+          "text": "The Teacher says the child has more rest even if the man lives a thousand years twice over but fails to enjoy his prosperity. That's TWO THOUSAND years, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -170,7 +165,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 6:6",
-          "question": "True or false: after comparing that man and the stillborn child, the Teacher asks whether all go to the same place.",
+          "question": "True or false: after comparing the unsatisfied rich man with the stillborn child, the Teacher asks whether all go to the same place.",
           "answers": [
             {
               "text": "True",
@@ -181,7 +176,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -195,7 +190,7 @@
           "kind": "story",
           "verses": "Ecclesiastes 6:7",
           "text": "Now the Teacher looks at every man's work. He says all a man's labor is for his mouth.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -218,7 +213,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -226,7 +221,7 @@
           "kind": "story",
           "verses": "Ecclesiastes 6:7-8",
           "text": "That's me with cookie dough: one batch and I'm DONE, then five minutes later I'm preheating the oven again. And now the Teacher starts asking hard questions.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -249,62 +244,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Ecclesiastes 6:8-9",
-          "text": "He also asks what gain comes to the poor man who knows how to conduct himself before others. Then he says what the eye can see is better than something else.",
-          "needs_agent_fix": true,
+          "text": "He also asks what gain comes to the poor man who knows how to conduct himself before others. Then he weighs what the eye can see against the wandering of desire.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ecclesiastes 6:9",
-          "question": "The Teacher says what the eye can see is better than what?",
-          "answers": [
-            {
-              "text": "The wandering of desire",
-              "correct": true
-            },
-            {
-              "text": "The words of a fool",
-              "correct": false
-            },
-            {
-              "text": "The honor of kings",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Ecclesiastes 6:9",
-          "text": "I think he means the batch on the cooling rack beats the ten you're daydreaming about. And the Teacher says this too is futile and a pursuit of the wind.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Ecclesiastes 6:10",
-          "text": "Then the Teacher says whatever exists was named long ago, and it is known what man is. I think he means nothing here is new, friend, and that's coming from a stamper who only got his name because somebody carved it into his handle.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Ecclesiastes 6:10",
-          "question": "True or false: the Teacher says man can contend with one stronger than he.",
+          "verses": "Ecclesiastes 6:9",
+          "question": "True or false: the Teacher says the wandering of desire is better than what the eye can see.",
           "answers": [
             {
               "text": "True",
@@ -315,7 +271,42 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
+          "kind": "story",
+          "verses": "Ecclesiastes 6:9",
+          "text": "It's the batch on the cooling rack beating the ten you keep daydreaming about. And the Teacher says this too is futile and a pursuit of the wind.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "story",
+          "verses": "Ecclesiastes 6:10",
+          "text": "Then the Teacher says whatever exists was named long ago, and it is known what man is. Named long ago, friend, just like me, carved into my handle by the family who brought me home for a quarter.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Ecclesiastes 6:10",
+          "question": "True or false: the Teacher says man cannot contend with one stronger than he.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -338,42 +329,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
-          "verses": "Ecclesiastes 6:11",
-          "text": "Hoo, that one hit ME, friend. I've been talking since the oven warmed up.",
-          "needs_agent_fix": true,
+          "verses": "Ecclesiastes 6:11-12",
+          "text": "Hoo, that one hits ME, friend, because I haven't stopped talking since the oven warmed up. Then the Teacher asks who knows what is good for a man during the few days in which he passes through his fleeting life like a shadow.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ecclesiastes 6:12",
-          "question": "The Teacher asks who knows what is good for a man during the few days of his fleeting life. What does he say a man passes through that life like?",
-          "answers": [
-            {
-              "text": "A shadow",
-              "correct": true
-            },
-            {
-              "text": "A mist",
-              "correct": false
-            },
-            {
-              "text": "A flower",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 6:12",
@@ -388,7 +356,7 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

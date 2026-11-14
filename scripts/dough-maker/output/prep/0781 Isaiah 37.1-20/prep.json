@@ -8,8 +8,8 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Isaiah 36:2-22",
-          "text": "A great Assyrian army has come to Jerusalem. The Rabshakeh, sent by the king of Assyria, has been calling out to the people on the wall that the LORD can't deliver their city, and Hezekiah, king of Judah, told them, \"Do not answer him.\" Now Hezekiah's officials bring him the whole report, with their clothes torn.",
+          "verses": "Isaiah 37:1",
+          "text": "A great Assyrian army has come to Jerusalem, and the Rabshakeh, sent by the king of Assyria, has been calling out to the people on the wall that the LORD can't deliver their city (Isaiah 36:2, 13-20). Hezekiah, king of Judah, had commanded, \"Do not answer him.\" (Isaiah 36:21) Now King Hezekiah hears the whole report, brought by his officials with their clothes torn (Isaiah 36:22).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 37:1",
-          "question": "When Hezekiah king of Judah hears the report of the Rabshakeh's threats, he tears his clothes and puts on sackcloth.",
+          "question": "When Hezekiah king of Judah hears the report of the Rabshakeh's threats, he tears his clothes.",
           "answers": [
             {
               "text": "True",
@@ -66,20 +66,20 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 37:2",
-          "question": "Hezekiah sends his officials and the leading priests out in sackcloth. Who are they going to see?",
+          "question": "Hezekiah sends his officials and the leading priests out in sackcloth to see the prophet ___.",
           "answers": [
             {
-              "text": "The prophet Isaiah",
+              "text": "Isaiah",
               "correct": true
             },
             {
-              "text": "The prophet Jeremiah",
+              "text": "Jeremiah",
               "correct": false
             },
             {
-              "text": "The prophet Elisha",
+              "text": "Elisha",
               "correct": false
             }
           ],
@@ -96,10 +96,41 @@
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "Isaiah 37:3-4",
+          "text": "Then Hezekiah puts it like this: children have come to the point of birth, but there's no strength to deliver them. He says perhaps the LORD will hear the words of the Rabshakeh, sent by his master the king of Assyria.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Isaiah 37:4",
+          "question": "Hezekiah says the king of Assyria sent the Rabshakeh to defy someone. Who?",
+          "answers": [
+            {
+              "text": "The living God",
+              "correct": true
+            },
+            {
+              "text": "The king of Judah",
+              "correct": false
+            },
+            {
+              "text": "The prophet Isaiah",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Isaiah 37:3",
-          "question": "In his message to Isaiah, Hezekiah says Judah still has the strength to get through this day.",
+          "verses": "Isaiah 37:4",
+          "question": "Hezekiah hopes the LORD will hear the Rabshakeh's words and let them go unanswered.",
           "answers": [
             {
               "text": "True",
@@ -114,53 +145,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
-          "kind": "story",
-          "verses": "Isaiah 37:3-4",
-          "text": "Hezekiah's picture for it: children have come to the point of birth, but there's no strength to deliver them. Then he says perhaps the LORD will hear the words of the Rabshakeh, who was sent by his master to defy the living God.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 37:4",
-          "question": "Hezekiah hopes the LORD will hear the Rabshakeh's words and ___ him for them.",
+          "question": "Hezekiah's message ends by asking Isaiah to lift up a ___ for the people who still survive.",
           "answers": [
             {
-              "text": "rebuke",
+              "text": "prayer",
               "correct": true
             },
             {
-              "text": "forgive",
+              "text": "offering",
               "correct": false
             },
             {
-              "text": "spare",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 37:4",
-          "question": "Hezekiah's message ends with a request for Isaiah. What does he ask Isaiah to do for the people who still survive?",
-          "answers": [
-            {
-              "text": "Lift up a prayer for them",
-              "correct": true
-            },
-            {
-              "text": "Lead them out of the city",
-              "correct": false
-            },
-            {
-              "text": "Count them for the king",
+              "text": "banner",
               "correct": false
             }
           ],
@@ -196,37 +196,14 @@
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 37:6",
-          "question": "The LORD says the servants of the king of Assyria have ___ Him with their words.",
-          "answers": [
-            {
-              "text": "blasphemed",
-              "correct": true
-            },
-            {
-              "text": "misquoted",
-              "correct": false
-            },
-            {
-              "text": "deceived",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Isaiah 37:7",
+          "text": "Then the LORD says He'll put a spirit in the king of Assyria, so that he will hear a rumor. One rumor, friend. I heard one once that my oven was broken, and I didn't sleep for a WEEK.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Isaiah 37:7",
-          "text": "Then the LORD says He'll put a spirit in the king of Assyria, so that he will hear a rumor. Not an army, friend, just a RUMOR, and one rumor that my oven was broken once kept me up for a WEEK.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 37:7",
@@ -249,7 +226,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 37:7",
@@ -281,7 +258,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 37:8",
-          "text": "Meanwhile, the Rabshakeh hears that the king of Assyria has left Lachish. So he withdraws and goes looking for his boss, like somebody who just found out the meeting moved to another floor.",
+          "text": "Now the Rabshakeh hears that the king of Assyria has left Lachish. So he withdraws and goes looking for his boss, like somebody who just found out the meeting moved to another floor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -312,27 +289,23 @@
           "card": 3,
           "kind": "story",
           "verses": "Isaiah 37:9",
-          "text": "That king is Sennacherib, king of Assyria, and he gets a warning that Tirhakah king of Cush has set out to fight against him. A second fight headed his way, and here I am losing my whole MIND when two oven timers go off at once.",
+          "text": "That king is Sennacherib, king of Assyria, and he gets a warning that Tirhakah king of Cush has set out to fight against him. You know when you're on one call and the OTHER line starts ringing? Yeah. That.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Isaiah 37:9",
-          "question": "Warned that Tirhakah king of Cush is coming to fight him, what does Sennacherib do?",
+          "question": "Warned that Tirhakah king of Cush is coming to fight him, Sennacherib sends messengers to Hezekiah.",
           "answers": [
             {
-              "text": "Sends messengers to Hezekiah",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Sends gifts to Tirhakah",
-              "correct": false
-            },
-            {
-              "text": "Sends his army back to Lachish",
+              "text": "False",
               "correct": false
             }
           ],
@@ -414,16 +387,20 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Isaiah 37:14",
-          "question": "After reading Sennacherib's letter, Hezekiah goes up to the house of the LORD and spreads it out before the LORD.",
+          "question": "Hezekiah takes Sennacherib's letter up to the house of the LORD. What does he do with it there?",
           "answers": [
             {
-              "text": "True",
+              "text": "Spreads it out before the LORD",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Burns it on the altar",
+              "correct": false
+            },
+            {
+              "text": "Reads it to the priests",
               "correct": false
             }
           ],
@@ -484,7 +461,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Isaiah 37:18",
-          "text": "Then Hezekiah admits it straight up: \"Truly, O LORD, the kings of Assyria have laid waste all these countries and their lands.\" No spin, just the truth, laid out before the LORD.",
+          "text": "Then Hezekiah says it straight: \"Truly, O LORD, the kings of Assyria have laid waste all these countries and their lands.\" No spin, just the truth, laid out before the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -515,9 +492,9 @@
           "card": 15,
           "kind": "story",
           "verses": "Isaiah 37:20",
-          "text": "Then comes the big ask. Hezekiah prays, \"And now, O LORD our God, save us from his hand,\" and he gives the LORD a reason.",
+          "text": "Then comes the big ask. Hezekiah prays, \"And now, O LORD our God, save us from his hand…\" and he gives the LORD a reason.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 16,
@@ -540,7 +517,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 17,
@@ -548,7 +525,7 @@
           "verses": "Isaiah 37:20",
           "text": "Let's set the timer and step away from the oven for now. Stick close, friend, because this story is FAR from done.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

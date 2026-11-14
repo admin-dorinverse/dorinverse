@@ -3,14 +3,14 @@
   "stops": [
     {
       "stop": 1,
-      "verses": "Ecclesiastes 11:9-12:2",
+      "verses": "Ecclesiastes 11:9-10",
       "cards": [
         {
           "card": 1,
           "kind": "story",
           "verses": "Ecclesiastes 11:9",
-          "text": "The Teacher, son of David, king in Jerusalem (Ecclesiastes 1:1), has just said light is sweet, and a man who lives many years should rejoice in them all but remember the days of darkness (Ecclesiastes 11:7-8). Now he turns to the young man. Lean in, friend, because when a KING pulls you aside, you put the dough down.",
-          "needs_agent_fix": true,
+          "text": "The Teacher, son of David, king in Jerusalem (Ecclesiastes 1:1), has just said light is sweet (Ecclesiastes 11:7). Now he turns to the young man. Lean in, friend, because when a KING pulls you aside, you put the dough down.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Ecclesiastes 11:9",
-          "text": "Walk in the ways of your heart and in the sight of your eyes, he says. I'm LOVING this Teacher, friend. Then he hits me with a \"but.\"",
-          "needs_agent_fix": true,
+          "text": "Walk in the ways of your heart and in the sight of your eyes, he says. I'm LOVING this Teacher, friend, and then he hits me with a \"but.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -94,17 +94,23 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
+        }
+      ]
+    },
+    {
+      "stop": 2,
+      "verses": "Ecclesiastes 12:1-8",
+      "cards": [
         {
-          "card": 7,
+          "card": 1,
           "kind": "story",
           "verses": "Ecclesiastes 12:1",
-          "text": "Then the big line: \"Remember your Creator in the days of your youth,\" and it comes with a deadline. Trust me, friend, the expired coupon I shared that junk drawer with believed in itself EVERY single day, and its deadline still didn't care.",
+          "text": "Then the big line: \"Remember your Creator in the days of your youth…\" and it comes with a deadline. Trust me, friend, the expired coupon I shared a junk drawer with for years believed in itself EVERY single day, and its deadline still didn't care.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 12:1",
@@ -127,7 +133,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 12:1",
@@ -150,15 +156,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 4,
           "kind": "story",
           "verses": "Ecclesiastes 12:2",
-          "text": "Now the sky: the light of the sun, moon and stars is darkened. Teacher, I spent YEARS in a dark junk drawer begging for one slice of light, and you're turning off the SUN?",
+          "text": "Remember Him, he says, before the light of the sun, moon and stars is darkened. Friend, I lose my mind when ONE oven light burns out, and this picture loses all THREE.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 12:2",
@@ -175,23 +181,17 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        }
-      ]
-    },
-    {
-      "stop": 2,
-      "verses": "Ecclesiastes 12:3-8",
-      "cards": [
-        {
-          "card": 1,
-          "kind": "story",
-          "verses": "Ecclesiastes 12:3",
-          "text": "Still describing the days to come, the Teacher paints a house. First, the keepers of the house tremble.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
         },
         {
-          "card": 2,
+          "card": 6,
+          "kind": "story",
+          "verses": "Ecclesiastes 12:3",
+          "text": "Still describing the days to come, the Teacher paints a house. On that day, he says, the keepers of the house tremble.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 12:3",
@@ -207,10 +207,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 12:3",
@@ -230,26 +230,26 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 9,
           "kind": "story",
           "verses": "Ecclesiastes 12:3",
           "text": "Those watching through windows see dimly. That's me with my nose on the oven glass, squinting at a blur: \"Is that my batch, or is that my own REFLECTION waving back?\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 10,
           "kind": "story",
           "verses": "Ecclesiastes 12:4",
-          "text": "Then the doors to the street are shut, and the sound of the mill fades away. Friend, that's my old junk drawer on a regular Tuesday.",
+          "text": "Then the doors to the street are shut, and the sound of the mill fades away. This house is going quiet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 12:4",
@@ -269,18 +269,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 12,
           "kind": "story",
           "verses": "Ecclesiastes 12:4",
           "text": "And all the daughters of song grow faint. The music in this house is fading out.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 12:5",
@@ -296,22 +296,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 14,
           "kind": "story",
           "verses": "Ecclesiastes 12:5",
-          "text": "Then outside, the almond tree blossoms, the grasshopper loses its spring and the caper berry shrivels. That grasshopper is me after a twelve-oven day, diving face-first for the chocolate chips and landing in the FLOUR.",
+          "text": "Then the almond tree blossoms, the grasshopper loses its spring and the caper berry shrivels. That grasshopper is me after a twelve-oven day, diving face-first for the chocolate chips and landing in the FLOUR.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 12:5",
-          "question": "The Teacher says all these pictures lead somewhere. Where does man go?",
+          "question": "Then, the Teacher says, man goes somewhere. Where does he go?",
           "answers": [
             {
               "text": "To his eternal home",
@@ -327,18 +327,18 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 16,
           "kind": "story",
           "verses": "Ecclesiastes 12:5-6",
           "text": "And mourners walk the streets. Then the Teacher says to remember Him before four things: the silver cord, the golden bowl, the pitcher at the spring and the wheel at the well.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 12:6",
@@ -358,10 +358,10 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ecclesiastes 12:7",
@@ -391,14 +391,14 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 12:8",
-          "question": "True or false: after all these pictures, the Teacher sums it up by saying everything is futile.",
+          "question": "True or false: at the end, the Teacher says everything is futile.",
           "answers": [
             {
               "text": "True",
@@ -410,7 +410,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

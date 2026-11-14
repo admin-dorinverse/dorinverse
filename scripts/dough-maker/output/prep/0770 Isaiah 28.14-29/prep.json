@@ -78,10 +78,18 @@
         },
         {
           "card": 6,
+          "kind": "story",
+          "verses": "Isaiah 28:16",
+          "text": "He calls it \"a tested stone, a precious cornerstone, a sure foundation…\" Peter, an apostle of Jesus, quotes this stone line in his first letter and applies it to Jesus (1 Peter 2:4-6).",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 28:16",
-          "question": "The Lord GOD calls His stone a tested stone, a precious cornerstone, a sure foundation. He says the one who believes will never be shaken.",
+          "question": "The Lord GOD says the one who believes will never be shaken.",
           "answers": [
             {
               "text": "True",
@@ -96,19 +104,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
-          "verses": "Isaiah 28:16-17",
-          "text": "Peter quotes this stone line in his first letter and points it to Jesus (1 Peter 2:4-7). Right after the stone, the Lord GOD says, \"I will make justice the measuring line and righteousness the level,\" and when God holds a level up to your wall, there is no \"eh, close enough.\"",
-          "needs_agent_fix": true,
+          "verses": "Isaiah 28:17",
+          "text": "Then the Lord GOD says, \"I will make justice the measuring line and righteousness the level.\" Friend, the shelves in my bakery have NEVER met a level, and every cookie jar on them slowly slides to one end.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 28:17",
-          "question": "The rulers are hiding in a refuge of lies. What does the Lord GOD say will sweep it away?",
+          "question": "The Lord GOD says water will flood the rulers' hiding place. What does He say will sweep away their refuge of lies?",
           "answers": [
             {
               "text": "Hail",
@@ -127,11 +135,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 28:18",
-          "question": "The Lord GOD says the rulers' covenant with death will still stand when trouble comes.",
+          "question": "The Lord GOD says the rulers' covenant with death will stand.",
           "answers": [
             {
               "text": "True",
@@ -146,7 +154,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 28:18",
@@ -170,15 +178,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
-          "kind": "story",
+          "card": 12,
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Isaiah 28:19",
-          "text": "And it won't come just once. It will carry them away, sweeping through morning after morning, by day and by night, and Isaiah says understanding this message will bring sheer terror.",
+          "question": "The Lord GOD says the overwhelming scourge will pass through just one time.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
+          "kind": "story",
+          "verses": "Isaiah 28:19",
+          "text": "It will sweep through morning after morning, by day and by night, and carry them away. Understanding this message will bring sheer terror.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "story",
           "verses": "Isaiah 28:20",
           "text": "Then Isaiah gives a picture from everyday life: \"the bed is too short to stretch out on, and the blanket too small to wrap around you.\" Friend, I spent years in a junk drawer under a pile of old paper, and NOT ONE takeout menu ever covered my whole mustache.",
@@ -186,15 +213,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 15,
           "kind": "story",
           "verses": "Isaiah 28:21",
-          "text": "Then Isaiah says the LORD will rise up as at Mount Perazim. He will rouse Himself as in the Valley of Gibeon.",
+          "text": "Then Isaiah says the LORD will rise up as at Mount Perazim, where He broke out against David's enemies, the Philistines (2 Samuel 5:20). He will rouse Himself as in the Valley of Gibeon, where He fought for Israel in Joshua's day (Joshua 10:10-14).",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 28:21",
@@ -217,7 +244,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 28:22",
@@ -240,27 +267,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 18,
+          "kind": "story",
           "verses": "Isaiah 28:22",
-          "question": "Isaiah has heard a decree of destruction from the Lord GOD of Hosts. It's against the whole ___.",
-          "answers": [
-            {
-              "text": "land",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "palace",
-              "correct": false
-            },
-            {
-              "text": "temple",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then Isaiah says he has heard from the Lord GOD of Hosts \"a decree of destruction against the whole land.\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -275,13 +286,13 @@
           "verses": "Isaiah 28:23-24",
           "text": "Now Isaiah says, \"Listen and hear my voice. Pay attention and hear what I say.\" And then the prophet does something nobody saw coming: he starts talking about FARMING.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Isaiah 28:24-25",
+          "verses": "Isaiah 28:25",
           "question": "Isaiah asks, \"Does the plowman plow for planting every day?\" What does the farmer actually do with his field?",
           "answers": [
             {
@@ -298,15 +309,15 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Isaiah 28:25",
-          "text": "Once the ground is leveled, the farmer sows caraway and scatters cumin. Plowing every day forever? That's me preheating the oven for three weeks and calling myself a BAKER.",
+          "text": "Once the ground is leveled, the farmer sows caraway and scatters cumin. Friend, plowing every day and never planting is me preheating the oven for three weeks and never baking ONE cookie.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -325,7 +336,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -349,7 +360,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -357,7 +368,7 @@
           "verses": "Isaiah 28:27",
           "text": "Then comes the harvest. Isaiah says caraway is not threshed with a sledge, and a cart wheel is not rolled over the cumin.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
@@ -380,7 +391,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
@@ -388,57 +399,57 @@
           "verses": "Isaiah 28:27",
           "text": "A stick for the caraway and a rod for the cumin. Different seed, different tool, the same way you don't press a delicate sugar cookie with a sledgehammer, and friend, I have the FLAT cookie to prove it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 28:28",
-          "question": "Isaiah says grain for bread is threshed over and over until the horses crush it.",
+          "question": "Isaiah says the farmer does not keep threshing grain for bread forever.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Isaiah 28:28-29",
+          "text": "The cart wheels may roll over the grain, but the horses do not crush it. And Isaiah says this also comes from the LORD of Hosts.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 28:29",
-          "question": "Isaiah wraps up the farming picture. Where does he say all this also comes from?",
+          "question": "Isaiah says all this also comes from the LORD of Hosts. How does he describe the LORD?",
           "answers": [
             {
-              "text": "The LORD of Hosts",
+              "text": "Wonderful in counsel and excellent in wisdom",
               "correct": true
             },
             {
-              "text": "The elders of Jerusalem",
+              "text": "Mighty in battle and fearsome in strength",
               "correct": false
             },
             {
-              "text": "The wise men of Egypt",
+              "text": "Gracious in mercy and abounding in love",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 11,
-          "kind": "story",
-          "verses": "Isaiah 28:29",
-          "text": "Isaiah says the LORD of Hosts is \"wonderful in counsel and excellent in wisdom.\" Friend, the God who taught that farmer when to stop plowing is NOT winging it.",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

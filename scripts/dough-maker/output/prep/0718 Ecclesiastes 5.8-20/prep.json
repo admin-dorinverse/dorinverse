@@ -39,9 +39,9 @@
         {
           "card": 3,
           "kind": "story",
-          "verses": "Ecclesiastes 5:8-9",
-          "text": "Officials over officials over officials. It's like calling customer service, asking for a manager, and the manager says, \"Hold on, let me get MY manager.\" Then the Teacher looks out at the fields.",
-          "needs_agent_fix": true,
+          "verses": "Ecclesiastes 5:9",
+          "text": "Then the Teacher looks out at the fields.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -72,15 +72,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 5:9",
-          "question": "The Teacher says the king himself gets no profit from the fields.",
+          "question": "The Teacher says the king himself profits from the fields.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -120,25 +120,6 @@
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ecclesiastes 5:10",
-          "question": "The Teacher says the one who loves wealth is finally satisfied once his income grows.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Ecclesiastes 5:10",
           "text": "The Teacher calls it futile. Friend, I once said \"just one more cookie\" forty times in one afternoon, and the box ran EMPTY before I ever got around to saying \"enough.\"",
@@ -146,7 +127,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Ecclesiastes 5:11",
           "text": "Then he notices what happens when good things start piling up.",
@@ -154,7 +135,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 5:11",
@@ -177,7 +158,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Ecclesiastes 5:11",
           "text": "Bake one batch, and nobody calls. Bake TWELVE DOZEN, and people you haven't heard from in years are suddenly in the group chat asking how you've been.",
@@ -185,7 +166,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 5:11",
@@ -208,10 +189,34 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Ecclesiastes 5:12",
           "text": "Then the Teacher puts two people side by side: a worker, and a rich man.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Ecclesiastes 5:12",
+          "question": "The Teacher says the worker's ___ is sweet, but the rich man's abundance permits him none.",
+          "answers": [
+            {
+              "text": "sleep",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "bread",
+              "correct": false
+            },
+            {
+              "text": "pay",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -236,33 +241,9 @@
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ecclesiastes 5:12",
-          "question": "The Teacher says the rich man's abundance permits him no ___.",
-          "answers": [
-            {
-              "text": "sleep",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "joy",
-              "correct": false
-            },
-            {
-              "text": "profit",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "story",
           "verses": "Ecclesiastes 5:12",
-          "text": "After a long day at the ovens, I'm OUT before my hat hits the pillow. The rich man? Wide awake, staring at the ceiling like it owes him money.",
+          "text": "After a long day at the ovens, I'm OUT before my hat hits the pillow, but the rich man is wide awake, staring at the ceiling like it owes him money.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -276,7 +257,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ecclesiastes 5:13",
-          "text": "Then the Teacher says, 'There is a grievous evil I have seen under the sun: wealth hoarded to the harm of its owner,' and he's not done describing it.",
+          "text": "Then the Teacher says, \"There is a grievous evil I have seen under the sun: wealth hoarded to the harm of its owner…\" and he's not done describing it.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -307,7 +288,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ecclesiastes 5:15",
-          "text": "Then he goes all the way back to the beginning. As a man came from his mother's womb, so he will depart, naked as he arrived.",
+          "text": "Then he goes all the way back to the beginning, to how a man came from his mother's womb, and to how he will depart.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -333,8 +314,8 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Ecclesiastes 5:15-16",
-          "text": "No pockets, friend, not even a crumb left in the apron. The Teacher calls this a grievous affliction too: exactly as a man is born, so he will depart.",
+          "verses": "Ecclesiastes 5:16",
+          "text": "The Teacher calls this a grievous affliction too: \"Exactly as a man is born, so he will depart.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -397,7 +378,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Ecclesiastes 5:18",
-          "text": "But then the Teacher turns a corner. He says, 'Here is what I have seen to be good and fitting:'",
+          "text": "But then the Teacher turns a corner. He says, \"Here is what I have seen to be good and fitting…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -429,15 +410,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 5:18",
-          "question": "The Teacher calls the days of life God gives a man many and long.",
+          "question": "The Teacher says the days of life God gives a man are few.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -447,7 +428,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Ecclesiastes 5:18-19",
-          "text": "The Teacher says this is his lot. Then he says God has given riches and wealth to every man, and God does even more than that.",
+          "text": "The Teacher says this is a man's lot. Then he says God has given riches and wealth to every man, and God does even more than that.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

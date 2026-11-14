@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Song of Solomon 5:2",
-          "text": "Welcome to Sparkle's station, friend, where every word comes straight from the heart. In this love song, a woman is speaking, and she says, \"I sleep, but my heart is awake.\" Then, out of nowhere, a sound.",
+          "text": "Welcome to a love song, friend, where every word comes straight from the heart. Here a woman is speaking, and she says, \"I sleep, but my heart is awake.\" Then, out of nowhere, a sound.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Song of Solomon 5:2",
-          "text": "He calls her \"my sister, my darling, my dove, my flawless one.\" Four sweet names in one breath, friend, and I gave each of my six little ones exactly ONE.",
+          "text": "He calls her \"my sister, my darling, my dove, my flawless one.\" Four sweet names in one breath, friend! I've got two, Papa and Dorin, and I thought THAT was a lot.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -161,34 +161,24 @@
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Song of Solomon 5:6",
-          "question": "She opens the door for her beloved, but he had ___ and ___.",
+          "question": "The woman opens the door for her beloved. What does she find?",
           "answers": [
             {
-              "text": "turned",
-              "correct": true,
-              "blank": 1
+              "text": "He has turned and gone",
+              "correct": true
             },
             {
-              "text": "gone",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "waited",
+              "text": "He is still at the door",
               "correct": false
             },
             {
-              "text": "listened",
-              "correct": false
-            },
-            {
-              "text": "stayed",
+              "text": "He is waiting down the street",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -204,15 +194,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 5:6",
-          "question": "True or false: When the woman goes looking for her beloved and calls out for him, he answers her.",
+          "question": "True or false: When the woman goes looking for her beloved and calls out for him, he does not answer.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -222,39 +212,12 @@
           "card": 14,
           "kind": "story",
           "verses": "Song of Solomon 5:7",
-          "text": "Out in the city, she runs into the watchmen making their rounds, the guardians of the walls.",
+          "text": "Out in the city, she runs into the watchmen on their rounds, those guardians of the walls. They beat her and bruised her, and they took away her cloak.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Song of Solomon 5:7",
-          "question": "True or false: The watchmen on their rounds help the woman look for her beloved.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Song of Solomon 5:7",
-          "text": "Instead, they beat her and bruised her, and they took away her cloak.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "story",
           "verses": "Song of Solomon 5:8",
           "text": "Bruised and without her cloak, she turns to the daughters of Jerusalem, a group of women in this song. She solemnly charges them with one request.",
@@ -262,7 +225,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Song of Solomon 5:8",
@@ -294,28 +257,33 @@
           "card": 1,
           "kind": "story",
           "verses": "Song of Solomon 5:9",
-          "text": "The daughters of Jerusalem call her \"most beautiful among women\" and ask how her beloved is better than others. Basically: \"Okay, what's SO special about this one?\"",
+          "text": "The daughters of Jerusalem have a question for her: how is her beloved better than others? Basically, okay, what's SO special about this one?",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Song of Solomon 5:9",
-          "question": "True or false: The daughters of Jerusalem ask about her beloved because she charged them to give him her message.",
+          "question": "When the daughters of Jerusalem ask about her beloved, they call her the most ___ among women.",
           "answers": [
             {
-              "text": "True",
-              "correct": true
+              "text": "beautiful",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "False",
+              "text": "faithful",
+              "correct": false
+            },
+            {
+              "text": "patient",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -356,7 +324,7 @@
           "question": "The woman calls her beloved outstanding among ten thousand. What is she saying about him?",
           "answers": [
             {
-              "text": "He stands out above everyone else",
+              "text": "No one else compares to him",
               "correct": true
             },
             {
@@ -364,7 +332,7 @@
               "correct": false
             },
             {
-              "text": "He is famous across the land",
+              "text": "He is hard to pick out in a crowd",
               "correct": false
             }
           ],
@@ -375,43 +343,20 @@
           "card": 6,
           "kind": "story",
           "verses": "Song of Solomon 5:11-12",
-          "text": "His head is purest gold, his hair is black as a raven, and his eyes are like doves beside the streams of water. Doves AGAIN, friend: this song has more doves than a park bench.",
+          "text": "His head is purest gold, his hair is black as a raven, and his eyes are like doves beside the streams of water. She is just getting STARTED, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Song of Solomon 5:13",
-          "text": "His cheeks are like beds of spice, and his lips are like lilies, dripping with flowing myrrh. Hold on, friend, flowing myrrh again?",
+          "verses": "Song of Solomon 5:5, 13",
+          "text": "His cheeks are like beds of spice, and his lips are like lilies, dripping with flowing myrrh. Flowing myrrh, friend, the same words as on her fingers at the bolt!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Song of Solomon 5:5",
-          "question": "Flowing myrrh drips from her beloved's lips in her description. Where else in this passage did flowing myrrh show up?",
-          "answers": [
-            {
-              "text": "On her fingers at the bolt",
-              "correct": true
-            },
-            {
-              "text": "On the cloak the watchmen took",
-              "correct": false
-            },
-            {
-              "text": "On her beloved's damp hair",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Song of Solomon 5:14-15",
           "text": "His arms are rods of gold, and his legs are pillars of marble set on bases of pure gold. Friend, I have been standing on a gold base this WHOLE time, and nobody ever wrote me a song.",
@@ -419,26 +364,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 5:11-15",
-          "question": "True or false: In her description of her beloved, the woman starts with his head and works her way down to his legs.",
+          "question": "True or false: In her description of her beloved, the woman starts with his legs and works her way up to his head.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Song of Solomon 5:16",
           "text": "Then she wraps it up: \"His mouth is most sweet; he is altogether lovely. This is my beloved, and this is my friend, O daughters of Jerusalem.\"",
@@ -446,7 +391,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Song of Solomon 5:16",
@@ -469,19 +414,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Song of Solomon 6:1",
-          "text": "Now the daughters ask, \"Where has your beloved gone, O most beautiful among women? Which way has he turned?\"",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Song of Solomon 6:1",
-          "question": "After hearing her describe her beloved, the daughters of Jerusalem say they will ___ him with her.",
+          "question": "The daughters of Jerusalem ask where her beloved has gone and which way he has turned. They say they will ___ him with her.",
           "answers": [
             {
               "text": "seek",
@@ -501,39 +438,38 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Song of Solomon 6:2",
-          "question": "Earlier, the woman sought her beloved but did not find him. Now she says he has gone down to his ___.",
+          "question": "Earlier, the woman sought her beloved but did not find him. Now the daughters ask where he has gone. What does she do?",
           "answers": [
             {
-              "text": "garden",
-              "correct": true,
-              "blank": 1
+              "text": "She tells them where he has gone",
+              "correct": true
             },
             {
-              "text": "house",
+              "text": "She says she will search alone",
               "correct": false
             },
             {
-              "text": "tower",
+              "text": "She asks them to wait until morning",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
-          "verses": "Song of Solomon 6:2",
-          "text": "She says he's gone to the beds of spices, to pasture his flock in the gardens and to gather lilies. Picture her out there searching the city, friend, and he's picking lilies.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 14,
+          "kind": "story",
+          "verses": "Song of Solomon 6:2",
+          "text": "She says he has gone down to his garden, to the beds of spices, to pasture his flock in the gardens and to gather lilies.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 6:3",
@@ -552,7 +488,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Song of Solomon 6:3",
           "text": "Her beloved pastures his flock among the lilies. She opened the door to an empty night, friend, and I think she still lands right here, sure of who she belongs to.",

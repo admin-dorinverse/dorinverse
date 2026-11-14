@@ -11,7 +11,7 @@
           "verses": "Song of Solomon 8:5",
           "text": "We're near the end of a love song, friend, a song full of two lovers praising each other (Song of Solomon 4:1-7; 5:10-16). Now a voice asks who this is, coming up and leaning on her beloved. The only thing I ever leaned on was a pile of takeout menus in a junk drawer.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,21 +34,21 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Song of Solomon 8:5",
-          "text": "Then a memory of waking someone under the apple tree, the very spot where that one's mother gave birth. My family landmark is the back of a junk drawer, friend, and NOBODY is putting a plaque on that.",
+          "text": "Then the song says, \"I roused you under the apple tree; there your mother conceived you; there she travailed and brought you forth.\"",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
           "verses": "Song of Solomon 8:6",
-          "text": "Then a big request: \"Set me as a seal over your heart, as a seal upon your arm.\" As a cookie stamper, I RESPECT anybody who wants to leave a mark.",
+          "text": "Then a big request: \"Set me as a seal over your heart, as a seal upon your arm…\" As a cookie stamper, I RESPECT anybody who wants to leave a mark.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -136,24 +136,20 @@
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Song of Solomon 8:7",
-          "question": "If a man gave all the wealth of his house for love, his offer would be utterly ___.",
+          "question": "A man offers all the wealth of his house for love. True or false: the song says his offer would be utterly scorned.",
           "answers": [
             {
-              "text": "scorned",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "welcomed",
-              "correct": false
-            },
-            {
-              "text": "matched",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -166,7 +162,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Song of Solomon 8:8",
-          "text": "Then the song shifts: \"We have a little sister,\" and she's still young. I raised six little cookie cutters, friend, so I have BEEN in a family huddle about the little one.",
+          "text": "Then the song shifts: \"We have a little sister…\" and she's still young. I raised six little cookie cutters, friend, so I have BEEN in a family huddle about the little one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -197,39 +193,24 @@
           "card": 3,
           "kind": "story",
           "verses": "Song of Solomon 8:9",
-          "text": "Here's the plan: if she is a wall, they'll build a tower of silver on her, and if she is a door, they'll enclose her with panels of cedar. Silver towers and cedar panels, friend, and the fanciest thing anybody ever put around ME was a rubber band.",
+          "text": "Here's the plan: if she is a wall, they'll build a tower of silver on her, and if she is a door, they'll enclose her with panels of cedar. Silver towers and cedar panels, friend, and the fanciest thing anybody ever put around ME was a dish towel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Song of Solomon 8:10",
-          "question": "The plan for the little sister has two options, a wall or a door. Then a woman speaks up and says she is a ___.",
-          "answers": [
-            {
-              "text": "wall",
-              "correct": true
-            },
-            {
-              "text": "door",
-              "correct": false
-            },
-            {
-              "text": "gate",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Then a woman speaks up: \"I am a wall, and my breasts are like towers.\"",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Song of Solomon 8:10",
-          "question": "The woman says she is a wall, all grown up now. So what has she become in his eyes?",
+          "question": "The woman says she is a wall. What does she say she has become in the eyes of the man she speaks of?",
           "answers": [
             {
               "text": "Like one who brings peace",
@@ -245,45 +226,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
           "verses": "Song of Solomon 8:11",
-          "text": "Solomon, king of Israel (1 Kings 4:1), had a vineyard in Baal-hamon, and each tenant had to bring a thousand shekels of silver for its fruit. My rent in the junk drawer was free, and friend, I STILL overpaid.",
+          "text": "Solomon, king of Israel (1 Kings 4:1), had a vineyard in Baal-hamon, and each tenant had to bring a thousand shekels of silver for its fruit. A THOUSAND shekels, friend, and I break a sweat when the flour bill shows up.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Song of Solomon 8:12",
-          "question": "Solomon's vineyard is leased out to tenants. But the speaker says their own vineyard is theirs to ___.",
-          "answers": [
-            {
-              "text": "give",
-              "correct": true
-            },
-            {
-              "text": "lease",
-              "correct": false
-            },
-            {
-              "text": "guard",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 8:12",
-          "question": "True or false: the speaker says the thousand shekels are for Solomon.",
+          "question": "Solomon's tenants each owe a thousand shekels for his vineyard's fruit. Then the speaker says, \"But my own vineyard is mine to give…\" True or false: the speaker says the thousand shekels are for Solomon.",
           "answers": [
             {
               "text": "True",
@@ -291,6 +249,29 @@
             },
             {
               "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Song of Solomon 8:12",
+          "question": "The thousand shekels go to Solomon. Who gets the other two hundred?",
+          "answers": [
+            {
+              "text": "Those who tend its fruit",
+              "correct": true
+            },
+            {
+              "text": "The king's officials",
+              "correct": false
+            },
+            {
+              "text": "The daughters of Jerusalem",
               "correct": false
             }
           ],
@@ -300,8 +281,8 @@
         {
           "card": 9,
           "kind": "story",
-          "verses": "Song of Solomon 8:12-13",
-          "text": "Two hundred go to those who tend its fruit, and friend, I LOVE a boss who pays the crew. Then a call goes out: \"You who dwell in the gardens, my companions are listening for your voice.\"",
+          "verses": "Song of Solomon 8:13",
+          "text": "Then a call goes out: \"You who dwell in the gardens, my companions are listening for your voice…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -310,15 +291,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Song of Solomon 8:13",
-          "question": "The companions are listening for the voice of the one in the gardens. True or false: the speaker wants to hear that voice too.",
+          "question": "The companions are listening for the voice of the one in the gardens. True or false: the speaker asks that voice to stay quiet.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,

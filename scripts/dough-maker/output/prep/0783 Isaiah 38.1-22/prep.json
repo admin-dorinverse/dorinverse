@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 38:1",
-          "text": "Hezekiah, king of Judah, becomes deadly sick. Then Isaiah son of Amoz, the prophet, comes to him with a word from the LORD. Friend, when the prophet makes a house call, you sit UP.",
+          "text": "Hezekiah, king of Judah, becomes deadly sick. Then Isaiah son of Amoz, the prophet, comes to him with a word from the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -84,7 +84,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
@@ -94,26 +94,26 @@
           "question": "With his face to the wall, Hezekiah prays to the LORD and ___ bitterly.",
           "answers": [
             {
-              "text": "wept",
+              "text": "weeps",
               "correct": true
             },
             {
-              "text": "argued",
+              "text": "argues",
               "correct": false
             },
             {
-              "text": "shouted",
+              "text": "shouts",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
           "verses": "Isaiah 38:4-5",
-          "text": "Now watch this. The word of the LORD comes to Isaiah, and it's a message for Hezekiah.",
+          "text": "Now watch this. The word of the LORD comes to Isaiah with a message for Hezekiah: the LORD has heard his prayer and seen his tears.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -122,28 +122,18 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 38:5",
-          "question": "The LORD, the God of Hezekiah's father David, sends Isaiah back to the king. He says He has heard Hezekiah's ___ and seen his ___.",
+          "question": "Isaiah is told to say the message comes from the LORD, the God of Hezekiah's father ___.",
           "answers": [
             {
-              "text": "prayer",
-              "correct": true,
-              "blank": 1
+              "text": "David",
+              "correct": true
             },
             {
-              "text": "tears",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "offering",
+              "text": "Solomon",
               "correct": false
             },
             {
-              "text": "fasting",
-              "correct": false
-            },
-            {
-              "text": "vow",
+              "text": "Jacob",
               "correct": false
             }
           ],
@@ -176,8 +166,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Isaiah 38:5-6",
-          "text": "I hit snooze and get nine minutes, but Hezekiah prays and gets FIFTEEN YEARS! And the LORD's not done, because there's a promise for the city too.",
+          "verses": "Isaiah 38:5",
+          "text": "You know when you hit snooze and get nine more minutes? Hezekiah prays and gets FIFTEEN YEARS!",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -186,7 +176,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 38:6",
-          "question": "The LORD promises to deliver Hezekiah and the city from the hand of the king of ___.",
+          "question": "The LORD also promises to deliver Hezekiah and the city from the hand of the king of ___.",
           "answers": [
             {
               "text": "Assyria",
@@ -206,37 +196,18 @@
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 38:6",
-          "question": "Along with that promise, the LORD also says He will defend the city.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Isaiah 38:6-7",
+          "text": "The LORD also says He will defend this city. Then He gives Hezekiah a sign, so Hezekiah will know the LORD will do what He has promised.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "story",
-          "verses": "Isaiah 38:7",
-          "text": "Then comes a sign from the LORD, so Hezekiah will know the LORD will do what He has promised.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 38:8",
-          "question": "The LORD's sign for Hezekiah involves the sun's shadow on the stairway of Ahaz. What will the LORD make the shadow do?",
+          "question": "The LORD's sign involves the sun's shadow on the stairway of Ahaz. What will the LORD make the shadow do?",
           "answers": [
             {
               "text": "Go back ten steps",
@@ -251,25 +222,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "choice",
-          "type": "true_false",
+          "card": 14,
+          "kind": "story",
           "verses": "Isaiah 38:8",
-          "question": "The shadow on the stairway of Ahaz never actually moves back.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "And it happens. The sunlight goes back the ten steps it had descended.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -292,22 +252,22 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 38:11",
-          "question": "Back when Hezekiah thought he was dying, who or what did he say he'd never again see in the land of the living?",
+          "question": "Back when Hezekiah thought he was dying, what did he say he'd never again do in the land of the living?",
           "answers": [
             {
-              "text": "The LORD",
+              "text": "See the LORD",
               "correct": true
             },
             {
-              "text": "His palace",
+              "text": "Sit on his throne",
               "correct": false
             },
             {
-              "text": "His fields",
+              "text": "Walk in his gardens",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -323,7 +283,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 38:12",
-          "question": "Hezekiah has another picture. He says he has rolled up his life like a weaver, and He cuts him off from the ___.",
+          "question": "Hezekiah has another picture. He pictures himself as a weaver who has rolled up his life, cut off from the ___.",
           "answers": [
             {
               "text": "loom",
@@ -353,7 +313,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Isaiah 38:14",
-          "text": "He chirps like a swallow or crane and moans like a dove. Friend, I make that dove sound every time a whole tray slides off the rack.",
+          "text": "Then he says, \"I chirp like a swallow or crane; I moan like a dove.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -411,7 +371,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Isaiah 38:16",
-          "text": "Then he says it to the Lord plain as dough: \"You have restored me to health and have let me live.\"",
+          "text": "Then he says to the Lord, \"You have restored me to health and have let me live.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -460,8 +420,8 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "Isaiah 38:17-18",
-          "text": "Behind His BACK, friend, and I can't get a burnt batch that far out of sight! Then Hezekiah says Sheol cannot thank the Lord, and Death cannot praise Him.",
+          "verses": "Isaiah 38:18",
+          "text": "Then Hezekiah says Sheol cannot thank the Lord, and Death cannot praise Him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -523,7 +483,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Isaiah 38:21",
-          "text": "Now the writing is done, and the passage looks back at two things from earlier. First, Isaiah had given an order about Hezekiah's boil.",
+          "text": "Now, Isaiah had given an order about Hezekiah's boil.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

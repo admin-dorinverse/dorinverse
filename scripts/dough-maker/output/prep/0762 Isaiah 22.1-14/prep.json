@@ -9,116 +9,102 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 22:1",
-          "text": "Isaiah the prophet has a new burden, and this one is against the Valley of Vision. The whole town has gone up to the rooftops, and he wants to know what ails them now. Friend, when EVERYBODY in town is on the roof at the same time, that's not a view. That's a situation.",
-          "needs_agent_fix": true,
+          "text": "The prophet has a new burden, and this one is against the Valley of Vision. He asks what ails them now, that they have all gone up to the rooftops. Friend, when EVERYBODY in town is on the roof at the same time, that's not a view, that's a situation.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Isaiah 22:2",
-          "text": "Isaiah calls it a city of commotion, a town of revelry. And this town has its slain.",
-          "needs_agent_fix": true,
+          "text": "He calls it a city of commotion, a town of revelry. But this town has its slain, and they did not die by the sword, nor were they killed in battle.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 22:2",
-          "question": "True or false: the dead of the Valley of Vision were killed in battle.",
+          "type": "fill_blank",
+          "verses": "Isaiah 22:3",
+          "question": "The dead of the Valley of Vision weren't killed in battle. And all its rulers have ___ together.",
           "answers": [
             {
-              "text": "True",
+              "text": "fled",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "prayed",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "stayed",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Isaiah 22:3",
-          "question": "Nobody in the Valley of Vision died in battle. True or false: the town's rulers stay and fight it out.",
+          "question": "The rulers of the Valley of Vision run off together, and others run to a distant place. Where does all that running get them?",
           "answers": [
             {
-              "text": "True",
+              "text": "Into captivity",
+              "correct": true
+            },
+            {
+              "text": "Into safety",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Into battle",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 22:3",
-          "question": "The rulers run off together, and others flee to a distant place. How does it go for all of them?",
-          "answers": [
-            {
-              "text": "They get captured",
-              "correct": true
-            },
-            {
-              "text": "They reach safety",
-              "correct": false
-            },
-            {
-              "text": "They escape to Egypt",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Isaiah 22:4",
+          "text": "Over the destruction of the daughter of his people, the prophet says, \"Turn away from me, let me weep bitterly!\"",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Isaiah 22:4",
-          "text": "The destruction of the daughter of his people breaks the prophet. He says he needs to weep bitterly.",
-          "needs_agent_fix": true,
+          "question": "As he weeps, the prophet wants others to stay close and console him over his people's destruction.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 22:4",
-          "question": "Weeping over the destruction of his people, the prophet tells others not to try to console him.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Isaiah 22:5",
+          "text": "Here's why he weeps. A day has been set for the Valley of Vision: tumult, trampling and confusion, walls broken down and crying to the mountains.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Isaiah 22:5",
-          "text": "Here's why he weeps. A day has been set for the Valley of Vision: tumult, trampling and confusion, walls broken down and crying to the mountains.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 22:5",
@@ -129,7 +115,7 @@
               "correct": true
             },
             {
-              "text": "The rulers of Jerusalem",
+              "text": "The rulers of the city",
               "correct": false
             },
             {
@@ -137,51 +123,51 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 9,
+          "kind": "story",
+          "verses": "Isaiah 22:6",
+          "text": "Then Elam and Kir, two foreign lands, get ready. Elam takes up a quiver, with chariots and horsemen, and Kir uncovers the shield, which is the battle version of cracking your knuckles real slow.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Isaiah 22:6",
-          "text": "Then foreign lands gear up. Elam takes up a quiver, and Kir uncovers the shield, which is the battle version of cracking your knuckles real slow.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 22:7",
-          "question": "With Elam and Kir ready for war, the choicest valleys around the city fill up with ___, and horsemen are posted at the gates.",
+          "question": "The city's choicest valleys are full of chariots, and horsemen are posted at the ___.",
           "answers": [
             {
-              "text": "chariots",
+              "text": "gates",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "sheep",
+              "text": "wells",
               "correct": false
             },
             {
-              "text": "tents",
+              "text": "altars",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
+          "kind": "story",
+          "verses": "Isaiah 22:8",
+          "text": "Now the burden names names: Judah. Its defenses are uncovered, and on that day, the people go looking for something to lean on.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Isaiah 22:8",
-          "text": "Now the burden names names: Judah. Its defenses are uncovered, and on that day, the people go looking for something to lean on.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 22:8",
@@ -192,69 +178,73 @@
               "correct": true
             },
             {
-              "text": "The prophets serving in the temple",
+              "text": "The gold stored in the temple treasury",
               "correct": false
             },
             {
-              "text": "The chariots sent from Egypt",
+              "text": "The horses sent up from Egypt",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Isaiah 22:9",
+          "text": "They see many breaches in the walls of the City of David, and they collect water from the lower pool. That's the whole house running around five minutes before the guests show up.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "story",
-          "verses": "Isaiah 22:9",
-          "text": "They see many breaches in the walls of the City of David, and they collect water from the lower pool. That's the whole house running around five minutes before the guests show up.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Isaiah 22:10",
+          "question": "With breaches in the walls of the City of David, the people count the houses of Jerusalem. What for?",
+          "answers": [
+            {
+              "text": "To tear them down for the wall",
+              "correct": true
+            },
+            {
+              "text": "To find room for the soldiers",
+              "correct": false
+            },
+            {
+              "text": "To collect a tax for weapons",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 22:10",
-          "question": "To strengthen the wall, the people count the houses of Jerusalem and tear them down.",
+          "type": "multiple_choice",
+          "verses": "Isaiah 22:11",
+          "question": "Jerusalem even builds a reservoir between the walls for the waters of the ancient pool. With all that work, what does the prophet say was missing?",
           "answers": [
             {
-              "text": "True",
+              "text": "Looking to the One who made it",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Enough workers to finish the job",
+              "correct": false
+            },
+            {
+              "text": "Enough stone to repair the wall",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 22:11",
-          "question": "Jerusalem even builds a reservoir between the walls for the waters of the ancient pool. What does Isaiah say the people did not do?",
-          "answers": [
-            {
-              "text": "Look to the One who made it",
-              "correct": true
-            },
-            {
-              "text": "Collect water from the pool",
-              "correct": false
-            },
-            {
-              "text": "Look to their weapons",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 22:12",
@@ -274,38 +264,38 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Isaiah 22:13",
+          "question": "Instead of mourning, the people of Jerusalem feast and celebrate.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 22:13",
-          "question": "The people of Jerusalem answer the Lord's call by putting on sackcloth and mourning.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Isaiah 22:12-13",
+          "text": "There's joy and gladness, butchering of cattle, slaughtering of sheep, eating of meat and drinking of wine, and the motto of the day is \"Let us eat and drink, for tomorrow we die!\" God sent out a call to weep, and they turned it into a block party.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 19,
-          "kind": "story",
-          "verses": "Isaiah 22:13",
-          "text": "Instead there's joy and gladness, butchering of cattle, slaughtering of sheep, eating of meat and drinking of wine, and the motto of the day is \"Let us eat and drink, for tomorrow we die!\" God sent out a call to weep, and they turned it into a block party.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 22:14",
@@ -325,7 +315,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

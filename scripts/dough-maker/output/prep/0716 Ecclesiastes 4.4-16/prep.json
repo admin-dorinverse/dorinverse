@@ -47,20 +47,20 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Ecclesiastes 4:5",
-          "question": "Next the Teacher says, \"The fool folds his hands and consumes his own flesh.\" What is that picture saying about the fool who folds his hands?",
+          "question": "Next the Teacher says the ___ folds his hands and consumes his own flesh.",
           "answers": [
             {
-              "text": "He ends up ruining himself",
+              "text": "fool",
               "correct": true
             },
             {
-              "text": "He finally finds true peace",
+              "text": "wise man",
               "correct": false
             },
             {
-              "text": "He lives well off his neighbor",
+              "text": "rich man",
               "correct": false
             }
           ],
@@ -110,7 +110,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Ecclesiastes 4:7-8",
-          "text": "Again, the Teacher sees futility under the sun. This time it's about one man and his work.",
+          "text": "Again, the Teacher sees futility under the sun. This time it's a man all alone, without even a son or brother, and there's no end to his labor.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -119,15 +119,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 4:8",
-          "question": "The Teacher says this hardworking man has a son or a brother.",
+          "question": "The Teacher says this man's eyes are still not content with his wealth.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -135,25 +135,6 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ecclesiastes 4:8",
-          "question": "There is no end to this man's labor, and his eyes are content with his wealth.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 4:8",
@@ -176,7 +157,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Ecclesiastes 4:8",
           "text": "He asks, \"For whom do I toil and bereave my soul of enjoyment?\" Biggest cookie jar on the whole block, and the man has never once taken a cookie out of it.",
@@ -184,7 +165,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ecclesiastes 4:8",
@@ -217,7 +198,7 @@
           "kind": "story",
           "verses": "Ecclesiastes 4:9",
           "text": "After that lonely man, the Teacher lands the big one. Two are better than one.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -232,7 +213,7 @@
               "correct": true
             },
             {
-              "text": "They can split the blame for mistakes",
+              "text": "They are safe from their neighbor's envy",
               "correct": false
             },
             {
@@ -240,15 +221,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Ecclesiastes 4:10",
-          "text": "Then he paints a picture of two people sticking together. One of them falls down.",
-          "needs_agent_fix": true,
+          "text": "Then he paints a picture of two people sticking together. What if one of them falls down?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -256,7 +237,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ecclesiastes 4:10",
-          "question": "When one of the two falls down, what can his companion do?",
+          "question": "If one of the two falls down, what can his companion do?",
           "answers": [
             {
               "text": "Lift him up",
@@ -271,7 +252,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -279,7 +260,7 @@
           "kind": "story",
           "verses": "Ecclesiastes 4:10",
           "text": "But \"pity the one who falls without another to help him up!\" I've hopped too hard by the cooling racks and gone down face-first, gold base and all, and the only witness was the OVEN.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -298,7 +279,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -321,7 +302,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -329,38 +310,34 @@
           "kind": "story",
           "verses": "Ecclesiastes 4:12",
           "text": "Two is good. But the Teacher isn't done counting, because now he brings out a cord of three strands.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Ecclesiastes 4:12",
-          "question": "What does the Teacher say about a cord of three strands?",
+          "question": "The Teacher says a cord of three strands is quickly broken.",
           "answers": [
             {
-              "text": "It is not quickly broken",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "It is too heavy to carry",
-              "correct": false
-            },
-            {
-              "text": "It ties a man down",
-              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Ecclesiastes 4:13",
-          "text": "Now a royal matchup, starting with an old but foolish king who no longer knows how to take a warning. His check-engine light has been on so long he thinks it's DECORATION.",
-          "needs_agent_fix": true,
+          "text": "Now a royal matchup, starting with an old but foolish king who no longer knows how to take a warning. You know when a check-engine light stays on so long the driver thinks it's DECORATION?",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -383,69 +360,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
           "verses": "Ecclesiastes 4:14",
-          "text": "And this youth did not come up the easy way. He was born poor in his own kingdom.",
-          "needs_agent_fix": true,
+          "text": "And this youth came from the prison to the kingship, though he was born poor in his own kingdom. Some people work their way up from the mailroom, but this youth went from a CELL to a CROWN.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Ecclesiastes 4:14",
-          "question": "Where did the poor youth come from to become king?",
+          "verses": "Ecclesiastes 4:15",
+          "question": "The youth went from prison to the throne. Who does the Teacher say followed him?",
           "answers": [
             {
-              "text": "From prison",
+              "text": "All the living",
               "correct": true
             },
             {
-              "text": "From the army",
+              "text": "His old cellmates",
               "correct": false
             },
             {
-              "text": "From the sheepfolds",
+              "text": "The king's own guards",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ecclesiastes 4:15",
-          "question": "The Teacher says all who lived and walked under the sun followed the youth who succeeded the king.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Ecclesiastes 4:16",
+          "text": "Then the Teacher says, \"There is no limit to all the people who were before them.\" I can't count that high, friend, and I count every chocolate chip in this bakery.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
-          "verses": "Ecclesiastes 4:16",
-          "text": "Then the Teacher says, \"There is no limit to all the people who were before them.\" No limit, friend. I can't count that high, and I count every chocolate chip in this bakery.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 4:16",
@@ -460,15 +418,15 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Ecclesiastes 4:16",
-          "text": "Then that line again: \"This too is futile and a pursuit of the wind.\" Today's big name is tomorrow's expired coupon, and believe me, I shared a drawer with one that STILL believed in itself.",
-          "needs_agent_fix": true,
+          "text": "Then that line again: \"This too is futile and a pursuit of the wind.\" Today's big name is tomorrow's expired coupon, and believe me, I shared a junk drawer with one that STILL believed in itself.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

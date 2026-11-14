@@ -9,9 +9,9 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 21:1",
-          "text": "We're still in the proverbs of Solomon, son of David, king of Israel (Proverbs 1:1; 10:1). Short sayings, one after another, like a tray where every cookie is a different flavor. First up, Solomon says the king's heart is a waterway in the hand of the LORD.",
+          "text": "These are proverbs of Solomon, son of David, king of Israel (Proverbs 1:1; 10:1). Short sayings, one after another, like a tray where every cookie is a different flavor. First up, Solomon says the king's heart is a waterway in the hand of the LORD.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -34,7 +34,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -124,30 +124,20 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Proverbs 21:5",
-          "question": "The plans of the ___ bring plenty, as surely as haste leads to ___.",
+          "question": "Solomon says the plans of the diligent bring plenty. Where does haste lead?",
           "answers": [
             {
-              "text": "diligent",
-              "correct": true,
-              "blank": 1
+              "text": "To poverty",
+              "correct": true
             },
             {
-              "text": "poverty",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "lazy",
+              "text": "To honor",
               "correct": false
             },
             {
-              "text": "honor",
-              "correct": false
-            },
-            {
-              "text": "mighty",
+              "text": "To a long life",
               "correct": false
             }
           ],
@@ -156,29 +146,37 @@
         },
         {
           "card": 10,
+          "kind": "story",
+          "verses": "Proverbs 21:6",
+          "text": "Then someone makes a fortune with a lying tongue. Solomon calls that a deadly pursuit.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:6",
-          "question": "Then someone makes a fortune with a lying tongue. What does Solomon call that fortune?",
+          "question": "Someone makes a fortune with a lying tongue. What picture does Solomon use for that fortune?",
           "answers": [
             {
               "text": "A vanishing mist",
               "correct": true
             },
             {
-              "text": "A lasting treasure",
+              "text": "A heavy burden",
               "correct": false
             },
             {
-              "text": "A strong tower",
+              "text": "A sharp sword",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Proverbs 21:7",
           "text": "Now Solomon turns to the violence of the wicked. Friend, lean in, because he packs a LOT into this one line.",
@@ -186,7 +184,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 21:7",
@@ -205,7 +203,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:8",
@@ -228,7 +226,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "story",
           "verses": "Proverbs 21:9",
           "text": "Then Solomon compares two places to live, and one of them is a corner of the roof. Friend, I spent years in the back of a junk drawer, so a roof corner sounds like an UPGRADE.",
@@ -236,7 +234,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:9",
@@ -259,7 +257,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 17,
           "kind": "story",
           "verses": "Proverbs 21:10",
           "text": "Now Solomon looks inside the wicked man: what his soul wants, and how he sees the people next door. He's peeking in there the way I peek through the oven window, every thirty SECONDS.",
@@ -267,7 +265,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 21:10",
@@ -309,7 +307,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 21:11",
-          "text": "Back to the ovens, friend! Now Solomon says when the simple gain wisdom, and believe me, I learned most of mine the HARD way.",
+          "text": "Back to the ovens, friend! Solomon has a line about how the simple gain wisdom.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -359,8 +357,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Proverbs 21:12",
-          "text": "And now the Righteous One Himself steps in. Friend, He's taking a long, careful look at the house of the wicked.",
-          "needs_agent_fix": true,
+          "text": "Next comes the Righteous One. Solomon says He considers the house of the wicked.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -421,7 +419,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Proverbs 21:14",
-          "text": "Next, a line about calming someone down. Solomon says a covert bribe pacifies great wrath.",
+          "text": "Next, a line about calming someone who's angry.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -430,7 +428,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 21:14",
-          "question": "In the same line, Solomon says a gift in ___ soothes anger.",
+          "question": "Solomon says a gift in ___ soothes anger.",
           "answers": [
             {
               "text": "secret",
@@ -451,47 +449,36 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Proverbs 21:15",
-          "text": "Then justice actually gets carried out. And two groups take it VERY differently.",
+          "verses": "Proverbs 21:14",
+          "text": "In the same line, Solomon says a covert bribe pacifies great wrath.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Proverbs 21:15",
-          "question": "True or false: when justice is executed, it's a joy to the workers of iniquity.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Then justice actually gets carried out. To the righteous, Solomon says, it's a joy.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Proverbs 21:16",
-          "question": "The man who strays from the path of understanding will rest in the assembly of the ___.",
+          "type": "multiple_choice",
+          "verses": "Proverbs 21:15",
+          "question": "Justice executed is a joy to the righteous. What does Solomon say it is to the workers of iniquity?",
           "answers": [
             {
-              "text": "dead",
+              "text": "A terror",
               "correct": true
             },
             {
-              "text": "wise",
+              "text": "A warning",
               "correct": false
             },
             {
-              "text": "elders",
+              "text": "A lesson",
               "correct": false
             }
           ],
@@ -500,6 +487,25 @@
         },
         {
           "card": 13,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Proverbs 21:16",
+          "question": "True or false: Solomon says the man who strays from the path of understanding will rest in the assembly of the living.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "story",
           "verses": "Proverbs 21:17",
           "text": "Next, someone who loves pleasure. If I just ate the chocolate chips all day instead of baking with them, friend, those cookie boxes would be EMPTY.",
@@ -507,75 +513,65 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 21:17",
-          "question": "He who loves pleasure will become ___; the one who loves wine and oil will never be ___.",
+          "question": "Solomon says he who loves pleasure will become ___.",
           "answers": [
             {
               "text": "poor",
-              "correct": true,
-              "blank": 1
+              "correct": true
             },
             {
-              "text": "rich",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "wise",
+              "text": "lonely",
               "correct": false
             },
             {
-              "text": "strong",
-              "correct": false
-            },
-            {
-              "text": "hungry",
+              "text": "lazy",
               "correct": false
             }
           ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Proverbs 21:18",
-          "text": "Then a tough line to chew on. Solomon says the wicked become a ransom for the righteous.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
+          "kind": "story",
+          "verses": "Proverbs 21:17-18",
+          "text": "And the one who loves wine and oil will never be rich. Then Solomon has a tough line to chew on, about a ransom.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 21:18",
-          "question": "True or false: in that same line, Solomon says the faithless become a ransom for the upright.",
+          "question": "True or false: Solomon says the righteous become a ransom for the wicked.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 18,
           "kind": "story",
-          "verses": "Proverbs 21:19",
-          "text": "Then Solomon names another place that's better than living with a contentious and ill-tempered wife: the desert. First a roof corner, now a WHOLE desert.",
+          "verses": "Proverbs 21:18-19",
+          "text": "It's the wicked who become a ransom for the righteous, and the faithless for the upright. Then Solomon names another place that's better than living with a contentious and ill-tempered wife: the desert.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 19,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:20",
@@ -607,62 +603,39 @@
           "card": 1,
           "kind": "story",
           "verses": "Proverbs 21:21",
-          "text": "Last stretch, friend! Here comes somebody chasing after righteousness and loving devotion, the way I chase a runaway chocolate chip across the counter.",
+          "text": "Last stretch, friend! Solomon says, \"He who pursues righteousness and loving devotion finds life, righteousness, and honor.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Proverbs 21:21",
-          "question": "What does the one who pursues righteousness and loving devotion find?",
-          "answers": [
-            {
-              "text": "Life and honor",
-              "correct": true
-            },
-            {
-              "text": "Riches and fame",
-              "correct": false
-            },
-            {
-              "text": "Rest and quiet",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Proverbs 21:22",
+          "text": "Then a wise man scales the city of the mighty. They've got a stronghold, and they trust in it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Proverbs 21:22",
-          "text": "Then a wise man goes up against the city of the mighty. They've got a stronghold, and they trust in it.",
+          "question": "True or false: the stronghold the mighty trust in stays standing against the wise man.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Proverbs 21:22",
-          "question": "True or false: the wise man scales the city of the mighty and pulls down the stronghold they trust in.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "story",
           "verses": "Proverbs 21:23",
           "text": "Next, guarding your mouth and your tongue. I've said things in a hurry that I'd trade a WHOLE cookie box to take back.",
@@ -670,7 +643,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Proverbs 21:23",
@@ -681,50 +654,27 @@
               "correct": true
             },
             {
-              "text": "joy",
+              "text": "anger",
               "correct": false
             },
             {
-              "text": "wisdom",
+              "text": "hunger",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Proverbs 21:24",
+          "text": "Then Solomon gives the proud and arrogant man a name tag: Mocker. And trust me, friend, nobody wants to wear THAT one to the company party.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Proverbs 21:24",
-          "text": "Solomon's about to give the proud and arrogant man a name tag. And trust me, friend, nobody wants to wear this one to the company party.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Proverbs 21:24",
-          "question": "___ is the name of the proud and arrogant man.",
-          "answers": [
-            {
-              "text": "Mocker",
-              "correct": true
-            },
-            {
-              "text": "Slacker",
-              "correct": false
-            },
-            {
-              "text": "Fool",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "story",
           "verses": "Proverbs 21:25",
           "text": "Next, the slacker. His hands refuse to work, which is basically hitting snooze on your whole life.",
@@ -732,7 +682,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:25",
@@ -755,7 +705,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Proverbs 21:26",
@@ -774,15 +724,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Proverbs 21:27",
-          "text": "Solomon calls the sacrifice of the wicked detestable. Then he says it can get WORSE, like when the smoke alarm goes off and you realize you forgot TWO trays.",
+          "text": "Solomon calls the sacrifice of the wicked detestable. Then he says it can be even worse.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:27",
@@ -805,7 +755,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Proverbs 21:28",
           "text": "A lying witness is up next, and Solomon says he will perish. Friend, I can't even fib about sneaking dough when it's stuck in my MUSTACHE.",
@@ -813,25 +763,52 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Proverbs 21:28",
-          "question": "The lying witness will perish. Solomon sets the man who listens to truth against him. What does he say about that man?",
+          "question": "True or false: Solomon says the man who listens to truth will speak forever.",
           "answers": [
             {
-              "text": "He will speak forever",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He will be silenced too",
-              "correct": false
-            },
-            {
-              "text": "He will fade with time",
+              "text": "False",
               "correct": false
             }
           ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Proverbs 21:29",
+          "question": "A wicked man hardens his face. What does Solomon say the upright man does?",
+          "answers": [
+            {
+              "text": "He makes his way sure",
+              "correct": true
+            },
+            {
+              "text": "He hardens his face too",
+              "correct": false
+            },
+            {
+              "text": "He hides his face away",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
+          "kind": "story",
+          "verses": "Proverbs 21:30",
+          "text": "And now the big one, friend: Solomon puts wisdom, understanding and counsel up against the LORD. Me? I've lost arguments with an oven timer.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -839,46 +816,38 @@
           "card": 16,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Proverbs 21:29",
-          "question": "A wicked man hardens his face. True or false: the upright man hardens his face too.",
+          "verses": "Proverbs 21:30",
+          "question": "True or false: Solomon says no wisdom, no understanding and no counsel can prevail against the LORD.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
-          "kind": "story",
-          "verses": "Proverbs 21:30",
-          "text": "And now the big one, friend: Solomon says no wisdom, no understanding and no counsel can prevail against the LORD. I've lost arguments with an oven timer, so I'm NOT about to try.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Proverbs 21:31",
-          "question": "A horse is prepared for the day of battle. But who does the victory belong to?",
+          "question": "A horse is prepared for the day of battle. Who does Solomon say the victory is of?",
           "answers": [
             {
               "text": "The LORD",
               "correct": true
             },
             {
-              "text": "Pharaoh",
+              "text": "The king",
               "correct": false
             },
             {
-              "text": "Goliath",
+              "text": "The bravest soldier",
               "correct": false
             }
           ],

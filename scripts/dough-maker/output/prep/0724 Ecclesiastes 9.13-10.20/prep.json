@@ -113,7 +113,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Ecclesiastes 9:17",
-          "text": "Then the Teacher puts two voices side by side: the calm words of the wise, and the shouts of a ruler among fools. Quiet versus LOUD, baker, and I've been the LOUD one in plenty of kitchens.",
+          "text": "Then the Teacher puts two voices side by side: the calm words of the wise, and the shouts of a ruler among fools. Quiet versus LOUD, baker, and in my bakery I'm usually the LOUD one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -122,15 +122,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 9:17",
-          "question": "The Teacher says the shouts of a ruler among fools are heeded over the calm words of the wise.",
+          "question": "The Teacher says the calm words of the wise are heeded over the shouts of a ruler among fools.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -140,7 +140,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Ecclesiastes 9:18",
-          "text": "Next the Teacher says wisdom is better than weapons of war. Then he warns how much good can be lost.",
+          "text": "Next the Teacher says wisdom is better than weapons of war. Then he adds a line about what just one sinner can do.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -149,19 +149,19 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ecclesiastes 9:18",
-          "question": "Wisdom is better than weapons of war, but one ___ destroys much good.",
+          "question": "Wisdom is better than weapons of war, but one sinner ___ much good.",
           "answers": [
             {
-              "text": "sinner",
+              "text": "destroys",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "soldier",
+              "text": "protects",
               "correct": false
             },
             {
-              "text": "stranger",
+              "text": "builds",
               "correct": false
             }
           ],
@@ -172,7 +172,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Ecclesiastes 10:1",
-          "text": "Now a picture: somebody's fancy perfumer's oil gets a few dead flies in it, and the whole thing stinks. EXPENSIVE stink, friend.",
+          "text": "Now a picture: dead flies get into the perfumer's oil and bring a stench. EXPENSIVE stink, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -308,15 +308,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ecclesiastes 10:9",
-          "question": "The Teacher says the one who splits logs is perfectly safe.",
+          "question": "The Teacher says the one who splits logs endangers himself.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -326,9 +326,9 @@
           "card": 3,
           "kind": "story",
           "verses": "Ecclesiastes 10:10",
-          "text": "If the axe is dull, you have to put more strength into every swing. Baker, I KNOW dull: my edges got so soft that Mother Miller had to press a little harder, and she smiled a little less at every cookie.",
+          "text": "If the axe is dull, you have to put more strength into every swing. Baker, I KNOW dull: Mother Miller, the lady who bought me for a quarter, would lean her WHOLE weight on me, and my stamps still came out looking like somebody SAT on the dough.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
@@ -351,7 +351,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
@@ -569,7 +569,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Ecclesiastes 10:20",
-          "text": "Last word from the Teacher: do not curse the king even in your thoughts, or curse the rich even in your bedroom. Not even in your HEAD, friend, and that's where I do ALL my best grumbling.",
+          "text": "Then the Teacher gives a warning: do not curse the king even in your thoughts, or curse the rich even in your bedroom. Not even in your HEAD, friend, and that's where I do ALL my best grumbling.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -585,11 +585,11 @@
               "correct": true
             },
             {
-              "text": "Your curse will come back on you",
+              "text": "A servant at the door may hear your words",
               "correct": false
             },
             {
-              "text": "The king can read every heart",
+              "text": "A guard at the gate may report your words",
               "correct": false
             }
           ],

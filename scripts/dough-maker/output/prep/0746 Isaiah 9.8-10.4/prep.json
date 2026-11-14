@@ -16,8 +16,8 @@
         {
           "card": 2,
           "kind": "story",
-          "verses": "Isaiah 9:10",
-          "text": "Here's what they say: \"The bricks have fallen, but we will rebuild with finished stone; the sycamores have been felled, but we will replace them with cedars.\" Friend, that's my oven catching fire and me going, 'PERFECT. I always wanted the fancy one.'",
+          "verses": "Isaiah 9:9-10",
+          "text": "Here's what they will say: \"The bricks have fallen, but we will rebuild with finished stone; the sycamores have been felled, but we will replace them with cedars.\" Friend, that's my oven catching fire and me going, 'PERFECT. I always wanted the fancy one.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -105,20 +105,16 @@
         {
           "card": 8,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Isaiah 9:13",
-          "question": "After the LORD struck them, what did the people of Israel do?",
+          "question": "After the LORD struck them, Isaiah says the people of Israel did not return to Him.",
           "answers": [
             {
-              "text": "They did not return to Him",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "They fasted and tore their clothes",
-              "correct": false
-            },
-            {
-              "text": "They begged Aram for peace",
+              "text": "False",
               "correct": false
             }
           ],
@@ -129,31 +125,12 @@
           "card": 9,
           "kind": "story",
           "verses": "Isaiah 9:14",
-          "text": "So the LORD will cut off Israel's head and tail, both palm branch and reed. Top to bottom, friend.",
+          "text": "So the LORD will cut off Israel's head and tail, both palm branch and reed, in a single day. Top to bottom, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 9:14",
-          "question": "Isaiah says the LORD will cut off Israel's head and tail slowly, over many years.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 9:15",
@@ -176,7 +153,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 9:16",
@@ -199,15 +176,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Isaiah 9:16",
-          "text": "And the ones they mislead are swallowed up. That's the lead driver following his GPS straight into a lake, and every driver behind him going, 'Well, HE looks like he knows.'",
+          "text": "And the ones they mislead are swallowed up. I think that's the saddest part.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 9:17",
@@ -230,7 +207,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Isaiah 9:17",
           "text": "Every mouth speaks folly, Isaiah says. And there's that line again: \"Despite all this, His anger is not turned away; His hand is still upraised.\"",
@@ -278,27 +255,31 @@
           "card": 3,
           "kind": "story",
           "verses": "Isaiah 9:19",
-          "text": "The people are fuel for the fire, and no man even spares his brother. His OWN brother, friend. Let that sit for a second.",
-          "needs_agent_fix": true,
+          "text": "The people are fuel for the fire, and no man even spares his brother. I think that one hurts: his OWN brother.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Isaiah 9:20",
-          "question": "The people carve out what's on the right and eat what's on the left. Isaiah says they end up satisfied.",
+          "question": "Isaiah says the people carve out what is on the right and eat what is on the left, but they are still ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "hungry",
+              "correct": true
+            },
+            {
+              "text": "thankful",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "generous",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -344,8 +325,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Isaiah 10:1",
-          "text": "Now Isaiah turns to the people who write the rules, and he opens with WOE: woe to those who make unjust laws and issue oppressive decrees. Friend, these folks don't just bend the rules. They WRITE the bent ones.",
-          "needs_agent_fix": true,
+          "text": "Now Isaiah opens with WOE: woe to those who make unjust laws and issue oppressive decrees.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -394,7 +375,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Isaiah 10:3",
-          "text": "Then come the hard questions: \"What will you do on the day of reckoning when devastation comes from afar?\" There's no snooze button on THAT alarm.",
+          "text": "Then come the hard questions: \"What will you do on the day of reckoning when devastation comes from afar?\" I think that question lands hard.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -448,7 +429,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Isaiah 10:4",
-          "text": "One last time: \"Despite all this, His anger is not turned away; His hand is still upraised.\" That's FOUR times, friend, and I spent years counting dust in a junk drawer, so trust me, I counted.",
+          "text": "And one more time: \"Despite all this, His anger is not turned away; His hand is still upraised.\" That's FOUR times, friend, and I spent years counting dust in a junk drawer, so trust me, I counted.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

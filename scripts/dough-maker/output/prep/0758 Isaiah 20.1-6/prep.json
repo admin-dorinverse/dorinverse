@@ -9,27 +9,37 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 20:1-2",
-          "text": "Sargon, king of Assyria, sends his chief commander to Ashdod, and the commander attacks the city and captures it. But before that year ever comes, the LORD has already given the prophet Isaiah son of Amoz an assignment. And friend, this one is NOT in anybody's job description.",
+          "text": "Sargon, king of Assyria, sends his chief commander to Ashdod, a Philistine city, and the commander attacks it and captures it. But before that year ever comes, the LORD has already spoken through the prophet Isaiah son of Amoz. He gives Isaiah a command, and friend, it's a hard one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Isaiah 20:2",
-          "question": "The LORD tells Isaiah to go and take two things off. What are they?",
+          "question": "The LORD tells Isaiah to go and remove the ___ from his waist and the ___ from his feet.",
           "answers": [
             {
-              "text": "The sackcloth from his waist and his sandals",
-              "correct": true
+              "text": "sackcloth",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The cloak from his shoulders and his belt",
+              "text": "sandals",
+              "correct": true,
+              "blank": 2
+            },
+            {
+              "text": "cloak",
               "correct": false
             },
             {
-              "text": "The ring from his hand and his turban",
+              "text": "belt",
+              "correct": false
+            },
+            {
+              "text": "anklets",
               "correct": false
             }
           ],
@@ -41,7 +51,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Isaiah 20:2",
-          "question": "When the LORD tells Isaiah to take off his sackcloth and sandals, Isaiah pushes back and asks for a different sign.",
+          "question": "Isaiah pushes back on the LORD's command and asks for a different sign.",
           "answers": [
             {
               "text": "True",
@@ -59,43 +69,20 @@
           "card": 4,
           "kind": "story",
           "verses": "Isaiah 20:2",
-          "text": "No arguing. No \"LORD, can we talk about this?\" Isaiah just does it, walking around naked and barefoot.",
+          "text": "And Isaiah does exactly that. He walks around naked and barefoot.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 20:3",
-          "question": "Isaiah keeps going naked and barefoot for ___ years.",
-          "answers": [
-            {
-              "text": "three",
-              "correct": true
-            },
-            {
-              "text": "seven",
-              "correct": false
-            },
-            {
-              "text": "forty",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
           "kind": "story",
           "verses": "Isaiah 20:3",
-          "text": "THREE YEARS of that, friend, and I once swore off sneaking cookie dough for a week and didn't make it to LUNCH. Then the LORD speaks, and He calls Isaiah His servant.",
+          "text": "Then the LORD speaks. He calls Isaiah His servant, and He says Isaiah has gone naked and barefoot for three years as a sign.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 20:3",
@@ -118,11 +105,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Isaiah 20:3-4",
-          "question": "Isaiah went naked and barefoot as a sign against Egypt and Cush. What does the LORD say will happen to their captives?",
+          "verses": "Isaiah 20:4",
+          "question": "Isaiah's three years are a sign against Egypt and Cush, a land south of Egypt. What does the LORD say will happen to captives from those lands?",
           "answers": [
             {
               "text": "They'll be led away naked and barefoot",
@@ -137,57 +124,34 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Isaiah 20:4",
+          "question": "The LORD says the captives led away from Egypt and Cush will include both young and old.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 20:4",
-          "question": "Captives from Egypt and Cush will be led away naked and barefoot. Who leads them away?",
-          "answers": [
-            {
-              "text": "The king of Assyria",
-              "correct": true
-            },
-            {
-              "text": "The king of Babylon",
-              "correct": false
-            },
-            {
-              "text": "The king of Persia",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Isaiah 20:4",
-          "question": "The king of Assyria leads away only the young people of Egypt and Cush.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
           "type": "fill_blank",
           "verses": "Isaiah 20:4",
-          "question": "The captives are led away naked and barefoot, and the LORD says it will bring Egypt ___.",
+          "question": "The LORD says the way these captives are led away will bring Egypt ___.",
           "answers": [
             {
               "text": "shame",
@@ -206,7 +170,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 10,
           "kind": "story",
           "verses": "Isaiah 20:5",
           "text": "And friend, Egypt won't be the only one hanging its head.",
@@ -214,11 +178,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 20:5",
-          "question": "The captives bring Egypt shame. Who else ends up dismayed and ashamed?",
+          "question": "The LORD says Egypt will be shamed. Who else will be dismayed and ashamed?",
           "answers": [
             {
               "text": "Those who hoped in Egypt and Cush",
@@ -237,38 +201,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 12,
           "kind": "story",
           "verses": "Isaiah 20:6",
-          "text": "Then the LORD says that on that day, the people of this coastland will speak up. They'll look at what has happened to their source of hope, the ones they fled to for help.",
+          "text": "Then the LORD says that on that day, the people of this coastland will speak up. They'll look at what has happened to their source of hope, the ones they fled to for help and deliverance from the king of Assyria.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 20:6",
-          "question": "The people of this coastland fled to their source of hope for help and deliverance. Deliverance from who?",
-          "answers": [
-            {
-              "text": "The king of Assyria",
-              "correct": true
-            },
-            {
-              "text": "The king of Moab",
-              "correct": false
-            },
-            {
-              "text": "The king of Aram",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 20:6",

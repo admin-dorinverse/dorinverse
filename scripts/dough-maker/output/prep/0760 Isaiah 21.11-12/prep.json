@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Isaiah 21:11",
-          "text": "Isaiah, the prophet, has another burden, and this one is against Dumah. He says someone calls to him, calling out for the watchman, the one whose whole job is to stay awake and keep guard. Friend, I did that job for YEARS in the back of a junk drawer, and nobody ever paid me.",
-          "needs_agent_fix": true,
+          "text": "The prophet has a burden against Dumah, and in it someone calls to him from Seir, the hill country where Esau settled (Genesis 36:8). The voice is calling to the watchman, the one who keeps watch through the dark. Friend, I spent YEARS in the dark at the back of a junk drawer, and NOBODY ever came looking for me with a question.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,33 +18,10 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Isaiah 21:11",
-          "question": "In the burden against Dumah, where does that voice calling for the watchman come from?",
+          "question": "The voice from Seir calls out to the watchman, the one keeping watch through the dark. What does it ask him?",
           "answers": [
             {
-              "text": "Seir",
-              "correct": true
-            },
-            {
-              "text": "Moab",
-              "correct": false
-            },
-            {
-              "text": "Bashan",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 3,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Isaiah 21:11",
-          "question": "The voice from Seir calls to the watchman, the one keeping guard while everyone else sleeps. What does it want to know?",
-          "answers": [
-            {
-              "text": "How much of the night is left",
+              "text": "What is left of the night",
               "correct": true
             },
             {
@@ -52,19 +29,35 @@
               "correct": false
             },
             {
-              "text": "Whether the city is still safe",
+              "text": "When the enemy will attack",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
+          "kind": "story",
+          "verses": "Isaiah 21:11",
+          "text": "Then the voice says the same words again: \"Watchman, what is left of the night? Watchman, what is left of the night?\" That's me at the oven door, asking the timer how long is left every thirty seconds like it's going to change its mind.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
+          "kind": "story",
+          "verses": "Isaiah 21:12",
+          "text": "The watchman replies, \"Morning has come, but also the night.\" Morning AND night, friend, both in the same breath.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Isaiah 21:11",
-          "question": "The voice from Seir asks the watchman how much of the night is left only one time.",
+          "verses": "Isaiah 21:12",
+          "question": "The watchman tells the voice from Seir that only morning has come.",
           "answers": [
             {
               "text": "True",
@@ -75,65 +68,30 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
-          "kind": "story",
-          "verses": "Isaiah 21:12",
-          "text": "Now the watchman answers. And I know that pressure, friend: when somebody asks you the SAME question twice, you better come back with something good.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Isaiah 21:12",
-          "question": "The watchman's answer is all good news: morning has come and the night is over.",
+          "question": "The watchman tells the voice from Seir, \"If you would inquire, then inquire.\" What does he tell it to do after that?",
           "answers": [
             {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
-          "verses": "Isaiah 21:12",
-          "text": "Morning has come, but also the night. That's a weather app promising sunshine AND storms in the same hour, and you KNOW I'd still refresh it twice.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Isaiah 21:12",
-          "question": "The watchman doesn't send the caller away. He says if the caller wants to ___, then go ahead, and come back yet again.",
-          "answers": [
-            {
-              "text": "inquire",
+              "text": "Come back yet again",
               "correct": true
             },
             {
-              "text": "rest",
+              "text": "Stay away for good",
               "correct": false
             },
             {
-              "text": "hide",
+              "text": "Wait quietly for dawn",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

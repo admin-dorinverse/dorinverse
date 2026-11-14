@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 2
+      },
+      "problem": "This choice card cites verse 16 and its False answer depends on the east and 'ends of the earth' praise in verses 15-16. Those verses are not told until the next story card (card 3), so the card jumps ahead and the baker can only guess.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 7
+      },
+      "problem": "The story card just before (card 6) already says 'Terror and pit and snare are waiting.' That gives away the right answer, 'They fall into the pit', and makes the wrong answers (a city of refuge, the temple) obviously wrong.",
+      "rule": "No card ever gives away the answer to a choice card that comes later. ... A setup line can't rule out the wrong answers either."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 11
+      },
+      "problem": "The question text repeats 'The earth staggers like a drunkard and sways like a shack.' That is the right answer to card 10, which the baker just answered, so the card reuses it.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 16
+      },
+      "problem": "The True statement that the LORD of Hosts will reign on Mount Zion and in Jerusalem restates card 15's right answer ('The LORD of Hosts will reign'). It re-asks the same fact and is trivially true.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    }
+  ]
+}
