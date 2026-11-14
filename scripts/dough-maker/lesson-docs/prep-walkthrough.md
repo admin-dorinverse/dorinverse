@@ -21,6 +21,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
 - The passage text is provided in the **BSB** (Berean Standard Bible).
 - Every fact and every verse number comes from that text. Facts from outside the passage are fine when they help, like who a new person is or who wrote a letter, with their reference.
 - The passage right before it is also provided, for context only. It is not part of the lesson.
+- Prep doesn't mention notes about old manuscripts, like the one before Mark 16:9, or the lesson's passage title.
 
 ## Scripture rules
 
@@ -38,14 +39,19 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
         ❌ "For the third time today." ✅ "For the third time." (Gen 22:11)
     - **Call things what the text calls them.**
         ❌ "Naomi asks the LORD to bless them." ✅ "Naomi tells them, 'May the LORD…'" (Ruth 1:8)
-- **Noticing:** What he points out must be true. "Same words" means an exact match.
+- **Noticing:** What he points out must be true. "Same words" means an exact match. He only points back to words a card has shown.
     ❌ "Same words as before." ✅ "That line again." (Gen 22:6, 8)
-- **Feelings:** He can guess at a feeling, marked as his own ("I think," "I bet"). Never as fact.
+- **Feelings:** He can guess at a feeling, marked as his own ("I think," "I bet"). Never as fact. A marked guess is for feelings only, never for why someone did something.
     ❌ "His dad doesn't want to explain." ✅ "I think his dad doesn't want to explain." (Gen 22:7–8)
 - **Reasons:** He never adds why someone did, said or thought something unless the text says why.
     ❌ "They thought God was punishing Him for something He did." ✅ "They thought God had struck Him down." (Isa 53:4)
 - **Quotes:** Quotation marks around Bible words mean the exact BSB wording, punctuation included. A paraphrase uses no quotation marks. Papa Dorin's own made-up lines in his jokes can use quotation marks.
 - **Wrong answers:** They're made up. No reference, and not checked against a verse.
+- **Cases stay cases.** A law given as a case stays a case: "If someone…, God says…"
+- **No added settings.** No setting the text doesn't give.
+- **Complaints.** A complaint, like Job's, is told as it's said, without correcting it.
+- **New Testament quotes.** When the New Testament quotes the Old Testament in different words, the card names the source ("Paul quotes Psalm 18:49") but cites only the New Testament verse.
+- **Questions.** A verse told only inside a choice card's question needs no citation.
 - **Hard parts.** Sexual sin and violence are told plainly in the BSB's own words, like "violated," on a short story card. Nothing is added, and nothing is softened into something the text doesn't say. Choice cards ask about the choices and results around them, never the act itself. A debated teaching is told exactly as written, with no side taken.
 - **Before you finish:** reread every card against these rules and fix anything that breaks them.
 
@@ -59,6 +65,8 @@ The walkthrough is split into stops, so it never feels like one long thing to ge
 - **A short passage does what it can.** Never force it to fill a stop.
 - Each stop covers the next stretch of the passage, in order, and gives its verse range.
 - **An included parable or sermon** (see passages.md) gets a stop of its own.
+- A stop break falls between whole verses, at the end of a sentence or thought. A verse never splits across two stops. A lead-in or closing verse or two around an included parable or sermon joins its stop. When a psalm has stanzas, like Psalm 119, stops follow them when they fit.
+- Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead.
 
 ## The reveal screen
 
@@ -79,7 +87,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 ## Question types
 
 - **Multiple choice:** a question and 3 answers.
-- **True or false:** a statement the baker marks true or false. In a stop with 2 or more, at least one answer is True and at least one is False, in no set pattern. A True statement never just repeats the card before it.
+- **True or false:** a statement the baker marks true or false. A true or false statement tests one claim. In a stop with 2 or more, at least one answer is True and at least one is False, in no set pattern. A True statement never just repeats the card before it.
 - **Fill in the blank:** the question has a blank for 1 or 2 words. One blank has 3 answers. Two blanks have 5 single words to choose from. With two blanks, each right word fits only its own blank. If the two right words could swap places, use one blank or another question type.
 - A blank is a word that matters to the meaning, never a word like "or," "and" or "he."
 - **No formula.** Which question type comes next, the order the types come in and where a blank falls are chosen naturally for each card. They never follow a pattern. No stop repeats another stop's pattern, and no type dominates a stop by a wide margin.
@@ -91,6 +99,8 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 - **Every other story card, including the first card of a later stop, is 1 to 2 sentences.**
 - **A summary story card** for a long stretch can be up to 4 sentences, jokes included, like the Genesis 5 example. If it is also the last story card, the "story isn't over" line goes on a card of its own.
 - **No em dashes or en dashes to make a sentence longer.** They make two sentences look like four or five.
+- **Short fragments,** like "Every. Single. Excuse.", don't count as sentences.
+- **If a choice hangs on a hard word,** ask a different question.
 - **Don't spend card words explaining a hard word.** Hard words get a dictionary pop-up (definitions.md, made after the cards).
 - **One beat per card.**
   - A story card carries one moment of the passage.
@@ -126,7 +136,7 @@ No card ever gives away the answer to a choice card that comes later. Once a cho
 - The passage title doesn't count. It's set before Prep is written. The book's name doesn't count, like the passage title.
 - A choice card's question never holds its own answer, or a form of it, like "rock badgers" for "in the rocks." Ask something else.
 - If the only fact about a new person is the answer to a choice card, the intro gives just the name, like "two men named Jannes and Jambres."
-- When a line repeats, like a psalm's refrain, ask about it only the first time it appears.
+- When a line repeats in the passage, like a psalm's refrain, ask about it only the first time it appears in this passage. A key word that keeps coming back, like "Rock" in Deuteronomy 32, is asked about once.
 - A setup line can't rule out the wrong answers either.
 - **Pop-ups are the exception.** Sample cookies, definitions and idioms sit where their verse or word is, even if they show something a later choice card asks about.
 
@@ -217,7 +227,7 @@ Prep must never become a guessing game.
 - **A card about two groups needs an answer true for both.** When a question covers more than one group, like the sea creatures and the birds, the right answer must be true for every group in it. ❌ "Multiply and fill the waters" for the sea creatures and the birds. Genesis 1:22 tells the birds to multiply on the earth.
 - Each wrong answer must be false anywhere in the passage, not just at that moment.
 - **Clear English.** Every card reads correctly. Each answer fits its question: in a blank, every answer matches the sentence's tense and form, and a "where" question gets places. "He," "she" and "they" always point to someone the baker can tell.
-- **No near-matches.** A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it.
+- **No near-matches.** A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it. Two wrong answers never mean the same as each other either. No answer is a look-alike of a name in the passage, like Barnabas for Barsabbas.
     ❌ "belongings of ___" with "another" (right) and "strangers" (Luke 16:12)
 - Don't let the right answer stand out. All the answers should sound alike. None should sound more like the Bible, or more modern, than the others.
     - ❌ A. "God Himself will provide the lamb" · B. "We'll grab one on the way" · C. "Don't stress about it"

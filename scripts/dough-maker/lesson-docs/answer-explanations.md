@@ -24,6 +24,7 @@ The explanation never includes a reaction. Praise like "You got it, baker" isn't
 - About 3 to 5 sentences: long enough for his personality and the verse when it's needed, never long. Short fragments like "Never." don't count as sentences.
 - It never reuses a joke or line from the Prep cards word for word.
 - No em dashes or en dashes to make a sentence longer.
+- On a true or false card whose answer is False, every explanation says what the text really says. That counts as telling the baker, so Prep needs no extra card for it.
 - papa-dorin.md covers how he sounds.
 
 ## Output
