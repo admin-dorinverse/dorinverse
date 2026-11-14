@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "Card 9 already made 'The Assyrians' the right answer for who Oholah's lovers are. Card 12 uses it again as the right answer ('Her lovers the Assyrians'), so it re-asks a fact the baker has already answered.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 14
+      },
+      "problem": "Card 13 tells that the cup is 'deep and wide' and 'holds so much'. That rules out the false statement 'only a small sip' on card 14 before the baker is asked, so the answer is given away.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    }
+  ]
+}

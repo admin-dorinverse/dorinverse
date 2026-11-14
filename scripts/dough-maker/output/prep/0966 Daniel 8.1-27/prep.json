@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Daniel 8:4",
-          "text": "Then the ram starts charging toward the west and the north and the south. Three directions, friend. I can't even stir dough in two directions without making a mess.",
-          "needs_agent_fix": true,
+          "text": "Then the ram starts charging toward the west and the north and the south. Three directions, friend, and I can't even stir dough in two directions without making a mess.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -66,20 +66,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Daniel 8:4",
-          "question": "There's no rescue from the ram's power, and he does as he pleases. How does the ram end up?",
+          "question": "There's no rescue from the ram's power. He does as he pleases and becomes ___.",
           "answers": [
             {
-              "text": "He becomes great",
-              "correct": true
+              "text": "great",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "He grows tired",
+              "text": "weary",
               "correct": false
             },
             {
-              "text": "He turns back home",
+              "text": "afraid",
               "correct": false
             }
           ],
@@ -145,8 +146,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Daniel 8:7",
-          "text": "In a rage, the goat strikes the ram and shatters both his horns. The ram no animal could stand against? Yeah, about that.",
-          "needs_agent_fix": true,
+          "text": "In a rage, the goat strikes the ram and shatters both his horns. So much for the ram no animal could stand against.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -183,32 +184,27 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Daniel 8:8",
-          "question": "In place of the goat's broken horn, ___ prominent horns come up.",
+          "question": "When the goat's large horn breaks off, other horns come up in its place.",
           "answers": [
             {
-              "text": "four",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "two",
-              "correct": false
-            },
-            {
-              "text": "ten",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "story",
           "verses": "Daniel 8:8-9",
-          "text": "Those four horns point toward the four winds of heaven. Then, from one of them, a little horn emerges.",
+          "text": "And there are four of them, pointing toward the four winds of heaven. Then a little horn emerges from one of them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -271,7 +267,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 8:12",
-          "question": "In the rebellion, the host and the daily sacrifice are given over to the horn, and it flings truth to the ground. How does the horn do after that?",
+          "question": "In the rebellion, the host and the daily sacrifice are given over to the horn, and it flings truth to the ground. How does it go for the horn?",
           "answers": [
             {
               "text": "It prospers in whatever it does",
@@ -308,7 +304,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 8:13",
-          "question": "What does the holy one ask about the daily sacrifice, the rebellion and the trampled sanctuary?",
+          "question": "What does the other holy one ask about the daily sacrifice, the rebellion and the trampled sanctuary?",
           "answers": [
             {
               "text": "How long until it is fulfilled",
@@ -428,15 +424,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 8:18",
-          "question": "With Daniel in a deep sleep, Gabriel touches him and helps him to his feet.",
+          "question": "With Daniel in a deep sleep, Gabriel leaves him lying there with his face to the ground.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -451,31 +447,16 @@
         {
           "card": 1,
           "kind": "story",
-          "verses": "Daniel 8:19",
-          "text": "And FINALLY, the explanation. Gabriel says he'll make known what will happen in the latter time of wrath, because it concerns the appointed time of the end.",
+          "verses": "Daniel 8:18-19",
+          "text": "Gabriel's helped Daniel back to his feet, and FINALLY, the explanation. Gabriel says he'll make known what will happen in the latter time of wrath, because it concerns the appointed time of the end.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Daniel 8:20",
-          "question": "Gabriel starts with the two-horned ram. Who does he say the ram represents?",
-          "answers": [
-            {
-              "text": "The kings of Media and Persia",
-              "correct": true
-            },
-            {
-              "text": "The kings of Egypt and Cush",
-              "correct": false
-            },
-            {
-              "text": "The kings of Assyria and Edom",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Daniel 8:20-21",
+          "text": "Gabriel says the two-horned ram represents the kings of Media and Persia, and the shaggy goat represents the king of Greece.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -484,30 +465,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 8:21",
-          "question": "Gabriel says the shaggy goat represents the king of ___.",
+          "question": "Gabriel says the large horn between the shaggy goat's eyes is the first ___.",
           "answers": [
             {
-              "text": "Greece",
+              "text": "king",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "Egypt",
+              "text": "city",
               "correct": false
             },
             {
-              "text": "Assyria",
+              "text": "army",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Daniel 8:21",
-          "text": "And that large horn between the goat's eyes? Gabriel says that one is the first king.",
+          "verses": "Daniel 8:22",
+          "text": "Then come the four horns that replaced the broken one. Gabriel says they represent four kingdoms that will rise from that nation.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -516,15 +497,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 8:22",
-          "question": "Gabriel says the four horns that replaced the broken one are four kingdoms that will rise from that nation with even more power than before.",
+          "question": "Gabriel says these four kingdoms will not have the same power.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -543,7 +524,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 8:24",
-          "question": "The insolent king's power will be great, and it will be all his own.",
+          "question": "The insolent king's power will be great. Gabriel says that power will be all his own.",
           "answers": [
             {
               "text": "True",
@@ -624,41 +605,31 @@
           "card": 12,
           "kind": "story",
           "verses": "Daniel 8:26",
-          "text": "Gabriel says the vision of the evenings and the mornings that has been spoken is true. Then he gives Daniel one last instruction.",
+          "text": "Gabriel says the vision of the evenings and the mornings that has been spoken is true. Then he tells Daniel he must seal up the vision.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Daniel 8:26",
-          "question": "Gabriel tells Daniel he must ___ up the vision, because it concerns the ___ future.",
+          "question": "Why does Gabriel tell Daniel he must seal up the vision?",
           "answers": [
             {
-              "text": "seal",
-              "correct": true,
-              "blank": 1
+              "text": "Because it concerns the distant future",
+              "correct": true
             },
             {
-              "text": "distant",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "open",
+              "text": "Because it is too frightening to share",
               "correct": false
             },
             {
-              "text": "near",
-              "correct": false
-            },
-            {
-              "text": "burn",
+              "text": "Because the king would not believe it",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {

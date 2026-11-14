@@ -9,28 +9,24 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 18:1-2",
-          "text": "Ezekiel the priest is living among the exiles by the River Kebar (Ezekiel 1:1-3), and the word of the LORD comes to him. God asks what the people mean by quoting this proverb about the land of Israel: 'The fathers have eaten sour grapes, and the teeth of the children are set on edge.' So Dad eats the sour grapes, and the CHILDREN are the ones making the face?",
+          "text": "The word of the LORD comes to Ezekiel, a priest living among the exiles (Ezekiel 1:1-3). God asks what the people mean by quoting this proverb about the land of Israel: 'The fathers have eaten sour grapes, and the teeth of the children are set on edge'. So Dad eats the sour grapes, and the CHILDREN are the ones making the face?",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezekiel 18:2",
-          "question": "The people of Israel keep quoting that sour grapes proverb. What is it really saying?",
+          "type": "true_false",
+          "verses": "Ezekiel 18:3",
+          "question": "True or false: God says the people of Israel will keep on quoting the sour grapes proverb.",
           "answers": [
             {
-              "text": "Children pay for their fathers' sins",
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
               "correct": true
-            },
-            {
-              "text": "Children turn out like their fathers",
-              "correct": false
-            },
-            {
-              "text": "Fathers pay for their children's sins",
-              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -38,14 +34,6 @@
         },
         {
           "card": 3,
-          "kind": "story",
-          "verses": "Ezekiel 18:3",
-          "text": "And God is not having it. 'As surely as I live, declares the Lord GOD, you will no longer quote this proverb in Israel.'",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 4,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 18:4",
@@ -68,22 +56,22 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Ezekiel 18:4",
-          "question": "Every soul, father and son, belongs to God. Then God says whose sin a soul dies for. Whose?",
+          "question": "Every soul, father and son, belongs to God. And God says the soul who sins will die for its ___ sin.",
           "answers": [
             {
-              "text": "Its own sin",
+              "text": "own",
               "correct": true
             },
             {
-              "text": "Its father's sin",
+              "text": "father's",
               "correct": false
             },
             {
-              "text": "Its children's sin",
+              "text": "children's",
               "correct": false
             }
           ],
@@ -91,7 +79,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 5,
           "kind": "story",
           "verses": "Ezekiel 18:5-8",
           "text": "Now God walks through one family. First, suppose a man is righteous: he doesn't eat at the mountain or look to idols, doesn't defile his neighbor's wife, doesn't oppress anyone, doesn't rob and doesn't take excess interest.",
@@ -99,7 +87,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 18:7",
@@ -114,7 +102,7 @@
               "correct": false
             },
             {
-              "text": "charge",
+              "text": "business",
               "correct": false
             }
           ],
@@ -122,7 +110,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 18:9",
@@ -141,7 +129,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Ezekiel 18:10-12",
           "text": "Now suppose that righteous man has a violent son who sheds blood. Same kitchen, COMPLETELY different batch: this son eats at the mountain, robs, oppresses the poor and needy and lifts his eyes to idols.",
@@ -149,7 +137,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 18:13",
@@ -168,7 +156,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "story",
           "verses": "Ezekiel 18:13-14",
           "text": "God answers His own question: 'Will this son live? He will not!' Now that violent man has a son of his own, and that son has a front-row seat to every sin his father commits.",
@@ -176,7 +164,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 18:14",
@@ -199,7 +187,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Ezekiel 18:15-17",
           "text": "So this son stays away from idols, doesn't rob, feeds the hungry and keeps God's ordinances, and God says he will surely live. That's watching your coworker hit reply-all to the WHOLE company, thinking it over, and saying, 'Nope. Not me.'",
@@ -207,22 +195,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Ezekiel 18:18",
-          "question": "And the violent father, who robbed his brother and practiced extortion? God says he will die for his ___ iniquity.",
+          "question": "True or false: The violent father will still die for his iniquity, even though his son did not follow in his steps.",
           "answers": [
             {
-              "text": "own",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "son's",
-              "correct": false
-            },
-            {
-              "text": "father's",
+              "text": "False",
               "correct": false
             }
           ],
@@ -230,7 +214,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Ezekiel 18:19",
           "text": "Then God says the people may ask, 'Why shouldn’t the son bear the iniquity of his father?' Friend, that's like asking why you didn't get the parking ticket for somebody else's car.",
@@ -238,7 +222,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 18:19",
@@ -261,40 +245,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Ezekiel 18:20",
-          "text": "Then God comes back to it: 'The soul who sins is the one who will die.' And this time He spells out exactly who doesn't carry whose load.",
+          "text": "Then God comes back to it: 'The soul who sins is the one who will die.' And He spells it out: a son won't bear his father's iniquity, and a father won't bear his son's.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Ezekiel 18:20",
-          "question": "God says a son will not bear the iniquity of his ___, and a father will not bear the iniquity of his ___.",
+          "question": "God says a person's righteousness or wickedness will fall upon someone. On whom?",
           "answers": [
             {
-              "text": "father",
-              "correct": true,
-              "blank": 1
+              "text": "The one who did it",
+              "correct": true
             },
             {
-              "text": "son",
-              "correct": true,
-              "blank": 2
-            },
-            {
-              "text": "brother",
+              "text": "His sons and grandsons",
               "correct": false
             },
             {
-              "text": "king",
-              "correct": false
-            },
-            {
-              "text": "nation",
+              "text": "The whole house of Israel",
               "correct": false
             }
           ],
@@ -302,10 +276,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Ezekiel 18:20",
-          "text": "God finishes the thought: 'The righteousness of the righteous man will fall upon him, and the wickedness of the wicked man will fall upon him.' Everybody bakes their OWN batch.",
+          "text": "Good or wicked, it lands on the one who did it. Nobody else's name goes on your cookie box.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -346,7 +320,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 18:22",
-          "text": "None of the transgressions he committed will be held against him. NOBODY is digging his old receipts out of the junk drawer.",
+          "text": "None of the transgressions he committed will be held against him. Not. One.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -406,9 +380,20 @@
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Ezekiel 18:24",
-          "text": "Because of his unfaithfulness and sin, he will die. You can't coast on last year's batch, friend.",
+          "question": "True or false: The righteous man who turns to the abominations of the wicked will still live.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -459,7 +444,7 @@
               "correct": true
             },
             {
-              "text": "By the sins of their fathers",
+              "text": "By the deeds of their kings",
               "correct": false
             },
             {
@@ -473,20 +458,20 @@
         {
           "card": 12,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Ezekiel 18:30",
-          "question": "God calls out to the house of Israel: Repent and ___ from all your transgressions, so that your iniquity will not become your downfall.",
+          "question": "God calls the house of Israel to repent and turn from all their transgressions. Why?",
           "answers": [
             {
-              "text": "turn",
+              "text": "So their iniquity won't be their downfall",
               "correct": true
             },
             {
-              "text": "hide",
+              "text": "So the priests will accept their offerings",
               "correct": false
             },
             {
-              "text": "rest",
+              "text": "So their enemies will leave them alone",
               "correct": false
             }
           ],
@@ -495,63 +480,40 @@
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Ezekiel 18:31",
-          "text": "Then God tells them to cast away all the transgressions they've committed. Not tuck them in a drawer for later, but cast them AWAY.",
+          "question": "God tells the house of Israel what to do with all the transgressions they have committed. What?",
+          "answers": [
+            {
+              "text": "Cast them away",
+              "correct": true
+            },
+            {
+              "text": "Write them down",
+              "correct": false
+            },
+            {
+              "text": "Bring them to the priests",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Ezekiel 18:31",
-          "question": "Along with casting away their transgressions, God tells the house of Israel to fashion for themselves a new heart and a new spirit. What kind of change is He calling for?",
-          "answers": [
-            {
-              "text": "A change on the inside",
-              "correct": true
-            },
-            {
-              "text": "A new place to worship",
-              "correct": false
-            },
-            {
-              "text": "A new king to lead them",
-              "correct": false
-            }
-          ],
+          "text": "He tells them to fashion for themselves a new heart and a new spirit. Then He asks them straight: 'Why should you die, O house of Israel?'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "Ezekiel 18:31",
-          "text": "Then God asks, 'Why should you die, O house of Israel?' Friend, that's somebody leaving the porch light on so you can find your way HOME.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
           "verses": "Ezekiel 18:32",
-          "question": "God says He takes no pleasure in anyone's death. Then He gives His final call: So repent and ___!",
-          "answers": [
-            {
-              "text": "live",
-              "correct": true
-            },
-            {
-              "text": "wait",
-              "correct": false
-            },
-            {
-              "text": "hide",
-              "correct": false
-            }
-          ],
+          "text": "And His last word: 'For I take no pleasure in anyone’s death, declares the Lord GOD. So repent and live!'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

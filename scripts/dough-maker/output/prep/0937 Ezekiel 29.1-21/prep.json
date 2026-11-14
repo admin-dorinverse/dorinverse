@@ -17,8 +17,8 @@
           "card": 2,
           "kind": "story",
           "verses": "Ezekiel 29:3",
-          "text": "Ezekiel's to tell Pharaoh what the Lord GOD says. God says He is against him, and He calls him a great monster who lies among his rivers. A river monster, friend. And that's the OPENING line.",
-          "needs_agent_fix": true,
+          "text": "Ezekiel's to tell Pharaoh that the Lord GOD is against him. God calls him a great monster who lies among his rivers.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -48,8 +48,8 @@
           "card": 4,
           "kind": "story",
           "verses": "Ezekiel 29:4",
-          "text": "So God says He'll put hooks in Pharaoh's jaws and haul him up out of his rivers. Pharaoh thinks he owns the river. Turns out God's the one holding the line.",
-          "needs_agent_fix": true,
+          "text": "God says He'll put hooks in Pharaoh's jaws and haul him up out of his rivers.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -64,7 +64,7 @@
               "correct": true
             },
             {
-              "text": "The reeds of the riverbank",
+              "text": "The mud of the riverbed",
               "correct": false
             },
             {
@@ -79,8 +79,8 @@
           "card": 6,
           "kind": "story",
           "verses": "Ezekiel 29:5",
-          "text": "God says He'll leave him in the desert with all those fish, to fall on the open field. A river monster dropped in the DESERT, baker. I know that move: kitchen counter to the back of a junk drawer. Not the upgrade anybody asks for.",
-          "needs_agent_fix": true,
+          "text": "God says He'll leave him in the desert with all the fish of his streams, to fall on the open field.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -158,14 +158,6 @@
         },
         {
           "card": 11,
-          "kind": "story",
-          "verses": "Ezekiel 29:7",
-          "text": "So picture Israel reaching out and taking hold of that staff of reeds with their hands.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 29:7",
@@ -188,15 +180,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "story",
           "verses": "Ezekiel 29:7",
-          "text": "And when they leaned on it, it broke, and their backs were wrenched. That's the cheap office chair at work, friend. Lean back ONE time and you're having a meeting with the CEILING.",
-          "needs_agent_fix": true,
+          "text": "And when they leaned on it, it broke, and their backs were wrenched. That's the cheap office chair at work, friend: lean back ONE time and you're having a meeting with the CEILING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 29:8",
@@ -215,7 +207,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Ezekiel 29:9",
           "text": "God says, \"The land of Egypt will become a desolate wasteland. Then they will know that I am the LORD.\"",
@@ -223,57 +215,65 @@
           "needs_human_decision": false
         },
         {
+          "card": 15,
+          "kind": "story",
+          "verses": "Ezekiel 29:9-10",
+          "text": "Then God brings up Pharaoh's words again, \"The Nile is mine; I made it,\" and says that's why He's against him.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 16,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezekiel 29:9-10",
-          "question": "God says He's against Pharaoh, and against his rivers too. Why?",
+          "type": "fill_blank",
+          "verses": "Ezekiel 29:10",
+          "question": "Because of that Nile brag, God says He is against Pharaoh and against his ___.",
           "answers": [
             {
-              "text": "Pharaoh said the Nile was his and he made it",
+              "text": "rivers",
               "correct": true
             },
             {
-              "text": "Pharaoh dammed the Nile to keep Israel out",
+              "text": "chariots",
               "correct": false
             },
             {
-              "text": "Pharaoh let the Nile run dry from neglect",
+              "text": "priests",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
           "verses": "Ezekiel 29:10",
-          "text": "So God will turn Egypt into a ruin from Migdol to Syene, as far as the border of Cush. That's the second time God's brought up that Nile brag, baker. Pharaoh's quote is on REPEAT.",
-          "needs_agent_fix": true,
+          "text": "So God says He'll turn the land of Egypt into a ruin, a desolate wasteland from Migdol to Syene, and as far as the border of Cush.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Ezekiel 29:11",
-          "question": "No foot of man or beast will pass through, and Egypt will be uninhabited for ___ years.",
+          "question": "Once Egypt is a ruin from Migdol to Syene, what does God say about anyone passing through the land?",
           "answers": [
             {
-              "text": "forty",
+              "text": "No man or beast will pass through",
               "correct": true
             },
             {
-              "text": "seventy",
+              "text": "Only shepherds will pass through",
               "correct": false
             },
             {
-              "text": "seven",
+              "text": "Only traders will pass through",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -281,7 +281,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 29:12",
-          "question": "During those forty years, the Egyptians stay together in their own land.",
+          "question": "God says Egypt will be uninhabited for forty years. During that time, the Egyptians stay together in their own land.",
           "answers": [
             {
               "text": "True",
@@ -402,7 +402,7 @@
               "correct": true
             },
             {
-              "text": "Their long years as slaves in Egypt",
+              "text": "Their years as slaves in Egypt",
               "correct": false
             },
             {
@@ -425,8 +425,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 29:18",
-          "text": "God tells him Nebuchadnezzar, king of Babylon, worked his army hard against Tyre. Every head was made bald and every shoulder made raw. That's not overtime, baker. That's overtime that took your HAIR.",
-          "needs_agent_fix": true,
+          "text": "God tells him Nebuchadnezzar, king of Babylon, worked his army hard against Tyre, and every head was made bald and every shoulder made raw. Baker, that's the kind of overtime where you clock out and your shoulders file a COMPLAINT.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -461,7 +461,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 29:19",
-          "question": "God gives the land of ___ to Nebuchadnezzar, and its plunder will be the ___ for his army.",
+          "question": "God says He will give the land of ___ to Nebuchadnezzar, and its plunder will be the ___ for his army.",
           "answers": [
             {
               "text": "Egypt",
@@ -516,7 +516,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Ezekiel 29:21",
-          "text": "Then, at the very end, God turns to His own people, the house of Israel. In that day, He says, He'll cause a horn to sprout for them.",
+          "text": "Then, at the very end, God says that in that day He'll cause a horn to sprout for the house of Israel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -543,8 +543,8 @@
           "card": 16,
           "kind": "story",
           "verses": "Ezekiel 29:21",
-          "text": "And God closes with that line one more time: \"Then they will know that I am the LORD.\" Pharaoh wanted his name on the Nile. God made sure the last word belongs to Him.",
-          "needs_agent_fix": true,
+          "text": "And God closes with that line one more time: \"Then they will know that I am the LORD.\" Pharaoh said he made the Nile, but the last word here belongs to the LORD.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

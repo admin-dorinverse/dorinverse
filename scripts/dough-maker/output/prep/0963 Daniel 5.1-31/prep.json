@@ -17,7 +17,7 @@
           "card": 2,
           "kind": "story",
           "verses": "Daniel 5:2",
-          "text": "Under the influence of the wine, Belshazzar gives an order. He wants the gold and silver vessels his father Nebuchadnezzar had taken brought in.",
+          "text": "Under the influence of the wine, Belshazzar gives an order. He wants the gold and silver vessels brought in, the ones his father Nebuchadnezzar had taken.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -71,7 +71,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Daniel 5:3",
-          "text": "So in come the gold vessels from the house of God, and the king drinks from them with his nobles, his wives and his concubines. Cups from God's own house, friend, passed around like it's the office holiday party.",
+          "text": "So in come the gold vessels taken from the temple, the house of God in Jerusalem. The king drinks from them with his nobles, his wives and his concubines.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -80,7 +80,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 5:4",
-          "question": "While Belshazzar's guests drink wine from the vessels of God's house, they praise their gods made of gold, silver, bronze, iron, wood and stone.",
+          "question": "While Belshazzar and his guests drink wine from the vessels of God's house, they praise their gods made of gold, silver, bronze, iron, wood and stone.",
           "answers": [
             {
               "text": "True",
@@ -98,7 +98,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Daniel 5:5",
-          "text": "At that moment, the fingers of a human hand appear and write on the plaster of the wall, near the lampstand in the royal palace. Just fingers and a wall, friend, and NOBODY sent that an invitation.",
+          "text": "At that moment, the fingers of a human hand appear and write on the plaster of the wall, near the lampstand in the royal palace. And the king is watching the hand as it writes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -189,14 +189,33 @@
         },
         {
           "card": 13,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Daniel 5:9",
-          "text": "Now Belshazzar is even more terrified, his face even paler, and his nobles are bewildered. Pale on top of pale, friend, the man is the color of raw cookie dough.",
+          "question": "Once Belshazzar's wise men come up empty on the writing, the king calms down.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
+          "kind": "story",
+          "verses": "Daniel 5:9",
+          "text": "His face grows even more pale, and his nobles are bewildered. Friend, that's like calling the repair guy and watching HIM scratch his head.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 15,
           "kind": "story",
           "verses": "Daniel 5:10",
           "text": "Then the queen hears the outcry and walks into the banquet hall. She says, “O king, may you live forever!” and tells him, “Do not let your thoughts terrify you, or your face grow pale.”",
@@ -204,7 +223,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 16,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 5:11",
@@ -227,22 +246,30 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
+          "card": 17,
+          "kind": "story",
           "verses": "Daniel 5:12",
-          "question": "The queen tells Belshazzar to summon ___, and he will give him the interpretation.",
+          "text": "The man's name is Daniel, the one Nebuchadnezzar named Belteshazzar. The queen says he has an extraordinary spirit, and he can interpret dreams, explain riddles and solve difficult problems.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Daniel 5:12",
+          "question": "The queen tells Belshazzar to summon Daniel. What does she say Daniel will do?",
           "answers": [
             {
-              "text": "Daniel",
+              "text": "Give him the interpretation",
               "correct": true
             },
             {
-              "text": "Joseph",
+              "text": "Copy the writing onto a scroll",
               "correct": false
             },
             {
-              "text": "Ezekiel",
+              "text": "Send for more wise men",
               "correct": false
             }
           ],
@@ -259,15 +286,15 @@
           "card": 1,
           "kind": "story",
           "verses": "Daniel 5:13",
-          "text": "Daniel is brought in, and Belshazzar asks him, “Are you Daniel, one of the exiles my father the king brought from Judah?” A hand just wrote on the man's wall, friend. You'd make SURE you had the right guy too.",
-          "needs_agent_fix": true,
+          "text": "Daniel is brought in, and Belshazzar asks him, “Are you Daniel, one of the exiles my father the king brought from Judah?”",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "story",
           "verses": "Daniel 5:14-16",
-          "text": "He's heard Daniel has extraordinary wisdom, and his own wise men came up empty, so he makes Daniel the same offer: purple clothes, a gold chain and third highest ruler in the kingdom. Same offer nobody could claim, friend, like the last cookie in the box sitting just out of reach.",
+          "text": "Belshazzar's heard Daniel has extraordinary wisdom, and his own wise men came up empty, so he makes Daniel the same offer: purple clothes, a gold chain and third highest ruler in the kingdom. Same prize nobody could reach the first time, friend, like a cookie box on the top shelf.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -325,7 +352,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Daniel 5:19",
-          "text": "Because of that greatness, people of every nation and language trembled in fear before Nebuchadnezzar. He killed, spared, exalted and humbled whomever he wished, and friend, I can't even get my oven to listen to me.",
+          "text": "Because of that greatness, people of every nation and language trembled in fear before Nebuchadnezzar. He killed whom he wished and kept alive whom he wished, and he exalted and humbled whom he wished.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -356,7 +383,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Daniel 5:21",
-          "text": "Nebuchadnezzar was driven away from mankind with a mind like that of a beast, eating grass like an ox, until he acknowledged that the Most High God rules over the kingdom of mankind. From the throne to the pasture, friend, and I thought the back of a junk drawer was a step down.",
+          "text": "He was driven away from mankind, and his mind was like that of a beast. He ate grass like an ox until he acknowledged that the Most High God rules over the kingdom of mankind, setting over it whom He wishes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -382,9 +409,9 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Daniel 5:23",
-          "text": "Daniel says Belshazzar exalted himself against the Lord of heaven, drinking from the vessels of God's house while praising gods of silver and gold, bronze and iron, wood and stone, “which cannot see or hear or understand.” Friend, that's like thanking my rolling pin for a great batch. It can't hear me, and it DEFINITELY didn't do the work.",
-          "needs_agent_fix": true,
+          "verses": "Daniel 5:22-23",
+          "text": "Daniel says Belshazzar has not humbled his heart but exalted himself against the Lord of heaven, praising gods of silver and gold, bronze and iron, wood and stone, “which cannot see or hear or understand.” Friend, that's like thanking my rolling pin for a great batch, and it can't hear me either.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -433,7 +460,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Daniel 5:25",
-          "text": "Then Daniel reads the inscription: MENE, MENE, TEKEL, PARSIN. Four words, friend, and I bet you could hear a sprinkle drop in that hall.",
+          "text": "Then Daniel reads the inscription: MENE, MENE, TEKEL, PARSIN. Four words, friend, and I've written longer notes asking somebody to preheat the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -488,17 +515,11 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 5:28",
-          "question": "Daniel says PERES means Belshazzar's kingdom has been divided and given over to the ___ and ___.",
+          "question": "Daniel says PERES means Belshazzar's kingdom has been divided and given over to the ___ and Persians.",
           "answers": [
             {
               "text": "Medes",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Persians",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "Egyptians",
@@ -506,10 +527,6 @@
             },
             {
               "text": "Assyrians",
-              "correct": false
-            },
-            {
-              "text": "Philistines",
               "correct": false
             }
           ],
@@ -539,7 +556,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Daniel 5:30",
-          "text": "That very night, Belshazzar king of the Chaldeans is slain. The party is over, friend, and so is his reign.",
+          "text": "That very night, Belshazzar king of the Chaldeans is slain.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -570,7 +587,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Daniel 5:31",
-          "text": "Darius the Mede receives the kingdom at the age of sixty-two. Four words on a wall, friend, and every one of them meant business.",
+          "text": "Darius the Mede receives the kingdom at the age of sixty-two.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

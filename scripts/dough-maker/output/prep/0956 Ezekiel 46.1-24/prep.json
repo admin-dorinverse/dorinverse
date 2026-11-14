@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 46:1",
-          "text": "Ezekiel, a priest living among the exiles in Babylon, is seeing a vision of a new temple (Ezek 1:1-3; 40:2). A man who looks like bronze has been walking him through it, gate by gate (Ezek 40:3). Now the Lord GOD speaks, starting with the gate of the inner court that faces east.",
+          "text": "Ezekiel, a priest living among the exiles in Babylon, is seeing a vision of a new temple (Ezekiel 1:1-3; 40:2). A man who looks like bronze has been walking him through it, gate by gate (Ezekiel 40:3). Now the Lord GOD speaks, starting with the gate of the inner court that faces east.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 46:2",
-          "text": "In comes the prince, the leader this vision keeps mentioning (Ezek 44:3). He enters from outside through the gateway's portico and stands by the gatepost.",
+          "text": "In comes the prince, who provides the offerings for the feasts, New Moons and Sabbaths (Ezekiel 45:17). He enters from outside through the gateway's portico and stands by the gatepost.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -114,22 +114,22 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 46:3",
-          "question": "That gate stays open until evening. On Sabbaths and New Moons, the ___ of the land also bow in worship before the LORD at the entrance to that gateway.",
+          "question": "On Sabbaths and New Moons, the ___ of the land also bow in worship before the LORD at the entrance to the inner court's east gate.",
           "answers": [
             {
               "text": "people",
               "correct": true
             },
             {
-              "text": "kings",
+              "text": "nobles",
               "correct": false
             },
             {
-              "text": "elders",
+              "text": "judges",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -144,8 +144,8 @@
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 46:8-9",
-          "text": "When the prince goes in through the gateway's portico, he goes out the same way. But at the appointed feasts, the people of the land get a different rule, made for a big crowd that has to keep moving.",
-          "needs_agent_fix": true,
+          "text": "When the prince goes in through the gateway's portico, he goes out the same way. At the appointed feasts, the people of the land come before the LORD to worship too.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -210,27 +210,23 @@
           "card": 14,
           "kind": "story",
           "verses": "Ezekiel 46:12",
-          "text": "Now say the prince brings a freewill offering to the LORD, a burnt offering or a peace offering. He offers it just as he does on the Sabbath, and once he goes out, the gate is closed behind him.",
+          "text": "Now say the prince brings a freewill offering to the LORD, a burnt offering or a peace offering. He offers it just as he does on the Sabbath.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Ezekiel 46:12",
-          "question": "For the prince's freewill offering, which gate gets opened for him?",
+          "question": "For the prince's freewill offering, the gate facing east is opened for him.",
           "answers": [
             {
-              "text": "The east gate",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "The north gate",
-              "correct": false
-            },
-            {
-              "text": "The south gate",
+              "text": "False",
               "correct": false
             }
           ],
@@ -240,8 +236,8 @@
         {
           "card": 16,
           "kind": "story",
-          "verses": "Ezekiel 46:13-15",
-          "text": "Then comes a permanent rule for every single morning: an unblemished year-old lamb as a burnt offering to the LORD, with a grain offering of fine flour moistened with oil. Regular as an alarm clock, friend, and unlike me and MY alarm clock, nobody hits snooze on this one.",
+          "verses": "Ezekiel 46:12-15",
+          "text": "After he goes out, the gate is closed. Then comes a permanent rule for every morning: an unblemished year-old lamb as a burnt offering to the LORD, with a grain offering of fine flour moistened with oil. Regular as an alarm clock, friend, except nobody gets to hit snooze on this one.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -255,12 +251,35 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 46:16",
-          "text": "Now the Lord GOD talks about the prince's land. If the prince gives a gift to any of his sons as an inheritance, it belongs to his descendants as their property.",
+          "text": "Now the Lord GOD talks about the prince's land, starting with what happens when he gives a gift to one of his sons as an inheritance.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Ezekiel 46:16",
+          "question": "If the prince gives a gift to one of his sons as an inheritance, it will belong to his ___ as their property.",
+          "answers": [
+            {
+              "text": "descendants",
+              "correct": true
+            },
+            {
+              "text": "brothers",
+              "correct": false
+            },
+            {
+              "text": "neighbors",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 3,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 46:17",
@@ -283,7 +302,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 3,
+          "card": 4,
           "kind": "story",
           "verses": "Ezekiel 46:17",
           "text": "Back to the prince it goes. His inheritance belongs only to his sons.",
@@ -291,7 +310,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 4,
+          "card": 5,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 46:18",
@@ -310,7 +329,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 5,
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 46:18",
@@ -333,7 +352,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "story",
           "verses": "Ezekiel 46:19",
           "text": "Then the man guiding Ezekiel brings him through a side entrance into the holy chambers facing north, the ones that belonged to the priests. There, at the far western end, he shows him a place.",
@@ -341,7 +360,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 46:20",
@@ -364,19 +383,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "story",
           "verses": "Ezekiel 46:20",
-          "text": "The priests boil the guilt offering and the sin offering here, and they BAKE the grain offering. Baker, I heard that word and my mustache shot straight up like somebody finally called my number at the DMV.",
+          "text": "The priests boil the guilt offering and the sin offering here, and they BAKE the grain offering. Baker, I heard that word and my mustache shot straight up like a guy at the DMV finally hearing his number called.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 46:20",
-          "question": "The priests cook these offerings back in this place so they don't bring them into the outer court and transmit holiness to the people.",
+          "question": "The priests cook the guilt, sin and grain offerings at the western end of their holy chambers so they don't bring them into the outer court and transmit holiness to the people.",
           "answers": [
             {
               "text": "True",
@@ -387,92 +406,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 10,
-          "kind": "story",
-          "verses": "Ezekiel 46:21",
-          "text": "Then the man brings Ezekiel into the outer court and leads him around to its four corners. In every corner, Ezekiel sees a separate court.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 46:22",
-          "question": "The enclosed courts in the four corners of the outer court are each a different size.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Ezekiel 46:21-24",
+          "text": "Then the man leads Ezekiel around the outer court, and in each of its four corners is a separate enclosed court, all the same size. Each one has ovens built along the base of its walls. The man tells him these are the kitchens where those who minister at the temple will cook the sacrifices offered by the people. Four matching kitchens, friend, and I can't even get four scoops of dough the same size.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Ezekiel 46:22",
-          "text": "All four match: forty cubits long and thirty cubits wide. Baker, I have NEVER once made four cookies the same size, because one always comes out HUGE and one looks like it just gave up.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ezekiel 46:23",
-          "question": "Around the inside of each corner court runs a row of masonry, with ___ built at the base of the walls on all sides.",
-          "answers": [
-            {
-              "text": "ovens",
-              "correct": true
-            },
-            {
-              "text": "basins",
-              "correct": false
-            },
-            {
-              "text": "benches",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ezekiel 46:24",
-          "question": "The man tells Ezekiel these are kitchens where those who minister at the temple will cook the sacrifices offered by the ___.",
-          "answers": [
-            {
-              "text": "people",
-              "correct": true
-            },
-            {
-              "text": "kings",
-              "correct": false
-            },
-            {
-              "text": "nations",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
           "kind": "story",
           "verses": "Ezekiel 46:24",
           "text": "And that's where I'll set the timer for now, friend, because this vision is NOT finished yet.",

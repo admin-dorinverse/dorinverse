@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Amos 5:1",
-          "text": "Amos, a shepherd from Tekoa, has a message from God for Israel (Amos 1:1). God has sent trouble after trouble, and every time, Israel did not return to Him (Amos 4:6-11). Now Amos calls out, 'Hear this word, O house of Israel,' and he takes up something against them.",
+          "text": "Amos, one of the sheep breeders of Tekoa, has a message from God for Israel (Amos 1:1). God has sent trouble after trouble, and every time, Israel did not return to Him (Amos 4:6-11). Now Amos calls out, 'Hear this word, O house of Israel…' and he takes up something against them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Amos 5:2",
-          "text": "Here's how it opens: 'Fallen is Virgin Israel.' Friend, that's giving the eulogy while the guy is sitting in the front row LISTENING.",
+          "text": "Here's how it opens: 'Fallen is Virgin Israel…' Friend, that's giving the eulogy while the person is sitting in the front row LISTENING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -72,8 +72,8 @@
           "card": 5,
           "kind": "story",
           "verses": "Amos 5:2-3",
-          "text": "No one. Never to rise again. Then the Lord GOD speaks, and He's counting what happens when the cities of Israel march out.",
-          "needs_agent_fix": true,
+          "text": "The lament says she'll never rise again. Then the Lord GOD speaks about what's left when a city in Israel marches out.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -122,8 +122,8 @@
           "card": 8,
           "kind": "story",
           "verses": "Amos 5:4",
-          "text": "Then the LORD speaks to the house of Israel. After all that? Friend, I had my mustache over my EYES.",
-          "needs_agent_fix": true,
+          "text": "After all that heavy news, the LORD speaks to the house of Israel. And friend, listen close to this one.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -153,59 +153,59 @@
           "card": 10,
           "kind": "story",
           "verses": "Amos 5:5",
-          "text": "Then He gets specific: don't seek Bethel, don't go to Gilgal, don't journey to Beersheba. Seeking those places instead of Him is like getting invited to a friend's house and spending the whole night hugging the front door.",
+          "text": "Then He gets specific: don't seek Bethel or go to Gilgal, where Israel brings its sacrifices (Amos 4:4-5), and don't journey to Beersheba. That's like getting invited to a friend's house and spending the whole night hugging the front door.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Amos 5:5",
-          "question": "Gilgal is one of the places God tells Israel not to go. God says Gilgal will surely go into ___.",
+          "question": "God warns Israel away from Gilgal and Bethel. What does He say will happen to those places?",
           "answers": [
             {
-              "text": "exile",
-              "correct": true,
-              "blank": 1
+              "text": "Gilgal will go into exile and Bethel will come to nothing",
+              "correct": true
             },
             {
-              "text": "battle",
+              "text": "Gilgal will be rebuilt and Bethel will grow strong",
               "correct": false
             },
             {
-              "text": "hiding",
+              "text": "Gilgal will be spared and Bethel will become a fortress",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Amos 5:5-6",
-          "text": "And Bethel will come to nothing. Then the call comes again: seek the LORD and live, or He will sweep through the house of Joseph, the families that came from Joseph.",
+          "verses": "Amos 5:6",
+          "text": "Then the call comes again: seek the LORD and live, or He will sweep through the house of Joseph, the families that came from Joseph.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Amos 5:6",
-          "question": "If they don't seek Him, the LORD will sweep through the house of Joseph like what?",
+          "question": "If they don't seek Him, the LORD will sweep through the house of Joseph like ___.",
           "answers": [
             {
-              "text": "Like fire",
-              "correct": true
+              "text": "fire",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Like a flood",
+              "text": "a flood",
               "correct": false
             },
             {
-              "text": "Like a lion",
+              "text": "a storm",
               "correct": false
             }
           ],
@@ -235,7 +235,7 @@
           "card": 15,
           "kind": "story",
           "verses": "Amos 5:7",
-          "text": "Then the LORD calls out a group of people: 'There are those who turn justice into wormwood and cast righteousness to the ground.'",
+          "text": "Then the message turns to a certain group: 'There are those who turn justice into wormwood and cast righteousness to the ground.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -252,7 +252,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Amos 5:8",
-          "question": "True or false: The One who made the Pleiades and Orion also turns darkness into dawn and pours the waters of the sea over the earth.",
+          "question": "True or false: The One who made the Pleiades and Orion also summons the waters of the sea and pours them over the face of the earth.",
           "answers": [
             {
               "text": "True",
@@ -279,15 +279,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Amos 5:9",
-          "question": "True or false: The strong will be safe from the LORD inside their stronghold.",
+          "question": "True or false: Fury will come even upon the stronghold of the strong.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -303,7 +303,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Amos 5:10",
-          "text": "Then the LORD calls out another group: 'There are those who hate the one who reproves in the gate and despise him who speaks with integrity.' Friend, that's getting MAD at the smoke detector.",
+          "text": "Next comes another group: 'There are those who hate the one who reproves in the gate and despise him who speaks with integrity.' Friend, that's getting MAD at the smoke detector.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -391,22 +391,17 @@
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Amos 5:12",
-          "question": "And in the gate, they deprive the poor of ___.",
+          "question": "True or false: When the poor come to the gate, they get a fair hearing.",
           "answers": [
             {
-              "text": "justice",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "wages",
+              "text": "True",
               "correct": false
             },
             {
-              "text": "land",
-              "correct": false
+              "text": "False",
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -425,15 +420,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Amos 5:13",
-          "question": "True or false: In days this evil, the prudent speak up loudly.",
+          "question": "True or false: In days this evil, the prudent keep silent.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -452,18 +447,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Amos 5:14",
-          "question": "If Israel seeks good, what will the LORD, the God of Hosts, do?",
+          "question": "If Israel seeks good, what does the LORD, the God of Hosts, say He will do?",
           "answers": [
             {
-              "text": "He will be with them",
+              "text": "Be with them",
               "correct": true
             },
             {
-              "text": "He will make them rich",
+              "text": "Give them a king",
               "correct": false
             },
             {
-              "text": "He will give them a king",
+              "text": "Double their harvest",
               "correct": false
             }
           ],
@@ -474,7 +469,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Amos 5:14",
-          "text": "With them, as they have claimed. So Israel already says the LORD is with them, and here He tells them how that can be true.",
+          "text": "Then comes a little tag: 'as you have claimed.' So Israel's already been saying the LORD is with them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },

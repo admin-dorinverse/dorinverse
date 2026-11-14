@@ -1,0 +1,29 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 12
+      },
+      "problem": "The wrong answers 'The Moabites' and 'The Edomites' were already shown as the wrong answers on Stop 1 card 2 ('Edomites', 'Moabites'). They are reused here.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 15
+      },
+      "problem": "The story card says Jerusalem is 'STILL not satisfied' after turning to the Assyrians. Choice card 16 then asks how things go with Chaldea, and its right answer is 'She is still not satisfied'. The story card gives that answer away.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 12
+      },
+      "problem": "The wrong answers 'quarrel' and 'contest' make no sense in a sentence about God pledging Himself to a bride. They are silly, which makes the right answer 'covenant' obvious.",
+      "rule": "All the answers are the same kind of thing, about the same length and the same tone. None are silly."
+    }
+  ]
+}

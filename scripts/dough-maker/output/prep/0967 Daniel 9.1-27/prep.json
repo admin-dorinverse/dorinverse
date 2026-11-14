@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Daniel 9:1-2",
-          "text": "It's the first year of Darius son of Xerxes, a Mede, made ruler over the kingdom of the Chaldeans. Daniel, a man of Judah carried off to Babylon, tells this part himself: he's reading the sacred books, and he comes to the word of the LORD to Jeremiah the prophet about Jerusalem's desolation. And friend, this man is doing the MATH.",
-          "needs_agent_fix": true,
+          "text": "It's the first year of Darius son of Xerxes, a Mede, made ruler over the kingdom of the Chaldeans. Daniel, a man of Judah carried off to Babylon (Daniel 1:1-6), tells this part himself: he's reading the sacred books, and he comes to the word of the LORD to Jeremiah the prophet about Jerusalem's desolation. And friend, this man is doing the MATH.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -41,7 +41,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 9:3",
-          "question": "So Daniel turns his attention to the Lord God, to seek Him by prayer and petition. What else does Daniel bring with him?",
+          "question": "So Daniel turns his attention to the Lord God, to seek Him by prayer and petition. What goes along with his prayer?",
           "answers": [
             {
               "text": "Fasting with sackcloth and ashes",
@@ -88,14 +88,6 @@
         },
         {
           "card": 6,
-          "kind": "story",
-          "verses": "Daniel 9:5",
-          "text": "Daniel says WE: we sinned, we did wrong, we acted wickedly, we rebelled. Friend, when the boss asks who jammed the copier, NOBODY says we.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 9:6",
@@ -119,7 +111,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "story",
           "verses": "Daniel 9:7-8",
           "text": "Daniel says righteousness belongs to God, but shame covers the people: the men of Judah, the people of Jerusalem, and all Israel near and far, in every country God drove them to because of their unfaithfulness. Their kings, leaders and fathers too, friend, so nobody's sneaking out the side door on this one.",
@@ -127,7 +119,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 9:9",
@@ -150,7 +142,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Daniel 9:10-11",
           "text": "No excuses, no \"well, technically\": Daniel says they didn't obey the voice of the LORD or walk in His laws, so the oath and the curse have been poured out on them.",
@@ -158,7 +150,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 9:11",
@@ -182,15 +174,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Daniel 9:12",
-          "text": "Daniel says God has carried out the words spoken against them by bringing a great disaster, and under ALL of heaven, nothing has ever been done like what's been done to Jerusalem. Not once, friend, NOWHERE.",
+          "text": "Daniel says God has carried out the words spoken against them by bringing a great disaster. Under all of heaven, nothing has ever been done like what's been done to Jerusalem, and I think that one hurts to say.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 9:13",
@@ -209,7 +201,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
           "verses": "Daniel 9:14",
           "text": "Daniel says the LORD kept the calamity in store and brought it upon them. For the LORD is righteous in all He does, yet they haven't obeyed His voice.",
@@ -217,7 +209,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 9:15",
@@ -241,33 +233,37 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "story",
           "verses": "Daniel 9:16-17",
-          "text": "After ALL that confessing, now Daniel asks: that God's anger and wrath would turn away from His city Jerusalem, His holy mountain, and that God would cause His face to shine upon His desolate sanctuary. Friend, that's me on the phone with the bank: \"Yep, I missed the payment, that's ALL on me... any chance you could waive the fee?\"",
+          "text": "After ALL that confessing, Daniel finally gets to his request. He prays that God's anger and wrath would turn away from His city Jerusalem, His holy mountain, and that God would cause His face to shine upon His desolate sanctuary.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 16,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Daniel 9:18",
+          "question": "Daniel says they bring their petitions before God because of their own righteous acts.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Daniel 9:18",
-          "question": "Daniel is honest about why he's asking. What does Daniel say his petitions rest on?",
-          "answers": [
-            {
-              "text": "God's great compassion",
-              "correct": true
-            },
-            {
-              "text": "The people's righteous acts",
-              "correct": false
-            },
-            {
-              "text": "Daniel's long fasting",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Daniel 9:19",
+          "text": "Then Daniel's prayer builds: \"O Lord, listen! O Lord, forgive! O Lord, hear and act!\" Friend, that's a man asking with everything he's got.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -289,14 +285,6 @@
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "story",
-          "verses": "Daniel 9:19",
-          "text": "\"O Lord, listen! O Lord, forgive! O Lord, hear and act!\" That's not a polite little prayer, friend. That's a man asking with everything he's got, because God's city and God's people bear His name.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
         }
       ]
     },
@@ -309,20 +297,19 @@
           "kind": "story",
           "verses": "Daniel 9:20",
           "text": "Daniel is STILL praying, still confessing his own sin and the sin of his people Israel, still bringing his petition about God's holy mountain. Friend, my prayers usually wrap up when the oven timer dings.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Daniel 9:21",
-          "question": "While Daniel is still praying, ___ comes to him in swift flight, the man Daniel had seen in the earlier vision.",
+          "question": "While Daniel is still praying, someone he had seen in an earlier vision comes to him in swift flight. Who is it?",
           "answers": [
             {
               "text": "Gabriel",
-              "correct": true,
-              "blank": 1
+              "correct": true
             },
             {
               "text": "Michael",
@@ -333,15 +320,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Daniel 9:21",
-          "text": "Gabriel arrives about the time of the evening sacrifice, and he finds Daniel still praying. Friend, show up during MY evening prayers and you'll find me snoring before the amen.",
-          "needs_agent_fix": true,
+          "verses": "Daniel 9:21-22",
+          "text": "Gabriel, the one Daniel saw in the earlier vision (Daniel 8:16), arrives about the time of the evening sacrifice. He instructs Daniel and speaks with him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -349,7 +336,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 9:22",
-          "question": "Gabriel tells Daniel why he's come. What is Gabriel here to give Daniel?",
+          "question": "Gabriel instructs Daniel and speaks with him. What does Gabriel say he has come to give Daniel?",
           "answers": [
             {
               "text": "Insight and understanding",
@@ -364,7 +351,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -383,7 +370,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -391,7 +378,7 @@
           "kind": "story",
           "verses": "Daniel 9:23-24",
           "text": "Gabriel also tells Daniel he is highly precious, and friend, I came with a price sticker that said 25 cents. Then comes the message: seventy weeks are decreed for Daniel's people and his holy city.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -414,88 +401,74 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "story",
+          "kind": "choice",
+          "type": "true_false",
           "verses": "Daniel 9:24",
-          "text": "And there's more on that list: stop their transgression, make atonement for iniquity, bring in everlasting righteousness, seal up vision and prophecy, and anoint the Most Holy Place. Friend, my to-do list today says scrub the oven, and I'm already behind.",
-          "needs_agent_fix": true,
+          "question": "Gabriel says the seventy weeks are also decreed to bring in everlasting righteousness.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": true
+            },
+            {
+              "text": "False",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Daniel 9:25",
-          "question": "Gabriel gives a starting point: the decree to restore and rebuild Jerusalem. Counting from there, who does Gabriel count up to?",
-          "answers": [
-            {
-              "text": "The Messiah the Prince",
-              "correct": true
-            },
-            {
-              "text": "The king of the North",
-              "correct": false
-            },
-            {
-              "text": "Nebuchadnezzar king of Babylon",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Daniel 9:24",
+          "text": "The rest of what's decreed: to stop their transgression, to make atonement for iniquity, to seal up vision and prophecy, and to anoint the Most Holy Place. Read that one slow, friend.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Daniel 9:25",
-          "text": "From the decree until the Messiah, the Prince, Gabriel counts seven weeks and sixty-two weeks, and Jerusalem will be rebuilt with streets and a trench. Daniel came in doing math, friend, and Gabriel brought him MORE math.",
-          "needs_agent_fix": true,
+          "text": "Gabriel gives a starting point: the decree to restore and rebuild Jerusalem. From there until the Messiah, the Prince, he counts seven weeks and sixty-two weeks.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
+          "type": "fill_blank",
           "verses": "Daniel 9:25",
-          "question": "Gabriel says Jerusalem will be rebuilt in peaceful and easy times.",
+          "question": "Gabriel says Jerusalem will be rebuilt with streets and a trench, but in times of ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "distress",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "plenty",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "celebration",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Daniel 9:26",
-          "question": "After the sixty-two weeks, what does Gabriel say will happen to the Messiah?",
-          "answers": [
-            {
-              "text": "He will be cut off and have nothing",
-              "correct": true
-            },
-            {
-              "text": "He will rule from the city of Babylon",
-              "correct": false
-            },
-            {
-              "text": "He will be crowned in the citadel of Susa",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "Gabriel goes on: \"Then after the sixty-two weeks the Messiah will be cut off and will have nothing.\" Next, he says, the people of the prince who is to come will destroy the city and the sanctuary, and the end will come like a flood.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -503,26 +476,26 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 9:26",
-          "question": "Gabriel says the people of the prince who is to come will destroy the city and the sanctuary.",
+          "question": "Gabriel says there will be peace until the end.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
           "kind": "story",
           "verses": "Daniel 9:26-27",
-          "text": "Lean in, friend: the end will come like a flood, and until the end there will be war, with desolations decreed. Then Gabriel speaks of someone he leaves unnamed, who will confirm a covenant with many for one week.",
-          "needs_agent_fix": true,
+          "text": "Gabriel says desolations have been decreed. Then he speaks of one who will confirm a covenant with many for one week.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -530,7 +503,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 9:27",
-          "question": "Gabriel speaks of someone he leaves unnamed, who will confirm a covenant with many for one week. In the middle of that week, what will this one put an end to?",
+          "question": "Gabriel speaks of one who will confirm a covenant with many for one week. In the middle of that week, what will this one put an end to?",
           "answers": [
             {
               "text": "Sacrifice and offering",
@@ -545,15 +518,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "story",
           "verses": "Daniel 9:27",
-          "text": "Gabriel's last words: \"And on the wing of the temple will come the abomination that causes desolation, until the decreed destruction is poured out upon him.\" That's where his message ends, friend, and it's a heavy one.",
-          "needs_agent_fix": true,
+          "text": "Then Gabriel says that on the wing of the temple will come the abomination that causes desolation, \"…until the decreed destruction is poured out upon him.\" That's where his message ends, friend, and it's a heavy one.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

@@ -1,0 +1,21 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "This choice card asks about Jeremiah 51:9 before any story card has told that verse. The next story card (card 16) then tells verse 9, including the answer ('She could not be healed'). The question therefore jumps ahead of the telling, and the answer is repeated right after it.",
+      "rule": "Cards follow the passage in order. A choice card can look back at a verse an earlier card in the same stop told, but never jumps ahead."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 9
+      },
+      "problem": "This story card says the LORD 'made the earth by His power'. That nearly hands over the right answer to card 12, 'He is the Maker of all things', so the baker can pick it from the earlier card instead of reasoning.",
+      "rule": "No card ever gives away the answer to a choice card that comes later."
+    }
+  ]
+}

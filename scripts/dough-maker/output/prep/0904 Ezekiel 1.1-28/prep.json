@@ -9,66 +9,43 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 1:1-3",
-          "text": "Meet Ezekiel the priest, son of Buzi. He's living among the exiles by the River Kebar, in the land of the Chaldeans, in the fifth year of the exile of King Jehoiachin. And on the fifth day of the fourth month, the heavens open.",
-          "needs_agent_fix": true,
+          "text": "Meet Ezekiel the priest, son of Buzi. He's living among the exiles by the River Kebar, in the land of the Chaldeans, in the fifth year of the exile of Judah's King Jehoiachin. And on the fifth day of the fourth month, the heavens open.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Ezekiel 1:1",
-          "question": "The heavens open over the River Kebar. What does Ezekiel say he saw?",
+          "question": "True or false: When the heavens open by the River Kebar, Ezekiel sees visions of God.",
           "answers": [
             {
-              "text": "Visions of God",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "A ladder up to heaven",
-              "correct": false
-            },
-            {
-              "text": "A bush on fire",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 1:3",
-          "question": "True or false: The word of the LORD comes to Ezekiel through another prophet.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Ezekiel 1:3-4",
+          "text": "The word of the LORD comes to him directly, and right there by the river, the LORD's hand is upon him. Then Ezekiel looks and sees a whirlwind coming from the north, a great cloud with brilliant light all around it.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Ezekiel 1:3-4",
-          "text": "The word comes to him directly, and right there by the river, the LORD's hand is upon him. Then Ezekiel looks and sees a whirlwind coming from the north, a great cloud with brilliant light all around it.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 5,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 1:4",
-          "question": "Inside that great cloud from the north, ___ is flashing back and forth.",
+          "question": "That great cloud from the north has ___ flashing back and forth.",
           "answers": [
             {
               "text": "fire",
@@ -79,50 +56,31 @@
               "correct": false
             },
             {
-              "text": "rain",
+              "text": "snow",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 5,
+          "kind": "story",
+          "verses": "Ezekiel 1:4-5",
+          "text": "In the center of the fire is a gleam like amber, and within it, the form of four living creatures. Friend, I'd have dropped every cookie box I was holding.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "story",
-          "verses": "Ezekiel 1:4-5",
-          "text": "In the center of the fire is a gleam like amber, and within it, the form of four living creatures. Friend, a moth flew into my oven light ONE time and I had to go sit down.",
-          "needs_agent_fix": true,
+          "verses": "Ezekiel 1:5-7",
+          "text": "They have a human form, but each one has four faces and four wings. Their legs are straight, and the soles of their feet are like a calf's hooves, gleaming like polished bronze.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 1:5",
-          "question": "True or false: The four living creatures Ezekiel sees have a human form.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 8,
-          "kind": "story",
-          "verses": "Ezekiel 1:6-7",
-          "text": "A human form, yes. But each one has four faces and four wings, and the soles of their feet are like a calf's hooves, gleaming like polished bronze.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 1:8",
@@ -133,7 +91,7 @@
               "correct": true
             },
             {
-              "text": "eyes",
+              "text": "claws",
               "correct": false
             },
             {
@@ -141,19 +99,19 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 8,
           "kind": "story",
-          "verses": "Ezekiel 1:9",
-          "text": "Their wings are touching one another as they go, four creatures, four faces each, wing to wing. So how do they change direction?",
-          "needs_agent_fix": true,
+          "verses": "Ezekiel 1:8-9",
+          "text": "All four living creatures have faces and wings, and their wings are touching one another. Four creatures, wing to wing, on the move.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 9,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 1:9",
@@ -168,19 +126,11 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
-          "kind": "story",
-          "verses": "Ezekiel 1:9",
-          "text": "No turning. Each one just goes straight ahead, and me? It takes three hops and a wobble on this gold base just to face the other oven.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
+          "card": 10,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 1:10",
@@ -199,50 +149,50 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 11,
           "kind": "story",
           "verses": "Ezekiel 1:11",
-          "text": "Their wings are spread upward, two touching the wings of the creature on either side and two covering its body. Four wings and every one has a job, while I've got ONE mustache holding the spatula, the timer AND my dignity.",
-          "needs_agent_fix": true,
+          "text": "Their wings are spread upward, two touching the wings of the creature on either side and two covering its body. Four wings, every one with a job, and here I am with just a mustache juggling the spatula, the timer AND my dignity.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 1:12",
-          "question": "The living creatures never turn as they move. So what decides where they go?",
+          "question": "The living creatures go straight ahead without turning as they move. So what decides where they go?",
           "answers": [
             {
               "text": "Wherever the spirit would go",
               "correct": true
             },
             {
-              "text": "Wherever the wind would blow",
+              "text": "Wherever the cloud would move",
               "correct": false
             },
             {
-              "text": "Wherever the eagle would fly",
+              "text": "Wherever the prophet would point",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 13,
           "kind": "story",
           "verses": "Ezekiel 1:13",
-          "text": "In the middle of the creatures is something like glowing coals of fire, or torches, with bright fire moving back and forth and lightning flashing out of it. And I thought MY oven ran hot the day the dial got stuck on broil.",
-          "needs_agent_fix": true,
+          "text": "In the middle of the creatures is something like glowing coals of fire, or torches. Bright fire moves back and forth between them.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 1:14",
@@ -261,7 +211,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -305,7 +255,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 1:16",
-          "text": "All four wheels look alike, gleaming like beryl, and their workmanship looks like a wheel within a wheel. Friend, I've got ONE gold base and I still tip over into the flour.",
+          "text": "All four wheels look alike, gleaming like beryl. And their workmanship looks like a wheel within a wheel.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -382,51 +332,28 @@
           "card": 8,
           "kind": "story",
           "verses": "Ezekiel 1:21",
-          "text": "The creatures move, the wheels move. They stand still, the wheels stand still. Friend, I can't get one room of people to clap on the same beat.",
-          "needs_agent_fix": true,
+          "text": "The creatures move, the wheels move. The creatures stand still, the wheels stand still. Every. Single. Time.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 1:22",
-          "text": "Now Ezekiel looks up, and spread out above the creatures' heads is the likeness of an awesome expanse, gleaming like crystal. I scrub my oven window every single night and the best it ever does is \"foggy.\"",
+          "text": "Now Ezekiel looks up. Spread out above the creatures' heads is the likeness of an awesome expanse, gleaming like crystal.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezekiel 1:23",
-          "question": "Under that crystal expanse, what do the living creatures' wings do?",
-          "answers": [
-            {
-              "text": "Stretch out toward one another",
-              "correct": true
-            },
-            {
-              "text": "Fold tight against their backs",
-              "correct": false
-            },
-            {
-              "text": "Hang down beside the wheels",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "story",
-          "verses": "Ezekiel 1:24",
-          "text": "When the creatures move, Ezekiel hears their wings like the roar of many waters, like the voice of the Almighty, like the tumult of an army.",
+          "verses": "Ezekiel 1:23-24",
+          "text": "Under the expanse, their wings stretch out toward one another, and when the creatures move, Ezekiel hears those wings like the roar of many waters, like the voice of the Almighty, like the tumult of an army.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 1:24",
@@ -445,19 +372,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
-          "kind": "story",
-          "verses": "Ezekiel 1:25",
-          "text": "And while they stand still with their wings lowered, a voice comes from above the expanse over their heads.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 1:26",
-          "question": "Above the expanse is the likeness of a ___ with the appearance of sapphire.",
+          "question": "A voice comes from above the expanse over the creatures' heads. Above that expanse is the likeness of a ___ with the appearance of sapphire.",
           "answers": [
             {
               "text": "throne",
@@ -468,7 +387,7 @@
               "correct": false
             },
             {
-              "text": "altar",
+              "text": "pillar",
               "correct": false
             }
           ],
@@ -476,7 +395,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 1:26",
@@ -487,11 +406,11 @@
               "correct": true
             },
             {
-              "text": "A figure like that of a lion",
+              "text": "A figure like that of a lamb",
               "correct": false
             },
             {
-              "text": "A figure like that of an eagle",
+              "text": "A figure like that of a dove",
               "correct": false
             }
           ],
@@ -499,7 +418,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 14,
           "kind": "story",
           "verses": "Ezekiel 1:27",
           "text": "From what seemed to be His waist up, Ezekiel sees a gleam like amber with what looked like fire within it, and from what seemed to be His waist down, what looked like fire, with brilliant light all around Him. Friend, for this one I'm taking my chef's hat off.",
@@ -507,11 +426,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 1:28",
-          "question": "The brilliant light all around Him looks like a ___ in a cloud on a rainy day.",
+          "question": "The brilliant light around the figure on the throne looks like a ___ in a cloud on a rainy day.",
           "answers": [
             {
               "text": "rainbow",
@@ -526,11 +445,11 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Ezekiel 1:28",
           "text": "Then Ezekiel says it plainly: \"This was the appearance of the likeness of the glory of the LORD.\" Read that line slow, friend, because every word in it is doing heavy lifting.",
@@ -538,7 +457,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 1:28",
@@ -561,7 +480,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "Ezekiel 1:28",
           "text": "Facedown on the ground, Ezekiel hears a voice speaking. And that's right where we'll stop for now, friend, because this story is far from done.",

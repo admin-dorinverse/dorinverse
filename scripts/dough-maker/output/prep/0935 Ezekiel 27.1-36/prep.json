@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 27:1-3",
-          "text": "The word of the LORD comes to the prophet Ezekiel, and God calls him 'son of man.' His job is to take up a lament for Tyre, the city at the gateway to the sea, merchant to peoples on many coasts. But first, God repeats Tyre's own brag right back to it.",
+          "text": "The word of the LORD comes to the prophet Ezekiel. God calls him 'son of man' and tells him to take up a lament for Tyre, the city at the gateway to the sea, merchant to peoples on many coasts. God starts by quoting what Tyre has been saying about itself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,8 +40,8 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 27:4",
-          "text": "Tyre's borders are in the heart of the seas, and its builders perfected its beauty. Me? I came out of a closing bakery's last bin with a 25 cent sticker on me. PERFECT was not on the sticker.",
-          "needs_agent_fix": true,
+          "text": "Tyre's borders are in the heart of the seas, and its builders perfected its beauty. Me? I came out of a closing bakery's bargain bin for 25 cents.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -78,25 +78,29 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Ezekiel 27:6-7",
-          "text": "Oars of oak from Bashan, a deck of Cyprus wood inlaid with IVORY, and a sail of embroidered linen from Egypt. Friend, my bakery floor is inlaid with flour. Mostly by accident.",
+          "verses": "Ezekiel 27:6",
+          "text": "Oars of oak from Bashan, a deck of wood from Cyprus inlaid with IVORY. Friend, the only thing inlaid in my bakery floor is cookie dough, and that was an accident.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 27:5-6",
-          "question": "Tyre's builders went cheap and used whatever wood was lying around.",
+          "type": "fill_blank",
+          "verses": "Ezekiel 27:7",
+          "question": "Tyre's sail is made of embroidered fine linen from ___.",
           "answers": [
             {
-              "text": "True",
+              "text": "Egypt",
+              "correct": true
+            },
+            {
+              "text": "Moab",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Assyria",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -104,18 +108,10 @@
         },
         {
           "card": 8,
-          "kind": "story",
-          "verses": "Ezekiel 27:8",
-          "text": "A ship this fancy needs a crew, and the men of Sidon and Arvad pull the oars.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 27:8",
-          "question": "So who stands as captains of Tyre's ship?",
+          "question": "Men of Sidon and Arvad pull the oars of Tyre's ship. So who stands as its captains?",
           "answers": [
             {
               "text": "Men of Tyre",
@@ -134,7 +130,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "story",
           "verses": "Ezekiel 27:9",
           "text": "The elders of Gebal come aboard too. Their job? Shipwrights.",
@@ -142,7 +138,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 27:9",
@@ -161,15 +157,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Ezekiel 27:9",
-          "text": "Perfect in beauty, and it LEAKS, which I respect, because I had blurry edges for years. Then all the ships of the sea pull up alongside Tyre, sailors and all.",
+          "text": "Perfect in beauty, and it LEAKS, which I respect, because I spent years as a worn-out stamper with blurry edges. Then all the ships of the sea pull up alongside Tyre, sailors and all.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 27:9",
@@ -192,19 +188,19 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
-          "verses": "Ezekiel 27:10",
-          "text": "Now the picture moves to Tyre's walls. Men of Persia, Lydia and Put serve as warriors in its army, and they hang their shields and helmets on those walls.",
+          "verses": "Ezekiel 27:10-11",
+          "text": "Now the picture moves to Tyre's walls, where men of Persia, Lydia and Put serve as warriors and hang their shields and helmets. Men of Arvad and Helech man the walls, men of Gammad hold the towers, and they hang their shields all around.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
-          "verses": "Ezekiel 27:10",
-          "question": "The shields and helmets that men of Persia, Lydia and Put hang on Tyre's walls give it splendor.",
+          "verses": "Ezekiel 27:10-11",
+          "question": "All those shields and helmets hanging on Tyre's walls add to its splendor.",
           "answers": [
             {
               "text": "True",
@@ -216,29 +212,6 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ezekiel 27:11",
-          "question": "Men of Arvad and Helech man Tyre's walls, the men of Gammad are in its towers, and they hang their shields around the walls. Just like Tyre's builders, they ___ its beauty.",
-          "answers": [
-            {
-              "text": "perfected",
-              "correct": true
-            },
-            {
-              "text": "hid",
-              "correct": false
-            },
-            {
-              "text": "dimmed",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
           "needs_human_decision": false
         }
       ]
@@ -253,7 +226,7 @@
           "verses": "Ezekiel 27:12-24",
           "text": "Then comes a long list of Tyre's trading partners, nation after nation: silver, iron, tin and lead from Tarshish, wheat and honey from Judah and Israel, gold and spices from Sheba. Friend, I spent years under old receipts in a junk drawer, and not ONE of them was this long.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
@@ -261,7 +234,7 @@
           "verses": "Ezekiel 27:25-26",
           "text": "Business is BOOMING: the ships of Tarshish carry Tyre's merchandise, and Tyre is filled with heavy cargo in the heart of the sea. Then its oarsmen bring it out onto the high seas.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
@@ -284,41 +257,41 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 27:27",
-          "question": "When Tyre sinks into the heart of the sea, its riches go down, but everyone on board is spared.",
+          "question": "God says Tyre's sailors, captains and warriors will sink into the heart of the sea along with its wealth.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
           "verses": "Ezekiel 27:28-29",
-          "text": "The countryside shakes when Tyre's sailors cry out. And all who handle the oars abandon their ships.",
+          "text": "God says the countryside will shake when Tyre's sailors cry out, and all who handle the oars will abandon their ships.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 27:29",
-          "question": "The sailors and all the captains of the sea end up standing on the ___.",
+          "question": "God says the sailors and all the captains of the sea will end up standing on the ___.",
           "answers": [
             {
               "text": "shore",
@@ -329,27 +302,27 @@
               "correct": false
             },
             {
-              "text": "walls",
+              "text": "decks",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "story",
-          "verses": "Ezekiel 27:30",
-          "text": "They raise their voices and cry out bitterly for Tyre. They throw dust on their heads and roll in ashes.",
+          "verses": "Ezekiel 27:30-31",
+          "text": "God says the sailors will throw dust on their heads and roll in ashes. They'll shave their heads and wrap themselves in sackcloth too.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 27:31",
-          "question": "Then the sailors shave their heads and wrap themselves in sackcloth. What are they showing?",
+          "question": "What will all that dust, ash and sackcloth from the sailors show?",
           "answers": [
             {
               "text": "Bitter mourning over Tyre",
@@ -365,22 +338,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 27:32",
-          "text": "As they wail, the sailors take up a lament of their own, just like God told Ezekiel to take up. It opens: 'Who was ever like Tyre, silenced in the middle of the sea?'",
+          "text": "God says that as they wail, the sailors will take up a lament for Tyre, just as Ezekiel was told to. It begins: 'Who was ever like Tyre, silenced in the middle of the sea?'",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 27:33",
-          "question": "Looking back, the sailors say Tyre's abundant wealth and merchandise ___ the kings of the earth.",
+          "question": "In their lament, the sailors will look back and say Tyre's abundant wealth and merchandise ___ the kings of the earth.",
           "answers": [
             {
               "text": "enriched",
@@ -396,22 +369,22 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "story",
           "verses": "Ezekiel 27:34",
-          "text": "But now Tyre is shattered by the seas in the depths of the waters, and its merchandise and people have gone down with it. Friend, I know what it's like to end up at the bottom of something, and mine was only a junk drawer.",
+          "text": "Then their lament turns: Tyre is shattered by the seas in the depths of the waters, and its merchandise and people have gone down with it.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 27:35",
-          "question": "How do the people of the coastlands react to Tyre being shattered?",
+          "question": "In the sailors' lament, how do the people of the coastlands react to Tyre being shattered?",
           "answers": [
             {
               "text": "They are appalled",
@@ -422,15 +395,23 @@
               "correct": false
             },
             {
-              "text": "They sail out to rebuild it",
+              "text": "They rush to rebuild",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 13,
+          "kind": "story",
+          "verses": "Ezekiel 27:35-36",
+          "text": "In the lament, the coastlands' kings shudder with fear, and those who trade among the nations hiss at Tyre.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 27:36",
@@ -446,15 +427,7 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Ezekiel 27:36",
-          "text": "Those who trade among the nations hiss at Tyre. Then the lament closes, quiet and heavy: 'you have come to a horrible end and will be no more.'",
-          "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

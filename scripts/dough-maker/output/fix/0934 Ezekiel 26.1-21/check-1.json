@@ -1,0 +1,28 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 3
+      },
+      "problem": "The question types in stop 3 strictly alternate: multiple choice, true/false, multiple choice, true/false, multiple choice, true/false, multiple choice (cards 2, 4, 6, 8, 10, 12, 13). That is a pattern, and stop 3 has no fill-in-the-blank card at all.",
+      "rule": "No formula. Which question type comes next, the order the types come in and where a blank falls are chosen naturally for each card. They never follow a pattern."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 13
+      },
+      "problem": "The two wrong answers, \"Her princes will find her\" and \"Her sailors will find her\", mean essentially the same thing: someone finds her. They are near-matches of each other.",
+      "rule": "Two wrong answers never mean the same as each other either."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 3
+      },
+      "problem": "The joke uses the same \"That's the [person] [doing something]\" punchline shape, and the same workplace-person comparison, as the joke on stop 1 card 3 (\"That's the coworker who…\"). The shape is repeated within one lesson.",
+      "rule": "Each joke idea, comparison and punchline shape is used once per lesson."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 2:1",
-          "text": "Ezekiel is a priest living among the exiles (Ezekiel 1:1-3). He has just seen a vision of the glory of the LORD and fallen facedown (Ezekiel 1:28). Then the voice speaks: 'Son of man,' He says, 'stand up on your feet and I will speak to you.'",
+          "text": "Ezekiel is a priest, the son of Buzi (Ezekiel 1:3). He has just seen a vision of the glory of the LORD and fallen facedown (Ezekiel 1:28). Then the voice speaks: 'Son of man,' He says, 'stand up on your feet and I will speak to you.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -36,7 +36,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 2:3",
-          "text": "Ezekiel's back on his feet, and the LORD gets RIGHT to it with no small talk: 'I am sending you to the Israelites, to a rebellious nation that has rebelled against Me.'",
+          "text": "Ezekiel's back on his feet. 'Son of man,' He says, 'I am sending you to the Israelites, to a rebellious nation that has rebelled against Me.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -67,27 +67,28 @@
           "card": 5,
           "kind": "story",
           "verses": "Ezekiel 2:4",
-          "text": "He calls them obstinate and stubborn children, and He's sending Ezekiel to them anyway. Friend, that's your boss handing you the one client who hangs up on EVERYBODY.",
+          "text": "He calls them obstinate and stubborn children, and He's sending Ezekiel to them. Friend, that's like being the new hire handed the one client who hangs up on EVERYBODY.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 6,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Ezekiel 2:5",
-          "question": "Whether Israel listens or refuses to listen, what does the LORD say they will know?",
+          "question": "Whether Israel listens or refuses to listen, the LORD says they will know that a ___ has been among them.",
           "answers": [
             {
-              "text": "That a prophet has been among them",
-              "correct": true
+              "text": "prophet",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "That the exile is ending soon",
+              "text": "king",
               "correct": false
             },
             {
-              "text": "That Ezekiel speaks for himself",
+              "text": "judge",
               "correct": false
             }
           ],
@@ -98,7 +99,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Ezekiel 2:6",
-          "text": "Then the LORD tells Ezekiel not to be afraid, three times in one verse. Friend, when somebody tells me not to be afraid THREE times, that's when I start hopping my gold base toward the exit.",
+          "text": "Then the LORD tells Ezekiel not to be afraid of them or their words. Not once, not twice, THREE times.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -125,7 +126,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 2:6",
-          "text": "Not even close: he's not to be afraid, though briers and thorns surround him and he dwells among scorpions. Some neighborhood.",
+          "text": "He's not to be afraid, though briers and thorns surround him and he dwells among scorpions. Some neighborhood.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -157,7 +158,7 @@
           "card": 11,
           "kind": "story",
           "verses": "Ezekiel 2:8",
-          "text": "I bet Ezekiel's been nodding along this whole time about that rebellious house. Then the LORD turns to HIM: 'Do not be rebellious like that rebellious house.'",
+          "text": "Then the LORD turns to Ezekiel himself: 'Do not be rebellious like that rebellious house.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -187,64 +188,13 @@
         {
           "card": 13,
           "kind": "story",
-          "verses": "Ezekiel 2:9",
-          "text": "Eat WHAT, exactly? Ezekiel looks and sees a hand reaching out to him, and it's holding something that is definitely NOT a cookie.",
+          "verses": "Ezekiel 2:9-10",
+          "text": "Ezekiel looks and sees a hand reaching out to him with a scroll in it, and He unrolls it right in front of him. Friend, when somebody hands you something to eat and it's got WRITING on it, you read the label.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ezekiel 2:9",
-          "question": "In the hand reaching out to Ezekiel, there's a ___.",
-          "answers": [
-            {
-              "text": "scroll",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "staff",
-              "correct": false
-            },
-            {
-              "text": "lamp",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "story",
-          "verses": "Ezekiel 2:10",
-          "text": "He unrolls it right in front of Ezekiel. And friend, when somebody hands you something to eat and it's got WRITING on it, you read the label.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 2:10",
-          "question": "The writing on the scroll is only on the front.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 2:10",
@@ -259,7 +209,7 @@
               "correct": false
             },
             {
-              "text": "Names and family lines",
+              "text": "Laws and statutes and decrees",
               "correct": false
             }
           ],
@@ -276,7 +226,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 3:1",
-          "text": "The LORD is still holding out that scroll of woe. 'Son of man,' He says, 'eat what you find here. Eat this scroll, then go and speak to the house of Israel.'",
+          "text": "The LORD is still holding out that scroll of woe, and He tells Ezekiel, 'Eat this scroll, then go and speak to the house of Israel.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -323,7 +273,7 @@
               "correct": false
             },
             {
-              "text": "Like dry dust",
+              "text": "As dry as dust",
               "correct": false
             }
           ],
@@ -333,8 +283,8 @@
         {
           "card": 5,
           "kind": "story",
-          "verses": "Ezekiel 3:3-5",
-          "text": "A scroll full of WOE, sweet as honey, and friend, it STILL tastes better than some of my test batches. Then the LORD sends him to the house of Israel, not to a people of unfamiliar speech or difficult language.",
+          "verses": "Ezekiel 3:4-5",
+          "text": "Then the LORD sends him to the house of Israel, not to a people of unfamiliar speech or difficult language. Same language, same people, no translator needed.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -343,15 +293,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 3:6",
-          "question": "The LORD says if He had sent Ezekiel to peoples whose language he couldn't understand, they would have listened to him.",
+          "question": "The LORD says that if He had sent Ezekiel to peoples whose words he can't understand, they would have refused to listen.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -361,8 +311,8 @@
           "card": 7,
           "kind": "story",
           "verses": "Ezekiel 3:6-7",
-          "text": "True, and that one stings. People who can't understand a word he says would listen, but the LORD says the house of Israel will be unwilling to listen to him.",
-          "needs_agent_fix": true,
+          "text": "If the LORD had sent him to peoples whose words he can't understand, they would have listened, but the LORD says the house of Israel will be unwilling to listen to him. Friend, that one stings.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -392,28 +342,27 @@
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 3:7",
-          "text": "The LORD says the whole house of Israel is hard-headed and hard-hearted. So He's got a plan for Ezekiel's face.",
+          "text": "The LORD says the whole house of Israel is hard-headed and hard-hearted. Tough crowd, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Ezekiel 3:8",
-          "question": "The LORD says He will make Ezekiel's face as ___ as their faces.",
+          "question": "The house of Israel is hard-headed and hard-hearted. What does the LORD say He'll make just as hard as theirs?",
           "answers": [
             {
-              "text": "hard",
-              "correct": true,
-              "blank": 1
+              "text": "Ezekiel's face and forehead",
+              "correct": true
             },
             {
-              "text": "soft",
+              "text": "Ezekiel's words and voice",
               "correct": false
             },
             {
-              "text": "bright",
+              "text": "Ezekiel's hands and feet",
               "correct": false
             }
           ],
@@ -450,20 +399,21 @@
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Ezekiel 3:11",
-          "question": "The LORD tells Ezekiel to go to his own people. Who are they?",
+          "question": "The LORD tells Ezekiel to go to his own people, the ___, and speak to them.",
           "answers": [
             {
-              "text": "The exiles",
-              "correct": true
+              "text": "exiles",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "The people of Jerusalem",
+              "text": "priests",
               "correct": false
             },
             {
-              "text": "The kings of Judah",
+              "text": "elders",
               "correct": false
             }
           ],
@@ -473,33 +423,32 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Ezekiel 3:12-13",
-          "text": "Then the Spirit lifts Ezekiel up, and behind him comes a great rumbling sound: 'Blessed be the glory of the LORD in His dwelling place!' It's the living creatures, the winged beings from his vision (Ezekiel 1:5-6).",
+          "verses": "Ezekiel 3:12",
+          "text": "Then the Spirit lifts Ezekiel up, and he hears a great rumbling sound behind him: 'Blessed be the glory of the LORD in His dwelling place!'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "multiple_choice",
           "verses": "Ezekiel 3:13",
-          "question": "The rumbling comes from the wings of the living creatures brushing together and the ___ beside them.",
+          "question": "What's making the great rumbling sound behind Ezekiel?",
           "answers": [
             {
-              "text": "wheels",
-              "correct": true,
-              "blank": 1
+              "text": "Wings and wheels of the living creatures",
+              "correct": true
             },
             {
-              "text": "horses",
+              "text": "Hooves and chariots on the road",
               "correct": false
             },
             {
-              "text": "trumpets",
+              "text": "Voices and harps of the exiles",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -522,22 +471,22 @@
               "correct": true
             },
             {
-              "text": "Singing and full of joy",
+              "text": "In gladness and joy of heart",
               "correct": false
             },
             {
-              "text": "Calm and at peace",
+              "text": "In peace and quiet of mind",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "story",
           "verses": "Ezekiel 3:15",
-          "text": "He comes to the exiles at Tel-abib, who live by the River Kebar. And the man promised a forehead like a diamond just sits right where they sit.",
+          "text": "He comes to the exiles at Tel-abib, who live by the River Kebar. For seven days he sits right where they sit.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -546,30 +495,30 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 3:15",
-          "question": "Ezekiel stays there among the exiles, overwhelmed, for ___ days.",
+          "question": "For seven days, Ezekiel stays among the exiles at Tel-abib, ___.",
           "answers": [
             {
-              "text": "seven",
+              "text": "overwhelmed",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "forty",
+              "text": "rejoicing",
               "correct": false
             },
             {
-              "text": "three",
+              "text": "unbothered",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 20,
           "kind": "story",
           "verses": "Ezekiel 3:15",
-          "text": "Seven days! Friend, I sat in a junk drawer for YEARS and nobody ever asked me to eat the takeout menus, but stick around, because Ezekiel's call isn't wrapped up yet.",
+          "text": "I think that was a heavy week for Ezekiel. Stick around, friend, because his call isn't wrapped up yet.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -25,7 +25,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 8:3",
-          "text": "He stretches out what looked like a hand and takes Ezekiel by the hair of his head. The HAIR, friend, and with a mustache this size, I felt that one all the way down to my gold base.",
+          "text": "He stretches out what looks like a hand and takes Ezekiel by the hair of his head. The HAIR, friend, and with a mustache this size, I felt that one all the way down to my gold base.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -100,10 +100,18 @@
         },
         {
           "card": 7,
+          "kind": "story",
+          "verses": "Ezekiel 8:5",
+          "text": "God tells Ezekiel, \"now lift up your eyes to the north.\" Ezekiel does, and there in the entrance north of the Altar Gate is that idol of jealousy.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 8:6",
-          "question": "God tells Ezekiel to lift his eyes to the north, and there's that idol of jealousy again. Then God asks if he sees what the house of Israel is doing. God says these great abominations are driving Him far from His sanctuary.",
+          "question": "God says the house of Israel is committing these great abominations to drive Him far from His sanctuary.",
           "answers": [
             {
               "text": "True",
@@ -114,15 +122,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 8:6",
-          "question": "After asking Ezekiel if he sees these abominations, what does God tell Ezekiel he will still see?",
+          "question": "God has just shown Ezekiel the idol of jealousy at the north gate. What does God tell Ezekiel he will still see?",
           "answers": [
             {
               "text": "Even greater abominations",
@@ -141,7 +149,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 10,
           "kind": "story",
           "verses": "Ezekiel 8:7",
           "text": "Next, God brings Ezekiel to the entrance to the court, and Ezekiel spots a hole in the wall. It's just a hole, friend, and I'm ALREADY nervous.",
@@ -149,7 +157,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 8:8",
@@ -168,15 +176,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 12,
           "kind": "story",
           "verses": "Ezekiel 8:8",
-          "text": "So Ezekiel digs through the wall and finds a doorway. It's like pulling the couch out to vacuum, except what's back there is WORSE.",
+          "text": "So Ezekiel digs through the wall and finds a doorway.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 13,
           "kind": "story",
           "verses": "Ezekiel 8:9-10",
           "text": "God tells him to go in and see the wicked abominations they're committing there. Ezekiel looks, and engraved all around the wall is every kind of crawling creature and detestable beast, along with all the idols of the house of Israel.",
@@ -184,11 +192,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 14,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 8:11",
-          "question": "Inside that hidden room, who's standing in front of all those engravings?",
+          "question": "Ezekiel digs through a wall into a room engraved with crawling creatures, detestable beasts and idols. Who's standing in front of those engravings?",
           "answers": [
             {
               "text": "Seventy elders of Israel",
@@ -203,33 +211,14 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Ezekiel 8:11",
-          "text": "Jaazaniah son of Shaphan stands among them, and each man has a censer in his hand, with a fragrant cloud of incense rising. Seventy grown men in a secret room behind a wall, and they made sure it SMELLS nice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 8:12",
-          "question": "The elders are doing this in the darkness, each at the shrine of his own idol. They're saying the LORD does not see them.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Ezekiel 8:11",
+          "text": "Jaazaniah son of Shaphan stands among them. Each man has a censer in his hand, and a fragrant cloud of incense is rising.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -237,7 +226,49 @@
           "card": 16,
           "kind": "story",
           "verses": "Ezekiel 8:12",
-          "text": "They also say the LORD has forsaken the land. Meanwhile, God is right there giving Ezekiel a guided tour of the room, so yeah, fellas, He sees you.",
+          "text": "God asks Ezekiel if he sees what the elders of Israel are doing in the darkness, each at the shrine of his own idol.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 17,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Ezekiel 8:12",
+          "question": "The elders in that dark room are saying the LORD sees everything they do.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 18,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Ezekiel 8:12",
+          "question": "The elders burning incense in that dark room also say the LORD has ___ the land.",
+          "answers": [
+            {
+              "text": "forsaken",
+              "correct": true
+            },
+            {
+              "text": "blessed",
+              "correct": false
+            },
+            {
+              "text": "cleansed",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -251,16 +282,16 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 8:13-14",
-          "text": "Again, God tells Ezekiel he'll see them committing even greater abominations, and friend, this tour has more levels than a parking garage. Then He brings Ezekiel to the entrance of the north gate of the house of the LORD.",
+          "text": "Again, God tells Ezekiel he'll see them committing even greater abominations. Then He brings Ezekiel to the entrance of the north gate of the house of the LORD.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 8:14",
-          "question": "At the north gate of the house of the LORD, Ezekiel sees ___ sitting there, weeping for Tammuz.",
+          "question": "At the north gate of the house of the LORD, Ezekiel sees ___ sitting there, weeping for Tammuz, a false god.",
           "answers": [
             {
               "text": "women",
@@ -276,13 +307,13 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 8:15-16",
-          "text": "God asks him, \"do you see this?\" and says there are even greater abominations than these. Then He brings Ezekiel into the inner court, to the entrance to the temple of the LORD, between the portico and the altar.",
+          "text": "God asks him, \"do you see this?\" and says he'll see even greater abominations than these. Then He brings Ezekiel into the inner court, to the entrance to the temple of the LORD, between the portico and the altar.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -331,21 +362,13 @@
         {
           "card": 6,
           "kind": "story",
-          "verses": "Ezekiel 8:16",
-          "text": "Backs to the house of the LORD, bowing to the sun. That's like turning your back on your boss on payday... so you can go thank the ATM.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 7,
-          "kind": "story",
           "verses": "Ezekiel 8:17",
           "text": "God asks Ezekiel, \"do you see this?\" Then He asks if the abominations they're practicing here aren't enough for the house of Judah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 8,
+          "card": 7,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 8:17",
@@ -368,7 +391,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 9,
+          "card": 8,
           "kind": "story",
           "verses": "Ezekiel 8:17",
           "text": "They fill the land with violence and keep provoking Him to anger. And then one more: \"Look, they are even putting the branch to their nose!\"",
@@ -376,7 +399,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 10,
+          "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 8:18",
@@ -396,34 +419,34 @@
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 11,
+          "card": 10,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 8:18",
-          "question": "God says that although they shout loudly in His ears, He will listen to them.",
+          "question": "God says that although they shout loudly in His ears, He will not listen to them.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Ezekiel 8:18",
-          "text": "So Ezekiel stands there with all of it in front of him. Hold on tight, friend, because this vision is still going.",
+          "text": "That's a lot to take in, friend. But hold on, because this story isn't over yet.",
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         }
       ]
     }

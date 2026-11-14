@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Jeremiah 52:1",
-          "text": "Friend, this is the last chapter of Jeremiah, and it's a heavy one. Zedekiah becomes king of Judah at twenty-one, and he reigns in Jerusalem for eleven years. His mother is Hamutal, from Libnah.",
+          "text": "Friend, this is the last chapter of Jeremiah. Zedekiah becomes king of Judah at twenty-one, and he reigns in Jerusalem for eleven years. His mother is Hamutal, from Libnah.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Jeremiah 52:2-3",
-          "text": "Zedekiah does evil just as Jehoiakim, an earlier king of Judah, had done (2 Kings 23:36). The text says all this happened because of the anger of the LORD, until He finally banished them from His presence.",
+          "text": "Zedekiah does evil just as Jehoiakim, an earlier king of Judah, had done. Because of the anger of the LORD, all this happened in Jerusalem and Judah, until He finally banished them from His presence.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -162,7 +162,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Jeremiah 52:7",
-          "text": "They slip out through the gate between the two walls, near the king's garden, and head toward the Arabah. That's leaving the party without saying goodbye, except it's the WHOLE army.",
+          "text": "King Zedekiah and his men of war slip out through the gate between the two walls, near the king's garden, and head toward the Arabah. That's leaving the party without saying goodbye, except it's the WHOLE army.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -187,18 +187,33 @@
         },
         {
           "card": 12,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Jeremiah 52:8",
-          "text": "They catch Zedekiah in the plains of Jericho, and his whole army deserts him. One minute you've got an army, and the next it's just you and a WHOLE lot of footsteps going the other way.",
+          "question": "The Chaldeans overtake King Zedekiah in the plains of Jericho. What does his army do?",
+          "answers": [
+            {
+              "text": "His whole army deserts him",
+              "correct": true
+            },
+            {
+              "text": "They fight to protect him",
+              "correct": false
+            },
+            {
+              "text": "They surrender with him",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Jeremiah 52:9",
-          "question": "The Chaldeans seize King Zedekiah. Where do they bring him to face the king of Babylon?",
+          "question": "The Chaldeans seize King Zedekiah and bring him up to the king of Babylon at ___ in the land of Hamath.",
           "answers": [
             {
               "text": "Riblah",
@@ -228,46 +243,31 @@
           "card": 15,
           "kind": "story",
           "verses": "Jeremiah 52:10",
-          "text": "There at Riblah, the king of Babylon slaughters Zedekiah's sons right before his eyes.",
+          "text": "There at Riblah, the king of Babylon slaughters Zedekiah's sons right before his eyes, and he kills all the officials of Judah too.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Jeremiah 52:10",
-          "question": "At Riblah, the king of Babylon spares the officials of Judah.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Jeremiah 52:11",
+          "text": "Then he puts out Zedekiah's eyes, binds him with bronze shackles and takes him to Babylon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Jeremiah 52:11",
-          "question": "The king of Babylon puts out Zedekiah's eyes, binds him in bronze shackles and keeps him in custody in ___ until his dying day.",
+          "question": "Zedekiah is kept in custody in Babylon until his dying day.",
           "answers": [
             {
-              "text": "Babylon",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Egypt",
-              "correct": false
-            },
-            {
-              "text": "Jericho",
+              "text": "False",
               "correct": false
             }
           ],
@@ -332,9 +332,24 @@
         },
         {
           "card": 4,
-          "kind": "story",
-          "verses": "Jeremiah 52:13-14",
-          "text": "The palace and every house in Jerusalem burn, and the Chaldean army breaks down ALL the walls around the city. Friend, I lost my spot on a kitchen counter once and it took me years to get over it, so I can't even picture losing a whole city.",
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Jeremiah 52:14",
+          "question": "The palace and the houses of Jerusalem are burning. Then the whole army of the Chaldeans ___ all the walls around Jerusalem.",
+          "answers": [
+            {
+              "text": "breaks down",
+              "correct": true
+            },
+            {
+              "text": "rebuilds",
+              "correct": false
+            },
+            {
+              "text": "guards",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -365,12 +380,31 @@
           "card": 6,
           "kind": "story",
           "verses": "Jeremiah 52:15",
-          "text": "Some of the poorest people, whoever's left in the city and the rest of the craftsmen all get carried away. Even the deserters who switched over to Babylon's side go too, so switching sides didn't buy them a thing.",
+          "text": "Some of the poorest people, whoever's left in the city and the rest of the craftsmen all get carried away.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
+          "kind": "choice",
+          "type": "true_false",
+          "verses": "Jeremiah 52:15",
+          "question": "The deserters who defected to the king of Babylon get to stay behind in Jerusalem.",
+          "answers": [
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "False",
+              "correct": true
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 8,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 52:16",
@@ -389,72 +423,26 @@
           "needs_human_decision": false
         },
         {
-          "card": 8,
-          "kind": "story",
-          "verses": "Jeremiah 52:17-23",
-          "text": "Then the Chaldeans strip the house of the LORD: the two huge bronze pillars with their bronze pomegranates, the stands, the bronze Sea King Solomon made, and the bowls and lampstands of bronze, gold and silver. The weight of all that bronze is beyond measure, friend, and ALL of it goes to Babylon.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
           "card": 9,
           "kind": "story",
-          "verses": "Jeremiah 52:24-25",
-          "text": "The captain of the guard takes people too: Seraiah the chief priest, Zephaniah the priest of second rank, three doorkeepers, a court official over the men of war, seven trusted royal advisers, a scribe and sixty men from the city. He goes name by name, title by title, like he's working down a list.",
+          "verses": "Jeremiah 52:17-23",
+          "text": "I think this one hurts, friend. The Chaldeans strip the house of the LORD: the two huge bronze pillars with their bronze pomegranates, the stands, the bronze Sea King Solomon made, and the bowls and lampstands of bronze, gold and silver. The weight of all that bronze is beyond measure, and ALL of it goes to Babylon.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Jeremiah 52:26",
-          "question": "Nebuzaradan brings Judah's priests and leaders, along with a scribe and sixty men from the city, to the king of Babylon. Where does he bring them?",
-          "answers": [
-            {
-              "text": "Riblah",
-              "correct": true
-            },
-            {
-              "text": "Damascus",
-              "correct": false
-            },
-            {
-              "text": "Hebron",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Jeremiah 52:24-25",
+          "text": "The captain of the guard takes people too: the top priests, the temple doorkeepers, the king's advisers and officials, and men still found in the city.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Jeremiah 52:27",
-          "question": "The king of Babylon has Judah's priests and leaders at Riblah. What does he do to them?",
-          "answers": [
-            {
-              "text": "He puts them to death",
-              "correct": true
-            },
-            {
-              "text": "He makes them his advisers",
-              "correct": false
-            },
-            {
-              "text": "He sends them back home",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
           "kind": "story",
-          "verses": "Jeremiah 52:27",
-          "text": "Then the text sums it all up: \"So Judah was taken into exile, away from its own land.\" Friend, let that one sit for a second.",
+          "verses": "Jeremiah 52:26-27",
+          "text": "Nebuzaradan brings them all to the king of Babylon at Riblah, and there the king puts them to death. \"So Judah was taken into exile, away from its own land.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -496,7 +484,7 @@
               "correct": false
             },
             {
-              "text": "He puts him on trial all over again",
+              "text": "He sends him back home to Judah",
               "correct": false
             }
           ],
@@ -508,36 +496,34 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Jeremiah 52:32",
-          "question": "Evil-merodach speaks ___ to Jehoiachin and sets his throne ___ the thrones of the other kings with him in Babylon.",
+          "question": "Evil-merodach has just pardoned Jehoiachin and let him out of prison. Then he speaks ___ to him.",
           "answers": [
             {
               "text": "kindly",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "above",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "harshly",
               "correct": false
             },
             {
-              "text": "below",
-              "correct": false
-            },
-            {
-              "text": "beside",
+              "text": "briefly",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
+          "kind": "story",
+          "verses": "Jeremiah 52:32",
+          "text": "He sets Jehoiachin's throne above the thrones of the other kings who were with him in Babylon. Friend, I went from the back of a junk drawer to a bakery of my own, so I know a little something about getting pulled out of the dark.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Jeremiah 52:33",
@@ -552,15 +538,15 @@
               "correct": false
             },
             {
-              "text": "With the other captives",
+              "text": "In the servants' quarters",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 6,
+          "card": 7,
           "kind": "choice",
           "type": "true_false",
           "verses": "Jeremiah 52:34",
@@ -579,10 +565,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 7,
+          "card": 8,
           "kind": "story",
-          "verses": "Jeremiah 52:33-34",
-          "text": "A daily portion for the rest of his life, until the day of his death. After all that fire and ruin, Jeremiah's book ends with a king of Judah out of his prison clothes and eating at the king's table.",
+          "verses": "Jeremiah 52:34",
+          "text": "That daily portion keeps coming until the day of his death. After all that fire and ruin, the book of Jeremiah ends with a king of Judah eating at the king's table.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

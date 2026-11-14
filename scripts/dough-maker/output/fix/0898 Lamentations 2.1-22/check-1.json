@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 2,
+        "card": 13
+      },
+      "problem": "The question says 'this day', but no earlier card mentions a day, so the phrase points back to nothing the baker can see. It also gives away the word 'day' in the right answer.",
+      "rule": "Always give context in the question. The story card before it isn't on screen anymore, so the question says who and what. Never \"him,\" \"that\" or \"it\" pointing back to a card the baker can't see."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 15
+      },
+      "problem": "Card 12's right answer already showed 'appointed feasts' for the same kind of phrase, and card 15's right answer 'The day of an appointed feast' reuses it. That makes it the obvious pick over 'battle' and 'storm'.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 8
+      },
+      "problem": "The choice card asks what the young men and maidens fell by, which asks about the means of the killing itself. It is not a choice or a result around it.",
+      "rule": "Choice cards ask about the choices and results around them, never the act itself."
+    },
+    {
+      "where": {
+        "stop": 3,
+        "card": 3
+      },
+      "problem": "'Your hands' versus 'offerings' or 'eyes' asks the baker to guess a detail with no story card setting it up. Verse 19 is told only inside the question, and the baker can't reason out what is lifted up.",
+      "rule": "Before each choice card, Papa Dorin's story card gives enough context that the baker can reason their way to the answer."
+    }
+  ]
+}

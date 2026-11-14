@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Daniel 6:1-2",
-          "text": "Darius the Mede now rules the kingdom (Daniel 5:31), and it pleases him to appoint 120 satraps to run it, with three administrators over them. One of those three is Daniel, a man from Judah living in exile (Daniel 1:6). And friend, I can't even keep track of 120 sprinkles.",
+          "text": "Darius the Mede now rules the kingdom (Daniel 5:31), and it pleases him to appoint 120 satraps to run it, with three administrators over them. One of those three is Daniel, a man from Judah living in exile (Daniel 5:13). And friend, I can't even keep track of 120 sprinkles.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -47,20 +47,20 @@
         {
           "card": 4,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Daniel 6:3",
-          "question": "Daniel stands out above all the administrators and satraps. What does King Darius plan to do with him?",
+          "question": "Daniel stands out so much that King Darius plans to set him over the whole ___.",
           "answers": [
             {
-              "text": "Set him over the whole kingdom",
+              "text": "kingdom",
               "correct": true
             },
             {
-              "text": "Send him back home to Judah",
+              "text": "army",
               "correct": false
             },
             {
-              "text": "Make him captain of the guard",
+              "text": "palace",
               "correct": false
             }
           ],
@@ -121,7 +121,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Daniel 6:5",
-          "text": "Finally these men say it out loud: they will never find any charge against this Daniel, unless. Friend, that one little word UNLESS is carrying their WHOLE plan.",
+          "text": "Finally these men say it out loud: they will never find any charge against this Daniel, unless… Friend, that one little word UNLESS is carrying their WHOLE plan.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -183,7 +183,7 @@
           "card": 12,
           "kind": "story",
           "verses": "Daniel 6:7-8",
-          "text": "Break it, and you're thrown into the den of lions. And they want the king to sign it under the law of the Medes and Persians.",
+          "text": "Break the decree, and you're thrown into the den of lions. And they want the king to sign it under the law of the Medes and Persians.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -192,15 +192,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 6:8",
-          "question": "Under the law of the Medes and Persians, King Darius could repeal this decree later if he wanted to.",
+          "question": "Under the law of the Medes and Persians, once King Darius signs this decree, it cannot be repealed.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -270,20 +270,9 @@
         },
         {
           "card": 18,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Daniel 6:12",
-          "question": "When the men ask King Darius about his decree, he says the order still stands.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "text": "So the men go to King Darius and ask about his decree, like they don't already know. The king answers that by the law of the Medes and Persians, the order stands.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }
@@ -306,7 +295,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 6:14",
-          "question": "As soon as King Darius hears this about Daniel, he is deeply ___.",
+          "question": "As soon as King Darius hears the men say Daniel shows no regard for his decree, he is deeply ___.",
           "answers": [
             {
               "text": "distressed",
@@ -321,7 +310,7 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -329,7 +318,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 6:14",
-          "question": "King Darius sets his mind on rescuing Daniel and works at it until sundown.",
+          "question": "King Darius works until sundown trying to rescue Daniel.",
           "answers": [
             {
               "text": "True",
@@ -347,7 +336,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Daniel 6:15-16",
-          "text": "Then the men come back together with a reminder: no decree the king establishes can be changed. So the king gives the order, and Daniel is thrown into the den of lions.",
+          "text": "Then the men come back together with a reminder: no decree the king establishes can be undone. So the king gives the order, and Daniel is thrown into the den of lions.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -409,39 +398,20 @@
           "card": 8,
           "kind": "story",
           "verses": "Daniel 6:18",
-          "text": "The king goes back to his palace and spends the night fasting, and sleep flees from him. Friend, I spent years lying awake in the back of a junk drawer. I KNOW that kind of night.",
+          "text": "The king goes back to his palace and spends the night fasting, and sleep flees from him. Friend, I spent years lying awake in the back of a junk drawer, so I KNOW that kind of night.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Daniel 6:18",
-          "question": "That night King Darius has entertainment brought in to his palace.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "kind": "story",
+          "verses": "Daniel 6:19",
+          "text": "At the first light of dawn, the king gets up and HURRIES to the den of lions. Friend, kings have people to hurry FOR them, and this one is hurrying himself.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Daniel 6:19",
-          "text": "At the first light of dawn, the king gets up and HURRIES to the den. A king. Hurrying. Kings don't hurry, friend.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 6:20",
@@ -464,15 +434,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "story",
           "verses": "Daniel 6:21",
-          "text": "And from down in the den comes a voice: \"O king, may you live forever!\" WAIT. The man just spent the night with lions, and he STILL opens with his manners.",
-          "needs_agent_fix": true,
+          "text": "And from down in the den, Daniel answers: \"O king, may you live forever!\" The man just spent the night with lions, and he STILL opens with his manners.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 13,
+          "card": 12,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 6:22",
@@ -495,7 +465,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 6:22",
@@ -506,49 +476,61 @@
               "correct": true
             },
             {
-              "text": "He had never been afraid of lions",
+              "text": "He had fasted and prayed all night",
               "correct": false
             },
             {
-              "text": "He stayed awake all night long",
+              "text": "He had made an offering to God",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "story",
+          "verses": "Daniel 6:23",
+          "text": "Up top, the king is OVERJOYED and gives orders to lift Daniel out of the den. And friend, not one wound is found on him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Daniel 6:23",
-          "text": "Up top, the king is OVERJOYED. He gives orders to lift Daniel out of the den.",
+          "question": "No wounds at all are found on Daniel when he's lifted out of the den. What reason does the text give?",
+          "answers": [
+            {
+              "text": "He had trusted in his God",
+              "correct": true
+            },
+            {
+              "text": "The king's seal had kept him safe",
+              "correct": false
+            },
+            {
+              "text": "He had stayed awake all night",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Daniel 6:23",
-          "question": "When Daniel is lifted out of the den, no wounds whatsoever are found on him, because he had trusted in his God.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Daniel 6:24",
+          "text": "At the king's command, the men who falsely accused Daniel are thrown into the den of lions, along with their children and wives. Before they reach the bottom of the den, the lions overpower them and crush all their bones.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
-          "verses": "Daniel 6:24-26",
-          "text": "At the king's command, the men who falsely accused Daniel are thrown into the den with their children and wives, and the lions overpower them before they reach the bottom. Then Darius writes to every nation and language that men are to tremble in fear before the God of Daniel, and now THAT'S a decree worth signing.",
+          "verses": "Daniel 6:25-26",
+          "text": "Then King Darius writes to the people of every nation and language throughout the land. He decrees that in every part of his kingdom, men are to tremble in fear before the God of Daniel, and friend, THAT'S a decree worth signing.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -576,18 +558,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 6:27",
-          "question": "Darius says Daniel's God delivers and rescues. What does he point to?",
+          "question": "Darius's letter says Daniel's God performs signs and wonders. Where does the letter say He performs them?",
           "answers": [
             {
-              "text": "He rescued Daniel from the lions",
+              "text": "In the heavens and on the earth",
               "correct": true
             },
             {
-              "text": "He wrote on the palace wall",
+              "text": "In the temple and the palace",
               "correct": false
             },
             {
-              "text": "He brought Daniel out of Judah",
+              "text": "In Babylon and in Jerusalem",
               "correct": false
             }
           ],
@@ -598,8 +580,8 @@
           "card": 20,
           "kind": "story",
           "verses": "Daniel 6:28",
-          "text": "So Daniel prospers during the reign of Darius and the reign of Cyrus the Persian. Friend, I know a little something about getting lifted out of the dark, and I will NEVER get tired of that part.",
-          "needs_agent_fix": true,
+          "text": "So Daniel prospers during the reign of Darius and the reign of Cyrus, king of Persia. The man went down into a den of lions, and he comes out of this story PROSPERING.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]

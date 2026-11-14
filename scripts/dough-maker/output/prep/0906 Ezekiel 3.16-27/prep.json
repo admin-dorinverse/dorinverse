@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 3:16-17",
-          "text": "Ezekiel the prophet is among the exiles at Tel-abib by the River Kebar, where he's sat with them for seven days, overwhelmed (Ezekiel 3:15). At the end of those seven days the word of the LORD comes: \"Son of man, I have made you a watchman for the house of Israel.\" Seven days of sitting, then BAM, a brand new job title, no interview, no paperwork, friend, NOTHING.",
+          "text": "Ezekiel the prophet has sat among the exiles at Tel-abib by the River Kebar for seven days, overwhelmed (Ezekiel 3:15). At the end of those seven days the word of the LORD comes: \"Son of man, I have made you a watchman for the house of Israel.\" Seven days of sitting, then BAM, a brand new job title, no interview, no paperwork, friend, NOTHING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 3:18",
-          "text": "Then God walks him through it, case by case. Case one: God says to a wicked man, \"You will surely die,\" but Ezekiel never warns him.",
+          "text": "Then God walks him through it, case by case. Case one: say God tells a wicked man, \"You will surely die,\" and Ezekiel doesn't warn him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -91,7 +91,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Ezekiel 3:19",
-          "text": "Case two: Ezekiel DOES warn the wicked man, and the man still won't turn from his wicked way, so he dies in his iniquity. That's the GPS begging him to turn and the driver cruising straight into the lake.",
+          "text": "Case two: say Ezekiel DOES warn the wicked man, and the man won't turn from his wickedness and his wicked way. He will die in his iniquity.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -122,7 +122,7 @@
           "card": 8,
           "kind": "story",
           "verses": "Ezekiel 3:20",
-          "text": "Case three flips it: a righteous man turns from his righteousness and commits iniquity, and God puts a stumbling block before him. If Ezekiel doesn't warn him, he dies in his sin, and that line again: God holds Ezekiel responsible for his blood.",
+          "text": "Case three flips it: say a righteous man turns from his righteousness and commits iniquity, and God puts a stumbling block before him. If Ezekiel didn't warn him, he will die in his sin, and that line again: God will hold Ezekiel responsible for his blood.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -131,7 +131,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 3:20",
-          "question": "True or false: the righteous man who turned to sin and was never warned still gets credit for the righteous acts he did before.",
+          "question": "In case three, a righteous man turned to sin and was never warned. True or false: the righteous acts he did will still be remembered.",
           "answers": [
             {
               "text": "True",
@@ -147,69 +147,45 @@
         },
         {
           "card": 10,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Ezekiel 3:21",
-          "text": "Case four. Ezekiel warns a righteous man not to sin, and the man doesn't sin, and FINALLY I can stop wincing through my mustache.",
-          "needs_agent_fix": true,
+          "question": "Case four: Ezekiel warns a righteous man not to sin, and the man doesn't sin. What happens to that man?",
+          "answers": [
+            {
+              "text": "He will indeed live",
+              "correct": true
+            },
+            {
+              "text": "He will die in his sin",
+              "correct": false
+            },
+            {
+              "text": "He is cut off from Israel",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Ezekiel 3:21",
-          "question": "In case four, Ezekiel warned a righteous man not to sin, and he didn't. Why does that man live?",
-          "answers": [
-            {
-              "text": "Because he heeded the warning",
-              "correct": true
-            },
-            {
-              "text": "Because of his past righteous acts",
-              "correct": false
-            },
-            {
-              "text": "Because he offered a sacrifice",
-              "correct": false
-            }
-          ],
+          "text": "He will indeed live because he heeded the warning, and Ezekiel will have saved himself. FINALLY, a case where I can unclench my mustache.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
           "kind": "story",
-          "verses": "Ezekiel 3:22",
-          "text": "There, the hand of the LORD is upon Ezekiel again (Ezekiel 1:3; 3:14), and God says, \"Get up, go out to the plain, and there I will speak with you.\" A private meeting, and friend, when somebody tells me \"we need to talk,\" I start sweating flour.",
+          "verses": "Ezekiel 3:22-23",
+          "text": "With the hand of the LORD upon him, Ezekiel gets up and goes out to the plain as God says, and there is the glory of the LORD, like the glory he saw by the River Kebar.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 13,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ezekiel 3:23",
-          "question": "Out on the plain, Ezekiel sees the ___ of the LORD, like what he saw by the River Kebar.",
-          "answers": [
-            {
-              "text": "glory",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "ark",
-              "correct": false
-            },
-            {
-              "text": "temple",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 3:23",
@@ -228,15 +204,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Ezekiel 3:24",
-          "text": "Then the Spirit enters him and sets him on his feet, word for word how it went back in Ezekiel 2:2. Facedown, back up, facedown, back up: this prophet is getting his steps in.",
+          "text": "Then the Spirit enters him and sets him on his feet. Facedown one minute, back on his feet the next: this prophet is getting his steps in.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 16,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 3:24",
@@ -259,7 +235,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 16,
           "kind": "story",
           "verses": "Ezekiel 3:25",
           "text": "Then God tells him, \"And you, son of man, they will tie with ropes, and you will be bound so that you cannot go out among the people.\" A watchman stuck in the house, and friend, I did years in a junk drawer and nobody even bothered with ropes.",
@@ -267,7 +243,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 17,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 3:26",
@@ -290,15 +266,15 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 18,
           "kind": "story",
           "verses": "Ezekiel 3:26-27",
-          "text": "So God's got His finger on the mute button, even though He calls Israel \"a rebellious house.\" When He speaks with Ezekiel, He'll open his mouth, and Ezekiel is to tell them, \"This is what the Lord GOD says.\"",
+          "text": "God says Ezekiel will be silent, though the people are a rebellious house. But God says when He speaks with him, He will open his mouth, and Ezekiel is to tell them, \"This is what the Lord GOD says.\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 19,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 3:27",

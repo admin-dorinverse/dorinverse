@@ -67,7 +67,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Ezekiel 47:2",
-          "text": "Nope. It's a trickle, like when you turn on the garden hose and it just kind of… SIGHS at you.",
+          "text": "Just a trickle, coming out from the south side. Like when you turn on the garden hose and it just kind of… SIGHS at you.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -115,11 +115,11 @@
               "blank": 1
             },
             {
-              "text": "chest",
+              "text": "shoulders",
               "correct": false
             },
             {
-              "text": "neck",
+              "text": "chin",
               "correct": false
             }
           ],
@@ -131,15 +131,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 47:5",
-          "question": "True or false: After the man measures one more thousand cubits, Ezekiel can still cross the water on foot.",
+          "question": "True or false: After the man measures one more thousand cubits, the water is too deep for Ezekiel to cross on foot.",
           "answers": [
             {
               "text": "True",
-              "correct": false
+              "correct": true
             },
             {
               "text": "False",
-              "correct": true
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
@@ -149,7 +149,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Ezekiel 47:5",
-          "text": "No way, it's a river deep enough for swimming now. And as a stamper on a gold base, friend, I don't swim, I SINK.",
+          "text": "It's a river deep enough for swimming now. And as a stamper on a gold base, friend, I don't swim, I SINK.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -194,7 +194,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 47:8",
-          "text": "Then the man tells Ezekiel this water flows east, down into the Arabah, and empties into the Dead Sea. The DEAD Sea, friend, that's like naming your bakery Burnt.",
+          "text": "Then the man tells Ezekiel this water flows east, down into the Arabah, and empties into the Dead Sea. A little trickle from the temple, and look where it's HEADED.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -224,32 +224,27 @@
         {
           "card": 3,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Ezekiel 47:9",
-          "question": "The man says swarms of living creatures and a great number of fish will show up wherever the ___ flows.",
+          "question": "True or false: The man says that wherever the river flows, everything will flourish.",
           "answers": [
             {
-              "text": "river",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "wind",
-              "correct": false
-            },
-            {
-              "text": "rain",
+              "text": "False",
               "correct": false
             }
           ],
           "needs_agent_fix": false,
-          "needs_human_decision": true
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Ezekiel 47:10",
-          "text": "Fishermen will stand on the shore from En-gedi to En-eglaim, spreading their nets. Fishing at the Dead Sea is like my old junk drawer getting a WAITING LIST.",
+          "verses": "Ezekiel 47:9-10",
+          "text": "With swarms of living creatures and a great number of fish in the water, fishermen will stand on the shore from En-gedi to En-eglaim, spreading their nets. Fishing at the Dead Sea is like my old junk drawer getting a WAITING LIST.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -258,7 +253,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 47:10",
-          "question": "The fishermen spread their nets along the shore. What do they pull in?",
+          "question": "The man says fishermen will spread their nets along the shore. What will they catch?",
           "answers": [
             {
               "text": "Fish of many kinds",
@@ -289,7 +284,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 47:11",
-          "question": "The swamps and marshes by the Dead Sea don't become fresh. What does the man say they're left for?",
+          "question": "The man says the swamps and marshes won't become fresh. What will they be left for?",
           "answers": [
             {
               "text": "Salt",
@@ -320,7 +315,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 47:12",
-          "question": "True or false: Someday the leaves on the fruit trees by the river will wither and their fruit will run out.",
+          "question": "True or false: The man says the leaves on the fruit trees by the river will wither.",
           "answers": [
             {
               "text": "True",
@@ -336,26 +331,10 @@
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Ezekiel 47:12",
-          "question": "The fruit trees along the river bear fruit every single ___.",
-          "answers": [
-            {
-              "text": "month",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "year",
-              "correct": false
-            },
-            {
-              "text": "season",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And their fruit won't fail either. Each month, those trees will bear fruit.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -363,7 +342,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 47:12",
-          "question": "Why do the fruit trees along the river keep producing like that?",
+          "question": "Why will the fruit trees along the river bear fruit every month?",
           "answers": [
             {
               "text": "The water from the sanctuary flows to them",
@@ -386,7 +365,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 47:12",
-          "question": "The fruit from the trees by the river is for food. What are their leaves for?",
+          "question": "The fruit from the trees by the river will be for food. What will their leaves be for?",
           "answers": [
             {
               "text": "Healing",

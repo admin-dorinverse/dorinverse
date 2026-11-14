@@ -9,8 +9,8 @@
           "card": 1,
           "kind": "story",
           "verses": "Ezekiel 5:1",
-          "text": "Ezekiel is a priest living among the exiles by the Kebar River (Ezekiel 1:1-3). The LORD has already had him draw Jerusalem on a brick and act out a siege against it (Ezekiel 4:1-3). Now God calls him 'son of man,' gives him a brand new sign to act out, and tells him to take a sharp sword.",
-          "needs_agent_fix": true,
+          "text": "Ezekiel is a priest living among the exiles by the Kebar River (Ezekiel 1:1-3). The LORD has already had him draw Jerusalem on a brick and act out a siege against it (Ezekiel 4:1-3). Now God calls him 'son of man' and gives him a new sign to act out: shave his head and his beard, with a sharp sword.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -18,7 +18,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 5:1",
-          "question": "Ezekiel has a sharp sword in his hand. What does God tell him to use it as?",
+          "question": "Ezekiel's about to shave his head and beard with a sharp sword. What does God tell him to use the sword as?",
           "answers": [
             {
               "text": "A barber's razor",
@@ -33,15 +33,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "story",
-          "verses": "Ezekiel 5:1",
-          "text": "A sword as a razor, on his head AND his beard. Friend, I get nervous when a cookie cutter wanders too close to my mustache, and this man's using a SWORD?",
-          "needs_agent_fix": true,
+          "verses": "Ezekiel 5:1-2",
+          "text": "A SWORD as a razor? Friend, I get nervous when a cookie cutter wanders near my mustache. Once the hair is off, God tells Ezekiel to divide it, and each third gets a job for when the days of the siege have ended.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -49,7 +49,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 5:1",
-          "question": "Once Ezekiel's hair is off, God tells him to divide it using a set of ___.",
+          "question": "To divide his shaved hair into thirds, God tells Ezekiel to take a set of ___.",
           "answers": [
             {
               "text": "scales",
@@ -65,15 +65,15 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "story",
-          "verses": "Ezekiel 5:1-2",
-          "text": "I've weighed a LOT of dough in my day, but never once my own mustache. The hair gets split into thirds, and each third has a job for when the days of the siege have ended.",
-          "needs_agent_fix": true,
+          "verses": "Ezekiel 5:2",
+          "text": "I've weighed a LOT of dough in my day, friend, but never a haircut. The first third gets burned up inside the city.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -81,154 +81,96 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 5:2",
-          "question": "When the days of the siege have ended, what does God tell Ezekiel to do with the first third of the hair inside the city?",
+          "question": "What does God tell Ezekiel to do with the second third of his hair, all around the city?",
           "answers": [
             {
-              "text": "Burn it up",
+              "text": "Slash it with the sword",
               "correct": true
             },
             {
-              "text": "Bury it",
+              "text": "Pile it by the gate",
               "correct": false
             },
             {
-              "text": "Wash it",
+              "text": "Bind it with a cord",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
           "kind": "choice",
-          "type": "fill_blank",
+          "type": "true_false",
           "verses": "Ezekiel 5:2",
-          "question": "Ezekiel is to take the second third of the hair and slash it with the ___ all around the city.",
+          "question": "God tells Ezekiel to scatter the last third of his hair to the wind.",
           "answers": [
             {
-              "text": "sword",
-              "correct": true,
-              "blank": 1
+              "text": "True",
+              "correct": true
             },
             {
-              "text": "rod",
-              "correct": false
-            },
-            {
-              "text": "staff",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezekiel 5:2",
-          "question": "What does God tell Ezekiel to do with the last third of his hair?",
-          "answers": [
-            {
-              "text": "Scatter it to the wind",
-              "correct": true
-            },
-            {
-              "text": "Throw it in a river",
-              "correct": false
-            },
-            {
-              "text": "Tie it in a bundle",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "kind": "story",
+          "verses": "Ezekiel 5:2-3",
+          "text": "Then God adds, 'For I will unleash a sword behind them.' He also tells Ezekiel to take a few strands of hair and secure them in the folds of his garment.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "story",
-          "verses": "Ezekiel 5:2",
-          "text": "Then God adds, 'For I will unleash a sword behind them.' But Ezekiel isn't done with the hair yet.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "fill_blank",
+          "verses": "Ezekiel 5:4",
+          "question": "God tells Ezekiel to take a few of the strands from his garment and throw them into the ___.",
+          "answers": [
+            {
+              "text": "fire",
+              "correct": true,
+              "blank": 1
+            },
+            {
+              "text": "well",
+              "correct": false
+            },
+            {
+              "text": "pit",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 5:3",
-          "question": "God tells Ezekiel to take a few strands of hair and secure them in the folds of his garment. That means he's keeping those few strands close.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": true
-            },
-            {
-              "text": "False",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
-          "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 5:4",
-          "question": "Out of those few tucked-away strands, God tells Ezekiel to take some again. What does he do with them?",
+          "question": "God says a fire will spread from where those few strands of hair burn. How far does He say it will spread?",
           "answers": [
             {
-              "text": "Throws them into the fire",
+              "text": "To the whole house of Israel",
               "correct": true
             },
             {
-              "text": "Ties them to the city gate",
+              "text": "Just around the city walls",
               "correct": false
             },
             {
-              "text": "Buries them in the ground",
+              "text": "Only through Ezekiel's garment",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 12,
-          "kind": "story",
-          "verses": "Ezekiel 5:4",
-          "text": "A few tiny strands, one little flame. Then God says what comes from there.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "true_false",
-          "verses": "Ezekiel 5:4",
-          "question": "God says the fire from those few strands of hair will stay small and burn out.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
-          "kind": "story",
-          "verses": "Ezekiel 5:4",
-          "text": "From there, God says, a fire will spread to the whole house of Israel. Hold onto that picture, friend, because God's about to tell us what all this hair means.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -324,73 +266,64 @@
         },
         {
           "card": 7,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Ezekiel 5:9",
-          "text": "Because of all her abominations, God says He'll do to her what He has never done before and will never do again. Never before, never again, friend.",
+          "question": "Because of all Jerusalem's abominations, what does God say He will do to her?",
+          "answers": [
+            {
+              "text": "What He has never done before",
+              "correct": true
+            },
+            {
+              "text": "What He did in Noah's day",
+              "correct": false
+            },
+            {
+              "text": "What He did to Sodom",
+              "correct": false
+            }
+          ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Ezekiel 5:10",
-          "text": "And this next part is hard to even say out loud. God says fathers among them will eat their sons, and sons will eat their fathers.",
+          "verses": "Ezekiel 5:9-10",
+          "text": "And He says He will never do it again. Fathers among her people will eat their sons, and sons will eat their fathers.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
-          "kind": "choice",
-          "type": "fill_blank",
-          "verses": "Ezekiel 5:10",
-          "question": "God says He will scatter all of Jerusalem's remnant to every ___.",
-          "answers": [
-            {
-              "text": "wind",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "mountain",
-              "correct": false
-            },
-            {
-              "text": "river",
-              "correct": false
-            }
-          ],
+          "kind": "story",
+          "verses": "Ezekiel 5:10-11",
+          "text": "He says He'll scatter all her remnant to every wind. Then, as surely as He lives, the Lord GOD declares that they have defiled His sanctuary with all their detestable idols and abominations.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "story",
-          "verses": "Ezekiel 5:11",
-          "text": "Then the Lord GOD declares, 'as surely as I live.' He says they have defiled His sanctuary with all their detestable idols and abominations.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 11,
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 5:11",
-          "question": "Because they defiled His sanctuary, God says He will withdraw His favor and will not spare them.",
+          "question": "Because Jerusalem's people defiled His sanctuary, God says He will still spare them.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 12,
+          "card": 11,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 5:12",
@@ -413,23 +346,31 @@
           "needs_human_decision": false
         },
         {
+          "card": 12,
+          "kind": "story",
+          "verses": "Ezekiel 5:12",
+          "text": "The next third will fall by the sword outside the walls. And the last third God will scatter to every wind, with a sword unleashed behind them, just like the hair.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 13,
           "kind": "choice",
           "type": "fill_blank",
-          "verses": "Ezekiel 5:12",
-          "question": "God says the next third of Jerusalem's people will fall by the ___ outside the walls.",
+          "verses": "Ezekiel 5:13",
+          "question": "God says when His anger is spent, He will be appeased. Once He has spent His wrath on Jerusalem's people, they will know that ___ has spoken in His zeal.",
           "answers": [
             {
-              "text": "sword",
+              "text": "the LORD",
               "correct": true,
               "blank": 1
             },
             {
-              "text": "flood",
+              "text": "the king",
               "correct": false
             },
             {
-              "text": "hail",
+              "text": "the prophet",
               "correct": false
             }
           ],
@@ -439,44 +380,13 @@
         {
           "card": 14,
           "kind": "story",
-          "verses": "Ezekiel 5:12-13",
-          "text": "And the last third? Scattered to every wind, with a sword unleashed behind them, just like the hair. Then God says when His anger is spent and He has vented His wrath against them, He will be appeased.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 15,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Ezekiel 5:13",
-          "question": "When God has spent His wrath on Jerusalem's people, what does He say they will know?",
-          "answers": [
-            {
-              "text": "That the LORD had spoken",
-              "correct": true
-            },
-            {
-              "text": "That the nations had prevailed",
-              "correct": false
-            },
-            {
-              "text": "That the prophets had erred",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 16,
-          "kind": "story",
           "verses": "Ezekiel 5:14",
           "text": "And none of this happens in a back room. God says He will make Jerusalem a ruin and a disgrace among the nations around her, in the sight of all who pass by.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 17,
+          "card": 15,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 5:15",
@@ -499,7 +409,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 18,
+          "card": 16,
           "kind": "story",
           "verses": "Ezekiel 5:16",
           "text": "And God keeps going, one picture after another. He will shower them with deadly arrows of famine and destruction, intensify the famine and cut off their supply of food.",
@@ -507,22 +417,18 @@
           "needs_human_decision": false
         },
         {
-          "card": 19,
+          "card": 17,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Ezekiel 5:17",
-          "question": "God says He will send famine and wild beasts against Jerusalem. What does He say they will leave her people?",
+          "question": "Along with famine, God says He will send wild beasts against Jerusalem.",
           "answers": [
             {
-              "text": "Childless",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "Homeless",
-              "correct": false
-            },
-            {
-              "text": "Leaderless",
+              "text": "False",
               "correct": false
             }
           ],
@@ -530,10 +436,10 @@
           "needs_human_decision": false
         },
         {
-          "card": 20,
+          "card": 18,
           "kind": "story",
           "verses": "Ezekiel 5:17",
-          "text": "Plague and bloodshed will sweep through, and He will bring a sword against them. Then He seals it: 'I, the LORD, have spoken.'",
+          "text": "They will leave her people childless, and plague, bloodshed and a sword will come against them too. Then He seals it: 'I, the LORD, have spoken.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

@@ -9,46 +9,42 @@
           "card": 1,
           "kind": "story",
           "verses": "Daniel 11:2",
-          "text": "Daniel's on the bank of the Tigris River (Daniel 10:4), and the one sent to him is explaining what will happen to Daniel's people (Daniel 10:14). He starts with Persia: three more kings will arise, and then a fourth. Friend, that's a LOT of crowns, so tie your apron tight.",
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "text": "Daniel, an exile from Judah, is on the bank of the Tigris River, and one with the likeness of a man has just strengthened him (Daniel 10:4, 18-19). This one has come to explain what will happen to Daniel's people in the latter days (Daniel 10:14). He starts with the truth: three more kings will arise in Persia, and then a fourth.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 2,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Daniel 11:2",
-          "question": "Persia gets three more kings, and then a fourth. What sets the fourth king apart?",
+          "question": "Persia's fourth king will be far richer than all the others.",
           "answers": [
             {
-              "text": "He's far richer than all the others",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "He rules longer than all the others",
-              "correct": false
-            },
-            {
-              "text": "He's wiser than all the others",
+              "text": "False",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 3,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 11:2",
-          "question": "With all that wealth, the fourth king of Persia stirs up everyone against the kingdom of ___.",
+          "question": "By the power of his wealth, Persia's fourth king will stir up everyone against the kingdom of ___.",
           "answers": [
             {
               "text": "Greece",
               "correct": true
             },
             {
-              "text": "Egypt",
+              "text": "Babylon",
               "correct": false
             },
             {
@@ -56,46 +52,23 @@
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": true
+          "needs_agent_fix": false,
+          "needs_human_decision": false
         },
         {
           "card": 4,
           "kind": "story",
-          "verses": "Daniel 11:3",
-          "text": "Then a mighty king arises who rules with great authority and does as he pleases. Friend, I can't even get my OVEN TIMER to do as I please.",
-          "needs_agent_fix": true,
+          "verses": "Daniel 11:3-4",
+          "text": "Then a mighty king will arise who will rule with great authority and do as he pleases. But as soon as he's established, his kingdom will be broken up and parceled out toward the four winds of heaven.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Daniel 11:4",
-          "question": "As soon as the mighty king is established, what happens to his kingdom?",
-          "answers": [
-            {
-              "text": "It's broken up toward the four winds",
-              "correct": true
-            },
-            {
-              "text": "It stays whole for many generations",
-              "correct": false
-            },
-            {
-              "text": "It grows to twice its size",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 6,
-          "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 11:4",
-          "question": "The mighty king's kingdom goes to his descendants.",
+          "question": "Once it's broken up, the mighty king's kingdom will go to his descendants.",
           "answers": [
             {
               "text": "True",
@@ -106,222 +79,212 @@
               "correct": true
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 6,
+          "kind": "story",
+          "verses": "Daniel 11:4",
+          "text": "It won't keep the authority he ruled with, because it will be uprooted and given to others. Friend, I KNOW that feeling: one day a shiny new stamper took my spot on the Millers' counter.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "story",
-          "verses": "Daniel 11:4",
-          "text": "It doesn't keep his authority either, because it's uprooted and given to others. Friend, I KNOW that feeling: one day there's a shiny new stamper sitting in my spot on the Millers' counter.",
-          "needs_agent_fix": true,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Daniel 11:5",
+          "question": "The king of the South will grow strong, but one of his commanders will grow even stronger. What will that commander do?",
+          "answers": [
+            {
+              "text": "Rule his own kingdom with great authority",
+              "correct": true
+            },
+            {
+              "text": "Serve the king of the South loyally",
+              "correct": false
+            },
+            {
+              "text": "Hand his army over to the North",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 8,
           "kind": "story",
-          "verses": "Daniel 11:5",
-          "text": "Now meet the king of the South. He grows strong, but somebody close to him is about to pass him up.",
-          "needs_agent_fix": true,
+          "verses": "Daniel 11:6",
+          "text": "After some years there will be an alliance, and the daughter of the king of the South will go to the king of the North. That's our first look at the king of the North, and trust me, friend, you're gonna see a LOT of him.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 9,
           "kind": "choice",
           "type": "multiple_choice",
-          "verses": "Daniel 11:5",
-          "question": "The king of the South grows strong. Who grows even stronger and rules his own kingdom with great authority?",
+          "verses": "Daniel 11:6",
+          "question": "After some years there will be an alliance. Why will the daughter of the king of the South go to the king of the North?",
           "answers": [
             {
-              "text": "One of his commanders",
+              "text": "To seal the agreement",
               "correct": true
             },
             {
-              "text": "One of his sons",
+              "text": "To bring him tribute",
               "correct": false
             },
             {
-              "text": "One of his brothers",
+              "text": "To ask for his protection",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
           "kind": "story",
           "verses": "Daniel 11:6",
-          "text": "After some years an alliance forms, and the daughter of the king of the South goes to the king of the North to seal the agreement. That's our first look at the king of the North, and trust me, friend, you're gonna see a LOT of him.",
-          "needs_agent_fix": true,
+          "text": "But she won't keep her position of power. She'll be given up, along with her royal escort, her father and the one who supported her.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Daniel 11:6",
-          "question": "The daughter of the king of the South keeps her position of power.",
+          "type": "multiple_choice",
+          "verses": "Daniel 11:7",
+          "question": "Then one from the daughter's family line will rise up. What will he do to the king of the North?",
           "answers": [
             {
-              "text": "True",
+              "text": "Enter his fortress and prevail",
+              "correct": true
+            },
+            {
+              "text": "Make peace with him",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "Flee from his army",
+              "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Daniel 11:6-7",
-          "text": "She's given up, along with her royal escort, her father and the one who supported her. But one from her family line rises up in his place.",
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
-          "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Daniel 11:7",
-          "question": "One from the daughter's family line rises up. What does he do?",
-          "answers": [
-            {
-              "text": "He enters the North's fortress and prevails",
-              "correct": true
-            },
-            {
-              "text": "He makes peace with the king of the North",
-              "correct": false
-            },
-            {
-              "text": "He flees from the king of the North",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 14,
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 11:8",
-          "question": "He even takes the North's ___ captive to ___, along with their metal images and their precious vessels of silver and gold.",
+          "question": "The one from the daughter's family line will even take the North's ___ captive to Egypt, along with their metal images and their precious vessels of silver and gold.",
           "answers": [
             {
               "text": "gods",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "Egypt",
-              "correct": true,
-              "blank": 2
+              "correct": true
             },
             {
               "text": "priests",
               "correct": false
             },
             {
-              "text": "Babylon",
-              "correct": false
-            },
-            {
-              "text": "Persia",
+              "text": "horses",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 13,
+          "kind": "story",
+          "verses": "Daniel 11:8-9",
+          "text": "For some years, the one from her family line will stay away from the king of the North, who will invade the South's realm and then go home. Back and forth, back and forth, like two coworkers fighting over the office thermostat.",
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
+          "card": 14,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Daniel 11:10",
+          "question": "The king of the North's sons will stir up strife. What will they assemble?",
+          "answers": [
+            {
+              "text": "A great army",
+              "correct": true
+            },
+            {
+              "text": "A council of elders",
+              "correct": false
+            },
+            {
+              "text": "A fleet of ships",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 15,
           "kind": "story",
-          "verses": "Daniel 11:8-9",
-          "text": "For some years he stays away from the king of the North, who invades the South's realm and then goes home. Back and forth, back and forth, like two coworkers fighting over the office thermostat.",
-          "needs_agent_fix": true,
+          "verses": "Daniel 11:10",
+          "text": "Their army will advance forcefully, sweeping through like a flood, and will again carry the battle as far as the fortress.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 16,
           "kind": "choice",
-          "type": "true_false",
-          "verses": "Daniel 11:10",
-          "question": "The sons of the king of the North put together a great army that sweeps through like a flood.",
+          "type": "multiple_choice",
+          "verses": "Daniel 11:11",
+          "question": "The North's army will carry the battle as far as the fortress. What will the king of the South do?",
           "answers": [
             {
-              "text": "True",
+              "text": "March out in a rage to fight",
               "correct": true
             },
             {
-              "text": "False",
+              "text": "Hide behind his fortress walls",
+              "correct": false
+            },
+            {
+              "text": "Send gold to buy peace",
               "correct": false
             }
           ],
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
           "kind": "story",
-          "verses": "Daniel 11:10",
-          "text": "That flood carries the battle as far as his fortress. Now it's the king of the South's move.",
-          "needs_agent_fix": true,
+          "verses": "Daniel 11:11",
+          "text": "The king of the North will raise a large army, but it will be delivered into the hand of his enemy, the king of the South.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 18,
           "kind": "choice",
-          "type": "multiple_choice",
-          "verses": "Daniel 11:11",
-          "question": "The North's army has pushed as far as the fortress. What does the king of the South do?",
-          "answers": [
-            {
-              "text": "He marches out in a rage to fight",
-              "correct": true
-            },
-            {
-              "text": "He hides inside his fortress walls",
-              "correct": false
-            },
-            {
-              "text": "He sends gold to buy peace",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 19,
-          "kind": "choice",
           "type": "true_false",
-          "verses": "Daniel 11:11",
-          "question": "The large army the king of the North raises is delivered into the hand of the king of the South.",
+          "verses": "Daniel 11:12",
+          "question": "After casting down tens of thousands, the proud king of the South will triumph.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
-          "needs_agent_fix": true,
-          "needs_human_decision": false
-        },
-        {
-          "card": 20,
-          "kind": "story",
-          "verses": "Daniel 11:12",
-          "text": "When the army is carried off, the king of the South gets proud in heart and casts down tens of thousands. But he will not triumph, and friend, I know that move: I bragged about ONE perfect cookie, and the next batch came out looking like a smudge.",
-          "needs_agent_fix": true,
+          "needs_agent_fix": false,
           "needs_human_decision": false
         }
       ]
@@ -334,7 +297,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Daniel 11:13",
-          "text": "Round two: after some years, the king of the North advances with a great army and many supplies. MANY supplies, friend, this is the guy who packs four suitcases for a weekend trip.",
+          "text": "But the king of the North isn't done: after some years, he'll advance with a great army and many supplies. MANY supplies, friend, this is the guy who packs four suitcases for a weekend trip.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -343,18 +306,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:13",
-          "question": "How does the king of the North's new army compare to the army he lost to the South?",
+          "question": "How will the king of the North's new army compare to the army he lost to the South?",
           "answers": [
             {
-              "text": "It's larger than the first",
+              "text": "It will be larger than the first",
               "correct": true
             },
             {
-              "text": "It's smaller than the first",
+              "text": "It will be smaller than the first",
               "correct": false
             },
             {
-              "text": "It's the same size as the first",
+              "text": "It will be the same size as the first",
               "correct": false
             }
           ],
@@ -365,7 +328,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Daniel 11:14",
-          "text": "In those times, many rise up against the king of the South. Meanwhile, violent ones among Daniel's own people exalt themselves in fulfillment of the vision.",
+          "text": "In those times, many will rise up against the king of the South. Violent ones among Daniel's own people will exalt themselves in fulfillment of the vision.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -374,7 +337,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 11:14",
-          "question": "The violent ones among Daniel's own people exalt themselves, but they will ___.",
+          "question": "The violent ones among Daniel's own people will exalt themselves, but they will ___.",
           "answers": [
             {
               "text": "fail",
@@ -396,7 +359,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Daniel 11:15",
-          "text": "Then the king of the North builds a siege ramp and captures a fortified city. He's not knocking, friend, he's building himself a DRIVEWAY.",
+          "text": "Then the king of the North will build up a siege ramp and capture a fortified city. Friend, this man doesn't knock, he builds his OWN staircase up the wall.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -405,18 +368,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:15",
-          "question": "The king of the North just captured a fortified city. How do the forces of the South hold up?",
+          "question": "The king of the North will capture a fortified city. How will the forces of the South hold up?",
           "answers": [
             {
-              "text": "Not even their best troops can resist",
+              "text": "Even their best troops won't be able to resist",
               "correct": true
             },
             {
-              "text": "Their allies from the coastlands rescue them",
+              "text": "Allies from the coastlands will rescue them",
               "correct": false
             },
             {
-              "text": "They drive the North back home",
+              "text": "They'll drive the North back home",
               "correct": false
             }
           ],
@@ -427,7 +390,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Daniel 11:16",
-          "text": "The invader does as he pleases, and no one stands against him. He establishes himself in the Beautiful Land, with destruction in his hand.",
+          "text": "The invader will do as he pleases, and no one will stand against him. He'll establish himself in the Beautiful Land, with destruction in his hand.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -436,7 +399,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:17",
-          "question": "The king of the North resolves to come with the strength of his whole kingdom, and he reaches an agreement with the king of the South. What does he give him?",
+          "question": "The king of the North will resolve to come with the strength of his whole kingdom and reach an agreement with the king of the South. What will he give him?",
           "answers": [
             {
               "text": "A daughter in marriage",
@@ -459,7 +422,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 11:17",
-          "question": "The king of the North gives the daughter in marriage in order to overthrow the kingdom, and his plan succeeds.",
+          "question": "The king of the North's plan to overthrow the kingdom by giving a daughter in marriage will succeed.",
           "answers": [
             {
               "text": "True",
@@ -477,27 +440,23 @@
           "card": 10,
           "kind": "story",
           "verses": "Daniel 11:18",
-          "text": "Then he turns his face to the coastlands and captures many of them. This man is on a ROLL, friend.",
+          "text": "Then the king of the North will turn his face to the coastlands and capture many of them. This man is on a ROLL, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "true_false",
           "verses": "Daniel 11:18",
-          "question": "After the king of the North captures many of the coastlands, who puts an end to his reproach and turns it back upon him?",
+          "question": "After the king of the North captures many of the coastlands, a commander will turn his reproach back upon him.",
           "answers": [
             {
-              "text": "A commander",
+              "text": "True",
               "correct": true
             },
             {
-              "text": "A prophet",
-              "correct": false
-            },
-            {
-              "text": "A queen",
+              "text": "False",
               "correct": false
             }
           ],
@@ -506,45 +465,41 @@
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Daniel 11:19",
-          "text": "After this, he turns back toward the fortresses of his own land.",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
-          "type": "true_false",
+          "type": "multiple_choice",
           "verses": "Daniel 11:19",
-          "question": "The king of the North rules safely from his own fortresses for many more years.",
+          "question": "After that, the king of the North will turn back toward the fortresses of his own land. What will happen to him?",
           "answers": [
             {
-              "text": "True",
+              "text": "He'll stumble and fall and be no more",
+              "correct": true
+            },
+            {
+              "text": "He'll rebuild a greater army there",
               "correct": false
             },
             {
-              "text": "False",
-              "correct": true
+              "text": "He'll rule in peace for many years",
+              "correct": false
             }
           ],
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "story",
-          "verses": "Daniel 11:19-20",
-          "text": "Instead he stumbles and falls and is no more. In his place, one arises who sends out a tax collector for the glory of the kingdom, and I bet that's NOT the parade anybody was hoping for.",
+          "verses": "Daniel 11:20",
+          "text": "In his place, one will arise who will send out a tax collector for the glory of the kingdom. I bet nobody throws a parade for THAT guy, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 11:20",
-          "question": "Within a few days, the king who sent out the tax collector is destroyed in battle.",
+          "question": "Within a few days, the king who sent out the tax collector will be destroyed in battle.",
           "answers": [
             {
               "text": "True",
@@ -568,7 +523,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Daniel 11:21",
-          "text": "Then a despicable person arises, and royal honors will not be given to him. When your introduction is DESPICABLE, friend, you already know you're not the hero.",
+          "text": "Then a despicable person will arise, and royal honors won't be given to him. When your introduction is DESPICABLE, friend, you already know you're not the hero.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -577,18 +532,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:21",
-          "question": "How does the despicable person get the kingdom?",
+          "question": "How will the despicable person get the kingdom?",
           "answers": [
             {
-              "text": "He seizes it by intrigue in a time of peace",
+              "text": "He'll seize it by intrigue in a time of peace",
               "correct": true
             },
             {
-              "text": "He wins it in a great battle at sea",
+              "text": "He'll win it in a great battle at sea",
               "correct": false
             },
             {
-              "text": "He's handed it by the king of the South",
+              "text": "The king of the South will hand it to him",
               "correct": false
             }
           ],
@@ -599,7 +554,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Daniel 11:22",
-          "text": "Then a flood of forces is swept away before him and destroyed, along with a prince of the covenant.",
+          "text": "Then a flood of forces will be swept away before him and destroyed, along with a prince of the covenant.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -608,7 +563,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 11:23",
-          "question": "After an alliance is made with the despicable person, he acts honestly.",
+          "question": "After an alliance is made with the despicable person, he will act honestly.",
           "answers": [
             {
               "text": "True",
@@ -626,7 +581,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Daniel 11:23-24",
-          "text": "He rises to power with only a few people, then in a time of peace invades the richest provinces. He does what his fathers and forefathers never did, and friend, that is NOT a compliment.",
+          "text": "He'll rise to power with only a few people. Then in a time of peace, he'll invade the richest provinces and do what his fathers and forefathers never did.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -635,18 +590,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:24",
-          "question": "The despicable person comes away with plunder, loot and wealth. What does he do with it?",
+          "question": "The despicable person will come away with plunder, loot and wealth. What will he do with it?",
           "answers": [
             {
-              "text": "He lavishes it on his followers",
+              "text": "Lavish it on his followers",
               "correct": true
             },
             {
-              "text": "He hides it away in his strongholds",
+              "text": "Hide it away in his strongholds",
               "correct": false
             },
             {
-              "text": "He sends it as tribute to the South",
+              "text": "Send it as tribute to the South",
               "correct": false
             }
           ],
@@ -657,7 +612,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Daniel 11:24-25",
-          "text": "He plots against the strongholds, but only for a time. Then with a large army he stirs up his power and his courage against the king of the South, and apparently NOBODY in this vision owns a small army.",
+          "text": "The despicable person will plot against the strongholds, but only for a time. Then with a large army, he'll stir up his power and his courage against the king of the South, and apparently NOBODY in this vision owns a small army.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -666,7 +621,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:25",
-          "question": "The king of the South mobilizes a very large and powerful army. What can't he withstand?",
+          "question": "The king of the South will mobilize a very large and powerful army. What won't he be able to withstand?",
           "answers": [
             {
               "text": "The plots devised against him",
@@ -689,7 +644,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 11:26",
-          "question": "The people who seek to destroy the king of the South are those who eat from his provisions.",
+          "question": "Those who will seek to destroy the king of the South are the ones who eat from his provisions.",
           "answers": [
             {
               "text": "True",
@@ -707,7 +662,7 @@
           "card": 10,
           "kind": "story",
           "verses": "Daniel 11:26-27",
-          "text": "His army is swept away, and many fall slain. Then the two kings, hearts bent on evil, sit at the same table and speak lies.",
+          "text": "An army will be swept away, and many will fall slain. And the two kings, their hearts bent on evil, will speak lies at the same table.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -716,18 +671,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:27",
-          "question": "The two kings speak lies at the same table, but it's to no avail. Why?",
+          "question": "The two kings will speak lies at the same table, but it will be to no avail. Why?",
           "answers": [
             {
               "text": "The end will still come at the appointed time",
               "correct": true
             },
             {
-              "text": "Each king sees through the other's lies",
+              "text": "Each king will see through the other's lies",
               "correct": false
             },
             {
-              "text": "Their own officials expose them both",
+              "text": "Their own officials will expose them both",
               "correct": false
             }
           ],
@@ -736,24 +691,9 @@
         },
         {
           "card": 12,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Daniel 11:28",
-          "question": "The king of the North returns to his land with great wealth, but his heart is set against the holy ___.",
-          "answers": [
-            {
-              "text": "covenant",
-              "correct": true
-            },
-            {
-              "text": "prophets",
-              "correct": false
-            },
-            {
-              "text": "scrolls",
-              "correct": false
-            }
-          ],
+          "text": "The king of the North will return to his land with great wealth, but his heart will be set against the holy covenant.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -761,7 +701,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Daniel 11:28-29",
-          "text": "So he does damage and returns to his own land. Then at the appointed time he invades the South again, but this time will not be like the first.",
+          "text": "So the king of the North will do damage and return to his own land. Then at the appointed time, he'll invade the South again, but this time won't be like the first.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -770,18 +710,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:30",
-          "question": "This invasion of the South isn't like the first one. What comes against the king of the North?",
+          "question": "Ships of Kittim will come against the king of the North. How will he respond?",
           "answers": [
             {
-              "text": "Ships of Kittim",
+              "text": "He'll lose heart and turn back",
               "correct": true
             },
             {
-              "text": "Ships of Tarshish",
+              "text": "He'll sink every one of them",
               "correct": false
             },
             {
-              "text": "Chariots of Egypt",
+              "text": "He'll join forces with them",
               "correct": false
             }
           ],
@@ -793,15 +733,15 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Daniel 11:30",
-          "question": "After losing heart, the king of the North turns back, rages against the holy covenant and does damage. Then he shows favor to those who forsake the holy covenant.",
+          "question": "After raging against the holy covenant, the king of the North will show favor to those who keep it.",
           "answers": [
             {
               "text": "True",
-              "correct": true
+              "correct": false
             },
             {
               "text": "False",
-              "correct": false
+              "correct": true
             }
           ],
           "needs_agent_fix": false,
@@ -809,24 +749,9 @@
         },
         {
           "card": 16,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Daniel 11:31",
-          "question": "The king of the North's forces rise up and desecrate the temple fortress. Along with setting up the abomination of desolation, what do they abolish?",
-          "answers": [
-            {
-              "text": "The daily sacrifice",
-              "correct": true
-            },
-            {
-              "text": "The Passover feast",
-              "correct": false
-            },
-            {
-              "text": "The Sabbath rest",
-              "correct": false
-            }
-          ],
+          "text": "His forces will rise up and desecrate the temple fortress. They'll abolish the daily sacrifice and set up the abomination of desolation.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -835,7 +760,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Daniel 11:32",
-          "question": "With flattery the king of the North corrupts those who violate the covenant, but the people who know their God will firmly ___ him.",
+          "question": "With flattery the king of the North will corrupt those who violate the covenant, but the people who know their God will firmly ___ him.",
           "answers": [
             {
               "text": "resist",
@@ -857,7 +782,7 @@
           "card": 18,
           "kind": "story",
           "verses": "Daniel 11:33-34",
-          "text": "Those with insight instruct many, though for a time they fall by sword or flame, or are captured or plundered. When they fall, they're granted a little help, but many join them insincerely.",
+          "text": "Those with insight will instruct many, though for a time they'll fall by sword or flame, or be captured or plundered. When they fall, they'll be granted a little help, but many will join them insincerely.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -866,7 +791,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Daniel 11:35",
-          "question": "Some of the wise will fall. Why does the messenger say it happens?",
+          "question": "Some of the wise will fall. Why will it happen?",
           "answers": [
             {
               "text": "So they may be refined and purified",
@@ -877,7 +802,7 @@
               "correct": false
             },
             {
-              "text": "So the king of the North may lose heart",
+              "text": "So the city may be spared",
               "correct": false
             }
           ],
@@ -888,7 +813,7 @@
           "card": 20,
           "kind": "story",
           "verses": "Daniel 11:35",
-          "text": "Refined, purified and made spotless until the time of the end, which will still come at the appointed time. Keep that apron ON, friend, because this vision still has more coming out of the oven.",
+          "text": "They'll be refined, purified and made spotless until the time of the end, which will still come at the appointed time. Keep that apron ON, friend, because this vision still has more coming out of the oven.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         }

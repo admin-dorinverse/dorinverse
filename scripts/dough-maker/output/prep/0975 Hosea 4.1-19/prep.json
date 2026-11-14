@@ -9,7 +9,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Hosea 4:1",
-          "text": "Back in chapter 3, the LORD told Hosea, a prophet to Israel, to love a woman who is an adulteress, just as the LORD loves the Israelites, and Hosea bought her (Hosea 1:1; 3:1-2). Now he calls out, 'Hear the word of the LORD, O children of Israel,' because the LORD has a case against the people of the land. Friend, put the cookie down, because COURT is in SESSION.",
+          "text": "The LORD had told Hosea, a prophet, to show love to his adulterous wife again, as the LORD loves the Israelites, and Hosea bought her (Hosea 3:1-2). Now comes the call: 'Hear the word of the LORD, O children of Israel…' because the LORD has a case against the people of the land. Friend, put the cookie down, because COURT is in SESSION.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -17,7 +17,7 @@
           "card": 2,
           "kind": "story",
           "verses": "Hosea 4:1",
-          "text": "The LORD's charge: 'There is no truth, no loving devotion, and no knowledge of God in the land!' Friend, that's a bakery with NO FLOUR.",
+          "text": "The LORD's case: 'There is no truth, no loving devotion, and no knowledge of God in the land!' Friend, that's a bakery with NO FLOUR.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -55,20 +55,21 @@
         {
           "card": 5,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Hosea 4:3",
-          "question": "Then comes a 'Therefore.' With all that going on, what does the land itself do?",
+          "question": "With all that going on, the LORD says that therefore the land itself ___.",
           "answers": [
             {
-              "text": "It mourns",
-              "correct": true
+              "text": "mourns",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "It shakes",
+              "text": "shakes",
               "correct": false
             },
             {
-              "text": "It overflows",
+              "text": "overflows",
               "correct": false
             }
           ],
@@ -80,7 +81,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hosea 4:3",
-          "question": "Along with the people in the land, the beasts of the field and the birds of the air waste away too.",
+          "question": "The LORD says all who dwell in the land will waste away with the beasts of the field and the birds of the air.",
           "answers": [
             {
               "text": "True",
@@ -97,9 +98,9 @@
         {
           "card": 7,
           "kind": "story",
-          "verses": "Hosea 4:4",
-          "text": "Then the LORD says, 'But let no man contend; let no man offer reproof; for your people are like those who contend with a priest.' Heavy line. Let it sit a second.",
-          "needs_agent_fix": true,
+          "verses": "Hosea 4:3-4",
+          "text": "Even the fish of the sea disappear. Then the LORD says, 'But let no man contend; let no man offer reproof; for your people are like those who contend with a priest.'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -107,7 +108,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hosea 4:5",
-          "question": "The LORD says, 'You will stumble by day,' but the prophet will stay on his feet by night.",
+          "question": "The LORD says, 'You will stumble by day…' but the prophet will stay on his feet by night.",
           "answers": [
             {
               "text": "True",
@@ -125,40 +126,39 @@
           "card": 9,
           "kind": "story",
           "verses": "Hosea 4:5",
-          "text": "Then the LORD warns He will destroy \"your mother\" and the line stops right there, mid-thought.",
+          "text": "Then comes a warning. The LORD says He will destroy your mother.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 10,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Hosea 4:6",
-          "question": "Then the LORD says, 'My people are destroyed for lack of ___.'",
-          "answers": [
-            {
-              "text": "knowledge",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "silver",
-              "correct": false
-            },
-            {
-              "text": "courage",
-              "correct": false
-            }
-          ],
-          "needs_agent_fix": true,
+          "text": "And the LORD says, 'My people are destroyed for lack of knowledge…'",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 11,
-          "kind": "story",
+          "kind": "choice",
+          "type": "multiple_choice",
           "verses": "Hosea 4:6",
-          "text": "And it cuts both ways: 'Because you have rejected knowledge, I will also reject you as My priests.'",
-          "needs_agent_fix": true,
+          "question": "Because they have rejected knowledge, the LORD says He will also reject them. In what role?",
+          "answers": [
+            {
+              "text": "As His priests",
+              "correct": true
+            },
+            {
+              "text": "As His judges",
+              "correct": false
+            },
+            {
+              "text": "As His messengers",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -188,7 +188,7 @@
           "card": 13,
           "kind": "story",
           "verses": "Hosea 4:7",
-          "text": "Then the LORD says, 'The more they multiplied, the more they sinned against Me.' That's hiring more bakers and the kitchen only gets MESSIER.",
+          "text": "Then the LORD says, 'The more they multiplied, the more they sinned against Me…' That's adding more hands to the kitchen and the mess only gets BIGGER.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -197,7 +197,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hosea 4:7",
-          "question": "The LORD says they exchanged their Glory, with a capital G. What did they trade it for?",
+          "question": "The LORD says they exchanged their Glory. What did they trade it for?",
           "answers": [
             {
               "text": "A thing of disgrace",
@@ -228,7 +228,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hosea 4:9",
-          "question": "The LORD says, 'And it shall be like people, like priest.' He will punish only the priests for their ways.",
+          "question": "The LORD says, 'And it shall be like people, like priest…' He will punish only the priests for their ways.",
           "answers": [
             {
               "text": "True",
@@ -252,7 +252,7 @@
           "card": 1,
           "kind": "story",
           "verses": "Hosea 4:10",
-          "text": "Now the LORD tells what's coming for a people who have abandoned the LORD.",
+          "text": "Now comes what's ahead for those who have abandoned the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -279,7 +279,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Hosea 4:10",
-          "text": "'They will eat but not be satisfied; they will be promiscuous but not multiply.' That's eating a whole box of cookies and STILL staring into the cookie jar.",
+          "text": "The LORD says, 'They will eat but not be satisfied; they will be promiscuous but not multiply…'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -311,7 +311,7 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hosea 4:12",
-          "question": "So where do God's people go for answers now? Who does the LORD say they consult?",
+          "question": "Where do God's people go for answers? What does the LORD say they consult?",
           "answers": [
             {
               "text": "Their wooden idols",
@@ -333,31 +333,15 @@
           "card": 6,
           "kind": "story",
           "verses": "Hosea 4:12",
-          "text": "Wooden idols, and divining rods telling them what to do. Friend, I'm a cookie stamper with a carved handle, and NOBODY ever came to me for life advice.",
+          "text": "And their divining rods inform them. Friend, I'm a cookie stamper with a carved handle, and NOBODY ever came to me for life advice.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 7,
-          "kind": "choice",
-          "type": "fill_blank",
+          "kind": "story",
           "verses": "Hosea 4:12",
-          "question": "Remember the adulteress Hosea bought? The LORD says, 'For a spirit of ___ leads them astray and they have played the harlot against their God.'",
-          "answers": [
-            {
-              "text": "prostitution",
-              "correct": true,
-              "blank": 1
-            },
-            {
-              "text": "fear",
-              "correct": false
-            },
-            {
-              "text": "pride",
-              "correct": false
-            }
-          ],
+          "text": "Then the LORD says, 'For a spirit of prostitution leads them astray and they have played the harlot against their God.'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -372,20 +356,21 @@
         {
           "card": 9,
           "kind": "choice",
-          "type": "multiple_choice",
+          "type": "fill_blank",
           "verses": "Hosea 4:13",
-          "question": "Why does the LORD say they pick spots under those oak, poplar and terebinth trees?",
+          "question": "Why choose spots under oak, poplar and terebinth? The LORD says it's because their ___ is pleasant.",
           "answers": [
             {
-              "text": "Their shade is pleasant",
-              "correct": true
+              "text": "shade",
+              "correct": true,
+              "blank": 1
             },
             {
-              "text": "Their wood is sacred",
+              "text": "fruit",
               "correct": false
             },
             {
-              "text": "Their roots run deep",
+              "text": "scent",
               "correct": false
             }
           ],
@@ -395,8 +380,8 @@
         {
           "card": 10,
           "kind": "story",
-          "verses": "Hosea 4:13",
-          "text": "Picking where to worship like it's a patio table. And so, the LORD says, their daughters turn to prostitution and their daughters-in-law to adultery.",
+          "verses": "Hosea 4:13-14",
+          "text": "And so, the LORD says, your daughters turn to prostitution and your daughters-in-law to adultery. He will not punish them for it, for the men themselves go off with prostitutes and offer sacrifices with shrine prostitutes.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -405,18 +390,18 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hosea 4:14",
-          "question": "The LORD says He will not punish the daughters or the daughters-in-law for this. Why not?",
+          "question": "The LORD says what happens to a people without understanding. What is it?",
           "answers": [
             {
-              "text": "The men go off with prostitutes",
+              "text": "They will come to ruin",
               "correct": true
             },
             {
-              "text": "The daughters were sent away",
+              "text": "They will be scattered",
               "correct": false
             },
             {
-              "text": "The daughters already turned back",
+              "text": "They will be taken captive",
               "correct": false
             }
           ],
@@ -425,18 +410,10 @@
         },
         {
           "card": 12,
-          "kind": "story",
-          "verses": "Hosea 4:14-15",
-          "text": "'So a people without understanding will come to ruin.' Then Judah comes up, the tribe that followed the house of David (1 Kings 12:20).",
-          "needs_agent_fix": false,
-          "needs_human_decision": false
-        },
-        {
-          "card": 13,
           "kind": "choice",
           "type": "true_false",
           "verses": "Hosea 4:15",
-          "question": "Israel has been unfaithful, but the hope is that Judah will avoid such guilt.",
+          "question": "Judah, the tribe that followed the house of David (1 Kings 12:20), comes up next. Though Israel prostitutes itself, the hope is that Judah will avoid such guilt.",
           "answers": [
             {
               "text": "True",
@@ -451,11 +428,11 @@
           "needs_human_decision": false
         },
         {
-          "card": 14,
+          "card": 13,
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Hosea 4:15",
-          "question": "Next comes a warning about two places. Which two does it say not to go to?",
+          "question": "Then comes a warning about two places. Which two places does the warning say not to go to?",
           "answers": [
             {
               "text": "Gilgal and Beth-aven",
@@ -474,7 +451,7 @@
           "needs_human_decision": false
         },
         {
-          "card": 15,
+          "card": 14,
           "kind": "story",
           "verses": "Hosea 4:15",
           "text": "And one more warning: do not swear on oath, 'As surely as the LORD lives!'",
@@ -482,33 +459,41 @@
           "needs_human_decision": false
         },
         {
+          "card": 15,
+          "kind": "choice",
+          "type": "multiple_choice",
+          "verses": "Hosea 4:16",
+          "question": "After all this, what does Israel get compared to next?",
+          "answers": [
+            {
+              "text": "A stubborn heifer",
+              "correct": true
+            },
+            {
+              "text": "A frightened dove",
+              "correct": false
+            },
+            {
+              "text": "A hungry lion",
+              "correct": false
+            }
+          ],
+          "needs_agent_fix": false,
+          "needs_human_decision": false
+        },
+        {
           "card": 16,
           "kind": "story",
           "verses": "Hosea 4:16",
-          "text": "Then a picture from the farm: Israel is as obstinate as a stubborn heifer. That's me, hitting snooze for the FOURTH time.",
+          "text": "Israel is as obstinate as a stubborn heifer. You know that kind of stubborn, friend: hitting snooze for the FOURTH time.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 17,
-          "kind": "choice",
-          "type": "multiple_choice",
+          "kind": "story",
           "verses": "Hosea 4:16",
-          "question": "With Israel as stubborn as that heifer, here comes the big question. Can the LORD now shepherd them like what?",
-          "answers": [
-            {
-              "text": "Like lambs in an open meadow",
-              "correct": true
-            },
-            {
-              "text": "Like oxen in a plowed field",
-              "correct": false
-            },
-            {
-              "text": "Like goats on a rocky hill",
-              "correct": false
-            }
-          ],
+          "text": "Then comes a question: 'Can the LORD now shepherd them like lambs in an open meadow?'",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -517,7 +502,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Hosea 4:17",
-          "question": "Ephraim, a tribe from Joseph's family (Joshua 16:4), is joined to idols. The word about him is to go bring him home.",
+          "question": "Ephraim, a tribe descended from Joseph (Joshua 16:4), is joined to idols. The word about him is to go bring him home.",
           "answers": [
             {
               "text": "True",
@@ -535,8 +520,8 @@
           "card": 19,
           "kind": "story",
           "verses": "Hosea 4:17-18",
-          "text": "Leave him alone! Then, when their liquor is gone, they turn to prostitution, and their rulers dearly love disgrace. There's that word again, friend: disgrace.",
-          "needs_agent_fix": true,
+          "text": "The word is, 'leave him alone!' Then, when their liquor is gone, they turn to prostitution, and their rulers dearly love disgrace.",
+          "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
@@ -544,7 +529,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Hosea 4:19",
-          "question": "The message to stubborn, idol-joined Israel ends with a storm: 'The whirlwind has wrapped them in its wings, and their sacrifices will bring them ___.'",
+          "question": "Then a storm: the whirlwind has wrapped them in its wings. And their sacrifices? They will bring them ___.",
           "answers": [
             {
               "text": "shame",

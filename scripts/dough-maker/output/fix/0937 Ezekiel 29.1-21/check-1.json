@@ -1,0 +1,37 @@
+{
+  "script": [],
+  "sonnet": [
+    {
+      "where": {
+        "stop": 1,
+        "card": 10
+      },
+      "problem": "The right answer \"reeds\" was already shown as a wrong answer on card 5 (\"The reeds of the riverbank\"). That also gives away the card 10 answer ahead of time.",
+      "rule": "An answer shown on one card, right or wrong, isn't used again on a later card."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 4
+      },
+      "problem": "The joke (\"So much for Mister I-Made-It-Myself, getting pulled out of his own river by the JAW\") mocks Pharaoh at the moment the hooks are hauling him out. That is violence in a judgment, and the laugh is at Pharaoh rather than with his human situation.",
+      "rule": "Humor about people in Bible stories laughs with their human situation, never at them."
+    },
+    {
+      "where": {
+        "stop": 1,
+        "card": 18
+      },
+      "problem": "The question asks \"who will still pass through the land?\", but the right answer is \"Not man or beast\", so the answer doesn't fit the question. It is also the only answer that doesn't start with \"Only...\", so it stands out.",
+      "rule": "Each answer fits its question: in a blank, every answer matches the sentence's tense and form, and a \"where\" question gets places."
+    },
+    {
+      "where": {
+        "stop": 2,
+        "card": 14
+      },
+      "problem": "The card says God \"turns to His own people, the house of Israel.\" Verse 21 doesn't say God turns to Israel. It is addressed to Ezekiel (\"I will open your mouth\"), and the card adds that it is spoken to Israel.",
+      "rule": "Leave open what the text leaves open: who is being spoken to, why, or how two things connect."
+    }
+  ]
+}

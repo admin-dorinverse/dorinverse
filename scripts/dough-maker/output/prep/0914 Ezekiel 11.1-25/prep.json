@@ -40,7 +40,7 @@
           "card": 3,
           "kind": "story",
           "verses": "Ezekiel 11:2",
-          "text": "Then the LORD speaks to Ezekiel, calls him \"Son of man,\" and tells him exactly what kind of men these twenty-five are. Friend, that's not a rumor from the group chat, that's the report straight from the top.",
+          "text": "Then the LORD speaks to Ezekiel, calls him \"Son of man,\" and tells him exactly what kind of men these twenty-five are.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -49,19 +49,28 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 11:2",
-          "question": "The LORD tells Ezekiel these twenty-five men plot evil and give ___ counsel in the city.",
+          "question": "The LORD tells Ezekiel these twenty-five men ___ evil and give ___ counsel in the city.",
           "answers": [
+            {
+              "text": "plot",
+              "correct": true,
+              "blank": 1
+            },
             {
               "text": "wicked",
               "correct": true,
-              "blank": 1
+              "blank": 2
+            },
+            {
+              "text": "hate",
+              "correct": false
             },
             {
               "text": "wise",
               "correct": false
             },
             {
-              "text": "careful",
+              "text": "honest",
               "correct": false
             }
           ],
@@ -72,7 +81,7 @@
           "card": 5,
           "kind": "story",
           "verses": "Ezekiel 11:3",
-          "text": "They're asking whether the time is near to build houses, and they've got a saying: 'The city is the cooking pot, and we are the meat.' Twenty-five men at one gate with a SLOGAN, friend, and I've spent three weeks trying to come up with one for my bakery and I've still got NOTHING.",
+          "text": "And they've got a saying: \"…The city is the cooking pot, and we are the meat.\" Twenty-five men at one gate with a SLOGAN, friend, and I've been trying to come up with one for my bakery since the day I got here and I've still got NOTHING.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -81,7 +90,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 11:4",
-          "question": "The LORD tells Ezekiel to keep quiet and leave the twenty-five leaders at the east gate alone.",
+          "question": "The LORD tells Ezekiel to keep quiet and leave the twenty-five men at the east gate alone.",
           "answers": [
             {
               "text": "True",
@@ -99,7 +108,7 @@
           "card": 7,
           "kind": "story",
           "verses": "Ezekiel 11:5",
-          "text": "The Spirit of the LORD falls on Ezekiel, and he's told to declare what the LORD says to the house of Israel. No warm-up, no notes, friend, and I can't even give a speech without three practice runs in front of my oven.",
+          "text": "The Spirit of the LORD falls on Ezekiel, and he's told to declare what the LORD says. It starts like this: \"That is what you are thinking, O house of Israel…\"",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -126,7 +135,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 11:6",
-          "text": "Then God names what they've done: they've multiplied those they killed in this city and filled its streets with the dead. Twenty-five men with big plans, friend, and that's what they've left in the streets.",
+          "text": "Then God names what's been done: \"You have multiplied those you killed in this city and filled its streets with the dead.\" I think this one hurts, friend.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -135,14 +144,14 @@
           "kind": "choice",
           "type": "multiple_choice",
           "verses": "Ezekiel 11:7",
-          "question": "God takes the leaders' cooking pot picture and turns it around. Who does He say the meat in the pot really is?",
+          "question": "God takes the cooking pot picture these men use and turns it around. Who does He say the meat in the pot really is?",
           "answers": [
             {
-              "text": "The people they killed in the city",
+              "text": "The slain laid within the city",
               "correct": true
             },
             {
-              "text": "The leaders standing at the gate",
+              "text": "The men standing at the gate",
               "correct": false
             },
             {
@@ -158,7 +167,7 @@
           "kind": "choice",
           "type": "true_false",
           "verses": "Ezekiel 11:7",
-          "question": "God says He will leave these leaders right where they are, inside the city.",
+          "question": "God says He will leave these men right where they are, inside the city.",
           "answers": [
             {
               "text": "True",
@@ -177,7 +186,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 11:8",
-          "question": "These leaders are afraid of something, and God says that's exactly what He'll bring against them: the ___.",
+          "question": "These men are afraid of something, and God says that's exactly what He'll bring against them: the ___.",
           "answers": [
             {
               "text": "sword",
@@ -200,26 +209,15 @@
           "card": 13,
           "kind": "story",
           "verses": "Ezekiel 11:9-10",
-          "text": "Out of the city, into the hands of foreigners, down by the sword: that's where God says these leaders are headed. He'll judge them even to the borders of Israel, and then, He says, they will know that He is the LORD.",
+          "text": "Out of the city, into the hands of foreigners, down by the sword: that's where God says these men are headed. He'll judge them even to the borders of Israel, and then, He says, they will know that He is the LORD.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
         {
           "card": 14,
-          "kind": "choice",
-          "type": "true_false",
+          "kind": "story",
           "verses": "Ezekiel 11:11",
-          "question": "God says the city will be a cooking pot for these leaders.",
-          "answers": [
-            {
-              "text": "True",
-              "correct": false
-            },
-            {
-              "text": "False",
-              "correct": true
-            }
-          ],
+          "text": "God says the city won't be a pot for them, and they won't be the meat in it. And that line about judging them even to the borders of Israel? He says it again.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -228,7 +226,7 @@
           "kind": "choice",
           "type": "fill_blank",
           "verses": "Ezekiel 11:12",
-          "question": "God gives His reason: these leaders haven't followed His statutes or practiced His ordinances. Instead, they've followed the ordinances of the ___ around them.",
+          "question": "God gives His reason: these men haven't followed His statutes or practiced His ordinances. Instead, they've followed the ordinances of the ___ around them.",
           "answers": [
             {
               "text": "nations",
@@ -251,7 +249,7 @@
           "card": 16,
           "kind": "story",
           "verses": "Ezekiel 11:13",
-          "text": "Ezekiel is still talking, still prophesying, still going, when something happens to Pelatiah son of Benaiah, one of the two leaders named at the gate. Friend, I had to read this one TWICE.",
+          "text": "Ezekiel is still prophesying when something happens to Pelatiah son of Benaiah, one of the two men named at the gate.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -361,7 +359,7 @@
           "card": 4,
           "kind": "story",
           "verses": "Ezekiel 11:16",
-          "text": "But God answers back: yes, He sent them far away and scattered them among the nations. I know that out-of-sight feeling, friend, because I spent YEARS in the back of a junk drawer under a pile of old takeout menus.",
+          "text": "Then God gives Ezekiel His answer to declare. He says He sent them far away among the nations and scattered them among the countries.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -393,7 +391,7 @@
           "card": 6,
           "kind": "story",
           "verses": "Ezekiel 11:17",
-          "text": "And then the Lord GOD makes the exiles a promise: He'll gather them from the peoples and bring them together from every country where they've been scattered. Friend, back in the junk drawer my BIG hope was somebody digging around for scissors, and God's out here promising a gathering from every country.",
+          "text": "And then the Lord GOD makes the exiles a promise: He'll gather them from the peoples and bring them together from every country where they've been scattered. Friend, I spill ONE bag of chocolate chips and I'm still finding them under the oven a week later.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -444,7 +442,7 @@
           "card": 9,
           "kind": "story",
           "verses": "Ezekiel 11:19",
-          "text": "Now we get to the heart of it, LITERALLY. God says He'll give them singleness of heart and put a new spirit within them.",
+          "text": "And then comes my favorite part, friend. God says He'll give them singleness of heart and put a new spirit within them.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -541,7 +539,7 @@
           "card": 14,
           "kind": "story",
           "verses": "Ezekiel 11:21",
-          "text": "But there's a warning in it too: for those whose hearts pursue detestable things and abominations, God says He'll bring their conduct down on their own heads. Friend, it's like the dough, because whatever you put into the batch is exactly what comes out of the oven.",
+          "text": "But there's a warning in it too. For those whose hearts pursue detestable things and abominations, God says He'll bring their conduct down on their own heads.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
@@ -581,7 +579,7 @@
           "card": 17,
           "kind": "story",
           "verses": "Ezekiel 11:24",
-          "text": "Then the Spirit lifts Ezekiel up and carries him back to Chaldea, to the exiles, and the vision goes up from him. One minute he's at the temple gate, the next he's home, and it takes ME ten minutes just to get from my oven to the front counter.",
+          "text": "Then the Spirit lifts Ezekiel up and carries him back to Chaldea, to the exiles, in the vision given by the Spirit of God. And then the vision goes up from him.",
           "needs_agent_fix": false,
           "needs_human_decision": false
         },
