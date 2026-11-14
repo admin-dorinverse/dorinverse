@@ -117,6 +117,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 - Every story card moves the baker forward through the passage.
 - No recap cards.
 - **When the story continues.** If the passage is in a story group and isn't the last passage in it, the last story card ends with a short line from Papa Dorin saying the story isn't over (or the teaching isn't done). It gives nothing away about what happens next. The examples show the idea. Write your own line each time. A card that is only this line cites the passage's last verse.
+- **Outside passages.** An outside passage, like a New Testament fulfillment, only rides along in a few words on a card that tells this passage. It never gets a card of its own, and a choice card never asks about it. The opening card can recap the passage before, but it also starts this one.
     - When the passage's last verse is asked on a choice card, the last story card can be just this line.
     - ✅ "And that's where we'll leave it for now. Trust me, friend, this story's not done."
     - ❌ "Don't worry, Haman gets what's coming to him later."
