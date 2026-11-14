@@ -34,7 +34,7 @@ The goal is understanding the passage, not covering every verse. Some parts, lik
         ❌ "People hid their faces from Him." ✅ "He was treated like someone people hide their faces from." (Isa 53:3)
     - **Don't stretch the text.** Exaggerate only in his own jokes.
         ❌ "A famine. No food. NONE." ✅ "A famine. Food's running out." (Ruth 1:1)
-    - **Times stay true.** No time in the text means none added.
+    - **Times stay true.** No time in the text means none added. A prediction stays a prediction: "God says Tyre will fall," never "Tyre falls." What a prophet sees in a vision can be told as what he sees. "To this day" means the writer's day, like "still there when this was written."
         ❌ "For the third time today." ✅ "For the third time." (Gen 22:11)
     - **Call things what the text calls them.**
         ❌ "Naomi asks the LORD to bless them." ✅ "Naomi tells them, 'May the LORD…'" (Ruth 1:8)
@@ -88,6 +88,7 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 - **The opening card** can be up to 3 sentences. It says who is speaking, to whom, and what is going on. If the passage starts in the middle of a thought, it gives the context.
 - **Every other story card is 1 to 2 sentences.**
+- **A summary story card** for a long stretch can be up to 4 sentences, jokes included, like the Genesis 5 example. If it is also the last story card, the "story isn't over" line goes on a card of its own.
 - **No em dashes or en dashes to make a sentence longer.** They make two sentences look like four or five.
 - **Don't spend card words explaining a hard word.** Hard words get a dictionary pop-up (definitions.md, made after the cards).
 - **One beat per card.**
@@ -121,7 +122,9 @@ After each stop, a reveal screen shows the Bible verses the passage has covered 
 
 No card ever gives away the answer to a choice card that comes later. Once a choice has been answered, the cards after it can build on that answer. An easy follow-up is fine. For example, once the baker knows the greater light rules the day, a card can ask whether the lesser light rules the night.
 
-- The passage title doesn't count. It's set before Prep is written.
+- The passage title doesn't count. It's set before Prep is written. The book's name doesn't count, like the passage title.
+- A choice card's question never holds its own answer, or a form of it, like "rock badgers" for "in the rocks." Ask something else.
+- If the only fact about a new person is the answer to a choice card, the intro gives just the name, like "two men named Jannes and Jambres."
 - When a line repeats, like a psalm's refrain, ask about it only the first time it appears.
 - A setup line can't rule out the wrong answers either.
 - **Pop-ups are the exception.** Sample cookies, definitions and idioms sit where their verse or word is, even if they show something a later choice card asks about.
@@ -212,6 +215,7 @@ Prep must never become a guessing game.
 - For why and meaning questions, wrong answers only need to be believable.
 - **A card about two groups needs an answer true for both.** When a question covers more than one group, like the sea creatures and the birds, the right answer must be true for every group in it. ❌ "Multiply and fill the waters" for the sea creatures and the birds. Genesis 1:22 tells the birds to multiply on the earth.
 - Each wrong answer must be false anywhere in the passage, not just at that moment.
+- **Clear English.** Every card reads correctly. Each answer fits its question: in a blank, every answer matches the sentence's tense and form, and a "where" question gets places. "He," "she" and "they" always point to someone the baker can tell.
 - **No near-matches.** A wrong answer never means the same as the right answer, or close to it. If a baker could argue it's right, replace it.
     ❌ "belongings of ___" with "another" (right) and "strangers" (Luke 16:12)
 - Don't let the right answer stand out. All the answers should sound alike. None should sound more like the Bible, or more modern, than the others.
@@ -268,7 +272,7 @@ A JSON file for the passage. Card numbers start at 1 in each stop. References us
 
 - **kind:** "story" or "choice"
 - **type** (choice cards only): "multiple_choice", "true_false" or "fill_blank"
-- **verses:** what the card cites. On a choice card, it is only the verses of the right answer.
+- **verses:** what the card cites. On a choice card, it is only the verses of the right answer. When a card uses verses that aren't next to each other, list them with commas, like `Psalm 132:9, 16`. A card can cite an earlier verse it calls back to, even from an earlier stop, but never a verse from a later stop.
 - **Fill in the blank:** each blank in the question is `___`. With two blanks, each right answer gives the blank it fills.
 
 ## Other files
