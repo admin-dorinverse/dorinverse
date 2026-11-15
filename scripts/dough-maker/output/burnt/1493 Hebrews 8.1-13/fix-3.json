@@ -1,0 +1,54 @@
+{
+  "lines": [
+    {
+      "line": 2,
+      "verses": "Hebrews 8:3-4",
+      "text": "Every high priest offers gifts and sacrifices, but if Jesus were on earth, He would not be a priest.",
+      "burnt": false
+    },
+    {
+      "line": 3,
+      "verses": "Hebrews 8:5",
+      "text": "Moses was warned to build the tabernacle according to the pattern shown him by King David.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "by King David",
+          "true": "on the mountain",
+          "verse": "Hebrews 8:5"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "verses": "Hebrews 8:8-9",
+      "text": "God found fault with the people and promised a new covenant, unlike the one made when leading them out of Babylon.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "Babylon",
+          "true": "Egypt",
+          "verse": "Hebrews 8:9"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0104808,
+  "problems": [
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 3,
+      "kind": "rule",
+      "problem": "Its true detail \"shown him on the mountain\" isn't in Hebrews 8:5 word for word."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    }
+  ]
+}
