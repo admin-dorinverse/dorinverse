@@ -1,0 +1,414 @@
+{
+  "writer": "gpt-6.1-terra",
+  "passage": "Ruth 1:1",
+  "secs": 66,
+  "writeCost": 0.03371175,
+  "writeTokens": {
+    "input": 12062,
+    "cached": 0,
+    "output": 3727
+  },
+  "checkCost": 0.0187578,
+  "explanations": 52,
+  "expected": 52,
+  "script": [
+    {
+      "stop": 1,
+      "card": 12,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    },
+    {
+      "stop": 1,
+      "card": 12,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    }
+  ],
+  "terra": [
+    {
+      "stop": 1,
+      "card": 2,
+      "answer": 1,
+      "kind": "tone",
+      "problem": "The explanation is flat. 'That's a big move, friend' is generic rather than distinctly Papa Dorin."
+    },
+    {
+      "stop": 1,
+      "card": 2,
+      "answer": 2,
+      "kind": "tone",
+      "problem": "'Keep an eye on that journey, friend' is generic filler. The explanation has little of Papa Dorin's personality."
+    },
+    {
+      "stop": 1,
+      "card": 2,
+      "answer": 3,
+      "kind": "tone",
+      "problem": "'That move gets our story started' is a flat, generic closing rather than Papa Dorin's voice."
+    },
+    {
+      "stop": 1,
+      "card": 5,
+      "answer": 2,
+      "kind": "tone",
+      "problem": "The closing merely restates that Ruth fills the blank. The explanation sounds mechanical rather than like Papa Dorin."
+    },
+    {
+      "stop": 1,
+      "card": 8,
+      "answer": 3,
+      "kind": "tone",
+      "problem": "'That's the news this verse gives us' adds no explanation or personality. The response feels generic."
+    },
+    {
+      "stop": 2,
+      "card": 7,
+      "answer": 3,
+      "kind": "rule",
+      "problem": "The statement that Naomi and Ruth continued together needs a reference to Ruth 1:19. The given reference, Ruth 1:18, does not cover their journey together."
+    },
+    {
+      "stop": 2,
+      "card": 9,
+      "answer": 1,
+      "kind": "tone",
+      "problem": "This is a flat summary followed by a generic transition. The town's reaction offers room for Papa Dorin's warm, self-deprecating humor without making the women the joke."
+    },
+    {
+      "stop": 2,
+      "card": 9,
+      "answer": 3,
+      "kind": "tone",
+      "problem": "The explanation only repeats the scene and sounds generic. It misses a light moment where Papa Dorin's personality could come through."
+    }
+  ],
+  "out": {
+    "cards": [
+      {
+        "stop": 1,
+        "card": 2,
+        "explanations": [
+          {
+            "answer": "Moab",
+            "explanation": "That's the land where the family went to live (Ruth 1:1). They left Bethlehem during a famine. That's a big move, friend."
+          },
+          {
+            "answer": "Egypt",
+            "explanation": "This family's destination was Moab, not Egypt (Ruth 1:1). They went there from Bethlehem during a famine. Keep an eye on that journey, friend."
+          },
+          {
+            "answer": "Edom",
+            "explanation": "Moab is the place named here, friend (Ruth 1:1). The family left Bethlehem during a famine and went to live there. That move gets our story started."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 5,
+        "explanations": [
+          {
+            "answer": "Ruth",
+            "explanation": "Ruth and Orpah were the two women from Moab whom Naomi's sons married (Ruth 1:4). Both women become part of Naomi's story. Keep their names close, friend."
+          },
+          {
+            "answer": "Rachel",
+            "explanation": "The two women named here are Orpah and Ruth (Ruth 1:4). They were from Moab, and they married Naomi's sons. Ruth is the name that fills this blank."
+          },
+          {
+            "answer": "Dinah",
+            "explanation": "Ruth is the other woman named alongside Orpah (Ruth 1:4). Both were from Moab and married Naomi's sons. You'll hear more about them as we go."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 6,
+        "explanations": [
+          {
+            "answer": "Both of her sons die",
+            "explanation": "Both Mahlon and Chilion died (Ruth 1:5). Naomi had already lost her husband, Elimelech. She was left without her husband and her two sons."
+          },
+          {
+            "answer": "Her house in Moab burns down",
+            "explanation": "The passage doesn't say her house burned. It tells us that both of Naomi's sons died (Ruth 1:5). She had already lost her husband."
+          },
+          {
+            "answer": "She falls sick and loses her sight",
+            "explanation": "The passage doesn't describe Naomi losing her sight. It says that both of her sons died (Ruth 1:5). Her husband had died earlier."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 8,
+        "explanations": [
+          {
+            "answer": "food",
+            "explanation": "Naomi heard that the LORD had provided food for His people (Ruth 1:6). She was in Moab when the news reached her. Then she and her daughters-in-law prepared to leave."
+          },
+          {
+            "answer": "a king",
+            "explanation": "The news was about food, friend, not a king (Ruth 1:6). Naomi heard that the LORD had provided for His people. She and her daughters-in-law prepared to leave Moab."
+          },
+          {
+            "answer": "victory",
+            "explanation": "What Naomi heard was that the LORD had provided food for His people (Ruth 1:6). That's the news this verse gives us. She and her daughters-in-law then prepared to leave Moab."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 10,
+        "explanations": [
+          {
+            "answer": "Go back to their mothers' homes",
+            "explanation": "Naomi told each woman to return to her mother's home (Ruth 1:8). She also spoke of the loving devotion they had shown. That's a tender send-off, friend."
+          },
+          {
+            "answer": "Walk faster to beat the dark",
+            "explanation": "Naomi didn't tell them to hurry before dark. She told each of them to return to her mother's home (Ruth 1:8). She also spoke of their loving devotion."
+          },
+          {
+            "answer": "Stay close to her the whole way",
+            "explanation": "Naomi actually told both women to go back to their mothers' homes (Ruth 1:8). She spoke of the loving devotion they had shown. That's quite a moment on the road."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 12,
+        "explanations": [
+          {
+            "answer": "True",
+            "explanation": "Naomi spoke of each woman finding rest in the home of a new husband (Ruth 1:9). She said, “May the LORD enable each of you to find rest in the home of your new husband.” Then she kissed them, and they wept aloud."
+          },
+          {
+            "answer": "False",
+            "explanation": "Naomi did speak of each woman finding rest in the home of a new husband (Ruth 1:9). She said, “May the LORD enable each of you to find rest in the home of your new husband.” After that, she kissed them, and they wept aloud."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 14,
+        "explanations": [
+          {
+            "answer": "We will return with you to your people",
+            "explanation": "Both women said they would return with Naomi to her people (Ruth 1:10). They had just wept aloud after she kissed them. Listen to what Naomi says next, friend."
+          },
+          {
+            "answer": "We will stay in Moab and wait for you",
+            "explanation": "At this point, both women told Naomi they would return with her to her people (Ruth 1:10). They had just wept aloud. Their answer follows Naomi's kiss."
+          },
+          {
+            "answer": "We will come visit you in Bethlehem",
+            "explanation": "Their answer was that they would return with Naomi to her people (Ruth 1:10). They didn't speak of a visit here. Both women had just wept aloud."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 16,
+        "explanations": [
+          {
+            "answer": "Would you wait for them to grow up",
+            "explanation": "Naomi asked whether they would wait for those sons to grow up (Ruth 1:12-13). She was speaking about a possibility she had just described. She also asked whether they would refrain from having husbands."
+          },
+          {
+            "answer": "Would you raise them as your own",
+            "explanation": "Naomi's question was whether the women would wait for those sons to grow up (Ruth 1:12-13). She was speaking about a possibility she had just described. She also asked whether they would refrain from having husbands."
+          },
+          {
+            "answer": "Would you go ahead to Bethlehem",
+            "explanation": "Naomi asked whether they would wait for those sons to grow up (Ruth 1:12-13). She had just described the possibility of having a husband and bearing sons. Her question is about waiting, not going ahead."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 17,
+        "explanations": [
+          {
+            "answer": "The LORD's hand has turned against her",
+            "explanation": "Naomi said the hand of the LORD had gone out against her (Ruth 1:13). That's how she explained the bitterness she spoke of. Let's listen carefully to her words, friend."
+          },
+          {
+            "answer": "The people of Judah have turned against her",
+            "explanation": "Naomi didn't name the people of Judah as the reason. She said the hand of the LORD had gone out against her (Ruth 1:13). Those are her words about her bitter situation."
+          },
+          {
+            "answer": "The people of Moab have turned against her",
+            "explanation": "Naomi didn't say the people of Moab had turned against her. She said the hand of the LORD had gone out against her (Ruth 1:13). That's the reason she gave for her bitterness."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 19,
+        "explanations": [
+          {
+            "answer": "True",
+            "explanation": "Orpah kissed Naomi goodbye (Ruth 1:14). The women had wept aloud again. Ruth, on the other hand, clung to Naomi."
+          },
+          {
+            "answer": "False",
+            "explanation": "Orpah did kiss Naomi goodbye (Ruth 1:14). The women had wept aloud again. Ruth clung to Naomi."
+          }
+        ]
+      },
+      {
+        "stop": 1,
+        "card": 20,
+        "explanations": [
+          {
+            "answer": "True",
+            "explanation": "Ruth did not go back with Orpah. Orpah kissed Naomi goodbye, but Ruth clung to Naomi (Ruth 1:14). Their paths are different here."
+          },
+          {
+            "answer": "False",
+            "explanation": "Ruth clung to Naomi rather than going back with Orpah (Ruth 1:14). Orpah had kissed Naomi goodbye. Now listen to what Ruth says next."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 2,
+        "explanations": [
+          {
+            "answer": "True",
+            "explanation": "Naomi told Ruth to follow Orpah back home (Ruth 1:15). She said Orpah had gone back to her people and her gods. Ruth's answer is coming next, friend."
+          },
+          {
+            "answer": "False",
+            "explanation": "Naomi did tell Ruth to follow Orpah back home (Ruth 1:15). She said Orpah had returned to her people and her gods. Now let's hear Ruth's response."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 4,
+        "explanations": [
+          {
+            "answer": "Naomi's God will be her God",
+            "explanation": "Ruth told Naomi that Naomi's God would be her God (Ruth 1:16). She also said Naomi's people would be her people. Ruth's words reach far beyond the road they're on."
+          },
+          {
+            "answer": "She will take care of Naomi's house",
+            "explanation": "Ruth's promise here was that Naomi's God would be her God (Ruth 1:16). She also said Naomi's people would be her people. She was speaking about staying with Naomi."
+          },
+          {
+            "answer": "She will learn all the ways of Judah",
+            "explanation": "Ruth said that Naomi's God would be her God (Ruth 1:16). She also said Naomi's people would be her people. Those are the promises to listen for here."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 6,
+        "explanations": [
+          {
+            "answer": "death",
+            "explanation": "Ruth spoke of death as the only thing that would separate her from Naomi (Ruth 1:17). She called on the LORD as she made that promise. Her words show how determined she was to stay."
+          },
+          {
+            "answer": "distance",
+            "explanation": "Ruth named death, not distance, as the only thing that would separate them (Ruth 1:17). She called on the LORD as she made that promise. She was determined to remain with Naomi."
+          },
+          {
+            "answer": "marriage",
+            "explanation": "Ruth named death as the only thing that would separate her from Naomi (Ruth 1:17). She called on the LORD as she made that promise. These are serious words, friend."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 7,
+        "explanations": [
+          {
+            "answer": "She stops trying to persuade her",
+            "explanation": "Naomi saw that Ruth was determined to go with her, so she stopped trying to persuade her (Ruth 1:18). Ruth had made her promise. Naomi heard her."
+          },
+          {
+            "answer": "She sends her back after Orpah",
+            "explanation": "Naomi stopped trying to persuade Ruth when she saw Ruth was determined to go with her (Ruth 1:18). Ruth had made her promise. Naomi did not keep urging her to return."
+          },
+          {
+            "answer": "She tells her to wait in Moab",
+            "explanation": "Naomi saw Ruth's determination and stopped trying to persuade her (Ruth 1:18). She didn't tell Ruth to wait in Moab here. The two of them continued on together."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 9,
+        "explanations": [
+          {
+            "answer": "Can this be Naomi",
+            "explanation": "The women of Bethlehem asked, “Can this be Naomi?” (Ruth 1:19). The whole town was stirred when Naomi and Ruth arrived. Naomi answers them next."
+          },
+          {
+            "answer": "Where is your husband",
+            "explanation": "The women asked, “Can this be Naomi?” (Ruth 1:19). The whole town was stirred when Naomi and Ruth arrived. Listen to Naomi's answer next."
+          },
+          {
+            "answer": "Who is this stranger",
+            "explanation": "The question the women asked was, “Can this be Naomi?” (Ruth 1:19). Their words came as Naomi and Ruth arrived in Bethlehem. The whole town was stirred because of them."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 11,
+        "explanations": [
+          {
+            "answer": "Mara",
+            "explanation": "Naomi asked to be called Mara (Ruth 1:20). She said the Almighty had dealt quite bitterly with her. Her answer tells us something of the pain she was carrying."
+          },
+          {
+            "answer": "Hannah",
+            "explanation": "Naomi asked the women to call her Mara (Ruth 1:20). She said the Almighty had dealt quite bitterly with her. Let's give her words the care they deserve."
+          },
+          {
+            "answer": "Leah",
+            "explanation": "The name Naomi asked for was Mara (Ruth 1:20). She said the Almighty had dealt quite bitterly with her. This is a painful moment, friend."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 13,
+        "explanations": [
+          {
+            "answer": "True",
+            "explanation": "Naomi said it the other way around. She said she went away full, but the LORD had brought her back empty (Ruth 1:21). Those are her words about her return."
+          },
+          {
+            "answer": "False",
+            "explanation": "Naomi said she went away full, but the LORD had brought her back empty (Ruth 1:21). She spoke of her return in painful terms. Let's listen to her words with care."
+          }
+        ]
+      },
+      {
+        "stop": 2,
+        "card": 15,
+        "explanations": [
+          {
+            "answer": "barley",
+            "explanation": "Naomi and Ruth arrived at the beginning of the barley harvest (Ruth 1:22). The passage gives us that detail as they reach Bethlehem. And friend, their story isn't over."
+          },
+          {
+            "answer": "wheat",
+            "explanation": "The harvest named here is barley (Ruth 1:22). Naomi and Ruth arrived in Bethlehem at its beginning. There's more to their story, friend."
+          },
+          {
+            "answer": "olive",
+            "explanation": "It was the beginning of the barley harvest when Naomi and Ruth arrived in Bethlehem (Ruth 1:22). That's the detail the passage gives us. Their story isn't finished yet."
+          }
+        ]
+      }
+    ]
+  }
+}

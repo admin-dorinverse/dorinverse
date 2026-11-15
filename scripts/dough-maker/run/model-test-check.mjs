@@ -11,7 +11,17 @@ import { opus, SONNET, HAIKU } from './opus.mjs';
 import { about, theText, folder, PREP_DIR } from './prep.mjs';
 
 const writer = process.argv[2] ?? 'gpt-5.1';
-const checker = ['gemini', 'haiku'].includes(process.argv[3]) ? process.argv[3] : 'sonnet';
+// Checkers on OpenRouter, each pinned to its own company (owner's rule)
+const OR = {
+  gemini: { model: 'google/gemini-3.8-flash', only: ['google-ai-studio', 'google-vertex'], reasoning: { effort: 'low' } },
+  opus: { model: 'anthropic/claude-opus-5.5', only: ['anthropic'] },
+  'gpt-6.1-terra': { model: 'openai/gpt-6.1-terra', only: ['openai'] },
+  'gpt-6.1-sol-pro': { model: 'openai/gpt-6.1-sol-pro', only: ['openai'] },
+  'gemini-4-argon': { model: 'google/gemini-4-argon', only: ['google-ai-studio', 'google-vertex'] },
+  'gemini-4-carbon': { model: 'google/gemini-4-carbon', only: ['google-ai-studio', 'google-vertex'] },
+  'gemini-4-hydrogen': { model: 'google/gemini-4-hydrogen', only: ['google-ai-studio', 'google-vertex'] },
+};
+const checker = process.argv[3] && (OR[process.argv[3]] || process.argv[3] === 'haiku') ? process.argv[3] : 'sonnet';
 const D = path.join(OUTPUT, 'model-test');
 const rj = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 const list = rj(PASSAGES);
@@ -33,7 +43,7 @@ Report every explanation that:
 - breaks a rule in answer-explanations.md, like 3 to 5 sentences, no dashes, no reaction phrases, never reusing a line from the Prep cards word for word ("rule"),
 - doesn't sound like Papa Dorin as papa-dorin.md describes him: flat, generic, preachy, not funny where a laugh fits, the wrong warmth ("tone").
 Reply with only JSON: {"findings": [{"stop": n, "card": n, "answer": n, "kind": "bible" | "rule" | "tone", "problem": "..."}]}. "answer" is the explanation's position on the card, starting at 1.`;
-  const r = checker !== 'gemini' ? await opus({ model: checker === 'haiku' ? HAIKU : SONNET, system, prompt, passage: id, step: 'model-test', role: 'reviewer' }) : await gemini(system, prompt);
+  const r = !OR[checker] ? await opus({ model: checker === 'haiku' ? HAIKU : SONNET, system, prompt, passage: id, step: 'model-test', role: 'reviewer' }) : await openrouter(OR[checker], system, prompt);
   const a = r.text.indexOf('{'), b = r.text.lastIndexOf('}');
   let o = null; try { o = JSON.parse(r.text.slice(a, b + 1)); } catch { /* kept raw */ }
   fs.mkdirSync(path.dirname(out), { recursive: true });
@@ -41,13 +51,13 @@ Reply with only JSON: {"findings": [{"stop": n, "card": n, "answer": n, "kind": 
   console.log(`${checker} checked ${writer} on ${span(p.start, p.end)}: ${o?.findings?.length ?? 'unreadable'} findings`);
 }));
 
-async function gemini(system, prompt) {
+async function openrouter(m, system, prompt) {
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', { method: 'POST',
     headers: { Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: 'google/gemini-3.8-flash', max_tokens: 20000, usage: { include: true }, reasoning: { effort: 'low' },
-      provider: { only: ['google-ai-studio', 'google-vertex'], allow_fallbacks: false },
+    body: JSON.stringify({ model: m.model, max_tokens: 32000, usage: { include: true }, ...(m.reasoning && { reasoning: m.reasoning }),
+      provider: { only: m.only, allow_fallbacks: false },
       messages: [{ role: 'system', content: system.map((x) => x.text).join('\n\n') }, { role: 'user', content: prompt }] }) });
   const j = await res.json();
   if (!res.ok) throw new Error(`${res.status}: ${j.error?.message}`);
-  return { text: j.choices?.[0]?.message?.content ?? '', tokens: { cost: j.usage?.cost } };
+  return { text: j.choices?.[0]?.message?.content ?? '', tokens: { cost: j.usage?.cost, input: j.usage?.prompt_tokens, output: j.usage?.completion_tokens, reasoning: j.usage?.completion_tokens_details?.reasoning_tokens } };
 }
