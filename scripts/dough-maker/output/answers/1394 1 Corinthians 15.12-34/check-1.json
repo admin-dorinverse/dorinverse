@@ -1,0 +1,127 @@
+{
+  "script": [
+    {
+      "stop": 2,
+      "card": 10,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    },
+    {
+      "stop": 2,
+      "card": 12,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    },
+    {
+      "stop": 3,
+      "card": 7,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
+    },
+    {
+      "stop": 3,
+      "card": 7,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
+    }
+  ],
+  "terra": [
+    {
+      "stop": 1,
+      "card": 2,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "The comparison does not hold: someone can have cookies without owning an oven, so the two claims are not necessarily in conflict."
+    },
+    {
+      "stop": 1,
+      "card": 9,
+      "answer": 3,
+      "kind": "rule",
+      "problem": "The reference to being hidden relies on Papa Dorin's backstory without identifying the drawer."
+    },
+    {
+      "stop": 1,
+      "card": 14,
+      "answer": 1,
+      "kind": "bible",
+      "problem": "Paul says believers would be pitied if their hope in Christ were for this life alone. He does not say they would have nothing at all to look forward to."
+    },
+    {
+      "stop": 1,
+      "card": 14,
+      "answer": 3,
+      "kind": "bible",
+      "problem": "Hope in Christ for this life alone is not the same claim as hope with nothing behind it."
+    },
+    {
+      "stop": 2,
+      "card": 5,
+      "answer": 1,
+      "kind": "bible",
+      "problem": "Genesis 2:7 does not identify Adam as the first man. That description appears in 1 Corinthians 15:45."
+    },
+    {
+      "stop": 2,
+      "card": 5,
+      "answer": 3,
+      "kind": "rule",
+      "problem": "The introduction of Moses as Israel's leader is a Bible fact outside the passage and needs a reference."
+    },
+    {
+      "stop": 2,
+      "card": 5,
+      "answer": 4,
+      "kind": "rule",
+      "problem": "The introduction of Abraham as Israel's forefather is a Bible fact outside the passage and needs a reference."
+    },
+    {
+      "stop": 2,
+      "card": 10,
+      "answer": 3,
+      "kind": "tone",
+      "problem": "The explanation is generic: it names the answer, then merely says it is the name on the page."
+    },
+    {
+      "stop": 2,
+      "card": 12,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "The explanation quotes the verse and says Paul ends on that note, but does not explain what the verse says."
+    },
+    {
+      "stop": 2,
+      "card": 12,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "The explanation repeats the statement in the question and says it is true, without explaining it."
+    },
+    {
+      "stop": 3,
+      "card": 4,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "The day-off joke makes light of Paul facing death, a serious danger rather than an ordinary work inconvenience."
+    },
+    {
+      "stop": 3,
+      "card": 4,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "Calling a yearly danger of death 'far too slow for Paul' makes light of the danger and suggests a preference the text does not give."
+    },
+    {
+      "stop": 3,
+      "card": 6,
+      "answer": 1,
+      "kind": "bible",
+      "problem": "Calling the quoted response 'the logical way to live' goes beyond Paul's conditional statement and presents it as a necessary conclusion."
+    }
+  ],
+  "cost": 0.02180065,
+  "terraReadable": true
+}
