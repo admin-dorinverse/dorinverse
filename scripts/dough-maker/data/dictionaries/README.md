@@ -24,3 +24,7 @@ Easton's (1897) isn't here: it's already in the database.
 - Terms in the Bible dictionaries are in mixed case (`Manna`, `MANNA`): match without case.
 - Webster's words are lower case. `pos` is the part of speech as Webster wrote it (`n.`, `v. t.`, `a.`), or null.
 - Definitions are summarized in our own words (definitions.md), never copied.
+
+## WordNet (copy check only)
+
+`wordnet/glosses.json` holds WordNet 3.1's definitions (Princeton University, from the npm package wordnet-db). It's used only by `run/copycheck.mjs`, as a stand-in for how modern dictionaries phrase a meaning, and is never shown in the app. Its license (`wordnet/LICENSE`) asks that the notice stay with any copy.
