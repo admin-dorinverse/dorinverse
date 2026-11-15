@@ -183,15 +183,17 @@ const forTerra = (lines, only = null) => lines.filter((l) => !only || only.inclu
 const merge = (lines, fixed) => lines.map((l) => fixed.find((x) => x?.line === l.line) ?? l);
 
 // --- the run -------------------------------------------------------------------------------------------------------
-export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPassage = Infinity } = {}) {
+export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPassage = Infinity, chatFn = chat, outDir = BURNT_DIR, dry = false } = {}) {
+  // dry: a free test run with a stand-in chatFn; it sends no notices, writes no events and saves nothing to git
+  const tell = dry ? async () => {} : notify, log = dry ? () => {} : logEvent, backup = dry ? () => {} : saveToGit;
   const list = readJson(PASSAGES);
   const byId = new Map(list.map((p) => [p.id, p]));
-  const dir = (p) => path.join(BURNT_DIR, folder(p));
+  const dir = (p) => path.join(outDir, folder(p));
   const system = SYSTEM();
   const chosen = ids.map((id) => byId.get(id)).filter((p) => p && fs.existsSync(path.join(PREP_DIR, folder(p), 'prep.json')));
   const todo = chosen.filter((p) => !fs.existsSync(path.join(dir(p), 'done.json')));
-  logEvent({ type: 'run', status: 'running', note: `Burnt Cookies: ${chosen.length} passages.` });
-  await notify('Burnt Cookies started', [`${todo.length} passages (${chosen.length - todo.length} already done)`, 'Sonnet writes, the script and Terra check, no flags']);
+  log({ type: 'run', status: 'running', note: `Burnt Cookies: ${chosen.length} passages.` });
+  await tell('Burnt Cookies started', [`${todo.length} passages (${chosen.length - todo.length} already done)`, 'Sonnet writes, the script and Terra check, no flags']);
 
   let down = null;
   // A reply that can't be read is asked again (every call is paid for); each unreadable reply is kept in `keep`
@@ -202,13 +204,13 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
       try {
         const r = await fn();
         cost += r.cost ?? 0;
-        if (down) { notify('Burnt Cookies going again', [`After ${Math.round((Date.now() - down) / 60000)} min`]); down = null; }
+        if (down) { tell('Burnt Cookies going again', [`After ${Math.round((Date.now() - down) / 60000)} min`]); down = null; }
         const v = read(r.text);
         if (!v && keep) { fs.mkdirSync(path.dirname(keep), { recursive: true }); fs.appendFileSync(keep, `--- ${new Date().toISOString()}\n${r.text}\n`); }
         if (v || ++tried >= 2) return { v, cost };
       } catch (e) {
         if (!passing(e)) throw e;
-        if (!down) { down = Date.now(); await notify('Burnt Cookies waiting', [e.message, 'It tries again every 5 minutes and carries on by itself.'], { problem: true }); }
+        if (!down) { down = Date.now(); await tell('Burnt Cookies waiting', [e.message, 'It tries again every 5 minutes and carries on by itself.'], { problem: true }); }
         await sleep(WAIT);
       }
     }
@@ -221,7 +223,7 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
     // Nothing readable after two tries: the passage fails (no written.json, no done.json), so a run again retries it.
     // Fixes never run on an empty set of lines.
     const written = await stage(path.join(d, 'written.json'), async () => {
-      const r = await ask(() => chat({ ...SONNET, system, user: WRITE(m), passage: p.id, step: STEP, role: 'writer' }),
+      const r = await ask(() => chatFn({ ...SONNET, system, user: WRITE(m), passage: p.id, step: STEP, role: 'writer' }),
         (t) => Array.isArray(json(t)?.lines) && json(t).lines.length ? json(t) : null, path.join(d, 'unreadable.txt'));
       if (!r.v) throw Object.assign(new Error(`Sonnet's reply couldn't be read twice ($${r.cost.toFixed(3)}); it's kept in unreadable.txt.`), { detail: '' });
       return { ...r.v, cost: r.cost };
@@ -231,7 +233,7 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
       const script = scriptCheck(m, { lines });
       const had = before?.filter((f) => f.kind === 'terra') ?? null;
       const items = had ? forTerra(lines, had.map((f) => f.line)).map((x) => ({ ...x, had: had.filter((f) => f.line === x.line).map((f) => f.problem).join(' ') })) : forTerra(lines);
-      const r = items.length ? await ask(() => chat({ ...TERRA, system: TERRA_SYSTEM, user: had ? RECHECK(items) : CHECK(items), passage: p.id, step: STEP, role: 'reviewer' }), findings) : { v: [], cost: 0 };
+      const r = items.length ? await ask(() => chatFn({ ...TERRA, system: TERRA_SYSTEM, user: had ? RECHECK(items) : CHECK(items), passage: p.id, step: STEP, role: 'reviewer' }), findings) : { v: [], cost: 0 };
       return { script, terra: (r.v ?? []).map((f) => ({ ...f, kind: 'terra' })), cost: r.cost };
     });
     const c1 = await check('check-1.json');
@@ -239,18 +241,19 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
     const first = found.length;
     for (let n = 1; n <= 3 && found.length; n++) {
       const fix = await stage(path.join(d, `fix-${n}.json`), async () => {
-        const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, lines, found), passage: p.id, step: STEP, role: 'fixer' }),
+        const r = await ask(() => chatFn({ ...SONNET, system, user: FIX(m, lines, found), passage: p.id, step: STEP, role: 'fixer' }),
           (t) => Array.isArray(json(t)?.lines) ? json(t).lines : null, path.join(d, 'unreadable.txt'));
-        return { lines: r.v ?? [], cost: r.cost, ...(n === 3 && { problems: found }) };
+        return { lines: r.v ?? [], cost: r.cost, ...(!r.v && { unreadable: true }), ...(n === 3 && { problems: found }) };
       });
       lines = merge(lines, fix.lines);
+      if (fix.unreadable) break;   // a fix that can't be read twice won't be read a third time: keep the lines as they are
       if (n === 3) {
         // The free check runs once more on the final fix; a countable rule still broken gets one last fix for just
         // that, and that version stands
         const after = await stage(path.join(d, 'check-final.json'), async () => ({ script: scriptCheck(m, { lines }), cost: 0 }));
         if (after.script.length) {
           const last = await stage(path.join(d, 'fix-rules.json'), async () => {
-            const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, lines, after.script), passage: p.id, step: STEP, role: 'fixer' }),
+            const r = await ask(() => chatFn({ ...SONNET, system, user: FIX(m, lines, after.script), passage: p.id, step: STEP, role: 'fixer' }),
               (t) => Array.isArray(json(t)?.lines) ? json(t).lines : null);
             return { lines: r.v ?? [], cost: r.cost, problems: after.script };
           });
@@ -268,12 +271,12 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
     const left = fs.existsSync(path.join(d, 'fix-3.json')) ? readJson(path.join(d, 'fix-3.json')).problems?.length ?? 0 : 0;
     writeJson(path.join(d, 'done.json'), { firstFindings: first, finalFix: left, flags: 0, cost: Math.round(total * 10000) / 10000, t: new Date().toISOString() });
     spent += total; counted++;
-    logEvent({ type: 'step', passage: p.id, step: STEP, status: 'done', model: null });
-    logEvent({ type: 'note', title: `Burnt Cookies for ${span(p.start, p.end)}`, lines: [`${first} problems at first, ${left} needed the final fix`, `$${total.toFixed(3)}`] });
+    log({ type: 'step', passage: p.id, step: STEP, status: 'done', model: null });
+    log({ type: 'note', title: `Burnt Cookies for ${span(p.start, p.end)}`, lines: [`${first} problems at first, ${left} needed the final fix`, `$${total.toFixed(3)}`] });
   }
 
   let spent = 0, counted = 0;
-  const fail = (p, e) => logEvent({ type: 'note', title: 'Burnt Cookies: a passage failed', lines: [`${span(p.start, p.end)}: ${e.message}`, e.detail ?? ''], problem: true });
+  const fail = (p, e) => log({ type: 'note', title: 'Burnt Cookies: a passage failed', lines: [`${span(p.start, p.end)}: ${e.message}`, e.detail ?? ''], problem: true });
   if (todo.length > 1) { try { await one(todo[0]); } catch (e) { fail(todo[0], e); } todo.shift(); }
   const queue = [...todo];
   let finished = 0, stopped = null;
@@ -284,16 +287,16 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
   await Promise.all(Array.from({ length: Math.max(1, Math.min(agents, queue.length)) }, async () => {
     while (queue.length) {
       const p = queue.shift();
-      try { await one(p); if (++finished % 100 === 0) saveToGit(`Burnt Cookies: ${finished} passages done (automatic backup)`); }
+      try { await one(p); if (++finished % 100 === 0) backup(`Burnt Cookies: ${finished} passages done (automatic backup)`); }
       catch (e) { fail(p, e); }
-      if (!stopped && (stopped = tooMuch())) { queue.length = 0; await notify('Stopped: cost above the estimate', [stopped, 'Run it again to carry on.'], { problem: true }); }
+      if (!stopped && (stopped = tooMuch())) { queue.length = 0; await tell('Stopped: cost above the estimate', [stopped, 'Run it again to carry on.'], { problem: true }); }
     }
   }));
   const done = chosen.filter((p) => fs.existsSync(path.join(dir(p), 'done.json')));
   const cost = done.reduce((k, p) => k + (readJson(path.join(dir(p), 'done.json'))?.cost ?? 0), 0);
-  saveToGit(`Burnt Cookies: ${done.length} of ${chosen.length} passages done (automatic backup)`);
-  logEvent({ type: 'run', status: 'finished', note: `Burnt Cookies: ${done.length} of ${chosen.length}.` });
-  await notify('Burnt Cookies finished', [`${done.length} of ${chosen.length} passages done`, `Cost: $${cost.toFixed(2)}`]);
+  backup(`Burnt Cookies: ${done.length} of ${chosen.length} passages done (automatic backup)`);
+  log({ type: 'run', status: 'finished', note: `Burnt Cookies: ${done.length} of ${chosen.length}.` });
+  await tell('Burnt Cookies finished', [`${done.length} of ${chosen.length} passages done`, `Cost: $${cost.toFixed(2)}`]);
   return { done: done.length, total: chosen.length, cost };
 }
 
