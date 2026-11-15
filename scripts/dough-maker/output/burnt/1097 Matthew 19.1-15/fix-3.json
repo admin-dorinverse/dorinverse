@@ -1,0 +1,36 @@
+{
+  "lines": [
+    {
+      "line": 2,
+      "verses": "Matthew 19:3-6",
+      "text": "Pharisees tested Jesus about divorce, and He said the Creator made them male and female, so man must not separate.",
+      "burnt": false
+    },
+    {
+      "line": 5,
+      "verses": "Matthew 19:13-15",
+      "text": "The disciples rebuked those bringing children, but Jesus said the kingdom of heaven belongs to those who teach them.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "those who teach them",
+          "true": "such as these",
+          "verse": "Matthew 19:14"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0078968,
+  "problems": [
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its true detail \"such as these children\" isn't in Matthew 19:14 word for word."
+    }
+  ]
+}
