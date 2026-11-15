@@ -35,7 +35,7 @@ This file says which model does each job in the lesson run, and how the run uses
 | 3. Each passage, after Prep | Burnt Cookies | Sonnet | script + GPT-6.1 Terra | Sonnet, up to 2 times, then a final fix | script + GPT-6.1 Terra on each fix |
 | | The Big Idea | Sonnet | script + GPT-6.1 Terra | Sonnet, up to 2 times, then a final fix | script + GPT-6.1 Terra on each fix |
 | | Answer explanations | Sonnet | script + GPT-6.1 Terra | Sonnet, up to 2 times, then a final fix | GPT-6.1 Terra on each fix |
-| | Definitions | Kimi | Kimi + script | Kimi | Opus |
+| | Definitions | Sonnet | script + GPT-6.1 Terra | Sonnet, up to 2 times, then a final fix | script + GPT-6.1 Terra on each fix |
 | | Sample Table | Kimi | Kimi + script | Kimi | Opus |
 | 4. Last, across all passages | Idioms | Kimi | Kimi + script | Kimi | Opus |
 | 5. After the run | Tracker + flags | script | — | — | the person |
@@ -45,6 +45,8 @@ Answer explanations: Sonnet writes (normal speed, OpenRouter, Anthropic only). S
 Burnt Cookies: Sonnet writes (normal speed, OpenRouter, Anthropic only). The script checks the rules it can count and look up, puts the true detail back into each burnt line, then GPT-6.1 Terra checks that the good lines and the corrected burnt lines are true to their verses. Sonnet fixes what was found, up to two times, then a final fix. The script checks the final fix, and anything countable still broken gets one last fix for just that. No flags.
 
 The Big Idea: Sonnet writes (normal speed, OpenRouter, Anthropic only), with Papa Dorin's voice. The script checks the rules it can count and look up, then GPT-6.1 Terra checks that it is true to the passage and says what the passage teaches and why it matters to the baker, without walking through the events again. Sonnet fixes what was found, up to two times, then a final fix. The script checks the final fix, and anything countable still broken gets one last fix for just that. No flags.
+
+Definitions: one Bible word list the owner approved (Sonnet sorted it). Sonnet writes each meaning from the BSB footnotes and public-domain dictionaries; the script checks the rules it can count and the copy check, then GPT-6.1 Terra checks each meaning is true to its sources, plain for a 10-year-old and fits the cards. Sonnet then matches every card to the meaning it uses, or none. No flags.
 
 ## "Kimi + script"
 
