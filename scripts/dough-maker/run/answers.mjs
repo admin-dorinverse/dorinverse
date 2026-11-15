@@ -98,7 +98,7 @@ Report tone only when an explanation is clearly flat, generic or preachy, not fo
 Only clear problems. Reply with only JSON: {"findings": [{"stop": n, "card": n, "answer": n, "kind": "bible" | "rule" | "tone", "problem": "..."}]}. Nothing found: {"findings": []}.`;
 
 // Only the cards with a problem go back to Sonnet (owner, 2026-11-15): less to read, and nothing else can change
-const FIX = (m, all, findings) => { const on = (x) => findings.some((f) => f.stop === x.stop && f.card === x.card); return `${m.head}
+export const FIX = (m, all, findings) => { const on = (x) => findings.some((f) => f.stop === x.stop && f.card === x.card); return `${m.head}
 
 The choice cards that have a problem:
 ${JSON.stringify(m.choices.filter(on), null, 2)}
@@ -169,11 +169,11 @@ export function flatten(m, out) {
   }
   return { list, missing };
 }
-const merge = (list, fixes) => list.map((e) => {
+export const merge = (list, fixes) => list.map((e) => {
   const f = fixes.find((x) => x.stop === e.stop && x.card === e.card && x.answer === e.answer && x.explanation);
   return f ? { ...e, explanation: f.explanation } : e;
 });
-const finalOut = (m, list) => ({ cards: m.choices.map((c) => ({ stop: c.stop, card: c.card,
+export const finalOut = (m, list) => ({ cards: m.choices.map((c) => ({ stop: c.stop, card: c.card,
   explanations: c.answers.map((a, i) => ({ answer: a.text, explanation: list.find((e) => e.stop === c.stop && e.card === c.card && e.answer === i + 1)?.explanation ?? '' })) })) });
 
 // --- the missing "…" ---------------------------------------------------------------------------------------------
