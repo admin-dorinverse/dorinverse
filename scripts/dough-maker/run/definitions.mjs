@@ -63,8 +63,11 @@ export function material({ list = readJson(path.join(DEF_DIR, 'bible-words-group
       for (const g of new Set([...onCard].map((w) => formOf.get(w)).filter(Boolean))) {
         const forms = new Set(list.find((x) => x.word === g).forms);
         if (![...forms].some((f) => inVerses.has(f))) continue;   // the card's own verses don't use it (definitions.md "When")
+        // snippet: about 12 words either side of the word in its verse, for matching (only the verse decides the meaning)
+        const vs = sentenceWith(vt, forms), vw = vs.split(/\s+/), at = Math.max(0, vw.findIndex((w) => words(w).some((x) => forms.has(x))));
         cards.get(g).push({ passage_id: p.id, stop: s.stop, card: c.card, verses: c.verses,
-          card_text: sentenceWith(text, forms), verse_text: sentenceWith(vt, forms) });
+          card_text: sentenceWith(text, forms), verse_text: vs,
+          snippet: (at > 12 ? '…' : '') + vw.slice(Math.max(0, at - 12), at + 13).join(' ') + (at + 13 < vw.length ? '…' : '') });
       }
     }
   }
@@ -176,6 +179,8 @@ For each card below, which meaning fits how it uses the word? 0 if none fits.
 ${batch.map((c, i) => `${i + 1}. ${c.card_text}\n   Verse (${c.verses}): ${c.verse_text}`).join('\n')}
 
 Reply with only JSON: {"cards": [{"n": 1, "meaning": 1}]} with one entry for every card.`;
+// (2026-11-15: a bare list of numbers and short verse pieces were tried for cost; Sonnet lost its place in the list
+// and matched worse, so each card keeps its number, its sentence and its whole verse)
 
 // --- the script check ----------------------------------------------------------------------------------------------
 export function scriptCheck(m, meanings) {
@@ -290,7 +295,7 @@ export async function runDefinitions({ only = null, limit = Infinity, agents = 2
         const batch = cardsIn.slice(i, i + ASSIGN_BATCH);
         const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, ms, batch), step: STEP, role: 'assigner' }), read, keep);
         cost += r.cost;
-        const got = new Map((r.v ?? []).filter(ok).map((x) => [x.n, x.meaning]));
+        const got = new Map((r.v ?? []).filter((x) => ok(x) && x.n >= 1 && x.n <= batch.length).map((x) => [x.n, x.meaning]));
         // cards it skipped are asked once more, on their own
         const missed = batch.map((c, k) => ({ c, k })).filter(({ k }) => !got.has(k + 1));
         if (missed.length) {
@@ -299,7 +304,7 @@ export async function runDefinitions({ only = null, limit = Infinity, agents = 2
           for (const x of again.v ?? []) { const hit = missed[x?.n - 1]; if (hit && ok(x)) got.set(hit.k + 1, x.meaning); }
         }
         // still no answer: no pop-up on that card
-        batch.forEach((c, k) => { if (!got.has(k + 1)) unanswered++; out.push({ ...c, meaning: got.get(k + 1) ?? 0 }); });
+        batch.forEach((c, k) => { if (!got.has(k + 1)) unanswered++; out.push({ ...c, meaning: got.has(k + 1) ? got.get(k + 1) : null }); });   // null: no answer
       }
       return { cards: out, unanswered, cost };
     });
@@ -338,7 +343,8 @@ export async function runDefinitions({ only = null, limit = Infinity, agents = 2
         meanings = all;
       }
     }
-    assigned = assigned.map(({ passage_id, stop, card, meaning }) => ({ passage_id, stop, card, meaning }));
+    // no answer at all (null): no pop-up there either, but it never asks for a new meaning
+    assigned = assigned.map(({ passage_id, stop, card, meaning }) => ({ passage_id, stop, card, meaning: meaning ?? 0 }));
     // a meaning no card uses isn't kept
     const used = new Set(assigned.map((c) => c.meaning));
     const renumber = new Map(meanings.filter((x) => used.has(x.id)).map((x, i) => [x.id, i + 1]));
