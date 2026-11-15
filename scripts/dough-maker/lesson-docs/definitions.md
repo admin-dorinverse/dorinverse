@@ -6,6 +6,7 @@ This file covers the hard-word definitions for the dictionary pop-up.
 
 - Definitions are made after the Prep story cards and choice cards.
 - Only words in those cards get a pop-up. The reveal screen gets none.
+- A word gets a pop-up only on a card whose own verses use that word, in any form. So Papa Dorin's own talk, like his sprinkles, never gets one.
 - A definition pop-up sits on every card the word is on, even if it shows something a later choice card asks about. Pop-ups are the exception to Prep's "never give away an answer" rule.
 
 ## Which words
