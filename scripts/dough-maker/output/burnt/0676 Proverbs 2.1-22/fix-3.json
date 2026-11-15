@@ -1,0 +1,70 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Proverbs 2:1-4",
+      "text": "The son is told to accept the words, call out to insight, and search for wisdom like hidden treasure.",
+      "burnt": false
+    },
+    {
+      "line": 2,
+      "verses": "Proverbs 2:5-7",
+      "text": "The son will discover the knowledge of God, and the LORD gives wisdom and shields those with integrity.",
+      "burnt": false
+    },
+    {
+      "line": 4,
+      "verses": "Proverbs 2:12-15",
+      "text": "The son will be delivered from those who leave the straight paths to walk in the ways of light.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "light",
+          "true": "darkness",
+          "verse": "Proverbs 2:13"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "verses": "Proverbs 2:16-19",
+      "text": "The forbidden woman forgets the covenant of her father, and her house sinks down to death.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "her father",
+          "true": "her God",
+          "verse": "Proverbs 2:17"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0220028,
+  "problems": [
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It has 23 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 1,
+      "problem": "Verses 1–4 do not state that the son will find understanding.",
+      "kind": "terra"
+    },
+    {
+      "line": 4,
+      "problem": "Verses 12–15 do not identify understanding as what will deliver the son.",
+      "kind": "terra"
+    },
+    {
+      "line": 5,
+      "problem": "Verses 16–19 do not identify what 'it' refers to, so they do not specify that understanding will rescue the son.",
+      "kind": "terra"
+    }
+  ]
+}
