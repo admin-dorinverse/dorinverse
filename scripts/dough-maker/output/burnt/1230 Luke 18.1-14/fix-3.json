@@ -1,0 +1,48 @@
+{
+  "lines": [
+    {
+      "line": 2,
+      "verses": "Luke 18:4-5",
+      "text": "The judge refuses for a while, but later decides to give the widow justice because he fears God.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "because he fears God",
+          "true": "because she keeps pestering him",
+          "verse": "Luke 18:5"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "verses": "Luke 18:10-12",
+      "text": "A Pharisee and a priest pray at the temple, and the Pharisee thanks God he is not like others.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "a priest",
+          "true": "a tax collector",
+          "verse": "Luke 18:10"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0192888,
+  "problems": [
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "Its wrong detail \"threatening\" isn't found anywhere in the Bible."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 2,
+      "problem": "The line says the judge gives the widow justice, but the verses only say he decides to do so.",
+      "kind": "terra"
+    }
+  ]
+}
