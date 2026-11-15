@@ -1,0 +1,30 @@
+{
+  "lines": [
+    {
+      "line": 5,
+      "verses": "Genesis 32:16",
+      "text": "Jacob entrusts the herds to his sons and tells them to keep some distance between the herds.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "sons",
+          "true": "servants",
+          "verse": "Genesis 32:16"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0168608,
+  "problems": [
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It has 23 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its true detail \"Esau\" is named in line 1, 3, 4, which gives it away. Burn a detail no other line mentions."
+    }
+  ]
+}

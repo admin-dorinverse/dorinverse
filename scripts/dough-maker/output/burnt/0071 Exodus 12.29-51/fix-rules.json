@@ -1,0 +1,52 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Exodus 12:29-30",
+      "text": "At midnight the LORD struck down every firstborn male in Egypt, and there was loud wailing in every house.",
+      "burnt": false
+    },
+    {
+      "line": 3,
+      "verses": "Exodus 12:34",
+      "text": "The people took their dough before it was leavened and carried it on their shoulders in kneading bowls.",
+      "burnt": false
+    },
+    {
+      "line": 5,
+      "verses": "Exodus 12:40-41",
+      "text": "The Israelites stayed in Egypt 480 years, and on the very day those years ended, the LORD's divisions left.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "480 years",
+          "true": "430 years",
+          "verse": "Exodus 12:40"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0250096,
+  "problems": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 3,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its wrong detail \"400 years\" isn't found anywhere in the Bible."
+    }
+  ]
+}
