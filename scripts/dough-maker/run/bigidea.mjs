@@ -22,7 +22,7 @@ import { saveToGit } from './save.mjs';
 import { PREP_DIR, folder, passing } from './prep.mjs';
 import { chat, SONNET_OR } from './openrouter.mjs';
 import { sentences } from './answers.mjs';
-import { material } from './burnt.mjs';
+import { material, json } from './burnt.mjs';   // json: the last whole JSON object in a reply
 
 const STEP = 'big_idea';
 export const BIGIDEA_DIR = path.join(OUTPUT, 'bigidea');
@@ -33,11 +33,6 @@ const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 function writeJson(f, d) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f + '.tmp', JSON.stringify(d, null, 2) + '\n'); fs.renameSync(f + '.tmp', f); }
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
-function json(text) {
-  const a = String(text ?? '').indexOf('{'), b = String(text ?? '').lastIndexOf('}');
-  try { if (a >= 0 && b > a) return JSON.parse(text.slice(a, b + 1)); } catch { /* below */ }
-  return null;
-}
 const norm = (s) => String(s ?? '').replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
 const unquoted = (t) => String(t).replace(/“[^”]*”|"[^"]*"/g, ' ');
 const wordsOf = (s) => norm(s).match(/[a-z']+/g) ?? [];

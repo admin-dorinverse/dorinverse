@@ -33,10 +33,22 @@ const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 function writeJson(f, d) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f + '.tmp', JSON.stringify(d, null, 2) + '\n'); fs.renameSync(f + '.tmp', f); }
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
-function json(text) {
-  const a = String(text ?? '').indexOf('{'), b = String(text ?? '').lastIndexOf('}');
-  try { if (a >= 0 && b > a) return JSON.parse(text.slice(a, b + 1)); } catch { /* below */ }
-  return null;
+// The last whole JSON object in a reply. Sonnet sometimes writes its answer, then "Wait, correction needed…" and a
+// second answer; the corrected one is the last (2026-11-15: 93 passages lost when the two were read as one).
+export function json(text) {
+  const s = String(text ?? ''), found = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== '{') continue;
+    let depth = 0, inStr = false, esc = false, end = -1;
+    for (let k = i; k < s.length; k++) {
+      const c = s[k];
+      if (inStr) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') inStr = false; continue; }
+      if (c === '"') inStr = true; else if (c === '{') depth++; else if (c === '}' && --depth === 0) { end = k; break; }
+    }
+    if (end < 0) continue;
+    try { found.push(JSON.parse(s.slice(i, end + 1))); i = end; } catch { /* an unfinished or broken object: look inside it */ }
+  }
+  return found.at(-1) ?? null;
 }
 const norm = (s) => String(s ?? '').replace(/[‘’]/g, "'").replace(/[“”]/g, '"').toLowerCase();
 const has = (hay, needle) => new RegExp(`(^|[^a-z'])${norm(needle).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-z'])`).test(norm(hay));
