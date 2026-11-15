@@ -2,7 +2,8 @@
 
 This file covers the Big Idea, the last stop of every lesson. It comes after Burnt Cookies.
 
-- **Papa Dorin's summary of the passage,** about 5 to 7 lines.
+- **Papa Dorin's summary of the passage.** About 3 short paragraphs, each 2 to 4 sentences.
+- No em dashes or en dashes.
 - **A real summary** of what the passage means, not a retelling of the verses.
 - **Papa Dorin, fully himself.** papa-dorin.md covers how he sounds.
 - **Not quizzed.**
@@ -11,10 +12,10 @@ This file covers the Big Idea, the last stop of every lesson. It comes after Bur
 
 ## Output
 
-A JSON file for the passage. Each line is one entry.
+A JSON file for the passage. Each paragraph is one entry.
 
 ```json
 {
-  "lines": [ "...", "...", "...", "...", "..." ]
+  "paragraphs": [ "...", "...", "..." ]
 }
 ```
