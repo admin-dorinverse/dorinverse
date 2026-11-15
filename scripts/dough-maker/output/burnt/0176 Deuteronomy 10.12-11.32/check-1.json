@@ -1,0 +1,42 @@
+{
+  "script": [
+    {
+      "line": null,
+      "kind": "rule",
+      "problem": "1 lines are burnt. Exactly 2 are."
+    },
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "\"Moses\" isn't in this passage."
+    },
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It is out of passage order."
+    }
+  ],
+  "terra": [
+    {
+      "line": 1,
+      "problem": "The printed verses do not identify the speaker as Moses.",
+      "kind": "terra"
+    },
+    {
+      "line": 5,
+      "problem": "The printed verses do not state that the promises are conditional on Israel's obedience.",
+      "kind": "terra"
+    }
+  ],
+  "cost": 0.006013
+}

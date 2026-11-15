@@ -1,0 +1,61 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Deuteronomy 4:41",
+      "text": "Moses set aside three cities across the Jordan to the east.",
+      "burnt": false
+    },
+    {
+      "line": 2,
+      "verses": "Deuteronomy 4:42",
+      "text": "A manslayer who killed his neighbor unintentionally, without prior malice, could flee to one of these cities.",
+      "burnt": false
+    },
+    {
+      "line": 3,
+      "verses": "Deuteronomy 4:42",
+      "text": "By fleeing to one of these cities, the manslayer could save his own home.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "home",
+          "true": "life",
+          "verse": "Deuteronomy 4:42"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "verses": "Deuteronomy 4:43",
+      "text": "Bezer was in the wilderness on the plateau, and it belonged to the Reubenites.",
+      "burnt": false
+    },
+    {
+      "line": 5,
+      "verses": "Deuteronomy 4:43",
+      "text": "Ramoth was in Gilead belonging to the Gadites, and Golan was in Bashan belonging to the Benjamites.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "Benjamites",
+          "true": "Manassites",
+          "verse": "Deuteronomy 4:43"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0063948,
+  "problems": [
+    {
+      "line": null,
+      "kind": "rule",
+      "problem": "There are 0 lines. There are 5."
+    },
+    {
+      "line": null,
+      "kind": "rule",
+      "problem": "0 lines are burnt. Exactly 2 are."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Numbers 32:1-5",
+      "text": "The Reubenites and Gadites, with large herds, ask Moses for the land of Jazer and Gilead instead of crossing.",
+      "burnt": false
+    },
+    {
+      "line": 3,
+      "verses": "Numbers 32:11-12",
+      "text": "The LORD swore that of the men twenty or older from Egypt, only Caleb and Aaron son of Nun would see the land.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "Aaron",
+          "true": "Joshua",
+          "verse": "Numbers 32:12"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "verses": "Numbers 32:20-23",
+      "text": "Moses says if every armed man crosses until the land is subdued, they may return; otherwise sin will find them.",
+      "burnt": false
+    },
+    {
+      "line": 5,
+      "verses": "Numbers 32:33",
+      "text": "Moses gave Gad, Reuben and half of Manasseh the kingdoms of Sihon king of the Amorites and Og king of Moab.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "Moab",
+          "true": "Bashan",
+          "verse": "Numbers 32:33"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0172828,
+  "problems": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 3,
+      "kind": "rule",
+      "problem": "It has 24 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 3,
+      "problem": "The line still omits that the men twenty or older were those who came out of Egypt.",
+      "kind": "terra"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Numbers 17:1-3",
+      "text": "The LORD has Moses collect twelve staffs, one per tribe leader, with Aaron's name written on the staff of Levi.",
+      "burnt": false
+    },
+    {
+      "line": 2,
+      "verses": "Numbers 17:4-5",
+      "text": "Moses places the staffs in the Tent of Meeting, and the chosen man's staff will turn into a snake.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "turn into a snake",
+          "true": "sprout",
+          "verse": "Numbers 17:5"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "verses": "Numbers 17:9-11",
+      "text": "Moses puts Aaron's staff back in front of the Testimony as a sign for the rebellious, lest they be scattered.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "scattered",
+          "true": "die",
+          "verse": "Numbers 17:10"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "verses": "Numbers 17:12-13",
+      "text": "The Israelites cry out that they are perishing, that anyone near the tabernacle will die, and ask if all will perish.",
+      "burnt": false
+    }
+  ],
+  "cost": 0.0247596,
+  "problems": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "\"Aaron\" isn't in this passage."
+    },
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "Its wrong detail \"in front of the golden calf\" is 6 words. Swap one short detail (4 words or fewer, like a name, place or number) and list only the swapped words."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "Its true detail \"so they will not die\" isn't in Numbers 17:10 word for word."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "Its wrong detail \"so the people will not be enslaved\" is 7 words. Swap one short detail (4 words or fewer, like a name, place or number) and list only the swapped words."
+    },
+    {
+      "line": 5,
+      "problem": "The Israelites’ question about whether they will all perish is still omitted.",
+      "kind": "terra"
+    }
+  ]
+}
