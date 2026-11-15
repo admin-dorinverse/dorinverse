@@ -4,7 +4,8 @@
 //   2. The script checks every rule it can count or look up: 2 to 4 paragraphs (about 3), 3 to 4 sentences in each,
 //      no dashes, every quote is the BSB's exact words, every reference is real.
 //   3. GPT-6.1 Terra checks that it is true to the passage and is a summary of what it means, not a retelling.
-//   4. Sonnet fixes what was found, up to two times, each fix checked again; then a final fix. No flags.
+//   4. Sonnet fixes what was found, up to two times, each fix checked again; then a final fix. The script checks
+//      the final fix, and anything countable still broken gets one last fix for just that. No flags.
 // Saved under output/bigidea/<id and range>/ as it goes (big-idea.json is the finished file), so running it again
 // picks up where it left off. The first passage goes alone so the rules are in the cache before the rest start.
 //
@@ -47,7 +48,7 @@ What the Prep walkthrough taught (each card with its verses):
 ${m.prepText}
 
 Write The Big Idea for ${span(m.p.start, m.p.end)}, following big-idea.md and papa-dorin.md.
-- About 3 short paragraphs, each 3 to 4 sentences.
+- About 3 short paragraphs. Each paragraph has 3 or 4 sentences. Count them before you reply.
 - A real summary of what the passage means, not a retelling of the verses.
 - No em dashes or en dashes.
 - Words in quotation marks are the BSB's exact words.
@@ -64,15 +65,17 @@ ${JSON.stringify({ paragraphs }, null, 2)}
 Problems found:
 ${JSON.stringify(found.map(({ paragraph, problem }) => ({ paragraph, problem })), null, 2)}
 
-Rewrite The Big Idea so every problem is gone, following big-idea.md and papa-dorin.md. Keep about 3 paragraphs of 3 to 4 sentences each. Change only what the problems need.
+Rewrite The Big Idea so every problem is gone, following big-idea.md and papa-dorin.md. Keep about 3 paragraphs. Each paragraph has 3 or 4 sentences. Count them before you reply. Change only what the problems need.
 Reply with only JSON: {"paragraphs": ["...", "..."]}.`;
 
-const TERRA_SYSTEM = 'You check short summaries of Bible passages against the passage itself (Berean Standard Bible).';
+const SHORT_OK = 'For a short passage, like a psalm, following the verses in order is fine, as long as each paragraph says what the passage means and doesn\'t just repeat what the verses say.';
+const TERRA_SYSTEM ='You check short summaries of Bible passages against the passage itself (Berean Standard Bible).';
 const CHECK = (m, paragraphs) => `${m.head}
 
 Below is The Big Idea for this passage: a short summary, in a friendly teacher's voice, of what the passage means. Check two things:
 1. Is it true to the passage? Nothing it says is false, changed, or contradicted by the passage. It may bring in context the passage needs, and its own friendly asides and jokes are fine as long as they don't misstate the Bible.
 2. Is it a summary of what the passage means, not a retelling of the verses in order?
+${SHORT_OK}
 
 ${paragraphs.map((x, i) => `Paragraph ${i + 1}: ${x}`).join('\n\n')}
 
@@ -85,6 +88,7 @@ ${had.map((f) => `- Paragraph ${f.paragraph ?? '?'}: ${f.problem}`).join('\n')}
 ${paragraphs.map((x, i) => `Paragraph ${i + 1}: ${x}`).join('\n\n')}
 
 Check only whether those problems are now fixed. Don't report anything else.
+${SHORT_OK}
 Reply with only JSON: {"findings": [{"paragraph": n, "problem": "the problem that is still there"}]}. All fixed: {"findings": []}.`;
 
 // --- the script check ----------------------------------------------------------------------------------------------
@@ -173,13 +177,25 @@ export async function runBigIdea(ids, { agents = 20, maxCost = Infinity, maxPerP
         return { paragraphs: r.v ?? paragraphs, cost: r.cost, ...(n === 3 && { problems: found }) };
       });
       if (Array.isArray(fix.paragraphs) && fix.paragraphs.length) paragraphs = fix.paragraphs;
-      if (n === 3) break;   // the final fix stands
+      if (n === 3) {
+        // The free check runs once more on the final fix; a countable rule still broken (like a 5-sentence
+        // paragraph) gets one last fix for just that, and that version stands
+        const after = await stage(path.join(d, 'check-final.json'), async () => ({ script: scriptCheck(m, { paragraphs }), cost: 0 }));
+        if (after.script.length) {
+          const last = await stage(path.join(d, 'fix-rules.json'), async () => {
+            const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, paragraphs, after.script), passage: p.id, step: STEP, role: 'fixer' }), paras);
+            return { paragraphs: r.v ?? paragraphs, cost: r.cost, problems: after.script };
+          });
+          if (Array.isArray(last.paragraphs) && last.paragraphs.length) paragraphs = last.paragraphs;
+        }
+        break;
+      }
       const cn = await check(`check-${n + 1}.json`, found);
       found = [...cn.script, ...cn.terra];
     }
     writeJson(path.join(d, 'big-idea.json'), { paragraphs });
     const c = (f) => readJson(path.join(d, f))?.cost ?? 0;
-    const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3'].reduce((k, f) => k + c(`${f}.json`), 0);
+    const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3', 'fix-rules'].reduce((k, f) => k + c(`${f}.json`), 0);
     const left = fs.existsSync(path.join(d, 'fix-3.json')) ? readJson(path.join(d, 'fix-3.json')).problems?.length ?? 0 : 0;
     writeJson(path.join(d, 'done.json'), { firstFindings: first, finalFix: left, flags: 0, cost: Math.round(total * 10000) / 10000, t: new Date().toISOString() });
     spent += total; counted++;
