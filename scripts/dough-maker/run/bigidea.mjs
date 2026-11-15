@@ -92,13 +92,14 @@ ${SHORT_OK}
 Reply with only JSON: {"findings": [{"paragraph": n, "problem": "the problem that is still there"}]}. All fixed: {"findings": []}.`;
 
 // --- the script check ----------------------------------------------------------------------------------------------
-let bible = null, bibleWords = null;
+let bible = null, flat = null;
+const bibleFlat = () => (flat ??= ' ' + wordsOf(bibleText()).join(' ') + ' ');   // words only, for 3-word runs
 const bibleText = () => (bible ??= norm(verses().map((v) => v.text).join(' ')));
 export function scriptCheck(m, out) {
   const found = [], say = (paragraph, problem) => found.push({ paragraph, kind: 'rule', problem });
   const ps = Array.isArray(out?.paragraphs) ? out.paragraphs : [];
   if (ps.length < 2 || ps.length > 4) say(null, `There are ${ps.length} paragraphs. There are about 3.`);
-  bibleWords ??= new Set(wordsOf(bibleText()));
+  const here = ' ' + passageText(m.p.start, m.p.end).split('\n').map((v) => wordsOf(v.replace(/^.*? \d+:\d+ /, '')).join(' ')).join(' ') + ' ';
   ps.forEach((p, i) => {
     const n = i + 1, t = String(p ?? '');
     if (typeof p !== 'string' || !t.trim()) { say(n, 'It is empty.'); return; }
@@ -107,10 +108,13 @@ export function scriptCheck(m, out) {
     if (/[–—]/.test(unquoted(t))) say(n, 'It uses a dash. No em dashes or en dashes.');
     for (const q of t.match(/“[^”]+”|"[^"]+"/g) ?? []) {
       const inner = norm(q.slice(1, -1));
-      // "…" marks skipped words, so each side is checked on its own; only quotes that read like Bible words count
+      // "…" marks skipped words, so each side is checked on its own. Only a quote that comes from the Bible counts:
+      // it shares 4 words in a row with the passage or 5 with the whole Bible ("The LORD is my shepherd; I shall
+      // never want" does; Papa Dorin's own "call me if you need anything" doesn't, though every word is a Bible word)
       const pieces = inner.split(/\s*(?:…|\.\.\.|[.,;:!?])\s*/).filter((x) => x.split(' ').length >= 3);
       const w = wordsOf(inner);
-      const biblical = w.length >= 3 && w.filter((x) => bibleWords.has(x)).length / w.length >= 0.75;
+      const shares = (n, text) => w.some((_, k) => k + n <= w.length && text.includes(` ${w.slice(k, k + n).join(' ')} `));
+      const biblical = shares(4, here) || shares(5, bibleFlat());
       if (biblical && pieces.some((x) => !bibleText().includes(x))) say(n, `The quote ${q} isn't the BSB's exact words.`);
     }
     for (const r of t.match(/\b(?:[1-3] )?[A-Z][a-z]+(?: of [A-Z][a-z]+)? \d+:\d+(?:-\d+(?::\d+)?)?/g) ?? []) {
