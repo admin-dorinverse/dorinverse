@@ -1,0 +1,54 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Acts 5:12-16",
+      "text": "The apostles performed many signs and wonders, and all the sick who were brought to them were healed.",
+      "burnt": false
+    },
+    {
+      "line": 3,
+      "verses": "Acts 5:21-26",
+      "text": "After someone reported the apostles teaching in the temple courts, the high priest brought them gently for fear of the people.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "high priest",
+          "true": "captain",
+          "verse": "Acts 5:26"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "verses": "Acts 5:34-39",
+      "text": "A Pharisee named Gamaliel reminded the Council of Theudas and Judas Iscariot, and urged leaving the apostles alone.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "Judas Iscariot",
+          "true": "Judas the Galilean",
+          "verse": "Acts 5:37"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0267848,
+  "problems": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "\"Solomon\" isn't in this passage."
+    },
+    {
+      "line": 3,
+      "kind": "rule",
+      "problem": "Its wrong detail \"because an angel warned him\" is 5 words. Swap one short detail (4 words or fewer, like a name, place or number) and list only the swapped words."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "Its wrong detail \"Sadducee\" isn't found anywhere in the Bible."
+    }
+  ]
+}
