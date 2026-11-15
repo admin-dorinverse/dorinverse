@@ -42,7 +42,7 @@ This file says which model does each job in the lesson run, and how the run uses
 
 Answer explanations: Sonnet writes (normal speed, OpenRouter, Anthropic only). Script fixes missing "…" and checks the countable rules, then GPT-6.1 Terra checks everything. Sonnet fixes what Terra found, up to two times, with Terra checking each fix. Anything still wrong gets a final Sonnet fix, and that version stands. No flags.
 
-Burnt Cookies: Sonnet writes (normal speed, OpenRouter, Anthropic only). The script checks the rules it can count and look up, puts the true detail back into each burnt line, then GPT-6.1 Terra checks that the good lines and the corrected burnt lines are true to their verses. Sonnet fixes what was found, up to two times, then a final fix. No flags.
+Burnt Cookies: Sonnet writes (normal speed, OpenRouter, Anthropic only). The script checks the rules it can count and look up, puts the true detail back into each burnt line, then GPT-6.1 Terra checks that the good lines and the corrected burnt lines are true to their verses. Sonnet fixes what was found, up to two times, then a final fix. The script checks the final fix, and anything countable still broken gets one last fix for just that. No flags.
 
 The Big Idea: Sonnet writes (normal speed, OpenRouter, Anthropic only), with Papa Dorin's voice. The script checks the rules it can count and look up, then GPT-6.1 Terra checks that it is true to the passage and says what the passage teaches and why it matters to the baker, without walking through the events again. Sonnet fixes what was found, up to two times, then a final fix. The script checks the final fix, and anything countable still broken gets one last fix for just that. No flags.
 

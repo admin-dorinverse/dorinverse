@@ -7,7 +7,8 @@
 //      another line; names and numbers in the good lines are in the passage.
 //   3. The script puts the true detail back into each burnt line (a copy, only for checking), and GPT-6.1 Terra
 //      checks that the 3 good lines and the 2 corrected lines are true to the verses they cite.
-//   4. Sonnet fixes only the flagged lines, up to two times, each fix checked again; then a final fix. No flags.
+//   4. Sonnet fixes only the flagged lines, up to two times, each fix checked again; then a final fix. The script
+//      checks the final fix, and anything countable still broken gets one last fix for just that. No flags.
 // Saved under output/burnt/<id and range>/ as it goes (burnt-cookies.json is the finished file), so running it again
 // picks up where it left off. The first passage goes alone so the rules are in the cache before the rest start.
 //
@@ -231,14 +232,27 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
         return { lines: r.v ?? [], cost: r.cost, ...(n === 3 && { problems: found }) };
       });
       lines = merge(lines, fix.lines);
-      if (n === 3) break;   // the final fix stands
+      if (n === 3) {
+        // The free check runs once more on the final fix; a countable rule still broken gets one last fix for just
+        // that, and that version stands
+        const after = await stage(path.join(d, 'check-final.json'), async () => ({ script: scriptCheck(m, { lines }), cost: 0 }));
+        if (after.script.length) {
+          const last = await stage(path.join(d, 'fix-rules.json'), async () => {
+            const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, lines, after.script), passage: p.id, step: STEP, role: 'fixer' }),
+              (t) => Array.isArray(json(t)?.lines) ? json(t).lines : null);
+            return { lines: r.v ?? [], cost: r.cost, problems: after.script };
+          });
+          lines = merge(lines, last.lines);
+        }
+        break;
+      }
       const cn = await check(`check-${n + 1}.json`, found);
       found = [...cn.script, ...cn.terra];
     }
     const out = { lines: lines.map(({ line, verses: v, text, burnt, wrong_details }) => ({ line, verses: v, text, burnt: !!burnt, ...(burnt && { wrong_details }) })) };
     writeJson(path.join(d, 'burnt-cookies.json'), out);
     const c = (f) => readJson(path.join(d, f))?.cost ?? 0;
-    const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3'].reduce((k, f) => k + c(`${f}.json`), 0);
+    const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3', 'fix-rules'].reduce((k, f) => k + c(`${f}.json`), 0);
     const left = fs.existsSync(path.join(d, 'fix-3.json')) ? readJson(path.join(d, 'fix-3.json')).problems?.length ?? 0 : 0;
     writeJson(path.join(d, 'done.json'), { firstFindings: first, finalFix: left, flags: 0, cost: Math.round(total * 10000) / 10000, t: new Date().toISOString() });
     spent += total; counted++;
