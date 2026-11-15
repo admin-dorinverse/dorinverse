@@ -19,6 +19,8 @@ It runs once for the whole passage, including any included parable or sermon.
 - They go in passage order, from start to end, so together they retell the passage.
 - Each line is one sentence: a quick fact, in Papa Dorin's voice. It covers one moment, or a few that belong together.
 - No em dashes or en dashes.
+- Each line is 20 words or fewer.
+- The line's text never includes the reference. It goes in verses.
 - Every line cites its verses.
 - The 3 good lines are true to the BSB text.
 - Which 2 lines are burnt, and which details are wrong, are chosen naturally for each passage. Never a pattern.
