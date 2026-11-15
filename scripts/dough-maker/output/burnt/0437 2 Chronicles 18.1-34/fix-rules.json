@@ -1,0 +1,47 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "2 Chronicles 18:1-3",
+      "text": "Jehoshaphat visits Ahab in Samaria, and Ahab urges him toward Ramoth-gilead, and Jehoshaphat agrees to join the war.",
+      "burnt": false
+    },
+    {
+      "line": 2,
+      "verses": "2 Chronicles 18:4-5",
+      "text": "Jehoshaphat asks Ahab to inquire first for the word of the LORD, so Ahab assembles four hundred prophets.",
+      "burnt": false
+    },
+    {
+      "line": 3,
+      "verses": "2 Chronicles 18:9-11",
+      "text": "Zedekiah son of Chenaanah makes a wooden yoke and declares that with it Ahab will gore the Arameans.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "a wooden yoke",
+          "true": "iron horns",
+          "verse": "2 Chronicles 18:10"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0253468,
+  "problems": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 3,
+      "kind": "rule",
+      "problem": "Its wrong detail \"bronze horns\" isn't found anywhere in the Bible."
+    }
+  ]
+}
