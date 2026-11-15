@@ -175,7 +175,7 @@ const forTerra = (lines, only = null) => lines.filter((l) => !only || only.inclu
 const merge = (lines, fixed) => lines.map((l) => fixed.find((x) => x?.line === l.line) ?? l);
 
 // --- the run -------------------------------------------------------------------------------------------------------
-export async function runBurnt(ids, { agents = 20 } = {}) {
+export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPassage = Infinity } = {}) {
   const list = readJson(PASSAGES);
   const byId = new Map(list.map((p) => [p.id, p]));
   const dir = (p) => path.join(BURNT_DIR, folder(p));
@@ -239,19 +239,26 @@ export async function runBurnt(ids, { agents = 20 } = {}) {
     const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3'].reduce((k, f) => k + c(`${f}.json`), 0);
     const left = fs.existsSync(path.join(d, 'fix-3.json')) ? readJson(path.join(d, 'fix-3.json')).problems?.length ?? 0 : 0;
     writeJson(path.join(d, 'done.json'), { firstFindings: first, finalFix: left, flags: 0, cost: Math.round(total * 10000) / 10000, t: new Date().toISOString() });
+    spent += total; counted++;
     logEvent({ type: 'step', passage: p.id, step: STEP, status: 'done', model: null });
     logEvent({ type: 'note', title: `Burnt Cookies for ${span(p.start, p.end)}`, lines: [`${first} problems at first, ${left} needed the final fix`, `$${total.toFixed(3)}`] });
   }
 
+  let spent = 0, counted = 0;
   const fail = (p, e) => logEvent({ type: 'note', title: 'Burnt Cookies: a passage failed', lines: [`${span(p.start, p.end)}: ${e.message}`, e.detail ?? ''], problem: true });
   if (todo.length > 1) { try { await one(todo[0]); } catch (e) { fail(todo[0], e); } todo.shift(); }
   const queue = [...todo];
-  let finished = 0;
+  let finished = 0, stopped = null;
+  // Stops taking new passages when the run costs well above the estimate: past the whole-run limit, or past the
+  // per-passage limit on average once 20 passages are done. Passages already started finish.
+  const tooMuch = () => spent > maxCost ? `$${spent.toFixed(2)} spent, over the $${maxCost} limit`
+    : counted >= 20 && spent / counted > maxPerPassage ? `$${(spent / counted).toFixed(3)} a passage, over the $${maxPerPassage} limit` : null;
   await Promise.all(Array.from({ length: Math.max(1, Math.min(agents, queue.length)) }, async () => {
     while (queue.length) {
       const p = queue.shift();
       try { await one(p); if (++finished % 100 === 0) saveToGit(`Burnt Cookies: ${finished} passages done (automatic backup)`); }
       catch (e) { fail(p, e); }
+      if (!stopped && (stopped = tooMuch())) { queue.length = 0; await notify('Stopped: cost above the estimate', [stopped, 'Run it again to carry on.'], { problem: true }); }
     }
   }));
   const done = chosen.filter((p) => fs.existsSync(path.join(dir(p), 'done.json')));
@@ -270,5 +277,5 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     for (let i = a; i <= (b || a); i++) ids.push(i);
   }
   if (!ids.length) { console.error('Say which passages: --passages 1-1558'); process.exit(1); }
-  runBurnt(ids, { agents: Number(opt('--agents') ?? 20) }).then((r) => console.log(JSON.stringify(r)), (e) => { console.error(e.message); process.exit(1); });
+  runBurnt(ids, { agents: Number(opt('--agents') ?? 20), maxCost: Number(opt('--max-cost') ?? Infinity), maxPerPassage: Number(opt('--max-per-passage') ?? Infinity) }).then((r) => console.log(JSON.stringify(r)), (e) => { console.error(e.message); process.exit(1); });
 }
