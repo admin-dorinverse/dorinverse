@@ -98,7 +98,7 @@ Every lesson step also gets the passage text in the BSB.
 |---|---|---|
 | Passages | `passages.md` | The BSB text of the whole Bible |
 | Prep walkthrough | `prep-walkthrough.md` | `papa-dorin.md`, the passage's type, story group and position, the passage's included parables and sermons, the passage right before it (for context only) |
-| Burnt Cookies | `burnt-cookies.md` | `papa-dorin.md`, the passage's type, story group and position, the Prep cards for the passage |
+| Burnt Cookies | `burnt-cookies.md` | The passage's type, story group and position, the Prep cards for the passage |
 | The Big Idea | `big-idea.md` | `papa-dorin.md`, the passage's type, story group and position, the Prep cards for the passage |
 | Sample Table | `sample-table.md` | The Prep cards for the passage, the app's character set, the approved prophecy link list (`../data/prophecy-links.json`) |
 | Definitions | `definitions.md` | The Prep cards for the passage, the BSB footnotes |
