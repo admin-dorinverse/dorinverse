@@ -1,6 +1,6 @@
 # Papa Dorin's Prep: Burnt Cookies
 
-This file covers the content for Burnt Cookies, the last part of Papa Dorin's Prep. It does not cover Papa Dorin's voice or the walkthrough. Those have their own files (see the end).
+This file covers the content for Burnt Cookies, the last part of Papa Dorin's Prep. The lines are plain facts, with no voice or jokes. The walkthrough has its own file (see the end).
 
 ## What it is
 
@@ -17,12 +17,12 @@ It runs once for the whole passage, including any included parable or sermon.
 
 - There are **5 lines**, and **2 of them are burnt**.
 - They go in passage order, from start to end, so together they retell the passage.
-- Each line is one sentence: a quick fact, in Papa Dorin's voice. It covers one moment, or a few that belong together.
+- Each line is one sentence that states only a fact from the verses it cites. No jokes, asides or comments like "friend." It covers one moment, or a few that belong together.
 - No em dashes or en dashes.
 - Each line is 20 words or fewer.
 - The line's text never includes the reference. It goes in verses.
 - Every line cites its verses.
-- The 3 good lines are true to the BSB text.
+- The 3 good lines say only what their cited verses say. No outside facts, even true ones.
 - Which 2 lines are burnt, and which details are wrong, are chosen naturally for each passage. Never a pattern.
 
 ## What makes a cookie burnt
@@ -33,7 +33,7 @@ It runs once for the whole passage, including any included parable or sermon.
 - It can reuse a wrong answer from a Prep choice card, but a new wrong detail is better.
 - It's a detail that matters, never a wording trick or a near-synonym, so swapping "ship" for "boat" doesn't count.
 - It's never taken from a summary story card for a long stretch.
-- No other line, joke or callback gives away a burnt detail.
+- No other line gives away a burnt detail.
 
 ## Output
 
@@ -56,6 +56,5 @@ A JSON file for the passage, with the 5 lines in passage order. References use t
 
 ## Other files
 
-- **Papa Dorin's personality:** his voice.
 - **Prep walkthrough:** the story cards and choice cards that come before Burnt Cookies.
 - **The Big Idea:** comes after Burnt Cookies.

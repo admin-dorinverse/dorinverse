@@ -54,15 +54,15 @@ let bible = null;
 const bibleText = () => (bible ??= norm(verses().map((v) => v.text).join(' ')));
 
 // --- prompts -------------------------------------------------------------------------------------------------------
-export const SYSTEM = () => [doc('papa-dorin.md'), doc('burnt-cookies.md')].join('\n\n');
+export const SYSTEM = () => doc('burnt-cookies.md');
 export const WRITE = (m) => `${m.head}
 
 What the Prep walkthrough taught (each card with its verses):
 ${m.prepText}
 
-Write Burnt Cookies for ${span(m.p.start, m.p.end)}, following burnt-cookies.md and papa-dorin.md.
+Write Burnt Cookies for ${span(m.p.start, m.p.end)}, following burnt-cookies.md.
 - 5 lines in passage order. Exactly 2 are burnt.
-- Each line is one sentence, a quick fact. No em dashes or en dashes.
+- Each line is one sentence that states only a fact from the verses it cites. No jokes, asides or comments like "friend." No em dashes or en dashes.
 - A burnt line's wrong detail is a real detail from elsewhere in the Bible, the same kind of thing as the true one (a place for a place, a person for a person), and the true detail is one the walkthrough taught. Write each wrong and true detail exactly as it appears in the line and in the verse, so they can be checked word for word.
 - Everything else in a burnt line is true.
 - Reply with only the JSON described in burnt-cookies.md "Output". No other text.`;
@@ -78,11 +78,11 @@ ${JSON.stringify(lines, null, 2)}
 Problems found in some lines:
 ${JSON.stringify(found, null, 2)}
 
-Rewrite only the lines with a problem so the problem is gone, following burnt-cookies.md and papa-dorin.md. Keep each line one sentence, keep exactly 2 lines burnt overall, and keep the lines in passage order. Change only what the problem needs.
+Rewrite only the lines with a problem so the problem is gone, following burnt-cookies.md. Keep each line one sentence, keep exactly 2 lines burnt overall, and keep the lines in passage order. Change only what the problem needs.
 Reply with only JSON: {"lines": [the rewritten lines only, in the same shape as above]}.`;
 
 const TERRA_SYSTEM = 'You check short retellings of Bible verses against the verses themselves (Berean Standard Bible).';
-const CHECK = (items) => `Each line below retells the verses printed with it. For each line, is everything it says true to those verses? Nothing changed, nothing added that the verses don't say, nothing that makes it false. Small wording and a friendly voice are fine.
+const CHECK = (items) => `Each line below retells the verses printed with it. For each line, is everything it says true to those verses? Nothing changed, nothing added that the verses don't say, nothing that makes it false. Small wording differences are fine.
 
 ${items.map((x) => `Line ${x.line}${x.corrected ? ' (a corrected copy of a burnt line)' : ''}: ${x.text}\nVerses:\n${x.verseText}`).join('\n\n')}
 
