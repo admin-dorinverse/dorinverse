@@ -18,6 +18,7 @@ This file covers the hard-word definitions for the dictionary pop-up.
 - Use the BSB footnotes first, when they explain the word.
 - Otherwise, use public-domain sources. Many passages have no BSB footnotes, or none that explain the word. That's normal.
 - Summarize the meaning in your own words. Never copy the source's wording.
+- A meaning never shares 8 or more words in a row with a dictionary's entry for that word, old or modern. A script checks this.
 - The meaning says only what its source says.
 - If no source explains the word, leave it out.
 - Each meaning is written for its own word. No set template.
