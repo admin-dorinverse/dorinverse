@@ -1,0 +1,64 @@
+{
+  "script": [
+    {
+      "stop": 1,
+      "card": 19,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    },
+    {
+      "stop": 2,
+      "card": 7,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    },
+    {
+      "stop": 2,
+      "card": 12,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    }
+  ],
+  "terra": [
+    {
+      "stop": 1,
+      "card": 2,
+      "answer": 2,
+      "kind": "tone",
+      "problem": "The explanation repeats the location several times without adding much personality. It reads as a generic correction."
+    },
+    {
+      "stop": 1,
+      "card": 19,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "The parenthetical invents a correction to an unused reference, making the explanation commentary on its own citation rather than a natural explanation of the verse."
+    },
+    {
+      "stop": 2,
+      "card": 7,
+      "answer": 1,
+      "kind": "tone",
+      "problem": "The explanation states the reason, quotes it, then repeats it. It is flat and generic."
+    },
+    {
+      "stop": 2,
+      "card": 8,
+      "answer": 3,
+      "kind": "bible",
+      "problem": "The passage compares the smoke to a furnace, but does not say furnace smoke is bigger than campfire smoke."
+    },
+    {
+      "stop": 2,
+      "card": 12,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "Referring to 'the card' draws attention to the app rather than keeping Papa Dorin in the conversation."
+    }
+  ],
+  "cost": 0.0129419,
+  "terraReadable": true
+}
