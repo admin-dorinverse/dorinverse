@@ -31,6 +31,7 @@ export const DEF_DIR = path.join(OUTPUT, 'definitions');
 const DATA = path.join(OUTPUT, '..', 'data');
 const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;
 const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
+export const HAIKU = { model: 'anthropic/claude-haiku-5.5', only: ['anthropic'], name: 'haiku', reasoning: { effort: 'low' }, maxTokens: 16000 };   // matching test, 2026-11-15
 const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-terra', maxTokens: 16000 };
 const SAMPLE = 12, ASSIGN_BATCH = 100, SOURCE_CHARS = 1500, UNCOVERED_MIN = 3;
 const MAX_WORDS = 35, MAX_SENTENCES = 2;   // definitions.md: 1 or 2 sentences, about 30 words at most
@@ -204,7 +205,7 @@ export function scriptCheck(m, meanings) {
 }
 
 // --- the run -------------------------------------------------------------------------------------------------------
-export async function runDefinitions({ only = null, limit = Infinity, agents = 20, chatFn = chat, outDir = DEF_DIR, dry = false, items = null } = {}) {
+export async function runDefinitions({ only = null, limit = Infinity, agents = 20, chatFn = chat, outDir = DEF_DIR, dry = false, items = null, matcher = SONNET } = {}) {
   const tell = dry ? async () => {} : notify, log = dry ? () => {} : logEvent, backup = dry ? () => {} : saveToGit;
   let all = items ?? material();
   if (only) all = all.filter((m) => only.includes(m.word));
@@ -293,13 +294,13 @@ export async function runDefinitions({ only = null, limit = Infinity, agents = 2
       let cost = 0, unanswered = 0;
       for (let i = 0; i < cardsIn.length; i += ASSIGN_BATCH) {
         const batch = cardsIn.slice(i, i + ASSIGN_BATCH);
-        const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, ms, batch), step: STEP, role: 'assigner' }), read, keep);
+        const r = await ask(() => chatFn({ ...matcher, system: RULES, user: ASSIGN(m, ms, batch), step: STEP, role: 'assigner' }), read, keep);
         cost += r.cost;
         const got = new Map((r.v ?? []).filter((x) => ok(x) && x.n >= 1 && x.n <= batch.length).map((x) => [x.n, x.meaning]));
         // cards it skipped are asked once more, on their own
         const missed = batch.map((c, k) => ({ c, k })).filter(({ k }) => !got.has(k + 1));
         if (missed.length) {
-          const again = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, ms, missed.map((x) => x.c)), step: STEP, role: 'assigner' }), read, keep);
+          const again = await ask(() => chatFn({ ...matcher, system: RULES, user: ASSIGN(m, ms, missed.map((x) => x.c)), step: STEP, role: 'assigner' }), read, keep);
           cost += again.cost;
           for (const x of again.v ?? []) { const hit = missed[x?.n - 1]; if (hit && ok(x)) got.set(hit.k + 1, x.meaning); }
         }
