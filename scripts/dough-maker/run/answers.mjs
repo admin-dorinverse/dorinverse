@@ -68,6 +68,19 @@ Write the answer explanations for every choice card above, following answer-expl
 - Make it sound like Papa Dorin: warm, plain words, funny where a laugh fits, never preachy.
 - Reply with only the JSON described in answer-explanations.md "Output". No other text.`;
 
+// A recheck only confirms that the problem found before is gone (owner, 2026-11-15): reading a fixed explanation
+// fresh made Terra find new small things every round, so the fixes never settled (225-passage run: 563 left over)
+export const RECHECK = (m, items, problems) => `${m.head}
+
+The choice cards:
+${JSON.stringify(m.choices.filter((c) => items.some((x) => x.stop === c.stop && x.card === c.card)), null, 2)}
+
+These answer explanations were fixed. Each one is listed with the problem it had before ("answer" is the position on its card, starting at 1):
+${JSON.stringify(items.map((x) => ({ ...x, problemItHad: problems.filter((f) => f.stop === x.stop && f.card === x.card && f.answer === x.answer).map((f) => f.problem) })), null, 2)}
+
+For each one, check only whether the problem it had is now fixed. Don't report anything else.
+Reply with only JSON: {"findings": [{"stop": n, "card": n, "answer": n, "kind": "bible" | "rule" | "tone", "problem": "the problem that is still there"}]}. All fixed: {"findings": []}.`;
+
 export const CHECK = (m, items) => `${m.head}
 
 The choice cards:
@@ -97,6 +110,8 @@ Problems found in some of them:
 ${JSON.stringify(findings, null, 2)}
 
 Rewrite each explanation that has a problem so the problem is gone, following answer-explanations.md and papa-dorin.md. Keep the rest of what it says if it's good. Don't touch explanations without a problem.
+- Change only what the problem needs. Don't add new facts, jokes or sentences beyond that.
+- Keep each explanation 3 to 5 sentences.
 Reply with only JSON: {"fixes": [{"stop": n, "card": n, "answer": n, "explanation": "..."}]}.`; };
 
 // --- the script check ----------------------------------------------------------------------------------------------
@@ -133,7 +148,10 @@ export function scriptCheck(m, list) {
     const w = words(unquoted(t));
     for (let k = 0; k + 8 <= w.length; k++) {
       const g = w.slice(k, k + 8).join(' ');
-      if (grams.has(g) && !bible.has(g)) { say('It reuses a line from the Prep cards word for word.'); break; }
+      // Only Papa Dorin's own lines count: a plain retelling of the verse ("he has raised his hand to the LORD") uses
+      // the verse's words, so a shared run of words that is mostly the verse's own words isn't a copied line
+      const own = w.slice(k, k + 8).filter((x) => !bibleWords.has(x)).length;
+      if (grams.has(g) && !bible.has(g) && own >= 3) { say('It reuses a line from the Prep cards word for word.'); break; }
     }
   }
   return out;
@@ -231,9 +249,14 @@ export async function runAnswers(ids, { agents = 20 } = {}) {
     // 2. The "…", the script, then Terra checks everything
     let { list: all, missing } = flatten(m, written);
     all = fixQuotes(all);
-    const check = (file, items, extra = []) => stage(path.join(d, file), async () => {
+    // The first check reads everything; a recheck only confirms that Terra's earlier problems are gone (the script's
+    // own rules are checked again in full, since they are counted, not judged)
+    const check = (file, items, extra = [], before = null) => stage(path.join(d, file), async () => {
       const script = [...extra, ...scriptCheck(m, items.filter((x) => x.explanation))];
-      const r = items.length ? await ask(() => chat({ ...TERRA, system, user: CHECK(m, items.filter((x) => x.explanation)), passage: p.id, step: STEP, role: 'reviewer' }), findings) : { v: [], cost: 0 };
+      const terraHad = before?.filter((f) => !/^(It has|It uses|It reuses|A quote isn|There is no)/.test(f.problem)) ?? null;
+      const toCheck = terraHad ? items.filter((x) => x.explanation && terraHad.some((f) => key(f) === key(x))) : items.filter((x) => x.explanation);
+      const user = terraHad ? RECHECK(m, toCheck, terraHad) : CHECK(m, toCheck);
+      const r = toCheck.length ? await ask(() => chat({ ...TERRA, system, user, passage: p.id, step: STEP, role: 'reviewer' }), findings) : { v: [], cost: 0 };
       return { script, terra: r.v ?? [], cost: r.cost, terraReadable: !!r.v };
     });
     const c1 = await check('check-1.json', all, missing);
@@ -249,7 +272,7 @@ export async function runAnswers(ids, { agents = 20 } = {}) {
       all = fixQuotes(merge(all, fix.fixes));
       const flagged = new Set(found.map(key));
       const again = all.filter((x) => flagged.has(key(x)));
-      const cn = await check(`check-${n + 1}.json`, again, flatten(m, finalOut(m, all)).missing);
+      const cn = await check(`check-${n + 1}.json`, again, flatten(m, finalOut(m, all)).missing, found);
       found = [...cn.script, ...cn.terra];
     }
     // 4. Anything still wrong after the second fix gets a final Sonnet fix, and that version stands: no flags
