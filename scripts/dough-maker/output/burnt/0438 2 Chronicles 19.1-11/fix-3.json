@@ -1,0 +1,30 @@
+{
+  "lines": [
+    {
+      "line": 5,
+      "verses": "2 Chronicles 19:11",
+      "text": "Jehoshaphat put Amariah the chief priest over the LORD's matters and Zebadiah son of Shaphat over the king's matters.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "Shaphat",
+          "true": "Ishmael",
+          "verse": "2 Chronicles 19:11"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0161568,
+  "problems": [
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It has 24 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its true detail \"Levites\" is named in line 4, which gives it away. Burn a detail no other line mentions."
+    }
+  ]
+}
