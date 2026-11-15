@@ -192,7 +192,13 @@ export const corrected = (l) => (l.wrong_details ?? []).reduce((t, w) => w.wrong
   ? t.replace(new RegExp(String(w.wrong).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'), w.true) : t, String(l.text ?? ''));
 const forTerra = (lines, only = null) => lines.filter((l) => !only || only.includes(l.line))
   .map((l) => ({ line: l.line, corrected: !!l.burnt, text: l.burnt ? corrected(l) : l.text, verseText: verseText(l.verses) ?? '(no verses)' }));
-const merge = (lines, fixed) => lines.map((l) => fixed.find((x) => x?.line === l.line) ?? l);
+// Fixed lines replace the lines with the same number, and lines the draft was missing are added (2026-11-15: a
+// 2-line draft stayed at 2 lines because the fixer's lines 3 to 5 were dropped)
+const merge = (lines, fixed) => {
+  const ok = (fixed ?? []).filter((x) => Number.isInteger(x?.line));
+  const kept = lines.map((l) => ok.find((x) => x.line === l.line) ?? l);
+  return [...kept, ...ok.filter((x) => !lines.some((l) => l.line === x.line))].sort((a, b) => a.line - b.line);
+};
 
 // --- the run -------------------------------------------------------------------------------------------------------
 export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPassage = Infinity, chatFn = chat, outDir = BURNT_DIR, dry = false } = {}) {
