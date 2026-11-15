@@ -56,7 +56,8 @@ const bibleText = () => (bible ??= norm(verses().map((v) => v.text).join(' ')));
 // Words the Bible uses in lower case ("During", "Anyone" at the start of a sentence) are ordinary words, not names
 let lower = null;
 const ordinary = (w) => (lower ??= new Set(verses().flatMap((v) => v.text.match(/\b[a-z][a-z']*\b/g) ?? []))).has(w.toLowerCase());
-// A true detail is taught if the Prep cards say it, or say every name in it ("the land of Judah" when a card says "Judah")
+// A detail is in a text if the text says it, or says every name in it ("the land of Judah" when a card says "Judah",
+// "city of Hebron" when the Bible says "Hebron"); used for true details in the Prep cards and wrong ones in the Bible
 const taught = (prep, d) => {
   if (has(prep, d)) return true;
   const names = (String(d).match(/\b[A-Z][a-zA-Z]+\b/g) ?? []).filter((x) => !NAMES_OK.has(x.toLowerCase()));
@@ -147,7 +148,7 @@ export function scriptCheck(m, out) {
         if (!w.true || !vt || !has(vt, w.true)) say(n, `Its true detail "${w.true}" isn't in ${w.verse} word for word.`);
         if (w.true && has(t, w.true)) say(n, `The line also says the true detail "${w.true}".`);
         if (w.wrong && !short) say(n, `Its wrong detail "${w.wrong}" is ${words(w.wrong)} words. Swap one short detail (${SWAP_WORDS} words or fewer, like a name, place or number) and list only the swapped words.`);
-        else if (short && !has(bibleText(), w.wrong)) say(n, `Its wrong detail "${w.wrong}" isn't found anywhere in the Bible.`);
+        else if (short && !taught(bibleText(), w.wrong)) say(n, `Its wrong detail "${w.wrong}" isn't found anywhere in the Bible.`);
         if (short && w.true && !taught(m.prepText, w.true)) say(n, `Its true detail "${w.true}" isn't in the Prep cards, so the walkthrough didn't teach it.`);
         // Name for a name: only for short swaps, so quotes like "Love your neighbor" aren't mistaken for names
         const cap = (x) => /^[A-Z]/.test(String(x ?? '').trim());
@@ -187,13 +188,14 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
 
   let down = null;
   async function ask(fn, read) {
-    let tried = false;
+    let tried = false, cost = 0;   // a reply that can't be read is asked again, and both calls are paid for
     for (;;) {
       try {
         const r = await fn();
+        cost += r.cost ?? 0;
         if (down) { notify('Burnt Cookies going again', [`After ${Math.round((Date.now() - down) / 60000)} min`]); down = null; }
         const v = read(r.text);
-        if (v || tried) return { v, cost: r.cost ?? 0 };
+        if (v || tried) return { v, cost };
         tried = true;
       } catch (e) {
         if (!passing(e)) throw e;

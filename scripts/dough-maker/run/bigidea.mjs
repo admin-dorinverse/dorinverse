@@ -129,13 +129,14 @@ export async function runBigIdea(ids, { agents = 20, maxCost = Infinity, maxPerP
 
   let down = null;
   async function ask(fn, read) {
-    let tried = false;
+    let tried = false, cost = 0;   // a reply that can't be read is asked again, and both calls are paid for
     for (;;) {
       try {
         const r = await fn();
+        cost += r.cost ?? 0;
         if (down) { notify('The Big Idea going again', [`After ${Math.round((Date.now() - down) / 60000)} min`]); down = null; }
         const v = read(r.text);
-        if (v || tried) return { v, cost: r.cost ?? 0 };
+        if (v || tried) return { v, cost };
         tried = true;
       } catch (e) {
         if (!passing(e)) throw e;
