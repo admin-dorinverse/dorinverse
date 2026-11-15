@@ -3,7 +3,8 @@
 //      Prep cards.
 //   2. The script checks every rule it can count or look up: 2 to 4 paragraphs (about 3), 3 to 4 sentences in each,
 //      no dashes, every quote is the BSB's exact words, every reference is real.
-//   3. GPT-6.1 Terra checks that it is true to the passage and is a summary of what it means, not a retelling.
+//   3. GPT-6.1 Terra checks that it is true to the passage and says what the passage teaches and why it matters to
+//      the baker, without walking through the events again.
 //   4. Sonnet fixes what was found, up to two times, each fix checked again; then a final fix. The script checks
 //      the final fix, and anything countable still broken gets one last fix for just that. No flags.
 // Saved under output/bigidea/<id and range>/ as it goes (big-idea.json is the finished file), so running it again
@@ -49,7 +50,7 @@ ${m.prepText}
 
 Write The Big Idea for ${span(m.p.start, m.p.end)}, following big-idea.md and papa-dorin.md.
 - About 3 short paragraphs. Each paragraph has 3 or 4 sentences. Count them before you reply.
-- A real summary of what the passage means, not a retelling of the verses.
+- The lesson, not the story: say what the passage teaches and why it matters to the baker. Don't walk through the events again, since the walkthrough already did that. Name only the moments the lesson needs.
 - No em dashes or en dashes.
 - Words in quotation marks are the BSB's exact words.
 - Reply with only the JSON described in big-idea.md "Output". No other text.`;
@@ -68,13 +69,13 @@ ${JSON.stringify(found.map(({ paragraph, problem }) => ({ paragraph, problem }))
 Rewrite The Big Idea so every problem is gone, following big-idea.md and papa-dorin.md. Keep about 3 paragraphs. Each paragraph has 3 or 4 sentences. Count them before you reply. Change only what the problems need.
 Reply with only JSON: {"paragraphs": ["...", "..."]}.`;
 
-const SHORT_OK = 'For a short passage, like a psalm, following the verses in order is fine, as long as each paragraph says what the passage means and doesn\'t just repeat what the verses say.';
+const SHORT_OK = 'Naming moments in the passage\'s order is fine (a short psalm is often taught that way), as long as it teaches the lesson and doesn\'t just walk through the events again.';
 const TERRA_SYSTEM ='You check short summaries of Bible passages against the passage itself (Berean Standard Bible).';
 const CHECK = (m, paragraphs) => `${m.head}
 
-Below is The Big Idea for this passage: a short summary, in a friendly teacher's voice, of what the passage means. Check two things:
+Below is The Big Idea for this passage: the last stop of a Bible lesson, in a friendly teacher's voice, after a walkthrough that already told the story. Check two things:
 1. Is it true to the passage? Nothing it says is false, changed, or contradicted by the passage. It may bring in context the passage needs, and its own friendly asides and jokes are fine as long as they don't misstate the Bible.
-2. Is it a summary of what the passage means, not a retelling of the verses in order?
+2. Does it say what the passage teaches and why it matters to the reader, without walking through the events again?
 ${SHORT_OK}
 
 ${paragraphs.map((x, i) => `Paragraph ${i + 1}: ${x}`).join('\n\n')}
