@@ -44,7 +44,7 @@ Answer explanations: Sonnet writes (normal speed, OpenRouter, Anthropic only). S
 
 Burnt Cookies: Sonnet writes (normal speed, OpenRouter, Anthropic only). The script checks the rules it can count and look up, puts the true detail back into each burnt line, then GPT-6.1 Terra checks that the good lines and the corrected burnt lines are true to their verses. Sonnet fixes what was found, up to two times, then a final fix. No flags.
 
-The Big Idea: Sonnet writes (normal speed, OpenRouter, Anthropic only), with Papa Dorin's voice. The script checks the rules it can count and look up, then GPT-6.1 Terra checks that it is true to the passage and is a summary, not a retelling. Sonnet fixes what was found, up to two times, then a final fix. No flags.
+The Big Idea: Sonnet writes (normal speed, OpenRouter, Anthropic only), with Papa Dorin's voice. The script checks the rules it can count and look up, then GPT-6.1 Terra checks that it is true to the passage and says what the passage teaches and why it matters to the baker, without walking through the events again. Sonnet fixes what was found, up to two times, then a final fix. The script checks the final fix, and anything countable still broken gets one last fix for just that. No flags.
 
 ## "Kimi + script"
 
