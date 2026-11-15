@@ -1,9 +1,10 @@
 // Burnt Cookies (burnt-cookies.md) for every passage, as the owner decided on 2026-11-15 (models.md):
 //   1. Sonnet writes the 5 lines (normal speed, OpenRouter, Anthropic only), from the verses and the Prep cards.
 //   2. The script checks every rule it can count or look up: 5 lines, 2 burnt, passage order, one sentence each, no
-//      dashes, real verses; each wrong detail is in its line, not in its verse, real somewhere in the Bible and the
-//      same kind of name as the true one; each true detail is in its verse, taught in the Prep cards and not given
-//      away by another line; names and numbers in the good lines are in the passage.
+//      dashes, 20 words or fewer, no reference in the text, no asides to the baker, real verses; each wrong detail is
+//      a short swap (4 words or fewer) that is in its line, not in its verse, real somewhere in the Bible and the same
+//      kind of name as the true one; each true detail is in its verse, taught in the Prep cards and not named in
+//      another line; names and numbers in the good lines are in the passage.
 //   3. The script puts the true detail back into each burnt line (a copy, only for checking), and GPT-6.1 Terra
 //      checks that the 3 good lines and the 2 corrected lines are true to the verses they cite.
 //   4. Sonnet fixes only the flagged lines, up to two times, each fix checked again; then a final fix. No flags.
@@ -52,6 +53,15 @@ export function material(p) {
 const verseText = (ref) => { const r = parseRefs(ref); if (!r) return null; const all = verses(); return r.map(([a, b]) => all.slice(a, b + 1).map((v) => `${v.ref} ${v.text}`).join('\n')).join('\n'); };
 let bible = null;
 const bibleText = () => (bible ??= norm(verses().map((v) => v.text).join(' ')));
+// Words the Bible uses in lower case ("During", "Anyone" at the start of a sentence) are ordinary words, not names
+let lower = null;
+const ordinary = (w) => (lower ??= new Set(verses().flatMap((v) => v.text.match(/\b[a-z][a-z']*\b/g) ?? []))).has(w.toLowerCase());
+// A true detail is taught if the Prep cards say it, or say every name in it ("the land of Judah" when a card says "Judah")
+const taught = (prep, d) => {
+  if (has(prep, d)) return true;
+  const names = (String(d).match(/\b[A-Z][a-zA-Z]+\b/g) ?? []).filter((x) => !NAMES_OK.has(x.toLowerCase()));
+  return names.length > 0 && names.every((x) => has(prep, x));
+};
 
 // --- prompts -------------------------------------------------------------------------------------------------------
 export const SYSTEM = () => doc('burnt-cookies.md');
@@ -62,8 +72,10 @@ ${m.prepText}
 
 Write Burnt Cookies for ${span(m.p.start, m.p.end)}, following burnt-cookies.md.
 - 5 lines in passage order. Exactly 2 are burnt.
-- Each line is one sentence that states only a fact from the verses it cites. No jokes, asides or comments like "friend." No em dashes or en dashes.
-- A burnt line's wrong detail is a real detail from elsewhere in the Bible, the same kind of thing as the true one (a place for a place, a person for a person), and the true detail is one the walkthrough taught. Write each wrong and true detail exactly as it appears in the line and in the verse, so they can be checked word for word.
+- Each line is one sentence of 20 words or fewer that states only a fact from the verses it cites. No outside facts, even true ones. No jokes, asides or comments like "friend." No em dashes or en dashes.
+- The line's text never includes the reference, like (Ruth 1:4). It goes only in "verses".
+- A burnt line swaps one short detail (4 words or fewer: a name, place, number or thing) for a real detail from elsewhere in the Bible, the same kind of thing as the true one (a place for a place, a person for a person). The true detail is one the walkthrough taught. In wrong_details, list only the swapped words, exactly as they appear in the line and in the verse, so they can be checked word for word.
+- Never burn a name that another line also says (if Ruth is in line 4, don't swap Ruth out of line 2).
 - Everything else in a burnt line is true.
 - Reply with only the JSON described in burnt-cookies.md "Output". No other text.`;
 
@@ -78,7 +90,7 @@ ${JSON.stringify(lines, null, 2)}
 Problems found in some lines:
 ${JSON.stringify(found, null, 2)}
 
-Rewrite only the lines with a problem so the problem is gone, following burnt-cookies.md. Keep each line one sentence, keep exactly 2 lines burnt overall, and keep the lines in passage order. Change only what the problem needs.
+Rewrite only the lines with a problem so the problem is gone, following burnt-cookies.md. Keep each line one sentence of 20 words or fewer with no reference in the text, keep each swap short, keep exactly 2 lines burnt overall, and keep the lines in passage order. Change only what the problem needs.
 Reply with only JSON: {"lines": [the rewritten lines only, in the same shape as above]}.`;
 
 const TERRA_SYSTEM = 'You check short retellings of Bible verses against the verses themselves (Berean Standard Bible).';
@@ -94,7 +106,9 @@ ${items.map((x) => `Line ${x.line}: ${x.text}\nThe problem it had: ${x.had}\nVer
 Reply with only JSON: {"findings": [{"line": n, "problem": "the problem that is still there"}]}. All fixed: {"findings": []}.`;
 
 // --- the script check ----------------------------------------------------------------------------------------------
-const NAMES_OK = new Set(['i', 'god', 'lord', 'jesus', 'christ', 'spirit', 'holy', 'friend', 'baker', 'papa', 'dorin', 'then', 'and', 'but', 'so', 'now', 'when', 'after', 'there', 'he', 'she', 'they', 'his', 'her', 'their', 'the', 'a', 'an', 'in', 'at', 'on', 'by', 'from', 'with']);
+const NAMES_OK = new Set(['i', 'god', 'lord', 'jesus', 'christ', 'spirit', 'holy', 'then', 'and', 'but', 'so', 'now', 'when', 'after', 'there', 'he', 'she', 'they', 'his', 'her', 'their', 'the', 'a', 'an', 'in', 'at', 'on', 'by', 'from', 'with']);
+const MAX_WORDS = 20, SWAP_WORDS = 4;
+const words = (s) => String(s ?? '').trim().split(/\s+/).filter(Boolean).length;
 export function scriptCheck(m, out) {
   const found = [], say = (line, problem) => found.push({ line, kind: 'rule', problem });
   const lines = Array.isArray(out?.lines) ? out.lines : [];
@@ -116,24 +130,36 @@ export function scriptCheck(m, out) {
     const s = sentences(t);
     if (s !== 1) say(n, `It has ${s} sentences. Each line is one sentence.`);
     if (/[–—]/.test(t)) say(n, 'It uses a dash. No em dashes or en dashes.');
+    const wc = words(t);
+    if (wc > MAX_WORDS) say(n, `It has ${wc} words. Each line is ${MAX_WORDS} words or fewer.`);
+    if (/\d+\s*:\s*\d+/.test(t)) say(n, 'Its text includes a reference. The reference goes only in verses.');
+    // Papa Dorin talking to the baker; "friend" and "baker" are fine where the passage itself says them (Genesis 40)
+    const aside = t.match(/\b(friend|baker|papa|dorin)\b/i);
+    if (aside && !has(passage, aside[0])) say(n, `It says "${aside[0]}". Each line states only a fact: no jokes, asides or comments.`);
     if (l?.burnt) {
       const wd = Array.isArray(l.wrong_details) ? l.wrong_details : [];
       if (!wd.length) say(n, 'It is burnt but lists no wrong detail.');
       for (const w of wd) {
         const vt = verseText(w.verse) ?? '';
+        const short = !!w.wrong && words(w.wrong) <= SWAP_WORDS;
         if (!w.wrong || !has(t, w.wrong)) say(n, `Its wrong detail "${w.wrong}" isn't in the line word for word.`);
         if (w.wrong && has(vt, w.wrong)) say(n, `Its wrong detail "${w.wrong}" is in ${w.verse}, so it isn't wrong.`);
         if (!w.true || !vt || !has(vt, w.true)) say(n, `Its true detail "${w.true}" isn't in ${w.verse} word for word.`);
         if (w.true && has(t, w.true)) say(n, `The line also says the true detail "${w.true}".`);
-        if (w.wrong && !has(bibleText(), w.wrong)) say(n, `Its wrong detail "${w.wrong}" isn't found anywhere in the Bible.`);
-        if (w.true && !has(m.prepText, w.true)) say(n, `Its true detail "${w.true}" isn't in the Prep cards, so the walkthrough didn't teach it.`);
+        if (w.wrong && !short) say(n, `Its wrong detail "${w.wrong}" is ${words(w.wrong)} words. Swap one short detail (${SWAP_WORDS} words or fewer, like a name, place or number) and list only the swapped words.`);
+        else if (short && !has(bibleText(), w.wrong)) say(n, `Its wrong detail "${w.wrong}" isn't found anywhere in the Bible.`);
+        if (short && w.true && !taught(m.prepText, w.true)) say(n, `Its true detail "${w.true}" isn't in the Prep cards, so the walkthrough didn't teach it.`);
+        // Name for a name: only for short swaps, so quotes like "Love your neighbor" aren't mistaken for names
         const cap = (x) => /^[A-Z]/.test(String(x ?? '').trim());
-        if (w.wrong && w.true && cap(w.wrong) !== cap(w.true)) say(n, `"${w.wrong}" and "${w.true}" aren't the same kind of thing (one is a name, one isn't).`);
-        for (const o of lines) if (o !== l && w.true && has(o?.text, w.true) && cap(w.true)) say(o?.line, `It gives away line ${n}'s true detail "${w.true}".`);
+        if (short && words(w.true) <= SWAP_WORDS && cap(w.wrong) !== cap(w.true)) say(n, `"${w.wrong}" and "${w.true}" aren't the same kind of thing (one is a name, one isn't).`);
+        if (w.true && cap(w.true) && words(w.true) <= SWAP_WORDS) {
+          const others = lines.filter((o) => o !== l && has(o?.text, w.true)).map((o) => o?.line);
+          if (others.length) say(n, `Its true detail "${w.true}" is named in line ${others.join(', ')}, which gives it away. Burn a detail no other line mentions.`);
+        }
       }
     } else {
       for (const name of t.match(/\b[A-Z][a-zA-Z']+\b/g) ?? []) {
-        if (NAMES_OK.has(name.toLowerCase().replace(/'s$/, ''))) continue;
+        if (NAMES_OK.has(name.toLowerCase().replace(/'s$/, '')) || ordinary(name.replace(/'s$/, ''))) continue;
         if (!has(passage, name.replace(/'s$/, ''))) say(n, `"${name}" isn't in this passage.`);
       }
       for (const num of t.match(/\b\d+\b/g) ?? []) if (!has(passage, num)) say(n, `The number ${num} isn't in this passage.`);
