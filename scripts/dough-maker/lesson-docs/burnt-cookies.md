@@ -17,7 +17,7 @@ It runs once for the whole passage, including any included parable or sermon.
 
 - There are **5 lines**, and **2 of them are burnt**.
 - They go in passage order, from start to end, so together they retell the passage.
-- Each line is bite-sized: short, and in Papa Dorin's voice. Use judgment on how much it covers: one moment, or a few that belong together.
+- Each line is one sentence: a quick fact, in Papa Dorin's voice. It covers one moment, or a few that belong together.
 - Every line cites its verses.
 - The 3 good lines are true to the BSB text.
 - Which 2 lines are burnt, and which details are wrong, are chosen naturally for each passage. Never a pattern.
