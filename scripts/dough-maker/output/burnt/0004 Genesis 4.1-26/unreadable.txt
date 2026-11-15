@@ -1,0 +1,96 @@
+--- 2026-11-15T19:16:24.296Z
+{
+  "lines": [
+    { "line": 1, "verses": "Genesis 4:1-5", "text": "Cain brought fruit of the soil and Abel brought the best of his flock, and the LORD favored only Abel's offering.", "burnt": false },
+    { "line": 2, "verses": "Genesis 4:8", "text": "Cain asked his brother Abel to go out to the field, and there he rose up and killed him.", "burnt": false },
+    { "line": 3, "verses": "Genesis 4:11-12", "text": "The LORD cursed Cain and said he would be a fugitive and a wanderer on the earth.", "burnt": false },
+    { "line": 4, "verses": "Genesis 4:15-17", "text": "The LORD placed a crown on Cain, who settled in the land of Nod and built a city named for his son Enoch.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "crown", "true": "mark", "verse": "Genesis 4:15" }
+      ] },
+    { "line": 5, "verses": "Genesis 4:25-26", "text": "Eve named her son Seth in place of Cain, and when Seth's son Enosh was born, men began to call on the LORD.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "Cain", "true": "Abel", "verse": "Genesis 4:25" }
+      ] }
+  ]
+}
+
+Wait, correction needed: line 5 says "in place of Cain" and line 1 and others name Abel and Cain; the swap is a name already said in other lines, which breaks the rule. Corrected output:
+
+```json
+{
+  "lines": [
+    { "line": 1, "verses": "Genesis 4:3-5", "text": "Cain brought fruit of the soil and Abel brought the best of his flock, and the LORD favored only Abel's offering.", "burnt": false },
+    { "line": 2, "verses": "Genesis 4:8", "text": "Cain asked his brother Abel to go out to the field, and there he rose up and killed him.", "burnt": false },
+    { "line": 3, "verses": "Genesis 4:11-12", "text": "The LORD cursed Cain and said he would be a fugitive and a wanderer on the earth.", "burnt": false },
+    { "line": 4, "verses": "Genesis 4:15-17", "text": "The LORD placed a crown on Cain, who settled in the land of Nod and built a city named for his son Enoch.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "crown", "true": "mark", "verse": "Genesis 4:15" }
+      ] },
+    { "line": 5, "verses": "Genesis 4:25-26", "text": "Eve named her son Seth, and when Seth's son Enosh was born, men began to call on the name of the LORD.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "Enosh", "true": "Enosh", "verse": "Genesis 4:26" }
+      ] }
+  ]
+}
+```
+
+I need to give a single clean answer, so here it is:
+
+```json
+{
+  "lines": [
+    { "line": 1, "verses": "Genesis 4:3-5", "text": "Cain brought fruit of the soil and Abel brought the best of his flock, and the LORD favored only Abel's offering.", "burnt": false },
+    { "line": 2, "verses": "Genesis 4:8", "text": "Cain asked his brother Abel to go out to the field, and there he rose up and killed him.", "burnt": false },
+    { "line": 3, "verses": "Genesis 4:11-12", "text": "The LORD cursed Cain and said he would be a fugitive and a wanderer on the earth.", "burnt": false },
+    { "line": 4, "verses": "Genesis 4:15-17", "text": "The LORD placed a crown on Cain, who settled in the land of Nod and built a city named for his son Enoch.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "crown", "true": "mark", "verse": "Genesis 4:15" }
+      ] },
+    { "line": 5, "verses": "Genesis 4:16-17", "text": "Cain settled in the land of Goshen, east of Eden, and built a city.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "Goshen", "true": "Nod", "verse": "Genesis 4:16" }
+      ] }
+  ]
+}
+```
+
+That still conflicts, since line 4 says Nod and line 5 swaps it. Final:
+
+```json
+{
+  "lines": [
+    { "line": 1, "verses": "Genesis 4:3-5", "text": "Cain brought fruit of the soil and Abel brought the best of his flock, and the LORD favored only Abel's offering.", "burnt": false },
+    { "line": 2, "verses": "Genesis 4:8", "text": "Cain asked his brother Abel to go out to the field, and there he rose up and killed him.", "burnt": false },
+    { "line": 3, "verses": "Genesis 4:11-12", "text": "The LORD cursed Cain and said he would be a fugitive and a wanderer on the earth.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "fugitive and a wanderer", "true": "fugitive and a wanderer", "verse": "Genesis 4:12" }
+      ] },
+    { "line": 4, "verses": "Genesis 4:15-16", "text": "The LORD placed a mark on Cain, who went out and settled in the land of Nod.", "burnt": false },
+    { "line": 5, "verses": "Genesis 4:25-26", "text": "Eve named her son Seth, and when Seth's son Enosh was born, men began to call on the LORD.", "burnt": false }
+  ]
+}
+```
+
+I'm unable to finalize cleanly in this format without further revision, so use this version:
+
+```json
+{
+  "lines": [
+    { "line": 1, "verses": "Genesis 4:3-5", "text": "Cain brought fruit of the soil and Abel brought the best of his flock, and the LORD favored only Abel's offering.", "burnt": false },
+    { "line": 2, "verses": "Genesis 4:8", "text": "Cain asked his brother Abel to go out to the field, and there he rose up and killed him.", "burnt": false },
+    { "line": 3, "verses": "Genesis 4:11-12", "text": "The LORD cursed Cain and said he would be a servant to his father on the earth.", "burnt": true,
+      "wrong_details": [
+        { "wrong": "servant to his father", "true": "fugitive and a wanderer", "verse": "Genesis 4:12" }
+      ] },
+    { "line": 4, "verses": "Genesis 4:15-17", "text": "The LORD placed a mark on Cain, who settled in the land of Nod and built a city named for his son Enoch.", "burnt": false },
+    { "line": 5, "verses": "Genesis 4:25-26", "text": "Eve named her son Seth, and when Seth's son Enosh was born, men began to call on the name of the LORD.", "burnt": false }
+  ]
+}
+```
+--- 2026-11-15T19:16:47.298Z
+{"lines":[{"line":2,"verses":"Genesis 4:6-8","text":"The LORD said sin crouches at Cain's door if he refuses to do right, and Cain killed Abel in the desert.","burnt":true,"wrong_details":[{"wrong":"desert","true":"field","verse":"Genesis 4:8"}]},{"line":5,"verses":"Genesis 4:25-26","text":"Adam's wife bore a son named Seth, and when Seth's son Enosh was born, men began calling on the LORD.","burnt":false}]}
+
+Wait, that leaves only one burnt line overall. Corrected output:
+
+{"lines":[{"line":2,"verses":"Genesis 4:6-8","text":"The LORD said sin crouches at Cain's door if he refuses to do right, and Cain killed Abel in the desert.","burnt":true,"wrong_details":[{"wrong":"desert","true":"field","verse":"Genesis 4:8"}]},{"line":5,"verses":"Genesis 4:25-26","text":"Adam's wife bore a son named Seth, and when Seth's son Cain was born, men began calling on the LORD.","burnt":true,"wrong_details":[{"wrong":"Cain","true":"Enosh","verse":"Genesis 4:26"}]}]}
