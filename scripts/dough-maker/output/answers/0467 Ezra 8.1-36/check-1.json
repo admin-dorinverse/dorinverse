@@ -1,0 +1,57 @@
+{
+  "script": [
+    {
+      "stop": 1,
+      "card": 14,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
+    },
+    {
+      "stop": 2,
+      "card": 6,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "It has 2 sentences. Explanations are 3 to 5 sentences."
+    }
+  ],
+  "terra": [
+    {
+      "stop": 1,
+      "card": 6,
+      "answer": 2,
+      "kind": "tone",
+      "problem": "The explanation repeats the request in generic terms without much of Papa Dorin's personality."
+    },
+    {
+      "stop": 1,
+      "card": 12,
+      "answer": 1,
+      "kind": "bible",
+      "problem": "The passage does not say the whole camp slows down."
+    },
+    {
+      "stop": 2,
+      "card": 10,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "The claim that the Water Gate is a spot in Jerusalem is a Bible fact from outside the passage and needs a reference."
+    },
+    {
+      "stop": 2,
+      "card": 14,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "The explanation assumes the baker was thinking of the 77 lambs when choosing 7."
+    },
+    {
+      "stop": 2,
+      "card": 17,
+      "answer": 3,
+      "kind": "bible",
+      "problem": "The passage says the officials assist the people and the house of God; it does not say Ezra and his group stay and get help."
+    }
+  ],
+  "cost": 0.02083065,
+  "terraReadable": true
+}
