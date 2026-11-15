@@ -20,7 +20,7 @@ export const DEF_DIR = path.join(OUTPUT, 'definitions');
 const HERE = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1'));
 const BATCH = 500;
 const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
-const WORD = /(?<![A-Za-z'])[A-Za-z][a-z]+(?![A-Za-z])/g;
+const WORD = /(?<![A-Za-z'-])[A-Za-z][a-z]+(?![A-Za-z-])/g;   // whole words only: the "moab" in "Pahath-moab" is part of a name
 const writeJson = (f, d) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(d, null, 1) + '\n'); };
 
 export function candidates() {
