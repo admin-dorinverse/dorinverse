@@ -8,12 +8,14 @@ Downloaded 2026-11-15 for the Definitions step (definitions.md: "use public-doma
 | `schaff.json` | A Dictionary of the Bible (Philip Schaff) | 1880 | 4,725 | `{ term, definition, scripture_refs }` |
 | `hitchcock.json` | Hitchcock's Bible Names Dictionary (Roswell D. Hitchcock) | 1869 | 2,619 | `{ term, definition, scripture_refs }` (name meanings only) |
 | `webster-1913.json` | Webster's Revised Unabridged Dictionary | 1913 | 97,584 | `{ word, senses: [ { pos, text } ] }` |
+| `webster-1828.json` | An American Dictionary of the English Language (Noah Webster) | 1828 | 60,948 | `{ word, senses: [ text ] }` |
 
 Easton's (1897) isn't here: it's already in the database.
 
 ## Where they came from
 
 - **Smith, Schaff, Hitchcock:** github.com/neuu-org/bible-dictionary-dataset (`data/02_sources/`), parsed from CCEL texts. The texts are public domain; the parsing is CC BY 4.0, so credit "NEUU bible-dictionary-dataset" if the raw entries are shown anywhere.
+- **Webster 1828:** github.com/man4christ/1828-dictionary (`json/dictionary_webster1828.json`), with the HTML taken out.
 - Its "Hastings" file was left out: 1,592 of its entries are word for word the same as Schaff, and it has no entry for common words like Faith, so it isn't reliably Hastings.
 - **Webster 1913:** Project Gutenberg ebook #29765 (the UTF-8 text from github.com/adambom/dictionary), parsed here so a word with more than one meaning keeps all of them ("defile" has 4). The word-history notes (Etym) are taken out.
 
