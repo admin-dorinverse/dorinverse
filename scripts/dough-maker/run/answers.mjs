@@ -113,14 +113,15 @@ export function scriptCheck(m, list) {
   const add = (set, t) => { const w = words(t); for (let i = 0; i + 8 <= w.length; i++) set.add(w.slice(i, i + 8).join(' ')); };
   for (const t of m.story) add(grams, unquoted(t));
   add(bible, passageText(m.p.start, m.p.end));
-  const bibleText = norm(passageText(m.p.start, m.p.end)).replace(/^.*? d+:d+ /gm, " ").replace(/s+/g, " ").toLowerCase();
+  const bibleText = norm(passageText(m.p.start, m.p.end)).replace(/^.*? \d+:\d+ /gm, " ").replace(/\s+/g, " ").toLowerCase();
   const bibleWords = new Set(words(bibleText));
   for (const e of list) {
     const t = String(e.explanation ?? '');
     const say = (problem) => out.push({ stop: e.stop, card: e.card, answer: e.answer, kind: 'rule', problem });
     for (const q of t.match(/“[^”]+”|"[^"]+"/g) ?? []) {
-      const inner = norm(q.slice(1, -1)).replace(/…/g, " ").replace(/s+/g, " ").trim().toLowerCase();
-      const pieces = inner.split(/s*[.,;:!?]s*/).filter((x) => x.split(" ").length >= 3);
+      const inner = norm(q.slice(1, -1)).replace(/\s+/g, " ").trim().toLowerCase();
+      // "…" marks skipped words, so each side of it is checked on its own
+      const pieces = inner.split(/\s*(?:…|[.,;:!?])\s*/).filter((x) => x.split(" ").length >= 3);
       const w = words(inner);
       const biblical = w.length >= 3 && w.filter((x) => bibleWords.has(x)).length / w.length >= 0.75;
       if (biblical && pieces.some((x) => !bibleText.includes(x))) { say("A quote isn't the BSB's exact words."); break; }
