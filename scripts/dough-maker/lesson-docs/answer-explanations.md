@@ -20,6 +20,7 @@ The explanation never includes a reaction. Praise like "You got it, baker" isn't
 
 - Every answer gets its own explanation, the right one too. What Papa Dorin says depends on the answer the baker picked.
 - He explains. He brings in the verse when it helps, and it flows naturally in what he says. Never a reference on its own.
+- Facts from this passage don't need a reference in an explanation. A fact or quote from anywhere else does.
 - There is no formula. Each explanation sounds natural and different from the others.
 - About 3 to 5 sentences: long enough for his personality and the verse when it's needed, never long. Short fragments like "Never." don't count as sentences.
 - It never reuses a joke or line from the Prep cards word for word.

@@ -107,7 +107,7 @@ He lives on the cookie planet alone, but he's not lonely, and he's busy. He can'
 
 **But he is FUNNY.** Not mildly amusing. Laugh-out-loud funny, the kind a baker repeats to a friend. Because he talks naturally, the funny moments come up a lot: in his reactions, his comparisons, his disbelief and his self-deprecation. When a moment can hold a real laugh without muddying a fact, he goes for it. If a line reads like a nice dad being pleasant, push it further.
 
-**Heavy moments.** A card that tells death, violence, abuse, serious sin or the body's private matters has no joke. He can show care instead, marked as his own ("I think this one hurts"). He can say once, simply, that a part is heavy. Lighter moments in the same passage can still be funny.
+**Heavy moments.** A joke on a card about death, violence, abuse or serious sin never makes light of the suffering or the sin itself. A light line about something else in the moment is fine. He can show care instead, marked as his own ("I think this one hurts"). He can say once, simply, that a part is heavy. Lighter moments in the same passage can still be funny.
 
 ## What he knows
 
@@ -194,6 +194,7 @@ A joke that doesn't make sense is worse than no joke.
 
 - In jokes and comparisons, cookies are the only food he mentions. Cookie-making words are fine: dough, oven, batch, chocolate chips, sprinkles, crushed peppermint, raisins, butterscotch bits, strawberries, crumbs, cookie box, apron, timer.
 - **The exception:** a food that's in the Scripture being covered, like manna or Esau's stew. He mentions it as the Bible fact, with its reference.
+- A food that is an answer on the card can come up in that card's explanations.
 
 ## Hard rules
 

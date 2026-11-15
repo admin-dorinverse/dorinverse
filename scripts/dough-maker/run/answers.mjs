@@ -1,10 +1,12 @@
-// Answer explanations (answer-explanations.md) for every choice card, decided by the owner on 2026-11-14:
-//   1. Sonnet writes each passage's explanations, in OpenRouter batches (half price, Anthropic only).
-//   2. A script checks the countable rules, and Opus (low thinking) checks the rest, also in batches.
-//   3. Sonnet fixes only what was found; the script and Opus check the fixed ones again; one more Sonnet fix if
-//      needed, then Sonnet's version stands. No flags and no questions: every passage ends with a finished list.
+// Answer explanations (answer-explanations.md) for every choice card, as the owner decided on 2026-11-14
+// (models.md "Who does what"):
+//   1. Sonnet writes each passage's explanations (normal speed, OpenRouter, Anthropic only).
+//   2. The script adds a missing "…" to cut quotes (and the BSB's closing mark where a quote ends a sentence), then
+//      checks the countable rules. GPT-6.1 Terra (OpenAI only) checks everything.
+//   3. Sonnet fixes what was found, once. The script and Terra check the fixed ones. Anything still wrong is
+//      flagged for the person (flags.json in the passage's folder, and output/answers/flags.json for all of them).
 // Everything is saved under output/answers/<id and range>/ as it happens, so running it again picks up where it
-// left off (batches already sent are waited for, not sent again). Waits out the internet, credits and busy servers.
+// left off. Waits out the internet, credits and busy servers.
 //
 //   node scripts/dough-maker/run/answers.mjs --passages 1-1558 [--agents 20]
 import fs from 'node:fs';
@@ -12,20 +14,16 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { OUTPUT, PASSAGES, logEvent, notify } from './events.mjs';
 import { doc } from './docs.mjs';
-import { passageText, span } from './bsb.mjs';
+import { passageText, span, verses, verseIndex } from './bsb.mjs';
 import { saveToGit } from './save.mjs';
 import { PREP_DIR, about, theText, folder, passing } from './prep.mjs';
-import { chat, submitBatch, waitBatch, SONNET_OR, OPUS_OR } from './openrouter.mjs';
+import { chat, SONNET_OR } from './openrouter.mjs';
 
 const STEP = 'answer_explanations';
 export const ANSWERS_DIR = path.join(OUTPUT, 'answers');
-const RUN = path.join(ANSWERS_DIR, '_run.json');
-const CHUNK = 300;
 const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;
-const OPUS_THINKING = { effort: 'low' };
-// Sonnet can't turn thinking off on OpenRouter; left alone it thought for 60% of its output, which cost most of the
-// writing and cut 7 of 51 answers off at the token cap (50-passage test, 2026-11-14). Low keeps it short.
-const SONNET_THINKING = { effort: 'low' };
+const SONNET = { ...SONNET_OR, reasoning: { effort: 'medium' }, maxTokens: 48000 };
+const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-terra', maxTokens: 32000 };
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 function writeJson(f, d) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f + '.tmp', JSON.stringify(d, null, 2) + '\n'); fs.renameSync(f + '.tmp', f); }
@@ -61,7 +59,10 @@ Write the answer explanations for every choice card above, following answer-expl
 - 3 to 5 sentences each. Short fragments like "Never." don't count as sentences.
 - Never use a reaction phrase; the code shows those: Underbaked, Still doughy, Came out burnt, Baked just right, Fine work baker, Box-worthy, That's a keeper, Perfect bake.
 - Never reuse a line from the Prep cards word for word. Quoting the Bible is fine.
-- Every Bible fact from outside this passage carries its reference.
+- Every Bible fact or quote from outside this passage carries its reference, like (Matthew 9:36).
+- The first time someone shows up in an explanation, say in a few words who they are, like "Solomon, David's son and Israel's king."
+- A quote that starts or stops partway through a verse shows "…" where it's cut, like “…one named Orpah and the other named Ruth.” (Ruth 1:4)
+- God, Jesus and holy things are never the joke.
 - Never add a reason, purpose or feeling the text doesn't state, unless it's marked as his own guess ("I think").
 - No em dashes or en dashes. Cookies are the only food he mentions, except a food in the passage itself.
 - Make it sound like Papa Dorin: warm, plain words, funny where a laugh fits, never preachy.
@@ -79,25 +80,32 @@ Check every answer explanation above against answer-explanations.md, papa-dorin.
 - gets the Bible wrong, or adds a fact, reason or feeling the text doesn't give (unless marked as his own guess) ("bible"),
 - breaks a rule in answer-explanations.md or papa-dorin.md ("rule"),
 - doesn't sound like Papa Dorin: flat, generic, preachy, or no laugh where one clearly fits ("tone").
+A script already checks the "…" on cut quotes, that quotes are the BSB's exact words, capitals and punctuation, sentence counts, dashes, reaction phrases and lines copied from the Prep cards. Don't report those.
+Report tone only when an explanation is clearly flat, generic or preachy, not for small style choices.
 Only clear problems. Reply with only JSON: {"findings": [{"stop": n, "card": n, "answer": n, "kind": "bible" | "rule" | "tone", "problem": "..."}]}. Nothing found: {"findings": []}.`;
 
-const FIX = (m, all, findings) => `${m.head}
+// Only the cards with a problem go back to Sonnet (owner, 2026-11-15): less to read, and nothing else can change
+const FIX = (m, all, findings) => { const on = (x) => findings.some((f) => f.stop === x.stop && f.card === x.card); return `${m.head}
 
-The choice cards:
-${JSON.stringify(m.choices, null, 2)}
+The choice cards that have a problem:
+${JSON.stringify(m.choices.filter(on), null, 2)}
 
-All the answer explanations so far ("answer" is the position on its card, starting at 1):
-${JSON.stringify(all, null, 2)}
+Their answer explanations ("answer" is the position on its card, starting at 1):
+${JSON.stringify(all.filter(on), null, 2)}
 
 Problems found in some of them:
 ${JSON.stringify(findings, null, 2)}
 
 Rewrite each explanation that has a problem so the problem is gone, following answer-explanations.md and papa-dorin.md. Keep the rest of what it says if it's good. Don't touch explanations without a problem.
-Reply with only JSON: {"fixes": [{"stop": n, "card": n, "answer": n, "explanation": "..."}]}.`;
+Reply with only JSON: {"fixes": [{"stop": n, "card": n, "answer": n, "explanation": "..."}]}.`; };
 
 // --- the script check ----------------------------------------------------------------------------------------------
 const REACTIONS = /\b(underbaked|still doughy|came out burnt|baked just right|fine work,? baker|box-worthy|that's a keeper|perfect bake)\b/i;
-const sentences = (t) => String(t ?? '').replace(/“[^”]*”|"[^"]*"/g, 'Q').split(/[.!?]+(?=\s|$)/).map((s) => s.trim()).filter((s) => s.split(/\s+/).length > 2).length;
+// Quotes count as one word; a quote (and its reference) followed by a capital letter ends a sentence
+export const sentences = (t) => String(t ?? '')
+  .replace(/(“[^”]*”|"[^"]*")(\s*\([^)]*\))?\s+(?=[A-Z])/g, (q, a, ref) => a + (ref ?? '') + '. ')
+  .replace(/“[^”]*”|"[^"]*"/g, 'Q').replace(/\(([^)]*)\)/g, 'R')
+  .split(/[.!?]+(?=\s|$)/).map((x) => x.trim()).filter((x) => x.split(/\s+/).length > 2).length;
 const words = (s) => String(s).toLowerCase().replace(/[‘’]/g, "'").match(/[a-z']+/g) ?? [];
 const unquoted = (t) => String(t).replace(/“[^”]*”|"[^"]*"/g, ' ');
 export function scriptCheck(m, list) {
@@ -105,9 +113,18 @@ export function scriptCheck(m, list) {
   const add = (set, t) => { const w = words(t); for (let i = 0; i + 8 <= w.length; i++) set.add(w.slice(i, i + 8).join(' ')); };
   for (const t of m.story) add(grams, unquoted(t));
   add(bible, passageText(m.p.start, m.p.end));
+  const bibleText = norm(passageText(m.p.start, m.p.end)).replace(/^.*? d+:d+ /gm, " ").replace(/s+/g, " ").toLowerCase();
+  const bibleWords = new Set(words(bibleText));
   for (const e of list) {
     const t = String(e.explanation ?? '');
     const say = (problem) => out.push({ stop: e.stop, card: e.card, answer: e.answer, kind: 'rule', problem });
+    for (const q of t.match(/“[^”]+”|"[^"]+"/g) ?? []) {
+      const inner = norm(q.slice(1, -1)).replace(/…/g, " ").replace(/s+/g, " ").trim().toLowerCase();
+      const pieces = inner.split(/s*[.,;:!?]s*/).filter((x) => x.split(" ").length >= 3);
+      const w = words(inner);
+      const biblical = w.length >= 3 && w.filter((x) => bibleWords.has(x)).length / w.length >= 0.75;
+      if (biblical && pieces.some((x) => !bibleText.includes(x))) { say("A quote isn't the BSB's exact words."); break; }
+    }
     const n = sentences(t);
     if (n < 3 || n > 5) say(`It has ${n} sentences. Explanations are 3 to 5 sentences.`);
     if (/[–—]/.test(unquoted(t))) say('It uses a dash. No em dashes or en dashes.');
@@ -140,22 +157,47 @@ const merge = (list, fixes) => list.map((e) => {
 const finalOut = (m, list) => ({ cards: m.choices.map((c) => ({ stop: c.stop, card: c.card,
   explanations: c.answers.map((a, i) => ({ answer: a.text, explanation: list.find((e) => e.stop === c.stop && e.card === c.card && e.answer === i + 1)?.explanation ?? '' })) })) });
 
+// --- the missing "…" ---------------------------------------------------------------------------------------------
+// papa-dorin.md "Quotes": a quote can start or stop partway through a verse; where it cuts off, it shows "…". Sonnet
+// often leaves the "…" out, so the script puts it in: "…" where a quote cuts into the middle of a sentence, and the
+// BSB's own closing mark where it ends one ("How awesome is this place!" stays as it is; "…he was afraid…" gets
+// both). The words are copied from the BSB itself, so nested quote marks stay right. A quote that isn't found inside
+// one verse word for word is left alone. Terra is told the script handles this, so the two never disagree.
+const norm = (s) => s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"');
+export function addEllipses(text, start, end) {
+  const vs = verses().slice(verseIndex(start), verseIndex(end) + 1).filter((v) => !v.leftOut).map((v) => v.text.trim());
+  return String(text).replace(/“([^”]+)”|"([^"]+)"/g, (whole, a, b) => {
+    const q = a ?? b, open = a != null ? '“' : '"', close = a != null ? '”' : '"';
+    const core = norm(q.replace(/^…\s*/, '').replace(/\s*…$/, '').replace(/[.,;:!?]$/, '')).trim();
+    if (core.split(/\s+/).length < 3) return whole;
+    for (const v of vs) {
+      const V = norm(v), at = V.toLowerCase().indexOf(core.toLowerCase());   // the BSB decides the capitals too
+      if (at < 0) continue;
+      const before = V.slice(0, at).trimEnd(), after = V.slice(at + core.length);
+      // a verse can start mid-sentence ("both Mahlon and Chilion…"): the BSB's small letter says so
+      const cleanStart = before === '' ? !/^[a-z]/.test(v.slice(at)) : /[.!?:;"'(]$/.test(before);
+      const next = after.match(/^[.!?,;:]/)?.[0] ?? '';
+      let out = v.slice(at, at + core.length);
+      if (!cleanStart) out = '…' + out;
+      if (/[.!?]/.test(next)) out += next;
+      else if (after.trim() !== '') out += '…';
+      return open + out + close;
+    }
+    return whole;
+  });
+}
+
 // --- the run -------------------------------------------------------------------------------------------------------
 export async function runAnswers(ids, { agents = 20 } = {}) {
   const list = readJson(PASSAGES);
   const byId = new Map(list.map((p) => [p.id, p]));
   const dir = (p) => path.join(ANSWERS_DIR, folder(p));
-  const run = readJson(RUN) ?? { batches: [], cost: { batch: 0, sync: 0 } };
-  const saveRun = () => writeJson(RUN, run);
   const system = SYSTEM();
   const chosen = ids.map((id) => byId.get(id)).filter((p) => p && fs.existsSync(path.join(PREP_DIR, folder(p), 'prep.json')));
-  const mats = new Map();
-  const mat = (p) => { if (!mats.has(p.id)) mats.set(p.id, material(p)); return mats.get(p.id); };
-
+  const todo = chosen.filter((p) => !fs.existsSync(path.join(dir(p), 'done.json')));
   logEvent({ type: 'run', status: 'running', note: `Answer explanations: ${chosen.length} passages.` });
-  await notify('Answer explanations started', [`${chosen.length} passages`, 'Sonnet writes in batches, Opus checks, Sonnet fixes, no flags']);
+  await notify('Answer explanations started', [`${todo.length} passages (${chosen.length - todo.length} already done)`, 'Sonnet writes, Terra checks, up to two fixes, then flags']);
 
-  // A call that waits out passing problems, and tries an unreadable answer once more
   let down = null;
   async function ask(fn, read) {
     let tried = false;
@@ -163,10 +205,8 @@ export async function runAnswers(ids, { agents = 20 } = {}) {
       try {
         const r = await fn();
         if (down) { notify('Answer explanations going again', [`After ${Math.round((Date.now() - down) / 60000)} min`]); down = null; }
-        run.cost.sync += r.cost ?? 0;
         const v = read(r.text);
-        if (v) return v;
-        if (tried) return null;
+        if (v || tried) return { v, cost: r.cost ?? 0 };
         tried = true;
       } catch (e) {
         if (!passing(e)) throw e;
@@ -175,107 +215,83 @@ export async function runAnswers(ids, { agents = 20 } = {}) {
       }
     }
   }
+  const stage = async (file, fn) => { const got = readJson(file); if (got) return got; const out = await fn(); writeJson(file, out); return out; };
+  const findings = (t) => Array.isArray(json(t)?.findings) ? json(t).findings : null;
+  const key = (x) => `${x.stop}/${x.card}/${x.answer}`;
 
-  // Send a batch for every passage that needs one, wait for them all, and hand each result to save()
-  async function batchPhase(phase, model, needs, build, save) {
-    const pending = run.batches.filter((b) => b.phase === phase && !b.done);
-    const sent = new Set(pending.flatMap((b) => b.ids));
-    const todo = chosen.filter((p) => needs(p) && !sent.has(p.id));
-    for (let i = 0; i < todo.length; i += CHUNK) {
-      const part = todo.slice(i, i + CHUNK);
-      let id;
-      for (;;) {
-        try { id = await submitBatch({ ...model, items: part.map((p) => ({ id: p.id, system, ...build(p) })) }); break; }
-        catch (e) { if (!passing(e)) throw e; await sleep(WAIT); }
-      }
-      const b = { phase, id, ids: part.map((p) => p.id), sent: new Date().toISOString() };
-      run.batches.push(b); pending.push(b); saveRun();
-      logEvent({ type: 'note', title: `Sent a ${phase} batch`, lines: [`${part.length} passages`, id] });
-    }
-    await Promise.all(pending.map(async (b) => {
-      let r;
-      for (;;) { try { r = await waitBatch(b.id); break; } catch (e) { if (!passing(e)) throw e; await sleep(WAIT); } }
-      run.cost.batch += r.cost ?? 0;
-      await Promise.all(b.ids.map((pid) => save(byId.get(pid), r.results.get(String(pid))?.text ?? null)));
-      Object.assign(b, { done: new Date().toISOString(), status: r.status, cost: r.cost, provider: r.provider }); saveRun();
-      logEvent({ type: 'note', title: `${phase} batch back`, lines: [`${b.ids.length} passages, ${r.status}`, `$${(r.cost ?? 0).toFixed(2)}`] });
-    }));
-  }
-
-  // 1. Sonnet writes, in batches. Anything that comes back empty or garbled is written again right away.
-  const has = (p, f) => fs.existsSync(path.join(dir(p), f));
-  await batchPhase('write', SONNET_OR, (p) => !has(p, 'written.json') && !has(p, 'done.json'),
-    (p) => ({ user: WRITE(mat(p)), reasoning: SONNET_THINKING, maxTokens: 32000 }),
-    async (p, text) => {
-      let out = json(text);
-      if (!out?.cards) out = await ask(() => chat({ ...SONNET_OR, system, user: WRITE(mat(p)), reasoning: SONNET_THINKING, maxTokens: 32000, passage: p.id, step: STEP, role: 'writer' }), (t) => json(t)?.cards ? json(t) : null);
-      writeJson(path.join(dir(p), 'written.json'), out ?? { cards: [] });
+  async function one(p) {
+    const m = material(p), d = dir(p);
+    const fixQuotes = (list) => list.map((e) => ({ ...e, explanation: addEllipses(e.explanation, p.start, p.end) }));
+    // 1. Sonnet writes
+    const written = await stage(path.join(d, 'written.json'), async () => {
+      const r = await ask(() => chat({ ...SONNET, system, user: WRITE(m), passage: p.id, step: STEP, role: 'writer' }), (t) => json(t)?.cards ? json(t) : null);
+      return { ...(r.v ?? { cards: [] }), cost: r.cost };
     });
-
-  // 2. The script and Opus check everything that was written, Opus in batches
-  await batchPhase('check', OPUS_OR, (p) => has(p, 'written.json') && !has(p, 'check-1.json') && !has(p, 'done.json'),
-    (p) => { const m = mat(p); return { user: CHECK(m, flatten(m, readJson(path.join(dir(p), 'written.json'))).list), reasoning: OPUS_THINKING, maxTokens: 16000 }; },
-    async (p, text) => {
-      const m = mat(p);
-      const { list: all, missing } = flatten(m, readJson(path.join(dir(p), 'written.json')));
-      let opus = json(text)?.findings;
-      if (!Array.isArray(opus)) opus = await ask(() => chat({ ...OPUS_OR, system, user: CHECK(m, all), reasoning: OPUS_THINKING, passage: p.id, step: STEP, role: 'reviewer' }),
-        (t) => Array.isArray(json(t)?.findings) ? json(t).findings : null) ?? [];
-      writeJson(path.join(dir(p), 'check-1.json'), { script: [...missing, ...scriptCheck(m, all.filter((e) => e.explanation))], opus });
+    // 2. The "…", the script, then Terra checks everything
+    let { list: all, missing } = flatten(m, written);
+    all = fixQuotes(all);
+    const check = (file, items, extra = []) => stage(path.join(d, file), async () => {
+      const script = [...extra, ...scriptCheck(m, items.filter((x) => x.explanation))];
+      const r = items.length ? await ask(() => chat({ ...TERRA, system, user: CHECK(m, items.filter((x) => x.explanation)), passage: p.id, step: STEP, role: 'reviewer' }), findings) : { v: [], cost: 0 };
+      return { script, terra: r.v ?? [], cost: r.cost, terraReadable: !!r.v };
     });
-
-  // 3. Fix what was found, check the fixed ones again, one more fix if needed; then it's done
-  const queue = chosen.filter((p) => has(p, 'check-1.json') && !has(p, 'done.json'));
-  let finished = 0;
-  async function finish(p) {
-    const m = mat(p), d = dir(p);
-    let { list: all } = flatten(m, readJson(path.join(d, 'written.json')));
-    const c1 = readJson(path.join(d, 'check-1.json'));
-    let found = [...c1.script, ...c1.opus];
-    let rounds = 0;
+    const c1 = await check('check-1.json', all, missing);
+    let found = [...c1.script, ...c1.terra];
+    const first = found.length;
+    // 3. Up to two fixes, each with only the flagged cards, each checked by the script and Terra
     for (let n = 1; n <= 2 && found.length; n++) {
-      const fixFile = path.join(d, `fix-${n}.json`);
-      let fixes = readJson(fixFile)?.fixes;
-      if (!fixes) {
-        fixes = await ask(() => chat({ ...SONNET_OR, system, user: FIX(m, all, found), reasoning: SONNET_THINKING, maxTokens: 32000, passage: p.id, step: STEP, role: 'fixer' }),
-          (t) => Array.isArray(json(t)?.fixes) ? json(t).fixes : null) ?? [];
-        writeJson(fixFile, { fixes });
-      }
-      all = merge(all, fixes);
-      rounds = n;
-      if (n === 2) break;   // after the 2nd fix, Sonnet's version stands
-      const changed = all.filter((e) => fixes.some((x) => x.stop === e.stop && x.card === e.card && x.answer === e.answer));
-      const c2File = path.join(d, 'check-2.json');
-      let c2 = readJson(c2File);
-      if (!c2) {
-        const opus = changed.length ? await ask(() => chat({ ...OPUS_OR, system, user: CHECK(m, changed), reasoning: OPUS_THINKING, passage: p.id, step: STEP, role: 'reviewer' }),
-          (t) => Array.isArray(json(t)?.findings) ? json(t).findings : null) ?? [] : [];
-        c2 = { script: [...flatten(m, finalOut(m, all)).missing, ...scriptCheck(m, changed)], opus };
-        writeJson(c2File, c2);
-      }
-      found = [...c2.script, ...c2.opus];
+      const fix = await stage(path.join(d, `fix-${n}.json`), async () => {
+        const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, all, found), passage: p.id, step: STEP, role: 'fixer' }),
+          (t) => Array.isArray(json(t)?.fixes) ? json(t).fixes : null);
+        return { fixes: r.v ?? [], cost: r.cost };
+      });
+      all = fixQuotes(merge(all, fix.fixes));
+      const flagged = new Set(found.map(key));
+      const again = all.filter((x) => flagged.has(key(x)));
+      const cn = await check(`check-${n + 1}.json`, again, flatten(m, finalOut(m, all)).missing);
+      found = [...cn.script, ...cn.terra];
     }
+    // 4. Anything still wrong after the second fix is flagged for the person
+    const flags = found.map((f) => { const x = all.find((y) => key(y) === key(f)); return { ...f, answerText: x?.answerText ?? null, explanation: x?.explanation ?? null }; });
     writeJson(path.join(d, 'answer-explanations.json'), finalOut(m, all));
-    writeJson(path.join(d, 'done.json'), { rounds, firstFindings: c1.script.length + c1.opus.length, t: new Date().toISOString() });
-    logEvent({ type: 'step', passage: p.id, step: STEP, status: 'done', model: null });
-    if (++finished % 100 === 0) { saveRun(); saveToGit(`Answer explanations: ${finished} passages done (automatic backup)`); }
+    writeJson(path.join(d, 'flags.json'), { passage: span(p.start, p.end), flags });
+    const c = (f) => readJson(path.join(d, f))?.cost ?? 0;
+    const total = ['written.json', 'check-1.json', 'fix-1.json', 'check-2.json', 'fix-2.json', 'check-3.json'].reduce((k, f) => k + c(f), 0);
+    writeJson(path.join(d, 'done.json'), { explanations: all.length, firstFindings: first, flags: flags.length,
+      cost: Math.round(total * 10000) / 10000, t: new Date().toISOString() });
+    logEvent({ type: 'step', passage: p.id, step: STEP, status: 'done', model: null, flags: { humanDecision: flags.length } });
+    logEvent({ type: 'note', title: `Answer explanations for ${span(p.start, p.end)}`,
+      lines: [`${all.length} explanations, ${first} needed a fix, ${flags.length} flagged`, `$${total.toFixed(3)}`] });
   }
+
+  // The first passage goes alone, so the rules are in the cache before the rest start (otherwise they all pay full
+  // price to read them: only 16% came from the cache in the 25-passage test)
+  if (todo.length > 1) {
+    try { await one(todo[0]); }
+    catch (e) { logEvent({ type: 'note', title: 'Answer explanations: a passage failed', lines: [`${span(todo[0].start, todo[0].end)}: ${e.message}`], problem: true }); }
+    todo.shift();
+  }
+
+  const queue = [...todo];
+  let finished = 0;
   await Promise.all(Array.from({ length: Math.max(1, Math.min(agents, queue.length)) }, async () => {
     while (queue.length) {
       const p = queue.shift();
-      try { await finish(p); }
-      catch (e) { logEvent({ type: 'note', title: 'Answer explanations: a passage failed', lines: [`${span(p.start, p.end)}: ${e.message}`], problem: true }); }
+      try { await one(p); if (++finished % 100 === 0) saveToGit(`Answer explanations: ${finished} passages done (automatic backup)`); }
+      catch (e) { logEvent({ type: 'note', title: 'Answer explanations: a passage failed', lines: [`${span(p.start, p.end)}: ${e.message}`, e.detail ?? ''], problem: true }); }
     }
   }));
 
-  saveRun();
-  const done = chosen.filter((p) => has(p, 'done.json')).length;
-  saveToGit(`Answer explanations: ${done} of ${chosen.length} passages done (automatic backup)`);
-  const cost = run.cost.batch + run.cost.sync;
-  logEvent({ type: 'run', status: 'finished', note: `Answer explanations: ${done} of ${chosen.length}.` });
-  await notify('Answer explanations finished', [`${done} of ${chosen.length} passages done`,
-    `Cost so far: $${cost.toFixed(2)} ($${run.cost.batch.toFixed(2)} batches, $${run.cost.sync.toFixed(2)} fixes and rechecks)`]);
-  return { done, total: chosen.length, cost: run.cost };
+  // All the flags in one file for the person
+  const flagged = chosen.map((p) => readJson(path.join(dir(p), 'flags.json'))).filter((x) => x?.flags?.length);
+  const nFlags = flagged.reduce((k, x) => k + x.flags.length, 0);
+  writeJson(path.join(ANSWERS_DIR, 'flags.json'), { t: new Date().toISOString(), passages: flagged.length, flags: nFlags, items: flagged });
+  const done = chosen.filter((p) => fs.existsSync(path.join(dir(p), 'done.json')));
+  const totalCost = done.reduce((k, p) => k + (readJson(path.join(dir(p), 'done.json'))?.cost ?? 0), 0);
+  saveToGit(`Answer explanations: ${done.length} of ${chosen.length} passages done (automatic backup)`);
+  logEvent({ type: 'run', status: 'finished', note: `Answer explanations: ${done.length} of ${chosen.length}.` });
+  await notify('Answer explanations finished', [`${done.length} of ${chosen.length} passages done`, `Flagged for you: ${nFlags}`, `Cost: $${totalCost.toFixed(2)}`]);
+  return { done: done.length, total: chosen.length, flags: nFlags, cost: totalCost };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
