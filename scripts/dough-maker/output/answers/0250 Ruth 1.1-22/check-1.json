@@ -1,11 +1,39 @@
 {
   "script": [
     {
-      "stop": 1,
+      "stop": 2,
       "card": 2,
       "answer": 1,
       "kind": "rule",
-      "problem": "It reuses a line from the Prep cards word for word."
+      "problem": "A quote isn't the BSB's exact words."
+    },
+    {
+      "stop": 2,
+      "card": 2,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
+    },
+    {
+      "stop": 2,
+      "card": 11,
+      "answer": 1,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
+    },
+    {
+      "stop": 2,
+      "card": 11,
+      "answer": 2,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
+    },
+    {
+      "stop": 2,
+      "card": 11,
+      "answer": 3,
+      "kind": "rule",
+      "problem": "A quote isn't the BSB's exact words."
     }
   ],
   "terra": [
@@ -13,206 +41,108 @@
       "stop": 1,
       "card": 2,
       "answer": 1,
-      "kind": "bible",
-      "problem": "Packing a car and kissing neighbors goodbye are added to the family's departure as if they happened."
+      "kind": "rule",
+      "problem": "Papa invents a past trip and a habit of forgetting his hat. His permitted invented moments are limited to his bakery, the drawer, and the Millers' kitchen."
     },
     {
       "stop": 1,
       "card": 2,
-      "answer": 3,
-      "kind": "rule",
-      "problem": "Moab does not start with a vowel. The joke also plays on how the place names sound."
-    },
-    {
-      "stop": 1,
-      "card": 5,
       "answer": 2,
-      "kind": "rule",
-      "problem": "The joke plays on how the names sound and mentions coffee, which is not permitted in jokes."
+      "kind": "tone",
+      "problem": "The explanation repeats the destination without adding much insight or personality."
     },
     {
       "stop": 1,
-      "card": 5,
-      "answer": 3,
-      "kind": "tone",
-      "problem": "The explanation is generic, and the closing line is a flat tease rather than Papa Dorin's voice."
+      "card": 6,
+      "answer": 1,
+      "kind": "bible",
+      "problem": "Saying it is now just Naomi overlooks Orpah and Ruth, her daughters-in-law."
     },
     {
       "stop": 1,
       "card": 6,
       "answer": 1,
       "kind": "rule",
-      "problem": "The BSB has lowercase 'both,' not 'Both,' in the quoted words."
+      "problem": "Papa comments on his choice not to joke instead of simply treating the loss with care."
     },
     {
       "stop": 1,
       "card": 6,
       "answer": 2,
       "kind": "rule",
-      "problem": "The BSB has lowercase 'both,' not 'Both,' in the quoted words."
+      "problem": "Papa comments on skipping jokes instead of simply treating the loss with care."
     },
     {
       "stop": 1,
       "card": 6,
       "answer": 3,
       "kind": "rule",
-      "problem": "The BSB has lowercase 'both,' not 'Both,' in the quoted words."
+      "problem": "Papa comments on how he will handle the heavy moment instead of simply responding with care."
     },
     {
       "stop": 1,
       "card": 8,
       "answer": 3,
       "kind": "bible",
-      "problem": "The verse says the LORD provided food; it does not say there was bread."
+      "problem": "The passage says the LORD provided food, but it does not say the famine ended."
     },
     {
       "stop": 1,
       "card": 10,
-      "answer": 2,
+      "answer": 3,
       "kind": "bible",
-      "problem": "The explanation claims Naomi is not worried about the clock and that the road is wide open. The text gives neither detail."
+      "problem": "Naomi tells the women to return, but the text does not say she turns them around."
     },
     {
       "stop": 1,
-      "card": 12,
+      "card": 16,
       "answer": 1,
-      "kind": "rule",
-      "problem": "Naomi says 'May the LORD...' to her daughters-in-law. The explanation turns her words into a request to the LORD."
+      "kind": "bible",
+      "problem": "Naomi does not ask the question about waiting for the sons to grow up twice."
+    },
+    {
+      "stop": 1,
+      "card": 16,
+      "answer": 3,
+      "kind": "bible",
+      "problem": "Naomi says she is too old to have another husband and speaks hypothetically about bearing sons. She does not say she cannot have sons."
     },
     {
       "stop": 1,
       "card": 17,
-      "answer": 1,
-      "kind": "rule",
-      "problem": "The BSB has lowercase 'it,' not 'It,' in the quoted words."
-    },
-    {
-      "stop": 2,
-      "card": 2,
-      "answer": 1,
-      "kind": "rule",
-      "problem": "The quote joins Naomi's two separate statements after 'Look' and changes the punctuation."
-    },
-    {
-      "stop": 2,
-      "card": 2,
-      "answer": 2,
-      "kind": "rule",
-      "problem": "The quote joins Naomi's two separate statements after 'Look' and changes the punctuation."
-    },
-    {
-      "stop": 2,
-      "card": 4,
       "answer": 3,
-      "kind": "rule",
-      "problem": "The lesson-plan comparison brings in a school-oriented scenario."
+      "kind": "tone",
+      "problem": "The explanation is flat and repeats Naomi's statement without offering much beyond the correction."
     },
     {
       "stop": 2,
       "card": 6,
-      "answer": 1,
-      "kind": "bible",
-      "problem": "Saying Ruth means every word states her inner feeling as fact rather than marking it as Papa Dorin's impression."
-    },
-    {
-      "stop": 2,
-      "card": 6,
-      "answer": 2,
-      "kind": "bible",
-      "problem": "The text does not say whether Ruth is worried about distance."
-    },
-    {
-      "stop": 2,
-      "card": 7,
-      "answer": 1,
-      "kind": "bible",
-      "problem": "A 'long stretch' assigns a duration to Naomi's persuasion that the text does not give."
-    },
-    {
-      "stop": 2,
-      "card": 7,
-      "answer": 2,
-      "kind": "bible",
-      "problem": "Saying Naomi had sent Ruth back earlier implies Ruth went. Naomi told her to follow Orpah, but Ruth stayed."
-    },
-    {
-      "stop": 2,
-      "card": 7,
       "answer": 3,
       "kind": "bible",
-      "problem": "The cited verse does not say they keep walking; their travel is stated in Ruth 1:19."
-    },
-    {
-      "stop": 2,
-      "card": 9,
-      "answer": 1,
-      "kind": "bible",
-      "problem": "The women are described as stunned without marking that as an impression."
-    },
-    {
-      "stop": 2,
-      "card": 9,
-      "answer": 1,
-      "kind": "rule",
-      "problem": "The quoted sentence capitalizes 'The,' which is lowercase in the BSB text."
-    },
-    {
-      "stop": 2,
-      "card": 9,
-      "answer": 2,
-      "kind": "bible",
-      "problem": "The women's reaction is described as being stunned without marking that as an impression."
-    },
-    {
-      "stop": 2,
-      "card": 9,
-      "answer": 3,
-      "kind": "bible",
-      "problem": "The explanation states that the women are surprised without marking that as an impression."
+      "problem": "The explanation presents Ruth's words as an answer to Naomi's earlier remarks about husbands. Naomi's immediate preceding appeal is for Ruth to follow Orpah home."
     },
     {
       "stop": 2,
       "card": 11,
-      "answer": 1,
-      "kind": "rule",
-      "problem": "The quote joins two separate statements and changes the punctuation after 'Naomi.'"
-    },
-    {
-      "stop": 2,
-      "card": 13,
-      "answer": 1,
-      "kind": "bible",
-      "problem": "Naomi replies to the women of the town; the text does not say she tells the whole town."
-    },
-    {
-      "stop": 2,
-      "card": 15,
-      "answer": 1,
-      "kind": "rule",
-      "problem": "The quote capitalizes 'They,' which is lowercase in the BSB text."
-    },
-    {
-      "stop": 2,
-      "card": 15,
-      "answer": 2,
-      "kind": "rule",
-      "problem": "The quote capitalizes 'They,' which is lowercase in the BSB text."
-    },
-    {
-      "stop": 2,
-      "card": 15,
-      "answer": 2,
+      "answer": 3,
       "kind": "tone",
-      "problem": "The explanation is flat and generic, ending with a stock instruction to remember the detail."
+      "problem": "The explanation ends with generic filler rather than adding insight or Papa's personality."
+    },
+    {
+      "stop": 2,
+      "card": 15,
+      "answer": 1,
+      "kind": "tone",
+      "problem": "The comparison to a happy dough ball on a warm counter does not connect clearly to the harvest."
     },
     {
       "stop": 2,
       "card": 15,
       "answer": 3,
-      "kind": "rule",
-      "problem": "The quote capitalizes 'They,' which is lowercase in the BSB text."
+      "kind": "tone",
+      "problem": "The explanation repeats the answer and ends with generic filler."
     }
   ],
-  "cost": 0.0310653,
+  "cost": 0.02890175,
   "terraReadable": true
 }
