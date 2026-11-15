@@ -61,15 +61,10 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 - Only when the text says someone prayed. For example, Jonah 2:1.
 
-### Blessing cookies
-
-- Only when someone speaks a blessing over others and the text calls it a blessing. For example, Numbers 6:23–26.
-- The words "blessed" or "bless" alone don't make a blessing. "Blessed is the man…" (James 1:12) and "I will surely bless you" (Genesis 22:17) don't count.
-
-**Card for songs, prayers and blessings**
-- Who: who sang, prayed or blessed
+**Card for songs and prayers**
+- Who: who sang or prayed
 - What just happened: the moment right before it in the passage
-- Reference: where the song, prayer or blessing runs
+- Reference: where the song or prayer runs
 - Key line: one line from it, in exact BSB wording
 
 ### Prophecy cookies
@@ -88,7 +83,8 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 ## What is never a sample cookie
 
-- Poems the text doesn't name as a song, prayer or blessing. These stay in Prep.
+- Poems the text doesn't name as a song or prayer. These stay in Prep.
+- Blessings.
 - Laments, for now. This holds even when the text calls the lament a song or a prayer: a lament never gets a sample cookie.
 
 ## Output
@@ -111,7 +107,7 @@ A JSON file for the passage. Each cookie gives the Prep story card it sits on (s
 }
 ```
 
-- **type:** "instruction", "ten_commandments", "song", "prayer", "blessing" or "prophecy". Prayers and blessings use the same fields as songs.
+- **type:** "instruction", "ten_commandments", "song", "prayer" or "prophecy". Prayers use the same fields as songs.
 - **reason:** only if the verse states one, otherwise null
 - **link_id:** the id from the approved prophecy link list. **half:** "promise" or "fulfillment".
 - No cookies: an empty list.
