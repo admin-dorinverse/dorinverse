@@ -1,0 +1,32 @@
+{
+  "script": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 23 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "\"Paul\" isn't in this passage."
+    },
+    {
+      "line": 3,
+      "kind": "rule",
+      "problem": "\"Peter's\" and \"my\" aren't the same kind of thing (one is a name, one isn't)."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "\"Rome\" and \"heaven\" aren't the same kind of thing (one is a name, one isn't)."
+    }
+  ],
+  "terra": [
+    {
+      "line": 3,
+      "problem": "“My example” refers to the speaker of the retelling, not Paul. Paul tells them to follow his example.",
+      "kind": "terra"
+    }
+  ],
+  "cost": 0.002168
+}

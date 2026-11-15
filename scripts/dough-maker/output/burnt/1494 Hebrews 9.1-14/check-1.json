@@ -1,0 +1,62 @@
+{
+  "script": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 23 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "\"Aaron's\" isn't in this passage."
+    },
+    {
+      "line": 2,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "Its wrong detail \"bulls and doves\" isn't found anywhere in the Bible."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "\"bulls and doves\" and \"His own blood\" aren't the same kind of thing (one is a name, one isn't)."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its wrong detail \"the angels of heaven\" isn't found anywhere in the Bible."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "\"the angels of heaven\" and \"Himself\" aren't the same kind of thing (one is a name, one isn't)."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its true detail \"Himself\" is named in line 2, which gives it away. Burn a detail no other line mentions."
+    }
+  ],
+  "terra": [
+    {
+      "line": 4,
+      "problem": "The verse says Christ entered by His own blood, not by the blood of His own blood.",
+      "kind": "terra"
+    },
+    {
+      "line": 5,
+      "problem": "The verse says Christ offered Himself; the line instead says Himself offered Christ.",
+      "kind": "terra"
+    }
+  ],
+  "cost": 0.002591
+}
