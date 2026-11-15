@@ -1,0 +1,52 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "verses": "Joshua 16:1-4",
+      "text": "The allotment for Joseph's descendants ran from the Jordan at Jericho into Bethel's hill country and west to the Sea.",
+      "burnt": false
+    },
+    {
+      "line": 4,
+      "verses": "Joshua 17:11-13",
+      "text": "Manasseh could not occupy the cities assigned in Issachar and Asher, and the stronger Israelites never drove out the Canaanites completely.",
+      "burnt": false
+    },
+    {
+      "line": 5,
+      "verses": "Joshua 17:15-16",
+      "text": "Joshua told the sons of Joseph to clear the forest, but they said the valley Canaanites had iron idols.",
+      "burnt": true,
+      "wrong_details": [
+        {
+          "wrong": "iron idols",
+          "true": "iron chariots",
+          "verse": "Joshua 17:16"
+        }
+      ]
+    }
+  ],
+  "cost": 0.0299416,
+  "problems": [
+    {
+      "line": 1,
+      "kind": "rule",
+      "problem": "It has 22 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 4,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "It has 21 words. Each line is 20 words or fewer."
+    },
+    {
+      "line": 5,
+      "kind": "rule",
+      "problem": "Its wrong detail \"iron gates\" isn't found anywhere in the Bible."
+    }
+  ]
+}
