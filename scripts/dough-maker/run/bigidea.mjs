@@ -1,7 +1,8 @@
 // The Big Idea (big-idea.md) for every passage, as the owner decided on 2026-11-15 (models.md):
 //   1. Sonnet writes it (normal speed, OpenRouter, Anthropic only) in Papa Dorin's voice, from the verses and the
 //      Prep cards.
-//   2. The script checks every rule it can count or look up: 2 to 4 paragraphs (about 3), 3 to 4 sentences in each,
+//   2. The script checks every rule it can count or look up: 2 to 4 paragraphs (about 3), 3 to 6 sentences in each
+//      (the writer is told 3 to 4),
 //      no dashes, every quote is the BSB's exact words, every reference is real.
 //   3. GPT-6.1 Terra checks that it is true to the passage and says what the passage teaches and why it matters to
 //      the baker, without walking through the events again.
@@ -93,6 +94,7 @@ ${SHORT_OK}
 Reply with only JSON: {"findings": [{"paragraph": n, "problem": "the problem that is still there"}]}. All fixed: {"findings": []}.`;
 
 // --- the script check ----------------------------------------------------------------------------------------------
+const MAX_SENTENCES = 6;
 let bible = null, flat = null;
 const bibleFlat = () => (flat ??= ' ' + wordsOf(bibleText()).join(' ') + ' ');   // words only, for 3-word runs
 const bibleText = () => (bible ??= norm(verses().map((v) => v.text).join(' ')));
@@ -105,7 +107,9 @@ export function scriptCheck(m, out) {
     const n = i + 1, t = String(p ?? '');
     if (typeof p !== 'string' || !t.trim()) { say(n, 'It is empty.'); return; }
     const s = sentences(t);
-    if (s < 3 || s > 4) say(n, `It has ${s} sentences. Each paragraph is 3 to 4 sentences.`);
+    // The doc and the writer say 3 to 4; the check lets up to 6 through, as the owner decided on 2026-11-15
+    // (Sonnet's natural paragraph is about 5, and 5 or 6 short sentences read fine). The writer is never told this.
+    if (s < 3 || s > MAX_SENTENCES) say(n, `It has ${s} sentences. Each paragraph is 3 to 4 sentences.`);
     if (/[–—]/.test(unquoted(t))) say(n, 'It uses a dash. No em dashes or en dashes.');
     for (const q of t.match(/“[^”]+”|"[^"]+"/g) ?? []) {
       const inner = norm(q.slice(1, -1));
