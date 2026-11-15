@@ -34,13 +34,13 @@ This file says which model does each job in the lesson run, and how the run uses
 | 2. Each passage | Prep walkthrough | Opus | Opus + script | Opus | Kimi + script |
 | 3. Each passage, after Prep | Burnt Cookies | Opus | Kimi + script | Opus | Kimi + script |
 | | The Big Idea | Opus | Kimi + script | Opus | Kimi + script |
-| | Answer explanations | Sonnet | script + GPT-6.1 Terra | Sonnet, once | GPT-6.1 Terra on the fixed ones |
+| | Answer explanations | Sonnet | script + GPT-6.1 Terra | Sonnet, up to 2 times, then a final fix | GPT-6.1 Terra on each fix |
 | | Definitions | Kimi | Kimi + script | Kimi | Opus |
 | | Sample Table | Kimi | Kimi + script | Kimi | Opus |
 | 4. Last, across all passages | Idioms | Kimi | Kimi + script | Kimi | Opus |
 | 5. After the run | Tracker + flags | script | — | — | the person |
 
-Answer explanations: Sonnet writes (normal speed, OpenRouter, Anthropic only). Script fixes missing "…" and checks the countable rules, then GPT-6.1 Terra checks everything. Sonnet fixes what Terra found, once. Terra checks the fixed ones; anything still wrong is flagged for the person.
+Answer explanations: Sonnet writes (normal speed, OpenRouter, Anthropic only). Script fixes missing "…" and checks the countable rules, then GPT-6.1 Terra checks everything. Sonnet fixes what Terra found, up to two times, with Terra checking each fix. Anything still wrong gets a final Sonnet fix, and that version stands. No flags.
 
 ## "Kimi + script"
 

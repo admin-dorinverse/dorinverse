@@ -3,8 +3,8 @@
 //   1. Sonnet writes each passage's explanations (normal speed, OpenRouter, Anthropic only).
 //   2. The script adds a missing "…" to cut quotes (and the BSB's closing mark where a quote ends a sentence), then
 //      checks the countable rules. GPT-6.1 Terra (OpenAI only) checks everything.
-//   3. Sonnet fixes what was found, once. The script and Terra check the fixed ones. Anything still wrong is
-//      flagged for the person (flags.json in the passage's folder, and output/answers/flags.json for all of them).
+//   3. Sonnet fixes what was found, up to two times, with the script and Terra checking each fix (only the cards
+//      with a problem go back). Anything still wrong gets a final Sonnet fix, and that version stands. No flags.
 // Everything is saved under output/answers/<id and range>/ as it happens, so running it again picks up where it
 // left off. Waits out the internet, credits and busy servers.
 //
@@ -197,7 +197,7 @@ export async function runAnswers(ids, { agents = 20 } = {}) {
   const chosen = ids.map((id) => byId.get(id)).filter((p) => p && fs.existsSync(path.join(PREP_DIR, folder(p), 'prep.json')));
   const todo = chosen.filter((p) => !fs.existsSync(path.join(dir(p), 'done.json')));
   logEvent({ type: 'run', status: 'running', note: `Answer explanations: ${chosen.length} passages.` });
-  await notify('Answer explanations started', [`${todo.length} passages (${chosen.length - todo.length} already done)`, 'Sonnet writes, Terra checks, up to two fixes, then flags']);
+  await notify('Answer explanations started', [`${todo.length} passages (${chosen.length - todo.length} already done)`, 'Sonnet writes, Terra checks, up to two fixes and a final fix, no flags']);
 
   let down = null;
   async function ask(fn, read) {
@@ -252,17 +252,27 @@ export async function runAnswers(ids, { agents = 20 } = {}) {
       const cn = await check(`check-${n + 1}.json`, again, flatten(m, finalOut(m, all)).missing);
       found = [...cn.script, ...cn.terra];
     }
-    // 4. Anything still wrong after the second fix is flagged for the person
-    const flags = found.map((f) => { const x = all.find((y) => key(y) === key(f)); return { ...f, answerText: x?.answerText ?? null, explanation: x?.explanation ?? null }; });
+    // 4. Anything still wrong after the second fix gets a final Sonnet fix, and that version stands: no flags
+    //    (owner, 2026-11-15). What was still wrong is kept in fix-3.json, for the record.
+    const left = found.length;
+    if (found.length) {
+      const fix = await stage(path.join(d, 'fix-3.json'), async () => {
+        const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, all, found), passage: p.id, step: STEP, role: 'fixer' }),
+          (t) => Array.isArray(json(t)?.fixes) ? json(t).fixes : null);
+        return { fixes: r.v ?? [], cost: r.cost, problems: found };
+      });
+      all = fixQuotes(merge(all, fix.fixes));
+    }
+    const flags = [];
     writeJson(path.join(d, 'answer-explanations.json'), finalOut(m, all));
     writeJson(path.join(d, 'flags.json'), { passage: span(p.start, p.end), flags });
     const c = (f) => readJson(path.join(d, f))?.cost ?? 0;
-    const total = ['written.json', 'check-1.json', 'fix-1.json', 'check-2.json', 'fix-2.json', 'check-3.json'].reduce((k, f) => k + c(f), 0);
-    writeJson(path.join(d, 'done.json'), { explanations: all.length, firstFindings: first, flags: flags.length,
+    const total = ['written.json', 'check-1.json', 'fix-1.json', 'check-2.json', 'fix-2.json', 'check-3.json', 'fix-3.json'].reduce((k, f) => k + c(f), 0);
+    writeJson(path.join(d, 'done.json'), { explanations: all.length, firstFindings: first, finalFix: left, flags: 0,
       cost: Math.round(total * 10000) / 10000, t: new Date().toISOString() });
     logEvent({ type: 'step', passage: p.id, step: STEP, status: 'done', model: null, flags: { humanDecision: flags.length } });
     logEvent({ type: 'note', title: `Answer explanations for ${span(p.start, p.end)}`,
-      lines: [`${all.length} explanations, ${first} needed a fix, ${flags.length} flagged`, `$${total.toFixed(3)}`] });
+      lines: [`${all.length} explanations, ${first} needed a fix, ${left} needed the final fix`, `${total.toFixed(3)}`] });
   }
 
   // The first passage goes alone, so the rules are in the cache before the rest start (otherwise they all pay full
