@@ -56,7 +56,8 @@ let bible = null;
 const bibleText = () => (bible ??= norm(verses().map((v) => v.text).join(' ')));
 // Words the Bible uses in lower case ("During", "Anyone" at the start of a sentence) are ordinary words, not names
 let lower = null;
-const ordinary = (w) => (lower ??= new Set(verses().flatMap((v) => v.text.match(/\b[a-z][a-z']*\b/g) ?? []))).has(w.toLowerCase());
+// (whole words only: the "moab" in "Pahath-moab" and the "bethel" in "El-bethel" are parts of names)
+const ordinary = (w) => (lower ??= new Set(verses().flatMap((v) => v.text.match(/(?<![\w'-])[a-z][a-z']*(?![\w-])/g) ?? []))).has(w.toLowerCase());
 // A detail is in a text if the text says it, or says every name in it ("the land of Judah" when a card says "Judah",
 // "city of Hebron" when the Bible says "Hebron"); used for true details in the Prep cards and wrong ones in the Bible
 const taught = (prep, d) => {
@@ -152,8 +153,9 @@ export function scriptCheck(m, out) {
         else if (short && !taught(bibleText(), w.wrong)) say(n, `Its wrong detail "${w.wrong}" isn't found anywhere in the Bible.`);
         if (short && w.true && !taught(m.prepText, w.true)) say(n, `Its true detail "${w.true}" isn't in the Prep cards, so the walkthrough didn't teach it.`);
         // Name for a name: only for short swaps, so quotes like "Love your neighbor" aren't mistaken for names
+        // "The same kind of thing" isn't checked here: capital letters can't tell a place from a group ("Zion" for
+        // "heaven", "Pharisees" for "scribes"), and in the full run nearly all such flags were wrong (2026-11-15)
         const cap = (x) => /^[A-Z]/.test(String(x ?? '').trim());
-        if (short && words(w.true) <= SWAP_WORDS && cap(w.wrong) !== cap(w.true)) say(n, `"${w.wrong}" and "${w.true}" aren't the same kind of thing (one is a name, one isn't).`);
         if (w.true && cap(w.true) && words(w.true) <= SWAP_WORDS) {
           const others = lines.filter((o) => o !== l && has(o?.text, w.true)).map((o) => o?.line);
           if (others.length) say(n, `Its true detail "${w.true}" is named in line ${others.join(', ')}, which gives it away. Burn a detail no other line mentions.`);
@@ -162,7 +164,11 @@ export function scriptCheck(m, out) {
     } else {
       for (const name of t.match(/\b[A-Z][a-zA-Z']+\b/g) ?? []) {
         if (NAMES_OK.has(name.toLowerCase().replace(/'s$/, '')) || ordinary(name.replace(/'s$/, ''))) continue;
-        if (!has(passage, name.replace(/'s$/, ''))) say(n, `"${name}" isn't in this passage.`);
+        // A name the walkthrough used counts too ("Jacob" where the verses say "Israel", "Moses" where God says
+        // "you"); Terra still checks the line is true to its verses
+        // Word forms count too: "Philistine" for "Philistines", "Babylonian" for "Babylon", "Israelites" for "Israel"
+        const base = norm(name.replace(/'s$/, '')).replace(/(ites?|ians?|s)$/, '');
+        if (!norm(passage + ' ' + m.prepText).includes(base)) say(n, `"${name}" isn't in this passage.`);
       }
       for (const num of t.match(/\b\d+\b/g) ?? []) if (!has(passage, num)) say(n, `The number ${num} isn't in this passage.`);
     }
@@ -188,16 +194,18 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
   await notify('Burnt Cookies started', [`${todo.length} passages (${chosen.length - todo.length} already done)`, 'Sonnet writes, the script and Terra check, no flags']);
 
   let down = null;
-  async function ask(fn, read) {
-    let tried = false, cost = 0;   // a reply that can't be read is asked again, and both calls are paid for
+  // A reply that can't be read is asked again (every call is paid for); each unreadable reply is kept in `keep`
+  // (a file name in the passage's folder) so the reason can be seen
+  async function ask(fn, read, keep = null) {
+    let tried = 0, cost = 0;
     for (;;) {
       try {
         const r = await fn();
         cost += r.cost ?? 0;
         if (down) { notify('Burnt Cookies going again', [`After ${Math.round((Date.now() - down) / 60000)} min`]); down = null; }
         const v = read(r.text);
-        if (v || tried) return { v, cost };
-        tried = true;
+        if (!v && keep) { fs.mkdirSync(path.dirname(keep), { recursive: true }); fs.appendFileSync(keep, `--- ${new Date().toISOString()}\n${r.text}\n`); }
+        if (v || ++tried >= 2) return { v, cost };
       } catch (e) {
         if (!passing(e)) throw e;
         if (!down) { down = Date.now(); await notify('Burnt Cookies waiting', [e.message, 'It tries again every 5 minutes and carries on by itself.'], { problem: true }); }
@@ -210,9 +218,13 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
 
   async function one(p) {
     const m = material(p), d = dir(p);
+    // Nothing readable after two tries: the passage fails (no written.json, no done.json), so a run again retries it.
+    // Fixes never run on an empty set of lines.
     const written = await stage(path.join(d, 'written.json'), async () => {
-      const r = await ask(() => chat({ ...SONNET, system, user: WRITE(m), passage: p.id, step: STEP, role: 'writer' }), (t) => Array.isArray(json(t)?.lines) ? json(t) : null);
-      return { ...(r.v ?? { lines: [] }), cost: r.cost };
+      const r = await ask(() => chat({ ...SONNET, system, user: WRITE(m), passage: p.id, step: STEP, role: 'writer' }),
+        (t) => Array.isArray(json(t)?.lines) && json(t).lines.length ? json(t) : null, path.join(d, 'unreadable.txt'));
+      if (!r.v) throw Object.assign(new Error(`Sonnet's reply couldn't be read twice ($${r.cost.toFixed(3)}); it's kept in unreadable.txt.`), { detail: '' });
+      return { ...r.v, cost: r.cost };
     });
     let lines = written.lines ?? [];
     const check = (file, before = null) => stage(path.join(d, file), async () => {
@@ -228,7 +240,7 @@ export async function runBurnt(ids, { agents = 20, maxCost = Infinity, maxPerPas
     for (let n = 1; n <= 3 && found.length; n++) {
       const fix = await stage(path.join(d, `fix-${n}.json`), async () => {
         const r = await ask(() => chat({ ...SONNET, system, user: FIX(m, lines, found), passage: p.id, step: STEP, role: 'fixer' }),
-          (t) => Array.isArray(json(t)?.lines) ? json(t).lines : null);
+          (t) => Array.isArray(json(t)?.lines) ? json(t).lines : null, path.join(d, 'unreadable.txt'));
         return { lines: r.v ?? [], cost: r.cost, ...(n === 3 && { problems: found }) };
       });
       lines = merge(lines, fix.lines);
