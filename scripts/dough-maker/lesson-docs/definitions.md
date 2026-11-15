@@ -14,6 +14,8 @@ This file covers the hard-word definitions for the dictionary pop-up.
 - Only Bible words: words that belong to the Bible's world, like Sabbath, ephod, tabernacle, Pharisee, leaven or tithe. Never everyday English words, even hard ones, and never names of people or places.
 - The words come from one Bible word list, which the owner approves.
 - Meanings are written for about a 5th-grade reader. It isn't strict: use judgment.
+- Each meaning is 1 or 2 sentences, about 30 words at most.
+- When a meaning refers to God, He, Him and His are capitalized.
 
 ## Sources
 

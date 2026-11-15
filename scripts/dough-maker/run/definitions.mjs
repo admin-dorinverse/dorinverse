@@ -24,6 +24,7 @@ import { PREP_DIR, folder, passing } from './prep.mjs';
 import { chat, SONNET_OR } from './openrouter.mjs';
 import { json } from './burnt.mjs';
 import { copied } from './copycheck.mjs';
+import { sentences } from './answers.mjs';
 
 const STEP = 'definitions';
 export const DEF_DIR = path.join(OUTPUT, 'definitions');
@@ -31,7 +32,8 @@ const DATA = path.join(OUTPUT, '..', 'data');
 const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;
 const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
 const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-terra', maxTokens: 16000 };
-const SAMPLE = 12, ASSIGN_BATCH = 100, SOURCE_CHARS = 900;
+const SAMPLE = 12, ASSIGN_BATCH = 100, SOURCE_CHARS = 1500, UNCOVERED_MIN = 3;
+const MAX_WORDS = 35, MAX_SENTENCES = 2;   // definitions.md: 1 or 2 sentences, about 30 words at most
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 function writeJson(f, d) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f + '.tmp', JSON.stringify(d, null, 2) + '\n'); fs.renameSync(f + '.tmp', f); }
@@ -113,8 +115,10 @@ export function material({ list = readJson(path.join(DEF_DIR, 'bible-words-group
 // --- prompts -------------------------------------------------------------------------------------------------------
 const RULES = `You write pop-up definitions for Bible words in a children's Bible app. Readers are about 10 years old (5th grade). The Bible text is the BSB.
 
-- Write in your own plain words, for about a 5th-grade reader. Never copy a source's wording. Short: one or two sentences.
-- Say only what the sources given say. If none of the sources explains the word, write no meaning.
+- Write in your own plain words, for about a 5th-grade reader. Never copy a source's wording.
+- Each meaning is 1 or 2 sentences, about 30 words at most.
+- When a meaning refers to God, capitalize He, Him and His.
+- Say only what the sources given say. Never add anything from your own knowledge. If none of the sources explains the word, write no meaning.
 - One meaning, unless the Bible uses the word in clearly different ways in the cards shown (like law: the Law of Moses, or a rule). Then one meaning per way. A card will show only the meaning that fits it.
 - No set template. Each meaning is written for its own word.
 - Name the sources you used, exactly as they're listed.`;
@@ -145,7 +149,7 @@ const CHECK = (m, meanings) => `${show(m)}
 The meanings written:
 ${meanings.map((x) => `Meaning ${x.id}: ${x.meaning} (sources: ${(x.sources ?? []).join(', ')})`).join('\n')}
 
-For each meaning, check: it is true to its sources and says nothing they don't; it is plain enough for a 10-year-old; it fits how the cards use the word. Also: is there a way the cards use the word that no meaning fits?
+For each meaning, check: it is true to its sources and says nothing they don't (nothing added from outside them); it is plain enough for a 10-year-old; it fits how the cards use the word; He, Him and His are capitalized when they refer to God. Also: is there a way the cards use the word that no meaning fits?
 Reply with only JSON: {"findings": [{"id": n, "problem": "..."}]} (id 0 for a use no meaning fits). All fine: {"findings": []}`;
 const RECHECK = (m, meanings, had) => `${show(m)}
 
@@ -157,6 +161,13 @@ ${had.map((f) => `- ${f.id ? `Meaning ${f.id}: ` : ''}${f.problem}`).join('\n')}
 
 Check only whether those problems are fixed. Don't report anything else.
 Reply with only JSON: {"findings": [{"id": n, "problem": "the problem still there"}]}. All fixed: {"findings": []}`;
+const MORE = (m, meanings) => `${show(m)}
+
+The meanings so far:
+${meanings.map((x) => `${x.id}. ${x.meaning}`).join('\n')}
+
+The cards above use the word in a way none of these meanings fits. If the sources explain that use, write a meaning for it. If they don't, write none: those cards will get no pop-up.
+Reply with only JSON: {"meanings": [{"id": 1, "meaning": "...", "sources": ["..."]}]} for the new meaning only, or {"meanings": [], "why": "..."}`;
 const ASSIGN = (m, meanings, batch) => `Word: ${m.word}
 Meanings:
 ${meanings.map((x) => `${x.id}. ${x.meaning}`).join('\n')}
@@ -178,6 +189,9 @@ export function scriptCheck(m, meanings) {
     const src = Array.isArray(x.sources) ? x.sources : [];
     if (!src.length) say(id, 'It names no source.');
     for (const s of src) if (!names.has(s)) say(id, `It names "${s}", which isn't one of the sources given. Use the names exactly as listed.`);
+    const n = String(x.meaning).trim().split(/\s+/).length, s = sentences(x.meaning);
+    if (n > MAX_WORDS) say(id, `It has ${n} words. A meaning is about 30 words at most.`);
+    if (s > MAX_SENTENCES) say(id, `It has ${s} sentences. A meaning is 1 or 2 sentences.`);
     const c = copied(m.word, x.meaning, m.sources.map((s) => s.text));
     if (c) say(id, `It copies ${c.source}: "${c.words}". Write it in your own words.`);
   });
@@ -265,35 +279,71 @@ export async function runDefinitions({ only = null, limit = Infinity, agents = 2
       const cn = await check(`check-${n + 1}.json`, found);
       found = [...cn.script, ...cn.terra];
     }
-    // which meaning each card uses: free when there's one; Sonnet says when there are more (0: no pop-up there)
-    const ids = new Set(meanings.map((x) => x.id));
-    let assigned = m.cards.map((c) => ({ passage_id: c.passage_id, stop: c.stop, card: c.card, meaning: meanings[0].id }));
-    let assignCost = 0;
-    if (meanings.length > 1) {
-      const a = await stage(path.join(d, 'assign.json'), async () => {
-        const out = [];
-        let cost = 0;
-        const read = (t) => { const v = json(t); return Array.isArray(v?.cards) ? v.cards : null; };
-        let unanswered = 0;
-        for (let i = 0; i < m.cards.length; i += ASSIGN_BATCH) {
-          const batch = m.cards.slice(i, i + ASSIGN_BATCH);
-          const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, meanings, batch), step: STEP, role: 'assigner' }), read, keep);
-          cost += r.cost;
-          const got = new Map((r.v ?? []).filter((x) => ids.has(x?.meaning) || x?.meaning === 0).map((x) => [x.n, x.meaning]));
-          // cards it skipped are asked once more, on their own
-          const missed = batch.map((c, k) => ({ c, k })).filter(({ k }) => !got.has(k + 1));
-          if (missed.length) {
-            const again = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, meanings, missed.map((x) => x.c)), step: STEP, role: 'assigner' }), read, keep);
-            cost += again.cost;
-            for (const x of again.v ?? []) { const hit = missed[x?.n - 1]; if (hit && (ids.has(x.meaning) || x.meaning === 0)) got.set(hit.k + 1, x.meaning); }
-          }
-          // still no answer: no pop-up on that card
-          batch.forEach((c, k) => { if (!got.has(k + 1)) unanswered++; out.push({ passage_id: c.passage_id, stop: c.stop, card: c.card, meaning: got.get(k + 1) ?? 0 }); });
+    // Which meaning each card uses, for every word (one meaning or more): a card whose use no meaning fits gets 0,
+    // no pop-up, so a meaning is never shown where it's wrong (owner, 2026-11-15)
+    const assign = (file, ms, cardsIn) => stage(path.join(d, file), async () => {
+      const ids = new Set(ms.map((x) => x.id)), ok = (x) => ids.has(x?.meaning) || x?.meaning === 0;
+      const read = (t) => { const v = json(t); return Array.isArray(v?.cards) ? v.cards : null; };
+      const out = [];
+      let cost = 0, unanswered = 0;
+      for (let i = 0; i < cardsIn.length; i += ASSIGN_BATCH) {
+        const batch = cardsIn.slice(i, i + ASSIGN_BATCH);
+        const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, ms, batch), step: STEP, role: 'assigner' }), read, keep);
+        cost += r.cost;
+        const got = new Map((r.v ?? []).filter(ok).map((x) => [x.n, x.meaning]));
+        // cards it skipped are asked once more, on their own
+        const missed = batch.map((c, k) => ({ c, k })).filter(({ k }) => !got.has(k + 1));
+        if (missed.length) {
+          const again = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASSIGN(m, ms, missed.map((x) => x.c)), step: STEP, role: 'assigner' }), read, keep);
+          cost += again.cost;
+          for (const x of again.v ?? []) { const hit = missed[x?.n - 1]; if (hit && ok(x)) got.set(hit.k + 1, x.meaning); }
         }
-        return { cards: out, unanswered, cost };
+        // still no answer: no pop-up on that card
+        batch.forEach((c, k) => { if (!got.has(k + 1)) unanswered++; out.push({ ...c, meaning: got.get(k + 1) ?? 0 }); });
+      }
+      return { cards: out, unanswered, cost };
+    });
+    const a1 = await assign('assign.json', meanings, m.cards);
+    let assigned = a1.cards, assignCost = a1.cost;
+    // Uses no meaning fits (spirit: "a spirit of deep sleep"): if the sources explain that use, it gets its own
+    // meaning, checked by the script and Terra, and those cards are matched again. One round; else no pop-up there.
+    const zeros = assigned.filter((c) => c.meaning === 0);
+    if (zeros.length >= UNCOVERED_MIN) {
+      const more = await stage(path.join(d, 'more.json'), async () => {
+        const sample = zeros.filter((_, i) => i % Math.max(1, Math.floor(zeros.length / SAMPLE)) === 0).slice(0, SAMPLE);
+        const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: MORE({ ...m, sample }, meanings), step: STEP, role: 'writer' }), meaningsOf, keep);
+        let add = (r.v?.meanings ?? []).map((x, i) => ({ ...x, id: meanings.length + i + 1 }));
+        let cost = r.cost, terra = [];
+        if (add.length) {
+          const script = scriptCheck(m, [...meanings, ...add]).filter((f) => f.id > meanings.length);
+          const t = await ask(() => chatFn({ ...TERRA, system: TERRA_SYSTEM, user: CHECK({ ...m, sample }, add), step: STEP, role: 'reviewer' }), findings);
+          cost += t.cost; terra = (t.v ?? []).filter((f) => f.id);
+          const found2 = [...script, ...terra.map((f) => ({ ...f, id: f.id > meanings.length ? f.id : f.id + meanings.length }))];
+          if (found2.length) {   // one fix; if it can't be read or still breaks a rule, the new meaning is dropped
+            const f = await ask(() => chatFn({ ...SONNET, system: RULES, user: FIX({ ...m, sample }, add, found2), step: STEP, role: 'fixer' }), meaningsOf, keep);
+            cost += f.cost;
+            add = (f.v?.meanings ?? []).map((x, i) => ({ ...x, id: meanings.length + i + 1 }));
+            if (scriptCheck(m, [...meanings, ...add]).some((x) => x.id > meanings.length)) add = [];
+          }
+        }
+        return { meanings: add, why: r.v?.why ?? null, cost };
       });
-      assigned = a.cards; assignCost = a.cost;
+      assignCost += more.cost;
+      if (more.meanings.length) {
+        const all = [...meanings, ...more.meanings];
+        const a2 = await assign('assign-more.json', all, zeros.map(({ meaning, ...c }) => c));
+        assignCost += a2.cost;
+        const again = new Map(a2.cards.map((c) => [`${c.passage_id}/${c.stop}/${c.card}`, c.meaning]));
+        assigned = assigned.map((c) => c.meaning === 0 ? { ...c, meaning: again.get(`${c.passage_id}/${c.stop}/${c.card}`) ?? 0 } : c);
+        meanings = all;
+      }
     }
+    assigned = assigned.map(({ passage_id, stop, card, meaning }) => ({ passage_id, stop, card, meaning }));
+    // a meaning no card uses isn't kept
+    const used = new Set(assigned.map((c) => c.meaning));
+    const renumber = new Map(meanings.filter((x) => used.has(x.id)).map((x, i) => [x.id, i + 1]));
+    meanings = meanings.filter((x) => used.has(x.id)).map((x) => ({ ...x, id: renumber.get(x.id) }));
+    assigned = assigned.map((c) => ({ ...c, meaning: c.meaning === 0 ? 0 : renumber.get(c.meaning) }));
     // only real source names are saved (a fix that couldn't be read may leave a wrong one)
     const names = new Set(m.sources.map((s) => s.name));
     writeJson(path.join(d, 'word.json'), { word: m.word, forms: m.forms,
