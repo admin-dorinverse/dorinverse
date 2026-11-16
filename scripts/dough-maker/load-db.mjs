@@ -14,7 +14,8 @@
 //   output/passages.json, output/prep/<folder>/prep.json, output/answers/<folder>/answer-explanations.json,
 //   output/burnt/<folder>/burnt-cookies.json, output/bigidea/<folder>/big-idea.json,
 //   output/definitions/definitions.json, output/idioms/idioms.json, output/sample/sample-table.json,
-//   output/sample/prayers.json (retellings of a prayer), output/sample/place-cards.json,
+//   output/sample/prayers.json (retellings of a prayer), output/sample/commands-shortlist.json and told-again.json
+//   (other verses that repeat a commandment or command), output/sample/place-cards.json,
 //   data/place-images/images.json, data/prophecy-links.json, output/trivia/trivia.json, data/bsb-footnotes.json.
 // Character cookies take their verses from character_card_verse (the character cards already loaded).
 import fs from 'node:fs';
@@ -117,6 +118,8 @@ for (const f of fs.readdirSync(path.join(OUT, 'prep'))) {
   folderOf.set(n, f);
 }
 const cardKey = (p, s, c) => `${p}|${s}|${c}`;
+const firstAnyCard = new Map();   // verse id -> the first card of any kind telling it
+const firstStoryCard = new Map();   // verse id -> the first story card telling it, in Bible order (passages are in Bible order)
 const cards = new Map();   // key -> card row
 const passageIds = new Set();
 for (const p of passages) {
@@ -146,7 +149,11 @@ for (const p of passages) {
       rows.passage_card.push(row);
       const cv = verses(c.verses, cat);
       if (!cv.length) err(`${cat}: no verses`);
-      for (const v of cv) rows.card_verse.push({ passage_id: p.id, stop: s.stop, card: c.card, verse_id: v });
+      for (const v of cv) {
+        rows.card_verse.push({ passage_id: p.id, stop: s.stop, card: c.card, verse_id: v });
+        if (!firstAnyCard.has(v)) firstAnyCard.set(v, { passage_id: p.id, stop: s.stop, card: c.card });
+        if (c.kind === 'story' && !firstStoryCard.has(v)) firstStoryCard.set(v, { passage_id: p.id, stop: s.stop, card: c.card });
+      }
     }
   }
 
@@ -189,6 +196,7 @@ for (const p of passages) {
   if (!big.paragraphs.length) err(`${at}: no Big Idea`);
   big.paragraphs.forEach((t, i) => rows.big_idea_paragraph.push({ passage_id: p.id, paragraph: i + 1, text: t }));
 }
+for (let i = 1; i < passages.length; i++) if (passages[i].id <= passages[i - 1].id) err(`passages.json is not in order at ${passages[i].id}`);
 for (const n of folderOf.keys()) if (!passageIds.has(n)) err(`prep folder for passage ${n}, which is not in passages.json`);
 const needCard = (p, s, c, at) => { if (!cards.has(cardKey(p, s, c))) err(`${at}: points at passage ${p} stop ${s} card ${c}, which does not exist`); };
 
@@ -279,7 +287,20 @@ for (const c of placeCards) {
   const vs = c.verses_all ? c.verses_all.flatMap((r) => verses(r, at)) : fromDb;
   if (c.verses_all && (vs.length !== fromDb.length || vs.some((v) => !fromDb.includes(v)))) err(`${at}: its verse list differs from verse_place`);
   if (!vs.length) err(`${at}: no verses`);
-  addCookie({ key: `place:${c.lookup}`, type: 'place', place_lookup: c.lookup }, vs);
+  // home card (sample-table.md): the first story card that tells a verse naming it
+  // home card (sample-table.md): the first story card that tells a verse naming it. Told only on a choice card:
+  // the nearest story card in the same stop, as for a prophecy half.
+  const order = (a, b) => a.passage_id - b.passage_id || a.stop - b.stop || a.card - b.card;
+  let home = vs.map((v) => firstStoryCard.get(v)).filter(Boolean).sort(order)[0];
+  let placedBy = 'first story card telling a verse that names it';
+  if (!home) {
+    const first = vs.map((v) => firstAnyCard.get(v)).filter(Boolean).sort(order)[0];
+    const near = first && [...cards.values()].filter((k) => k.kind === 'story' && k.passage_id === first.passage_id && k.stop === first.stop)
+      .sort((a, b) => Math.abs(a.card - first.card) - Math.abs(b.card - first.card) || a.card - b.card)[0];
+    if (near) { home = { passage_id: near.passage_id, stop: near.stop, card: near.card }; placedBy = 'nearest story card (told only on a choice card)'; }
+    else err(`${at}: no card tells a verse naming it`);
+  }
+  addCookie({ key: `place:${c.lookup}`, type: 'place', place_lookup: c.lookup, ...home, placed_by: placedBy }, vs);
 }
 for (const l of images.keys()) if (!placeCards.some((c) => c.lookup === l)) err(`images.json has ${l}, which has no place card`);
 
@@ -305,6 +326,9 @@ for (const x of commands.cut) {
     else again(`instruction:${hit[0].reference}`, x.reference);
   }
 }
+// Other verses that give or repeat a commandment or command, kept only where two agents agreed
+// (output/sample/told-again.json, from run/sample-told-again.mjs and run/sample-told-again-merge.mjs)
+for (const it of read(OUT, 'sample', 'told-again.json').items) for (const k of it.keep) again(it.key, k.reference);
 const linkFile = new Map(read(DATA, 'prophecy-links.json').map((l) => [l.id, l]));
 // The database keeps one row per promise -> fulfillment pair, so a prophecy told twice has two rows with one
 // title. A fulfillment cookie takes the row whose fulfillment holds its verse; a promise cookie the row whose
@@ -535,6 +559,7 @@ function verify() {
     union all select 'trivia without verses', count(*) from public.trivia_question t
       where not exists (select 1 from public.trivia_question_verse v where (v.passage_id, v.number) = (t.passage_id, t.number))
     union all select 'sample cookies without verses', count(*) from public.sample_cookie s where not exists (select 1 from public.sample_cookie_verse v where v.key = s.key)
+    union all select 'sample cookies without a home card', count(*) from public.sample_cookie where passage_id is null
     union all select 'sample cookies told on no lesson card', count(*) from public.sample_cookie s
       where not exists (select 1 from public.sample_cookie_verse v join public.card_verse c using (verse_id) where v.key = s.key)
     union all select 'words with no meaning', count(*) from public.lesson_word w where not exists (select 1 from public.lesson_word_meaning m where m.word = w.word)

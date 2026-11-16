@@ -81,6 +81,7 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 ## On the path
 
+- **Every place it's told (owner, 2026-11-16).** Each cookie is linked to every verse that tells its subject: every verse naming the place or the person, and every verse that gives or repeats the commandment, command, prayer or prophecy half. The app shows it on any card that tells one of those verses until the player has collected it, then stops showing it. Players on a subscription can open lessons in any order, so the first card in Bible order isn't always the first one they see. "Collected once" below means a player gets each cookie once. The card each rule below names is the cookie's home card, where it sits in Bible order.
 - Each sample cookie sits on the story card where its verse is told. There are no collectibles on a choice card: anything told only on a choice card isn't collectible. The baker collects it from a pop-up, can look at it, and goes back to the path.
 - One exception: a prophecy half whose verse is told only on a choice card sits on the nearest story card in the same stop, so every approved link can be made whole.
 - The Ten Commandments pack sits on the first story card that tells any of the commandments.
