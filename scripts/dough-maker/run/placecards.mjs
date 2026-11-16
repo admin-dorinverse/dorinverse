@@ -56,6 +56,22 @@ export function material() {
   }
   const book = (f) => { const m = new Map(); for (const e of readJson(path.join(DATA, 'dictionaries', f)).entries) { const k = String(e.term).toLowerCase(); m.set(k, [...(m.get(k) ?? []), e.definition]); } return m; };
   const smith = book('smith.json'), schaff = book('schaff.json');
+  // the kind: the database's, else OpenBible's place type (owner, 2026-11-15: never invented; no source, no kind)
+  const OB = path.join(OUTPUT, '..', 'run', '.cache', 'openbible');
+  const obTypes = new Map(fs.readFileSync(path.join(OB, 'ancient.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l)).map((a) => [a.id, a.types ?? []]));
+  const obOf = new Map();
+  for (const f of readJson(path.join(OB, 'bible-places.geojson')).features) {
+    const ls = (f.links ?? []).map((l) => l.identifier);
+    const ob = ls.map((u) => /openbible\.info\/geo\/ancient\/(a[0-9a-f]+)/.exec(u)?.[1]).filter(Boolean);
+    for (const t of ls.map((u) => /theographic\.netlify\.app\/place\/([^/]+)\//.exec(u)?.[1]).filter(Boolean)) obOf.set(t, [...(obOf.get(t) ?? []), ...ob]);
+  }
+  const KIND_OF = { settlement: 'City', region: 'Region', 'people group': 'Region', 'district in settlement': 'Region', 'natural area': 'Region',
+    mountain: 'Mountain', hill: 'Mountain', 'mountain range': 'Mountain', 'mountain ridge': 'Mountain', 'mountain pass': 'Mountain', promontory: 'Mountain', cliff: 'Mountain',
+    river: 'Water', spring: 'Water', 'body of water': 'Water', wadi: 'Water', pool: 'Water', well: 'Water', ford: 'Water', canal: 'Water',
+    valley: 'Valley', island: 'Island', road: 'Path',
+    gate: 'Landmark', structure: 'Landmark', tree: 'Landmark', altar: 'Landmark', field: 'Landmark', garden: 'Landmark', hall: 'Landmark', rock: 'Landmark',
+    'stone heap': 'Landmark', room: 'Landmark', fortification: 'Landmark', mine: 'Landmark', forest: 'Landmark', campsite: 'Landmark' };   // "special": no kind
+  const obKind = (lookups) => { for (const l of lookups) for (const a of obOf.get(l) ?? []) for (const t of obTypes.get(a) ?? []) if (KIND_OF[t]) return { kind: KIND_OF[t], from: `OpenBible (${t})` }; return null; };
   const theo = readJson(path.join(OUTPUT, '..', 'run', '.cache', 'theographic', 'places.json')) ?? [];
   const events = new Map((readJson(path.join(OUTPUT, '..', 'run', '.cache', 'theographic', 'events.json')) ?? []).map((e) => [e.id, e.fields?.title]));
   return list.map((p) => {
@@ -70,7 +86,8 @@ export function material() {
     }
     const lookups = rows.map((r) => r.lookup);
     const evs = [...new Set(theo.filter((t) => lookups.includes(t.fields?.placeLookup)).flatMap((t) => t.fields?.eventsHere ?? []).map((id) => events.get(id)).filter(Boolean))];
-    return { name: p.name, also: p.also, lookup, ids: p.ids, kind: rows.find((r) => r.feature_type)?.feature_type ?? null,
+    const dbKind = rows.find((r) => r.feature_type)?.feature_type ?? null, ob = dbKind ? null : obKind(lookups);
+    return { name: p.name, also: p.also, lookup, ids: p.ids, kind: dbKind ?? ob?.kind ?? null, kind_from: dbKind ? 'database' : ob?.from ?? null,
       // each naming verse with a little around it, so what happens there is in view (Jacob wrestles in Genesis
       // 32:24-30; only 32:22 says "Jabbok"); overlapping stretches are shown once
       lessonVerses: ks, shown: (() => { const pick = spread(ks, VERSES_SHOWN / 3), seen = new Set(), out = [];
@@ -96,8 +113,8 @@ ${m.sources.map((s) => `[${s.name}] ${s.text}`).join('\n\n') || '(none: use the 
 ${m.events.length ? `\nEvents listed there (hints only; use them only if the verses show them): ${m.events.join('; ')}` : ''}`;
 const ASK = (m) => `${show(m)}
 
-Write the place card.${m.kind ? '' : ` Also give its kind: one of ${KINDS.join(', ')}.`}
-Reply with only JSON: {"line": "...", "moments": [{"title": "...", "text": "...", "passage": "..."}], "sources": ["..."]${m.kind ? '' : ', "kind": "..."'}}`;
+Write the place card.
+Reply with only JSON: {"line": "...", "moments": [{"title": "...", "text": "...", "passage": "..."}], "sources": ["..."]}`;
 const FIX = (m, card, found) => `${show(m)}
 
 The card so far:
@@ -150,7 +167,6 @@ export function scriptCheck(m, card) {
   const names = new Set(['BSB', ...m.sources.map((s) => s.name)]);
   for (const s of Array.isArray(card.sources) ? card.sources : []) if (!names.has(s)) say(`It names the source "${s}", which isn't one given. Use the names exactly as listed.`);
   for (const piece of [line, ...ms.map((x) => x?.text ?? '')]) { const c = copied(m.name, piece, m.sources.map((s) => s.text)); if (c) { say(`It copies ${c.source}: "${c.words}". Write it in your own words.`); break; } }
-  if (!m.kind && !KINDS.includes(card.kind)) say(`Give its kind: one of ${KINDS.join(', ')}.`);
   return found;
 }
 
@@ -222,7 +238,7 @@ export async function runPlaceCards({ only = null, limit = Infinity, agents = 20
       found = [...cn.script, ...cn.terra];
     }
     const names = new Set(['BSB', ...m.sources.map((s) => s.name)]);
-    writeJson(path.join(d, 'card.json'), { name: m.name, lookup: m.lookup, place_ids: m.ids, kind: m.kind ?? (KINDS.includes(card.kind) ? card.kind : null),
+    writeJson(path.join(d, 'card.json'), { name: m.name, lookup: m.lookup, place_ids: m.ids, kind: m.kind, kind_from: m.kind_from,   // from the database or OpenBible only; none if neither has one
       line: card.line, moments: card.moments.map(({ title, text, passage }) => ({ title, text, passage })), sources: (card.sources ?? []).filter((s) => names.has(s)) });
     const c = (f) => readJson(path.join(d, f))?.cost ?? 0;
     const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3', 'fix-rules'].reduce((k, f) => k + c(`${f}.json`), 0);

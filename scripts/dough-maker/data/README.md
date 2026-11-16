@@ -15,3 +15,7 @@ The verse text the lesson maker reads (`bsb.json`, no footnotes) is outside the 
 ## Where the BSB came from
 
 bereanbible.com/bsb_usj.zip (3rd printing), downloaded 2026-11-15. The BSB was placed in the public domain on April 30, 2023 (berean.bible/licensing.htm): no license or credit is needed.
+
+## Place images
+
+`place-images/` holds one photo per place card (`<lookup>.jpg`, 960 pixels wide) and `images.json`, which gives each photo's author, credit link and license; most licenses need that credit shown in the app. Made by `run/place-images.mjs` from OpenBible.info's open data (CC BY 4.0), whose photos are on Wikimedia Commons. Only photos with a credit-only or free license are used (not GFDL). A place with no usable photo has `"image": null` and no file: the app shows its default image there.
