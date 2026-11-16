@@ -18,7 +18,7 @@ import { SAMPLE_DIR } from './sample-place.mjs';
 import { agg } from '../lib.mjs';
 
 const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
-const BATCH = 80, TOP = 150;
+const BATCH = 60;   // no number limit (owner, 2026-11-15): every place worth it is kept
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const clean = (n) => String(n).replace(/\s*\(.*\)\s*/g, '').trim();
 
@@ -51,7 +51,17 @@ export async function shortlist({ chatFn = chat, out = SAMPLE_DIR } = {}) {
   let cost = 0, unread = 0, refused = 0;
   for (let i = 0; i < list.length; i += BATCH) {
     const batch = list.slice(i, i + BATCH);
-    const user = `These names come from story cards in a Bible app for all ages (written for adults; kids use it too). For each: is it used as a place on these cards (not a person or a tribe; Judah can be the man, the tribe or the land), and how well known and important is the place across the Bible (1-10, where Jerusalem is 10 and a town named once in a border list is 1)?\n\n${batch.map((p, n) => `${n + 1}. ${p.name} (${p.kinds.join('/') || 'kind unknown'}; named on cards in ${p.passages} passages). E.g.: ${p.sample.join(' | ')}`).join('\n')}\n\nReply with only JSON: {"places": [{"n": 1, "place": true, "known": 8}]} with one entry for every name.`;
+    // Worth it (owner, 2026-11-15: no number limit): something happens there that the cards tell, a moment people
+    // would remember, or a name that comes up again and again. Only a name in a list of towns isn't.
+    const user = `These names come from story cards in a Bible app for all ages (written for adults; kids use it too). For each:
+- place: is it used as a place on these cards (not a person or a tribe; Judah can be the man, the tribe or the land)?
+- worth: is it worth collecting? Yes if something happens there that the cards tell, a moment people would remember (Jacob wrestling at the Jabbok, the ark kept at Kiriath-jearim), or if it's a name that comes up again and again (Jerusalem, Egypt). No if it's only a name in a list of towns or borders.
+- reason: a few words why.
+- known: how well known it is across the Bible (1-10).
+
+${batch.map((p, n) => `${n + 1}. ${p.name} (${p.kinds.join('/') || 'kind unknown'}; named on cards in ${p.passages} passages). On the cards: ${p.sample.join(' | ')}`).join('\n')}
+
+Reply with only JSON: {"places": [{"n": 1, "place": true, "worth": true, "reason": "...", "known": 8}]} with one entry for every name.`;
     let got = null;
     for (let t = 0; t < 2 && !got; t++) {
       let r;
@@ -61,16 +71,28 @@ export async function shortlist({ chatFn = chat, out = SAMPLE_DIR } = {}) {
       const v = json(r.text); if (Array.isArray(v?.places)) got = v.places;
     }
     if (!got) { unread += batch.length; continue; }
-    for (const x of got) { const p = batch[x?.n - 1]; if (p) judged.set(p.name, { place: !!x.place, known: Number(x.known) || 0 }); }
+    for (const x of got) { const p = batch[x?.n - 1]; if (p) judged.set(p.name, { place: !!x.place, worth: !!x.worth, reason: String(x.reason ?? ''), known: Number(x.known) || 0 }); }
   }
-  const real = list.filter((p) => judged.get(p.name)?.place).map((p) => ({ ...p, known: judged.get(p.name).known }))
-    .sort((a, b) => b.known - a.known || b.passages - a.passages);
-  const short = real.slice(0, TOP);
+  // every judgment is kept, with its reason; the same place under two names is one entry
+  const SAME = { "Zion's": 'Mount Zion', 'Zion': 'Mount Zion', "Jerusalem's": 'Jerusalem', "Samaria's": 'Samaria', "Egypt's": 'Egypt', 'Sinai': 'Mount Sinai', 'Horeb': 'Mount Sinai',
+    'Mount Horeb': 'Mount Sinai', 'Hermon': 'Mount Hermon', 'Nebo': 'Mount Nebo', 'Tabor': 'Mount Tabor', 'Gilboa': 'Mount Gilboa', 'Moriah': 'Mount Moriah', 'Carmel': 'Mount Carmel',
+    'Most Holy': 'Most Holy Place', 'Sea of Tiberias': 'Sea of Galilee', 'Jezreel': 'Valley of Jezreel', 'Ramoth': 'Ramoth-gilead', 'Paddan': 'Paddan-aram', 'Jabesh': 'Jabesh-gilead', 'Kiriath-arba': 'Hebron' };
+  const all = list.filter((p) => judged.has(p.name)).map(({ sample, ...p }) => ({ ...p, ...judged.get(p.name) }));
+  const merged = new Map();
+  for (const p of all.filter((x) => x.place)) {
+    const to = SAME[p.name] ?? p.name;
+    if (!merged.has(to)) merged.set(to, { name: to, ids: [], also: [], kinds: p.kinds, passages: 0, known: 0, worth: false, reason: '' });
+    const m = merged.get(to); m.ids.push(...p.ids); if (p.name !== to) m.also.push(p.name); m.passages += p.passages;
+    if (p.known > m.known) { m.known = p.known; m.reason = p.reason; } if (p.worth) { m.worth = true; if (!m.reason) m.reason = p.reason; }
+  }
+  const places = [...merged.values()].map((p) => ({ ...p, ids: [...new Set(p.ids)] })).sort((a, b) => b.known - a.known || b.passages - a.passages);
+  const short = places.filter((p) => p.worth);
   fs.mkdirSync(out, { recursive: true });
-  fs.writeFileSync(path.join(out, 'places-shortlist.json'), JSON.stringify({ made: new Date().toISOString(), candidates: list.length, real_places: real.length, unread, refused, cost,
-    shortlist: short.map(({ sample, ...p }) => p), not_places: list.filter((p) => judged.has(p.name) && !judged.get(p.name).place).map((p) => p.name) }, null, 1) + '\n');
-  fs.writeFileSync(path.join(out, 'places-shortlist.csv'), 'keep,known,place,kind,passages_on_cards\n' + short.map((p) => ['yes', p.known, `"${p.name}"`, p.kinds.join('/'), p.passages].join(',')).join('\n') + '\n');
-  return { candidates: list.length, realPlaces: real.length, shortlist: short.length, unread, refused, cost };
+  fs.writeFileSync(path.join(out, 'places-shortlist.json'), JSON.stringify({ made: new Date().toISOString(), candidates: list.length, real_places: places.length, worth: short.length, unread, refused, cost,
+    shortlist: short, left_out: places.filter((p) => !p.worth), not_places: all.filter((p) => !p.place).map((p) => ({ name: p.name, reason: p.reason })) }, null, 1) + '\n');
+  const row = (p) => [p.worth ? 'yes' : 'no', p.known, `"${p.name}"`, `"${p.also.join(' / ')}"`, p.kinds.join('/'), p.passages, `"${p.reason.replace(/"/g, '""')}"`].join(',');
+  fs.writeFileSync(path.join(out, 'places-shortlist.csv'), 'keep,known,place,also_named,kind,passages_on_cards,reason\n' + [...short, ...places.filter((p) => !p.worth)].map(row).join('\n') + '\n');
+  return { candidates: list.length, realPlaces: places.length, worth: short.length, unread, refused, cost };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
