@@ -6,7 +6,7 @@
 //   2. Sonnet writes the meaning (5th grade, own words), or one meaning per way the Bible uses the word, from the
 //      sources and a spread of the cards. It may say no source explains it: then the word is left out.
 //   3. The script checks what it can: the shape, a real source named, the copy check (copycheck.mjs).
-//      GPT-6.1 Terra checks each meaning is true to its sources, plain for a 10-year-old, and fits the cards.
+//      GPT-6.1 Terra checks each meaning is true to its sources, plain at about a 5th-grade reading level, and fits the cards.
 //      Sonnet fixes up to 2 times, then a final fix; the script checks that fix and anything countable still
 //      broken gets one last fix. No flags.
 //   4. A word with more than one meaning: Sonnet says which meaning each card uses, or none (no pop-up there).
@@ -117,7 +117,7 @@ export function material({ list = readJson(path.join(DEF_DIR, 'bible-words-group
 }
 
 // --- prompts -------------------------------------------------------------------------------------------------------
-const RULES = `You write pop-up definitions for Bible words in a children's Bible app. Readers are about 10 years old (5th grade). The Bible text is the BSB.
+const RULES = `You write pop-up definitions for Bible words in a Bible app for all ages (written for adults; kids use it too). Write at about a 5th-grade reading level. The Bible text is the BSB.
 
 - Write in your own plain words, for about a 5th-grade reader. Never copy a source's wording.
 - Each meaning is 1 or 2 sentences, about 30 words at most.
@@ -147,13 +147,13 @@ ${found.map((f) => `- ${f.id ? `Meaning ${f.id}: ` : ''}${f.problem}`).join('\n'
 
 Rewrite the meanings so every problem is gone. Keep what has no problem.
 Reply with only JSON: {"meanings": [{"id": 1, "meaning": "...", "sources": ["..."]}]}`;
-const TERRA_SYSTEM = 'You check pop-up definitions of Bible words for a children\'s Bible app (readers about 10 years old). The Bible text is the BSB.';
+const TERRA_SYSTEM = 'You check pop-up definitions of Bible words for a Bible app for all ages (written for adults; kids use it too), at about a 5th-grade reading level. The Bible text is the BSB.';
 const CHECK = (m, meanings) => `${show(m)}
 
 The meanings written:
 ${meanings.map((x) => `Meaning ${x.id}: ${x.meaning} (sources: ${(x.sources ?? []).join(', ')})`).join('\n')}
 
-For each meaning, check: it is true to its sources and says nothing they don't (nothing added from outside them); it is plain enough for a 10-year-old; it fits how the cards use the word; He, Him and His are capitalized when they refer to God. Also: is there a way the cards use the word that no meaning fits?
+For each meaning, check: it is true to its sources and says nothing they don't (nothing added from outside them); it is plain enough for about a 5th-grade reading level; it fits how the cards use the word; He, Him and His are capitalized when they refer to God. Also: is there a way the cards use the word that no meaning fits?
 Reply with only JSON: {"findings": [{"id": n, "problem": "..."}]} (id 0 for a use no meaning fits). All fine: {"findings": []}`;
 const RECHECK = (m, meanings, had) => `${show(m)}
 

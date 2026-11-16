@@ -54,6 +54,12 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 - The card reveals the character's name. Everything else about the character comes from the database.
 - Each character is collected once, in the first passage that names them.
 
+### Place cookies
+
+- Only places on the owner's approved place list, chosen from the places named on the Prep story cards.
+- Each place is collected once, on the first story card that tells a verse naming it.
+- The card shows: the place's name, kind and map location; the owner's image; one short line about it; its biblical moments; the verses it shows up in; and the characters it's connected to, when the database has them.
+
 ### Prayer cookies
 
 - Only when the text says someone prayed. For example, Jonah 2:1.

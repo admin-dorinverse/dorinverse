@@ -5,7 +5,7 @@
 //   2. Sonnet checks the list's meaning against the verses and notes and writes the meaning (or one per way the
 //      idiom is used). Not explained by the notes: the idiom is left out.
 //   3. The script checks the shape, the sources (commentaries given), the length, the copy check. GPT-6.1 Terra
-//      checks it's true to the notes, fits every verse, plain for a 10-year-old. Sonnet fixes up to 2 times, then a
+//      checks it's true to the notes, fits every verse, plain at about a 5th-grade reading level. Sonnet fixes up to 2 times, then a
 //      final fix; the script checks that fix and anything countable still broken gets one last fix. No flags.
 //   4. Sonnet says which meaning each card uses, or 0 where the card doesn't use the phrase as the idiom (no pop-up).
 //      A use no meaning fits gets its own meaning if the notes explain it.
@@ -88,7 +88,7 @@ export function material({ list = readJson(path.join(DATA, 'idioms.json')) } = {
 }
 
 // --- prompts -------------------------------------------------------------------------------------------------------
-const RULES = `You write pop-up meanings for Bible idioms in a children's Bible app. Readers are about 10 years old (5th grade). The Bible text is the BSB.
+const RULES = `You write pop-up meanings for Bible idioms in a Bible app for all ages (written for adults; kids use it too). Write at about a 5th-grade reading level. The Bible text is the BSB.
 
 - Write in your own plain words, for about a 5th-grade reader. Never copy a note's wording.
 - Each meaning is 1 or 2 sentences, about 30 words at most.
@@ -121,13 +121,13 @@ ${found.map((f) => `- ${f.id ? `Meaning ${f.id}: ` : ''}${f.problem}`).join('\n'
 
 Rewrite the meanings so every problem is gone. Keep what has no problem.
 Reply with only JSON: {"meanings": [{"id": 1, "meaning": "...", "sources": ["..."]}]}`;
-const TERRA_SYSTEM = 'You check pop-up meanings of Bible idioms for a children\'s Bible app (readers about 10 years old). The Bible text is the BSB.';
+const TERRA_SYSTEM = 'You check pop-up meanings of Bible idioms for a Bible app for all ages (written for adults; kids use it too), at about a 5th-grade reading level. The Bible text is the BSB.';
 const CHECK = (m, meanings) => `${show(m)}
 
 The meanings written:
 ${meanings.map((x) => `Meaning ${x.id}: ${x.meaning} (sources: ${(x.sources ?? []).join(', ')})`).join('\n')}
 
-For each meaning, check: it is true to the commentary notes and says nothing they don't (nothing added from outside them); it fits every verse it's for; it is plain enough for a 10-year-old; He, Him and His are capitalized when they refer to God; if the notes disagree, it says so simply. Also: is there a verse no meaning fits?
+For each meaning, check: it is true to the commentary notes and says nothing they don't (nothing added from outside them); it fits every verse it's for; it is plain enough for about a 5th-grade reading level; He, Him and His are capitalized when they refer to God; if the notes disagree, it says so simply. Also: is there a verse no meaning fits?
 Reply with only JSON: {"findings": [{"id": n, "problem": "..."}]} (id 0 for a verse no meaning fits). All fine: {"findings": []}`;
 const RECHECK = (m, meanings, had) => `${show(m)}
 

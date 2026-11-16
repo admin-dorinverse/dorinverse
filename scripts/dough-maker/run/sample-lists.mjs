@@ -5,7 +5,7 @@
 //     those verses and that a story card tells them; Terra checks the rest is true to the verses.
 //   COMMANDS: New Testament commands told on a Prep story card (letters, and Jesus's spoken words). Sonnet says which
 //     are commands for believers (not a one-time instruction to one person), gives the command in exact BSB wording,
-//     who gave it, a reason only if the verse states one, and how well known it is for kids (1-10). The script checks
+//     who gave it, a reason only if the verse states one, and how well known it is (1-10). The script checks
 //     the wording is word for word in the verse; repeats of the same command keep only the first. The top 70 go on a
 //     shortlist the owner picks 50 from.
 // Writes output/sample/prayers.json and output/sample/commands-shortlist.json (+ .csv for review).
@@ -54,7 +54,7 @@ export async function prayers({ chatFn = chat, out = SAMPLE_DIR } = {}) {
   let cost = 0;
   for (const { v, k } of cands) {
     const ctx = V.slice(Math.max(0, k - 2), k + 16).map((x) => `${x.ref} ${x.text}`).join('\n');
-    const r = await ask(chatFn, { ...SONNET, system: 'You read the BSB for a children\'s Bible app.', role: 'prayers', step: 'sample',
+    const r = await ask(chatFn, { ...SONNET, system: 'You read the BSB for a Bible app for all ages (written for adults; kids use it too).', role: 'prayers', step: 'sample',
       user: `${ctx}\n\n${v.ref} says someone prayed. Do these verses give the words of that prayer? Is the prayer a lament (crying out in grief or complaint)?\nIf the words are given: who prayed, what happened just before (one short sentence), the verses where the prayer's words run, and one key line from the prayer copied exactly from the BSB text above.\nReply with only JSON: {"words_given": true, "lament": false, "who": "...", "what_just_happened": "...", "reference": "Book c:v-v", "key_line": "..."} or {"words_given": false}` },
       (t) => { const x = json(t); return x && typeof x.words_given === 'boolean' ? x : null; });
     cost += r.cost;
@@ -71,7 +71,7 @@ export async function prayers({ chatFn = chat, out = SAMPLE_DIR } = {}) {
   // the same prayer found from two "prayed" verses: keep one
   const seen = new Set(), unique = results.filter((p) => { const k = p.reference; if (seen.has(k)) return false; seen.add(k); return true; });
   // Terra checks each against its verses
-  const t = unique.length ? await ask(chatFn, { ...TERRA, system: 'You check Bible-based text for a children\'s Bible app against the BSB.', role: 'reviewer', step: 'sample',
+  const t = unique.length ? await ask(chatFn, { ...TERRA, system: 'You check Bible-based text for a Bible app for all ages (written for adults; kids use it too) against the BSB.', role: 'reviewer', step: 'sample',
     user: `Each item is a prayer cookie. Check that who prayed and what happened just before are true to the verses, and that it really is a prayer (not a song or a lament).\n\n${unique.map((p, i) => `Item ${i + 1}: who: ${p.who} | just before: ${p.what_just_happened} | ${p.reference}: ${p.verses}`).join('\n\n')}\n\nReply with only JSON: {"findings": [{"n": 1, "problem": "..."}]}. All fine: {"findings": []}` },
     (x) => { const v = json(x); return Array.isArray(v?.findings) ? v : null; }) : { v: { findings: [] }, cost: 0 };
   cost += t.cost;
@@ -88,8 +88,8 @@ export async function commands({ chatFn = chat, out = SAMPLE_DIR, top = 70 } = {
   let cost = 0, unread = 0; const refusedBatches = [];
   for (let i = 0; i < cands.length; i += 40) {
     const batch = cands.slice(i, i + 40);
-    const r = await ask(chatFn, { ...SONNET, system: 'You read the BSB for a children\'s Bible app.', role: 'commands', step: 'sample',
-      user: `For each verse: is there a command for believers, given or approved by Jesus or written by a New Testament letter writer? A one-time instruction to one person or group isn't (like "Go and wash" or "Greet Andronicus"). If there is, give the command copied exactly from the verse (the shortest complete command), who gave it, the reason only if the verse states one, and how well known and important it is for kids (1-10, where "Love your neighbor as yourself" is 10).\n\n${batch.map((c, n) => `${n + 1}. ${c.v.ref}: ${c.v.text}`).join('\n')}\n\nReply with only JSON: {"verses": [{"n": 1, "command": "..." or null, "who": "...", "reason": "..." or null, "known": 7}]} with one entry for every verse.` },
+    const r = await ask(chatFn, { ...SONNET, system: 'You read the BSB for a Bible app for all ages (written for adults; kids use it too).', role: 'commands', step: 'sample',
+      user: `For each verse: is there a command for believers, given or approved by Jesus or written by a New Testament letter writer? A one-time instruction to one person or group isn't (like "Go and wash" or "Greet Andronicus"). If there is, give the command copied exactly from the verse (the shortest complete command), who gave it, the reason only if the verse states one, and how well known and important it is (1-10, where "Love your neighbor as yourself" is 10).\n\n${batch.map((c, n) => `${n + 1}. ${c.v.ref}: ${c.v.text}`).join('\n')}\n\nReply with only JSON: {"verses": [{"n": 1, "command": "..." or null, "who": "...", "reason": "..." or null, "known": 7}]} with one entry for every verse.` },
       (t) => { const x = json(t); return Array.isArray(x?.verses) ? x.verses : null; });
     cost += r.cost;
     if (!r.v) { unread += batch.length; if (r.refused) refusedBatches.push(batch.map((c) => c.v.ref).join(', ')); continue; }

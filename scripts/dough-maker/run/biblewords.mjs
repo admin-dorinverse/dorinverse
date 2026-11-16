@@ -47,7 +47,7 @@ export function candidates() {
     .map(([word, cards]) => ({ word, cards, bsb: bsb.get(word).n })).sort((a, b) => a.word.localeCompare(b.word));
 }
 
-const SYSTEM = `You help build a children's Bible app (readers about 10 years old). It shows a pop-up definition for Bible words only.
+const SYSTEM = `You help build a Bible app for all ages (written for adults; kids use it too). It shows a pop-up definition for Bible words only.
 
 A Bible word belongs to the Bible's world: its people groups, practices, worship, objects, measures, offices and ideas, words a child would need explained to follow a Bible story. Examples: Sabbath, ephod, tabernacle, Pharisee, Levite, leaven, tithe, altar, covenant, Passover, cubit, shekel, cherubim, manna, sackcloth, circumcise, atonement, righteousness, repent, prophet, priest, offering, winnow, threshing floor (threshing), concubine.
 
