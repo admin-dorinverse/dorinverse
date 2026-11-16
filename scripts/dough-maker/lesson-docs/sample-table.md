@@ -29,9 +29,12 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 **1. The Ten Commandments**
 - Given as **one pack**: all ten together, each as its own cookie.
-- Only from the passages where the text gives them: Exodus 20 and Deuteronomy 5.
+- Given in Exodus 20. Deuteronomy 5 repeats them, so it gives no second pack.
 
-**2. New Testament commands.** All of these must be true:
+**2. New Testament commands.**
+- **At most 50**, chosen once for the whole Bible: the best-known and most important ones told on the Prep cards. The owner approves the list.
+- Each command is collected once, on the story card where it's first told.
+- All of these must be true:
 - It's a command stated in the passage.
 - It's given or approved by Jesus, or written by the writer of a New Testament letter. For example, "Love your neighbor as yourself" counts in Luke 10:27–28, where the expert says it and Jesus approves it.
 - It's for believers. A one-time instruction to one person isn't a rule. For example, "Go and do likewise" (Luke 10:37) isn't an instruction cookie.
@@ -49,7 +52,7 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 - A name used only in a title, like "the God of Jacob," "the sons of Korah" or "the order of Melchizedek," doesn't count.
 - God and the Holy Spirit don't get character cards. Jesus does.
 - The card reveals the character's name. Everything else about the character comes from the database.
-- A character can show up in more than one passage. That's fine.
+- Each character is collected once, in the first passage that names them.
 
 ### Prayer cookies
 
