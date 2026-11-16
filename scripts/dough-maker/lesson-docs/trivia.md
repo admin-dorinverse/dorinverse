@@ -28,3 +28,22 @@ Examples:
 - The Prep walkthrough's rules still apply: no em dashes or en dashes to make a sentence longer, no hard word the choice hangs on, the question never holds its own answer, and never ask the baker to guess the next words of a line.
 - **Answers follow the Prep answer rules:** 3 answers for multiple choice, 2 for true or false; no commas or periods; all about the same length and tone; no near-matches; each wrong answer is false anywhere in the passage. Keep the card's answers unless one breaks a rule.
 - No Papa Dorin voice. Plain words, the BSB's names.
+
+## Examples
+
+**Daniel 3, the gold statue and the fiery furnace: the 4 picked**
+
+| Prep card | Trivia |
+|---|---|
+| "The herald says anyone who won't fall down and worship will immediately be thrown into the ___." | "What did King Nebuchadnezzar say would happen to anyone who would not worship his gold statue?" *Thrown into the furnace* / Thrown into the lions' den / Thrown into a pit |
+| "True or false: Shadrach, Meshach and Abednego say that if God doesn't deliver them, they'll bow to the statue after all." | "Shadrach, Meshach and Abednego told the king that if God did not save them, they would bow to his statue. True or false?" *False* |
+| "Nebuchadnezzar looks into the furnace. What does he see?" | "When King Nebuchadnezzar looked into the blazing furnace, what did he see?" *Four men walking around unharmed* / Three men lying still in the flames / The fire dying down to ashes |
+| "Nebuchadnezzar blesses the God of Shadrach, Meshach and Abednego. Who does he say that God sent to deliver them?" | "King Nebuchadnezzar said God sent someone to save Shadrach, Meshach and Abednego from the furnace. Who?" *His angel* / His prophet / His priest |
+
+Left out because they're small details: how many cubits high the statue was, the list of instruments, and how many times hotter the furnace was heated.
+
+**Shortening a long card** (Luke 15:20, 25 words with context added)
+- ❌ "In the story Jesus told about a father and his two sons, what did the father do when he saw his younger son coming home?"
+- ✅ "In Jesus' story of the two sons, what did the father do when his younger son came home?" *Ran to him and embraced him* / Waited for him at the front door / Sent a servant out to meet him
+
+**Answers can change form to fit the new question, but not their meaning.** "Runs to him and embraces him" becomes "Ran to him and embraced him." "furnace" becomes "Thrown into the furnace."
