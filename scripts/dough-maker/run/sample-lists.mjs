@@ -34,7 +34,11 @@ async function ask(chatFn, opts, read, tries = 2) {
   let cost = 0;
   for (let t = 0; t < tries; t++) {
     let r;
-    try { r = await chatFn(opts); } catch (e) { if (!passing(e)) throw e; t--; await new Promise((res) => setTimeout(res, 60_000)); continue; }
+    try { r = await chatFn(opts); } catch (e) {
+      // OpenRouter's filter refusing a passage (Elijah asking to die): skip it, noted, instead of stopping the run
+      if (/^403:/.test(String(e.detail ?? ''))) return { v: null, cost, refused: String(e.detail) };
+      if (!passing(e)) throw e; t--; await new Promise((res) => setTimeout(res, 60_000)); continue;
+    }
     cost += r.cost ?? 0;
     const v = read(r.text);
     if (v) return { v, cost };
@@ -55,7 +59,7 @@ export async function prayers({ chatFn = chat, out = SAMPLE_DIR } = {}) {
       (t) => { const x = json(t); return x && typeof x.words_given === 'boolean' ? x : null; });
     cost += r.cost;
     const x = r.v;
-    if (!x) { dropped.push({ ref: v.ref, why: 'reply could not be read' }); continue; }
+    if (!x) { dropped.push({ ref: v.ref, why: r.refused ? 'OpenRouter’s filter refused it' : 'reply could not be read' }); continue; }
     if (!x.words_given) { dropped.push({ ref: v.ref, why: 'the prayer\'s words are not given' }); continue; }
     if (x.lament) { dropped.push({ ref: v.ref, why: 'a lament' }); continue; }
     const words = textOf(x.reference), i = idxOf(x.reference);
@@ -81,14 +85,14 @@ export async function commands({ chatFn = chat, out = SAMPLE_DIR, top = 70 } = {
   const IMP = /(^|[.;:!?“"]\s*|,\s*(and|but|so)\s+|\b[A-Z][a-z]+,\s+)(do not|let (us|your|no one|each|everyone|all)|be|love|pray|rejoice|forgive|give|put|walk|stand|keep|honor|submit|obey|flee|pursue|bear|encourage|consider|remember|serve|seek|repent|believe|follow|watch|beware|take|make|turn|fear|trust|abide|go|bless|welcome|greet|devote|clothe|set|guard|carry|live|speak|examine|test|resist|humble|draw near|hold fast|fix|run|count|confess|ask|judge|store|treat|do to|honor|teach|make disciples)\b/i;
   const cands = V.map((v, k) => ({ v, k })).filter(({ v, k }) => tells.has(k) && (LETTERS.includes(bookOf(v.ref)) || (GOSPELS.includes(bookOf(v.ref)) && /[“"]/.test(v.text))) && IMP.test(v.text));
   const found = [];
-  let cost = 0, unread = 0;
+  let cost = 0, unread = 0; const refusedBatches = [];
   for (let i = 0; i < cands.length; i += 40) {
     const batch = cands.slice(i, i + 40);
     const r = await ask(chatFn, { ...SONNET, system: 'You read the BSB for a children\'s Bible app.', role: 'commands', step: 'sample',
       user: `For each verse: is there a command for believers, given or approved by Jesus or written by a New Testament letter writer? A one-time instruction to one person or group isn't (like "Go and wash" or "Greet Andronicus"). If there is, give the command copied exactly from the verse (the shortest complete command), who gave it, the reason only if the verse states one, and how well known and important it is for kids (1-10, where "Love your neighbor as yourself" is 10).\n\n${batch.map((c, n) => `${n + 1}. ${c.v.ref}: ${c.v.text}`).join('\n')}\n\nReply with only JSON: {"verses": [{"n": 1, "command": "..." or null, "who": "...", "reason": "..." or null, "known": 7}]} with one entry for every verse.` },
       (t) => { const x = json(t); return Array.isArray(x?.verses) ? x.verses : null; });
     cost += r.cost;
-    if (!r.v) { unread += batch.length; continue; }
+    if (!r.v) { unread += batch.length; if (r.refused) refusedBatches.push(batch.map((c) => c.v.ref).join(', ')); continue; }
     for (const x of r.v) { const c = batch[x?.n - 1]; if (!c || !x.command) continue;
       if (!norm(c.v.text).includes(norm(x.command))) continue;   // not word for word in the verse
       found.push({ type: 'instruction', ...tells.get(c.k)[0], instruction: x.command, who: x.who, reason: x.reason ?? null, reference: c.v.ref, known: Number(x.known) || 0, k: c.k }); }
@@ -97,7 +101,7 @@ export async function commands({ chatFn = chat, out = SAMPLE_DIR, top = 70 } = {
   const key = (s) => norm(s).toLowerCase().replace(/[^a-z ]/g, '').replace(/\s+/g, ' ');
   const seen = new Set(), unique = found.sort((a, b) => a.k - b.k).filter((c) => { const k = key(c.instruction); if (seen.has(k)) return false; seen.add(k); return true; });
   const short = [...unique].sort((a, b) => b.known - a.known || a.k - b.k).slice(0, top).map(({ k, ...c }) => c);
-  writeJson(path.join(out, 'commands-shortlist.json'), { made: new Date().toISOString(), candidates: cands.length, commands_found: unique.length, unread, shortlist: short, cost });
+  writeJson(path.join(out, 'commands-shortlist.json'), { made: new Date().toISOString(), candidates: cands.length, commands_found: unique.length, unread, refused: refusedBatches, shortlist: short, cost });
   const csv = 'keep,known,command,who,reference,passage_id\n' + short.map((c) => ['yes', c.known, `"${c.instruction.replace(/"/g, '""')}"`, `"${String(c.who).replace(/"/g, '""')}"`, c.reference, c.passage_id].join(',')).join('\n') + '\n';
   fs.writeFileSync(path.join(out, 'commands-shortlist.csv'), csv);
   return { candidates: cands.length, commandsFound: unique.length, shortlist: short.length, unread, cost };
