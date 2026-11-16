@@ -131,7 +131,7 @@
 ## Habakkuk
 - **moment 2**
   - was: Habakkuk stood on his watchtower to see what the LORD would say. The LORD told him to write the vision plainly on tablets and wait for it though it tarry, for the just shall live by his faith.
-  - now: Habakkuk stood on his watchtower to see what the LORD would say. The LORD told him to write the vision clearly on tablets and to wait for it though it lingers, for the righteous will live by his faith.
+  - now: Habakkuk stood on his watchtower to see what the LORD would say. The LORD told him to write the vision clearly on tablets and to wait for it though it lingers, for the righteous will live by faith.
 
 ## Herod, king of Judaea
 - **summary**
@@ -327,7 +327,7 @@
 ## Hezekiah
 - **moment 2**
   - was: Hezekiah took the king of Assyria's threatening letter into the LORD's house and spread it out before Him in prayer. That night the angel of the LORD struck the Assyrian camp, and Sennacherib went home to Nineveh.
-  - now: Hezekiah took the king of Assyria's threatening letter into the LORD's house and spread it out before Him in prayer. That night the angel of the LORD struck down the camp of the Assyrians, and Sennacherib went home to Nineveh.
+  - now: Hezekiah took the king of Assyria's threatening letter into the LORD's house and spread it out before Him in prayer. That night the angel of the LORD struck down 185,000 men in the camp of the Assyrians, and Sennacherib went home to Nineveh.
 
 ## Timotheus
 - **moment 1**
@@ -348,7 +348,7 @@
 ## Manasseh, son of Hezekiah
 - **moment 1**
   - was: Manasseh rebuilt the high places his father had torn down, set up altars to Baal, and built altars inside the LORD's house. He even put his son through the fire and dealt with spirits and wizards.
-  - now: Manasseh rebuilt the high places his father had torn down, set up altars to Baal, and built altars inside the LORD's house. He even made his son pass through the fire, practiced sorcery and divination, and consulted mediums and spiritists.
+  - now: Manasseh rebuilt the high places his father had torn down, set up altars to Baal, and built altars inside the LORD's house. He even sacrificed his own son in the fire, practiced sorcery and divination, and consulted mediums and spiritists.
 
 ## Ahaziah, son of Ahab
 - **moment 1**
@@ -610,7 +610,7 @@
   - now: Elisha asked that a double share of Elijah's spirit be on him, and he saw Elijah taken up. Then he struck the Jordan with Elijah's cloak, and the waters parted for him.
 - **moment 4**
   - was: When a Syrian army surrounded Dothan, Elisha prayed and his frightened servant saw fiery horses and chariots filling the mountain. The LORD struck the Syrians blind, and Elisha led them into Samaria, where they were fed and sent home.
-  - now: When a Syrian army surrounded Dothan, Elisha prayed and his frightened servant saw fiery horses and chariots filling the mountain. The LORD struck the Arameans blind, and Elisha led them into Samaria, where they were fed and sent home.
+  - now: When an Aramean army surrounded Dothan, Elisha prayed and his frightened servant saw fiery horses and chariots filling the mountain. The LORD struck the Arameans blind, and Elisha led them into Samaria, where they were fed and sent home.
 
 ## Ahikam
 - **moment 2**
