@@ -56,7 +56,7 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 ### Place cookies
 
-- Only places on the owner's approved place list, chosen from the places named on the Prep story cards.
+- Only places on the owner's approved place list, chosen from the places in the lessons: named on a Prep card (story or choice) or in a verse a card tells.
 - Each place is collected once, on the first story card that tells a verse naming it.
 - The card shows: the place's name, kind and map location; the owner's image; one short line about it; its biblical moments; the verses it shows up in; and the characters it's connected to, when the database has them.
 

@@ -10,7 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { OUTPUT } from './events.mjs';
-import { verses } from './bsb.mjs';
+import { verses, parseRefs } from './bsb.mjs';
 import { PREP_DIR, folder, passing } from './prep.mjs';
 import { chat, SONNET_OR } from './openrouter.mjs';
 import { json } from './burnt.mjs';
@@ -18,31 +18,50 @@ import { SAMPLE_DIR } from './sample-place.mjs';
 import { agg } from '../lib.mjs';
 
 const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
-const BATCH = 60;   // no number limit (owner, 2026-11-15): every place worth it is kept
+const BATCH = 40;   // no number limit (owner, 2026-11-15): every place worth it is kept
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const clean = (n) => String(n).replace(/\s*\(.*\)\s*/g, '').trim();
 
+// In the lesson (owner, 2026-11-15): a place qualifies if any Prep card, story or choice, names it, or a card tells
+// a verse the database links to it (public.verse_place). Tarshish: the Jonah 1:3 story card leaves the name out, but
+// its verse says it and the choice card asks it.
+const spread = (a, n) => (a.length <= n ? a : Array.from({ length: n }, (_, i) => a[Math.floor((i * a.length) / n)]));
 export function candidates() {
-  const lower = new Set(verses().flatMap((v) => v.text.match(/(?<![\w'-])[a-z][a-z']*(?![\w-])/g) ?? []));
+  const V = verses();
+  const lower = new Set(V.flatMap((v) => v.text.match(/(?<![\w'-])[a-z][a-z']*(?![\w-])/g) ?? []));
   const places = agg('select id, name, feature_type, verse_count from public.place');
+  const links = agg('select vp.place_id id, v.sequence s from public.verse_place vp join public.verse v on v.id = vp.verse_id');
+  const versesOf = new Map(); for (const l of links) { if (!versesOf.has(l.id)) versesOf.set(l.id, []); versesOf.get(l.id).push(l.s - 1); }   // sequence 1 = Genesis 1:1
   const byName = new Map();
   for (const p of places) {
     const n = clean(p.name);
-    if (!/^[A-Z]/.test(n) || (n.split(' ').length === 1 && lower.has(n.toLowerCase()))) continue;   // an ordinary word: There, On, Rock
-    if (!byName.has(n)) byName.set(n, { name: n, ids: [], kinds: new Set(), verses: 0, re: new RegExp(`\\b${esc(n)}(?:'s|’s)?\\b`) });
-    const e = byName.get(n); e.ids.push(p.id); if (p.feature_type) e.kinds.add(p.feature_type); e.verses += p.verse_count ?? 0;
+    if (!byName.has(n)) byName.set(n, { name: n, ids: [], kinds: new Set(), verses: 0, ks: [],
+      // name matching on card text only for names that aren't ordinary words (There, On, Rock)
+      re: /^[A-Z]/.test(n) && !(n.split(' ').length === 1 && lower.has(n.toLowerCase())) ? new RegExp(`\\b${esc(n)}(?:'s|’s)?\\b`) : null });
+    const e = byName.get(n); e.ids.push(p.id); if (p.feature_type) e.kinds.add(p.feature_type); e.verses += p.verse_count ?? 0; e.ks.push(...(versesOf.get(p.id) ?? []));
   }
-  const list = [...byName.values()];
-  const found = new Map();
+  // every verse a card tells, and every card's words
+  const told = new Map(), cards = [];
   for (const p of JSON.parse(fs.readFileSync(path.join(OUTPUT, 'passages.json'), 'utf8'))) {
     const prep = JSON.parse(fs.readFileSync(path.join(PREP_DIR, folder(p), 'prep.json'), 'utf8'));
-    for (const s of prep.stops) for (const c of s.cards) if (c.kind === 'story') for (const e of list) if (e.re.test(c.text)) {
-      if (!found.has(e.name)) found.set(e.name, { name: e.name, ids: e.ids, kinds: [...e.kinds], verses: e.verses, passages: new Set(), sample: [] });
-      const f = found.get(e.name); f.passages.add(p.id);
-      if (f.sample.length < 3) f.sample.push(c.text.split(/(?<=[.!?])\s+/).find((x) => e.re.test(x)) ?? c.text.slice(0, 160));
+    for (const s of prep.stops) for (const c of s.cards) {
+      const text = c.kind === 'story' ? c.text : `${c.question} ${(c.answers ?? []).filter((a) => a.correct).map((a) => a.text).join(' ')}`;
+      cards.push({ pid: p.id, text });
+      for (const [a, b] of parseRefs(c.verses) ?? []) for (let k = a; k <= b; k++) if (!told.has(k)) told.set(k, p.id);
     }
   }
-  return [...found.values()].map((f) => ({ ...f, passages: f.passages.size })).sort((a, b) => b.passages - a.passages);
+  const out = [];
+  for (const e of byName.values()) {
+    const ks = [...new Set(e.ks)].filter((k) => told.has(k)).sort((a, b) => a - b);
+    const onCards = e.re ? cards.filter((c) => e.re.test(c.text)) : [];
+    if (!ks.length && !onCards.length) continue;
+    const passages = new Set([...ks.map((k) => told.get(k)), ...onCards.map((c) => c.pid)]);
+    // what the judge sees: verses naming it, and card lines naming it, from across the Bible
+    const sample = [...spread(ks, 8).map((k) => `${V[k].ref}: ${V[k].text}`),
+      ...spread(onCards, 4).map((c) => 'Card: ' + (c.text.split(/(?<=[.!?])\s+/).find((x) => e.re.test(x)) ?? c.text).slice(0, 200))];
+    out.push({ name: e.name, ids: e.ids, kinds: [...e.kinds], verses: e.verses, passages: passages.size, sample });
+  }
+  return out.sort((a, b) => b.passages - a.passages);
 }
 
 export async function shortlist({ chatFn = chat, out = SAMPLE_DIR } = {}) {
@@ -53,13 +72,13 @@ export async function shortlist({ chatFn = chat, out = SAMPLE_DIR } = {}) {
     const batch = list.slice(i, i + BATCH);
     // Worth it (owner, 2026-11-15: no number limit): something happens there that the cards tell, a moment people
     // would remember, or a name that comes up again and again. Only a name in a list of towns isn't.
-    const user = `These names come from story cards in a Bible app for all ages (written for adults; kids use it too). For each:
-- place: is it used as a place on these cards (not a person or a tribe; Judah can be the man, the tribe or the land)?
-- worth: is it worth collecting? Yes if something happens there that the cards tell, a moment people would remember (Jacob wrestling at the Jabbok, the ark kept at Kiriath-jearim), or if it's a name that comes up again and again (Jerusalem, Egypt). No if it's only a name in a list of towns or borders.
+    const user = `These names come from the lessons in a Bible app for all ages (written for adults; kids use it too). For each:
+- place: is it used as a place in these lines from the lesson (not a person or a tribe; Judah can be the man, the tribe or the land)?
+- worth: is it worth collecting? Yes if something happens there that the lesson tells, a moment people would remember (Jacob wrestling at the Jabbok, the ark kept at Kiriath-jearim), or if it's a name that comes up again and again (Jerusalem, Egypt). No if it's only a name in a list of towns or borders.
 - reason: a few words why.
 - known: how well known it is across the Bible (1-10).
 
-${batch.map((p, n) => `${n + 1}. ${p.name} (${p.kinds.join('/') || 'kind unknown'}; named on cards in ${p.passages} passages). On the cards: ${p.sample.join(' | ')}`).join('\n')}
+${batch.map((p, n) => `${n + 1}. ${p.name} (${p.kinds.join('/') || 'kind unknown'}; in ${p.passages} lessons). In the lesson: ${p.sample.join(' | ')}`).join('\n')}
 
 Reply with only JSON: {"places": [{"n": 1, "place": true, "worth": true, "reason": "...", "known": 8}]} with one entry for every name.`;
     let got = null;
