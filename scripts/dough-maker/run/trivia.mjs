@@ -70,7 +70,7 @@ export function choiceCards(p) {
 
 // --- what a script can count -------------------------------------------------------------------------------------
 const words = (t) => String(t ?? '').trim().split(/\s+/).filter(Boolean).length;
-const stems = (t) => new Set(String(t ?? '').toLowerCase().match(/[a-z']{4,}/g)?.map((w) => w.slice(0, 5)) ?? []);
+const stems = (t) => new Set(String(t ?? '').toLowerCase().match(/[a-z']{3,}/g)?.map((w) => w.slice(0, 4)) ?? []);
 export function scriptCheck(cards, out) {
   const f = [];
   const say = (n, problem) => f.push({ question: n, problem });
@@ -98,7 +98,8 @@ export function scriptCheck(cards, out) {
     if (/^\s*(Then|Now|Next)\b/.test(text)) say(n, 'Never start with "Then", "Now" or "Next".');
     if (/^\s*(He|She|They|Him|Her|His|Their|Them|It)\b/.test(text)) say(n, 'It starts with "he", "she", "they" or "it" before saying who it is.');
     if (/\b\d+:\d+\b|\bchapters?\b|\bverses?\s+\d/i.test(text)) say(n, 'Never use a book, chapter or verse number in the question.');
-    if (/\b(baker|friend|Papa Dorin|Dorin)\b/i.test(text)) say(n, 'No Papa Dorin voice. Plain words.');
+    // the Bible's own bakers and friends are fine (Pharaoh's baker, Job's friends); only Papa Dorin talking to the baker
+    if (/\bDorin\b|\b(my|dear) (friend|baker)\b|,\s*(friend|baker)\b/i.test(text)) say(n, 'No Papa Dorin voice. Plain words.');
     for (const a of ans) if (/[,.]/.test(String(a?.text ?? '').replace(/\.\.\./g, ''))) say(n, `The answer "${a.text}" has a comma or period. Answers have none.`);
     // the same right answer as the card
     const was = card.answers.filter((a) => a.correct).map((a) => a.text);
