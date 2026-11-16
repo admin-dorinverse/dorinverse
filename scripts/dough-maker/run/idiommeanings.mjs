@@ -30,7 +30,8 @@ const DATA = path.join(OUTPUT, '..', 'data');
 const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;
 const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
 const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-terra', maxTokens: 16000 };
-const NOTE_CHARS = 900, NOTES_PER_VERSE = 3, VERSES_WITH_NOTES = 4, UNCOVERED_MIN = 2;
+const NOTE_CHARS = Number(process.env.IDIOM_NOTE_CHARS) || 900, NOTES_PER_VERSE = Number(process.env.IDIOM_NOTES_PER_VERSE) || 3, VERSES_WITH_NOTES = 4, UNCOVERED_MIN = 2;
+// (2026-11-15: 900 cut some notes off right before they explained the idiom; the ones left out for that were redone with 2,500 and 4)
 const MAX_WORDS = 35, MAX_SENTENCES = 2;   // idioms.md: 1 or 2 sentences, about 30 words at most
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
