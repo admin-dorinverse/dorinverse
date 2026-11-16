@@ -32,7 +32,7 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 - Given in Exodus 20. Deuteronomy 5 repeats them, so it gives no second pack.
 
 **2. New Testament commands.**
-- **At most 50**, chosen once for the whole Bible: the best-known and most important ones told on the Prep cards. The owner approves the list.
+- **At most 52**, chosen once for the whole Bible: the best-known and most important ones told on the Prep cards. The owner approves the list.
 - Each command is collected once, on the story card where it's first told.
 - All of these must be true:
 - It's a command stated in the passage.
@@ -76,6 +76,8 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 ## On the path
 
 - Each sample cookie sits on the story card where its verse is told. There are no collectibles on a choice card: anything told only on a choice card isn't collectible. The baker collects it from a pop-up, can look at it, and goes back to the path.
+- One exception: a prophecy half whose verse is told only on a choice card sits on the nearest story card in the same stop, so every approved link can be made whole.
+- The Ten Commandments pack sits on the first story card that tells any of the commandments.
 - This holds even if the cookie shows something a later choice card asks about. Pop-ups are the exception to Prep's "never give away an answer" rule.
 
 ## What is never a sample cookie
