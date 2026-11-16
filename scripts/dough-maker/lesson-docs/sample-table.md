@@ -45,26 +45,20 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 ### Character card cookies
 
-- **Skipped for now.** Don't make character card cookies until the character set is ready. The rules below are for later.
 - Given for each person named in the passage, including people named only inside someone's words, matched to the character cards in the staging database.
 - A name used only in a title, like "the God of Jacob," "the sons of Korah" or "the order of Melchizedek," doesn't count.
 - God and the Holy Spirit don't get character cards. Jesus does.
 - The card reveals the character's name. Everything else about the character comes from the database.
 - A character can show up in more than one passage. That's fine.
 
-### Song cookies
-
-- Only when the text says it was sung. For example, Exodus 15:1.
-- Not when the whole passage is the song, like most psalms. The song cookie is for a song inside a passage.
-
 ### Prayer cookies
 
 - Only when the text says someone prayed. For example, Jonah 2:1.
 
-**Card for songs and prayers**
-- Who: who sang or prayed
+**Card for prayers**
+- Who: who prayed
 - What just happened: the moment right before it in the passage
-- Reference: where the song or prayer runs
+- Reference: where the prayer runs
 - Key line: one line from it, in exact BSB wording
 
 ### Prophecy cookies
@@ -83,13 +77,14 @@ Only two kinds of instructions can become instruction cookies. Nothing else.
 
 ## What is never a sample cookie
 
-- Poems the text doesn't name as a song or prayer. These stay in Prep.
+- Poems the text doesn't name as a prayer. These stay in Prep.
+- Songs.
 - Blessings.
 - Laments, for now. This holds even when the text calls the lament a song or a prayer: a lament never gets a sample cookie.
 
 ## Output
 
-A JSON file for the passage. Each cookie gives the Prep story card it sits on (stop and card number). References use the book names in the BSB text, with a hyphen for a range, like `Mark 2:1-3`. Leave out character cards for now.
+A JSON file for the passage. Each cookie gives the Prep story card it sits on (stop and card number). References use the book names in the BSB text, with a hyphen for a range, like `Mark 2:1-3`.
 
 ```json
 {
@@ -98,16 +93,18 @@ A JSON file for the passage. Each cookie gives the Prep story card it sits on (s
       "instruction": "...", "who": "...", "reason": null, "reference": "Book 3:7" },
     { "type": "ten_commandments", "stop": 2, "card": 3,
       "commandments": [ { "text": "...", "reference": "Book 3:3" } ] },
-    { "type": "song", "stop": 1, "card": 12,
+    { "type": "prayer", "stop": 1, "card": 12,
       "who": "...", "what_just_happened": "...",
       "reference": "Book 3:12-15", "key_line": "..." },
+    { "type": "character", "stop": 1, "card": 4, "character_id": "..." },
     { "type": "prophecy", "stop": 1, "card": 9,
       "link_id": 1, "half": "promise", "quote": "...", "reference": "Book 3:9" }
   ]
 }
 ```
 
-- **type:** "instruction", "ten_commandments", "song", "prayer" or "prophecy". Prayers use the same fields as songs.
+- **type:** "instruction", "ten_commandments", "prayer", "prophecy" or "character". Prayers have: who, what_just_happened, reference, key_line.
+- **character_id:** the character card in the database. The card reveals the character's name; everything else comes from the database.
 - **reason:** only if the verse states one, otherwise null
 - **link_id:** the id from the approved prophecy link list. **half:** "promise" or "fulfillment".
 - No cookies: an empty list.
