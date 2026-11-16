@@ -32,6 +32,7 @@ const SONNET = { ...SONNET_OR, reasoning: { effort: 'low' }, maxTokens: 16000 };
 const TERRA = { model: 'openai/gpt-6.1-terra', only: ['openai'], name: 'gpt-6.1-terra', maxTokens: 16000 };
 const AUD = 'a Bible app for all ages (written for adults; kids use it too)';
 const LINE_WORDS = 30, MOMENT_WORDS = 45, MAX_MOMENTS = 5, VERSES_SHOWN = 30, SOURCE_CHARS = 1500;
+const SMALL = 10, PICK_VERSES = 12;   // more lesson verses than SMALL: pick the key moments from the whole list first
 const KINDS = ['City', 'Region', 'Mountain', 'Water', 'Valley', 'Island', 'Landmark', 'Path'];
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
@@ -87,7 +88,14 @@ export function material() {
     const lookups = rows.map((r) => r.lookup);
     const evs = [...new Set(theo.filter((t) => lookups.includes(t.fields?.placeLookup)).flatMap((t) => t.fields?.eventsHere ?? []).map((id) => events.get(id)).filter(Boolean))];
     const dbKind = rows.find((r) => r.feature_type)?.feature_type ?? null, ob = dbKind ? null : obKind(lookups);
+    // every verse naming it (the card's verse list; the owner can show the list or the count), and those in lessons
+    const allKs = [...new Set(links.filter((l) => p.ids.includes(l.id)).map((l) => l.s - 1))].sort((a, b) => a - b);
+    // a big place (more than 10 lesson verses): the whole list, one short line each, for picking its key moments
+    const nameRe = new RegExp(`\\b(${[p.name, ...p.also].map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'i');
+    const lineOf = (t) => { const s = t.split(/(?<=[.!?;:])\s+/).find((x) => nameRe.test(x)) ?? t; const w = s.split(/\s+/); return w.length > 30 ? w.slice(0, 30).join(' ') + '…' : s; };
     return { name: p.name, also: p.also, lookup, ids: p.ids, kind: dbKind ?? ob?.kind ?? null, kind_from: dbKind ? 'database' : ob?.from ?? null,
+      verses_all: allKs.map((k) => V[k].ref), verses_in_lessons: ks.map((k) => V[k].ref),
+      big: ks.length > SMALL, naming: ks.length > SMALL ? ks.map((k) => ({ ref: V[k].ref, line: lineOf(V[k].text) })) : null,
       // each naming verse with a little around it, so what happens there is in view (Jacob wrestles in Genesis
       // 32:24-30; only 32:22 says "Jabbok"); overlapping stretches are shown once
       lessonVerses: ks, shown: (() => { const pick = spread(ks, VERSES_SHOWN / 3), seen = new Set(), out = [];
@@ -100,7 +108,7 @@ export function material() {
 const RULES = `You write place cards for ${AUD}, at about a 5th-grade reading level. The Bible text is the BSB.
 - Say only what the verses and sources given say. Never add anything from your own knowledge.
 - The one line: one sentence, about 25 words, saying what the place is and why it matters in the Bible.
-- The moments: 1 to 5 things that happen at this place in the verses given, in Bible order. Each has a short title (a few words), 1 or 2 sentences, and the passage (BSB book name, like "Genesis 32:22-30"). The passage must include a verse marked * below.
+- The moments: 1 to 5 things that happen at this place in the verses given, in Bible order. Choose the most important events that take place there; a border list or a passing mention isn't a moment. Each has a short title (a few words), 1 or 2 sentences, and the passage (BSB book name, like "Genesis 32:22-30"). The passage covers the whole event (all the verses that tell it) and includes a verse marked * below.
 - When text refers to God, capitalize He, Him and His. No em dashes or en dashes.
 - Name the sources you used, exactly as listed ("BSB" for the verses).`;
 const show = (m) => `Place: ${m.name}${m.also.length ? ` (also called: ${m.also.join(', ')})` : ''}${m.kind ? `, a ${m.kind.toLowerCase()}` : ''}
@@ -111,6 +119,13 @@ ${m.shown.map((v) => `${v.names ? '*' : ' '} ${v.ref} ${v.text}`).join('\n')}
 Sources:
 ${m.sources.map((s) => `[${s.name}] ${s.text}`).join('\n\n') || '(none: use the verses)'}
 ${m.events.length ? `\nEvents listed there (hints only; use them only if the verses show them): ${m.events.join('; ')}` : ''}`;
+const PICK = (m) => `Place: ${m.name}${m.also.length ? ` (also called: ${m.also.join(', ')})` : ''}
+
+Every verse in the lessons that names it (reference, then the line that names it):
+${m.naming.map((v, i) => `${i + 1}. ${v.ref}: ${v.line}`).join('\n')}
+
+Pick up to 5 of the most important events that take place at ${m.name}, ones a reader of the Bible should know (not border lists, not lists of nations, not passing mentions). For each, give the whole passage that tells the event (BSB book name, like "Genesis 32:22-30"); it must include one of the verses listed.
+Reply with only JSON: {"events": [{"title": "...", "passage": "..."}]}`;
 const ASK = (m) => `${show(m)}
 
 Write the place card.
@@ -204,6 +219,24 @@ export async function runPlaceCards({ only = null, limit = Infinity, agents = 20
   async function one(m) {
     const d = dir(m), keep = path.join(d, 'unreadable.txt');
     if (!m.lessonVerses.length) { writeJson(path.join(d, 'done.json'), { left_out: 'no lesson verse names it', cost: 0 }); return; }
+    // a big place: Sonnet picks its key events from every naming verse; the card is then written from those passages
+    if (m.big) {
+      const V = verses(), lesson = new Set(m.lessonVerses);
+      const picked = await stage(path.join(d, 'picked.json'), async () => {
+        const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: PICK(m), step: STEP, role: 'picker' }), (t) => { const v = json(t); return Array.isArray(v?.events) ? v.events : null; }, keep);
+        // only passages that are real and include a lesson verse naming the place
+        const ok = (r.v ?? []).filter((e) => (parseRefs(String(e?.passage ?? '').replace(/–/g, '-')) ?? []).some(([a, b]) => { for (let k = a; k <= b; k++) if (lesson.has(k)) return true; return false; })).slice(0, MAX_MOMENTS);
+        return { events: ok, dropped: (r.v ?? []).length - ok.length, cost: r.cost };
+      });
+      if (picked.events.length) {
+        const seen = new Set(), shown = [];
+        for (const e of picked.events) for (const [a, b] of parseRefs(String(e.passage).replace(/–/g, '-'))) {
+          for (let x = Math.max(0, a - 1); x <= Math.min(V.length - 1, Math.min(b, a + PICK_VERSES) + 1); x++) if (!seen.has(x)) { seen.add(x); shown.push({ ref: V[x].ref, text: V[x].text, names: lesson.has(x) }); }
+        }
+        const at = new Map(V.map((v, i) => [v.ref, i]));
+        m = { ...m, shown: shown.sort((p, q) => at.get(p.ref) - at.get(q.ref)) };   // in Bible order
+      }
+    }
     const w = await stage(path.join(d, 'written.json'), async () => {
       const r = await ask(() => chatFn({ ...SONNET, system: RULES, user: ASK(m), step: STEP, role: 'writer' }), cardOf, keep);
       if (!r.v) throw Object.assign(new Error(r.refused ? `OpenRouter's filter refused "${m.name}"` : `Sonnet's reply for "${m.name}" couldn't be read twice`), { detail: r.refused ?? '' });
@@ -238,10 +271,11 @@ export async function runPlaceCards({ only = null, limit = Infinity, agents = 20
       found = [...cn.script, ...cn.terra];
     }
     const names = new Set(['BSB', ...m.sources.map((s) => s.name)]);
-    writeJson(path.join(d, 'card.json'), { name: m.name, lookup: m.lookup, place_ids: m.ids, kind: m.kind, kind_from: m.kind_from,   // from the database or OpenBible only; none if neither has one
+    writeJson(path.join(d, 'card.json'), { name: m.name, lookup: m.lookup, place_ids: m.ids, kind: m.kind, kind_from: m.kind_from,
+      verses_all: m.verses_all, verses_in_lessons: m.verses_in_lessons,   // the owner can show the list or the count   // from the database or OpenBible only; none if neither has one
       line: card.line, moments: card.moments.map(({ title, text, passage }) => ({ title, text, passage })), sources: (card.sources ?? []).filter((s) => names.has(s)) });
     const c = (f) => readJson(path.join(d, f))?.cost ?? 0;
-    const total = ['written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3', 'fix-rules'].reduce((k, f) => k + c(`${f}.json`), 0);
+    const total = ['picked', 'written', 'check-1', 'fix-1', 'check-2', 'fix-2', 'check-3', 'fix-3', 'fix-rules'].reduce((k, f) => k + c(`${f}.json`), 0);
     const unread = ['check-1', 'check-2', 'check-3'].some((f) => readJson(path.join(d, `${f}.json`))?.terra_unread);
     writeJson(path.join(d, 'done.json'), { firstFindings: first, finalFix: readJson(path.join(d, 'fix-3.json'))?.problems?.length ?? 0, ...(unread && { terra_unread: true }), flags: 0, cost: Math.round(total * 10000) / 10000 });
   }
