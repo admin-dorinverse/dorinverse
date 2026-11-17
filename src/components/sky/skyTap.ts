@@ -2,7 +2,7 @@
 // Runs on the animation thread.
 
 import type { Constellation } from '@/types/constellation';
-import { hitsBakery } from './drawBakery';
+import { hitsBakery } from './bakeryLayout';
 import { CONSTELLATION_SCALE, HOME_Y } from './skyLayout';
 import type { SkyState } from './skyState';
 import { startFlight } from './stepCamera';

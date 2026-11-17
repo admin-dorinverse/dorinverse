@@ -46,6 +46,11 @@ export const bakery = {
 
 /** Frosted glass surfaces that float over the sky. */
 export const glass = {
+  /**
+   * The dark tint under every glass surface. It stands in for blurring the sky, which costs the phone a lot
+   * while the sky moves. Over the night sky the two look nearly the same.
+   */
+  still: 'rgba(36,32,74,0.74)',
   /** Fill of a plain glass surface. */
   fill: 'rgba(255,255,255,0.08)',
   /** Thin border of a glass surface. */

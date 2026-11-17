@@ -1,8 +1,9 @@
 // Draws the constellations for one frame: glowing lines that draw in segment by segment, twinkling star dots,
 // and each constellation's glowing name underneath.
 
-import { BlurStyle, PaintStyle, StrokeCap, Skia, TileMode, type SkCanvas, type SkFont } from '@shopify/react-native-skia';
+import { FilterMode, MipmapMode, PaintStyle, StrokeCap, Skia, TileMode, type SkCanvas } from '@shopify/react-native-skia';
 import type { Constellation } from '@/types/constellation';
+import type { LabelPicture } from './labelPictures';
 import { CONSTELLATION_SCALE } from './skyLayout';
 import { clamp, lerp } from './skyMath';
 import type { SkyState } from './skyState';
@@ -20,38 +21,23 @@ function drawGlowDot(canvas: SkCanvas, x: number, y: number, radius: number, col
   canvas.drawCircle(x, y, radius, halo);
 }
 
-/** Draws a constellation's name centered under it, with a colored glow like the design's text shadow. */
-function drawLabel(canvas: SkCanvas, c: Constellation, x: number, top: number, alpha: number, font: SkFont, width: number): void {
+/** Places a constellation's ready-made glowing name centered under it, faded by `alpha`. */
+function drawLabel(canvas: SkCanvas, label: LabelPicture, x: number, top: number, alpha: number): void {
   'worklet';
   if (alpha <= 0) return;
-  const baseline = top - font.getMetrics().ascent;
-  const left = x - width / 2;
-  const glow = Skia.Paint();
-  glow.setColor(Skia.Color(c.color));
-  glow.setAlphaf(alpha);
-  glow.setMaskFilter(Skia.MaskFilter.MakeBlur(BlurStyle.Normal, 13, true));
-  canvas.drawText(c.name, left, baseline, glow, font);
-  glow.setMaskFilter(Skia.MaskFilter.MakeBlur(BlurStyle.Normal, 6, true));
-  canvas.drawText(c.name, left, baseline, glow, font);
-  const rim = Skia.Paint();
-  rim.setColor(Skia.Color('#ffffff'));
-  rim.setAlphaf(alpha);
-  rim.setMaskFilter(Skia.MaskFilter.MakeBlur(BlurStyle.Normal, 1, true));
-  canvas.drawText(c.name, left, baseline, rim, font);
-  const text = Skia.Paint();
-  text.setColor(Skia.Color('#ffffff'));
-  text.setAlphaf(alpha);
-  canvas.drawText(c.name, left, baseline, text, font);
+  const paint = Skia.Paint();
+  paint.setAlphaf(alpha);
+  const left = x - label.textWidth / 2 - label.room;
+  canvas.drawImageRectOptions(label.image, label.src, Skia.XYWHRect(left, top - label.room, label.width, label.height), FilterMode.Linear, MipmapMode.None, paint);
 }
 
-/** Draws every constellation that is near the screen. Names are drawn too once a font is ready. */
+/** Draws every constellation that is near the screen. Names are drawn too once their pictures are ready. */
 export function drawConstellations(
   canvas: SkCanvas,
   s: SkyState,
   now: number,
   constellations: readonly Constellation[],
-  font: SkFont | null,
-  labelWidths: readonly number[],
+  labels: readonly (LabelPicture | null)[],
 ): void {
   'worklet';
   if (!s.atHome) return;
@@ -101,6 +87,7 @@ export function drawConstellations(
       canvas.drawCircle(P[k][0], P[k][1], 2.6 * big * appear, white);
     }
 
-    if (font) drawLabel(canvas, c, sx, sy + CONSTELLATION_SCALE * 112, s.labelShown[i], font, labelWidths[i]);
+    const label = labels[i];
+    if (label) drawLabel(canvas, label, sx, sy + CONSTELLATION_SCALE * 112, s.labelShown[i]);
   }
 }

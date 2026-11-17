@@ -1,14 +1,17 @@
-// Renders the app's little sound effects into WAV files, once. Constellations makes these sounds live with
-// Web Audio; this copies the same tones (pitch, shape, length, volume) so the app plays identical sounds.
+// Renders the app's little sound effects into small compressed .m4a files, once. Constellations makes these
+// sounds live with Web Audio; this copies the same tones (pitch, shape, length, volume) so the app plays identical sounds.
 //
-// Run from the repo root:  node scripts/app/render-sounds.mjs
+// Run from the repo root:  FFMPEG=<path to ffmpeg> node scripts/app/render-sounds.mjs   (FFMPEG defaults to "ffmpeg")
 // Output goes to assets/sounds/. Rerun only if a sound recipe below changes.
 
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 const RATE = 22050;
 const OUT = join('assets', 'sounds');
+const FFMPEG = process.env.FFMPEG || 'ffmpeg';
 
 /** One wave cycle value (0..1 phase) for each oscillator type. */
 const WAVES = {
@@ -82,13 +85,22 @@ function toWav(samples) {
   return Buffer.concat([head, data]);
 }
 
+/** Compresses a WAV file into a small mono AAC .m4a file. */
+function toM4a(wavPath, m4aPath) {
+  execFileSync(FFMPEG, ['-y', '-loglevel', 'error', '-i', wavPath, '-c:a', 'aac', '-b:a', '48k', '-ac', '1', m4aPath]);
+}
+
 mkdirSync(OUT, { recursive: true });
+const work = mkdtempSync(join(tmpdir(), 'sounds-'));
 for (const [name, recipe] of Object.entries(RECIPES)) {
   const buf = new Float32Array(Math.floor(2 * RATE));
   recipe(buf);
   let last = buf.length - 1;
   while (last > 0 && Math.abs(buf[last]) < 1e-5) last--;
   const trimmed = buf.slice(0, last + Math.floor(0.02 * RATE));
-  writeFileSync(join(OUT, `${name}.wav`), toWav(trimmed));
-  console.log(`${name}.wav  ${(trimmed.length / RATE).toFixed(2)}s`);
+  const wav = join(work, `${name}.wav`);
+  writeFileSync(wav, toWav(trimmed));
+  toM4a(wav, join(OUT, `${name}.m4a`));
+  console.log(`${name}.m4a  ${(trimmed.length / RATE).toFixed(2)}s`);
 }
+rmSync(work, { recursive: true, force: true });

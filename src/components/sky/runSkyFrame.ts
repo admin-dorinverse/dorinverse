@@ -19,6 +19,20 @@ export function runSkyFrame(s: SkyState, now: number, constellations: readonly C
   return arrivedAt;
 }
 
+/**
+ * True while something in the star sky moves fast: the camera (a drag, a flight, a glide), a shooting star,
+ * a constellation drawing itself in, the rocket's trail streaming, or the sky fading between tabs.
+ * The star sky draws 60 times a second then, and 20 when only slow things (twinkles) move.
+ */
+export function skyIsBusy(s: SkyState): boolean {
+  'worklet';
+  if (s.drag.on || s.flight.on || s.camera.vx !== 0 || s.camera.vy !== 0) return true;
+  if (s.shootingStars.length > 0 || s.rocket.speed > 60) return true;
+  if (s.worldShown > 0 && s.worldShown < 1) return true;
+  for (let i = 0; i < s.drawnIn.length; i++) if (s.drawnIn[i] > 0 && s.drawnIn[i] < 1) return true;
+  return false;
+}
+
 /** Updates the sky's screen size and whether the phone asks for less motion. */
 export function setSkyScreen(s: SkyState, width: number, height: number, reduceMotion: boolean): void {
   'worklet';

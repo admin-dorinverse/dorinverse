@@ -3,17 +3,30 @@
 
 import { useFont } from '@shopify/react-native-skia';
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, type ReactNode } from 'react';
-import { useWindowDimensions } from 'react-native';
+import { AppState, useWindowDimensions } from 'react-native';
 import { useFrameCallback, useReducedMotion, useSharedValue, type SharedValue } from 'react-native-reanimated';
 import { scheduleOnRN, scheduleOnUI } from 'react-native-worklets';
 import { playSound, type SoundName } from '@/components/common/sounds';
 import { sampleConstellations } from '@/data/sample/constellations';
 import { constellationLabelSize, skyLabelFont } from '@/theme/text';
 import type { Constellation } from '@/types/constellation';
-import { runSkyFrame, setSkyAtHome, setSkyScreen } from './runSkyFrame';
+import { runSkyFrame, setSkyAtHome, setSkyScreen, skyIsBusy } from './runSkyFrame';
 import { createSkyState, type SkyState } from './skyState';
 import { handleSkyTap } from './skyTap';
 import { beginDrag, endDrag, moveDrag, startFlight } from './stepCamera';
+import { useSkyArt, type SkyArt } from './useSkyArt';
+
+/** Time between star-sky redraws while it moves fast, and between moves of the planet and rocket (60 a second). */
+const BUSY_FRAME_MS = 1000 / 60;
+
+/** Time between star-sky redraws while only slow things move (20 a second). Twinkles are slow; this is plenty. */
+const CALM_FRAME_MS = 1000 / 20;
+
+/** Time between star-sky redraws on the other tabs, where the stars show dimly behind the page (10 a second). */
+const AWAY_FRAME_MS = 1000 / 10;
+
+/** Leeway so a screen refresh that comes a hair early still counts. */
+const FRAME_SLACK_MS = 4;
 
 /** Where a sky flight or tap leads: the bakery, or a constellation by its id. */
 export type SkyDestination = { kind: 'bakery' } | { kind: 'constellation'; id: string };
@@ -22,8 +35,12 @@ export type SkyDestination = { kind: 'bakery' } | { kind: 'constellation'; id: s
 type SkyContextValue = {
   /** The sky's memory, changed in place on the animation thread. */
   sky: SharedValue<SkyState>;
-  /** The time of the latest frame. Drawings re-draw when it changes. */
+  /** The time of the star sky's latest drawn frame. The star canvas redraws when it changes, 10 to 60 times a second. */
   clock: SharedValue<number>;
+  /** The time of the latest frame, up to 60 a second. The planet, rocket and flame views move when it changes. */
+  pulse: SharedValue<number>;
+  /** The sky's ready-made pictures. */
+  art: SkyArt;
   /** The constellations in the sky. */
   constellations: readonly Constellation[];
   /** Width of each constellation's name, used to keep the rocket off it. */
@@ -78,10 +95,12 @@ export function SkyProvider({ children }: SkyProviderProps) {
   const constellations = sampleConstellations;
   const sky = useSharedValue<SkyState>(createSkyState(width, height, constellations.length));
   const clock = useSharedValue(0);
+  const pulse = useSharedValue(0);
   const reduceMotion = useReducedMotion();
   const font = useFont(skyLabelFont, constellationLabelSize);
   const labelWidths = useMemo(() => constellations.map((c) => (font ? font.measureText(c.name).width : 120)), [constellations, font]);
   const sharedLabelWidths = useSharedValue<number[]>(labelWidths);
+  const art = useSkyArt(constellations, font);
   const arrivalHandler = useRef<(d: SkyDestination) => void>(() => {});
 
   useEffect(() => sharedLabelWidths.set(labelWidths), [sharedLabelWidths, labelWidths]);
@@ -95,12 +114,25 @@ export function SkyProvider({ children }: SkyProviderProps) {
   /** Runs on the JavaScript thread when a flight or tap arrives somewhere, to open its page. */
   const arrive = useCallback((tag: string) => arrivalHandler.current(fromTag(tag)), []);
 
-  useFrameCallback((frame) => {
+  // The sky moves forward every screen refresh. The planet and rocket views follow up to 60 times a second.
+  // The star canvas redraws 60 times a second only while something moves fast, 20 while it rests, and 10 on the
+  // other tabs. Phones that refresh 120 times a second would otherwise draw twice as much for nothing.
+  const frames = useFrameCallback((frame) => {
     'worklet';
-    const arrivedAt = runSkyFrame(sky.get(), frame.timestamp, constellations, sharedLabelWidths.get());
-    clock.set(frame.timestamp);
+    const s = sky.get();
+    const now = frame.timestamp;
+    const arrivedAt = runSkyFrame(s, now, constellations, sharedLabelWidths.get());
+    if (now - pulse.get() >= BUSY_FRAME_MS - FRAME_SLACK_MS) pulse.set(now);
+    const gap = !s.atHome && s.worldShown === 0 ? AWAY_FRAME_MS : skyIsBusy(s) ? BUSY_FRAME_MS : CALM_FRAME_MS;
+    if (now - clock.get() >= gap - FRAME_SLACK_MS) clock.set(now);
     if (arrivedAt) scheduleOnRN(arrive, arrivedAt);
   });
+
+  // The sky stops completely while the app is in the background, and picks up where it left off on return.
+  useEffect(() => {
+    const listener = AppState.addEventListener('change', (state) => frames.setActive(state === 'active'));
+    return () => listener.remove();
+  }, [frames]);
 
   const flyTo = useCallback(
     (x: number, y: number, destination?: SkyDestination) => {
@@ -154,21 +186,16 @@ export function SkyProvider({ children }: SkyProviderProps) {
     [sky, constellations, arrive],
   );
 
-  const value = useMemo<SkyContextValue>(
-    () => ({
-      sky,
-      clock,
-      constellations,
-      labelWidths,
-      flyTo,
-      setAtHome,
-      setArrivalHandler: (handler) => {
-        arrivalHandler.current = handler;
-      },
-      touch,
-    }),
-    [sky, clock, constellations, labelWidths, flyTo, setAtHome, touch],
+  const setArrivalHandler = useCallback((handler: (destination: SkyDestination) => void) => {
+    arrivalHandler.current = handler;
+  }, []);
+
+  const value = useMemo<SkyContextValue | null>(
+    () => art && { sky, clock, pulse, art, constellations, labelWidths, flyTo, setAtHome, setArrivalHandler, touch },
+    [sky, clock, pulse, art, constellations, labelWidths, flyTo, setAtHome, setArrivalHandler, touch],
   );
 
+  // Nothing shows until the sky's pictures are ready, so the planet never pops in late.
+  if (!art) return null;
   return <SkyContext.Provider value={value}>{children}</SkyContext.Provider>;
 }

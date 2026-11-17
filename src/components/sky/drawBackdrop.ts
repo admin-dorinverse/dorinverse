@@ -1,57 +1,65 @@
 // Draws the sky's backdrop for one frame: nebula clouds, faint dust, three layers of cross stars and shooting stars.
+// The clouds, dust and star shapes are drawn ahead of time; each frame only places them, making nothing new.
 
-import { BlurStyle, PaintStyle, Skia, TileMode, type SkCanvas, type SkPicture } from '@shopify/react-native-skia';
+import { FilterMode, MipmapMode, PaintStyle, Skia, TileMode, type SkCanvas, type SkRSXform, type SkRect } from '@shopify/react-native-skia';
+import type { DustField } from './dustField';
+import type { NebulaPicture } from './nebulaPicture';
 import { cellHash } from './skyMath';
-import { DUST_PARALLAX, DUST_TILE, NEBULA_CLOUDS, NEBULA_PARALLAX, STAR_LAYERS } from './skyLayout';
+import { DUST_PARALLAX, NEBULA_PARALLAX, STAR_LAYERS } from './skyLayout';
 import type { SkyState } from './skyState';
-import { addStarCross } from './starCross';
+import { starMorph } from './starCross';
+import type { StarSheet } from './starSheet';
+
+/** The ready-made pictures the backdrop places each frame. */
+export type BackdropArt = {
+  /** The dust, drawn once across the whole sky. */
+  dust: DustField;
+  /** Every star shape, drawn once. */
+  stars: StarSheet | null;
+  /** The nebula clouds, painted once. */
+  nebula: NebulaPicture | null;
+};
+
+/** Where each star sits, remembered the first time it is seen so no star is placed twice. Lives on the animation thread. */
+export type StarSpots = Record<number, SkRSXform>;
+
+/** Smooth sampling for placing ready-made pictures between whole pixels. */
+const SMOOTH = { filter: FilterMode.Linear, mipmap: MipmapMode.None };
 
 /** Draws the nebula clouds far behind everything. */
-function drawNebula(canvas: SkCanvas, s: SkyState): void {
+function drawNebula(canvas: SkCanvas, s: SkyState, nebula: NebulaPicture): void {
   'worklet';
-  const { width: W, height: H, camera: cam } = s;
-  const paint = Skia.Paint();
-  for (const n of NEBULA_CLOUDS) {
-    const x = n.x * NEBULA_PARALLAX - cam.x * NEBULA_PARALLAX + W / 2;
-    const y = n.y * NEBULA_PARALLAX - cam.y * NEBULA_PARALLAX + H / 2;
-    const r = n.radius * 0.6;
-    if (x < -r || x > W + r || y < -r || y > H + r) continue;
-    paint.setShader(Skia.Shader.MakeRadialGradient({ x, y }, r, [Skia.Color(n.color), Skia.Color('transparent')], null, TileMode.Clamp));
-    paint.setAlphaf(n.alpha);
-    canvas.drawRect(Skia.XYWHRect(x - r, y - r, r * 2, r * 2), paint);
-  }
+  const x = nebula.left - s.camera.x * NEBULA_PARALLAX + s.width / 2;
+  const y = nebula.top - s.camera.y * NEBULA_PARALLAX + s.height / 2;
+  canvas.drawImageRectOptions(nebula.image, nebula.src, Skia.XYWHRect(x, y, nebula.width, nebula.height), FilterMode.Linear, MipmapMode.None, Skia.Paint());
 }
 
-/** Draws the repeating dust tile, slowly sliding with the camera. */
-function drawDust(canvas: SkCanvas, s: SkyState, dustTile: SkPicture): void {
+/** Slides the dust field with the camera. */
+function drawDust(canvas: SkCanvas, s: SkyState, dust: DustField): void {
   'worklet';
-  const { width: W, height: H, camera: cam } = s;
-  const ox = (((-cam.x * DUST_PARALLAX + W / 2) % DUST_TILE) + DUST_TILE) % DUST_TILE;
-  const oy = (((-cam.y * DUST_PARALLAX + H / 2) % DUST_TILE) + DUST_TILE) % DUST_TILE;
-  for (let ty = -DUST_TILE; ty < H + DUST_TILE; ty += DUST_TILE) {
-    for (let tx = -DUST_TILE; tx < W + DUST_TILE; tx += DUST_TILE) {
-      const left = tx + ox;
-      const top = ty + oy;
-      if (left > W || top > H || left + DUST_TILE < 0 || top + DUST_TILE < 0) continue;
-      canvas.save();
-      canvas.translate(left, top);
-      canvas.drawPicture(dustTile);
-      canvas.restore();
-    }
-  }
+  canvas.save();
+  canvas.translate(dust.left - s.camera.x * DUST_PARALLAX + s.width / 2, dust.top - s.camera.y * DUST_PARALLAX + s.height / 2);
+  canvas.drawPicture(dust.picture);
+  canvas.restore();
+}
+
+/** A single number that names one star: its layer and kind, and its grid cell. */
+function starKey(kind: number, cc: number, rr: number): number {
+  'worklet';
+  return (kind * 4096 + (cc + 2048)) * 4096 + (rr + 2048);
 }
 
 /** Draws the three layers of cross stars. When the sky moves fast they stretch into streaks. */
-function drawStars(canvas: SkCanvas, s: SkyState, now: number): void {
+function drawStars(canvas: SkCanvas, s: SkyState, now: number, sheet: StarSheet, spots: StarSpots): void {
   'worklet';
   const { width: W, height: H, camera: cam } = s;
   const seconds = (now - s.startedAt) / 1000;
   const nowSeconds = now / 1000;
   const speed = Math.hypot(cam.vx, cam.vy);
   const streak = speed > 700 ? Math.min(1, (speed - 700) / 1600) : 0;
-  const glow = Skia.Paint();
-  glow.setMaskFilter(Skia.MaskFilter.MakeBlur(BlurStyle.Normal, 1.2, true));
   const fill = Skia.Paint();
+  const shrink = 1 / sheet.pixelRatio;
+  const half = sheet.cell / 2;
   const line = Skia.Paint();
   line.setStyle(PaintStyle.Stroke);
   line.setStrokeWidth(1.6);
@@ -66,8 +74,12 @@ function drawStars(canvas: SkCanvas, s: SkyState, now: number): void {
     const r0 = Math.floor(-oy / L.height) - 1;
     const r1 = Math.ceil((H - oy) / L.height);
     for (let si = 0; si < L.stars.length; si++) {
-      const [sx, sy, size, color] = L.stars[si];
+      const [sx, sy, , color] = L.stars[si];
+      const kind = sheet.firstKind[li] + si;
+      const shapes = sheet.rects[kind];
       const path = Skia.PathBuilder.Make();
+      const srcs: SkRect[] = [];
+      const places: SkRSXform[] = [];
       for (let cc = c0; cc <= c1; cc++) {
         for (let rr = r0; rr <= r1; rr++) {
           const jx = (cellHash(cc, rr, li * 7 + si) - 0.5) * L.width * 0.7;
@@ -80,22 +92,29 @@ function drawStars(canvas: SkCanvas, s: SkyState, now: number): void {
             path.moveTo(x, y);
             path.lineTo(x + cam.vx * k, y + cam.vy * k);
           } else {
-            addStarCross(path, x, y, size, cellHash(cc, rr, li * 2 + si), nowSeconds);
+            const morph = starMorph(cellHash(cc, rr, li * 2 + si), nowSeconds);
+            srcs.push(shapes[Math.round(morph * (sheet.steps - 1))]);
+            const key = starKey(kind, cc, rr);
+            let spot = spots[key];
+            if (!spot) {
+              // Remembered without the camera and drift, which the canvas adds below.
+              spot = Skia.RSXform(shrink, 0, cc * L.width + sx + jx - half, rr * L.height + sy + jy - half);
+              spots[key] = spot;
+            }
+            places.push(spot);
           }
         }
       }
-      const built = path.detach();
       if (streak) {
         line.setColor(Skia.Color(color));
         line.setAlphaf(alpha);
-        canvas.drawPath(built, line);
-      } else {
-        glow.setColor(Skia.Color(color));
-        glow.setAlphaf(alpha);
-        fill.setColor(Skia.Color(color));
+        canvas.drawPath(path.detach(), line);
+      } else if (srcs.length) {
         fill.setAlphaf(alpha);
-        canvas.drawPath(built, glow);
-        canvas.drawPath(built, fill);
+        canvas.save();
+        canvas.translate(ox, oy);
+        canvas.drawAtlas(sheet.image, srcs, places, fill, undefined, undefined, SMOOTH);
+        canvas.restore();
       }
     }
   }
@@ -104,6 +123,7 @@ function drawStars(canvas: SkCanvas, s: SkyState, now: number): void {
 /** Draws the shooting stars as fading white streaks. */
 function drawShootingStars(canvas: SkCanvas, s: SkyState): void {
   'worklet';
+  if (s.shootingStars.length === 0) return;
   const paint = Skia.Paint();
   paint.setStyle(PaintStyle.Stroke);
   paint.setStrokeWidth(2);
@@ -123,10 +143,10 @@ function drawShootingStars(canvas: SkCanvas, s: SkyState): void {
 }
 
 /** Draws the whole backdrop. The sky gradient itself is drawn underneath by the canvas component. */
-export function drawBackdrop(canvas: SkCanvas, s: SkyState, now: number, dustTile: SkPicture): void {
+export function drawBackdrop(canvas: SkCanvas, s: SkyState, now: number, art: BackdropArt, spots: StarSpots): void {
   'worklet';
-  drawNebula(canvas, s);
-  drawDust(canvas, s, dustTile);
-  drawStars(canvas, s, now);
+  if (art.nebula) drawNebula(canvas, s, art.nebula);
+  drawDust(canvas, s, art.dust);
+  if (art.stars) drawStars(canvas, s, now, art.stars, spots);
   drawShootingStars(canvas, s);
 }

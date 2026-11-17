@@ -1,7 +1,8 @@
-// Draws a small static SVG picture with Skia, which supports the gradients and dashes the design's icons use.
+// Draws a small static SVG picture (the design's gradient icons) as a plain native view with react-native-svg,
+// like the tab icons. It needs no drawing canvas of its own, so it is cheap and always shows, even after a reload.
 
-import { Canvas, ImageSVG, Skia, Group } from '@shopify/react-native-skia';
-import { useMemo } from 'react';
+import { View } from 'react-native';
+import { SvgXml } from 'react-native-svg';
 
 /** Props for an SVG picture. */
 type SvgPictureProps = {
@@ -17,16 +18,14 @@ type SvgPictureProps = {
 
 /** A small picture drawn from SVG text. */
 export function SvgPicture({ svg, width, height, rotate = 0 }: SvgPictureProps) {
-  const picture = useMemo(() => Skia.SVG.MakeFromString(svg), [svg]);
-  if (!picture) return null;
   const turned = rotate % 180 !== 0;
   const w = turned ? height : width;
   const h = turned ? width : height;
   return (
-    <Canvas style={{ width, height }}>
-      <Group transform={[{ translateX: width / 2 }, { translateY: height / 2 }, { rotate: (rotate * Math.PI) / 180 }, { translateX: -w / 2 }, { translateY: -h / 2 }]}>
-        <ImageSVG svg={picture} x={0} y={0} width={w} height={h} />
-      </Group>
-    </Canvas>
+    <View style={{ width, height, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ width: w, height: h, transform: [{ rotate: `${rotate}deg` }] }}>
+        <SvgXml xml={svg} width={w} height={h} />
+      </View>
+    </View>
   );
 }

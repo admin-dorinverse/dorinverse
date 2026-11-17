@@ -5,19 +5,19 @@ import { createAudioPlayer, setAudioModeAsync, type AudioPlayer } from 'expo-aud
 
 /** The sound files, by name. */
 const SOURCES = {
-  tap: require('../../../assets/sounds/tap.wav'),
-  next: require('../../../assets/sounds/next.wav'),
-  right: require('../../../assets/sounds/right.wav'),
-  wrong: require('../../../assets/sounds/wrong.wav'),
-  word: require('../../../assets/sounds/word.wav'),
-  collect: require('../../../assets/sounds/collect.wav'),
-  burn: require('../../../assets/sounds/burn.wav'),
-  join: require('../../../assets/sounds/join.wav'),
-  box: require('../../../assets/sounds/box.wav'),
-  route: require('../../../assets/sounds/route.wav'),
-  reveal: require('../../../assets/sounds/reveal.wav'),
-  ding: require('../../../assets/sounds/ding.wav'),
-  splash: require('../../../assets/sounds/splash.wav'),
+  tap: require('../../../assets/sounds/tap.m4a'),
+  next: require('../../../assets/sounds/next.m4a'),
+  right: require('../../../assets/sounds/right.m4a'),
+  wrong: require('../../../assets/sounds/wrong.m4a'),
+  word: require('../../../assets/sounds/word.m4a'),
+  collect: require('../../../assets/sounds/collect.m4a'),
+  burn: require('../../../assets/sounds/burn.m4a'),
+  join: require('../../../assets/sounds/join.m4a'),
+  box: require('../../../assets/sounds/box.m4a'),
+  route: require('../../../assets/sounds/route.m4a'),
+  reveal: require('../../../assets/sounds/reveal.m4a'),
+  ding: require('../../../assets/sounds/ding.m4a'),
+  splash: require('../../../assets/sounds/splash.m4a'),
 } as const;
 
 /** A sound effect's name. */

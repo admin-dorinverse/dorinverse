@@ -49,7 +49,7 @@ export function Hud() {
       <HudPill
         label={`${p.chips} chips`}
         value={p.chips.toLocaleString()}
-        icon={<Image source={require('../../../assets/images/icons/chip.png')} style={styles.chip} contentFit="contain" />}
+        icon={<Image source={require('../../../assets/images/icons/chip.webp')} style={styles.chip} contentFit="contain" />}
       />
     </View>
   );

@@ -1,64 +1,43 @@
-// The full-screen sky drawing. It sits behind every tab and redraws each frame from the shared sky memory.
+// The full-screen star sky. It sits behind every tab and redraws when the sky clock ticks: 20 times a second
+// while the sky rests, 60 while it moves. The planet and rocket are separate views over it, so the sky's slow
+// parts never need to be repainted for their fast motion.
 
-import { Canvas, LinearGradient, Picture, Rect, createPicture, useFont, useImage, vec } from '@shopify/react-native-skia';
-import { useMemo } from 'react';
-import { PixelRatio, StyleSheet, useWindowDimensions } from 'react-native';
-import { useDerivedValue } from 'react-native-reanimated';
+import { Canvas, LinearGradient, Picture, Rect, createPicture, vec } from '@shopify/react-native-skia';
+import { StyleSheet, useWindowDimensions } from 'react-native';
+import { useDerivedValue, useSharedValue } from 'react-native-reanimated';
 import { sky as skyColors } from '@/theme/colors';
-import { constellationLabelSize, skyLabelFont } from '@/theme/text';
-import { drawBackdrop } from './drawBackdrop';
-import { PLANET_WIDTH, drawBakery } from './drawBakery';
+import { drawBackdrop, type StarSpots } from './drawBackdrop';
 import { drawConstellations } from './drawConstellations';
-import { drawRocket, drawTrail, makeRocketArt } from './rocketArt';
-import { makeDustTile } from './dustTile';
-import { makePlanetSprite } from './planetSprite';
+import { drawTrail } from './drawTrail';
 import { useSky } from './SkyProvider';
 
-/** The eight cookie box pictures that float out of the chimney. */
-const BOX_IMAGES = [
-  require('../../../assets/images/boxes/box-0.webp'),
-  require('../../../assets/images/boxes/box-1.webp'),
-  require('../../../assets/images/boxes/box-2.webp'),
-  require('../../../assets/images/boxes/box-3.webp'),
-  require('../../../assets/images/boxes/box-4.webp'),
-  require('../../../assets/images/boxes/box-5.webp'),
-  require('../../../assets/images/boxes/box-6.webp'),
-  require('../../../assets/images/boxes/box-7.webp'),
-];
-
-/** Draws the living sky. Place it once, behind the tabs. */
+/** Draws the star sky. Place it once, behind the tabs, under the planet and rocket views. */
 export function SkyCanvas() {
   const { width, height } = useWindowDimensions();
-  const { sky, clock, constellations, labelWidths } = useSky();
-  const font = useFont(skyLabelFont, constellationLabelSize);
-  const planetImage = useImage(require('../../../assets/images/bakery-cookie.webp'));
-  const planet = useMemo(() => (planetImage ? makePlanetSprite(planetImage, PLANET_WIDTH, PixelRatio.get()) : null), [planetImage]);
-  const box0 = useImage(BOX_IMAGES[0]);
-  const box1 = useImage(BOX_IMAGES[1]);
-  const box2 = useImage(BOX_IMAGES[2]);
-  const box3 = useImage(BOX_IMAGES[3]);
-  const box4 = useImage(BOX_IMAGES[4]);
-  const box5 = useImage(BOX_IMAGES[5]);
-  const box6 = useImage(BOX_IMAGES[6]);
-  const box7 = useImage(BOX_IMAGES[7]);
-  const boxes = useMemo(() => [box0, box1, box2, box3, box4, box5, box6, box7], [box0, box1, box2, box3, box4, box5, box6, box7]);
-  const dustTile = useMemo(() => makeDustTile(), []);
-  const rocketArt = useMemo(() => makeRocketArt(), []);
+  const { sky, clock, constellations, art } = useSky();
+  // The star spots are remembered on the animation thread, in an object made there the first time. An object
+  // handed over from React is sealed, so new spots could not be added to it. The drawing below also runs once
+  // on the React side before the animation thread takes over; that run gets a throwaway memory.
+  const starSpots = useSharedValue<{ spots: StarSpots | null }>({ spots: null });
 
   const picture = useDerivedValue(() => {
-    const now = clock.value;
-    const s = sky.value;
+    const now = clock.get();
+    const s = sky.get();
+    const holder = starSpots.get();
+    let spots = holder.spots;
+    if (!spots) {
+      spots = {};
+      if (globalThis._WORKLET) holder.spots = spots;
+    }
     return createPicture(
       (canvas) => {
-        drawBackdrop(canvas, s, now, dustTile);
-        drawConstellations(canvas, s, now, constellations, font, labelWidths);
-        drawBakery(canvas, s, now, planet, boxes, s.worldShown);
+        drawBackdrop(canvas, s, now, art.backdrop, spots);
+        drawConstellations(canvas, s, now, constellations, art.labels);
         drawTrail(canvas, s, s.worldShown);
-        drawRocket(canvas, s, now, rocketArt, s.worldShown);
       },
       { width: s.width, height: s.height },
     );
-  }, [dustTile, rocketArt, font, planet, boxes, constellations, labelWidths]);
+  });
 
   return (
     <Canvas style={StyleSheet.absoluteFill} pointerEvents="none">

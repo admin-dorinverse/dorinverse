@@ -5,7 +5,9 @@ import { TabList, TabSlot, TabTrigger, Tabs } from 'expo-router/ui';
 import { StyleSheet } from 'react-native';
 import { GlassBackdrop } from '@/components/common/Glass';
 import { KnobTabs } from '@/components/common/KnobTabs';
+import { BakeryPlanet } from '@/components/sky/BakeryPlanet';
 import { Hud } from '@/components/sky/Hud';
+import { RocketView } from '@/components/sky/RocketView';
 import { SkyCanvas } from '@/components/sky/SkyCanvas';
 
 /** The tabs layout. The hidden list declares the tabs; the knob tabs are the buttons people see. */
@@ -22,6 +24,8 @@ export default function TabsLayout() {
         }
       >
         <SkyCanvas />
+        <BakeryPlanet />
+        <RocketView />
       </GlassBackdrop>
       <TabList style={styles.hidden}>
         <TabTrigger name="sky" href="/" />

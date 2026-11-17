@@ -46,13 +46,13 @@ export function Dock() {
   return (
     <GlassSurface look="pill" style={[styles.dock, { bottom: insets.bottom + chrome.bottom }]}>
       <DockButton label="Shop">
-        <Image source={require('../../../assets/images/icons/shop.png')} style={{ width: size, height: size }} contentFit="contain" />
+        <Image source={require('../../../assets/images/icons/shop.webp')} style={{ width: size, height: size }} contentFit="contain" />
       </DockButton>
       <DockButton label="Reading plans">
         <SvgPicture svg={READING_SVG} width={size} height={size} />
       </DockButton>
       <DockButton label="Notifications">
-        <Image source={require('../../../assets/images/icons/notifications.png')} style={{ width: size, height: size }} contentFit="contain" />
+        <Image source={require('../../../assets/images/icons/notifications.webp')} style={{ width: size, height: size }} contentFit="contain" />
       </DockButton>
       <DockButton label="My Hangar">
         <SvgPicture svg={HANGAR_SVG} width={size} height={size} />
