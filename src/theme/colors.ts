@@ -67,6 +67,10 @@ export const glass = {
   backdrop: 'rgba(5,6,20,0.45)',
   /** Fill of the Star Map card. */
   mapCard: 'rgba(18,20,58,0.62)',
+  /** Light dark base under the tinted hero cards, standing in for the design's blur. */
+  cardBase: 'rgba(16,15,44,0.32)',
+  /** Bottom of a hero card's gradient. */
+  cardBottom: 'rgba(10,10,35,0.25)',
   /** Soft white used for small round buttons on glass. */
   button: 'rgba(255,255,255,0.12)',
 } as const;
@@ -89,6 +93,63 @@ export const text = {
   onDarkSoft: 'rgba(255,255,255,0.82)',
   /** Gold for small headings on dark screens. */
   goldNote: '#ffd98a',
+} as const;
+
+/** The Collections cards' accent colors, one per collection, from the Constellations design. */
+export const collectionHues = {
+  /** Bible verses. */
+  amber: '#ffc65c',
+  /** Characters. */
+  berry: '#ff7d9c',
+  /** Places. */
+  sage: '#7dffb4',
+  /** Prophecy and Fulfillment of Jesus. */
+  blue: '#8fd8ff',
+  /** Instructions for Today. */
+  cocoa: '#e0a46a',
+  /** Prayers. */
+  lav: '#c9a8ff',
+} as const;
+
+/** One of the Collections accent colors. */
+export type CollectionHue = keyof typeof collectionHues;
+
+/** The Collections art's fixed colors: book spines, character cards, the candle and the compass. */
+export const collectionArt = {
+  /** Book spine colors as [middle, edge] pairs; each book picks one from its name. */
+  spines: [
+    ['#ffc65c', '#f2a93b'],
+    ['#ff9d6c', '#e0774a'],
+    ['#ffe39a', '#f2c96a'],
+    ['#f2a93b', '#c9821f'],
+  ],
+  /** Spine of a placeholder book, shown until enough books are collected. */
+  blankSpine: ['#b98a52', '#8a6236'],
+  /** Title and band color on a book spine. */
+  spineInk: '#3a2606',
+  /** The wooden shelf, top to bottom. */
+  shelfTop: '#d9a35a',
+  shelfBottom: '#8a5a26',
+  /** A character card's gradient, top-left to bottom-right. */
+  cardFront: ['#ff9fb6', '#d4507a', '#6e1f45'],
+  /** A "Who's next?" card's gradient. */
+  cardBack: ['#3a2140', '#1d1230'],
+  /** Dark text on the card's light pills. */
+  cardInk: '#2a0a14',
+  /** The NEW badge on the newest character. */
+  newBadge: '#ffe39a',
+  /** Inside of a place pin. */
+  pinInside: '#123a2a',
+  /** The compass needle's north and south halves, and its middle. */
+  needleNorth: '#ff7a5c',
+  needleSouth: '#f4e6d2',
+  compassHub: '#3a2414',
+  /** The prayer candle, its top, wick, and flame outer and inner. */
+  candle: '#f6ead7',
+  candleTop: '#fff8ec',
+  wick: '#3a2a1c',
+  flameOuter: '#ffb347',
+  flameInner: '#fff3b0',
 } as const;
 
 /** Deep navy used for dark text on bright buttons and pills. */
