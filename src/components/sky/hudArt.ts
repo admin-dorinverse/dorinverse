@@ -1,0 +1,31 @@
+// The small pictures used by the HUD and the dock, copied from the Constellations design as SVG drawings.
+
+/** The baking tray with two dough balls and a star, shown in the "Questions left" pill. Drawn rotated 90°. */
+export const TRAY_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 -3 58 58"><defs><radialGradient id="d" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#fbe6bd"/><stop offset=".55" stop-color="#ebc488"/><stop offset="1" stop-color="#c9935a"/></radialGradient><radialGradient id="h" cx=".5" cy=".5" r=".5"><stop offset=".4" stop-color="#ffd98a" stop-opacity=".6"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient><radialGradient id="s" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#fff3c4"/><stop offset=".6" stop-color="#ffcf6a" stop-opacity=".5"/><stop offset="1" stop-color="#ffcf6a" stop-opacity="0"/></radialGradient></defs><circle cx="40" cy="26" r="13" fill="none" stroke="#ffe7a8" stroke-opacity=".6" stroke-width="1" stroke-dasharray=".2 2.4" stroke-linecap="round"/><circle cx="40" cy="26" r="23" fill="none" stroke="#ffe7a8" stroke-opacity=".5" stroke-width="1" stroke-dasharray=".2 2.6" stroke-linecap="round"/><path d="M41.49 26.21 L42.37 9.17 L38.51 25.79 Z" fill="#fff3c4"/><path d="M40.87 25.50 L34.00 15.61 L39.13 26.50 Z" fill="#ffd27a"/><path d="M40.78 26.78 L49.19 16.81 L39.22 25.22 Z" fill="#ffd27a"/><path d="M40.19 27.39 L55.84 23.77 L39.81 24.61 Z" fill="#fff3c4"/><path d="M39.50 26.87 L49.53 31.50 L40.50 25.13 Z" fill="#ffd27a"/><path d="M38.85 26.61 L47.04 39.24 L41.15 25.39 Z" fill="#fff3c4"/><path d="M38.92 25.81 L37.92 37.82 L41.08 26.19 Z" fill="#ffd27a"/><path d="M39.91 24.70 L26.03 26.98 L40.09 27.30 Z" fill="#fff3c4"/><path d="M40.48 25.24 L32.37 21.23 L39.52 26.76 Z" fill="#ffd27a"/><path d="M40.40 25.31 L32.21 21.50 L39.60 26.69 Z" fill="#ffd27a"/><circle cx="40" cy="26" r="7" fill="url(#s)"/><circle cx="40" cy="26" r="2.6" fill="#fff"/><path d="M22.4 23.1 Q25.15 33.8 28.9 35.5" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="1.2" stroke-dasharray=".2 2.6" stroke-linecap="round"/>${dough(18.4, 19.1)}${dough(33.9, 38.5)}</svg>`;
+
+/** One dough ball on the tray, with its warm halo. */
+function dough(x: number, y: number): string {
+  return `<circle cx="${x}" cy="${y}" r="13.6" fill="url(#h)"/><g transform="translate(${x} ${y - 1}) scale(0.44)"><path d="M-21 10 C-22 6 -19 4 -17 5 C-17 1 -13 0 -11 2 C-10 -1 -6 -1 -4.5 1 C-3 -2 2 -2 3.5 1 C5 -1 9 -1 10 2 C12 0 16 1 16 5 C19 4 21 7 19 10 C17 14 12 15 8 14 C4 16 -2 16 -6 15 C-10 16 -15 15 -18 13 C-20 12.5 -21 11.5 -21 10 Z" fill="#d9a964"/><path d="M-18 7 C-19 -8 -11 -18 -1 -18 C9 -18 17 -9 16 7 C10 10 -12 10 -18 7 Z" fill="url(#d)"/><path d="M-8 -10 C-4 -14 2 -14 5 -11 M-6 -6 C-2 -9 2 -9 5 -7" stroke="#b9823d" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".85"/><circle cx="-12" cy="0" r="1.5" fill="#8a5a2a"/><circle cx="9" cy="-2" r="1.4" fill="#8a5a2a"/><circle cx="3" cy="4" r="1.3" fill="#8a5a2a"/></g>`;
+}
+
+/** An open book with a red ribbon and a green check, for the Reading plans dock button. */
+export const READING_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 56"><defs><linearGradient id="l" x1="0" x2="1"><stop offset="0" stop-color="#f3e6c8"/><stop offset="1" stop-color="#fffaf0"/></linearGradient><linearGradient id="r" x1="0" x2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#ecdcb8"/></linearGradient><linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a4a26"/><stop offset="1" stop-color="#5a2e16"/></linearGradient></defs><path d="M4 14 L32 18 L60 14 L60 48 L32 52 L4 48 Z" fill="url(#c)"/><path d="M7 11 C16 9 25 10 31 15 L31 48 C25 44 16 43 7 45 Z" fill="url(#l)" stroke="#c9b48a" stroke-width="1"/><path d="M57 11 C48 9 39 10 33 15 L33 48 C39 44 48 43 57 45 Z" fill="url(#r)" stroke="#c9b48a" stroke-width="1"/><path d="M12 19 h14 M12 24 h14 M12 29 h11 M38 19 h14 M38 24 h14 M38 29 h10" stroke="#c8b590" stroke-width="2" stroke-linecap="round"/><path d="M44 10 L44 36 L48 32 L52 36 L52 10 Z" fill="#d84a3a" stroke="#9b2e22" stroke-width="1"/><circle cx="18" cy="38" r="5.5" fill="#5c9a2e"/><path d="M15.4 38.2 l1.9 1.9 3.4-3.6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+/** A domed hangar with a little rocket inside, for the My Hangar dock button. */
+export const HANGAR_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ea2d6"/><stop offset="1" stop-color="#4a5a8e"/></linearGradient></defs><path d="M4 40 V24 A20 18 0 0 1 44 24 V40 Z" fill="url(#g)" stroke="#2c355e" stroke-width="1.6"/><path d="M12 40 V27 A12 11 0 0 1 36 27 V40 Z" fill="#1c2244"/><path d="M8 22 A18 16 0 0 1 40 22" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="1.4"/><g transform="translate(24 30)"><path d="M0 -12 C4 -8 5 -2 4 6 L-4 6 C-5 -2 -4 -8 0 -12 Z" fill="#fffaf0" stroke="#4a2c17" stroke-width="1"/><path d="M0 -12 C2 -10 3 -8 3.5 -6 L-3.5 -6 C-3 -8 -2 -10 0 -12 Z" fill="#e5624a"/><circle cy="-1" r="1.8" fill="#5fb8e8"/><path d="M-4 3 L-7 8 L-4 7 Z M4 3 L7 8 L4 7 Z" fill="#a0643a"/><path d="M-2 7 L0 11 L2 7 Z" fill="#ffb347"/></g><rect x="2" y="39" width="44" height="4" rx="2" fill="#2c355e"/></svg>`;
+
+/** The rainbow streak flame's four shapes and its two rainbow gradients (bottom to top). */
+export const FIRE = {
+  /** Small left flame tongue. */
+  left: 'M8 30 C4 22 8 16 9 10 C12 16 14 18 15 22 Z',
+  /** Small right flame tongue. */
+  right: 'M32 30 C36 22 33 15 31 9 C29 15 27 18 25 22 Z',
+  /** The main flame. */
+  main: 'M20 1 C25 12 35 17 35 31 C35 41 28 47 20 47 C12 47 5 41 5 31 C5 23 10 19 12 12 C14 17 16 19 18 20 C18 13 17 7 20 1 Z',
+  /** The inner flame. */
+  inner: 'M20 22 C23 28 27 31 27 37 C27 42 24 45 20 45 C16 45 13 42 13 37 C13 33 16 31 17 27 C18 30 19 31 20 31 C20 28 19 25 20 22 Z',
+  /** Rainbow for the outer flames. */
+  rainbow: { colors: ['#ff2d55', '#ff8a1f', '#ffe03a', '#3ee07f', '#2fa8ff', '#8b5cff', '#d36bff'], positions: [0, 0.2, 0.38, 0.56, 0.74, 0.9, 1] },
+  /** Gold to pink to violet for the inner flame. */
+  inside: { colors: ['#ffd23a', '#ff5fa8', '#7a5cff'], positions: [0, 0.5, 1] },
+} as const;

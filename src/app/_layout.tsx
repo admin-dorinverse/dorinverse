@@ -1,11 +1,34 @@
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
+// The root of the app: loads the fonts, turns on gestures, starts the shared sky, and holds the page stack.
 
+import { useFonts } from 'expo-font';
+import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { StyleSheet } from 'react-native';
+import { SkyProvider } from '@/components/sky/SkyProvider';
+import { sky } from '@/theme/colors';
+import { fontFiles } from '@/theme/text';
+
+/** Navigation colors: see-through pages so the sky shows behind the tabs. */
+const theme = { ...DarkTheme, colors: { ...DarkTheme.colors, background: 'transparent', card: 'transparent' } };
+
+/** The app's root layout. Shows nothing until the fonts are ready, so text never jumps. */
 export default function RootLayout() {
+  const [fontsLoaded] = useFonts(fontFiles);
+  if (!fontsLoaded) return null;
   return (
-    <>
-      <Stack screenOptions={{ headerShown: false }} />
-      <StatusBar style="auto" />
-    </>
+    <GestureHandlerRootView style={styles.root}>
+      <ThemeProvider value={theme}>
+        <SkyProvider>
+          <Stack screenOptions={{ headerShown: false, contentStyle: styles.page }} />
+        </SkyProvider>
+        <StatusBar style="light" />
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }
+
+const styles = StyleSheet.create({
+  root: { flex: 1, backgroundColor: sky.top },
+  page: { backgroundColor: 'transparent' },
+});

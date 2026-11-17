@@ -45,3 +45,35 @@ Every output the lesson run makes (the passage list, the tracker, each step's sa
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
 - Expo Go only includes its bundled native modules. After adding a library with native code, the app needs a development build: `npx expo run:ios|android` locally, or `eas build --profile development`.
 - Prefer recommended Expo modules over third-party libraries, and check your available skills before adding dependencies. Docs: https://docs.expo.dev/versions/latest/index.md
+
+## Code rules
+
+This repo is written for people first. Anyone who opens it should know where things are and why.
+
+**Clear and consistent**
+- Code reads clearly on its own. Names say what a thing is or does.
+- Every file starts with a short comment saying what it is for.
+- Every function, component, type and prop gets a short comment above it.
+- A comment is 3 sentences or fewer and makes one point.
+- A file is never more than 300 lines, styles included. If it grows past that, split it into smaller
+  pieces that each do one job. Never move code to another file just to get under the limit.
+- Do things the same way everywhere: styling, data types, names, folder layout.
+  Before writing something new, find how the repo already does it and do it that way.
+
+**Where things go**
+- `src/app/`: the pages. A file is one page; a folder is a page with more pages inside.
+- `src/components/`: pieces pages are built from. `common/` is for pieces many pages use;
+  other folders match the page they belong to.
+- `src/theme/`: colors, spacing and text styles. Every page uses these; no colors or sizes typed by hand.
+- `src/data/`: getting and saving data. `database.ts` connects to Supabase, `queries/` asks for data
+  (TanStack Query), `storage/` saves on the phone (expo-sqlite, encrypted).
+- `src/types/`: the shape of each kind of data.
+
+**Speed, security and cost come together**
+- A change that makes the app slower or less safe is not a fix.
+- Download only what the user opens. Save it on the phone and download again only if it changed.
+- The server decides points, collections and the 15-unfinished-lesson cap. The phone never does.
+- Never commit secrets (keys, passwords, `.env` files). Check before every commit.
+
+**Bible accuracy**
+- Bible text and lesson content come from the database, never typed into the app code.
