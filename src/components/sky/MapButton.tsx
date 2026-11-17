@@ -33,6 +33,8 @@ export function MapButton({ onPress }: MapButtonProps) {
     () => clock.value,
     (now) => {
       const s = sky.value;
+      // The button is hidden on other tabs, so the mini map is not redrawn there.
+      if (!s.atHome) return;
       const moving = s.atHome && now - s.lastMovedAt < 900 ? 1 : 0;
       if (moving !== big.value) big.value = moving;
       if (now - lastDrawn.value < (moving ? 40 : 90)) return;

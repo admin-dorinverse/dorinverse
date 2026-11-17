@@ -108,12 +108,12 @@ export function stepRocket(
   }
   for (let i = s.trail.length - 1; i >= 0; i--) {
     const p = s.trail[i];
-    p.life -= 1 / 60;
+    p.life -= dt;
     if (p.life <= 0) {
       s.trail.splice(i, 1);
       continue;
     }
-    p.x += p.vx / 60;
-    p.y += p.vy / 60;
+    p.x += p.vx * dt;
+    p.y += p.vy * dt;
   }
 }

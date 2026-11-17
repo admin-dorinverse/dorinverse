@@ -96,6 +96,7 @@ export function SkyProvider({ children }: SkyProviderProps) {
   const sky = useSharedValue<SkyState>(createSkyState(width, height, constellations.length));
   const clock = useSharedValue(0);
   const pulse = useSharedValue(0);
+  const pulseResting = useSharedValue(false);
   const reduceMotion = useReducedMotion();
   const font = useFont(skyLabelFont, constellationLabelSize);
   const labelWidths = useMemo(() => constellations.map((c) => (font ? font.measureText(c.name).width : 120)), [constellations, font]);
@@ -122,8 +123,12 @@ export function SkyProvider({ children }: SkyProviderProps) {
     const s = sky.get();
     const now = frame.timestamp;
     const arrivedAt = runSkyFrame(s, now, constellations, sharedLabelWidths.get());
-    if (now - pulse.get() >= BUSY_FRAME_MS - FRAME_SLACK_MS) pulse.set(now);
-    const gap = !s.atHome && s.worldShown === 0 ? AWAY_FRAME_MS : skyIsBusy(s) ? BUSY_FRAME_MS : CALM_FRAME_MS;
+    const away = !s.atHome && s.worldShown === 0;
+    // On other tabs the planet, rocket and Sky page are hidden, so the views that follow the pulse rest.
+    // One last pulse goes out as the fade ends, so they finish fully hidden.
+    if (away ? !pulseResting.get() : now - pulse.get() >= BUSY_FRAME_MS - FRAME_SLACK_MS) pulse.set(now);
+    if (pulseResting.get() !== away) pulseResting.set(away);
+    const gap = away ? AWAY_FRAME_MS : skyIsBusy(s) ? BUSY_FRAME_MS : CALM_FRAME_MS;
     if (now - clock.get() >= gap - FRAME_SLACK_MS) clock.set(now);
     if (arrivedAt) scheduleOnRN(arrive, arrivedAt);
   });
