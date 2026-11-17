@@ -71,6 +71,13 @@ This repo is written for people first. Anyone who opens it should know where thi
 
 **Speed, security and cost come together**
 - A change that makes the app slower or less safe is not a fix.
+- Every page must run smooth and stay cool on a cheap phone. Before a page is called done, it is opened on a real phone and checked: smooth, and not warm after 2 minutes.
+- Animations only move, grow or fade things. Anything that redraws itself says how often: 20 times a second for slow things, 60 only while something moves fast, never every screen refresh. All animation stops when its page is hidden or the app is in the background.
+- No live blur over anything that moves.
+- Long lists (chapters, verses, characters, places, questions) draw only what is on screen.
+- Work that gives the same answer every time (a picture, a size, a list) is done once and reused, never redone every frame.
+- Images are WebP and at most 150 KB. Sounds are .m4a and at most 100 KB. Videos stream from the server and are never packed into the app.
+- A check script fails the commit if an image or sound is too big or a file in `src/` is over 300 lines.
 - Download only what the user opens. Save it on the phone and download again only if it changed.
 - The server decides points, collections and the 15-unfinished-lesson cap. The phone never does.
 - Never commit secrets (keys, passwords, `.env` files). Check before every commit.

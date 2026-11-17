@@ -38,7 +38,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "check-sizes": "node scripts/app/check-sizes.mjs",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "private": true
 }

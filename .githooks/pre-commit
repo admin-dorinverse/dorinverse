@@ -1,0 +1,3 @@
+#!/bin/sh
+# Runs before every commit: stops the commit if an image, sound or src file breaks the speed limits in AGENTS.md.
+node scripts/app/check-sizes.mjs
