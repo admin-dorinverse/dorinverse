@@ -13,10 +13,14 @@ import { fonts } from '@/theme/text';
 /** A four-pointed star centered on (x, y), as drawn in the design. */
 const star = (x: number, y: number) => `M${x} ${y - 12} L${x + 3} ${y - 3} L${x + 12} ${y} L${x + 3} ${y + 3} L${x} ${y + 12} L${x - 3} ${y + 3} L${x - 12} ${y} L${x - 3} ${y - 3}Z`;
 
-/** The prophecy scene's drawing size, and how much it is enlarged on the card. */
-const LINK_W = 150;
+/** The prophecy scene's drawing area (with room on both sides for the labels), and how big it shows on the card. */
+const LINK_LEFT = -20;
+const LINK_W = 190;
 const LINK_H = 84;
 const LINK_SCALE = 250 / 150;
+
+/** How much the "Fulfilled" star grows when the light reaches it. It is drawn at that size and shrunk otherwise. */
+const STAR_GROW = 1.45;
 
 /** How long one trip of the light takes, start to finish, then the pause before the next (ms). */
 const LINK_LOOP_MS = 2800;
@@ -25,25 +29,28 @@ const LINK_LOOP_MS = 2800;
 export function ProphecyLink({ clock }: { clock: AmbientClock }) {
   const c = collectionHues.blue;
   const { time, still } = clock;
+  const k = LINK_SCALE;
+  // Everything is drawn at the size it shows, never drawn small and enlarged, so it stays sharp.
   const light = useAnimatedStyle(() => {
     const p = loop(time.get(), LINK_LOOP_MS);
     const t = easeInOut(Math.min(1, p / 0.7));
     // A point along the arc from (22, 58) over (75, -4) to (128, 58).
     const x = (1 - t) * (1 - t) * 22 + 2 * (1 - t) * t * 75 + t * t * 128;
     const y = (1 - t) * (1 - t) * 58 + 2 * (1 - t) * t * -4 + t * t * 58;
-    return { opacity: still || p > 0.7 ? 0 : 1, transform: [{ translateX: x }, { translateY: y }] };
+    return { opacity: still || p > 0.7 ? 0 : 1, transform: [{ translateX: (x - LINK_LEFT) * k }, { translateY: y * k }] };
   });
   const flash = useAnimatedStyle(() => {
     const p = still ? 0.9 : loop(time.get(), LINK_LOOP_MS);
     const up = p < 0.62 ? 0 : p < 0.72 ? (p - 0.62) / 0.1 : 1 - (p - 0.72) / 0.28;
     const e = easeInOut(up);
-    return { opacity: mix(e, 0.6, 1), transform: [{ scale: mix(e, 0.8, 1.45) }] };
+    return { opacity: mix(e, 0.6, 1), transform: [{ scale: mix(e, 0.8, STAR_GROW) / STAR_GROW }] };
   });
 
+  const starBox = 26 * k * STAR_GROW;
   return (
     <View style={styles.linkStage}>
-      <View style={[styles.linkArt, { transform: [{ scale: LINK_SCALE }] }]}>
-        <Svg width={LINK_W} height={LINK_H} style={StyleSheet.absoluteFill}>
+      <View style={{ width: LINK_W * k, height: LINK_H * k }}>
+        <Svg width={LINK_W * k} height={LINK_H * k} viewBox={`${LINK_LEFT} 0 ${LINK_W} ${LINK_H}`} style={StyleSheet.absoluteFill}>
           <Path d="M22 58 Q75 -4 128 58" fill="none" stroke={mixColor(c, 0.3)} strokeWidth={2} strokeDasharray="3 5" />
           <Path d={star(22, 58)} fill="#ffffff" />
           <SvgText x={22} y={82} fill="rgba(255,255,255,0.7)" fontFamily={fonts.extraBold} fontSize={9.5} textAnchor="middle">
@@ -53,9 +60,11 @@ export function ProphecyLink({ clock }: { clock: AmbientClock }) {
             Fulfilled
           </SvgText>
         </Svg>
-        <Animated.View style={[styles.linkLight, { backgroundColor: c, boxShadow: `0 0 4px ${c}, 0 0 10px ${c}` }, light]} />
-        <Animated.View style={[styles.linkStar, flash]}>
-          <Svg width={26} height={26} viewBox="116 46 24 24">
+        <Animated.View style={[styles.linkLight, { left: -3 * k, top: -3 * k, width: 6 * k, height: 6 * k, borderRadius: 3 * k, backgroundColor: c, boxShadow: `0 0 4px ${c}, 0 0 10px ${c}` }, light]} />
+        <Animated.View
+          style={[styles.linkStar, { left: (128 - LINK_LEFT) * k - starBox / 2, top: 58 * k - starBox / 2, width: starBox, height: starBox }, flash]}
+        >
+          <Svg width={starBox} height={starBox} viewBox="115 45 26 26">
             <Path d={star(128, 58)} fill="#ffffff" />
           </Svg>
         </Animated.View>
@@ -170,7 +179,7 @@ function Spark({ x, delay, dx, clock }: { x: number; delay: number; dx: number; 
     const e = easeOut(p);
     return {
       opacity: p < 0.2 ? p / 0.2 : 1 - (p - 0.2) / 0.8,
-      transform: [{ translateX: dx * e }, { translateY: -58 * e }, { scale: mix(e, 0.6, 1.1) }],
+      transform: [{ translateX: dx * e }, { translateY: -58 * e }, { scale: mix(e, 0.6, 1.1) / 1.1 }],
     };
   });
   return <Animated.View style={[styles.spark, { left: x, boxShadow: `0 0 6px ${c}, 0 0 12px ${c}` }, style]} />;
@@ -178,12 +187,11 @@ function Spark({ x, delay, dx, clock }: { x: number; delay: number; dx: number; 
 
 const styles = StyleSheet.create({
   linkStage: { alignItems: 'center', paddingTop: 6, paddingBottom: 18 },
-  linkArt: { width: LINK_W, height: LINK_H, marginVertical: ((LINK_SCALE - 1) * LINK_H) / 2 },
-  linkLight: { position: 'absolute', left: -3, top: -3, width: 6, height: 6, borderRadius: 3 },
-  linkStar: { position: 'absolute', left: 115, top: 45, width: 26, height: 26 },
+  linkLight: { position: 'absolute' },
+  linkStar: { position: 'absolute' },
   compass: { width: 84, height: 84 },
   pray: { width: 110, height: 92 },
   candle: { position: 'absolute', left: 33, bottom: 0, width: 44, height: 60 },
   flame: { position: 'absolute', left: 0, top: 0, width: 44, height: 44, transformOrigin: '22px 22px' },
-  spark: { position: 'absolute', bottom: 46, width: 5, height: 5, borderRadius: 3, backgroundColor: '#ffffff' },
+  spark: { position: 'absolute', bottom: 46, width: 5.5, height: 5.5, borderRadius: 3, backgroundColor: '#ffffff' },
 });

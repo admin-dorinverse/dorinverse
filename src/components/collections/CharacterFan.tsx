@@ -15,11 +15,14 @@ import type { CollectedCharacter } from '@/types/collection';
 const TURN_EVERY_MS = 3400;
 const TURN_MS = 800;
 
-/** Where a card can stand: in front, or tucked behind on the left or right. */
+/**
+ * Where a card can stand: in front, or tucked behind on the left or right. The front card shows at full size;
+ * cards are never enlarged past the size they are drawn at, which would make them blurry.
+ */
 const SPOTS = {
-  front: { x: 0, y: -4, turn: 0, scale: 1.06, dim: 0 },
-  left: { x: -82, y: 10, turn: -13, scale: 0.88, dim: 0.28 },
-  right: { x: 82, y: 10, turn: 13, scale: 0.88, dim: 0.28 },
+  front: { x: 0, y: -4, turn: 0, scale: 1, dim: 0 },
+  left: { x: -82, y: 10, turn: -13, scale: 0.83, dim: 0.28 },
+  right: { x: 82, y: 10, turn: 13, scale: 0.83, dim: 0.28 },
 } as const;
 
 /** A spot's name. */
@@ -165,10 +168,10 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: '50%',
     top: 8,
-    width: 112,
-    height: 150,
-    marginLeft: -56,
-    borderRadius: 18,
+    width: 119,
+    height: 159,
+    marginLeft: -59.5,
+    borderRadius: 19,
     alignItems: 'center',
     justifyContent: 'center',
     gap: 2,
@@ -186,9 +189,9 @@ const styles = StyleSheet.create({
     borderStyle: 'dashed',
   },
   badge: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
+    width: 59,
+    height: 59,
+    borderRadius: 29.5,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 6,
@@ -196,14 +199,14 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,255,255,0.75)',
     backgroundImage: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.45), rgba(255,255,255,0.08) 60%)',
   },
-  badgeText: { fontFamily: fonts.black, fontSize: 26, color: '#ffffff', textShadowColor: 'rgba(0,0,0,0.3)', textShadowRadius: 6, textShadowOffset: { width: 0, height: 2 } },
-  name: { fontFamily: fonts.black, fontSize: 16, lineHeight: 18, color: '#ffffff' },
-  nameBack: { fontSize: 14, color: 'rgba(255,255,255,0.75)' },
-  reference: { fontFamily: fonts.extraBold, fontSize: 11.5, color: 'rgba(255,255,255,0.8)' },
+  badgeText: { fontFamily: fonts.black, fontSize: 27.5, color: '#ffffff', textShadowColor: 'rgba(0,0,0,0.3)', textShadowRadius: 6, textShadowOffset: { width: 0, height: 2 } },
+  name: { fontFamily: fonts.black, fontSize: 17, lineHeight: 19, color: '#ffffff' },
+  nameBack: { fontSize: 15, color: 'rgba(255,255,255,0.75)' },
+  reference: { fontFamily: fonts.extraBold, fontSize: 12, color: 'rgba(255,255,255,0.8)' },
   referenceBack: { color: 'rgba(255,255,255,0.5)' },
   mentions: {
     fontFamily: fonts.black,
-    fontSize: 10.5,
+    fontSize: 11,
     color: collectionArt.cardInk,
     backgroundColor: 'rgba(255,255,255,0.85)',
     paddingVertical: 2,
@@ -217,7 +220,7 @@ const styles = StyleSheet.create({
     top: 8,
     right: 8,
     fontFamily: fonts.black,
-    fontSize: 9,
+    fontSize: 9.5,
     letterSpacing: 0.8,
     color: collectionArt.cardInk,
     backgroundColor: collectionArt.newBadge,
@@ -226,13 +229,13 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     overflow: 'hidden',
   },
-  question: { fontFamily: fonts.black, fontSize: 40, lineHeight: 46, color: 'rgba(255,125,156,0.85)', textShadowColor: berry, textShadowRadius: 14, textShadowOffset: { width: 0, height: 0 }, marginBottom: 4 },
+  question: { fontFamily: fonts.black, fontSize: 42, lineHeight: 49, color: 'rgba(255,125,156,0.85)', textShadowColor: berry, textShadowRadius: 14, textShadowOffset: { width: 0, height: 0 }, marginBottom: 4 },
   shine: {
     position: 'absolute',
     top: '-20%',
     bottom: '-20%',
     left: 0,
-    width: 56,
+    width: 59,
     backgroundImage: 'linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,0.55), rgba(255,255,255,0))',
   },
   dim: { ...StyleSheet.absoluteFill, backgroundColor: '#140812' },

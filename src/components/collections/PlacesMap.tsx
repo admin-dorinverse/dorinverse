@@ -60,7 +60,8 @@ type PlacesMapProps = {
 /** The journey map with up to three pins. */
 export function PlacesMap({ places, clock }: PlacesMapProps) {
   const { width } = useWindowDimensions();
-  const scale = (Math.min(width, PAGE_MAX) - gutter * 2 - 2 - MAP_PAD * 2) / MAP_W;
+  // The map is drawn at the size it shows, never drawn small and enlarged, so lines and text stay sharp.
+  const s = (Math.min(width, PAGE_MAX) - gutter * 2 - 2 - MAP_PAD * 2) / MAP_W;
   const pinned = places.slice(-3);
   const c = collectionHues.sage;
   const { time, still } = clock;
@@ -69,25 +70,31 @@ export function PlacesMap({ places, clock }: PlacesMapProps) {
   const walker = useAnimatedStyle(() => {
     const p = loop(time.get(), 4500, 3000);
     const [x, y] = routePoint(p);
-    return { opacity: still || time.get() < 3000 ? 0 : 1, transform: [{ translateX: x }, { translateY: y }] };
+    return { opacity: still || time.get() < 3000 ? 0 : 1, transform: [{ translateX: x * s }, { translateY: y * s }] };
   });
 
+  const box = { width: MAP_W * s, height: MAP_H * s };
+  const view = `0 0 ${MAP_W} ${MAP_H}`;
   return (
-    <View style={[styles.wrap, { height: MAP_H * scale + 10 }]}>
-      <View style={[styles.map, { transform: [{ scale }] }]}>
-        <Svg width={MAP_W} height={MAP_H} style={StyleSheet.absoluteFill}>
+    <View style={[styles.wrap, { height: MAP_H * s + 10 }]}>
+      <View style={box}>
+        <Svg width={box.width} height={box.height} viewBox={view} style={StyleSheet.absoluteFill}>
           {CONTOURS.map((d) => (
             <Path key={d} d={d} fill="none" stroke={mixColor(c, 0.22)} strokeWidth={1} />
           ))}
         </Svg>
         <Animated.View style={[StyleSheet.absoluteFill, route]}>
-          <Svg width={MAP_W} height={MAP_H}>
+          <Svg width={box.width} height={box.height} viewBox={view}>
             <Path d={ROUTE} fill="none" stroke={mixColor(c, 0.85, '#ffffff')} strokeWidth={2.2} strokeDasharray="2 7" strokeLinecap="round" />
           </Svg>
         </Animated.View>
-        {pinned.length > 1 && <Animated.View style={[styles.walker, { boxShadow: `0 0 4px ${c}, 0 0 9px ${c}` }, walker]} />}
+        {pinned.length > 1 && (
+          <Animated.View
+            style={[styles.walker, { left: -2.8 * s, top: -2.8 * s, width: 5.6 * s, height: 5.6 * s, borderRadius: 3 * s, boxShadow: `0 0 4px ${c}, 0 0 9px ${c}` }, walker]}
+          />
+        )}
         {PIN_SPOTS.map(([x, y], i) => (
-          <MapPin key={i} x={x} y={y} index={i} place={pinned[i]} newest={i === pinned.length - 1} clock={clock} />
+          <MapPin key={i} x={x * s} y={y * s} s={s} index={i} place={pinned[i]} newest={i === pinned.length - 1} clock={clock} />
         ))}
       </View>
     </View>
@@ -96,9 +103,11 @@ export function PlacesMap({ places, clock }: PlacesMapProps) {
 
 /** Props for one pin. */
 type MapPinProps = {
-  /** Where the pin's point touches the map. */
+  /** Where the pin's point touches the map, in points on screen. */
   x: number;
   y: number;
+  /** How much bigger the map shows than its drawing size. */
+  s: number;
   /** The pin's place in line, which sets when it drops. */
   index: number;
   /** The place on the pin, or none for a "Next stop" pin. */
@@ -109,28 +118,37 @@ type MapPinProps = {
   clock: AmbientClock;
 };
 
+/** How big the pulse ring grows, as a multiple of its starting size. */
+const PULSE_GROW = 2.2;
+
 /** One pin with its name under it. */
-function MapPin({ x, y, index, place, newest, clock }: MapPinProps) {
+function MapPin({ x, y, s, index, place, newest, clock }: MapPinProps) {
   const c = collectionHues.sage;
   const { time, still } = clock;
   const drop = useAnimatedStyle(() => {
     if (still) return { opacity: 1, transform: [{ translateY: 0 }, { scale: 1 }] };
     const t = progress(time.get(), 200 + index * 350, 700);
     const e = easeOutBack(t, 1.8);
-    return { opacity: clamp01(t / 0.6), transform: [{ translateY: mix(e, -36, 0) }, { scale: mix(e, 0.6, 1) }] };
+    return { opacity: clamp01(t / 0.6), transform: [{ translateY: mix(e, -36, 0) * s }, { scale: mix(e, 0.6, 1) }] };
   });
+  // The ring is drawn at its biggest size and only ever shrunk, so it never turns blurry.
   const pulse = useAnimatedStyle(() => {
     if (still) return { opacity: 0 };
     const p = loop(time.get(), 2200, 1400);
-    return { opacity: time.get() < 1400 ? 0 : mix(p, 0.9, 0), transform: [{ scale: mix(easeInOut(p), 0.4, 2.2) }] };
+    return { opacity: time.get() < 1400 ? 0 : mix(p, 0.9, 0), transform: [{ scale: mix(easeInOut(p), 0.4, PULSE_GROW) / PULSE_GROW }] };
   });
 
+  const ring = { w: 28 * PULSE_GROW * s, h: 10 * PULSE_GROW * s };
   return (
     <View style={[styles.pinSpot, { left: x, top: y }]}>
-      {place && newest && <Animated.View style={[styles.pulse, { borderColor: c }, pulse]} />}
-      {place && <View style={styles.shadow} />}
-      <Animated.View style={[styles.pin, drop]}>
-        <Svg width={26} height={36} viewBox="-13 -35 26 36">
+      {place && newest && (
+        <Animated.View
+          style={[styles.pulse, { top: -ring.h / 2, width: ring.w, height: ring.h, borderRadius: ring.w / 2, borderWidth: 1.5 * PULSE_GROW * s, borderColor: c }, pulse]}
+        />
+      )}
+      {place && <View style={[styles.shadow, { top: -2.5 * s, width: 14 * s, height: 5 * s, borderRadius: 7 * s }]} />}
+      <Animated.View style={[styles.pin, { top: -35 * s, width: 26 * s, height: 36 * s }, drop]}>
+        <Svg width={26 * s} height={36 * s} viewBox="-13 -35 26 36">
           {place ? (
             <>
               <Path d="M0 0 C-7 -9 -12 -15 -12 -22 A12 12 0 1 1 12 -22 C12 -15 7 -9 0 0Z" fill={c} stroke="rgba(255,255,255,0.8)" strokeWidth={1.5} />
@@ -140,25 +158,26 @@ function MapPin({ x, y, index, place, newest, clock }: MapPinProps) {
             <Path d="M0 0 C-7 -9 -11 -15 -11 -21 A11 11 0 1 1 11 -21 C11 -15 7 -9 0 0Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.45)" strokeDasharray="3 3" />
           )}
         </Svg>
-        <Text style={[styles.pinMark, !place && styles.pinMarkEmpty]}>{place ? place.emoji : '?'}</Text>
+        <Text style={[styles.pinMark, { top: 5 * s, width: 26 * s, fontSize: 11 * s, lineHeight: 16 * s }, !place && [styles.pinMarkEmpty, { fontSize: 12 * s, top: 6 * s }]]}>
+          {place ? place.emoji : '?'}
+        </Text>
       </Animated.View>
-      <Text style={[styles.name, !place && styles.nameEmpty]}>{place ? place.name : 'Next stop'}</Text>
-      {place && <Text style={styles.book}>{place.book}</Text>}
+      <Text style={[styles.name, { top: 5 * s, fontSize: 12.5 * s }, !place && styles.nameEmpty]}>{place ? place.name : 'Next stop'}</Text>
+      {place && <Text style={[styles.book, { top: 19 * s, fontSize: 10 * s }]}>{place.book}</Text>}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   wrap: { paddingHorizontal: MAP_PAD, overflow: 'visible' },
-  map: { width: MAP_W, height: MAP_H, transformOrigin: '0% 0%' },
-  walker: { position: 'absolute', left: -2.8, top: -2.8, width: 5.6, height: 5.6, borderRadius: 3, backgroundColor: '#ffffff' },
+  walker: { position: 'absolute', backgroundColor: '#ffffff' },
   pinSpot: { position: 'absolute', width: 0, height: 0, alignItems: 'center', overflow: 'visible' },
-  pulse: { position: 'absolute', top: -5, width: 28, height: 10, borderRadius: 14, borderWidth: 1.5 },
-  shadow: { position: 'absolute', top: -2.5, width: 14, height: 5, borderRadius: 7, backgroundColor: 'rgba(0,0,0,0.35)' },
-  pin: { position: 'absolute', top: -35, width: 26, height: 36, alignItems: 'center', transformOrigin: '50% 100%' },
-  pinMark: { position: 'absolute', top: 5, width: 26, textAlign: 'center', fontSize: 11, lineHeight: 16 },
-  pinMarkEmpty: { fontFamily: fonts.black, fontSize: 12, color: 'rgba(255,255,255,0.6)', top: 6 },
-  name: { position: 'absolute', top: 5, width: 120, textAlign: 'center', fontFamily: fonts.black, fontSize: 12.5, color: '#ffffff' },
+  pulse: { position: 'absolute' },
+  shadow: { position: 'absolute', backgroundColor: 'rgba(0,0,0,0.35)' },
+  pin: { position: 'absolute', alignItems: 'center', transformOrigin: '50% 100%' },
+  pinMark: { position: 'absolute', textAlign: 'center' },
+  pinMarkEmpty: { fontFamily: fonts.black, color: 'rgba(255,255,255,0.6)' },
+  name: { position: 'absolute', width: 140, textAlign: 'center', fontFamily: fonts.black, color: '#ffffff' },
   nameEmpty: { color: 'rgba(255,255,255,0.5)' },
-  book: { position: 'absolute', top: 19, width: 120, textAlign: 'center', fontFamily: fonts.bold, fontSize: 10, color: 'rgba(255,255,255,0.6)' },
+  book: { position: 'absolute', width: 140, textAlign: 'center', fontFamily: fonts.bold, color: 'rgba(255,255,255,0.6)' },
 });

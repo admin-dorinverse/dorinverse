@@ -189,7 +189,7 @@ function Mote({ x, delay, clock }: { x: number; delay: number; clock: AmbientClo
     if (clock.still) return { opacity: 0 };
     const p = loop(clock.time.get(), 3300, delay);
     const opacity = p < 0.2 ? p / 0.2 : 1 - (p - 0.2) / 0.8;
-    return { opacity: clock.time.get() < delay ? 0 : opacity, transform: [{ translateX: 6 * p }, { translateY: -58 * easeOutBack(p, 0) }, { scale: mix(p, 0.6, 1.1) }] };
+    return { opacity: clock.time.get() < delay ? 0 : opacity, transform: [{ translateX: 6 * p }, { translateY: -58 * easeOutBack(p, 0) }, { scale: mix(p, 0.6, 1.1) / 1.1 }] };
   });
   return <Animated.View style={[styles.mote, { left: `${x}%` }, style]} />;
 }
@@ -228,8 +228,8 @@ const styles = StyleSheet.create({
   mote: {
     position: 'absolute',
     bottom: '100%',
-    width: 5,
-    height: 5,
+    width: 5.5,
+    height: 5.5,
     borderRadius: 3,
     backgroundColor: '#ffffff',
     boxShadow: '0 0 6px #ffd27a, 0 0 12px #ffc65c',

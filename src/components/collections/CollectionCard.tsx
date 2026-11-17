@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
   pill: { borderRadius: 999, paddingVertical: 8, paddingHorizontal: 14 },
   pillText: { fontFamily: fonts.black, fontSize: 13.5, color: navy },
   stage: { width: '100%' },
-  stageNarrow: { height: 96, alignItems: 'center', justifyContent: 'center' },
+  // On a narrow card the scene fills the space left, so both narrow cards keep their pill at the same bottom spot.
+  stageNarrow: { flexGrow: 1, minHeight: 96, alignItems: 'center', justifyContent: 'center' },
   foot: { flexDirection: 'row', paddingHorizontal: 12, paddingBottom: 14 },
 });
