@@ -105,7 +105,7 @@ function toCard(row: CardRow): DownloadedCard {
     return { title: m.title, description: m.description, passage: m.passage, ...(place ? { place } : {}) };
   });
   const places = row.places
-    .map((p) => ({ name: p.place.name, verseCount: p.verses_naming_both }))
+    .map((p) => ({ id: p.place.id, name: p.place.name, verseCount: p.verses_naming_both }))
     .sort((a, b) => b.verseCount - a.verseCount || a.name.localeCompare(b.name));
   const links: CharacterLink[] = [
     ...row.linksFrom.map((l) => ({ otherId: l.to_card_id, type: l.type, why: l.why })),

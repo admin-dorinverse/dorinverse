@@ -8,9 +8,9 @@ import { useMemo, useState } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BlankCell, CharacterCell } from '@/components/characters/CharacterCell';
-import { GridHeader } from '@/components/characters/GridHeader';
-import { gridRows, type GridRow } from '@/components/characters/gridRows';
+import { CollectedGridHeader } from '@/components/common/CollectedGridHeader';
 import { DrillHeader } from '@/components/common/DrillHeader';
+import { gridRows, type GridRow } from '@/components/common/gridRows';
 import { LoadState } from '@/components/common/LoadState';
 import { filterCharacters, sortCharacters, useCharacterLibrary, type CharacterOrder } from '@/data/queries/characters';
 import { characters as characterColors, reader, text } from '@/theme/colors';
@@ -23,6 +23,9 @@ const PAGE = 25;
 
 /** Cells across. */
 const COLUMNS = 3;
+
+/** The words under the big count. */
+const COUNT_LABEL = ['character met', 'characters met'] as const;
 
 /** The Characters grid page. */
 export default function CharactersPage() {
@@ -49,7 +52,7 @@ export default function CharactersPage() {
   const open = (character: MetCharacter) => router.push({ pathname: '/characters/[id]', params: { id: character.lookup } });
 
   /** Draws one line of the grid: a letter heading or a row of cells. */
-  const renderRow = ({ item }: { item: GridRow }) =>
+  const renderRow = ({ item }: { item: GridRow<MetCharacter> }) =>
     item.kind === 'letter' ? (
       <Text style={styles.letter}>{item.letter}</Text>
     ) : (
@@ -70,8 +73,11 @@ export default function CharactersPage() {
             keyExtractor={(r) => (r.kind === 'letter' ? `letter-${r.letter}` : r.key)}
             renderItem={renderRow}
             ListHeaderComponent={
-              <GridHeader
+              <CollectedGridHeader
                 count={library.data.characters.length}
+                countLabel={COUNT_LABEL}
+                placeholder="Search characters"
+                colors={characterColors}
                 query={query}
                 onQuery={setQuery}
                 books={library.data.books}

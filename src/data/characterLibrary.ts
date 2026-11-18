@@ -2,7 +2,7 @@
 // into ones to show and ones only counted, filtering the grid, and grouping a character's links into rows.
 // Plain functions, so the same code can be timed outside the app.
 
-import { BIBLE_OUTLINE } from '@/data/bibleOutline';
+import { bookOf, booksInOrder, sortByName, type ListOrder } from '@/data/collectedLists';
 import type { DownloadedCard } from '@/data/characterSource';
 import type { CharacterCard, CharacterLibrary, CharacterLookup, CollectedEntry, MetCharacter } from '@/types/character';
 
@@ -35,16 +35,6 @@ export const LINK_LABELS: Readonly<Record<string, string>> = {
   crossed_paths: 'Crossed paths',
 };
 
-/** Each book's place in the Bible, by name, for putting the book filter in order. */
-const BOOK_ORDER = new Map(BIBLE_OUTLINE.map((b) => [b.name, b.order]));
-
-/** The book of a passage like "Judges 3" or "Song of Solomon 2": everything before the chapter number. */
-export function bookOf(passage: string): string {
-  const space = passage.lastIndexOf(' ');
-  const first = passage.charAt(space + 1);
-  return space > 0 && first >= '0' && first <= '9' ? passage.slice(0, space) : passage;
-}
-
 /** The letter on a character's round badge. */
 export function initialOf(name: string): string {
   return name.charAt(0).toUpperCase();
@@ -63,7 +53,7 @@ export function makeCharacterLibrary(list: readonly CollectedEntry[], cards: Rea
     byLookup[c.lookup] = c;
     byId[c.id] = c;
   }
-  const books = [...new Set(characters.map((c) => c.book))].sort((a, b) => (BOOK_ORDER.get(a) ?? 99) - (BOOK_ORDER.get(b) ?? 99));
+  const books = booksInOrder(characters.map((c) => c.book));
   return { characters, byLookup, byId, books };
 }
 
@@ -144,11 +134,9 @@ export function linkRows(library: CharacterLibrary, character: CharacterCard): {
 }
 
 /** How the Characters grid is ordered: newest collected first, or by name A to Z, or Z to A. */
-export type CharacterOrder = 'newest' | 'az' | 'za';
+export type CharacterOrder = ListOrder;
 
 /** The characters in the chosen order. The library already holds them newest first. */
 export function sortCharacters(characters: readonly MetCharacter[], order: CharacterOrder): readonly MetCharacter[] {
-  if (order === 'newest') return characters;
-  const byName = [...characters].sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
-  return order === 'az' ? byName : byName.reverse();
+  return sortByName(characters, order);
 }

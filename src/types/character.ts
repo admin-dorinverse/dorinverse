@@ -26,8 +26,11 @@ export type KeyMoment = {
   place?: string;
 };
 
-/** A place on a card, and how many of the character's verses also name it (0 when only a key moment gives it). */
-export type CharacterPlace = { name: string; verseCount: number };
+/**
+ * A place on a card: its database place id (to open its page when collected), its name, and how many of the
+ * character's verses also name it (0 when only a key moment gives it).
+ */
+export type CharacterPlace = { id: string; name: string; verseCount: number };
 
 /** A link from one collected character to another: its kind (like "enemies") and one sentence saying why. */
 export type CharacterLink = {

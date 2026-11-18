@@ -1,6 +1,7 @@
 // One collected character's page, opened from the Characters grid or a relationship: recently viewed chips, who
 // they were, how many verses name them (with "Find in scripture"), key moments, relationships with other collected
-// characters, and places. Everything comes from memory; only the rows on screen are drawn.
+// characters, and places (collected ones open their page). Everything comes from memory; only the rows on
+// screen are drawn.
 
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
@@ -14,10 +15,12 @@ import { visitCharacter } from '@/components/characters/recentCharacters';
 import { DrillHeader } from '@/components/common/DrillHeader';
 import { LoadState } from '@/components/common/LoadState';
 import { useCharacterLibrary, useRevealedVerseCount } from '@/data/queries/characters';
+import { usePlaceLibrary } from '@/data/queries/places';
 import { reader, text } from '@/theme/colors';
 import { gutter } from '@/theme/spacing';
 import { fonts } from '@/theme/text';
 import type { CharacterLookup } from '@/types/character';
+import type { PlaceLookup } from '@/types/place';
 
 /** A character's page. */
 export default function CharacterPage() {
@@ -27,12 +30,16 @@ export default function CharacterPage() {
   const library = useCharacterLibrary();
   const character = library.data?.byLookup[id];
   const revealed = useRevealedVerseCount(character);
+  // Collected places open their page from the Places rows; the rest stay plain text.
+  const places = usePlaceLibrary().data;
   // Opening the page puts this character first in the recently viewed chips.
   const [trail] = useState(() => visitCharacter(id));
   const items = useMemo(() => (library.data && character ? characterPageItems(library.data, character) : []), [library.data, character]);
 
   /** Opens another collected character's page. */
   const open = (lookup: CharacterLookup) => router.push({ pathname: '/characters/[id]', params: { id: lookup } });
+  /** Opens a collected place's page. */
+  const openPlace = (lookup: PlaceLookup) => router.push({ pathname: '/places/[id]', params: { id: lookup } });
   /** Lists the person's revealed verses that name this character. */
   const find = () => router.push({ pathname: '/bible/results', params: { character: id } });
 
@@ -48,7 +55,7 @@ export default function CharacterPage() {
       case 'discover':
         return <DiscoverLine count={item.count} />;
       case 'place':
-        return <PlaceRow place={item.place} />;
+        return <PlaceRow place={item.place} placeLookup={places?.byPlaceId[item.place.id]?.lookup} onOpen={openPlace} />;
     }
   };
 

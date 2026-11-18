@@ -205,6 +205,21 @@ export const characters = {
   soft: 'rgba(255,255,255,0.7)',
 } as const;
 
+/** The Places pages, in the same dark glass look; their accent is the Places card's sage. */
+export const places = {
+  /** The accent: the big count, verse counts and the selected book chip. */
+  accent: collectionHues.sage,
+  /** The big count's glow (the accent, 70% strength). */
+  glow: 'rgba(125,255,180,0.7)',
+  /** The no-photo look's gradient, top-left (sage mixed 85% with white) to bottom-right (sage 50% with black). */
+  badgeLight: '#91ffbf',
+  badgeDark: '#3f805a',
+  /** Fill of the selected book chip. */
+  chipOn: 'rgba(125,255,180,0.2)',
+  /** Small grey labels, like "Joshua 6" under a name. */
+  soft: 'rgba(255,255,255,0.7)',
+} as const;
+
 /** Deep navy used for dark text on bright buttons and pills. */
 export const navy = '#1a1c45';
 

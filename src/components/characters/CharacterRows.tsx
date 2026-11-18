@@ -1,6 +1,6 @@
 // The rows under a character's page top: section headings, key moments, relationships with other collected
-// characters, the "more to discover" line, and places. Each is one small row, so the page list can draw only
-// the rows on screen.
+// characters, the "more to discover" line, and places (which open a collected place's page). Each is one small
+// row, so the page list can draw only the rows on screen.
 
 import { memo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
@@ -9,6 +9,7 @@ import type { LinkRow } from '@/data/queries/characters';
 import { characters, reader, text } from '@/theme/colors';
 import { fonts, textStyles } from '@/theme/text';
 import type { CharacterLookup, CharacterPlace, KeyMoment } from '@/types/character';
+import type { PlaceLookup } from '@/types/place';
 import { CharacterBadge } from './CharacterBadge';
 
 /** Props for a section heading. */
@@ -93,16 +94,35 @@ export function DiscoverLine({ count }: DiscoverLineProps) {
 type PlaceRowProps = {
   /** The place shown. */
   place: CharacterPlace;
+  /** The place's lookup when the person has collected it, or undefined when not (then the row is plain text). */
+  placeLookup?: PlaceLookup;
+  /** Opens a collected place's page. */
+  onOpen: (lookup: PlaceLookup) => void;
 };
 
-/** One place in the character's story, with how many of their verses name it. Not tappable yet. */
-export const PlaceRow = memo(function PlaceRow({ place }: PlaceRowProps) {
-  return (
-    <View style={[styles.row, styles.placeRow]}>
+/** One place in the character's story, with how many of their verses name it. Tapping opens it when collected. */
+export const PlaceRow = memo(function PlaceRow({ place, placeLookup, onOpen }: PlaceRowProps) {
+  const inside = (
+    <>
       <Text style={styles.icon}>📍</Text>
       <Text style={[styles.title, styles.grow]}>{place.name}</Text>
       {place.verseCount > 0 && <Text style={styles.label}>{place.verseCount === 1 ? '1 verse' : `${place.verseCount} verses`}</Text>}
-    </View>
+      {placeLookup && <Text style={[styles.arrow, styles.placeArrow]}>›</Text>}
+    </>
+  );
+  if (!placeLookup) return <View style={[styles.row, styles.placeRow]}>{inside}</View>;
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`Open ${place.name}`}
+      onPress={() => {
+        playSound('tap');
+        onOpen(placeLookup);
+      }}
+      style={({ pressed }) => [styles.row, styles.placeRow, pressed && styles.pressed]}
+    >
+      {inside}
+    </Pressable>
   );
 });
 
@@ -129,5 +149,6 @@ const styles = StyleSheet.create({
   body: { ...textStyles.body, fontSize: 14, lineHeight: 20, color: text.onDarkSoft, marginTop: 2 },
   passage: { fontFamily: fonts.extraBold, fontSize: 12, color: reader.verseNumber, marginTop: 4 },
   arrow: { fontFamily: fonts.black, fontSize: 20, lineHeight: 36, color: characters.soft },
+  placeArrow: { lineHeight: 21 },
   discover: { fontFamily: fonts.extraBold, fontSize: 13, color: characters.soft, textAlign: 'center', marginTop: 2, marginBottom: 4 },
 });

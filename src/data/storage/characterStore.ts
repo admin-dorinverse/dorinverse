@@ -7,7 +7,7 @@ import type { SavedCharacters } from '@/data/characterSync';
 import type { CharacterCard, CharacterLookup, CollectedEntry } from '@/types/character';
 
 /** Bump when the tables below or the saved card's shape change; the store is then rebuilt and filled again. */
-const STORE_VERSION = 1;
+const STORE_VERSION = 2;
 
 /** The open store, made on first use. */
 let opening: Promise<SQLiteDatabase> | null = null;
