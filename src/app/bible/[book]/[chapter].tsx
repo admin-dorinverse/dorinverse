@@ -10,14 +10,13 @@ import { ChapterText } from '@/components/bible/ChapterText';
 import { READER_CONTROLS_SPACE, ReaderControls } from '@/components/bible/ReaderControls';
 import { ReadingOptionsSheet } from '@/components/bible/ReadingOptionsSheet';
 import { useReadAloud } from '@/components/bible/useReadAloud';
-import { VerseSheet } from '@/components/bible/VerseSheet';
+import { VerseSheet, type SheetContent } from '@/components/bible/VerseSheet';
 import { RoundButton } from '@/components/common/DrillHeader';
 import { LoadState } from '@/components/common/LoadState';
 import { playSound } from '@/components/common/sounds';
 import { bibleOutline, bookAt, nearbyOpenChapter, READER_TRANSLATION, useBibleLibrary, useChapterPage, type ChapterSpot } from '@/data/queries/bible';
 import { reader, text } from '@/theme/colors';
 import { fonts, readingSize } from '@/theme/text';
-import type { PageVerse } from '@/types/bible';
 
 /** The reader page. */
 export default function ReaderPage() {
@@ -29,7 +28,7 @@ export default function ReaderPage() {
   const book = bookAt(spot.book);
   const page = useChapterPage(book, spot.chapter);
   const [fontSize, setFontSize] = useState<number>(readingSize.start);
-  const [verse, setVerse] = useState<PageVerse | null>(null);
+  const [sheet, setSheet] = useState<SheetContent | null>(null);
   const [options, setOptions] = useState(false);
   const voice = useReadAloud();
   const { stop } = voice;
@@ -79,7 +78,8 @@ export default function ReaderPage() {
           page={page}
           fontSize={fontSize}
           highlight={params.mark}
-          onVerse={setVerse}
+          onVerse={(verse) => setSheet({ verse })}
+          onNote={(verse, note) => setSheet({ verse, note })}
           header={topBar}
           bottomSpace={insets.bottom + READER_CONTROLS_SPACE + 40}
         />
@@ -96,7 +96,7 @@ export default function ReaderPage() {
         onPrevious={previous ? () => go(previous) : undefined}
         onNext={next ? () => go(next) : undefined}
       />
-      <VerseSheet verse={verse} chapterName={name} translation={READER_TRANSLATION} onClose={() => setVerse(null)} />
+      <VerseSheet content={sheet} chapterName={name} translation={READER_TRANSLATION} onClose={() => setSheet(null)} />
       <ReadingOptionsSheet open={options} onClose={() => setOptions(false)} fontSize={fontSize} onFontSize={setFontSize} />
     </View>
   );

@@ -22,8 +22,11 @@ export type BibleOutline = BibleBook[];
 /** A verse label, like "Judg.3.15" for Judges 3:15. */
 export type VerseRef = string;
 
-/** A verse the person has revealed: its words show on the page. */
-export type RevealedVerse = { kind: 'revealed'; number: number; text: string };
+/** A translator's note on a verse: the words it follows, and the note itself. */
+export type Footnote = { after: string; text: string };
+
+/** A verse the person has revealed: its words show on the page, with a gold star after each footnote's words. */
+export type RevealedVerse = { kind: 'revealed'; number: number; text: string; notes: readonly Footnote[] };
 
 /** A verse still covered in stardust: only the length of each word is known, so the page can draw its shape. */
 export type CoveredVerse = { kind: 'covered'; number: number; wordLengths: readonly number[] };
@@ -57,4 +60,6 @@ export type BibleLibrary = {
   texts: Readonly<Record<VerseRef, string>>;
   /** Covered verses' word lengths, by label. An empty list means the translation leaves the verse out. */
   shapes: Readonly<Record<VerseRef, readonly number[]>>;
+  /** Revealed verses' footnotes, by label. An empty list means the verse has none. */
+  notes: Readonly<Record<VerseRef, readonly Footnote[]>>;
 };

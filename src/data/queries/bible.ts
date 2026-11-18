@@ -25,7 +25,7 @@ async function loadLibrary(): Promise<BibleLibrary> {
   const started = Date.now();
   const saved = await readSavedBible();
   if (saved.refs && !queryClient.getQueryData(LIBRARY_KEY)) {
-    queryClient.setQueryData(LIBRARY_KEY, makeLibrary(saved.refs, saved.texts, saved.shapes));
+    queryClient.setQueryData(LIBRARY_KEY, makeLibrary(saved.refs, saved.texts, saved.shapes, saved.notes));
   }
   const result = await syncBible(saved, saveBible);
   if (__DEV__) console.log(`[bible] library ready in ${Date.now() - started} ms; downloaded ${result.downloaded} verses`);

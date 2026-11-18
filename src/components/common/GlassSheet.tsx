@@ -3,10 +3,13 @@
 
 import type { ReactNode } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
-import Animated, { SlideInDown } from 'react-native-reanimated';
+import Animated, { Easing, SlideInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { glass, text } from '@/theme/colors';
 import { fonts } from '@/theme/text';
+
+/** How the sheet comes in: a smooth slide up that slows to a stop, with no bounce. */
+const SHEET_IN = SlideInDown.duration(260).easing(Easing.out(Easing.cubic));
 
 /** Props for a sheet. */
 type GlassSheetProps = {
@@ -28,7 +31,7 @@ export function GlassSheet({ open, onClose, title, children }: GlassSheetProps) 
       <View style={styles.backdrop}>
         <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel="Close" />
         {open && (
-          <Animated.View entering={SlideInDown.springify().damping(18)} style={[styles.sheet, { paddingBottom: 22 + insets.bottom }]}>
+          <Animated.View entering={SHEET_IN} style={[styles.sheet, { paddingBottom: 22 + insets.bottom }]}>
             <View style={styles.head}>
               <Text style={styles.title}>{title}</Text>
               <Pressable accessibilityRole="button" accessibilityLabel="Close" onPress={onClose} hitSlop={10}>

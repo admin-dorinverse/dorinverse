@@ -4,13 +4,14 @@
 
 import { bibleOutline, fetchEarnedVerses, fetchRevealedRefs, type EarnedVerses } from '@/data/bibleSource';
 import { makeLibrary, missingVerses, sameRefs } from '@/data/bibleLibrary';
-import type { BibleLibrary, VerseRef } from '@/types/bible';
+import type { BibleLibrary, Footnote, VerseRef } from '@/types/bible';
 
-/** What the phone holds: the revealed list (null before the first load), words and word lengths. */
+/** What the phone holds: the revealed list (null before the first load), words, word lengths and footnotes. */
 export type SavedBible = {
   refs: VerseRef[] | null;
   texts: Record<VerseRef, string>;
   shapes: Record<VerseRef, readonly number[]>;
+  notes: Record<VerseRef, readonly Footnote[]>;
 };
 
 /** Saves a new revealed list and newly downloaded verses on the phone. */
@@ -29,14 +30,14 @@ export async function syncBible(saved: SavedBible, save: SaveBible): Promise<Syn
     refs = await fetchRevealedRefs();
   } catch (error) {
     if (!saved.refs) throw error;
-    return { library: makeLibrary(saved.refs, saved.texts, saved.shapes), downloaded: 0, changed: false };
+    return { library: makeLibrary(saved.refs, saved.texts, saved.shapes, saved.notes), downloaded: 0, changed: false };
   }
-  const missing = missingVerses(bibleOutline, refs, saved.texts, saved.shapes);
+  const missing = missingVerses(bibleOutline, refs, saved.texts, saved.shapes, saved.notes);
   const count = missing.revealed.length + missing.covered.length;
   const listChanged = !saved.refs || !sameRefs(saved.refs, refs);
   if (count === 0) {
-    if (listChanged) await save(refs, { texts: {}, shapes: {} });
-    return { library: makeLibrary(refs, saved.texts, saved.shapes), downloaded: 0, changed: listChanged };
+    if (listChanged) await save(refs, { texts: {}, shapes: {}, notes: {} });
+    return { library: makeLibrary(refs, saved.texts, saved.shapes, saved.notes), downloaded: 0, changed: listChanged };
   }
   let earned: EarnedVerses;
   try {
@@ -44,9 +45,9 @@ export async function syncBible(saved: SavedBible, save: SaveBible): Promise<Syn
   } catch (error) {
     // Offline: keep showing what the phone has; the next start tries again.
     if (!saved.refs) throw error;
-    return { library: makeLibrary(saved.refs, saved.texts, saved.shapes), downloaded: 0, changed: false };
+    return { library: makeLibrary(saved.refs, saved.texts, saved.shapes, saved.notes), downloaded: 0, changed: false };
   }
   await save(refs, earned);
-  const library = makeLibrary(refs, { ...saved.texts, ...earned.texts }, { ...saved.shapes, ...earned.shapes });
+  const library = makeLibrary(refs, { ...saved.texts, ...earned.texts }, { ...saved.shapes, ...earned.shapes }, { ...saved.notes, ...earned.notes });
   return { library, downloaded: count, changed: true };
 }

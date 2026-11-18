@@ -2,7 +2,7 @@
 // working out which verses are still missing from the phone, building one chapter page, and finding the next
 // chapter that can be opened. Plain functions, so the same code can be timed outside the app.
 
-import type { BibleBook, BibleLibrary, BibleOutline, ChapterPage, PageVerse, RevealedCounts, VerseRef } from '@/types/bible';
+import type { BibleBook, BibleLibrary, BibleOutline, ChapterPage, Footnote, PageVerse, RevealedCounts, VerseRef } from '@/types/bible';
 
 /** A chapter's place: the book's place in the Bible (1 to 66) and the chapter number. */
 export type ChapterSpot = { book: number; chapter: number };
@@ -10,13 +10,14 @@ export type ChapterSpot = { book: number; chapter: number };
 /** Verses the phone does not hold yet: revealed ones need their words, covered ones their word lengths. */
 export type MissingVerses = { revealed: VerseRef[]; covered: VerseRef[] };
 
-/** Builds the in-memory library from the revealed list and the saved words and word lengths. */
+/** Builds the in-memory library from the revealed list and the saved words, word lengths and footnotes. */
 export function makeLibrary(
   refs: readonly VerseRef[],
   texts: Readonly<Record<VerseRef, string>>,
   shapes: Readonly<Record<VerseRef, readonly number[]>>,
+  notes: Readonly<Record<VerseRef, readonly Footnote[]>>,
 ): BibleLibrary {
-  return { refs: new Set(refs), counts: countRevealed(refs), texts, shapes };
+  return { refs: new Set(refs), counts: countRevealed(refs), texts, shapes, notes };
 }
 
 /** Counts revealed verses per book code and chapter. */
@@ -37,13 +38,15 @@ export function bookRevealedCount(counts: RevealedCounts, code: string): number 
 
 /**
  * Which verses the phone still needs. Every chapter with at least one revealed verse is needed in full:
- * revealed verses as words, covered verses as word lengths. Chapters with nothing revealed are never needed.
+ * revealed verses as words and footnotes, covered verses as word lengths. Chapters with nothing revealed are never
+ * needed. A revealed verse whose footnotes are missing is asked for again.
  */
 export function missingVerses(
   outline: BibleOutline,
   refs: readonly VerseRef[],
   texts: Readonly<Record<VerseRef, string>>,
   shapes: Readonly<Record<VerseRef, readonly number[]>>,
+  notes: Readonly<Record<VerseRef, readonly Footnote[]>>,
 ): MissingVerses {
   const revealedSet = new Set(refs);
   const byCode = new Map(outline.map((b) => [b.code, b]));
@@ -56,7 +59,7 @@ export function missingVerses(
       for (let v = 1; v <= count; v++) {
         const ref = `${code}.${chapter}.${v}`;
         if (revealedSet.has(ref)) {
-          if (texts[ref] === undefined) missing.revealed.push(ref);
+          if (texts[ref] === undefined || notes[ref] === undefined) missing.revealed.push(ref);
         } else if (shapes[ref] === undefined) missing.covered.push(ref);
       }
     }
@@ -82,7 +85,7 @@ export function chapterPage(library: BibleLibrary, book: BibleBook, chapter: num
     const ref = `${book.code}.${chapter}.${v}`;
     if (library.refs.has(ref)) {
       const text = library.texts[ref];
-      if (text) verses.push({ kind: 'revealed', number: v, text });
+      if (text) verses.push({ kind: 'revealed', number: v, text, notes: library.notes[ref] ?? [] });
     } else {
       const lengths = library.shapes[ref];
       if (lengths && lengths.length > 0) verses.push({ kind: 'covered', number: v, wordLengths: lengths });

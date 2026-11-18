@@ -8,6 +8,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { reader } from '@/theme/colors';
 import { fonts, readingFont } from '@/theme/text';
 import type { ChapterPage, PageVerse } from '@/types/bible';
+import { placeStars, type VersePiece } from './footnoteMarks';
 import { stardustWords } from './stardust';
 
 /** How many verses go in one block. Blocks start on a new line, like a paragraph. */
@@ -17,8 +18,11 @@ const VERSES_PER_BLOCK = 12;
 const CHAPTER_NUMBER_SIZE = 3.2;
 const CHAPTER_NUMBER_LINE = 1.3;
 
-/** A verse ready to draw: covered verses carry their stardust letters, made once per chapter. */
-type DrawnVerse = { verse: PageVerse; dust: string[] };
+/**
+ * A verse ready to draw, made once per chapter: revealed verses carry their words split around footnote stars,
+ * covered verses their stardust letters.
+ */
+type DrawnVerse = { verse: PageVerse; pieces: VersePiece[]; dust: string[] };
 
 /** A block of verses, with what a screen reader says for it (covered verses are named, not spelled out). */
 type VerseBlock = { verses: DrawnVerse[]; spoken: string };
@@ -33,6 +37,8 @@ type ChapterTextProps = {
   highlight?: string;
   /** A tap on a verse (revealed or covered). */
   onVerse: (verse: PageVerse) => void;
+  /** A tap on a footnote's gold star: the verse and the note's place in its list. */
+  onNote: (verse: PageVerse, note: number) => void;
   /** Space below the text, for the floating controls. */
   bottomSpace: number;
   /** Shown above the text, like the top bar. */
@@ -40,7 +46,7 @@ type ChapterTextProps = {
 };
 
 /** The chapter page's text. */
-export function ChapterText({ page, fontSize, highlight, onVerse, bottomSpace, header }: ChapterTextProps) {
+export function ChapterText({ page, fontSize, highlight, onVerse, onNote, bottomSpace, header }: ChapterTextProps) {
   const blocks = useMemo(() => makeBlocks(page), [page]);
   // Development timing: when this chapter first drew, to log how long until it was laid out.
   const [drawnAt] = useState(() => performance.now());
@@ -61,14 +67,18 @@ export function ChapterText({ page, fontSize, highlight, onVerse, bottomSpace, h
       onLayout={() => {
         if (__DEV__) console.log(`[bible] chapter ${page.book}:${page.chapter} (${page.verses.length} verses) laid out ${Math.round(performance.now() - drawnAt)} ms after first draw`);
       }}
-      renderItem={({ item }) => <Block block={item} fontSize={fontSize} highlight={highlight} onVerse={onVerse} />}
+      renderItem={({ item }) => <Block block={item} fontSize={fontSize} highlight={highlight} onVerse={onVerse} onNote={onNote} />}
     />
   );
 }
 
 /** Splits a chapter into blocks and makes each covered verse's stardust letters and each block's spoken words. */
 function makeBlocks(page: ChapterPage): VerseBlock[] {
-  const drawn = page.verses.map((verse) => ({ verse, dust: verse.kind === 'covered' ? stardustWords(verse.wordLengths, verse.number) : [] }));
+  const drawn = page.verses.map((verse) =>
+    verse.kind === 'covered'
+      ? { verse, pieces: [], dust: stardustWords(verse.wordLengths, verse.number) }
+      : { verse, pieces: placeStars(verse.text, verse.notes), dust: [] },
+  );
   const blocks: VerseBlock[] = [];
   for (let i = 0; i < drawn.length; i += VERSES_PER_BLOCK) {
     const verses = drawn.slice(i, i + VERSES_PER_BLOCK);
@@ -88,17 +98,32 @@ type BlockProps = {
   highlight?: string;
   /** A tap on a verse. */
   onVerse: (verse: PageVerse) => void;
+  /** A tap on a footnote star. */
+  onNote: (verse: PageVerse, note: number) => void;
 };
 
 /** A block of verses flowing as one paragraph. Verse 1 has no number: the big chapter number stands for it. */
-const Block = memo(function Block({ block, fontSize, highlight, onVerse }: BlockProps) {
+const Block = memo(function Block({ block, fontSize, highlight, onVerse, onNote }: BlockProps) {
   const numberSize = Math.round(fontSize * 0.6);
   return (
     <Text accessibilityLabel={block.spoken} style={[styles.text, { fontSize, lineHeight: fontSize * 2 }]}>
-      {block.verses.map(({ verse, dust }) => (
+      {block.verses.map(({ verse, pieces, dust }) => (
         <Text key={verse.number} onPress={() => onVerse(verse)} suppressHighlighting>
           {verse.number > 1 && <Text style={[styles.number, { fontSize: numberSize }]}>{verse.number} </Text>}
-          {verse.kind === 'revealed' ? <Marked text={verse.text} mark={highlight} /> : <Dust words={dust} seed={verse.number} />}{' '}
+          {verse.kind === 'revealed' ? (
+            pieces.map((piece, i) =>
+              piece.kind === 'words' ? (
+                <Marked key={i} text={piece.text} mark={highlight} />
+              ) : (
+                <Text key={i} onPress={() => onNote(verse, piece.note)} suppressHighlighting accessibilityLabel="Footnote" style={[styles.star, { fontSize: numberSize }]}>
+                  {' ✦'}
+                </Text>
+              ),
+            )
+          ) : (
+            <Dust words={dust} seed={verse.number} />
+          )}
+          {' '}
         </Text>
       ))}
     </Text>
@@ -146,4 +171,5 @@ const styles = StyleSheet.create({
   number: { fontFamily: fonts.extraBold, color: reader.verseNumber },
   dust: { fontFamily: fonts.stardust },
   highlight: { backgroundColor: reader.highlight },
+  star: { color: reader.verseNumber },
 });
