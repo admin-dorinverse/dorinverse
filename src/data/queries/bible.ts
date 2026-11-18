@@ -4,12 +4,13 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
-import { chapterPage, makeLibrary, revealedTexts } from '@/data/bibleLibrary';
+import { chapterPage, makeLibrary } from '@/data/bibleLibrary';
+import { makeSearchIndex, type SearchIndex } from '@/data/bibleSearch';
 import { bibleOutline } from '@/data/bibleSource';
 import { syncBible } from '@/data/bibleSync';
 import { queryClient } from '@/data/queries/client';
 import { readSavedBible, saveBible } from '@/data/storage/bibleStore';
-import type { BibleBook, BibleLibrary, ChapterPage, VerseRef } from '@/types/bible';
+import type { BibleBook, BibleLibrary, ChapterPage } from '@/types/bible';
 
 export { bookRevealedCount, nearbyOpenChapter, type ChapterSpot } from '@/data/bibleLibrary';
 export { bibleOutline, READER_TRANSLATION } from '@/data/bibleSource';
@@ -52,10 +53,10 @@ export function useChapterPage(book: BibleBook | undefined, chapter: number): Ch
   return useMemo(() => (library && book ? chapterPage(library, book, chapter) : undefined), [library, book, chapter]);
 }
 
-/** The words of every revealed verse, by label, for search. */
-export function useRevealedTexts(): Record<VerseRef, string> | undefined {
+/** The revealed verses prepared for search, made once each time the library changes (never per keystroke). */
+export function useSearchIndex(): SearchIndex | undefined {
   const library = useBibleLibrary().data;
-  return useMemo(() => (library ? revealedTexts(library) : undefined), [library]);
+  return useMemo(() => (library ? makeSearchIndex(bibleOutline, library) : undefined), [library]);
 }
 
 /** The book at a place in the Bible (1 to 66), or undefined for a wrong number. */
