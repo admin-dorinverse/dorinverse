@@ -38,9 +38,8 @@ export const CharacterCell = memo(function CharacterCell({ character, onPress }:
           {character.nameTag}
         </Text>
       )}
-      <Text style={styles.met}>{character.metIn}</Text>
-      <Text style={styles.count}>
-        {character.verseCount} {character.verseCount === 1 ? 'verse' : 'verses'} mentioned
+      <Text style={styles.met} numberOfLines={2}>
+        Met in {character.metIn}
       </Text>
     </Pressable>
   );
@@ -70,5 +69,4 @@ const styles = StyleSheet.create({
   name: { fontFamily: fonts.black, fontSize: 15, lineHeight: 18, color: text.onDark, textAlign: 'center', marginTop: 4 },
   tag: { fontFamily: fonts.bold, fontSize: 11, color: characters.soft, textAlign: 'center' },
   met: { fontFamily: fonts.bold, fontSize: 12.5, color: characters.soft },
-  count: { fontFamily: fonts.extraBold, fontSize: 12, color: characters.accent },
 });
