@@ -43,7 +43,7 @@ export function BookInfoSheet({ book, revealed, onClose }: BookInfoSheetProps) {
               'Nothing revealed here yet. Finish lessons to bring its verses to light.'
             )}
           </Text>
-          <Text style={styles.note}>Crumbs cover the verses you haven’t revealed yet. Each lesson clears some away.</Text>
+          <Text style={styles.note}>Stardust covers the verses you haven’t revealed yet. Each lesson clears some away.</Text>
         </>
       )}
     </GlassSheet>

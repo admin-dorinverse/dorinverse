@@ -1,5 +1,6 @@
 // The shape of the Bible as the reader sees it: the outline of books and chapters, which verses a person
-// has revealed, and the verses on one chapter page (words for revealed verses, word lengths for covered ones).
+// has revealed, what the phone holds about them, and the verses on one chapter page (words for revealed
+// verses, word lengths for covered ones).
 
 /** One book in the Bible's outline. No words, only its name and size. */
 export type BibleBook = {
@@ -24,8 +25,8 @@ export type VerseRef = string;
 /** A verse the person has revealed: its words show on the page. */
 export type RevealedVerse = { kind: 'revealed'; number: number; text: string };
 
-/** A verse still covered by crumbs: only the length of each word is known, so the page can fake its shape. */
-export type CoveredVerse = { kind: 'covered'; number: number; wordLengths: number[] };
+/** A verse still covered in stardust: only the length of each word is known, so the page can draw its shape. */
+export type CoveredVerse = { kind: 'covered'; number: number; wordLengths: readonly number[] };
 
 /** One verse on a chapter page. */
 export type PageVerse = RevealedVerse | CoveredVerse;
@@ -38,4 +39,22 @@ export type ChapterPage = {
   chapter: number;
   /** Every verse in the chapter, in order. */
   verses: PageVerse[];
+};
+
+/** How many verses are revealed, per book code and then per chapter number. */
+export type RevealedCounts = Record<string, Record<number, number>>;
+
+/**
+ * Everything the reader needs that is not in the outline, held in memory once loaded from the phone.
+ * Only chapters with at least one revealed verse are in it.
+ */
+export type BibleLibrary = {
+  /** The labels of every revealed verse. */
+  refs: ReadonlySet<VerseRef>;
+  /** How many verses are revealed in each book and chapter. */
+  counts: RevealedCounts;
+  /** Revealed verses' words, by label. An empty string means the translation leaves the verse out. */
+  texts: Readonly<Record<VerseRef, string>>;
+  /** Covered verses' word lengths, by label. An empty list means the translation leaves the verse out. */
+  shapes: Readonly<Record<VerseRef, readonly number[]>>;
 };

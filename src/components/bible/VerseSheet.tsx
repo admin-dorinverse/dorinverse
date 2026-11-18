@@ -30,7 +30,7 @@ export function VerseSheet({ verse, chapterName, translation, onClose }: VerseSh
           <Text style={styles.tag}>{translation}</Text>
         </>
       )}
-      {verse?.kind === 'covered' && <Text style={styles.note}>This verse is still covered in crumbs. Finish lessons to reveal it.</Text>}
+      {verse?.kind === 'covered' && <Text style={styles.note}>This verse is still covered in stardust. Finish lessons to reveal it.</Text>}
     </GlassSheet>
   );
 }

@@ -2,14 +2,14 @@
 // their words are not on the phone.
 
 import { useRouter, type Href } from 'expo-router';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Results, Suggestions } from '@/components/bible/SearchResults';
 import { DrillHeader } from '@/components/common/DrillHeader';
 import { LoadState } from '@/components/common/LoadState';
 import { findBooks, findVerses } from '@/data/bibleSearch';
-import { useBibleOutline, useRevealedTexts, useRevealedVerses } from '@/data/queries/bible';
+import { bibleOutline, useBibleLibrary, useRevealedTexts } from '@/data/queries/bible';
 import { sampleTrendingSearches } from '@/data/sample/search';
 import { reader, text } from '@/theme/colors';
 import { gutter } from '@/theme/spacing';
@@ -22,19 +22,16 @@ const RECENT_MAX = 6;
 export default function BibleSearchPage() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const outline = useBibleOutline();
-  const revealed = useRevealedVerses();
-  const texts = useRevealedTexts(revealed.data);
+  const library = useBibleLibrary();
+  const texts = useRevealedTexts();
   const [typed, setTyped] = useState('');
   const [recent, setRecent] = useState<string[]>([]);
 
   const query = typed.trim();
   const low = query.toLowerCase();
-  const books = outline.data ?? [];
-  const counts = revealed.data?.counts ?? {};
-
-  const verseHits = low && texts.data ? findVerses(books, texts.data, query) : [];
-  const bookHits = low ? findBooks(books, counts, query) : [];
+  const counts = library.data?.counts;
+  const verseHits = useMemo(() => (query && texts ? findVerses(bibleOutline, texts, query) : []), [texts, query]);
+  const bookHits = useMemo(() => (query ? findBooks(bibleOutline, counts ?? {}, query) : []), [counts, query]);
 
   /** Remembers a search as recent. */
   const remember = (q: string) => setRecent((list) => [q, ...list.filter((x) => x !== q)].slice(0, RECENT_MAX));
@@ -54,7 +51,7 @@ export default function BibleSearchPage() {
           style={styles.input}
         />
       </View>
-      {texts.data || !low ? (
+      {texts || !low ? (
         <ScrollView contentContainerStyle={[styles.body, { paddingBottom: insets.bottom + 40 }]} keyboardShouldPersistTaps="handled">
           {low ? (
             <Results
@@ -75,7 +72,7 @@ export default function BibleSearchPage() {
           )}
         </ScrollView>
       ) : (
-        <LoadState failed={texts.isError || revealed.isError} onRetry={() => (revealed.isError ? revealed.refetch() : texts.refetch())} />
+        <LoadState failed={library.isError} onRetry={() => library.refetch()} />
       )}
     </View>
   );

@@ -1,8 +1,8 @@
 // Finds words in the person's revealed verses and in the Bible's book names. Covered verses are never
 // searched: their words are not on the phone.
 
-import { bookRevealedCount, type RevealedCounts } from '@/data/queries/bible';
-import type { BibleBook, BibleOutline, VerseRef } from '@/types/bible';
+import { bookRevealedCount } from '@/data/bibleLibrary';
+import type { BibleBook, BibleOutline, RevealedCounts, VerseRef } from '@/types/bible';
 
 /** A verse that matched, with where it is. */
 export type VerseHit = { ref: VerseRef; label: string; text: string; book: number; chapter: number; verse: number };

@@ -1,4 +1,5 @@
 // Fonts and text styles. Constellations uses Nunito for everything, with the heaviest weights for headings and buttons.
+// The Bible reader adds a serif for verse words and the made-for-the-app Stardust font for covered words.
 
 import { Platform, type TextStyle } from 'react-native';
 
@@ -12,6 +13,8 @@ export const fonts = {
   extraBold: 'Nunito_800ExtraBold',
   /** Nunito Black, for headings, buttons and numbers. */
   black: 'Nunito_900Black',
+  /** Stardust draws each letter as a smudge of dust: the reader's covered words (scripts/app/make-stardust-font.mjs). */
+  stardust: 'Stardust',
 } as const;
 
 /** The serif the Bible reader uses for verse words, as in the design (Georgia on iPhones, the phone's serif elsewhere). */
@@ -26,6 +29,7 @@ export const fontFiles = {
   Nunito_700Bold: require('@expo-google-fonts/nunito/700Bold/Nunito_700Bold.ttf'),
   Nunito_800ExtraBold: require('@expo-google-fonts/nunito/800ExtraBold/Nunito_800ExtraBold.ttf'),
   Nunito_900Black: require('@expo-google-fonts/nunito/900Black/Nunito_900Black.ttf'),
+  Stardust: require('../../assets/fonts/Stardust.otf'),
 } as const;
 
 /** The Nunito Black file, for text drawn inside the sky canvas. */

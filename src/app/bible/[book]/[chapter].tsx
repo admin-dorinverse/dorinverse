@@ -1,8 +1,9 @@
-// The Bible reader: one chapter page. Revealed verses show their words; covered verses show crumbs in the shape
-// of their words. Tap a verse to see it up close; read the revealed verses aloud; move between open chapters.
+// The Bible reader: one chapter page, drawn at once from memory. Revealed verses show their words; covered
+// verses show stardust in the shape of their words. Tap a verse to see it up close; read the revealed verses
+// aloud; move between open chapters.
 
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ChapterText } from '@/components/bible/ChapterText';
@@ -13,8 +14,7 @@ import { VerseSheet } from '@/components/bible/VerseSheet';
 import { RoundButton } from '@/components/common/DrillHeader';
 import { LoadState } from '@/components/common/LoadState';
 import { playSound } from '@/components/common/sounds';
-import { READER_TRANSLATION } from '@/data/bibleSource';
-import { nearbyOpenChapter, useBibleOutline, useChapterPage, useRevealedVerses, type ChapterSpot } from '@/data/queries/bible';
+import { bibleOutline, bookAt, nearbyOpenChapter, READER_TRANSLATION, useBibleLibrary, useChapterPage, type ChapterSpot } from '@/data/queries/bible';
 import { reader, text } from '@/theme/colors';
 import { fonts, readingSize } from '@/theme/text';
 import type { PageVerse } from '@/types/bible';
@@ -25,10 +25,9 @@ export default function ReaderPage() {
   const insets = useSafeAreaInsets();
   const params = useLocalSearchParams<{ book: string; chapter: string; mark?: string }>();
   const spot: ChapterSpot = { book: Number(params.book), chapter: Number(params.chapter) };
-  const outline = useBibleOutline();
-  const revealed = useRevealedVerses();
-  const book = outline.data?.[spot.book - 1];
-  const page = useChapterPage(book, spot.chapter, revealed.data);
+  const library = useBibleLibrary();
+  const book = bookAt(spot.book);
+  const page = useChapterPage(book, spot.chapter);
   const [fontSize, setFontSize] = useState<number>(readingSize.start);
   const [verse, setVerse] = useState<PageVerse | null>(null);
   const [options, setOptions] = useState(false);
@@ -39,9 +38,11 @@ export default function ReaderPage() {
   useEffect(() => stop, [stop, spot.book, spot.chapter]);
 
   const name = book ? `${book.name} ${spot.chapter}` : '';
-  const counts = revealed.data?.counts ?? {};
-  const previous = outline.data ? nearbyOpenChapter(outline.data, counts, spot, -1) : null;
-  const next = outline.data ? nearbyOpenChapter(outline.data, counts, spot, 1) : null;
+  const counts = library.data?.counts;
+  const [previous, next] = useMemo(() => {
+    const here = { book: Number(params.book), chapter: Number(params.chapter) };
+    return counts ? [nearbyOpenChapter(bibleOutline, counts, here, -1), nearbyOpenChapter(bibleOutline, counts, here, 1)] : [null, null];
+  }, [counts, params.book, params.chapter]);
   /** Opens another chapter in place of this one. */
   const go = (to: ChapterSpot) => router.replace({ pathname: '/bible/[book]/[chapter]', params: { book: String(to.book), chapter: String(to.chapter) } });
 
@@ -49,7 +50,7 @@ export default function ReaderPage() {
   const play = () => {
     playSound('tap');
     if (voice.speaking) return voice.stop();
-    const words = (page.data?.verses ?? []).flatMap((v) => (v.kind === 'revealed' ? [v.text] : [])).join(' ');
+    const words = (page?.verses ?? []).flatMap((v) => (v.kind === 'revealed' ? [v.text] : [])).join(' ');
     voice.speak(words);
   };
 
@@ -73,20 +74,19 @@ export default function ReaderPage() {
 
   return (
     <View style={styles.page}>
-      {page.data ? (
+      {page ? (
         <ChapterText
-          page={page.data}
+          page={page}
           fontSize={fontSize}
           highlight={params.mark}
           onVerse={setVerse}
           header={topBar}
-          topSpace={0}
           bottomSpace={insets.bottom + READER_CONTROLS_SPACE + 40}
         />
       ) : (
         <>
           {topBar}
-          <LoadState failed={outline.isError || revealed.isError || page.isError} onRetry={() => (outline.isError ? outline.refetch() : revealed.isError ? revealed.refetch() : page.refetch())} />
+          <LoadState failed={library.isError} onRetry={() => library.refetch()} />
         </>
       )}
       <ReaderControls

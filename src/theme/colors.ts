@@ -177,8 +177,8 @@ export const reader = {
   fullEdge: '#ffc65c',
   /** Search words found inside a verse. */
   highlight: 'rgba(255,198,92,0.35)',
-  /** Shadow under a covered word's crumbs. */
-  crumbShadow: 'rgba(120,80,40,0.35)',
+  /** Covered words, drawn as soft clouds of stardust in the Stardust font. */
+  stardust: 'rgba(238,230,255,0.8)',
 } as const;
 
 /** Deep navy used for dark text on bright buttons and pills. */
