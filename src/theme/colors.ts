@@ -158,7 +158,7 @@ export const reader = {
   page: '#141533',
   /** Revealed verse words. */
   text: 'rgba(255,255,255,0.92)',
-  /** A revealed verse's number. */
+  /** Every verse's number, revealed or covered. */
   verseNumber: '#ffc65c',
   /** The big chapter number at the top of the page. */
   chapterNumber: 'rgba(255,255,255,0.26)',
