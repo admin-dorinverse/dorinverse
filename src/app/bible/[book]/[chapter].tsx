@@ -2,7 +2,7 @@
 // verses show stardust in the shape of their words. Tap a verse to see it up close; read the revealed verses
 // aloud; move between open chapters.
 
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter, type Href } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -53,6 +53,7 @@ export default function ReaderPage() {
     voice.speak(words);
   };
 
+  // The top bar stays at the top while the text scrolls under it.
   const topBar = (
     <View style={[styles.top, { paddingTop: insets.top + 10 }]}>
       <RoundButton label="Back" onPress={() => router.back()}>
@@ -73,6 +74,7 @@ export default function ReaderPage() {
 
   return (
     <View style={styles.page}>
+      {topBar}
       {page ? (
         <ChapterText
           page={page}
@@ -80,14 +82,10 @@ export default function ReaderPage() {
           highlight={params.mark}
           onVerse={(verse) => setSheet({ verse })}
           onNote={(verse, note) => setSheet({ verse, note })}
-          header={topBar}
           bottomSpace={insets.bottom + READER_CONTROLS_SPACE + 40}
         />
       ) : (
-        <>
-          {topBar}
-          <LoadState failed={library.isError} onRetry={() => library.refetch()} />
-        </>
+        <LoadState failed={library.isError} onRetry={() => library.refetch()} />
       )}
       <ReaderControls
         title={name}
@@ -95,6 +93,7 @@ export default function ReaderPage() {
         onPlay={play}
         onPrevious={previous ? () => go(previous) : undefined}
         onNext={next ? () => go(next) : undefined}
+        onBooks={() => router.dismissTo(`/bible?open=${spot.book}` as Href)}
       />
       <VerseSheet content={sheet} chapterName={name} translation={READER_TRANSLATION} onClose={() => setSheet(null)} />
       <ReadingOptionsSheet open={options} onClose={() => setOptions(false)} fontSize={fontSize} onFontSize={setFontSize} />
@@ -104,7 +103,17 @@ export default function ReaderPage() {
 
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: reader.page },
-  top: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingBottom: 18 },
+  top: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingBottom: 12,
+    paddingHorizontal: 24,
+    width: '100%',
+    maxWidth: 640,
+    alignSelf: 'center',
+    backgroundColor: reader.page,
+  },
   spacer: { flex: 1 },
   arrow: { fontFamily: fonts.black, fontSize: 20, color: text.onDark },
   icon: { fontSize: 18 },

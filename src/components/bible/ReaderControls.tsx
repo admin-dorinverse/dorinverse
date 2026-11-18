@@ -21,10 +21,12 @@ type ReaderControlsProps = {
   /** Goes to the previous or next chapter that can be opened, or is missing when there is none. */
   onPrevious?: () => void;
   onNext?: () => void;
+  /** Goes back to the book list, opened at this chapter's book. */
+  onBooks: () => void;
 };
 
 /** The play button and the chapter pill. */
-export function ReaderControls({ title, speaking, onPlay, onPrevious, onNext }: ReaderControlsProps) {
+export function ReaderControls({ title, speaking, onPlay, onPrevious, onNext, onBooks }: ReaderControlsProps) {
   const insets = useSafeAreaInsets();
   return (
     <View style={[styles.bar, { bottom: insets.bottom + 16 }]} pointerEvents="box-none">
@@ -33,9 +35,19 @@ export function ReaderControls({ title, speaking, onPlay, onPrevious, onNext }: 
       </Pressable>
       <View style={styles.pill}>
         <Arrow label="Previous chapter" sign="‹" onPress={onPrevious} />
-        <Text style={styles.title} numberOfLines={1}>
-          {title}
-        </Text>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`${title}. Back to the book list`}
+          onPress={() => {
+            playSound('tap');
+            onBooks();
+          }}
+          style={styles.titleButton}
+        >
+          <Text style={styles.title} numberOfLines={1}>
+            {title}
+          </Text>
+        </Pressable>
         <Arrow label="Next chapter" sign="›" onPress={onNext} />
       </View>
     </View>
@@ -92,5 +104,6 @@ const styles = StyleSheet.create({
   arrow: { paddingHorizontal: 14, paddingVertical: 8 },
   arrowText: { fontFamily: fonts.black, fontSize: 24, color: 'rgba(255,255,255,0.75)' },
   arrowOff: { color: 'rgba(255,255,255,0.18)' },
-  title: { flex: 1, textAlign: 'center', fontFamily: fonts.black, fontSize: 16, color: text.onDark },
+  titleButton: { flex: 1, alignSelf: 'stretch', justifyContent: 'center' },
+  title: { textAlign: 'center', fontFamily: fonts.black, fontSize: 16, color: text.onDark },
 });

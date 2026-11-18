@@ -3,8 +3,8 @@
 // a block of verses is one text view and the whole page appears at once. Long chapters are split into blocks
 // of verses, and only the blocks on screen are drawn.
 
-import { memo, useMemo, useState, type ReactElement } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { memo, useMemo, useState } from 'react';
+import { FlatList, StyleSheet, Text } from 'react-native';
 import { reader } from '@/theme/colors';
 import { fonts, readingFont } from '@/theme/text';
 import type { ChapterPage, PageVerse } from '@/types/bible';
@@ -41,12 +41,10 @@ type ChapterTextProps = {
   onNote: (verse: PageVerse, note: number) => void;
   /** Space below the text, for the floating controls. */
   bottomSpace: number;
-  /** Shown above the text, like the top bar. */
-  header?: ReactElement;
 };
 
 /** The chapter page's text. */
-export function ChapterText({ page, fontSize, highlight, onVerse, onNote, bottomSpace, header }: ChapterTextProps) {
+export function ChapterText({ page, fontSize, highlight, onVerse, onNote, bottomSpace }: ChapterTextProps) {
   const blocks = useMemo(() => makeBlocks(page), [page]);
   // Development timing: when this chapter first drew, to log how long until it was laid out.
   const [drawnAt] = useState(() => performance.now());
@@ -56,10 +54,7 @@ export function ChapterText({ page, fontSize, highlight, onVerse, onNote, bottom
       data={blocks}
       keyExtractor={(block) => String(block.verses[0]?.verse.number ?? 0)}
       ListHeaderComponent={
-        <View>
-          {header}
-          <Text style={[styles.chapterNumber, { fontSize: numberSize, lineHeight: Math.round(numberSize * CHAPTER_NUMBER_LINE) }]}>{page.chapter}</Text>
-        </View>
+        <Text style={[styles.chapterNumber, { fontSize: numberSize, lineHeight: Math.round(numberSize * CHAPTER_NUMBER_LINE) }]}>{page.chapter}</Text>
       }
       contentContainerStyle={[styles.content, { paddingBottom: bottomSpace }]}
       initialNumToRender={2}

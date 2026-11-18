@@ -35,6 +35,13 @@ export default function BibleBooksPage() {
   const library = useBibleLibrary();
   const { open } = useLocalSearchParams<{ open?: string }>();
   const [openBook, setOpenBook] = useState<number | null>(open ? Number(open) : null);
+  // Coming back from the reader (or search) opens that book's chapters. Checked while drawing, so the list
+  // never draws twice.
+  const [openParam, setOpenParam] = useState(open);
+  if (open !== openParam) {
+    setOpenParam(open);
+    if (open) setOpenBook(Number(open));
+  }
   const [infoBook, setInfoBook] = useState<BibleBook | null>(null);
   const counts = library.data?.counts ?? {};
 
