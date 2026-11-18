@@ -46,12 +46,9 @@ export default function CollectionsPage() {
   /** Opens one collection's full list. */
   const open = (kind: CollectionKind) => {
     playSound('tap');
-    // The generated route list names these lists "/bible/index", "/characters/index" and "/places/index"; their
-    // real addresses are "/bible", "/characters" and "/places".
-    if (kind === 'verses') router.push('/bible' as Href);
-    else if (kind === 'characters') router.push('/characters' as Href);
-    else if (kind === 'places') router.push('/places' as Href);
-    else router.push({ pathname: '/collection/[kind]', params: { kind } });
+    // The generated route list names these lists "/bible/index", "/characters/index" and so on; their real
+    // addresses are "/bible", "/characters", "/places", "/prophecy", "/instructions" and "/prayers".
+    router.push((kind === 'verses' ? '/bible' : `/${kind}`) as Href);
   };
 
   return (

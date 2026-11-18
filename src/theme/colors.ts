@@ -220,6 +220,47 @@ export const places = {
   soft: 'rgba(255,255,255,0.7)',
 } as const;
 
+/** The Prophecy and Fulfillment page, in the same dark glass look; its accent is the Prophecy card's blue. */
+export const prophecy = {
+  /** The accent: the big count, the promise and fulfillment stars and the selected chip. */
+  accent: collectionHues.blue,
+  /** The big count's glow (the accent, 70% strength). */
+  glow: 'rgba(143,216,255,0.7)',
+  /** Fill of the selected chip. */
+  chipOn: 'rgba(143,216,255,0.2)',
+  /** Small grey labels, like a reference. */
+  soft: 'rgba(255,255,255,0.7)',
+  /** A joined link's card: its edge and its soft, still glow. */
+  joinedEdge: 'rgba(143,216,255,0.75)',
+  joinedGlow: '0 0 18px rgba(143,216,255,0.45)',
+  /** Fill of a joined link's card. */
+  joinedFill: 'rgba(143,216,255,0.08)',
+} as const;
+
+/** The Instructions for Today page, in the same dark glass look; its accent is the Instructions card's cocoa. */
+export const instructions = {
+  /** The accent: the big count, the commandment numbers and the selected chip. */
+  accent: collectionHues.cocoa,
+  /** The big count's glow (the accent, 70% strength). */
+  glow: 'rgba(224,164,106,0.7)',
+  /** Fill of the selected chip and the Ten Commandments pack. */
+  chipOn: 'rgba(224,164,106,0.2)',
+  /** Small grey labels, like a reference. */
+  soft: 'rgba(255,255,255,0.7)',
+} as const;
+
+/** The Prayers page, in the same dark glass look; its accent is the Prayers card's lavender. */
+export const prayers = {
+  /** The accent: the big count, who prayed and the selected chip. */
+  accent: collectionHues.lav,
+  /** The big count's glow (the accent, 70% strength). */
+  glow: 'rgba(201,168,255,0.7)',
+  /** Fill of the selected chip. */
+  chipOn: 'rgba(201,168,255,0.2)',
+  /** Small grey labels, like a reference. */
+  soft: 'rgba(255,255,255,0.7)',
+} as const;
+
 /** Deep navy used for dark text on bright buttons and pills. */
 export const navy = '#1a1c45';
 
