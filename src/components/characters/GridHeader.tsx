@@ -4,6 +4,7 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SearchField } from '@/components/common/SearchField';
 import { playSound } from '@/components/common/sounds';
+import type { CharacterOrder } from '@/data/characterLibrary';
 import { characters, reader, text } from '@/theme/colors';
 import { fonts } from '@/theme/text';
 
@@ -21,10 +22,21 @@ type GridHeaderProps = {
   book: string | null;
   /** Picks a book, or null for all. */
   onBook: (book: string | null) => void;
+  /** How the grid is ordered. */
+  order: CharacterOrder;
+  /** Changes the order. */
+  onOrder: (order: CharacterOrder) => void;
 };
 
+/** The order chips: newest collected first, or by name either way. */
+const ORDERS: readonly { order: CharacterOrder; label: string }[] = [
+  { order: 'newest', label: 'Newest' },
+  { order: 'az', label: 'A–Z' },
+  { order: 'za', label: 'Z–A' },
+];
+
 /** The count, search box and book chips. */
-export function GridHeader({ count, query, onQuery, books, book, onBook }: GridHeaderProps) {
+export function GridHeader({ count, query, onQuery, books, book, onBook, order, onOrder }: GridHeaderProps) {
   return (
     <View style={styles.wrap}>
       <View style={styles.hero}>
@@ -40,6 +52,13 @@ export function GridHeader({ count, query, onQuery, books, book, onBook }: GridH
           ))}
         </ScrollView>
       )}
+      {count > 1 && (
+        <View style={styles.chips}>
+          {ORDERS.map((o) => (
+            <BookChip key={o.order} label={o.label} plain on={order === o.order} onPress={() => onOrder(o.order)} />
+          ))}
+        </View>
+      )}
     </View>
   );
 }
@@ -50,12 +69,14 @@ type BookChipProps = {
   label: string;
   /** True when this chip is the picked one. */
   on: boolean;
+  /** True for chips without the book icon, like the order chips. */
+  plain?: boolean;
   /** Picks this chip. */
   onPress: () => void;
 };
 
 /** One book chip. */
-function BookChip({ label, on, onPress }: BookChipProps) {
+function BookChip({ label, on, plain = false, onPress }: BookChipProps) {
   return (
     <Pressable
       accessibilityRole="button"
@@ -66,7 +87,7 @@ function BookChip({ label, on, onPress }: BookChipProps) {
       }}
       style={[styles.chip, on && styles.chipOn]}
     >
-      <Text style={[styles.chipText, on && styles.chipTextOn]}>{label === 'All' ? label : `📖 ${label}`}</Text>
+      <Text style={[styles.chipText, on && styles.chipTextOn]}>{plain || label === 'All' ? label : `📖 ${label}`}</Text>
     </Pressable>
   );
 }
@@ -84,7 +105,7 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 0, height: 0 },
   },
   label: { fontFamily: fonts.extraBold, fontSize: 14, letterSpacing: 0.6, color: characters.soft, textTransform: 'uppercase' },
-  chips: { gap: 8 },
+  chips: { flexDirection: 'row', gap: 8 },
   chip: { borderRadius: 999, paddingVertical: 7, paddingHorizontal: 14, backgroundColor: reader.surface, borderWidth: 1, borderColor: reader.edge },
   chipOn: { backgroundColor: characters.chipOn, borderColor: characters.accent },
   chipText: { fontFamily: fonts.extraBold, fontSize: 13, color: characters.soft },

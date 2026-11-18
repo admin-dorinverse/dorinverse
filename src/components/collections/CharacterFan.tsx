@@ -142,7 +142,9 @@ function FanCard({ index, character, isNew = false, spots, layer, clock }: FanCa
           </View>
           <Text style={styles.name}>{character.name}</Text>
           <Text style={styles.reference}>{character.reference}</Text>
-          <Text style={styles.mentions}>{character.mentions} mentions</Text>
+          <Text style={styles.mentions} numberOfLines={1} adjustsFontSizeToFit>
+            {character.mentions} {character.mentions === '1' ? 'verse' : 'verses'} mentioned
+          </Text>
           {isNew && <Text style={styles.newTag}>NEW</Text>}
         </>
       ) : (

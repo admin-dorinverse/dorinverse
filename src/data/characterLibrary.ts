@@ -142,3 +142,13 @@ export function linkRows(library: CharacterLibrary, character: CharacterCard): {
   }
   return { rows: [...rows.values()], hidden: character.hiddenIds.length + gone.size };
 }
+
+/** How the Characters grid is ordered: newest collected first, or by name A to Z, or Z to A. */
+export type CharacterOrder = 'newest' | 'az' | 'za';
+
+/** The characters in the chosen order. The library already holds them newest first. */
+export function sortCharacters(characters: readonly MetCharacter[], order: CharacterOrder): readonly MetCharacter[] {
+  if (order === 'newest') return characters;
+  const byName = [...characters].sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+  return order === 'az' ? byName : byName.reverse();
+}

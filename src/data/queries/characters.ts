@@ -13,7 +13,7 @@ import type { CharacterLibrary, CharacterLookup, MetCharacter } from '@/types/ch
 import type { CollectedCharacter } from '@/types/collection';
 import type { VerseRef } from '@/types/bible';
 
-export { filterCharacters, initialOf, linkRows, type LinkRow } from '@/data/characterLibrary';
+export { filterCharacters, initialOf, linkRows, sortCharacters, type CharacterOrder, type LinkRow } from '@/data/characterLibrary';
 
 /** The library's place in the query cache. */
 const CHARACTERS_KEY = ['characters', 'library'] as const;

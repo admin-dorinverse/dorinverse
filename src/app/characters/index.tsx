@@ -1,22 +1,24 @@
-// The Characters page, opened from the Characters card: how many characters the person has met, a search box and
-// book chips, then a 3-column grid of collected characters, newest first. It shows 25 at first and 25 more as the
-// person scrolls; only the cells on screen are drawn. Everything comes from memory, so nothing waits on a download.
+// The Characters page, opened from the Characters card: how many characters the person has met, a search box,
+// book chips and order chips (newest first, A–Z or Z–A), then a 3-column grid of collected characters. Sorted by
+// name, each first letter gets a heading. It shows 25 at first and 25 more as the person scrolls; only the rows on
+// screen are drawn. Everything comes from memory, so nothing waits on a download.
 
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { BlankCell, CharacterCell, fillRows } from '@/components/characters/CharacterCell';
+import { BlankCell, CharacterCell } from '@/components/characters/CharacterCell';
 import { GridHeader } from '@/components/characters/GridHeader';
+import { gridRows, type GridRow } from '@/components/characters/gridRows';
 import { DrillHeader } from '@/components/common/DrillHeader';
 import { LoadState } from '@/components/common/LoadState';
-import { filterCharacters, useCharacterLibrary } from '@/data/queries/characters';
-import { reader, text } from '@/theme/colors';
+import { filterCharacters, sortCharacters, useCharacterLibrary, type CharacterOrder } from '@/data/queries/characters';
+import { characters as characterColors, reader, text } from '@/theme/colors';
 import { gutter } from '@/theme/spacing';
 import { fonts } from '@/theme/text';
 import type { MetCharacter } from '@/types/character';
 
-/** How many cells are shown at first, and how many more each time the grid nears its end. */
+/** How many characters are shown at first, and how many more each time the grid nears its end. */
 const PAGE = 25;
 
 /** Cells across. */
@@ -29,21 +31,32 @@ export default function CharactersPage() {
   const library = useCharacterLibrary();
   const [query, setQuery] = useState('');
   const [book, setBook] = useState<string | null>(null);
-  // How many cells show, for the current search and book; a new search starts again at 25.
-  const filter = `${book ?? ''}|${query.trim().toLowerCase()}`;
+  const [order, setOrder] = useState<CharacterOrder>('newest');
+  // How many characters show, for the current search, book and order; any change starts again at 25.
+  const filter = `${book ?? ''}|${order}|${query.trim().toLowerCase()}`;
   const [paging, setPaging] = useState({ filter: '', shown: PAGE });
   const shown = paging.filter === filter ? paging.shown : PAGE;
 
   const all = library.data?.characters;
-  const matching = useMemo(() => (all ? filterCharacters(all, query, book) : []), [all, query, book]);
-  const cells = useMemo(() => fillRows(matching.slice(0, shown), COLUMNS), [matching, shown]);
+  const matching = useMemo(() => (all ? sortCharacters(filterCharacters(all, query, book), order) : []), [all, query, book, order]);
+  const rows = useMemo(() => gridRows(matching.slice(0, shown), order, COLUMNS), [matching, shown, order]);
 
-  /** Shows 25 more cells when the grid nears its end. */
+  /** Shows 25 more characters when the grid nears its end. */
   const showMore = () => {
     if (shown < matching.length) setPaging({ filter, shown: shown + PAGE });
   };
   /** Opens a character's page. */
   const open = (character: MetCharacter) => router.push({ pathname: '/characters/[id]', params: { id: character.lookup } });
+
+  /** Draws one line of the grid: a letter heading or a row of cells. */
+  const renderRow = ({ item }: { item: GridRow }) =>
+    item.kind === 'letter' ? (
+      <Text style={styles.letter}>{item.letter}</Text>
+    ) : (
+      <View style={styles.row}>
+        {item.cells.map((c, i) => (c ? <CharacterCell key={c.lookup} character={c} onPress={open} /> : <BlankCell key={`blank-${i}`} />))}
+      </View>
+    );
 
   return (
     <View style={styles.page}>
@@ -53,18 +66,25 @@ export default function CharactersPage() {
       ) : (
         library.data && (
           <FlatList
-            data={cells}
-            numColumns={COLUMNS}
-            keyExtractor={(c, i) => (c ? c.lookup : `blank-${i}`)}
-            renderItem={({ item }) => (item ? <CharacterCell character={item} onPress={open} /> : <BlankCell />)}
-            columnWrapperStyle={styles.row}
+            data={rows}
+            keyExtractor={(r) => (r.kind === 'letter' ? `letter-${r.letter}` : r.key)}
+            renderItem={renderRow}
             ListHeaderComponent={
-              <GridHeader count={library.data.characters.length} query={query} onQuery={setQuery} books={library.data.books} book={book} onBook={setBook} />
+              <GridHeader
+                count={library.data.characters.length}
+                query={query}
+                onQuery={setQuery}
+                books={library.data.books}
+                book={book}
+                onBook={setBook}
+                order={order}
+                onOrder={setOrder}
+              />
             }
             ListEmptyComponent={<Text style={styles.empty}>{all?.length ? 'No characters match.' : 'Characters you meet in lessons show up here.'}</Text>}
             onEndReached={showMore}
             onEndReachedThreshold={0.6}
-            initialNumToRender={12}
+            initialNumToRender={8}
             windowSize={7}
             keyboardShouldPersistTaps="handled"
             keyboardDismissMode="on-drag"
@@ -79,6 +99,7 @@ export default function CharactersPage() {
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: reader.page },
   list: { paddingHorizontal: gutter, paddingTop: 4, width: '100%', maxWidth: 560, alignSelf: 'center' },
-  row: { gap: 10, marginBottom: 10 },
+  row: { flexDirection: 'row', gap: 10, marginBottom: 10 },
+  letter: { fontFamily: fonts.black, fontSize: 22, color: characterColors.accent, marginTop: 8, marginBottom: 8, marginLeft: 2 },
   empty: { fontFamily: fonts.bold, fontSize: 15, color: text.onDarkSoft, textAlign: 'center', marginTop: 30 },
 });

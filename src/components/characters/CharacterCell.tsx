@@ -40,7 +40,7 @@ export const CharacterCell = memo(function CharacterCell({ character, onPress }:
       )}
       <Text style={styles.met}>{character.metIn}</Text>
       <Text style={styles.count}>
-        {character.verseCount} {character.verseCount === 1 ? 'verse' : 'verses'}
+        {character.verseCount} {character.verseCount === 1 ? 'verse' : 'verses'} mentioned
       </Text>
     </Pressable>
   );
@@ -51,12 +51,6 @@ export function BlankCell() {
   return <View style={styles.blank} />;
 }
 
-/** The list with empty spots (null) added so its length fills whole rows of `columns`. */
-export function fillRows<T>(items: readonly T[], columns: number): (T | null)[] {
-  const out: (T | null)[] = [...items];
-  while (out.length % columns !== 0) out.push(null);
-  return out;
-}
 
 const styles = StyleSheet.create({
   cell: {
