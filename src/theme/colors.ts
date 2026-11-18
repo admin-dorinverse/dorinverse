@@ -190,6 +190,21 @@ export const reader = {
   ],
 } as const;
 
+/** The Characters pages, in the dark glass look; their accent is the Characters card's berry. */
+export const characters = {
+  /** The accent: the big count, verse counts and the selected book chip. */
+  accent: collectionHues.berry,
+  /** The big count's glow (the accent, 70% strength). */
+  glow: 'rgba(255,125,156,0.7)',
+  /** A round letter badge's gradient, top-left (berry mixed 85% with white) to bottom-right (berry 50% with black). */
+  badgeLight: '#ff91ab',
+  badgeDark: '#803f4e',
+  /** Fill of the selected book chip and the current recently viewed chip. */
+  chipOn: 'rgba(255,125,156,0.22)',
+  /** Small grey labels, like "Judges 3" under a name. */
+  soft: 'rgba(255,255,255,0.7)',
+} as const;
+
 /** Deep navy used for dark text on bright buttons and pills. */
 export const navy = '#1a1c45';
 

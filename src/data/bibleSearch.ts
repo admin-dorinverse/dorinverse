@@ -102,6 +102,21 @@ export function versePage(index: SearchIndex, query: string, from = 0, size = RE
   return { hits, next: null };
 }
 
+/**
+ * Finds the next `size` revealed verses whose labels are in `refs` (like the verses that name a character),
+ * in Bible order, starting at `from` in the index. Only revealed verses are in the index, so covered ones never show.
+ */
+export function refsPage(index: SearchIndex, refs: ReadonlySet<VerseRef>, from = 0, size = RESULTS_PAGE): VersePage {
+  const hits: VerseHit[] = [];
+  for (let i = from; i < index.length; i++) {
+    const entry = index[i];
+    if (!refs.has(entry.ref)) continue;
+    hits.push({ ref: entry.ref, book: entry.book, chapter: entry.chapter, verse: entry.verse, label: entry.label, text: entry.text });
+    if (hits.length === size) return { hits, next: i + 1 < index.length ? i + 1 : null };
+  }
+  return { hits, next: null };
+}
+
 /** Searches from a list (recent or suggested) that start with what was typed, ignoring capitals. */
 export function matchSuggestions(list: readonly string[], query: string, limit: number): string[] {
   const low = query.trim().toLowerCase();

@@ -8,7 +8,7 @@ import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BookChapterRow } from '@/components/bible/BookChapterRow';
-import { SearchField } from '@/components/bible/SearchField';
+import { SearchField } from '@/components/common/SearchField';
 import { SuggestionRow } from '@/components/bible/SuggestionRow';
 import { RoundButton } from '@/components/common/DrillHeader';
 import { playSound } from '@/components/common/sounds';

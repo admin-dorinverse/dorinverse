@@ -1,4 +1,4 @@
-// The search box at the top of the Bible search pages: a magnifier, the typed words, and a clear button.
+// A round search box: a magnifier, the typed words, and a clear button. Used by Bible search and the Characters page.
 
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { reader, text } from '@/theme/colors';
@@ -14,10 +14,12 @@ type SearchFieldProps = {
   onSubmit: () => void;
   /** Opens the keyboard as soon as the page shows. */
   autoFocus?: boolean;
+  /** The grey hint shown while the box is empty. */
+  placeholder?: string;
 };
 
 /** The search box. */
-export function SearchField({ value, onChange, onSubmit, autoFocus = false }: SearchFieldProps) {
+export function SearchField({ value, onChange, onSubmit, autoFocus = false, placeholder = 'Search your revealed verses' }: SearchFieldProps) {
   return (
     <View style={styles.field}>
       <Text style={styles.icon}>🔍</Text>
@@ -25,7 +27,7 @@ export function SearchField({ value, onChange, onSubmit, autoFocus = false }: Se
         value={value}
         onChangeText={onChange}
         onSubmitEditing={onSubmit}
-        placeholder="Search your revealed verses"
+        placeholder={placeholder}
         placeholderTextColor="rgba(255,255,255,0.45)"
         autoFocus={autoFocus}
         autoCorrect={false}

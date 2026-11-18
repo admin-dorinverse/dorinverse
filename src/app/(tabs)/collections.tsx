@@ -11,7 +11,8 @@ import { PlacesMap } from '@/components/collections/PlacesMap';
 import { CompassScene, PrayerCandle, ProphecyLink } from '@/components/collections/SmallScenes';
 import { playSound } from '@/components/common/sounds';
 import { useAmbientClock } from '@/components/common/useAmbientClock';
-import { sampleCharacters, samplePlaces, sampleVerseBooks } from '@/data/sample/collections';
+import { useFanCharacters } from '@/data/queries/characters';
+import { samplePlaces, sampleVerseBooks } from '@/data/sample/collections';
 import { glass, text } from '@/theme/colors';
 import { gutter } from '@/theme/spacing';
 import { textStyles } from '@/theme/text';
@@ -36,12 +37,16 @@ export default function CollectionsPage() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const clock = useAmbientClock(collectionsBusy);
+  // The newest collected characters, from memory (loaded when the app starts); "Who's next?" cards until then.
+  const fanCharacters = useFanCharacters();
 
   /** Opens one collection's full list. */
   const open = (kind: CollectionKind) => {
     playSound('tap');
-    // The generated route list names the book list "/bible/index"; its real address is "/bible".
+    // The generated route list names these lists "/bible/index" and "/characters/index"; their real addresses
+    // are "/bible" and "/characters".
     if (kind === 'verses') router.push('/bible' as Href);
+    else if (kind === 'characters') router.push('/characters' as Href);
     else router.push({ pathname: '/collection/[kind]', params: { kind } });
   };
 
@@ -54,7 +59,7 @@ export default function CollectionsPage() {
             <BookShelf books={sampleVerseBooks} clock={clock} />
           </CollectionCard>
           <CollectionCard title="Characters" note="The people you have met." hue="berry" layout="wide" index={1} clock={clock} onPress={() => open('characters')}>
-            <CharacterFan characters={sampleCharacters} clock={clock} />
+            <CharacterFan characters={fanCharacters} clock={clock} />
           </CollectionCard>
           <CollectionCard title="Places" note="Where your latest lessons have taken you." hue="sage" layout="wide" index={2} clock={clock} onPress={() => open('places')}>
             <PlacesMap places={samplePlaces} clock={clock} />
