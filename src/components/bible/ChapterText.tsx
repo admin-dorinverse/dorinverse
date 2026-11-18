@@ -8,7 +8,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { reader } from '@/theme/colors';
 import { fonts, readingFont } from '@/theme/text';
 import type { ChapterPage, PageVerse } from '@/types/bible';
-import { stardustText } from './stardust';
+import { stardustWords } from './stardust';
 
 /** How many verses go in one block. Blocks start on a new line, like a paragraph. */
 const VERSES_PER_BLOCK = 12;
@@ -18,7 +18,7 @@ const CHAPTER_NUMBER_SIZE = 3.2;
 const CHAPTER_NUMBER_LINE = 1.3;
 
 /** A verse ready to draw: covered verses carry their stardust letters, made once per chapter. */
-type DrawnVerse = { verse: PageVerse; dust: string };
+type DrawnVerse = { verse: PageVerse; dust: string[] };
 
 /** A block of verses, with what a screen reader says for it (covered verses are named, not spelled out). */
 type VerseBlock = { verses: DrawnVerse[]; spoken: string };
@@ -68,7 +68,7 @@ export function ChapterText({ page, fontSize, highlight, onVerse, bottomSpace, h
 
 /** Splits a chapter into blocks and makes each covered verse's stardust letters and each block's spoken words. */
 function makeBlocks(page: ChapterPage): VerseBlock[] {
-  const drawn = page.verses.map((verse) => ({ verse, dust: verse.kind === 'covered' ? stardustText(verse.wordLengths, verse.number) : '' }));
+  const drawn = page.verses.map((verse) => ({ verse, dust: verse.kind === 'covered' ? stardustWords(verse.wordLengths, verse.number) : [] }));
   const blocks: VerseBlock[] = [];
   for (let i = 0; i < drawn.length; i += VERSES_PER_BLOCK) {
     const verses = drawn.slice(i, i + VERSES_PER_BLOCK);
@@ -98,12 +98,27 @@ const Block = memo(function Block({ block, fontSize, highlight, onVerse }: Block
       {block.verses.map(({ verse, dust }) => (
         <Text key={verse.number} onPress={() => onVerse(verse)} suppressHighlighting>
           {verse.number > 1 && <Text style={[styles.number, verse.kind === 'covered' && styles.numberCovered, { fontSize: numberSize }]}>{verse.number} </Text>}
-          {verse.kind === 'revealed' ? <Marked text={verse.text} mark={highlight} /> : <Text style={styles.dust}>{dust}</Text>}{' '}
+          {verse.kind === 'revealed' ? <Marked text={verse.text} mark={highlight} /> : <Dust words={dust} seed={verse.number} />}{' '}
         </Text>
       ))}
     </Text>
   );
 });
+
+/** A covered verse's stardust words. Each word takes the next constellation color, starting from the verse number. */
+function Dust({ words, seed }: { words: readonly string[]; seed: number }) {
+  const colors = reader.stardust;
+  return (
+    <Text style={styles.dust}>
+      {words.map((word, i) => (
+        <Text key={i} style={{ color: colors[(seed + i) % colors.length] }}>
+          {i > 0 ? ' ' : ''}
+          {word}
+        </Text>
+      ))}
+    </Text>
+  );
+}
 
 /** A verse's words with every match of `mark` highlighted. */
 function Marked({ text, mark }: { text: string; mark?: string }) {
@@ -130,6 +145,6 @@ const styles = StyleSheet.create({
   chapterNumber: { fontFamily: readingFont, color: reader.chapterNumber },
   number: { fontFamily: fonts.extraBold, color: reader.verseNumber },
   numberCovered: { color: reader.coveredNumber },
-  dust: { fontFamily: fonts.stardust, color: reader.stardust },
+  dust: { fontFamily: fonts.stardust },
   highlight: { backgroundColor: reader.highlight },
 });

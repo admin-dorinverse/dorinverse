@@ -177,8 +177,19 @@ export const reader = {
   fullEdge: '#ffc65c',
   /** Search words found inside a verse. */
   highlight: 'rgba(255,198,92,0.35)',
-  /** Covered words, drawn as soft clouds of stardust in the Stardust font. */
-  stardust: 'rgba(238,230,255,0.8)',
+  /**
+   * Covered words, drawn as soft clouds of stardust in the Stardust font. Each word takes the next of the six
+   * constellation colors (blue, orange, yellow, green, purple, pink), slightly softened, so covered verses never
+   * look like the white revealed words.
+   */
+  stardust: [
+    'rgba(143,216,255,0.85)',
+    'rgba(255,180,94,0.85)',
+    'rgba(255,224,102,0.85)',
+    'rgba(125,255,180,0.85)',
+    'rgba(195,155,255,0.85)',
+    'rgba(255,125,156,0.85)',
+  ],
 } as const;
 
 /** Deep navy used for dark text on bright buttons and pills. */

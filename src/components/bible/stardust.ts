@@ -13,8 +13,8 @@ function pick(set: string, n: number): string {
   return set[(n * 7 + (n >> 3)) % set.length];
 }
 
-/** The Stardust placeholder text for one covered verse. The same verse always gets the same letters. */
-export function stardustText(wordLengths: readonly number[], seed: number): string {
+/** The Stardust placeholder words for one covered verse, one per real word. The same verse always gets the same letters. */
+export function stardustWords(wordLengths: readonly number[], seed: number): string[] {
   let n = seed * 13;
   const words = wordLengths.map((length) => {
     n += 1;
@@ -23,5 +23,5 @@ export function stardustText(wordLengths: readonly number[], seed: number): stri
     for (let i = 0; i < length - 2; i++) word += pick(MIDDLE, ++n);
     return word + pick(END, ++n);
   });
-  return words.join(' ');
+  return words;
 }
