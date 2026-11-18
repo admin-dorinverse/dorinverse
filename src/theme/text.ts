@@ -1,6 +1,6 @@
 // Fonts and text styles. Constellations uses Nunito for everything, with the heaviest weights for headings and buttons.
 
-import type { TextStyle } from 'react-native';
+import { Platform, type TextStyle } from 'react-native';
 
 /** Font names as they are loaded in the root layout. */
 export const fonts = {
@@ -13,6 +13,12 @@ export const fonts = {
   /** Nunito Black, for headings, buttons and numbers. */
   black: 'Nunito_900Black',
 } as const;
+
+/** The serif the Bible reader uses for verse words, as in the design (Georgia on iPhones, the phone's serif elsewhere). */
+export const readingFont = Platform.select({ ios: 'Georgia', default: 'serif' });
+
+/** The reader's text size: where it starts, and how small or big the person can make it. */
+export const readingSize = { start: 19, min: 15, max: 26 } as const;
 
 /** Font files the root layout loads, keyed by the names above. */
 export const fontFiles = {

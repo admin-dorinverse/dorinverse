@@ -152,6 +152,35 @@ export const collectionArt = {
   flameInner: '#fff3b0',
 } as const;
 
+/** The Bible reader and book list, in the dark glass look. */
+export const reader = {
+  /** Background of the reader and its pages. */
+  page: '#141533',
+  /** Revealed verse words. */
+  text: 'rgba(255,255,255,0.92)',
+  /** A revealed verse's number. */
+  verseNumber: '#ffc65c',
+  /** A covered verse's number. */
+  coveredNumber: 'rgba(255,255,255,0.3)',
+  /** The big chapter number at the top of the page. */
+  chapterNumber: 'rgba(255,255,255,0.26)',
+  /** Fill of a row, a tile or a control on the dark page. */
+  surface: 'rgba(255,255,255,0.07)',
+  /** Thin edge of a row, a tile or a control. */
+  edge: 'rgba(255,255,255,0.14)',
+  /** A book or chapter that can't be opened yet. */
+  locked: 'rgba(255,255,255,0.32)',
+  /** A chapter with some verses revealed: its tile edge. */
+  someEdge: '#ff9d6c',
+  /** A fully revealed chapter: its tile fill and edge. */
+  fullFill: 'rgba(255,198,92,0.22)',
+  fullEdge: '#ffc65c',
+  /** Search words found inside a verse. */
+  highlight: 'rgba(255,198,92,0.35)',
+  /** Shadow under a covered word's crumbs. */
+  crumbShadow: 'rgba(120,80,40,0.35)',
+} as const;
+
 /** Deep navy used for dark text on bright buttons and pills. */
 export const navy = '#1a1c45';
 

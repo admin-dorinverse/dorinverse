@@ -1,7 +1,7 @@
 // The Collections tab: everything the person has collected from their lessons, as glass cards over the stars.
 // Bible verses, characters, places, prophecy and fulfillment, instructions for today, and prayers.
 
-import { useRouter } from 'expo-router';
+import { useRouter, type Href } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BookShelf } from '@/components/collections/BookShelf';
@@ -40,7 +40,9 @@ export default function CollectionsPage() {
   /** Opens one collection's full list. */
   const open = (kind: CollectionKind) => {
     playSound('tap');
-    router.push({ pathname: '/collection/[kind]', params: { kind } });
+    // The generated route list names the book list "/bible/index"; its real address is "/bible".
+    if (kind === 'verses') router.push('/bible' as Href);
+    else router.push({ pathname: '/collection/[kind]', params: { kind } });
   };
 
   return (

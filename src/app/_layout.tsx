@@ -6,7 +6,9 @@ import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StyleSheet } from 'react-native';
+import { QueryClientProvider } from '@tanstack/react-query';
 import { SkyProvider } from '@/components/sky/SkyProvider';
+import { queryClient } from '@/data/queries/client';
 import { sky } from '@/theme/colors';
 import { fontFiles } from '@/theme/text';
 
@@ -20,9 +22,11 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={styles.root}>
       <ThemeProvider value={theme}>
-        <SkyProvider>
-          <Stack screenOptions={{ headerShown: false, contentStyle: styles.page }} />
-        </SkyProvider>
+        <QueryClientProvider client={queryClient}>
+          <SkyProvider>
+            <Stack screenOptions={{ headerShown: false, contentStyle: styles.page }} />
+          </SkyProvider>
+        </QueryClientProvider>
         <StatusBar style="light" />
       </ThemeProvider>
     </GestureHandlerRootView>
