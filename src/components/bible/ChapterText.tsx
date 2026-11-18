@@ -97,7 +97,7 @@ const Block = memo(function Block({ block, fontSize, highlight, onVerse }: Block
     <Text accessibilityLabel={block.spoken} style={[styles.text, { fontSize, lineHeight: fontSize * 2 }]}>
       {block.verses.map(({ verse, dust }) => (
         <Text key={verse.number} onPress={() => onVerse(verse)} suppressHighlighting>
-          {verse.number > 1 && <Text style={[styles.number, verse.kind === 'covered' && styles.numberCovered, { fontSize: numberSize }]}>{verse.number} </Text>}
+          {verse.number > 1 && <Text style={[styles.number, { fontSize: numberSize }]}>{verse.number} </Text>}
           {verse.kind === 'revealed' ? <Marked text={verse.text} mark={highlight} /> : <Dust words={dust} seed={verse.number} />}{' '}
         </Text>
       ))}
@@ -144,7 +144,6 @@ const styles = StyleSheet.create({
   text: { fontFamily: readingFont, color: reader.text },
   chapterNumber: { fontFamily: readingFont, color: reader.chapterNumber },
   number: { fontFamily: fonts.extraBold, color: reader.verseNumber },
-  numberCovered: { color: reader.coveredNumber },
   dust: { fontFamily: fonts.stardust },
   highlight: { backgroundColor: reader.highlight },
 });

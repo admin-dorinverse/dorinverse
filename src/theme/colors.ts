@@ -160,8 +160,6 @@ export const reader = {
   text: 'rgba(255,255,255,0.92)',
   /** A revealed verse's number. */
   verseNumber: '#ffc65c',
-  /** A covered verse's number. */
-  coveredNumber: 'rgba(255,255,255,0.3)',
   /** The big chapter number at the top of the page. */
   chapterNumber: 'rgba(255,255,255,0.26)',
   /** Fill of a row, a tile or a control on the dark page. */
