@@ -77,7 +77,6 @@ export function RecordMode({ reference, words }: ModeProps) {
       await wait(AFTER_BEEP_MS);
       hushSounds(true);
       recorder.record();
-      setNote('Recording…');
       setStage('recording');
     } catch {
       hushSounds(false);
@@ -101,9 +100,12 @@ export function RecordMode({ reference, words }: ModeProps) {
     hushSounds(false);
   };
 
-  /** Plays the recording again from the start. */
-  const play = () => {
-    player.seekTo(0).catch(() => {});
+  /** Plays the recording again from the start. It waits for the jump back to the start, or it would play from the end. */
+  const play = async () => {
+    player.pause();
+    try {
+      await player.seekTo(0);
+    } catch {}
     player.play();
   };
 
@@ -126,7 +128,7 @@ export function RecordMode({ reference, words }: ModeProps) {
             ) : (
               <>
                 <Text style={styles.mic}>🎙️</Text>
-                <Text style={styles.recordingRef}>{reference}</Text>
+                <Text style={styles.recordingRef}>Recording…</Text>
               </>
             )}
           </View>
@@ -160,7 +162,7 @@ const styles = StyleSheet.create({
   recording: { alignItems: 'center', paddingVertical: 30 },
   mic: { fontSize: 34 },
   getReady: { fontFamily: fonts.black, fontSize: 22, lineHeight: 66, color: indexCard.reference },
-  recordingRef: { fontFamily: fonts.extraBold, fontSize: 15, marginTop: 6, color: indexCard.faint },
+  recordingRef: { fontFamily: fonts.black, fontSize: 18, marginTop: 6, color: indexCard.reference },
   controls: { marginTop: 14, alignItems: 'center' },
   choices: { flexDirection: 'row', gap: 8, width: '100%' },
   choice: { flex: 1 },
