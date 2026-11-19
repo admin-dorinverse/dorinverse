@@ -67,7 +67,7 @@ export function RecordMode({ reference, words }: ModeProps) {
       setNote('The microphone is off for this app. Turn it on in Settings to record.');
       return;
     }
-    setNote('Get ready…');
+    setNote('');
     setStage('starting');
     try {
       await setAudioModeAsync(RECORDING_AUDIO);
@@ -116,9 +116,16 @@ export function RecordMode({ reference, words }: ModeProps) {
     <>
       <IndexCard reference={reference}>
         {stage === 'recording' || stage === 'starting' ? (
+          // While the microphone gets ready the card says so; the microphone picture shows only once it records.
           <View style={styles.recording}>
-            <Text style={styles.mic}>🎙️</Text>
-            <Text style={styles.recordingRef}>{reference}</Text>
+            {stage === 'starting' ? (
+              <Text style={styles.getReady}>Get ready…</Text>
+            ) : (
+              <>
+                <Text style={styles.mic}>🎙️</Text>
+                <Text style={styles.recordingRef}>{reference}</Text>
+              </>
+            )}
           </View>
         ) : (
           <Text style={cardWords}>{words.join(' ')}</Text>
@@ -149,6 +156,7 @@ export function RecordMode({ reference, words }: ModeProps) {
 const styles = StyleSheet.create({
   recording: { alignItems: 'center', paddingVertical: 30 },
   mic: { fontSize: 34 },
+  getReady: { fontFamily: fonts.black, fontSize: 22, lineHeight: 66, color: indexCard.reference },
   recordingRef: { fontFamily: fonts.extraBold, fontSize: 15, marginTop: 6, color: indexCard.faint },
   controls: { marginTop: 14, alignItems: 'center' },
   choices: { flexDirection: 'row', gap: 8, width: '100%' },
