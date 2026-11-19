@@ -1,8 +1,9 @@
-// The Collections area in the sky: a named, softly edged patch where the six collection cards float at random
-// spots, each with its usual animated scene. The area slides with the camera; its scenes animate only while it
-// is on screen on the Sky tab, and taps reach the cards through the sky's tap check (see skyTap.ts).
+// The Collections area in the sky: the six collection cards kept together in the old Collections page's order,
+// shrunk as one group inside a dotted frame, each with its usual animated scene. The group slides with the camera;
+// its scenes animate only while it is on screen on the Sky tab, and taps reach the cards through skyTap.ts.
 
-import { StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
+import { useRef, useState } from 'react';
+import { StyleSheet, Text, View, useWindowDimensions, type LayoutChangeEvent, type LayoutRectangle } from 'react-native';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import { BookShelf } from '@/components/collections/BookShelf';
 import { CharacterFan } from '@/components/collections/CharacterFan';
@@ -14,13 +15,26 @@ import { useFanCharacters } from '@/data/queries/characters';
 import { usePlacePins } from '@/data/queries/places';
 import { sampleVerseBooks } from '@/data/sample/collections';
 import { sky as skyColors, text } from '@/theme/colors';
+import { gutter } from '@/theme/spacing';
 import { textStyles } from '@/theme/text';
 import type { CollectedCharacter, CollectedPlace, CollectionKind } from '@/types/collection';
-import { COLLECTIONS_TITLE_Y, COLLECTIONS_ZONE, SKY_COLLECTIONS, collectionsOnScreen } from './collectionsZone';
+import { CARD_SCALE, COLLECTIONS_ZONE, SKY_COLLECTIONS, collectionsOnScreen, type CardBox } from './collectionsZone';
 import { useSky } from './SkyProvider';
 
-/** Width of the box the area's name is centered in. */
+/** Widest a wide card gets, the same as on a page, before the sky shrinks it. */
+const CARD_MAX = 560;
+
+/** Space between cards, inside the dotted frame, and the frame's line width, before shrinking. */
+const GAP = 12;
+const FRAME_PAD = 22;
+const FRAME_LINE = 2;
+
+/** A first guess at the group's height before shrinking, used until it is measured. */
+const GUESS_HEIGHT = 1400;
+
+/** Width of the box the area's name is centered in, and its height. */
 const TITLE_W = 400;
+const TITLE_H = 44;
 
 /**
  * True while something in the area moves fast, so its timer ticks 60 times a second then:
@@ -56,7 +70,8 @@ function Scene({ kind, clock, characters, places }: SceneProps & { kind: Collect
 
 /** The Collections area. Place it over the sky canvas, under the rocket. */
 export function SkyCollections() {
-  const { sky, pulse, collectionCards, collectionBoxes } = useSky();
+  const { sky, pulse, collectionBoxes } = useSky();
+  const { width } = useWindowDimensions();
   // The newest collected characters and places, from memory (loaded when the app starts).
   const characters = useFanCharacters();
   const places = usePlacePins();
@@ -65,6 +80,42 @@ export function SkyCollections() {
     const s = sky.get();
     return s.worldShown > 0 && collectionsOnScreen(s.camera.x, s.camera.y, s.width, s.height);
   });
+
+  // The group is laid out at page size, then shrunk around its top-left corner and centered on the area.
+  const groupW = Math.min(width, CARD_MAX) - gutter * 2 + (FRAME_PAD + FRAME_LINE) * 2;
+  const [groupH, setGroupH] = useState(GUESS_HEIGHT);
+  const left = COLLECTIONS_ZONE.x - (groupW * CARD_SCALE) / 2;
+  const top = COLLECTIONS_ZONE.y - (groupH * CARD_SCALE) / 2;
+  // Each card's spot inside the group, and the narrow pair's row. Narrow cards are measured inside that row.
+  const spots = useRef<(LayoutRectangle | null)[]>(SKY_COLLECTIONS.map(() => null));
+  const pair = useRef({ x: 0, y: 0 });
+
+  /** Turns the measured spots into sky boxes, so taps land on the cards as they show. */
+  const publish = (groupTop: number) => {
+    const boxes: CardBox[] = [];
+    SKY_COLLECTIONS.forEach((item, i) => {
+      const r = spots.current[i];
+      if (!r) return;
+      const inPair = item.layout === 'narrow';
+      const x = inPair ? pair.current.x + r.x : r.x;
+      const y = inPair ? pair.current.y + r.y : r.y;
+      boxes[i] = { x: left + x * CARD_SCALE, y: groupTop + y * CARD_SCALE, w: r.width * CARD_SCALE, h: r.height * CARD_SCALE };
+    });
+    collectionBoxes.set(boxes);
+  };
+  const measureCard = (i: number) => (e: LayoutChangeEvent) => {
+    spots.current[i] = e.nativeEvent.layout;
+    publish(top);
+  };
+  const measurePair = (e: LayoutChangeEvent) => {
+    pair.current = { x: e.nativeEvent.layout.x, y: e.nativeEvent.layout.y };
+    publish(top);
+  };
+  const measureGroup = (e: LayoutChangeEvent) => {
+    const h = e.nativeEvent.layout.height;
+    setGroupH(h);
+    publish(COLLECTIONS_ZONE.y - (h * CARD_SCALE) / 2);
+  };
 
   // Follows the camera: the sky's (0, 0) spot, slid to where it is on screen. Hidden while far off screen.
   const place = useAnimatedStyle(() => {
@@ -77,45 +128,65 @@ export function SkyCollections() {
     };
   });
 
-  /** Remembers a card's real height once it is laid out, so taps match what shows. */
-  const measure = (index: number) => (e: LayoutChangeEvent) => {
-    const h = e.nativeEvent.layout.height;
-    const boxes = collectionBoxes.get().map((b, i) => (i === index ? { ...b, h } : b));
-    collectionBoxes.set(boxes);
+  /** One card with its scene. */
+  const card = (i: number) => {
+    const item = SKY_COLLECTIONS[i];
+    return (
+      <CollectionCard title={item.title} note={item.note} hue={item.hue} layout={item.layout} index={i} clock={clock} onPress={() => {}}>
+        <Scene kind={item.kind} clock={clock} characters={characters} places={places} />
+      </CollectionCard>
+    );
   };
 
-  const z = COLLECTIONS_ZONE;
   return (
     <Animated.View pointerEvents="none" style={[styles.origin, place]}>
-      <View style={[styles.edge, { left: z.x - z.halfW, top: z.y - z.halfH, width: z.halfW * 2, height: z.halfH * 2 }]} />
-      <Text style={[textStyles.tabTitle, styles.title, { left: z.x - TITLE_W / 2, top: COLLECTIONS_TITLE_Y - 40 }]}>Collections</Text>
-      {SKY_COLLECTIONS.map((item, i) => {
-        const box = collectionCards[i];
-        return (
-          <View key={item.kind} onLayout={measure(i)} style={[styles.card, item.layout === 'narrow' && styles.cardNarrow, { left: box.x, top: box.y, width: box.w }]}>
-            <CollectionCard title={item.title} note={item.note} hue={item.hue} layout={item.layout} index={i} clock={clock} onPress={() => {}}>
-              <Scene kind={item.kind} clock={clock} characters={characters} places={places} />
-            </CollectionCard>
-          </View>
-        );
-      })}
+      <Text style={[textStyles.tabTitle, styles.title, { left: COLLECTIONS_ZONE.x - TITLE_W / 2, top: top - TITLE_H - 10 }]}>Collections</Text>
+      <View onLayout={measureGroup} style={[styles.group, { left, top, width: groupW }]}>
+        {SKY_COLLECTIONS.map((item, i) =>
+          item.layout === 'wide' ? (
+            <View key={item.kind} onLayout={measureCard(i)}>
+              {card(i)}
+            </View>
+          ) : null,
+        )}
+        <View style={styles.pair} onLayout={measurePair}>
+          {SKY_COLLECTIONS.map((item, i) =>
+            item.layout === 'narrow' ? (
+              <View key={item.kind} style={styles.narrow} onLayout={measureCard(i)}>
+                {card(i)}
+              </View>
+            ) : null,
+          )}
+        </View>
+      </View>
     </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
   origin: { position: 'absolute', left: 0, top: 0, width: 0, height: 0, overflow: 'visible' },
-  edge: { position: 'absolute', borderRadius: 120, borderWidth: 2, borderStyle: 'dashed', borderColor: skyColors.collectionsEdge },
   title: {
     position: 'absolute',
     width: TITLE_W,
+    height: TITLE_H,
     textAlign: 'center',
     color: text.onDark,
     textShadowColor: skyColors.collectionsGlow,
     textShadowRadius: 16,
     textShadowOffset: { width: 0, height: 0 },
   },
-  card: { position: 'absolute' },
-  // A narrow card fills its row the way it does beside its partner on a page.
-  cardNarrow: { flexDirection: 'row' },
+  group: {
+    position: 'absolute',
+    padding: FRAME_PAD,
+    gap: GAP,
+    borderRadius: 44,
+    borderWidth: FRAME_LINE,
+    borderStyle: 'dashed',
+    borderColor: skyColors.collectionsEdge,
+    transformOrigin: '0 0',
+    transform: [{ scale: CARD_SCALE }],
+  },
+  pair: { flexDirection: 'row', alignItems: 'stretch', gap: GAP },
+  // A narrow card fills its half of the row, as it does on a page.
+  narrow: { flex: 1, minWidth: 0, flexDirection: 'row' },
 });

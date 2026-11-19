@@ -2,17 +2,16 @@
 // and offers simple actions: fly somewhere, handle touches, and switch between the Sky tab and the other tabs.
 
 import { useFont } from '@shopify/react-native-skia';
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, type ReactNode } from 'react';
 import { AppState, useWindowDimensions } from 'react-native';
 import { useFrameCallback, useReducedMotion, useSharedValue, type SharedValue } from 'react-native-reanimated';
 import { scheduleOnRN, scheduleOnUI } from 'react-native-worklets';
 import { playSound, type SoundName } from '@/components/common/sounds';
 import { sampleConstellations } from '@/data/sample/constellations';
-import { gutter } from '@/theme/spacing';
 import { constellationLabelSize, skyLabelFont } from '@/theme/text';
 import type { CollectionKind } from '@/types/collection';
 import type { Constellation } from '@/types/constellation';
-import { placeCollectionCards, type CardBox } from './collectionsZone';
+import type { CardBox } from './collectionsZone';
 import { runSkyFrame, setSkyAtHome, setSkyScreen, skyIsBusy } from './runSkyFrame';
 import { createSkyState, type SkyState } from './skyState';
 import { handleSkyTap } from './skyTap';
@@ -31,9 +30,6 @@ const AWAY_FRAME_MS = 1000 / 10;
 /** Leeway so a screen refresh that comes a hair early still counts. */
 const FRAME_SLACK_MS = 4;
 
-/** Widest a collection card gets, the same as on a page. */
-const CARD_MAX = 560;
-
 /** Where a sky flight or tap leads: the bakery, a constellation by its id, or one collection's list. */
 export type SkyDestination = { kind: 'bakery' } | { kind: 'constellation'; id: string } | { kind: 'collection'; list: CollectionKind };
 
@@ -51,9 +47,7 @@ type SkyContextValue = {
   constellations: readonly Constellation[];
   /** Width of each constellation's name, used to keep the rocket off it. */
   labelWidths: readonly number[];
-  /** Each collection card's random spot in the Collections area, picked when the app starts. */
-  collectionCards: readonly CardBox[];
-  /** The same cards with their measured heights, used to tell which card a tap lands on. */
+  /** Each collection card's box in the sky, measured once it shows. Used to tell which card a tap lands on. */
   collectionBoxes: SharedValue<CardBox[]>;
   /** Flies the camera to a sky spot, then opens `destination` if one is given. */
   flyTo: (x: number, y: number, destination?: SkyDestination) => void;
@@ -116,9 +110,7 @@ export function SkyProvider({ children }: SkyProviderProps) {
   const sharedLabelWidths = useSharedValue<number[]>(labelWidths);
   const art = useSkyArt(constellations, font);
   const arrivalHandler = useRef<(d: SkyDestination) => void>(() => {});
-  // The cards' random spots are picked once, so they stay put until the app starts again.
-  const [collectionCards] = useState(() => placeCollectionCards(Math.min(width, CARD_MAX) - gutter * 2));
-  const collectionBoxes = useSharedValue<CardBox[]>(collectionCards);
+  const collectionBoxes = useSharedValue<CardBox[]>([]);
 
   useEffect(() => sharedLabelWidths.set(labelWidths), [sharedLabelWidths, labelWidths]);
   useEffect(() => {
@@ -212,8 +204,8 @@ export function SkyProvider({ children }: SkyProviderProps) {
   }, []);
 
   const value = useMemo<SkyContextValue | null>(
-    () => art && { sky, clock, pulse, art, constellations, labelWidths, collectionCards, collectionBoxes, flyTo, setAtHome, setArrivalHandler, touch },
-    [sky, clock, pulse, art, constellations, labelWidths, collectionCards, collectionBoxes, flyTo, setAtHome, setArrivalHandler, touch],
+    () => art && { sky, clock, pulse, art, constellations, labelWidths, collectionBoxes, flyTo, setAtHome, setArrivalHandler, touch },
+    [sky, clock, pulse, art, constellations, labelWidths, collectionBoxes, flyTo, setAtHome, setArrivalHandler, touch],
   );
 
   // Nothing shows until the sky's pictures are ready, so the planet never pops in late.
