@@ -7,7 +7,7 @@ import { useMemo } from 'react';
 import { chapterPage, makeLibrary } from '@/data/bibleLibrary';
 import { makeSearchIndex, type SearchIndex } from '@/data/bibleSearch';
 import { bibleOutline } from '@/data/bibleSource';
-import { syncBible } from '@/data/bibleSync';
+import { syncBible, type SaveBible, type SavedBible } from '@/data/bibleSync';
 import { queryClient } from '@/data/queries/client';
 import { readSavedBible, saveBible } from '@/data/storage/bibleStore';
 import type { BibleBook, BibleLibrary, ChapterPage } from '@/types/bible';
@@ -25,13 +25,45 @@ const LIBRARY_KEY = ['bible', 'library'] as const;
 async function loadLibrary(): Promise<BibleLibrary> {
   const started = Date.now();
   const saved = await readSavedBible();
+  held = saved;
   if (saved.refs && !queryClient.getQueryData(LIBRARY_KEY)) {
     queryClient.setQueryData(LIBRARY_KEY, makeLibrary(saved.refs, saved.texts, saved.shapes, saved.notes));
   }
-  const result = await syncBible(saved, saveBible);
+  const result = await syncBible(saved, keepBible);
   if (__DEV__) console.log(`[bible] library ready in ${Date.now() - started} ms; downloaded ${result.downloaded} verses`);
   const shown = queryClient.getQueryData<BibleLibrary>(LIBRARY_KEY);
   return !result.changed && shown ? shown : result.library;
+}
+
+/** What the phone holds, kept in memory after the first load so a refresh never reads the whole store again. */
+let held: SavedBible | null = null;
+
+/** Saves on the phone, and keeps the in-memory copy of what the phone holds the same. */
+const keepBible: SaveBible = async (refs, earned) => {
+  await saveBible(refs, earned);
+  if (held) {
+    held = {
+      refs: [...refs],
+      texts: { ...held.texts, ...earned.texts },
+      shapes: { ...held.shapes, ...earned.shapes },
+      notes: { ...held.notes, ...earned.notes },
+    };
+  }
+};
+
+/**
+ * Picks up newly revealed verses (after a lesson stop is baked) without a restart: the revealed list is checked
+ * again and only the new verses' words and their chapters' word lengths are downloaded, in one round.
+ */
+export async function refreshBible(): Promise<void> {
+  if (!held) {
+    await queryClient.refetchQueries({ queryKey: LIBRARY_KEY });
+    return;
+  }
+  const started = Date.now();
+  const result = await syncBible(held, keepBible);
+  if (__DEV__) console.log(`[bible] refreshed in ${Date.now() - started} ms; downloaded ${result.downloaded} verses`);
+  if (result.changed) queryClient.setQueryData(LIBRARY_KEY, result.library);
 }
 
 /** The library query's settings, shared by the start-up load and the pages. Kept for as long as the app runs. */

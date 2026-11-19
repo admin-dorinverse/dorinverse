@@ -10,6 +10,7 @@
 // above by asking the database directly, in one request per 25 cards, sent together.
 
 import { database } from '@/data/database';
+import { earnedPlaces } from '@/data/progressSource';
 import { sampleCollectedPlaces } from '@/data/sample/collectedPlaces';
 import type { VerseRef } from '@/types/bible';
 import type { CollectedPlaceEntry, PhotoCredit, PlaceCard, PlaceCharacterLink, PlaceLookup, PlacePhoto } from '@/types/place';
@@ -47,9 +48,14 @@ type CardRow = {
   }[];
 };
 
-/** Which places the person has collected, oldest first. Development: the sample list. Hookup: the server. */
+/**
+ * Which places the person has collected, oldest first. Development: the sample list, then the places collected in
+ * lessons (kept by progressSource). Hookup: the server.
+ */
 export async function fetchCollectedPlaces(): Promise<CollectedPlaceEntry[]> {
-  return sampleCollectedPlaces.map((entry) => ({ ...entry }));
+  const sample = sampleCollectedPlaces.map((entry) => ({ ...entry }));
+  const have = new Set(sample.map((e) => e.lookup));
+  return [...sample, ...(await earnedPlaces()).filter((e) => !have.has(e.lookup))];
 }
 
 /** Downloads the cards of the given places, all requests sent at once. */

@@ -6,7 +6,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Image } from 'expo-image';
 import { useMemo } from 'react';
 import { kindSign, makePlaceLibrary } from '@/data/placeLibrary';
-import { syncPlaces } from '@/data/placeSync';
+import { syncPlaces, type SavePlaces, type SavedPlaces } from '@/data/placeSync';
 import { useBibleLibrary } from '@/data/queries/bible';
 import { queryClient } from '@/data/queries/client';
 import { readSavedPlaces, savePlaces } from '@/data/storage/placeStore';
@@ -39,15 +39,41 @@ async function keepPhotos(library: PlaceLibrary): Promise<void> {
 async function loadPlaces(): Promise<PlaceLibrary> {
   const started = Date.now();
   const saved = await readSavedPlaces();
+  held = saved;
   if (saved.list && !queryClient.getQueryData(PLACES_KEY)) {
     queryClient.setQueryData(PLACES_KEY, makePlaceLibrary(saved.list, saved.cards));
   }
-  const result = await syncPlaces(saved, savePlaces);
+  const result = await syncPlaces(saved, keepPlaces);
   if (__DEV__) console.log(`[places] library ready in ${Date.now() - started} ms; downloaded ${result.downloaded} cards`);
   const shown = queryClient.getQueryData<PlaceLibrary>(PLACES_KEY);
   const library = !result.changed && shown ? shown : result.library;
   void keepPhotos(library);
   return library;
+}
+
+/** What the phone holds, kept in memory after the first load so a refresh never reads the whole store again. */
+let held: SavedPlaces | null = null;
+
+/** Saves on the phone, and keeps the in-memory copy of what the phone holds the same. */
+const keepPlaces: SavePlaces = async (list, added) => {
+  await savePlaces(list, added);
+  if (held) held = { list: [...list], cards: { ...held.cards, ...Object.fromEntries(added.map((c) => [c.lookup, c])) } };
+};
+
+/**
+ * Picks up places newly collected in a lesson without a restart, downloading only their cards in one round, then
+ * putting their two small photos in the photo cache.
+ */
+export async function refreshPlaces(): Promise<void> {
+  if (!held) {
+    await queryClient.refetchQueries({ queryKey: PLACES_KEY });
+    return;
+  }
+  const result = await syncPlaces(held, keepPlaces);
+  if (__DEV__) console.log(`[places] refreshed; downloaded ${result.downloaded} cards`);
+  if (!result.changed) return;
+  queryClient.setQueryData(PLACES_KEY, result.library);
+  if (result.downloaded) void keepPhotos(result.library);
 }
 
 /** The library query's settings, shared by the start-up load and the pages. Kept for as long as the app runs. */

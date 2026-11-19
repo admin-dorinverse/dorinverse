@@ -10,6 +10,7 @@
 // by asking the database directly: one request per 25 cookies (sent together), then one for the link outlines.
 
 import { database } from '@/data/database';
+import { earnedCookies } from '@/data/progressSource';
 import { sampleCollectedCookies } from '@/data/sample/collectedCookies';
 import type { Cookie, CookieKey, LinkHalf, ProphecyHalfSide, ProphecyLinkOutline } from '@/types/cookie';
 
@@ -47,9 +48,12 @@ type OutlineRow = { key: string; half: ProphecyHalfSide; reference: string; prop
 /** What a cookie download gives: the cookies, and the outline of every prophecy link they belong to. */
 export type DownloadedCookies = { cookies: Cookie[]; links: ProphecyLinkOutline[] };
 
-/** Which cookies the person has collected, oldest first. Development: the sample list. Hookup: the server. */
+/**
+ * Which cookies the person has collected, oldest first. Development: the sample list, then the cookies collected in
+ * lessons (kept by progressSource). Hookup: the server.
+ */
 export async function fetchCollectedCookies(): Promise<CookieKey[]> {
-  return [...sampleCollectedCookies];
+  return [...new Set([...sampleCollectedCookies, ...(await earnedCookies())])];
 }
 
 /** Downloads the given cookies and the outlines of their prophecy links. */

@@ -5,7 +5,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { makeCookieLibrary, readingSpot, type ReadingSpot } from '@/data/cookieLibrary';
-import { syncCookies } from '@/data/cookieSync';
+import { syncCookies, type SaveCookies, type SavedCookies } from '@/data/cookieSync';
 import { useBibleLibrary } from '@/data/queries/bible';
 import { queryClient } from '@/data/queries/client';
 import { readSavedCookies, saveCookies } from '@/data/storage/cookieStore';
@@ -23,13 +23,37 @@ const COOKIES_KEY = ['cookies', 'library'] as const;
 async function loadCookies(): Promise<CookieLibrary> {
   const started = Date.now();
   const saved = await readSavedCookies();
+  held = saved;
   if (saved.list && !queryClient.getQueryData(COOKIES_KEY)) {
     queryClient.setQueryData(COOKIES_KEY, makeCookieLibrary(saved.list, saved.cookies, saved.links));
   }
-  const result = await syncCookies(saved, saveCookies);
+  const result = await syncCookies(saved, keepCookies);
   if (__DEV__) console.log(`[cookies] library ready in ${Date.now() - started} ms; downloaded ${result.downloaded} cookies`);
   const shown = queryClient.getQueryData<CookieLibrary>(COOKIES_KEY);
   return !result.changed && shown ? shown : result.library;
+}
+
+/** What the phone holds, kept in memory after the first load so a refresh never reads the whole store again. */
+let held: SavedCookies | null = null;
+
+/** Saves on the phone, and keeps the in-memory copy of what the phone holds the same. */
+const keepCookies: SaveCookies = async (list, added, links) => {
+  await saveCookies(list, added, links);
+  if (held) {
+    const cookies = { ...held.cookies, ...Object.fromEntries(added.map((c) => [c.key, c])) };
+    held = { list: [...list], cookies, links: Object.fromEntries(links.map((l) => [l.linkNo, l])) };
+  }
+};
+
+/** Picks up cookies newly collected in a lesson without a restart, downloading only those cookies in one round. */
+export async function refreshCookies(): Promise<void> {
+  if (!held) {
+    await queryClient.refetchQueries({ queryKey: COOKIES_KEY });
+    return;
+  }
+  const result = await syncCookies(held, keepCookies);
+  if (__DEV__) console.log(`[cookies] refreshed; downloaded ${result.downloaded} cookies`);
+  if (result.changed) queryClient.setQueryData(COOKIES_KEY, result.library);
 }
 
 /** The library query's settings, shared by the start-up load and the pages. Kept for as long as the app runs. */

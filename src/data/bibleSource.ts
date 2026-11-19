@@ -15,6 +15,7 @@
 
 import { BIBLE_OUTLINE } from '@/data/bibleOutline';
 import { database } from '@/data/database';
+import { earnedVerses } from '@/data/progressSource';
 import { sampleRevealedVerses } from '@/data/sample/revealedVerses';
 import type { BibleOutline, Footnote, VerseRef } from '@/types/bible';
 
@@ -39,9 +40,12 @@ type NoteRow = { position: number; after: string; text: string; verse: { osis_re
  */
 export type EarnedVerses = { texts: Record<VerseRef, string>; shapes: Record<VerseRef, number[]>; notes: Record<VerseRef, Footnote[]> };
 
-/** The labels of every verse the person has revealed. Development: the sample list. Hookup: the server. */
+/**
+ * The labels of every verse the person has revealed. Development: the sample list plus the verses revealed by baking
+ * lesson stops (kept by progressSource). Hookup: the server.
+ */
 export async function fetchRevealedRefs(): Promise<VerseRef[]> {
-  return [...sampleRevealedVerses];
+  return [...new Set([...sampleRevealedVerses, ...(await earnedVerses())])];
 }
 
 /**

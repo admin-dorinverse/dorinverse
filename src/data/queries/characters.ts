@@ -5,7 +5,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { initialOf, makeCharacterLibrary } from '@/data/characterLibrary';
-import { syncCharacters } from '@/data/characterSync';
+import { syncCharacters, type SaveCharacters, type SavedCharacters } from '@/data/characterSync';
 import { useBibleLibrary } from '@/data/queries/bible';
 import { queryClient } from '@/data/queries/client';
 import { readSavedCharacters, saveCharacters } from '@/data/storage/characterStore';
@@ -25,13 +25,34 @@ const CHARACTERS_KEY = ['characters', 'library'] as const;
 async function loadCharacters(): Promise<CharacterLibrary> {
   const started = Date.now();
   const saved = await readSavedCharacters();
+  held = saved;
   if (saved.list && !queryClient.getQueryData(CHARACTERS_KEY)) {
     queryClient.setQueryData(CHARACTERS_KEY, makeCharacterLibrary(saved.list, saved.cards));
   }
-  const result = await syncCharacters(saved, saveCharacters);
+  const result = await syncCharacters(saved, keepCharacters);
   if (__DEV__) console.log(`[characters] library ready in ${Date.now() - started} ms; downloaded ${result.downloaded} cards`);
   const shown = queryClient.getQueryData<CharacterLibrary>(CHARACTERS_KEY);
   return !result.changed && shown ? shown : result.library;
+}
+
+/** What the phone holds, kept in memory after the first load so a refresh never reads the whole store again. */
+let held: SavedCharacters | null = null;
+
+/** Saves on the phone, and keeps the in-memory copy of what the phone holds the same. */
+const keepCharacters: SaveCharacters = async (list, changed) => {
+  await saveCharacters(list, changed);
+  if (held) held = { list: [...list], cards: { ...held.cards, ...Object.fromEntries(changed.map((c) => [c.lookup, c])) } };
+};
+
+/** Picks up characters newly collected in a lesson without a restart, downloading only their cards in one round. */
+export async function refreshCharacters(): Promise<void> {
+  if (!held) {
+    await queryClient.refetchQueries({ queryKey: CHARACTERS_KEY });
+    return;
+  }
+  const result = await syncCharacters(held, keepCharacters);
+  if (__DEV__) console.log(`[characters] refreshed; downloaded ${result.downloaded} cards`);
+  if (result.changed) queryClient.setQueryData(CHARACTERS_KEY, result.library);
 }
 
 /** The library query's settings, shared by the start-up load and the pages. Kept for as long as the app runs. */

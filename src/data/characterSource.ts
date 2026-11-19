@@ -11,6 +11,7 @@
 // asking the database directly, in one round of requests sent together.
 
 import { database } from '@/data/database';
+import { earnedCharacters } from '@/data/progressSource';
 import { sampleCollectedCharacters } from '@/data/sample/collectedCharacters';
 import type { CharacterCard, CharacterLink, CharacterLookup, CollectedEntry, KeyMoment } from '@/types/character';
 import type { VerseRef } from '@/types/bible';
@@ -52,9 +53,14 @@ type CardRow = {
   linksTo: { from_card_id: string; type: string; why: string }[];
 };
 
-/** Who the person has collected, oldest first. Development: the sample list. Hookup: the server. */
+/**
+ * Who the person has collected, oldest first. Development: the sample list, then the characters collected in lessons
+ * (kept by progressSource). Hookup: the server.
+ */
 export async function fetchCollected(): Promise<CollectedEntry[]> {
-  return sampleCollectedCharacters.map((entry) => ({ ...entry }));
+  const sample = sampleCollectedCharacters.map((entry) => ({ ...entry }));
+  const have = new Set(sample.map((e) => e.lookup));
+  return [...sample, ...(await earnedCharacters()).filter((e) => !have.has(e.lookup))];
 }
 
 /**
