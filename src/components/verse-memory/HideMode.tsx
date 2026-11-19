@@ -42,14 +42,17 @@ export function HideMode({ reference, words }: ModeProps) {
   return (
     <>
       <IndexCard reference={reference}>
-        <Text style={cardWords}>
-          {words.map((w, i) => (
-            <Text key={i}>
-              <Text style={covered.has(i) ? (peek ? styles.peek : styles.hidden) : null}>{w}</Text>
-              {i < words.length - 1 ? ' ' : ''}
-            </Text>
-          ))}
-        </Text>
+        {/* Each word is its own small box, so a hidden word's block hugs its letters with rounded corners. */}
+        <View style={styles.words}>
+          {words.map((w, i) => {
+            const hid = covered.has(i);
+            return (
+              <View key={i} style={[styles.word, hid && (peek ? styles.peekBox : styles.hiddenBox)]}>
+                <Text style={[cardWords, styles.wordText, hid && (peek ? styles.peekText : styles.hiddenText)]}>{w}</Text>
+              </View>
+            );
+          })}
+        </View>
       </IndexCard>
       <View style={styles.controls}>
         <PracticeButton label="Hide more" onPress={hideMore} />
@@ -69,7 +72,13 @@ export function HideMode({ reference, words }: ModeProps) {
 }
 
 const styles = StyleSheet.create({
-  hidden: { backgroundColor: indexCard.hidden, color: indexCard.hidden },
-  peek: { backgroundColor: indexCard.peekFill, color: indexCard.peekText },
+  // Lines sit 32 apart, like the card's other text: a 21-tall word box plus an 11 gap. Words sit a space apart.
+  words: { flexDirection: 'row', flexWrap: 'wrap', rowGap: 11, columnGap: 4.5, paddingTop: 5 },
+  word: { borderRadius: 5 },
+  wordText: { lineHeight: 21 },
+  hiddenBox: { backgroundColor: indexCard.hidden },
+  hiddenText: { color: indexCard.hidden },
+  peekBox: { backgroundColor: indexCard.peekFill },
+  peekText: { color: indexCard.peekText },
   controls: { gap: 8, marginTop: 14 },
 });
