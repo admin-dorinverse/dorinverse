@@ -1,7 +1,7 @@
 // The Record practice mode: the person records themselves saying the verse. The microphone gets ready first, then a
 // short beep says "go", and recording starts only once the beep has ended, so the beep is never on the recording.
-// While recording, music from other apps pauses and the app's own sounds hush. When they tap Done, three choices show: Play (hear it), Clear (start over)
-// and Redo (record again right away). The recording stays on the phone and is replaced by the next one.
+// While recording, other apps' music pauses and the app's sounds hush. Done plays it back once, then offers Replay,
+// Clear (start over) and Redo (record again right away). The recording stays on the phone until the next one.
 
 import {
   RecordingPresets,
@@ -86,19 +86,22 @@ export function RecordMode({ reference, words }: ModeProps) {
     }
   };
 
-  /** Stops recording and gets it ready to play. It does not play by itself. */
+  /** Stops recording and plays it back once. */
   const stop = async () => {
     setStage('done');
     setNote('');
     try {
       await recorder.stop();
       await setAudioModeAsync(LISTENING_AUDIO);
-      if (recorder.uri) player.replace({ uri: recorder.uri });
+      if (recorder.uri) {
+        player.replace({ uri: recorder.uri });
+        player.play();
+      }
     } catch {}
     hushSounds(false);
   };
 
-  /** Plays the recording from the start. */
+  /** Plays the recording again from the start. */
   const play = () => {
     player.seekTo(0).catch(() => {});
     player.play();
@@ -137,7 +140,7 @@ export function RecordMode({ reference, words }: ModeProps) {
         {stage === 'done' && (
           <View style={styles.choices}>
             <View style={styles.choice}>
-              <PracticeButton label="▶️ Play" onPress={play} />
+              <PracticeButton label="▶️ Replay" onPress={play} />
             </View>
             <View style={styles.choice}>
               <PracticeButton label="Clear" look="ghost" onPress={clear} />
