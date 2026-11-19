@@ -29,6 +29,9 @@ const players: Partial<Record<SoundName, AudioPlayer>> = {};
 /** True when sounds are turned off. */
 let muted = false;
 
+/** True while something needs quiet, like a recording. Separate from the person's own mute. */
+let hushed = false;
+
 /** True once the audio mode has been set. */
 let ready = false;
 
@@ -37,9 +40,22 @@ export function setSoundsMuted(value: boolean): void {
   muted = value;
 }
 
-/** Plays a sound effect from the start. Does nothing when muted. */
+/**
+ * Hushes all of the app's own sounds while a recording runs, then lets them play again. Any app music added later
+ * must check `soundsHushed()` and pause too.
+ */
+export function hushSounds(value: boolean): void {
+  hushed = value;
+}
+
+/** True while the app's sounds are hushed for a recording. */
+export function soundsHushed(): boolean {
+  return hushed;
+}
+
+/** Plays a sound effect from the start. Does nothing when muted or hushed. */
 export function playSound(name: SoundName): void {
-  if (muted) return;
+  if (muted || hushed) return;
   if (!ready) {
     ready = true;
     setAudioModeAsync({ playsInSilentMode: false, interruptionMode: 'mixWithOthers' }).catch(() => {});

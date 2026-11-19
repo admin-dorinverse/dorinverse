@@ -1,41 +1,58 @@
-// The Record practice mode, copied from the prototype: the person records themselves saying the verse, and it
-// plays back as soon as they tap Done. The recording stays on the phone and is replaced by the next one.
+// The Record practice mode: the person records themselves saying the verse. While recording, music from other apps
+// pauses and the app's own sounds hush. When they tap Done, three choices show: Play (hear it), Clear (start over)
+// and Redo (record again right away). The recording stays on the phone and is replaced by the next one.
 
-import { RecordingPresets, requestRecordingPermissionsAsync, setAudioModeAsync, useAudioPlayer, useAudioRecorder } from 'expo-audio';
+import {
+  RecordingPresets,
+  requestRecordingPermissionsAsync,
+  setAudioModeAsync,
+  useAudioPlayer,
+  useAudioPlayerStatus,
+  useAudioRecorder,
+} from 'expo-audio';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { hushSounds } from '@/components/common/sounds';
 import { fonts } from '@/theme/text';
 import { indexCard, verseMemory } from '@/theme/verseMemoryColors';
 import type { ModeProps } from './HideMode';
 import { IndexCard, cardWords } from './IndexCard';
 import { PracticeButton } from './PracticeButton';
 
-/** Where recording is: not started, recording now, or finished and playing back. */
+/** Where recording is: not started, recording now, or finished and waiting for Play, Clear or Redo. */
 type RecordStage = 'idle' | 'recording' | 'done';
 
 /** The app's usual sound setting: quiet on silent, mixed with the person's music (as in sounds.ts). */
 const USUAL_AUDIO = { allowsRecording: false, playsInSilentMode: false, interruptionMode: 'mixWithOthers' } as const;
 
+/** While recording: the microphone on, and other apps' music paused. */
+const RECORDING_AUDIO = { allowsRecording: true, playsInSilentMode: true, interruptionMode: 'doNotMix' } as const;
+
+/** After recording: other apps' music stays paused, so the recording can be heard clearly. */
+const LISTENING_AUDIO = { allowsRecording: false, playsInSilentMode: true, interruptionMode: 'doNotMix' } as const;
+
 /** The Record mode. */
 export function RecordMode({ reference, words }: ModeProps) {
   const recorder = useAudioRecorder(RecordingPresets.HIGH_QUALITY);
   const player = useAudioPlayer(null);
+  const playing = useAudioPlayerStatus(player).playing;
   const [stage, setStage] = useState<RecordStage>('idle');
   const [note, setNote] = useState('');
 
-  // Leaving the mode or the page stops any recording and puts the sound setting back.
+  // Leaving the mode or the page stops any recording, lets the app's sounds play and lets other music mix again.
   useEffect(
     () => () => {
       // The recorder may already be let go by its hook here, so a failed check is fine to ignore.
       try {
         if (recorder.isRecording) recorder.stop().catch(() => {});
       } catch {}
+      hushSounds(false);
       setAudioModeAsync(USUAL_AUDIO).catch(() => {});
     },
     [recorder],
   );
 
-  /** Asks for the microphone if needed, then starts recording. */
+  /** Asks for the microphone if needed, then starts a new recording. */
   const start = async () => {
     player.pause();
     const permission = await requestRecordingPermissionsAsync();
@@ -43,32 +60,44 @@ export function RecordMode({ reference, words }: ModeProps) {
       setNote('The microphone is off for this app. Turn it on in Settings to record.');
       return;
     }
+    hushSounds(true);
     setNote('Recording…');
     setStage('recording');
     try {
-      await setAudioModeAsync({ allowsRecording: true, playsInSilentMode: true });
+      await setAudioModeAsync(RECORDING_AUDIO);
       await recorder.prepareToRecordAsync();
       recorder.record();
     } catch {
+      hushSounds(false);
       setStage('idle');
       setNote('Recording could not start. Try again.');
     }
   };
 
-  /** Stops recording and plays it back. */
+  /** Stops recording and gets it ready to play. It does not play by itself. */
   const stop = async () => {
     setStage('done');
+    setNote('');
     try {
       await recorder.stop();
-      await setAudioModeAsync({ allowsRecording: false, playsInSilentMode: true });
-      if (recorder.uri) {
-        player.replace({ uri: recorder.uri });
-        player.play();
-        setNote('Playing back…');
-      } else setNote('');
-    } catch {
-      setNote('');
-    }
+      await setAudioModeAsync(LISTENING_AUDIO);
+      if (recorder.uri) player.replace({ uri: recorder.uri });
+    } catch {}
+    hushSounds(false);
+  };
+
+  /** Plays the recording from the start. */
+  const play = () => {
+    player.seekTo(0).catch(() => {});
+    player.play();
+  };
+
+  /** Throws the recording away and starts over. */
+  const clear = () => {
+    player.pause();
+    setStage('idle');
+    setNote('');
+    setAudioModeAsync(USUAL_AUDIO).catch(() => {});
   };
 
   return (
@@ -86,9 +115,21 @@ export function RecordMode({ reference, words }: ModeProps) {
       <View style={styles.controls}>
         {stage === 'idle' && <PracticeButton label="🎙️ Record" onPress={start} />}
         {stage === 'recording' && <PracticeButton label="⏹️ Done" look="red" onPress={stop} />}
-        {stage === 'done' && <PracticeButton label="🎙️ Record again" look="ghost" onPress={start} />}
+        {stage === 'done' && (
+          <View style={styles.choices}>
+            <View style={styles.choice}>
+              <PracticeButton label="▶️ Play" onPress={play} />
+            </View>
+            <View style={styles.choice}>
+              <PracticeButton label="Clear" look="ghost" onPress={clear} />
+            </View>
+            <View style={styles.choice}>
+              <PracticeButton label="🎙️ Redo" look="ghost" onPress={start} />
+            </View>
+          </View>
+        )}
       </View>
-      {note !== '' && <Text style={styles.note}>{note}</Text>}
+      {(playing || note !== '') && <Text style={styles.note}>{playing ? 'Playing back…' : note}</Text>}
     </>
   );
 }
@@ -98,5 +139,7 @@ const styles = StyleSheet.create({
   mic: { fontSize: 34 },
   recordingRef: { fontFamily: fonts.extraBold, fontSize: 15, marginTop: 6, color: indexCard.faint },
   controls: { marginTop: 14, alignItems: 'center' },
+  choices: { flexDirection: 'row', gap: 8, width: '100%' },
+  choice: { flex: 1 },
   note: { textAlign: 'center', fontFamily: fonts.bold, fontSize: 13, color: verseMemory.soft, marginTop: 12 },
 });
