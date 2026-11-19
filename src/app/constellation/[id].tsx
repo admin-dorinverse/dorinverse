@@ -3,7 +3,7 @@
 // person scrolls; only the cards on screen are drawn. Each card's lesson is fetched in the background as it comes on
 // screen, so opening one never waits.
 
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter, type Href } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -50,7 +50,8 @@ export default function ConstellationPage() {
   }, [rows, shown]);
 
   /** Opens a lesson's orbit view. */
-  const open = useCallback((lesson: LessonOutline) => router.push({ pathname: '/lesson/[id]/index', params: { id: String(lesson.id), c: constellation.id } }), [router, constellation.id]);
+  // The generated route list names the orbit page "/lesson/[id]/index"; its real address is "/lesson/<id>".
+  const open = useCallback((lesson: LessonOutline) => router.push(`/lesson/${lesson.id}?c=${constellation.id}` as Href), [router, constellation.id]);
 
   /** Draws one row: a story heading or a lesson card. */
   const renderRow = ({ item }: { item: LessonRow }) =>
