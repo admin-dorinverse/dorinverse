@@ -8,6 +8,7 @@ import type { AmbientClock } from '@/components/common/useAmbientClock';
 import { SvgPicture } from '@/components/common/SvgPicture';
 import { wave } from '@/components/common/motion';
 import { mixColor } from '@/theme/mixColor';
+import { lessonSky } from '@/theme/lessonColors';
 import { raysSvg } from './orbitLayout';
 
 /** The halo's, rays' and core's sizes, from the design. */
@@ -33,7 +34,7 @@ type BigStarProps = {
 
 /** The big star. */
 export function BigStar({ x, y, color, clock }: BigStarProps) {
-  const art = useMemo(() => ({ rays: raysSvg(color, 12, 150), rays2: raysSvg('#ffffff', 8, 120) }), [color]);
+  const art = useMemo(() => ({ rays: raysSvg(color, 12, 150), rays2: raysSvg(lessonSky.white, 8, 120) }), [color]);
   const turn = useAnimatedStyle(() => ({ transform: [{ rotate: `${((clock.time.get() % TURN_MS) / TURN_MS) * 360}deg` }] }));
   const turnBack = useAnimatedStyle(() => ({ transform: [{ rotate: `${-((clock.time.get() % TURN_BACK_MS) / TURN_BACK_MS) * 360}deg` }] }));
   const breathe = useAnimatedStyle(() => ({ transform: [{ scale: 1 + 0.08 * wave(clock.time.get(), BREATH_MS) }] }));

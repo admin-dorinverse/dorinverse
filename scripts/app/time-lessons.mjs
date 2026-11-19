@@ -125,3 +125,26 @@ await syncCharacters(chars, keepChars);
 console.log(`Characters again: ${requests} requests (must be 0)`);
 const baking = await progress.bakeStop(228, stop);
 console.log(`baking the same stop again changes nothing: ${baking.revealed.length} revealed, ${baking.bakedStops} baked`);
+
+// 7. Playing stop 1 of Judges 3 with the player's own steps: every question missed first, then right in the fix
+// round. The stop must finish only once every question is right.
+const steps = await import('@/components/lesson/playerSteps');
+let play = steps.startStop(stop);
+let turns = 0;
+const asked = new Map();
+while (!play.finished && turns < 500) {
+  turns++;
+  const s = play.steps[play.at];
+  if (s.kind === 'card' && s.card.kind === 'choice') {
+    const first = !asked.has(s.card.card);
+    asked.set(s.card.card, (asked.get(s.card.card) ?? 0) + 1);
+    const key = s.card.seal.right;
+    const pick = first ? [s.card.answers.find((a) => !key.includes(a.id)).id, ...(s.card.blanks === 2 ? [key[0]] : [])] : key;
+    const res = await checkAnswer(s.card, pick);
+    if (res.right === first) console.log(`  CHECK WENT ODD on card ${s.card.card}`);
+    play = steps.afterAnswer(play, s.card, res.right);
+  }
+  play = steps.advance(play);
+}
+const choices = stop.cards.filter((c) => c.kind === 'choice').length;
+console.log(`play ${stop.verses}: ${stop.cards.length} cards (${choices} questions), all missed then fixed: finished=${play.finished} after ${play.steps.length} steps; each question asked ${[...new Set(asked.values())].join('/')} times`);

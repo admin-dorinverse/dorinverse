@@ -13,6 +13,10 @@ export const lessonSky = {
   path: 'rgba(255,255,255,0.35)',
   /** The gold path between baked stops. */
   bakedPath: '#ffc65c',
+  /** The white the star's inner rays are drawn in, and that colors are mixed toward for light labels. */
+  white: '#ffffff',
+  /** The black colors are mixed toward for a button's shadow edge. */
+  black: '#000000',
 } as const;
 
 /** Cream cards in the player: Papa Dorin's speech bubble, the question card and the pop-up sheets. */
@@ -29,6 +33,9 @@ export const cream = {
   /** The pop-up sheets' cream and their small heading. */
   sheet: '#fffaf0',
   kind: '#a0643a',
+  /** The sheets' green button and its shadow. */
+  button: '#5c9a2e',
+  buttonShadow: '#3f7420',
 } as const;
 
 /** The answer buttons, the Check button and the result sheets. */

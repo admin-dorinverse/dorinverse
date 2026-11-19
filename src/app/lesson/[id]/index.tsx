@@ -51,7 +51,7 @@ export default function LessonPage() {
         {outline && (
           <View style={styles.words}>
             <Text style={[styles.title, { textShadowColor: color }]}>{outline.title}</Text>
-            <Text style={[styles.ref, { color: mixColor(color, 0.7, '#ffffff') }]}>{outline.reference}</Text>
+            <Text style={[styles.ref, { color: mixColor(color, 0.7, lessonSky.white) }]}>{outline.reference}</Text>
           </View>
         )}
       </View>

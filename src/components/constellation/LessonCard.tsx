@@ -8,6 +8,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { CookieArt } from '@/components/common/cookieArt';
 import { playSound } from '@/components/common/sounds';
 import { mixColor } from '@/theme/mixColor';
+import { lessonSky } from '@/theme/lessonColors';
 import { navy, text } from '@/theme/colors';
 import { radius } from '@/theme/spacing';
 import { fonts } from '@/theme/text';
@@ -23,7 +24,7 @@ export type CardLook = { color: string; refInk: string; fill: string; edge: stri
 export function cardLook(color: string): CardLook {
   return {
     color,
-    refInk: mixColor(color, 0.7, '#ffffff'),
+    refInk: mixColor(color, 0.7, lessonSky.white),
     fill: `linear-gradient(150deg, ${mixColor(color, 0.22, 'rgba(255,255,255,0.06)')}, rgba(255,255,255,0.04) 60%)`,
     edge: mixColor(color, 0.6),
     glow: `0 0 16px ${mixColor(color, 0.35)}, 0 10px 24px rgba(0,0,0,0.3)`,
