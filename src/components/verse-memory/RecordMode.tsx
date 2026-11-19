@@ -1,5 +1,6 @@
-// The Record practice mode: the person records themselves saying the verse. While recording, music from other apps
-// pauses and the app's own sounds hush. When they tap Done, three choices show: Play (hear it), Clear (start over)
+// The Record practice mode: the person records themselves saying the verse. The microphone gets ready first, then a
+// short beep says "go", and recording starts only once the beep has ended, so the beep is never on the recording.
+// While recording, music from other apps pauses and the app's own sounds hush. When they tap Done, three choices show: Play (hear it), Clear (start over)
 // and Redo (record again right away). The recording stays on the phone and is replaced by the next one.
 
 import {
@@ -12,15 +13,21 @@ import {
 } from 'expo-audio';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { hushSounds } from '@/components/common/sounds';
+import { hushSounds, playSound } from '@/components/common/sounds';
 import { fonts } from '@/theme/text';
 import { indexCard, verseMemory } from '@/theme/verseMemoryColors';
 import type { ModeProps } from './HideMode';
 import { IndexCard, cardWords } from './IndexCard';
 import { PracticeButton } from './PracticeButton';
 
-/** Where recording is: not started, recording now, or finished and waiting for Play, Clear or Redo. */
-type RecordStage = 'idle' | 'recording' | 'done';
+/** Where recording is: not started, getting the microphone ready, recording, or finished (Play, Clear or Redo). */
+type RecordStage = 'idle' | 'starting' | 'recording' | 'done';
+
+/** How long to wait after the start beep before recording (ms): the beep's length, plus room for it to fade. */
+const AFTER_BEEP_MS = 350;
+
+/** Waits a number of milliseconds. */
+const wait = (ms: number) => new Promise((done) => setTimeout(done, ms));
 
 /** The app's usual sound setting: quiet on silent, mixed with the person's music (as in sounds.ts). */
 const USUAL_AUDIO = { allowsRecording: false, playsInSilentMode: false, interruptionMode: 'mixWithOthers' } as const;
@@ -60,13 +67,18 @@ export function RecordMode({ reference, words }: ModeProps) {
       setNote('The microphone is off for this app. Turn it on in Settings to record.');
       return;
     }
-    hushSounds(true);
-    setNote('Recording…');
-    setStage('recording');
+    setNote('Get ready…');
+    setStage('starting');
     try {
       await setAudioModeAsync(RECORDING_AUDIO);
       await recorder.prepareToRecordAsync();
+      // The beep plays before the sounds hush, and recording starts only after it has ended.
+      playSound('word');
+      await wait(AFTER_BEEP_MS);
+      hushSounds(true);
       recorder.record();
+      setNote('Recording…');
+      setStage('recording');
     } catch {
       hushSounds(false);
       setStage('idle');
@@ -103,7 +115,7 @@ export function RecordMode({ reference, words }: ModeProps) {
   return (
     <>
       <IndexCard reference={reference}>
-        {stage === 'recording' ? (
+        {stage === 'recording' || stage === 'starting' ? (
           <View style={styles.recording}>
             <Text style={styles.mic}>🎙️</Text>
             <Text style={styles.recordingRef}>{reference}</Text>
