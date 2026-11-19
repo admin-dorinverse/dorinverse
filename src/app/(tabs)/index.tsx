@@ -25,6 +25,7 @@ export default function SkyPage() {
       setArrivalHandler((d: SkyDestination) => {
         if (d.kind === 'bakery') router.push('/bakery');
         // The route list names these lists "/bible/index" and so on; their real addresses are "/bible", "/characters"...
+        else if (d.kind === 'game') router.push(d.game === 'trivia' ? '/trivia' : '/verse-games');
         else if (d.kind === 'collection') router.push((d.list === 'verses' ? '/bible' : `/${d.list}`) as Href);
         else router.push({ pathname: '/constellation/[id]', params: { id: d.id } });
       });

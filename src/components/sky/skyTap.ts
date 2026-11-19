@@ -1,16 +1,18 @@
-// Works out what a tap on the sky landed on: the bakery planet, a collection card, or a constellation (its shape or its name).
+// Works out what a tap on the sky landed on: the bakery planet, a collection or game card, or a constellation (its shape
+// or its name).
 // Runs on the animation thread.
 
 import type { Constellation } from '@/types/constellation';
 import { hitsBakery } from './bakeryLayout';
 import { SKY_COLLECTIONS, collectionCardAt, type CardBox } from './collectionsZone';
+import { GAME_BOXES, SKY_GAMES } from './gamesZone';
 import { CONSTELLATION_SCALE, HOME_Y } from './skyLayout';
 import type { SkyState } from './skyState';
 import { startFlight } from './stepCamera';
 
 /**
  * Handles a tap at screen point (x, y). Far-away constellations start a flight; the bakery and close
- * constellations open right away. A collection card opens if its middle is on screen, or else flies there first.
+ * constellations open right away. A collection or game card opens if its middle is on screen, or else flies there first.
  * Returns the tag to open now, or an empty string.
  */
 export function handleSkyTap(s: SkyState, x: number, y: number, constellations: readonly Constellation[], cards: readonly CardBox[]): string {
@@ -19,9 +21,10 @@ export function handleSkyTap(s: SkyState, x: number, y: number, constellations: 
   const wy = s.camera.y + y - s.height / 2;
   if (hitsBakery(wx, wy)) return 'bakery';
   const card = collectionCardAt(cards, wx, wy);
-  if (card >= 0) {
-    const b = cards[card];
-    const tag = `collection:${SKY_COLLECTIONS[card].kind}`;
+  const game = card >= 0 ? -1 : collectionCardAt(GAME_BOXES, wx, wy);
+  if (card >= 0 || game >= 0) {
+    const b = card >= 0 ? cards[card] : GAME_BOXES[game];
+    const tag = card >= 0 ? `collection:${SKY_COLLECTIONS[card].kind}` : `game:${SKY_GAMES[game].game}`;
     const midX = b.x + b.w / 2;
     const midY = b.y + b.h / 2;
     if (Math.abs(midX - s.camera.x) < s.width / 2 && Math.abs(midY - s.camera.y) < s.height / 2) return tag;

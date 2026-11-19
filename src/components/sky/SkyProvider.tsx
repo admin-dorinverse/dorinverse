@@ -12,6 +12,7 @@ import { constellationLabelSize, skyLabelFont } from '@/theme/text';
 import type { CollectionKind } from '@/types/collection';
 import type { Constellation } from '@/types/constellation';
 import type { CardBox } from './collectionsZone';
+import type { SkyGame } from './gamesZone';
 import { runSkyFrame, setSkyAtHome, setSkyScreen, skyIsBusy } from './runSkyFrame';
 import { createSkyState, type SkyState } from './skyState';
 import { handleSkyTap } from './skyTap';
@@ -30,8 +31,12 @@ const AWAY_FRAME_MS = 1000 / 10;
 /** Leeway so a screen refresh that comes a hair early still counts. */
 const FRAME_SLACK_MS = 4;
 
-/** Where a sky flight or tap leads: the bakery, a constellation by its id, or one collection's list. */
-export type SkyDestination = { kind: 'bakery' } | { kind: 'constellation'; id: string } | { kind: 'collection'; list: CollectionKind };
+/** Where a sky flight or tap leads: the bakery, a constellation by its id, one collection's list, or a game. */
+export type SkyDestination =
+  | { kind: 'bakery' }
+  | { kind: 'constellation'; id: string }
+  | { kind: 'collection'; list: CollectionKind }
+  | { kind: 'game'; game: SkyGame['game'] };
 
 /** What the sky shares with screens. */
 type SkyContextValue = {
@@ -75,6 +80,7 @@ export function useSky(): SkyContextValue {
 /** Turns a destination into the short tag the animation thread passes around. */
 function toTag(d: SkyDestination): string {
   if (d.kind === 'bakery') return 'bakery';
+  if (d.kind === 'game') return `game:${d.game}`;
   return d.kind === 'constellation' ? `constellation:${d.id}` : `collection:${d.list}`;
 }
 
@@ -82,6 +88,7 @@ function toTag(d: SkyDestination): string {
 function fromTag(tag: string): SkyDestination {
   if (tag === 'bakery') return { kind: 'bakery' };
   const rest = tag.slice(tag.indexOf(':') + 1);
+  if (tag.startsWith('game:')) return { kind: 'game', game: rest as SkyGame['game'] };
   return tag.startsWith('collection:') ? { kind: 'collection', list: rest as CollectionKind } : { kind: 'constellation', id: rest };
 }
 

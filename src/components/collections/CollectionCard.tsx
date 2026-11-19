@@ -1,4 +1,4 @@
-// One glass card in the sky's Collections area: a title, a short note, a "See all" pill and a little animated scene,
+// One tinted glass card: a title, a short note, an action pill ("See all" unless told otherwise) and a little scene,
 // all tinted in the collection's color. It slides in when the page opens and a soft glow drifts across it.
 
 import type { ReactNode } from 'react';
@@ -36,12 +36,14 @@ type CollectionCardProps = {
   clock: AmbientClock;
   /** Opens the collection. */
   onPress: () => void;
+  /** The words on the pill. "See all" unless given. */
+  action?: string;
   /** The card's animated scene. */
   children: ReactNode;
 };
 
 /** A tinted glass card for one collection. */
-export function CollectionCard({ title, note, hue, layout, index, clock, onPress, children }: CollectionCardProps) {
+export function CollectionCard({ title, note, hue, layout, index, clock, onPress, action = 'See all', children }: CollectionCardProps) {
   const c = collectionHues[hue];
   const { time, still } = clock;
 
@@ -58,7 +60,7 @@ export function CollectionCard({ title, note, hue, layout, index, clock, onPress
 
   const pill = (
     <View style={[styles.pill, { backgroundColor: c, boxShadow: `0 3px 0 ${mixColor(c, 0.55, '#000000')}, 0 6px 10px -2px rgba(0,0,0,0.4)` }]}>
-      <Text style={styles.pillText}>See all</Text>
+      <Text style={styles.pillText}>{action}</Text>
     </View>
   );
   const heading = (
@@ -72,7 +74,7 @@ export function CollectionCard({ title, note, hue, layout, index, clock, onPress
     <Animated.View style={[layout === 'narrow' && styles.narrowSlot, enter]}>
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={`${title}. See all`}
+        accessibilityLabel={`${title}. ${action}`}
         onPress={onPress}
         style={({ pressed }) => [
           styles.card,

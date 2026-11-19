@@ -15,6 +15,7 @@ import { bakery, glass, sky as skyColors, starMap, text } from '@/theme/colors';
 import { gutter, radius } from '@/theme/spacing';
 import { textStyles } from '@/theme/text';
 import { COLLECTIONS_ZONE } from './collectionsZone';
+import { GAMES_ZONE } from './gamesZone';
 import { ConstellationGlyph } from './ConstellationGlyph';
 import { drawStarMap, type MapSnapshot } from './drawStarMap';
 import { HOME_Y } from './skyLayout';
@@ -117,6 +118,9 @@ export function StarMapPanel({ snapshot, onClose }: StarMapPanelProps) {
                   onPress={() => goTo(COLLECTIONS_ZONE.x, COLLECTIONS_ZONE.y)}
                 >
                   <CollectionsIcon color={skyColors.collectionsGlow} size={26} />
+                </Pin>
+                <Pin x={map.x(GAMES_ZONE.x)} y={map.y(GAMES_ZONE.y)} color={skyColors.collectionsGlow} name="Games" onPress={() => goTo(GAMES_ZONE.x, GAMES_ZONE.y)}>
+                  <Text style={[styles.emoji, { textShadowColor: skyColors.collectionsGlow }]}>🧩</Text>
                 </Pin>
                 {sampleUniverseSpots.map((u) => (
                   <Pin key={u.id} x={map.x(u.x)} y={map.y(u.y)} color={u.pin} name={u.name} small onPress={() => goTo(u.x, u.y)}>

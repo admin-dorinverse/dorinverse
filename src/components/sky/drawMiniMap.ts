@@ -1,4 +1,4 @@
-// Draws the small round map inside the map button: constellations, the bakery, the Collections area, the player's things,
+// Draws the small round map inside the map button: constellations, the bakery, the Collections and Games areas, the player's things,
 // the part of the sky you are looking at, and the rocket.
 
 import { BlurStyle, PaintStyle, Skia, TileMode, type SkCanvas } from '@shopify/react-native-skia';
@@ -6,6 +6,7 @@ import type { UniverseSpot } from '@/data/sample/universe';
 import { bakery, sky, starMap } from '@/theme/colors';
 import type { Constellation } from '@/types/constellation';
 import { COLLECTIONS_ZONE } from './collectionsZone';
+import { GAMES_ZONE } from './gamesZone';
 import { SKY_BOUNDS } from './skyLayout';
 import type { SkyState } from './skyState';
 
@@ -51,10 +52,11 @@ export function drawMiniMap(
   home.setColor(Skia.Color(bakery.planetGlow));
   canvas.drawCircle(mx(0), my(0), 2.4, home);
 
-  // The Collections area: a small gold square.
+  // The Collections and Games areas: small gold squares.
   const shelf = Skia.Paint();
   shelf.setColor(Skia.Color(sky.collectionsGlow));
   canvas.drawRect(Skia.XYWHRect(mx(COLLECTIONS_ZONE.x) - 2.2, my(COLLECTIONS_ZONE.y) - 2.2, 4.4, 4.4), shelf);
+  canvas.drawRect(Skia.XYWHRect(mx(GAMES_ZONE.x) - 2.2, my(GAMES_ZONE.y) - 2.2, 4.4, 4.4), shelf);
 
   for (const spot of spots) {
     const dot = Skia.Paint();

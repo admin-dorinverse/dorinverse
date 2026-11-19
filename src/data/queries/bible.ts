@@ -5,12 +5,12 @@
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { chapterPage, makeLibrary } from '@/data/bibleLibrary';
-import { makeSearchIndex, type SearchIndex } from '@/data/bibleSearch';
+import { makeSearchIndex, type SearchIndex, type VerseHit } from '@/data/bibleSearch';
 import { bibleOutline } from '@/data/bibleSource';
 import { syncBible, type SaveBible, type SavedBible } from '@/data/bibleSync';
 import { queryClient } from '@/data/queries/client';
 import { readSavedBible, saveBible } from '@/data/storage/bibleStore';
-import type { BibleBook, BibleLibrary, ChapterPage } from '@/types/bible';
+import type { BibleBook, BibleLibrary, ChapterPage, VerseRef } from '@/types/bible';
 
 export { bookRevealedCount, nearbyOpenChapter, type ChapterSpot } from '@/data/bibleLibrary';
 export { bibleOutline, READER_TRANSLATION } from '@/data/bibleSource';
@@ -85,10 +85,30 @@ export function useChapterPage(book: BibleBook | undefined, chapter: number): Ch
   return useMemo(() => (library && book ? chapterPage(library, book, chapter) : undefined), [library, book, chapter]);
 }
 
+/** Search indexes and verse lookups already made, by library, so every page shares one of each. */
+const indexes = new WeakMap<BibleLibrary, SearchIndex>();
+const lookups = new WeakMap<BibleLibrary, ReadonlyMap<VerseRef, VerseHit>>();
+
+/** The library's search index, made the first time any page asks for it. */
+function indexFor(library: BibleLibrary): SearchIndex {
+  let index = indexes.get(library);
+  if (!index) indexes.set(library, (index = makeSearchIndex(bibleOutline, library)));
+  return index;
+}
+
 /** The revealed verses prepared for search, made once each time the library changes (never per keystroke). */
 export function useSearchIndex(): SearchIndex | undefined {
   const library = useBibleLibrary().data;
-  return useMemo(() => (library ? makeSearchIndex(bibleOutline, library) : undefined), [library]);
+  return library ? indexFor(library) : undefined;
+}
+
+/** Every revealed verse by its reference, made once each time the library changes. */
+export function useVerseLookup(): ReadonlyMap<VerseRef, VerseHit> | undefined {
+  const library = useBibleLibrary().data;
+  if (!library) return undefined;
+  let lookup = lookups.get(library);
+  if (!lookup) lookups.set(library, (lookup = new Map(indexFor(library).map((v) => [v.ref, v]))));
+  return lookup;
 }
 
 /** The book at a place in the Bible (1 to 66), or undefined for a wrong number. */

@@ -1,4 +1,4 @@
-// The two tabs: Sky and Keep it fresh. The collections live in the sky itself, in its Collections area. The living sky sits behind all of them,
+// The two tabs: Sky and Keep it fresh. The collections and the games live in the sky itself, each in its own area. The living sky sits behind all of them,
 // with the HUD pills and the knob tabs floating on top.
 
 import { TabList, TabSlot, TabTrigger, Tabs } from 'expo-router/ui';
@@ -10,6 +10,7 @@ import { Hud } from '@/components/sky/Hud';
 import { RocketView } from '@/components/sky/RocketView';
 import { SkyCanvas } from '@/components/sky/SkyCanvas';
 import { SkyCollections } from '@/components/sky/SkyCollections';
+import { SkyGames } from '@/components/sky/SkyGames';
 
 /** The tabs layout. The hidden list declares the tabs; the knob tabs are the buttons people see. */
 export default function TabsLayout() {
@@ -27,6 +28,7 @@ export default function TabsLayout() {
         <SkyCanvas />
         <BakeryPlanet />
         <SkyCollections />
+        <SkyGames />
         <RocketView />
       </GlassBackdrop>
       <TabList style={styles.hidden}>
