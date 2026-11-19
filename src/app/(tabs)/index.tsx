@@ -1,6 +1,7 @@
-// The Sky tab, the app's home page: the living sky you can drag around, the dock, and the Star Map.
+// The Sky tab, the app's home page: the living sky you can drag around (with its Collections area), the dock,
+// and the Star Map.
 
-import { useFocusEffect, useRouter } from 'expo-router';
+import { useFocusEffect, useRouter, type Href } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { playSound } from '@/components/common/sounds';
@@ -23,6 +24,8 @@ export default function SkyPage() {
       setAtHome(true);
       setArrivalHandler((d: SkyDestination) => {
         if (d.kind === 'bakery') router.push('/bakery');
+        // The route list names these lists "/bible/index" and so on; their real addresses are "/bible", "/characters"...
+        else if (d.kind === 'collection') router.push((d.list === 'verses' ? '/bible' : `/${d.list}`) as Href);
         else router.push({ pathname: '/constellation/[id]', params: { id: d.id } });
       });
       return () => setAtHome(false);

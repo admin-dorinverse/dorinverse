@@ -1,4 +1,4 @@
-// The scenes on the Collections page's smaller cards: a light that travels from a prophecy to its fulfillment,
+// The scenes on the smaller collection cards: a light that travels from a prophecy to its fulfillment,
 // a compass needle that swings and settles, and a prayer candle with sparks rising from it.
 
 import { StyleSheet, View } from 'react-native';

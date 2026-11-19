@@ -9,10 +9,12 @@ import Animated, { Easing, FadeIn, FadeOut, SlideInDown } from 'react-native-rea
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { sampleUniverseSpots } from '@/data/sample/universe';
 import { GlassSurface } from '@/components/common/Glass';
+import { CollectionsIcon } from '@/components/common/TabIcons';
 import { playSound } from '@/components/common/sounds';
-import { bakery, glass, starMap, text } from '@/theme/colors';
+import { bakery, glass, sky as skyColors, starMap, text } from '@/theme/colors';
 import { gutter, radius } from '@/theme/spacing';
 import { textStyles } from '@/theme/text';
+import { COLLECTIONS_ZONE } from './collectionsZone';
 import { ConstellationGlyph } from './ConstellationGlyph';
 import { drawStarMap, type MapSnapshot } from './drawStarMap';
 import { HOME_Y } from './skyLayout';
@@ -106,6 +108,15 @@ export function StarMapPanel({ snapshot, onClose }: StarMapPanelProps) {
                 ))}
                 <Pin x={map.x(0)} y={map.y(0)} color={bakery.planetGlow} name="Bakery" onPress={() => goTo(0, HOME_Y)}>
                   <Image source={require('../../../assets/images/bakery-cookie.webp')} style={styles.bakeryPin} contentFit="contain" />
+                </Pin>
+                <Pin
+                  x={map.x(COLLECTIONS_ZONE.x)}
+                  y={map.y(COLLECTIONS_ZONE.y)}
+                  color={skyColors.collectionsGlow}
+                  name="Collections"
+                  onPress={() => goTo(COLLECTIONS_ZONE.x, COLLECTIONS_ZONE.y)}
+                >
+                  <CollectionsIcon color={skyColors.collectionsGlow} size={26} />
                 </Pin>
                 {sampleUniverseSpots.map((u) => (
                   <Pin key={u.id} x={map.x(u.x)} y={map.y(u.y)} color={u.pin} name={u.name} small onPress={() => goTo(u.x, u.y)}>

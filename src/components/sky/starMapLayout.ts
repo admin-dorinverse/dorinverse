@@ -1,7 +1,9 @@
-// Works out where things sit on the Star Map. The map fits every constellation and the bakery into the square,
+// Works out where things sit on the Star Map. The map fits every constellation, the bakery and the Collections
+// area into the square,
 // leaving room around the edges for the pins' names.
 
 import type { Constellation } from '@/types/constellation';
+import { COLLECTIONS_ZONE } from './collectionsZone';
 
 /** Turns sky positions into Star Map positions for a map of the given size. */
 export type MapProjection = {
@@ -15,8 +17,8 @@ export type MapProjection = {
 
 /** Makes the projection for a `width` by `height` map. */
 export function makeMapProjection(width: number, height: number, constellations: readonly Constellation[]): MapProjection {
-  const xs = constellations.map((c) => c.x).concat(0);
-  const ys = constellations.map((c) => c.y).concat(0);
+  const xs = constellations.map((c) => c.x).concat(0, COLLECTIONS_ZONE.x);
+  const ys = constellations.map((c) => c.y).concat(0, COLLECTIONS_ZONE.y);
   const x0 = Math.min(...xs);
   const x1 = Math.max(...xs);
   const y0 = Math.min(...ys);

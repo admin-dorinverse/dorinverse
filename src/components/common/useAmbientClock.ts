@@ -1,6 +1,7 @@
 // A shared timer for a page's small looping animations (glows, bobbing, flickers). Every animated piece on the
 // page reads this one timer instead of running its own loop. It ticks 20 times a second, or 60 while the page
 // says something moves fast, and stops when the page is hidden, the app is in the background, or motion is off.
+// A piece can also say when it is awake, so the timer holds still while that piece is off screen.
 
 import { useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useRef } from 'react';
@@ -30,8 +31,9 @@ export type AmbientClock = {
 /**
  * Starts a page's shared timer. `isBusy` runs on the animation thread with the current time and returns true
  * while something on the page moves fast (a slide, a card coming in), so the timer ticks 60 times a second then.
+ * `isAwake`, if given, also runs on the animation thread; while it returns false the timer holds still.
  */
-export function useAmbientClock(isBusy: (time: number) => boolean): AmbientClock {
+export function useAmbientClock(isBusy: (time: number) => boolean, isAwake?: () => boolean): AmbientClock {
   const time = useSharedValue(0);
   const startedAt = useSharedValue(-1);
   const lastFrameAt = useSharedValue(-1);
@@ -40,6 +42,8 @@ export function useAmbientClock(isBusy: (time: number) => boolean): AmbientClock
   const frames = useFrameCallback((frame) => {
     'worklet';
     const now = frame.timestamp;
+    // While asleep the timer skips its frames; on waking, the long gap counts as a pause below.
+    if (isAwake && !isAwake()) return;
     // After a pause (a long gap between frames), pick up where the page left off instead of jumping ahead.
     if (startedAt.get() < 0) startedAt.set(now);
     else if (now - lastFrameAt.get() > PAUSE_GAP_MS) startedAt.set(startedAt.get() + (now - lastFrameAt.get() - CALM_TICK_MS));

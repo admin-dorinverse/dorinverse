@@ -1,4 +1,4 @@
-// One glass card on the Collections page: a title, a short note, a "See all" pill and a little animated scene,
+// One glass card in the sky's Collections area: a title, a short note, a "See all" pill and a little animated scene,
 // all tinted in the collection's color. It slides in when the page opens and a soft glow drifts across it.
 
 import type { ReactNode } from 'react';

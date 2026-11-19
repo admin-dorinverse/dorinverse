@@ -22,5 +22,5 @@ export type CollectedPlace = {
   emoji: string;
 };
 
-/** The collections on the Collections tab, each opened by its card's "See all". */
+/** The collections in the sky's Collections area, each opened by tapping its card. */
 export type CollectionKind = 'verses' | 'characters' | 'places' | 'prophecy' | 'instructions' | 'prayers';
