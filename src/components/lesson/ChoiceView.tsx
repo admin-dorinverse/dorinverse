@@ -18,8 +18,8 @@ import { WordSheet } from './WordSheet';
 /** How the question card comes in: one small pop. */
 const CARD_IN = FadeInDown.duration(400).easing(Easing.out(Easing.back(1.2)));
 
-/** An empty blank: three wide spaces, so it shows as a gap to fill. */
-const EMPTY_BLANK = String.fromCharCode(0x2003).repeat(3);
+/** An empty blank: a short line to fill. Spaces can't be used: phones don't underline spaces, so the gap vanished. */
+const EMPTY_BLANK = ' ______ ';
 
 /** Props for a choice card. */
 type ChoiceViewProps = {
@@ -80,7 +80,7 @@ export function ChoiceView({ card, round, picks, onPicks, checked }: ChoiceViewP
               <Text key={i}>
                 <MarkedText text={part} words={card.words} idioms={card.idioms} seen={seen} onTap={openTap} style={styles.question} />
                 {i < parts.length - 1 && (
-                  <Text onPress={() => clearBlank(i)} style={[styles.blank, picks[i] !== null && picks[i] !== undefined && styles.filled]}>
+                  <Text onPress={() => clearBlank(i)} style={[styles.blank, picks[i] !== null && picks[i] !== undefined && [styles.filled, styles.filledInk]]}>
                     {textOf(picks[i] ?? null) ?? EMPTY_BLANK}
                   </Text>
                 )}
@@ -113,7 +113,8 @@ export function ChoiceView({ card, round, picks, onPicks, checked }: ChoiceViewP
 const styles = StyleSheet.create({
   qcard: { borderRadius: 22, paddingVertical: 20, paddingHorizontal: 20, marginBottom: 26, backgroundColor: cream.card, boxShadow: '0 8px 24px rgba(0,0,0,0.3)' },
   question: { fontFamily: fonts.extraBold, fontSize: 18, lineHeight: 27, color: cream.ink },
-  blank: { color: answerColors.pickInk, textDecorationLine: 'underline', textDecorationColor: answerColors.pickEdge },
+  blank: { color: answerColors.pickEdge, fontFamily: fonts.black },
+  filledInk: { color: answerColors.pickInk, textDecorationLine: 'underline', textDecorationColor: answerColors.pickEdge },
   filled: { backgroundColor: answerColors.pickFill },
   answers: { gap: 12 },
   row: { flexDirection: 'row' },

@@ -11,6 +11,7 @@ import { AllBaked } from '@/components/lesson/AllBaked';
 import { OrbitView } from '@/components/lesson/OrbitView';
 import { useShownBaked } from '@/components/lesson/useShownBaked';
 import { useSky } from '@/components/sky/SkyProvider';
+import { StillSky } from '@/components/sky/StillSky';
 import { useLesson, useLessonOutline } from '@/data/queries/lessons';
 import { useProgress } from '@/data/queries/progress';
 import { text } from '@/theme/colors';
@@ -37,12 +38,15 @@ export default function LessonPage() {
   const openStop = (index: number) => router.push({ pathname: '/lesson/[id]/[stop]', params: { id, stop: String(index + 1), c: constellation.id } });
 
   return (
-    <View
-      style={[
-        styles.page,
-        { backgroundImage: `radial-gradient(ellipse at 85% 50%, ${mixColor(color, 0.18)}, rgba(0,0,0,0) 55%), linear-gradient(90deg, ${lessonSky.orbitVeil.join(', ')})` },
-      ]}
-    >
+    <View style={styles.page}>
+      <StillSky />
+      <View
+        pointerEvents="none"
+        style={[
+          StyleSheet.absoluteFill,
+          { backgroundImage: `radial-gradient(ellipse at 85% 50%, ${mixColor(color, 0.18)}, rgba(0,0,0,0) 55%), linear-gradient(90deg, ${lessonSky.orbitVeil.join(', ')})` },
+        ]}
+      />
       {outline && baked !== undefined && <OrbitView stopCount={outline.stopCount} baked={baked} color={color} art={cookieArtFor(constellation.id)} onOpen={openStop} />}
       <View style={[styles.head, { paddingTop: insets.top + 12 }]}>
         <RoundButton label="Back to the lessons" onPress={() => router.back()}>

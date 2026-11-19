@@ -14,6 +14,7 @@ import { cardLook, GroupHeading, LessonCard } from '@/components/constellation/L
 import { ListTop } from '@/components/constellation/ListTop';
 import { usePrefetchOnScreen } from '@/components/constellation/usePrefetchOnScreen';
 import { useSky } from '@/components/sky/SkyProvider';
+import { StillSky } from '@/components/sky/StillSky';
 import { useLessonOutlines, useLessonRows, type LessonRow } from '@/data/queries/lessons';
 import { useProgress } from '@/data/queries/progress';
 import { text } from '@/theme/colors';
@@ -63,6 +64,8 @@ export default function ConstellationPage() {
 
   return (
     <View style={styles.page}>
+      <StillSky />
+      <View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.veil]} />
       <View style={[styles.back, { top: insets.top + 12 }]}>
         <RoundButton label="Back to the sky" onPress={() => router.back()}>
           <Text style={styles.arrow}>←</Text>
@@ -94,7 +97,8 @@ export default function ConstellationPage() {
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundImage: `linear-gradient(180deg, ${lessonSky.listVeil.join(', ')})` },
+  page: { flex: 1 },
+  veil: { backgroundImage: `linear-gradient(180deg, ${lessonSky.listVeil.join(', ')})` },
   back: { position: 'absolute', left: 14, zIndex: 2 },
   arrow: { fontFamily: fonts.black, fontSize: 20, color: text.onDark },
   list: { paddingHorizontal: gutter + 2, width: '100%', maxWidth: 596, alignSelf: 'center' },
