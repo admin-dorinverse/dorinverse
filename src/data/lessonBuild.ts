@@ -2,6 +2,7 @@
 // and sayings, the collectibles that pop up on its story cards, and each question's answers in the order to show.
 // Plain functions with no database, so the same code can be timed outside the app.
 
+import { stopVerseRefs } from '@/data/lessonLibrary';
 import type { AnswerSeal, CardIdiom, CardWord, ChoiceCard, Lesson, LessonCard, LessonCookie, QuestionType, StoryCard } from '@/types/lesson';
 
 /** One stop row, with its first and last verse labels. */
@@ -67,6 +68,8 @@ export type LessonRows = {
   /** Collectibles told by a verse of this lesson, with the verse ids. */
   verseCookies: { verse_id: string; c: CookieRow | null }[];
   characters: CharacterNames;
+  /** The words (BSB) of the verses the stops cover, by verse label. */
+  verseTexts: Record<string, string>;
 };
 
 /**
@@ -186,6 +189,7 @@ export function buildLesson(id: number, rows: LessonRows): Lesson {
       firstVerse: s.from.osis_ref,
       lastVerse: s.to.osis_ref,
       cards: rows.cards.filter((c) => c.stop === s.stop).sort((a, b) => a.card - b.card).map(toCard),
+      verseWords: stopVerseRefs(s.from.osis_ref, s.to.osis_ref).flatMap((ref) => (rows.verseTexts[ref] ? [{ ref, text: rows.verseTexts[ref] }] : [])),
     }));
   return { id, stops };
 }

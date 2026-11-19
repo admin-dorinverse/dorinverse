@@ -3,10 +3,9 @@
 // only what is new (new verses, new cards) in one round, without a restart.
 
 import { useQuery } from '@tanstack/react-query';
-import { useMemo } from 'react';
-import { stopVerseRefs, targetId } from '@/data/lessonLibrary';
+import { targetId } from '@/data/lessonLibrary';
 import { bakeStop as bakeWithSource, collectCookie as collectWithSource, connectProgressKeeper, fetchProgress } from '@/data/progressSource';
-import { refreshBible, useBibleLibrary } from '@/data/queries/bible';
+import { refreshBible } from '@/data/queries/bible';
 import { refreshCharacters } from '@/data/queries/characters';
 import { queryClient } from '@/data/queries/client';
 import { refreshCookies } from '@/data/queries/cookies';
@@ -76,15 +75,9 @@ export async function collectCookie(cookie: LessonCookie, foundIn: string): Prom
 export type ShownVerse = { ref: string; text: string };
 
 /**
- * The words of a baked stop's verses, read from the Bible library, or undefined until the library has them. Verses
- * the translation leaves out are skipped.
+ * The words of a baked stop's verses. They came down with the lesson, so they are there at once, with no wait.
+ * Verses the translation leaves out are skipped.
  */
 export function useStopVerses(stop: LessonStop | undefined): ShownVerse[] | undefined {
-  const bible = useBibleLibrary().data;
-  return useMemo(() => {
-    if (!bible || !stop) return undefined;
-    const refs = stopVerseRefs(stop.firstVerse, stop.lastVerse);
-    if (!refs.every((ref) => bible.refs.has(ref) && bible.texts[ref] !== undefined)) return undefined;
-    return refs.flatMap((ref) => (bible.texts[ref] ? [{ ref, text: bible.texts[ref] }] : []));
-  }, [bible, stop]);
+  return stop?.verseWords;
 }

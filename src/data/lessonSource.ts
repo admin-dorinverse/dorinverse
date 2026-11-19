@@ -14,7 +14,7 @@
 
 import { database } from '@/data/database';
 import { buildLesson, type CardRow, type CookieRow, type DevSeal, type IdiomMeaningRow, type LessonRows, type StopRow, type WordMeaningRow } from '@/data/lessonBuild';
-import { displayReference, startChapterOf } from '@/data/lessonLibrary';
+import { displayReference, startChapterOf, stopVerseRefs } from '@/data/lessonLibrary';
 import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline, LessonType } from '@/types/lesson';
 
 /** The most rows the database sends in one reply. */
@@ -22,6 +22,9 @@ const ROW_CAP = 1000;
 
 /** How many verse ids one request asks about: short enough for the web address. */
 const VERSES_PER_ASK = 80;
+
+/** How many verse labels one request for verse words asks for (labels go in the web address). */
+const TEXTS_PER_ASK = 150;
 
 /** One outline row from the database. */
 type OutlineRow = {
@@ -99,10 +102,20 @@ export async function fetchLesson(id: LessonId): Promise<Lesson> {
   const storyVerses = [...new Set(cards.filter((c) => c.kind === 'story').flatMap((c) => c.cv.map((v) => v.verse_id)))];
   const verseAsks: string[][] = [];
   for (let i = 0; i < storyVerses.length; i += VERSES_PER_ASK) verseAsks.push(storyVerses.slice(i, i + VERSES_PER_ASK));
-  const [wordMeanings, idiomMeanings, verseCookies] = await Promise.all([
+  // The words of every verse the stops cover, so the "Cookie baked!" screen never waits. Hookup: they come in the
+  // lesson reply the same way (they are revealed by playing this lesson anyway).
+  const stopRefs = stops.flatMap((s) => stopVerseRefs(s.from.osis_ref, s.to.osis_ref));
+  const textAsks: string[][] = [];
+  for (let i = 0; i < stopRefs.length; i += TEXTS_PER_ASK) textAsks.push(stopRefs.slice(i, i + TEXTS_PER_ASK));
+  const [wordMeanings, idiomMeanings, verseCookies, verseTexts] = await Promise.all([
     words.length ? database.from('lesson_word_meaning').select('word, meaning_no, meaning, sources, w:lesson_word(forms)').in('word', words).then((r) => rowsOf<WordMeaningRow>(r)) : [],
     idiomIds.length ? database.from('lesson_idiom_meaning').select('idiom_id, meaning_no, meaning, sources, i:lesson_idiom(idiom)').in('idiom_id', idiomIds).then((r) => rowsOf<IdiomMeaningRow>(r)) : [],
     Promise.all(verseAsks.map((ask) => database.from('sample_cookie_verse').select(`verse_id, c:sample_cookie(${COOKIE_COLUMNS})`).in('verse_id', ask).then((r) => rowsOf<LessonRows['verseCookies'][number]>(r)))).then((l) => l.flat()),
+    Promise.all(
+      textAsks.map((ask) =>
+        database.from('verse_text').select('text, verse!inner(osis_ref)').eq('translation_code', 'BSB').in('verse.osis_ref', ask).then((r) => rowsOf<{ text: string; verse: { osis_ref: string } }>(r)),
+      ),
+    ).then((l) => Object.fromEntries(l.flat().map((row) => [row.verse.osis_ref, row.text]))),
   ]);
   const characterIds = [...new Set([...homeCookies, ...verseCookies.flatMap((v) => (v.c ? [v.c] : []))].flatMap((c) => (c.bible_character_id ? [c.bible_character_id] : [])))];
   const characters = new Map<string, { name: string; lookup: string }>();
@@ -110,7 +123,7 @@ export async function fetchLesson(id: LessonId): Promise<Lesson> {
     const named = await database.from('character_card').select('bible_character_id, name, who:bible_character!inner(lookup)').eq('status', 'published').in('bible_character_id', characterIds);
     for (const r of rowsOf<{ bible_character_id: string; name: string; who: { lookup: string } }>(named)) characters.set(r.bible_character_id, { name: r.name, lookup: r.who.lookup });
   }
-  return buildLesson(id, { stops, cards, cardWords, cardIdioms, wordMeanings, idiomMeanings, homeCookies, verseCookies, characters });
+  return buildLesson(id, { stops, cards, cardWords, cardIdioms, wordMeanings, idiomMeanings, homeCookies, verseCookies, characters, verseTexts });
 }
 
 /**

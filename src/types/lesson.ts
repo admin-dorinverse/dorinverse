@@ -139,6 +139,11 @@ export type LessonStop = {
   lastVerse: VerseRef;
   /** Its cards, in order. */
   cards: LessonCard[];
+  /**
+   * The words of its verses (BSB), in order, for the "Cookie baked!" screen. They come down with the lesson, so the
+   * screen shows them at once. Verses the translation leaves out are left out.
+   */
+  verseWords: { ref: VerseRef; text: string }[];
 };
 
 /** One lesson's full content, downloaded once and kept on the phone. */
