@@ -10,7 +10,8 @@
 // - A new phone (or a reinstall) downloads everything the person has earned in one compressed file right after
 //   sign-in, then never again. Covered verses always arrive as word lengths only; their words never reach the phone.
 //
-// Today (development): the revealed list is sample data, and fetchEarnedVerses below stands in for both of the
+// Today (development): the revealed list is the sample list plus the verses revealed by baking lesson stops
+// (progressSource), and fetchEarnedVerses below stands in for both of the
 // above by asking the database directly, in one round of requests sent together.
 
 import { BIBLE_OUTLINE } from '@/data/bibleOutline';

@@ -6,7 +6,8 @@
 //   place's card; the phone saves it and fetches its two small photos. Nothing else is downloaded.
 // - A new phone (or a reinstall) gets every collected card in the one compressed download right after sign-in.
 //
-// Today (development): the collected list is sample data, and fetchPlaceCards below stands in for both of the
+// Today (development): the collected list is the sample list plus the places collected in lessons
+// (progressSource), and fetchPlaceCards below stands in for both of the
 // above by asking the database directly, in one request per 25 cards, sent together.
 
 import { database } from '@/data/database';

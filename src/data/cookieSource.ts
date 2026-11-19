@@ -6,7 +6,8 @@
 //   that cookie (and, for a prophecy half, its link's outline); the phone saves it. Nothing else is downloaded.
 // - A new phone (or a reinstall) gets every collected cookie in the one compressed download right after sign-in.
 //
-// Today (development): the collected list is sample data, and fetchCookies below stands in for both of the above
+// Today (development): the collected list is the sample list plus the cookies collected in lessons
+// (progressSource), and fetchCookies below stands in for both of the above
 // by asking the database directly: one request per 25 cookies (sent together), then one for the link outlines.
 
 import { database } from '@/data/database';

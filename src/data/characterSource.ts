@@ -7,7 +7,8 @@
 //   never its name or why sentence). The phone saves the card; nothing else is downloaded.
 // - A new phone (or a reinstall) gets every collected card in the one compressed download right after sign-in.
 //
-// Today (development): the collected list is sample data, and fetchCards below stands in for both of the above by
+// Today (development): the collected list is the sample list plus the characters collected in lessons
+// (progressSource), and fetchCards below stands in for both of the above by
 // asking the database directly, in one round of requests sent together.
 
 import { database } from '@/data/database';
