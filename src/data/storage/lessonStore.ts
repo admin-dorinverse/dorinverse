@@ -6,7 +6,7 @@ import { openDatabaseAsync, type SQLiteDatabase } from 'expo-sqlite';
 import type { Lesson, LessonId, LessonOutline } from '@/types/lesson';
 
 /** Bump when the tables below or a saved lesson's shape change; the store is then rebuilt and filled again. */
-const STORE_VERSION = 2;
+const STORE_VERSION = 3;
 
 /** The open store, made on first use. */
 let opening: Promise<SQLiteDatabase> | null = null;

@@ -113,7 +113,7 @@ export function StopPlayer({ lessonId, stop, foundIn, color, art, onClose }: Sto
             </Text>
           </DorinSpeak>
         ) : step.card.kind === 'story' ? (
-          <StoryView key={step.key} card={step.card} foundIn={foundIn} dorinHeight={dorinHeight} color={color} />
+          <StoryView key={step.key} card={step.card} foundIn={foundIn} dorinHeight={dorinHeight} />
         ) : (
           <ChoiceView key={step.key} card={step.card} round={step.round} picks={player.picks} onPicks={player.setPicks} checked={checked?.result.right} />
         )}

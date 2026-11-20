@@ -94,12 +94,16 @@ function toCard(row: CardRow): PlaceCard {
   };
 }
 
+/** The web address of a place's photo: the small square copy or the page-header copy. */
+export function placePhotoAddress(lookup: string, size: 'small' | 'header'): string {
+  return `${PHOTO_BASE}/${size}/${encodeURIComponent(lookup)}.webp`;
+}
+
 /** The card's two small WebP copies (made by scripts/app/make-place-photos.mjs) and their credit; null with no photo. */
 function toPhoto(row: CardRow): PlacePhoto | null {
   if (!row.image_path) return null;
-  const name = encodeURIComponent(row.lookup);
   // "sentinel" marks satellite pictures whose credit line already says everything; it is not a license name.
   const license = row.image_license && row.image_license !== 'sentinel' ? row.image_license : null;
   const credit: PhotoCredit = { by: row.image_author ?? row.image_credit ?? 'Unknown', license, link: row.image_credit_url };
-  return { small: `${PHOTO_BASE}/small/${name}.webp`, header: `${PHOTO_BASE}/header/${name}.webp`, credit };
+  return { small: placePhotoAddress(row.lookup, 'small'), header: placePhotoAddress(row.lookup, 'header'), credit };
 }

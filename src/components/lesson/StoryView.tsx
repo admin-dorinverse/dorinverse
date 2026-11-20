@@ -1,19 +1,24 @@
 // A story card in the player: Papa Dorin tells the next piece of the passage in his speech bubble, with its verse
-// reference, its explained words and sayings to tap, and a pop-up for each sample cookie its verses tell that the
-// person has not collected yet. Collecting one sends it to Collections.
+// reference and its explained words and sayings to tap. Each cookie its verses tell that the person has not collected
+// yet shows as its name in the words, glowing gold with a sparkle (or, when its name isn't in the words, as a sparkle
+// beside the verse reference). Tapping it opens a quick look; collecting it sends it to Collections, and its name
+// turns back into plain words.
 
-import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import Animated, { FadeIn } from 'react-native-reanimated';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { useSharedValue } from 'react-native-reanimated';
 import { playSound } from '@/components/common/sounds';
+import { useAmbientClock } from '@/components/common/useAmbientClock';
+import { markText, targetId } from '@/data/queries/lessons';
 import { collectCookie, useProgress } from '@/data/queries/progress';
-import { targetId } from '@/data/queries/lessons';
-import { answerColors, cream } from '@/theme/lessonColors';
-import { navy, text } from '@/theme/colors';
+import { cream } from '@/theme/lessonColors';
 import { fonts } from '@/theme/text';
 import type { LessonCookie, StoryCard } from '@/types/lesson';
+import { CookiePicture, prefetchCookiePhotos } from './CookiePicture';
+import { CookieWord } from './CookieWord';
 import { CreamSheet } from './CreamSheet';
 import { DorinSpeak } from './DorinSpeak';
+import { FlyCookie } from './FlyCookie';
 import { MarkedText, type MarkTap } from './MarkedText';
 import { WordSheet } from './WordSheet';
 
@@ -25,19 +30,45 @@ type StoryViewProps = {
   foundIn: string;
   /** Papa Dorin's height. */
   dorinHeight: number;
-  /** The constellation's color, for the pop-up chips. */
-  color: string;
 };
 
+/** The sparkles never need 60 ticks a second. */
+function neverBusy(): boolean {
+  'worklet';
+  return false;
+}
+
+/** The name a cookie is found by in the words: a character's or place's name. Other cookies have none. */
+function nameOf(k: LessonCookie): string | null {
+  return k.target.kind === 'cookie' ? null : k.title;
+}
+
 /** A story card. */
-export function StoryView({ card, foundIn, dorinHeight, color }: StoryViewProps) {
+export function StoryView({ card, foundIn, dorinHeight }: StoryViewProps) {
   const collected = useProgress().data?.collected;
   const [tap, setTap] = useState<MarkTap | null>(null);
   const [seen, setSeen] = useState<ReadonlySet<string>>(new Set());
   const [opened, setOpened] = useState<LessonCookie | null>(null);
   const [justGot, setJustGot] = useState<ReadonlySet<string>>(new Set());
-  // Only cookies not collected yet pop up; one collected here stays as a "Collected" note on this card.
-  const cookies = card.cookies.filter((k) => justGot.has(k.key) || !collected?.has(targetId(k.target)));
+  const [flying, setFlying] = useState(0);
+  // The sparkles' timer runs only while the card has a cookie to collect.
+  const hasCookies = useSharedValue(false);
+  const clock = useAmbientClock(neverBusy, () => {
+    'worklet';
+    return hasCookies.get();
+  });
+
+  // The cookies still to collect, the names to find for them, and which of them aren't named in the words.
+  const pending = useMemo(() => card.cookies.filter((k) => !justGot.has(k.key) && !collected?.has(targetId(k.target))), [card.cookies, justGot, collected]);
+  const names = useMemo(() => pending.map(nameOf), [pending]);
+  const loose = useMemo(() => {
+    const found = new Set(markText(card.text, card.words, card.idioms, names).flatMap((p) => (p.cookie !== undefined ? [p.cookie] : [])));
+    return pending.filter((_, i) => !found.has(i));
+  }, [card.text, card.words, card.idioms, names, pending]);
+
+  useEffect(() => hasCookies.set(pending.length > 0), [hasCookies, pending.length]);
+  // Place photos are fetched as soon as the card shows, so a quick look opens with its photo there.
+  useEffect(() => prefetchCookiePhotos(card.cookies), [card.cookies]);
 
   /** Opens a word's or saying's meaning. */
   const openTap = (t: MarkTap) => {
@@ -45,50 +76,52 @@ export function StoryView({ card, foundIn, dorinHeight, color }: StoryViewProps)
     setSeen((s) => new Set([...s, `${t.kind}:${t.index}`]));
     setTap(t);
   };
+  /** Opens a cookie's quick look. */
+  const openCookie = (k: LessonCookie) => {
+    playSound('tap');
+    setOpened(k);
+  };
+  const landed = useCallback(() => setFlying((n) => n - 1), []);
 
   return (
     <View>
       <DorinSpeak length={card.text.length} height={dorinHeight}>
-        <MarkedText text={card.text} words={card.words} idioms={card.idioms} seen={seen} onTap={openTap} style={styles.words} />
-        <Text style={styles.cite}>{card.verses}</Text>
+        <MarkedText
+          text={card.text}
+          words={card.words}
+          idioms={card.idioms}
+          seen={seen}
+          onTap={openTap}
+          style={styles.words}
+          cookieNames={names}
+          onCookie={(i) => openCookie(pending[i])}
+          clock={clock}
+        />
+        <View style={styles.citeRow}>
+          <Text style={styles.cite}>{card.verses}</Text>
+          {loose.map((k) => (
+            <CookieWord key={k.key} text={k.label} style={styles.looseWord} clock={clock} onPress={() => openCookie(k)} />
+          ))}
+        </View>
       </DorinSpeak>
-      {cookies.map((k) => {
-        const got = justGot.has(k.key);
-        return (
-          <Animated.View key={k.key} entering={FadeIn.delay(500).duration(300)}>
-            <Pressable
-              accessibilityRole="button"
-              disabled={got}
-              onPress={() => {
-                playSound('tap');
-                setOpened(k);
-              }}
-              style={({ pressed }) => [styles.chip, { borderColor: color, boxShadow: `0 0 14px ${color}` }, got && styles.chipDone, pressed && styles.pressed]}
-            >
-              <Text style={[styles.chipMark, { backgroundColor: color }]}>{got ? '✓' : '✦'}</Text>
-              <View style={styles.chipWords}>
-                <Text style={styles.chipKind}>{got ? 'Collected' : `Sample cookie · ${k.label}`}</Text>
-                <Text style={styles.chipTitle} numberOfLines={2}>
-                  {k.title}
-                </Text>
-              </View>
-            </Pressable>
-          </Animated.View>
-        );
-      })}
+      {Array.from({ length: flying }, (_, i) => (
+        <FlyCookie key={i} onDone={landed} />
+      ))}
       <WordSheet card={card} tap={tap} onClose={() => setTap(null)} />
       <CreamSheet
         open={!!opened}
         onClose={() => setOpened(null)}
-        kind={opened ? `Sample cookie · ${opened.label}` : ''}
-        title={opened?.title ?? ''}
-        body={opened?.detail ?? null}
+        kind={opened?.label ?? ''}
+        title={opened ? (opened.tag ? `${opened.title}, ${opened.tag}` : opened.title) : ''}
+        body={opened ? (opened.summary ?? opened.detail) : null}
         note={opened?.reference ?? null}
+        picture={opened ? <CookiePicture cookie={opened} clock={clock} /> : undefined}
         button="Collect"
         onButton={() => {
           if (!opened) return;
           playSound('collect');
           setJustGot((s) => new Set([...s, opened.key]));
+          setFlying((n) => n + 1);
           void collectCookie(opened, foundIn);
         }}
       />
@@ -98,22 +131,7 @@ export function StoryView({ card, foundIn, dorinHeight, color }: StoryViewProps)
 
 const styles = StyleSheet.create({
   words: { fontFamily: fonts.body, fontSize: 17.5, lineHeight: 27, color: cream.ink },
-  cite: { fontFamily: fonts.extraBold, fontSize: 13, color: cream.cite, marginTop: 6 },
-  chip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    marginTop: 14,
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-    borderRadius: 18,
-    borderWidth: 1.5,
-    backgroundColor: answerColors.idleFill,
-  },
-  chipDone: { opacity: 0.7, boxShadow: 'none' },
-  pressed: { transform: [{ scale: 0.98 }] },
-  chipMark: { width: 32, height: 32, borderRadius: 16, textAlign: 'center', lineHeight: 32, fontFamily: fonts.black, fontSize: 16, color: navy, overflow: 'hidden' },
-  chipWords: { flex: 1 },
-  chipKind: { fontFamily: fonts.black, fontSize: 11.5, letterSpacing: 0.6, textTransform: 'uppercase', color: text.goldNote },
-  chipTitle: { fontFamily: fonts.bold, fontSize: 15, lineHeight: 20, color: text.onDark },
+  citeRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8, marginTop: 6 },
+  cite: { fontFamily: fonts.extraBold, fontSize: 13, color: cream.cite },
+  looseWord: { fontFamily: fonts.extraBold, fontSize: 13, lineHeight: 20 },
 });

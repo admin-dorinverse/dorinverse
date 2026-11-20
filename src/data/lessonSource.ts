@@ -13,6 +13,7 @@
 // come down inside the lesson, sealed in the card, and checkAnswer checks them on the phone. Pages never see them.
 
 import { database } from '@/data/database';
+import { placePhotoAddress } from '@/data/placeSource';
 import { buildLesson, type CardRow, type CookieRow, type DevSeal, type IdiomMeaningRow, type LessonRows, type StopRow, type WordMeaningRow } from '@/data/lessonBuild';
 import { displayReference, startChapterOf, stopVerseRefs } from '@/data/lessonLibrary';
 import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline, LessonType } from '@/types/lesson';
@@ -40,7 +41,7 @@ type OutlineRow = {
 
 /** What the collectible requests ask for: the cookie, its home card, and the place card it names. */
 const COOKIE_COLUMNS =
-  'key, type, reference, instruction, who, key_line, half, quote, bible_character_id, place_lookup, passage_id, stop, card, place:place_card(name, line)';
+  'key, type, reference, instruction, who, key_line, half, quote, bible_character_id, place_lookup, passage_id, stop, card, place:place_card(name, line, image_path)';
 
 /** Downloads every lesson's outline, in Bible order: two requests sent together (the database replies 1,000 rows at most). */
 export async function fetchLessonOutlines(): Promise<LessonOutline[]> {
@@ -118,10 +119,19 @@ export async function fetchLesson(id: LessonId): Promise<Lesson> {
     ).then((l) => Object.fromEntries(l.flat().map((row) => [row.verse.osis_ref, row.text]))),
   ]);
   const characterIds = [...new Set([...homeCookies, ...verseCookies.flatMap((v) => (v.c ? [v.c] : []))].flatMap((c) => (c.bible_character_id ? [c.bible_character_id] : [])))];
-  const characters = new Map<string, { name: string; lookup: string }>();
+  const characters = new Map<string, { name: string; lookup: string; tag: string | null; summary: string }>();
   if (characterIds.length) {
-    const named = await database.from('character_card').select('bible_character_id, name, who:bible_character!inner(lookup)').eq('status', 'published').in('bible_character_id', characterIds);
-    for (const r of rowsOf<{ bible_character_id: string; name: string; who: { lookup: string } }>(named)) characters.set(r.bible_character_id, { name: r.name, lookup: r.who.lookup });
+    const named = await database
+      .from('character_card')
+      .select('bible_character_id, name, name_tag, summary, who:bible_character!inner(lookup)')
+      .eq('status', 'published')
+      .in('bible_character_id', characterIds);
+    type Named = { bible_character_id: string; name: string; name_tag: string | null; summary: string; who: { lookup: string } };
+    for (const r of rowsOf<Named>(named)) characters.set(r.bible_character_id, { name: r.name, lookup: r.who.lookup, tag: r.name_tag, summary: r.summary });
+  }
+  // Each place cookie's photo address, for its quick look.
+  for (const c of [...homeCookies, ...verseCookies.flatMap((v) => (v.c ? [v.c] : []))]) {
+    if (c.place && c.place_lookup) c.place.photo = c.place.image_path ? placePhotoAddress(c.place_lookup, 'header') : null;
   }
   return buildLesson(id, { stops, cards, cardWords, cardIdioms, wordMeanings, idiomMeanings, homeCookies, verseCookies, characters, verseTexts });
 }

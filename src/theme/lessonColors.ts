@@ -23,6 +23,9 @@ export const lessonSky = {
 export const cream = {
   /** The bubble and question card. */
   card: 'rgba(255,255,255,0.96)',
+  /** Behind a place photo while it shows, and behind a collection's little scene in a quick look. */
+  photoBack: '#eadfc6',
+  sceneBack: '#1d2152',
   /** Dark brown words on cream. */
   ink: '#2a1d14',
   /** The verse reference under a story. */
@@ -92,4 +95,16 @@ export const ovenColors = {
   heat: ['#FFD36B', '#FF8A1F', '#E8430C'],
   /** The shine across the top. */
   shine: 'rgba(255,255,255,0.75)',
+} as const;
+
+/** A collectible cookie's name in Papa Dorin's words: amber words on a soft gold tint, with a twinkling sparkle. */
+export const cookieWord = {
+  /** The name's words. */
+  text: '#8a4f08',
+  /** The soft gold behind the name. */
+  tint: 'rgba(255,198,92,0.38)',
+  /** Its thin gold edge. */
+  edge: 'rgba(224,160,42,0.7)',
+  /** The sparkle after the name. */
+  spark: '#e0a02a',
 } as const;

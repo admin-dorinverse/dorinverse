@@ -8,6 +8,7 @@ import { KnobTabs } from '@/components/common/KnobTabs';
 import { BakeryPlanet } from '@/components/sky/BakeryPlanet';
 import { Hud } from '@/components/sky/Hud';
 import { RocketView } from '@/components/sky/RocketView';
+import { SkyArmor } from '@/components/sky/SkyArmor';
 import { SkyCanvas } from '@/components/sky/SkyCanvas';
 
 /** The tabs layout. The hidden list declares the tabs; the knob tabs are the buttons people see. */
@@ -25,6 +26,7 @@ export default function TabsLayout() {
       >
         <SkyCanvas />
         <BakeryPlanet />
+        <SkyArmor />
         <RocketView />
       </GlassBackdrop>
       <TabList style={styles.hidden}>

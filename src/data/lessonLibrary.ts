@@ -95,7 +95,8 @@ export function lessonRows(outlines: readonly LessonOutline[], type: LessonType)
 }
 
 /** A piece of a card's words: plain, or an explained word or saying (by its place in the card's lists). */
-export type TextPiece = { text: string; word?: number; idiom?: number };
+/** A piece of a card's words: plain, or an explained word, saying, or collectible cookie's name (by its place in its list). */
+export type TextPiece = { text: string; word?: number; idiom?: number; cookie?: number };
 
 /** True for a letter or digit, so a word is only matched whole. */
 function isWordChar(c: string | undefined): boolean {
@@ -114,13 +115,18 @@ function findWhole(hay: string, lower: string, needle: string, from = 0): number
 }
 
 /**
- * Splits a card's words so the first use of each explained word (any of its forms) and saying can be tapped. Sayings
- * win over words when they overlap. Done once per card, when it shows.
+ * Splits a card's words so the first use of each explained word (any of its forms), saying, and collectible cookie's
+ * name (`cookieNames`, by the cookie's place in its list; null for a cookie with no name to find) can be tapped.
+ * Cookie names win, then sayings, then words, when they overlap. Done once per card, when it shows.
  */
-export function markText(text: string, words: readonly CardWord[], idioms: readonly CardIdiom[]): TextPiece[] {
+export function markText(text: string, words: readonly CardWord[], idioms: readonly CardIdiom[], cookieNames: readonly (string | null)[] = []): TextPiece[] {
   const lower = text.toLowerCase();
-  type Mark = { at: number; end: number; word?: number; idiom?: number };
+  type Mark = { at: number; end: number; word?: number; idiom?: number; cookie?: number };
   const marks: Mark[] = [];
+  cookieNames.forEach((name, i) => {
+    const at = name ? findWhole(text, lower, name) : -1;
+    if (name && at >= 0) marks.push({ at, end: at + name.length, cookie: i });
+  });
   idioms.forEach((idiom, i) => {
     const at = findWhole(text, lower, idiom.phrase);
     if (at >= 0) marks.push({ at, end: at + idiom.phrase.length, idiom: i });
@@ -131,13 +137,14 @@ export function markText(text: string, words: readonly CardWord[], idioms: reado
     const first = hits.reduce((a, b) => (b.at < a.at || (b.at === a.at && b.len > a.len) ? b : a));
     marks.push({ at: first.at, end: first.at + first.len, word: i });
   });
-  marks.sort((a, b) => a.at - b.at);
+  // In order; at the same spot a cookie name comes first, so it wins.
+  marks.sort((a, b) => a.at - b.at || (a.cookie !== undefined ? -1 : b.cookie !== undefined ? 1 : 0));
   const pieces: TextPiece[] = [];
   let pos = 0;
   for (const m of marks) {
     if (m.at < pos) continue;
     if (m.at > pos) pieces.push({ text: text.slice(pos, m.at) });
-    pieces.push({ text: text.slice(m.at, m.end), word: m.word, idiom: m.idiom });
+    pieces.push({ text: text.slice(m.at, m.end), word: m.word, idiom: m.idiom, cookie: m.cookie });
     pos = m.end;
   }
   if (pos < text.length) pieces.push({ text: text.slice(pos) });

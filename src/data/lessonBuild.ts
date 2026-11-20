@@ -49,11 +49,12 @@ export type CookieRow = {
   passage_id: number | null;
   stop: number | null;
   card: number | null;
-  place: { name: string; line: string } | null;
+  /** The place card it names; `photo` is filled in after download with its photo's address. */
+  place: { name: string; line: string; image_path?: string | null; photo?: string | null } | null;
 };
 
-/** A character's name and lookup, by database id. */
-export type CharacterNames = ReadonlyMap<string, { name: string; lookup: string }>;
+/** A character's name, lookup, tag and summary, by database id. */
+export type CharacterNames = ReadonlyMap<string, { name: string; lookup: string; tag?: string | null; summary?: string }>;
 
 /** Everything a lesson download brings. */
 export type LessonRows = {
@@ -96,10 +97,14 @@ function toCookie(row: CookieRow, characters: CharacterNames): LessonCookie | nu
   switch (row.type) {
     case 'character': {
       const who = row.bible_character_id ? characters.get(row.bible_character_id) : undefined;
-      return who ? { ...base, target: { kind: 'character', lookup: who.lookup }, label: 'Character card', title: who.name, detail: null } : null;
+      return who
+        ? { ...base, target: { kind: 'character', lookup: who.lookup }, label: 'Character card', title: who.name, detail: null, tag: who.tag ?? null, summary: who.summary ?? null }
+        : null;
     }
     case 'place':
-      return row.place_lookup && row.place ? { ...base, target: { kind: 'place', lookup: row.place_lookup }, label: 'Place', title: row.place.name, detail: row.place.line } : null;
+      return row.place_lookup && row.place
+        ? { ...base, target: { kind: 'place', lookup: row.place_lookup }, label: 'Place', title: row.place.name, detail: null, summary: row.place.line, photo: row.place.photo ?? null }
+        : null;
     case 'prayer':
       return { ...base, target: { kind: 'cookie', key: row.key }, label: 'Prayer', title: row.who ? `${row.who} prays` : 'A prayer', detail: row.key_line };
     case 'instruction':

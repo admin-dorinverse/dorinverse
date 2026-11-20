@@ -69,6 +69,11 @@ export type LessonCookie = {
   detail: string | null;
   /** Where it is written, like "Judges 13:8", or null. */
   reference: string | null;
+  /** For its quick look: a character's tag (like "son of Gera") and a character's or place's short summary. */
+  tag?: string | null;
+  summary?: string | null;
+  /** For a place's quick look: the web address of its photo, or null when it has none. */
+  photo?: string | null;
 };
 
 /** Papa Dorin's turn: he tells the next piece of the passage. */

@@ -1,8 +1,9 @@
 // The player's cream pop-up sheet, as in the design's word sheet: it slides up once over a dimmed page with Papa
-// Dorin, a small heading, a title, what it says, a note, and one button. Used for explained words and sayings, and
-// for collecting a sample cookie.
+// Dorin (or a picture of what it shows), a small heading, a title, what it says, a note, and one button. Used for
+// explained words and sayings, and for the quick look at a cookie before collecting it.
 
 import { Image } from 'expo-image';
+import type { ReactNode } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, SlideInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -37,10 +38,12 @@ type CreamSheetProps = {
   button: string;
   /** What the button does (it also closes the sheet). Closing only, when not given. */
   onButton?: () => void;
+  /** A picture across the top, like a place's photo; Papa Dorin is left out when there is one. */
+  picture?: ReactNode;
 };
 
 /** A cream sheet over the player. */
-export function CreamSheet({ open, onClose, kind, title, body, note, button, onButton }: CreamSheetProps) {
+export function CreamSheet({ open, onClose, kind, title, body, note, button, onButton, picture }: CreamSheetProps) {
   const insets = useSafeAreaInsets();
   return (
     <Modal visible={open} transparent animationType="fade" onRequestClose={onClose} statusBarTranslucent>
@@ -48,8 +51,9 @@ export function CreamSheet({ open, onClose, kind, title, body, note, button, onB
         <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel="Close" />
         {open && (
           <Animated.View entering={SHEET_IN} style={[styles.sheet, { paddingBottom: 20 + insets.bottom }]}>
+            {picture ? <View style={styles.picture}>{picture}</View> : null}
             <View style={styles.head}>
-              <Image source={PAPA_DORIN} style={styles.dorin} contentFit="contain" />
+              {!picture && <Image source={PAPA_DORIN} style={styles.dorin} contentFit="contain" />}
               <View style={styles.words}>
                 <Text style={styles.kind}>{kind}</Text>
                 <Text style={styles.title}>{title}</Text>
@@ -78,6 +82,7 @@ export function CreamSheet({ open, onClose, kind, title, body, note, button, onB
 const styles = StyleSheet.create({
   backdrop: { flex: 1, justifyContent: 'flex-end', alignItems: 'center', backgroundColor: glass.backdrop },
   sheet: { width: '100%', maxWidth: 560, backgroundColor: cream.sheet, borderTopLeftRadius: radius.sheet, borderTopRightRadius: radius.sheet, paddingTop: 20, paddingHorizontal: 20 },
+  picture: { alignItems: 'center', marginBottom: 14 },
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   dorin: { width: Math.round((DORIN_H * 300) / 688), height: DORIN_H },
   words: { flex: 1 },
