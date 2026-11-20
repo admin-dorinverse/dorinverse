@@ -1,6 +1,6 @@
 // The Sky tab, the app's home page: the living sky you can drag around, the dock, and the Star Map.
 
-import { useFocusEffect, useRouter } from 'expo-router';
+import { useFocusEffect, useRouter, type Href } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { scheduleOnRN, scheduleOnUI } from 'react-native-worklets';
@@ -23,7 +23,8 @@ export default function SkyPage() {
     useCallback(() => {
       setAtHome(true);
       setArrivalHandler((d: SkyDestination) => {
-        if (d.kind === 'bakery') router.push('/bakery');
+        // The route list names the bakery "/bakery/index"; its real address is "/bakery".
+        if (d.kind === 'bakery') router.push('/bakery' as Href);
         else router.push({ pathname: '/constellation/[id]', params: { id: d.id } });
       });
       return () => setAtHome(false);
