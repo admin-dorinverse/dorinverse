@@ -1,5 +1,5 @@
-// The Keep it fresh tab: three ways to keep what the person has learned fresh, as tinted glass cards over the
-// stars: Character Connections, Chat with Papa Dorin and Verse Memory. The trivia and verse games live in the sky.
+// The Keep it fresh tab: ways to keep what the person has learned fresh, as tinted glass cards over the stars:
+// Chat with Papa Dorin, Cookie Box Trivia, Verse Memory and Verse Trivia.
 
 import { useRouter, type Href } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -41,28 +41,28 @@ export default function KeepItFreshPage() {
         <Text style={[textStyles.tabTitle, styles.title]}>Keep it fresh</Text>
         <View style={styles.list}>
           <CollectionCard
-            title="Character Connections"
-            note="Who knew whom, who crossed whom. Links most readers miss."
-            hue="blue"
-            layout="wide"
-            index={0}
-            clock={clock}
-            action="Open the web"
-            onPress={() => open('/connections')}
-          >
-            <FreshArt kind="web" />
-          </CollectionCard>
-          <CollectionCard
             title="Chat with Papa Dorin"
             note="Ask him anything about the Bible. He answers in text, one baker at a time."
             hue="sage"
             layout="wide"
-            index={1}
+            index={0}
             clock={clock}
             action="Start chatting"
             onPress={() => open('/chat')}
           >
             <FreshArt kind="chat" />
+          </CollectionCard>
+          <CollectionCard
+            title="Cookie Box Trivia"
+            note="Questions from every lesson you’ve finished. Play solo, build together, or go head to head."
+            hue="berry"
+            layout="wide"
+            index={1}
+            clock={clock}
+            action="Play now"
+            onPress={() => open('/trivia')}
+          >
+            <FreshArt kind="trivia" />
           </CollectionCard>
           <CollectionCard
             title="Verse Memory"
@@ -76,6 +76,18 @@ export default function KeepItFreshPage() {
             onPress={() => open('/verse-memory' as Href)}
           >
             <FreshArt kind="verse" />
+          </CollectionCard>
+          <CollectionCard
+            title="Verse Trivia"
+            note="Build verses word by word. Play solo, build together, or go head to head."
+            hue="amber"
+            layout="wide"
+            index={3}
+            clock={clock}
+            action="Play now"
+            onPress={() => open('/verse-trivia')}
+          >
+            <FreshArt kind="verseTrivia" />
           </CollectionCard>
         </View>
       </View>

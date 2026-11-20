@@ -16,10 +16,6 @@ export const sky = {
   starLilac: '#B6ADC9',
   /** Pale blue star. */
   starBlue: '#CFE3FF',
-  /** Glow around the Collections area's name in the sky. */
-  collectionsGlow: '#ffc65c',
-  /** Faint dotted edge around the Collections area. */
-  collectionsEdge: 'rgba(255,226,163,0.22)',
   /** The three nebula cloud colors with how strongly each shows. */
   nebula: [
     { color: '#3b2a7a', alpha: 0.22 },

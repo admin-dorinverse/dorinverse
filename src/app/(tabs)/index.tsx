@@ -1,9 +1,9 @@
-// The Sky tab, the app's home page: the living sky you can drag around (with its Collections area), the dock,
-// and the Star Map.
+// The Sky tab, the app's home page: the living sky you can drag around, the dock, and the Star Map.
 
-import { useFocusEffect, useRouter, type Href } from 'expo-router';
+import { useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { scheduleOnRN, scheduleOnUI } from 'react-native-worklets';
 import { playSound } from '@/components/common/sounds';
 import { Dock } from '@/components/sky/Dock';
 import type { MapSnapshot } from '@/components/sky/drawStarMap';
@@ -24,9 +24,6 @@ export default function SkyPage() {
       setAtHome(true);
       setArrivalHandler((d: SkyDestination) => {
         if (d.kind === 'bakery') router.push('/bakery');
-        // The route list names these lists "/bible/index" and so on; their real addresses are "/bible", "/characters"...
-        else if (d.kind === 'game') router.push(d.game === 'trivia' ? '/trivia' : '/verse-games');
-        else if (d.kind === 'collection') router.push((d.list === 'verses' ? '/bible' : `/${d.list}`) as Href);
         else router.push({ pathname: '/constellation/[id]', params: { id: d.id } });
       });
       return () => setAtHome(false);
@@ -35,16 +32,20 @@ export default function SkyPage() {
 
   /** Opens the Star Map with a picture of where the camera and rocket are right now. */
   const openMap = () => {
-    const s = sky.get();
     playSound('tap');
-    setMapSnapshot({
-      cameraX: s.camera.x,
-      cameraY: s.camera.y,
-      screenW: s.width,
-      screenH: s.height,
-      rocketX: s.rocket.x,
-      rocketY: s.rocket.y,
-      rocketTurn: s.rocket.rotation,
+    // The sky's camera and rocket move on the animation thread, so the live spot is read there and sent back.
+    scheduleOnUI(() => {
+      'worklet';
+      const s = sky.get();
+      scheduleOnRN(setMapSnapshot, {
+        cameraX: s.camera.x,
+        cameraY: s.camera.y,
+        screenW: s.width,
+        screenH: s.height,
+        rocketX: s.rocket.x,
+        rocketY: s.rocket.y,
+        rocketTurn: s.rocket.rotation,
+      });
     });
   };
 

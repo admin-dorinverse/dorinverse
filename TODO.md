@@ -14,7 +14,7 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
 - **Hook up Chat with Papa Dorin.** Today it opens a stand-in page. Needs the owner to pick an AI company and say go
   on any spending first.
 
-## Games (in the sky)
+## Trivia (on Keep it fresh)
 
 - **Build Cookie Box Trivia** (Solo, Build Together, Versus). Today it opens a stand-in page.
-- **Build the verse games** (Solo, Build Together, Versus). Today they open a stand-in page.
+- **Build Verse Trivia** (Solo, Build Together, Versus). Today it opens a stand-in page.

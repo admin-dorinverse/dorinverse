@@ -9,10 +9,7 @@ import { scheduleOnRN, scheduleOnUI } from 'react-native-worklets';
 import { playSound, type SoundName } from '@/components/common/sounds';
 import { sampleConstellations } from '@/data/sample/constellations';
 import { constellationLabelSize, skyLabelFont } from '@/theme/text';
-import type { CollectionKind } from '@/types/collection';
 import type { Constellation } from '@/types/constellation';
-import type { CardBox } from './collectionsZone';
-import type { SkyGame } from './gamesZone';
 import { runSkyFrame, setSkyAtHome, setSkyScreen, skyIsBusy } from './runSkyFrame';
 import { createSkyState, type SkyState } from './skyState';
 import { handleSkyTap } from './skyTap';
@@ -31,12 +28,8 @@ const AWAY_FRAME_MS = 1000 / 10;
 /** Leeway so a screen refresh that comes a hair early still counts. */
 const FRAME_SLACK_MS = 4;
 
-/** Where a sky flight or tap leads: the bakery, a constellation by its id, one collection's list, or a game. */
-export type SkyDestination =
-  | { kind: 'bakery' }
-  | { kind: 'constellation'; id: string }
-  | { kind: 'collection'; list: CollectionKind }
-  | { kind: 'game'; game: SkyGame['game'] };
+/** Where a sky flight or tap leads: the bakery, or a constellation by its id. */
+export type SkyDestination = { kind: 'bakery' } | { kind: 'constellation'; id: string };
 
 /** What the sky shares with screens. */
 type SkyContextValue = {
@@ -52,8 +45,6 @@ type SkyContextValue = {
   constellations: readonly Constellation[];
   /** Width of each constellation's name, used to keep the rocket off it. */
   labelWidths: readonly number[];
-  /** Each collection card's box in the sky, measured once it shows. Used to tell which card a tap lands on. */
-  collectionBoxes: SharedValue<CardBox[]>;
   /** Flies the camera to a sky spot, then opens `destination` if one is given. */
   flyTo: (x: number, y: number, destination?: SkyDestination) => void;
   /** Tells the sky whether the Sky tab is showing. Other tabs show only the stars. */
@@ -79,17 +70,12 @@ export function useSky(): SkyContextValue {
 
 /** Turns a destination into the short tag the animation thread passes around. */
 function toTag(d: SkyDestination): string {
-  if (d.kind === 'bakery') return 'bakery';
-  if (d.kind === 'game') return `game:${d.game}`;
-  return d.kind === 'constellation' ? `constellation:${d.id}` : `collection:${d.list}`;
+  return d.kind === 'bakery' ? 'bakery' : `constellation:${d.id}`;
 }
 
 /** Turns a tag back into a destination. */
 function fromTag(tag: string): SkyDestination {
-  if (tag === 'bakery') return { kind: 'bakery' };
-  const rest = tag.slice(tag.indexOf(':') + 1);
-  if (tag.startsWith('game:')) return { kind: 'game', game: rest as SkyGame['game'] };
-  return tag.startsWith('collection:') ? { kind: 'collection', list: rest as CollectionKind } : { kind: 'constellation', id: rest };
+  return tag === 'bakery' ? { kind: 'bakery' } : { kind: 'constellation', id: tag.slice('constellation:'.length) };
 }
 
 /** Plays a sound from the animation thread. */
@@ -117,7 +103,6 @@ export function SkyProvider({ children }: SkyProviderProps) {
   const sharedLabelWidths = useSharedValue<number[]>(labelWidths);
   const art = useSkyArt(constellations, font);
   const arrivalHandler = useRef<(d: SkyDestination) => void>(() => {});
-  const collectionBoxes = useSharedValue<CardBox[]>([]);
 
   useEffect(() => sharedLabelWidths.set(labelWidths), [sharedLabelWidths, labelWidths]);
   useEffect(() => {
@@ -193,7 +178,7 @@ export function SkyProvider({ children }: SkyProviderProps) {
         const s = sky.get();
         if (!endDrag(s, x, y, s.lastFrameAt)) return;
         const wasFlying = s.flight.on;
-        const openNow = handleSkyTap(s, x, y, constellations, collectionBoxes.get());
+        const openNow = handleSkyTap(s, x, y, constellations);
         if (openNow) {
           scheduleOnRN(sound, 'tap');
           scheduleOnRN(arrive, openNow);
@@ -203,7 +188,7 @@ export function SkyProvider({ children }: SkyProviderProps) {
         }
       },
     }),
-    [sky, constellations, collectionBoxes, arrive],
+    [sky, constellations, arrive],
   );
 
   const setArrivalHandler = useCallback((handler: (destination: SkyDestination) => void) => {
@@ -211,8 +196,8 @@ export function SkyProvider({ children }: SkyProviderProps) {
   }, []);
 
   const value = useMemo<SkyContextValue | null>(
-    () => art && { sky, clock, pulse, art, constellations, labelWidths, collectionBoxes, flyTo, setAtHome, setArrivalHandler, touch },
-    [sky, clock, pulse, art, constellations, labelWidths, collectionBoxes, flyTo, setAtHome, setArrivalHandler, touch],
+    () => art && { sky, clock, pulse, art, constellations, labelWidths, flyTo, setAtHome, setArrivalHandler, touch },
+    [sky, clock, pulse, art, constellations, labelWidths, flyTo, setAtHome, setArrivalHandler, touch],
   );
 
   // Nothing shows until the sky's pictures are ready, so the planet never pops in late.
