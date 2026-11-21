@@ -1,5 +1,5 @@
 // The Keep it fresh tab: ways to keep what the person has learned fresh, as tinted glass cards over the stars:
-// Chat with Papa Dorin, Cookie Box Trivia, Verse Memory and Verse Trivia.
+// Chat with Papa Dorin and Verse Memory.
 
 import { useRouter, type Href } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -53,41 +53,17 @@ export default function KeepItFreshPage() {
             <FreshArt kind="chat" />
           </CollectionCard>
           <CollectionCard
-            title="Cookie Box Trivia"
-            note="Questions from every lesson you’ve finished. Play solo, build together, or go head to head."
-            hue="berry"
-            layout="wide"
-            index={1}
-            clock={clock}
-            action="Play now"
-            onPress={() => open('/trivia')}
-          >
-            <FreshArt kind="trivia" />
-          </CollectionCard>
-          <CollectionCard
             title="Verse Memory"
             note={`Learn verses by heart, step by step. ${memorized} ${memorized === 1 ? 'verse' : 'verses'} memorized.`}
             hue="cocoa"
             layout="wide"
-            index={2}
+            index={1}
             clock={clock}
             action="Start a verse"
             // The route list names this page "/verse-memory/index"; its real address is "/verse-memory".
             onPress={() => open('/verse-memory' as Href)}
           >
             <FreshArt kind="verse" />
-          </CollectionCard>
-          <CollectionCard
-            title="Verse Trivia"
-            note="Build verses word by word. Play solo, build together, or go head to head."
-            hue="amber"
-            layout="wide"
-            index={3}
-            clock={clock}
-            action="Play now"
-            onPress={() => open('/verse-trivia')}
-          >
-            <FreshArt kind="verseTrivia" />
           </CollectionCard>
         </View>
       </View>

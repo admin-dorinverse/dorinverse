@@ -22,11 +22,6 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
   an Anthropic API key (owner sets a spending cap), sign-in, and chat cookies (25 free a month for subscribers, packs
   sold for real money; prices to rework for Sonnet).
 
-## Trivia (on Keep it fresh)
-
-- **Build Cookie Box Trivia** (Solo, Build Together, Versus). Today it opens a stand-in page.
-- **Build Verse Trivia** (Solo, Build Together, Versus). Today it opens a stand-in page.
-
 ## Gather (subscribers) and the Weekly Mystery (everyone)
 
 - **Gather** (working name): a family gets together around the Bible, wherever they are. The host (a subscriber) taps
