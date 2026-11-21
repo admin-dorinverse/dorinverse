@@ -27,7 +27,31 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
 - **Build Cookie Box Trivia** (Solo, Build Together, Versus). Today it opens a stand-in page.
 - **Build Verse Trivia** (Solo, Build Together, Versus). Today it opens a stand-in page.
 
+## Gather (subscribers) and the Weekly Mystery (everyone)
+
+- **Gather** (working name): a family gets together around the Bible, wherever they are. The host (a subscriber) taps
+  "Start a get-together" and texts one link; guests tap it and join the same voice call free, in the app or the phone's
+  browser, with no account. The host moves the verse and everyone sees the whole chapter with that verse lit up. The
+  host can bring in Papa Dorin, in his own real voice, to ask questions or give his opinion, then he hosts family trivia
+  read out loud while everyone taps answers. Same Room mode: no call, Papa Dorin on the TV, everyone taps on their phones.
+  (Agreed 2026-11-20.)
+  - Count get-togethers, not minutes: some included each month, extra packs sold, maybe a bigger Family plan. The
+    server counts them and keeps trivia scores, never the phone.
+  - Tech leaning: LiveKit for the call (its data packets carry verse moves, questions and taps); Supabase Realtime
+    Broadcast for Same Room only; talk-to-text from the phone's free built-in speech recognition; Papa Dorin's voice from
+    ElevenLabs or Cartesia. Rough cost per get-together: 30 to 55 cents. No company is approved yet, and nothing is
+    set up without the owner's go.
+  - Next: free voice samples from ElevenLabs and Cartesia for the owner to hear; confirm prices on each company's own
+    page; check LiveKit works with Expo; plan trivia so groups don't see repeats (track what each group has played; new
+    kinds made from the verses, like finish the verse, who said it, put it in order).
+- **Weekly Mystery**: free for everyone, and the daily habit. A Bible mystery each week with one clue a day from Papa
+  Dorin; guess anytime; the answer is revealed at the end of the week. A missed clue is gone for good unless a friend
+  passes it to you. Clues are collected in a Clue Book, one page per mystery; all 7 is a full set. The reveal shows free
+  users what Gather families did together. (Agreed 2026-11-20.)
+
 ## Places map (MapLibre + MapTiler)
+
+- **Owner is leaning toward not doing the map** (2026-11-20): the free place picture already shows the place.
 
 - **Owner first:** create an Apple ID with admin@dorinverse.com and enroll in the Apple Developer Program as an Individual
   ($99/yr, only needed to run builds on the iPhone); sign up for MapTiler (free) and Expo (free). An Android phone could
