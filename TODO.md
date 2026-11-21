@@ -35,6 +35,8 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
   host can bring in Papa Dorin, in his own real voice, to ask questions or give his opinion, then he hosts family trivia
   read out loud while everyone taps answers. Same Room mode: no call, Papa Dorin on the TV, everyone taps on their phones.
   (Agreed 2026-11-20.)
+  - Lessons together: the host can open a lesson on the call, and everyone goes through it together, step by step, on
+    their own screens, with Papa Dorin there when they want him. (Added 2026-11-20.)
   - Count get-togethers, not minutes: some included each month, extra packs sold, maybe a bigger Family plan. The
     server counts them and keeps trivia scores, never the phone.
   - Tech leaning: LiveKit for the call (its data packets carry verse moves, questions and taps); Supabase Realtime
