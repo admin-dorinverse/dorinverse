@@ -1,4 +1,4 @@
-// The Memorization Tool, opened from the Verse Memory card on Keep it fresh: a row to the verses already memorized,
+// The Memorization Tool, opened from the Verse Memory card on Bible Crew: a row to the verses already memorized,
 // then every verse the person has collected, as cards. Tapping one opens it to practice. The 🔍 button searches.
 // Everything is already on the phone.
 

@@ -1,14 +1,15 @@
-// One message in Chat with Papa Dorin, as in the Constellations design: Papa Dorin beside his white bubble, or the
-// baker's gold bubble with their round initial. While he's thinking, his bubble shows three bouncing dots.
+// One message in a chat, as in the Constellations design: the character beside their white bubble (Papa Dorin's
+// picture, or a round badge for a guest without art yet), or the baker's gold bubble with their round initial.
+// While the character is thinking, their bubble shows three bouncing dots.
 
 import { Image } from 'expo-image';
 import { memo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
-import { PAPA_DORIN } from '@/components/common/cookieArt';
 import type { AmbientClock } from '@/components/common/useAmbientClock';
 import { chat } from '@/theme/chatColors';
 import { fonts } from '@/theme/text';
+import type { ChatCharacter } from '@/types/chat';
 
 /** How long one bounce of the thinking dots takes (ms), and the gap between the dots. */
 const BOUNCE_MS = 1000;
@@ -29,7 +30,9 @@ function Dot({ index, clock }: { index: number; clock: AmbientClock }) {
 type ChatBubbleProps = {
   /** Who wrote it. */
   mine: boolean;
-  /** Its words, or null while Papa Dorin is still thinking. */
+  /** Who the chat is with. */
+  who: ChatCharacter;
+  /** Its words, or null while the character is still thinking. */
   text: string | null;
   /** The baker's initial, for their badge. */
   initial: string;
@@ -38,7 +41,7 @@ type ChatBubbleProps = {
 };
 
 /** One chat bubble. */
-export const ChatBubble = memo(function ChatBubble({ mine, text, initial, clock }: ChatBubbleProps) {
+export const ChatBubble = memo(function ChatBubble({ mine, who, text, initial, clock }: ChatBubbleProps) {
   if (mine) {
     return (
       <View style={[styles.row, styles.mineRow]}>
@@ -55,10 +58,16 @@ export const ChatBubble = memo(function ChatBubble({ mine, text, initial, clock 
   }
   return (
     <View style={styles.row}>
-      <Image source={PAPA_DORIN} style={styles.dorin} contentFit="contain" accessibilityLabel="Papa Dorin" />
+      {who.picture ? (
+        <Image source={who.picture} style={styles.dorin} contentFit="contain" accessibilityLabel={who.name} />
+      ) : (
+        <View style={[styles.badge, styles.guestBadge]} accessibilityLabel={who.name}>
+          <Text style={[styles.badgeText, styles.guestBadgeText]}>{who.name.charAt(0)}</Text>
+        </View>
+      )}
       <View style={[styles.bubble, styles.dorinBubble]}>
         {text === null ? (
-          <View style={styles.dots} accessibilityLabel="Papa Dorin is thinking">
+          <View style={styles.dots} accessibilityLabel={`${who.name} is thinking`}>
             {[0, 1, 2].map((i) => (
               <Dot key={i} index={i} clock={clock} />
             ))}
@@ -85,6 +94,8 @@ const styles = StyleSheet.create({
   mineWords: { color: chat.meInk },
   badge: { width: 34, height: 34, borderRadius: 17, alignItems: 'center', justifyContent: 'center', backgroundImage: `linear-gradient(135deg, ${chat.meBadge[0]}, ${chat.meBadge[1]})` },
   badgeText: { fontFamily: fonts.black, fontSize: 15, color: chat.meInk },
+  guestBadge: { backgroundImage: `linear-gradient(135deg, ${chat.guestBadge[0]}, ${chat.guestBadge[1]})`, boxShadow: `0 0 8px ${chat.guestGlow}` },
+  guestBadgeText: { color: chat.guestInk },
   dots: { flexDirection: 'row', gap: 4, paddingVertical: 6 },
   dot: { width: 7, height: 7, borderRadius: 4, backgroundColor: chat.dots },
 });

@@ -1,20 +1,23 @@
-// Works out what a tap on the sky landed on: the bakery planet or a constellation (its shape or its name).
+// Works out what a tap on the sky landed on: the Clue Book, the bakery planet or a constellation (its shape or
+// its name).
 // Runs on the animation thread.
 
 import type { Constellation } from '@/types/constellation';
 import { hitsBakery } from './bakeryLayout';
+import { hitsMysteryBook } from './mysteryBookLayout';
 import { CONSTELLATION_SCALE, HOME_Y } from './skyLayout';
 import type { SkyState } from './skyState';
 import { startFlight } from './stepCamera';
 
 /**
- * Handles a tap at screen point (x, y). Far-away constellations start a flight; the bakery and close
+ * Handles a tap at screen point (x, y). Far-away constellations start a flight; the Clue Book, the bakery and close
  * constellations open right away. Returns the tag to open now, or an empty string.
  */
 export function handleSkyTap(s: SkyState, x: number, y: number, constellations: readonly Constellation[]): string {
   'worklet';
   const wx = s.camera.x + x - s.width / 2;
   const wy = s.camera.y + y - s.height / 2;
+  if (hitsMysteryBook(wx, wy)) return 'mystery';
   if (hitsBakery(wx, wy)) return 'bakery';
   for (const c of constellations) {
     const onShape = Math.hypot(c.x - wx, c.y - wy) < CONSTELLATION_SCALE * 125;

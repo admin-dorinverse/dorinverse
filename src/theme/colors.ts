@@ -61,7 +61,7 @@ export const glass = {
   pillTop: 'rgba(255,255,255,0.16)',
   /** Bottom of the glass pill gradient. */
   pillBottom: 'rgba(255,255,255,0.06)',
-  /** Dark veil laid over the sky behind the Collections and Keep it fresh tabs. */
+  /** Dark veil laid over the sky behind the Collections and Bible Crew tabs. */
   tabVeil: 'rgba(6,7,24,0.45)',
   /** Dimmed backdrop behind an open panel. */
   backdrop: 'rgba(5,6,20,0.45)',

@@ -1,5 +1,5 @@
 // The three tab icons from the Constellations design: a sparkle for Sky, an open book for Collections,
-// and a sparkle with a plus for Keep it fresh.
+// and a sparkle with a plus for Bible Crew.
 
 import Svg, { Path } from 'react-native-svg';
 
@@ -30,8 +30,8 @@ export function CollectionsIcon({ color, size = 19 }: TabIconProps) {
   );
 }
 
-/** A sparkle outline with a small plus, for the Keep it fresh tab. */
-export function FreshIcon({ color, size = 19 }: TabIconProps) {
+/** A sparkle outline with a small plus, for the Bible Crew tab. */
+export function CrewIcon({ color, size = 19 }: TabIconProps) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
       <Path d="M12 3.5 13.8 9 19.5 10.5 13.8 12 12 17.5 10.2 12 4.5 10.5 10.2 9Z" />

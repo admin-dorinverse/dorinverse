@@ -28,8 +28,8 @@ const AWAY_FRAME_MS = 1000 / 10;
 /** Leeway so a screen refresh that comes a hair early still counts. */
 const FRAME_SLACK_MS = 4;
 
-/** Where a sky flight or tap leads: the bakery, or a constellation by its id. */
-export type SkyDestination = { kind: 'bakery' } | { kind: 'constellation'; id: string };
+/** Where a sky flight or tap leads: the bakery, the Clue Book, or a constellation by its id. */
+export type SkyDestination = { kind: 'bakery' } | { kind: 'mystery' } | { kind: 'constellation'; id: string };
 
 /** What the sky shares with screens. */
 type SkyContextValue = {
@@ -70,12 +70,13 @@ export function useSky(): SkyContextValue {
 
 /** Turns a destination into the short tag the animation thread passes around. */
 function toTag(d: SkyDestination): string {
-  return d.kind === 'bakery' ? 'bakery' : `constellation:${d.id}`;
+  return d.kind === 'constellation' ? `constellation:${d.id}` : d.kind;
 }
 
 /** Turns a tag back into a destination. */
 function fromTag(tag: string): SkyDestination {
-  return tag === 'bakery' ? { kind: 'bakery' } : { kind: 'constellation', id: tag.slice('constellation:'.length) };
+  if (tag === 'bakery' || tag === 'mystery') return { kind: tag };
+  return { kind: 'constellation', id: tag.slice('constellation:'.length) };
 }
 
 /** Plays a sound from the animation thread. */

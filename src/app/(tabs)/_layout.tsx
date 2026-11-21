@@ -1,12 +1,14 @@
-// The three tabs: Sky, Collections and Keep it fresh. The living sky sits behind all of them, with the HUD pills and
-// the knob tabs floating on top.
+// The three tabs: Sky, Collections and Bible Crew. The living sky (with the bakery planet, the red Clue Book and
+// the rocket) sits behind all of them, with the HUD pills and the knob tabs floating on top.
 
+import type { Href } from 'expo-router';
 import { TabList, TabSlot, TabTrigger, Tabs } from 'expo-router/ui';
 import { StyleSheet } from 'react-native';
 import { GlassBackdrop } from '@/components/common/Glass';
 import { KnobTabs } from '@/components/common/KnobTabs';
 import { BakeryPlanet } from '@/components/sky/BakeryPlanet';
 import { Hud } from '@/components/sky/Hud';
+import { MysteryBook } from '@/components/sky/MysteryBook';
 import { RocketView } from '@/components/sky/RocketView';
 import { SkyArmor } from '@/components/sky/SkyArmor';
 import { SkyCanvas } from '@/components/sky/SkyCanvas';
@@ -26,13 +28,15 @@ export default function TabsLayout() {
       >
         <SkyCanvas />
         <BakeryPlanet />
+        <MysteryBook />
         <SkyArmor />
         <RocketView />
       </GlassBackdrop>
       <TabList style={styles.hidden}>
         <TabTrigger name="sky" href="/" />
         <TabTrigger name="collections" href="/collections" />
-        <TabTrigger name="keep-it-fresh" href="/keep-it-fresh" />
+        {/* The route list may name this page "/bible-crew/index"; its real address is "/bible-crew". */}
+        <TabTrigger name="bible-crew" href={'/bible-crew' as Href} />
       </TabList>
     </Tabs>
   );

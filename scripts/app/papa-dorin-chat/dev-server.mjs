@@ -1,7 +1,8 @@
-// A test-only helper that lets the owner chat with Papa Dorin from the app before the real server exists. It runs
-// on the owner's PC: the app (on the same Wi-Fi) sends each message here, and it asks Claude through the owner's own
-// Claude subscription (Claude Code). His prompt is his character notes (papa-dorin.md) exactly as written, and the
-// baker's words go through unchanged; nothing is added. Claude Code keeps each chat as a session, so he remembers it.
+// A test-only helper that lets the owner chat with Papa Dorin and the weekly guest from the app before the real
+// server exists. It runs on the owner's PC: the app (on the same Wi-Fi) sends each message here, and it asks Claude
+// through the owner's own Claude subscription (Claude Code). The prompt is the character's notes (papa-dorin.md, or
+// a file in guests/) exactly as written, and the baker's words go through unchanged; nothing is added. Claude Code
+// keeps each chat as a session, so the character remembers it.
 // For the owner only: a Claude subscription is for its owner's own use and must never serve other people.
 //
 //   node scripts/app/papa-dorin-chat/dev-server.mjs                              # Claude Sonnet 5.5, low effort
@@ -16,20 +17,23 @@ const MODEL = process.argv[2] ?? 'claude-sonnet-5-5';
 const EFFORT = process.argv[3] ?? 'low';
 /** The longest a message may be, as in the design's text box. */
 const MAX_CHARS = 600;
-/** Papa Dorin's character notes, his whole prompt. */
-const NOTES = path.join(import.meta.dirname, '..', '..', 'dough-maker', 'lesson-docs', 'papa-dorin.md');
+/** Each character's notes, their whole prompt. Only the characters listed here can be chatted with. */
+const NOTES = {
+  'papa-dorin': path.join(import.meta.dirname, '..', '..', 'dough-maker', 'lesson-docs', 'papa-dorin.md'),
+  peter: path.join(import.meta.dirname, 'guests', 'peter.md'),
+};
 
 const npmRoot = spawnSync('npm root -g', { encoding: 'utf8', shell: true }).stdout.trim();
 const EXE = path.join(npmRoot, '@anthropic-ai', 'claude-code', 'bin', process.platform === 'win32' ? 'claude.exe' : 'claude');
 
 /**
- * Sends the baker's message to Papa Dorin, in a new chat or the one `sessionId` names, and returns his reply and
+ * Sends the baker's message to a character, in a new chat or the one `sessionId` names, and returns the reply and
  * the chat's session id. Runs from an empty folder without an API key, so it uses the subscription.
  */
-function askPapaDorin(message, sessionId) {
+function askCharacter(character, message, sessionId) {
   const env = { ...process.env };
   delete env.ANTHROPIC_API_KEY;
-  const args = ['-p', message, '--model', MODEL, '--effort', EFFORT, '--system-prompt-file', NOTES, '--output-format', 'json', '--tools', '', '--strict-mcp-config'];
+  const args = ['-p', message, '--model', MODEL, '--effort', EFFORT, '--system-prompt-file', NOTES[character], '--output-format', 'json', '--tools', '', '--strict-mcp-config'];
   if (sessionId) args.push('--resume', sessionId);
   return new Promise((resolve, reject) => {
     const child = spawn(EXE, args, { cwd: os.tmpdir(), env, windowsHide: true });
@@ -72,18 +76,19 @@ http
     };
     if (req.method !== 'POST' || req.url !== '/chat') return send(404, { error: 'not found' });
     try {
-      const { message, sessionId } = await readBody(req);
+      const { character = 'papa-dorin', message, sessionId } = await readBody(req);
+      if (typeof character !== 'string' || !Object.hasOwn(NOTES, character)) return send(400, { error: 'no such character' });
       if (typeof message !== 'string' || !message.trim()) return send(400, { error: 'no message' });
       const started = Date.now();
-      const answer = await askPapaDorin(message.slice(0, MAX_CHARS), typeof sessionId === 'string' ? sessionId : undefined);
-      console.log(`answered in ${((Date.now() - started) / 1000).toFixed(1)} s: ${message.slice(0, 60)}`);
+      const answer = await askCharacter(character, message.slice(0, MAX_CHARS), typeof sessionId === 'string' ? sessionId : undefined);
+      console.log(`${character} answered in ${((Date.now() - started) / 1000).toFixed(1)} s: ${message.slice(0, 60)}`);
       send(200, answer);
     } catch (e) {
       console.error(e.message);
-      send(500, { error: 'Papa Dorin is busy in the kitchen. Try again in a moment.' });
+      send(500, { error: 'The kitchen is busy. Try again in a moment.' });
     }
   })
   .listen(PORT, '0.0.0.0', () => {
     const ips = Object.values(os.networkInterfaces()).flat().filter((a) => a && a.family === 'IPv4' && !a.internal).map((a) => a.address);
-    console.log(`Papa Dorin's test chat (${MODEL}, ${EFFORT} effort) is listening on port ${PORT} (${ips.join(', ')}). Keep this window open while you chat.`);
+    console.log(`The test chat for Papa Dorin and the weekly guest (${MODEL}, ${EFFORT} effort) is listening on port ${PORT} (${ips.join(', ')}). Keep this window open while you chat.`);
   });

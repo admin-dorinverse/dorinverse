@@ -12,3 +12,10 @@ export const REPLAY_BAKERY_STEPS = __DEV__ && true;
  * tested at once: "The Man and the Woman in the Garden of Eden" (Genesis 2, in Stories), which has 2 stops.
  */
 export const TEST_LESSON = __DEV__ ? { id: 2, stops: 2 } : null;
+
+/**
+ * Speeds up the Weekly Word for testing: each "day" lasts this many milliseconds (one minute), the reveal comes a
+ * minute after the 7th clue, and a new week starts a minute after that. Set it to null to follow the real week
+ * (a clue a day from Monday, the reveal on Sunday evening).
+ */
+export const MYSTERY_TEST_DAY_MS: number | null = __DEV__ ? 60_000 : null;

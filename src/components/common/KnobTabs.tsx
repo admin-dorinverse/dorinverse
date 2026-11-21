@@ -1,4 +1,4 @@
-// The glass pill of knob tabs at the top of the screen: Sky, Collections and Keep it fresh.
+// The glass pill of knob tabs at the top of the screen: Sky, Collections and Bible Crew.
 // The tabs themselves are declared in the tabs layout; these buttons point to them by name.
 
 import { TabTrigger } from 'expo-router/ui';
@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { chrome, radius } from '@/theme/spacing';
 import { GlassSurface } from './Glass';
 import { KnobTab } from './KnobTab';
-import { CollectionsIcon, FreshIcon, SkyIcon } from './TabIcons';
+import { CollectionsIcon, CrewIcon, SkyIcon } from './TabIcons';
 
 /** The three knob tabs, in order. */
 export function KnobTabs() {
@@ -22,8 +22,8 @@ export function KnobTabs() {
           <TabTrigger name="collections" asChild>
             <KnobTab label="Collections" Icon={CollectionsIcon} />
           </TabTrigger>
-          <TabTrigger name="keep-it-fresh" asChild>
-            <KnobTab label="Keep it fresh" Icon={FreshIcon} />
+          <TabTrigger name="bible-crew" asChild>
+            <KnobTab label="Bible Crew" Icon={CrewIcon} />
           </TabTrigger>
         </View>
       </GlassSurface>

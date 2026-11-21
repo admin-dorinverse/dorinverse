@@ -1,5 +1,5 @@
-// The bottom of Chat with Papa Dorin, as in the Constellations design: a round text box ("Ask Papa Dorin…", up to 600
-// letters, growing to a few lines) and a gold send button. While he's answering, the button turns red and stops him.
+// The bottom of a chat, as in the Constellations design: a round text box ("Ask Papa Dorin…", up to 600 letters,
+// growing to a few lines) and a gold send button. While the answer is coming, the button turns red and stops it.
 
 import { useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
@@ -15,7 +15,9 @@ const MAX_CHARS = 600;
 
 /** Props for the form. */
 type ChatFormProps = {
-  /** True while Papa Dorin is answering. */
+  /** Who the chat is with, for the text box's hint. */
+  name: string;
+  /** True while the answer is coming. */
   busy: boolean;
   /** Sends a question. */
   onSend: (text: string) => void;
@@ -24,7 +26,7 @@ type ChatFormProps = {
 };
 
 /** The text box and the send button. */
-export function ChatForm({ busy, onSend, onStop }: ChatFormProps) {
+export function ChatForm({ name, busy, onSend, onStop }: ChatFormProps) {
   const insets = useSafeAreaInsets();
   const [text, setText] = useState('');
   const ready = text.trim().length > 0;
@@ -43,11 +45,11 @@ export function ChatForm({ busy, onSend, onStop }: ChatFormProps) {
       <TextInput
         value={text}
         onChangeText={setText}
-        placeholder="Ask Papa Dorin…"
+        placeholder={`Ask ${name}…`}
         placeholderTextColor={chat.inputHint}
         maxLength={MAX_CHARS}
         multiline
-        accessibilityLabel="Message Papa Dorin"
+        accessibilityLabel={`Message ${name}`}
         style={styles.input}
       />
       <Pressable

@@ -1,4 +1,4 @@
-// Colors for Chat with Papa Dorin, taken from the Constellations design: his white bubbles, the baker's gold ones,
+// Colors for the chats (Papa Dorin and the weekly guest), taken from the Constellations design: his white bubbles, the baker's gold ones,
 // the starter questions, and the gold send button that turns red to stop.
 
 /** The chat's colors. */
@@ -10,7 +10,11 @@ export const chat = {
   meBubble: ['#ffd27a', '#f2a93b'],
   meInk: '#3a2606',
   meBadge: ['#ffd27a', '#e08a3a'],
-  /** The bouncing dots while he thinks. */
+  /** A guest's round badge until their picture is made (a sea-blue gradient), its letter and its glow. */
+  guestBadge: ['#9fe3ff', '#3f7fc4'],
+  guestInk: '#0e2a4a',
+  guestGlow: 'rgba(143,216,255,0.45)',
+  /** The bouncing dots while the character thinks. */
   dots: '#a0643a',
   /** A starter question's edge and fill. */
   starterEdge: 'rgba(255,200,90,0.5)',

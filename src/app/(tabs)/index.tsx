@@ -1,4 +1,5 @@
-// The Sky tab, the app's home page: the living sky you can drag around, the dock, and the Star Map.
+// The Sky tab, the app's home page: the living sky you can drag around, the dock, and the Star Map. Tapping the
+// bakery planet, the red Clue Book or a constellation opens its page.
 
 import { useFocusEffect, useRouter, type Href } from 'expo-router';
 import { useCallback, useState } from 'react';
@@ -25,6 +26,7 @@ export default function SkyPage() {
       setArrivalHandler((d: SkyDestination) => {
         // The route list names the bakery "/bakery/index"; its real address is "/bakery".
         if (d.kind === 'bakery') router.push('/bakery' as Href);
+        else if (d.kind === 'mystery') router.push('/mystery' as Href);
         else router.push({ pathname: '/constellation/[id]', params: { id: d.id } });
       });
       return () => setAtHome(false);

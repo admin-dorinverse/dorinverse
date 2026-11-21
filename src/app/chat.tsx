@@ -1,8 +1,9 @@
-// Chat with Papa Dorin, as in the Constellations design: his greeting, starter questions, his and the baker's bubbles,
-// bouncing dots while he thinks, and "New chat" to start over. Test version: answers come from the owner's PC (see
+// The chat page, as in the Constellations design: the character's greeting, starter questions, their and the
+// baker's bubbles, bouncing dots while they think, and "New chat" to start over. It is Chat with Papa Dorin unless
+// the link names a guest ("/chat?with=peter"). Test version: answers come from the owner's PC (see
 // src/data/chatSource.ts); the chat stays on the phone and goes away when the page closes.
 
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useCallback, useRef, useState } from 'react';
 import { FlatList, KeyboardAvoidingView, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { ChatBubble } from '@/components/chat/ChatBubble';
@@ -10,18 +11,12 @@ import { ChatForm } from '@/components/chat/ChatForm';
 import { DrillHeader } from '@/components/common/DrillHeader';
 import { playSound } from '@/components/common/sounds';
 import { useAmbientClock } from '@/components/common/useAmbientClock';
-import { askPapaDorin, type ChatMessage } from '@/data/chatSource';
+import { chatCharacter } from '@/data/chatCharacters';
+import { askCharacter, type ChatMessage } from '@/data/chatSource';
 import { sampleBaker } from '@/data/sample/baker';
 import { chat } from '@/theme/chatColors';
 import { reader, text } from '@/theme/colors';
 import { fonts } from '@/theme/text';
-
-/** Papa Dorin's greeting, from the design. */
-const GREETING =
-  'Well, look who walked into my bakery! Pull up a stool, baker. Ask me anything about the Bible: a person, a story, a verse that has you scratching your head. I will tell you what Scripture says, with the reference. Mm-hm.';
-
-/** The starter questions under the greeting, from the design. */
-const STARTERS = ['Why did Jonah run the other way?', 'Who was Deborah?', 'What is the Marriage Supper of the Lamb?', 'Tell me about David and Goliath.'];
 
 /** The thinking dots move slowly; 20 ticks a second is plenty. */
 function calm(): boolean {
@@ -29,23 +24,24 @@ function calm(): boolean {
   return false;
 }
 
-/** A shown message: a real one, or Papa Dorin still thinking (no text yet). */
+/** A shown message: a real one, or the character still thinking (no text yet). */
 type Shown = { role: ChatMessage['role']; content: string | null };
 
 /** The chat page. */
 export default function ChatPage() {
   const router = useRouter();
+  const who = chatCharacter(useLocalSearchParams<{ with?: string }>().with);
   const clock = useAmbientClock(calm);
   const list = useRef<FlatList<Shown>>(null);
   const asking = useRef<AbortController | null>(null);
-  // The chat's id on the helper, so Papa Dorin remembers it; none until the first reply.
+  // The chat's id on the helper, so the character remembers it; none until the first reply.
   const session = useRef<string | null>(null);
-  const [messages, setMessages] = useState<ChatMessage[]>([{ role: 'assistant', content: GREETING }]);
+  const [messages, setMessages] = useState<ChatMessage[]>([{ role: 'assistant', content: who.greeting }]);
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState('');
   const shown: Shown[] = busy ? [...messages, { role: 'assistant', content: null }] : messages;
 
-  /** Sends a question and waits for Papa Dorin's reply. */
+  /** Sends a question and waits for the reply. */
   const send = useCallback(
     async (question: string) => {
       const next: ChatMessage[] = [...messages, { role: 'user', content: question }];
@@ -55,7 +51,7 @@ export default function ChatPage() {
       const controller = new AbortController();
       asking.current = controller;
       try {
-        const answer = await askPapaDorin(question, session.current, controller.signal);
+        const answer = await askCharacter(who, question, session.current, controller.signal);
         session.current = answer.sessionId;
         setMessages((m) => [...m, { role: 'assistant', content: answer.reply }]);
         playSound('word');
@@ -66,7 +62,7 @@ export default function ChatPage() {
         setBusy(false);
       }
     },
-    [messages],
+    [messages, who],
   );
 
   /** Stops the answer on its way. */
@@ -76,11 +72,11 @@ export default function ChatPage() {
     setBusy(false);
   };
 
-  /** Starts a fresh chat with just his greeting. */
+  /** Starts a fresh chat with just the greeting. */
   const fresh = () => {
     playSound('tap');
     stop();
-    setMessages([{ role: 'assistant', content: GREETING }]);
+    setMessages([{ role: 'assistant', content: who.greeting }]);
     session.current = null;
     setNote('');
   };
@@ -88,7 +84,7 @@ export default function ChatPage() {
   return (
     <View style={styles.page}>
       <DrillHeader
-        title="Papa Dorin"
+        title={who.name}
         onBack={() => {
           stop();
           router.back();
@@ -104,7 +100,7 @@ export default function ChatPage() {
           ref={list}
           data={shown}
           keyExtractor={(_, i) => String(i)}
-          renderItem={({ item }) => <ChatBubble mine={item.role === 'user'} text={item.content} initial={sampleBaker.name.charAt(0)} clock={clock} />}
+          renderItem={({ item }) => <ChatBubble mine={item.role === 'user'} who={who} text={item.content} initial={sampleBaker.name.charAt(0)} clock={clock} />}
           onContentSizeChange={() => list.current?.scrollToEnd({ animated: true })}
           contentContainerStyle={styles.log}
           keyboardShouldPersistTaps="handled"
@@ -112,7 +108,7 @@ export default function ChatPage() {
             <>
               {messages.length === 1 && !busy && (
                 <View style={styles.starters}>
-                  {STARTERS.map((s) => (
+                  {who.starters.map((s) => (
                     <Pressable key={s} accessibilityRole="button" onPress={() => void send(s)} style={styles.starter}>
                       <Text style={styles.starterText}>{s}</Text>
                     </Pressable>
@@ -123,7 +119,7 @@ export default function ChatPage() {
             </>
           }
         />
-        <ChatForm busy={busy} onSend={(q) => void send(q)} onStop={stop} />
+        <ChatForm name={who.name} busy={busy} onSend={(q) => void send(q)} onStop={stop} />
       </KeyboardAvoidingView>
     </View>
   );

@@ -2,7 +2,7 @@
 // Bible verses, characters, Character Connections, places, prophecy and fulfillment, instructions for today, and prayers.
 
 import { useRouter, type Href } from 'expo-router';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BookShelf } from '@/components/collections/BookShelf';
 import { CharacterFan } from '@/components/collections/CharacterFan';
@@ -15,12 +15,11 @@ import { useAmbientClock } from '@/components/common/useAmbientClock';
 import { useFanCharacters } from '@/data/queries/characters';
 import { usePlacePins } from '@/data/queries/places';
 import { sampleVerseBooks } from '@/data/sample/collections';
-import { glass, text } from '@/theme/colors';
+import { glass } from '@/theme/colors';
 import { gutter } from '@/theme/spacing';
-import { textStyles } from '@/theme/text';
 import type { CollectionKind } from '@/types/collection';
 
-/** Space above the title, under the HUD pills and the tabs. */
+/** Space above the first card, under the HUD pills and the tabs. */
 const TOP_SPACE = 124;
 
 /**
@@ -55,7 +54,6 @@ export default function CollectionsPage() {
   return (
     <ScrollView style={styles.page} contentContainerStyle={[styles.content, { paddingTop: insets.top + TOP_SPACE }]} showsVerticalScrollIndicator={false}>
       <View style={styles.inner}>
-        <Text style={[textStyles.tabTitle, styles.title]}>Collections</Text>
         <View style={styles.list}>
           <CollectionCard title="Bible verses" note="The Bible verses you have brought to life." hue="amber" layout="wide" index={0} clock={clock} onPress={() => open('verses')}>
             <BookShelf books={sampleVerseBooks} clock={clock} />
@@ -107,7 +105,6 @@ const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: glass.tabVeil },
   content: { paddingHorizontal: gutter, paddingBottom: 50 },
   inner: { width: '100%', maxWidth: 560, alignSelf: 'center' },
-  title: { color: text.onDark, marginTop: 2, marginBottom: 14 },
   list: { gap: 12 },
   pair: { flexDirection: 'row', alignItems: 'stretch', gap: 12 },
 });
