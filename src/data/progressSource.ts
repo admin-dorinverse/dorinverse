@@ -13,6 +13,7 @@
 // what the person earns by playing is added on top. The other seams read the earned lists from here, and the
 // libraries then download only the new verses and cards, in one round, exactly as they do for any change.
 
+import { TEST_LESSON } from '@/data/devTesting';
 import { stopVerseRefs, targetId } from '@/data/lessonLibrary';
 import { sampleCollectedCharacters } from '@/data/sample/collectedCharacters';
 import { sampleCollectedCookies } from '@/data/sample/collectedCookies';
@@ -28,6 +29,10 @@ import type { CollectedPlaceEntry } from '@/types/place';
 export type ProgressRecord = {
   /** Stops baked per lesson. */
   baked: Record<LessonId, number>;
+  /** Steps after the stops done per lesson (Quality Check, Big Idea, signing the box), in order. */
+  kitchen: Record<LessonId, number>;
+  /** The baker's signature on each sent box: a drawn path in a 300 by 90 box. Not every box is signed. */
+  signatures: Record<LessonId, string>;
   /** Verses revealed by baking, in the order they were revealed. */
   verses: VerseRef[];
   /** Characters, places and cookies collected, oldest first. */
@@ -40,7 +45,7 @@ export type ProgressRecord = {
 export type ProgressKeeper = { read: () => Promise<ProgressRecord | null>; save: (record: ProgressRecord) => Promise<void> };
 
 /** An empty record: nothing earned yet. */
-const EMPTY: ProgressRecord = { baked: {}, verses: [], characters: [], places: [], cookies: [] };
+const EMPTY: ProgressRecord = { baked: {}, kitchen: {}, signatures: {}, verses: [], characters: [], places: [], cookies: [] };
 
 /** The keeper the app connected, or null (timing scripts run with nothing earned). */
 let keeper: ProgressKeeper | null = null;
@@ -58,7 +63,10 @@ export function connectProgressKeeper(next: ProgressKeeper): void {
 function record(): Promise<ProgressRecord> {
   loading ??= (async () => {
     const saved = keeper ? await keeper.read().catch(() => null) : null;
-    return saved ? { ...EMPTY, ...saved } : { ...EMPTY, baked: {} };
+    const r: ProgressRecord = saved ? { ...EMPTY, ...saved } : { ...EMPTY, baked: {}, kitchen: {}, signatures: {} };
+    // DEVELOPMENT ONLY: the test lesson always counts as fully baked.
+    if (TEST_LESSON) r.baked = { ...r.baked, [TEST_LESSON.id]: Math.max(r.baked[TEST_LESSON.id] ?? 0, TEST_LESSON.stops) };
+    return r;
   })();
   return loading;
 }
@@ -92,7 +100,7 @@ function collectedIn(r: ProgressRecord): Set<string> {
 /** The person's progress: stops baked per lesson and everything collected (sample lists plus what they earned). */
 export async function fetchProgress(): Promise<LessonProgress> {
   const r = await record();
-  return { baked: { ...r.baked }, collected: collectedIn(r) };
+  return { baked: { ...r.baked }, kitchen: { ...r.kitchen }, collected: collectedIn(r) };
 }
 
 /**
@@ -107,6 +115,29 @@ export function bakeStop(lesson: LessonId, stop: LessonStop): Promise<StopBaked>
     const revealed = stopVerseRefs(stop.firstVerse, stop.lastVerse).filter((ref) => !known.has(ref));
     const next: ProgressRecord = { ...r, baked: { ...r.baked, [lesson]: stop.stop }, verses: [...r.verses, ...revealed] };
     return { next, result: { bakedStops: stop.stop, revealed } };
+  });
+}
+
+/**
+ * Marks the next step after the stops done (Quality Check, Big Idea, signing the box). Steps go in order, and only
+ * once every stop is baked, so doing one again changes nothing. Signing the box can carry the baker's signature. Gives
+ * back how many are done now. Hookup: the server records it (with the Quality Check's picks and the signature).
+ */
+export function finishKitchenStep(lesson: LessonId, step: number, stopCount: number, signature?: string): Promise<number> {
+  return change((r) => {
+    const before = r.kitchen[lesson] ?? 0;
+    if (step !== before + 1 || (r.baked[lesson] ?? 0) < stopCount) return { next: null, result: before };
+    const signatures = signature ? { ...r.signatures, [lesson]: signature } : r.signatures;
+    return { next: { ...r, kitchen: { ...r.kitchen, [lesson]: step }, signatures }, result: step };
+  });
+}
+
+/** DEVELOPMENT ONLY, for testing: starts a lesson's steps after the stops over, and forgets its box's signature. */
+export function resetKitchen(lesson: LessonId): Promise<void> {
+  return change((r) => {
+    const signatures = { ...r.signatures };
+    delete signatures[lesson];
+    return { next: { ...r, kitchen: { ...r.kitchen, [lesson]: 0 }, signatures }, result: undefined };
   });
 }
 

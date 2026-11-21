@@ -7,7 +7,7 @@ import type { SkyState } from './skyState';
 import { rocketOffset } from './skyState';
 
 /** The ember trail colors. Other trail styles come later with the Hangar. */
-const TRAIL_COLORS = ['#ffd25a', '#ff9a3a', '#fff3c4', '#c98f4a'];
+export const TRAIL_COLORS = ['#ffd25a', '#ff9a3a', '#fff3c4', '#c98f4a'];
 
 /** Where the rocket wants to be: under the view's center, slid aside if a constellation name is in the way. */
 function rocketTarget(s: SkyState, constellations: readonly Constellation[], labelWidths: readonly number[]) {

@@ -25,10 +25,18 @@ export async function syncOutline(saved: LessonOutline[] | null, phone: OutlineS
   return { data: outline, downloaded: 1 };
 }
 
+/**
+ * A saved lesson is whole when it has its Quality Check. Lessons saved before the Quality Check came with them, or
+ * while it could not be read, are downloaded again once.
+ */
+function isWhole(lesson: Lesson): boolean {
+  return (lesson.qualityCheck?.lines.length ?? 0) > 0 && (lesson.bigIdea?.length ?? 0) > 0;
+}
+
 /** One lesson: from the phone when saved, otherwise downloaded and saved, so it is downloaded only once. */
 export async function syncLesson(id: LessonId, phone: LessonStore): Promise<LessonSyncResult<Lesson>> {
   const saved = await phone.read(id);
-  if (saved) return { data: saved, downloaded: 0 };
+  if (saved && isWhole(saved)) return { data: saved, downloaded: 0 };
   const lesson = await fetchLesson(id);
   await phone.save(lesson);
   return { data: lesson, downloaded: 1 };

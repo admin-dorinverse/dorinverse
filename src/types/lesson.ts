@@ -1,6 +1,6 @@
 // The shape of a lesson: the short outline every lesson list shows, one lesson's full content (its stops and
-// cards, the words and sayings explained on them, and the collectibles found on them), and what checking an answer
-// and baking a stop give back.
+// cards, the words and sayings explained on them, the collectibles found on them, its Quality Check lines and its
+// Big Idea), and what checking an answer, checking the Quality Check and baking a stop give back.
 
 import type { VerseRef } from '@/types/bible';
 
@@ -151,8 +151,37 @@ export type LessonStop = {
   verseWords: { ref: VerseRef; text: string }[];
 };
 
+/** One Quality Check line: Papa Dorin's retelling of a moment. Whether it is burnt is not in it. */
+export type BurntLine = {
+  /** Its number, from 1, in passage order. */
+  line: number;
+  /** The verses it tells, like "Jonah 1:1-3". */
+  verses: string;
+  /** The line as the baker sees it. */
+  text: string;
+};
+
+/** The Quality Check (Burnt Cookies): 5 lines, some burnt, with the answer key sealed like a choice card's. */
+export type QualityCheck = { lines: BurntLine[]; burntCount: number; seal: AnswerSeal };
+
+/** One wrong detail in a burnt line: the wrong words, the true words, and the verse with the true words. */
+export type BurntFix = { wrong: string; right: string; verse: string };
+
+/** What checking one Quality Check line gives back: whether it was burnt, and its fixes when it was. */
+export type BurntLineResult = { burnt: boolean; fixes: BurntFix[] };
+
 /** One lesson's full content, downloaded once and kept on the phone. */
-export type Lesson = { id: LessonId; stops: LessonStop[] };
+export type Lesson = {
+  id: LessonId;
+  stops: LessonStop[];
+  /** The Quality Check, played after the last stop. */
+  qualityCheck: QualityCheck;
+  /** Papa Dorin's Big Idea for the passage, one entry per paragraph. */
+  bigIdea: string[];
+};
+
+/** The steps after the stops, in order. A lesson's progress counts how many are done. */
+export const KITCHEN_STEPS = ['quality-check', 'big-idea', 'sign-box'] as const;
 
 /** What checking an answer gives back. */
 export type AnswerResult = {
@@ -170,6 +199,8 @@ export type AnswerResult = {
 export type LessonProgress = {
   /** How many stops are baked in each lesson started; stops bake in order. */
   baked: Readonly<Record<LessonId, number>>;
+  /** How many of the steps after the stops (KITCHEN_STEPS) are done in each lesson; they are done in order. */
+  kitchen: Readonly<Record<LessonId, number>>;
   /** Every collected thing as "character:lookup", "place:lookup" or "cookie:key". */
   collected: ReadonlySet<string>;
 };

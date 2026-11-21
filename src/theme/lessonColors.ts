@@ -1,5 +1,6 @@
 // The lessons' colors, taken from the Constellations design: the lesson list and orbit view's veils, the player's
-// cream cards, answer buttons, result sheets and explain page, the oven bar, and the pop-up sheets.
+// cream cards, answer buttons, result sheets and explain page, the oven bar, the pop-up sheets, the Quality Check and
+// the cookie box's label.
 
 /** The lesson list and the orbit view, over the sky. */
 export const lessonSky = {
@@ -107,4 +108,39 @@ export const cookieWord = {
   edge: 'rgba(224,160,42,0.7)',
   /** The sparkle after the name. */
   spark: '#e0a02a',
+} as const;
+
+/** The Quality Check (Burnt Cookies), from the design's Kitchen, on dark glass. */
+export const qualityColors = {
+  /** The Burnt button and its shadow. */
+  burnt: '#c24a42',
+  burntShadow: '#8f322c',
+  /** A burnt cookie: a dark copy cut to the cookie's own shape lies over it, this much see-through. */
+  char: '#1c0e06',
+  charStrength: 0.72,
+  /** The black smoke over a burnt cookie, and the white steam over a fresh one. */
+  smoke: 'rgba(96,86,82,0.95)',
+  steam: 'rgba(255,255,255,0.85)',
+  /** The warm glow behind a fresh cookie. */
+  glow: 'rgba(255,214,120,0.6)',
+  /** The answer line: called it right, or not quite. */
+  calledIt: '#b7f08a',
+  missed: '#ffb4a8',
+  /** A fix: the wrong words struck through, and the true words. */
+  wrongWords: '#ff9a92',
+  rightWords: '#b7f08a',
+} as const;
+
+/** Signing the cookie box: its cream label, the words on it, and the signature line. */
+export const boxLabel = {
+  /** The label's cream and its edge. */
+  card: '#fffaf0',
+  edge: '#e8d6b4',
+  /** The small "Baked by" heading. */
+  label: '#a0643a',
+  /** The baker's name and their signature's ink. */
+  ink: '#2a1d14',
+  /** The line to sign on, and the "Sign here" hint. */
+  line: '#c9b48a',
+  hint: '#b39b78',
 } as const;

@@ -4,7 +4,7 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { targetId } from '@/data/lessonLibrary';
-import { bakeStop as bakeWithSource, collectCookie as collectWithSource, connectProgressKeeper, fetchProgress } from '@/data/progressSource';
+import { bakeStop as bakeWithSource, collectCookie as collectWithSource, connectProgressKeeper, fetchProgress, finishKitchenStep as finishWithSource, resetKitchen as resetWithSource } from '@/data/progressSource';
 import { refreshBible } from '@/data/queries/bible';
 import { refreshCharacters } from '@/data/queries/characters';
 import { queryClient } from '@/data/queries/client';
@@ -38,6 +38,13 @@ export function useBakedStops(id: LessonId): number {
   return useProgress().data?.baked[id] ?? 0;
 }
 
+/** How many steps after the stops are done in a lesson, or undefined until loaded. */
+export function useKitchenDone(id: LessonId): number | undefined {
+  const progress = useProgress().data;
+  // Progress loaded before the steps after the stops existed has no record of them yet.
+  return progress ? (progress.kitchen?.[id] ?? 0) : undefined;
+}
+
 /** Changes the progress in memory right away. */
 function setProgress(change: (p: LessonProgress) => LessonProgress): void {
   const now = queryClient.getQueryData<LessonProgress>(PROGRESS_KEY);
@@ -52,6 +59,18 @@ export async function bakeStop(id: LessonId, stop: LessonStop): Promise<void> {
   const result = await bakeWithSource(id, stop);
   setProgress((p) => ({ ...p, baked: { ...p.baked, [id]: Math.max(p.baked[id] ?? 0, result.bakedStops) } }));
   await refreshEarned();
+}
+
+/** Marks a step after the stops done (numbered from 1): in memory at once, then recorded, with any signature. */
+export async function finishKitchenStep(id: LessonId, step: number, stopCount: number, signature?: string): Promise<void> {
+  setProgress((p) => ({ ...p, kitchen: { ...p.kitchen, [id]: Math.max(p.kitchen?.[id] ?? 0, step) } }));
+  await finishWithSource(id, step, stopCount, signature);
+}
+
+/** DEVELOPMENT ONLY, for testing: starts a lesson's steps after the stops over, in memory at once and recorded. */
+export async function resetKitchenSteps(id: LessonId): Promise<void> {
+  setProgress((p) => ({ ...p, kitchen: { ...p.kitchen, [id]: 0 } }));
+  await resetWithSource(id);
 }
 
 /**

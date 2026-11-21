@@ -1,20 +1,45 @@
 // Each constellation's one kind of cookie, from papa-dorin.md: the dough scoop shown until a stop is baked, and the
 // baked cookie after. Narrative is Chip's chocolate chip, Poetry & Wisdom Sparkle's sprinkles, Letters Minty's
-// peppermint, Prophetic Berry's raisin, Parables Buttercup's butterscotch, and Sermons Ruby's strawberry.
+// peppermint, Prophetic Berry's raisin, Parables Buttercup's butterscotch, and Sermons Ruby's strawberry. Each also
+// has the cookie box of its color, the same boxes that ride the Bakery's conveyor belt.
 
 import { PixelRatio } from 'react-native';
 
-/** A cookie's two pictures. */
-export type CookieArt = { dough: number; baked: number };
+/** A cookie's two pictures, and the cookie box its lessons are packed in. */
+export type CookieArt = { dough: number; baked: number; box: number };
 
 /** The cookies by constellation id. */
 const ART: Readonly<Record<string, CookieArt>> = {
-  stories: { dough: require('../../../assets/images/cookies/chocolate-chip-scoop.webp'), baked: require('../../../assets/images/cookies/chocolate-chip-cooked.webp') },
-  poems: { dough: require('../../../assets/images/cookies/sprinkles-scoop.webp'), baked: require('../../../assets/images/cookies/sprinkles-cooked.webp') },
-  letters: { dough: require('../../../assets/images/cookies/peppermint-scoop.webp'), baked: require('../../../assets/images/cookies/peppermint-cooked.webp') },
-  prophecies: { dough: require('../../../assets/images/cookies/raisin-scoop.webp'), baked: require('../../../assets/images/cookies/raisin-cooked.webp') },
-  parables: { dough: require('../../../assets/images/cookies/butterscotch-scoop.webp'), baked: require('../../../assets/images/cookies/butterscotch-cooked.webp') },
-  sermons: { dough: require('../../../assets/images/cookies/strawberry-scoop.webp'), baked: require('../../../assets/images/cookies/strawberry-cooked.webp') },
+  stories: {
+    dough: require('../../../assets/images/cookies/chocolate-chip-scoop.webp'),
+    baked: require('../../../assets/images/cookies/chocolate-chip-cooked.webp'),
+    box: require('../../../assets/images/boxes/box-6.webp'),
+  },
+  poems: {
+    dough: require('../../../assets/images/cookies/sprinkles-scoop.webp'),
+    baked: require('../../../assets/images/cookies/sprinkles-cooked.webp'),
+    box: require('../../../assets/images/boxes/box-1.webp'),
+  },
+  letters: {
+    dough: require('../../../assets/images/cookies/peppermint-scoop.webp'),
+    baked: require('../../../assets/images/cookies/peppermint-cooked.webp'),
+    box: require('../../../assets/images/boxes/box-2.webp'),
+  },
+  prophecies: {
+    dough: require('../../../assets/images/cookies/raisin-scoop.webp'),
+    baked: require('../../../assets/images/cookies/raisin-cooked.webp'),
+    box: require('../../../assets/images/boxes/box-5.webp'),
+  },
+  parables: {
+    dough: require('../../../assets/images/cookies/butterscotch-scoop.webp'),
+    baked: require('../../../assets/images/cookies/butterscotch-cooked.webp'),
+    box: require('../../../assets/images/boxes/box-0.webp'),
+  },
+  sermons: {
+    dough: require('../../../assets/images/cookies/strawberry-scoop.webp'),
+    baked: require('../../../assets/images/cookies/strawberry-cooked.webp'),
+    box: require('../../../assets/images/boxes/box-3.webp'),
+  },
 };
 
 /** The cookie of a constellation (chocolate chip when the id is unknown). */

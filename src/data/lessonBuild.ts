@@ -119,7 +119,7 @@ function toCookie(row: CookieRow, characters: CharacterNames): LessonCookie | nu
 }
 
 /** Builds the lesson from its rows. Cards are in order; True comes first on true or false cards. */
-export function buildLesson(id: number, rows: LessonRows): Lesson {
+export function buildLesson(id: number, rows: LessonRows): Pick<Lesson, 'id' | 'stops'> {
   const spot = (stop: number, card: number) => `${stop}.${card}`;
   const words = new Map<string, WordMeaningRow>(rows.wordMeanings.map((m) => [`${m.word}#${m.meaning_no}`, m]));
   const idioms = new Map<string, IdiomMeaningRow>(rows.idiomMeanings.map((m) => [`${m.idiom_id}#${m.meaning_no}`, m]));

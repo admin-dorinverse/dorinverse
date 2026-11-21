@@ -10,13 +10,15 @@
 //   answers and Papa Dorin's explanation of the pick.
 //
 // Today (development): everything is read from the database directly. Each answer's `correct` flag and explanation
-// come down inside the lesson, sealed in the card, and checkAnswer checks them on the phone. Pages never see them.
+// come down inside the lesson, sealed in the card, and checkAnswer checks them on the phone. The Quality Check's burnt
+// lines and their fixes are sealed the same way, for checkBurntLine. Pages never see them.
 
 import { database } from '@/data/database';
 import { placePhotoAddress } from '@/data/placeSource';
 import { buildLesson, type CardRow, type CookieRow, type DevSeal, type IdiomMeaningRow, type LessonRows, type StopRow, type WordMeaningRow } from '@/data/lessonBuild';
+import { buildBigIdea, buildQualityCheck, type BigIdeaRow, type BurntLineRow, type QualitySeal } from '@/data/kitchenBuild';
 import { displayReference, startChapterOf, stopVerseRefs } from '@/data/lessonLibrary';
-import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline, LessonType } from '@/types/lesson';
+import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline, LessonType, BurntLineResult, QualityCheck } from '@/types/lesson';
 
 /** The most rows the database sends in one reply. */
 const ROW_CAP = 1000;
@@ -86,7 +88,7 @@ function rowsOf<T>(reply: { data: unknown; error: unknown }): T[] {
  * meanings and the collectibles its story verses tell; then the names of the characters among them.
  */
 export async function fetchLesson(id: LessonId): Promise<Lesson> {
-  const [stops, cards, cardWords, cardIdioms, homeCookies] = await Promise.all([
+  const [stops, cards, cardWords, cardIdioms, homeCookies, burntLines, bigIdea] = await Promise.all([
     database.from('passage_stop').select('stop, verses, from:verse!from_verse_id(osis_ref), to:verse!to_verse_id(osis_ref)').eq('passage_id', id).then((r) => rowsOf<StopRow>(r)),
     database
       .from('passage_card')
@@ -96,6 +98,12 @@ export async function fetchLesson(id: LessonId): Promise<Lesson> {
     database.from('card_word').select('stop, card, word, meaning_no').eq('passage_id', id).then((r) => rowsOf<LessonRows['cardWords'][number]>(r)),
     database.from('card_idiom').select('stop, card, idiom_id, meaning_no').eq('passage_id', id).then((r) => rowsOf<LessonRows['cardIdioms'][number]>(r)),
     database.from('sample_cookie').select(COOKIE_COLUMNS).eq('passage_id', id).then((r) => rowsOf<CookieRow>(r)),
+    database
+      .from('burnt_line')
+      .select('line, verses, text, burnt, wrong:burnt_line_wrong(position, wrong, true_text, verse)')
+      .eq('passage_id', id)
+      .then((r) => rowsOf<BurntLineRow>(r)),
+    database.from('big_idea_paragraph').select('paragraph, text').eq('passage_id', id).then((r) => rowsOf<BigIdeaRow>(r)),
   ]);
   if (stops.length === 0 || cards.length === 0) throw new Error('The lesson could not be read.');
   const words = [...new Set(cardWords.map((w) => w.word))];
@@ -133,7 +141,22 @@ export async function fetchLesson(id: LessonId): Promise<Lesson> {
   for (const c of [...homeCookies, ...verseCookies.flatMap((v) => (v.c ? [v.c] : []))]) {
     if (c.place && c.place_lookup) c.place.photo = c.place.image_path ? placePhotoAddress(c.place_lookup, 'header') : null;
   }
-  return buildLesson(id, { stops, cards, cardWords, cardIdioms, wordMeanings, idiomMeanings, homeCookies, verseCookies, characters, verseTexts });
+  return {
+    ...buildLesson(id, { stops, cards, cardWords, cardIdioms, wordMeanings, idiomMeanings, homeCookies, verseCookies, characters, verseTexts }),
+    qualityCheck: buildQualityCheck(burntLines),
+    bigIdea: buildBigIdea(bigIdea),
+  };
+}
+
+/**
+ * Checks one Quality Check line the baker marked good or burnt. Development: checked on the phone with the sealed
+ * key. Hookup: the pick goes to the server, which records it and replies with the same result.
+ */
+export async function checkBurntLine(check: QualityCheck, line: number, markedBurnt: boolean): Promise<BurntLineResult> {
+  void markedBurnt;
+  const key = check.seal as QualitySeal;
+  const burnt = key.burnt.includes(line);
+  return { burnt, fixes: burnt ? (key.fixes[line] ?? []) : [] };
 }
 
 /**

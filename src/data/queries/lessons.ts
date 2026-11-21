@@ -5,11 +5,11 @@
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { LESSON_TYPE_OF, lessonRows, type LessonRow } from '@/data/lessonLibrary';
-import { checkAnswer as checkWithSource } from '@/data/lessonSource';
+import { checkAnswer as checkWithSource, checkBurntLine as checkLineWithSource } from '@/data/lessonSource';
 import { syncLesson, syncOutline } from '@/data/lessonSync';
 import { queryClient } from '@/data/queries/client';
 import { readSavedLesson, readSavedOutline, saveLesson, saveOutline } from '@/data/storage/lessonStore';
-import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline } from '@/types/lesson';
+import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline, BurntLineResult, QualityCheck } from '@/types/lesson';
 
 export { markText, targetId, type LessonRow, type TextPiece } from '@/data/lessonLibrary';
 
@@ -111,4 +111,9 @@ export function prefetchLessons(ids: readonly LessonId[]): void {
 /** Checks a pick on a choice card. Pages only see the result, never the answer key. */
 export function checkAnswer(card: ChoiceCard, picked: readonly number[]): Promise<AnswerResult> {
   return checkWithSource(card, picked);
+}
+
+/** Checks one Quality Check line marked good or burnt. Pages only see the result, never the answer key. */
+export function checkBurntLine(check: QualityCheck, line: number, markedBurnt: boolean): Promise<BurntLineResult> {
+  return checkLineWithSource(check, line, markedBurnt);
 }
