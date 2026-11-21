@@ -62,10 +62,17 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
     since the plan is to charge by the session, not the minute.
   - Papa Dorin's voice (owner, 2026-11-21): made on ElevenLabs, deep, fatherly, light French accent, English words
     only. Always the full-quality voice model, never Turbo/Flash, for lessons and for calls. Needed at hookup: the
-    saved voice's ID.
+    saved voice's ID: `kU3EUOxxqWQNBkU9dldC` (not secret). The API key `staging-dorinverse` (Text to Speech
+    only) is saved in Supabase's secrets as `ELEVENLABS_API_KEY` (2026-11-21).
   - Lesson audio for subscribers (owner's idea, 2026-11-21, not started): Papa Dorin reads the story cards and the
     Big Idea only. About 5.1 million letters, made once and streamed; about $409 at ElevenLabs' pay-as-you-go price
     ($0.08 per 1,000 letters, checked 2026-11-21). Hosting not priced. Needs the owner's go before any spending.
+  - LiveKit set up (2026-11-21): project `staging-dorinverse` (wss://dorinverse-sr3bt97n.livekit.cloud) for testing.
+    `LIVEKIT_URL`, `LIVEKIT_API_KEY` and `LIVEKIT_API_SECRET` are saved in Supabase's Edge Function secrets. Before
+    launch: a second project `production-dorinverse` with its own keys, in the live Supabase project's secrets.
+  - Anthropic API set up (2026-11-21): a separate Console account for the business, $5 of credit, key saved in
+    Supabase's secrets as `ANTHROPIC_API_KEY`. Papa Dorin on Opus 5.5, low effort (the owner picked it over Sonnet
+    low); his chat replies now stream in as they're written.
   - The owner is looking into LiveKit and ElevenLabs. Before building: study how other voice-call apps show avatars
     and who is talking, and stop to check everything is ready.
   - Next: free voice samples from ElevenLabs and Cartesia for the owner to hear; confirm prices on each company's own
