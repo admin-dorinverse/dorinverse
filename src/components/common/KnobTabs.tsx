@@ -1,4 +1,4 @@
-// The glass pill of knob tabs at the top of the screen: Sky, Collections and Bible Crew.
+// The glass pill of knob tabs at the top of the screen: Dorinverse (the sky), Collections and Bible Crew.
 // The tabs themselves are declared in the tabs layout; these buttons point to them by name.
 
 import { TabTrigger } from 'expo-router/ui';
@@ -17,7 +17,7 @@ export function KnobTabs() {
       <GlassSurface style={styles.pill}>
         <View style={styles.row} accessibilityRole="tablist">
           <TabTrigger name="sky" asChild>
-            <KnobTab label="Sky" Icon={SkyIcon} />
+            <KnobTab label="Dorinverse" Icon={SkyIcon} />
           </TabTrigger>
           <TabTrigger name="collections" asChild>
             <KnobTab label="Collections" Icon={CollectionsIcon} />
