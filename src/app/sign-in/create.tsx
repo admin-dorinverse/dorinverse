@@ -17,11 +17,18 @@ export default function CreateAccountPage() {
   const [email, setEmail] = useState('');
   const passwordBox = useRef<AuthFieldBox>(null);
   const [password, setPassword] = useState('');
+  // The password typed a second time, so a typo can't lock the person out of their new account.
+  const [again, setAgain] = useState('');
+  const againBox = useRef<AuthFieldBox>(null);
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState('');
 
-  /** Makes the account with the typed email and password. */
+  /** Makes the account with the typed email and password, once both password boxes match. */
   const create = async () => {
+    if (password !== again) {
+      setNote('The two passwords don’t match. Type them again.');
+      return;
+    }
     setNote('');
     setBusy(true);
     try {
@@ -51,6 +58,15 @@ export default function CreateAccountPage() {
         value={password}
         onChange={setPassword}
         note={`At least ${PASSWORD_MIN} characters.`}
+        returnKeyType="next"
+        onSubmit={() => againBox.current?.focus()}
+      />
+      <AuthField
+        label="Type it again"
+        kind="newPassword"
+        inputRef={againBox}
+        value={again}
+        onChange={setAgain}
         returnKeyType="go"
         onSubmit={() => void create()}
       />
