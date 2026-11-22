@@ -132,6 +132,19 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
   - Keep past weeks in the Clue Book, one page per mystery; all 7 clues is a full set.
   - The reveal shows free users what Gather families did together.
 
+## Sign-in
+
+- **Email:** Resend is connected (2026-11-22), sending from noreply@dorinverse.com on the free plan (100 a day).
+  Every account email carries a 6-digit code and points questions to the support@dorinverse.com group. Before launch: set up
+  a second Supabase project for production with the same email settings, and check the free plan is still enough.
+- **Parked 2026-11-22** (owner: sign-in works; per-account progress comes with the hookup). Still open: where the
+  Account entry lives (now a row at the bottom of Bible Crew; idea: a profile circle at the top by the glass pills),
+  and whether Make an account also asks for the password twice (Forgot password does).
+- **Google sign-in:** on in the staging project and the app (2026-11-22). The Google app is in Testing (only listed test users can sign in, up to 100). Before launch: add a home page,
+  privacy policy and logo on Google's Branding page, then Publish app (Google may review it first). **Apple sign-in:** waits for the Apple Developer account (after the LLC). (2026-11-22.)
+- **After sign-in, the one restore download** that refills a new phone with everything earned (see the Bible data
+  plan). Not built yet.
+
 ## Places map (MapLibre + MapTiler)
 
 - **Owner is leaning toward not doing the map** (2026-11-20): the free place picture already shows the place.

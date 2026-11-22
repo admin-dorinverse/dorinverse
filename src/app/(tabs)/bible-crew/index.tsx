@@ -1,9 +1,11 @@
 // The Bible Crew tab: the people and tools that help with the Bible, as tinted glass cards over the stars:
 // Chat with Papa Dorin, the Bible guest of the week, and Group Voice Calls. Verse Memory is hidden for now.
+// Under the cards, a small "Signed in as" row opens the Account page.
 
 import { useRouter, type Href } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { AccountRow } from '@/components/bible-crew/AccountRow';
 import { CrewArt } from '@/components/bible-crew/CrewArt';
 import { CollectionCard } from '@/components/collections/CollectionCard';
 import { playSound } from '@/components/common/sounds';
@@ -94,6 +96,7 @@ export default function BibleCrewPage() {
               <CrewArt kind="verse" />
             </CollectionCard>
           )}
+          <AccountRow onOpen={() => router.push('/account')} />
         </View>
       </View>
     </ScrollView>
