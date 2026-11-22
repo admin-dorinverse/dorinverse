@@ -53,9 +53,8 @@ export function soundsHushed(): boolean {
   return hushed;
 }
 
-/** Plays a sound effect from the start. Does nothing when muted or hushed. */
-export function playSound(name: SoundName): void {
-  if (muted || hushed) return;
+/** The player for a sound, made (and its file loaded) the first time it's needed, with the audio mode set once. */
+function playerFor(name: SoundName): AudioPlayer {
   if (!ready) {
     ready = true;
     setAudioModeAsync({ playsInSilentMode: false, interruptionMode: 'mixWithOthers' }).catch(() => {});
@@ -65,6 +64,21 @@ export function playSound(name: SoundName): void {
     player = createAudioPlayer(SOURCES[name]);
     players[name] = player;
   }
+  return player;
+}
+
+/**
+ * Loads a sound now, before it's first played, so the first play isn't lost while the file loads (on Android a
+ * sound played the instant its player is made can stay silent). Call it when a page that needs the sound opens.
+ */
+export function preloadSound(name: SoundName): void {
+  playerFor(name);
+}
+
+/** Plays a sound effect from the start. Does nothing when muted or hushed. */
+export function playSound(name: SoundName): void {
+  if (muted || hushed) return;
+  const player = playerFor(name);
   player.seekTo(0).catch(() => {});
   player.play();
 }

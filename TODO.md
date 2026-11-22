@@ -53,6 +53,14 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
     on screen, everyone's avatar shows; whoever is talking glows. With a verse, lesson or question on screen, only the
     3 most recent talkers show, the rest behind a "show more". Papa Dorin's avatar always shows; tapping it means only
     that person's mic is heard by him, so no other voices get into his text.
+  - When Papa Dorin answers (owner, 2026-11-21): everyone still hears the person asking. A short bell plays just
+    before he speaks, and each phone turns the other voices down while he talks (LiveKit's
+    `RemoteParticipant.setVolume`; its phone code is there, still to confirm on a real phone). He says the question
+    back before answering (wording for his notes waits for the owner's yes). The host also gets a "Quiet, please"
+    button that mutes everyone; each person can unmute themselves.
+  - Asking Papa Dorin during a lesson together (owner, 2026-11-21): only after a question card is answered (on its
+    result sheet and its explain page), never on a story card or before answering, so nobody gets the answer early.
+    The host's Explain the Answer has him read the written explanation aloud.
   - Trivia on the call (owner, 2026-11-21): everyone sees the question and picks their own answer. Papa Dorin reads
     the question and the answers, then the time limit starts. After answering, it shows the share for each answer
     and who picked what. Nothing moves on until the host does: the host can have the right answer explained, then go
@@ -62,7 +70,8 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
     since the plan is to charge by the session, not the minute.
   - Papa Dorin's voice (owner, 2026-11-21): made on ElevenLabs, deep, fatherly, light French accent, English words
     only. Always the full-quality voice model, never Turbo/Flash, for lessons and for calls. Needed at hookup: the
-    saved voice's ID: `kU3EUOxxqWQNBkU9dldC` (not secret). The API key `staging-dorinverse` (Text to Speech
+    saved voice's ID: `DcREernlIYXuL5D8TdbT` (trying it since 2026-11-22; the one before was
+    `pLDqNoheKYSx3bhs57So`, to go back to) (not secret). The API key `staging-dorinverse` (Text to Speech
     only) is saved in Supabase's secrets as `ELEVENLABS_API_KEY` (2026-11-21).
   - Lesson audio for subscribers (owner's idea, 2026-11-21, not started): Papa Dorin reads the story cards and the
     Big Idea only. About 5.1 million letters, made once and streamed; about $409 at ElevenLabs' pay-as-you-go price
@@ -71,8 +80,33 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
     `LIVEKIT_URL`, `LIVEKIT_API_KEY` and `LIVEKIT_API_SECRET` are saved in Supabase's Edge Function secrets. Before
     launch: a second project `production-dorinverse` with its own keys, in the live Supabase project's secrets.
   - Anthropic API set up (2026-11-21): a separate Console account for the business, $5 of credit, key saved in
-    Supabase's secrets as `ANTHROPIC_API_KEY`. Papa Dorin on Opus 5.5, low effort (the owner picked it over Sonnet
-    low); his chat replies now stream in as they're written.
+    Supabase's secrets as `ANTHROPIC_API_KEY`. Papa Dorin's text chat on Opus 5.5, low effort (the owner picked it over Sonnet
+    low); his chat replies now stream in as they're written. On calls he uses Sonnet 5.5 at medium effort (owner,
+    2026-11-21: Opus low lost his humor, Opus medium was too slow).
+  - Group Voice Calls built (2026-11-21), Android test app + browser join (no Apple account until the LLC):
+    Bible Crew → Group Voice Calls starts a call (the starter is host); guests join by invite link
+    (`/call?room=call-…`). All mockup screens: joining, call screen, host tools, Quiet please, invite, Everyone
+    list, Tap to talk, asking/answering, a verse, a lesson together, trivia. Passes: Supabase function `call-pass`.
+    Papa Dorin: `node scripts/app/papa-dorin-call/agent.mjs dev` on the owner's PC (keys in that folder's
+    `.env.local`, named `papa-dorin-pc`); trivia is decided there. Voice: Eleven v4 Turbo with the corrected voice ID (owner, 2026-11-21; never test with credits). Fallback: plain eleven_v4 through LiveKit's tts.StreamAdapter, one sentence at a time. Waiting on the owner:
+    nothing else. Decided 2026-11-21: shown chapters show all verses; no Opus fast mode; explain-it and the winner cheer on (approved wording); host can end the get-together. Later: app links (https opens the app; needs a build), the hosted web address instead of the dev
+    tunnel, app avatars once there's sign-in, moving Papa Dorin to LiveKit Cloud, and the hookup checks (sign-in,
+    subscriber host, counting get-togethers).
+  - Research done (2026-11-21), from LiveKit's docs:
+    - App packages: `livekit-client`, `@livekit/react-native`, `@livekit/react-native-expo-plugin`,
+      `@livekit/react-native-webrtc`, `@config-plugins/react-native-webrtc`; needs a development build, not Expo Go.
+      LiveKit's own Expo example runs on Expo 57, so Expo 58 must be tested.
+    - Who's talking: `useIsSpeaking` / `ActiveSpeakersChanged`; names and avatars ride in the join pass (`name`,
+      `attributes`). Verse moves, questions and answers: text streams or RPC; late joiners need a fresh state message.
+    - Join passes: `livekit-server-sdk` (says it runs in Deno), made in a Supabase function; host gets `roomAdmin`;
+      guests can publish only the microphone.
+    - Papa Dorin: a LiveKit agent named `papa-dorin`, sent into the room only when tapped (explicit dispatch), listens
+      to one linked person, Claude and ElevenLabs on our own keys, speech-to-text from LiveKit Inference (e.g.
+      Deepgram). He leaves with `ctx.shutdown()`. An agent still in the room is billed even when quiet.
+    - Free Build plan: 5,000 call minutes and 1,000 agent minutes a month, a hard cap (calls fail past it, no
+      surprise bill). On the free plan the agent can sleep and take 10 to 20 seconds to wake; paid plans (from $50 a
+      month) keep it warm.
+    - Mockups of the call screens: https://claude.ai/artifact/24FbD2bZtizzefPFYwVtVJ
   - The owner is looking into LiveKit and ElevenLabs. Before building: study how other voice-call apps show avatars
     and who is talking, and stop to check everything is ready.
   - Next: free voice samples from ElevenLabs and Cartesia for the owner to hear; confirm prices on each company's own

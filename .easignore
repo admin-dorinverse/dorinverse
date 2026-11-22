@@ -1,0 +1,72 @@
+# What Expo's build servers skip when uploading the app: everything git skips (copied from .gitignore),
+# plus the PC-only tools, designs and server code, which the phone app never uses.
+
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# dough-maker reference cache (node scripts/dough-maker/fetch-reference.mjs)
+scripts/dough-maker/.cache/
+
+# Dorin TV load SQL (node scripts/tv/load.mjs)
+scripts/tv/.cache/
+# character web output (node scripts/character-web/load.mjs, cards.mjs, roster.mjs)
+scripts/character-web/.cache/
+# memory verse loader output (node scripts/memory-verses/memory-verses.mjs)
+scripts/memory-verses/.cache/
+# translations load output (node scripts/translations/load.mjs)
+scripts/translations/.cache/
+# lesson run state and event log (node scripts/dough-maker/run/dashboard.mjs)
+scripts/dough-maker/run/.cache/
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Design video: kept on the PC only, too big to carry in git history
+design/prototype/papa-dorin-jonah.mp4
+
+# Not part of the phone app
+scripts/
+design/
+supabase/
+
+# The git history (about 190 MB): the build never needs it
+.git/

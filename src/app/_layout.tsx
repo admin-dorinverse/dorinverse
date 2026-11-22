@@ -3,6 +3,7 @@
 // instructions, prayers) in the background, turns on gestures, starts the shared sky, and holds the page stack.
 
 import '@/components/common/skiaIds';
+import '@/data/callSetup';
 import { useFonts } from 'expo-font';
 import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';

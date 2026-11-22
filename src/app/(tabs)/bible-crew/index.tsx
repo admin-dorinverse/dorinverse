@@ -1,5 +1,5 @@
 // The Bible Crew tab: the people and tools that help with the Bible, as tinted glass cards over the stars:
-// Chat with Papa Dorin, the Bible guest of the week, and Verse Memory.
+// Chat with Papa Dorin, the Bible guest of the week, and Group Voice Calls. Verse Memory is hidden for now.
 
 import { useRouter, type Href } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
@@ -12,6 +12,9 @@ import { useMemorizedVerses } from '@/data/storage/memorizedVerses';
 import { thisWeeksGuest } from '@/data/weeklyGuestSource';
 import { glass } from '@/theme/colors';
 import { gutter } from '@/theme/spacing';
+
+/** Verse Memory's card is hidden for now (the owner's call); set to true to show it again. */
+const SHOW_VERSE_MEMORY = false;
 
 /** Space above the first card, under the HUD pills and the tabs. */
 const TOP_SPACE = 124;
@@ -65,18 +68,32 @@ export default function BibleCrewPage() {
             <CrewArt kind="guest" guest={guest} />
           </CollectionCard>
           <CollectionCard
-            title="Verse Memory"
-            note={`Learn verses by heart, step by step. ${memorized} ${memorized === 1 ? 'verse' : 'verses'} memorized.`}
-            hue="cocoa"
+            title="Group Voice Calls"
+            note="Talk with family and friends, all at once. Hold Papa Dorin's picture to ask him something, and everyone hears him answer."
+            hue="amber"
             layout="wide"
             index={2}
             clock={clock}
-            action="Start a verse"
-            // The route list names this page "/verse-memory/index"; its real address is "/verse-memory".
-            onPress={() => open('/verse-memory' as Href)}
+            action="Start a call"
+            onPress={() => open('/call')}
           >
-            <CrewArt kind="verse" />
+            <CrewArt kind="call" />
           </CollectionCard>
+          {SHOW_VERSE_MEMORY && (
+            <CollectionCard
+              title="Verse Memory"
+              note={`Learn verses by heart, step by step. ${memorized} ${memorized === 1 ? 'verse' : 'verses'} memorized.`}
+              hue="cocoa"
+              layout="wide"
+              index={3}
+              clock={clock}
+              action="Start a verse"
+              // The route list names this page "/verse-memory/index"; its real address is "/verse-memory".
+              onPress={() => open('/verse-memory' as Href)}
+            >
+              <CrewArt kind="verse" />
+            </CollectionCard>
+          )}
         </View>
       </View>
     </ScrollView>

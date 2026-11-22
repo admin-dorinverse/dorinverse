@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dorinverse.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -29,10 +30,18 @@
       "expo-audio",
       "expo-asset",
       "expo-status-bar",
-      "expo-sqlite"
+      "expo-sqlite",
+      "@livekit/react-native-expo-plugin",
+      "@config-plugins/react-native-webrtc"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "11fda9d7-7b94-42f6-b296-df008e4f0734"
+      }
+    },
+    "owner": "admin-dorinverse"
   }
 }
