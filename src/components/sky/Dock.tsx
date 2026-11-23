@@ -1,4 +1,4 @@
-// The glass dock at the bottom left of the Sky tab: Shop, Reading plans, Notifications and My Hangar.
+// The glass dock at the bottom left of the Sky tab: Shop, Notifications and My Hangar.
 // Each button gives a little bounce when tapped. What each one opens comes in a later phase.
 
 import { Image } from 'expo-image';
@@ -10,7 +10,7 @@ import { GlassSurface } from '@/components/common/Glass';
 import { SvgPicture } from '@/components/common/SvgPicture';
 import { playSound } from '@/components/common/sounds';
 import { chrome, gutter, radius } from '@/theme/spacing';
-import { HANGAR_SVG, READING_SVG } from './hudArt';
+import { HANGAR_SVG } from './hudArt';
 
 /** Props for one dock button. */
 type DockButtonProps = {
@@ -47,9 +47,6 @@ export function Dock() {
     <GlassSurface look="pill" style={[styles.dock, { bottom: insets.bottom + chrome.bottom }]}>
       <DockButton label="Shop">
         <Image source={require('../../../assets/images/icons/shop.webp')} style={{ width: size, height: size }} contentFit="contain" />
-      </DockButton>
-      <DockButton label="Reading plans">
-        <SvgPicture svg={READING_SVG} width={size} height={size} />
       </DockButton>
       <DockButton label="Notifications">
         <Image source={require('../../../assets/images/icons/notifications.webp')} style={{ width: size, height: size }} contentFit="contain" />
