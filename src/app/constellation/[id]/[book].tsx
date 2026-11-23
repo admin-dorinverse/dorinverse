@@ -1,6 +1,6 @@
 // One Bible book's lessons in a constellation, opened from its tile: an "Up next" card when a lesson here is the one
 // to pick up, then the book's lessons in Bible order, a story told over several lessons as one card (tap to see its
-// parts) and a lesson on its own as a plain card. The lessons a tap may open are fetched as their cards come on
+// parts) and a lesson on its own as its regular lesson card with its cookies. The lessons a tap may open are fetched as their cards come on
 // screen, so opening one never waits.
 
 import { useLocalSearchParams, type Href } from 'expo-router';
@@ -8,11 +8,12 @@ import { useCallback, useMemo } from 'react';
 import { FlatList } from 'react-native';
 import { LIST_WINDOW, ListEmpty, ListShell, useListContentStyle } from '@/components/constellation/ListShell';
 import { counted, ShelfTop } from '@/components/constellation/ListTop';
-import { LoneLessonCard, StoryCard } from '@/components/constellation/StoryCards';
+import { LessonCard } from '@/components/constellation/LessonCard';
+import { StoryCard } from '@/components/constellation/StoryCards';
 import { UpNextCard } from '@/components/constellation/UpNextCard';
 import { usePrefetchOnScreen } from '@/components/constellation/usePrefetchOnScreen';
 import { useShelf, useShelfRows, type ShelfRow } from '@/components/constellation/useShelf';
-import { doneCount, isBaked, type ShelfStory } from '@/data/lessonBooks';
+import { doneCount, type ShelfStory } from '@/data/lessonBooks';
 
 /** A book page: "Up next" and the book's story and lesson cards. */
 export default function BookPage() {
@@ -35,7 +36,7 @@ export default function BookPage() {
     if (item.kind === 'upNext') return <UpNextCard next={item.next} baked={baked[item.next.lesson.id] ?? 0} art={art} onOpen={openLesson} />;
     const card = item.item;
     if (card.kind === 'story') return <StoryCard story={card} done={doneCount(card.lessons, baked)} look={look} onOpen={openStory} />;
-    return <LoneLessonCard lesson={card.lesson} done={isBaked(card.lesson, baked)} look={look} onOpen={openLesson} />;
+    return <LessonCard lesson={card.lesson} baked={baked[card.lesson.id] ?? 0} art={art} look={look} onOpen={openLesson} />;
   };
 
   return (

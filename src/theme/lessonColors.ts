@@ -167,7 +167,4 @@ export const shelfColors = {
   back: 'rgba(16,15,44,0.55)',
   /** A progress bar's empty track. */
   track: 'rgba(255,255,255,0.12)',
-  /** A lesson that stands alone on a book page: its plain edge and its reference. */
-  loneEdge: 'rgba(255,255,255,0.25)',
-  loneRef: '#d8d3ee',
 } as const;
