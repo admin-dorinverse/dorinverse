@@ -1,6 +1,6 @@
-// The glass dock at the bottom left of the Sky tab: Shop, Notifications and My Hangar.
+// The glass dock at the bottom left of the Sky tab: Shop, Notifications, the Clue Book and My Hangar.
 // Each button gives a little bounce when tapped. The bell opens Notifications and shows a dot when news is new;
-// what the other buttons open comes in a later phase.
+// the red Clue Book opens the Weekly Word and pulses while a clue is waiting. What Shop and My Hangar open comes later.
 
 import { Image } from 'expo-image';
 import { useRouter, type Href } from 'expo-router';
@@ -11,10 +11,12 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { GlassSurface } from '@/components/common/Glass';
 import { SvgPicture } from '@/components/common/SvgPicture';
 import { playSound } from '@/components/common/sounds';
+import { useMysteryWeek } from '@/data/mysterySource';
 import { useUnreadCount } from '@/data/queries/friends';
 import { friends } from '@/theme/friendsColors';
 import { chrome, gutter, radius } from '@/theme/spacing';
 import { HANGAR_SVG } from './hudArt';
+import { MysteryBook } from './MysteryBook';
 
 /** Props for one dock button. */
 type DockButtonProps = {
@@ -65,6 +67,21 @@ function BellButton() {
   );
 }
 
+/**
+ * The red Clue Book: opens the Weekly Word. It pulses and glows while today's clue is waiting or the word was just
+ * revealed. A screen reader hears when a clue is waiting.
+ */
+function ClueBookButton() {
+  const router = useRouter();
+  const calling = useMysteryWeek().hasNews;
+  const label = calling ? 'Clue Book, new clue' : 'Clue Book';
+  return (
+    <DockButton label={label} onPress={() => router.push('/mystery' as Href)}>
+      <MysteryBook calling={calling} />
+    </DockButton>
+  );
+}
+
 /** The dock. */
 export function Dock() {
   const insets = useSafeAreaInsets();
@@ -75,6 +92,7 @@ export function Dock() {
         <Image source={require('../../../assets/images/icons/shop.webp')} style={{ width: size, height: size }} contentFit="contain" />
       </DockButton>
       <BellButton />
+      <ClueBookButton />
       <DockButton label="My Hangar">
         <SvgPicture svg={HANGAR_SVG} width={size} height={size} />
       </DockButton>

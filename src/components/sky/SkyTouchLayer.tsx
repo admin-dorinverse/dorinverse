@@ -27,7 +27,7 @@ export function SkyTouchLayer() {
 
   return (
     <GestureDetector gesture={pan}>
-      <View style={StyleSheet.absoluteFill} accessibilityLabel="The sky. Drag to look around, tap a constellation, the bakery or the red Clue Book." />
+      <View style={StyleSheet.absoluteFill} accessibilityLabel="The sky. Drag to look around, tap a constellation or the bakery." />
     </GestureDetector>
   );
 }

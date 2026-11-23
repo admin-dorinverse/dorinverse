@@ -1,4 +1,4 @@
-// The three tabs: Sky, Collections and Bible Crew. The living sky (with the bakery planet, the red Clue Book and
+// The three tabs: Sky, Collections and Bible Crew. The living sky (with the bakery planet and
 // the rocket) sits behind all of them, with the HUD pills and the knob tabs floating on top.
 
 import type { Href } from 'expo-router';
@@ -8,7 +8,6 @@ import { GlassBackdrop } from '@/components/common/Glass';
 import { KnobTabs } from '@/components/common/KnobTabs';
 import { BakeryPlanet } from '@/components/sky/BakeryPlanet';
 import { Hud } from '@/components/sky/Hud';
-import { MysteryBook } from '@/components/sky/MysteryBook';
 import { RocketView } from '@/components/sky/RocketView';
 import { SkyArmor } from '@/components/sky/SkyArmor';
 import { SkyCanvas } from '@/components/sky/SkyCanvas';
@@ -28,7 +27,6 @@ export default function TabsLayout() {
       >
         <SkyCanvas />
         <BakeryPlanet />
-        <MysteryBook />
         <SkyArmor />
         <RocketView />
       </GlassBackdrop>

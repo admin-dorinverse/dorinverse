@@ -1,4 +1,4 @@
-// The Clue Book, opened by tapping the red book in the sky: the Weekly Word. Today's clue stays hidden behind a
+// The Clue Book, opened by tapping the red book in the dock: the Weekly Word. Today's clue stays hidden behind a
 // "Collect clue" button until the person taps it, so a clue is only ever collected on purpose. It shows the week's seven days, every clue collected
 // so far (missed days stay empty), and a box to guess the word with 3 tries a day. From Sunday evening it shows the
 // word and all seven clues with their references, the missed ones in red. Last week's results sit at the bottom. Everything comes from src/data/mysterySource.ts.

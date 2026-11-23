@@ -1,4 +1,4 @@
-// Colors for the Weekly Word: the red Clue Book that glows in the sky, and the Clue Book page (cream clue pages
+// Colors for the Weekly Word: the red Clue Book that glows in the dock, and the Clue Book page (cream clue pages
 // with a red ribbon on the dark glass look).
 
 /** The Weekly Word's colors. */
@@ -11,7 +11,7 @@ export const mystery = {
   /** The book's page edges. */
   pages: '#fff5dc',
   pagesEdge: '#c9b48a',
-  /** The red glow behind the book in the sky: its middle, fading to nothing. */
+  /** The red glow behind the book in the dock: its middle, fading to nothing. */
   glow: 'rgba(255,82,62,0.75)',
   glowFade: 'rgba(255,82,62,0)',
   /** The accent on the page: ribbons, the day strip and the tries. */
