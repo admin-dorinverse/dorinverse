@@ -144,3 +144,30 @@ export const boxLabel = {
   line: '#c9b48a',
   hint: '#b39b78',
 } as const;
+
+/** The "Up next" card on a constellation or book page, and the gold edge on a story's up-next part. */
+export const upNextColors = {
+  /** Its tag, its button and the up-next part's edge. */
+  gold: '#ffc65c',
+  /** Its reference line. */
+  refInk: '#ffe2a3',
+  /** Its gold-tinted glass. */
+  fill: 'linear-gradient(150deg, rgba(255,198,92,0.28), rgba(255,255,255,0.05) 65%)',
+  /** Its edge. */
+  edge: 'rgba(255,198,92,0.75)',
+  /** Its soft gold glow. */
+  glow: '0 0 18px rgba(255,198,92,0.3)',
+  /** The glow around a story's up-next part. */
+  partGlow: '0 0 16px rgba(255,198,92,0.35), 0 10px 24px rgba(0,0,0,0.3)',
+} as const;
+
+/** The book tiles and story cards on a constellation's pages. */
+export const shelfColors = {
+  /** The dark glass under tiles and cards. */
+  back: 'rgba(16,15,44,0.55)',
+  /** A progress bar's empty track. */
+  track: 'rgba(255,255,255,0.12)',
+  /** A lesson that stands alone on a book page: its plain edge and its reference. */
+  loneEdge: 'rgba(255,255,255,0.25)',
+  loneRef: '#d8d3ee',
+} as const;

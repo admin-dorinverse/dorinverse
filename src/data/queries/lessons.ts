@@ -4,14 +4,15 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
-import { LESSON_TYPE_OF, lessonRows, type LessonRow } from '@/data/lessonLibrary';
+import { keptLessonBooks, type LessonBook } from '@/data/lessonBooks';
+import { LESSON_TYPE_OF } from '@/data/lessonLibrary';
 import { checkAnswer as checkWithSource, checkBurntLine as checkLineWithSource } from '@/data/lessonSource';
 import { syncLesson, syncOutline } from '@/data/lessonSync';
 import { queryClient } from '@/data/queries/client';
 import { readSavedLesson, readSavedOutline, saveLesson, saveOutline } from '@/data/storage/lessonStore';
 import type { AnswerResult, ChoiceCard, Lesson, LessonId, LessonOutline, BurntLineResult, QualityCheck } from '@/types/lesson';
 
-export { markText, targetId, type LessonRow, type TextPiece } from '@/data/lessonLibrary';
+export { markText, targetId, type TextPiece } from '@/data/lessonLibrary';
 
 /** The outline's place in the query cache. */
 const OUTLINE_KEY = ['lessons', 'outline'] as const;
@@ -46,12 +47,15 @@ export function useLessonOutlines() {
   return useQuery(outlineQuery);
 }
 
-/** The list rows for a constellation: its kind of lessons with story-group headings, or undefined until loaded. */
-export function useLessonRows(constellationId: string): LessonRow[] | undefined {
+/**
+ * A constellation's lessons sorted into Bible books and stories, or undefined until loaded. Worked out once per
+ * constellation and kept, so its page, book pages and story pages all reuse the same lists.
+ */
+export function useLessonBooks(constellationId: string): LessonBook[] | undefined {
   const outline = useLessonOutlines().data;
   return useMemo(() => {
     const type = LESSON_TYPE_OF[constellationId];
-    return outline && type ? lessonRows(outline, type) : undefined;
+    return outline && type ? keptLessonBooks(outline, type) : undefined;
   }, [outline, constellationId]);
 }
 

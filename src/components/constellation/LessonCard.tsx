@@ -1,6 +1,7 @@
 // One lesson in a constellation's list, as in the Constellations design: its reference, its title, its place in a
 // story, and a row of the constellation's cookie, one per stop (dough until baked, baked after), with a ✓ once every
-// stop is baked. Also the heading that starts a story's lessons.
+// stop is baked. The lesson to pick up next in a story gets a gold edge. Also the ✓ and the cookie row on their own,
+// for the other cards.
 
 import { Image } from 'expo-image';
 import { memo } from 'react';
@@ -8,7 +9,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { CookieArt } from '@/components/common/cookieArt';
 import { playSound } from '@/components/common/sounds';
 import { mixColor } from '@/theme/mixColor';
-import { lessonSky } from '@/theme/lessonColors';
+import { lessonSky, shelfColors, upNextColors } from '@/theme/lessonColors';
 import { navy, text } from '@/theme/colors';
 import { radius } from '@/theme/spacing';
 import { fonts } from '@/theme/text';
@@ -31,6 +32,45 @@ export function cardLook(color: string): CardLook {
   };
 }
 
+/** Props for the ✓ in a card's corner. */
+type DoneMarkProps = {
+  /** The constellation's color. */
+  color: string;
+  /** Its width and height. */
+  size?: number;
+};
+
+/** The round ✓ in a card's top corner, shown once everything in the card is baked. */
+export const DoneMark = memo(function DoneMark({ color, size = 30 }: DoneMarkProps) {
+  const corner = size < 30 ? 9 : 14;
+  return (
+    <View style={[styles.done, { width: size, height: size, borderRadius: size / 2, right: corner, top: corner, backgroundColor: color, boxShadow: `0 0 12px ${color}` }]}>
+      <Text style={[styles.doneMark, { fontSize: size * 0.53 }]}>✓</Text>
+    </View>
+  );
+});
+
+/** Props for a lesson's cookie row. */
+type CookieDotsProps = {
+  /** How many stops the lesson has. */
+  stops: number;
+  /** How many of them are baked. */
+  baked: number;
+  /** The constellation's cookie pictures. */
+  art: CookieArt;
+};
+
+/** One cookie per stop: baked for the stops baked, dough for the rest. */
+export const CookieDots = memo(function CookieDots({ stops, baked, art }: CookieDotsProps) {
+  return (
+    <View style={styles.dots}>
+      {Array.from({ length: stops }, (_, i) => (
+        <Image key={i} source={i < baked ? art.baked : art.dough} style={[styles.dot, i >= baked && styles.dim]} contentFit="contain" />
+      ))}
+    </View>
+  );
+});
+
 /** Props for a lesson card. */
 type LessonCardProps = {
   /** The lesson. */
@@ -41,60 +81,32 @@ type LessonCardProps = {
   art: CookieArt;
   /** The card's colors. */
   look: CardLook;
+  /** True for the lesson to pick up next in a story: it gets a gold edge and says so. */
+  upNext?: boolean;
   /** Opens the lesson. */
   onOpen: (lesson: LessonOutline) => void;
 };
 
 /** A lesson card. Drawn again only when its lesson or its baked count changes. */
-export const LessonCard = memo(function LessonCard({ lesson, baked, art, look, onOpen }: LessonCardProps) {
+export const LessonCard = memo(function LessonCard({ lesson, baked, art, look, upNext = false, onOpen }: LessonCardProps) {
   const done = baked >= lesson.stopCount;
+  const edge = upNext ? { borderColor: upNextColors.gold, boxShadow: upNextColors.partGlow } : { borderColor: look.edge, boxShadow: look.glow };
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${lesson.title}, ${lesson.reference}, ${baked} of ${lesson.stopCount} cookies baked`}
+      accessibilityLabel={`${upNext ? 'Up next: ' : ''}${lesson.title}, ${lesson.reference}, ${baked} of ${lesson.stopCount} cookies baked`}
       onPress={() => {
         playSound('tap');
         onOpen(lesson);
       }}
-      style={({ pressed }) => [styles.card, { backgroundImage: look.fill, borderColor: look.edge, boxShadow: look.glow }, pressed && styles.pressed]}
+      style={({ pressed }) => [styles.card, { backgroundImage: look.fill }, edge, pressed && styles.pressed]}
     >
-      {done && (
-        <View style={[styles.done, { backgroundColor: look.color, boxShadow: `0 0 12px ${look.color}` }]}>
-          <Text style={styles.doneMark}>✓</Text>
-        </View>
-      )}
-      <Text style={[styles.ref, { color: look.refInk }]}>{lesson.reference}</Text>
+      {done && <DoneMark color={look.color} />}
+      <Text style={[styles.ref, { color: upNext ? upNextColors.refInk : look.refInk }]}>{upNext ? `${lesson.reference} · Up next` : lesson.reference}</Text>
       <Text style={styles.title}>{lesson.title}</Text>
       {lesson.storyPosition && <Text style={styles.part}>Part {lesson.storyPosition}</Text>}
-      <View style={styles.dots}>
-        {Array.from({ length: lesson.stopCount }, (_, i) => (
-          <Image key={i} source={i < baked ? art.baked : art.dough} style={[styles.dot, i >= baked && styles.dim]} contentFit="contain" />
-        ))}
-      </View>
+      <CookieDots stops={lesson.stopCount} baked={baked} art={art} />
     </Pressable>
-  );
-});
-
-/** Props for a story heading. */
-type GroupHeadingProps = {
-  /** The story's name, like "Creation and the Fall". */
-  name: string;
-  /** How many of this constellation's lessons tell it. */
-  count: number;
-  /** The constellation's color. */
-  color: string;
-};
-
-/** The heading above a story's lessons: its name and how many lessons it has. */
-export const GroupHeading = memo(function GroupHeading({ name, count, color }: GroupHeadingProps) {
-  return (
-    <View style={styles.group}>
-      <View style={[styles.groupBar, { backgroundColor: color }]} />
-      <Text style={styles.groupName} numberOfLines={2}>
-        {name}
-        <Text style={styles.groupCount}>{`  ·  ${count} ${count === 1 ? 'lesson' : 'lessons'}`}</Text>
-      </Text>
-    </View>
   );
 });
 
@@ -107,7 +119,7 @@ const styles = StyleSheet.create({
     paddingTop: 18,
     paddingHorizontal: 18,
     paddingBottom: 16,
-    backgroundColor: 'rgba(16,15,44,0.55)',
+    backgroundColor: shelfColors.back,
   },
   pressed: { transform: [{ scale: 0.98 }] },
   ref: { fontFamily: fonts.extraBold, fontSize: 13, letterSpacing: 0.4, marginRight: 36 },
@@ -116,10 +128,6 @@ const styles = StyleSheet.create({
   dots: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 12, alignItems: 'center' },
   dot: { width: DOT, height: DOT },
   dim: { opacity: 0.8 },
-  done: { position: 'absolute', right: 14, top: 14, width: 30, height: 30, borderRadius: 15, alignItems: 'center', justifyContent: 'center' },
-  doneMark: { fontFamily: fonts.black, fontSize: 16, color: navy },
-  group: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 10, marginBottom: 12, paddingHorizontal: 4 },
-  groupBar: { width: 4, alignSelf: 'stretch', borderRadius: 2 },
-  groupName: { flex: 1, fontFamily: fonts.black, fontSize: 16, color: text.onDark },
-  groupCount: { fontFamily: fonts.bold, fontSize: 14, color: text.onDarkSoft },
+  done: { position: 'absolute', zIndex: 1, alignItems: 'center', justifyContent: 'center' },
+  doneMark: { fontFamily: fonts.black, color: navy },
 });

@@ -13,6 +13,8 @@ export const radius = {
   dockButton: 18,
   /** List cards. */
   card: 24,
+  /** A constellation's book tiles. */
+  tile: 18,
   /** The dock and bottom sheets. */
   sheet: 26,
   /** The Star Map card. */

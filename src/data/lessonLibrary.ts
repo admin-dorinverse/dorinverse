@@ -1,10 +1,9 @@
 // The lessons' data work that needs no screen: which kind of lesson each constellation holds, readable references,
-// the verse labels a stop covers, the lesson list's rows with story-group headings, and splitting a card's words so
-// explained words and sayings can be tapped. Plain functions, so the same code can be timed outside the app.
+// the verse labels a stop covers, and splitting a card's words so explained words and sayings can be tapped. Plain functions, so the same code can be timed outside the app.
 
 import { BIBLE_OUTLINE } from '@/data/bibleOutline';
 import type { VerseRef } from '@/types/bible';
-import type { CardIdiom, CardWord, CollectTarget, LessonOutline, LessonType } from '@/types/lesson';
+import type { CardIdiom, CardWord, CollectTarget, LessonType } from '@/types/lesson';
 
 /** The kind of lesson each constellation in the sky holds, by constellation id. */
 export const LESSON_TYPE_OF: Readonly<Record<string, LessonType>> = {
@@ -69,29 +68,6 @@ export function stopVerseRefs(first: VerseRef, last: VerseRef): VerseRef[] {
     }
   }
   return refs;
-}
-
-/** One line of a lesson list: a story-group heading, or a lesson. */
-export type LessonRow = { kind: 'group'; key: string; name: string; count: number } | { kind: 'lesson'; key: string; lesson: LessonOutline };
-
-/**
- * The list rows for one kind of lesson, in Bible order. Lessons of the same story sit together under a heading
- * that says how many lessons the story has here. Done once per list, never while scrolling.
- */
-export function lessonRows(outlines: readonly LessonOutline[], type: LessonType): LessonRow[] {
-  const lessons = outlines.filter((l) => l.type === type);
-  const sizes = new Map<string, number>();
-  for (const l of lessons) if (l.storyGroup) sizes.set(l.storyGroup, (sizes.get(l.storyGroup) ?? 0) + 1);
-  const rows: LessonRow[] = [];
-  let group: string | null = null;
-  for (const lesson of lessons) {
-    if (lesson.storyGroup && lesson.storyGroup !== group) {
-      rows.push({ kind: 'group', key: `group-${lesson.id}`, name: lesson.storyGroup, count: sizes.get(lesson.storyGroup) ?? 1 });
-    }
-    group = lesson.storyGroup;
-    rows.push({ kind: 'lesson', key: String(lesson.id), lesson });
-  }
-  return rows;
 }
 
 /** A piece of a card's words: plain, or an explained word or saying (by its place in the card's lists). */

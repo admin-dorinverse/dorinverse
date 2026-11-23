@@ -1,5 +1,5 @@
 // Times the lessons' data path with the app's own code: the outline on a first launch (empty phone) and a second
-// (must make 0 requests), each constellation's list rows, a varied set of lesson downloads (size, time, requests) and
+// (must make 0 requests), each constellation's books and story cards, a varied set of lesson downloads (size, time, requests) and
 // their second open (must make 0), checking answers, and baking a stop: the revealed verses and a collected cookie
 // must reach the Bible and Characters with one round of downloads, and nothing again after that.
 // Run from the repo root: node --import ./scripts/app/ts-alias.mjs scripts/app/time-lessons.mjs
@@ -23,7 +23,8 @@ const kb = (n) => `${Math.round(n / 1024)} KB`;
 const ms = (t) => `${Math.round(performance.now() - t)} ms`;
 
 const { syncOutline, syncLesson } = await import('@/data/lessonSync');
-const { lessonRows, LESSON_TYPE_OF, markText, stopVerseRefs } = await import('@/data/lessonLibrary');
+const { LESSON_TYPE_OF, markText, stopVerseRefs } = await import('@/data/lessonLibrary');
+const { lessonBooks } = await import('@/data/lessonBooks');
 const { checkAnswer } = await import('@/data/lessonSource');
 const progress = await import('@/data/progressSource');
 const { syncBible } = await import('@/data/bibleSync');
@@ -40,12 +41,13 @@ for (const label of ['1st launch (empty phone)', '2nd launch (phone has it)']) {
 }
 const outline = phone.outline;
 
-// 2. Each constellation's list rows.
+// 2. Each constellation's books and story cards.
 for (const [id, type] of Object.entries(LESSON_TYPE_OF)) {
   const t = performance.now();
-  const rows = lessonRows(outline, type);
-  const groups = rows.filter((r) => r.kind === 'group').length;
-  console.log(`list ${id} (${type}): ${rows.length - groups} lessons, ${groups} story headings, rows made in ${(performance.now() - t).toFixed(2)} ms`);
+  const books = lessonBooks(outline, type);
+  const lessons = books.reduce((n, b) => n + b.lessons.length, 0);
+  const cards = books.reduce((n, b) => n + b.items.length, 0);
+  console.log(`list ${id} (${type}): ${lessons} lessons in ${books.length} books, ${cards} cards, made in ${(performance.now() - t).toFixed(2)} ms`);
 }
 
 // 3. A varied set of lessons: the first and a middle one of each kind, plus Judges 3 and the longest by stops.
