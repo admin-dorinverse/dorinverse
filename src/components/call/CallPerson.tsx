@@ -1,14 +1,16 @@
 // People on the call, as in the call mockups: a round avatar with their initials in their own color, a gold ring
 // and a sound-bars badge while they talk, a crossed-out mic badge while muted, and their name underneath. The grid
-// uses the big size; the rows on the asking and answering screens use the small one.
+// uses the big size; the rows on the asking and answering screens use the small one. Tapping someone signed in
+// on the app opens their friend page (see friendTap.ts).
 
 import { useIsMuted, useIsSpeaking } from './livekit';
 import { Track, type Participant } from 'livekit-client';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { call } from '@/theme/callColors';
 import { text } from '@/theme/colors';
 import { fonts } from '@/theme/text';
 import { MicIcon } from './CallIcons';
+import { useFriendTap } from './friendTap';
 
 /** Up to two letters from a name: "Aunt Lisa" is "AL", "Mia" is "MI". */
 export function initialsOf(name: string): string {
@@ -71,20 +73,27 @@ type CallPersonProps = {
   size?: number;
 };
 
-/** One person's avatar and name, lit up while they talk. */
+/** One person's avatar and name, lit up while they talk. Tapping a signed-in person opens their friend page. */
 export function CallPerson({ person, label, tag, size = 84 }: CallPersonProps) {
   const talking = useIsSpeaking(person);
   const muted = useIsMuted({ participant: person, source: Track.Source.Microphone });
   const name = person.name || 'Guest';
   const small = size < 60;
+  const openFriend = useFriendTap(person);
   return (
-    <View style={[styles.cell, small ? styles.smallCell : styles.gridCell]}>
+    <Pressable
+      disabled={!openFriend}
+      onPress={openFriend ?? undefined}
+      accessibilityRole={openFriend ? 'button' : undefined}
+      accessibilityLabel={openFriend ? `Open ${name}'s friend page` : undefined}
+      style={[styles.cell, small ? styles.smallCell : styles.gridCell]}
+    >
       <CallAvatar name={name} size={size} talking={talking} muted={muted} />
       <Text style={[styles.name, small && styles.smallName]} numberOfLines={1}>
         {label ?? name}
       </Text>
       {!small && (tag || talking) && <Text style={styles.tag}>{talking ? 'TALKING' : tag}</Text>}
-    </View>
+    </Pressable>
   );
 }
 

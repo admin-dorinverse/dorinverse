@@ -1,16 +1,18 @@
 // The "Everyone" sheet, opened from the "+3 Everyone" circle: everyone on the call in a list, each with their
 // avatar (gold ring while they talk, the crossed-out mic while muted), their name and a HOST tag for the host.
-// The list draws only the rows on screen, so a full call stays smooth.
+// The list draws only the rows on screen, so a full call stays smooth. Tapping someone signed in on the app opens
+// their friend page.
 
 import type { Participant } from 'livekit-client';
 import { Track } from 'livekit-client';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 import { GlassSheet } from '@/components/common/GlassSheet';
 import { call } from '@/theme/callColors';
 import { text } from '@/theme/colors';
 import { fonts } from '@/theme/text';
 import { HOST_PREFIX } from '@/types/call';
 import { CallAvatar } from './CallPerson';
+import { useFriendTap } from './friendTap';
 import { useIsMuted, useIsSpeaking } from './livekit';
 
 /** One row's height, so the list can skip measuring. */
@@ -35,7 +37,7 @@ export function EveryoneSheet({ open, onClose, people, me }: EveryoneSheetProps)
       <FlatList
         data={people}
         keyExtractor={(p) => p.identity}
-        renderItem={({ item }) => <PersonLine person={item} you={item.identity === me} />}
+        renderItem={({ item }) => <PersonLine person={item} you={item.identity === me} onLeave={onClose} />}
         getItemLayout={(_, index) => ({ length: ROW_HEIGHT, offset: ROW_HEIGHT * index, index })}
         style={styles.list}
         initialNumToRender={10}
@@ -51,16 +53,28 @@ type PersonLineProps = {
   person: Participant;
   /** True for the person holding this phone. */
   you: boolean;
+  /** Closes the sheet just before their friend page opens. */
+  onLeave: () => void;
 };
 
-/** One person: avatar, name, and whether they're talking or muted. */
-function PersonLine({ person, you }: PersonLineProps) {
+/** One person: avatar, name, and whether they're talking or muted. Tapping someone signed in opens their friend page. */
+function PersonLine({ person, you, onLeave }: PersonLineProps) {
   const talking = useIsSpeaking(person);
   const muted = useIsMuted({ participant: person, source: Track.Source.Microphone });
   const name = person.name || 'Guest';
   const host = person.identity.startsWith(HOST_PREFIX);
+  const openFriend = useFriendTap(person);
   return (
-    <View style={styles.row}>
+    <Pressable
+      disabled={!openFriend}
+      onPress={() => {
+        onLeave();
+        openFriend?.();
+      }}
+      accessibilityRole={openFriend ? 'button' : undefined}
+      accessibilityLabel={openFriend ? `Open ${name}'s friend page` : undefined}
+      style={styles.row}
+    >
       <CallAvatar name={name} size={44} talking={talking} muted={muted} />
       <View style={styles.words}>
         <Text style={styles.name} numberOfLines={1}>
@@ -69,7 +83,7 @@ function PersonLine({ person, you }: PersonLineProps) {
         {(talking || muted) && <Text style={styles.state}>{talking ? 'Talking' : 'Muted'}</Text>}
       </View>
       {host && <Text style={styles.host}>HOST</Text>}
-    </View>
+    </Pressable>
   );
 }
 

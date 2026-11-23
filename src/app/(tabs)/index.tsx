@@ -12,6 +12,7 @@ import { MapButton } from '@/components/sky/MapButton';
 import { useSky, type SkyDestination } from '@/components/sky/SkyProvider';
 import { SkyTouchLayer } from '@/components/sky/SkyTouchLayer';
 import { StarMapPanel } from '@/components/sky/StarMapPanel';
+import { refreshFriendNews } from '@/data/queries/friends';
 
 /** The Sky page. */
 export default function SkyPage() {
@@ -23,6 +24,8 @@ export default function SkyPage() {
   useFocusEffect(
     useCallback(() => {
       setAtHome(true);
+      // Checks for new friends news for the bell's dot (at most once a minute).
+      void refreshFriendNews();
       setArrivalHandler((d: SkyDestination) => {
         // The route list names the bakery "/bakery/index"; its real address is "/bakery".
         if (d.kind === 'bakery') router.push('/bakery' as Href);

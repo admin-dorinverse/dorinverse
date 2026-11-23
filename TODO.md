@@ -92,6 +92,11 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
     nothing else. Decided 2026-11-21: shown chapters show all verses; no Opus fast mode; explain-it and the winner cheer on (approved wording); host can end the get-together. Later: app links (https opens the app; needs a build), the hosted web address instead of the dev
     tunnel, app avatars once there's sign-in, moving Papa Dorin to LiveKit Cloud, and the hookup checks (sign-in,
     subscriber host, counting get-togethers).
+  - **Stay on the call while the app is in the background (Android).** Today, leaving the app to send the invite
+    link drops the person off the call ("error reading from signal stream", then "received leave request while
+    trying to reconnect"). LiveKit's guide says Android needs a foreground service (the "call in progress" notice) to
+    stay connected; their example uses `@supersami/rn-foreground-service`. It needs a new Android development build,
+    so check the build cost and get the owner's go first. (Asked 2026-11-22.)
   - Research done (2026-11-21), from LiveKit's docs:
     - App packages: `livekit-client`, `@livekit/react-native`, `@livekit/react-native-expo-plugin`,
       `@livekit/react-native-webrtc`, `@config-plugins/react-native-webrtc`; needs a development build, not Expo Go.
@@ -144,6 +149,18 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
   privacy policy and logo on Google's Branding page, then Publish app (Google may review it first). **Apple sign-in:** waits for the Apple Developer account (after the LLC). (2026-11-22.)
 - **After sign-in, the one restore download** that refills a new phone with everything earned (see the Bible data
   plan). Not built yet.
+
+## Friends
+
+- **Needs the next development build (do these together):**
+  - **Save the friend card to Photos**, like Duolingo's Save: Skia turns the card into a picture and Expo's
+    `expo-media-library` saves it. (Asked 2026-11-23.)
+  - **Friend links and QR codes open the app straight away** (Android App Links / iPhone Universal Links on the real web
+    address, likely dorinverse.com), instead of the web page with "Open in the Dorinverse app". The web page's button
+    doesn't open the app on the owner's Android today. Voice call invites need the same.
+- **Phone notifications** when a friend request comes in (expo-notifications; needs a build and, for iPhone, the Apple
+  account). Wait for the owner's go.
+- **A friend's universe** shows only joined date, streak and friend count until lesson progress lives on the server.
 
 ## Places map (MapLibre + MapTiler)
 

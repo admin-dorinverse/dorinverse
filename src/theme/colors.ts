@@ -275,3 +275,11 @@ export const starMap = {
   /** Edge of the small round map button. */
   miniEdge: '#0a0b26',
 } as const;
+
+/** A QR code's colors: the app's deep navy squares on white, the strong contrast phone cameras need to read it. */
+export const qr = {
+  /** The dark squares. */
+  dark: '#1a1c45',
+  /** The light background and the quiet border around the code. */
+  light: '#ffffff',
+} as const;

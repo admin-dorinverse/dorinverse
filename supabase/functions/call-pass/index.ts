@@ -6,11 +6,15 @@
 //
 // The host's identity starts with "host-" and a guest's with "guest-". Identities can't be changed on the call, so
 // Papa Dorin's program trusts that start to know who may run the verse, lesson and trivia.
+// A person signed in on the app also gets their friend code on the end ("guest-1a2b3c4d-AbCdEf1234"), so tapping
+// them on the call opens their friend page. It sits in the identity because people can change their own name,
+// metadata and attributes on the call (the lesson picks need that), but never their identity.
 //
 // Test only: anyone with the app can start a call. Hookup: require sign-in, check the host is a subscriber, and
-// count get-togethers on the server.
+// count voice calls on the server.
 
 import { AccessToken, AgentDispatchClient, RoomServiceClient, TokenVerifier, TrackSource } from 'npm:livekit-server-sdk@2.20.1';
+import { friendCodeFrom } from './friendCode.ts';
 
 /** Papa Dorin's agent name, as set in scripts/app/papa-dorin-call/agent.mjs. */
 const PAPA_DORIN = 'papa-dorin';
@@ -77,10 +81,11 @@ function randomCallName(): string {
 /**
  * Makes a pass for one person to join one call, talking with their microphone only. They may set their own
  * attributes (the host's "what's on screen", everyone's lesson pick), but their identity, and so who is host, is fixed.
+ * A signed-in person's `friendCode` goes on the end of their identity.
  */
-async function passFor(room: string, name: string, role: 'host' | 'guest'): Promise<{ url: string; token: string }> {
+async function passFor(room: string, name: string, role: 'host' | 'guest', friendCode: string | null): Promise<{ url: string; token: string }> {
   const at = new AccessToken(secret('LIVEKIT_API_KEY'), secret('LIVEKIT_API_SECRET'), {
-    identity: `${role}-${randomTag()}`,
+    identity: `${role}-${randomTag()}${friendCode ? `-${friendCode}` : ''}`,
     name,
     ttl: PASS_TTL,
   });
@@ -97,17 +102,17 @@ async function passFor(room: string, name: string, role: 'host' | 'guest'): Prom
 }
 
 /** Starts a new call with this person as host: makes the room, then their pass. */
-async function startCall(name: string): Promise<Response> {
+async function startCall(name: string, friendCode: string | null): Promise<Response> {
   const room = randomCallName();
   await rooms().createRoom({ name: room, emptyTimeout: EMPTY_KEEP_SECONDS, departureTimeout: EMPTY_KEEP_SECONDS, maxParticipants: MOST_PEOPLE });
-  return reply(200, { room, ...(await passFor(room, name, 'host')) });
+  return reply(200, { room, ...(await passFor(room, name, 'host', friendCode)) });
 }
 
 /** Joins an existing call as a guest; a call that has ended (or never started) can't be joined. */
-async function joinCall(room: string, name: string): Promise<Response> {
+async function joinCall(room: string, name: string, friendCode: string | null): Promise<Response> {
   const open = await rooms().listRooms([room]);
   if (open.length === 0) return reply(404, { error: 'This call has ended.' });
-  return reply(200, { room, ...(await passFor(room, name, 'guest')) });
+  return reply(200, { room, ...(await passFor(room, name, 'guest', friendCode)) });
 }
 
 /** The names of the people already on the call (not Papa Dorin), for the joining screen. */
@@ -140,7 +145,7 @@ async function hostFrom(room: string, token: unknown): Promise<string | null> {
 /** The answer when someone other than the host asks for a host-only action. */
 const ONLY_HOST = () => reply(403, { error: 'Only the host can do that.' });
 
-/** The host's "End the get-together": closes the call for everyone (Papa Dorin leaves with it). */
+/** The host's "End the voice call": closes the call for everyone (Papa Dorin leaves with it). */
 async function endCall(room: string, token: unknown): Promise<Response> {
   if (!(await hostFrom(room, token))) return ONLY_HOST();
   await rooms().deleteRoom(room);
@@ -177,10 +182,10 @@ Deno.serve(async (req) => {
   const name = nameFrom(body.name);
   const badName = name.length < 1 || name.length > NAME_MAX ? reply(400, { error: `A name is 1 to ${NAME_MAX} letters.` }) : null;
   try {
-    if (body.action === 'start') return badName ?? (await startCall(name));
+    if (body.action === 'start') return badName ?? (await startCall(name, await friendCodeFrom(req)));
     const room = typeof body.room === 'string' ? body.room : '';
     if (!CALL_ROOM.test(room)) return reply(400, { error: 'That call link is not right.' });
-    if (body.action === 'join') return badName ?? (await joinCall(room, name));
+    if (body.action === 'join') return badName ?? (await joinCall(room, name, await friendCodeFrom(req)));
     if (body.action === 'wake') return await wakePapaDorin(room);
     if (body.action === 'who') return await whoIsHere(room);
     if (body.action === 'quiet') return await quietEveryone(room, body.token);

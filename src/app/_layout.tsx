@@ -15,11 +15,13 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useEffect, useMemo } from 'react';
 import { StyleSheet } from 'react-native';
 import { QueryClientProvider } from '@tanstack/react-query';
+import { OpenWaitingFriendLink } from '@/components/sign-in/OpenWaitingFriendLink';
 import { SkyProvider } from '@/components/sky/SkyProvider';
 import { startAccount, useAccount } from '@/data/account';
 import { startBibleLoad } from '@/data/queries/bible';
 import { startCharactersLoad } from '@/data/queries/characters';
 import { startCookiesLoad } from '@/data/queries/cookies';
+import { startFriendNews } from '@/data/queries/friends';
 import { startLessonsLoad } from '@/data/queries/lessons';
 import { startPlacesLoad } from '@/data/queries/places';
 import { startProgressLoad } from '@/data/queries/progress';
@@ -65,26 +67,30 @@ function useAppPages(): string[] {
 /**
  * The sign-in gate and the page stack. Each group of pages shows only at its step; opening one at the wrong step
  * goes to the right page instead. This is the one place to change if a welcome demo comes before signing in.
+ * A friend link opened before the person is ready opens once they reach the sky (OpenWaitingFriendLink).
  */
 function AccountGate() {
   const { step } = useAccount();
   const appPages = useAppPages();
   return (
-    <Stack screenOptions={{ headerShown: false, contentStyle: styles.page }}>
-      <Stack.Protected guard={step === 'signedOut'} redirectTo={step === 'needsUsername' ? PICK_USERNAME : '/'}>
-        {SIGN_IN_PAGES.map((name) => (
-          <Stack.Screen key={name} name={name} />
-        ))}
-      </Stack.Protected>
-      <Stack.Protected guard={step === 'needsUsername'} redirectTo={step === 'signedOut' ? SIGN_IN : '/'}>
-        <Stack.Screen name={USERNAME_PAGE} />
-      </Stack.Protected>
-      <Stack.Protected guard={step === 'ready'} redirectTo={step === 'signedOut' ? SIGN_IN : PICK_USERNAME}>
-        {appPages.map((name) => (
-          <Stack.Screen key={name} name={name} />
-        ))}
-      </Stack.Protected>
-    </Stack>
+    <>
+      <OpenWaitingFriendLink step={step} />
+      <Stack screenOptions={{ headerShown: false, contentStyle: styles.page }}>
+        <Stack.Protected guard={step === 'signedOut'} redirectTo={step === 'needsUsername' ? PICK_USERNAME : '/'}>
+          {SIGN_IN_PAGES.map((name) => (
+            <Stack.Screen key={name} name={name} />
+          ))}
+        </Stack.Protected>
+        <Stack.Protected guard={step === 'needsUsername'} redirectTo={step === 'signedOut' ? SIGN_IN : '/'}>
+          <Stack.Screen name={USERNAME_PAGE} />
+        </Stack.Protected>
+        <Stack.Protected guard={step === 'ready'} redirectTo={step === 'signedOut' ? SIGN_IN : PICK_USERNAME}>
+          {appPages.map((name) => (
+            <Stack.Screen key={name} name={name} />
+          ))}
+        </Stack.Protected>
+      </Stack>
+    </>
   );
 }
 
@@ -106,6 +112,7 @@ export default function RootLayout() {
     startCharactersLoad();
     startCookiesLoad();
     startPlacesLoad();
+    startFriendNews();
   }, []);
   if (!fontsLoaded || step === 'loading') return null;
   return (
