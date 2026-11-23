@@ -45,10 +45,13 @@ export function useShelf() {
   return { router, constellation, books, baked, art, look, openLesson };
 }
 
-/** The "Up next" row for these lessons, or nothing when every one is done. */
-function upNextRows(lessons: readonly LessonOutline[], baked: BakedStops): { kind: 'upNext'; key: string; next: UpNext; lessonIds: LessonId[] }[] {
+/**
+ * The "Up next" row for these lessons, or nothing when every one is done. With `startedOnly`, it shows only for a
+ * lesson already partly baked: subscribers can open any lesson, so a book they haven't begun needs no "Start" card.
+ */
+function upNextRows(lessons: readonly LessonOutline[], baked: BakedStops, startedOnly = false): { kind: 'upNext'; key: string; next: UpNext; lessonIds: LessonId[] }[] {
   const next = upNextIn(lessons, baked);
-  return next ? [{ kind: 'upNext', key: 'up-next', next, lessonIds: [next.lesson.id] }] : [];
+  return next && (next.started || !startedOnly) ? [{ kind: 'upNext', key: 'up-next', next, lessonIds: [next.lesson.id] }] : [];
 }
 
 /** The constellation page's rows: "Up next", then each testament's heading and its books two to a row. */
@@ -66,7 +69,7 @@ export function useBooksRows(books: readonly LessonBook[] | undefined, baked: Ba
   return useMemo(() => [...upNextRows(lessons, baked), ...tiles], [lessons, baked, tiles]);
 }
 
-/** A book page's rows: "Up next" within the book, then its cards. A story card gets its next lesson ready. */
+/** A book page's rows: "Up next" when a lesson in the book is partly baked, then its cards. A story card gets its next lesson ready. */
 export function useShelfRows(book: LessonBook | undefined, baked: BakedStops): ShelfRow[] {
   return useMemo(() => {
     if (!book) return [];
@@ -74,7 +77,7 @@ export function useShelfRows(book: LessonBook | undefined, baked: BakedStops): S
       const ready = item.kind === 'story' ? upNextIn(item.lessons, baked)?.lesson : item.lesson;
       return { kind: 'item', key: item.key, item, lessonIds: ready ? [ready.id] : [] };
     });
-    return [...upNextRows(book.lessons, baked), ...cards];
+    return [...upNextRows(book.lessons, baked, true), ...cards];
   }, [book, baked]);
 }
 
