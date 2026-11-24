@@ -5,6 +5,7 @@ import { useRouter, type Href } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { BadgeMedal } from '@/components/common/BadgeMedal';
 import { playSound } from '@/components/common/sounds';
+import { medalMark } from '@/data/badgeList';
 import { useBadges } from '@/data/queries/badges';
 import { badgeSizes } from '@/theme/badgeColors';
 import { text } from '@/theme/colors';
@@ -34,7 +35,14 @@ export function BadgeShelf() {
       </View>
       <View style={styles.row}>
         {first.map((b) => (
-          <BadgeMedal key={b.id} art={b.art} earned={b.earned} size={badgeSizes.previewMedal} artSize={badgeSizes.previewArt} />
+          <BadgeMedal
+            key={b.id}
+            art={b.art}
+            earned={b.level > 0}
+            mark={medalMark(b, b.level)}
+            size={badgeSizes.previewMedal}
+            artSize={badgeSizes.previewArt}
+          />
         ))}
       </View>
     </Pressable>

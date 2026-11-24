@@ -4,6 +4,7 @@ import { memo } from 'react';
 import { Pressable, StyleSheet, Text } from 'react-native';
 import { BadgeMedal } from '@/components/common/BadgeMedal';
 import { playSound } from '@/components/common/sounds';
+import { medalMark } from '@/data/badgeList';
 import { badgeColors, badgeSizes } from '@/theme/badgeColors';
 import { text } from '@/theme/colors';
 import { fonts } from '@/theme/text';
@@ -22,15 +23,15 @@ export const BadgeTile = memo(function BadgeTile({ badge, onOpen }: BadgeTilePro
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${badge.name}. ${badge.earned ? 'Earned' : 'Not earned yet'}`}
+      accessibilityLabel={`${badge.name}. ${badge.level > 0 ? `Level ${badge.level} of ${badge.levels.length}` : 'Not earned yet'}`}
       onPress={() => {
         playSound('tap');
         onOpen(badge);
       }}
       style={({ pressed }) => [styles.tile, pressed && styles.pressed]}
     >
-      <BadgeMedal art={badge.art} earned={badge.earned} size={badgeSizes.gridMedal} artSize={badgeSizes.gridArt} />
-      <Text style={[styles.name, !badge.earned && styles.lockedName]} numberOfLines={2}>
+      <BadgeMedal art={badge.art} earned={badge.level > 0} mark={medalMark(badge, badge.level)} size={badgeSizes.gridMedal} artSize={badgeSizes.gridArt} />
+      <Text style={[styles.name, badge.level === 0 && styles.lockedName]} numberOfLines={2}>
         {badge.name}
       </Text>
     </Pressable>

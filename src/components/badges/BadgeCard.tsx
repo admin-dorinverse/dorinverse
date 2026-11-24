@@ -2,6 +2,7 @@
 
 import { StyleSheet, View } from 'react-native';
 import { GlassSheet } from '@/components/common/GlassSheet';
+import { medalMark } from '@/data/badgeList';
 import { badgeSizes } from '@/theme/badgeColors';
 import type { ShownBadge } from '@/types/badges';
 import { BadgeMedal } from '@/components/common/BadgeMedal';
@@ -20,7 +21,7 @@ export function BadgeCard({ badge, onClose }: BadgeCardProps) {
     <GlassSheet open={badge != null} onClose={onClose} title={badge?.name ?? ''}>
       {badge && (
         <View style={styles.body}>
-          <BadgeMedal art={badge.art} earned={badge.earned} size={badgeSizes.bigMedal} artSize={badgeSizes.bigArt} />
+          <BadgeMedal art={badge.art} earned={badge.level > 0} mark={medalMark(badge, badge.level)} size={badgeSizes.bigMedal} artSize={badgeSizes.bigArt} />
         </View>
       )}
     </GlassSheet>

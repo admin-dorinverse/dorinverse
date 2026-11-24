@@ -1,5 +1,5 @@
-// The reward pop-up, like Duolingo's: a newly earned badge's medal grows in over a dark veil, with its name and a
-// Continue button. RewardHost shows one at a time, only once an activity is over.
+// The reward pop-up, like Duolingo's: a newly earned or leveled-up badge's medal grows in over a dark veil, with its
+// name and a Continue button. RewardHost shows one at a time, only once an activity is over.
 
 import { useEffect } from 'react';
 import { Modal, StyleSheet, Text, View } from 'react-native';
@@ -7,6 +7,7 @@ import Animated, { Easing, FadeIn, ZoomIn } from 'react-native-reanimated';
 import { AuthButton } from '@/components/common/AuthButton';
 import { BadgeMedal } from '@/components/common/BadgeMedal';
 import { playSound } from '@/components/common/sounds';
+import { medalMark } from '@/data/badgeList';
 import type { Reward } from '@/data/queries/rewards';
 import { badgeColors, badgeSizes } from '@/theme/badgeColors';
 import { navy, text } from '@/theme/colors';
@@ -28,17 +29,18 @@ type RewardPopupProps = {
 
 /** One reward, full screen. */
 export function RewardPopup({ reward, onContinue }: RewardPopupProps) {
-  const { badge } = reward;
-  useEffect(() => playSound('reveal'), [badge.id]);
+  const { badge, level } = reward;
+  const key = `${badge.id}-${level}`;
+  useEffect(() => playSound('reveal'), [key]);
   return (
     <Modal visible transparent animationType="fade" onRequestClose={onContinue} statusBarTranslucent>
       <View style={styles.veil}>
         <View style={styles.middle}>
-          <Animated.View key={badge.id} entering={MEDAL_IN}>
-            <BadgeMedal art={badge.art} earned size={badgeSizes.rewardMedal} artSize={badgeSizes.rewardArt} />
+          <Animated.View key={key} entering={MEDAL_IN}>
+            <BadgeMedal art={badge.art} earned mark={medalMark(badge, level)} size={badgeSizes.rewardMedal} artSize={badgeSizes.rewardArt} />
           </Animated.View>
-          <Animated.View key={`${badge.id}-words`} entering={WORDS_IN} style={styles.words}>
-            <Text style={styles.tag}>NEW BADGE</Text>
+          <Animated.View key={`${key}-words`} entering={WORDS_IN} style={styles.words}>
+            <Text style={styles.tag}>{level === 1 ? 'NEW BADGE' : 'LEVEL UP'}</Text>
             <Text style={styles.name}>{badge.name}</Text>
           </Animated.View>
         </View>

@@ -13,6 +13,9 @@ export const badgeColors = {
   lockedArtOpacity: 0.28,
   /** A not-earned badge's name. */
   lockedName: 'rgba(255,255,255,0.5)',
+  /** The level number on an earned medal, and the dark edge that keeps it readable. */
+  markInk: '#fff4d6',
+  markShadow: 'rgba(90,58,34,0.9)',
   /** The dark veil behind the reward pop-up. */
   popupDim: 'rgba(5,6,20,0.86)',
 } as const;
@@ -35,6 +38,9 @@ export const badgeSizes = {
   rewardMedal: 150,
   /** The emoji inside the reward pop-up's medal. */
   rewardArt: 72,
+  /** The level number's size, and how far it hangs below the medal, as shares of the medal's width. */
+  markDrop: 0.08,
+  markShare: 0.26,
   /** The rim's width. */
   rim: 2,
 } as const;
