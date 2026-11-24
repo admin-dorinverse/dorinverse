@@ -1,4 +1,4 @@
-// One badge on the Badges page: its medal with its name under it, faded when not earned yet. Tapping it opens its card.
+// One badge on the Badges page: its medal with its name under it, faded when not earned yet. Tapping it opens its page.
 
 import { memo } from 'react';
 import { Pressable, StyleSheet, Text } from 'react-native';
@@ -14,7 +14,7 @@ import type { ShownBadge } from '@/types/badges';
 type BadgeTileProps = {
   /** The badge. */
   badge: ShownBadge;
-  /** Opens its card. */
+  /** Opens its page. */
   onOpen: (badge: ShownBadge) => void;
 };
 

@@ -19,13 +19,13 @@ export const CONSTELLATIONS: readonly ConstellationLevel[] = [
 ];
 
 /** Makes one level. */
-function level(id: string, mark: string, howToEarn: string): BadgeLevel {
-  return { id, mark, howToEarn };
+function level(id: string, mark: string, deed: string): BadgeLevel {
+  return { id, mark, deed };
 }
 
 /** Makes a one-time badge: one level, sharing the badge's id. */
-function once(id: string, name: string, art: string, howToEarn: string): Badge {
-  return { id, name, art, levels: [level(id, '', howToEarn)] };
+function once(id: string, name: string, art: string, deed: string): Badge {
+  return { id, name, art, levels: [level(id, '', deed)] };
 }
 
 /** Every badge, in the order shown. */
@@ -35,59 +35,62 @@ export const BADGES: readonly Badge[] = [
     name: 'Baker',
     art: '🍪',
     levels: [
-      level('first-batch', '1', 'Finish your first lesson.'),
-      level('bakers-dozen', '13', 'Finish 13 lessons.'),
-      level('front-to-back', 'All', 'Finish every lesson in the Bible.'),
+      level('first-batch', '1', 'finishing your first lesson'),
+      level('bakers-dozen', '13', 'finishing 13 lessons'),
+      level('front-to-back', 'All', 'finishing every lesson in the Bible'),
     ],
   },
   {
     id: 'streak',
     name: 'Streak',
     art: '🔥',
-    levels: [3, 7, 30, 100, 365].map((days) => level(`streak-${days}`, String(days), `Keep a ${days}-day streak.`)),
+    levels: [3, 7, 30, 100, 365].map((days) => level(`streak-${days}`, String(days), `keeping a ${days}-day streak`)),
   },
   {
     id: 'stargazer',
     name: 'Stargazer',
     art: '✨',
     anyOrder: true,
-    levels: CONSTELLATIONS.map((k) => level(k.id, '', `Finish a lesson in the ${k.name} constellation.`)),
+    // Each level counts constellations, in any order, so its words count them too.
+    levels: CONSTELLATIONS.map((k, i) =>
+      level(k.id, '', i === CONSTELLATIONS.length - 1 ? 'finishing a lesson in all six constellations' : `finishing a lesson in ${i === 0 ? 'a constellation' : `${i + 1} constellations`}`),
+    ),
   },
   {
     id: 'meet-the-family',
     name: 'Meet the Family',
     art: '👪',
     levels: [
-      ...[10, 50, 100].map((n) => level(`people-${n}`, String(n), `Meet ${n} Bible people.`)),
-      level('people-all', 'All', 'Meet every Bible person in the lessons.'),
+      ...[10, 50, 100].map((n) => level(`people-${n}`, String(n), `meeting ${n} Bible people`)),
+      level('people-all', 'All', 'meeting every Bible person in the lessons'),
     ],
   },
-  { id: 'traveler', name: 'Traveler', art: '🧭', levels: [10, 50].map((n) => level(`places-${n}`, String(n), `Visit ${n} places.`)) },
+  { id: 'traveler', name: 'Traveler', art: '🧭', levels: [10, 50].map((n) => level(`places-${n}`, String(n), `visiting ${n} places`)) },
   {
     id: 'prophecy-hunter',
     name: 'Prophecy Hunter',
     art: '🔗',
-    levels: [level('prophecy-1', '1', 'Join your first prophecy link.'), level('prophecy-25', '25', 'Join 25 prophecy links.')],
+    levels: [level('prophecy-1', '1', 'joining your first prophecy link'), level('prophecy-25', '25', 'joining 25 prophecy links')],
   },
   {
     id: 'detective',
     name: 'Detective',
     art: '🕵️',
-    levels: [level('mystery-1', '1', 'Guess your first Weekly Word.'), level('mystery-10', '10', 'Guess 10 Weekly Words.')],
+    levels: [level('mystery-1', '1', 'guessing your first Weekly Word'), level('mystery-10', '10', 'guessing 10 Weekly Words')],
   },
-  once('whole-book', 'Whole Book', '📖', 'Finish every lesson in one book of the Bible.'),
-  once('old-and-new', 'Old and New', '📚', 'Finish a lesson in the Old Testament and one in the New Testament.'),
-  once('no-burnt-cookies', 'No Burnt Cookies', '⭐', 'Answer every question in a lesson right the first time.'),
-  once('back-at-it', 'Back at It', '🌅', 'Start a new streak after losing one.'),
-  once('mighty-few', 'Mighty Few', '🔎', 'Meet someone the Bible names fewer than 5 times.'),
-  once('prayers-10', 'Prayer Keeper', '🙏', 'Collect 10 prayers.'),
-  once('instructions-25', 'Instruction Follower', '🪧', 'Collect 25 instructions.'),
-  once('quick-draw', 'Quick Draw', '⚡', 'Answer a trivia question in under 3 seconds.'),
-  once('trivia-champ', 'Trivia Champ', '🥇', 'Win a family trivia game.'),
-  once('study-together', 'Study Together', '🤝', 'Finish a lesson with others on a voice call.'),
-  once('host-10', 'Host with the Most', '📞', 'Host 10 voice calls, each at least 10 minutes long with at least one other person.'),
-  once('curious-baker', 'Curious Baker', '❓', 'Ask Papa Dorin your first question.'),
-  once('guest-list', 'Guest List', '💬', 'Chat with 5 different weekly guests.'),
+  once('whole-book', 'Whole Book', '📖', 'finishing every lesson in one book of the Bible'),
+  once('old-and-new', 'Old and New', '📚', 'finishing a lesson in the Old Testament and one in the New'),
+  once('no-burnt-cookies', 'No Burnt Cookies', '⭐', 'answering every question in a lesson right the first time'),
+  once('back-at-it', 'Back at It', '🌅', 'starting a new streak after losing one'),
+  once('mighty-few', 'Mighty Few', '🔎', 'meeting someone the Bible names fewer than 5 times'),
+  once('prayers-10', 'Prayer Keeper', '🙏', 'collecting 10 prayers'),
+  once('instructions-25', 'Instruction Follower', '🪧', 'collecting 25 instructions'),
+  once('quick-draw', 'Quick Draw', '⚡', 'answering a trivia question in under 3 seconds'),
+  once('trivia-champ', 'Trivia Champ', '🥇', 'winning a family trivia game'),
+  once('study-together', 'Study Together', '🤝', 'finishing a lesson with others on a voice call'),
+  once('host-10', 'Host with the Most', '📞', 'hosting 10 voice calls, each at least 10 minutes long with at least one other person'),
+  once('curious-baker', 'Curious Baker', '❓', 'asking Papa Dorin your first question'),
+  once('guest-list', 'Guest List', '💬', 'chatting with 5 different weekly guests'),
 ];
 
 /** How many levels of a badge are reached, given the earned level ids. In order: stops at the first one missing. */
@@ -96,6 +99,11 @@ export function levelReached(badge: Badge, earned: ReadonlySet<string>): number 
   let reached = 0;
   while (reached < badge.levels.length && earned.has(badge.levels[reached].id)) reached += 1;
   return reached;
+}
+
+/** The words after "by" for a badge: its reached level's, or its first level's while not earned yet. */
+export function badgeDeed(badge: Badge, level: number): string {
+  return badge.levels[Math.max(level, 1) - 1].deed;
 }
 
 /** The number on a badge's medal: its reached level's mark, or the first level's while not earned yet. */

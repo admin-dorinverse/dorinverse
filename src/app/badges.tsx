@@ -1,11 +1,10 @@
 // The Badges page, opened from the Badges row on the Profile page: every badge as a medal with its name, three to a
-// row, earned ones first. Tapping one opens its card. It opens at once from what is on the phone.
+// row, earned ones first. Tapping one opens its own page. It opens at once from what is on the phone.
 
-import { useRouter } from 'expo-router';
-import { useCallback, useState } from 'react';
+import { useRouter, type Href } from 'expo-router';
+import { useCallback } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { BadgeCard } from '@/components/badges/BadgeCard';
 import { BadgeTile } from '@/components/badges/BadgeTile';
 import { DrillHeader } from '@/components/common/DrillHeader';
 import { StillSky } from '@/components/sky/StillSky';
@@ -18,10 +17,9 @@ export default function BadgesPage() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { badges } = useBadges();
-  const [open, setOpen] = useState<ShownBadge | null>(null);
 
-  /** Opens a badge's card. Kept the same between redraws, so the tiles don't redraw. */
-  const openBadge = useCallback((badge: ShownBadge) => setOpen(badge), []);
+  /** Opens a badge's page. Kept the same between redraws, so the tiles don't redraw. */
+  const openBadge = useCallback((badge: ShownBadge) => router.push(`/badge/${encodeURIComponent(badge.id)}` as Href), [router]);
 
   /** Draws one badge. */
   const renderBadge = useCallback(({ item }: { item: ShownBadge }) => <BadgeTile badge={item} onOpen={openBadge} />, [openBadge]);
@@ -39,7 +37,6 @@ export default function BadgesPage() {
         windowSize={7}
         contentContainerStyle={[styles.list, { paddingBottom: insets.bottom + 40 }]}
       />
-      <BadgeCard badge={open} onClose={() => setOpen(null)} />
     </View>
   );
 }

@@ -16,6 +16,8 @@ export const badgeColors = {
   /** The level number on an earned medal, and the dark edge that keeps it readable. */
   markInk: '#fff4d6',
   markShadow: 'rgba(90,58,34,0.9)',
+  /** The soft gold pill behind the day a badge was earned, on its page. */
+  dateFill: 'rgba(255,207,122,0.16)',
   /** The dark veil behind the reward pop-up. */
   popupDim: 'rgba(5,6,20,0.86)',
 } as const;
@@ -30,10 +32,11 @@ export const badgeSizes = {
   /** A medal on the Badges page, and the emoji inside it. */
   gridMedal: 88,
   gridArt: 40,
-  /** The big medal on a badge's card. */
-  bigMedal: 112,
-  /** The emoji inside the big medal. */
-  bigArt: 52,
+  /** The big medal on a badge's own page, and the emoji inside it. */
+  pageMedal: 200,
+  pageArt: 96,
+  /** The close and share pictures at the top of a badge's page. */
+  icon: 22,
   /** The medal on the reward pop-up. */
   rewardMedal: 150,
   /** The emoji inside the reward pop-up's medal. */

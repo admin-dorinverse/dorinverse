@@ -13,7 +13,7 @@ import { KITCHEN_STEPS } from '@/types/lesson';
 const CALM_PAGES = new Set(['/', '/collections', '/bible-crew', '/profile', '/badges', '/notifications']);
 
 /** Calm pages by the start of their address: lesson lists and the collections. Anything not listed is an activity. */
-const CALM_STARTS = ['/constellation/', '/characters', '/places', '/prophecy', '/prayers', '/instructions', '/connections', '/universe/'];
+const CALM_STARTS = ['/badge/', '/constellation/', '/characters', '/places', '/prophecy', '/prayers', '/instructions', '/connections', '/universe/'];
 
 /** How long to wait on a calm page before the first pop-up, so the page has finished sliding in. */
 const SETTLE_MS = 700;

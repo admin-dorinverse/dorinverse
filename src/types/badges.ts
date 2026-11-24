@@ -9,8 +9,8 @@ export type BadgeLevel = {
   id: BadgeLevelId;
   /** The number on the medal at this level, like "13" or "All". Empty for a badge with one level. */
   mark: string;
-  /** How to reach it, like "Finish 13 lessons." The server's rule for it. */
-  howToEarn: string;
+  /** What reaching it takes, to finish "You earned Baker by …", like "finishing 13 lessons". The server's rule. */
+  deed: string;
 };
 
 /** One badge the app offers. A badge with several levels is one medal that levels up, like Duolingo's. */
