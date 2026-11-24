@@ -20,6 +20,9 @@ One mystery word a week. A clue comes each day, Monday to Sunday, and the word i
 - **Each clue gives enough setting to place it in the Bible:** who, where or when. A clue that could be about almost anything is too vague.
   - ❌ "It showed up in the morning, when the dew was gone."
   - ✅ "In the wilderness, God's people found it on the ground each morning after the dew lifted."
+- **7 different facts.** Each clue tells something different about the word. Two clues can come from the same story, but no two say nearly the same thing.
+- **Known stories first.** Use the stories the word is best known for before the small details.
+- **Swap it if there's not enough.** If the Bible doesn't give 7 different facts about the word, swap it for a spare.
 - **Each clue stands on its own.** A missed clue is gone for good, so no clue can lean on an earlier one ("It also…", "After that…").
 - **Every clue comes from the BSB** and keeps its reference. The reference is shown only after the reveal.
 - **The clue never holds the word,** part of it, or a form of it ("manna" can't be in a clue, and neither can "man").

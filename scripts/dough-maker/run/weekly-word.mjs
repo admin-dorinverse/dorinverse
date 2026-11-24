@@ -5,6 +5,7 @@
 //   1. Opus writes from weekly-word.md and the BSB verses that hold the word.
 //   2. The script checks what it can count; then Opus checks the rest against the verses each clue cites.
 //   3. Opus fixes what was found, up to 2 times. The last version the script passes is used.
+// A word the Bible doesn't give 7 different facts about is swapped (the writer or fixer says so); the run lists them.
 //
 // Every stage is saved in output/weekly-word/clues/<word>/, so running it again picks up where it left off. Waits out
 // the internet and the weekly limit like the trivia run. Writes output/weekly-word/clues.json at the end.
@@ -29,6 +30,7 @@ export const DIR = path.join(OUTPUT, 'weekly-word');
 const WAIT = Number(process.env.DOUGH_WAIT_MS) || 5 * 60_000;
 const FIXES = 2;
 const MOST_VERSES = 600;   // a word in more verses than this (David, Moses) gets 600 spread evenly through the Bible
+const AROUND = 3, AROUND_UP_TO = 150;   // a word in 150 verses or fewer gets the 3 verses either side of each
 const STAGGER = 2_000;
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
@@ -40,11 +42,20 @@ const asWord = (w) => new RegExp(`(^|[^A-Za-z])${w.replace(/ /g, '\\s+')}($|[^A-
 /** The approved words, in list order. */
 export const wordList = () => Object.values(readJson(path.join(DIR, 'word-list.json'))).flat();
 
-/** The BSB verses that hold the word, written one per line; at most MOST_VERSES, spread evenly. */
+/**
+ * The BSB verses that hold the word, written one per line; at most MOST_VERSES, spread evenly. A word in few verses
+ * also gets the 3 verses before and after each one, so the writer sees the whole story.
+ */
 export function versesWith(word) {
-  const hits = verses().filter((v) => !v.leftOut && asWord(word).test(v.text));
-  const pick = hits.length <= MOST_VERSES ? hits : Array.from({ length: MOST_VERSES }, (_, i) => hits[Math.floor(i * hits.length / MOST_VERSES)]);
-  return pick.map((v) => `${v.ref} ${v.text}`).join('\n');
+  const all = verses();
+  const at = all.map((v, i) => (!v.leftOut && asWord(word).test(v.text) ? i : -1)).filter((i) => i >= 0);
+  let pick = at.length <= MOST_VERSES ? at : Array.from({ length: MOST_VERSES }, (_, i) => at[Math.floor(i * at.length / MOST_VERSES)]);
+  if (at.length <= AROUND_UP_TO) {
+    const near = new Set();
+    for (const i of at) for (let k = i - AROUND; k <= i + AROUND; k++) if (all[k]?.book === all[i].book) near.add(k);
+    pick = [...near].sort((a, b) => a - b);
+  }
+  return pick.filter((i) => !all[i].leftOut).map((i) => `${all[i].ref} ${all[i].text}`).join('\n');
 }
 
 /** The BSB text of a clue's reference, or null if it isn't a real reference. */
@@ -80,7 +91,7 @@ export function scriptCheck(word, out) {
 }
 
 // --- the calls -----------------------------------------------------------------------------------------------------
-const SHAPE = `Reply with only JSON: {"accepted": ["..."], "clues": [{"text": "...", "reference": "Book 1:2"}, ...]}. No other text.`;
+const SHAPE = `Reply with only JSON: {"accepted": ["..."], "clues": [{"text": "...", "reference": "Book 1:2"}, ...]}. No other text. If the word can't be done (weekly-word.md, "Swap it if there's not enough"), reply with only {"swap": "why, in one sentence"}.`;
 const showClues = (out) => JSON.stringify(out.clues.map((c, i) => ({ n: i + 1, text: c.text, reference: c.reference,
   bsb: referenceText(c.reference) ?? 'not a BSB reference' })), null, 1);
 
@@ -100,6 +111,7 @@ Check the word, the accepted answers and the clues against weekly-word.md and th
 - Is each clue true to its verse?
 - Is each clue medium hard, with enough setting to place it in the Bible?
 - Do all 7 together fit only this word?
+- Does each clue tell something different, and are the stories the word is best known for used?
 - Report only clear problems with a rule in weekly-word.md. Clue counts, word counts, dashes and whether the clue holds the word are already checked by a script.
 Reply with only JSON: {"findings": [{"clue": n, "problem": "..."}]}, where n counts the clues from 1 (null for the whole word). Nothing found: {"findings": []}. No other text.`;
 
@@ -121,6 +133,7 @@ ${SHAPE}`;
 const readClues = (t) => {
   if (!String(t ?? '').trim()) throw unreadable('gave an empty answer');
   const o = json(t);
+  if (typeof o?.swap === 'string' && o.swap.trim()) return { swap: o.swap.trim() };
   if (!Array.isArray(o?.clues)) throw unreadable('gave an answer with no list of clues');
   return { accepted: Array.isArray(o.accepted) ? o.accepted : [], clues: o.clues.map((c) => ({ text: c?.text, reference: c?.reference })) };
 };
@@ -137,6 +150,7 @@ const readFindings = (t) => {
 export function standIn({ prompt, role }) {
   if (role === 'checker') return { text: '{"findings": []}' };
   const word = /The word is "([^"]+)"/.exec(prompt)[1];
+  if (word === 'Patmos') return { text: '{"swap": "Only one verse."}' };   // tests the swap
   const lines = prompt.split('\n').filter((l) => /^\S.* \d+:\d+ /.test(l)).slice(0, 7);
   const clues = lines.map((l) => { const m = /^(.* \d+:\d+) (.*)$/.exec(l);
     return { text: role === 'fixer' ? m[2].replace(asWord(word), ' something ') : m[2], reference: m[1] }; });
@@ -187,7 +201,9 @@ export async function runWeeklyWord(words, { agents = 1, call = opus, outDir = p
     };
     const write = (role, prompt, effort) => ask(readClues, () => call({ model: OPUS, effort, role, passage: word, step: STEP, system, prompt }));
 
+    const swapped = (o) => { const d = { word, swap: o.swap }; writeJson(path.join(dir, 'done.json'), d); return d; };
     let out = await stage('write', () => write('writer', WRITE(word), 'medium'));
+    if (out.swap) return swapped(out);
     let lastGood = scriptCheck(word, out).length ? null : out;
     let found = [];
     for (let n = 1; n <= FIXES + 1; n++) {
@@ -200,12 +216,13 @@ export async function runWeeklyWord(words, { agents = 1, call = opus, outDir = p
       found = [...check.script, ...check.opus];
       if (!found.length || n > FIXES) break;
       out = await stage(`fix-${n}`, () => write('fixer', FIX(word, out, found), 'medium'));
+      if (out.swap) return swapped(out);
     }
     // the last fix: anything countable still broken gets one fix for just that
     let script = scriptCheck(word, out);
     if (script.length) {
       const last = await stage('fix-rules', () => write('fixer', FIX(word, out, script), 'medium'));
-      if (!scriptCheck(word, last).length) { out = last; script = []; }
+      if (!last.swap && !scriptCheck(word, last).length) { out = last; script = []; }
     }
     if (!script.length) lastGood = out;
     const final = lastGood ?? out;
@@ -238,10 +255,11 @@ export async function runWeeklyWord(words, { agents = 1, call = opus, outDir = p
   }
   await Promise.all(Array.from({ length: Math.min(agents, Math.max(1, todo.length)) }, (_, i) => worker(i)));
 
-  const all = words.map((w) => readJson(path.join(outDir, w, 'done.json'))).filter(Boolean);
+  const ended = words.map((w) => readJson(path.join(outDir, w, 'done.json'))).filter(Boolean);
+  const all = ended.filter((d) => !d.swap), swaps = ended.filter((d) => d.swap).map(({ word, swap }) => ({ word, why: swap }));
   writeJson(path.join(test ? outDir : DIR, test ? 'clues-test.json' : 'clues.json'), { made: new Date().toISOString(), count: all.length,
-    script_left: all.filter((d) => d.script_left).map((d) => d.word), checker_left: all.filter((d) => d.checker_left).map((d) => d.word), words: all });
-  return { done: all.length, gaveUp };
+    script_left: all.filter((d) => d.script_left).map((d) => d.word), checker_left: all.filter((d) => d.checker_left).map((d) => d.word), swapped: swaps, words: all });
+  return { done: all.length, swapped: swaps.length, gaveUp };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
