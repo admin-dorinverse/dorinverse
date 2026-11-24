@@ -81,7 +81,6 @@ export const BADGES: readonly Badge[] = [
   once('whole-book', 'Whole Book', '📖', 'finishing every lesson in one book of the Bible'),
   once('old-and-new', 'Old and New', '📚', 'finishing a lesson in the Old Testament and one in the New'),
   once('no-burnt-cookies', 'No Burnt Cookies', '⭐', 'answering every question in a lesson right the first time'),
-  once('back-at-it', 'Back at It', '🌅', 'starting a new streak after losing one'),
   once('mighty-few', 'Mighty Few', '🔎', 'meeting someone the Bible names fewer than 5 times'),
   once('prayers-10', 'Prayer Keeper', '🙏', 'collecting 10 prayers'),
   once('instructions-25', 'Instruction Follower', '🪧', 'collecting 25 instructions'),
