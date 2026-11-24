@@ -6,6 +6,7 @@ import { isAuthApiError } from '@supabase/supabase-js';
 import { database } from '@/data/database';
 import { friendlyAccountError, NO_INTERNET } from '@/data/accountErrors';
 import { holdAccount, signedOutHere, usernameSaved } from '@/data/account';
+import { forgetPushToken } from '@/data/friendPush';
 import { PASSWORD_MIN } from '@/data/signInOptions';
 import type { UsernameVerdict } from '@/types/account';
 
@@ -137,8 +138,9 @@ export async function chooseUsername(username: string): Promise<UsernameVerdict>
   return verdict;
 }
 
-/** Signs out on this phone. It works with no internet too. */
+/** Signs out on this phone. It works with no internet too; first the phone's notification token leaves the server. */
 export async function signOut(): Promise<void> {
+  await forgetPushToken();
   await database.auth.signOut({ scope: 'local' }).catch(() => {});
   signedOutHere();
 }
