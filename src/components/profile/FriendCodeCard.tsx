@@ -1,8 +1,9 @@
 // The friend card that pops up over a dimmed Profile page when the QR button is tapped: the person's avatar on a soft
 // panel, their username, "Dorinverse", and their QR code (the same web link as Share link, since phone cameras only
-// open web links). Under it sits the gold Share link button. Each person keeps one code for good.
+// open web links). Under it sit the gold Share link button and, on the phone, Save to Photos. Each person keeps one
+// code for good.
 
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeInDown } from 'react-native-reanimated';
 import { AuthButton } from '@/components/common/AuthButton';
@@ -19,6 +20,7 @@ import { mixColor } from '@/theme/mixColor';
 import { profile, profileSizes } from '@/theme/profileColors';
 import { gutter, radius } from '@/theme/spacing';
 import { fonts, textStyles } from '@/theme/text';
+import { CAN_SAVE_CARD, saveFriendCard, type SavableCard } from './friendCardSave';
 import { shareFriendLink } from './friendShare';
 
 /** How the card comes in: a short rise and fade that slows to a stop, with no bounce. */
@@ -26,6 +28,11 @@ const CARD_IN = FadeInDown.duration(240).easing(Easing.out(Easing.cubic));
 
 /** A short line under the card: all went well (like "Link copied"), or what went wrong. */
 type CardNote = { kind: 'good' | 'problem'; words: string };
+
+/** Waits until the screen has drawn twice, so the hidden ✕ is gone before the card's picture is taken. */
+function afterNextDraw(): Promise<void> {
+  return new Promise((done) => requestAnimationFrame(() => requestAnimationFrame(() => done())));
+}
 
 /** The square shown where the QR code goes until the code is known. It stays still. */
 function QrWaiting() {
@@ -75,6 +82,8 @@ type FriendCodeCardProps = {
 export function FriendCodeCard({ open, onClose, username }: FriendCodeCardProps) {
   const code = useMyFriendCode().data;
   const [note, setNote] = useState<CardNote | null>(null);
+  const [saving, setSaving] = useState(false);
+  const cardRef = useRef<SavableCard>(null);
 
   /** Closes the card and clears any note, so it opens fresh next time. */
   const close = () => {
@@ -94,43 +103,68 @@ export function FriendCodeCard({ open, onClose, username }: FriendCodeCardProps)
     }
   };
 
+  /** Saves the card to Photos, with the ✕ hidden so it isn't in the picture. Photos is asked for only now. */
+  const save = async () => {
+    if (!code || saving) return;
+    setNote(null);
+    setSaving(true);
+    try {
+      await afterNextDraw();
+      const done = await saveFriendCard(cardRef);
+      setNote(
+        done === 'saved'
+          ? { kind: 'good', words: 'Saved to Photos.' }
+          : { kind: 'problem', words: 'To save your card, let Dorinverse add to your photos in your phone’s Settings.' },
+      );
+    } catch (e) {
+      setNote({ kind: 'problem', words: e instanceof Error ? e.message : 'Couldn’t save to Photos. Please try again.' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
   return (
     <Modal visible={open} transparent animationType="fade" onRequestClose={close} statusBarTranslucent>
       <View style={styles.dim}>
         <Pressable style={StyleSheet.absoluteFill} onPress={close} accessibilityLabel="Close" />
         {open && (
           <Animated.View entering={CARD_IN} pointerEvents="box-none" style={styles.column}>
-            <GlassSurface style={styles.card}>
-              <AvatarPanel username={username} />
-              <Text style={styles.name} numberOfLines={1}>
-                {username}
-              </Text>
-              <View style={styles.brand}>
-                <SkyIcon color={text.goldNote} size={profileSizes.cardSparkle} />
-                <Text style={styles.brandWord}>Dorinverse</Text>
-              </View>
-              {code ? (
-                <View style={styles.qrFrame} accessibilityRole="image" accessibilityLabel="Your friend code, as a QR code">
-                  <QrCode value={friendShareLink(code)} size={profileSizes.qr} />
+            <View ref={cardRef} collapsable={false}>
+              <GlassSurface style={styles.card}>
+                <AvatarPanel username={username} />
+                <Text style={styles.name} numberOfLines={1}>
+                  {username}
+                </Text>
+                <View style={styles.brand}>
+                  <SkyIcon color={text.goldNote} size={profileSizes.cardSparkle} />
+                  <Text style={styles.brandWord}>Dorinverse</Text>
                 </View>
-              ) : (
-                <QrWaiting />
-              )}
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Close"
-                onPress={() => {
-                  playSound('tap');
-                  close();
-                }}
-                hitSlop={8}
-                style={styles.close}
-              >
-                <Text style={styles.closeText}>✕</Text>
-              </Pressable>
-            </GlassSurface>
+                {code ? (
+                  <View style={styles.qrFrame} accessibilityRole="image" accessibilityLabel="Your friend code, as a QR code">
+                    <QrCode value={friendShareLink(code)} size={profileSizes.qr} />
+                  </View>
+                ) : (
+                  <QrWaiting />
+                )}
+                {!saving && (
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Close"
+                    onPress={() => {
+                      playSound('tap');
+                      close();
+                    }}
+                    hitSlop={8}
+                    style={styles.close}
+                  >
+                    <Text style={styles.closeText}>✕</Text>
+                  </Pressable>
+                )}
+              </GlassSurface>
+            </View>
             {note && <Text style={[styles.note, { color: note.kind === 'good' ? account.good : account.problem }]}>{note.words}</Text>}
             <AuthButton label="Share link" disabled={!code} onPress={() => void share()} />
+            {CAN_SAVE_CARD && <AuthButton label="Save to Photos" look="quiet" busy={saving} disabled={!code} onPress={() => void save()} />}
           </Animated.View>
         )}
       </View>
