@@ -104,4 +104,5 @@ Every lesson step also gets the passage text in the BSB.
 | Definitions | `definitions.md` | The Prep cards for the passage, the BSB footnotes |
 | Answer explanations | `answer-explanations.md` | `papa-dorin.md`, the Prep cards for the passage |
 | Idioms | `idioms.md` | The idiom list (`../data/idioms.json`), the passage list, the Prep cards |
+| Weekly Word | `weekly-word.md` | The BSB text of the whole Bible, the words already used |
 | Check (after each step) | `checker.md` | The md files that step used, the step's output, the passage text in the BSB |
