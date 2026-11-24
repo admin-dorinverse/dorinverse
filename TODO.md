@@ -97,6 +97,9 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
     trying to reconnect"). LiveKit's guide says Android needs a foreground service (the "call in progress" notice) to
     stay connected; their example uses `@supersami/rn-foreground-service`. It needs a new Android development build,
     so check the build cost and get the owner's go first. (Asked 2026-11-22.)
+    Built 2026-11-23 with our own module, `modules/voice-call-service` (not that package), and
+    `src/components/call/useVoiceCallNotice.ts`. Its two lines in `CallRoom.tsx` ride on the uncommitted call rework,
+    so they go in when that file is committed. Test on Android after the next build.
   - Research done (2026-11-21), from LiveKit's docs:
     - App packages: `livekit-client`, `@livekit/react-native`, `@livekit/react-native-expo-plugin`,
       `@livekit/react-native-webrtc`, `@config-plugins/react-native-webrtc`; needs a development build, not Expo Go.
@@ -152,14 +155,16 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
 
 ## Friends
 
-- **Needs the next development build (do these together):**
+- **Built 2026-11-23, test after the next development build:**
   - **Save the friend card to Photos**, like Duolingo's Save: Skia turns the card into a picture and Expo's
     `expo-media-library` saves it. (Asked 2026-11-23.)
-  - **Friend links and QR codes open the app straight away** (Android App Links / iPhone Universal Links on the real web
-    address, likely dorinverse.com), instead of the web page with "Open in the Dorinverse app". The web page's button
-    doesn't open the app on the owner's Android today. Voice call invites need the same.
-- **Phone notifications** when a friend request comes in (expo-notifications; needs a build and, for iPhone, the Apple
-  account). Wait for the owner's go.
+  - **Friend links and QR codes open the app straight away** (Android App Links / iPhone Universal Links on
+    dorinverse.com). App side done (app.json, `public/.well-known/` files, `LIVE_WEB_BASE` in `src/data/callLinks.ts`).
+    Waits on dorinverse.com serving the web pages (custom domain on EAS Hosting, needs Starter) and, for iPhone, the
+    Apple Team ID. Add Google Play's signing fingerprint to `assetlinks.json` at launch.
+  - **Phone notifications** when a friend request comes in: built (`src/data/friendPush.native.ts`, a database trigger
+    sends through Expo's free push service; live on staging). Android waits on the owner's Firebase setup
+    (`google-services.json` + FCM key on expo.dev); iPhone waits on the Apple account.
 - **A friend's universe** shows only joined date, streak and friend count until lesson progress lives on the server.
 
 ## Places map (MapLibre + MapTiler)
