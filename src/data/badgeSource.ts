@@ -6,13 +6,13 @@
 //
 // Today (development): there is no badge server yet, so this works levels out from what the pretend server keeps on
 // the phone. Levels the phone has no record for (trivia, calls, chats, first-try answers, lost streaks, people's
-// mention counts, the full people list, how many Weekly Words were guessed) stay unreached until the server does them.
+// mention counts, how many Weekly Words were guessed) stay unreached until the server does them.
 
 import { BADGES, CONSTELLATIONS } from '@/data/badgeList';
 import { BIBLE_OUTLINE } from '@/data/bibleOutline';
 import { bookOf } from '@/data/collectedLists';
 import { isBaked, type BakedStops } from '@/data/lessonBooks';
-import type { BadgeLevelId } from '@/types/badges';
+import type { BadgeLevelId, CountKind } from '@/types/badges';
 import type { LessonOutline } from '@/types/lesson';
 
 /** DEVELOPMENT ONLY: what the phone knows that badges are worked out from. */
@@ -56,21 +56,16 @@ function joinedLinks(collected: ReadonlySet<string>): number {
   return n;
 }
 
-/** The lesson levels: lesson counts, a whole book, both testaments, the six constellations and every lesson. */
-function lessonLevels(outlines: readonly LessonOutline[], baked: BakedStops, earned: Set<BadgeLevelId>): void {
-  const done = outlines.filter((l) => isBaked(l, baked));
-  if (done.length >= 1) earned.add('first-batch');
-  if (done.length >= 13) earned.add('bakers-dozen');
-  if (outlines.length > 0 && done.length === outlines.length) earned.add('front-to-back');
-
+/** The one-time lesson badges and Stargazer: a whole book, both testaments and the six constellations. */
+function lessonLevels(outlines: readonly LessonOutline[], done: readonly LessonOutline[], earned: Set<BadgeLevelId>): void {
   const perBook = new Map<string, { all: number; done: number }>();
   for (const l of outlines) {
     const book = bookOf(l.startChapter);
     const counts = perBook.get(book) ?? { all: 0, done: 0 };
     counts.all += 1;
-    if (isBaked(l, baked)) counts.done += 1;
     perBook.set(book, counts);
   }
+  for (const l of done) perBook.get(bookOf(l.startChapter))!.done += 1;
   for (const c of perBook.values()) if (c.done === c.all) earned.add('whole-book');
 
   const testaments = new Set<string>();
@@ -85,22 +80,25 @@ function lessonLevels(outlines: readonly LessonOutline[], baked: BakedStops, ear
 /** DEVELOPMENT ONLY: the badge levels reached, worked out from what the phone knows. */
 export function earnedLevels(facts: BadgeFacts): ReadonlySet<BadgeLevelId> {
   const earned = new Set<BadgeLevelId>();
-  if (facts.outlines) lessonLevels(facts.outlines, facts.baked, earned);
+  const done = facts.outlines ? facts.outlines.filter((l) => isBaked(l, facts.baked)) : [];
+  if (facts.outlines) lessonLevels(facts.outlines, done, earned);
 
-  for (const days of [3, 7, 30, 100, 365]) if (facts.streak >= days) earned.add(`streak-${days}`);
-
-  const people = countStarting(facts.collected, 'character:');
-  for (const n of [10, 50, 100]) if (people >= n) earned.add(`people-${n}`);
-  const places = countStarting(facts.collected, 'place:');
-  if (places >= 10) earned.add('places-10');
-  if (places >= 50) earned.add('places-50');
-  const links = joinedLinks(facts.collected);
-  if (links >= 1) earned.add('prophecy-1');
-  if (links >= 25) earned.add('prophecy-25');
-  if (countStarting(facts.collected, 'cookie:prayer:') >= 10) earned.add('prayers-10');
-  if (countStarting(facts.collected, 'cookie:instruction:') >= 25) earned.add('instructions-25');
-
-  if (facts.wordGuessed) earned.add('mystery-1');
+  // Every lesson finished counts as the last Baker level, even if more lessons were added since TOTALS was counted.
+  const allLessons = facts.outlines != null && facts.outlines.length > 0 && done.length === facts.outlines.length;
+  const counts: Record<CountKind, number> = {
+    lessons: allLessons ? Infinity : done.length,
+    streak: facts.streak,
+    people: countStarting(facts.collected, 'character:'),
+    places: countStarting(facts.collected, 'place:'),
+    prophecyLinks: joinedLinks(facts.collected),
+    weeklyWords: facts.wordGuessed ? 1 : 0,
+    prayers: countStarting(facts.collected, 'cookie:prayer:'),
+    instructions: countStarting(facts.collected, 'cookie:instruction:'),
+  };
+  for (const badge of BADGES) {
+    if (!badge.counts) continue;
+    for (const l of badge.levels) if (l.goal != null && counts[badge.counts] >= l.goal) earned.add(l.id);
+  }
 
   return new Set([...earned].filter((id) => ALL_LEVELS.has(id)));
 }

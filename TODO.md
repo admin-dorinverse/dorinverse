@@ -176,7 +176,8 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
 ## Badges
 
 The owner approved the badges on 2026-11-23. Badges that are steps toward one goal are one badge with levels, like
-Duolingo's (19 badges). They show on the Profile page and the Badges page, and their list is in
+Duolingo's (19 badges). A counting badge's last level is all of them, shown as the real number from `TOTALS` in
+`badgeList.ts` (counted 2026-11-23); the server should use live counts. They show on the Profile page and the Badges page, and their list is in
 `src/data/badgeList.ts`. Still to do:
 
 - **Real art** to replace the placeholder emoji medals (`src/components/common/BadgeMedal.tsx`).
@@ -185,7 +186,7 @@ Duolingo's (19 badges). They show on the Profile page and the Badges page, and t
 - **The server decides badges.** Today `src/data/badgeSource.ts` works them out from what the phone keeps. At hookup
   the server records them, and the earned list comes in the download after sign-in.
 - **Badges the phone can't tell yet**, so they stay unearned until the server tracks them: No Burnt Cookies,
-  Meet the Family's All level, Mighty Few, Detective's 10 level, Quick Draw, Trivia Champ, Study Together, Host with
+  Mighty Few, Detective past its first level, Quick Draw, Trivia Champ, Study Together, Host with
   the Most (a call counts when it lasts at least 10 minutes with at least one other person), Curious Baker and Guest
   List. The streak is still the sample number (12).
 

@@ -2,7 +2,7 @@
 // steps toward one goal are one badge with levels. Only names and rules live here; the server decides what is
 // earned (badgeSource.ts).
 
-import type { Badge, BadgeLevel } from '@/types/badges';
+import type { Badge, BadgeLevel, CountKind } from '@/types/badges';
 import type { LessonType } from '@/types/lesson';
 
 /** One of the six constellations in the sky, by the kind of lesson it holds. */
@@ -18,9 +18,15 @@ export const CONSTELLATIONS: readonly ConstellationLevel[] = [
   { id: 'sky-sermons', name: 'Sermons', type: 'Sermons' },
 ];
 
+/**
+ * How many of each thing there is to collect, counted in the database on 2026-11-23. The last level of a counting
+ * badge is all of them, and its medal shows this number. At hookup the server uses its own live counts.
+ */
+export const TOTALS = { lessons: 1558, people: 270, places: 394, prophecyLinks: 20, prayers: 10, instructions: 52 } as const;
+
 /** Makes one level. */
-function level(id: string, mark: string, deed: string): BadgeLevel {
-  return { id, mark, deed };
+function level(id: string, mark: string, deed: string, goal?: number): BadgeLevel {
+  return { id, mark, deed, goal };
 }
 
 /** Makes a one-time badge: one level, sharing the badge's id. */
@@ -28,24 +34,25 @@ function once(id: string, name: string, art: string, deed: string): Badge {
   return { id, name, art, levels: [level(id, '', deed)] };
 }
 
+/**
+ * Makes a badge whose levels are counts of one thing, like 10, 25 and 50 places. Each level's medal shows its count;
+ * `deed` gives the words for a count, and `allDeed` the words for the last level when it is all of them.
+ */
+function counting(id: string, name: string, art: string, counts: CountKind, goals: readonly number[], deed: (n: number) => string, allDeed?: string): Badge {
+  const last = goals[goals.length - 1];
+  return {
+    id,
+    name,
+    art,
+    counts,
+    levels: goals.map((n) => level(`${id}-${n}`, String(n), n === last && allDeed ? allDeed : deed(n), n)),
+  };
+}
+
 /** Every badge, in the order shown. */
 export const BADGES: readonly Badge[] = [
-  {
-    id: 'baker',
-    name: 'Baker',
-    art: '🍪',
-    levels: [
-      level('first-batch', '1', 'finishing your first lesson'),
-      level('bakers-dozen', '13', 'finishing 13 lessons'),
-      level('front-to-back', 'All', 'finishing every lesson in the Bible'),
-    ],
-  },
-  {
-    id: 'streak',
-    name: 'Streak',
-    art: '🔥',
-    levels: [3, 7, 30, 100, 365].map((days) => level(`streak-${days}`, String(days), `keeping a ${days}-day streak`)),
-  },
+  counting('baker', 'Baker', '🍪', 'lessons', [1, 13, 50, 100, 250, 500, 1000, TOTALS.lessons], (n) => (n === 1 ? 'finishing your first lesson' : `finishing ${n} lessons`), 'finishing every lesson in the Bible'),
+  counting('streak', 'Streak', '🔥', 'streak', [3, 7, 14, 30, 50, 100, 200, 365], (n) => `keeping a ${n}-day streak`),
   {
     id: 'stargazer',
     name: 'Stargazer',
@@ -56,34 +63,16 @@ export const BADGES: readonly Badge[] = [
       level(k.id, '', i === CONSTELLATIONS.length - 1 ? 'finishing a lesson in all six constellations' : `finishing a lesson in ${i === 0 ? 'a constellation' : `${i + 1} constellations`}`),
     ),
   },
-  {
-    id: 'meet-the-family',
-    name: 'Meet the Family',
-    art: '👪',
-    levels: [
-      ...[10, 50, 100].map((n) => level(`people-${n}`, String(n), `meeting ${n} Bible people`)),
-      level('people-all', 'All', 'meeting every Bible person in the lessons'),
-    ],
-  },
-  { id: 'traveler', name: 'Traveler', art: '🧭', levels: [10, 50].map((n) => level(`places-${n}`, String(n), `visiting ${n} places`)) },
-  {
-    id: 'prophecy-hunter',
-    name: 'Prophecy Hunter',
-    art: '🔗',
-    levels: [level('prophecy-1', '1', 'joining your first prophecy link'), level('prophecy-25', '25', 'joining 25 prophecy links')],
-  },
-  {
-    id: 'detective',
-    name: 'Detective',
-    art: '🕵️',
-    levels: [level('mystery-1', '1', 'guessing your first Weekly Word'), level('mystery-10', '10', 'guessing 10 Weekly Words')],
-  },
+  counting('meet-the-family', 'Meet the Family', '👪', 'people', [10, 25, 50, 100, 150, 200, TOTALS.people], (n) => `meeting ${n} Bible people`, 'meeting every Bible person in the lessons'),
+  counting('traveler', 'Traveler', '🧭', 'places', [10, 25, 50, 100, 200, 300, TOTALS.places], (n) => `visiting ${n} places`, 'visiting every place in the lessons'),
+  counting('prophecy-hunter', 'Prophecy Hunter', '🔗', 'prophecyLinks', [1, 5, 10, 15, TOTALS.prophecyLinks], (n) => (n === 1 ? 'joining your first prophecy link' : `joining ${n} prophecy links`), 'joining every prophecy link'),
+  counting('detective', 'Detective', '🕵️', 'weeklyWords', [1, 5, 10, 25, 52], (n) => (n === 1 ? 'guessing your first Weekly Word' : `guessing ${n} Weekly Words`)),
+  counting('prayer-keeper', 'Prayer Keeper', '🙏', 'prayers', [1, 5, TOTALS.prayers], (n) => (n === 1 ? 'collecting your first prayer' : `collecting ${n} prayers`), 'collecting every prayer'),
+  counting('instruction-follower', 'Instruction Follower', '🪧', 'instructions', [5, 10, 25, TOTALS.instructions], (n) => `collecting ${n} instructions`, 'collecting every instruction'),
   once('whole-book', 'Whole Book', '📖', 'finishing every lesson in one book of the Bible'),
   once('old-and-new', 'Old and New', '📚', 'finishing a lesson in the Old Testament and one in the New'),
   once('no-burnt-cookies', 'No Burnt Cookies', '⭐', 'answering every question in a lesson right the first time'),
   once('mighty-few', 'Mighty Few', '🔎', 'meeting someone the Bible names fewer than 5 times'),
-  once('prayers-10', 'Prayer Keeper', '🙏', 'collecting 10 prayers'),
-  once('instructions-25', 'Instruction Follower', '🪧', 'collecting 25 instructions'),
   once('quick-draw', 'Quick Draw', '⚡', 'answering a trivia question in under 3 seconds'),
   once('trivia-champ', 'Trivia Champ', '🥇', 'winning a family trivia game'),
   once('study-together', 'Study Together', '🤝', 'finishing a lesson with others on a voice call'),
