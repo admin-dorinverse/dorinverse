@@ -7,6 +7,7 @@ One mystery word a week. A clue comes each day, Monday to Sunday, and the word i
 ## The word
 
 - **One word a baker can spell and type,** like "manna", "ark", "Goliath" or "Passover". It can be a thing, a person, a place or an event.
+- **8 letters or fewer.**
 - **It is in the BSB,** spelled the way the BSB spells it.
 - **Only one thing fits it.** Skip a name many people share, like "John" or "Mary", unless the clues make it clear which one.
 - **Well known enough to guess by Sunday.** Skip a word only Bible scholars would know.
