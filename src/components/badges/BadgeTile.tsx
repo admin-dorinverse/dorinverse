@@ -1,4 +1,5 @@
-// One badge on the Badges page: its medal with its name under it, faded when not earned yet. Tapping it opens its page.
+// One badge on the Badges page: its medal with its name under it, faded when not earned yet. An earned badge with
+// levels also shows how far it has gone, like Duolingo's "2 of 3". Tapping it opens its page.
 
 import { memo } from 'react';
 import { Pressable, StyleSheet, Text } from 'react-native';
@@ -34,6 +35,7 @@ export const BadgeTile = memo(function BadgeTile({ badge, onOpen }: BadgeTilePro
       <Text style={[styles.name, badge.level === 0 && styles.lockedName]} numberOfLines={2}>
         {badge.name}
       </Text>
+      {badge.level > 0 && badge.levels.length > 1 && <Text style={styles.levels}>{`${badge.level} of ${badge.levels.length}`}</Text>}
     </Pressable>
   );
 });
@@ -43,4 +45,5 @@ const styles = StyleSheet.create({
   pressed: { transform: [{ scale: 0.96 }] },
   name: { fontFamily: fonts.black, fontSize: 15, lineHeight: 19, color: text.onDark, textAlign: 'center' },
   lockedName: { color: badgeColors.lockedName },
+  levels: { marginTop: -4, fontFamily: fonts.bold, fontSize: 14, color: badgeColors.lockedName },
 });
