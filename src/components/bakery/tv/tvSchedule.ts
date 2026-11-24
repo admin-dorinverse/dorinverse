@@ -1,53 +1,56 @@
-// Works out what the always-on Bakery TV channel plays at a moment, and the guide of what comes next, the way the
-// Constellations design does: the program list plays back to back, over and over, from a fixed start.
+// Works out what the always-on Bakery TV channel plays at a moment, and the guide of what comes next, from the
+// schedule the server writes. Also small helpers for showing times and video names.
 
-import type { TvProgram } from '@/data/sample/bakeryTv';
+import { bakeryTvShowColors } from '@/theme/bakeryTvColors';
+import type { TvShowing } from '@/types/tv';
 
-/** What is on at a moment: which program, how far into it, and when it started. */
+/** What is on at a moment. */
 export type TvNow = {
-  /** Where the program is in the list. */
+  /** Where the showing playing now is in the list, or -1 when nothing is on (between showings or no schedule). */
   index: number;
-  /** Seconds since the program started. */
+  /** Seconds since it started. */
   offset: number;
-  /** When the program started (whole milliseconds since 1970), the same every second it plays. */
-  startedAt: number;
 };
 
 /** One row of the guide. */
 export type GuideRow = {
-  /** The program. */
-  program: TvProgram;
-  /** When it starts (milliseconds since 1970). It also names the showing for its reminder. */
-  startsAt: number;
+  /** The showing. */
+  showing: TvShowing;
   /** "Now playing", "Up next" or "Later". */
   label: string;
 };
 
-/** How many programs the guide lists, the playing one included. */
-const GUIDE_ROWS = 6;
+/** How many showings the guide lists, the playing one included. */
+export const GUIDE_ROWS = 6;
 
-/** Finds the program playing at `now` (milliseconds since 1970) on a channel that started at `epoch`. */
-export function tvWhere(programs: readonly TvProgram[], epoch: number, now: number): TvNow {
-  const lapMs = programs.reduce((sum, p) => sum + p.seconds, 0) * 1000;
-  let startedAt = epoch + Math.floor((now - epoch) / lapMs) * lapMs;
-  for (let index = 0; index < programs.length; index++) {
-    const endsAt = startedAt + programs[index].seconds * 1000;
-    if (now < endsAt) return { index, offset: (now - startedAt) / 1000, startedAt };
-    startedAt = endsAt;
-  }
-  return { index: 0, offset: 0, startedAt: now };
+/** Finds the showing playing at `now` (milliseconds since 1970). The list is in order and has no ended showings. */
+export function tvWhere(showings: readonly TvShowing[], now: number): TvNow {
+  const index = showings.findIndex((s) => now < s.endsAt);
+  if (index < 0 || showings[index].startsAt > now) return { index: -1, offset: 0 };
+  return { index, offset: (now - showings[index].startsAt) / 1000 };
 }
 
-/** The guide: the playing program, then the next five, each with its start time. */
-export function guideRows(programs: readonly TvProgram[], on: TvNow): GuideRow[] {
-  let startsAt = on.startedAt;
-  const rows: GuideRow[] = [];
-  for (let k = 0; k < GUIDE_ROWS; k++) {
-    const program = programs[(on.index + k) % programs.length];
-    rows.push({ program, startsAt, label: k === 0 ? 'Now playing' : k === 1 ? 'Up next' : 'Later' });
-    startsAt += program.seconds * 1000;
-  }
-  return rows;
+/** The guide: the playing showing (or the next one when nothing is on), then the ones after it. */
+export function guideRows(showings: readonly TvShowing[], now: number): GuideRow[] {
+  const first = showings.findIndex((s) => now < s.endsAt);
+  if (first < 0) return [];
+  const playing = showings[first].startsAt <= now;
+  return showings.slice(first, first + GUIDE_ROWS).map((showing, k) => ({
+    showing,
+    label: playing && k === 0 ? 'Now playing' : k === (playing ? 1 : 0) ? 'Up next' : 'Later',
+  }));
+}
+
+/** A video's color pair, always the same for the same video. */
+export function showColors(videoId: string): readonly [string, string] {
+  let sum = 0;
+  for (let k = 0; k < videoId.length; k++) sum = (sum * 31 + videoId.charCodeAt(k)) >>> 0;
+  return bakeryTvShowColors[sum % bakeryTvShowColors.length];
+}
+
+/** A video's name without YouTube's long tail, like "Book of Genesis (Part 1)". */
+export function shortTitle(title: string): string {
+  return title.replace(/\s*Summary: A Complete Animated Overview/i, '').trim();
 }
 
 /** Seconds as minutes and seconds, like "7:22". */

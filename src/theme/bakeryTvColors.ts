@@ -17,9 +17,8 @@ export const bakeryTv = {
   scanLine: 'rgba(0,0,0,0.08)',
   /** Shadow behind the big program title on the screen. */
   titleShadow: 'rgba(0,0,0,0.35)',
-  /** The progress bar's track and its filled part. */
-  barTrack: 'rgba(255,255,255,0.25)',
-  barFill: '#ffffff',
+  /** The screen behind the video while it loads. */
+  screenOff: '#000000',
   /** Words on the screen. */
   screenText: '#ffffff',
   /** A guide row: its fill and thin edge. */
@@ -37,6 +36,18 @@ export const bakeryTv = {
   remindSetText: '#1a1c45',
 } as const;
 
+/** Color pairs for videos: the screen's gradient between videos (top-left, bottom-right) and the guide row's strip. */
+export const bakeryTvShowColors: readonly (readonly [string, string])[] = [
+  ['#1d5c4f', '#4fb39a'],
+  ['#5b3a8a', '#a77fe0'],
+  ['#8a3b1f', '#e08a4f'],
+  ['#7a5a12', '#e0b84f'],
+  ['#2a4f8a', '#6fa0e8'],
+  ['#6e1f3a', '#d46a8e'],
+  ['#245a2a', '#7cc485'],
+  ['#123f5a', '#4fa3d4'],
+];
+
 /** Fixed sizes of the Bakery TV page. */
 export const bakeryTvSize = {
   /** The screen's width divided by its height. */
@@ -46,13 +57,9 @@ export const bakeryTvSize = {
   frameRing: 3,
   /** Corner rounding of the screen. */
   screenRadius: 22,
-  /** Size of the program title on the screen, and of the small lines. */
+  /** Size of the big title on the screen between videos, and of the small line under it. */
   title: 28,
   line: 14,
-  timeCode: 12,
-  /** The progress bar's height and its distance from the screen's bottom. */
-  bar: 5,
-  barBottom: 30,
   /** A guide row's color strip, and the width of its start time. */
   swatch: { width: 10, height: 34 },
   timeWidth: 62,

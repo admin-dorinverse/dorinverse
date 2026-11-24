@@ -1,29 +1,31 @@
-// The Bakery TV set: a wooden frame around a screen in the playing program's colors, with its title, a progress bar
-// and the time code. When the page opens the picture switches on like an old TV: it grows from a thin line and a
-// bright flash fades. The bar and time code change once a second, as the page passes in a new time.
+// The Bakery TV set: a wooden frame around the screen. The screen holds the video playing now, or, in the short
+// gap between videos, a card in the next video's colors saying what comes next. When the page opens the picture
+// switches on like an old TV: it grows from a thin line and a bright flash fades.
 
-import { memo, useEffect } from 'react';
+import { memo, useEffect, type ReactNode } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, useAnimatedStyle, useReducedMotion, useSharedValue, withTiming } from 'react-native-reanimated';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
-import type { TvProgram } from '@/data/sample/bakeryTv';
 import { bakeryTv, bakeryTvSize } from '@/theme/bakeryTvColors';
 import { fonts } from '@/theme/text';
-import { mmss } from './tvSchedule';
 
 /** How long the switch-on takes (ms); the picture is full height after 60% of it. */
 const SWITCH_ON_MS = 600;
 
 /** Props for the TV. */
 type TvScreenProps = {
-  /** The program playing now. */
-  program: TvProgram;
-  /** Seconds since it started. */
-  offset: number;
+  /** The video player, while a video plays. Without it the screen shows the card below. */
+  player?: ReactNode;
+  /** The card's gradient, top-left then bottom-right. */
+  colors: readonly [string, string];
+  /** The card's big title. */
+  title: string;
+  /** The card's small line under the title. */
+  line: string;
 };
 
-/** The TV with what is playing now. */
-export function TvScreen({ program, offset }: TvScreenProps) {
+/** The TV. */
+export function TvScreen({ player, colors, title, line }: TvScreenProps) {
   const still = useReducedMotion();
   const grow = useSharedValue(still ? 1 : 0.02);
   const flash = useSharedValue(still ? 0 : 0.7);
@@ -37,25 +39,24 @@ export function TvScreen({ program, offset }: TvScreenProps) {
 
   const picture = useAnimatedStyle(() => ({ transform: [{ scaleY: grow.get() }] }));
   const flashLook = useAnimatedStyle(() => ({ opacity: flash.get() }));
-  const [c1, c2] = program.colors;
 
   return (
-    <Animated.View style={[styles.screen, { backgroundImage: `linear-gradient(135deg, ${c1}, ${c2})` }, picture]}>
-      <ScreenShine />
-      <Text style={styles.title}>{program.title}</Text>
-      <Text style={styles.line}>Now playing: {program.title} Overview</Text>
-      <View style={styles.bar}>
-        <View style={[styles.fill, { transform: [{ scaleX: Math.min(1, offset / program.seconds) }] }]} />
-      </View>
-      <Text style={[styles.line, styles.timeCode]}>
-        {mmss(offset)} / {mmss(program.seconds)}
-      </Text>
+    <Animated.View style={[styles.screen, picture]}>
+      {player ? (
+        <View style={styles.player}>{player}</View>
+      ) : (
+        <View style={[styles.card, { backgroundImage: `linear-gradient(135deg, ${colors[0]}, ${colors[1]})` }]}>
+          <ScreenShine />
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.line}>{line}</Text>
+        </View>
+      )}
       <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.flash, flashLook]} />
     </Animated.View>
   );
 }
 
-/** The screen's soft light from above and its faint lines, drawn once and never changed. */
+/** The card's soft light from above and its faint lines, drawn once and never changed. */
 const ScreenShine = memo(function ScreenShine() {
   return (
     <View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.shine]}>
@@ -79,11 +80,11 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderWidth: bakeryTvSize.frame,
     borderColor: bakeryTv.frame,
+    backgroundColor: bakeryTv.screenOff,
     boxShadow: `0 0 0 ${bakeryTvSize.frameRing}px ${bakeryTv.frameRing}, 0 0 30px ${bakeryTv.frameGlow}`,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 16,
   },
+  player: { flex: 1 },
+  card: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 16 },
   shine: { backgroundImage: `radial-gradient(circle at 50% 40%, ${bakeryTv.screenShine}, rgba(0,0,0,0) 60%)` },
   title: {
     fontFamily: fonts.black,
@@ -95,17 +96,5 @@ const styles = StyleSheet.create({
     textShadowRadius: 10,
   },
   line: { fontFamily: fonts.bold, fontSize: bakeryTvSize.line, color: bakeryTv.screenText, opacity: 0.9, textAlign: 'center' },
-  bar: {
-    position: 'absolute',
-    left: 16,
-    right: 16,
-    bottom: bakeryTvSize.barBottom,
-    height: bakeryTvSize.bar,
-    borderRadius: 3,
-    overflow: 'hidden',
-    backgroundColor: bakeryTv.barTrack,
-  },
-  fill: { flex: 1, borderRadius: 3, backgroundColor: bakeryTv.barFill, transformOrigin: 'left' },
-  timeCode: { position: 'absolute', right: 16, bottom: 10, fontSize: bakeryTvSize.timeCode },
   flash: { backgroundColor: bakeryTv.screenText },
 });
