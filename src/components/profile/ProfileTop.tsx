@@ -8,6 +8,7 @@ import { navy, tabs, text } from '@/theme/colors';
 import { profileSizes } from '@/theme/profileColors';
 import { radius } from '@/theme/spacing';
 import { fonts, textStyles } from '@/theme/text';
+import { BadgeShelf } from './BadgeShelf';
 import { FriendCodeButton } from './FriendCodeButton';
 
 /** Props for the top of the Profile page. */
@@ -47,6 +48,7 @@ export function ProfileTop({ username, friendCount, onOpenAccount, onOpenCode }:
           <FriendCodeButton onPress={onOpenCode} />
         </View>
       </View>
+      <BadgeShelf />
       <Text style={[textStyles.tabSubtitle, styles.heading]} accessibilityRole="header">
         {friendCount ? `FRIENDS · ${friendCount}` : 'FRIENDS'}
       </Text>

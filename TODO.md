@@ -173,6 +173,19 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
   down with the cards, and build the map: night-sky style made in MapTiler (modern roads, borders and city names hidden),
   places as stars, collected ones bright, tap to open. Show 2-3 looks to pick from. The credit line must stay visible.
 
+## Badges
+
+The owner approved the badges on 2026-11-23. They show on the Profile page, and their list is in
+`src/data/badgeList.ts`. Still to do:
+
+- **Real art** to replace the placeholder emoji medals (`src/components/profile/BadgeMedal.tsx`).
+- **The server decides badges.** Today `src/data/badgeSource.ts` works them out from what the phone keeps. At hookup
+  the server records them, and the earned list comes in the download after sign-in.
+- **Badges the phone can't tell yet**, so they stay unearned until the server tracks them: No Burnt Cookies, Back at
+  It, Meet the Family · All, Mighty Few, Case Closed, Quick Draw, Trivia Champ, Study Together, Host with the Most (a
+  call counts when it lasts at least 10 minutes with at least one other person), Curious Baker and Guest List. The
+  streak is still the sample number (12).
+
 ## Business (before launch)
 
 - Texas LLC (Form 205 on SOSDirect, about $300) with a registered agent service whose address and mail scanning cover
