@@ -1,8 +1,8 @@
-// The person's badges: every badge in its group, each marked earned or not, for the Profile page and the reward
+// The person's badges: every badge, earned ones first, each marked earned or not, for the Profile page and the reward
 // pop-ups. Everything it reads is already on the phone, so it is ready at once. At hookup the server sends the list.
 
 import { useMemo } from 'react';
-import { BADGE_GROUPS, BADGES } from '@/data/badgeList';
+import { BADGES } from '@/data/badgeList';
 import { earnedBadges } from '@/data/badgeSource';
 import { useFriends } from '@/data/queries/friends';
 import { useLessonOutlines } from '@/data/queries/lessons';
@@ -10,12 +10,12 @@ import { useProgress } from '@/data/queries/progress';
 import { samplePlayer } from '@/data/sample/player';
 import { useMemorizedVerses } from '@/data/storage/memorizedVerses';
 import { readMysteryRecord } from '@/data/storage/mysteryStore';
-import type { BadgeId, BadgeShelfGroup } from '@/types/badges';
+import type { BadgeId, ShownBadge } from '@/types/badges';
 
-/** The badges, grouped, and which are earned. */
+/** Every badge, and which are earned. */
 export type BadgeShelf = {
-  /** Every badge in its group. */
-  groups: BadgeShelfGroup[];
+  /** Every badge: the earned ones first, then the rest, each in list order. */
+  badges: ShownBadge[];
   /** The ids of the earned badges. */
   earned: ReadonlySet<BadgeId>;
   /** True once the lessons and progress are loaded, so the earned list is the whole truth. */
@@ -31,7 +31,7 @@ function solvedAMystery(): boolean {
   return r != null && (r.solvedOn != null || r.last?.solvedOn != null);
 }
 
-/** Every badge in its group, earned or not. Worked out again only when what it reads changes. */
+/** Every badge, earned or not. Worked out again only when what it reads changes. */
 export function useBadges(): BadgeShelf {
   const outlines = useLessonOutlines().data ?? null;
   const progress = useProgress().data;
@@ -48,10 +48,8 @@ export function useBadges(): BadgeShelf {
       friendCount,
       streak: samplePlayer.streak,
     });
-    const groups = BADGE_GROUPS.map((group) => ({
-      group,
-      badges: BADGES.filter((b) => b.group === group).map((b) => ({ ...b, earned: earned.has(b.id) })),
-    }));
-    return { groups, earned, ready: outlines != null && progress != null };
+    const shown = BADGES.map((b) => ({ ...b, earned: earned.has(b.id) }));
+    const badges = [...shown.filter((b) => b.earned), ...shown.filter((b) => !b.earned)];
+    return { badges, earned, ready: outlines != null && progress != null };
   }, [outlines, progress, memorized, friendCount]);
 }

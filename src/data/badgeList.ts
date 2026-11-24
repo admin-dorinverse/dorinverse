@@ -1,11 +1,8 @@
-// Every badge the app offers, in the order the Profile page shows them, as the owner approved them (2026-11-23).
+// Every badge the app offers, in the order they are shown, as the owner approved them (2026-11-23).
 // Only names and rules live here. Whether a person has earned one is decided by the server (badgeSource.ts).
 
 import type { Badge, BadgeGroup } from '@/types/badges';
 import type { LessonType } from '@/types/lesson';
-
-/** The groups, in the order the Profile page shows them. */
-export const BADGE_GROUPS: readonly BadgeGroup[] = ['Lessons', 'Streak', 'Collections', 'Verse Memory', 'Trivia and calls', 'Papa Dorin and guests', 'Weekly Mystery', 'Friends'];
 
 /** One of the six constellations in the sky, by the kind of lesson it holds, with its badge for finishing a lesson there. */
 export type ConstellationBadge = { id: string; name: string; type: LessonType; art: string };

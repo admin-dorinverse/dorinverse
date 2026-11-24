@@ -9,8 +9,8 @@ import { useKitchenDone } from '@/data/queries/progress';
 import { useWaitingRewards, type Reward } from '@/data/queries/rewards';
 import { KITCHEN_STEPS } from '@/types/lesson';
 
-/** Pages where nothing is going on, by exact address: the three tabs, the Profile and Notifications. */
-const CALM_PAGES = new Set(['/', '/collections', '/bible-crew', '/profile', '/notifications']);
+/** Pages where nothing is going on, by exact address: the three tabs, the Profile, Badges and Notifications. */
+const CALM_PAGES = new Set(['/', '/collections', '/bible-crew', '/profile', '/badges', '/notifications']);
 
 /** Calm pages by the start of their address: lesson lists and the collections. Anything not listed is an activity. */
 const CALM_STARTS = ['/constellation/', '/characters', '/places', '/prophecy', '/prayers', '/instructions', '/connections', '/universe/'];

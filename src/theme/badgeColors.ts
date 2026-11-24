@@ -1,5 +1,5 @@
-// Colors and sizes for badges: the placeholder medals on the Profile page, earned and not yet earned, and the
-// reward pop-up that shows a newly earned badge.
+// Colors and sizes for badges: the placeholder medals on the Profile page and the Badges page, earned and not yet
+// earned, and the reward pop-up that shows a newly earned badge.
 
 /** The badge medals' colors. */
 export const badgeColors = {
@@ -19,10 +19,14 @@ export const badgeColors = {
 
 /** The badge medals' sizes. */
 export const badgeSizes = {
-  /** A medal on the shelf. */
-  medal: 58,
-  /** The emoji inside a shelf medal. */
-  art: 26,
+  /** How many medals the Profile page shows in its Badges row. */
+  previewCount: 4,
+  /** A medal in the Profile page's Badges row, and the emoji inside it. */
+  previewMedal: 68,
+  previewArt: 32,
+  /** A medal on the Badges page, and the emoji inside it. */
+  gridMedal: 88,
+  gridArt: 40,
   /** The big medal on a badge's card. */
   bigMedal: 112,
   /** The emoji inside the big medal. */

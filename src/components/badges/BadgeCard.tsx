@@ -1,4 +1,4 @@
-// The card that slides up when a badge is tapped on the Profile page: its name and its big medal, gold when earned.
+// The card that slides up when a badge is tapped on the Badges page: its name and its big medal, gold when earned.
 
 import { StyleSheet, View } from 'react-native';
 import { GlassSheet } from '@/components/common/GlassSheet';
