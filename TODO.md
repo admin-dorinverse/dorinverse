@@ -178,7 +178,9 @@ Work the owner has asked for later, so it isn't forgotten. Take an item off when
 The owner approved the badges on 2026-11-23. They show on the Profile page, and their list is in
 `src/data/badgeList.ts`. Still to do:
 
-- **Real art** to replace the placeholder emoji medals (`src/components/profile/BadgeMedal.tsx`).
+- **Real art** to replace the placeholder emoji medals (`src/components/common/BadgeMedal.tsx`).
+- **Reward pop-ups** (`src/components/common/RewardHost.tsx`) show a newly earned badge only once an activity is over,
+  one after another. Still to add to that same line-up: the streak going up, once the server keeps the streak.
 - **The server decides badges.** Today `src/data/badgeSource.ts` works them out from what the phone keeps. At hookup
   the server records them, and the earned list comes in the download after sign-in.
 - **Badges the phone can't tell yet**, so they stay unearned until the server tracks them: No Burnt Cookies, Back at

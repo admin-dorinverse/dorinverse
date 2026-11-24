@@ -1,4 +1,4 @@
-// The Badges part of the Profile page: a heading with how many are earned, then every badge in its group as a small
+// The Badges part of the Profile page: a heading, then every badge in its group as a small
 // medal with its name. Tapping one opens its card. Everything here is already on the phone.
 
 import { memo, useCallback, useState } from 'react';
@@ -10,7 +10,7 @@ import { text } from '@/theme/colors';
 import { fonts, textStyles } from '@/theme/text';
 import type { ShownBadge } from '@/types/badges';
 import { BadgeCard } from './BadgeCard';
-import { BadgeMedal } from './BadgeMedal';
+import { BadgeMedal } from '@/components/common/BadgeMedal';
 
 /** Props for one badge on the shelf. */
 type BadgeTileProps = {
@@ -42,7 +42,7 @@ const BadgeTile = memo(function BadgeTile({ badge, onOpen }: BadgeTileProps) {
 
 /** The badges heading, every group of badges, and the card a tapped badge opens. */
 export function BadgeShelf() {
-  const { groups, earnedCount, total } = useBadges();
+  const { groups } = useBadges();
   const [open, setOpen] = useState<ShownBadge | null>(null);
 
   /** Opens a badge's card. Kept the same between redraws, so the tiles don't redraw. */
@@ -51,7 +51,7 @@ export function BadgeShelf() {
   return (
     <View style={styles.shelf}>
       <Text style={[textStyles.tabSubtitle, styles.heading]} accessibilityRole="header">
-        {`BADGES · ${earnedCount} OF ${total}`}
+        BADGES
       </Text>
       {groups.map(({ group, badges }) => (
         <View key={group} style={styles.group}>

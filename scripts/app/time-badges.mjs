@@ -8,12 +8,13 @@ const { earnedBadges } = await import('@/data/badgeSource');
 const { BADGES } = await import('@/data/badgeList');
 const { BIBLE_OUTLINE } = await import('@/data/bibleOutline');
 
+const TYPES = ['Narrative', 'Poetry & Wisdom', 'Letters', 'Prophetic', 'Parables', 'Sermons'];
 const outlines = [];
 const baked = {};
 for (const book of BIBLE_OUTLINE) {
   book.chapterVerses.forEach((_, i) => {
     const id = outlines.length + 1;
-    outlines.push({ id, title: '', reference: '', startChapter: `${book.name} ${i + 1}`, type: 'narrative', storyGroup: null, storyPosition: null, stopCount: 3 });
+    outlines.push({ id, title: '', reference: '', startChapter: `${book.name} ${i + 1}`, type: TYPES[id % TYPES.length], storyGroup: null, storyPosition: null, stopCount: 3 });
     if (id % 2 === 0 || book.name === 'Ruth') baked[id] = 3;
   });
 }

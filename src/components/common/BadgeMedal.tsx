@@ -1,5 +1,5 @@
-// A badge's placeholder picture: one emoji on a round medal, gold when earned and faded when not. The real badge
-// art replaces this later.
+// A badge's placeholder picture: one emoji on a round medal, gold when earned and faded when not. Used on the Profile
+// page and in the reward pop-up. The real badge art replaces this later.
 
 import { memo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';

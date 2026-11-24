@@ -1,13 +1,10 @@
-// The card that slides up when a badge is tapped on the Profile page: its big medal, whether it is earned, and how
-// to earn it.
+// The card that slides up when a badge is tapped on the Profile page: its name and its big medal, gold when earned.
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { GlassSheet } from '@/components/common/GlassSheet';
-import { badgeColors, badgeSizes } from '@/theme/badgeColors';
-import { text } from '@/theme/colors';
-import { fonts, textStyles } from '@/theme/text';
+import { badgeSizes } from '@/theme/badgeColors';
 import type { ShownBadge } from '@/types/badges';
-import { BadgeMedal } from './BadgeMedal';
+import { BadgeMedal } from '@/components/common/BadgeMedal';
 
 /** Props for the badge card. */
 type BadgeCardProps = {
@@ -24,8 +21,6 @@ export function BadgeCard({ badge, onClose }: BadgeCardProps) {
       {badge && (
         <View style={styles.body}>
           <BadgeMedal art={badge.art} earned={badge.earned} size={badgeSizes.bigMedal} artSize={badgeSizes.bigArt} />
-          <Text style={[styles.state, !badge.earned && styles.notYet]}>{badge.earned ? 'EARNED' : 'NOT YET'}</Text>
-          <Text style={[textStyles.body, styles.how]}>{badge.howToEarn}</Text>
         </View>
       )}
     </GlassSheet>
@@ -34,7 +29,4 @@ export function BadgeCard({ badge, onClose }: BadgeCardProps) {
 
 const styles = StyleSheet.create({
   body: { alignItems: 'center', gap: 12, paddingTop: 8, paddingBottom: 8 },
-  state: { fontFamily: fonts.extraBold, fontSize: 13, letterSpacing: 1, color: badgeColors.earnedRim },
-  notYet: { color: badgeColors.lockedName },
-  how: { color: text.onDarkSoft, textAlign: 'center' },
 });

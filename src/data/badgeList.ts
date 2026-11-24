@@ -2,23 +2,22 @@
 // Only names and rules live here. Whether a person has earned one is decided by the server (badgeSource.ts).
 
 import type { Badge, BadgeGroup } from '@/types/badges';
+import type { LessonType } from '@/types/lesson';
 
 /** The groups, in the order the Profile page shows them. */
 export const BADGE_GROUPS: readonly BadgeGroup[] = ['Lessons', 'Streak', 'Collections', 'Verse Memory', 'Trivia and calls', 'Papa Dorin and guests', 'Weekly Mystery', 'Friends'];
 
-/** A part of the Bible, by the first and last book's place in the Bible (Genesis is 1). */
-export type BiblePart = { id: string; name: string; where: string; first: number; last: number; art: string };
+/** One of the six constellations in the sky, by the kind of lesson it holds, with its badge for finishing a lesson there. */
+export type ConstellationBadge = { id: string; name: string; type: LessonType; art: string };
 
-/** The parts of the Bible, each with its own badge for finishing a lesson in it. */
-export const BIBLE_PARTS: readonly BiblePart[] = [
-  { id: 'part-law', name: 'The Law', where: 'the Law (Genesis to Deuteronomy)', first: 1, last: 5, art: '📜' },
-  { id: 'part-history', name: 'History', where: 'the history books (Joshua to Esther)', first: 6, last: 17, art: '🏰' },
-  { id: 'part-wisdom', name: 'Poetry and Wisdom', where: 'the poetry and wisdom books (Job to Song of Solomon)', first: 18, last: 22, art: '🎵' },
-  { id: 'part-prophets', name: 'The Prophets', where: 'the Prophets (Isaiah to Malachi)', first: 23, last: 39, art: '🔥' },
-  { id: 'part-gospels', name: 'The Gospels', where: 'the Gospels (Matthew to John)', first: 40, last: 43, art: '✝️' },
-  { id: 'part-church', name: 'The Early Church', where: 'Acts', first: 44, last: 44, art: '⛵' },
-  { id: 'part-letters', name: 'The Letters', where: 'the Letters (Romans to Jude)', first: 45, last: 65, art: '✉️' },
-  { id: 'part-revelation', name: 'Revelation', where: 'Revelation', first: 66, last: 66, art: '👑' },
+/** The six constellations' badges, named like the constellations. */
+export const CONSTELLATION_BADGES: readonly ConstellationBadge[] = [
+  { id: 'sky-stories', name: 'Stories', type: 'Narrative', art: '🍪' },
+  { id: 'sky-poems', name: 'Poems & Wisdom', type: 'Poetry & Wisdom', art: '💗' },
+  { id: 'sky-letters', name: 'Letters', type: 'Letters', art: '🕊️' },
+  { id: 'sky-prophecies', name: 'Prophecies', type: 'Prophetic', art: '⭐' },
+  { id: 'sky-parables', name: 'Parables', type: 'Parables', art: '🌸' },
+  { id: 'sky-sermons', name: 'Sermons', type: 'Sermons', art: '🔔' },
 ];
 
 /** Makes one badge. */
@@ -32,7 +31,7 @@ export const BADGES: readonly Badge[] = [
   badge('Lessons', 'bakers-dozen', "Baker's Dozen", 'Finish 13 lessons.', '🧁'),
   badge('Lessons', 'whole-book', 'Whole Book', 'Finish every lesson in one book of the Bible.', '📖'),
   badge('Lessons', 'old-and-new', 'Old and New', 'Finish a lesson in the Old Testament and one in the New Testament.', '📚'),
-  ...BIBLE_PARTS.map((p) => badge('Lessons', p.id, p.name, `Finish a lesson in ${p.where}.`, p.art)),
+  ...CONSTELLATION_BADGES.map((k) => badge('Lessons', k.id, k.name, `Finish a lesson in the ${k.name} constellation.`, k.art)),
   badge('Lessons', 'front-to-back', 'Front to Back', 'Finish every lesson in the Bible.', '🏆'),
   badge('Lessons', 'no-burnt-cookies', 'No Burnt Cookies', 'Answer every question in a lesson right the first time.', '⭐'),
 

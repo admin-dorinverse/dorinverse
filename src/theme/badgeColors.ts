@@ -1,4 +1,5 @@
-// Colors and sizes for the badges on the Profile page: the placeholder medals, earned and not yet earned.
+// Colors and sizes for badges: the placeholder medals on the Profile page, earned and not yet earned, and the
+// reward pop-up that shows a newly earned badge.
 
 /** The badge medals' colors. */
 export const badgeColors = {
@@ -12,6 +13,8 @@ export const badgeColors = {
   lockedArtOpacity: 0.28,
   /** A not-earned badge's name. */
   lockedName: 'rgba(255,255,255,0.5)',
+  /** The dark veil behind the reward pop-up. */
+  popupDim: 'rgba(5,6,20,0.86)',
 } as const;
 
 /** The badge medals' sizes. */
@@ -24,6 +27,10 @@ export const badgeSizes = {
   bigMedal: 112,
   /** The emoji inside the big medal. */
   bigArt: 52,
+  /** The medal on the reward pop-up. */
+  rewardMedal: 150,
+  /** The emoji inside the reward pop-up's medal. */
+  rewardArt: 72,
   /** The rim's width. */
   rim: 2,
 } as const;

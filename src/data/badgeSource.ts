@@ -7,7 +7,7 @@
 // the phone. Badges the phone has no record for (trivia, calls, chats, first-try answers, lost streaks, people's
 // mention counts, the full people list, how many mysteries were solved) stay unearned until the server does them.
 
-import { BADGES, BIBLE_PARTS } from '@/data/badgeList';
+import { BADGES, CONSTELLATION_BADGES } from '@/data/badgeList';
 import { BIBLE_OUTLINE } from '@/data/bibleOutline';
 import { bookOf } from '@/data/collectedLists';
 import { isBaked, type BakedStops } from '@/data/lessonBooks';
@@ -74,7 +74,7 @@ function wholePsalm(memorized: readonly VerseRef[]): boolean {
   return false;
 }
 
-/** The lesson badges: lesson counts, a whole book, both testaments, the Bible's parts and every lesson. */
+/** The lesson badges: lesson counts, a whole book, both testaments, the six constellations and every lesson. */
 function lessonBadges(outlines: readonly LessonOutline[], baked: BakedStops, earned: Set<BadgeId>): void {
   const done = outlines.filter((l) => isBaked(l, baked));
   if (done.length >= 1) earned.add('first-batch');
@@ -96,9 +96,8 @@ function lessonBadges(outlines: readonly LessonOutline[], baked: BakedStops, ear
     const book = BOOKS.get(bookOf(l.startChapter));
     if (!book) continue;
     testaments.add(book.testament);
-    const part = BIBLE_PARTS.find((p) => book.order >= p.first && book.order <= p.last);
-    if (part) earned.add(part.id);
   }
+  for (const k of CONSTELLATION_BADGES) if (done.some((l) => l.type === k.type)) earned.add(k.id);
   if (testaments.size === 2) earned.add('old-and-new');
 }
 

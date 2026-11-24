@@ -15,6 +15,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useEffect, useMemo } from 'react';
 import { StyleSheet } from 'react-native';
 import { QueryClientProvider } from '@tanstack/react-query';
+import { RewardHost } from '@/components/common/RewardHost';
 import { OpenWaitingFriendLink } from '@/components/sign-in/OpenWaitingFriendLink';
 import { SkyProvider } from '@/components/sky/SkyProvider';
 import { startAccount, useAccount } from '@/data/account';
@@ -75,6 +76,7 @@ function AccountGate() {
   return (
     <>
       <OpenWaitingFriendLink step={step} />
+      {step === 'ready' && <RewardHost />}
       <Stack screenOptions={{ headerShown: false, contentStyle: styles.page }}>
         <Stack.Protected guard={step === 'signedOut'} redirectTo={step === 'needsUsername' ? PICK_USERNAME : '/'}>
           {SIGN_IN_PAGES.map((name) => (
