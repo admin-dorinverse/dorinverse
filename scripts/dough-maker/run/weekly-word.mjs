@@ -7,7 +7,7 @@
 //   3. Opus fixes what was found, up to 2 times. The last version the script passes is used.
 // A word the Bible doesn't give 7 different facts about is swapped (the writer or fixer says so); the run lists them.
 //
-// Every stage is saved in output/weekly-word/clues/<word>/, so running it again picks up where it left off. Waits out
+// It commits only output/weekly-word/ and never pushes. Every stage is saved in output/weekly-word/clues/<word>/, so running it again picks up where it left off. Waits out
 // the internet and the weekly limit like the trivia run. Writes output/weekly-word/clues.json at the end.
 //
 //   node scripts/dough-maker/run/weekly-word.mjs --agents 6
@@ -21,7 +21,7 @@ import { doc } from './docs.mjs';
 import { verses, parseRefs } from './bsb.mjs';
 import { opus, OPUS, LimitError } from './opus.mjs';
 import { checkLimits } from './limits.mjs';
-import { saveToGit } from './save.mjs';
+import { spawnSync } from 'node:child_process';
 import { json } from './burnt.mjs';
 import { passing } from './prep.mjs';
 
@@ -32,6 +32,14 @@ const FIXES = 2;
 const MOST_VERSES = 600;   // a word in more verses than this (David, Moses) gets 600 spread evenly through the Bible
 const AROUND = 3, AROUND_UP_TO = 150;   // a word in 150 verses or fewer gets the 3 verses either side of each
 const STAGGER = 2_000;
+
+// Commits only this run's own folder and never pushes: other agents work on the same branch (owner, 2026-11-23).
+function commitOwn(message) {
+  const root = path.join(import.meta.dirname, '..', '..', '..'), folder = path.relative(root, DIR);
+  const git = (...a) => spawnSync('git', a, { cwd: root, encoding: 'utf8', windowsHide: true });
+  git('add', '--', folder);
+  if (git('diff', '--cached', '--quiet', '--', folder).status !== 0) git('commit', '-m', message, '--', folder);
+}
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 function writeJson(file, data) { fs.writeFileSync(file + '.tmp', JSON.stringify(data, null, 2) + '\n'); fs.renameSync(file + '.tmp', file); }
@@ -244,7 +252,7 @@ export async function runWeeklyWord(words, { agents = 1, call = opus, outDir = p
         if (d.before) continue;
         fresh++;
         logEvent({ type: 'note', title: `Weekly Word: ${w}`, lines: [`${fresh} of ${todo.length} done this run`] });
-        if (!test && fresh % 50 === 0) saveToGit(`Weekly Word: ${fresh} words done (automatic backup)`);
+        if (!test && fresh % 50 === 0) commitOwn(`Weekly Word: ${fresh} words done (automatic backup)`);
       } catch (e) {
         const t = (tries.get(w) ?? 0) + 1;
         tries.set(w, t);
@@ -271,5 +279,5 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     ...(test && { outDir: path.join(DIR, 'clues-test') }),
     ...(dry && { call: async (a) => standIn(a), outDir: path.join(OUTPUT, '..', 'run', '.cache', 'weekly-word-dry') }) });
   console.log(JSON.stringify(r));
-  if (!test) { saveToGit('Weekly Word: all words done'); notify('Weekly Word finished', [`${r.done} words`, r.gaveUp.length ? `Gave up on: ${r.gaveUp.join(', ')}` : 'None given up']); }
+  if (!test) { commitOwn('Weekly Word: all words done'); notify('Weekly Word finished', [`${r.done} words`, r.gaveUp.length ? `Gave up on: ${r.gaveUp.join(', ')}` : 'None given up']); }
 }
