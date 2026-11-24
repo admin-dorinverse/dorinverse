@@ -110,11 +110,24 @@ ${versesWith(word)}
 Write this word's accepted answers and its 7 clues, following weekly-word.md.
 ${SHAPE}`;
 
-const CHECK = (word, out) => `The word is "${word}". Its accepted answers: ${JSON.stringify(out.accepted)}.
+// A redo (weekly-word-repeats.mjs): some clues tell the same fact as another week's clue, so they are rewritten
+const taken = (redo) => (redo ? `\nOther weeks already use these facts, so no clue may repeat them:\n\n${JSON.stringify(redo.taken, null, 1)}\n` : '');
+const REDO = (word, redo) => `The word is "${word}". Below are the BSB verses that hold it.
+
+${versesWith(word)}
+
+Its accepted answers: ${JSON.stringify(redo.was.accepted)}. Its 7 clues, each with the BSB text of its reference:
+
+${showClues(redo.was)}
+${taken(redo)}
+Clues ${redo.replace.join(', ')} repeat those facts. Replace each with a clue that tells a different fact, following weekly-word.md. The other clues stay exactly as they are.
+${SHAPE}`;
+
+const CHECK = (word, out, redo) => `The word is "${word}". Its accepted answers: ${JSON.stringify(out.accepted)}.
 These are its 7 clues, each with the BSB text of its reference:
 
 ${showClues(out)}
-
+${taken(redo)}
 Check the word, the accepted answers and the clues against weekly-word.md and the BSB text.
 - Is each clue true to its verse?
 - Is each clue medium hard, with enough setting to place it in the Bible?
@@ -123,14 +136,14 @@ Check the word, the accepted answers and the clues against weekly-word.md and th
 - Report only clear problems with a rule in weekly-word.md. Clue counts, word counts, dashes and whether the clue holds the word are already checked by a script.
 Reply with only JSON: {"findings": [{"clue": n, "problem": "..."}]}, where n counts the clues from 1 (null for the whole word). Nothing found: {"findings": []}. No other text.`;
 
-const FIX = (word, out, found) => `The word is "${word}". Below are the BSB verses that hold it.
+const FIX = (word, out, found, redo) => `The word is "${word}". Below are the BSB verses that hold it.
 
 ${versesWith(word)}
 
 Its accepted answers: ${JSON.stringify(out.accepted)}. Its 7 clues, each with the BSB text of its reference:
 
 ${showClues(out)}
-
+${taken(redo)}
 These problems were found (clue numbers count from 1):
 
 ${JSON.stringify(found, null, 1)}
@@ -210,7 +223,8 @@ export async function runWeeklyWord(words, { agents = 1, call = opus, outDir = p
     const write = (role, prompt, effort) => ask(readClues, () => call({ model: OPUS, effort, role, passage: word, step: STEP, system, prompt }));
 
     const swapped = (o) => { const d = { word, swap: o.swap }; writeJson(path.join(dir, 'done.json'), d); return d; };
-    let out = await stage('write', () => write('writer', WRITE(word), 'medium'));
+    const redo = readJson(path.join(dir, 'redo.json'));
+    let out = await stage('write', () => write('writer', redo ? REDO(word, redo) : WRITE(word), 'medium'));
     if (out.swap) return swapped(out);
     let lastGood = scriptCheck(word, out).length ? null : out;
     let found = [];
@@ -219,17 +233,17 @@ export async function runWeeklyWord(words, { agents = 1, call = opus, outDir = p
       if (!script.length) lastGood = out;
       const check = await stage(`check-${n}`, async () => ({
         script,
-        opus: n > FIXES ? [] : await ask(readFindings, () => call({ model: OPUS, effort: 'medium', role: 'checker', passage: word, step: STEP, system, prompt: CHECK(word, out) })),
+        opus: n > FIXES ? [] : await ask(readFindings, () => call({ model: OPUS, effort: 'medium', role: 'checker', passage: word, step: STEP, system, prompt: CHECK(word, out, redo) })),
       }));
       found = [...check.script, ...check.opus];
       if (!found.length || n > FIXES) break;
-      out = await stage(`fix-${n}`, () => write('fixer', FIX(word, out, found), 'medium'));
+      out = await stage(`fix-${n}`, () => write('fixer', FIX(word, out, found, redo), 'medium'));
       if (out.swap) return swapped(out);
     }
     // the last fix: anything countable still broken gets one fix for just that
     let script = scriptCheck(word, out);
     if (script.length) {
-      const last = await stage('fix-rules', () => write('fixer', FIX(word, out, script), 'medium'));
+      const last = await stage('fix-rules', () => write('fixer', FIX(word, out, script, redo), 'medium'));
       if (!last.swap && !scriptCheck(word, last).length) { out = last; script = []; }
     }
     if (!script.length) lastGood = out;
