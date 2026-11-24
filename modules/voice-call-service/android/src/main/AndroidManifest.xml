@@ -1,0 +1,16 @@
+<!-- What Android needs to keep a voice call going while the app is in the background: the call notice's service
+     and its permissions. Android 14 and up needs the service's kinds (microphone, sound playing) named here. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+  <application>
+    <!-- stopWithTask: swiping the app away ends the service, so no notice is left behind. -->
+    <service
+      android:name="expo.modules.voicecallservice.VoiceCallService"
+      android:exported="false"
+      android:stopWithTask="true"
+      android:foregroundServiceType="microphone|mediaPlayback" />
+  </application>
+</manifest>

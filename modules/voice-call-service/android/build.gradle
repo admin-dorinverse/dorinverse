@@ -1,0 +1,21 @@
+// Builds the voice call keep-alive module (Android only), set up the way Expo's own modules are.
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'com.dorinverse.voicecallservice'
+version = '1.0.0'
+
+android {
+  namespace "expo.modules.voicecallservice"
+  defaultConfig {
+    versionCode 1
+    versionName "1.0.0"
+  }
+}
+
+dependencies {
+  // The same notification helpers (and version) expo-audio uses.
+  implementation 'androidx.core:core-ktx:1.15.0'
+}
